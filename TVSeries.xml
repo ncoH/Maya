@@ -255,12 +255,12 @@
       <type>textboxscrollup</type>
       <description>Description (grouplist)</description>
       <id>0</id>
-      <posX>50</posX>
-      <posY>90</posY>
-      <width>355</width>
-      <height>600</height>
+      <posX>555</posX>
+	  <posY>330</posY>
+      <width>400</width>
+	  <height>200</height>
       <seperator>---------------------------------------------------------------------------------------------------------------------</seperator>
-      <font>font14</font>
+      <font>Segoe Light11</font>
       <visible>facadeview.list+Control.IsVisible(1240)+!Control.IsVisible(632)</visible>
       <label>#TVSeries.Description</label>
     </control>
@@ -1328,11 +1328,8 @@
 		  <width>270</width>
           <textureFocus>listcontrol_item_selected_small.png</textureFocus>
 		  <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-          <font>Segoe Light12</font>
-          <font2>Segoe Light10</font2>
-		  <font3>Segoe Light10</font3>
 		  <textXOff>-75</textXOff>
-		  <textYOff>10</textYOff>
+		  <textYOff>7</textYOff>
           <textXOff2>285</textXOff2>
 		  <textYOff2>10</textYOff2>
 		  <textXOff3>-2000</textXOff3>
