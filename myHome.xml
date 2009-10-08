@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>0</id>
+<defaultcontrol>50</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+	<disabletopbar>yes</disabletopbar>
+<controls>
+
+	<control>
+		<description>background image</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>290</posX>
+		<posY>250</posY>
+		<texture>home.png</texture>
+		<animation effect="slide" time="800" start="-300,0">WindowOpen</animation>
+		<animation effect="fade" time="800">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Menu</description>
+		<type>menu</type>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="550">WindowClose</animation>
+		<id>50</id>
+		<posX>700</posX>
+		<posY>180</posY>
+		<width>488</width>
+		<textcolor>ffffffff</textcolor>
+		<textColorNoFocus>30ffffff</textColorNoFocus>
+		<buttonTextXOff>77</buttonTextXOff>
+		<buttonTextYOff>10</buttonTextYOff>
+		<buttonOffset>25</buttonOffset>
+		<buttonFont>font18</buttonFont>
+		<buttonHeight>62</buttonHeight>
+		<spaceBetweenButtons>5</spaceBetweenButtons>
+		<numberOfButtons>5</numberOfButtons>
+		<hoverX>520</hoverX>
+		<hoverY>352</hoverY>
+		<hoverWidth>285</hoverWidth>
+		<hoverHeight>180</hoverHeight>
+		<hoverKeepAspectratio>yes</hoverKeepAspectratio>
+		<scrollTime>120</scrollTime>
+		<scrollTimeMin>60</scrollTimeMin>
+		<onright>4</onright>
+		<onleft>2</onleft>
+	</control>
+
+	<!-- Date and Time -->
+	<control>
+		<description>Date</description>
+		<type>label</type>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="500">WindowClose</animation>
+		<id>200</id>
+		<posX>803</posX>
+		<posY>690</posY>
+		<label>#date</label>
+		<align>left</align>
+		<font>font14</font>
+	</control>
+
+	<control>
+		<description>Time</description>
+		<type>label</type>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="500">WindowClose</animation>
+		<id>201</id>
+		<posX>803</posX>
+		<posY>768</posY>
+		<label>#time</label>
+		<align>left</align>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>
+	</control>
+
+	<!-- TOPBAR Buttons -->
+<control>
+		<type>actiongroup</type>
+		<description>action menu</description><defaultcontrol>3</defaultcontrol>
+		<onexit>0</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>106</buttonwidth>
+		<buttonheight>720</buttonheight>
+		<width>200</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+		
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
+			<animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
+			<visible>!Control.HasFocus(50)</visible>
+			
+			<control>
+				<description>group element</description>
+				<type>group</type>
+				<animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
+				<animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
+				<posX>71</posX>
+				<posY>150</posY>
+				<visible>!Control.HasFocus(50)</visible>
+				
+				<control>
+					<description>Exit Button</description>
+					<type>button</type>
+					<id>2</id>
+					<posX>15</posX>
+					<posY>250</posY>
+					<onleft>3</onleft>
+					<width>93</width>
+					<height>96</height>
+					<textureNoFocus>exit_button_nofocus.png</textureNoFocus>
+					<textureFocus>exit_button_focus.png</textureFocus>
+					<action>97</action>
+					<onright>50</onright>
+					<onup>4</onup>
+					<ondown>3</ondown>
+					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
+				</control>
+
+				<control>
+					<description>Shutdown Button</description>
+					<type>button</type>
+					<id>3</id>
+					<posX>15</posX>
+					<posY>350</posY>
+					<width>93</width>
+					<height>96</height>
+					<textureNoFocus>shutdown_button_nofocus.png</textureNoFocus>
+					<textureFocus>shutdown_button_focus.png</textureFocus>
+					<action>99</action>
+					<onright>50</onright>
+					<onup>2</onup>
+					<ondown>4</ondown>
+					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
+				</control>
+
+				<control>
+					<description>Restart Button</description>
+					<type>button</type>
+					<id>4</id>
+					<posX>15</posX>
+					<posY>450</posY>
+					<width>93</width>
+					<height>96</height>
+					<textureNoFocus>restart_button_nofocus.png</textureNoFocus>
+					<textureFocus>restart_button_focus.png</textureFocus>
+					<action>98</action>
+					<onright>50</onright>
+					<onup>3</onup>
+					<ondown>2</ondown>
+					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
+				</control>
+
+			</control>
+
+		</control>
+
+	</control>
+	
+<!--RSS-->
+
+<control>
+	<description>RSS background</description>
+	<type>image</type>
+	<id>1</id>
+	<posX>0</posX>
+	<posY>738</posY>
+	<width>1366</width>
+	<height>30</height>
+	<texture>rss_bg.png</texture>
+	<visible>plugin.isenabled(InfoService)</visible>
+	<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
+	<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
+</control>
+
+<control>
+	<description>RSS image</description>
+	<type>image</type>
+	<id>1</id>
+	<posX>0</posX>
+	<posY>625</posY>
+	<width>140</width>
+	<height>35</height>
+	<keepaspectratio>no</keepaspectratio>
+	<texture>#rssimg</texture>
+	<visible>plugin.isenabled(InfoService)</visible>
+	<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
+	<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
+</control>
+
+<control>
+	<description>RSS items</description>
+	<type>fadelabel</type>
+	<id>1</id>
+	<posX>10</posX>
+	<posY>743</posY>
+	<width>1346</width>
+	<height>30</height>
+	<font>font10</font>
+	<textcolor>6aa5cb</textcolor>
+	<label>#infoservice.feed.titles</label>
+	<visible>plugin.isenabled(InfoService)</visible>
+	<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
+	<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
+</control>
+
+<import>common.overlay.xml</import>
+</controls>
+</window>

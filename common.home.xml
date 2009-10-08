@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>43</posX>
+		<posY>41</posY>
+		<width>286</width>
+		<height>53</height>
+		<texture>MP_logo.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+</controls>
+</window>

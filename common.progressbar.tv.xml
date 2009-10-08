@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>
+
+	<control>
+		<type>image</type>
+		<description>Dummy image</description>
+		<id>105</id>
+		<posX>-2000</posX>
+		<posY>12</posY>
+		<width>1252</width>
+		<height>60</height>
+		<texture>osd_bg_top.png</texture>
+	</control>
+
+	<control>
+		<description>Description bg</description>
+		<type>image</type>
+		<id>992</id>
+		<posX>191</posX>
+		<posY>544</posY>
+		<width>984</width>
+		<height>117</height>
+		<texture>osd_bg_description.png</texture>
+		<visible>window.isosdvisible</visible>
+	</control>
+
+	<control>
+		<type>image</type>
+		<description>OSD Background</description>
+		<id>994</id>
+		<posX>179</posX>
+		<posY>648</posY>
+		<width>1008</width>
+		<height>81</height>
+		<texture>osd_bg.png</texture>
+		<visible>window.isosdvisible|control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking</visible>
+	</control>
+
+	<control>
+		<description>TV Progress Bar</description>
+		<type>tvprogress</type>
+		<id>993</id>
+		<posX>191</posX>
+		<posY>701</posY>
+		<width>1008</width>
+		<height>12</height>
+		<toptexture>-</toptexture>
+		<TextureOffsetY>18</TextureOffsetY>
+		<bottomtexture>-</bottomtexture>
+		<texturetick>-</texturetick>
+		<lefttexture>osd_progress_left.png</lefttexture>
+		<midtexture>-</midtexture>
+		<righttexture>-</righttexture>
+		<logotexture>-</logotexture>
+		<fillbackgroundtexture>-</fillbackgroundtexture>
+		<fillbgxoff>-3</fillbgxoff>
+		<fillbgyoff>0</fillbgyoff>
+		<filltexture1>osd_progress_mid.png</filltexture1>
+		<filltexture2>osd_progress_mid.png</filltexture2>
+		<filltexture3>osd_progress_mid_orange.png</filltexture3>
+		<fillheight>12</fillheight>
+		<label>#TV.Record.percent1</label>
+		<label1>#TV.Record.percent2</label1>
+		<label2>#TV.Record.percent3</label2>
+		<startlabel/>
+		<endlabel/>
+		<toplabel/>
+		<font>font10</font>
+		<textcolor>FF000000</textcolor>
+		<visible>window.isosdvisible|control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking</visible>
+	</control>
+
+	<control>
+		<description>Start Time Info</description>
+		<type>label</type>
+		<id>997</id>
+		<posX>215</posX>
+		<posY>667</posY>
+		<label>#currentplaytime</label>
+		<align>left</align>
+		<font>font12</font>
+		<visible>window.isosdvisible|control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking</visible>
+	</control>
+
+	<control>
+		<description>End Time Info</description>
+		<type>label</type>
+		<id>998</id>
+		<posX>1152</posX>
+		<posY>667</posY>
+		<label>#duration</label>
+		<align>right</align>
+		<font>font12</font>
+		<visible>window.isosdvisible|control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking</visible>
+	</control>
+
+	<control>
+		<type>label</type>
+		<id>999</id>
+		<description>Pause</description>
+		<posX>633</posX>
+		<posY>663</posY>
+		<height>30</height>
+		<width>100</width>
+		<font>font14</font>
+		<align>center</align>
+		<label>Pause</label>
+		<visible>[window.isosdvisible+player.paused]|[!window.isosdvisible+player.paused]</visible>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>999</id>
+		<description>Clock icon</description>
+		<posX>617</posX>
+		<posY>667</posY>
+		<height>21</height>
+		<width>21</width>
+		<texture>osd_clock_icon.png</texture>
+		<visible>window.isosdvisible+player.playing</visible>
+	</control>
+
+	<control>
+		<type>label</type>
+		<id>999</id>
+		<description>Clock</description>
+		<posX>633</posX>
+		<posY>663</posY>
+		<height>30</height>
+		<width>100</width>
+		<font>font14</font>
+		<align>center</align>
+		<label>#time</label>
+		<visible>window.isosdvisible+player.playing</visible>
+	</control>
+
+</controls>
+</window>

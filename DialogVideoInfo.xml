@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>2003</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<controls>
+
+	<control>
+		<description>background image</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+	</control>
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>movies</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+	</control>
+
+	<control>
+		<description>Play Button</description>
+		<type>button</type>
+		<id>2</id>
+		<posX>106</posX>
+		<posY>121</posY>
+		<label>208</label>
+		<onleft>22</onleft>
+		<onright>22</onright>
+		<onup>7</onup>
+		<ondown>3</ondown>
+		<textalign>right</textalign>
+	</control>
+
+	<control>
+		<description>Plot</description>
+		<type>togglebutton</type>
+		<id>3</id>
+		<posX>106</posX>
+		<posY>163</posY>
+		<label>207</label>
+		<onleft>22</onleft>
+		<onright>22</onright>
+		<onup>2</onup>
+		<ondown>4</ondown>
+		<textalign>right</textalign>
+	</control>
+
+	<control>
+		<description>Cast</description>
+		<type>togglebutton</type>
+		<id>4</id>
+		<posX>106</posX>
+		<posY>206</posY>
+		<label>206</label>
+		<onleft>22</onleft>
+		<onright>22</onright>
+		<onup>3</onup>
+		<ondown>5</ondown>
+		<textalign>right</textalign>
+	</control>
+
+	<control>
+		<description>Refresh</description>
+		<type>button</type>
+		<id>5</id>
+		<posX>106</posX>
+		<posY>248</posY>
+		<label>184</label>
+		<onleft>22</onleft>
+		<onright>22</onright>
+		<onup>4</onup>
+		<ondown>6</ondown>
+		<textalign>right</textalign>
+	</control>
+
+	<control>
+		<description>Watched</description>
+		<type>togglebutton</type>
+		<id>6</id>
+		<posX>106</posX>
+		<posY>291</posY>
+		<label>1010</label>
+		<onleft>22</onleft>
+		<onright>22</onright>
+		<onup>5</onup>
+		<ondown>10</ondown>
+		<textalign>right</textalign>
+	</control>
+
+	<control>
+		<description>image title:</description>
+		<type>label</type>
+		<id>30</id>
+		<posX>106</posX>
+		<posY>337</posY>
+		<label>734</label>
+		<font>font13</font>
+		<align>left</align>
+		<textcolor>FFB2D4F5</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>spin control</description>
+		<type>spincontrol</type>
+		<id>10</id>
+		<posX>106</posX>
+		<posY>365</posY>
+		<onup>6</onup>
+		<ondown>11</ondown>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>disc:</description>
+		<type>label</type>
+		<id>100</id>
+		<posX>106</posX>
+		<posY>393</posY>
+		<label>427</label>
+		<font>font13</font>
+		<textcolor>FFB2D4F5</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>disc select</description>
+		<type>spincontrol</type>
+		<id>11</id>
+		<posX>106</posX>
+		<posY>421</posY>
+		<onup>10</onup>
+		<ondown>2</ondown>
+		<onleft>5</onleft>
+		<onright>5</onright>
+		<textcolor>FFFFFFFF</textcolor>
+		<buddycontrolid>100</buddycontrolid>
+		<showrange>no</showrange>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Movie Title value</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>110</posY>
+		<width>700</width>
+		<label>#title</label>
+		<font>Segoe Light20</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Year value</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>190</posY>
+		<label>#year</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light18</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Runtime value</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>225</posY>
+		<label>#runtime min</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light18</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Genre value</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>260</posY>
+		<label>#genre</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light18</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Plot value</description>
+		<type>textboxscrollup</type>
+		<id>20</id>
+		<posX>555</posX>
+		<posY>330</posY>
+		<width>350</width>
+		<height>210</height>
+		<onleft>2</onleft>
+		<onright>2</onright>
+		<onup>2</onup>
+		<ondown>2</ondown>
+		<font>font12</font>
+		<label>#plot</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>textarea</description>
+		<type>textbox</type>
+		<id>22</id>
+		<posX>555</posX>
+		<posY>330</posY>
+		<width>350</width>
+		<height>210</height>
+		<onleft>2</onleft>
+		<onright>2</onright>
+		<onup>2</onup>
+		<ondown>2</ondown>
+		<font>font12</font>
+		<label>#cast</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Director value</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>565</posY>
+		<label>#director</label>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<type>imagelist</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>620</posY>
+		<width>120</width>
+		<height>40</height>
+		<textureWidth>20</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>greystar.png</subitem>
+		<subitem>starblue.png</subitem></subitems>
+		<orientation>horizontal</orientation>
+		<percentage>#rating</percentage>
+		<imagesToDraw>5</imagesToDraw>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Movie logo</description>
+		<type>image</type>
+		<id>21</id>
+		<posX>1000</posX>
+		<posY>183</posY>
+		<width>266</width>
+		<height>380</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">#thumb</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>941</posX>
+		<posY>144</posY>
+		<width>380</width>
+		<height>596</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video_right.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+</controls>
+</window>

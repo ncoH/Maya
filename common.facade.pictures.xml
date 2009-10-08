@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<controls>
+
+	<control>
+		<description>group element</description>
+		<type>group</type>
+		<visible>!Control.HasFocus(50)</visible>
+		<animation effect="fade" time="1000">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="slide" time="150" start="0,-300">WindowOpen</animation>
+		<animation effect="slide" time="250" end="800,0">WindowClose</animation>
+		<control>
+			<description>composite control consisting of a list control and a thumbnail panel</description>
+			<type>facadeview</type>
+			<id>50</id>
+			<control>
+				<description>listcontrol</description>
+				<type>listcontrol</type>
+				<id>50</id>
+				<onleft>2</onleft>
+				<onright>2</onright>
+				<scrollOffset>1</scrollOffset>
+				<posY>183</posY>
+				<height>450</height>
+				<textXOff>16</textXOff>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>
+			</control>
+
+			<control>
+				<description>Thumbnail Panel</description>
+				<type>thumbnailpanel</type>
+				<dimColor>90ffffff</dimColor>
+				<id>50</id>
+				<posX>88</posX>
+				<posY>131</posY>
+				<width>1173</width>
+				<height>588</height>
+				<scrollOffset>1</scrollOffset>
+				<onleft>2</onleft>
+				<onright>2</onright>
+				<itemWidth>187</itemWidth>
+				<itemHeight>175</itemHeight>
+				<textureWidth>157</textureWidth>
+				<textureHeight>120</textureHeight>
+				<thumbWidth>145</thumbWidth>
+				<thumbHeight>107</thumbHeight>
+				<thumbPosX>5</thumbPosX>
+				<thumbPosY>5</thumbPosY>
+				<itemWidthBig>224</itemWidthBig>
+				<itemHeightBig>227</itemHeightBig>
+				<thumbWidthBig>207</thumbWidthBig>
+				<thumbHeightBig>157</thumbHeightBig>
+				<textureWidthBig>219</textureWidthBig>
+				<textureHeightBig>167</textureHeightBig>
+				<thumbPosXBig>5</thumbPosXBig>
+				<thumbPosYBig>5</thumbPosYBig>
+				<zoomXPixels>30</zoomXPixels>
+				<zoomYPixels>30</zoomYPixels>
+				<hideUnfocusTexture>no</hideUnfocusTexture>
+				<renderFocusText>no</renderFocusText>
+				<renderUnfocusText>yes</renderUnfocusText>
+			</control>
+
+			<control>
+				<description>Filmstrip view</description>
+				<type>filmstrip</type>
+				<dimColor>90ffffff</dimColor>
+				<id>50</id>
+				<scrollOffset>2</scrollOffset>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>
+				<posX>150</posX>
+				<posY>355</posY>
+				<width>1166</width>
+				<height>768</height>
+				<onup>2</onup>
+				<onleft>2</onleft>
+				<thumbWidth>213</thumbWidth>
+				<thumbHeight>302</thumbHeight>
+				<thumbPosX>-7</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidth>213</itemWidth>
+				<itemHeight>302</itemHeight>
+				<textureWidth>213</textureWidth>
+				<textureHeight>302</textureHeight>
+				<textYOff>-2000</textYOff>
+				<imageFolderFocus>-</imageFolderFocus>
+				<frame>-</frame>
+				<frameFocus>-</frameFocus>
+				<background>-</background>
+				<thumbs flipY="true" diffuse="Thumb_Mask.png"></thumbs>
+				<showFrame>yes</showFrame>
+				<showFolder>no</showFolder>
+				<showBackGround>no</showBackGround>
+				<showInfoImage>no</showInfoImage>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,570" time="400">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,570" time="100">unfocus</thumbAnimation>
+			</control>
+
+		</control>
+
+	</control>
+
+</controls>
+</window>

@@ -1,0 +1,141 @@
+<window>
+<id>2100</id>
+<defaultcontrol>3</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<controls>
+
+	<control>
+		<description>group element</description>
+		<type>group</type>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">WindowClose</animation>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posX>512</posX>
+			<posY>64</posY>
+			<width>342</width>
+			<height>640</height>
+			<texture>menu_bg.png</texture>
+		</control>
+
+		<control>
+			<type>label</type>
+			<description>GFX-Heading "menu" text label</description>
+			<id>5</id>
+			<posX>571</posX>
+			<posY>88</posY>
+			<label>924</label>
+			<font>Segoe Light18</font>
+		</control>
+
+		<control>
+			<type>label</type>
+			<description>Heading text label</description>
+			<id>4</id>
+			<posX>571</posX>
+			<posY>108</posY>
+			<label>181</label>
+			<font>font14</font>
+			<textcolor>ffffffff</textcolor>
+		</control>
+
+		<control>
+			<type>button</type>
+			<description>Exit button</description>
+			<id>2</id>
+			<posX>578</posX>
+			<posY>96</posY>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+			<label>-</label>
+			<textcolor>ff000000</textcolor>
+			<width>44</width>
+			<height>44</height>
+			<textureFocus>dialogue_shutdown_focus.png</textureFocus>
+			<textureNoFocus>dialogue_shutdown_nofocus.png</textureNoFocus>
+		</control>
+
+		<control>
+			<type>listcontrol</type>
+			<description>options listcontrol</description>
+			<id>3</id>
+			<posX>160</posX>
+			<posY>150</posY>
+			<width>450</width>
+			<height>264</height>
+			<onleft>11</onleft>
+			<onright>10</onright>
+			<onup>11</onup>
+			<ondown>10</ondown>
+			<playedColor>ffa0d0ff</playedColor>
+			<font>font13</font>
+			<textcolor2>ffffffff</textcolor2>
+			<textureDown>page_down_nofocus.png</textureDown>
+			<spinPosY>370</spinPosY>
+			<remoteColor>ffFFA075</remoteColor>
+			<textureHeight>32</textureHeight>
+			<spinHeight>27</spinHeight>
+			<textureUpFocus>page_up_focus.png</textureUpFocus>
+			<textXOff>5</textXOff>
+			<textYOff>4</textYOff>
+			<spinColor>ffffffff</spinColor>
+			<spinWidth>26</spinWidth>
+			<shadedColor>20ffffff</shadedColor>
+			<textYOff2>4</textYOff2>
+			<IconXOff>8</IconXOff>
+			<textureNoFocus>list_sub_nofocus.png</textureNoFocus>
+			<textureDownFocus>page_down_focus.png</textureDownFocus>
+			<textcolor>ffffffff</textcolor>
+			<selectedColor>FFF8BC70</selectedColor>
+			<image>folder_focus.png</image>
+			<IconYOff>8</IconYOff>
+			<spinPosX>168</spinPosX>
+			<textXOff2>0</textXOff2>
+			<suffix>|</suffix>
+			<textureUp>page_up_nofocus.png</textureUp>
+			<downloadColor>ff80ff80</downloadColor>
+			<textcolor3>ffffffff</textcolor3>
+			<textureFocus>list_sub_focus.png</textureFocus>
+		</control>
+
+		<control>
+			<type>button</type>
+			<description>Okay button</description>
+			<id>10</id>
+			<posX>224</posX>
+			<posY>368</posY>
+			<onleft>3</onleft>
+			<onright>11</onright>
+			<onup>3</onup>
+			<ondown>11</ondown>
+			<label>186</label>
+			<textcolor>ffffffff</textcolor>
+			<width>156</width>
+			<height>32</height>
+		</control>
+
+		<control>
+			<type>button</type>
+			<description>Cancel button</description>
+			<id>11</id>
+			<posX>384</posX>
+			<posY>368</posY>
+			<onleft>10</onleft>
+			<onright>3</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+			<label>510</label>
+			<textcolor>ffffffff</textcolor>
+			<width>156</width>
+			<height>32</height>
+		</control>
+
+	</control>
+
+</controls>
+</window>

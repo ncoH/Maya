@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file should contain the details view
+-->
+<window>
+<controls>
+
+	<control>
+		<description>PLAY Button</description>
+		<type>button</type>
+		<id>6</id>
+		<label>-</label>
+		<onup>6</onup>
+		<ondown>6</ondown>
+		<onleft>6</onleft>
+		<onright>6</onright>
+		<textureFocus>-</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+		<visible>!Control.IsVisible(50)</visible>
+	</control>
+
+	<!--            :: MAIN DETAILS ::            -->
+	
+	
+	<control>
+		<description>Vignette background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>822</posX>
+		<posY>0</posY>
+		<width>544</width>
+		<height>768</height>
+		<texture>moving_pictures_detail_vignette.png</texture>
+		<visible>!Control.IsVisible(50)</visible>
+	</control>
+	
+<!--
+
+	<control>
+		<description>Watched Icon Background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>272</posX>
+		<posY>339</posY>
+		<width>32</width>
+		<height>39</height>
+		<texture>overlaywubg.png</texture>
+		<visible>!Control.IsVisible(50)</visible>
+	</control>
+
+	<control>
+		<description>Watched Icon</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>279</posX>
+		<posY>343</posY>
+		<width>23</width>
+		<height>23</height>
+		<texture>overlaywatched.png</texture>
+		<visible>!Control.IsVisible(50)+Control.IsVisible(9)</visible>
+	</control>
+
+	<control>
+		<description>Un-Watched Icon</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>279</posX>
+		<posY>343</posY>
+		<width>23</width>
+		<height>23</height>
+		<texture>overlayunwatched.png</texture>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(9)</visible>
+	</control>
+	
+-->
+
+	<!-- Details Box -->
+
+	<control>
+		<description>Movie Title</description>
+		<type>fadelabel</type>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>180</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<label>#MovingPictures.SelectedMovie.title</label>
+		<visible>!Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<description>year</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.year</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>215</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<description>runtime</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.runtime min</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>250</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)</visible>
+	</control>
+
+	<control>
+		<description>genre below the movie title</description>
+		<type>fadelabel</type>
+		<label>#MovingPictures.SelectedMovie.genres</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>285</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)</visible>
+	</control>
+
+	<control>
+		<description>Summary</description>
+		<type>textboxscrollup</type>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>350</posY>
+		<width>365</width>
+		<height>200</height>
+		<textcolor>ffFFFFFF</textcolor>
+		<seperator>-----------------------------------------------------------------------------------</seperator>
+		<label>#MovingPictures.SelectedMovie.summary</label>
+		<visible>!Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<description>actors</description>
+		<type>fadelabel</type>
+		<label>#MovingPictures.SelectedMovie.extra.actors.1, #MovingPictures.SelectedMovie.extra.actors.2, #MovingPictures.SelectedMovie.extra.actors.3</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>593</posY>
+		<width>365</width>
+		<font>font11</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)</visible>
+	</control>
+
+	<control>
+		<description>director</description>
+		<type>label</type>
+		<label>director</label>
+		<id>0</id>
+		<posX>363</posX>
+		<posY>-50</posY>
+		<width>840</width>
+		<font>font11</font>
+		<textcolor>ff909090</textcolor>
+		<visible>!Control.IsVisible(50)</visible>
+	</control>
+
+	<control>
+		<description>director</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.directors</label>
+		<id>0</id>
+		<posX>463</posX>
+		<posY>-50</posY>
+		<width>840</width>
+		<font>font11</font>
+		<textcolor>ffFFFFFF</textcolor>
+		<visible>!Control.IsVisible(50)</visible>
+	</control>
+
+	<control>
+		<description>writer</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.writers</label>
+		<id>0</id>
+		<posX>463</posX>
+		<posY>-50</posY>
+		<width>840</width>
+		<font>font11</font>
+		<textcolor>ffFFFFFF</textcolor>
+		<visible>!Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>903</posX>
+		<posY>667</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>stargrey.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#MovingPictures.SelectedMovie.score</percentage>
+		<visible>!Control.IsVisible(50)</visible>
+	</control>
+
+</controls>
+</window>

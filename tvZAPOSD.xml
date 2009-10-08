@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>3007</id>
+<defaultcontrol>213</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<controls>
+
+	<control>
+		<description>background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>503</posY>
+		<width>1280</width>
+		<height>217</height>
+		<texture>osd_background.png</texture>
+	</control>
+
+	<control>
+		<description>TV Logo background</description>
+		<type>image</type>
+		<posX>6</posX>
+		<posY>470</posY>
+		<width>170</width>
+		<height>170</height>
+		<texture>imagebg.png</texture>
+		<keepaspectratio>no</keepaspectratio>
+	</control>
+
+	<control>
+		<description>TV Logo</description>
+		<type>image</type>
+		<id>10</id>
+		<posX>16</posX>
+		<posY>480</posY>
+		<width>150</width>
+		<height>150</height>
+		<texture>#TV.View.thumb</texture>
+		<keepaspectratio>yes</keepaspectratio>
+	</control>
+
+	<control>
+		<description>TV Progress Bar background</description>
+		<type>image</type>
+		<posX>187</posX>
+		<posY>666</posY>
+		<width>1044</width>
+		<height>24</height>
+		<texture>osd_progressback.png</texture>
+		<keepaspectratio>no</keepaspectratio>
+	</control>
+
+	<control>
+		<description>Progress Bar</description>
+		<type>progress</type>
+		<id>1</id>
+		<posX>178</posX>
+		<posY>667</posY>
+		<width>1043</width>
+		<height>23</height>
+		<texturebg>-</texturebg>
+		<lefttexture>osd_progress_left.png</lefttexture>
+		<midtexture>osd_progress_mid.png</midtexture>
+		<righttexture>osd_progress_right.png</righttexture>
+		<visible>yes</visible>
+		<label>#TV.View.Percentage</label>
+	</control>
+
+	<control>
+		<description>Start Time Info</description>
+		<type>label</type>
+		<id>101</id>
+		<posX>195</posX>
+		<posY>684</posY>
+		<label>#TV.View.start</label>
+		<align>left</align>
+		<font>mediastream12c</font>
+		<textcolor>ff888888</textcolor>
+	</control>
+
+	<control>
+		<description>End Time Info</description>
+		<type>label</type>
+		<id>102</id>
+		<posX>1221</posX>
+		<posY>684</posY>
+		<label>#TV.View.stop</label>
+		<align>right</align>
+		<font>mediastream12c</font>
+		<textcolor>ff888888</textcolor>
+	</control>
+
+	<control>
+		<description>rec logo</description>
+		<type>image</type>
+		<id>39</id>
+		<posX>100</posX>
+		<posY>15</posY>
+		<width>20</width>
+		<height>20</height>
+		<texture>tvguide_record_button.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
+	</control>
+
+	<control>
+		<description>On tv NOW</description>
+		<id>36</id>
+		<type>textbox</type>
+		<width>474</width>
+		<height>25</height>
+		<posX>195</posX>
+		<posY>565</posY>
+		<font>mediastream14tc</font>
+	</control>
+
+	<control>
+		<description>On tv NEXT</description>
+		<id>37</id>
+		<type>textbox</type>
+		<width>474</width>
+		<height>24</height>
+		<posX>195</posX>
+		<posY>640</posY>
+		<font>mediastream11tc</font>
+		<textcolor>ff888888</textcolor>
+	</control>
+
+	<control>
+		<description>Channel Name</description>
+		<id>35</id>
+		<type>label</type>
+		<width>474</width>
+		<height>25</height>
+		<posX>195</posX>
+		<posY>540</posY>
+		<font>mediastream14tc</font>
+		<label>#TV.View.channel</label>
+	</control>
+
+</controls>
+</window>

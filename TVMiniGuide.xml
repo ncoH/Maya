@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>3009</id>
+<defaultcontrol>35</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<controls>
+
+<control>
+	<description>button group</description>
+	<type>group</type>
+	<animation effect="fade" time="250">Visible</animation>
+	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+	<animation effect="fade" time="200">Hidden</animation>
+	<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">Hidden</animation>
+
+	<control>
+		<description>background image</description>
+		<type>image</type>
+		<id>0</id>
+		<texture>tv_miniguide.png</texture>
+		<width>734</width>
+		<height>311</height>
+		<posX>316</posX>
+		<posY>455</posY>
+	</control>
+
+	<control>
+		<description>Heading text label</description>
+		<type>label</type>
+		<id>4</id>
+		<posX>435</posX>
+		<posY>492</posY>
+		<width>426</width>
+		<label>10105</label>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+	</control>
+
+	<control>
+		<description>list to show channels without channel state logos</description>
+		<type>listcontrol</type>
+		<id>35</id>
+		<posX>349</posX>
+		<posY>541</posY>
+		<width>669</width>
+		<height>210</height>
+		<textureFocus>tv_miniguide_bar_nochannelstate.png</textureFocus>
+		<textureNoFocus>tv_miniguide_bar_nochannelstate_nofocus.png</textureNoFocus>
+		<textYOff>2000</textYOff>
+		<textXOff>0</textXOff>
+		<textXOff2>660</textXOff2>
+		<textYOff2>13</textYOff2>
+		<textXOff3>90</textXOff3>
+		<textYOff3>12</textYOff3>
+		<IconXOff>13</IconXOff>
+		<IconYOff>3</IconYOff>
+		<PinIconXOff>605</PinIconXOff>
+		<PinIconYOff>13</PinIconYOff>
+		<PinIconWidth>-</PinIconWidth>
+		<PinIconHeight>-</PinIconHeight>
+		<spinPosY>700</spinPosY>
+		<spinPosX>1000</spinPosX>
+		<spinColor>FFB2D4F5</spinColor>
+		<spinWidth>39</spinWidth>
+		<spinHeight>27</spinHeight>
+		<itemWidth>42</itemWidth>
+		<itemHeight>42</itemHeight>
+		<spaceBetweenItems>0</spaceBetweenItems>
+		<textureHeight>49</textureHeight>
+		<keepaspectratio>yes</keepaspectratio>
+		<font>font12</font>
+		<font2>font10</font2>
+		<font3>font12</font3>
+		<textcolor>FFB2D4F5</textcolor>
+		<textcolor2>FFB2D4F5</textcolor2>
+		<textcolor3>FFFFFFFF</textcolor3>
+		<remoteColor>FFB2D4F5</remoteColor><!-- used for selected channel -->
+		<onleft>36</onleft>
+		<onright>34</onright>
+	</control>
+
+	<control>
+		<description>list to show channels with channel state logos</description>
+		<type>listcontrol</type>
+		<id>37</id>
+		<posX>349</posX>
+		<posY>541</posY>
+		<width>669</width>
+		<height>210</height>
+		<textureFocus>tv_miniguide_bar.png</textureFocus>
+		<textureNoFocus>tv_miniguide_bar_nofocus.png</textureNoFocus>
+		<textYOff>2000</textYOff>
+		<textXOff>0</textXOff>
+		<textXOff2>592</textXOff2>
+		<textYOff2>13</textYOff2>
+		<textXOff3>90</textXOff3>
+		<textYOff3>12</textYOff3>
+		<IconXOff>13</IconXOff>
+		<IconYOff>4</IconYOff>
+		<PinIconXOff>605</PinIconXOff>
+		<PinIconYOff>12</PinIconYOff>
+		<PinIconWidth>-</PinIconWidth>
+		<PinIconHeight>-</PinIconHeight>
+		<spinPosY>700</spinPosY>
+		<spinPosX>1000</spinPosX>
+		<spinColor>FFB2D4F5</spinColor>
+		<spinWidth>39</spinWidth>
+		<spinHeight>27</spinHeight>
+		<itemWidth>40</itemWidth>
+		<itemHeight>40</itemHeight>
+		<spaceBetweenItems>0</spaceBetweenItems>
+		<textureHeight>49</textureHeight>
+		<keepaspectratio>yes</keepaspectratio>
+		<font>font12</font>
+		<font2>font10</font2>
+		<font3>font12</font3>
+		<textcolor>FFB2D4F5</textcolor>
+		<textcolor2>FFB2D4F5</textcolor2>
+		<textcolor3>FFFFFFFF</textcolor3>
+		<remoteColor>FFB2D4F5</remoteColor><!-- used for selected channel -->
+		<onleft>36</onleft>
+		<onright>34</onright>
+	</control>
+
+	<control>
+		<description>groups spin control</description>
+		<type>spincontrol</type>
+		<id>36</id>
+		<posX>740</posX>
+		<posY>695</posY>
+		<showrange>no</showrange>
+		<orientation>horizontal</orientation>
+		<font>font10</font>
+		<textureUp>arrow_round_right_nofocus_tv.png</textureUp>
+		<textureDown>arrow_round_left_nofocus_tv.png</textureDown>
+		<textureUpFocus>arrow_round_right_focus_tv.png</textureUpFocus>
+		<textureDownFocus>arrow_round_left_focus_tv.png</textureDownFocus>
+		<width>37</width>
+		<height>37</height>
+		<ondown>35</ondown>
+		<onup>36</onup>
+		<onright>34</onright>
+		<onleft>36</onleft>
+		<align>center</align>
+	</control>
+
+	<control>
+		<description>time label</description>
+		<id>0</id>
+		<type>label</type>
+		<posX>512</posX>
+		<posY>699</posY>
+		<align>right</align>
+		<font>font12</font>
+		<textcolor>FFFFFFFF</textcolor>
+		<label>#time</label>
+	</control>
+	
+</control>
+
+</controls>
+</window>
