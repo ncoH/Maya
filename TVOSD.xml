@@ -89,6 +89,7 @@
 		<height>24</height>
 		<posX>301</posX>
 		<posY>550</posY>
+		<spinPosY>-2000</spinPosY>
 		<font>Segoe Light18</font>
 	</control>
 

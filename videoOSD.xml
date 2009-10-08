@@ -14,6 +14,7 @@
 		<posX>301</posX>
 		<posY>550</posY>
 		<font>Segoe Light18</font>
+		<spinPosY>-2000</spinPosY>
 		<label>#Play.Current.Title</label>
 	</control>
 

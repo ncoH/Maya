@@ -64,7 +64,7 @@
 				<posX>140</posX>
 				<posY>240</posY>
 				<width>1100</width>
-				<height>600</height>
+				<height>450</height>
 				<spinColor>ffffffff</spinColor>
 				<textureUp>page_up_nofocus.png</textureUp>
 				<textureDown>page_down_nofocus.png</textureDown>
@@ -82,8 +82,8 @@
 				<thumbPosX>1</thumbPosX>
 				<thumbPosY>1</thumbPosY>
 				<thumbZoom>no</thumbZoom>
-				<imageFolder>Picture_cover.png</imageFolder>
-				<imageFolderFocus>Picture_cover_focus.png</imageFolderFocus>
+				<imageFolder>-</imageFolder>
+    			<imageFolderFocus>-</imageFolderFocus>
 				<suffix>|</suffix>
 				<itemWidthBig>214</itemWidthBig>
 				<itemHeightBig>214</itemHeightBig>
@@ -94,7 +94,7 @@
 				<thumbPosXBig>1</thumbPosXBig>
 				<thumbPosYBig>1</thumbPosYBig>
 				<thumbZoom>no</thumbZoom>
-				<enableFocusZoom>yes</enableFocusZoom>
+				<enableFocusZoom>no</enableFocusZoom>
 				<zoomXPixels>50</zoomXPixels>
 				<zoomYPixels>50</zoomYPixels>
 				<keepaspectratio>no</keepaspectratio>

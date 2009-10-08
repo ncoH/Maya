@@ -12,185 +12,220 @@
 	</control>
 
 	<control>
+		<id>1</id>
 		<type>image</type>
-		<description>title image</description>
-		<id>0</id>
-		<posX>113</posX>
-		<posY>26</posY>
-		<texture>music_logo.png</texture>
-		<animation effect="fade" time="150">WindowOpen</animation>
+		<posX>135</posX>
+		<posY>180</posY>
+		<width>166</width>
+		<height>166</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">#Play.Current.Thumb</texture>
+		<animation effect="fade" time="1000" delay="1000">WindowOpen</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
 	</control>
 
 	<control>
 		<type>image</type>
-		<description>album art image plus reflection</description>
-		<id>50</id>
-		<posX>195</posX>
-		<posY>135</posY>
-		<width>360</width>
-		<height>360</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#Play.Current.Thumb</texture>
-		<InfoImage flipY="true" diffuse="Thumb_Mask.png"></InfoImage>
-		<centered>yes</centered>
-		<zoom>yes</zoom>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>434</width>
+		<height>768</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_mylyrics.png</texture>
+	</control>
+	
+	<control>
+		<type>fadelabel</type>
+		<description>artist label</description>
+		<id>0</id>
+		<posX>130</posX>
+		<posY>362</posY>
+		<width>380</width>
+		<label>#Play.Current.Artist</label>
+		<font>font14</font>
+		<animation effect="fade" time="800">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>
 	</control>
 
 	<control>
 		<type>fadelabel</type>
 		<description>title label</description>
 		<id>0</id>
-		<posX>600</posX>
-		<posY>170</posY>
-		<width>660</width>
+		<posX>130</posX>
+		<posY>392</posY>
+		<width>380</width>
 		<label>#Play.Current.Title</label>
-		<font>font14</font>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-
-	<control>
-		<type>fadelabel</type>
-		<description>artist label</description>
-		<id>0</id>
-		<posX>600</posX>
-		<posY>140</posY>
-		<width>700</width>
-		<label>#Play.Current.Artist</label>
-		<font>font14</font>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-
-	<control>
-		<type>fadelabel</type>
-		<description>year label</description>
-		<id>0</id>
-		<posX>600</posX>
-		<posY>230</posY>
-		<width>660</width>
-		<label>#Play.Current.Year</label>
-		<font>font14</font>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-<!--
-	<textcolor>white</textcolor>
--->
-
+		<font>font12</font>
+		<animation effect="fade" time="800">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>
 	</control>
 
 	<control>
 		<type>fadelabel</type>
 		<description>album label</description>
 		<id>0</id>
-		<posX>600</posX>
-		<posY>200</posY>
-		<width>660</width>
+		<posX>130</posX>
+		<posY>418</posY>
+		<width>380</width>
 		<label>#Play.Current.Album</label>
-		<font>font14</font>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>
+		<animation effect="fade" time="800">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>
 	</control>
 
 	<control>
-		<type>image</type>
-		<id>117</id>
-		<posX>660</posX>
-		<posY>370</posY>
-		<width>502</width>
-		<height>12</height>
-		<texture>osd_progress_background_medium.png</texture>
-	</control>
-
-	<control>
-		<type>progress</type>
-		<description>track progress</description>
-		<id>118</id>
-		<posX>651</posX>
-		<posY>370</posY>
-		<width>502</width>
-		<height>12</height>
-		<texturebg>-</texturebg>
-		<lefttexture>now_playing_progress_left.png</lefttexture>
-		<midtexture>now_playing_progress_mid.png</midtexture>
-		<righttexture>now_playing_progress_right.png</righttexture>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-
-	<control>
-		<type>label</type>
-		<description>track progress label</description>
+		<type>fadelabel</type>
+		<description>year label</description>
 		<id>0</id>
-		<posX>600</posX>
-		<posY>363</posY>
-		<label>#currentplaytime</label>
+		<posX>130</posX>
+		<posY>442</posY>
+		<width>390</width>
+		<label>#Play.Current.Year</label>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>
+		<animation effect="fade" time="800">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>nowplaying text</description>
+		<type>label</type>
+		<id>3</id>
+		<posX>130</posX>
+		<posY>462</posY>
+		<width>260</width>
+		<height>50</height>
+		<label>Now Playing</label>
+		<font>Segoe Light20</font>
+		<align>left</align>
+		<textcolor>6aa5cb</textcolor>
 		<visible>Player.HasMedia</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
+		<animation effect="fade" time="800">WindowClose</animation>
+		<animation effect="fade" time="300">WindowOpen</animation>
+	</control>
+	
+	<control>
+		<description>play time label</description>
+		<type>fadelabel</type>
+		<id>0</id>
+		<posX>320</posX>
+		<posY>462</posY>
+		<width>390</width>
+		<label>#currentplaytime</label>
+		<align>left</align>
+		<font>Segoe Light20</font>
+		<textcolor>6aa5cb</textcolor>
+		<animation effect="fade" time="800">WindowClose</animation>
+		<animation effect="fade" time="300">WindowOpen</animation>
 	</control>
 
 	<control>
-		<type>label</type>
+		<description>Progress background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>132</posX>
+		<posY>515</posY>
+		<width>264</width>
+		<height>2</height>
+		<texture>now_playing_progress_back_overlay.png</texture>
+		<visible>player.hasmedia</visible>
+	</control>
+
+	<control>
+		<description>progress bar</description>
+		<type>progress</type>
+		<id>0</id>
+		<posX>120</posX>
+		<posY>515</posY>
+		<width>264</width>
+		<height>2</height>
+		<texturebg>-</texturebg>
+		<lefttexture>now_playing_progress_bar.png</lefttexture>
+		<midtexture>now_playing_progress_bar.png</midtexture>
+		<righttexture>now_playing_progress_bar.png</righttexture>
+		<label>#percentage</label>
+		<visible>player.hasmedia</visible>
+	</control>
+
+	<control>
+		<type>fadelabel</type>
 		<description>track duration label</description>
 		<id>0</id>
-		<posX>1220</posX>
-		<posY>363</posY>
-		<label>#duration</label>
-		<align>right</align>
-		<visible>Player.HasMedia</visible>
+		<posX>130</posX>
+		<posY>525</posY>
+		<label>#currentplaytime</label>
+		<align>left</align>
+		<font>font10</font>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
 
+	<control>
+		<type>fadelabel</type>
+		<description>track duration label</description>
+		<id>0</id>
+		<posX>395</posX>
+		<posY>525</posY>
+		<label>#duration</label>
+		<align>right</align>
+		<font>font10</font>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+	
 	<control>
 		<type>label</type>
 		<description>up next label</description>
 		<id>20</id>
-		<posX>600</posX>
-		<posY>275</posY>
-		<label>4541</label>
-		<font>font10</font>
-		<textcolor>ffa9d0f7</textcolor>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
+		<posX>130</posX>
+		<posY>605</posY>
+		<label>Next track</label>
+		<font>font13</font>
+		<align>left</align>
+		<textcolor>6aa5cb</textcolor>
 	</control>
-
+	
 	<control>
 		<type>fadelabel</type>
 		<description>next track label</description>
 		<id>121</id>
-		<posX>600</posX>
-		<posY>325</posY>
-		<width>460</width>
+		<posX>130</posX>
+		<posY>632</posY>
+		<width>380</width>
 		<label>#Play.Next.Title</label>
-		<font>font10</font>
-		<textcolor>ffa9d0f7</textcolor>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
+		<font>font12</font>
+		
 	</control>
 
 	<control>
 		<type>fadelabel</type>
+		<description>next album label</description>
+		<id>124</id>
+		<posX>-2000</posX>
+		<posY>610</posY>
+		<width>380</width>
+		<label>#Play.Next.Album</label>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>
+	</control>
+	
+	<control>
+		<type>fadelabel</type>
 		<description>next artist label</description>
 		<id>123</id>
-		<posX>600</posX>
-		<posY>300</posY>
-		<width>460</width>
+		<posX>130</posX>
+		<posY>655</posY>
+		<width>380</width>
 		<label>#Play.Next.Artist</label>
-		<font>font10</font>
-		<textcolor>ffa9d0f7</textcolor>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
+		<font>font12</font>
 	</control>
 
 	<control>
 		<type>fadelabel</type>
 		<description>best album tracks label</description>
 		<id>29</id>
-		<posX>50</posX>
-		<posY>610</posY>
+		<posX>450</posX>
+		<posY>210</posY>
 		<width>512</width>
 		<label>33030</label>
 		<animation effect="fade" time="200">WindowOpen</animation>
@@ -203,8 +238,8 @@
 		<id>166</id>
 		<onright>155</onright>
 		<onleft>155</onleft>
-		<posX>10</posX>
-		<posY>610</posY>
+		<posX>450</posX>
+		<posY>310</posY>
 		<width>500</width>
 		<height>210</height>
 		<textXOff>8</textXOff>
@@ -225,8 +260,8 @@
 		<type>fadelabel</type>
 		<description>best tag tracks label</description>
 		<id>28</id>
-		<posX>780</posX>
-		<posY>610</posY>
+		<posX>850</posX>
+		<posY>210</posY>
 		<width>512</width>
 		<label>Best Tracks For Tag</label>
 		<animation effect="fade" time="200">WindowOpen</animation>
@@ -239,8 +274,8 @@
 		<id>155</id>
 		<onleft>166</onleft>
 		<onright>166</onright>
-		<posX>740</posX>
-		<posY>610</posY>
+		<posX>850</posX>
+		<posY>310</posY>
 		<width>550</width>
 		<height>210</height>
 		<textXOff>8</textXOff>
@@ -311,8 +346,8 @@
 		<textureWidth>24</textureWidth>
 		<textureHeight>24</textureHeight>
 		<subitems>
-		<subitem>greystar.png</subitem>
-		<subitem>starbad.png</subitem></subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starblue.png</subitem></subitems>
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<percentage>#Lastfm.Rating.AlbumTrack3</percentage>
@@ -513,15 +548,15 @@
 	<control>
 		<type>imagelist</type>
 		<id>1337</id>
-		<posX>740</posX>
-		<posY>405</posY>
+		<posX>158</posX>
+		<posY>152</posY>
 		<width>120</width>
 		<height>24</height>
-		<textureWidth>24</textureWidth>
-		<textureHeight>24</textureHeight>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
 		<subitems>
-		<subitem>greystar.png</subitem>
-		<subitem>starbest.png</subitem></subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem></subitems>
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<percentage>#Play.Current.Rating</percentage>

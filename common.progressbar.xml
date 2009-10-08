@@ -70,7 +70,7 @@
 		<id>999</id>
 		<description>Pause</description>
 		<posX>633</posX>
-		<posY>662</posY>
+		<posY>663</posY>
 		<height>30</height>
 		<width>100</width>
 		<font>font14</font>
@@ -96,7 +96,7 @@
 		<id>999</id>
 		<description>Clock</description>
 		<posX>633</posX>
-		<posY>662</posY>
+		<posY>663</posY>
 		<height>30</height>
 		<width>100</width>
 		<font>font14</font>

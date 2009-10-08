@@ -10,7 +10,7 @@
 		<type>label</type>
 		<id>10</id>
 		<posX>633</posX>
-		<posY>662</posY>
+		<posY>663</posY>
 		<height>30</height>
 		<width>100</width>
 		<font>font14</font>
@@ -23,7 +23,7 @@
 		<type>label</type>
 		<id>11</id>
 		<posX>633</posX>
-		<posY>662</posY>
+		<posY>663</posY>
 		<height>30</height>
 		<width>100</width>
 		<font>font14</font>
@@ -36,7 +36,7 @@
 		<type>label</type>
 		<id>12</id>
 		<posX>633</posX>
-		<posY>662</posY>
+		<posY>663</posY>
 		<height>30</height>
 		<width>100</width>
 		<font>font14</font>

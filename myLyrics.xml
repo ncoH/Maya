@@ -3,7 +3,6 @@
 <id>90478</id>
 <defaultcontrol>20</defaultcontrol>
 <allowoverlay>no</allowoverlay>
-<define>#header.label:#Play.Current.Title</define>
 <define>#header.image:lyrics_logo.png</define><!-- cheat a little, we don't use two of the items in the imported file to blank their labels -->
 <define>#itemcount:-</define>
 <define>#selecteditem:-</define>
@@ -101,26 +100,23 @@
 	<control>
 		<id>1</id>
 		<type>image</type>
-		<posX>143</posX>
-		<posY>191</posY>
-		<width>122</width>
-		<height>122</height>
-		<texture>missing_Coverart.png</texture>
-		<visible>[!control.hasthumb(112)]</visible>
+		<posX>135</posX>
+		<posY>180</posY>
+		<width>166</width>
+		<height>166</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">#Play.Current.Thumb</texture>
 		<animation effect="fade" time="1000" delay="1000">WindowOpen</animation>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
 	</control>
 
 	<control>
-		<id>112</id>
 		<type>image</type>
-		<posX>153</posX>
-		<posY>190</posY>
-		<width>122</width>
-		<height>122</height>
-		<texture>#Play.Current.Thumb</texture>
-		<animation effect="fade" time="1000" delay="1000">WindowOpen</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>434</width>
+		<height>768</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_mylyrics.png</texture>
 	</control>
 
 	<control>
@@ -141,7 +137,7 @@
 		<description>artist label</description>
 		<id>0</id>
 		<posX>130</posX>
-		<posY>365</posY>
+		<posY>362</posY>
 		<width>380</width>
 		<label>#Play.Current.Artist</label>
 		<font>font14</font>
@@ -281,7 +277,7 @@
 		<description>up next label</description>
 		<id>20</id>
 		<posX>130</posX>
-		<posY>595</posY>
+		<posY>605</posY>
 		<label>Next track</label>
 		<font>font13</font>
 		<align>left</align>
@@ -293,7 +289,7 @@
 		<description>next track label</description>
 		<id>121</id>
 		<posX>130</posX>
-		<posY>620</posY>
+		<posY>632</posY>
 		<width>380</width>
 		<label>#Play.Next.Title</label>
 		<font>font12</font>
@@ -302,7 +298,7 @@
 
 	<control>
 		<type>fadelabel</type>
-		<description>album label</description>
+		<description>next album label</description>
 		<id>124</id>
 		<posX>-2000</posX>
 		<posY>610</posY>
@@ -317,7 +313,7 @@
 		<description>next artist label</description>
 		<id>123</id>
 		<posX>130</posX>
-		<posY>645</posY>
+		<posY>655</posY>
 		<width>380</width>
 		<label>#Play.Next.Artist</label>
 		<font>font12</font>
