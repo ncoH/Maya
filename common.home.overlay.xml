@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id></id>
-<defaultcontrol>2</defaultcontrol>
 <controls>
-<!--Common-->
+
+<!-- Dummy -->
 	<control>
 		<description>dummy (visible when music is playing)</description>
 		<type>label</type>
 		<id>3337</id>
 		<posX>2000</posX>
-		<label>#Play.Current.Album</label>
+		<label>#Play.Current.Artist</label>
 		<visible>player.hasmedia+control.hastext(3337)</visible>
 	</control>
 
@@ -31,201 +31,269 @@
 		<visible>player.hasmedia+control.hastext(3339)</visible>
 	</control>
 
+<!-- TV/Video -->
 	<control>
-		<description>media background</description>
+		<description>video rectangle</description>
 		<type>image</type>
-		<id>0</id>
-		<posX>760</posX>
-		<posY>518</posY>
-		<width>512</width>
-		<height>152</height>
-		<texture>dialogprogressbg.png</texture>
-		<visible>Player.HasVideo|Player.HasAudio</visible>
+		<id>1</id>
+		<posX>98</posX>
+		<posY>513</posY>
+		<width>335</width>
+		<height>229</height>
+		<texture>video_overlay_border.png</texture>
+		<visible>player.hasmedia+!control.isvisible(3337)</visible>
 	</control>
 
 	<control>
 		<description>video preview window</description>
 		<type>videowindow</type>
 		<id>99</id>
-		<posX>776</posX>
-		<posY>538</posY>
-		<width>203</width>
-		<height>114</height>
+		<posX>143</posX>
+		<posY>558</posY>
+		<width>244</width>
+		<height>140</height>
 		<action>18</action>
-		<onleft>901</onleft>
 		<textureFocus>tv_green_border.png</textureFocus>
-		<visible>player.hasmedia+!control.isvisible(3337)+[window.istopmost(0)|window.istopmost(34)]</visible>
-	</control>
-
-	<!--TV-->
-	<control>
-		<description>title label</description>
-		<type>fadelabel</type>
-		<id>0</id>
-		<posX>1001</posX>
-		<posY>542</posY>
-		<width>250</width>
-		<label>#TV.View.title</label>
-		<font>mediastream12tcb</font>
-		<visible>player.hasmedia+!control.hastext(3337)+control.isvisible(3339)</visible>
-	</control>
-
-	<control>
-		<description>channel label</description>
-		<type>label</type>
-		<id>0</id>
-		<posX>1001</posX>
-		<posY>563</posY>
-		<width>250</width>
-		<label>#TV.View.channel</label>
-		<font>mediastream10tcb</font>
-		<visible>player.hasmedia+!control.hastext(3337)+control.isvisible(3339)</visible>
-	</control>
-
-	<control>
-		<description>start/stop label</description>
-		<type>fadelabel</type>
-		<id>0</id>
-		<posX>1001</posX>
-		<posY>581</posY>
-		<width>250</width>
-		<label>#TV.View.start - #TV.View.stop</label>
-		<font>mediastream10</font>
-		<visible>player.hasmedia+!control.hastext(3337)+control.isvisible(3339)</visible>
+		<visible>player.hasmedia+!control.isvisible(3337)</visible>
 	</control>
 
 	<control>
 		<description>play time label</description>
 		<type>label</type>
-		<id>0</id>
-		<posX>1001</posX>
-		<posY>601</posY>
-		<label>#TV.View.Percentage%</label>
-		<font>mediastream10</font>
-		<visible>player.hasmedia+!control.hastext(3337)+control.isvisible(3339)</visible>
-	</control>
-
-	<!--Video-->
-	<control>
-		<description>title label</description>
-		<type>fadelabel</type>
-		<id>0</id>
-		<posX>1001</posX>
-		<posY>542</posY>
-		<width>250</width>
-		<label>#Play.Current.Title</label>
-		<font>mediastream12tcb</font>
-		<visible>player.hasmedia+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+		<id>1</id>
+		<posX>390</posX>
+		<posY>710</posY>
+		<label>#currentplaytime</label>
+		<align>right</align>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>player.hasmedia+!control.isvisible(3337)</visible>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
 	</control>
 
 	<control>
-		<description>year label</description>
-		<type>label</type>
-		<id>0</id>
-		<posX>1001</posX>
-		<posY>563</posY>
-		<width>250</width>
-		<label>#Play.Current.Year</label>
-		<font>mediastream10tcb</font>
-		<visible>player.hasmedia+!control.isvisible(3337)+!control.isvisible(3339)</visible>
-	</control>
-
-	<control>
-		<description>genre label</description>
-		<type>fadelabel</type>
-		<id>0</id>
-		<posX>1001</posX>
-		<posY>581</posY>
-		<width>250</width>
-		<label>#Play.Current.Genre</label>
-		<font>mediastream10</font>
-		<visible>player.hasmedia+!control.isvisible(3337)+!control.isvisible(3339)</visible>
-	</control>
-
-	<control>
-		<description>play time label</description>
-		<type>label</type>
-		<id>0</id>
-		<posX>1001</posX>
-		<posY>601</posY>
-		<label>#currentplaytime / #duration</label>
-		<font>mediastream10</font>
-		<visible>player.hasmedia+!control.isvisible(3337)+!control.isvisible(3339)</visible>
-	</control>
-
-	<!--Audio-->
-	<control>
-		<description>music logo</description>
+		<description>Pause logo</description>
 		<type>image</type>
-		<id>0</id>
-		<posX>776</posX>
-		<posY>537</posY>
-		<width>114</width>
-		<height>114</height>
-		<keepaspectratio>yes</keepaspectratio>
-		<centered>yes</centered>
-		<texture>#Play.Current.Thumb</texture>
-		<visible>player.hasmedia+control.hastext(3337)</visible>
+		<id>1</id>
+		<posX>226</posX>
+		<posY>565</posY>
+		<width>52</width>
+		<height>52</height>
+		<texture>logo_pause.png</texture>
+		<visible>player.paused+player.hasmedia+!control.isvisible(3337)</visible>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
 	</control>
 
 	<control>
-		<description>artist label</description>
+		<description>FF logo</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>326</posX>
+		<posY>565</posY>
+		<width>52</width>
+		<height>52</height>
+		<texture>logo_fastforward.png</texture>
+		<visible>player.forwarding+player.hasmedia+!control.isvisible(3337)</visible>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
+	</control>
+
+	<control>
+		<description>RW logo</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>326</posX>
+		<posY>565</posY>
+		<width>52</width>
+		<height>52</height>
+		<texture>logo_rewind.png</texture>
+		<visible>player.rewinding+player.hasmedia+!control.isvisible(3337)</visible>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
+	</control>
+
+<!--TV-->
+	<control>
+		<description>scrolling info label</description>
 		<type>fadelabel</type>
-		<id>0</id>
-		<posX>902</posX>
-		<posY>542</posY>
-		<width>345</width>
-		<label>#Play.Current.Artist</label>
-		<font>mediastream12tcb</font>
+		<id>1</id>
+		<width>210</width>
+		<height>37</height>
+		<posX>140</posX>
+		<posY>710</posY>
+		<font>font12</font>
+		<label>#Play.Current.Title\r#Play.Current.Genre\r#Play.Current.Year\r#Play.Current.Director</label>
+		<visible>player.hasmedia+!control.hastext(3337)+control.isvisible(3339)</visible>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
+	</control>
+
+<!--Video-->
+	<control>
+		<description>scrolling info label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<width>210</width>
+		<height>37</height>
+		<posX>140</posX>
+		<posY>710</posY>
+		<font>font12</font>
+		<label>#Play.Current.Title\r#Play.Current.Genre\r#Play.Current.Year\r#Play.Current.Director</label>
+		<visible>player.hasmedia+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
+	</control>
+
+<!--Audio-->
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>109</posX>
+		<posY>536</posY>
+		<width>313</width>
+		<height>197</height>
+		<texture>now_playing_music_bg.png</texture>
 		<visible>player.hasmedia+control.hastext(3337)</visible>
+		<animation effect="slide" start="-425,0" end="0,0" tween="quadratic" easing="in" time="400" delay="300">WindowOpen</animation>
+		<animation effect="fade" time="700" delay="400">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-425,0" tween="quadratic" easing="in" time="400" delay="300">WindowClose</animation>
+		<animation effect="fade" time="700" delay="400">WindowClose</animation>
 	</control>
 
 	<control>
+		<type>fadelabel</type>
 		<description>title label</description>
-		<type>fadelabel</type>
-		<id>0</id>
-		<posX>902</posX>
-		<posY>563</posY>
-		<width>345</width>
+		<id>1</id>
+		<posX>154</posX>
+		<posY>575</posY>
+		<width>210</width>
 		<label>#Play.Current.Title</label>
-		<font>mediastream10tcb</font>
+		<font>font12</font>
 		<visible>player.hasmedia+control.hastext(3337)</visible>
+		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
+		<animation effect="fade" time="400">WindowClose</animation>
 	</control>
 
 	<control>
-		<description>album label</description>
 		<type>fadelabel</type>
-		<id>0</id>
-		<posX>902</posX>
-		<posY>581</posY>
-		<width>345</width>
-		<label>#Play.Current.Album</label>
-		<font>mediastream10c</font>
-		<visible>player.hasmedia+control.hastext(3337)</visible>
-	</control>
-
-	<control>
-		<description>play time label</description>
-		<type>label</type>
-		<id>0</id>
-		<posX>902</posX>
+		<description>artist label</description>
+		<id>1</id>
+		<posX>154</posX>
 		<posY>600</posY>
-		<label>#currentplaytime / #duration</label>
-		<font>mediastream10</font>
+		<width>210</width>
+		<label>#Play.Current.Artist</label>
+		<font>font10</font>
 		<visible>player.hasmedia+control.hastext(3337)</visible>
+		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
+		<animation effect="fade" time="400">WindowClose</animation>
 	</control>
 
 	<control>
-		<description>next label</description>
+		<description>nowplaying text</description>
 		<type>label</type>
-		<id>0</id>
-		<posX>902</posX>
-		<posY>630</posY>
-		<width>345</width>
-		<label>#Play.Next.Title</label>
-		<textcolor>FF909090</textcolor>
-		<font>mediastream10</font>
-		<visible>player.hasmedia+control.hastext(3337)+control.isvisible(3338)</visible>
+		<id>1</id>
+		<posX>154</posX>
+		<posY>617</posY>
+		<width>260</width>
+		<height>50</height>
+		<label>Now Playing #currentplaytime</label>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>player.hasmedia+control.hastext(3337)</visible>
+		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
+		<animation effect="fade" time="400">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>progress bar bg</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>156</posX>
+		<posY>666</posY>
+		<width>217</width>
+		<height>2</height>
+		<texture>now_playing_music_progress_bg.png</texture>
+		<visible>player.hasmedia+control.hastext(3337)</visible>
+		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
+		<animation effect="fade" time="400">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>progress bar</description>
+		<type>progress</type>
+		<id>1</id>
+		<posX>144</posX>
+		<posY>665</posY>
+		<width>244</width>
+		<height>2</height>
+		<texturebg>-</texturebg>
+		<lefttexture>-</lefttexture>
+		<midtexture>now_playing_progress_bar.png</midtexture>
+		<righttexture>-</righttexture>
+		<label>#percentage</label>
+		<visible>player.hasmedia+control.hastext(3337)</visible>
+		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
+		<animation effect="fade" time="400">WindowClose</animation>
+	</control>
+
+	<control>
+		<type>label</type>
+		<description>track duration label start</description>
+		<id>1</id>
+		<posX>154</posX>
+		<posY>676</posY>
+		<width>390</width>
+		<label>#currentplaytime</label>
+		<align>left</align>
+		<font>font10</font>
+		<visible>player.hasmedia+control.hastext(3337)</visible>
+		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
+		<animation effect="fade" time="400">WindowClose</animation>
+	</control>
+
+	<control>
+		<type>label</type>
+		<description>track duration label end</description>
+		<id>1</id>
+		<posX>373</posX>
+		<posY>676</posY>
+		<width>390</width>
+		<label>#duration</label>
+		<align>right</align>
+		<font>font10</font>
+		<visible>player.hasmedia+control.hastext(3337)</visible>
+		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
+		<animation effect="fade" time="400">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>play logo</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>240</posX>
+		<posY>679</posY>
+		<width>48</width>
+		<height>26</height>
+		<texture>now_playing_play.png</texture>
+		<visible>player.playing+player.hasmedia+control.hastext(3337)</visible>
+		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
+		<animation effect="fade" time="400">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Pause logo</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>240</posX>
+		<posY>679</posY>
+		<width>48</width>
+		<height>26</height>
+		<texture>now_playing_pause.png</texture>
+		<visible>player.paused+player.hasmedia+control.hastext(3337)</visible>
+		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
+		<animation effect="fade" time="400">WindowClose</animation>
 	</control>
 
 </controls>

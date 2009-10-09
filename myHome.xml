@@ -219,6 +219,6 @@
 	<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
 </control>
 
-<import>common.overlay.xml</import>
+<import>common.home.overlay.xml</import>
 </controls>
 </window>
