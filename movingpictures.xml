@@ -267,7 +267,7 @@ multiple view modes.
 		<description>Default Cover Art</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1001</posX>
+		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
 		<height>380</height>
@@ -279,7 +279,7 @@ multiple view modes.
 		<description>Cover Art</description>
 		<type>image</type>
 		<id>60</id>
-		<posX>1001</posX>
+		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
 		<height>380</height>
@@ -291,11 +291,11 @@ multiple view modes.
 		<description>Cover Art overlay</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>941</posX>
+		<posX>73</posX>
 		<posY>144</posY>
 		<width>380</width>
 		<height>596</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video_right.png</texture>
+		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 
@@ -419,13 +419,12 @@ multiple view modes.
 	
 		<control>
 		<description>Moviecount</description>
-		<type>fadelabel</type>
+		<type>label</type>
 		<label>Total movies: #MovingPictures.general.filteredmoviecount</label>
 		<id>0</id>
-		<posX>145</posX>
-		<posY>660</posY>
-		<width>400</width>
-		<font>font12</font>
+		<posX>1267</posX>
+		<posY>690</posY>
+		<align>right</align>
 		<textcolor>85cffe</textcolor>
 		<visible>!player.hasmedia+[facadeview.list+Control.IsVisible(50)]</visible>
 	</control>
@@ -519,6 +518,32 @@ multiple view modes.
 		<percentage>#MovingPictures.SelectedMovie.score</percentage>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
+	
+	
+	<control>
+		<description>Cover Art overlay</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>690</posY>
+		<width>63</width>
+		<height>25</height>
+		<texture>Logos/video/#MovingPictures.LocalMedia.videoresolution.png</texture>
+	</control>
+	
+	<control>
+		<description>test</description>
+		<type>fadelabel</type>
+		<label>Logos/video/#MovingPictures.LocalMedia.videoresolution.png</label>
+		<id>0</id>
+		<posX>20</posX>
+		<posY>665</posY>
+		<width>365</width>
+	</control>
+	
+	
+	
+	
 
 
 	<!--            :: DETAILS VIEW ::            -->

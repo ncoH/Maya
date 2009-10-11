@@ -305,7 +305,8 @@
 		<textureHeight>24</textureHeight>
 		<subitems>
 		<subitem>greystar.png</subitem>
-		<subitem>starbad.png</subitem></subitems>
+		<subitem>starbad.png</subitem>
+		</subitems>
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<percentage>#Lastfm.Rating.AlbumTrack1</percentage>
@@ -326,7 +327,8 @@
 		<textureHeight>24</textureHeight>
 		<subitems>
 		<subitem>greystar.png</subitem>
-		<subitem>starbad.png</subitem></subitems>
+		<subitem>starbad.png</subitem>
+		</subitems>
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<percentage>#Lastfm.Rating.AlbumTrack2</percentage>
@@ -347,7 +349,8 @@
 		<textureHeight>24</textureHeight>
 		<subitems>
 		<subitem>starblue.png</subitem>
-		<subitem>starblue.png</subitem></subitems>
+		<subitem>starblue.png</subitem>
+		</subitems>
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<percentage>#Lastfm.Rating.AlbumTrack3</percentage>
@@ -410,7 +413,8 @@
 		<textureHeight>24</textureHeight>
 		<subitems>
 		<subitem>greystar.png</subitem>
-		<subitem>stargood.png</subitem></subitems>
+		<subitem>stargood.png</subitem>
+		</subitems>
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<percentage>#Lastfm.Rating.AlbumTrack3</percentage>
@@ -431,7 +435,8 @@
 		<textureHeight>24</textureHeight>
 		<subitems>
 		<subitem>greystar.png</subitem>
-		<subitem>starbetter.png</subitem></subitems>
+		<subitem>starbetter.png</subitem>
+		</subitems>
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<percentage>#Lastfm.Rating.AlbumTrack1</percentage>
@@ -452,7 +457,8 @@
 		<textureHeight>24</textureHeight>
 		<subitems>
 		<subitem>greystar.png</subitem>
-		<subitem>starbetter.png</subitem></subitems>
+		<subitem>starbetter.png</subitem>
+		</subitems>
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<percentage>#Lastfm.Rating.AlbumTrack2</percentage>
@@ -473,7 +479,8 @@
 		<textureHeight>24</textureHeight>
 		<subitems>
 		<subitem>greystar.png</subitem>
-		<subitem>starbetter.png</subitem></subitems>
+		<subitem>starbetter.png</subitem>
+		</subitems>
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<percentage>#Lastfm.Rating.AlbumTrack3</percentage>
@@ -494,7 +501,8 @@
 		<textureHeight>24</textureHeight>
 		<subitems>
 		<subitem>greystar.png</subitem>
-		<subitem>starbest.png</subitem></subitems>
+		<subitem>starbest.png</subitem>
+		</subitems>
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<percentage>#Lastfm.Rating.AlbumTrack1</percentage>
@@ -515,7 +523,8 @@
 		<textureHeight>24</textureHeight>
 		<subitems>
 		<subitem>greystar.png</subitem>
-		<subitem>starbest.png</subitem></subitems>
+		<subitem>starbest.png</subitem>
+		</subitems>
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<percentage>#Lastfm.Rating.AlbumTrack2</percentage>
@@ -536,7 +545,8 @@
 		<textureHeight>24</textureHeight>
 		<subitems>
 		<subitem>greystar.png</subitem>
-		<subitem>starbest.png</subitem></subitems>
+		<subitem>starbest.png</subitem>
+		</subitems>
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<percentage>#Lastfm.Rating.AlbumTrack3</percentage>
@@ -556,7 +566,8 @@
 		<textureHeight>19</textureHeight>
 		<subitems>
 		<subitem>starblue.png</subitem>
-		<subitem>starwhite.png</subitem></subitems>
+		<subitem>starwhite.png</subitem>
+		</subitems>
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<percentage>#Play.Current.Rating</percentage>

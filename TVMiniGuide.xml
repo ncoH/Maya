@@ -41,7 +41,7 @@
 		<type>listcontrol</type>
 		<id>35</id>
 		<posX>349</posX>
-		<posY>541</posY>
+		<posY>540</posY>
 		<width>669</width>
 		<height>210</height>
 		<textureFocus>tv_miniguide_bar_nochannelstate.png</textureFocus>
@@ -65,7 +65,7 @@
 		<spinHeight>27</spinHeight>
 		<itemWidth>42</itemWidth>
 		<itemHeight>42</itemHeight>
-		<spaceBetweenItems>0</spaceBetweenItems>
+		<spaceBetweenItems>1</spaceBetweenItems>
 		<textureHeight>49</textureHeight>
 		<keepaspectratio>yes</keepaspectratio>
 		<font>font12</font>
@@ -83,8 +83,8 @@
 		<description>list to show channels with channel state logos</description>
 		<type>listcontrol</type>
 		<id>37</id>
-		<posX>349</posX>
-		<posY>541</posY>
+		<posX>348</posX>
+		<posY>540</posY>
 		<width>669</width>
 		<height>210</height>
 		<textureFocus>tv_miniguide_bar.png</textureFocus>
@@ -108,7 +108,7 @@
 		<spinHeight>27</spinHeight>
 		<itemWidth>40</itemWidth>
 		<itemHeight>40</itemHeight>
-		<spaceBetweenItems>0</spaceBetweenItems>
+		<spaceBetweenItems>1</spaceBetweenItems>
 		<textureHeight>49</textureHeight>
 		<keepaspectratio>yes</keepaspectratio>
 		<font>font12</font>

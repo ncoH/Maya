@@ -15,13 +15,10 @@ This file should contain the facade view
 			<id>50</id>
 			<onleft>2</onleft>
 			<onright>2</onright>
-			<posX>131</posX>
+			<posX>1000</posX>
 			<posY>195</posY>
-			<height>420</height>
+			<height>450</height>
 			<width>270</width>
-			<spinPosX>148</spinPosX>
-			<spinPosY>690</spinPosY>
-			<spinAlign>left</spinAlign>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 			<spinCanFocus>no</spinCanFocus>
@@ -35,9 +32,9 @@ This file should contain the facade view
 				<scrollOffset>2</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<posX>0</posX>
+				<posX>150</posX>
 				<posY>355</posY>
-				<width>1666</width>
+				<width>1166</width>
 				<height>768</height>
 				<onup>2</onup>
 				<onleft>2</onleft>
