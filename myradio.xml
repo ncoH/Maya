@@ -194,5 +194,6 @@
 		<visible>facadeview.list|facadeview.album</visible>
 	</control>
 
+<import>common.overlay.xml</import>
 </controls>
 </window>

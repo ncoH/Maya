@@ -260,12 +260,13 @@
 		<posX>555</posX>
 		<posY>620</posY>
 		<width>120</width>
-		<height>40</height>
-		<textureWidth>20</textureWidth>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
 		<textureHeight>19</textureHeight>
 		<subitems>
-		<subitem>greystar.png</subitem>
-		<subitem>starblue.png</subitem></subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
 		<orientation>horizontal</orientation>
 		<percentage>#rating</percentage>
 		<imagesToDraw>5</imagesToDraw>
@@ -298,5 +299,6 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
+<import>common.overlay.xml</import>
 </controls>
 </window>

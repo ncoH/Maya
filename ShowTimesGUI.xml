@@ -438,5 +438,7 @@
 		<visible>Control.IsVisible(24)</visible>	  
 	</control>
 
+
+<import>common.overlay.xml</import>
   </controls>
 </window>

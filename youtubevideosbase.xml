@@ -7,6 +7,8 @@
 	<define>#header.hover:</define>
 <controls>
 	<import>common.window.youtube.xml</import>
+
+
 	
 	<control>
 		<id>500</id>

@@ -19,7 +19,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>Onlinevideos</label>
+		<label>onlinevideos</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>
@@ -33,7 +33,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>Onlinevideos</label>
+		<label>onlinevideos</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons]</visible>
@@ -86,23 +86,24 @@
 		<type>label</type>
 		<description>Current video length</description>
 		<id>5001</id>
-		<posX>85</posX>
-		<posY>510</posY>
+		<posX>80</posX>
+		<posY>540</posY>
 		<label>#OnlineVideos.length</label>
 		<visible>facadeview.list+!string.contains(#header.image,Apple Trailers.png)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="slide" time="150" start="-800,0">WindowOpen</animation>
 		<animation effect="slide" time="250" end="-800,0">WindowClose</animation>
+		<textcolor>6aa5cb</textcolor>
 	</control>
 	<control>
 		<type>textboxscrollup</type>
 		<description>Description</description>
 		<id>0</id>
-		<posX>85</posX>
-		<posY>532</posY>
-		<width>400</width>
-		<height>160</height>
+	<posX>80</posX>
+	<posY>430</posY>
+	<width>400</width>
+	<height>110</height>
 		<seperator>----------------------------------------------------------------------------------------</seperator>
 		<label>#OnlineVideos.desc</label>
 		<visible>facadeview.list+!string.contains(#header.image,Apple Trailers.png)</visible>
