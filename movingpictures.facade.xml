@@ -19,6 +19,7 @@ This file should contain the facade view
 			<posY>183</posY>
 			<height>490</height>
 			<width>299</width>
+			<scrollOffset>1</scrollOffset>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>

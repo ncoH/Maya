@@ -207,7 +207,7 @@ multiple view modes.
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
 				<label>Switch View</label>
-				<ondown>66610</ondown>
+				<ondown>14</ondown>
 				<onleft>50</onleft>
 				<onright>50</onright>
 			</control>
@@ -217,13 +217,15 @@ multiple view modes.
 					<type>button</type>
 					<id>14</id>
 					<label>495</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
 					<height>49</height>
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
 					<onright>50</onright>
-					<onup>2</onup>
-					<ondown>5</ondown>
+					<onup>3</onup>
+					<ondown>66610</ondown>
 				</control>
 
 	

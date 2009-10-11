@@ -120,13 +120,13 @@
 		<type>listcontrol</type>
 		<description>wholeprograms</description>
 		<id>60</id>
-		<posX>1000</posX>
-			<width>270</width>
+		<posX>981</posX>
+			<width>299</width>
 			<posY>183</posY>
-				<height>550</height>
+			<height>550</height>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-			<spinCanFocus>no</spinCanFocus>
+			<scrollOffset>1</scrollOffset>
 			<onleft>50</onleft>
 			<onright>2</onright>
 	</control>
@@ -139,14 +139,14 @@
 	<onleft>2</onleft>
 	<onright>60</onright>
 			<posX>555</posX>
-			<width>270</width>
+			<width>299</width>
 			<posY>183</posY>
 			<height>550</height>
 			<spinAlign>right</spinAlign>
-			<spinPosX>820</spinPosX>			
+			<spinPosX>840</spinPosX>			
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-			<spinCanFocus>no</spinCanFocus>
+			<scrollOffset>1</scrollOffset>
 </control>
   
 
