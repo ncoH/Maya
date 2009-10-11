@@ -191,6 +191,7 @@
 		<suffix>|</suffix>
 		<folderPrefix></folderPrefix>
 		<folderSuffix></folderSuffix>
+		<spinCanFocus>no</spinCanFocus>
 	</control>
 
 	<control>
@@ -354,11 +355,6 @@
 		<thumbHeight>125</thumbHeight>
 		<thumbPosX>0</thumbPosX>
 		<thumbPosY>0</thumbPosY>
-<!--
-	<imageFolder>icon_empty_nofocus.png</imageFolder>
-		<imageFolderFocus>icon_empty_focus.png</imageFolderFocus>
--->
-
 		<font>font11</font>
 		<selectedColor>ffffffff</selectedColor>
 		<textcolor>ffffffff</textcolor>
@@ -378,6 +374,8 @@
 		<enableFocusZoom>no</enableFocusZoom>
 		<textXOff>0</textXOff>
 		<textYOff>0</textYOff>
+		<folderPrefix></folderPrefix>
+		<folderSuffix></folderSuffix>
 	</control>
 
 	<control>
@@ -428,6 +426,8 @@
 		<InfoImagediffuse>ffffffff</InfoImagediffuse>
 		<textXOff>0</textXOff>
 		<textYOff>0</textYOff>
+		<folderPrefix></folderPrefix>
+		<folderSuffix></folderSuffix>
 	</control>
 
 	<control>

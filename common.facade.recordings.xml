@@ -20,7 +20,7 @@
 				<posY>430</posY>
 				<height>300</height>
 				<onleft>2</onleft>
-				<onright>50</onright>
+				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
 				<PinIconWidth>35</PinIconWidth>
 				<PinIconHeight>25</PinIconHeight>

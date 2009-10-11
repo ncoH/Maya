@@ -168,5 +168,6 @@
 			<label>#TV.Scheduled.Description</label>
 		</control>
 
+<import>common.overlay.xml</import>
 </controls>
 </window>

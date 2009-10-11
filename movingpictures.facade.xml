@@ -17,9 +17,9 @@ This file should contain the facade view
 			<onright>2</onright>
 			<posX>131</posX>
 			<posY>195</posY>
-			<height>450</height>
+			<height>420</height>
 			<width>270</width>
-			<spinPosX>140</spinPosX>
+			<spinPosX>148</spinPosX>
 			<spinPosY>690</spinPosY>
 			<spinAlign>left</spinAlign>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
@@ -35,9 +35,9 @@ This file should contain the facade view
 				<scrollOffset>2</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<posX>150</posX>
+				<posX>0</posX>
 				<posY>355</posY>
-				<width>1166</width>
+				<width>1666</width>
 				<height>768</height>
 				<onup>2</onup>
 				<onleft>2</onleft>
@@ -67,7 +67,7 @@ This file should contain the facade view
 				<description>Thumbnail Panel</description>
 				<type>thumbnailpanel</type>
 				<id>50</id>
-				<posX>163</posX>
+				<posX>170</posX>
 				<posY>242</posY>
 				<width>1040</width>
 				<height>500</height>
@@ -103,7 +103,7 @@ This file should contain the facade view
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,550" time="400">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
 				<thumbZoom>no</thumbZoom>
-			<enableFocusZoom>yes</enableFocusZoom>
+				<spinPosX>1190</spinPosX>
 			</control>
 
 	</control>

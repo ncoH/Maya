@@ -26,7 +26,6 @@
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<textXOff>16</textXOff>
-				<spinCanFocus>no</spinCanFocus>
 			</control>
 
 			<control>
@@ -61,7 +60,7 @@
 				<description>Thumbnail Panel</description>
 				<type>thumbnailpanel</type>
 				<id>50</id>
-				<posX>140</posX>
+				<posX>150</posX>
 				<posY>240</posY>
 				<width>1100</width>
 				<height>450</height>
@@ -101,6 +100,12 @@
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>
+				<textureUp>-</textureUp>
+				<textureDown>-</textureDown>
+				<textureUpFocus>-</textureUpFocus>
+				<textureDownFocus>-</textureDownFocus>
 			</control>
 
 			<control>

@@ -191,6 +191,7 @@
 		<suffix>|</suffix>
 		<folderPrefix></folderPrefix>
 		<folderSuffix></folderSuffix>
+		<spinCanFocus>no</spinCanFocus>
 	</control>
 
 	<control>
@@ -315,7 +316,6 @@
 		<IconXOff>1000</IconXOff>
 		<IconYOff>1000</IconYOff>
 		<suffix>|</suffix>
-		<suffix>|</suffix>
 		<upBtnWidth>49</upBtnWidth>
 		<downBtnWidth>49</downBtnWidth>
 		<deleteBtnWidth>49</deleteBtnWidth>
@@ -346,6 +346,7 @@
 		<posY>121</posY>
 		<width>1173</width>
 		<height>588</height>
+		<spinPosX>20</spinPosX>
 		<itemWidth>155</itemWidth>
 		<itemHeight>160</itemHeight>
 		<textureWidth>132</textureWidth>
@@ -354,11 +355,6 @@
 		<thumbHeight>125</thumbHeight>
 		<thumbPosX>0</thumbPosX>
 		<thumbPosY>0</thumbPosY>
-<!--
-	<imageFolder>icon_empty_nofocus.png</imageFolder>
-		<imageFolderFocus>icon_empty_focus.png</imageFolderFocus>
--->
-
 		<font>font11</font>
 		<selectedColor>ffffffff</selectedColor>
 		<textcolor>ffffffff</textcolor>
@@ -378,6 +374,15 @@
 		<enableFocusZoom>no</enableFocusZoom>
 		<textXOff>0</textXOff>
 		<textYOff>0</textYOff>
+		<folderPrefix></folderPrefix>
+		<folderSuffix></folderSuffix>
+		<spinCanFocus>no</spinCanFocus>
+		<spinWidth>46</spinWidth>
+		<spinHeight>33</spinHeight>
+		<spinPosX>1210</spinPosX>
+		<spinPosY>715</spinPosY>
+		<spinAlign>right</spinAlign>
+		<spinColor>ffffffff</spinColor>
 	</control>
 
 	<control>
@@ -428,6 +433,8 @@
 		<InfoImagediffuse>ffffffff</InfoImagediffuse>
 		<textXOff>0</textXOff>
 		<textYOff>0</textYOff>
+		<folderPrefix></folderPrefix>
+		<folderSuffix></folderSuffix>
 	</control>
 
 	<control>

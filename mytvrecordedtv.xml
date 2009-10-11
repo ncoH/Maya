@@ -125,6 +125,8 @@
 					<height>49</height>
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
+					<offsetSortButtonX>240</offsetSortButtonX>
+					<offsetSortButtonY>14</offsetSortButtonY>
 		</control>
 
 		<control>

@@ -422,12 +422,12 @@ multiple view modes.
 		<type>fadelabel</type>
 		<label>Total movies: #MovingPictures.general.filteredmoviecount</label>
 		<id>0</id>
-		<posX>137</posX>
+		<posX>145</posX>
 		<posY>660</posY>
 		<width>400</width>
 		<font>font12</font>
 		<textcolor>85cffe</textcolor>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
+		<visible>!player.hasmedia+[facadeview.list+Control.IsVisible(50)]</visible>
 	</control>
 	
 		<control>
@@ -441,7 +441,7 @@ multiple view modes.
 		<align>center</align>
 		<font>font13</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
 	</control>
 
 

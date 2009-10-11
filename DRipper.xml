@@ -214,14 +214,23 @@
 	<posX>80</posX>
 	<posY>430</posY>
 	<width>400</width>
-	<height>115</height>
+	<height>110</height>
 	<visible>true</visible>
 	<onleft>2</onleft>
 	<onright>60</onright>
 	<text>desc</text>
 	<spinPosX>75</spinPosX>
 	<spinPosY>650</spinPosY>
-</control>  
+</control>
+
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>340</posY>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>Control.HasFocus(50) | Control.HasFocus(60)</visible>
+	</control>
 
 <import>common.overlay.xml</import>
 
