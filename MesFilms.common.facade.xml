@@ -14,16 +14,12 @@
          <id>1026</id>
 		 <onleft>2</onleft>
 		 <onright>2</onright>
-			<posX>131</posX>
-			<posY>195</posY>
-			<height>420</height>
-			<width>270</width>
-			<spinPosX>148</spinPosX>
-			<spinPosY>690</spinPosY>
-			<spinAlign>left</spinAlign>
+			<posX>981</posX>
+			<posY>183</posY>
+			<height>490</height>
+			<width>299</width>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-			<spinCanFocus>no</spinCanFocus>
        </control>
         <control>
           <description>Thumbnail Panel</description>

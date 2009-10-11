@@ -390,22 +390,23 @@
 		<description>COVER Listview</description>
 		<type>image</type>
 		<id>1021</id>
-		<posX>1001</posX>
+		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
 		<height>380</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#picture</texture>
 		<visible>control.hasfocus(1026)+facadeview.list</visible>
 	</control>
+	
 	<control>
 		<description>Cover Art overlay</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>941</posX>
+		<posX>73</posX>
 		<posY>144</posY>
 		<width>380</width>
 		<height>596</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video_right.png</texture>
+		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
 		<visible>control.hasfocus(1026)+facadeview.list</visible>
 	</control>
 	<control>
@@ -519,7 +520,7 @@
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
-		<posY>340</posY>
+		<posY>358</posY>
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(1026)</visible>
 	</control>

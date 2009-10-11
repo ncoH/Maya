@@ -155,7 +155,7 @@
 		<description>default listcontrol</description>
 		<type>listcontrol</type>
 		<id>10</id>
-		<posX>530</posX>
+		<posX>528</posX>
 		<posY>150</posY>
 		<width>751</width>
 		<height>600</height>
@@ -167,7 +167,7 @@
 		<spinColor>ffffffff</spinColor>
 		<textureFocus>listcontrol_item_selected.png</textureFocus>
 		<textureNoFocus>listcontrol_item.png</textureNoFocus>
-		<textureHeight>52</textureHeight>
+		<textureHeight>53</textureHeight>
 		<image>folder_focus.png</image>
 		<font>font12</font>
 		<shadedColor>20ffffff</shadedColor>
@@ -179,7 +179,7 @@
 		<colordiffuse>ffffffff</colordiffuse>
 		<remoteColor>ffFFA075</remoteColor>
 		<downloadColor>ff80ff80</downloadColor>
-		<spaceBetweenItems>-3</spaceBetweenItems>
+		<spaceBetweenItems>-1</spaceBetweenItems>
 		<textXOff>8</textXOff>
 		<textYOff>10</textYOff>
 		<textXOff2>0</textXOff2>

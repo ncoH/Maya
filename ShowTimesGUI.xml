@@ -360,7 +360,7 @@
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
-		<posY>340</posY>
+		<posY>358</posY>
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
 	</control>

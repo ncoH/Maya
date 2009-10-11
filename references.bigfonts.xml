@@ -155,7 +155,7 @@
 		<description>default listcontrol</description>
 		<type>listcontrol</type>
 		<id>10</id>
-		<posX>530</posX>
+		<posX>528</posX>
 		<posY>150</posY>
 		<width>720</width>
 		<height>600</height>

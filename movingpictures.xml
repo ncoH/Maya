@@ -211,6 +211,20 @@ multiple view modes.
 				<onleft>50</onleft>
 				<onright>50</onright>
 			</control>
+			
+				<control>
+					<description>Sort</description>
+					<type>button</type>
+					<id>14</id>
+					<label>495</label>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<onright>50</onright>
+					<onup>2</onup>
+					<ondown>5</ondown>
+				</control>
 
 	
 <!--
@@ -394,7 +408,7 @@ multiple view modes.
 	<control>
 		<description>runtime</description>
 		<type>label</type>
-		<label>#MovingPictures.SelectedMovie.runtime min</label>
+		<label>#MovingPictures.SelectedMovie.runtime.localized.long</label>
 		<id>0</id>
 		<posX>555</posX>
 		<posY>230</posY>
@@ -425,7 +439,7 @@ multiple view modes.
 		<posX>1267</posX>
 		<posY>690</posY>
 		<align>right</align>
-		<textcolor>85cffe</textcolor>
+		<textcolor>6aa5cb</textcolor>
 		<visible>!player.hasmedia+[facadeview.list+Control.IsVisible(50)]</visible>
 	</control>
 	
@@ -521,10 +535,21 @@ multiple view modes.
 	
 	
 	<control>
-		<description>Cover Art overlay</description>
+		<description>Videoformat icon</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>555</posX>
+		<posX>550</posX>
+		<posY>690</posY>
+		<width>63</width>
+		<height>25</height>
+		<texture>Logos/video/#MovingPictures.LocalMedia.videoformat.png</texture>
+	</control>
+	
+	<control>
+		<description>Videoresolution icon</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>630</posX>
 		<posY>690</posY>
 		<width>63</width>
 		<height>25</height>
@@ -532,15 +557,26 @@ multiple view modes.
 	</control>
 	
 	<control>
-		<description>test</description>
-		<type>fadelabel</type>
-		<label>Logos/video/#MovingPictures.LocalMedia.videoresolution.png</label>
-		<id>0</id>
-		<posX>20</posX>
-		<posY>665</posY>
-		<width>365</width>
+		<description>Audioformat icon</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>710</posX>
+		<posY>690</posY>
+		<width>63</width>
+		<height>25</height>
+		<texture>Logos/audio/#MovingPictures.LocalMedia.audiocodec.png</texture>
 	</control>
 	
+	<control>
+		<description>Audiochannels icon</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>790</posX>
+		<posY>690</posY>
+		<width>63</width>
+		<height>25</height>
+		<texture>Logos/audio/#MovingPictures.LocalMedia.AudioChannelsFriendly.png</texture>
+	</control>
 	
 	
 	
@@ -554,7 +590,7 @@ multiple view modes.
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
-		<posY>340</posY>
+		<posY>358</posY>
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
 	</control>
