@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
-	<id>29050</id><defaultcontrol>50</defaultcontrol>
-	<allowoverlay>no</allowoverlay><!--
-	<define>#header.label:134</define>-->
-	<define>#header.image:-</define>
-	<define>#header.hover:</define>
+	<id>29050</id>
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
 <controls>
+
 	<import>common.window.youtube.xml</import>
-
-
 	
 	<control>
 		<id>500</id>
@@ -35,11 +32,10 @@
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
-			
+	
 	<control>
 		<type>actiongroup</type>
-		<description>action menu</description>
-		<defaultcontrol>2</defaultcontrol>
+		<description>action menu</description><defaultcontrol>2</defaultcontrol>
 		<onexit>50</onexit>
 		<buttonX>0</buttonX>
 		<buttonY>0</buttonY>
@@ -48,161 +44,163 @@
 		<width>1366</width>
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
-				<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
 		<animation effect="fade" time="200" reversible="false">Hidden</animation>
 		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
 		
 		<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>512</posX>
-		<posY>64</posY>
-		<width>342</width>
-		<height>640</height>
-		<texture>menu_bg.png</texture>
-		<visible>!Control.HasFocus(50)</visible>
+			<id>1</id>
+			<type>image</type>
+			<posX>512</posX>
+			<posY>64</posY>
+			<width>342</width>
+			<height>640</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
 		</control>
 		
-						<control>
-				<description>Heading text label</description>
-				<type>label</type>
-				<id>1</id>
-				<posX>567</posX>
-				<posY>110</posY>
-				<label>924</label>
-				<font>Segoe Light18</font>
-				<textcolor>85cffe</textcolor>
-				</control>
+		<control>
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>567</posX>
+			<posY>110</posY>
+			<label>924</label>
+			<font>Segoe Light18</font>
+			<textcolor>85cffe</textcolor>
+		</control>
 		
+		<control>
+			<description>button group</description>
+			<type>group</type>
+			<posX>543</posX>
+			<posY>175</posY>
+			<layout>StackLayout(1)</layout>
+			
 			<control>
-				<description>button group</description>
-				<type>group</type>
-				<posX>543</posX>
-				<posY>175</posY>
-				<layout>StackLayout(1)</layout>
-				
-				<control>
-					<description>Search Button</description>
-					<type>button</type>
-					<id>5</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
-					<label>Search</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>106</onup>
-					<ondown>6</ondown>
-				</control>
-				
-				<control>
-					<description>Search History</description>
-					<type>button</type>
-					<id>6</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
-					<label>Search History</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>5</onup>
-					<ondown>3</ondown>
-				</control>
-				
-				<control>
-					<description>Swich view</description>
-					<type>button</type>
-					<id>3</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
-					<label></label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>6</onup>
-					<ondown>2</ondown>
-				</control>
-				
-				<control>
-					<description>Home</description>
-					<type>button</type>
-					<id>2</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
-					<label>Views</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>3</onup>
-					<ondown>7</ondown>
-				</control>
-				
-				<control>
-					<description>Playlist</description>
-					<type>button</type>
-					<id>7</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
-					<label>Playlist</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>2</onup>
-					<ondown>8</ondown>
-				</control>
-				
-				<control>
-					<description>Now playing</description>
-					<type>button</type>
-					<id>8</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
-					<label>Now playing</label>
-					<onleft>50</onleft>
-					<onright>50</onright>
-					<onup>7</onup>
-					<ondown>106</ondown>
-				</control>
-				
-				<control>
-					<description>Lastfmbutton</description>
-					<type>button</type>
-					<id>106</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
-					<label>Last.FM</label>
-					<hyperlink>7890</hyperlink>
-					<onright>50</onright>
-					<onup>8</onup>
-					<onleft>50</onleft>
-					<ondown>5</ondown>
-				</control>
+				<description>Search Button</description>
+				<type>button</type>
+				<id>5</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
+				<label>Search</label>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>106</onup>
+				<ondown>6</ondown>
 			</control>
+			
+			<control>
+				<description>Search History</description>
+				<type>button</type>
+				<id>6</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
+				<label>Search History</label>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>5</onup>
+				<ondown>3</ondown>
+			</control>
+			
+			<control>
+				<description>Swich view</description>
+				<type>button</type>
+				<id>3</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
+				<label></label>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>6</onup>
+				<ondown>2</ondown>
+			</control>
+			
+			<control>
+				<description>Home</description>
+				<type>button</type>
+				<id>2</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
+				<label>Views</label>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>3</onup>
+				<ondown>7</ondown>
+			</control>
+			
+			<control>
+				<description>Playlist</description>
+				<type>button</type>
+				<id>7</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
+				<label>Playlist</label>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>2</onup>
+				<ondown>8</ondown>
+			</control>
+			
+			<control>
+				<description>Now playing</description>
+				<type>button</type>
+				<id>8</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
+				<label>Now playing</label>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>7</onup>
+				<ondown>106</ondown>
+			</control>
+			
+			<control>
+				<description>Lastfmbutton</description>
+				<type>button</type>
+				<id>106</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
+				<label>Last.FM</label>
+				<hyperlink>7890</hyperlink>
+				<onright>50</onright>
+				<onup>8</onup>
+				<onleft>50</onleft>
+				<ondown>5</ondown>
+			</control>
+			
 		</control>
+		
+	</control>
 	
 	<import>common.facade.music.xml</import>
 	
@@ -214,7 +212,8 @@
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>[facadeview.list|facadeview.album]+Control.HasFocus(50)</visible>
 	</control>
-
+	
 	<import>common.overlay.xml</import>
+	
 </controls>
 </window>
