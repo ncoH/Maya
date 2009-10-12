@@ -5,6 +5,7 @@
 	<control>
 		<description>group element</description>
 		<type>group</type>
+		<visible>!Control.HasFocus(50)</visible>
 		<control>
 			<animation effect="fade" time="200">WindowOpen</animation>
 			<animation effect="zoom" start="50,50" end="100,100" center="683,384" time="200">WindowOpen</animation>
@@ -30,7 +31,6 @@
 				<IconYOff>8</IconYOff>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<spinCanFocus>no</spinCanFocus>
 			</control>
 
 			<control>
@@ -110,15 +110,6 @@
 				<showInfoImage>no</showInfoImage>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="140,140" center="0,415" time="400">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
-			</control>
-
-			<control>
-				<description>playlist listcontrol</description>
-				<type>playlistcontrol</type>
-				<id>50</id>
-				<onleft>2</onleft>
-				<onright>2</onright>
-				<scrollOffset>2</scrollOffset>
 			</control>
 
 		</control>

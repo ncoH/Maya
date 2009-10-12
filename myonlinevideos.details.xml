@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>    
+	<control>
+		<id>23</id>
+		<type>image</type>
+		<posX>135</posX>
+		<posY>183</posY>
+		<width>266</width>
+		<height>380</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">#OnlineVideos.movieposter</texture>
+		<visible>no</visible>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>24</id>
+		<posX>73</posX>
+		<posY>144</posY>
+		<width>380</width>
+		<height>596</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
+		<visible>no</visible>
+	</control>
+	<control>
+		<description>listcontrol</description>
+		<type>listcontrol</type>
+		<id>51</id>
+		<onleft>51</onleft>
+		<onright>51</onright>
+			<posX>981</posX>
+			<posY>183</posY>
+			<height>490</height>
+			<width>299</width>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+		<visible>no</visible>
+	</control>
+
+    <control>
+      <type>textbox</type>
+      <description>cast value</description>
+      <id>53</id>
+		<posX>555</posX>
+		<posY>565</posY>
+		<font>font11</font>
+		<textcolor>85cffe</textcolor>
+      <label>#OnlineVideos.cast</label>
+      <visible>no</visible>
+    </control>
+
+    <control>
+      <type>label</type>
+      <description>year value</description>
+      <id>55</id>
+		<posX>555</posX>
+		<posY>195</posY>
+		<width>400</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+      <label>#OnlineVideos.releasedate</label>
+      <visible>no</visible>
+    </control>
+
+    <control>
+      <type>fadelabel</type>
+      <description>genre value</description>
+      <id>57</id>
+		<posX>555</posX>
+		<posY>230</posY>
+		<width>400</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+      <label>#OnlineVideos.genre</label>
+      <visible>no</visible>
+    </control>    
+
+    <control>
+      <type>textboxscrollup</type>
+      <description>Plot value</description>
+      <id>59</id>
+		<posX>555</posX>
+		<posY>330</posY>
+		<width>400</width>
+		<height>210</height>
+      <visible>no</visible>
+	  <textcolor>ffFFFFFF</textcolor>
+		<seperator>-----------------------------------------------------------------------------------</seperator>
+      <label>#OnlineVideos.trailerdesc</label>
+    </control>    
+  </controls>
+</window>

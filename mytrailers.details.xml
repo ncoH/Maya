@@ -5,12 +5,10 @@
 	<control>
 		<type>listcontrol</type>
 		<description>videolist</description>
-			<posX>131</posX>
-			<posY>195</posY>
-			<height>450</height>
-			<width>270</width>
-			<spinPosX>140</spinPosX>
-			<spinPosY>690</spinPosY>
+			<posX>981</posX>
+			<posY>183</posY>
+			<height>490</height>
+			<width>299</width>
 			<spinAlign>left</spinAlign>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
@@ -134,7 +132,7 @@
 		<description>Default Cover Art</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1001</posX>
+		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
 		<height>380</height>
@@ -146,7 +144,7 @@
 		<description>Cover Art</description>
 		<type>image</type>
 		<id>21</id>
-		<posX>1001</posX>
+		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
 		<height>380</height>
@@ -158,11 +156,11 @@
 		<description>Cover Art overlay</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>941</posX>
+		<posX>73</posX>
 		<posY>144</posY>
 		<width>380</width>
 		<height>596</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video_right.png</texture>
+		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
 		<visible>!Control.IsVisible(50)+!string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
 	</control>
 

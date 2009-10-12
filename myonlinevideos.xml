@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>4755</id><defaultcontrol>50</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-	<define>#header.Extension.label:#header.label</define>
-	<define>#header.label:Online Videos</define>
-	<define>#header.hover:hover_onlinevideos.png</define>
-	<define>#header.BG.colordiffuse:ffffffff</define>
-	<define>#header.BG.overlay:mainoverlay.png</define>
-<controls>
-<!-- *** IMPORTS *** -->
+  <id>4755</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label</define>
+  <define>#header.image</define>
+  <define>#header.Extension.label:#header.label</define>
+  <controls>
+  
+    
 	<import>common.window.video.xml</import>
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -39,7 +39,10 @@
 		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons]</visible>
 		<align>center</align>
 	</control>
-	<!-- *** CLIP TITLE & DESCRIPTION *** -->
+    
+    <import>myonlinevideos.details.xml</import>
+    <import>myonlinevideos.facade.xml</import>        
+
 	                <!--
 	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	                ::::::::::::::::::::::::::::::::::           LIST VIEW     ::::::::::::::::::
@@ -53,10 +56,11 @@
 		<width>375</width>
 		<height>208</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
-		<visible>!string.contains(#header.image,Apple Trailers.png)</visible>
+		<visible>facadeview.list+!string.contains(#header.image,Apple Trailers.png)</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
+	
 	<control>
 		<type>image</type>
 		<id>1</id>
@@ -64,11 +68,12 @@
 		<posY>144</posY>
 		<width>508</width>
 		<height>624</height>
-		<visible>Control.HasFocus(50)+Control.HasThumb(500)+!string.contains(#header.image,Apple Trailers.png)</visible>
+		<visible>facadeview.list+!string.contains(#header.image,Apple Trailers.png)</visible>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_recordings.png</texture>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
+	
 	<control>
 		<description>Category Logo</description>
 		<type>image</type>
@@ -136,14 +141,14 @@
 	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	                -->
 	<control>
-		<id>1</id>
+		<id>501</id>
 		<type>image</type>
 		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
 		<height>380</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
-		<visible>facadeview.list+string.contains(#header.image,Apple Trailers.png)</visible>
+		<visible>string.contains(#header.image,Apple Trailers.png)</visible>
 	</control>
 	<control>
 		<type>image</type>
@@ -153,7 +158,7 @@
 		<width>380</width>
 		<height>596</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
-		<visible>facadeview.list+string.contains(#header.image,Apple Trailers.png)</visible>
+		<visible>string.contains(#header.image,Apple Trailers.png)</visible>
 	</control>
 	<control>
 		<description>Category Logo</description>
@@ -183,10 +188,13 @@
 		<animation effect="slide" time="150" start="-800,0">WindowOpen</animation>
 		<animation effect="slide" time="250" end="-800,0">WindowClose</animation>
 	</control>
-	<!-- *** HIDDEN MENU *** -->
-	<control>
+
+    
+    <!-- *** HIDDEN MENU *** -->
+<control>
 		<type>actiongroup</type>
-		<description>action menu</description><defaultcontrol>2</defaultcontrol>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
 		<onexit>50</onexit>
 		<buttonX>0</buttonX>
 		<buttonY>0</buttonY>
@@ -409,22 +417,6 @@
 			</control>
 		</control>
 	</control>
-	<control>
-		<description>listcontrol</description>
-		<type>listcontrol</type>
-		<id>51</id>
-		<onleft>51</onleft>
-		<onright>51</onright>
-		<scrollOffset>1</scrollOffset>
-		<posX>555</posX>
-		<posY>183</posY>
-		<width>720</width>
-		<height>450</height>
-		<folderPrefix></folderPrefix>
-		<folderSuffix></folderSuffix>
-		<spinCanFocus>no</spinCanFocus>
-	</control>
-	<import>myonlinevideos.facade.xml</import>
-	<import>common.overlay.xml</import>
-</controls>
+<import>common.overlay.xml</import>
+  </controls>
 </window>
