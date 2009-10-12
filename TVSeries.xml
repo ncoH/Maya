@@ -56,6 +56,25 @@
       <label>#currentmodule</label>
       <textcolor>6aa5cb</textcolor>
 	  <font>Segoe Light40</font>
+	  <visible>facadeview.list+Control.IsVisible(50)</visible>
+    </control>
+	
+	<control>
+      <type>label</type>
+      <description>Subtitle</description>
+      <animation effect="fade" time="100">WindowOpen</animation>
+	  <animation effect="fade" time="100">WindowClose</animation>
+	  <type>label</type>
+	  <id>1</id>
+	  <posX>433</posX>
+	  <posY>30</posY>
+      <width>500</width>
+	  <height>100</height>
+      <label>#currentmodule</label>
+      <textcolor>6aa5cb</textcolor>
+	  <font>Segoe Light40</font>
+	  <visible>[facadeview.filmstrip|facadeview.largeicons]+Control.IsVisible(50)</visible>
+	  <align>center</align>
     </control>
 	
 	<control>
@@ -287,12 +306,13 @@
       <type>fadelabel</type>
       <description>Title (Filmstrip)</description>
       <id>640</id>
-      <posX>555</posX>
-	  <posY>110</posY>
+      <posX>333</posX>
+	  <posY>135</posY>
 	  <width>700</width>
 	  <font>Segoe Light20</font>
       <label>#TVSeries.Title</label>
       <visible>[!facadeview.list+Control.IsVisible(1242)]|[!facadeview.list+Control.IsVisible(1238)]</visible>
+	  <align>center</align>
     </control>
 	
     <!--<control>
@@ -360,14 +380,14 @@
 	
 	
     <!-- ************************** VIEW SELECTION ***********************************-->
-    <control>
+    <!--<control>
       <type>label</type>
       <description>cur_view</description>
       <id>77</id>
       <posX>17</posX>
       <posY>17</posY>
       <label>#TVSeries.SimpleCurrentView</label>
-    </control>
+    </control>-->
 	
     <!-- *********************** SERIES INFO LABELS  (WIDEBANNERS LAYOUT)************************** -->    
     <!--<control>      
