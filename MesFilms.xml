@@ -3,7 +3,7 @@
 	<id>7986</id>
 	<defaultcontrol>1026</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<define>#currentmodule:Movies</define>
+	<define>#currentmodule:movies</define>
 	<define>#itemcount:-</define>
 <controls>
 	<control>
@@ -92,7 +92,7 @@
 		<label>#selecteditem</label>
 		<font>Segoe Light24</font>
 		<align>center</align>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(1026)</visible>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(1026)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="zoom" start="50,50" end="100,100" center="683,384" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
@@ -391,7 +391,7 @@
 		<type>image</type>
 		<id>1021</id>
 		<posX>135</posX>
-		<posY>183</posY>
+		<posY>183</posY>>
 		<width>266</width>
 		<height>380</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#picture</texture>
