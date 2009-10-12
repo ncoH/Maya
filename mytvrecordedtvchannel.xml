@@ -4,7 +4,6 @@
 <defaultcontrol>3</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <controls>
-	<import>common.time.xml</import>
 	<control>
 		<type>image</type>
 		<description>BG</description>

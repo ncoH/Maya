@@ -2,21 +2,13 @@
 <id>5900</id>
 <defaultcontrol>50</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
-<define>#header.label:5900</define>
 <controls>
+
 	<import>common.window.default.xml</import>
-	<control>	<!-- not used -->
-		<type>image</type>
-		<id>1</id>
-		<posX>125</posX>
-		<posY>350</posY>
-		<width>261</width>
-		<height>385</height>
-		<texture>#MyTrailers.List.Thumb</texture>
-	</control>
-<import>common.facade.video.xml</import>
+	<import>common.facade.video.xml</import>
 	<import>mytrailers.index.xml</import>
 	<import>mytrailers.details.xml</import>
 	<import>common.overlay.xml</import>
+	
 </controls>
 </window>

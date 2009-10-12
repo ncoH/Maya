@@ -8,17 +8,6 @@
 	<control>
 		<type>image</type>
 		<id>0</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>black.bmp</texture>
-		<colordiffuse>60ffffff</colordiffuse>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-
-	<control>
-		<type>image</type>
-		<id>0</id>
 		<posX>206</posX>
 		<posY>80</posY>
 		<width>970</width>
@@ -41,28 +30,6 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
-	
-<!--
-<control>
-		<description>Exit button</description>
-		<type>button</type>
-		<id>2</id>
-		<posX>1063</posX>
-		<posY>97</posY>
-		<width>68</width>
-		<height>58</height>
-		<textureFocus>dialogue_shutdown_focus.png</textureFocus>
-		<textureNoFocus>dialogue_shutdown_nofocus.png</textureNoFocus>
-		<label>-</label>
-		<onleft>3</onleft>
-		<onright>3</onright>
-		<onup>3</onup>
-		<ondown>3</ondown>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-
-	-->
 	<control>
 		<description>textarea</description>
 		<type>textbox</type>

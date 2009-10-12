@@ -11,7 +11,6 @@
 
 <controls>
 	<import>common.window.xml</import>
-	<import>common.time.xml</import>
 	<control>
 		<description>button group</description>
 		<type>group</type>

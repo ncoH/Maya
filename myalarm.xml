@@ -7,13 +7,16 @@
 <define>#header.image:alarm_logo.png</define>
 <define>#header.hover:-</define>
 <controls>
+
 	<import>common.window.xml</import>
+	
 	<control>
 		<type>group</type>
 		<description>group element</description>
 		<layout>StackLayout</layout>
 		<posX>71</posX>
 		<posY>121</posY>
+		
 		<control>
 			<description>New button</description>
 			<type>button</type>

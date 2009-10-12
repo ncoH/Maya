@@ -3,15 +3,13 @@
 <id>800</id>
 <defaultcontrol>2</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
-<define>#header.label:14001</define>
-<define>#header.image:-</define>
-<define>#header.hover:-</define>
 <controls>
 	<import>common.window.xml</import>
-	<import>common.time.xml</import>
+	
 	<control>
 		<type>actiongroup</type>
-		<description>action menu</description><defaultcontrol>2</defaultcontrol>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
 		<onexit>50</onexit>
 		<buttonX>0</buttonX>
 		<buttonY>0</buttonY>
@@ -22,6 +20,7 @@
 		<width>320</width>
 		<height>720</height>
 		<dimColor>00ffffff</dimColor>
+		
 		<control>
 			<type>image</type>
 			<posX>26</posX>
@@ -44,6 +43,7 @@
 			<posY>97</posY>
 			<layout>StackLayout</layout>
 			<visible>!Control.HasFocus(50)</visible>
+			
 			<control>
 				<description>View-As</description>
 				<type>button</type>
@@ -73,5 +73,6 @@
 	</control>
 
 	<import>common.facade.music.xml</import>
+	
 </controls>
 </window>

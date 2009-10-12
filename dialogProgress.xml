@@ -4,7 +4,9 @@
 <defaultcontrol>10</defaultcontrol>
 <allowoverlay>no</allowoverlay>
 <controls>
+
 	<import>common.dialog.xml</import>
+	
 	<control>
 		<type>image</type>
 		<id>100</id>

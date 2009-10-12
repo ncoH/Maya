@@ -7,9 +7,7 @@
 <define>#header.image:videos_logo.png</define>
 <define>#header.hover:-</define>
 <controls>
-	<import>common.window1.xml</import>
-	<import>common.picback.video.xml</import>
-	<import>common.time.xml</import>
+	<import>common.window.xml</import>
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description><defaultcontrol>2</defaultcontrol>

@@ -3,7 +3,6 @@
 <defaultcontrol>110</defaultcontrol>
 <allowoverlay>no</allowoverlay>
 <controls>
-	<import>common.time.xml</import>
 	<control>
 		<description>BackGround</description>
 		<type>image</type>

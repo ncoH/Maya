@@ -4,7 +4,9 @@
 <defaultcontrol>14</defaultcontrol>
 <allowoverlay>no</allowoverlay>
 <controls>
+
 	<import>common.dialog.xml</import><!-- Override the definition in common.dialog.xml, as we need more space for the Always and Never buttons -->
+	
 	<control>
 		<type>image</type>
 		<id>0</id>
@@ -117,28 +119,5 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
-	
-<!--
-<control>
-		<description>Cancel button</description>
-		<type>button</type>
-		<id>14</id>
-		<posX>746</posX>
-		<posY>412</posY>
-		<width>142</width>
-		<height>37</height>
-		<textYOff>2</textYOff>
-		<textureFocus>small_button_focus.png</textureFocus>
-		<textureNoFocus>small_button_nofocus.png</textureNoFocus>
-		<label>510</label>
-		<onleft>10</onleft>
-		<onright>11</onright>
-		<onup>14</onup>
-		<ondown>14</ondown>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-
-	-->
 </controls>
 </window>
