@@ -2,7 +2,7 @@
 <window>
   <id>9811</id>
   <defaultcontrol>50</defaultcontrol>
-  <define>#currentmodule:Series</define>
+  <define>#currentmodule:series</define>
   <allowoverlay>yes</allowoverlay>
   <controls>    
 	
@@ -61,23 +61,10 @@
 	<control>
       <description>Media Count Label</description>
       <type>label</type>
-      <label>Total Series:</label>
+      <label>Total Series: #TVSeries.SeriesCount</label>
       <id>0</id>
-      <posX>138</posX>
-      <posY>658</posY>
-      <font>Segoe Light12</font>
-      <textcolor>6aa5cb</textcolor>
-      <visible>facadeview.list+Control.IsVisible(1237)</visible>
-    </control>
-	
-    <control>
-      <description>Media Count Label</description>
-      <type>label</type>
-      <label>#TVSeries.SeriesCount</label>
-      <id>0</id>
-      <posX>281</posX>
-      <posY>658</posY>
-      <font>Segoe Light12</font>
+      <posX>1267</posX>
+	  <posY>690</posY>
       <align>right</align>
       <textcolor>6aa5cb</textcolor>
       <visible>facadeview.list+Control.IsVisible(1237)</visible>
@@ -86,23 +73,10 @@
 	<control>
       <description>Media Count Label</description>
       <type>label</type>
-      <label>Total Episodes:</label>
+      <label>Total Episodes: #TVSeries.FilteredEpisodeCount</label>
       <id>0</id>
-      <posX>138</posX>
-      <posY>658</posY>
-      <font>Segoe Light12</font>
-      <textcolor>6aa5cb</textcolor>
-      <visible>facadeview.list+Control.IsVisible(1239)</visible>
-    </control>
-	
-	<control>
-      <description>Media Count Label</description>
-      <type>label</type>
-      <label>#TVSeries.FilteredEpisodeCount</label>
-      <id>0</id>
-      <posX>304</posX>
-      <posY>658</posY>
-      <font>Segoe Light12</font>
+      <posX>1267</posX>
+	  <posY>690</posY>
       <align>right</align>
       <textcolor>6aa5cb</textcolor>
       <visible>facadeview.list+Control.IsVisible(1239)</visible>
@@ -111,12 +85,14 @@
 	<control>
       <description>Media Count Label</description>
       <type>label</type>
-      <label>#TVSeries.SeriesCount Objects</label>
+      <label>Total Series: #TVSeries.SeriesCount</label>
       <id>0</id>
-      <posX>605</posX>
-      <posY>170</posY>
-      <font>Segoe Light12</font>
-      <textcolor>6aa5cb</textcolor>
+      <posX>0</posX>
+	  <posY>178</posY>
+	  <width>1366</width>
+	  <align>center</align>
+	  <font>font13</font>
+	  <textcolor>6aa5cb</textcolor>
       <visible>[facadeview.largeicons|facadeview.filmstrip]</visible>
     </control>
     
@@ -126,7 +102,7 @@
       <type>image</type>
       <description>Season image ( season image background )</description>
       <id>46</id>
-      <posX>1001</posX>
+      <posX>135</posX>
 	  <posY>183</posY>
 	  <width>266</width>
 	  <height>380</height>
@@ -138,11 +114,11 @@
       <description>Season image ( season image background ) Overlay</description>
       <type>image</type>
       <id>0</id>
-      <posX>941</posX>
-	  <posY>144</posY>
+      <posX>73</posX>
+      <posY>144</posY>
 	  <width>380</width>
 	  <height>596</height>
-      <texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video_right.png</texture>
+      <texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
       <visible>[Control.IsVisible(1238)]+facadeview.list</visible>
     </control>
 	
@@ -153,7 +129,7 @@
       <type>image</type>
       <description>series poster ( series poster background )</description>
       <id>46</id>
-      <posX>1001</posX>
+      <posX>135</posX>
 	  <posY>183</posY>
 	  <width>266</width>
 	  <height>380</height>
@@ -165,11 +141,11 @@
       <type>image</type>
       <description>series poster ( series poster background ) Overlay</description>
       <id>0</id>
-      <posX>941</posX>
-	  <posY>144</posY>
+      <posX>73</posX>
+      <posY>144</posY>
 	  <width>380</width>
 	  <height>596</height>
-      <texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video_right.png</texture>
+      <texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
       <visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)</visible>
     </control>
 	
@@ -204,10 +180,10 @@
       <description>Big Episode Thumb</description>
       <type>image</type>
       <id>67</id>
-      <posX>949</posX>
-      <posY>183</posY>>
-      <height>206</height>
-      <width>365</width>
+      <posX>76</posX>
+      <posY>179</posY>
+      <width>375</width>
+	  <height>208</height>
       <texture flipY="true" diffuse="Thumb_Mask.png">#TVSeries.EpisodeImage</texture>
       <visible>Control.IsVisible(1239)+facadeview.list</visible>
     </control>
@@ -216,11 +192,11 @@
       <description>Big Episode Thumb overlay</description>
       <type>image</type>
       <id>0</id>
-	  <posX>869</posX>
-	  <posY>146</posY>
-	  <width>497</width>
-	  <height>622</height>
-	  <texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_episodes.png</texture>
+	  <posX>0</posX>
+	  <posY>144</posY>
+	  <width>508</width>
+	  <height>624</height>
+	  <texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_recordings.png</texture>
       <visible>Control.IsVisible(1239)+facadeview.list</visible>
     </control>
 	
@@ -1314,22 +1290,22 @@
           <description>Text List</description>
           <type>listcontrol</type>
           <id>50</id>
-          <posX>131</posX>
-		  <posY>195</posY>
+          <posX>981</posX>
+		  <posY>183</posY>
 		  <onleft>2</onleft>
           <onright>2</onright>
-		  <scrollOffset>2</scrollOffset>
+		  <scrollOffset>1</scrollOffset>
           <spinWidth>18</spinWidth>
           <spinHeight>18</spinHeight>
-          <spinPosX>140</spinPosX>
-		  <spinPosY>690</spinPosY>
+          <spinPosX>1239</spinPosX>
+          <spinPosY>720</spinPosY>
 		  <spinCanFocus>no</spinCanFocus>
-          <height>450</height>
-		  <width>270</width>
+          <height>490</height>
+		  <width>299</width>
           <textureFocus>listcontrol_item_selected_small.png</textureFocus>
 		  <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-		  <textXOff>-75</textXOff>
-		  <textYOff>7</textYOff>
+		  <textXOff>-65</textXOff>
+		  <textYOff>10</textYOff>
           <textXOff2>285</textXOff2>
 		  <textYOff2>10</textYOff2>
 		  <textXOff3>-2000</textXOff3>
