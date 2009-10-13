@@ -104,7 +104,7 @@ This file should contain the details view
 	<control>
 		<description>runtime</description>
 		<type>label</type>
-		<label>#MovingPictures.SelectedMovie.runtime min</label>
+		<label>#MovingPictures.SelectedMovie.runtime.localized.long</label>
 		<id>0</id>
 		<posX>903</posX>
 		<posY>250</posY>

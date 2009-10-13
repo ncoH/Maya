@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
 <window>
-  <id>4755</id>
-  <defaultcontrol>50</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>
-  <define>#header.label</define>
-  <define>#header.image</define>
-  <define>#header.Extension.label:#header.label</define>
-  <controls>
-  
-    
-	<import>common.window.video.xml</import>
+        <id>4755</id>
+        <defaultcontrol>50</defaultcontrol>
+        <allowoverlay>no</allowoverlay>
+        <define>#header.Extension.label:#header.label</define>
+        <define>#header.label:Online Videos</define>
+        <define>#header.hover:hover_onlinevideos.png</define>
+        <define>#header.BG.colordiffuse:ffffffff</define>
+        <define>#header.BG.overlay:mainoverlay.png</define>
+        <controls>
+                <!-- *** IMPORTS *** -->
+                <import>common.window.video.xml</import>
+				
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -39,117 +42,127 @@
 		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons]</visible>
 		<align>center</align>
 	</control>
-    
-    <import>myonlinevideos.details.xml</import>
-    <import>myonlinevideos.facade.xml</import>        
+         
 
-	                <!--
-	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	                ::::::::::::::::::::::::::::::::::           LIST VIEW     ::::::::::::::::::
-	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	                -->
-	<control>
-		<id>500</id>
-		<type>image</type>
+                <!-- *** CLIP TITLE & DESCRIPTION *** -->
+                <!--
+                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                ::::::::::::::::::::::::::::::::::           LIST VIEW     ::::::::::::::::::
+                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                -->
+
+                <control>
+                        <description>Thumb</description>
+                        <type>image</type>
+                        <id>1</id>
 		<posX>76</posX>
 		<posY>179</posY>
 		<width>375</width>
 		<height>208</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
-		<visible>facadeview.list+!string.contains(#header.image,Apple Trailers.png)</visible>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-	</control>
-	
-	<control>
-		<type>image</type>
-		<id>1</id>
+                        <texture flipY="true" diffuse="diffusemirrorwide.png">#selectedthumb</texture>
+                        <visible>facadeview.list+!string.contains(#header.image,Apple Trailers.png)</visible>
+                        <animation effect="fade" time="250">WindowOpen</animation>
+                        <animation effect="fade" time="250">WindowClose</animation>
+                </control>
+				
+                <control>
+                        <description>Glass Overlay</description>
+                        <type>image</type>
+                        <id>0</id>
 		<posX>0</posX>
 		<posY>144</posY>
 		<width>508</width>
 		<height>624</height>
-		<visible>facadeview.list+!string.contains(#header.image,Apple Trailers.png)</visible>
-		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_recordings.png</texture>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-	</control>
-	
-	<control>
-		<description>Category Logo</description>
-		<type>image</type>
-		<id>1</id>
+                        <texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_recordings.png</texture>
+                        <visible>facadeview.list+!string.equals(#selectedthumb,)+!string.contains(#header.image,Apple Trailers.png)</visible>
+                        <animation effect="fade" time="250">WindowOpen</animation>
+                        <animation effect="fade" time="250">WindowClose</animation>
+                </control>
+				
+                <control>
+                        <description>Category Logo</description>
+                        <type>image</type>
+                        <id>1</id>
 		<posX>75</posX>
 		<posY>100</posY>
 		<width>105</width>
 		<height>35</height>
-		<texture>#header.image</texture>
-		<visible>facadeview.list+!string.contains(#header.image,Apple Trailers.png)</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-	<control>
-		<type>label</type>
-		<description>Current video length</description>
-		<id>5001</id>
+                        <texture>#header.image</texture>
+                        <visible>facadeview.list+!string.contains(#header.image,Apple Trailers.png)</visible>
+                        <animation effect="fade" time="250">WindowOpen</animation>
+                        <animation effect="fade" time="250">WindowClose</animation>
+                </control>
+				
+                <control>
+                        <type>label</type>
+                        <description>Category</description>
+                        <id>0</id>
+		<posX>80</posX>
+		<posY>130</posY>
+		<width>495</width>
+		<label>#header.Extension.label</label>
+		<textcolor>6aa5cb</textcolor>
+                        <visible>facadeview.list+!string.contains(#header.image,Apple Trailers.png)</visible>
+                        <animation effect="fade" time="250">WindowOpen</animation>
+                        <animation effect="fade" time="250">WindowClose</animation>
+                        <animation effect="slide" time="150" start="-800,0">WindowOpen</animation>
+                        <animation effect="slide" time="250" end="-800,0">WindowClose</animation>
+                </control>
+				
+                <control>
+                        <type>label</type>
+                        <description>Current video length</description>
+                        <id>5001</id>
 		<posX>80</posX>
 		<posY>540</posY>
-		<label>#OnlineVideos.length</label>
-		<visible>facadeview.list+!string.contains(#header.image,Apple Trailers.png)</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="150" start="-800,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="-800,0">WindowClose</animation>
-		<textcolor>6aa5cb</textcolor>
-	</control>
-	<control>
-		<type>textboxscrollup</type>
-		<description>Description</description>
-		<id>0</id>
+                        <label>#OnlineVideos.length</label>
+                        <visible>facadeview.list+!string.contains(#header.image,Apple Trailers.png)</visible>
+                        <animation effect="fade" time="250">WindowOpen</animation>
+                        <animation effect="fade" time="250">WindowClose</animation>
+                        <textcolor>6aa5cb</textcolor>
+                </control>
+				
+                <control>
+                        <type>textboxscrollup</type>
+                        <description>Description</description>
+                        <id>0</id>
 	<posX>80</posX>
 	<posY>430</posY>
 	<width>400</width>
 	<height>110</height>
 		<seperator>----------------------------------------------------------------------------------------</seperator>
-		<label>#OnlineVideos.desc</label>
-		<visible>facadeview.list+!string.contains(#header.image,Apple Trailers.png)</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="150" start="-800,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="-800,0">WindowClose</animation>
-	</control>
-	<!--
-	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	                ::::::::::::::::::::::::::::::::::     THUMBNAIL VIEW      ::::::::::::::::::
-	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	                -->
-	<control>
-		<description>Category Logo</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>75</posX>
-		<posY>60</posY>
-		<width>105</width>
-		<height>35</height>
-		<texture>#header.image</texture>
-		<visible>[facadeview.largeicons | facadeview.smallicons]+!string.contains(#header.image,Apple Trailers.png)</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-	<!--
-	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	                ::::::::::::::::::::::::::::::::::  VIEW  Apple Trailers   ::::::::::::::::::
-	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-	                -->
-	<control>
-		<id>501</id>
-		<type>image</type>
+                        <label>#OnlineVideos.desc</label>
+                        <visible>facadeview.list+!string.contains(#header.image,Apple Trailers.png)</visible>
+                        <animation effect="fade" time="250">WindowOpen</animation>
+                        <animation effect="fade" time="250">WindowClose</animation>
+                </control>
+                <!--
+                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                ::::::::::::::::::::::::::::::::::     THUMBNAIL VIEW      ::::::::::::::::::
+                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                -->
+
+
+                
+                <!--
+                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                ::::::::::::::::::::::::::::::::::  VIEW  Apple Trailers   ::::::::::::::::::
+                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                -->
+                <control>
+                        <description>Thumb</description>
+                        <type>image</type>
+                        <id>1</id>
 		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
 		<height>380</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
-		<visible>string.contains(#header.image,Apple Trailers.png)</visible>
-	</control>
+                        <visible>string.contains(#header.image,Apple Trailers.png)</visible>
+                        <animation effect="fade" time="250">WindowOpen</animation>
+                        <animation effect="fade" time="250">WindowClose</animation>
+                </control>
+				
 	<control>
 		<type>image</type>
 		<id>1</id>
@@ -160,37 +173,37 @@
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
 		<visible>string.contains(#header.image,Apple Trailers.png)</visible>
 	</control>
-	<control>
-		<description>Category Logo</description>
-		<type>image</type>
-		<id>1</id>
+	
+                <control>
+                        <description>Category Logo</description>
+                        <type>image</type>
+                        <id>1</id>
 		<posX>75</posX>
 		<posY>60</posY>
 		<width>105</width>
 		<height>35</height>
-		<texture>#header.image</texture>
-		<visible>string.contains(#header.image,Apple Trailers.png)</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-	<control>
-		<type>label</type>
-		<description>Category</description>
-		<id>0</id>
+                        <texture>#header.image</texture>
+                        <visible>string.contains(#header.image,Apple Trailers.png)</visible>
+                        <animation effect="fade" time="250">WindowOpen</animation>
+                        <animation effect="fade" time="250">WindowClose</animation>
+                </control>
+
+                <control>
+                        <type>label</type>
+                        <description>Category</description>
+                        <id>0</id>
 		<posX>80</posX>
 		<posY>100</posY>
 		<width>495</width>
 		<label>#header.Extension.label</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>string.contains(#header.image,Apple Trailers.png)</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="150" start="-800,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="-800,0">WindowClose</animation>
-	</control>
+                        <visible>string.contains(#header.image,Apple Trailers.png)</visible>
+                        <animation effect="fade" time="250">WindowOpen</animation>
+                        <animation effect="fade" time="250">WindowClose</animation>
+                </control>
+ 
 
-    
-    <!-- *** HIDDEN MENU *** -->
+                    <!-- *** HIDDEN MENU *** -->
 <control>
 		<type>actiongroup</type>
 		<description>action menu</description>
@@ -417,6 +430,9 @@
 			</control>
 		</control>
 	</control>
-<import>common.overlay.xml</import>
-  </controls>
+                <import>myonlinevideos.facade.xml</import>
+                <import>myonlinevideos.details.xml</import>
+				<import>common.overlay.xml</import>
+        </controls>
+
 </window>
