@@ -5,7 +5,6 @@
 	<control>
 		<description>group element</description>
 		<type>group</type>
-		<visible>!Control.HasFocus(50)</visible>
 		<control>
 			<animation effect="fade" time="200">WindowOpen</animation>
 			<animation effect="zoom" start="50,50" end="100,100" center="683,384" time="200">WindowOpen</animation>
@@ -74,42 +73,6 @@
 				<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
 				<thumbZoom>no</thumbZoom>
 			<enableFocusZoom>yes</enableFocusZoom>
-			</control>
-
-			<control>
-				<description>Filmstrip view</description>
-				<type>filmstrip</type>
-				<dimColor>90ffffff</dimColor>
-				<id>50</id>
-				<scrollOffset>2</scrollOffset>
-				<folderPrefix></folderPrefix>
-				<folderSuffix></folderSuffix>
-				<posX>-14</posX>
-				<posY>262</posY>
-				<width>1360</width>
-				<height>768</height>
-				<onup>2</onup>
-				<onleft>2</onleft>
-				<thumbWidth>240</thumbWidth>
-				<thumbHeight>343</thumbHeight>
-				<thumbPosX>70</thumbPosX>
-				<thumbPosY>44</thumbPosY>
-				<itemWidth>251</itemWidth>
-				<itemHeight>343</itemHeight>
-				<textureWidth>382</textureWidth>
-				<textureHeight>438</textureHeight>
-				<textYOff>-2000</textYOff>
-				<imageFolderFocus>-</imageFolderFocus>
-				<frame>filmstrip_black_border.png</frame>
-				<frameFocus>filmstrip_black_border_shadowed.png</frameFocus>
-				<background>-</background>
-				<thumbs flipY="true" diffuse="Thumb_Mask.png"></thumbs>
-				<showFrame>yes</showFrame>
-				<showFolder>no</showFolder>
-				<showBackGround>yes</showBackGround>
-				<showInfoImage>no</showInfoImage>
-				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="140,140" center="0,415" time="400">focus</thumbAnimation>
-				<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
 			</control>
 
 		</control>

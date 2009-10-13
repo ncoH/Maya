@@ -207,9 +207,9 @@
 	<description>RSS items</description>
 	<type>fadelabel</type>
 	<id>1</id>
-	<posX>10</posX>
+	<posX>11</posX>
 	<posY>743</posY>
-	<width>1346</width>
+	<width>1355</width>
 	<height>30</height>
 	<font>font10</font>
 	<textcolor>6aa5cb</textcolor>
