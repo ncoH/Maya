@@ -241,7 +241,6 @@
       <width>400</width>
 	  <height>200</height>
       <seperator>--------------------------------------------------------------------------------------------------------------------</seperator>
-      <font>Segoe Light11</font>
       <visible>facadeview.list+[Control.IsVisible(1239)|Control.IsVisible(1238)|Control.IsVisible(1237)]</visible>
       <label>#TVSeries.Description</label>
     </control>	
