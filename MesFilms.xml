@@ -118,8 +118,8 @@
 		<type>image</type>
 		<description>thumb Logos ID 2001</description>
 		<id>2001</id>
-		<posX>455</posX>
-		<posY>660</posY>
+		<posX>545</posX>
+        <posY>690</posY>
 		<width>650</width>
 		<height>33</height>
 		<texture>#Logos_ID2001</texture>
@@ -132,8 +132,8 @@
 		<type>image</type>
 		<description>thumb Logos ID 2002</description>
 		<id>2002</id>
-		<posX>455</posX>
-		<posY>660</posY>
+		<posX>545</posX>
+        <posY>690</posY>
 		<width>650</width>
 		<height>33</height>
 		<texture>#Logos_ID2002</texture>
