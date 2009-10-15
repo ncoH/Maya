@@ -24,7 +24,7 @@
 	
 	<control>
 		<description>Guide Text Label</description>
-		<type>label</type>
+		<type>button</type>
 		<id>11</id>
 		<posX>60</posX>
 		<posY>70</posY>
@@ -33,7 +33,7 @@
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
-		<animation effect="rotatez" end="30" center="360,288" time="200">WindowOpen</animation>
+		<animation effect="rotatez" end="30" center="360,288" time="200">Focus</animation>
 	</control>
 	
 	<control>
@@ -195,8 +195,8 @@
 		<description>Current program title</description>
 		<type>fadelabel</type>
 		<id>13</id>
-		<posX>365</posX>
-		<posY>545</posY>
+		<posX>435</posX>
+		<posY>535</posY>
 		<width>666</width>
 		<label>#TV.Guide.Title</label>
 		<font>Segoe Light18</font>
@@ -208,8 +208,8 @@
 		<description>Current program time</description>
 		<type>label</type>
 		<id>14</id>
-		<posX>365</posX>
-		<posY>590</posY>
+		<posX>435</posX>
+		<posY>578</posY>
 		<label>#TV.Guide.Time - #TV.Guide.Genre</label>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="800">WindowOpen</animation>
@@ -220,9 +220,9 @@
 		<description>Description1</description>
 		<type>textboxscrollup</type>
 		<id>15</id>
-		<posX>365</posX>
-		<posY>625</posY>
-		<width>900</width>
+		<posX>435</posX>
+		<posY>610</posY>
+		<width>850</width>
 		<height>110</height>
 		<label>#TV.Guide.Description</label>
 		<animation effect="fade" time="800">WindowOpen</animation>
