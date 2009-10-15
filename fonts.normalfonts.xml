@@ -33,6 +33,14 @@
 </font>
 
 <font>
+	<name>font13tvg</name>
+	<filename>MayaType UI TVG</filename>
+	<height>13</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
 	<name>font14</name>
 	<filename>MayaType UI</filename>
 	<height>14</height>
@@ -81,17 +89,17 @@
 </font>
 
 <font>
-	<name>Segoe Light13</name>
+	<name>Segoe Light14</name>
 	<filename>MayaType Light</filename>
-	<height>13</height>
+	<height>14</height>
 	<start>0</start>
 	<end>1536</end>
 </font>
 
 <font>
-	<name>Segoe Light14</name>
+	<name>Segoe Light16</name>
 	<filename>MayaType Light</filename>
-	<height>14</height>
+	<height>16</height>
 	<start>0</start>
 	<end>1536</end>
 </font>
