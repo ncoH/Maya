@@ -94,8 +94,8 @@
       <description>rec logo</description>
       <type>image</type>
       <id>39</id>
-      <posX>1084</posX>
-      <posY>642</posY>
+      <posX>285</posX>
+      <posY>591</posY>
       <texture>rec.png</texture>
       <colordiffuse>50ffffff</colordiffuse>
     </control>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <id>600</id>
   <defaultcontrol>2</defaultcontrol>
@@ -253,8 +253,9 @@
 		<type>image</type>
 		<id>25</id>
 		<posX>55</posX>
-		<posY>160</posY>
-		<width>25</width>
+		<posY>162</posY>
+		<width>35</width>
+		<height>347</height>
 		<colordiffuse>c0ffffff</colordiffuse>
 		<texture>tvguide_slider.png</texture>
 		<animation effect="fade" time="800">WindowOpen</animation>
@@ -273,6 +274,7 @@
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
 	</control>
+	
 	<control>
 		<description>Vertical scrollbar</description>
 		<type>vscrollbar</type>
