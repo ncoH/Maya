@@ -78,7 +78,6 @@
 		<posX>215</posX>
 		<posY>667</posY>
 		<label>#currentplaytime</label>
-		<align>left</align>
 		<font>font12</font>
 		<visible>window.isosdvisible|control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking</visible>
 	</control>

@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>600</id>
-	<defaultcontrol>2</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-	<define>#header.label:-</define>
-	<controls>
+  <id>600</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
 	<import>common.window.xml</import>
 
 	<control>
@@ -12,43 +11,38 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>1328</posX>
+		<posX>40</posX>
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>tvguide</label>
+		<label>tv guide</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<align>right</align>
 	</control>
 	
-	<control>
-		<description>Guide Text Label</description>
-		<type>button</type>
-		<id>11</id>
-		<posX>60</posX>
-		<posY>70</posY>
-		<label>#TV.Guide.Group</label>
-		<font>Segoe Light16</font>
+    <control>
+		<description>Date</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>1329</posX>
+		<posY>52</posY>
 		<textcolor>6aa5cb</textcolor>
-		<animation effect="fade" time="800">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>
-		<animation effect="rotatez" end="30" center="360,288" time="200">Focus</animation>
-	</control>
+		<font>Segoe Light28</font>
+		<align>right</align>
+		<label>#time</label>
+    </control>
 	
-	<control>
-		<description>TVGUIDE Panel</description>
-		<type>image</type>
-		<id>2</id>
-		<posX>50</posX>
-		<posY>120</posY>
-		<width>1280</width>
-		<height>385</height>
-		<colordiffuse>60ffffff</colordiffuse>
-		<texture>-</texture>
-		<animation effect="fade" time="800">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>
-	</control>
+    <control>
+      <description>TVGUIDE Panel</description>
+      <type>image</type>
+      <id>2</id>
+      <posX>146</posX>
+      <posY>120</posY>
+      <width>1185</width>
+      <height>425</height>
+      <colordiffuse>ffffffff</colordiffuse>
+      <texture>-</texture>
+    </control>
 	
 	<control>
 		<description>Single Channel Label</description>
@@ -78,8 +72,8 @@
 		<animation effect="fade" time="300">WindowClose</animation>
 	</control>
 	
-	<!-- Timeheader background must be dedfined before Timeheader label template -->
-	<!-- b/c Timeheader is on the background and will be rendered first -->
+    <!-- Timeheader background must be dedfined before Timeheader label template -->
+    <!-- b/c Timeheader is on the background and will be rendered first -->
 	
 	<control>
 		<description>time header background image template</description>
@@ -105,7 +99,7 @@
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
 	</control>
-	
+
 	<control>
 		<description>day spin control</description>
 		<type>spincontrol</type>
@@ -150,22 +144,22 @@
 		<animation effect="fade" time="300">WindowClose</animation>
 	</control>
 	
-	<control>
-		<description>Channel template</description>
-		<type>image</type>
-		<id>20</id>
-		<posX>50</posX>
-		<posY>166</posY>
-		<width>280</width>
-		<height>48</height>
+    <control>
+      <description>Channel template</description>
+      <type>image</type>
+      <id>20</id>
+      <posX>79</posX>
+      <posY>166</posY>
+      <width>250</width>
+      <height>48</height>
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
-	</control>
+    </control>
 	
-	<control>
-		<description>Channel image template</description>
-		<type>image</type>
-		<id>7</id>
+    <control>
+      <description>Channel image template</description>
+      <type>image</type>
+      <id>7</id>
 		<posX>15</posX>
         <posY>1</posY>
         <width>44</width>
@@ -175,12 +169,12 @@
 		<texture>defaultVideoBig.png</texture>
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
-	</control>
+    </control>
 	
-	<control>
-		<description>channel Label template</description>
-		<type>label</type>
-		<id>18</id>
+    <control>
+      <description>channel Label template</description>
+      <type>label</type>
+      <id>18</id>
 		<posX>75</posX>
 		<posY>6</posY>
 		<width>86</width>
@@ -189,14 +183,15 @@
 		<textcolor>FFFFFFFF</textcolor>
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
-	</control>
+    </control>
+	
 	
 	<control>
 		<description>Current program title</description>
 		<type>fadelabel</type>
 		<id>13</id>
 		<posX>435</posX>
-		<posY>535</posY>
+		<posY>533</posY>
 		<width>666</width>
 		<label>#TV.Guide.Title</label>
 		<font>Segoe Light18</font>
@@ -209,19 +204,19 @@
 		<type>label</type>
 		<id>14</id>
 		<posX>435</posX>
-		<posY>578</posY>
+		<posY>575</posY>
 		<label>#TV.Guide.Time - #TV.Guide.Genre</label>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
 	</control>
-
+	
 	<control>
 		<description>Description1</description>
 		<type>textboxscrollup</type>
 		<id>15</id>
 		<posX>435</posX>
-		<posY>610</posY>
+		<posY>607</posY>
 		<width>850</width>
 		<height>110</height>
 		<label>#TV.Guide.Description</label>
@@ -229,7 +224,7 @@
 		<animation effect="fade" time="300">WindowClose</animation>
 	</control>
 	
-	    <control>
+	<control>
       <description>template for program title dark area</description>
       <type>label</type>
       <visible>no</visible>
@@ -290,6 +285,7 @@
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
 	</control>
+
 	<control>
 		<description>record pin</description>
 		<type>image</type>
@@ -302,6 +298,39 @@
 		<animation effect="fade" time="300">WindowClose</animation>
 	</control>
 	
+     <control>
+      <description>TvGroup button</description>
+      <type>button</type>
+      <id>100</id>
+      <posX>38</posX>
+      <posY>166</posY>
+      <width>40</width>
+      <height>334</height>
+      <textureFocus>blue.png</textureFocus>
+      <textureNoFocus>blue.png</textureNoFocus>
+      <label></label>
+      <onleft>60</onleft>
+      <onright>6</onright>
+      <onup>6</onup>
+      <ondown>6</ondown>
+    </control>
+	
+    <control>
+      <description>TvGroup button label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>57</posX>
+      <posY>308</posY>
+	  <width>340</width>
+	  <height>50</height>
+	  <align>center</align>
+      <label>#TV.Guide.ChangeGroup</label>
+      <font>Segoe Light16</font>
+      <textcolor>6aa5cb</textcolor>
+      <animation effect="rotate" end="90" time="0">WindowOpen</animation>
+	  <animation effect="slide" start="0,0" end="0,-170" time="0">WindowOpen</animation>
+      </control>
+	  
 <import>common.home.overlay.xml</import>
-	</controls>
+  </controls>
 </window>
