@@ -32,7 +32,7 @@
       <description>Programme</description>
       <type>textbox</type>
       <id>36</id>
-      <posX>300</posX>
+      <posX>302</posX>
 	  <width>354</width>
 	  <height>30</height>
       <posY>591</posY>
@@ -44,7 +44,7 @@
 		<description>Channel</description>
 		<type>label</type>
 		<id>35</id>
-		<posX>304</posX>
+		<posX>302</posX>
 		<posY>633</posY>
 		<width>354</width>
 		<label>-</label>
