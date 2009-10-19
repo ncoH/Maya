@@ -101,6 +101,8 @@ This file should contain the details view
 		<visible>!Control.IsVisible(50)</visible>
 	</control>
 	
+	
+<!-- Only in MovingPictures 0.8
 	<control>
 		<description>runtime</description>
 		<type>label</type>
@@ -113,6 +115,22 @@ This file should contain the details view
 		<textcolor>85cffe</textcolor>
 		<visible>!Control.IsVisible(50)</visible>
 	</control>
+-->
+
+<!-- Only in MovingPictures 0.7.x -->
+	<control>
+		<description>runtime</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.runtime min</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>250</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)</visible>
+	</control>
+<!-- -->
 
 	<control>
 		<description>genre below the movie title</description>
