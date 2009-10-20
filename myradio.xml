@@ -110,6 +110,8 @@
 					<height>49</height>
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
+					<offsetSortButtonX>240</offsetSortButtonX>
+					<offsetSortButtonY>14</offsetSortButtonY>
 					<onright>50</onright>
 					<onup>2</onup>
 					<ondown>6</ondown>
@@ -172,6 +174,24 @@
 
 	<import>common.facade.music.xml</import>
 
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>325</posY>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+	</control>
+	
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>624</posX>
+		<posY>0</posY>
+		<texture>hiddenmenu_tab_up.png</texture>
+		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+	</control>
+	
 	<control>
 		<id>500</id>
 		<type>image</type>

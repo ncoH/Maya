@@ -22,7 +22,7 @@
 		<width>1366</width>
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
-				<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
 		<animation effect="fade" time="200" reversible="false">Hidden</animation>
 		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
@@ -117,7 +117,7 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_thumbs.png</texture>
-		<visible>Control.IsVisible(31)</visible>
+		<visible>Control.IsVisible(1000)|Control.IsVisible(31)</visible>
 	</control>
 
 	<control>
@@ -219,7 +219,7 @@
 		<onup>4</onup>
 		<label>185</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible allowhiddenfocus="true">!Control.IsVisible(31)</visible>
+		<visible allowhiddenfocus="true">!Control.IsVisible(1000)+!Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
@@ -230,7 +230,7 @@
 		<posY>665</posY>
 		<label>Press OK to toggle day</label>
 		<textcolor>282828</textcolor>
-		<visible>!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
 	</control>
 
 	<control>
@@ -242,7 +242,7 @@
 		<width>544</width>
 		<height>768</height>
 		<texture>moving_pictures_detail_vignette.png</texture>
-		<visible>!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -254,7 +254,7 @@
 		<label>-</label>
 		<font>Segoe Light40</font>
 		<textcolor>White</textcolor>
-		<visible>!Control.IsVisible(31)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
@@ -266,7 +266,7 @@
 		<label>-</label>
 <font>Segoe Light40</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(31)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(31)</visible>
 	</control>
 
 	<control>
@@ -277,7 +277,7 @@
 		<posY>520</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -288,7 +288,7 @@
 		<posY>520</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
 	</control>
 
 	<control>
@@ -299,7 +299,7 @@
 		<posY>565</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -310,7 +310,7 @@
 		<posY>565</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
 	</control>
 
 	<control>
@@ -321,7 +321,7 @@
 		<posY>587</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -332,7 +332,7 @@
 		<posY>587</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -475,7 +475,7 @@
 		<align>center</align>
 		<label>-</label>
 		<font>Segoe Light36</font>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 	</control>
 
 	<control>
@@ -535,7 +535,7 @@
 		<align>center</align>
 		<label>-</label>
 		<font>Segoe Light36</font>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 	</control>
 
 	<control>
@@ -595,7 +595,7 @@
 		<align>center</align>
 		<label>-</label>
 		<font>Segoe Light36</font>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 	</control>
 
 	<control>
@@ -655,7 +655,7 @@
 		<align>center</align>
 		<label>-</label>
 		<font>Segoe Light36</font>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 	</control>
 
 	<control>
@@ -715,7 +715,7 @@
 		<align>center</align>
 		<label>-</label>
 		<font>Segoe Light36</font>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 	</control>
 
 	<control>
@@ -775,7 +775,7 @@
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
-		<posY>358</posY>
+		<posY>325</posY>
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>Control.HasFocus(4)</visible>
 	</control>

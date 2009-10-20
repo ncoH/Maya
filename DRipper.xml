@@ -110,7 +110,7 @@
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
-		<posY>358</posY>
+		<posY>325</posY>
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>!Control.HasFocus(50)+!Control.HasFocus(60)</visible>
 	</control>
@@ -227,7 +227,7 @@
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
-		<posY>358</posY>
+		<posY>325</posY>
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>Control.HasFocus(50) | Control.HasFocus(60)</visible>
 	</control>

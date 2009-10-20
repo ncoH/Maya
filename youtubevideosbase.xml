@@ -208,9 +208,18 @@
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
-		<posY>358</posY>
+		<posY>325</posY>
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>[facadeview.list|facadeview.album]+Control.HasFocus(50)</visible>
+	</control>
+	
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>624</posX>
+		<posY>0</posY>
+		<texture>hiddenmenu_tab_up.png</texture>
+		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
 	</control>
 	
 	<import>common.overlay.xml</import>
