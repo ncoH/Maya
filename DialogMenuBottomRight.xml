@@ -15,7 +15,7 @@
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<posX>505</posX>
+			<posX>441</posX>
 			<posY>500</posY>
 			<width>484</width>
 			<height>264</height>
@@ -26,7 +26,7 @@
 			<description>Heading text label</description>
 			<type>label</type>
 			<id>4</id>
-			<posX>556</posX>
+			<posX>492</posX>
 			<posY>536</posY>
 			<label>181</label>
 			<font>Segoe Light18</font>
@@ -37,7 +37,7 @@
 			<description>Label text</description>
 			<type>label</type>
 			<id>5</id>
-			<posX>950</posX>
+			<posX>886</posX>
 			<posY>628</posY>
 			<label>-</label>
 			<font>font12</font>
@@ -48,7 +48,7 @@
 			<description>Label text</description>
 			<type>label</type>
 			<id>6</id>
-			<posX>950</posX>
+			<posX>886</posX>
 			<posY>670</posY>
 			<label>-</label>
 			<font>font12</font>
@@ -59,14 +59,14 @@
 			<description>options listcontrol</description>
 			<type>listcontrol</type>
 			<id>3</id>
-			<posX>537</posX>
+			<posX>473</posX>
 			<posY>584</posY>
 			<width>419</width>
 			<height>200</height>
-			<onleft>2</onleft>
-			<onright>2</onright>
-			<onup>2</onup>
-			<ondown>2</ondown>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
 			<spinPosX>1100</spinPosX>
 			<spinPosY>664</spinPosY>
 			<spinWidth>21</spinWidth>
