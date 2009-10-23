@@ -58,12 +58,14 @@
 	<posX>40</posX>
 	<posY>30</posY>
 	<texture>maya_logo_small.png</texture>
+	<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
 </control>
 
+	<!-- Left Buttons -->
 <control>
 		<type>actiongroup</type>
-		<description>action menu</description>
-		<defaultcontrol>3</defaultcontrol>
+		<description>action menu</description><defaultcontrol>3</defaultcontrol>
 		<onexit>0</onexit>
 		<buttonX>0</buttonX>
 		<buttonY>0</buttonY>
@@ -72,7 +74,7 @@
 		<width>200</width>
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
-			
+		
 			<control>
 				<description>group element</description>
 				<type>group</type>
@@ -80,7 +82,7 @@
 				<animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
 				<posX>71</posX>
 				<posY>150</posY>
-				<visible>!Control.HasFocus(50)</visible>
+				<visible>Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
 				
 				<control>
 					<description>Exit Button</description>
@@ -137,7 +139,8 @@
 					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
 				</control>
 
-		</control>
+			</control>
+
 
 	</control>
 
@@ -146,8 +149,8 @@
 	<id>0</id>
 	<description>large group</description>
 	<dimColor>ffffffff</dimColor>
-		<animation effect="slide" start="-1020,0" end="0,0" tween="quadratic" easing="in" time=" 400" delay="200">WindowOpen</animation>
-		<animation effect="slide" end="-1020,0" tween="quadratic" easing="in" time=" 400" delay="200">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
 		
 	<control>
 		<id>1001</id>
@@ -204,7 +207,7 @@
 		<onleft>601</onleft>
 		<onright>601</onright>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
-		<animation effect="slide" start="0,100" end="0,0" time="400" reversible="false">Focus</animation>
+		<animation effect="slide" start="0,72" end="0,0" time="400" reversible="false">Focus</animation>
 		<animation effect="fade" start="0" end="100" time="500" delay="0" reversible="false">Focus</animation>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
 	</control>
@@ -226,7 +229,7 @@
 		<onleft>501</onleft>
 		<onright>501</onright>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
-		<animation effect="slide" start="0,100" end="0,0" time="400" reversible="false">Focus</animation>
+		<animation effect="slide" start="0,72" end="0,0" time="400" reversible="false">Focus</animation>
 		<animation effect="fade" start="0" end="100" time="500" delay="0" reversible="false">Focus</animation>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
 	</control>
@@ -248,7 +251,7 @@
 		<onleft>601</onleft>
 		<onright>601</onright>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
-		<animation effect="slide" start="0,-100" end="0,0" time="400" reversible="false">Focus</animation>
+		<animation effect="slide" start="0,-72" end="0,0" time="400" reversible="false">Focus</animation>
 		<animation effect="fade" start="0" end="100" time="500" delay="0" reversible="false">Focus</animation>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
 	</control>
@@ -270,7 +273,7 @@
 		<onleft>501</onleft>
 		<onright>501</onright>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
-		<animation effect="slide" start="0,-100" end="0,0" time="400" reversible="false">Focus</animation>
+		<animation effect="slide" start="0,-72" end="0,0" time="400" reversible="false">Focus</animation>
 		<animation effect="fade" start="0" end="100" time="500" delay="0" reversible="false">Focus</animation>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
 	</control>
@@ -285,7 +288,7 @@
 	<layout>StackLayout</layout>
 	<dimColor>ffffffff</dimColor>
 	<visible>Control.IsVisible(801)</visible>
-	<animation effect="slide" start="0,50" end="0,0" time="400" reversible="false">Visible</animation>
+	<animation effect="slide" start="0,36" end="0,0" time="400" reversible="false">Visible</animation>
 	<height>768</height>
 	<posX>600</posX>
 	<posY>90</posY>
@@ -351,7 +354,7 @@
 	<layout>StackLayout</layout>
 	<dimColor>ffffffff</dimColor>
 	<visible>Control.IsVisible(802)</visible>
-	<animation effect="slide" start="0,50" end="0,0" time="400" reversible="false">VisibleChange</animation>
+	<animation effect="slide" start="0,36" end="0,0" time="400" reversible="false">VisibleChange</animation>
 	<height>768</height>
 	<posX>600</posX>
 	<posY>90</posY>
@@ -417,7 +420,7 @@
 	<layout>StackLayout</layout>
 	<dimColor>ffffffff</dimColor>
 	<visible>Control.IsVisible(901)</visible>
-	<animation effect="slide" start="0,-50" end="0,0" time="400" reversible="false">VisibleChange</animation>
+	<animation effect="slide" start="0,-36" end="0,0" time="400" reversible="false">VisibleChange</animation>
 	<height>768</height>
 	<posX>600</posX>
 	<posY>160</posY>
@@ -484,7 +487,7 @@
 	<layout>StackLayout</layout>
 	<dimColor>ffffffff</dimColor>
 	<visible>Control.IsVisible(902)</visible>
-	<animation effect="slide" start="0,-50" end="0,0" time="400" reversible="false">VisibleChange</animation>
+	<animation effect="slide" start="0,-36" end="0,0" time="400" reversible="false">VisibleChange</animation>
 	<height>768</height>
 	<posX>600</posX>
 	<posY>160</posY>
@@ -575,6 +578,8 @@
 	<defaultcontrol>501</defaultcontrol>
 	<visible allowhiddenfocus="true">Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)</visible>
 <animation effect="fade" start="0" end="100" time="400" reversible="false">Visible</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
 
 	<height>768</height>
 	<posX>240</posX>
@@ -676,7 +681,8 @@
 	<defaultcontrol>601</defaultcontrol>
 	<visible allowhiddenfocus="true">Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)</visible>
 <animation effect="fade" start="0" end="100" time="400" reversible="false">Visible</animation>
-
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
 	<height>768</height>
 	<posX>248</posX>
 	<posY>315</posY>
@@ -782,8 +788,8 @@
 		<width>50</width>
 		<texture>weather/#infoservice.weather.today.img.small.filenamewithext</texture>
 		<visible>plugin.isenabled(InfoService)</visible>
-		<animation effect="fade" start="0" end="100" delay="500" time="300">Visible</animation>
-		<animation effect="fade" start="0" end="0" delay="0" time="50">Hidden</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
 	</control>
 
 	<control>
@@ -795,8 +801,8 @@
 		<label>#infoservice.weather.today.temp</label>
 		<font>Segoe Light22</font>
 		<visible>plugin.isenabled(InfoService)</visible>
-		<animation effect="fade" start="0" end="100" delay="500" time="300">Visible</animation>
-		<animation effect="fade" start="0" end="0" delay="0" time="50">Hidden</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
 	</control>
 
 	<control>
@@ -807,8 +813,8 @@
 		<width>500</width>
 		<label>#date</label>
 		<font>Segoe Light12</font>
-		<animation effect="fade" start="0" end="100" delay="500" time="300">Visible</animation>
-		<animation effect="fade" start="0" end="0" delay="0" time="50">Hidden</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
 	</control>
 
 <!--RSS-->
