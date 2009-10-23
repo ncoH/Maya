@@ -7,7 +7,14 @@
 <define>#header.image:television_logo.png</define>
 <define>#header.hover:-</define>
 <controls>
-	<import>common.window.xml</import>
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+	</control>
+	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -22,23 +29,83 @@
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>
 	</control>
-
+	
 	<control>
-		<type>group</type>
-		<description>group element</description>
-		<posX>71</posX>
-		<posY>121</posY>
-		<layout>StackLayout</layout>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>130</posY>
+		<width>700</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light20</font>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="zoom" start="50,50" end="100,100" center="683,384" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<animation effect="zoom" start="100,100" end="50,50" center="683,384" time="200">WindowClose</animation>
+	</control>
+	
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1366</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+				<animation effect="fade" time="250">Visible</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+		<animation effect="fade" time="200">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">Hidden</animation>
+		
+		<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>512</posX>
+		<posY>64</posY>
+		<width>342</width>
+		<height>640</height>
+		<texture>menu_bg.png</texture>
+		<visible>!Control.HasFocus(10)</visible>
+		</control>
+		
+				<control>
+				<description>Heading text label</description>
+				<type>label</type>
+				<id>1</id>
+				<posX>567</posX>
+				<posY>110</posY>
+				<label>924</label>
+				<font>Segoe Light18</font>
+				<textcolor>85cffe</textcolor>
+				</control>
+		
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>543</posX>
+				<posY>175</posY>
+				<layout>StackLayout(1)</layout>
 		<control>
 			<type>sortbutton</type>
 			<id>2</id>
 			<label>620</label>
 			<onleft>10</onleft>
 			<onright>10</onright>
-			<onup>17</onup>
+			<onup>9</onup>
 			<ondown>11</ondown>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<offsetSortButtonX>240</offsetSortButtonX>
+					<offsetSortButtonY>14</offsetSortButtonY>
 		</control>
 
 		<control>
@@ -50,6 +117,14 @@
 			<onright>10</onright>
 			<onup>2</onup>
 			<ondown>6</ondown>
+					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+		<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+		<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+		<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 		</control>
 
 		<control>
@@ -61,6 +136,12 @@
 			<onright>10</onright>
 			<onup>11</onup>
 			<ondown>7</ondown>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 		</control>
 
 		<control>
@@ -72,6 +153,12 @@
 			<onright>10</onright>
 			<onup>6</onup>
 			<ondown>8</ondown>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 		</control>
 
 		<control>
@@ -84,6 +171,12 @@
 			<onright>10</onright>
 			<onup>7</onup>
 			<ondown>9</ondown>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 		</control>
 
 		<control>
@@ -95,10 +188,18 @@
 			<onleft>10</onleft>
 			<onright>10</onright>
 			<onup>8</onup>
-			<ondown>99</ondown>
+			<ondown>2</ondown>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 		</control>
 
 	</control>
+	
+</control>
 
 	<control>
 		<type>group</type>
@@ -116,18 +217,15 @@
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
-				<PinIconWidth>35</PinIconWidth>
-				<PinIconHeight>25</PinIconHeight>
+				<PinIconHeight>15</PinIconHeight>
 				<PinIconXOff>49</PinIconXOff>
-				<PinIconYOff>11</PinIconYOff>
+				<PinIconYOff>18</PinIconYOff>
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
 				<IconXOff>12</IconXOff>
 				<IconYOff>8</IconYOff>
 				<textXOff>48</textXOff>
 				<textXOff2>0</textXOff2>
-				<font>font13</font>
-				<font2>font13</font2>
 				<keepaspectratio>yes</keepaspectratio>
 			</control>
 
@@ -168,6 +266,15 @@
 			<label>#TV.Scheduled.Description</label>
 		</control>
 
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>325</posY>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>Control.HasFocus(10)</visible>
+	</control>
+		
 <import>common.overlay.xml</import>
 </controls>
 </window>

@@ -22,10 +22,9 @@
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
-				<PinIconWidth>35</PinIconWidth>
-				<PinIconHeight>25</PinIconHeight>
+				<PinIconHeight>15</PinIconHeight>
 				<PinIconXOff>49</PinIconXOff>
-				<PinIconYOff>11</PinIconYOff>
+				<PinIconYOff>18</PinIconYOff>
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
 				<IconXOff>12</IconXOff>

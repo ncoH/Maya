@@ -6,154 +6,111 @@
 <define>#header.label:#selecteditem</define>
 <define>#header.image:music_playlist_logo.png</define>
 <controls>
+
+	<control>
+		<description>Alternate BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>background_thumbs.png</texture>
+		<visible>facadeview.smallicons | facadeview.largeicons</visible>
+	</control>
+
 	<import>common.window.xml</import>
+
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>playlist</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
+	</control>
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>433</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>playlist</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
+		<align>center</align>
+	</control>
+	
 	<control>
 		<type>actiongroup</type>
-		<description>action menu</description><defaultcontrol>2</defaultcontrol>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
 		<onexit>50</onexit>
 		<buttonX>0</buttonX>
 		<buttonY>0</buttonY>
-		<buttonwidth>106</buttonwidth>
-		<buttonheight>720</buttonheight>
-		<width>568</width>
-		<height>900</height>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1366</width>
+		<height>768</height>
 		<dimColor>00ffffff</dimColor>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+		<animation effect="fade" time="200" reversible="false">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
+		
+		<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>512</posX>
+		<posY>64</posY>
+		<width>342</width>
+		<height>640</height>
+		<texture>menu_bg.png</texture>
 		<visible>!Control.HasFocus(50)</visible>
-		<control>
-			<description>group element</description>
-			<type>group</type>
-			<animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
-			<animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
-			<visible>!Control.HasFocus(50)</visible>
-<!--
-		<control>
-				<description>caption of the selected item</description>
+		</control>
+		
+				<control>
+				<description>Heading text label</description>
 				<type>label</type>
-				<overlay>yes</overlay>
-				<id>0</id>
-				<posX>71</posX>
-				<posY>596</posY>
-				<width>285</width>
-				<height>93</height>
-				<font>font12</font>
-				<label>#Play.Current.Title</label>
-				<visible>player.hasmedia</visible>
-			</control>
-
-			<control>
-				<description>caption of the selected item</description>
-				<type>label</type>
-				<overlay>yes</overlay>
-				<id>0</id>
-				<posX>71</posX>
-				<posY>546</posY>
-				<width>285</width>
-				<height>93</height>
-				<font>font12</font>
-				<label>#Play.Current.Artist</label>
-				<visible>player.hasmedia</visible>
-			</control>
-
-			<control>
-				<description>caption of the selected item</description>
-				<type>label</type>
-				<overlay>yes</overlay>
-				<id>0</id>
-				<posX>71</posX>
-				<posY>571</posY>
-				<width>285</width>
-				<height>93</height>
-				<font>font12</font>
-				<label>#Play.Current.Album</label>
-				<visible>player.hasmedia</visible>
-			</control>
-
-			<control>
-				<description>caption of the selected item2</description>
-			<allowoverlay>yes</allowoverlay>
-				<type>label</type>
-				<overlay>yes</overlay>
-				<id>0</id>
-				<posX>217</posX>
-				<posY>473</posY>
-				<width>355</width>
-				<height>87</height>
-				<font>font32</font>
-				<align>left</align>
-				<textcolor>20ffffff</textcolor>
-				<label>#currentplaytime</label>
-				<visible>player.hasaudio+!plugin.isenabled(Audioscrobbler)</visible>
-			</control>
-
-			<control>
-				<description>music logo</description>
-				<type>image</type>
-				<overlay>yes</overlay>
-				<id>600</id>
-				<posX>58</posX>
-				<posY>436</posY>
-				<width>151</width>
-				<height>111</height>
-				<keepaspectratio>yes</keepaspectratio>
-				<centered>yes</centered>
-				<texture flipY="true" diffuse="Thumb_Mask.png">#Play.Current.Thumb</texture>
-				<visible>!plugin.isenabled(Audioscrobbler)</visible>
-			</control>
-
-			<control>
-				<description>music logo</description>
-				<type>image</type>
-				<overlay>yes</overlay>
 				<id>1</id>
-				<posX>72</posX>
-				<posY>435</posY>
-				<width>125</width>
-				<height>115</height>
-				<texture flipY="true" diffuse="Thumb_Mask.png">Picture_cover.png</texture>
-				<visible>player.hasaudio+!plugin.isenabled(Audioscrobbler)</visible>
-			</control>
-
+				<posX>567</posX>
+				<posY>110</posY>
+				<label>924</label>
+				<font>Segoe Light18</font>
+				<textcolor>85cffe</textcolor>
+				</control>
+		
 			<control>
-				<description>Progress background</description>
-				<type>image</type>
-				<id>1</id>
-				<posX>71</posX>
-				<posY>626</posY>
-				<width>250</width>
-				<height>27</height>
-				<texture>osd_progress_background.png</texture>
-				<visible>player.hasmedia</visible>
-			</control>
-
-			<control>
-				<description>progress bar</description>
-				<type>progress</type>
-				<id>0</id>
-				<posX>62</posX>
-				<posY>631</posY>
-				<width>250</width>
-				<height>18</height>
-				<label>#percentage</label>
-				<visible>player.hasmedia</visible>
-			</control>
-
-	-->
-			<control>
-				<description>group element</description>
+				<description>button group</description>
 				<type>group</type>
-				<animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
-				<animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
-				<posX>71</posX>
-				<posY>150</posY>
-				<layout>StackLayout</layout>
+				<posX>543</posX>
+				<posY>175</posY>
+				<layout>StackLayout(1)</layout>
 				<control>
 					<description>View-As button</description>
 					<type>button</type>
 					<id>2</id>
 					<label>100</label>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>15</onup>
 					<ondown>20</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 				</control>
 
 				<control>
@@ -162,8 +119,15 @@
 					<id>20</id>
 					<label>191</label>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>2</onup>
 					<ondown>30</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 				</control>
 
 				<control>
@@ -172,8 +136,17 @@
 					<id>30</id>
 					<label>486</label>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>20</onup>
 					<ondown>10</ondown>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+		<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+		<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+		<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
 				</control>
 
 				<control>
@@ -182,8 +155,15 @@
 					<id>10</id>
 					<label>983</label>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>30</onup>
 					<ondown>21</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 				</control>
 
 				<control>
@@ -192,8 +172,15 @@
 					<id>21</id>
 					<label>190</label>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>10</onup>
 					<ondown>22</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 				</control>
 
 				<control>
@@ -202,22 +189,17 @@
 					<id>22</id>
 					<label>192</label>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>21</onup>
 					<ondown>26</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 				</control>
-
-	
-<!--
-			<control>
-					<description>Play button</description>
-					<type>button</type>
-					<id>23</id>
-					<label>208</label>
-					<onright>50</onright>
-					<visible>false</visible>
-				</control>
-
-	-->
+				
 				<control>
 					<description>Now playing</description>
 					<type>button</type>
@@ -225,12 +207,15 @@
 					<label>4540</label>
 					<hyperlink>510</hyperlink>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>22</onup>
 					<ondown>15</ondown>
-<!--
-				<ondown>99</ondown>
--->
-
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 				</control>
 
 				<control>
@@ -239,23 +224,20 @@
 					<id>15</id>
 					<posX>71</posX>
 					<posY>462</posY>
-<!--
-				<width>50</width>
-					<height>45</height>
--->
-
 					<label>210001</label>
 					<hyperlink>90478</hyperlink>
-<!--
-				<textureFocus>searchbutton_focus.png</textureFocus>
-					<textureNoFocus>searchbutton_nofocus.png</textureNoFocus>
--->
-
 					<onright>50</onright>
-					<onup>8</onup>
+					<onleft>50</onleft>
+					<onup>26</onup>
 					<ondown>2</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 				</control>
-
+<!--
 				<control>
 					<description>scrobble mode button</description>
 					<type>button</type>
@@ -264,6 +246,12 @@
 					<onright>50</onright>
 					<onup>26</onup>
 					<ondown>27</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 					<visible>plugin.isenabled(Audioscrobbler)</visible>
 				</control>
 
@@ -275,6 +263,14 @@
 					<onright>50</onright>
 					<onup>28</onup>
 					<ondown>29</ondown>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+		<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+		<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+		<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
 					<visible>plugin.isenabled(Audioscrobbler)</visible>
 				</control>
 
@@ -285,185 +281,53 @@
 					<label>Scrobbler:</label>
 					<onright>50</onright>
 					<onup>27</onup>
-					<ondown>99</ondown>
+					<ondown>2</ondown>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 					<visible>plugin.isenabled(Audioscrobbler)</visible>
 				</control>
-
+-->
 			</control>
 
-		</control>
 
 	</control>
 
 	<import>common.facade.music.xml</import>
-<!--
-<control>
+	
+	<control>
 		<id>1</id>
 		<type>image</type>
-		<posX>148</posX>
-		<posY>206</posY>
-		<width>243</width>
-		<height>243</height>
-		<texture>missing_Coverart.png</texture>
-		<visible>[facadeview.list|facadeview.album | facadeview.playlist]+[Control.HasFocus(50)]</visible>
-		<animation effect="fade" time="1000" delay="1000">WindowOpen</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<posX>0</posX>
+		<posY>325</posY>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>[facadeview.list | facadeview.album | facadeview.playlist | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50)</visible>
 	</control>
-
-	-->
+	
 	<control>
 		<id>500</id>
 		<type>image</type>
-		<posX>139</posX>
-		<posY>243</posY>
-		<width>245</width>
-		<height>245</height>
-		<texture>#Play.Current.Thumb</texture>
-		<visible>[facadeview.list|facadeview.album | facadeview.playlist]+[Control.HasFocus(50)]</visible>
-		<animation effect="fade" time="1000" delay="1000">WindowOpen</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<posX>135</posX>
+		<posY>183</posY>
+		<width>266</width>
+		<height>266</height>
+		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
+		<texture flipY="true" diffuse="Thumb_Mask.png">#Play.Current.Thumb</texture>
 	</control>
 
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>93</posX>
-		<posY>198</posY>
-		<width>335</width>
-		<height>335</height>
-		<texture>cdcoverblack.png</texture>
-		<visible>[facadeview.list|facadeview.album | facadeview.playlist]+[Control.HasFocus(50)]</visible>
-		<animation effect="slide" start="-400,0" end="0,0" tween="quadratic" easing="in" time=" 400" delay="400">WindowOpen</animation>
-		<animation effect="fade" time="1000" delay="500">WindowOpen</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<posX>73</posX>
+		<posY>144</posY>
+		<width>380</width>
+		<height>596</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_music.png</texture>
+		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
 	</control>
-
-	
-<!--
-<control>
-		<description>Selected item Label</description>
-		<type>fadelabel</type>
-		<id>1</id>
-		<posX>78</posX>
-		<posY>412</posY>
-		<width>355</width>
-		<label>Info:</label>
-		<font>font14</font>
-		<visible>[facadeview.playlist|facadeview.album]+Control.HasFocus(50)</visible>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
-	</control>
-
-	<control>
-		<description>Selected item Label</description>
-		<type>fadelabel</type>
-		<id>1</id>
-		<posX>78</posX>
-		<posY>442</posY>
-		<width>355</width>
-		<label>#selecteditem</label>
-		<font>font14</font>
-		<visible>[facadeview.playlist|facadeview.album]+Control.HasFocus(50)</visible>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
-	</control>
-
-	<control>
-		<description>Selected item Label</description>
-		<type>fadelabel</type>
-		<id>1</id>
-		<posX>78</posX>
-		<posY>475</posY>
-		<width>355</width>
-		<label>#selecteditem2</label>
-		<font>font14</font>
-		<visible>[facadeview.playlist|facadeview.album]+Control.HasFocus(50)</visible>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
-	</control>
-
-	-->
-	    
-<!--
-<control>
-		<description>video rectangle</description>
-		<type>image</type>
-		<id>99</id>
-		<posX>78</posX>
-		<posY>523</posY>
-		<width>155</width>
-		<height>155</height>
-		<texture>Picture_cover.png</texture>
-		<animation effect="fade" time="250">visiblechange</animation>
-		<visible>[facadeview.playlist | facadeview.filmstrip]+[Control.HasFocus(50) + player.hasmedia]</visible>
-	</control>
-
-	<control>
-		<description>video preview window</description>
-		<type>videowindow</type>
-		<id>1</id>
-		<posX>86</posX>
-		<posY>528</posY>
-		<width>140</width>
-		<height>138</height>
-		<action>18</action>
-		<textureFocus>tv_green_border.png</textureFocus>
-		<animation effect="fade" time="250">visiblechange</animation>
-		<visible>[facadeview.playlist | facadeview.filmstrip]+[Control.HasFocus(50) + player.hasmedia]</visible>
-	</control>
-
-	<control>
-		<description>play logo</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>251</posX>
-		<posY>575</posY>
-		<width>52</width>
-		<height>52</height>
-		<texture>logo_play.png</texture>
-		<animation effect="fade" time="250">visiblechange</animation>
-		<visible>[facadeview.playlist | facadeview.filmstrip]+[Control.HasFocus(50) + player.playing]</visible>
-	</control>
-
-	<control>
-		<description>Pause logo</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>251</posX>
-		<posY>575</posY>
-		<width>52</width>
-		<height>52</height>
-		<texture>logo_pause.png</texture>
-		<animation effect="fade" time="250">visiblechange</animation>
-		<visible>[facadeview.playlist | facadeview.filmstrip]+[Control.HasFocus(50) + player.paused]</visible>
-	</control>
-
-	<control>
-		<description>album/artist/genre etc info label</description>
-		<type>fadelabel</type>
-		<id>0</id>
-		<width>248</width>
-		<height>37</height>
-		<posX>78</posX>
-		<posY>683</posY>
-		<font>font12</font>
-		<label>#Play.Current.Title\r#Play.Current.Artist\r#Play.Current.Album\r#Play.Current.Duration</label>
-		<textcolor>EFFFFFFF</textcolor>
-		<visible>[facadeview.playlist | facadeview.filmstrip]+[Control.HasFocus(50) + player.hasmedia]</visible>
-	</control>
-
-	<control>
-		<description>play time label</description>
-		<type>label</type>
-		<id>0</id>
-		<posX>391</posX>
-		<posY>602</posY>
-		<label>#currentplaytime</label>
-		<align>left</align>
-		<font>font60</font>
-		<textcolor>20ffffff</textcolor>
-		<animation effect="fade" time="250">visiblechange</animation>
-		<visible>[facadeview.playlist | facadeview.filmstrip]+[Control.HasFocus(50) + player.hasmedia]</visible>
-	</control>
-
-	-->
 	
 <import>common.overlay.xml</import>
 </controls>

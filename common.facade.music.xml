@@ -30,25 +30,11 @@
 				<type>listcontrol</type>
 				<subtype>album</subtype>
 				<id>50</id>
-				<width>755</width>
-				<height>593</height>
-				<font>font13</font>
-				<font2>font13</font2>
-				<selectedColor>80000000</selectedColor>
-				<textcolor>ffffffff</textcolor>
-				<selectedColor2>ffffffff</selectedColor2>
-				<textcolor2>ffffffff</textcolor2>
-				<textXOff2>746</textXOff2>
-				<textYOff2>75</textYOff2>
-				<itemWidth>128</itemWidth>
-				<itemHeight>90</itemHeight>
-				<spaceBetweenItems>24</spaceBetweenItems>
-				<textureHeight>112</textureHeight>
-				<scrollOffset>1</scrollOffset>
-				<textureFocus>album_background_focus.png</textureFocus>
-				<textureNoFocus>album_background_nofocus.png</textureNoFocus>
 				<onleft>2</onleft>
-				<onright>50</onright>
+				<onright>2</onright>
+				<scrollOffset>1</scrollOffset>
+				<posY>183</posY>
+				<height>450</height>
 				<onup>2</onup>
 				<ondown>2</ondown>
 			</control>
@@ -144,9 +130,9 @@
 				<id>50</id>
 				<onleft>2</onleft>
 				<onright>2</onright>
-				<scrollOffset>2</scrollOffset>
-				<folderPrefix></folderPrefix>
-				<folderSuffix></folderSuffix>
+				<scrollOffset>1</scrollOffset>
+				<posY>183</posY>
+				<height>450</height>
 			</control>
 
 		</control>

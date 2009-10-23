@@ -284,14 +284,14 @@
 		<description>default playlist item listcontrol</description>
 		<type>playlistcontrol</type>
 		<id>10</id>
-		<posX>530</posX>
+		<posX>528</posX>
 		<posY>150</posY>
-		<width>750</width>
-		<height>550</height>
+		<width>751</width>
+		<height>600</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>1111</spinPosX>
-		<spinPosY>662</spinPosY>
+		<spinPosX>1267</spinPosX>
+		<spinPosY>718</spinPosY>
 		<spinAlign>Right</spinAlign>
 		<spinColor>ffffffff</spinColor>
 		<textureFocus>playlist_sub_focus.png</textureFocus>
@@ -336,6 +336,7 @@
 		<textureMoveDownFocused>playlist_item_down_focus.png</textureMoveDownFocused>
 		<textureDelete>playlist_item_delete_nofocus.png</textureDelete>
 		<textureDeleteFocused>playlist_item_delete_focus.png</textureDeleteFocused>
+		<spinCanFocus>no</spinCanFocus>
 	</control>
 
 	<control>
