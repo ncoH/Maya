@@ -15,10 +15,11 @@ This file should contain the facade view
 			<id>50</id>
 			<onleft>2</onleft>
 			<onright>2</onright>
-			<posX>981</posX>
+			<posX>979</posX>
 			<posY>183</posY>
 			<height>490</height>
 			<width>299</width>
+			<textXOff>14</textXOff>
 			<scrollOffset>1</scrollOffset>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>

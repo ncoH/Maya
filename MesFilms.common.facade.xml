@@ -15,11 +15,11 @@
 		 <onleft>2</onleft>
 		 <onright>2</onright>
 		 <scrollOffset>1</scrollOffset>
-			<posX>981</posX>
+			<posX>979</posX>
 			<posY>183</posY>
 			<height>490</height>
 			<width>299</width>
-			<textXOff>6</textXOff>
+			<textXOff>14</textXOff>
 			<textYOff2>-2000</textYOff2>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>

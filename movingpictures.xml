@@ -61,7 +61,7 @@ multiple view modes.
 		<id>1</id>
 		<width>1366</width>
 		<height>768</height>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>

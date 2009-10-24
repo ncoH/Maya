@@ -22,16 +22,34 @@
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
 		<visible>no</visible>
 	</control>
+	
+	
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>130</posY>
+		<width>700</width>
+		<label>#header.Extension.label</label>
+		<font>Segoe Light20</font>
+		<visible>control.isvisible(53)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+	
+	
 	<control>
 		<description>listcontrol</description>
 		<type>listcontrol</type>
 		<id>51</id>
 		<onleft>51</onleft>
 		<onright>51</onright>
-			<posX>981</posX>
+			<posX>979</posX>
 			<posY>183</posY>
 			<height>490</height>
 			<width>299</width>
+			<textXOff>14</textXOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		<visible>no</visible>
@@ -84,7 +102,6 @@
 		<width>400</width>
 		<height>210</height>
       <visible>no</visible>
-	  <textcolor>ffFFFFFF</textcolor>
 		<seperator>-----------------------------------------------------------------------------------</seperator>
       <label>#OnlineVideos.trailerdesc</label>
     </control>    

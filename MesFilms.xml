@@ -492,8 +492,7 @@
 		<posX>555</posX>
 		<posY>330</posY>
 		<width>400</width>
-		<height>200</height>
-		<textcolor>ffFFFFFF</textcolor>
+		<height>210</height>
 		<label>#description</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>

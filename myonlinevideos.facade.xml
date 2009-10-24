@@ -20,16 +20,12 @@
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
-				<posX>555</posX>
 				<posY>183</posY>
-				<width>720</width>
 				<height>450</height>
-				<itemWidth>32</itemWidth>
-				<itemHeight>32</itemHeight>
-				<IconXOff>12</IconXOff>
-				<IconYOff>8</IconYOff>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
+				<textXOff>16</textXOff>
+				<spinCanFocus>no</spinCanFocus>
 			</control>
 
 			<control>
