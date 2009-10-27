@@ -158,7 +158,7 @@
 		<width>600</width>
 		<label>-</label>
 		<align>center</align>
-		<font>Segoe Light24</font>
+		<font>Segoe Light22</font>
 		<visible>Control.IsVisible(31)</visible>
 	</control>
 	
@@ -253,7 +253,6 @@
 		<posY>260</posY>
 		<label>-</label>
 		<font>Segoe Light40</font>
-		<textcolor>White</textcolor>
 		<visible>!Control.IsVisible(1000)+!Control.IsVisible(31)</visible>
 	</control>
 	

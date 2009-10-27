@@ -8,13 +8,22 @@
 <define>#header.hover:hover_my music.png</define>
 <controls>
 	<import>common.window.xml</import>
+	
+	<control>
+		<id>500</id>
+		<type>image</type>
+		<posX>135</posX>
+		<posY>183</posY>
+		<width>266</width>
+		<height>266</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
+	</control>
+	
 	<control>
 		<description>group element</description>
 		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="500">WindowClose</animation>
-		<animation effect="slide" time="250" start="-300,0">WindowOpen</animation>
-		<animation effect="slide" time="500" end="0,-300">WindowClose</animation>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
 		<posX>60</posX>
 		<posY>97</posY>
 		<layout>StackLayout</layout>

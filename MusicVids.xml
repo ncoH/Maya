@@ -61,7 +61,7 @@
 		<posY>130</posY>
 		<width>700</width>
 		<label>#MusicVids.ArtistName</label>
-		<font>Segoe Light20</font>
+		<font>Segoe Light22</font>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>

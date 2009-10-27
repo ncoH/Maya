@@ -12,6 +12,66 @@
 		<posY>0</posY>
 		<texture>background.png</texture>
 	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>0</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>music info</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+	</control>
+	
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1366</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+		<animation effect="fade" time="200" reversible="false">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
+		
+		<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>512</posX>
+		<posY>64</posY>
+		<width>342</width>
+		<height>640</height>
+		<texture>menu_bg.png</texture>
+		<visible>!Control.HasFocus(50)</visible>
+		</control>
+		
+				<control>
+				<description>Heading text label</description>
+				<type>label</type>
+				<id>0</id>
+				<posX>567</posX>
+				<posY>110</posY>
+				<label>924</label>
+				<font>Segoe Light18</font>
+				<textcolor>85cffe</textcolor>
+				</control>
+		
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>543</posX>
+				<posY>175</posY>
+				<layout>StackLayout(1)</layout>
 
 	<control>
 		<type>button</type>
@@ -74,230 +134,203 @@
 		<width>264</width>
 		<height>32</height>
 	</control>
+	
+</control>
 
-	<control>
-		<type>fadelabel</type>
-		<id>10</id>
-		<posX>112</posX>
-		<posY>344</posY>
-		<label>#last_played</label>
-		<textcolor>ffffffff</textcolor>
-		<disabledcolor>ff808080</disabledcolor>
-	</control>
+</control>
 
-	<control>
-		<type>label</type>
-		<id>37</id>
-		<posX>16</posX>
-		<posY>344</posY>
-		<label>Last played</label>
-	</control>
 
-	<control>
-		<type>label</type>
-		<id>31</id>
-		<posX>16</posX>
-		<posY>312</posY>
-		<label>Rating</label>
-	</control>
-
-	<control>
-		<type>fadelabel</type>
-		<id>6</id>
-		<posX>112</posX>
-		<posY>280</posY>
-		<label>#filename</label>
-		<textcolor>ffffffff</textcolor>
-		<disabledcolor>ff808080</disabledcolor>
-	</control>
-
-	<control>
-		<type>fadelabel</type>
-		<id>5</id>
-		<posX>112</posX>
-		<posY>248</posY>
-		<label>#year</label>
-		<textcolor>ffffffff</textcolor>
-		<disabledcolor>ff808080</disabledcolor>
-	</control>
-
-	<control>
-		<type>fadelabel</type>
-		<id>4</id>
-		<posX>112</posX>
-		<posY>216</posY>
-		<label>#genre</label>
-		<textcolor>ffffffff</textcolor>
-		<disabledcolor>ff808080</disabledcolor>
-	</control>
 
 	<control>
 		<type>fadelabel</type>
 		<id>3</id>
-		<posX>112</posX>
-		<posY>184</posY>
+		<posX>555</posX>
+		<posY>130</posY>
+		<width>700</width>
+		<font>Segoe Light22</font>
 		<label>#songname</label>
-		<textcolor>ffffffff</textcolor>
-		<disabledcolor>ff808080</disabledcolor>
 	</control>
 
 	<control>
-		<type>fadelabel</type>
-		<id>2</id>
-		<posX>112</posX>
-		<posY>152</posY>
-		<label>#album</label>
-		<textcolor>ffffffff</textcolor>
-		<disabledcolor>ff808080</disabledcolor>
-	</control>
-
-	<control>
-		<type>image</type>
-		<description>title image</description>
-		<id>33</id>
-		<posX>60</posX>
-		<posY>20</posY>
-		<animation>WindowOpen</animation>
-		<texture>music_logo.png</texture>
-	</control>
-
-	<control>
-		<type>image</type>
-		<description>nowplaying background</description>
-		<id>32</id>
-		<posX>389</posX>
-		<posY>58</posY>
-		<width>307</width>
-		<height>320</height>
-		<animation>WindowOpen</animation>
-		<texture>nowplaying_background.png</texture>
-	</control>
-
-	<control>
-		<type>image</type>
-		<description>album art image</description>
 		<id>7</id>
-		<posX>415</posX>
-		<posY>110</posY>
-		<width>250</width>
-		<height>216</height>
-		<zoom>yes</zoom>
-		<texture>-</texture>
-		<centered>yes</centered>
+		<type>image</type>
+		<posX>135</posX>
+		<posY>183</posY>
+		<width>266</width>
+		<height>266</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">-</texture>
 	</control>
 
 	<control>
-		<type>label</type>
-		<id>24</id>
-		<posX>408</posX>
-		<posY>80</posY>
-		<label>Album information</label>
+		<type>image</type>
+		<id>0</id>
+		<posX>73</posX>
+		<posY>144</posY>
+		<width>380</width>
+		<height>596</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_music.png</texture>
 	</control>
 
 	<control>
 		<type>label</type>
 		<id>25</id>
-		<posX>16</posX>
-		<posY>120</posY>
+		<posX>555</posX>
+		<posY>195</posY>
+		<textcolor>85cfff</textcolor>
+		<font>Segoe Light18</font>
 		<label>Artist</label>
 	</control>
-
+	
+	<control>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>230</posY>
+		<font>Segoe Light18</font>
+		<label>#artist</label>
+	</control>
+	
 	<control>
 		<type>label</type>
 		<id>26</id>
-		<posX>16</posX>
-		<posY>152</posY>
+		<posX>555</posX>
+		<posY>265</posY>
+		<textcolor>85cfff</textcolor>
+		<font>Segoe Light18</font>
 		<label>Album</label>
 	</control>
 
 	<control>
-		<type>label</type>
-		<id>27</id>
-		<posX>16</posX>
-		<posY>184</posY>
-		<label>Songname</label>
+		<type>fadelabel</type>
+		<id>2</id>
+		<posX>555</posX>
+		<posY>300</posY>
+		<font>Segoe Light18</font>
+		<label>#album</label>
 	</control>
-
+	
 	<control>
 		<type>label</type>
 		<id>28</id>
-		<posX>16</posX>
-		<posY>216</posY>
+		<posX>555</posX>
+		<posY>343</posY>
+		<textcolor>85cfff</textcolor>
 		<label>Genre</label>
 	</control>
-
+	
+	<control>
+		<type>fadelabel</type>
+		<id>4</id>
+		<posX>666</posX>
+		<posY>343</posY>
+		<label>#genre</label>
+	</control>
+	
 	<control>
 		<type>label</type>
 		<id>29</id>
-		<posX>16</posX>
-		<posY>248</posY>
+		<posX>555</posX>
+		<posY>367</posY>
+		<textcolor>85cfff</textcolor>
 		<label>Year</label>
 	</control>
-
+	
+	<control>
+		<type>fadelabel</type>
+		<id>5</id>
+		<posX>666</posX>
+		<posY>367</posY>
+		<label>#year</label>
+	</control>
+	
 	<control>
 		<type>label</type>
-		<id>30</id>
-		<posX>16</posX>
-		<posY>280</posY>
-		<label>Filename</label>
+		<id>35</id>
+		<posX>555</posX>
+		<posY>390</posY>
+		<textcolor>85cfff</textcolor>
+		<label>Playcount</label>
 	</control>
 
 	<control>
 		<type>fadelabel</type>
-		<id>1</id>
-		<posX>112</posX>
-		<posY>120</posY>
-		<label>#artist</label>
-		<textcolor>ffffffff</textcolor>
-		<disabledcolor>ff808080</disabledcolor>
+		<id>8</id>
+		<posX>666</posX>
+		<posY>390</posY>
+		<label>#tp</label>
+	</control>
+
+	<control>
+		<type>label</type>
+		<id>37</id>
+		<posX>555</posX>
+		<posY>415</posY>
+		<textcolor>85cfff</textcolor>
+		<label>Last played</label>
+	</control>	
+	
+	<control>
+		<type>fadelabel</type>
+		<id>10</id>
+		<posX>666</posX>
+		<posY>415</posY>
+		<label>#last_played</label>
+	</control>
+	
+	<control>
+		<type>label</type>
+		<id>30</id>
+		<posX>555</posX>
+		<posY>440</posY>
+		<textcolor>85cfff</textcolor>
+		<label>Filename</label>
+	</control>
+	
+	<control>
+		<type>fadelabel</type>
+		<id>6</id>
+		<posX>666</posX>
+		<posY>440</posY>
+		<label>#filename</label>
+	</control>
+
+	<control>
+		<type>label</type>
+		<id>31</id>
+		<posX>555</posX>
+		<posY>465</posY>
+		<textcolor>85cfff</textcolor>
+		<label>Rating</label>
 	</control>
 
 	<control>
 		<type>imagelist</type>
 		<description>-</description>
 		<id>1337</id>
-		<posX>112</posX>
-		<posY>308</posY>
-		<width>100</width>
-		<height>30</height>
-		<colordiffuse>ffffffff</colordiffuse>
-		<percentage>#Play.Current.Rating</percentage>
-		<textureHeight>20</textureHeight>
+		<posX>660</posX>
+		<posY>460</posY>
+		<percentage>#SongDetails.Rating</percentage>
 		<orientation>horizontal</orientation>
-		<textureWidth>20</textureWidth>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
 		<subitems>
-		<subitem>greystar.png</subitem>
-		<subitem>star.png</subitem></subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<imagesToDraw>5</imagesToDraw>
 	</control>
 
 	<control>
 		<type>fadelabel</type>
 		<id>9</id>
-		<posX>671</posX>
+		<posX>-2000</posX>
 		<posY>340</posY>
 		<label>#duration</label>
-		<align>right</align>
-		<textcolor>ffffffff</textcolor>
-		<disabledcolor>ff808080</disabledcolor>
 	</control>
 
-	<control>
-		<type>label</type>
-		<id>35</id>
-		<posX>408</posX>
-		<posY>340</posY>
-		<label>Playcount:</label>
-	</control>
 
-	<control>
-		<type>fadelabel</type>
-		<id>8</id>
-		<posX>496</posX>
-		<posY>340</posY>
-		<label>#tp</label>
-		<textcolor>ffffffff</textcolor>
-		<disabledcolor>ff808080</disabledcolor>
-	</control>
 
 	<control>
 		<type>button</type>

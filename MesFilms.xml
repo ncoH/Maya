@@ -90,7 +90,7 @@
 		<posY>130</posY>
 		<width>1366</width>
 		<label>#selecteditem</label>
-		<font>Segoe Light24</font>
+		<font>Segoe Light22</font>
 		<align>center</align>
 		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(1026)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
@@ -416,7 +416,7 @@
 		<posX>555</posX>
 		<posY>110</posY>
 		<width>700</width>
-		<font>Segoe Light20</font>
+		<font>Segoe Light22</font>
 		<visible>facadeview.list+Control.IsVisible(1026)</visible>
 		<label>#selecteditem</label>
 	</control>
@@ -509,7 +509,7 @@
 		<posX>555</posX>
 		<posY>110</posY>
 		<width>700</width>
-		<font>Segoe Light20</font>
+		<font>Segoe Light22</font>
 		<visible>control.hasfocus(1026)+facadeview.filmstrip</visible>
 		<label>#selecteditem</label>
 	</control>

@@ -32,7 +32,7 @@
 		<posY>130</posY>
 		<width>700</width>
 		<label>#header.Extension.label</label>
-		<font>Segoe Light20</font>
+		<font>Segoe Light22</font>
 		<visible>control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>

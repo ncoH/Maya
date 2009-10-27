@@ -5,8 +5,8 @@
 	<control>
 		<description>group element</description>
 		<type>group</type>
-		<animation effect="fade" time="1000">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
 		<control>
 			<description>composite control consisting of a list control and a thumbnail panel</description>
 			<type>facadeview</type>

@@ -11,7 +11,7 @@
 <font>
 	<name>font11</name>
 	<filename>MayaType UI</filename>
-	<height>13</height>
+	<height>11</height>
 	<start>0</start>
 	<end>1536</end>
 </font>
@@ -19,7 +19,7 @@
 <font>
 	<name>font12</name>
 	<filename>MayaType UI</filename>
-	<height>14</height>
+	<height>12</height>
 	<start>0</start>
 	<end>1536</end>
 </font>
@@ -106,27 +106,9 @@
 </font>
 
 <font>
-	<name>Segoe Light20</name>
-	<filename>MayaType Light</filename>
-	<height>20</height>
-	<start>0</start>
-	<end>1536</end>
-	<bold>no</bold>
-</font>
-
-<font>
 	<name>Segoe Light22</name>
 	<filename>MayaType Light</filename>
 	<height>22</height>
-	<start>0</start>
-	<end>1536</end>
-	<bold>no</bold>
-</font>
-
-<font>
-	<name>Segoe Light24</name>
-	<filename>MayaType Light</filename>
-	<height>24</height>
 	<start>0</start>
 	<end>1536</end>
 	<bold>no</bold>
