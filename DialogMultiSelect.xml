@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>2100</id>
 <defaultcontrol>3</defaultcontrol>
@@ -14,116 +15,97 @@
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<posX>512</posX>
-			<posY>64</posY>
-			<width>342</width>
-			<height>640</height>
-			<texture>menu_bg.png</texture>
+			<posX>409</posX>
+			<posY>164</posY>
+			<width>548</width>
+			<height>440</height>
+			<texture>context_background.png</texture>
+			<animation effect="fade" time="300">WindowOpen</animation>
+			<animation effect="fade" time="300">WindowClose</animation>
 		</control>
 
 		<control>
 			<type>label</type>
 			<description>GFX-Heading "menu" text label</description>
 			<id>5</id>
-			<posX>571</posX>
-			<posY>88</posY>
+			<posX>-2000</posX>
+			<posY>212</posY>
 			<label>924</label>
-			<font>Segoe Light18</font>
 		</control>
 
 		<control>
 			<type>label</type>
 			<description>Heading text label</description>
 			<id>4</id>
-			<posX>571</posX>
-			<posY>108</posY>
+			<posX>469</posX>
+			<posY>212</posY>
 			<label>181</label>
-			<font>font14</font>
-			<textcolor>ffffffff</textcolor>
+			<font>Segoe Light18</font>
+			<textcolor>85cffe</textcolor>
+		</control>
+		
+		<control>
+			<type>listcontrol</type>
+			<description>options listcontrol</description>
+			<id>3</id>
+			<posX>443</posX>
+			<posY>277</posY>
+			<width>482</width>
+			<height>270</height>
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<onup>3</onup>
+			<ondown>10</ondown>
+			<playedColor>ffa0d0ff</playedColor>
+			<remoteColor>ffFFA075</remoteColor>
+			<selectedColor>FFF8BC70</selectedColor>
+			<downloadColor>ff80ff80</downloadColor>
+			<textXOff2>460</textXOff2>
+			<textYOff2>10</textYOff2>
+			<spinPosX>902</spinPosX>
+			<spinPosY>534</spinPosY>
+			<textXOff>15</textXOff>
+			<textYOff>8</textYOff>
+			<textureFocus>context_item_selected.png</textureFocus>
+			<textureNoFocus>context_item.png</textureNoFocus>
+			<textureHeight>49</textureHeight>
+			<spaceBetweenItems>1</spaceBetweenItems>
+			<PinIconXOff>2</PinIconXOff>
+			<PinIconYOff>11</PinIconYOff>
 		</control>
 
 		<control>
 			<type>button</type>
 			<description>Exit button</description>
 			<id>2</id>
-			<posX>578</posX>
+			<posX>-2000</posX>
 			<posY>96</posY>
 			<onleft>3</onleft>
 			<onright>3</onright>
 			<onup>3</onup>
 			<ondown>3</ondown>
 			<label>-</label>
-			<textcolor>ff000000</textcolor>
-			<width>44</width>
-			<height>44</height>
-			<textureFocus>dialogue_shutdown_focus.png</textureFocus>
-			<textureNoFocus>dialogue_shutdown_nofocus.png</textureNoFocus>
-		</control>
-
-		<control>
-			<type>listcontrol</type>
-			<description>options listcontrol</description>
-			<id>3</id>
-			<posX>160</posX>
-			<posY>150</posY>
-			<width>450</width>
-			<height>264</height>
-			<onleft>11</onleft>
-			<onright>10</onright>
-			<onup>11</onup>
-			<ondown>10</ondown>
-			<playedColor>ffa0d0ff</playedColor>
-			<font>font13</font>
-			<textcolor2>ffffffff</textcolor2>
-			<textureDown>page_down_nofocus.png</textureDown>
-			<spinPosY>370</spinPosY>
-			<remoteColor>ffFFA075</remoteColor>
-			<textureHeight>32</textureHeight>
-			<spinHeight>27</spinHeight>
-			<textureUpFocus>page_up_focus.png</textureUpFocus>
-			<textXOff>5</textXOff>
-			<textYOff>4</textYOff>
-			<spinColor>ffffffff</spinColor>
-			<spinWidth>26</spinWidth>
-			<shadedColor>20ffffff</shadedColor>
-			<textYOff2>4</textYOff2>
-			<IconXOff>8</IconXOff>
-			<textureNoFocus>list_sub_nofocus.png</textureNoFocus>
-			<textureDownFocus>page_down_focus.png</textureDownFocus>
-			<textcolor>ffffffff</textcolor>
-			<selectedColor>FFF8BC70</selectedColor>
-			<image>folder_focus.png</image>
-			<IconYOff>8</IconYOff>
-			<spinPosX>168</spinPosX>
-			<textXOff2>0</textXOff2>
-			<suffix>|</suffix>
-			<textureUp>page_up_nofocus.png</textureUp>
-			<downloadColor>ff80ff80</downloadColor>
-			<textcolor3>ffffffff</textcolor3>
-			<textureFocus>list_sub_focus.png</textureFocus>
 		</control>
 
 		<control>
 			<type>button</type>
 			<description>Okay button</description>
 			<id>10</id>
-			<posX>224</posX>
-			<posY>368</posY>
-			<onleft>3</onleft>
-			<onright>11</onright>
+			<posX>565</posX>
+			<posY>500</posY>
+			<onleft>10</onleft>
+			<onright>10</onright>
 			<onup>3</onup>
-			<ondown>11</ondown>
+			<ondown>10</ondown>
 			<label>186</label>
-			<textcolor>ffffffff</textcolor>
-			<width>156</width>
-			<height>32</height>
+			<textalign>center</textalign>
 		</control>
 
 		<control>
 			<type>button</type>
 			<description>Cancel button</description>
 			<id>11</id>
-			<posX>384</posX>
+			<posX>-2000</posX>
 			<posY>368</posY>
 			<onleft>10</onleft>
 			<onright>3</onright>
