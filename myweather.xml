@@ -181,6 +181,55 @@
 		<textcolor>6aa5cb</textcolor>
 	</control>
 	
+	
+	<control>
+		<description>current feels like static label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>238</posX>
+		<posY>555</posY>
+		<label>402</label>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>Control.IsVisible(31)</visible>
+	</control>
+	
+	<control>
+		<description>current feels like label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>330</posX>
+		<posY>555</posY>
+		<label>#infoservice.weather.today.feelsliketemp</label>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>Control.IsVisible(31)</visible>
+	</control>
+	
+	<control>
+		<description>current humidity static label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>238</posX>
+		<posY>578</posY>
+		<label>406</label>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>Control.IsVisible(31)</visible>
+	</control>
+	
+	<control>
+		<description>current humidity label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>330</posX>
+		<posY>578</posY>
+		<label>#infoservice.weather.today.humidity</label>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>Control.IsVisible(31)</visible>
+	</control>
+	
 	<control>
 		<description>current UV Index static label</description>
 		<type>label</type>
@@ -220,6 +269,18 @@
 		<label>185</label>
 		<textcolor>6aa5cb</textcolor>
 		<visible allowhiddenfocus="true">!Control.IsVisible(1000)+!Control.IsVisible(31)</visible>
+	</control>
+	
+	<control>
+		<description>last update time</description>
+		<type>textbox</type>
+		<id>0</id>
+		<posX>900</posX>
+		<posY>175</posY>
+		<width>350</width>
+		<label>#infoservice.weather.lastupdated</label>
+		<font>Segoe Light18</font>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -293,10 +354,10 @@
 	<control>
 		<description>current rain static label</description>
 		<type>label</type>
-		<id>227</id>
+		<id>0</id>
 		<posX>900</posX>
 		<posY>565</posY>
-		<label>-</label>
+		<label>376</label>
 		<textcolor>6aa5cb</textcolor>
 		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
 	</control>
@@ -442,13 +503,22 @@
 		<description>day 0 label</description>
 		<type>label</type>
 		<id>31</id>
+		<posX>-2000</posX>
+		<label>-</label>
+	</control>
+	
+	<control>
+		<description>day 0 label</description>
+		<type>label</type>
+		<id>0</id>
 		<posX>218</posX>
 		<posY>294</posY>
 		<width>185</width>
 		<align>center</align>
-		<label>-</label>
+		<label>6030</label>
 		<font>Segoe Light20</font>
 		<textcolor>White</textcolor>
+		<visible>Control.IsVisible(31)</visible>
 	</control>
 
 	<control>
@@ -554,7 +624,7 @@
 		<id>1</id>
 		<posX>430</posX>
 		<posY>300</posY>
-		<texture>weather/128/#infoservice.weather.day2.img.big.filenamewithext</texture>
+		<texture>weather/128/#infoservice.weather.day2.day.img.big.filenamewithext</texture>
 		<visible>Control.IsVisible(9999)</visible>
 	</control>
 
@@ -614,7 +684,7 @@
 		<id>1</id>
 		<posX>620</posX>
 		<posY>300</posY>
-		<texture>weather/128/#infoservice.weather.day3.img.big.filenamewithext</texture>
+		<texture>weather/128/#infoservice.weather.day3.day.img.big.filenamewithext</texture>
 		<visible>Control.IsVisible(9999)</visible>
 	</control>
 
@@ -674,7 +744,7 @@
 		<id>1</id>
 		<posX>805</posX>
 		<posY>300</posY>
-		<texture>weather/128/#infoservice.weather.day4.img.big.filenamewithext</texture>
+		<texture>weather/128/#infoservice.weather.day4.day.img.big.filenamewithext</texture>
 		<visible>Control.IsVisible(9999)</visible>
 	</control>
 
@@ -734,7 +804,7 @@
 		<id>1</id>
 		<posX>996</posX>
 		<posY>300</posY>
-		<texture>weather/128/#infoservice.weather.day5.img.big.filenamewithext</texture>
+		<texture>weather/128/#infoservice.weather.day5.day.img.big.filenamewithext</texture>
 		<visible>Control.IsVisible(9999)</visible>
 	</control>
 

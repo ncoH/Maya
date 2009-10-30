@@ -25,38 +25,18 @@
 		<font>Segoe Light40</font>
 		<align>center</align>
 	</control>
-
-	<control>
-		<id>0</id>
-		<type>image</type>
-		<posX>135</posX>
-		<posY>180</posY>
-		<width>166</width>
-		<height>166</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#Play.Current.Thumb</texture>
-		<animation effect="fade" time="1000" delay="1000">WindowOpen</animation>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
-	</control>
-
-	<control>
-		<type>image</type>
-		<id>0</id>
-		<posX>0</posX>
-		<posY>0</posY>
-		<width>434</width>
-		<height>768</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_mylyrics.png</texture>
-	</control>
 	
     <control>
       <type>image</type>
       <description>album art image</description>
-      <id>112</id>
+      <id>0</id>
       <posX>280</posX>
       <posY>195</posY>
       <width>365</width>
       <height>367</height>
-      <texture>-</texture>
+      <texture flipY="true" diffuse="Thumb_Mask.png">#Play.Current.Thumb</texture>
+		<animation effect="fade" time="1000" delay="1000">WindowOpen</animation>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
       <keepaspectratio>yes</keepaspectratio>
       <centered>yes</centered>
       <zoom>yes</zoom>
@@ -67,8 +47,8 @@
 		<type>fadelabel</type>
 		<description>artist label</description>
 		<id>0</id>
-		<posX>703</posX>
-		<posY>195</posY>
+		<posX>704</posX>
+		<posY>182</posY>
 		<width>380</width>
 		<label>Artist</label>
 		<font>Segoe Light18</font>
@@ -81,8 +61,8 @@
 		<type>fadelabel</type>
 		<description>artist label</description>
 		<id>0</id>
-		<posX>703</posX>
-		<posY>230</posY>
+		<posX>704</posX>
+		<posY>218</posY>
 		<width>380</width>
 		<label>#Play.Current.Artist</label>
 		<font>Segoe Light18</font>
@@ -94,8 +74,8 @@
 		<type>fadelabel</type>
 		<description>album label</description>
 		<id>0</id>
-		<posX>703</posX>
-		<posY>265</posY>
+		<posX>704</posX>
+		<posY>254</posY>
 		<width>380</width>
 		<label>Album</label>
 		<font>Segoe Light18</font>
@@ -108,8 +88,8 @@
 		<type>fadelabel</type>
 		<description>album label</description>
 		<id>0</id>
-		<posX>703</posX>
-		<posY>302</posY>
+		<posX>704</posX>
+		<posY>290</posY>
 		<width>380</width>
 		<label>#Play.Current.Album</label>
 		<font>Segoe Light18</font>
@@ -121,8 +101,8 @@
 		<type>fadelabel</type>
 		<description>title label</description>
 		<id>0</id>
-		<posX>703</posX>
-		<posY>337</posY>
+		<posX>704</posX>
+		<posY>326</posY>
 		<width>380</width>
 		<label>Songname</label>
 		<font>Segoe Light18</font>
@@ -135,8 +115,8 @@
 		<type>fadelabel</type>
 		<description>title label</description>
 		<id>0</id>
-		<posX>703</posX>
-		<posY>374</posY>
+		<posX>704</posX>
+		<posY>362</posY>
 		<width>380</width>
 		<label>#Play.Current.Title</label>
 		<font>Segoe Light18</font>
@@ -148,7 +128,7 @@
 		<type>fadelabel</type>
 		<description>year label</description>
 		<id>0</id>
-		<posX>130</posX>
+		<posX>-2000</posX>
 		<posY>442</posY>
 		<width>390</width>
 		<label>#Play.Current.Year</label>
@@ -157,29 +137,14 @@
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
 	</control>
-	
-	<control>
-		<description>play time label</description>
-		<type>fadelabel</type>
-		<id>0</id>
-		<posX>320</posX>
-		<posY>462</posY>
-		<width>390</width>
-		<label>#currentplaytime</label>
-		<align>left</align>
-		<font>Segoe Light22</font>
-		<textcolor>6aa5cb</textcolor>
-		<animation effect="fade" time="800">WindowClose</animation>
-		<animation effect="fade" time="300">WindowOpen</animation>
-	</control>
 
 	<control>
 		<description>Progress background</description>
 		<type>image</type>
 		<id>117</id>
-		<posX>132</posX>
-		<posY>515</posY>
-		<width>264</width>
+		<posX>706</posX>
+		<posY>460</posY>
+		<width>360</width>
 		<height>2</height>
 		<texture>now_playing_progress_back_overlay.png</texture>
 		<visible>player.hasmedia</visible>
@@ -189,9 +154,9 @@
 		<description>progress bar</description>
 		<type>progress</type>
 		<id>118</id>
-		<posX>120</posX>
-		<posY>515</posY>
-		<width>264</width>
+		<posX>694</posX>
+		<posY>460</posY>
+		<width>360</width>
 		<height>2</height>
 		<texturebg>-</texturebg>
 		<lefttexture>now_playing_progress_bar.png</lefttexture>
@@ -204,11 +169,11 @@
 		<type>label</type>
 		<description>track duration label</description>
 		<id>0</id>
-		<posX>130</posX>
-		<posY>525</posY>
+		<posX>704</posX>
+		<posY>470</posY>
 		<label>#currentplaytime</label>
 		<align>left</align>
-		<font>font10</font>
+		<font>font11</font>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -217,11 +182,11 @@
 		<type>fadelabel</type>
 		<description>track duration label</description>
 		<id>0</id>
-		<posX>395</posX>
-		<posY>525</posY>
+		<posX>1066</posX>
+		<posY>470</posY>
 		<label>#duration</label>
 		<align>right</align>
-		<font>font10</font>
+		<font>font11</font>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -229,12 +194,11 @@
 	<control>
 		<type>label</type>
 		<description>up next label</description>
-		<id>20</id>
-		<posX>130</posX>
-		<posY>605</posY>
-		<label>Next track</label>
-		<font>font13</font>
-		<align>left</align>
+		<id>0</id>
+		<posX>703</posX>
+		<posY>540</posY>
+		<label>Next</label>
+		<font>Segoe Light18</font>
 		<textcolor>6aa5cb</textcolor>
 	</control>
 	
@@ -242,11 +206,11 @@
 		<type>fadelabel</type>
 		<description>next track label</description>
 		<id>121</id>
-		<posX>130</posX>
-		<posY>632</posY>
+		<posX>703</posX>
+		<posY>600</posY>
 		<width>380</width>
 		<label>#Play.Next.Title</label>
-		<font>font12</font>
+		<font>Segoe Light18</font>
 	</control>
 	
 	<control>
@@ -598,8 +562,8 @@
 	<control>
 		<type>imagelist</type>
 		<id>1337</id>
-		<posX>158</posX>
-		<posY>152</posY>
+		<posX>700</posX>
+		<posY>425</posY>
 		<width>120</width>
 		<height>24</height>
 		<textureWidth>23</textureWidth>
