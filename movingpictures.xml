@@ -474,7 +474,7 @@ multiple view modes.
 		<type>label</type>
 		<label>Total movies: #MovingPictures.general.filteredmoviecount</label>
 		<id>0</id>
-		<posX>1267</posX>
+		<posX>1245</posX>
 		<posY>690</posY>
 		<align>right</align>
 		<textcolor>6aa5cb</textcolor>

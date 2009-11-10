@@ -96,37 +96,38 @@
 	<control>
 		<id>1</id>
 		<type>image</type>
-		<posX>78</posX>
-		<posY>191</posY>
-		<width>275</width>
-		<height>202</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">missing_Coverart.png</texture>
-		<visible>[facadeview.list|facadeview.album]+[Control.HasFocus(50)+!control.hasthumb(500)]</visible>
+		<posX>125</posX>
+		<posY>192</posY>
+		<width>306</width>
+		<height>203</height>
+		<texture>black.png</texture>
+		<visible>[facadeview.list|facadeview.album]+Control.HasFocus(50)</visible>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
 	</control>
 
 	<control>
 		<id>500</id>
 		<type>image</type>
-		<posX>78</posX>
-		<posY>191</posY>
-		<width>275</width>
-		<height>202</height>
+		<posX>125</posX>
+		<posY>192</posY>
+		<width>306</width>
+		<height>203</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
-		<visible>[facadeview.list|facadeview.album]+[Control.HasFocus(50)]</visible>
+		<keepaspectratio>yes</keepaspectratio>
+		<centered>yes</centered>
+		<visible>[facadeview.list|facadeview.album]+Control.HasFocus(50)</visible>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
 	</control>
 
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>71</posX>
-		<posY>187</posY>
-		<width>293</width>
-		<height>210</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">Picture_cover.png</texture>
-		<visible>[facadeview.list|facadeview.album]+[Control.HasFocus(50)]</visible>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>551</width>
+		<height>768</height>
+		<texture>roundedcorners_pictures.png</texture>
+		<visible>facadeview.list|facadeview.album</visible>
 	</control>
 	
 	<import>common.overlay.xml</import>

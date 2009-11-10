@@ -161,13 +161,13 @@
 		<height>600</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>1267</spinPosX>
+		<spinPosX>1245</spinPosX>
 		<spinPosY>718</spinPosY>
 		<spinAlign>right</spinAlign>
 		<spinColor>ffffffff</spinColor>
 		<textureFocus>listcontrol_item_selected.png</textureFocus>
 		<textureNoFocus>listcontrol_item.png</textureNoFocus>
-		<textureHeight>53</textureHeight>
+		<textureHeight>52</textureHeight>
 		<image>folder_focus.png</image>
 		<font>font12</font>
 		<shadedColor>20ffffff</shadedColor>
@@ -179,10 +179,10 @@
 		<colordiffuse>ffffffff</colordiffuse>
 		<remoteColor>ffFFA075</remoteColor>
 		<downloadColor>ff80ff80</downloadColor>
-		<spaceBetweenItems>-1</spaceBetweenItems>
+		<spaceBetweenItems>-3</spaceBetweenItems>
 		<textXOff>8</textXOff>
 		<textYOff>10</textYOff>
-		<textXOff2>738</textXOff2>
+		<textXOff2>0</textXOff2>
 		<textYOff2>10</textYOff2>
 		<itemWidth>0</itemWidth>
 		<itemHeight>0</itemHeight>
@@ -284,14 +284,14 @@
 		<description>default playlist item listcontrol</description>
 		<type>playlistcontrol</type>
 		<id>10</id>
-		<posX>528</posX>
+		<posX>530</posX>
 		<posY>150</posY>
-		<width>751</width>
-		<height>600</height>
+		<width>750</width>
+		<height>550</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>1267</spinPosX>
-		<spinPosY>718</spinPosY>
+		<spinPosX>1111</spinPosX>
+		<spinPosY>662</spinPosY>
 		<spinAlign>Right</spinAlign>
 		<spinColor>ffffffff</spinColor>
 		<textureFocus>playlist_sub_focus.png</textureFocus>
@@ -316,6 +316,7 @@
 		<IconXOff>1000</IconXOff>
 		<IconYOff>1000</IconYOff>
 		<suffix>|</suffix>
+		<suffix>|</suffix>
 		<upBtnWidth>49</upBtnWidth>
 		<downBtnWidth>49</downBtnWidth>
 		<deleteBtnWidth>49</deleteBtnWidth>
@@ -336,7 +337,6 @@
 		<textureMoveDownFocused>playlist_item_down_focus.png</textureMoveDownFocused>
 		<textureDelete>playlist_item_delete_nofocus.png</textureDelete>
 		<textureDeleteFocused>playlist_item_delete_focus.png</textureDeleteFocused>
-		<spinCanFocus>no</spinCanFocus>
 	</control>
 
 	<control>
@@ -347,7 +347,6 @@
 		<posY>121</posY>
 		<width>1173</width>
 		<height>588</height>
-		<spinPosX>20</spinPosX>
 		<itemWidth>155</itemWidth>
 		<itemHeight>160</itemHeight>
 		<textureWidth>132</textureWidth>
@@ -377,13 +376,9 @@
 		<textYOff>0</textYOff>
 		<folderPrefix></folderPrefix>
 		<folderSuffix></folderSuffix>
-		<spinCanFocus>no</spinCanFocus>
-		<spinWidth>46</spinWidth>
-		<spinHeight>33</spinHeight>
-		<spinPosX>1210</spinPosX>
-		<spinPosY>715</spinPosY>
+		<spinPosX>400</spinPosX>
+		<spinPosY>718</spinPosY>
 		<spinAlign>right</spinAlign>
-		<spinColor>ffffffff</spinColor>
 	</control>
 
 	<control>
@@ -459,7 +454,7 @@
 		<width>728</width>
 		<height>375</height>
 		<spinWidth>28</spinWidth>
-		<spinHeight>28</spinHeight>
+		<spinHeight>20</spinHeight>
 		<spinPosX>1084</spinPosX>
 		<spinPosY>662</spinPosY>
 		<spinColor>ffffffff</spinColor>
@@ -525,7 +520,7 @@
 		<posX>586</posX>
 		<posY>157</posY>
 		<width>28</width>
-		<height>28</height>
+		<height>20</height>
 		<textureUp>page_up_nofocus.png</textureUp>
 		<textureDown>page_down_nofocus.png</textureDown>
 		<textureUpFocus>page_up_focus.png</textureUpFocus>
@@ -569,6 +564,12 @@
 		<textYOff>4</textYOff>
 		<textXOff2>17</textXOff2>
 		<textYOff2>4</textYOff2>
+		<textureFocus>menu_list_focus.png</textureFocus>
+<!--
+	<textureNoFocus>menu_list_nofocus1.png</textureNoFocus>
+		<texturebg>menu_list_nofocus1.png</texturebg>
+-->
+
 		<textureLeft>arrow_round_left_nofocus.png</textureLeft>
 		<textureLeftFocus>arrow_round_left_focus.png</textureLeftFocus>
 		<textureRight>arrow_round_right_nofocus.png</textureRight>

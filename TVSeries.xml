@@ -82,7 +82,7 @@
       <type>label</type>
       <label>Total Series: #TVSeries.SeriesCount</label>
       <id>0</id>
-      <posX>1267</posX>
+      <posX>1245</posX>
 	  <posY>690</posY>
       <align>right</align>
       <textcolor>6aa5cb</textcolor>
@@ -94,7 +94,7 @@
       <type>label</type>
       <label>Total Episodes: #TVSeries.FilteredEpisodeCount</label>
       <id>0</id>
-      <posX>1267</posX>
+      <posX>1245</posX>
 	  <posY>690</posY>
       <align>right</align>
       <textcolor>6aa5cb</textcolor>
@@ -201,7 +201,7 @@
       <id>67</id>
       <posX>76</posX>
       <posY>179</posY>
-      <width>375</width>
+      <width>370</width>
 	  <height>208</height>
       <texture flipY="true" diffuse="Thumb_Mask.png">#TVSeries.EpisodeImage</texture>
       <visible>Control.IsVisible(1239)+facadeview.list</visible>

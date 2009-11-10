@@ -27,7 +27,7 @@
 		<type>image</type>
 		<posX>76</posX>
 		<posY>179</posY>
-		<width>375</width>
+		<width>370</width>
 		<height>208</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
 		<visible>facadeview.list+Control.HasFocus(50)</visible>

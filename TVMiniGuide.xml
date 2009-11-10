@@ -8,20 +8,20 @@
 <control>
 	<description>button group</description>
 	<type>group</type>
-	<animation effect="fade" time="250">Visible</animation>
-	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
-	<animation effect="fade" time="200">Hidden</animation>
-	<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">Hidden</animation>
+	<animation effect="fade" time="250" reversible="false">Visible</animation>
+	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550" reversible="false">Visible</animation>
+	<animation effect="fade" time="200" reversible="false">Hidden</animation>
+	<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
 
 	<control>
 		<description>background image</description>
 		<type>image</type>
 		<id>0</id>
-		<texture>tv_miniguide_big.png</texture>
+		<texture>tv_miniguide.png</texture>
 		<width>734</width>
-		<height>461</height>
+		<height>311</height>
 		<posX>316</posX>
-		<posY>152</posY>
+		<posY>455</posY>
 	</control>
 
 	<control>
@@ -29,7 +29,7 @@
 		<type>label</type>
 		<id>4</id>
 		<posX>435</posX>
-		<posY>189</posY>
+		<posY>492</posY>
 		<width>426</width>
 		<label>10105</label>
 		<font>Segoe Light18</font>
@@ -41,9 +41,9 @@
 		<type>listcontrol</type>
 		<id>35</id>
 		<posX>349</posX>
-		<posY>237</posY>
+		<posY>540</posY>
 		<width>669</width>
-		<height>340</height>
+		<height>210</height>
 		<textureFocus>tv_miniguide_bar_nochannelstate.png</textureFocus>
 		<textureNoFocus>tv_miniguide_bar_nochannelstate_nofocus.png</textureNoFocus>
 		<textYOff>2000</textYOff>
@@ -58,7 +58,7 @@
 		<PinIconYOff>13</PinIconYOff>
 		<PinIconWidth>-</PinIconWidth>
 		<PinIconHeight>-</PinIconHeight>
-		<spinPosY>547</spinPosY>
+		<spinPosY>700</spinPosY>
 		<spinPosX>1000</spinPosX>
 		<spinColor>FFB2D4F5</spinColor>
 		<spinWidth>39</spinWidth>
@@ -84,9 +84,9 @@
 		<type>listcontrol</type>
 		<id>37</id>
 		<posX>348</posX>
-		<posY>237</posY>
+		<posY>540</posY>
 		<width>669</width>
-		<height>340</height>
+		<height>210</height>
 		<textureFocus>tv_miniguide_bar.png</textureFocus>
 		<textureNoFocus>tv_miniguide_bar_nofocus.png</textureNoFocus>
 		<textYOff>2000</textYOff>
@@ -101,7 +101,7 @@
 		<PinIconYOff>12</PinIconYOff>
 		<PinIconWidth>-</PinIconWidth>
 		<PinIconHeight>-</PinIconHeight>
-		<spinPosY>547</spinPosY>
+		<spinPosY>700</spinPosY>
 		<spinPosX>1000</spinPosX>
 		<spinColor>FFB2D4F5</spinColor>
 		<spinWidth>39</spinWidth>
@@ -127,7 +127,7 @@
 		<type>spincontrol</type>
 		<id>36</id>
 		<posX>740</posX>
-		<posY>542</posY>
+		<posY>695</posY>
 		<showrange>no</showrange>
 		<orientation>horizontal</orientation>
 		<font>font10</font>
@@ -149,7 +149,7 @@
 		<id>0</id>
 		<type>label</type>
 		<posX>512</posX>
-		<posY>546</posY>
+		<posY>699</posY>
 		<align>right</align>
 		<font>font12</font>
 		<textcolor>FFFFFFFF</textcolor>
