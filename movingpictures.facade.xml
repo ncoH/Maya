@@ -41,7 +41,7 @@ This file should contain the facade view
 				<onleft>2</onleft>
 				<thumbWidth>213</thumbWidth>
 				<thumbHeight>302</thumbHeight>
-				<thumbPosX>-7</thumbPosX>
+				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
 				<itemWidth>213</itemWidth>
 				<itemHeight>302</itemHeight>

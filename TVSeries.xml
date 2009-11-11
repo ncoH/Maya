@@ -82,7 +82,7 @@
       <type>label</type>
       <label>Total Series: #TVSeries.SeriesCount</label>
       <id>0</id>
-      <posX>1245</posX>
+      <posX>1267</posX>
 	  <posY>690</posY>
       <align>right</align>
       <textcolor>6aa5cb</textcolor>
@@ -94,7 +94,7 @@
       <type>label</type>
       <label>Total Episodes: #TVSeries.FilteredEpisodeCount</label>
       <id>0</id>
-      <posX>1245</posX>
+      <posX>1267</posX>
 	  <posY>690</posY>
       <align>right</align>
       <textcolor>6aa5cb</textcolor>
@@ -201,7 +201,7 @@
       <id>67</id>
       <posX>76</posX>
       <posY>179</posY>
-      <width>370</width>
+      <width>375</width>
 	  <height>208</height>
       <texture flipY="true" diffuse="Thumb_Mask.png">#TVSeries.EpisodeImage</texture>
       <visible>Control.IsVisible(1239)+facadeview.list</visible>
@@ -264,10 +264,11 @@
       <type>fadelabel</type>
       <description>Title (Wide Banners)</description>
       <id>640</id>
-      <posX>555</posX>
-	  <posY>110</posY>
-	  <width>700</width>
-	  <font>Segoe Light22</font>>
+	  <posX>0</posX>
+	  <posY>130</posY>
+	  <width>1366</width>
+	  <align>center</align>
+	  <font>Segoe Light22</font>
       <label>#TVSeries.Title</label>
       <visible>!facadeview.list+!Control.IsVisible(1242)</visible>
     </control>
@@ -1216,9 +1217,9 @@
           <description>graphical thumbpanel (series and/or seasons if set)</description>
           <type>thumbnailpanel</type>
           <id>50</id>
-          <posX>103</posX>
+          <posX>127</posX>
 		  <posY>242</posY>
-          <width>1240</width>
+          <width>1112</width>
           <height>500</height>
           <!-- up/down buttons & page # -->     
 		  <onleft>2</onleft>
@@ -1234,23 +1235,28 @@
           <selectedColor>00ffffff</selectedColor>
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>          
-          <suffix>|</suffix>		  
-          <itemWidthBig>612</itemWidthBig>
-          <itemHeightBig>86</itemHeightBig>
+          <suffix>|</suffix>
+		  
+
+          <itemWidthBig>556</itemWidthBig>
+          <itemHeightBig>103</itemHeightBig>
           <!-- boxes -->
-          <textureWidthBig>612</textureWidthBig>
-          <textureHeightBig>86</textureHeightBig>
+          <textureWidthBig>556</textureWidthBig>
+          <textureHeightBig>103</textureHeightBig>
           <!-- banners -->
-          <thumbWidthBig>612</thumbWidthBig>
-          <thumbHeightBig>86</thumbHeightBig>
+          <thumbWidthBig>556</thumbWidthBig>
+          <thumbHeightBig>103</thumbHeightBig>
           <thumbPosXBig>0</thumbPosXBig>
           <thumbPosYBig>0</thumbPosYBig>
+		  <zoomXPixels>96</zoomXPixels>
+				<zoomYPixels>18</zoomYPixels>
           <thumbZoom>no</thumbZoom>
           <!-- text (No banner) -->
           <textXOff>0</textXOff>
           <textYOff>0</textYOff>
+
           <keepaspectratio>no</keepaspectratio>
-          <enableFocusZoom>yes</enableFocusZoom>
+          <enableFocusZoom>no</enableFocusZoom>
           <scrollOffset>1</scrollOffset>
           <unfocusedAlpha>150</unfocusedAlpha>   
 		  <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,550" time="400">focus</thumbAnimation>
@@ -1274,7 +1280,7 @@
 		  <spinCanFocus>no</spinCanFocus>
           <thumbWidth>213</thumbWidth>
 		  <thumbHeight>302</thumbHeight>
-          <thumbPosX>-7</thumbPosX>
+          <thumbPosX>0</thumbPosX>
 		  <thumbPosY>0</thumbPosY>
 		  <itemWidth>213</itemWidth>
 		  <itemHeight>302</itemHeight>
@@ -1356,6 +1362,15 @@
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
 	</control>
 	
-    <import>common.time.xml</import>
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>624</posX>
+		<posY>0</posY>
+		<texture>hiddenmenu_tab_up.png</texture>
+		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+	</control>
+	
+    <import>common.overlay.xml</import>
   </controls>
 </window>
