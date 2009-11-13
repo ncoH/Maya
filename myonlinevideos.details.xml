@@ -66,6 +66,17 @@
       <label>#OnlineVideos.cast</label>
       <visible>no</visible>
     </control>
+	
+<control>
+         <type>label</type>
+         <description>Runtime txt</description>
+         <id>54</id>
+         <posX>-2000</posX>
+         <posY>230</posY>
+         <label>172</label>
+         <visible>no</visible>
+         <textcolor>ffb2d4f5</textcolor>
+    </control>
 
     <control>
       <type>label</type>
