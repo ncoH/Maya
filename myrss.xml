@@ -4,7 +4,6 @@
 <defaultcontrol>2</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <controls>
-<import>common.window.xml</import>
 
 	<control>
 		<description>background image</description>
@@ -13,15 +12,55 @@
 		<width>1366</width>
 		<height>768</height>
 	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>news</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+	</control>
+	
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>130</posY>
+		<width>700</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light22</font>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1245</posX>
+		<posY>690</posY>
+		<align>right</align>
+		<label>#itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
 
 	<control>
 		<description>Channel name label</description>
 		<type>label</type>
 		<id>12</id>
-		<posX>462</posX>
-		<posY>62</posY>
+		<posX>80</posX>
+		<posY>270</posY>
 		<label>-</label>
-		<font>font16</font>
+		<font>font13</font>
 		<align>left</align>
 		<textcolor>FFB2D4F5</textcolor>
 	</control>
@@ -39,9 +78,7 @@
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
 		<animation effect="fade" time="250">Visible</animation>
-		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
 		<animation effect="fade" time="200">Hidden</animation>
-		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">Hidden</animation>
 		
 		<control>
 		<id>1</id>
@@ -115,7 +152,7 @@
 			<description>Site Logo</description>
 			<type>image</type>
 			<id>101</id>
-			<posX>106</posX>
+			<posX>80</posX>
 			<posY>212</posY>
 			<width>227</width>
 			<height>160</height>

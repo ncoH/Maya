@@ -33,8 +33,8 @@
 		<posX>382</posX>
 		<posY>287</posY>
 		<label>934</label>
-		<font>font13</font>
-		<textcolor>ffffffff</textcolor>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>

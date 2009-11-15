@@ -35,7 +35,7 @@
 		<label>radio</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>facadeview.filmstrip</visible>
+		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
 		<align>center</align>
 	</control>
 	
