@@ -112,6 +112,31 @@
 	</control>
 	
 	<control>
+		<description>Signal level 0</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>742</posX>
+		<posY>374</posY>
+		<label> 0</label>
+		<font>font10</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Signal level 100</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>1183</posX>
+		<posY>374</posY>
+		<label> 100</label>
+		<font>font10</font>
+		<align>right</align>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
 		<description>Progress background</description>
 		<type>image</type>
 		<id>0</id>
@@ -148,6 +173,31 @@
 		<posY>409</posY>
 		<label>Signal quality</label>
 		<font>Segoe Light18</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Signal level 0</description>
+		<type>label</type>
+		<id> 0</id>
+		<posX>742</posX>
+		<posY>409</posY>
+		<label> 0</label>
+		<font>font10</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Signal level 100</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>1183</posX>
+		<posY>409</posY>
+		<label> 100</label>
+		<font>font10</font>
+		<align>right</align>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>

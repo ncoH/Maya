@@ -60,10 +60,10 @@
 		<width>1366</width>
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
-				<animation effect="fade" time="250">Visible</animation>
+		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
-		<animation effect="fade" time="200">Hidden</animation>
-		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">Hidden</animation>
+		<animation effect="fade" time="200" reversible="false">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
 		
 		<control>
 		<id>1</id>
@@ -195,8 +195,6 @@
 		<dimColor>ffffffff</dimColor>
 		<height>583</height>
 		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="zoom" start="50,50" end="100,100" center="683,384" time="200">WindowOpen</animation>
-		<animation effect="zoom" start="100,100" end="50,50" center="683,384" time="200">WindowClose</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 
 		

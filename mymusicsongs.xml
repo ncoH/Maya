@@ -262,7 +262,7 @@
 					<onright>50</onright>
 					<onup>200</onup>
 					<ondown>2</ondown>
-                     <visible>plugin.isenabled(My Lyrics)</visible>
+                    <visible>plugin.isenabled(My Lyrics)</visible>
 				</control>	
 
 				<!--

@@ -142,7 +142,7 @@
 		<posX>483</posX>
 		<posY>180</posY>
 		<width>400</width>
-		<label>#infoservice.weather.location</label>
+		<label>#infoservice.weather.location - #infoservice.weather.today.condition</label>
 		<font>font12</font>
 		<textcolor>6aa5cb</textcolor>
 		<align>center</align>
@@ -175,7 +175,7 @@
 		<description>current condition label</description>
 		<type>label</type>
 		<id>22</id>
-		<posX>238</posX>
+		<posX>-2000</posX>
 		<posY>565</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
@@ -198,7 +198,7 @@
 		<description>current feels like label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>330</posX>
+		<posX>345</posX>
 		<posY>555</posY>
 		<label>#infoservice.weather.today.feelsliketemp</label>
 		<font>font12</font>
@@ -222,7 +222,7 @@
 		<description>current humidity label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>330</posX>
+		<posX>345</posX>
 		<posY>578</posY>
 		<label>#infoservice.weather.today.humidity</label>
 		<font>font12</font>
@@ -245,7 +245,7 @@
 		<description>current UV Index label</description>
 		<type>label</type>
 		<id>25</id>
-		<posX>330</posX>
+		<posX>345</posX>
 		<posY>600</posY>
 		<label>-</label>
 		<font>font12</font>
