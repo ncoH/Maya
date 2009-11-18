@@ -8,10 +8,8 @@
 <control>
 	<description>button group</description>
 	<type>group</type>
-	<animation effect="fade" time="250">Visible</animation>
-	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
-	<animation effect="fade" time="200">Hidden</animation>
-	<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">Hidden</animation>
+	<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
 
 	<control>
 		<description>background image</description>

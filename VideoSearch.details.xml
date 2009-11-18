@@ -72,7 +72,7 @@
     <control>
       <type>label</type>
       <description>year value</description>
-      <id>55</id>
+      <id>0</id>
       <posX>50</posX>
       <posY>425</posY>
       <label>#VideoSearch.releasedate</label>
