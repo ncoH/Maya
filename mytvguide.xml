@@ -292,8 +292,8 @@
 		<description>record pin</description>
 		<type>image</type>
 		<id>31</id>
-		<posX>330</posX>
-		<posY>538</posY>
+		<posX>405</posX>
+		<posY>543</posY>
 		<texture>tvguide_record_button.png</texture>
 		<visible>no</visible>
 		<animation effect="fade" time="800">WindowOpen</animation>
@@ -307,7 +307,7 @@
       <posX>38</posX>
       <posY>166</posY>
       <width>40</width>
-      <height>334</height>
+      <height>336</height>
       <textureFocus>blue.png</textureFocus>
       <textureNoFocus>blue.png</textureNoFocus>
       <label></label>
