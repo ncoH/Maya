@@ -198,7 +198,7 @@
 		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
-		<height>266</height>
+		<height>262</height>
 		<visible>facadeview.list|facadeview.album</visible>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
 	</control>
@@ -212,6 +212,7 @@
 		<height>596</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_music.png</texture>
 		<visible>facadeview.list|facadeview.album</visible>
+		<keepaspectratio>yes</keepaspectratio>
 	</control>
 
 <import>common.overlay.xml</import>

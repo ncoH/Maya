@@ -246,7 +246,7 @@
 		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
-		<height>380</height>
+		<height>378</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
@@ -259,6 +259,7 @@
 		<width>380</width>
 		<height>596</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 

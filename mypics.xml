@@ -179,7 +179,7 @@
 		<posX>125</posX>
 		<posY>192</posY>
 		<width>306</width>
-		<height>203</height>
+		<height>200</height>
 		<texture>black.png</texture>
 		<visible>[facadeview.list|facadeview.album]+Control.HasFocus(50)</visible>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -189,9 +189,9 @@
 		<id>500</id>
 		<type>image</type>
 		<posX>125</posX>
-		<posY>192</posY>
+		<posY>190</posY>
 		<width>306</width>
-		<height>203</height>
+		<height>200</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<centered>yes</centered>
@@ -207,6 +207,7 @@
 		<width>551</width>
 		<height>768</height>
 		<texture>roundedcorners_pictures.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
 		<visible>facadeview.list|facadeview.album</visible>
 	</control>
 	

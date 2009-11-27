@@ -148,7 +148,7 @@
 		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
-		<height>380</height>
+		<height>378</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#MyTrailers.Details.Poster</texture>
 		<visible>!Control.IsVisible(50)+!string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
 	</control>
@@ -162,6 +162,7 @@
 		<width>380</width>
 		<height>596</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
 		<visible>!Control.IsVisible(50)+!string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
 	</control>
 
@@ -174,7 +175,7 @@
 		<posX>76</posX>
 		<posY>179</posY>
 		<width>375</width>
-		<height>208</height>
+		<height>205</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#MyTrailers.Video.Image</texture>
 		<visible>!Control.IsVisible(50)+string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -190,6 +191,7 @@
 		<height>624</height>
 		<visible>!Control.IsVisible(50)+string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_recordings.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>

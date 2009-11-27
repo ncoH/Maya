@@ -6,8 +6,122 @@
 	<define>#header.Extension.label:#header.label</define>
 	<define>#header.image</define>
 <controls>
-<!-- *** IMPORTS *** -->
-	<import>common.window.video.xml</import>
+<!--Dummy label-->
+	<control>
+		<description>Selected item Label</description>
+		<type>label</type>
+		<id>7773</id>
+		<posX>-2000</posX>
+		<posY>100</posY>
+		<label>#title</label>
+		<visible>control.hastext(7773)</visible>
+	</control>
+
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+	</control>
+	
+	<control>
+		<description>Alternate BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>background_thumbs.png</texture>
+		<visible>[facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(51)</visible>
+	</control>
+
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>130</posY>
+		<width>700</width>
+		<label>#title</label>
+		<font>Segoe Light22</font>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+control.isvisible(7773)+!control.isvisible(53)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>130</posY>
+		<width>700</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light22</font>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+!control.isvisible(7773)+!control.isvisible(53)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1267</posX>
+		<posY>690</posY>
+		<align>right</align>
+		<label>#itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>130</posY>
+		<width>1366</width>
+		<label>#title</label>
+		<font>Segoe Light22</font>
+		<align>center</align>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+control.isvisible(7773)+!control.isvisible(53)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>178</posY>
+		<width>1366</width>
+		<align>center</align>
+		<label>#itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>130</posY>
+		<width>1366</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light22</font>
+		<align>center</align>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!control.isvisible(7773)+!control.isvisible(53)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -20,7 +134,7 @@
 		<label>onlinevideos</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>!facadeview.smallicons + !facadeview.largeicons</visible>
+		<visible>[!facadeview.smallicons + !facadeview.largeicons] | Control.IsVisible(51)</visible>
 	</control>
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -34,7 +148,7 @@
 		<label>onlinevideos</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>facadeview.smallicons | facadeview.largeicons</visible>
+		<visible>[facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(51)</visible>
 		<align>center</align>
 	</control>
 	<!-- *** CLIP TITLE & DESCRIPTION *** -->
@@ -50,7 +164,7 @@
 		<posX>76</posX>
 		<posY>179</posY>
 		<width>375</width>
-		<height>208</height>
+		<height>205</height>
 		<texture flipY="true" diffuse="diffusemirrorwide.png">#selectedthumb</texture>
 		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.contains(#header.image,Apple Trailers.png)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -65,6 +179,7 @@
 		<width>508</width>
 		<height>624</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_recordings.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
 		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.equals(#selectedthumb,)+!string.contains(#header.image,Apple Trailers.png)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -143,7 +258,7 @@
 		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
-		<height>380</height>
+		<height>376</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
 		<visible>[!facadeview.smallicons+!facadeview.largeicons]+string.contains(#header.image,Apple Trailers.png)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -157,6 +272,7 @@
 		<width>380</width>
 		<height>596</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
 		<visible>[!facadeview.smallicons+!facadeview.largeicons]+string.contains(#header.image,Apple Trailers.png)</visible>
 	</control>
 	<control>

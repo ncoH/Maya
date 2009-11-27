@@ -32,8 +32,8 @@
 				<description>Thumbnail Panel</description>
 				<type>thumbnailpanel</type>
 				<id>50</id>
-				<posX>163</posX>
-				<posY>240</posY>
+				<posX>170</posX>
+				<posY>242</posY>
 				<width>1040</width>
 				<height>500</height>
 				<scrollOffset>0</scrollOffset>
@@ -55,7 +55,7 @@
 				<thumbHeightBig>210</thumbHeightBig>
 				<textureWidthBig>148</textureWidthBig>
 				<textureHeightBig>210</textureHeightBig>
-				<keepaspectratio>yes</keepaspectratio>
+				<keepaspectratio>no</keepaspectratio>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
 				<zoomXPixels>50</zoomXPixels>
@@ -64,11 +64,11 @@
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>
 				<frame>-</frame>
-				<frameFocus>-</frameFocus>
+				<frameFocus>thumbnail_frame_shine.png</frameFocus>
 				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,550" time="400">focus</thumbAnimation>
 				<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
 				<thumbZoom>no</thumbZoom>
-			<enableFocusZoom>yes</enableFocusZoom>
+				<spinPosX>1190</spinPosX>
 			</control>
 
 		</control>

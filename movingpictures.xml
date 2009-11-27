@@ -317,7 +317,7 @@ multiple view modes.
 		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
-		<height>380</height>
+		<height>376</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#MovingPictures.Coverart</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
@@ -331,6 +331,7 @@ multiple view modes.
 		<width>380</width>
 		<height>596</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 
@@ -470,7 +471,72 @@ multiple view modes.
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 	
+	<control>
+		<type>textboxscrollup</type>
+		<description>Summary (list)</description>
+		<id>1025</id>
+		<posX>555</posX>
+		<posY>330</posY>
+		<width>400</width>
+		<height>224</height>
+		<label>#MovingPictures.SelectedMovie.summary</label>
+		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
+		<onleft>1026</onleft>
+		<onright>1026</onright>
+		<onup>1026</onup>
+		<ondown>1026</ondown>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<description>Actors value</description>
+		<type>fadelabel</type>
+		<id>0</id>
+		<posX>555</posX>
+		<posY>570</posY>
+		<width>365</width>
+		<font>font11</font>
+		<textcolor>85cffe</textcolor>
+		<label>#MovingPictures.SelectedMovie.extra.actors.1, #MovingPictures.SelectedMovie.extra.actors.2, #MovingPictures.SelectedMovie.extra.actors.3</label>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+	</control>
+	
+	
 		<control>
+		<description>Actors value</description>
+		<type>fadelabel</type>
+		<id>0</id>
+		<posX>555</posX>
+		<posY>595</posY>
+		<width>365</width>
+		<font>font11</font>
+		<textcolor>85cffe</textcolor>
+		<label>Directed by #MovingPictures.SelectedMovie.directors</label>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>552</posX>
+		<posY>625</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#MovingPictures.SelectedMovie.score</percentage>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+	</control>
+	
+	
+	<control>
 		<description>Moviecount</description>
 		<type>label</type>
 		<label>Total movies: #MovingPictures.general.filteredmoviecount</label>

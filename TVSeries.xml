@@ -151,7 +151,7 @@
       <posX>135</posX>
 	  <posY>183</posY>
 	  <width>266</width>
-	  <height>380</height>
+	  <height>376</height>
       <texture flipY="true" diffuse="Thumb_Mask.png">#TVSeries.SeriesPoster</texture>
       <visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)</visible>
     </control>
@@ -165,6 +165,7 @@
 	  <width>380</width>
 	  <height>596</height>
       <texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
+	  <keepaspectratio>yes</keepaspectratio>
       <visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)</visible>
     </control>
 	
@@ -202,7 +203,7 @@
       <posX>76</posX>
       <posY>179</posY>
       <width>375</width>
-	  <height>208</height>
+	  <height>205</height>
       <texture flipY="true" diffuse="Thumb_Mask.png">#TVSeries.EpisodeImage</texture>
       <visible>Control.IsVisible(1239)+facadeview.list</visible>
     </control>
@@ -216,6 +217,7 @@
 	  <width>508</width>
 	  <height>624</height>
 	  <texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_recordings.png</texture>
+	  <keepaspectratio>yes</keepaspectratio>
       <visible>Control.IsVisible(1239)+facadeview.list</visible>
     </control>
 	

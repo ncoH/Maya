@@ -195,7 +195,7 @@
 		<description>nowplaying text</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>154</posX>
+		<posX>153</posX>
 		<posY>637</posY>
 		<width>260</width>
 		<height>50</height>

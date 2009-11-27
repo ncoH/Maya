@@ -23,7 +23,7 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_thumbs.png</texture>
-		<visible>[facadeview.smallicons|facadeview.largeicons]+!Control.HasFocus(50)</visible>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+!Control.IsVisible(24)</visible>
 	</control>
 	
 	<control>
@@ -114,7 +114,7 @@
 		<label>showtimes</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>facadeview.list</visible>
+		<visible>facadeview.list|Control.IsVisible(24)</visible>
 	</control>
 
 	<control>
@@ -129,7 +129,7 @@
 		<label>showtimes</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
+		<visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(24)</visible>
 		<align>center</align>
 	</control>	
 
@@ -372,7 +372,7 @@
 		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
-		<height>380</height>
+		<height>378</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
 		<visible>facadeview.list+Control.HasFocus(50)</visible>
 	</control>
@@ -385,6 +385,7 @@
 		<width>380</width>
 		<height>596</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
 		<visible>[facadeview.list|facadeview.album]+Control.HasFocus(50)</visible>
 	</control>
 	

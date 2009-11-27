@@ -312,27 +312,29 @@
 	</control>
 	
 	<control>
-		<id>500</id>
+		<description>Cover Art</description>
 		<type>image</type>
-		<posX>135</posX>
-		<posY>183</posY>
-		<width>266</width>
-		<height>266</height>
-		<visible>[facadeview.list|facadeview.album]</visible>
+		<id>60</id>
+		<posX>134</posX>
+		<posY>184</posY>
+		<width>265</width>
+		<height>262</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
-
+	
 	<control>
+		<description>Cover Art overlay</description>
 		<type>image</type>
 		<id>1</id>
 		<posX>73</posX>
 		<posY>144</posY>
 		<width>380</width>
 		<height>596</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_music.png</texture>
-		<visible>[facadeview.list|facadeview.album]</visible>
+		<texture>roundedcorners_music.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
-
 	<import>common.overlay.xml</import>
 </controls>
 </window>

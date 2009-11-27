@@ -66,7 +66,7 @@ This file should contain the facade view
 				<type>thumbnailpanel</type>
 				<id>50</id>
 				<posX>170</posX>
-				<posY>242</posY>
+				<posY>244</posY>
 				<width>1040</width>
 				<height>500</height>
 				<scrollOffset>0</scrollOffset>
@@ -93,13 +93,13 @@ This file should contain the facade view
 				<thumbPosYBig>0</thumbPosYBig>
 				<zoomXPixels>50</zoomXPixels>
 				<zoomYPixels>79</zoomYPixels>
-				<hideUnfocusTexture>yes</hideUnfocusTexture>
+				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>
 				<frame>-</frame>
 				<frameFocus>thumbnail_frame_shine.png</frameFocus>
-				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,550" time="400">focus</thumbAnimation>
-				<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
+				<shadowAngle>90</shadowAngle>
+    			<shadowDistance>50</shadowDistance>
 				<thumbZoom>no</thumbZoom>
 				<spinPosX>1190</spinPosX>
 			</control>

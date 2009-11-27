@@ -138,7 +138,7 @@
 		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
-		<height>266</height>
+		<height>262</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">-</texture>
 	</control>
 
@@ -149,7 +149,8 @@
 		<posY>144</posY>
 		<width>380</width>
 		<height>596</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_music.png</texture>
+		<texture>roundedcorners_music.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
 	</control>
 
 	<control>

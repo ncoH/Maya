@@ -281,7 +281,7 @@
 		<posX>1000</posX>
 		<posY>183</posY>
 		<width>266</width>
-		<height>380</height>
+		<height>377</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#thumb</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -295,6 +295,7 @@
 		<width>380</width>
 		<height>596</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video_right.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
