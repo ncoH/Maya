@@ -25,9 +25,9 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>1329</posX>
-		<posY>52</posY>
+		<posY>64</posY>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light28</font>
+		<font>Segoe Light22</font>
 		<align>right</align>
 		<label>#time</label>
     </control>
@@ -308,7 +308,7 @@
       <posY>166</posY>
       <width>40</width>
       <height>336</height>
-      <textureFocus>blue.png</textureFocus>
+      <textureFocus>tvgroup_button_selected.png</textureFocus>
       <textureNoFocus>blue.png</textureNoFocus>
       <label></label>
       <onleft>60</onleft>

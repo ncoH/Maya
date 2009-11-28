@@ -28,7 +28,7 @@
 		<posX>1329</posX>
 		<posY>52</posY>
 		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light28</font>
+		<font>Segoe Light22</font>
 		<align>right</align>
 		<label>#time</label>
     </control>

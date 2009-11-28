@@ -256,8 +256,8 @@
 		<description>Description1</description>
 		<type>textboxscrollup</type>
 		<id>15</id>
-		<posX>530</posX>
-		<posY>540</posY>
+		<posX>560</posX>
+		<posY>580</posY>
 		<width>750</width>
 		<height>137</height>
 		<seperator>----------------------------------------------------------------------------------------------</seperator>
