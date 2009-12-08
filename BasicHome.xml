@@ -784,8 +784,8 @@
 		<id>1</id>
 		<posX>605</posX>
 		<posY>658</posY>
-		<height>50</height>
-		<width>50</width>
+		<height>90</height>
+		<width>90</width>
 		<texture>weather/#infoservice.weather.today.img.small.filenamewithext</texture>
 		<visible>plugin.isenabled(InfoService)</visible>
 		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -795,7 +795,7 @@
 	<control>
 		<description>Temp label</description>
 		<type>label</type>
-		<posX>665</posX>
+		<posX>705</posX>
 		<posY>655</posY>
 		<width>500</width>
 		<label>#infoservice.weather.today.temp</label>
@@ -808,7 +808,7 @@
 	<control>
 		<description>Date label</description>
 		<type>label</type>
-		<posX>666</posX>
+		<posX>706</posX>
 		<posY>700</posY>
 		<width>500</width>
 		<label>#date</label>
