@@ -228,7 +228,7 @@ multiple view modes.
 				<onleft>50</onleft>
 				<onright>50</onright>
 			</control>
-<!-- Only in MovingPictures 1.0 -->
+<!-- Only in MovingPictures 0.8
 				<control>
 					<description>Sort</description>
 					<type>button</type>
@@ -244,7 +244,7 @@ multiple view modes.
 					<onup>3</onup>
 					<ondown>66610</ondown>
 				</control>
-
+-->
 
 
 	
@@ -317,7 +317,7 @@ multiple view modes.
 		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
-		<height>376</height>
+		<height>380</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#MovingPictures.Coverart</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
@@ -331,7 +331,6 @@ multiple view modes.
 		<width>380</width>
 		<height>596</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
-		<keepaspectratio>yes</keepaspectratio>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 
@@ -427,7 +426,7 @@ multiple view modes.
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 	
-<!-- Only in MovingPictures 1.0 -->
+<!-- Only in MovingPictures 0.8 -->
 	<control>
 		<description>runtime</description>
 		<type>label</type>
@@ -554,22 +553,6 @@ multiple view modes.
 		<label>Total movies: #MovingPictures.general.filteredmoviecount</label>
 		<id>0</id>
 		<posX>0</posX>
-		<posY>728</posY>
-		<width>1366</width>
-		<align>center</align>
-		<font>font13</font>
-		<textcolor>ffffff</textcolor>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
-	</control>
-	
-	<!--            :: FILMSTRIP VIEW ::            -->
-	
-	<control>
-		<description>Year below the movie title</description>
-		<type>label</type>
-		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime.localized.long - #MovingPictures.SelectedMovie.genres</label>
-		<id>0</id>
-		<posX>0</posX>
 		<posY>178</posY>
 		<width>1366</width>
 		<align>center</align>
@@ -578,30 +561,8 @@ multiple view modes.
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
 	</control>
 
-	<!-- Only in MovingPictures 1.0 -->
 	
-	<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>512</posX>
-		<posY>64</posY>
-		<width>342</width>
-		<height>640</height>
-		<texture>menu_bg.png</texture>
-		<visible>Control.HasFocus(51)</visible>
-	</control>
 	
-	<control>
-		<description>Heading text label</description>
-		<type>label</type>
-		<id>1</id>
-		<posX>567</posX>
-		<posY>110</posY>
-		<label>Movies</label>
-		<font>Segoe Light18</font>
-		<textcolor>85cffe</textcolor>
-		<visible>Control.HasFocus(51)</visible>
-	</control>
 
 
 	<!--            :: DETAILS VIEW ::            -->

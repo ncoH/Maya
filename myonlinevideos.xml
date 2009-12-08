@@ -179,7 +179,6 @@
 		<width>508</width>
 		<height>624</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_recordings.png</texture>
-		<keepaspectratio>yes</keepaspectratio>
 		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.equals(#selectedthumb,)+!string.contains(#header.image,Apple Trailers.png)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -258,7 +257,7 @@
 		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
-		<height>376</height>
+		<height>380</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
 		<visible>[!facadeview.smallicons+!facadeview.largeicons]+string.contains(#header.image,Apple Trailers.png)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -272,7 +271,6 @@
 		<width>380</width>
 		<height>596</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
-		<keepaspectratio>yes</keepaspectratio>
 		<visible>[!facadeview.smallicons+!facadeview.largeicons]+string.contains(#header.image,Apple Trailers.png)</visible>
 	</control>
 	<control>
