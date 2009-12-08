@@ -5,6 +5,27 @@ This file should contain the facade view
 <window>
 <controls>
 
+<control>      
+      <type>facadeview</type>
+      <id>51</id>
+      <control>
+        <description>Categories List</description>
+        <type>listcontrol</type>
+        <id>51</id>
+        <onleft>51</onleft>
+        <onright>51</onright>
+        <posX>543</posX>
+		<posY>175</posY>        
+		<height>580</height>
+		<width>278</width>
+        <textXOff>14</textXOff>
+        <textXOff3>10</textXOff3>
+        <IconXOff>1980</IconXOff>        
+        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+		<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+      </control>
+    </control>
+
 	<control>
 		<type>facadeview</type>
 		<id>50</id>
