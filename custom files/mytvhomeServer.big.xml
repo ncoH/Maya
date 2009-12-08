@@ -16,10 +16,11 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>155</posX>
+		<posX>425</posX>
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
+		<align>right</align>
 		<label>television</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
@@ -196,8 +197,8 @@
 		<description>video window</description>
 		<type>videowindow</type>
 		<id>99</id>
-		<posX>580</posX>
-		<posY>86</posY>
+		<posX>579</posX>
+		<posY>85</posY>
 		<width>624</width>
 		<height>350</height>
 		<onleft>2</onleft>
@@ -227,7 +228,7 @@
 		<id>1</id>
 		<width>266</width>
 		<height>37</height>
-		<posX>562</posX>
+		<posX>563</posX>
 		<posY>480</posY>
 		<label>#TV.View.channel - #TV.View.start - #TV.View.stop</label>
 		<align>left</align>
@@ -256,7 +257,7 @@
 		<description>Description1</description>
 		<type>textboxscrollup</type>
 		<id>15</id>
-		<posX>560</posX>
+		<posX>564</posX>
 		<posY>580</posY>
 		<width>750</width>
 		<height>137</height>
