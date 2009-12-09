@@ -28,9 +28,9 @@
 		<posX>76</posX>
 		<posY>179</posY>
 		<width>370</width>
-		<height>205</height>
+		<height>208</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
-		<visible>facadeview.list+Control.HasFocus(50)</visible>
+		<visible>facadeview.list</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
@@ -42,9 +42,8 @@
 		<posY>144</posY>
 		<width>508</width>
 		<height>624</height>
-		<visible>facadeview.list+Control.HasFocus(50)+Control.HasThumb(500)</visible>
+		<visible>facadeview.list+Control.HasThumb(500)</visible>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_recordings.png</texture>
-		<keepaspectratio>yes</keepaspectratio>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
@@ -62,7 +61,9 @@
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
 		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
 		<animation effect="fade" time="200" reversible="false">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
 		
 		<control>
 		<id>1</id>
