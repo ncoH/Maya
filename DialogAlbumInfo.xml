@@ -231,11 +231,16 @@
 		<posX>555</posX>
 		<posY>487</posY>
 		<width>710</width>
-		<height>165</height>
+		<height>250</height>
 		<onleft>5</onleft>
 		<onright>5</onright>
 		<onup>5</onup>
 		<ondown>5</ondown>
+		<spinWidth>28</spinWidth>
+		<spinHeight>28</spinHeight>
+		<spinPosX>1245</spinPosX>
+		<spinPosY>718</spinPosY>
+		<spinAlign>left</spinAlign>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
