@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <window>
 <controls>
-
 	<control>
 		<type>listcontrol</type>
 		<description>videolist</description>
-			<posX>979</posX>
-			<posY>183</posY>
-			<height>490</height>
-			<width>299</width>
-			<textXOff>14</textXOff>
-			<spinAlign>left</spinAlign>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-			<spinCanFocus>no</spinCanFocus>
+		<posX>979</posX>
+		<posY>183</posY>
+		<height>490</height>
+		<width>299</width>
+		<textXOff>14</textXOff>
+		<spinAlign>left</spinAlign>
+		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+		<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+		<spinCanFocus>no</spinCanFocus>
 		<id>4</id>
 		<onup>4</onup>
 		<ondown>4</ondown>
@@ -41,12 +40,12 @@
 		<id>1</id>
 		<posX>555</posX>
 		<posY>130</posY>
-		<width>700</width>
+		<width>400</width>
 		<label>#MyTrailers.Details.Title</label>
 		<font>Segoe Light22</font>
 		<visible>!Control.IsVisible(50)</visible>
 	</control>
-
+	
 	<control>
 		<description>Releasedate</description>
 		<type>label</type>
@@ -72,7 +71,7 @@
 		<textcolor>85cffe</textcolor>
 		<visible>!Control.IsVisible(50)</visible>
 	</control>
-
+	
 	<control>
 		<description>Genres</description>
 		<type>fadelabel</type>
@@ -85,7 +84,7 @@
 		<textcolor>85cffe</textcolor>
 		<visible>!Control.IsVisible(50)</visible>
 	</control>
-
+	
 	<control>
 		<description>Director value</description>
 		<type>label</type>
@@ -97,7 +96,7 @@
 		<textcolor>85cffe</textcolor>
 		<visible>!Control.IsVisible(50)</visible>
 	</control>
-
+	
 	<control>
 		<description>actors</description>
 		<type>textbox</type>
@@ -110,7 +109,7 @@
 		<textcolor>85cffe</textcolor>
 		<visible>!Control.IsVisible(50)</visible>
 	</control>
-
+	
 	<control>
 		<description>Summary</description>
 		<type>textboxscrollup</type>
@@ -125,10 +124,7 @@
 		<visible>!Control.IsVisible(50)</visible>
 	</control>
 	
-	
-	
-<!-- Apple trailers-->
-
+	<!-- Apple trailers-->
 	<control>
 		<description>Default Cover Art</description>
 		<type>image</type>
@@ -140,7 +136,7 @@
 		<texture flipY="true" diffuse="Thumb_Mask.png">defaultdvdcover.png</texture>
 		<visible>!Control.IsVisible(50)+!string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
 	</control>
-
+	
 	<control>
 		<description>Cover Art</description>
 		<type>image</type>
@@ -164,10 +160,8 @@
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
 		<visible>!Control.IsVisible(50)+!string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
 	</control>
-
-<!-- GT GameTrailers-->
-
-
+		
+	<!-- GT GameTrailers-->
 	<control>
 		<id>1</id>
 		<type>image</type>
@@ -180,7 +174,7 @@
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
-
+	
 	<control>
 		<type>image</type>
 		<id>1</id>
@@ -194,6 +188,5 @@
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
-
 </controls>
 </window>
