@@ -238,7 +238,7 @@
 		<ondown>5</ondown>
 		<spinWidth>28</spinWidth>
 		<spinHeight>28</spinHeight>
-		<spinPosX>1245</spinPosX>
+		<spinPosX>555</spinPosX>
 		<spinPosY>718</spinPosY>
 		<spinAlign>left</spinAlign>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -249,7 +249,7 @@
 		<description>Tracks/Review</description>
 		<type>button</type>
 		<id>5</id>
-		<posX>177</posX>
+		<posX>147</posX>
 		<posY>475</posY>
 		<label>182</label>
 		<onleft>4</onleft>
@@ -264,7 +264,7 @@
 		<description>Refresh</description>
 		<type>button</type>
 		<id>6</id>
-		<posX>177</posX>
+		<posX>147</posX>
 		<posY>520</posY>
 		<label>184</label>
 		<onleft>4</onleft>

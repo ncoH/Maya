@@ -101,12 +101,9 @@
 		<description>image title:</description>
 		<type>label</type>
 		<id>30</id>
-		<posX>106</posX>
+		<posX>120</posX>
 		<posY>337</posY>
 		<label>734</label>
-		<font>font13</font>
-		<align>left</align>
-		<textcolor>FFB2D4F5</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -115,8 +112,8 @@
 		<description>spin control</description>
 		<type>spincontrol</type>
 		<id>10</id>
-		<posX>106</posX>
-		<posY>365</posY>
+		<posX>200</posX>
+		<posY>337</posY>
 		<onup>6</onup>
 		<ondown>11</ondown>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -127,11 +124,9 @@
 		<description>disc:</description>
 		<type>label</type>
 		<id>100</id>
-		<posX>106</posX>
-		<posY>393</posY>
+		<posX>120</posX>
+		<posY>380</posY>
 		<label>427</label>
-		<font>font13</font>
-		<textcolor>FFB2D4F5</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -140,8 +135,8 @@
 		<description>disc select</description>
 		<type>spincontrol</type>
 		<id>11</id>
-		<posX>106</posX>
-		<posY>421</posY>
+		<posX>200</posX>
+		<posY>380</posY>
 		<onup>10</onup>
 		<ondown>2</ondown>
 		<onleft>5</onleft>
@@ -281,7 +276,7 @@
 		<posX>1000</posX>
 		<posY>183</posY>
 		<width>266</width>
-		<height>377</height>
+		<height>379</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#thumb</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -295,7 +290,6 @@
 		<width>380</width>
 		<height>596</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video_right.png</texture>
-		<keepaspectratio>yes</keepaspectratio>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
