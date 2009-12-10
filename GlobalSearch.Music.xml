@@ -10,6 +10,20 @@
 	<import>common.window.xml</import>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>0</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>music info</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+	</control>
+	
+	<control>
 		<id>500</id>
 		<type>image</type>
 		<posX>135</posX>
@@ -198,6 +212,15 @@
 	</control>
 	
 </control>
+
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>325</posY>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>Control.HasFocus(50)</visible>
+	</control>
 
 <import>common.facade.xml</import>
 <import>common.overlay.xml</import>

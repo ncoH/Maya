@@ -44,8 +44,8 @@
 			<textXOff>14</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
-		<onleft>999</onleft>
-		<onright>999</onright>
+					<onleft>11</onleft>
+					<onright>11</onright>
 		<onup>15</onup>
 		<ondown>12</ondown>
 		<label>4552</label>
@@ -61,8 +61,8 @@
 			<textXOff>14</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
-		<onleft>999</onleft>
-		<onright>999</onright>
+		<onleft>12</onleft>
+					<onright>12</onright>
 		<onup>11</onup>
 		<ondown>13</ondown>
 		<label>4551</label>
@@ -78,8 +78,8 @@
 			<textXOff>14</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
-		<onleft>999</onleft>
-		<onright>999</onright>
+		<onleft>13</onleft>
+					<onright>13</onright>
 		<onup>12</onup>
 		<ondown>14</ondown>
 		<label>926</label>
@@ -95,8 +95,8 @@
 			<textXOff>14</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
-		<onleft>999</onleft>
-		<onright>999</onright>
+		<onleft>14</onleft>
+					<onright>14</onright>
 		<onup>13</onup>
 		<ondown>15</ondown>
 		<label>33041</label>
@@ -112,8 +112,8 @@
 			<textXOff>14</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
-		<onleft>999</onleft>
-		<onright>999</onright>
+		<onleft>15</onleft>
+					<onright>15</onright>
 		<onup>14</onup>
 		<ondown>11</ondown>
 		<label>930</label>
@@ -138,7 +138,7 @@
 		<posX>135</posX>
 		<posY>183</posY>
 		<width>266</width>
-		<height>262</height>
+		<height>266</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">-</texture>
 	</control>
 
@@ -150,7 +150,6 @@
 		<width>380</width>
 		<height>596</height>
 		<texture>roundedcorners_music.png</texture>
-		<keepaspectratio>yes</keepaspectratio>
 	</control>
 
 	<control>

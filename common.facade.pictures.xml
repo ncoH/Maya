@@ -38,24 +38,25 @@
 				<scrollOffset>1</scrollOffset>
 				<onleft>2</onleft>
 				<onright>2</onright>
-				<itemWidth>187</itemWidth>
-				<itemHeight>175</itemHeight>
-				<textureWidth>157</textureWidth>
-				<textureHeight>120</textureHeight>
-				<thumbWidth>145</thumbWidth>
-				<thumbHeight>107</thumbHeight>
-				<thumbPosX>5</thumbPosX>
-				<thumbPosY>5</thumbPosY>
+				<itemWidth>207</itemWidth>
+				<itemHeight>139</itemHeight>
+				<textureWidth>207</textureWidth>
+				<textureHeight>139</textureHeight>
+				<thumbWidth>207</thumbWidth>
+				<thumbHeight>139</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
 				<itemWidthBig>224</itemWidthBig>
 				<itemHeightBig>227</itemHeightBig>
 				<thumbWidthBig>207</thumbWidthBig>
 				<thumbHeightBig>157</thumbHeightBig>
 				<textureWidthBig>219</textureWidthBig>
 				<textureHeightBig>167</textureHeightBig>
-				<thumbPosXBig>5</thumbPosXBig>
-				<thumbPosYBig>5</thumbPosYBig>
-				<zoomXPixels>30</zoomXPixels>
+				<thumbPosXBig>0</thumbPosXBig>
+				<thumbPosYBig>0</thumbPosYBig>
+				<zoomXPixels>44</zoomXPixels>
 				<zoomYPixels>30</zoomYPixels>
+				<thumbZoom>yes</thumbZoom>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>

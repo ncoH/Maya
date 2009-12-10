@@ -48,7 +48,7 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>1245</posX>
+		<posX>1242</posX>
 		<posY>690</posY>
 		<align>right</align>
 		<label>#itemcount</label>
