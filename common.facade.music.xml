@@ -104,7 +104,7 @@
 				<width>1300</width>
 				<height>720</height>
 				<onup>2</onup>
-				<onleft>2</onleft>
+				<onleft>50</onleft>
 				<thumbWidth>200</thumbWidth>
 				<thumbHeight>200</thumbHeight>
 				<thumbPosX>4</thumbPosX>
