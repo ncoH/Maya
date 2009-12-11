@@ -85,7 +85,7 @@ This file should contain the details view
 		<width>365</width>
 		<font>Segoe Light18</font>
         <textcolor>ff85cffe</textcolor>
-		<label>Movie details</label>
+		<label>#MovingPictures.Translation.MovieDetails.Label</label>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 	</control>
 
@@ -174,7 +174,7 @@ This file should contain the details view
 	<control>
 		<description>director</description>
 		<type>label</type>
-		<label>Directed by #MovingPictures.SelectedMovie.directors</label>
+		<label>#MovingPictures.Translation.Director.Label: #MovingPictures.SelectedMovie.directors</label>
 		<id>0</id>
 		<posX>903</posX>
 		<posY>601</posY>

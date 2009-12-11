@@ -510,7 +510,7 @@ multiple view modes.
 		<width>365</width>
 		<font>font11</font>
 		<textcolor>85cffe</textcolor>
-		<label>Directed by #MovingPictures.SelectedMovie.directors</label>
+		<label>#MovingPictures.Translation.Director.Label: #MovingPictures.SelectedMovie.directors</label>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 	
