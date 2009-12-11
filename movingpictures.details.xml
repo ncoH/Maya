@@ -170,7 +170,8 @@ This file should contain the details view
 		<textcolor>85cffe</textcolor>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 	</control>
-
+	
+	<!-- 1 director -->
 	<control>
 		<description>director</description>
 		<type>label</type>
@@ -181,7 +182,21 @@ This file should contain the details view
 		<width>365</width>
 		<font>font11</font>
 		<textcolor>85cffe</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.SelectedMovie.extra.directors.2,)</visible>
+	</control>
+	
+	<!-- 2 or more directors -->
+	<control>
+		<description>director</description>
+		<type>label</type>
+		<label>#MovingPictures.Translation.Directors.Label: #MovingPictures.SelectedMovie.directors</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>601</posY>
+		<width>365</width>
+		<font>font11</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+!string.equals(#MovingPictures.SelectedMovie.extra.directors.2,)</visible>
 	</control>
 
 	<control>
