@@ -7,6 +7,8 @@
 <define>#header.image:music_playlist_logo.png</define>
 <controls>
 
+	<import>common.window.xml</import>
+
 	<control>
 		<description>Alternate BG</description>
 		<type>image</type>
@@ -17,9 +19,20 @@
 		<visible>facadeview.smallicons | facadeview.largeicons</visible>
 	</control>
 
-	<import>common.window.xml</import>
-
-	
+	<control>
+          <description>music logo</description>
+          <type>image</type>
+          <overlay>yes</overlay>
+          <id>600</id>
+          <posX>58</posX>
+          <posY>436</posY>
+          <width>151</width>
+          <height>111</height>
+          <keepaspectratio>yes</keepaspectratio>
+          <centered>yes</centered>
+          <texture flipY="true" diffuse="Thumb_Mask.png">#Play.Current.Thumb</texture>
+          <visible>!plugin.isenabled(Audioscrobbler)</visible>
+        </control>
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -115,15 +128,17 @@
 
 				<control>
 					<description>Shuffle button</description>
-					<type>button</type>
+					<type>togglebutton</type>
 					<id>20</id>
 					<label>191</label>
 					<onright>50</onright>
 					<onleft>50</onleft>
 					<onup>2</onup>
 					<ondown>30</ondown>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+		<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+		<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+		<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
 					<width>279</width>
 					<height>49</height>
 					<textXOff>25</textXOff>
@@ -222,9 +237,7 @@
 					<description>Lyrics</description>
 					<type>button</type>
 					<id>15</id>
-					<posX>71</posX>
-					<posY>462</posY>
-					<label>210001</label>
+					<label>My Lyrics</label>
 					<hyperlink>90478</hyperlink>
 					<onright>50</onright>
 					<onleft>50</onleft>
@@ -236,6 +249,7 @@
 					<height>49</height>
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
+					<visible>plugin.isenabled(My Lyrics)</visible>
 				</control>
 <!--
 				<control>

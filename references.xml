@@ -278,6 +278,7 @@
 		<IconXOff>14</IconXOff>
 		<IconYOff>10</IconYOff>
 		<suffix>|</suffix>
+		<spinCanFocus>no</spinCanFocus>
 	</control>
 
 	<control>
@@ -290,9 +291,9 @@
 		<height>550</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>1111</spinPosX>
-		<spinPosY>662</spinPosY>
-		<spinAlign>Right</spinAlign>
+		<spinPosX>1245</spinPosX>
+		<spinPosY>718</spinPosY>
+		<spinAlign>right</spinAlign>
 		<spinColor>ffffffff</spinColor>
 		<textureFocus>playlist_sub_focus.png</textureFocus>
 		<textureNoFocus>playlist_sub_nofocus.png</textureNoFocus>
@@ -337,6 +338,7 @@
 		<textureMoveDownFocused>playlist_item_down_focus.png</textureMoveDownFocused>
 		<textureDelete>playlist_item_delete_nofocus.png</textureDelete>
 		<textureDeleteFocused>playlist_item_delete_focus.png</textureDeleteFocused>
+		<spinCanFocus>no</spinCanFocus>
 	</control>
 
 	<control>
