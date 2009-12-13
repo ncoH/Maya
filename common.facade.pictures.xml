@@ -71,32 +71,31 @@
 				<scrollOffset>2</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<posX>150</posX>
-				<posY>355</posY>
-				<width>1166</width>
+				<posX>164</posX>
+				<posY>539</posY>
+				<width>1036</width>
 				<height>768</height>
 				<onup>2</onup>
 				<onleft>2</onleft>
-				<thumbWidth>213</thumbWidth>
-				<thumbHeight>302</thumbHeight>
-				<thumbPosX>-7</thumbPosX>
+				<thumbWidth>207</thumbWidth>
+				<thumbHeight>138</thumbHeight>
+				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
-				<itemWidth>213</itemWidth>
-				<itemHeight>302</itemHeight>
-				<textureWidth>213</textureWidth>
-				<textureHeight>302</textureHeight>
+				<itemWidth>207</itemWidth>
+				<itemHeight>138</itemHeight>
+				<textureWidth>207</textureWidth>
+				<textureHeight>138</textureHeight>
 				<textYOff>-2000</textYOff>
 				<imageFolderFocus>-</imageFolderFocus>
 				<frame>-</frame>
-				<frameFocus>-</frameFocus>
+				<frameFocus>picture_filmstrip_overlay.png</frameFocus>
 				<background>-</background>
 				<thumbs flipY="true" diffuse="Thumb_Mask.png"></thumbs>
 				<showFrame>yes</showFrame>
 				<showFolder>no</showFolder>
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
-				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,570" time="400">focus</thumbAnimation>
-				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,570" time="100">unfocus</thumbAnimation>
+
 			</control>
 
 		</control>

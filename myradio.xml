@@ -21,6 +21,7 @@
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>
+		<valign>middle</valign>
 	</control>
 
 	<control>
@@ -37,6 +38,7 @@
 		<font>Segoe Light40</font>
 		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
 		<align>center</align>
+		<valign>middle</valign>
 	</control>
 	
 	<control>

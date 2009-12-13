@@ -5,7 +5,7 @@
 <allowoverlay>no</allowoverlay>
 <define>#header.image:pictures_logo.png</define>
 <controls>
-<import>common.window.default.xml</import>
+<import>common.window.pictures.xml</import>
 
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -20,6 +20,7 @@
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>
+		<valign>middle</valign>
 	</control>
 
 	<control>
@@ -36,6 +37,7 @@
 		<font>Segoe Light40</font>
 		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
 		<align>center</align>
+		<valign>middle</valign>
 	</control>
 	
 	<control>
@@ -171,6 +173,32 @@
 
 		</control>
 
+		
+	<control>
+		<id>500</id>
+		<type>image</type>
+		<posX>449</posX>
+		<posY>239</posY>
+		<width>467</width>
+		<height>300</height>
+		<texture>#selectedthumb</texture>
+		<keepaspectratio>yes</keepaspectratio>
+		<centered>yes</centered>
+		<visible>facadeview.filmstrip</visible>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+	</control>
+	
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>401</posX>
+		<posY>184</posY>
+		<width>564</width>
+		<height>444</height>
+		<texture>roundedcorners_pictures_filmstrip.png</texture>
+		<visible>facadeview.filmstrip</visible>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+	</control>
 
 	<import>common.facade.pictures.xml</import>
 	<control>
@@ -195,7 +223,7 @@
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<centered>yes</centered>
-		<visible>[facadeview.list|facadeview.album]+Control.HasFocus(50)</visible>
+		<visible>facadeview.list|facadeview.album</visible>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
 	</control>
 

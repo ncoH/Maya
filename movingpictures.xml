@@ -127,6 +127,7 @@ multiple view modes.
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
+		<valign>middle</valign>
 	</control>
 
 	<control>
@@ -143,6 +144,7 @@ multiple view modes.
 		<font>Segoe Light40</font>
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
 		<align>center</align>
+		<valign>middle</valign>
 	</control>
 	
 	

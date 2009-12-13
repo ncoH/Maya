@@ -35,13 +35,14 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>555</posX>
-		<posY>130</posY>
+		<posY>142</posY>
 		<width>700</width>
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
 	</control>
 
 	<control>
@@ -78,7 +79,7 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>0</posX>
-		<posY>130</posY>
+		<posY>142</posY>
 		<width>1366</width>
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
@@ -86,6 +87,7 @@
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
 	</control>
 
 </controls>

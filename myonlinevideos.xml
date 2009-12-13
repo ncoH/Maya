@@ -40,13 +40,14 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>555</posX>
-		<posY>130</posY>
+		<posY>142</posY>
 		<width>700</width>
 		<label>#title</label>
 		<font>Segoe Light22</font>
 		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+control.isvisible(7773)+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
 	</control>
 
 	<control>
@@ -54,20 +55,21 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>555</posX>
-		<posY>130</posY>
+		<posY>142</posY>
 		<width>700</width>
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+!control.isvisible(7773)+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
 	</control>
 
 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>1267</posX>
+		<posX>1242</posX>
 		<posY>690</posY>
 		<align>right</align>
 		<label>#itemcount</label>
@@ -82,7 +84,7 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>0</posX>
-		<posY>130</posY>
+		<posY>142</posY>
 		<width>1366</width>
 		<label>#title</label>
 		<font>Segoe Light22</font>
@@ -90,6 +92,7 @@
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+control.isvisible(7773)+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
 	</control>
 
 	<control>
@@ -112,7 +115,7 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>0</posX>
-		<posY>130</posY>
+		<posY>142</posY>
 		<width>1366</width>
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
@@ -120,6 +123,7 @@
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!control.isvisible(7773)+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
 	</control>
 	
 	<control>
@@ -135,6 +139,7 @@
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>[!facadeview.smallicons + !facadeview.largeicons] | Control.IsVisible(51)</visible>
+		<valign>middle</valign>
 	</control>
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -150,6 +155,7 @@
 		<font>Segoe Light40</font>
 		<visible>[facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(51)</visible>
 		<align>center</align>
+		<valign>middle</valign>
 	</control>
 	<!-- *** CLIP TITLE & DESCRIPTION *** -->
 	                <!--

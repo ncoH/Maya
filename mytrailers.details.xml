@@ -32,6 +32,7 @@
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>!Control.IsVisible(50)</visible>
+		<valign>middle</valign>
 	</control>
 	
 	<control>
@@ -39,11 +40,12 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>555</posX>
-		<posY>130</posY>
+		<posY>142</posY>
 		<width>400</width>
 		<label>#MyTrailers.Details.Title</label>
 		<font>Segoe Light22</font>
 		<visible>!Control.IsVisible(50)</visible>
+		<valign>middle</valign>
 	</control>
 	
 	<control>
