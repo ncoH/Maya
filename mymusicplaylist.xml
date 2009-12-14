@@ -32,7 +32,8 @@
           <centered>yes</centered>
           <texture flipY="true" diffuse="Thumb_Mask.png">#Play.Current.Thumb</texture>
           <visible>!plugin.isenabled(Audioscrobbler)</visible>
-        </control>
+	</control>
+	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -46,6 +47,7 @@
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
+		<valign>middle</valign>
 	</control>
 
 	<control>
@@ -62,6 +64,7 @@
 		<font>Segoe Light40</font>
 		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
 		<align>center</align>
+		<valign>middle</valign>
 	</control>
 	
 	<control>
@@ -136,9 +139,9 @@
 					<onup>2</onup>
 					<ondown>30</ondown>
 					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-		<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-		<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-		<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+					<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+					<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+					<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
 					<width>279</width>
 					<height>49</height>
 					<textXOff>25</textXOff>

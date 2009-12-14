@@ -18,6 +18,7 @@
 		<label>infoservice</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
+		<valign>middle</valign>
 	</control>
 	
 	<control>
@@ -36,7 +37,7 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>1267</posX>
+		<posX>1242</posX>
 		<posY>690</posY>
 		<align>right</align>
 		<label>#infoservice.feed.itemcount</label>
@@ -65,19 +66,7 @@
 		<height>68</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#infoservice.feed.itemimg</texture>
 	</control>
-	
-	<control>
-		<description>Selected item Label</description>
-		<type>fadelabel</type>
-		<id>1</id>
-		<posX>555</posX>
-		<posY>130</posY>
-		<width>700</width>
-		<label>#infoservice.feed.selectedtitle</label>
-		<font>Segoe Light22</font>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
+
 	
 	<control>
 		<description>Chosen selected item Description</description>

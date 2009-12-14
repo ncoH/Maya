@@ -20,6 +20,7 @@
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>
+		<valign>middle</valign>
 	</control>
 
 	<control>

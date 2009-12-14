@@ -20,6 +20,7 @@
 		<label>DRipper</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
+		<valign>middle</valign>
 	</control>
 	 
 	<control>
@@ -50,7 +51,7 @@
 		<visible>!Control.HasFocus(50)+!Control.HasFocus(60)</visible>
 		</control>
 		
-						<control>
+		<control>
 				<description>Heading text label</description>
 				<type>label</type>
 				<id>1</id>
@@ -59,7 +60,7 @@
 				<label>924</label>
 				<font>Segoe Light18</font>
 				<textcolor>85cffe</textcolor>
-				</control>
+			</control>
 		
 			<control>
 				<description>button group</description>
@@ -68,43 +69,43 @@
 				<posY>175</posY>
 				<layout>StackLayout(1)</layout>
 		
-	<control>
-		<type>button</type>
-		<description>DR1-Live</description>
-		<id>2</id>
-		<onleft>50</onleft>
-		<onright>60</onright>
-		<onup>3</onup>
-		<ondown>3</ondown>
-		<label>DR1-Live</label>
-		<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<control>
+					<type>button</type>
+					<description>DR1-Live</description>
+					<id>2</id>
+					<onleft>50</onleft>
+					<onright>60</onright>
+					<onup>3</onup>
+					<ondown>3</ondown>
+					<label>DR1-Live</label>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
 					<height>49</height>
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
-	</control>
+				</control>
   
-	<control>
-		<type>button</type>
-		<description>DR2-Live</description>
-		<id>3</id>
-		<onleft>50</onleft>
-		<onright>60</onright>
-		<onup>2</onup>
-		<ondown>2</ondown>
-		<label>DR2-Live</label>
-		<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<control>
+					<type>button</type>
+					<description>DR2-Live</description>
+					<id>3</id>
+					<onleft>50</onleft>
+					<onright>60</onright>
+					<onup>2</onup>
+					<ondown>2</ondown>
+					<label>DR2-Live</label>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
 					<height>49</height>
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
-	</control>
+				</control>
 
-</control>
+		</control>
 	
-</control>
+	</control>
 
 	<control>
 		<id>1</id>
@@ -121,33 +122,33 @@
 		<description>wholeprograms</description>
 		<id>60</id>
 		<posX>981</posX>
-			<width>299</width>
-			<posY>183</posY>
-			<height>550</height>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-			<scrollOffset>1</scrollOffset>
-			<onleft>50</onleft>
-			<onright>2</onright>
+		<width>299</width>
+		<posY>183</posY>
+		<height>550</height>
+		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+		<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+		<scrollOffset>1</scrollOffset>
+		<onleft>50</onleft>
+		<onright>2</onright>
 	</control>
 	
-<control>
-	<type>listcontrol</type>
-	<description>subprograms</description>
-	<id>50</id>
-	<visible>true</visible>
-	<onleft>2</onleft>
-	<onright>60</onright>
-			<posX>555</posX>
-			<width>299</width>
-			<posY>183</posY>
-			<height>550</height>
-			<spinAlign>right</spinAlign>
-			<spinPosX>840</spinPosX>			
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-			<scrollOffset>1</scrollOffset>
-</control>
+	<control>
+		<type>listcontrol</type>
+		<description>subprograms</description>
+		<id>50</id>
+		<visible>true</visible>
+		<onleft>2</onleft>
+		<onright>60</onright>
+		<posX>555</posX>
+		<width>299</width>
+		<posY>183</posY>
+		<height>550</height>
+		<spinAlign>right</spinAlign>
+		<spinPosX>840</spinPosX>			
+		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+		<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+		<scrollOffset>1</scrollOffset>
+	</control>
   
 
 	<control>
@@ -175,27 +176,27 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
   
-<control>
-	<type>label</type>
-	<description>program name</description>
-	<id>10</id>
-	<posX>-2000</posX>
-	<posY>250</posY>
-	<width>410</width>
-	<visible>true</visible>
-	<label>DRipper</label>
-</control>
-  
-<control>
-	<type>label</type>
-	<description>Title label</description>
-	<id>11</id>
-	<posX>80</posX>
-	<posY>400</posY>
-	<visible>true</visible>
-	<textcolor>6aa5cb</textcolor>
-	<label></label>
-</control>
+	<control>
+		<type>label</type>
+		<description>program name</description>
+		<id>10</id>
+		<posX>-2000</posX>
+		<posY>250</posY>
+		<width>410</width>
+		<visible>true</visible>
+		<label>DRipper</label>
+	</control>
+	 
+	<control>
+		<type>label</type>
+		<description>Title label</description>
+		<id>11</id>
+		<posX>80</posX>
+		<posY>400</posY>
+		<visible>true</visible>
+		<textcolor>6aa5cb</textcolor>
+		<label></label>
+	</control>
 
 	<control>
 		<description>Selected item Label</description>
@@ -208,21 +209,21 @@
 		<font>Segoe Light22</font>
 	</control>
   
-<control>
-	<type>textboxscrollup</type>
-	<description>Description field</description>
-	<id>21</id>
-	<posX>80</posX>
-	<posY>430</posY>
-	<width>400</width>
-	<height>110</height>
-	<visible>true</visible>
-	<onleft>2</onleft>
-	<onright>60</onright>
-	<text>desc</text>
-	<spinPosX>75</spinPosX>
-	<spinPosY>650</spinPosY>
-</control>
+	<control>
+		<type>textboxscrollup</type>
+		<description>Description field</description>
+		<id>21</id>
+		<posX>80</posX>
+		<posY>430</posY>
+		<width>400</width>
+		<height>110</height>
+		<visible>true</visible>
+		<onleft>2</onleft>
+		<onright>60</onright>
+		<text>desc</text>
+		<spinPosX>75</spinPosX>
+		<spinPosY>650</spinPosY>
+	</control>
 
 	<control>
 		<id>1</id>
