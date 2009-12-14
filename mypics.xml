@@ -232,7 +232,7 @@
 		<id>1</id>
 		<posX>0</posX>
 		<posY>0</posY>
-		<width>551</width>
+		<width>465</width>
 		<height>768</height>
 		<texture>roundedcorners_pictures.png</texture>
 		<visible>facadeview.list|facadeview.album</visible>
