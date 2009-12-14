@@ -211,6 +211,28 @@ This file should contain the details view
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 	</control>
 	
+<!-- Only in MovingPictures 0.8 -->
+	<control>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>902</posX>
+		<posY>298</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>stargrey.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+	</control>
+	
+<!-- Only in MovingPictures 0.7.x
 	<control>
 		<type>imagelist</type>
 		<id>101</id>
@@ -230,6 +252,8 @@ This file should contain the details view
 		<percentage>#MovingPictures.SelectedMovie.score</percentage>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 	</control>
+-->
+
 
 <!-- MediaInfo Logos (Details View)-->
 

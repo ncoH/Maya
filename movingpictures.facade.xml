@@ -59,7 +59,8 @@ This file should contain the facade view
 				<width>1166</width>
 				<height>768</height>
 				<onup>2</onup>
-				<onleft>2</onleft>
+				<onleft>50</onleft>
+				<onright>50</onright>
 				<thumbWidth>213</thumbWidth>
 				<thumbHeight>302</thumbHeight>
 				<thumbPosX>0</thumbPosX>
