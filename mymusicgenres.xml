@@ -307,8 +307,8 @@
 	<control>
 		<id>500</id>
 		<type>image</type>
-		<posX>135</posX>
-		<posY>183</posY>
+		<posX>132</posX>
+		<posY>184</posY>
 		<width>266</width>
 		<height>266</height>
 		<visible>[facadeview.list|facadeview.album]</visible>

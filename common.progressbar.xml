@@ -251,8 +251,8 @@
 		<description>TV Logo</description>
 		<type>image</type>
 		<id>9999</id>
-		<posX>212</posX>
-		<posY>560</posY>
+		<posX>216</posX>
+		<posY>556</posY>
 		<width>80</width>
 		<height>90</height>
 		<texture>#Play.Current.Thumb</texture>

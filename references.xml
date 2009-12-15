@@ -173,8 +173,8 @@
 		<remoteColor>ffFFA075</remoteColor>
 		<downloadColor>ff80ff80</downloadColor>
 		<spaceBetweenItems>-3</spaceBetweenItems>
-		<textXOff>8</textXOff>
-		<textYOff>10</textYOff>
+		<textXOff>9</textXOff>
+		<textYOff>11</textYOff>
 		<textXOff2>0</textXOff2>
 		<textYOff2>10</textYOff2>
 		<itemWidth>0</itemWidth>
@@ -303,8 +303,8 @@
 		<remoteColor>ffFFA075</remoteColor>
 		<downloadColor>ff80ff80</downloadColor>
 		<spaceBetweenItems>-3</spaceBetweenItems>
-		<textXOff>8</textXOff>
-		<textYOff>10</textYOff>
+		<textXOff>18</textXOff>
+		<textYOff>11</textYOff>
 		<textXOff2>0</textXOff2>
 		<textYOff2>10</textYOff2>
 		<itemWidth>0</itemWidth>
