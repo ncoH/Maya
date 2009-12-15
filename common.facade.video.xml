@@ -20,10 +20,7 @@
 				<scrollOffset>1</scrollOffset>
 				<posY>183</posY>
 				<height>450</height>
-				<folderPrefix></folderPrefix>
-				<folderSuffix></folderSuffix>
 				<textXOff>16</textXOff>
-				<spinCanFocus>no</spinCanFocus>
 			</control>
 
 			<control>
@@ -111,7 +108,9 @@
 				<id>50</id>
 				<onleft>2</onleft>
 				<onright>2</onright>
-				<scrollOffset>2</scrollOffset>
+				<scrollOffset>1</scrollOffset>
+				<posY>183</posY>
+				<height>450</height>
 			</control>
 
 		</control>

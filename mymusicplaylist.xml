@@ -4,7 +4,6 @@
 <defaultcontrol>2</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <define>#header.label:#selecteditem</define>
-<define>#header.image:music_playlist_logo.png</define>
 <controls>
 
 	<import>common.window.xml</import>
@@ -17,21 +16,6 @@
 		<height>768</height>
 		<texture>background_thumbs.png</texture>
 		<visible>facadeview.smallicons | facadeview.largeicons</visible>
-	</control>
-
-	<control>
-          <description>music logo</description>
-          <type>image</type>
-          <overlay>yes</overlay>
-          <id>600</id>
-          <posX>58</posX>
-          <posY>436</posY>
-          <width>151</width>
-          <height>111</height>
-          <keepaspectratio>yes</keepaspectratio>
-          <centered>yes</centered>
-          <texture flipY="true" diffuse="Thumb_Mask.png">#Play.Current.Thumb</texture>
-          <visible>!plugin.isenabled(Audioscrobbler)</visible>
 	</control>
 	
 	<control>
@@ -131,7 +115,7 @@
 
 				<control>
 					<description>Shuffle button</description>
-					<type>togglebutton</type>
+					<type>button</type>
 					<id>20</id>
 					<label>191</label>
 					<onright>50</onright>
@@ -140,8 +124,6 @@
 					<ondown>30</ondown>
 					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-					<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-					<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
 					<width>279</width>
 					<height>49</height>
 					<textXOff>25</textXOff>
@@ -254,7 +236,7 @@
 					<textYOff>12</textYOff>
 					<visible>plugin.isenabled(My Lyrics)</visible>
 				</control>
-<!--
+
 				<control>
 					<description>scrobble mode button</description>
 					<type>button</type>
@@ -285,9 +267,9 @@
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
 					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-		<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-		<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-		<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+					<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+					<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+					<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
 					<visible>plugin.isenabled(Audioscrobbler)</visible>
 				</control>
 
@@ -307,7 +289,7 @@
 					<textYOff>12</textYOff>
 					<visible>plugin.isenabled(Audioscrobbler)</visible>
 				</control>
--->
+
 			</control>
 
 
@@ -325,7 +307,7 @@
 	</control>
 	
 	<control>
-		<id>500</id>
+		<id>600</id>
 		<type>image</type>
 		<posX>135</posX>
 		<posY>183</posY>
@@ -333,6 +315,17 @@
 		<height>266</height>
 		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#Play.Current.Thumb</texture>
+	</control>
+	
+	<control>
+		<id>500</id>
+		<type>image</type>
+		<posX>135</posX>
+		<posY>-2000</posY>
+		<width>266</width>
+		<height>266</height>
+		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
+		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
 	</control>
 
 	<control>
