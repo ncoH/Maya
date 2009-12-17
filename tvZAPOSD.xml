@@ -20,10 +20,10 @@
 		<description>TV Logo</description>
 		<type>image</type>
 		<id>10</id>
-		<posX>228</posX>
-		<posY>602</posY>
-		<width>45</width>
-		<height>45</height>
+		<posX>213</posX>
+		<posY>599</posY>
+		<width>70</width>
+		<height>70</height>
 		<texture>#TV.View.thumb</texture>
 		<keepaspectratio>yes</keepaspectratio>
 	</control>
@@ -35,7 +35,7 @@
       <posX>302</posX>
 	  <width>354</width>
 	  <height>30</height>
-      <posY>591</posY>
+      <posY>590</posY>
       <label>-</label>
       <font>Segoe Light18</font>
     </control>
@@ -94,10 +94,9 @@
       <description>rec logo</description>
       <type>image</type>
       <id>39</id>
-      <posX>285</posX>
-      <posY>591</posY>
-      <texture>rec.png</texture>
-      <colordiffuse>50ffffff</colordiffuse>
+      <posX>418</posX>
+      <posY>696</posY>
+      <texture>tv_zaposd_rec.png</texture>
     </control>
 	
     <control>

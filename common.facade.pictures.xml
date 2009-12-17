@@ -76,7 +76,7 @@
 				<width>1036</width>
 				<height>768</height>
 				<onup>2</onup>
-				<onleft>2</onleft>
+				<onleft>50</onleft>
 				<thumbWidth>207</thumbWidth>
 				<thumbHeight>138</thumbHeight>
 				<thumbPosX>0</thumbPosX>

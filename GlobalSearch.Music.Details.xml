@@ -22,7 +22,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>music info</label>
+		<label>music search</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<valign>middle</valign>
@@ -127,10 +127,11 @@
 		<type>fadelabel</type>
 		<id>0</id>
 		<posX>555</posX>
-		<posY>130</posY>
+		<posY>142</posY>
 		<width>700</width>
 		<font>Segoe Light22</font>
 		<label>Album information</label>
+		<valign>middle</valign>
 	</control>
 
 	<control>

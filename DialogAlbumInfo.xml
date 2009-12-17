@@ -25,6 +25,7 @@
 		<label>music info</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
+		<valign>middle</valign>
 	</control>
 
 	<control>
@@ -32,11 +33,12 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>555</posX>
-		<posY>130</posY>
+		<posY>142</posY>
 		<label>Album information</label>
 		<font>Segoe Light22</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
+		<valign>middle</valign>
 	</control>
 	
 	<control>
@@ -205,7 +207,7 @@
 	<control>
 		<id>3</id>
 		<type>image</type>
-		<posX>134</posX>
+		<posX>132</posX>
 		<posY>184</posY>
 		<width>266</width>
 		<height>266</height>
