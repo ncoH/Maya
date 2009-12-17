@@ -84,7 +84,7 @@
       <type>label</type>
       <label>Total Series: #TVSeries.SeriesCount</label>
       <id>0</id>
-      <posX>1267</posX>
+      <posX>1242</posX>
 	  <posY>690</posY>
       <align>right</align>
       <textcolor>6aa5cb</textcolor>
@@ -96,7 +96,7 @@
       <type>label</type>
       <label>Total Episodes: #TVSeries.FilteredEpisodeCount</label>
       <id>0</id>
-      <posX>1267</posX>
+      <posX>1242</posX>
 	  <posY>690</posY>
       <align>right</align>
       <textcolor>6aa5cb</textcolor>
@@ -760,26 +760,52 @@
       <label>#TVSeries.Series.InfoPanelLine6Value</label>
       <visible>facadeview.list+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
     </control>	
+	
 	<control>      
       <type>label</type>
       <id>0</id>
-      <posX>607</posX>
+      <posX>695</posX>
 	  <posY>605</posY>
-	  <width>365</width>
+	  <width>170</width>
 	  <font>font12</font>
 	  <textcolor>ffffffff</textcolor>
-      <label>#TVSeries.Series.EpisodesWatched</label>
+      <label>#TVSeries.Series.InfoPanelLine3Key</label>
       <visible>facadeview.list+[Control.IsVisible(1237)]</visible>
 	</control>
-		<control>      
+	
+	<control>      
       <type>label</type>
       <id>0</id>
-      <posX>607</posX>
+      <posX>605</posX>
 	  <posY>605</posY>
-	  <width>365</width>
+	  <width>170</width>
 	  <font>font12</font>
 	  <textcolor>ffffffff</textcolor>
-      <label>#TVSeries.Season.EpisodesWatched</label>
+      <label>#TVSeries.Series.InfoPanelLine2Key</label>
+      <visible>facadeview.list+[Control.IsVisible(1237)]</visible>
+	</control>
+	
+	<control>      
+      <type>label</type>
+      <id>0</id>
+      <posX>695</posX>
+	  <posY>605</posY>
+	  <width>170</width>
+	  <font>font12</font>
+	  <textcolor>ffffffff</textcolor>
+      <label>#TVSeries.Season.InfoPanelLine3Key</label>
+      <visible>facadeview.list+[Control.IsVisible(1238)]</visible>
+	</control>
+	
+	<control>      
+      <type>label</type>
+      <id>0</id>
+      <posX>605</posX>
+	  <posY>605</posY>
+	  <width>170</width>
+	  <font>font12</font>
+	  <textcolor>ffffffff</textcolor>
+      <label>#TVSeries.Season.InfoPanelLine2Key</label>
       <visible>facadeview.list+[Control.IsVisible(1238)]</visible>
 	</control>
 	
@@ -1208,12 +1234,6 @@
           <spaceBetweenItems>2</spaceBetweenItems>          
           <textureFocus>tvseries_banner_focus2.png</textureFocus>
           <textureNoFocus>osd_bg.png</textureNoFocus>
-          <spinWidth>10</spinWidth>
-          <spinHeight>10</spinHeight>
-          <spinPosX>580</spinPosX>
-          <spinPosY>340</spinPosY>
-          <spinAlign>Right</spinAlign>
-          <spinColor>ffffffff</spinColor>
           <textureUp>1scroll-up.png</textureUp>
           <textureDown>1scroll-down.png</textureDown>
           <textureUpFocus>1scroll-up-focus.png</textureUpFocus>
@@ -1315,11 +1335,6 @@
 		  <onleft>2</onleft>
           <onright>2</onright>
 		  <scrollOffset>1</scrollOffset>
-          <spinWidth>18</spinWidth>
-          <spinHeight>18</spinHeight>
-          <spinPosX>1239</spinPosX>
-          <spinPosY>720</spinPosY>
-		  <spinCanFocus>no</spinCanFocus>
           <height>490</height>
 		  <width>299</width>
           <textureFocus>listcontrol_item_selected_small.png</textureFocus>
@@ -1334,7 +1349,6 @@
 		  <IconYOff>7</IconYOff>
 		  <itemWidth>72</itemWidth>
           <itemHeight>18</itemHeight>
-          <spinAlign>left</spinAlign>
           <spinColor>ffffffff</spinColor>
 		  <!-- Uncomment to override List colors -->
           <!--<playedColor>ffffffff</playedColor>-->         
