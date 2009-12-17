@@ -67,7 +67,7 @@ This file should contain the facade view
 				<thumbPosY>0</thumbPosY>
 				<itemWidth>213</itemWidth>
 				<itemHeight>302</itemHeight>
-				<textureWidth>213</textureWidth>
+				<textureWidth>218</textureWidth>
 				<textureHeight>302</textureHeight>
 				<textYOff>-2000</textYOff>
 				<imageFolderFocus>-</imageFolderFocus>
