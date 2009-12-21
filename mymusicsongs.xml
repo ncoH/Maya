@@ -320,10 +320,10 @@
 		<type>image</type>
 		<id>60</id>
 		<posX>134</posX>
-		<posY>184</posY>
+		<posY>213</posY>
 		<width>265</width>
-		<height>262</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
+		<height>265</height>
+		<texture>#selectedthumb</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 	
@@ -331,12 +331,11 @@
 		<description>Cover Art overlay</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>73</posX>
-		<posY>144</posY>
-		<width>380</width>
-		<height>596</height>
-		<texture>roundedcorners_music.png</texture>
-		<keepaspectratio>yes</keepaspectratio>
+		<posX>92</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture>blackborders_music.png</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 	<import>common.overlay.xml</import>

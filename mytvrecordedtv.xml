@@ -43,8 +43,8 @@
 	    <posY>161</posY>
 	    <width>457</width>
 	    <height>295</height>
-		<visible>facadeview.list+Control.HasThumb(500)</visible>
 		<texture>blackborders_recordings.png</texture>
+		<visible>facadeview.list</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>

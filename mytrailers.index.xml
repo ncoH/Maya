@@ -245,22 +245,22 @@
 	<control>
 		<id>1</id>
 		<type>image</type>
-		<posX>135</posX>
-		<posY>183</posY>
+		<posX>133</posX>
+		<posY>208</posY>
 		<width>266</width>
 		<height>380</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
+		<texture>#selectedthumb</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>73</posX>
-		<posY>144</posY>
-		<width>380</width>
-		<height>596</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
+		<posX>87</posX>
+		<posY>161</posY>
+		<width>357</width>
+		<height>472</height>
+		<texture>blackborders_video.png</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 

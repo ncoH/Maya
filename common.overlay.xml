@@ -31,6 +31,19 @@
 		<visible>player.hasmedia+control.hastext(3339)</visible>
 	</control>
 
+	<control>
+		<description>fade background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>464</posY>
+		<width>525</width>
+		<height>304</height>
+		<texture>overlay_fadebg.png</texture>
+		<visible>player.hasmedia + [!window.isvisible(7987) + !window.isvisible(96742) + !Control.IsVisible(51) | Control.IsVisible(50)]</visible>
+	</control>
+	
+	
 <!-- TV/Video -->
 	<control>
 		<description>video rectangle</description>

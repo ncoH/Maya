@@ -333,11 +333,11 @@
 	<control>
 		<id>1</id>
 		<type>image</type>
-		<posX>76</posX>
-		<posY>179</posY>
-		<width>375</width>
-		<height>205</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#thumb</texture>
+		<posX>91</posX>
+        <posY>207</posY>
+        <width>365</width>
+	    <height>203</height>
+		<texture>#thumb</texture>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
@@ -345,12 +345,11 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>0</posX>
-		<posY>144</posY>
-		<width>508</width>
-		<height>624</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_recordings.png</texture>
-		<keepaspectratio>yes</keepaspectratio>
+		<posX>44</posX>
+	    <posY>161</posY>
+	    <width>457</width>
+	    <height>295</height>
+		<texture>blackborders_recordings.png</texture>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>

@@ -6,7 +6,7 @@
 <define>#header.label:#selecteditem</define>
 <controls>
 
-	<import>common.window.xml</import>
+	<import>common.window.playlist.xml</import>
 
 	<control>
 		<description>Alternate BG</description>
@@ -309,33 +309,33 @@
 	<control>
 		<id>600</id>
 		<type>image</type>
-		<posX>132</posX>
-		<posY>184</posY>
-		<width>266</width>
-		<height>266</height>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
 		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#Play.Current.Thumb</texture>
+		<texture>#Play.Current.Thumb</texture>
 	</control>
 	
 	<control>
 		<id>500</id>
 		<type>image</type>
-		<posX>135</posX>
-		<posY>-2000</posY>
-		<width>266</width>
-		<height>266</height>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
 		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
+		<texture>#selectedthumb</texture>
 	</control>
 
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>73</posX>
-		<posY>144</posY>
-		<width>380</width>
-		<height>596</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_music.png</texture>
+		<posX>92</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture>blackborders_music.png</texture>
 		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
 	</control>
 	

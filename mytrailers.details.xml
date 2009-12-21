@@ -135,7 +135,7 @@
 		<posY>183</posY>
 		<width>266</width>
 		<height>380</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">defaultdvdcover.png</texture>
+		<texture>defaultdvdcover.png</texture>
 		<visible>!Control.IsVisible(50)+!string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
 	</control>
 	
@@ -143,11 +143,11 @@
 		<description>Cover Art</description>
 		<type>image</type>
 		<id>21</id>
-		<posX>135</posX>
-		<posY>183</posY>
+		<posX>133</posX>
+		<posY>208</posY>
 		<width>266</width>
 		<height>380</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#MyTrailers.Details.Poster</texture>
+		<texture>#MyTrailers.Details.Poster</texture>
 		<visible>!Control.IsVisible(50)+!string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
 	</control>
 	
@@ -155,11 +155,11 @@
 		<description>Cover Art overlay</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>73</posX>
-		<posY>144</posY>
-		<width>380</width>
-		<height>596</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_video.png</texture>
+		<posX>87</posX>
+		<posY>161</posY>
+		<width>357</width>
+		<height>472</height>
+		<texture>blackborders_video.png</texture>
 		<visible>!Control.IsVisible(50)+!string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
 	</control>
 		
@@ -167,11 +167,11 @@
 	<control>
 		<id>1</id>
 		<type>image</type>
-		<posX>76</posX>
-		<posY>179</posY>
-		<width>375</width>
-		<height>205</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#MyTrailers.Video.Image</texture>
+		<posX>91</posX>
+        <posY>207</posY>
+        <width>365</width>
+	    <height>203</height>
+		<texture>#MyTrailers.Video.Image</texture>
 		<visible>!Control.IsVisible(50)+string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -180,13 +180,12 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>0</posX>
-		<posY>144</posY>
-		<width>508</width>
-		<height>624</height>
+		<posX>44</posX>
+	    <posY>161</posY>
+	    <width>457</width>
+	    <height>295</height>
+		<texture>blackborders_recordings.png</texture>
 		<visible>!Control.IsVisible(50)+string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
-		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_recordings.png</texture>
-		<keepaspectratio>yes</keepaspectratio>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
