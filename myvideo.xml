@@ -259,10 +259,10 @@
 	<control>
 		<id>500</id>
 		<type>image</type>
-		<posX>108</posX>
-		<posY>182</posY>
-		<width>286</width>
-		<height>398</height>
+		<posX>133</posX>
+		<posY>208</posY>
+		<width>266</width>
+		<height>380</height>
 		<texture>#selectedthumb</texture>
 		<visible>facadeview.list</visible>
 	</control>
@@ -270,8 +270,8 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>73</posX>
-		<posY>144</posY>
+		<posX>87</posX>
+		<posY>161</posY>
 		<width>357</width>
 		<height>472</height>
 		<texture>blackborders_video.png</texture>

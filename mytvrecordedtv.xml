@@ -26,11 +26,11 @@
 	<control>
 		<id>500</id>
 		<type>image</type>
-		<posX>76</posX>
-		<posY>179</posY>
-		<width>370</width>
-		<height>208</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
+		<posX>91</posX>
+        <posY>207</posY>
+        <width>365</width>
+	    <height>203</height>
+		<texture>#selectedthumb</texture>
 		<visible>facadeview.list</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -39,12 +39,12 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>0</posX>
-		<posY>144</posY>
-		<width>508</width>
-		<height>624</height>
+		<posX>44</posX>
+	    <posY>161</posY>
+	    <width>457</width>
+	    <height>295</height>
 		<visible>facadeview.list+Control.HasThumb(500)</visible>
-		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_recordings.png</texture>
+		<texture>blackborders_recordings.png</texture>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>

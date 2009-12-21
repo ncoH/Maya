@@ -201,10 +201,10 @@
       <description>Big Episode Thumb</description>
       <type>image</type>
       <id>67</id>
-      <posX>76</posX>
-      <posY>179</posY>
-      <width>368</width>
-	  <height>202</height>
+      <posX>91</posX>
+      <posY>207</posY>
+      <width>365</width>
+	  <height>203</height>
       <texture>#TVSeries.EpisodeImage</texture>
       <visible>Control.IsVisible(1239)+facadeview.list</visible>
     </control>
@@ -213,8 +213,8 @@
       <description>Big Episode Thumb overlay</description>
       <type>image</type>
       <id>0</id>
-	  <posX>28</posX>
-	  <posY>132</posY>
+	  <posX>44</posX>
+	  <posY>161</posY>
 	  <width>457</width>
 	  <height>295</height>
 	  <texture>blackborders_recordings.png</texture>
