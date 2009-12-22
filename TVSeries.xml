@@ -123,10 +123,10 @@
       <type>image</type>
       <description>Season image ( season image background )</description>
       <id>46</id>
-      <posX>121</posX>
-	  <posY>190</posY>
-	  <width>264</width>
-	  <height>382</height>
+      <posX>133</posX>
+	  <posY>208</posY>
+	  <width>266</width>
+	  <height>380</height>
       <texture>#TVSeries.SeasonPoster</texture>
       <visible>[Control.IsVisible(1238)]+facadeview.list</visible>
     </control>
@@ -135,8 +135,8 @@
       <description>Season image ( season image background ) Overlay</description>
       <type>image</type>
       <id>0</id>
-      <posX>73</posX>
-	  <posY>144</posY>
+      <posX>87</posX>
+	  <posY>161</posY>
 	  <width>357</width>
 	  <height>472</height>
 	  <texture>blackborders_video.png</texture>
@@ -150,10 +150,10 @@
       <type>image</type>
       <description>series poster ( series poster background )</description>
       <id>46</id>
-      <posX>121</posX>
-	  <posY>190</posY>
-	  <width>264</width>
-	  <height>382</height>
+      <posX>133</posX>
+	  <posY>208</posY>
+	  <width>266</width>
+	  <height>380</height>
       <texture>#TVSeries.SeriesPoster</texture>
       <visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)</visible>
     </control>
@@ -162,8 +162,8 @@
       <type>image</type>
       <description>series poster ( series poster background ) Overlay</description>
       <id>0</id>
-      <posX>73</posX>
-	  <posY>144</posY>
+      <posX>87</posX>
+	  <posY>161</posY>
 	  <width>357</width>
 	  <height>472</height>
 	  <texture>blackborders_video.png</texture>
