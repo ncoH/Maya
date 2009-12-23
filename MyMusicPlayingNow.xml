@@ -30,11 +30,11 @@
       <type>image</type>
       <description>album art image</description>
       <id>0</id>
-      <posX>273</posX>
-      <posY>193</posY>
-      <width>371</width>
-      <height>371</height>
-      <texture flipY="true" diffuse="Thumb_Mask.png">#Play.Current.Thumb</texture>
+      <posX>297</posX>
+      <posY>210</posY>
+      <width>335</width>
+      <height>335</height>
+      <texture>#Play.Current.Thumb</texture>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
       <animation effect="fade" time="250">WindowOpen</animation>
     </control>
@@ -43,11 +43,11 @@
       <type>image</type>
       <description>album art overlay</description>
       <id>0</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>667</width>
-      <height>768</height>
-      <texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_music_nowplaying.png</texture>
+      <posX>251</posX>
+      <posY>162</posY>
+      <width>431</width>
+      <height>431</height>
+      <texture>blackborders_music_nowplaying.png</texture>
     </control>
 	
 	<control>

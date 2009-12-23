@@ -380,18 +380,52 @@ multiple view modes.
 	</control>
 -->
 	
+	<!-- 1 genre -->
 	<control>
-		<description>Genres</description>
-		<type>fadelabel</type>
-		<label>#MovingPictures.SelectedMovie.genres</label>
+		<description>genre</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.extra.genres.1</label>
 		<id>0</id>
 		<posX>555</posX>
 		<posY>265</posY>
 		<width>400</width>
 		<font>Segoe Light18</font>
 		<textcolor>85cffe</textcolor>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
+		<visible>facadeview.list+Control.IsVisible(50)+string.equals(#MovingPictures.SelectedMovie.extra.genres.2,)</visible>
 	</control>
+	
+	<!-- 2 genres -->
+	<control>
+		<description>genre</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.extra.genres.1, #MovingPictures.SelectedMovie.extra.genres.2</label>
+		<id>0</id>
+		<posX>555</posX>
+		<posY>265</posY>
+		<width>400</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>facadeview.list+Control.IsVisible(50)+string.equals(#MovingPictures.SelectedMovie.extra.genres.3,)</visible>
+	</control>
+	
+	<!-- 3 genres or more -->
+	<control>
+		<description>director</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.extra.genres.1, #MovingPictures.SelectedMovie.extra.genres.2, #MovingPictures.SelectedMovie.extra.genres.3</label>
+		<id>0</id>
+		<posX>555</posX>
+		<posY>265</posY>
+		<width>400</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>facadeview.list+Control.IsVisible(50)+!string.equals(#MovingPictures.SelectedMovie.extra.genres.3,)</visible>
+	</control>
+	
+	
+	
+	
+	
 	
 	<control>
 		<type>textboxscrollup</type>

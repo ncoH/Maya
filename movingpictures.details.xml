@@ -91,18 +91,50 @@ This file should contain the details view
 	</control>
 -->
 
+	
+	<!-- 1 genre -->
 	<control>
-		<description>genre below the movie title</description>
+		<description>genre</description>
 		<type>label</type>
-		<label>#MovingPictures.SelectedMovie.genres</label>
+		<label>#MovingPictures.SelectedMovie.extra.genres.1</label>
 		<id>0</id>
 		<posX>903</posX>
 		<posY>250</posY>
 		<width>365</width>
 		<font>Segoe Light18</font>
 		<textcolor>85cffe</textcolor>
-		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.SelectedMovie.extra.genres.2,)</visible>
 	</control>
+	
+	<!-- 2 genres -->
+	<control>
+		<description>genre</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.extra.genres.1, #MovingPictures.SelectedMovie.extra.genres.2</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>250</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.SelectedMovie.extra.genres.3,)</visible>
+	</control>
+	
+	<!-- 3 genres or more -->
+	<control>
+		<description>director</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.extra.genres.1, #MovingPictures.SelectedMovie.extra.genres.2, #MovingPictures.SelectedMovie.extra.genres.3</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>250</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+!string.equals(#MovingPictures.SelectedMovie.extra.genres.3,)</visible>
+	</control>
+	
+	
 <!-- -->
 
 	<control>
