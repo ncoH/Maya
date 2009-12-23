@@ -55,21 +55,6 @@
     </control>
 
 	<control>
-		<description>start a stream</description>
-		<type>button</type>
-		<id>10</id>
-		<posX>-2000</posX>
-		<posY>137</posY>
-		<label>924</label>
-		<onleft>10</onleft>
-		<onright>123</onright>
-		<onup>666</onup>
-		<ondown>15</ondown>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-
-	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
 		<defaultcontrol>15</defaultcontrol>
@@ -94,7 +79,7 @@
 		<width>342</width>
 		<height>640</height>
 		<texture>menu_bg.png</texture>
-		<visible>!Control.HasFocus(50)</visible>
+		<visible>!Control.HasFocus(123)</visible>
 		</control>
 		
 				<control>
@@ -103,7 +88,7 @@
 				<id>1</id>
 				<posX>567</posX>
 				<posY>110</posY>
-				<label>34001</label>
+				<label>924</label>
 				<font>Segoe Light18</font>
 				<textcolor>85cffe</textcolor>
 				</control>
@@ -115,12 +100,35 @@
 				<posY>175</posY>
 				<layout>StackLayout(1)</layout>
 				
+					<control>
+		<description>start a stream</description>
+		<type>button</type>
+		<id>10</id>
+		<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+		<label>34001</label>
+		<onleft>123</onleft>
+		<onright>123</onright>
+		<onup>666</onup>
+		<ondown>15</ondown>
+	</control>
+				
 				<control>
 			<description>choose artist</description>
 			<type>button</type>
 			<id>15</id>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 			<label>Artists</label>
-			<onleft>15</onleft>
+			<onleft>123</onleft>
 			<onright>123</onright>
 			<onup>10</onup>
 			<ondown>20</ondown>
@@ -130,8 +138,14 @@
 			<description>choose tag</description>
 			<type>button</type>
 			<id>20</id>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 			<label>Tags</label>
-			<onleft>20</onleft>
+			<onleft>123</onleft>
 			<onright>123</onright>
 			<onup>15</onup>
 			<ondown>30</ondown>
@@ -141,8 +155,14 @@
 			<description>choose friend</description>
 			<type>button</type>
 			<id>30</id>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
 			<label>Friends</label>
-			<onleft>30</onleft>
+			<onleft>123</onleft>
 			<onright>123</onright>
 			<onup>20</onup>
 			<ondown>35</ondown>
@@ -152,8 +172,16 @@
 			<description>toggle submit mode</description>
 			<type>togglebutton</type>
 			<id>35</id>
+			<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+		<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+		<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+		<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+		<width>279</width>
+					<height>49</height>
+					<textXOff>24</textXOff>
+					<textYOff>12</textYOff>
 			<label>34014</label>
-			<onleft>35</onleft>
+			<onleft>123</onleft>
 			<onright>123</onright>
 			<onup>30</onup>
 			<ondown>40</ondown>
@@ -164,8 +192,16 @@
 			<description>toggle discovery mode</description>
 			<type>togglebutton</type>
 			<id>40</id>
+			<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+		<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+		<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+		<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+		<width>279</width>
+					<height>49</height>
+					<textXOff>24</textXOff>
+					<textYOff>12</textYOff>
 			<label>34013</label>
-			<onleft>40</onleft>
+			<onleft>123</onleft>
 			<onright>123</onright>
 			<onup>35</onup>
 			<ondown>50</ondown>
@@ -384,12 +420,11 @@
 		<type>label</type>
 		<description>similar hint</description>
 		<id>443</id>
-		<posX>116</posX>
-		<posY>567</posY>
+		<posX>80</posX>
+		<posY>570</posY>
 		<label>34039</label>
 		<font>font14</font>
-		<align>left</align>
-		<textcolor>80ffffff</textcolor>
+		<textcolor>85cfff</textcolor>
 		<visible>control.hastext(444)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -399,13 +434,11 @@
 		<type>textbox</type>
 		<description>Similar artists box</description>
 		<id>444</id>
-		<posX>116</posX>
+		<posX>80</posX>
 		<posY>606</posY>
-		<width>373</width>
+		<width>300</width>
 		<label>#Play.Current.Lastfm.SimilarArtists</label>
 		<font>font12</font>
-		<align>left</align>
-		<textcolor>80ffffff</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -414,12 +447,11 @@
 		<type>label</type>
 		<description>tag hint</description>
 		<id>332</id>
-		<posX>876</posX>
-		<posY>567</posY>
+		<posX>400</posX>
+		<posY>570</posY>
 		<label>34041</label>
 		<font>font14</font>
-		<align>left</align>
-		<textcolor>80ffffff</textcolor>
+		<textcolor>85cfff</textcolor>
 		<visible>control.hastext(333)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -429,13 +461,11 @@
 		<type>textbox</type>
 		<description>Track tags box</description>
 		<id>333</id>
-		<posX>876</posX>
+		<posX>400</posX>
 		<posY>606</posY>
-		<width>373</width>
+		<width>300</width>
 		<label>#Play.Current.Lastfm.TrackTags</label>
 		<font>font12</font>
-		<align>left</align>
-		<textcolor>80ffffff</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -476,6 +506,15 @@
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<visible>player.hasmedia</visible>
+	</control>
+	
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>325</posY>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>Control.HasFocus(123)</visible>
 	</control>
 	
 </controls>
