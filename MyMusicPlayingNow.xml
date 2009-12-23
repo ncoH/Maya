@@ -173,7 +173,7 @@
 		<posY>460</posY>
 		<width>360</width>
 		<height>2</height>
-		<texture>now_playing_progress_back_overlay.png</texture>
+		<texture>blue.png</texture>
 		<visible>player.hasmedia+Control.HasFocus(177)</visible>
 	</control>
 
