@@ -2,7 +2,7 @@
 <window>
 <id>2003</id>
 <defaultcontrol>2</defaultcontrol>
-<allowoverlay>no</allowoverlay>
+<allowoverlay>yes</allowoverlay>
 <controls>
 
 	<control>
