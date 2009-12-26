@@ -214,9 +214,9 @@
 		<description>Last.fm logo</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>630</posX>
+		<posX>628</posX>
 		<posY>580</posY>
-		<width>106</width>
+		<width>110</width>
 		<height>60</height>
 		<texture>last_fm_logo_blue.png</texture>
 	</control>

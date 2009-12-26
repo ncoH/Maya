@@ -43,7 +43,7 @@
 		<id>993</id>
 		<posX>191</posX>
 		<posY>701</posY>
-		<width>1008</width>
+		<width>988</width>
 		<height>12</height>
 		<toptexture>-</toptexture>
 		<TextureOffsetY>18</TextureOffsetY>
@@ -98,10 +98,10 @@
 		<type>label</type>
 		<id>999</id>
 		<description>Pause</description>
-		<posX>633</posX>
+		<posX>611</posX>
 		<posY>663</posY>
 		<height>30</height>
-		<width>100</width>
+		<width>144</width>
 		<font>font14</font>
 		<align>center</align>
 		<label>Pause</label>
@@ -112,10 +112,10 @@
     <control>
 		<description>2x label</description>
 		<type>label</type>
-		<posX>633</posX>
+		<posX>611</posX>
 		<posY>663</posY>
 		<height>30</height>
-		<width>100</width>
+		<width>144</width>
 		<font>font14</font>
 		<align>center</align>
 		<visible>player.forwarding2x</visible>
@@ -126,10 +126,10 @@
     <control>
 		<description>4x label</description>
 		<type>label</type>
-		<posX>633</posX>
+		<posX>611</posX>
 		<posY>663</posY>
 		<height>30</height>
-		<width>100</width>
+		<width>144</width>
 		<font>font14</font>
 		<align>center</align>
 		<visible>player.forwarding4x</visible>
@@ -140,10 +140,10 @@
     <control>
 		<description>8x label</description>
 		<type>label</type>
-		<posX>633</posX>
+		<posX>611</posX>
 		<posY>663</posY>
 		<height>30</height>
-		<width>100</width>
+		<width>144</width>
 		<font>font14</font>
 		<align>center</align>
 		<visible>player.forwarding8x</visible>
@@ -154,10 +154,10 @@
     <control>
 		<description>16x label</description>
 		<type>label</type>
-		<posX>633</posX>
+		<posX>611</posX>
 		<posY>663</posY>
 		<height>30</height>
-		<width>100</width>
+		<width>144</width>
 		<font>font14</font>
 		<align>center</align>
 		<visible>player.forwarding16x</visible>
@@ -168,10 +168,10 @@
     <control>
 		<description>32x label</description>
 		<type>label</type>
-		<posX>633</posX>
+		<posX>611</posX>
 		<posY>663</posY>
 		<height>30</height>
-		<width>100</width>
+		<width>144</width>
 		<font>font14</font>
 		<align>center</align>
 		<visible>player.forwarding32x</visible>
@@ -183,10 +183,10 @@
     <control>
 		<description>2x label</description>
 		<type>label</type>
-		<posX>633</posX>
+		<posX>611</posX>
 		<posY>663</posY>
 		<height>30</height>
-		<width>100</width>
+		<width>144</width>
 		<font>font14</font>
 		<align>center</align>
 		<visible>player.rewinding2x</visible>
@@ -197,10 +197,10 @@
     <control>
 		<description>4x label</description>
 		<type>label</type>
-		<posX>633</posX>
+		<posX>611</posX>
 		<posY>663</posY>
 		<height>30</height>
-		<width>100</width>
+		<width>144</width>
 		<font>font14</font>
 		<align>center</align>
 		<visible>player.rewinding4x</visible>
@@ -211,10 +211,10 @@
     <control>
 		<description>8x label</description>
 		<type>label</type>
-		<posX>633</posX>
+		<posX>611</posX>
 		<posY>663</posY>
 		<height>30</height>
-		<width>100</width>
+		<width>144</width>
 		<font>font14</font>
 		<align>center</align>
 		<visible>player.rewinding8x</visible>
@@ -225,10 +225,10 @@
     <control>
 		<description>16x label</description>
 		<type>label</type>
-		<posX>633</posX>
+		<posX>611</posX>
 		<posY>663</posY>
 		<height>30</height>
-		<width>100</width>
+		<width>144</width>
 		<font>font14</font>
 		<align>center</align>
 		<visible>player.rewinding16x</visible>
@@ -239,10 +239,10 @@
     <control>
 		<description>32x label</description>
 		<type>label</type>
-		<posX>633</posX>
+		<posX>611</posX>
 		<posY>663</posY>
 		<height>30</height>
-		<width>100</width>
+		<width>144</width>
 		<font>font14</font>
 		<align>center</align>
 		<visible>player.rewinding32x</visible>
@@ -266,10 +266,10 @@
 		<type>label</type>
 		<id>999</id>
 		<description>Clock</description>
-		<posX>633</posX>
+		<posX>611</posX>
 		<posY>663</posY>
 		<height>30</height>
-		<width>100</width>
+		<width>144</width>
 		<font>font14</font>
 		<align>center</align>
 		<label>#time</label>

@@ -72,47 +72,6 @@
 		<animation effect="fade" time="250">WindowOpen</animation>
 	</control>
 
-	<control>
-		<description>Pause logo</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>226</posX>
-		<posY>565</posY>
-		<width>52</width>
-		<height>52</height>
-		<texture>logo_pause.png</texture>
-		<visible>player.paused+player.hasmedia+!control.isvisible(3337)</visible>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="250">WindowOpen</animation>
-	</control>
-
-	<control>
-		<description>FF logo</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>326</posX>
-		<posY>565</posY>
-		<width>52</width>
-		<height>52</height>
-		<texture>logo_fastforward.png</texture>
-		<visible>player.forwarding+player.hasmedia+!control.isvisible(3337)</visible>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="250">WindowOpen</animation>
-	</control>
-
-	<control>
-		<description>RW logo</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>326</posX>
-		<posY>565</posY>
-		<width>52</width>
-		<height>52</height>
-		<texture>logo_rewind.png</texture>
-		<visible>player.rewinding+player.hasmedia+!control.isvisible(3337)</visible>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="250">WindowOpen</animation>
-	</control>
 
 <!--TV-->
 	<control>
