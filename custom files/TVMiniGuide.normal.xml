@@ -33,6 +33,17 @@
 		<font>Segoe Light18</font>
 		<textcolor>85cffe</textcolor>
 	</control>
+	
+	<control>
+		<description>time label</description>
+		<id>0</id>
+		<type>label</type>
+		<posX>934</posX>
+		<posY>492</posY>
+		<align>right</align>
+		<font>Segoe Light18</font>
+		<label>#time</label>
+	</control>
 
 	<control>
 		<description>list to show channels without channel state logos</description>
@@ -140,18 +151,6 @@
 		<onright>34</onright>
 		<onleft>36</onleft>
 		<align>center</align>
-	</control>
-
-	<control>
-		<description>time label</description>
-		<id>0</id>
-		<type>label</type>
-		<posX>512</posX>
-		<posY>699</posY>
-		<align>right</align>
-		<font>font12</font>
-		<textcolor>FFFFFFFF</textcolor>
-		<label>#time</label>
 	</control>
 	
 </control>
