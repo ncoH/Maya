@@ -6,8 +6,8 @@
 		<type>image</type>
 		<description>Dummy image</description>
 		<id>105</id>
-		<posX>-2000</posX>
-		<posY>12</posY>
+		<posX>0</posX>
+		<posY>0</posY>
 		<width>1252</width>
 		<height>60</height>
 		<texture>osd_bg_top.png</texture>
@@ -18,10 +18,10 @@
 		<type>image</type>
 		<id>992</id>
 		<posX>191</posX>
-		<posY>544</posY>
+		<posY>558</posY>
 		<width>984</width>
 		<height>117</height>
-		<texture>osd_bg_description.png</texture>
+		<texture>osd_bg_description2.png</texture>
 		<visible>window.isosdvisible</visible>
 	</control>
 

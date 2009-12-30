@@ -60,8 +60,6 @@
 				<renderUnfocusText>no</renderUnfocusText>
 				<frame>-</frame>
 				<frameFocus>thumbnail_frame_shine.png</frameFocus>
-				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,550" time="400">focus</thumbAnimation>
-				<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
 				<thumbZoom>no</thumbZoom>
 				<spinPosX>1190</spinPosX>
 			</control>
