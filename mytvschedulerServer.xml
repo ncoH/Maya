@@ -35,12 +35,13 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>555</posX>
-		<posY>130</posY>
+		<posY>142</posY>
 		<width>700</width>
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
 	</control>
 	
 	<control>
@@ -208,21 +209,19 @@
 				<description>listcontrol</description>
 				<type>listcontrol</type>
 				<id>10</id>
-				<posX>555</posX>
-				<posY>430</posY>
-				<width>720</width>
+				<posY>392</posY>
 				<height>300</height>
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
 				<PinIconHeight>15</PinIconHeight>
-				<PinIconXOff>49</PinIconXOff>
+				<PinIconXOff>48</PinIconXOff>
 				<PinIconYOff>18</PinIconYOff>
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
 				<IconXOff>12</IconXOff>
-				<IconYOff>8</IconYOff>
-				<textXOff>48</textXOff>
+				<IconYOff>9</IconYOff>
+				<textXOff>35</textXOff>
 				<textXOff2>0</textXOff2>
 				<keepaspectratio>yes</keepaspectratio>
 			</control>
@@ -259,7 +258,7 @@
 			<posX>555</posX>
 			<posY>290</posY>
 			<width>741</width>
-			<height>110</height>
+			<height>80</height>
 			<font>font12</font>
 			<label>#TV.Scheduled.Description</label>
 		</control>

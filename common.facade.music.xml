@@ -21,6 +21,7 @@
 				<posY>183</posY>
 				<height>450</height>
 				<textXOff>16</textXOff>
+				<spinCanFocus>no</spinCanFocus>
 			</control>
 
 			<control>
@@ -35,6 +36,7 @@
 				<height>450</height>
 				<onup>2</onup>
 				<ondown>2</ondown>
+				<spinCanFocus>no</spinCanFocus>
 			</control>
 
 			<control>
@@ -131,6 +133,7 @@
 				<scrollOffset>1</scrollOffset>
 				<posY>183</posY>
 				<height>450</height>
+				<spinCanFocus>no</spinCanFocus>
 			</control>
 
 		</control>

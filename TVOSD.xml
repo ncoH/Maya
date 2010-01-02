@@ -167,7 +167,7 @@
 		<AltTextureFocus>osd_settings_subs_focus.png</AltTextureFocus>
 		<AltTextureNoFocus>osd_settings_subs_nofocus.png</AltTextureNoFocus>
 		<textureFocus>osd_settings_subs_focus.png</textureFocus>
-		<textureNoFocus>osd_settings_subs_nofocus.png</textureNoFocus>
+		<textureNoFocus>osd_settings_subs_focus.png</textureNoFocus>
 		<label>-</label>
 		<font>-</font>
 		<onleft>218</onleft>
@@ -192,7 +192,7 @@
 		<AltTextureFocus>osd_settings_audio_focus.png</AltTextureFocus>
 		<AltTextureNoFocus>osd_settings_audio_nofocus.png</AltTextureNoFocus>
 		<textureFocus>osd_settings_audio_focus.png</textureFocus>
-		<textureNoFocus>osd_settings_audio_nofocus.png</textureNoFocus>
+		<textureNoFocus>osd_settings_audio_focus.png</textureNoFocus>
 		<label>-</label>
 		<font>-</font>
 		<visible allowhiddenfocus="true">Control.HasFocus(991) | Control.HasFocus(218) | Control.HasFocus(219) | Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(220) | Control.HasFocus(221) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)</visible>
@@ -209,7 +209,7 @@
         <AltTextureFocus>osd_settings_video_focus.png</AltTextureFocus>
         <AltTextureNoFocus>osd_settings_video_nofocus.png</AltTextureNoFocus>
         <textureFocus>osd_settings_video_focus.png</textureFocus>
-        <textureNoFocus>osd_settings_video_nofocus.png</textureNoFocus>
+        <textureNoFocus>osd_settings_video_focus.png</textureNoFocus>
         <label>-</label>
         <font>-</font>
         <onleft>220</onleft>
@@ -295,7 +295,7 @@
 		<type>image</type>
 		<id>0</id>
 		<texture>osd_expand_icon.png</texture>
-		<visible>!Control.HasFocus(991) + !Control.HasFocus(218) + !Control.HasFocus(220) + !Control.HasFocus(221) + !Control.HasFocus(800) + !Control.HasFocus(801) + !Control.HasFocus(802)</visible>
+		<visible>Control.HasFocus(990)</visible>
 	</control>
 	
 	<control>
@@ -307,7 +307,7 @@
 		<type>image</type>
 		<id>0</id>
 		<texture>osd_collapse_icon.png</texture>
-		<visible>Control.HasFocus(991) | Control.HasFocus(218) | Control.HasFocus(220) | Control.HasFocus(221) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)</visible>
+		<visible>Control.HasFocus(991) | Control.HasFocus(218) | Control.HasFocus(219) | Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(220) | Control.HasFocus(221) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)</visible>
 	</control>
 	
 	

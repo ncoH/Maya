@@ -162,6 +162,7 @@
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#Play.Current.Rating</percentage>
+		<visible>Control.HasFocus(177)</visible>
 	</control>
 	
 

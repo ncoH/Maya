@@ -129,7 +129,7 @@
 		<type>label</type>
 		<id>11</id>
 		<posX>550</posX>
-		<posY>485</posY>
+		<posY>465</posY>
 		<label>1041</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light18</font>
@@ -141,18 +141,19 @@
 				<description>listcontrol</description>
 				<type>listcontrol</type>
 				<id>10</id>
-				<posY>535</posY>
+				<posY>515</posY>
 				<height>200</height>
 				<onleft>2</onleft>
 				<onright>2</onright>
-				<PinIconWidth>35</PinIconWidth>
-				<PinIconHeight>25</PinIconHeight>
-				<PinIconXOff>49</PinIconXOff>
-				<PinIconYOff>11</PinIconYOff>
+				<PinIconHeight>15</PinIconHeight>
+				<PinIconXOff>48</PinIconXOff>
+				<PinIconYOff>18</PinIconYOff>
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
 				<IconXOff>12</IconXOff>
-				<IconYOff>8</IconYOff>
+				<IconYOff>9</IconYOff>
+				<textXOff>24</textXOff>
+				<textXOff2>0</textXOff2>
 				<keepaspectratio>yes</keepaspectratio>
 			</control>
 
@@ -204,13 +205,7 @@
 		<description>genre</description>
 		<type>label</type>
 		<id>17</id>
-		<posX>1260</posX>
-		<posY>185</posY>
-		<align>right</align>
-		<font>font13</font>
-		<textcolor>6aa5cb</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<posX>-2000</posX>
 	</control>
 	
 	<control>

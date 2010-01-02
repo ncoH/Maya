@@ -207,21 +207,21 @@
 	<control>
 		<id>3</id>
 		<type>image</type>
-		<posX>132</posX>
-		<posY>184</posY>
-		<width>266</width>
-		<height>266</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">-</texture>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<texture>-</texture>
 	</control>
 
 	<control>
 		<type>image</type>
 		<id>0</id>
-		<posX>73</posX>
-		<posY>144</posY>
-		<width>380</width>
-		<height>596</height>
-		<texture>roundedcorners_music.png</texture>
+		<posX>92</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture>blackborders_music.png</texture>
 	</control>
 
 	<control>
@@ -250,7 +250,7 @@
 		<type>button</type>
 		<id>5</id>
 		<posX>147</posX>
-		<posY>475</posY>
+		<posY>500</posY>
 		<label>182</label>
 		<onleft>4</onleft>
 		<onright>4</onright>
@@ -265,7 +265,7 @@
 		<type>button</type>
 		<id>6</id>
 		<posX>147</posX>
-		<posY>520</posY>
+		<posY>545</posY>
 		<label>184</label>
 		<onleft>4</onleft>
 		<onright>4</onright>

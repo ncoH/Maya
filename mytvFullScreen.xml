@@ -300,10 +300,10 @@
 	<control>
 		<type>image</type>
 		<id>500</id>
-		<posX>1204</posX>
+		<posX>667</posX>
 		<posY>18</posY>
-		<width>48</width>
-		<height>48</height>
+		<width>32</width>
+		<height>32</height>
 		<texture>osdaudiomutenf.png</texture>
 		<colordiffuse>White</colordiffuse>
 		<visible>no</visible>
@@ -312,8 +312,8 @@
 	<control>
 		<type>volumebar</type>
 		<id>501</id>
-		<posX>728</posX>
-		<posY>80</posY>
+		<posX>755</posX>
+		<posY>60</posY>
 		<align>right</align>
 		<height>13</height>
 		<imageHeight>3</imageHeight>

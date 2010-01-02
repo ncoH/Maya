@@ -7,12 +7,45 @@
 		<description>Dummy image</description>
 		<id>105</id>
 		<posX>-2000</posX>
-		<posY>12</posY>
-		<width>1252</width>
-		<height>60</height>
 		<texture>osd_bg_top.png</texture>
 	</control>
-
+	
+	<control>
+		<description>Description bg</description>
+		<type>image</type>
+		<id>992</id>
+		<posX>191</posX>
+		<posY>558</posY>
+		<width>984</width>
+		<height>117</height>
+		<texture>osd_bg_description2.png</texture>
+		<visible>window.isosdvisible</visible>
+	</control>
+	
+	<control>
+		<description>Fake trigger button expand</description>
+		<posX>657</posX>
+		<posY>559</posY>
+		<width>52</width>
+		<height>20</height>
+		<type>image</type>
+		<id>0</id>
+		<texture>osd_expand_icon.png</texture>
+		<visible>Control.HasFocus(990)</visible>
+	</control>
+	
+	<control>
+		<description>Fake trigger button collapse</description>
+		<posX>657</posX>
+		<posY>559</posY>
+		<width>52</width>
+		<height>20</height>
+		<type>image</type>
+		<id>0</id>
+		<texture>osd_collapse_icon.png</texture>
+		<visible>Control.HasFocus(991) | Control.HasFocus(218) | Control.HasFocus(219) | Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(220) | Control.HasFocus(221) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)</visible>
+	</control>
+	
 	<control>
 		<type>image</type>
 		<description>OSD Background</description>
@@ -248,17 +281,17 @@
 	</control>
 
 	<control>
-		<description>TV Logo</description>
+		<description>Video Logo</description>
 		<type>image</type>
-		<id>9999</id>
-		<posX>216</posX>
-		<posY>556</posY>
+		<id>0</id>
+		<posX>240</posX>
+		<posY>566</posY>
 		<width>80</width>
-		<height>90</height>
+		<height>80</height>
 		<texture>#Play.Current.Thumb</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<visible>window.isosdvisible</visible>
 	</control>
-
+	
 </controls>
 </window>

@@ -6,10 +6,7 @@
 		<type>image</type>
 		<description>Dummy image</description>
 		<id>105</id>
-		<posX>0</posX>
-		<posY>0</posY>
-		<width>1252</width>
-		<height>60</height>
+		<posX>-2000</posX>
 		<texture>osd_bg_top.png</texture>
 	</control>
 
