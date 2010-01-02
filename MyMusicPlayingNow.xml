@@ -243,7 +243,7 @@
 		<id>0</id>
 		<posX>703</posX>
 		<posY>498</posY>
-		<label>Next</label>
+		<label>790</label>
 		<font>Segoe Light18</font>
 		<textcolor>6aa5cb</textcolor>
 		<visible>Control.HasFocus(177)</visible>
@@ -646,7 +646,7 @@
 	<ondown>166</ondown>
 	<onup>177</onup>
 	<label>Now Playing</label>
-	<width>187</width>
+	<width>210</width>
 	<textureFocus>button-small-focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 </control>
@@ -658,7 +658,7 @@
 	<posY>651</posY>
 	<id>0</id>
 	<label>Top Album Tracks</label>
-	<width>187</width>
+	<width>210</width>
 	<textureFocus>-</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 </control>
@@ -670,7 +670,7 @@
 	<posY>651</posY>
 	<id>0</id>
 	<label>Top Album Tracks</label>
-	<width>187</width>
+	<width>210</width>
 	<textureFocus>button-small-focus.png</textureFocus>
 	<textureNoFocus>button-small-focus.png</textureNoFocus>
 	<visible>Control.HasFocus(166)</visible>
@@ -683,7 +683,7 @@
 	<posY>688</posY>
 	<id>0</id>
 	<label>Tagged Tracks</label>
-	<width>187</width>
+	<width>210</width>
 	<textureFocus>-</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 </control>
@@ -695,7 +695,7 @@
 	<posY>688</posY>
 	<id>0</id>
 	<label>Tagged Tracks</label>
-	<width>187</width>
+	<width>210</width>
 	<textureFocus>button-small-focus.png</textureFocus>
 	<textureNoFocus>button-small-focus.png</textureNoFocus>
 	<visible>Control.HasFocus(155)</visible>

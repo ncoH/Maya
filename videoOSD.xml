@@ -645,17 +645,6 @@
       <visible>no</visible>
     </control>
 
-	<control>
-		<description>Video Logo</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>240</posX>
-		<posY>566</posY>
-		<width>80</width>
-		<height>80</height>
-		<texture>#Play.Current.Thumb</texture>
-		<keepaspectratio>yes</keepaspectratio>
-	</control>
-	
+
 </controls>
 </window>

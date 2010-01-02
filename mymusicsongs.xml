@@ -20,8 +20,6 @@
 		<visible>facadeview.smallicons | facadeview.largeicons</visible>
 	</control>
 	
-	<import>common.coverflow.xml</import>
-	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
