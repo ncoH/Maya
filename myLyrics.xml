@@ -39,6 +39,8 @@
 		<text>6</text>
 		<spinPosX>550</spinPosX>
 		<spinPosY>718</spinPosY>
+		<spinWidth>46</spinWidth>
+		<spinHeight>33</spinHeight>
 	</control>
 
 	<control>

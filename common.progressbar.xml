@@ -38,7 +38,7 @@
 		<description>Fake trigger button expand</description>
 		<posX>657</posX>
 		<posY>559</posY>
-		<width>52</width>
+		<width>53</width>
 		<height>20</height>
 		<type>image</type>
 		<id>999</id>
@@ -50,7 +50,7 @@
 		<description>Fake trigger button collapse</description>
 		<posX>657</posX>
 		<posY>559</posY>
-		<width>52</width>
+		<width>53</width>
 		<height>20</height>
 		<type>image</type>
 		<id>999</id>

@@ -304,6 +304,10 @@
 		<ondown>2</ondown>
 		<font>font12</font>
 		<label>#cast</label>
+		<spinPosX>555</spinPosX>
+		<spinPosY>500</spinPosY>
+		<spinWidth>28</spinWidth>
+		<spinHeight>28</spinHeight>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>

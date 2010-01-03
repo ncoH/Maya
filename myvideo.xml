@@ -209,7 +209,7 @@
 					<type>button</type>
 					<id>10</id>
 					<hyperlink>5900</hyperlink>
-					<label>1300</label>
+					<label>5900</label>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
