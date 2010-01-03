@@ -19,6 +19,16 @@
 		<texture>background_thumbs.png</texture>
 		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
 	</control>
+	
+	<control>
+		<description>Alternate BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>background_filmstrip.png</texture>
+		<visible>facadeview.filmstrip</visible>
+	</control>
 
 	<control>
 		<description>Selected item Label</description>

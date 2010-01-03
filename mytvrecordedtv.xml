@@ -6,7 +6,7 @@
 <define>#header.label:652</define>
 <define>#header.image:recorded_logo.png</define>
 <controls>
-	<import>common.window.xml</import>
+	<import>common.window.recordings.xml</import>
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -20,6 +20,23 @@
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>433</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>recordings</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip</visible>
+		<align>center</align>
 		<valign>middle</valign>
 	</control>
 
@@ -198,6 +215,7 @@
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 
+		<!-- List -->
 		
 		<control>
 			<description>Current program channel</description>
@@ -208,6 +226,7 @@
 			<label>#TV.RecordedTV.Channel</label>
 			<font>Segoe Light18</font>
 			<textcolor>6aa5cb</textcolor>
+			<visible>facadeview.list</visible>
 		</control>
 		
 		<control>
@@ -219,7 +238,7 @@
 			<textcolor>6aa5cb</textcolor>
 			<font>Segoe Light18</font>
 			<label>#TV.RecordedTV.Time</label>
-			<visible>true</visible>
+			<visible>facadeview.list</visible>
 		</control>
 		
 		<control>
@@ -232,6 +251,63 @@
 			<height>80</height>
 			<font>font12</font>
 			<label>#TV.RecordedTV.Description</label>
+			<visible>facadeview.list</visible>
+		</control>
+		
+		<!-- Thumb -->
+		
+		<control>
+			<description>Current program channel</description>
+			<type>label</type>
+			<id>27</id>
+			<posX>515</posX>
+			<posY>610</posY>
+			<label>#TV.RecordedTV.Channel</label>
+			<font>Segoe Light18</font>
+			<textcolor>6aa5cb</textcolor>
+			<align>right</align>
+			<visible>facadeview.smallicons|facadeview.largeicons</visible>
+		</control>
+		
+		<control>
+			<type>label</type>
+			<description>Current program genre</description>
+			<id>14</id>
+			<posX>515</posX>
+			<posY>643</posY>
+			<textcolor>6aa5cb</textcolor>
+			<font>Segoe Light18</font>
+			<label>#TV.RecordedTV.Genre</label>
+			<align>right</align>
+			<visible>facadeview.smallicons|facadeview.largeicons</visible>
+		</control>
+			
+		<control>
+			<type>label</type>
+			<description>Current program time</description>
+			<id>14</id>
+			<posX>515</posX>
+			<posY>682</posY>
+			<textcolor>6aa5cb</textcolor>
+			<font>Segoe Light18</font>
+			<label>#TV.RecordedTV.Time</label>
+			<align>right</align>
+			<visible>facadeview.smallicons|facadeview.largeicons</visible>
+		</control>
+		
+
+		
+		<control>
+			<type>textboxscrollup</type>
+			<description>Description1</description>
+			<id>15</id>
+			<posX>545</posX>
+			<posY>614</posY>
+			<width>700</width>
+			<height>134</height>
+			<font>font12</font>
+			<label>#TV.RecordedTV.Description</label>
+			<visible>facadeview.smallicons|facadeview.largeicons</visible>
 		</control>
 
 	</control>

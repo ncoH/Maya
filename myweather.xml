@@ -146,7 +146,7 @@
 		<font>font12</font>
 		<textcolor>6aa5cb</textcolor>
 		<align>center</align>
-		<visible>Control.IsVisible(31)</visible>
+		<visible>Control.IsVisible(31) + plugin.isenabled(InfoService)</visible>
 	</control>
 
 	<control>
@@ -191,7 +191,7 @@
 		<label>402</label>
 		<font>font12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>Control.IsVisible(31)</visible>
+		<visible>Control.IsVisible(31) + plugin.isenabled(InfoService)</visible>
 	</control>
 	
 	<control>
@@ -203,7 +203,7 @@
 		<label>#infoservice.weather.today.feelsliketemp</label>
 		<font>font12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>Control.IsVisible(31)</visible>
+		<visible>Control.IsVisible(31) + plugin.isenabled(InfoService)</visible>
 	</control>
 	
 	<control>
@@ -215,7 +215,7 @@
 		<label>406</label>
 		<font>font12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>Control.IsVisible(31)</visible>
+		<visible>Control.IsVisible(31) + plugin.isenabled(InfoService)</visible>
 	</control>
 	
 	<control>
@@ -227,7 +227,7 @@
 		<label>#infoservice.weather.today.humidity</label>
 		<font>font12</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>Control.IsVisible(31)</visible>
+		<visible>Control.IsVisible(31) + plugin.isenabled(InfoService)</visible>
 	</control>
 	
 	<control>
@@ -280,7 +280,7 @@
 		<width>350</width>
 		<label>#infoservice.weather.lastupdated</label>
 		<font>Segoe Light18</font>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999) + plugin.isenabled(InfoService)</visible>
 	</control>
 	
 	<control>

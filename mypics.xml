@@ -173,6 +173,17 @@
 
 		</control>
 
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>456</posX>
+		<posY>246</posY>
+		<width>462</width>
+		<height>313</height>
+		<texture>black.png</texture>
+		<visible>facadeview.filmstrip</visible>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+	</control>
 		
 	<control>
 		<id>500</id>

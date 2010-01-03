@@ -89,6 +89,7 @@
 				<textureDown>-</textureDown>
 				<textureUpFocus>-</textureUpFocus>
 				<textureDownFocus>-</textureDownFocus>
+				<spinPosX>1190</spinPosX>
 			</control>
 
 			<control>
@@ -99,7 +100,7 @@
 				<scrollOffset>2</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<posX>66</posX>
+				<posX>77</posX>
 				<posY>255</posY>
 				<width>1300</width>
 				<height>720</height>

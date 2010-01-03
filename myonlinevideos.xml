@@ -44,7 +44,7 @@
 		<width>700</width>
 		<label>#title</label>
 		<font>Segoe Light22</font>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+control.isvisible(7773)+!control.isvisible(53)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons]+control.isvisible(7773)+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>
@@ -59,7 +59,7 @@
 		<width>700</width>
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+!control.isvisible(7773)+!control.isvisible(53)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!control.isvisible(7773)+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>
@@ -74,7 +74,7 @@
 		<align>right</align>
 		<label>#itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -89,7 +89,7 @@
 		<label>#title</label>
 		<font>Segoe Light22</font>
 		<align>center</align>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+control.isvisible(7773)+!control.isvisible(53)</visible>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+control.isvisible(7773)+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>
@@ -105,7 +105,7 @@
 		<align>center</align>
 		<label>#itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons</visible>
+		<visible>facadeview.smallicons|facadeview.largeicons</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -120,7 +120,7 @@
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<align>center</align>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!control.isvisible(7773)+!control.isvisible(53)</visible>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+!control.isvisible(7773)+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>

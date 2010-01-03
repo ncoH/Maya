@@ -21,13 +21,13 @@
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
 				<PinIconHeight>15</PinIconHeight>
-				<PinIconXOff>49</PinIconXOff>
+				<PinIconXOff>48</PinIconXOff>
 				<PinIconYOff>18</PinIconYOff>
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
 				<IconXOff>12</IconXOff>
-				<IconYOff>8</IconYOff>
-				<textXOff>16</textXOff>
+				<IconYOff>9</IconYOff>
+				<textXOff>24</textXOff>
 				<textXOff2>0</textXOff2>
 				<keepaspectratio>yes</keepaspectratio>
 				<spinCanFocus>no</spinCanFocus>
@@ -74,37 +74,75 @@
 				<description>Thumbnail Panel</description>
 				<type>thumbnailpanel</type>
 				<id>50</id>
-				<posX>530</posX>
-				<posY>150</posY>
-				<width>750</width>
+				<posX>113</posX>
+				<posY>226</posY>
+				<width>1200</width>
 				<height>450</height>
 				<scrollOffset>0</scrollOffset>
 				<onleft>2</onleft>
 				<onright>50</onright>
-				<itemWidth>188</itemWidth>
-				<itemHeight>130</itemHeight>
+				<itemWidth>284</itemWidth>
+				<itemHeight>181</itemHeight>
 				<textureWidth>175</textureWidth>
 				<textureHeight>100</textureHeight>
 				<thumbWidth>160</thumbWidth>
 				<thumbHeight>90</thumbHeight>
 				<thumbPosX>5</thumbPosX>
 				<thumbPosY>5</thumbPosY>
-				<itemWidthBig>375</itemWidthBig>
-				<itemHeightBig>210</itemHeightBig>
-				<textureWidthBig>315</textureWidthBig>
-				<textureHeightBig>180</textureHeightBig>
-				<thumbWidthBig>300</thumbWidthBig>
-				<thumbHeightBig>170</thumbHeightBig>
-				<thumbPosXBig>5</thumbPosXBig>
-				<thumbPosYBig>5</thumbPosYBig>
+				<itemWidthBig>284</itemWidthBig>
+				<itemHeightBig>181</itemHeightBig>
+				<textureWidthBig>290</textureWidthBig>
+				<textureHeightBig>187</textureHeightBig>
+				<thumbWidthBig>235</thumbWidthBig>
+				<thumbHeightBig>132</thumbHeightBig>
+				<thumbPosXBig>27</thumbPosXBig>
+				<thumbPosYBig>28</thumbPosYBig>
 				<zoomXPixels>0</zoomXPixels>
 				<zoomYPixels>0</zoomYPixels>
 				<thumbZoom>no</thumbZoom>
-				<enableFocusZoom>yes</enableFocusZoom>
+				<enableFocusZoom>no</enableFocusZoom>
 				<keepaspectratio>no</keepaspectratio>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
-				<renderFocusText>yes</renderFocusText>
-				<renderUnfocusText>yes</renderUnfocusText>
+				<renderFocusText>no</renderFocusText>
+				<renderUnfocusText>no</renderUnfocusText>
+				<imageFolderFocus>-</imageFolderFocus>
+				<imageFolder>-</imageFolder>
+				<frameNoFocus>blackborders_recordings_thumbnail_nofocus.png</frameNoFocus>
+    <frameFocus>blackborders_recordings_thumbnail_focus.png</frameFocus>
+			</control>
+			
+			<control>
+				<description>Filmstrip view</description>
+				<type>filmstrip</type>
+				<dimColor>90ffffff</dimColor>
+				<id>50</id>
+				<scrollOffset>2</scrollOffset>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>
+				<posX>66</posX>
+				<posY>255</posY>
+				<width>1300</width>
+				<height>720</height>
+				<onup>2</onup>
+				<onleft>50</onleft>
+				<thumbWidth>200</thumbWidth>
+				<thumbHeight>200</thumbHeight>
+				<thumbPosX>4</thumbPosX>
+				<thumbPosY>4</thumbPosY>
+				<itemWidth>250</itemWidth>
+				<itemHeight>231</itemHeight>
+				<textureWidth>210</textureWidth>
+				<textureHeight>210</textureHeight>
+				<thumbs></thumbs>
+				<InfoImage></InfoImage>
+				<showFrame>yes</showFrame>
+				<textYOff>-2000</textYOff>
+				<showFolder>no</showFolder>
+				<showBackGround>no</showBackGround>
+				<showInfoImage>no</showInfoImage>
+				<frameFocus>blackborders_recordings.png</frameFocus>
+				<thumbAnimation effect="zoom" start="100,100" end="130,130" time="200">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="130,130" end="100,100" time="200">unfocus</thumbAnimation>
 			</control>
 
 		</control>

@@ -17,6 +17,18 @@
 		<spinPosY>-2000</spinPosY>
 		<label>#Play.Current.Title</label>
 	</control>
+	
+	<control>
+		<description>Channel Name and time</description>
+		<id>0</id>
+		<type>fadelabel</type>
+		<width>770</width>
+		<posX>360</posX>
+		<posY>613</posY>
+		<font>Segoe Light14</font>
+		<textcolor>ff85cffe</textcolor>
+		<label>#Play.Current.Genre - #Play.Current.Year</label>
+	</control>
 
 	<control>
 		<description>Plot</description>
