@@ -146,7 +146,7 @@
 		<font>font12</font>
 		<textcolor>6aa5cb</textcolor>
 		<align>center</align>
-		<visible>Control.IsVisible(31) + plugin.isenabled(InfoService)</visible>
+		<visible>Control.IsVisible(31)</visible>
 	</control>
 
 	<control>
@@ -190,8 +190,8 @@
 		<posY>555</posY>
 		<label>402</label>
 		<font>font12</font>
-		<textcolor>6aa5cb</textcolor>
-		<visible>Control.IsVisible(31) + plugin.isenabled(InfoService)</visible>
+		<textcolor>85cffe</textcolor>
+		<visible>Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
@@ -202,8 +202,8 @@
 		<posY>555</posY>
 		<label>#infoservice.weather.today.feelsliketemp</label>
 		<font>font12</font>
-		<textcolor>6aa5cb</textcolor>
-		<visible>Control.IsVisible(31) + plugin.isenabled(InfoService)</visible>
+		<textcolor>85cffe</textcolor>
+		<visible>Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
@@ -214,8 +214,8 @@
 		<posY>578</posY>
 		<label>406</label>
 		<font>font12</font>
-		<textcolor>6aa5cb</textcolor>
-		<visible>Control.IsVisible(31) + plugin.isenabled(InfoService)</visible>
+		<textcolor>85cffe</textcolor>
+		<visible>Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
@@ -226,8 +226,8 @@
 		<posY>578</posY>
 		<label>#infoservice.weather.today.humidity</label>
 		<font>font12</font>
-		<textcolor>6aa5cb</textcolor>
-		<visible>Control.IsVisible(31) + plugin.isenabled(InfoService)</visible>
+		<textcolor>85cffe</textcolor>
+		<visible>Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
@@ -238,7 +238,7 @@
 		<posY>600</posY>
 		<label>-</label>
 		<font>font12</font>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 	</control>
 	
 	<control>
@@ -249,7 +249,7 @@
 		<posY>600</posY>
 		<label>-</label>
 		<font>font12</font>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 	</control>
 	
 	
@@ -280,7 +280,7 @@
 		<width>350</width>
 		<label>#infoservice.weather.lastupdated</label>
 		<font>Segoe Light18</font>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999) + plugin.isenabled(InfoService)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
