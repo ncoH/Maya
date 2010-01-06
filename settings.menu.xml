@@ -15,7 +15,7 @@
 		<type>label</type>
 		<description>Settings label</description>
 		<id>121</id>
-		<posX>195</posX>
+		<posX>192</posX>
 		<posY>164</posY>
 		<width>380</width>
 		<label>897</label>
@@ -35,7 +35,7 @@
 		<control>
 			<description>Wizard</description>
 			<type>button</type>
-			<id>3</id>
+			<id>10001</id>
 			<label>1200</label>
 			<hyperlink>615</hyperlink>
 			<onup>17</onup>
@@ -47,7 +47,7 @@
 		<control>
 			<description>General</description>
 			<type>button</type>
-			<id>4</id>
+			<id>10002</id>
 			<width>259</width>
 	<textureFocus>settings_button_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
@@ -58,7 +58,7 @@
 		<control>
 			<description>Screen</description>
 			<type>button</type>
-			<id>5</id>
+			<id>10003</id>
 			<width>259</width>
 	<textureFocus>settings_button_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
@@ -69,7 +69,7 @@
 		<control>
 			<description>TV</description>
 			<type>button</type>
-			<id>10</id>
+			<id>10004</id>
 			<width>259</width>
 	<textureFocus>settings_button_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
@@ -80,7 +80,7 @@
 		<control>
 			<description>My Pictures</description>
 			<type>button</type>
-			<id>7</id>
+			<id>10005</id>
 			<width>259</width>
 	<textureFocus>settings_button_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
@@ -91,7 +91,7 @@
 		<control>
 			<description>Movies</description>
 			<type>button</type>
-			<id>8</id>
+			<id>10006</id>
 			<width>259</width>
 	<textureFocus>settings_button_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
@@ -102,7 +102,7 @@
 		<control>
 			<description>My DVD</description>
 			<type>button</type>
-			<id>9</id>
+			<id>10007</id>
 			<width>259</width>
 	<textureFocus>settings_button_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
@@ -113,7 +113,7 @@
 		<control>
 			<description>My Music</description>
 			<type>button</type>
-			<id>6</id>
+			<id>10008</id>
 			<width>259</width>
 	<textureFocus>settings_button_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
@@ -124,7 +124,7 @@
 		<control>
 			<description>MiniDisplay</description>
 			<type>button</type>
-			<id>11</id>
+			<id>10009</id>
 			<width>259</width>
 	<textureFocus>settings_button_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>

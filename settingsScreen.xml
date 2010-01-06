@@ -1,28 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>9</id>
-<defaultcontrol>2</defaultcontrol>
+<defaultcontrol>10003</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
-<define>#header.label:6023</define>
-<define>#header.image:settings_logo.png</define>
-<define>#header.hover:hover_settings.png</define>
 <controls>
-	<import>common.settings.xml</import>
+<import>common.window.xml</import>
+<import>settings.menu.xml</import>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>434</posX>
+		<posY>60</posY>
+		<width>820</width>
+		<height>640</height>
+		<texture>settings_main_panel.png</texture>
+	</control>
+	
 	<control>
 		<description>buttons</description>
 		<type>group</type>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="150" start="800,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="800,0">WindowClose</animation>
-		<posX>435</posX>
-		<posY>206</posY>
-		<layout>StackLayout</layout>
+		<posX>490</posX>
+		<posY>260</posY>
+		<layout>GridLayout(2, 7, 120, 0, 1)</layout>
 		<control>
 			<description>UI Calibration button</description>
 			<type>button</type>
 			<id>2</id>
-			<width>408</width>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>213</label>
 			<hyperlink>10</hyperlink>
 			<onup>17</onup>
@@ -32,7 +43,11 @@
 			<description>Screen Calibration button</description>
 			<type>button</type>
 			<id>3</id>
-			<width>408</width>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>214</label>
 			<hyperlink>11</hyperlink>
 		</control>
@@ -41,7 +56,11 @@
 			<description>Scroll speed button</description>
 			<type>button</type>
 			<id>4</id>
-			<width>408</width>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>673</label>
 			<hyperlink>31</hyperlink>
 			<ondown>99</ondown>
