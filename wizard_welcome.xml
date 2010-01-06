@@ -117,7 +117,7 @@
 		<description>Country</description>
 		<id>7</id>
 		<posX>212</posX>
-		<posY>512</posY>
+		<posY>513</posY>
 		<onleft>7</onleft>
 		<onright>5</onright>
 		<onup>6</onup>
@@ -134,7 +134,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>395</posX>
-		<posY>512</posY>
+		<posY>513</posY>
 		<texture>settings_setupguide_wide.png</texture>
 		<width>771</width>
 		<height>36</height>

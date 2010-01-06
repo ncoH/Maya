@@ -126,7 +126,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>212</posX>
-		<posY>512</posY>
+		<posY>513</posY>
 		<texture>settings_setupguide_wide.png</texture>
 		<width>476</width>
 		<height>36</height>
@@ -136,7 +136,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>212</posX>
-		<posY>512</posY>
+		<posY>513</posY>
 		<texture>settings_button_wide_focus.png</texture>
 		<visible>Control.HasFocus(7)</visible>
 		<width>476</width>
@@ -147,7 +147,7 @@
 		<type>checkmark</type>
 		<id>7</id>
 		<posX>225</posX>
-		<posY>517</posY>
+		<posY>518</posY>
 		<onleft>6</onleft>
 		<onright>9</onright>
 		<onup>6</onup>
@@ -228,7 +228,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>691</posX>
-		<posY>512</posY>
+		<posY>513</posY>
 		<texture>settings_setupguide_wide.png</texture>
 		<width>475</width>
 		<height>36</height>
@@ -238,7 +238,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>691</posX>
-		<posY>512</posY>
+		<posY>513</posY>
 		<texture>settings_button_wide_focus.png</texture>
 		<visible>Control.HasFocus(9)</visible>
 		<width>475</width>
