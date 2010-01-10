@@ -146,7 +146,7 @@
 		<font>font12</font>
 		<textcolor>6aa5cb</textcolor>
 		<align>center</align>
-		<visible>Control.IsVisible(31)</visible>
+		<visible>plugin.isenabled(InfoService)+Control.IsVisible(31)</visible>
 	</control>
 
 	<control>
@@ -159,7 +159,20 @@
 		<label>-</label>
 		<align>center</align>
 		<font>Segoe Light22</font>
-		<visible>Control.IsVisible(31)</visible>
+		<visible>!plugin.isenabled(InfoService)+Control.IsVisible(31)</visible>
+	</control>
+	
+	<control>
+		<description>last update time</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>383</posX>
+		<posY>135</posY>
+		<width>600</width>
+		<label>#maya.weather.update.date #maya.weather.update.time</label>
+		<align>center</align>
+		<font>Segoe Light22</font>
+		<visible>plugin.isenabled(InfoService)+Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
@@ -191,7 +204,7 @@
 		<label>402</label>
 		<font>font12</font>
 		<textcolor>85cffe</textcolor>
-		<visible>Control.IsVisible(31)</visible>
+		<visible>plugin.isenabled(InfoService)+Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
@@ -203,7 +216,7 @@
 		<label>#infoservice.weather.today.feelsliketemp</label>
 		<font>font12</font>
 		<textcolor>85cffe</textcolor>
-		<visible>Control.IsVisible(31)</visible>
+		<visible>plugin.isenabled(InfoService)+Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
@@ -215,7 +228,7 @@
 		<label>406</label>
 		<font>font12</font>
 		<textcolor>85cffe</textcolor>
-		<visible>Control.IsVisible(31)</visible>
+		<visible>plugin.isenabled(InfoService)+Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
@@ -227,7 +240,7 @@
 		<label>#infoservice.weather.today.humidity</label>
 		<font>font12</font>
 		<textcolor>85cffe</textcolor>
-		<visible>Control.IsVisible(31)</visible>
+		<visible>plugin.isenabled(InfoService)+Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
@@ -272,15 +285,28 @@
 	</control>
 	
 	<control>
-		<description>last update time</description>
+		<description>last update date</description>
 		<type>textbox</type>
 		<id>0</id>
 		<posX>900</posX>
 		<posY>175</posY>
 		<width>350</width>
-		<label>#infoservice.weather.lastupdated</label>
+		<label>#maya.weather.update.date</label>
 		<font>Segoe Light18</font>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
+		<visible>plugin.isenabled(InfoService)+!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
+	</control>
+	
+	<control>
+		<description>last update time</description>
+		<type>textbox</type>
+		<id>0</id>
+		<posX>900</posX>
+		<posY>210</posY>
+		<width>350</width>
+		<label>#maya.weather.update.time</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light18</font>
+		<visible>plugin.isenabled(InfoService)+!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>

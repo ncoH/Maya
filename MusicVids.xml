@@ -6,7 +6,13 @@
   
   <controls>
   
-<import>common.window.xml</import>
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+	</control>
 
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -23,47 +29,30 @@
 	</control>
 	
 	<control>
-      <description>Video Count</description>
-      <type>label</type>
-      <id>15</id>
-      <posX>800</posX>
-      <posY>500</posY>
-      <font>font12</font>
-       <label>#MusicVids.TotalVideos</label>
-    </control>
-
-    <control>
-      <description>Artist Count</description>
-      <type>label</type>
-      <id>16</id>
-      <posX>550</posX>
-      <posY>500</posY>
-      <font>font12</font>
-      <label>#MusicVids.TotalArtists</label>
-    </control>
-
-    <control>
-      <description>Music Vids Hierachy</description>
-      <type>label</type>
-      <id>10</id>
-      <posX>12000</posX>
-      <posY>12000</posY>
-      <label>#MusicVids.Hierachy</label>
-      <font>font14</font>
-      <textcolor>ffffffff</textcolor>
-    </control>
-	
-	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
-		<id>11</id>
-		<posX>-2000</posX>
-		<posY>130</posY>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>142</posY>
 		<width>700</width>
-		<label>#MusicVids.ArtistName</label>
+		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<description>Artist name</description>
+		<type>label</type>
+		<label>#MusicVids.ArtistName</label>
+		<id>15</id>
+		<posX>555</posX>
+		<posY>195</posY>
+		<width>400</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -77,7 +66,7 @@
 	  <height>300</height>
 	  <keepaspectratio>true</keepaspectratio>
 	  <centered>yes</centered>
-      <texture flipY="true" diffuse="Thumb_Mask.png">#MusicVids.ArtistImg</texture>
+      <texture>#MusicVids.ArtistImg</texture>
 	  <animation effect="fade" time="1000" delay="100">WindowOpen</animation>
       <animation effect="fade" time="500">WindowClose</animation>
 	</control>
@@ -86,11 +75,10 @@
       <description>Artist Biography</description>
       <type>textboxscrollup</type>
       <id>12</id>
-	  <font>font12</font>
-      <posX>650</posX>
-      <posY>540</posY>
-	  <width>480</width>
-	  <height>150</height>
+	  <posX>555</posX>
+		<posY>250</posY>
+		<width>400</width>
+		<height>450</height>
       <label>#MusicVids.ArtistBio</label>
     </control>
 	
@@ -121,8 +109,78 @@
 	  <height>300</height>
 	  <keepaspectratio>true</keepaspectratio>
 	  <centered>yes</centered>
-      <texture flipY="true" diffuse="Thumb_Mask.png">#MusicVids.VideoImg</texture>
+      <texture>#MusicVids.VideoImg</texture>
     </control>
+	
+    <control>
+      <description>Most Played Video Label</description>
+      <type>label</type>
+      <label>Most Played Video</label>
+	  <textcolor>85cffe</textcolor>
+      <id>1</id>
+      <posX>75</posX>
+      <posY>500</posY>
+	  <width>255</width>
+    </control>
+	
+    <control>
+      <description>Favorite Vid label</description>
+      <type>label</type>
+      <id>17</id>
+      <posX>75</posX>
+      <posY>530</posY>
+      <width>255</width>
+      <label>#MusicVids.MostPlayed</label>
+    </control>
+
+    <control>
+      <description>Favorite Artist Static</description>
+      <type>label</type>
+      <label>Most Played Artist</label>
+      <textcolor>85cffe</textcolor>
+	  <id>1</id>
+      <posX>75</posX>
+      <posY>600</posY>
+	  <width>255</width>
+    </control>
+	
+	 <control>
+      <description>Favorite Artist</description>
+      <type>label</type>
+      <label></label>
+      <id>19</id>
+      <posX>75</posX>
+      <posY>630</posY>
+	  <width>255</width>
+      <label>#MusicVids.FavArtist</label>
+    </control>
+	
+	   <control>
+      <description>Favorite Vid</description>
+      <type>image</type>
+      <id>18</id>
+      <posX>-2000</posX>
+      <posY>305</posY>
+	  <width>200</width>
+	  <height>90</height>
+      <texture>#MusicVids.MostPlayedThumb</texture>
+      <keepaspectratio>no</keepaspectratio>
+    </control>
+
+    <control>
+      <description>Favorite Artist</description>
+      <type>image</type>
+	  <id>20</id>
+      <width>115</width>     
+      <posX>-2000</posX>
+      <posY>500</posY>
+	  <width>200</width>
+	  <height>90</height>
+      <texture>#MusicVids.FavArtistThumb</texture>
+	  <keepaspectratio>yes</keepaspectratio>     
+    </control>
+	
+
 	
 	
 	<control>
@@ -136,44 +194,72 @@
 	
 	
   
-<import>common.facade.music.xml</import>
+	<control>
+		<type>facadeview</type>
+		<id>50</id>
+		<control>
+			<visible>Control.IsVisible(50)</visible>
+			<description>Movie List</description>
+			<type>listcontrol</type>
+			<id>50</id>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<posX>979</posX>
+			<posY>183</posY>
+			<height>490</height>
+			<width>299</width>
+			<textXOff>14</textXOff>
+			<scrollOffset>1</scrollOffset>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+		</control>
+	</control>
 
 	<control>
-      <type>actiongroup</type>
-      <description>action menu</description>
-      <defaultcontrol>2</defaultcontrol>
-      <onexit>0</onexit>
-      <buttonX>0</buttonX>
-      <buttonY>0</buttonY>
-      <buttonwidth>106</buttonwidth>
-      <buttonheight>720</buttonheight>
-      <textureFocus>Action_focus.png</textureFocus>
-      <textureNoFocus>Action_nofocus.png</textureNoFocus>
-      <width>568</width>
-      <height>720</height>
-      <dimColor>00ffffff</dimColor>
-      <control>
-        <type>image</type>
-        <posX>26</posX>
-        <posY>78</posY>
-        <width>367</width>
-        <height>591</height>
-        <texture>Backslide.png</texture>
-        <colorDiffuse>fffffffff</colorDiffuse>
-        <visible>!Control.HasFocus(50)</visible>
-        <animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
-        <animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
-      </control>
-      
-  <control>
-        <type>group</type>
-        <description>group element</description>
-        <visible>!Control.HasFocus(50)</visible>
-        <animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
-        <animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
-        <posX>70</posX>
-        <posY>130</posY>
-        <layout>StackLayout</layout>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1366</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+		<animation effect="fade" time="200" reversible="false">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
+		
+		<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>512</posX>
+		<posY>64</posY>
+		<width>342</width>
+		<height>640</height>
+		<texture>menu_bg.png</texture>
+		<visible>!Control.HasFocus(50)</visible>
+		</control>
+		
+				<control>
+				<description>Heading text label</description>
+				<type>label</type>
+				<id>1</id>
+				<posX>567</posX>
+				<posY>110</posY>
+				<label>924</label>
+				<font>Segoe Light18</font>
+				<textcolor>85cffe</textcolor>
+				</control>
+		
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>543</posX>
+				<posY>175</posY>
+				<layout>StackLayout(1)</layout>
      
       <control>
         <description>Random</description>
@@ -207,116 +293,52 @@
         <ondown>2</ondown>
         <label>Playlist</label>
       </control>
-     </control>
-
-    <control>
-      <description>Most Played Video Label</description>
-      <type>label</type>
-      <label>Most Played Video</label>
-	  <font>font10</font>
-      <id>1</id>
-      <posX>75</posX>
-      <posY>280</posY>
-	  <width>255</width>
-	  <align>center</align>
-       <visible>!Control.HasFocus(50)</visible>
-        <animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
-        <animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
-    </control>
-
-	
-	    <control>
-      <description>Favorite Vid</description>
-      <type>image</type>
-      <id>18</id>
-      <posX>100</posX>
-      <posY>305</posY>
-	  <width>200</width>
-	  <height>90</height>
-      <texture flipY="true" diffuse="Thumb_Mask.png">#MusicVids.MostPlayedThumb</texture>
-      <keepaspectratio>no</keepaspectratio>
-	         <visible>!Control.HasFocus(50)</visible>
-        <animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
-        <animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
-    </control>
-	
-    <control>
-      <description>Favorite Vid label</description>
-      <type>label</type>
-      <id>17</id>
-      <posX>75</posX>
-      <posY>420</posY>
-      <width>255</width>
-      <font>font10</font>
-	 <align>center</align>
-      <label>#MusicVids.MostPlayed</label>
-       <visible>!Control.HasFocus(50)</visible>
-        <animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
-        <animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
-    </control>
-
-    <control>
-      <description>Favorite Artist Static</description>
-      <type>label</type>
-      <label>Most Played Artist</label>
-      <font>font10</font>
-	  <id>1</id>
-      <posX>75</posX>
-      <posY>480</posY>
-	  <width>255</width>
-	  <align>center</align>
-       <visible>!Control.HasFocus(50)</visible>
-        <animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
-        <animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
-    </control>
-
-
-    <control>
-      <description>Favorite Artist</description>
-      <type>image</type>
-	  <id>20</id>
-      <width>115</width>     
-      <posX>100</posX>
-      <posY>500</posY>
-	  <width>200</width>
-	  <height>90</height>
-      <texture flipY="true" diffuse="Thumb_Mask.png">#MusicVids.FavArtistThumb</texture>
-	  <keepaspectratio>yes</keepaspectratio>     
-       <visible>!Control.HasFocus(50)</visible>
-	   <centered>yes</centered>
-        <animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
-        <animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
-    </control>
-	
-	 <control>
-      <description>Favorite Artist</description>
-      <type>label</type>
-      <label></label>
-      <id>19</id>
-      <posX>75</posX>
-      <posY>615</posY>
-	  <width>255</width>
-      <font>font10</font>
-	 <align>center</align>
-      <label>#MusicVids.FavArtist</label>
-       <visible>!Control.HasFocus(50)</visible>
-        <animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
-        <animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
-    </control>
 
   </control>
+  
+   </control>
+  
+  
 
 	<control>
   <description>Sort Label Overlay</description> 
   <type>label</type> 
   <id>22</id> 
-  <posX>1250</posX> 
+  <posX>50</posX> 
   <posY>550</posY> 
   <label>#MusicVids.Sort</label> 
   <align>right</align> 
   <font>font32</font> 
   <textcolor>20ffffff</textcolor> 
   </control>
+  
 
+	
+  	<control>
+		<description>Artist</description>
+		<type>label</type>
+		<label>#MusicVids.TotalArtists</label>
+		<id>9999</id>
+		<posX>1242</posX>
+		<posY>690</posY>
+		<align>right</align>
+		<textcolor>6aa5cb</textcolor>
+		<visible>string.equals(#MusicVids.Hierachy,Artists)</visible>
+	</control>
+  
+  	<control>
+		<description>Videocount</description>
+		<type>label</type>
+		<label>#MusicVids.TotalVideos</label>
+		<id>0</id>
+		<posX>1242</posX>
+		<posY>690</posY>
+		<align>right</align>
+		<textcolor>6aa5cb</textcolor>
+		<visible>!Control.IsVisible(9999)</visible>
+	</control>
+	
+<import>common.overlay.xml</import>
+	
   </controls>
 </window>
