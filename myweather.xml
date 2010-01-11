@@ -14,7 +14,7 @@
 		<type>actiongroup</type>
 		<description>action menu</description>
 		<defaultcontrol>2</defaultcontrol>
-		<onexit>50</onexit>
+		<onexit>4</onexit>
 		<buttonX>0</buttonX>
 		<buttonY>0</buttonY>
 		<buttonwidth>0</buttonwidth>
@@ -128,25 +128,11 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>weather</label>
+		<label>8</label>
 		<font>Segoe Light40</font>
 		<textcolor>6aa5cb</textcolor>
 		<align>center</align>
-		<visible>Control.IsVisible(31)</visible>
-	</control>
-
-	<control>
-		<description>5-day location</description>
-		<type>label</type>
-		<id>1</id>
-		<posX>483</posX>
-		<posY>180</posY>
-		<width>400</width>
-		<label>#infoservice.weather.location - #infoservice.weather.today.condition</label>
-		<font>font12</font>
-		<textcolor>6aa5cb</textcolor>
-		<align>center</align>
-		<visible>plugin.isenabled(InfoService)+Control.IsVisible(31)</visible>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 
 	<control>
@@ -159,9 +145,9 @@
 		<label>-</label>
 		<align>center</align>
 		<font>Segoe Light22</font>
-		<visible>!plugin.isenabled(InfoService)+Control.IsVisible(31)</visible>
+		<visible>!plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
-	
+
 	<control>
 		<description>last update time</description>
 		<type>label</type>
@@ -172,8 +158,23 @@
 		<label>#maya.weather.update.date #maya.weather.update.time</label>
 		<align>center</align>
 		<font>Segoe Light22</font>
-		<visible>plugin.isenabled(InfoService)+Control.IsVisible(31)</visible>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
+	
+	<control>
+		<description>5-day location</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>483</posX>
+		<posY>180</posY>
+		<width>400</width>
+		<label>#infoservice.weather.location - #infoservice.weather.today.condition</label>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>
+		<align>center</align>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+
 	
 	<control>
 		<description>5-day location feels like label</description>
@@ -194,17 +195,29 @@
 		<textcolor>6aa5cb</textcolor>
 	</control>
 	
+	<control>
+		<description>horizontal line</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>236</posX>
+		<posY>554</posY>
+		<width>144</width>
+		<height>1</height>
+		<texture>weather_horizontal_bar.png</texture>
+		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+	</control>
 	
 	<control>
 		<description>current feels like static label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>238</posX>
-		<posY>555</posY>
+		<posX>235</posX>
+		<posY>560</posY>
 		<label>402</label>
 		<font>font12</font>
-		<textcolor>85cffe</textcolor>
-		<visible>plugin.isenabled(InfoService)+Control.IsVisible(31)</visible>
+		<textcolor>6aa5cb</textcolor>
+		<font>font11</font>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
 	<control>
@@ -212,23 +225,23 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>345</posX>
-		<posY>555</posY>
+		<posY>560</posY>
 		<label>#infoservice.weather.today.feelsliketemp</label>
-		<font>font12</font>
-		<textcolor>85cffe</textcolor>
-		<visible>plugin.isenabled(InfoService)+Control.IsVisible(31)</visible>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
 	<control>
 		<description>current humidity static label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>238</posX>
-		<posY>578</posY>
+		<posX>235</posX>
+		<posY>583</posY>
 		<label>406</label>
-		<font>font12</font>
-		<textcolor>85cffe</textcolor>
-		<visible>plugin.isenabled(InfoService)+Control.IsVisible(31)</visible>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
 	<control>
@@ -236,22 +249,35 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>345</posX>
-		<posY>578</posY>
+		<posY>583</posY>
 		<label>#infoservice.weather.today.humidity</label>
-		<font>font12</font>
-		<textcolor>85cffe</textcolor>
-		<visible>plugin.isenabled(InfoService)+Control.IsVisible(31)</visible>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
 	<control>
 		<description>current UV Index static label</description>
 		<type>label</type>
 		<id>225</id>
-		<posX>238</posX>
-		<posY>600</posY>
+		<posX>235</posX>
+		<posY>606</posY>
 		<label>-</label>
-		<font>font12</font>
-		<textcolor>85cffe</textcolor>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>!plugin.isenabled(InfoService)</visible>
+	</control>
+	
+	<control>
+		<description>current UV Index static label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>235</posX>
+		<posY>606</posY>
+		<label>403</label>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
 	<control>
@@ -259,11 +285,27 @@
 		<type>label</type>
 		<id>25</id>
 		<posX>345</posX>
-		<posY>600</posY>
+		<posY>606</posY>
 		<label>-</label>
-		<font>font12</font>
-		<textcolor>85cffe</textcolor>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>!plugin.isenabled(InfoService)</visible>
 	</control>
+	
+	<control>
+		<description>current UV Index label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>345</posX>
+		<posY>606</posY>
+		<label>#infoservice.weather.today.humidity</label>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+	
+	
+	#infoservice.weather.today.humidity
 	
 	
 <!--   1-day stuff   -->
@@ -281,7 +323,7 @@
 		<onup>4</onup>
 		<label>185</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible allowhiddenfocus="true">!Control.IsVisible(1000)+!Control.IsVisible(31)</visible>
+		<visible allowhiddenfocus="true">!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
@@ -293,7 +335,7 @@
 		<width>350</width>
 		<label>#maya.weather.update.date</label>
 		<font>Segoe Light18</font>
-		<visible>plugin.isenabled(InfoService)+!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
+		<visible>plugin.isenabled(InfoService)+!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -306,7 +348,7 @@
 		<label>#maya.weather.update.time</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light18</font>
-		<visible>plugin.isenabled(InfoService)+!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
+		<visible>plugin.isenabled(InfoService)+!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -317,7 +359,7 @@
 		<posY>665</posY>
 		<label>Press OK to toggle day</label>
 		<textcolor>282828</textcolor>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
 	</control>
 
 	<control>
@@ -329,7 +371,7 @@
 		<width>544</width>
 		<height>768</height>
 		<texture>moving_pictures_detail_vignette.png</texture>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -340,7 +382,7 @@
 		<posY>260</posY>
 		<label>-</label>
 		<font>Segoe Light40</font>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(31)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
@@ -352,7 +394,7 @@
 		<label>-</label>
 <font>Segoe Light40</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(31)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
 	</control>
 
 	<control>
@@ -363,7 +405,7 @@
 		<posY>520</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -374,7 +416,7 @@
 		<posY>520</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
 	</control>
 
 	<control>
@@ -385,7 +427,7 @@
 		<posY>565</posY>
 		<label>376</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -396,7 +438,7 @@
 		<posY>565</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
 	</control>
 
 	<control>
@@ -407,7 +449,7 @@
 		<posY>587</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -418,7 +460,7 @@
 		<posY>587</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>!Control.IsVisible(1000)+!Control.IsVisible(9999)</visible>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -486,7 +528,7 @@
 		<width>2</width>
 		<height>340</height>
 		<texture>vert_line.png</texture>
-		<visible>Control.IsVisible(31)</visible>
+		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
 	</control>
 	
 	<control>
@@ -524,6 +566,18 @@
 		<texture>vert_line.png</texture>
 		<visible>Control.IsVisible(31)</visible>
 	</control>
+	
+	<control>
+		<description>vertical line 6</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>1153</posX>
+		<posY>280</posY>
+		<width>2</width>
+		<height>340</height>
+		<texture>vert_line.png</texture>
+		<visible>Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+	</control>
 
 	<control>
 		<description>day 0 label</description>
@@ -544,7 +598,7 @@
 		<label>6030</label>
 		<font>Segoe Light20</font>
 		<textcolor>White</textcolor>
-		<visible>Control.IsVisible(31)</visible>
+		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
 	</control>
 
 	<control>
@@ -557,9 +611,22 @@
 		<align>center</align>
 		<label>-</label>
 		<font>Segoe Light36</font>
-		<textcolor>White</textcolor>
+		<visible>!plugin.isenabled(InfoService)</visible>
 	</control>
-
+	
+	<control>
+		<description>day 0 Hi label (infoservice)</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>218</posX>
+		<posY>456</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>#infoservice.weather.today.maxtemp</label>
+		<font>Segoe Light36</font>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(9999) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+	
 	<control>
 		<description>day 0 low label</description>
 		<type>label</type>
@@ -571,6 +638,21 @@
 		<label>-</label>
 		<font>Segoe Light36</font>
 		<textcolor>85cffe</textcolor>
+		<visible>!plugin.isenabled(InfoService)</visible>
+	</control>
+	
+	<control>
+		<description>day 0 low label (infoservice)</description>
+		<type>label</type>
+		<id>33</id>
+		<posX>218</posX>
+		<posY>517</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>#infoservice.weather.today.mintemp</label>
+		<font>Segoe Light36</font>
+		<textcolor>85cffe</textcolor>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(9999) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 
 	<control>
@@ -591,7 +673,7 @@
 		<posX>245</posX>
 		<posY>300</posY>
 		<texture>weather/128/#infoservice.weather.today.img.big.filenamewithext</texture>
-		<visible>Control.IsVisible(9999)</visible>
+		<visible>Control.IsVisible(9999) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
 	</control>
 
 	<control>
@@ -838,10 +920,10 @@
 		<description>Satellite image</description>
 		<type>image</type>
 		<id>1000</id>
-		<posX>462</posX>
-		<posY>121</posY>
-		<width>737</width>
-		<height>412</height>
+		<posX>513</posX>
+		<posY>282</posY>
+		<width>530</width>
+		<height>345</height>
 		<texture/>
 		<visible>no</visible>
 		<colorkey>0</colorkey>
@@ -855,10 +937,10 @@
 		<type>image</type>
 		<id>1200</id>
 		<label>-</label>
-		<posY>250</posY>
-		<posX>8</posX>
-		<width>1262</width>
-		<height>447</height>
+		<posX>513</posX>
+		<posY>282</posY>
+		<width>530</width>
+		<height>345</height>
 		<onleft>3</onleft>
 		<onright>3</onright>
 		<onup>3</onup>
