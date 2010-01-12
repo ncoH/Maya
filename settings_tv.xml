@@ -26,7 +26,7 @@
 		<posY>125</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>128</label>
+		<label>605</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<valign>middle</valign>
@@ -39,13 +39,13 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 		<posX>490</posX>
 		<posY>260</posY>
-		<layout>GridLayout(2, 7, 120, 0, 1)</layout>
+		<layout>GridLayout(2, 7, 42, 0, 1)</layout>
 		
 		<control>
 			<description>MPEG-2 Video Codecs</description>
 			<type>button</type>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
 	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
@@ -57,8 +57,8 @@
 		<control>
 			<description>H.264 Video Codecs</description>
 			<type>button</type>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
 	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
@@ -69,8 +69,8 @@
 		<control>
 			<description>Audio Codecs</description>
 			<type>button</type>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
 	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
@@ -81,8 +81,8 @@
 		<control>
 			<description>LATM AAC Audio Codecs</description>
 			<type>button</type>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
 	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
@@ -93,8 +93,8 @@
 		<control>
 			<description>Audio Renderer</description>
 			<type>button</type>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
 	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
@@ -105,8 +105,8 @@
 		<control>
 			<description>De-interlacing</description>
 			<type>button</type>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
 	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
@@ -115,10 +115,10 @@
 		</control>
 
 		<control>
-			<description>Apect Ratio</description>
+			<description>Aspect Ratio</description>
 			<type>button</type>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
 	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
@@ -130,8 +130,8 @@
 		<control>
 			<description>Recording options</description>
 			<type>button</type>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
 	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
@@ -144,8 +144,8 @@
 		<control>
 			<description>Automatically turn TV on</description>
 			<type>button</type>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
 	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
@@ -156,8 +156,8 @@
 		<control>
 			<description>Timeshift usage mode</description>
 			<type>button</type>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
 	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
@@ -168,8 +168,8 @@
 		<control>
 			<description>Timeshift Buffer</description>
 			<type>button</type>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
 	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
@@ -180,8 +180,8 @@
 		<control>
 			<description>Channelsorting</description>
 			<type>button</type>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
 	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
@@ -193,8 +193,8 @@
 		<control>
 			<description>DVB Guide</description>
 			<type>button</type>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
 	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
@@ -208,8 +208,8 @@
 		<control>
 			<description>XMLTV EPG Grabber</description>
 			<type>button</type>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
 	<textcolorNoFocus>ff85cffe</textcolorNoFocus>

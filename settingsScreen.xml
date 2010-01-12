@@ -18,6 +18,21 @@
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>504</posX>
+		<posY>125</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>6023</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
 		<description>buttons</description>
 		<type>group</type>
 		<animation effect="fade" time="250">WindowOpen</animation>

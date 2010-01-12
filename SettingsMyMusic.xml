@@ -16,44 +16,93 @@
 		<height>640</height>
 		<texture>settings_main_panel.png</texture>
 	</control>
+	
 	<control>
-		<description>group element</description>
-		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="150" start="800,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="800,0">WindowClose</animation>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>504</posX>
+		<posY>125</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>3</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>489</posX>
+		<posY>260</posY>
+		<width>334</width>
+		<textcolor>ff85cffe</textcolor>
+		<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+		<texture>settings_button_medium_focus.png</texture>
+		<visible>Control.HasFocus(2)</visible>
+	</control>
+		
 		<control>
 			<description>Shuffle Playlist on load</description>
 			<type>checkmark</type>
 			<id>2</id>
-			<posX>355</posX>
-			<posY>272</posY>
-			<label>228</label>
-			<onleft>2</onleft>
-			<onright>2</onright>
-			<onup>21</onup>
+			<posX>770</posX>
+			<posY>266</posY>
+			<label>-</label>
+			<onup>2</onup>
 			<ondown>6</ondown>
 		</control>
+		
+		<control>
+			<description>Shuffle Playlist on load label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>507</posX>
+			<posY>264</posY>
+			<textcolor>ff85cffe</textcolor>
+			<label>228</label>
+		</control>
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>489</posX>
+		<posY>295</posY>
+		<width>334</width>
+		<textcolor>ff85cffe</textcolor>
+		<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+		<texture>settings_button_medium_focus.png</texture>
+		<visible>Control.HasFocus(6)</visible>
+	</control>
 
 		<control>
 			<description>Enable ID3  other tagformats</description>
 			<type>checkmark</type>
 			<id>6</id>
-			<posX>355</posX>
-			<posY>315</posY>
-			<label>258</label>
-			<onleft>6</onleft>
-			<onright>6</onright>
+			<posX>770</posX>
+			<posY>301</posY>
+			<label>-</label>
 			<onup>2</onup>
 			<ondown>8</ondown>
+		</control>
+		
+		<control>
+			<description>Enable ID3  other tagformats label</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>507</posX>
+			<posY>299</posY>
+			<textcolor>ff85cffe</textcolor>
+			<label>258</label>
 		</control>
 
 		<control>
 			<description>Reorganize My Music Database label</description>
 			<type>label</type>
 			<id>7</id>
-			<posX>355</posX>
+			<posX>-2000</posX>
 			<posY>357</posY>
 			<label>334</label>
 		</control>
@@ -62,17 +111,14 @@
 			<description>Reorganize My Music Database button</description>
 			<type>button</type>
 			<id>8</id>
-			<label>335</label>
-			<posX>888</posX>
-			<posY>357</posY>
-			<textXOff>50</textXOff>
-			<textYOff>2</textYOff>
-			<width>152</width>
-			<height>41</height>
-			<textureFocus>button_small_settings_focus.png</textureFocus>
-			<textureNoFocus>button_small_settings_nofocus.png</textureNoFocus>
-			<onleft>8</onleft>
-			<onright>8</onright>
+			<label>334</label>
+			<posX>489</posX>
+			<posY>367</posY>
+			<width>476</width>
+			<textureFocus>settings_button_wide_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<onup>6</onup>
 			<ondown>13</ondown>
 		</control>
@@ -81,7 +127,7 @@
 			<description>delete album label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>355</posX>
+			<posX>-2000</posX>
 			<posY>400</posY>
 			<label>485</label>
 		</control>
@@ -90,26 +136,23 @@
 			<description>delete album button</description>
 			<type>button</type>
 			<id>13</id>
-			<label>424</label>
-			<posX>888</posX>
-			<posY>400</posY>
-			<textXOff>50</textXOff>
-			<textYOff>2</textYOff>
-			<width>152</width>
-			<height>41</height>
-			<textureFocus>button_small_settings_focus.png</textureFocus>
-			<textureNoFocus>button_small_settings_nofocus.png</textureNoFocus>
+			<label>485</label>
+			<posX>489</posX>
+			<posY>402</posY>
+			<width>476</width>
+			<textureFocus>settings_button_wide_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<onup>8</onup>
 			<ondown>10</ondown>
-			<onleft>13</onleft>
-			<onright>13</onright>
 		</control>
 
 		<control>
 			<description>Delete Album Info</description>
 			<type>label</type>
 			<id>9</id>
-			<posX>355</posX>
+			<posX>-2000</posX>
 			<posY>442</posY>
 			<label>422</label>
 		</control>
@@ -118,22 +161,18 @@
 			<description>Delete Album Info</description>
 			<type>button</type>
 			<id>10</id>
-			<label>424</label>
-			<posX>888</posX>
-			<posY>442</posY>
-			<textXOff>50</textXOff>
-			<textYOff>2</textYOff>
-			<width>152</width>
-			<height>41</height>
-			<textureFocus>button_small_settings_focus.png</textureFocus>
-			<textureNoFocus>button_small_settings_nofocus.png</textureNoFocus>
-			<onleft>10</onleft>
-			<onright>10</onright>
+			<label>422</label>
+			<posX>489</posX>
+			<posY>438</posY>
+			<width>476</width>
+			<textureFocus>settings_button_wide_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<onup>13</onup>
 			<ondown>99</ondown>
 		</control>
 
-	</control>
 
 </controls>
 </window>
