@@ -1,30 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>9003</id>
-<defaultcontrol>30</defaultcontrol>
+<defaultcontrol>10009</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
-<define>#header.label:109003</define>
-<define>#header.image:settings_logo.png</define>
-<define>#header.hover:hover_settings.png</define><!-- cheat a little, we don't use two of the items in the imported file to blank their labels -->
-<define>#itemcount:-</define>
-<define>#selecteditem:-</define>
 <controls>
-	<import>common.window.xml</import>
+<import>common.window.xml</import>
+<import>settings.menu.xml</import>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>434</posX>
+		<posY>60</posY>
+		<width>820</width>
+		<height>640</height>
+		<texture>settings_main_panel.png</texture>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>504</posX>
+		<posY>125</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>9100</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>
 	<control>
 		<description>buttons</description>
 		<type>group</type>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="150" start="-300,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="-300,0">WindowClose</animation>
-		<posX>497</posX>
-		<posY>206</posY>
-		<layout>StackLayout</layout>
+		<posX>490</posX>
+		<posY>260</posY>
+		<layout>GridLayout(2, 7, 42, 0, 1)</layout>
 		<control>
 			<description>Volume Display</description>
 			<type>togglebutton</type>
 			<id>30</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9121</label>
 			<onup>17</onup>
 		</control>
@@ -33,7 +58,13 @@
 			<description>Progress display</description>
 			<type>togglebutton</type>
 			<id>31</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9122</label>
 		</control>
 
@@ -41,7 +72,13 @@
 			<description>Disk Icon</description>
 			<type>togglebutton</type>
 			<id>32</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9123</label>
 		</control>
 
@@ -49,7 +86,13 @@
 			<description>Media Status</description>
 			<type>togglebutton</type>
 			<id>33</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9124</label>
 		</control>
 
@@ -57,7 +100,13 @@
 			<description>CD/DVD Status</description>
 			<type>togglebutton</type>
 			<id>34</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9125</label>
 		</control>
 
@@ -65,7 +114,13 @@
 			<description>Use Custom Font</description>
 			<type>togglebutton</type>
 			<id>35</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9126</label>
 		</control>
 
@@ -73,7 +128,13 @@
 			<description>Use Large Icons</description>
 			<type>togglebutton</type>
 			<id>36</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9127</label>
 		</control>
 
@@ -81,7 +142,13 @@
 			<description>Use Custom Large Icons</description>
 			<type>togglebutton</type>
 			<id>37</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9128</label>
 		</control>
 
@@ -89,7 +156,13 @@
 			<description>Invert Large Icons</description>
 			<type>togglebutton</type>
 			<id>38</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9129</label>
 		</control>
 
@@ -97,7 +170,11 @@
 			<description>Font Editor</description>
 			<type>button</type>
 			<id>39</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9130</label>
 		</control>
 
@@ -105,7 +182,11 @@
 			<description>Icon Editor</description>
 			<type>button</type>
 			<id>40</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9131</label>
 		</control>
 

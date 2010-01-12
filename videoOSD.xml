@@ -252,10 +252,9 @@
       <posX>315</posX>
       <posY>475</posY>
       <label>305</label>
-      <MarkWidth>20</MarkWidth>
-      <MarkHeight>20</MarkHeight>
+      <MarkWidth>39</MarkWidth>
+      <MarkHeight>36</MarkHeight>
       <font>font12</font>
-      <textcolor>ffffffff</textcolor>
       <onup>800</onup>
       <ondown>800</ondown>
       <onleft>801</onleft>

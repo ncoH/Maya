@@ -1,22 +1,44 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>9000</id>
-<defaultcontrol>5</defaultcontrol>
+<defaultcontrol>10009</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
-<define>#header.label:109000</define>
-<define>#header.image:settings_logo.png</define>
-<define>#header.hover:hover_settings.png</define><!-- cheat a little, we don't use two of the items in the imported file to blank their labels -->
-<define>#itemcount:-</define>
-<define>#selecteditem:-</define>
 <controls>
-	<import>common.window.xml</import>
+<import>common.window.xml</import>
+<import>settings.menu.xml</import>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>434</posX>
+		<posY>60</posY>
+		<width>820</width>
+		<height>640</height>
+		<texture>settings_main_panel.png</texture>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>504</posX>
+		<posY>125</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>9100</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>
+	
 	<control>
 		<description>Plugin is not configured.</description>
 		<type>label</type>
 		<id>3</id>
 		<width>300</width>
-		<posX>497</posX>
-		<posY>206</posY>
+		<posX>508</posX>
+		<posY>265</posY>
 		<label>9101</label>
 	</control>
 
@@ -25,8 +47,8 @@
 		<type>label</type>
 		<id>4</id>
 		<width>300</width>
-		<posX>497</posX>
-		<posY>256</posY>
+		<posX>508</posX>
+		<posY>300</posY>
 		<label>9102</label>
 	</control>
 
@@ -35,16 +57,18 @@
 		<type>group</type>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="150" start="-300,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="-300,0">WindowClose</animation>
-		<posX>497</posX>
-		<posY>206</posY>
-		<layout>StackLayout</layout>
+		<posX>490</posX>
+		<posY>260</posY>
+		<layout>GridLayout(2, 7, 42, 0, 1)</layout>
 		<control>
 			<description>Keypad Options</description>
 			<type>button</type>
 			<id>5</id>
-			<width>300</width>
+		<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9103</label>
 			<hyperlink>9005</hyperlink>
 			<onup>17</onup>
@@ -54,7 +78,11 @@
 			<description>Display Options</description>
 			<type>button</type>
 			<id>6</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9104</label>
 			<hyperlink>9003</hyperlink>
 			<onup>17</onup>
@@ -64,7 +92,11 @@
 			<description>Display Control Options</description>
 			<type>button</type>
 			<id>7</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9105</label>
 			<hyperlink>9002</hyperlink>
 		</control>
@@ -73,7 +105,11 @@
 			<description>Equalizer Options</description>
 			<type>button</type>
 			<id>8</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9106</label>
 			<hyperlink>9004</hyperlink>
 		</control>
@@ -82,7 +118,11 @@
 			<description>Backlight Options</description>
 			<type>button</type>
 			<id>9</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9107</label>
 			<hyperlink>9001</hyperlink>
 		</control>
@@ -91,7 +131,11 @@
 			<description>Remote Options</description>
 			<type>button</type>
 			<id>10</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+	<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9108</label>
 			<hyperlink>9006</hyperlink>
 		</control>
@@ -100,7 +144,13 @@
 			<description>Monitor Power States</description>
 			<type>togglebutton</type>
 			<id>11</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+			<textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+			<AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+			<AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9109</label>
 		</control>
 
@@ -108,7 +158,15 @@
 			<description>Contrast</description>
 			<type>selectbutton</type>
 			<id>12</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<texturebg>settings_button_medium_focus.png</texturebg>
+			<textXOff>9</textXOff>
+			<textYOff>5</textYOff>
+			<textYOff2>5</textYOff2>
+			<textXOff2>25</textXOff2>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9110</label>
 		</control>
 
@@ -116,7 +174,15 @@
 			<description>Brightness</description>
 			<type>selectbutton</type>
 			<id>13</id>
-			<width>300</width>
+			<width>334</width>
+			<textureFocus>settings_button_medium_focus.png</textureFocus>
+			<texturebg>settings_button_medium_focus.png</texturebg>
+			<textXOff>9</textXOff>
+			<textYOff>5</textYOff>
+			<textYOff2>5</textYOff2>
+			<textXOff2>25</textXOff2>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<label>9111</label>
 		</control>
 
