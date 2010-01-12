@@ -485,7 +485,7 @@ multiple view modes.
 		<visible>facadeview.list+Control.IsVisible(50)+!string.equals(#MovingPictures.SelectedMovie.extra.directors.2,)</visible>
 	</control>
 
-<!-- Only in MovingPictures 0.8 -->
+<!-- Only in MovingPictures 1.0 -->
 	<control>
 		<type>imagelist</type>
 		<id>101</id>
@@ -556,6 +556,8 @@ multiple view modes.
 	
 	<!--            :: FILMSTRIP VIEW ::            -->
 	
+	
+	<!-- Only in MovingPictures 1.0 -->	
 	<control>
 		<description>Year below the movie title</description>
 		<type>label</type>
@@ -570,8 +572,22 @@ multiple view modes.
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
 	</control>
 
-	<!-- Only in MovingPictures 1.0 -->
-	
+	<!-- Only in MovingPictures 0.7.x
+	<control>
+		<description>runtime</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime min - #MovingPictures.SelectedMovie.genres</label>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>178</posY>
+		<width>1366</width>
+		<align>center</align>
+		<font>font13</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
+	</control>
+-->
+
 	<control>
 		<id>1</id>
 		<type>image</type>
