@@ -161,7 +161,7 @@
 		<height>600</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>1267</spinPosX>
+		<spinPosX>1242</spinPosX>
 		<spinPosY>718</spinPosY>
 		<spinAlign>right</spinAlign>
 		<spinColor>ffffffff</spinColor>
@@ -284,59 +284,56 @@
 		<description>default playlist item listcontrol</description>
 		<type>playlistcontrol</type>
 		<id>10</id>
-		<posX>530</posX>
+		<posX>528</posX>
 		<posY>150</posY>
-		<width>750</width>
-		<height>550</height>
+		<width>749</width>
+		<height>600</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>1111</spinPosX>
-		<spinPosY>662</spinPosY>
+		<spinPosX>1115</spinPosX>
+		<spinPosY>718</spinPosY>
 		<spinAlign>Right</spinAlign>
 		<spinColor>ffffffff</spinColor>
+		<spinCanFocus>no</spinCanFocus>
 		<textureFocus>playlist_sub_focus.png</textureFocus>
-		<textureNoFocus>playlist_sub_nofocus.png</textureNoFocus>
-		<textureHeight>42</textureHeight>
+		<textureNoFocus>listcontrol_item1.png</textureNoFocus>
+		<textureHeight>53</textureHeight>
 		<image>folder_focus.png</image>
-		<font>font12</font>
-		<shadedColor>ffffffff</shadedColor>
+		<font>font14</font>
+		<shadedColor>20ffffff</shadedColor>
 		<selectedColor>ffa0d0ff</selectedColor>
+		<playedColor>ffa0d0ff</playedColor>
 		<textcolor>ffffffff</textcolor>
 		<textcolor2>ffffffff</textcolor2>
 		<textcolor3>ffffffff</textcolor3>
 		<colordiffuse>ffffffff</colordiffuse>
 		<remoteColor>ffFFA075</remoteColor>
 		<downloadColor>ff80ff80</downloadColor>
-		<textXOff>8</textXOff>
-		<textYOff>3</textYOff>
+		<spaceBetweenItems>-3</spaceBetweenItems>
+		<textXOff>9</textXOff>
+		<textYOff>11</textYOff>
 		<textXOff2>0</textXOff2>
-		<textYOff2>3</textYOff2>
+		<textYOff2>10</textYOff2>
 		<itemWidth>0</itemWidth>
 		<itemHeight>0</itemHeight>
 		<IconXOff>1000</IconXOff>
 		<IconYOff>1000</IconYOff>
 		<suffix>|</suffix>
-		<suffix>|</suffix>
-		<upBtnWidth>49</upBtnWidth>
-		<downBtnWidth>49</downBtnWidth>
-		<deleteBtnWidth>49</deleteBtnWidth>
-		<upBtnHeight>40</upBtnHeight>
-		<downBtnHeight>40</downBtnHeight>
-		<deleteBtnHeight>40</deleteBtnHeight>
-		<upBtnXOffset>599</upBtnXOffset>
-		<downBtnXOffset>652</downBtnXOffset>
-		<deleteBtnXOffset>705</deleteBtnXOffset>
+		<folderPrefix></folderPrefix>
+		<folderSuffix></folderSuffix>
+		<spinCanFocus>no</spinCanFocus>
+		<upBtnWidth>130</upBtnWidth>
+		<downBtnWidth>130</downBtnWidth>
+		<deleteBtnWidth>130</deleteBtnWidth>
+		<upBtnHeight>53</upBtnHeight>
+		<downBtnHeight>53</downBtnHeight>
+		<deleteBtnHeight>53</deleteBtnHeight>
+		<upBtnXOffset>619</upBtnXOffset>
+		<downBtnXOffset>619</downBtnXOffset>
+		<deleteBtnXOffset>619</deleteBtnXOffset>
 		<upBtnYOffset>0</upBtnYOffset>
 		<downBtnYOffset>0</downBtnYOffset>
 		<deleteBtnYOffset>0</deleteBtnYOffset>
-		<textureFocus>playlist_sub_focus.png</textureFocus>
-		<textureNoFocus>playlist_sub_nofocus.png</textureNoFocus>
-		<textureMoveUp>playlist_item_up_nofocus.png</textureMoveUp>
-		<textureMoveUpFocused>playlist_item_up_focus.png</textureMoveUpFocused>
-		<textureMoveDown>playlist_item_down_nofocus.png</textureMoveDown>
-		<textureMoveDownFocused>playlist_item_down_focus.png</textureMoveDownFocused>
-		<textureDelete>playlist_item_delete_nofocus.png</textureDelete>
-		<textureDeleteFocused>playlist_item_delete_focus.png</textureDeleteFocused>
 	</control>
 
 	<control>
@@ -540,10 +537,10 @@
 		<font>font14</font>
 		<textcolor>ffffffff</textcolor>
 		<disabledcolor>ffffffff</disabledcolor>
-		<textureCheckmark>check-box.png</textureCheckmark>
-		<textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
-		<MarkWidth>16</MarkWidth>
-		<MarkHeight>16</MarkHeight>
+		<textureCheckmark>settings_checkmark_checked.png</textureCheckmark>
+		<textureCheckmarkNoFocus>settings_checkmark_unchecked.png</textureCheckmarkNoFocus>
+		<MarkWidth>39</MarkWidth>
+		<MarkHeight>36</MarkHeight>
 		<align>left</align>
 		<shadow>no</shadow>
 	</control>

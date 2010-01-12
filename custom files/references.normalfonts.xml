@@ -274,6 +274,7 @@
 		<spinCanFocus>no</spinCanFocus>
 	</control>
 
+	
 	<control>
 		<description>default playlist item listcontrol</description>
 		<type>playlistcontrol</type>
@@ -284,12 +285,13 @@
 		<height>600</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>1245</spinPosX>
+		<spinPosX>1115</spinPosX>
 		<spinPosY>718</spinPosY>
-		<spinAlign>right</spinAlign>
+		<spinAlign>Right</spinAlign>
 		<spinColor>ffffffff</spinColor>
-		<textureFocus>listcontrol_item_selected.png</textureFocus>
-		<textureNoFocus>listcontrol_item.png</textureNoFocus>
+		<spinCanFocus>no</spinCanFocus>
+		<textureFocus>playlist_sub_focus.png</textureFocus>
+		<textureNoFocus>listcontrol_item1.png</textureNoFocus>
 		<textureHeight>53</textureHeight>
 		<image>folder_focus.png</image>
 		<font>font12</font>
@@ -303,10 +305,10 @@
 		<remoteColor>ffFFA075</remoteColor>
 		<downloadColor>ff80ff80</downloadColor>
 		<spaceBetweenItems>-3</spaceBetweenItems>
-		<textXOff>18</textXOff>
+		<textXOff>17</textXOff>
 		<textYOff>11</textYOff>
-		<textXOff2>0</textXOff2>
-		<textYOff2>10</textYOff2>
+		<textXOff2>597</textXOff2>
+		<textYOff2>11</textYOff2>
 		<itemWidth>0</itemWidth>
 		<itemHeight>0</itemHeight>
 		<IconXOff>1000</IconXOff>
@@ -315,19 +317,18 @@
 		<folderPrefix></folderPrefix>
 		<folderSuffix></folderSuffix>
 		<spinCanFocus>no</spinCanFocus>
-		<upBtnWidth>49</upBtnWidth>
-		<downBtnWidth>49</downBtnWidth>
-		<deleteBtnWidth>49</deleteBtnWidth>
+		<upBtnWidth>130</upBtnWidth>
+		<downBtnWidth>130</downBtnWidth>
+		<deleteBtnWidth>130</deleteBtnWidth>
 		<upBtnHeight>53</upBtnHeight>
 		<downBtnHeight>53</downBtnHeight>
 		<deleteBtnHeight>53</deleteBtnHeight>
-		<upBtnXOffset>602</upBtnXOffset>
-		<downBtnXOffset>651</downBtnXOffset>
-		<deleteBtnXOffset>700</deleteBtnXOffset>
+		<upBtnXOffset>619</upBtnXOffset>
+		<downBtnXOffset>619</downBtnXOffset>
+		<deleteBtnXOffset>619</deleteBtnXOffset>
 		<upBtnYOffset>0</upBtnYOffset>
 		<downBtnYOffset>0</downBtnYOffset>
 		<deleteBtnYOffset>0</deleteBtnYOffset>
-		<spinCanFocus>no</spinCanFocus>
 	</control>
 
 	<control>

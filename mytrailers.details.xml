@@ -94,7 +94,7 @@
 		<posX>555</posX>
 		<posY>565</posY>
 		<label>#MyTrailers.Details.Label.Director: #MyTrailers.Details.Director</label>
-		<font>font11</font>
+		
 		<textcolor>85cffe</textcolor>
 		<visible>!Control.IsVisible(50)</visible>
 	</control>
@@ -107,7 +107,7 @@
 		<posX>555</posX>
 		<posY>600</posY>
 		<width>365</width>
-		<font>font11</font>
+		
 		<textcolor>85cffe</textcolor>
 		<visible>!Control.IsVisible(50)</visible>
 	</control>
