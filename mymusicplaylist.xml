@@ -208,8 +208,6 @@
 					<hyperlink>510</hyperlink>
 					<onright>50</onright>
 					<onleft>50</onleft>
-					<onup>22</onup>
-					<ondown>15</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
@@ -226,8 +224,6 @@
 					<hyperlink>90478</hyperlink>
 					<onright>50</onright>
 					<onleft>50</onleft>
-					<onup>26</onup>
-					<ondown>2</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
@@ -243,8 +239,6 @@
 					<id>28</id>
 					<label>33001</label>
 					<onright>50</onright>
-					<onup>26</onup>
-					<ondown>27</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
@@ -260,8 +254,6 @@
 					<id>27</id>
 					<label>33000</label>
 					<onright>50</onright>
-					<onup>28</onup>
-					<ondown>29</ondown>
 					<width>279</width>
 					<height>49</height>
 					<textXOff>25</textXOff>

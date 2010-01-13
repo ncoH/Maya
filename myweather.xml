@@ -343,7 +343,7 @@
 		<type>textbox</type>
 		<id>0</id>
 		<posX>900</posX>
-		<posY>210</posY>
+		<posY>212</posY>
 		<width>350</width>
 		<label>#maya.weather.update.time</label>
 		<textcolor>6aa5cb</textcolor>

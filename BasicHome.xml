@@ -783,7 +783,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>605</posX>
-		<posY>658</posY>
+		<posY>650</posY>
 		<height>90</height>
 		<width>90</width>
 		<texture>weather/#infoservice.weather.today.img.small.filenamewithext</texture>

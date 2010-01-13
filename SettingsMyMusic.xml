@@ -53,6 +53,8 @@
 			<label>-</label>
 			<onup>2</onup>
 			<ondown>6</ondown>
+			<onleft>10008</onleft>
+			<onright>10008</onright>
 		</control>
 		
 		<control>
@@ -86,6 +88,8 @@
 			<label>-</label>
 			<onup>2</onup>
 			<ondown>8</ondown>
+			<onleft>10008</onleft>
+			<onright>10008</onright>
 		</control>
 		
 		<control>
@@ -121,6 +125,8 @@
 			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<onup>6</onup>
 			<ondown>13</ondown>
+			<onleft>10008</onleft>
+			<onright>10008</onright>
 		</control>
 
 		<control>
@@ -146,6 +152,8 @@
 			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<onup>8</onup>
 			<ondown>10</ondown>
+			<onleft>10008</onleft>
+			<onright>10008</onright>
 		</control>
 
 		<control>
@@ -171,6 +179,8 @@
 			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<onup>13</onup>
 			<ondown>99</ondown>
+			<onleft>10008</onleft>
+			<onright>10008</onright>
 		</control>
 
 
