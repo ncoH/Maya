@@ -36,7 +36,7 @@
 		<description>Plugin is not configured.</description>
 		<type>label</type>
 		<id>3</id>
-		<width>300</width>
+		<width>500</width>
 		<posX>508</posX>
 		<posY>265</posY>
 		<label>9101</label>
@@ -46,7 +46,7 @@
 		<description>Please run configure.exe first!</description>
 		<type>label</type>
 		<id>4</id>
-		<width>300</width>
+		<width>500</width>
 		<posX>508</posX>
 		<posY>300</posY>
 		<label>9102</label>

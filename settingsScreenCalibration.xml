@@ -30,7 +30,7 @@
 		<description>rectangle image</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>32</posX>
+		<posX>314</posX>
 		<posY>175</posY>
 		<texture>calibration_bar.png</texture>
 	</control>
@@ -39,22 +39,20 @@
 		<description>coordinates label</description>
 		<type>label</type>
 		<id>2</id>
-		<posX>231</posX>
-		<posY>193</posY>
+		<posX>340</posX>
+		<posY>194</posY>
 		<label>-</label>
 		<font>font13</font>
-		<textcolor>FFFFFFFF</textcolor>
 	</control>
 
 	<control>
 		<description>help information</description>
 		<type>label</type>
 		<id>3</id>
-		<posX>231</posX>
-		<posY>218</posY>
+		<posX>340</posX>
+		<posY>220</posY>
 		<label>-</label>
 		<font>font13</font>
-		<textcolor>FFFFFFFF</textcolor>
 	</control>
 
 	<control>

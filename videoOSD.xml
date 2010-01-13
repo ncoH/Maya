@@ -6,6 +6,56 @@
 <controls>
 
 	<control>
+		<description>Description bg</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>191</posX>
+		<posY>558</posY>
+		<width>984</width>
+		<height>117</height>
+		<texture>osd_bg_description2.png</texture>
+		<visible>window.isvisible(11)</visible>
+	</control>
+
+	<control>
+		<type>image</type>
+		<description>OSD Background</description>
+		<id>1</id>
+		<posX>179</posX>
+		<posY>648</posY>
+		<width>1008</width>
+		<height>81</height>
+		<texture>osd_bg.png</texture>
+		<visible>window.isvisible(11)</visible>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>999</id>
+		<description>Clock icon</description>
+		<posX>617</posX>
+		<posY>667</posY>
+		<height>21</height>
+		<width>21</width>
+		<texture>osd_clock_icon.png</texture>
+		<visible>window.isvisible(11)</visible>
+	</control>
+
+	<control>
+		<type>label</type>
+		<id>999</id>
+		<description>Clock</description>
+		<posX>611</posX>
+		<posY>663</posY>
+		<height>30</height>
+		<width>144</width>
+		<font>font14</font>
+		<align>center</align>
+		<label>#time</label>
+		<visible>window.isvisible(11)</visible>
+	</control>
+
+	<control>
 		<description>Movie Name</description>
 		<id>0</id>
 		<type>textbox</type>
