@@ -30,8 +30,8 @@
 		<description>group element</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>71</posX>
-		<posY>150</posY>
+		<posX>150</posX>
+		<posY>190</posY>
 		
 		<control>
 			<type>button</type>

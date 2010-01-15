@@ -21,14 +21,13 @@
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
 				<PinIconHeight>15</PinIconHeight>
-				<PinIconXOff>48</PinIconXOff>
+				<PinIconXOff>62</PinIconXOff>
 				<PinIconYOff>18</PinIconYOff>
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
-				<IconXOff>12</IconXOff>
+				<IconXOff>26</IconXOff>
 				<IconYOff>9</IconYOff>
-				<textXOff>24</textXOff>
-				<textXOff2>0</textXOff2>
+				<textXOff>36</textXOff>
 				<keepaspectratio>yes</keepaspectratio>
 				<spinCanFocus>no</spinCanFocus>
 			</control>

@@ -54,8 +54,10 @@
                 <textureNoFocus>context_item.png</textureNoFocus>
                 <textureHeight>49</textureHeight>
                 <spaceBetweenItems>1</spaceBetweenItems>
-                <PinIconXOff>2</PinIconXOff>
-                <PinIconYOff>11</PinIconYOff>
+				<PinIconWidth>15</PinIconWidth>
+				<PinIconHeight>15</PinIconHeight>
+                <PinIconXOff>6</PinIconXOff>
+                <PinIconYOff>15</PinIconYOff>
             </control>
         </control>
     </controls>

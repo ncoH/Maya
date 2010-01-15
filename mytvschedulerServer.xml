@@ -45,6 +45,20 @@
 	</control>
 	
 	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1242</posX>
+		<posY>690</posY>
+		<align>right</align>
+		<label>#itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>[facadeview.list | facadeview.album | facadeview.playlist]+Control.IsVisible(10)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+	
+	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
 		<defaultcontrol>2</defaultcontrol>
@@ -215,15 +229,15 @@
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
 				<PinIconHeight>15</PinIconHeight>
-				<PinIconXOff>48</PinIconXOff>
+				<PinIconXOff>62</PinIconXOff>
 				<PinIconYOff>18</PinIconYOff>
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
-				<IconXOff>12</IconXOff>
+				<IconXOff>26</IconXOff>
 				<IconYOff>9</IconYOff>
-				<textXOff>35</textXOff>
-				<textXOff2>0</textXOff2>
+				<textXOff>36</textXOff>
 				<keepaspectratio>yes</keepaspectratio>
+				<spinCanFocus>no</spinCanFocus>
 			</control>
 
 	</control>
@@ -259,7 +273,6 @@
 			<posY>290</posY>
 			<width>741</width>
 			<height>80</height>
-			<font>font12</font>
 			<label>#TV.Scheduled.Description</label>
 		</control>
 

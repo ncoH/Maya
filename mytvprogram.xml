@@ -29,8 +29,8 @@
 		<description>group element</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>71</posX>
-		<posY>150</posY>
+		<posX>150</posX>
+		<posY>190</posY>
 		
 		<control>
 			<description>Record</description>
@@ -146,14 +146,14 @@
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<PinIconHeight>15</PinIconHeight>
-				<PinIconXOff>48</PinIconXOff>
+				<PinIconXOff>62</PinIconXOff>
 				<PinIconYOff>18</PinIconYOff>
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
-				<IconXOff>12</IconXOff>
+				<IconXOff>26</IconXOff>
 				<IconYOff>9</IconYOff>
-				<textXOff>24</textXOff>
-				<textXOff2>0</textXOff2>
+				<textXOff>38</textXOff>
+				<textXOff2>738</textXOff2>
 				<keepaspectratio>yes</keepaspectratio>
 			</control>
 
@@ -197,7 +197,6 @@
 			<posY>290</posY>
 			<width>741</width>
 			<height>160</height>
-			<font>font12</font>
 			<label>#TV.RecordedTV.Description</label>
 		</control>
 
@@ -212,7 +211,7 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>1267</posX>
+		<posX>1242</posX>
 		<posY>690</posY>
 		<align>right</align>
 		<label>#itemcount</label>

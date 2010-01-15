@@ -64,8 +64,8 @@
 	<control>
 		<type>group</type>
 		<description>group element</description>
-		<posX>71</posX>
-		<posY>121</posY>
+		<posX>150</posX>
+		<posY>190</posY>
 		<layout>StackLayout</layout>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -251,7 +251,6 @@
 			<posY>290</posY>
 			<width>741</width>
 			<height>80</height>
-			<font>font12</font>
 		<label>#TV.Search.Description</label>
 	</control>
 
