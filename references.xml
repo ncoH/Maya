@@ -519,7 +519,7 @@
 		<textureDownFocus>page_down_focus.png</textureDownFocus>
 		<align>left</align>
 		<font>font12</font>
-		<reverse>no</reverse>
+		<reverse>yes</reverse>
 		<textcolor>6aa5cb</textcolor>
 		<disabledcolor>60ffffff</disabledcolor>
 		<spintype>text</spintype>

@@ -58,13 +58,12 @@
 	<control>
 		<description>Movie Name</description>
 		<id>0</id>
-		<type>textbox</type>
+		<type>fadelabel</type>
 		<width>770</width>
 		<height>24</height>
 		<posX>360</posX>
 		<posY>575</posY>
 		<font>Segoe Light18</font>
-		<spinPosY>-2000</spinPosY>
 		<label>#Play.Current.Title</label>
 	</control>
 	

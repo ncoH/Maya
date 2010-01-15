@@ -82,13 +82,13 @@
 
 	<control>
 		<description>On tv NOW</description>
-		<id>36</id>
-		<type>textbox</type>
+		<id>0</id>
+		<type>fadelabel</type>
 		<width>770</width>
 		<height>24</height>
 		<posX>360</posX>
 		<posY>575</posY>
-		<spinPosY>-2000</spinPosY>
+		<label>#TV.View.title</label>
 		<font>Segoe Light18</font>
 	</control>
 
