@@ -82,6 +82,13 @@
 
 	<control>
 		<description>On tv NOW</description>
+		<id>36</id>
+		<type>textbox</type>
+		<posX>-2000</posX>
+	</control>
+	
+	<control>
+		<description>On tv NOW</description>
 		<id>0</id>
 		<type>fadelabel</type>
 		<width>770</width>
