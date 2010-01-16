@@ -322,21 +322,18 @@
       <ondown>6</ondown>
     </control>
 	
-	<control>
-		<description>TvGroup button label</description>
-		<type>label</type>
-		<id>0</id>
-		<posX>70</posX>
-		<posY>305</posY>
-		<width>340</width>
-		<height>50</height>
-		<align>center</align>
-		<label>#TV.Guide.ChangeGroup</label>
-		<font>Segoe Light16</font>
+    <control>
+      <description>TvGroup button label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>57</posX>
+      <posY>488</posY>
+	  <valign>middle</valign>
+      <label>#TV.Guide.ChangeGroup</label>
+      <font>Segoe Light16</font>
 		<textcolor>6aa5cb</textcolor>
-		<animation effect="rotate" end="90" time="0">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="0,-181" time="0">WindowOpen</animation>
-  </control> 
+      <animation effect="rotate" end="90" time="0">WindowOpen</animation>
+      </control>
 	  
 <import>common.home.overlay.xml</import>
   </controls>

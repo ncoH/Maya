@@ -10,7 +10,7 @@
 	<control>
 		<type>image</type>
 		<id>100</id>
-		<posX>473</posX>
+		<posX>444</posX>
 		<posY>517</posY>
 		<texture>progress_background.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -23,9 +23,9 @@
 		<description>progress control</description>
 		<type>progress</type>
 		<id>20</id>
-		<posX>460</posX>
+		<posX>431</posX>
 		<posY>517</posY>
-		<width>420</width>
+		<width>482</width>
 		<height>12</height>
 		<texturebg>-</texturebg>
 		<lefttexture>osd_progress_left.png</lefttexture>

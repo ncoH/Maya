@@ -24,8 +24,9 @@
                 <id>4</id>
                 <description>Heading text label</description>
                 <type>label</type>
-                <posX>469</posX>
+                <posX>470</posX>
                 <posY>212</posY>
+				<width>420</width>
                 <font>Segoe Light18</font>
                 <textcolor>ff85cffe</textcolor>
                 <label>181</label>

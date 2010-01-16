@@ -15,9 +15,9 @@
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<posX>441</posX>
+			<posX>409</posX>
 			<posY>500</posY>
-			<width>484</width>
+			<width>548</width>
 			<height>264</height>
 			<texture>dialog_menubottomright_background.png</texture>
 		</control>
@@ -26,7 +26,7 @@
 			<description>Heading text label</description>
 			<type>label</type>
 			<id>4</id>
-			<posX>492</posX>
+			<posX>470</posX>
 			<posY>536</posY>
 			<label>181</label>
 			<font>Segoe Light18</font>
@@ -59,9 +59,9 @@
 			<description>options listcontrol</description>
 			<type>listcontrol</type>
 			<id>3</id>
-			<posX>473</posX>
+			<posX>443</posX>
 			<posY>584</posY>
-			<width>419</width>
+			<width>482</width>
 			<height>200</height>
 			<onleft>3</onleft>
 			<onright>3</onright>

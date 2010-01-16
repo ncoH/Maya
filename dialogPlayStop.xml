@@ -15,10 +15,10 @@
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<posX>440</posX>
-			<posY>188</posY>
-			<width>486</width>
-			<height>392</height>
+			<posX>409</posX>
+		<posY>188</posY>
+		<width>548</width>
+		<height>392</height>
 			<texture>dialog_yesno_background.png</texture>
 		</control>
 <!--
@@ -37,8 +37,9 @@
 			<description>Heading text label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>500</posX>
+			<posX>470</posX>
 			<posY>236</posY>
+			<width>420</width>
 			<label>181</label>
 			<font>Segoe Light18</font>
 			<textcolor>85cffe</textcolor>
@@ -48,10 +49,10 @@
 			<description>dialog line 1</description>
 			<type>fadelabel</type>
 			<id>2</id>
-			<posX>500</posX>
-			<posY>315</posY>
+			<posX>470</posX>
+			<posY>310</posY>
 			<label>-</label>
-			<width>365</width>
+			<width>420</width>
 			<font>font12</font>
 		</control>
 
@@ -59,10 +60,10 @@
 			<description>dialog line 2</description>
 			<type>label</type>
 			<id>3</id>
-			<posX>500</posX>
-			<posY>347</posY>
+			<posX>470</posX>
+			<posY>340</posY>
 			<label>-</label>
-			<width>634</width>
+			<width>420</width>
 			<font>font12</font>
 		</control>
 
@@ -70,10 +71,10 @@
 			<description>dialog line 3</description>
 			<type>label</type>
 			<id>4</id>
-			<posX>500</posX>
-			<posY>379</posY>
+			<posX>470</posX>
+			<posY>370</posY>
 			<label>-</label>
-			<width>634</width>
+			<width>420</width>
 			<font>font12</font>
 		</control>
 
@@ -81,10 +82,10 @@
 			<description>dialog line 4</description>
 			<type>label</type>
 			<id>4</id>
-			<posX>500</posX>
-			<posY>411</posY>
+			<posX>470</posX>
+			<posY>400</posY>
 			<label>-</label>
-			<width>634</width>
+			<width>420</width>
 			<font>font12</font>
 		</control>
 
@@ -92,11 +93,11 @@
 			<description>Yes</description>
 			<type>button</type>
 			<id>11</id>
-			<posX>473</posX>
+			<posX>443</posX>
 			<posY>401</posY>
 			<textXOff>70</textXOff>
 			<textYOff>0</textYOff>
-			<width>420</width>
+			<width>482</width>
 			<height>49</height>
 			<font>font12</font>
 			<textalign>center</textalign>
@@ -113,11 +114,11 @@
 			<description>No</description>
 			<type>button</type>
 			<id>10</id>
-			<posX>473</posX>
+			<posX>443</posX>
 			<posY>451</posY>
 			<textXOff>70</textXOff>
 			<textYOff>0</textYOff>
-			<width>420</width>
+			<width>482</width>
 			<height>49</height>
 			<font>font12</font>
 			<textalign>center</textalign>
