@@ -65,7 +65,8 @@
 	<!-- Left Buttons -->
 <control>
 		<type>actiongroup</type>
-		<description>action menu</description><defaultcontrol>3</defaultcontrol>
+		<description>action menu</description>
+		<defaultcontrol>3</defaultcontrol>
 		<onexit>0</onexit>
 		<buttonX>0</buttonX>
 		<buttonY>0</buttonY>
@@ -154,7 +155,7 @@
 		
 	<control>
 		<id>1001</id>
-		<posX>582</posX>
+		<posX>581</posX>
 		<posY>200</posY>
 		<width>600</width>
 		<height>768</height>
@@ -167,13 +168,13 @@
 		<onup>901</onup>
 		<ondown>801</ondown>
 		<onleft>501</onleft>
-		<onright>501</onright>
+		<onright>1001</onright>
 		<textcolorNoFocus>22ffffff</textcolorNoFocus>
 	</control>
 	
 	<control>
 		<id>1002</id>
-		<posX>582</posX>
+		<posX>581</posX>
 		<posY>150</posY>
 		<width>600</width>
 		<height>768</height>
@@ -186,13 +187,13 @@
 		<onup>902</onup>
 		<ondown>802</ondown>
 		<onleft>601</onleft>
-		<onright>601</onright>
+		<onright>1002</onright>
 		<textcolorNoFocus>22ffffff</textcolorNoFocus>
 	</control>
 
 	<control>
 		<id>801</id>
-		<posX>582</posX>
+		<posX>581</posX>
 		<posY>0</posY>
 		<width>600</width>
 		<height>768</height>
@@ -205,7 +206,7 @@
 		<onup>902</onup>
 		<ondown>802</ondown>
 		<onleft>601</onleft>
-		<onright>601</onright>
+		<onright>801</onright>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
 		<animation effect="slide" start="0,72" end="0,0" time="410" reversible="false">Focus</animation>
 		<animation effect="fade" start="0" end="100" time="500" delay="0" reversible="false">Focus</animation>
@@ -214,7 +215,7 @@
 	
 	<control>
 		<id>802</id>
-		<posX>582</posX>
+		<posX>581</posX>
 		<posY>0</posY>
 		<width>600</width>
 		<height>768</height>
@@ -227,7 +228,7 @@
 		<onup>901</onup>
 		<ondown>801</ondown>
 		<onleft>501</onleft>
-		<onright>501</onright>
+		<onright>802</onright>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
 		<animation effect="slide" start="0,72" end="0,0" time="410" reversible="false">Focus</animation>
 		<animation effect="fade" start="0" end="100" time="500" delay="0" reversible="false">Focus</animation>
@@ -236,7 +237,7 @@
 	
 	<control>
 		<id>901</id>
-		<posX>582</posX>
+		<posX>581</posX>
 		<posY>0</posY>
 		<width>600</width>
 		<height>768</height>
@@ -249,7 +250,7 @@
 		<onup>902</onup>
 		<ondown>802</ondown>
 		<onleft>601</onleft>
-		<onright>601</onright>
+		<onright>901</onright>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
 		<animation effect="slide" start="0,-72" end="0,0" time="410" reversible="false">Focus</animation>
 		<animation effect="fade" start="0" end="100" time="500" delay="0" reversible="false">Focus</animation>
@@ -271,7 +272,7 @@
 		<onup>901</onup>
 		<ondown>801</ondown>
 		<onleft>501</onleft>
-		<onright>501</onright>
+		<onright>902</onright>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
 		<animation effect="slide" start="0,-72" end="0,0" time="410" reversible="false">Focus</animation>
 		<animation effect="fade" start="0" end="100" time="500" delay="0" reversible="false">Focus</animation>
@@ -559,7 +560,7 @@
 	<posY>340</posY>
 	<width>12</width>
 	<height>21</height>
-	<visible>!Control.HasFocus(2) + !Control.HasFocus(3) + !Control.HasFocus(4) + !Control.IsVisible(501) + !Control.IsVisible(601)</visible>
+	<visible>!Control.HasFocus(2) + !Control.HasFocus(3) + !Control.HasFocus(4) + !Control.IsVisible(501) + !Control.IsVisible(601)+!string.equals(#subitem1,)</visible>
 	<animation effect="fade" start="100" end="0" time="0" delay="0" reversible="false">WindowClose</animation>
 	<animation effect="fade" start="0" end="100" time="200" delay="450">Visible</animation>
 	<texture>leftmenu_arrow.png</texture>
@@ -576,7 +577,6 @@
 	<layout>StackLayout</layout>
 	<dimColor>ffffffff</dimColor>
 	<defaultcontrol>501</defaultcontrol>
-	<visible allowhiddenfocus="true">Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)</visible>
 <animation effect="fade" start="0" end="100" time="400" reversible="false">Visible</animation>
 		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
@@ -617,6 +617,7 @@
 		<onleft>2</onleft>
 		<ondown>503</ondown>
 		<onright>502</onright>
+			<visible>!string.equals(#subitem2,)+[Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
 	</control>
 	
 	<control>
@@ -634,6 +635,7 @@
 		<onleft>2</onleft>
 		<ondown>504</ondown>
 		<onright>503</onright>
+			<visible>!string.equals(#subitem3,)+[Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
 	</control>
 	
 	<control>
@@ -651,6 +653,7 @@
 		<onleft>2</onleft>
 		<ondown>505</ondown>
 		<onright>504</onright>
+			<visible>!string.equals(#subitem4,)+[Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
 	</control>
 	
 	<control>
@@ -668,6 +671,7 @@
 		<ondown>505</ondown>
 		<onleft>2</onleft>
 		<onright>505</onright>
+			<visible>!string.equals(#subitem5,)+[Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
 	</control>
 	
 </control>
@@ -719,6 +723,7 @@
 		<onleft>2</onleft>
 		<ondown>603</ondown>
 		<onright>602</onright>
+		<visible>!string.equals(#subitem2,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605]</visible>
 	</control>
 	
 	<control>
@@ -736,6 +741,7 @@
 		<onleft>2</onleft>
 		<ondown>604</ondown>
 		<onright>603</onright>
+		<visible>!string.equals(#subitem3,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605]</visible>
 	</control>
 	
 	<control>
@@ -753,6 +759,7 @@
 		<onleft>2</onleft>
 		<ondown>605</ondown>
 		<onright>604</onright>
+		<visible>!string.equals(#subitem4,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605]</visible>
 	</control>
 	
 	<control>
@@ -770,6 +777,7 @@
 		<ondown>605</ondown>
 		<onleft>2</onleft>
 		<onright>605</onright>
+		<visible>!string.equals(#subitem5,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605]</visible>
 	</control>
 	
 </control>

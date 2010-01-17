@@ -30,7 +30,6 @@ This file should contain the facade view
 		<type>facadeview</type>
 		<id>50</id>
 		<control>
-			<visible>Control.IsVisible(50)</visible>
 			<description>Movie List</description>
 			<type>listcontrol</type>
 			<id>50</id>

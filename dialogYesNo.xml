@@ -38,7 +38,7 @@
 		<posX>470</posX>
 		<posY>310</posY>
 		<label>-</label>
-		<width>365</width>
+		<width>420</width>
 		<font>font12</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
@@ -51,7 +51,7 @@
 		<posX>470</posX>
 		<posY>340</posY>
 		<label>-</label>
-		<width>365</width>
+		<width>420</width>
 		<font>font12</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
@@ -64,7 +64,7 @@
 		<posX>470</posX>
 		<posY>370</posY>
 		<label>-</label>
-		<width>365</width>
+		<width>420</width>
 		<font>font12</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
@@ -77,7 +77,7 @@
 		<posX>470</posX>
 		<posY>406</posY>
 		<label>-</label>
-		<width>365</width>
+		<width>420</width>
 		<font>font12</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 	<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>

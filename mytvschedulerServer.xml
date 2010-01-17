@@ -22,12 +22,11 @@
 		<id>1</id>
 		<posX>552</posX>
 		<posY>30</posY>
-		<width>500</width>
+		<width>700</width>
 		<height>100</height>
 		<label>646</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>facadeview.list</visible>
 	</control>
 	
 	<control>
@@ -53,7 +52,7 @@
 		<align>right</align>
 		<label>#itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.list | facadeview.album | facadeview.playlist]+Control.IsVisible(10)</visible>
+		<visible>Control.IsVisible(10)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
