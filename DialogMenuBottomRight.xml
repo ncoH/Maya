@@ -59,9 +59,9 @@
 			<description>options listcontrol</description>
 			<type>listcontrol</type>
 			<id>3</id>
-			<posX>443</posX>
-			<posY>584</posY>
-			<width>482</width>
+			<posX>409</posX>
+			<posY>582</posY>
+			<width>548</width>
 			<height>200</height>
 			<onleft>3</onleft>
 			<onright>3</onright>
@@ -72,7 +72,8 @@
 			<spinWidth>21</spinWidth>
 			<spinHeight>21</spinHeight>
 			<font>font12</font>
-			<textYOff>9</textYOff>
+			<textXOff>48</textXOff>
+            <textYOff>8</textYOff>
 			<textureFocus>context_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
 			<textureHeight>49</textureHeight>

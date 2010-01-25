@@ -21,8 +21,6 @@
 		<AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">WindowClose</animation>
     </control>
 
     <control>
@@ -39,8 +37,6 @@
 		<AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">WindowClose</animation>
     </control>
 
     <control>
@@ -57,8 +53,6 @@
 		<AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">WindowClose</animation>
     </control>
 
     <control>
@@ -75,8 +69,6 @@
 		<AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">WindowClose</animation>
     </control>
 	
     <control>
@@ -93,8 +85,6 @@
 		<AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">WindowClose</animation>
     </control>
 	
 	<control>
@@ -107,8 +97,6 @@
 		<align>center</align>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">WindowClose</animation>
     </control>
 	
   </controls>

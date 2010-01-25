@@ -60,24 +60,22 @@
             <type>listcontrol</type>
             <onleft>2</onleft>
             <onright>2</onright>
-            <posX>442</posX>
+            <posX>409</posX>
             <posY>277</posY>
-            <width>482</width>
-            <height>243</height>
+            <width>548</width>
+            <height>300</height>
             <animation effect="Fade" time="250">WindowOpen</animation>
             <animation effect="Fade" time="250">WindowClose</animation>
             <spinPosX>977</spinPosX>
             <spinPosY>484</spinPosY>
-            <textXOff>88</textXOff>
-            <PinIconXOff>60</PinIconXOff>
-            <PinIconYOff>10</PinIconYOff>
+            <textXOff>48</textXOff>
+            <PinIconXOff>39</PinIconXOff>
+            <PinIconYOff>15</PinIconYOff>
             <PinIconWidth>40</PinIconWidth>
             <PinIconHeight>25</PinIconHeight>
             <keepaspectratio>yes</keepaspectratio>
             <itemHeight>34</itemHeight>
             <itemWidth>53</itemWidth>
-            <IconXOff>17</IconXOff>
-            <IconYOff>3</IconYOff>
             </control>
 			
         </control>

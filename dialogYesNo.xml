@@ -87,11 +87,11 @@
 		<description>Yes</description>
 		<type>button</type>
 		<id>11</id>
-		<posX>442</posX>
+		<posX>409</posX>
 		<posY>401</posY>
 		<textXOff>70</textXOff>
 		<textYOff>0</textYOff>
-		<width>482</width>
+		<width>548</width>
 		<height>49</height>
 		<font>font12</font>
 		<textalign>center</textalign>
@@ -110,11 +110,11 @@
 		<description>No</description>
 		<type>button</type>
 		<id>10</id>
-		<posX>442</posX>
+		<posX>409</posX>
 		<posY>451</posY>
 		<textXOff>70</textXOff>
 		<textYOff>0</textYOff>
-		<width>482</width>
+		<width>548</width>
 		<height>49</height>
 		<font>font12</font>
 		<textalign>center</textalign>
