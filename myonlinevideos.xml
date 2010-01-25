@@ -7,15 +7,6 @@
 	<define>#header.image</define>
 <controls>
 <!--Dummy label-->
-	<control>
-		<description>Selected item Label</description>
-		<type>label</type>
-		<id>7773</id>
-		<posX>-2000</posX>
-		<posY>100</posY>
-		<label>#title</label>
-		<visible>control.hastext(7773)</visible>
-	</control>
 
 	<control>
 		<description>BG</description>
@@ -33,21 +24,6 @@
 		<height>768</height>
 		<texture>background_thumbs.png</texture>
 		<visible>[facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(51)</visible>
-	</control>
-
-	<control>
-		<description>Selected item Label</description>
-		<type>fadelabel</type>
-		<id>1</id>
-		<posX>555</posX>
-		<posY>142</posY>
-		<width>700</width>
-		<label>#title</label>
-		<font>Segoe Light22</font>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons]+control.isvisible(7773)+!control.isvisible(53)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<valign>middle</valign>
 	</control>
 
 	<control>
@@ -77,22 +53,6 @@
 		<visible>[!facadeview.smallicons+!facadeview.largeicons]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-
-	<control>
-		<description>Selected item Label</description>
-		<type>fadelabel</type>
-		<id>1</id>
-		<posX>0</posX>
-		<posY>142</posY>
-		<width>1366</width>
-		<label>#title</label>
-		<font>Segoe Light22</font>
-		<align>center</align>
-		<visible>[facadeview.smallicons|facadeview.largeicons]+control.isvisible(7773)+!control.isvisible(53)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<valign>middle</valign>
 	</control>
 
 	<control>
