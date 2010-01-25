@@ -5,65 +5,59 @@
 <allowoverlay>no</allowoverlay>
 <controls>
 
-            <control>
-                <id>6</id>
-                <type>image</type>
-                <posX>409</posX>
-                <posY>164</posY>
-                <width>548</width>
-                <height>440</height>
-                <texture>context_background.png</texture>
-                <animation effect="fade" time="250">WindowOpen</animation>
+	<control>
+		<id>6</id>
+		<type>image</type>
+		<posX>409</posX>
+		<posY>164</posY>
+		<width>548</width>
+		<height>440</height>
+		<texture>context_background.png</texture>
+		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">WindowClose</animation>
-            </control>
-
+	</control>
+	
 	<control>
 		<description>Heading text label</description>
 		<type>label</type>
 		<id>4</id>
 		<posX>470</posX>
-                <posY>212</posY>
-				<width>420</width>
-                <font>Segoe Light18</font>
-                <textcolor>ff85cffe</textcolor>
+		<posY>212</posY>
+		<width>426</width>
+		<font>Segoe Light18</font>
+		<textcolor>ff85cffe</textcolor>
 		<label>181</label>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">WindowClose</animation>
 	</control>
-
-            <control>
-                <id>3</id>
-                <description>options listcontrol</description>
-                <type>listcontrol</type>
-                <onleft>2</onleft>
-                <onright>2</onright>
-                <posX>443</posX>
-                <posY>277</posY>
-                <width>482</width>
-                <height>300</height>
-                <animation effect="fade" time="250">WindowOpen</animation>
+	
+	<control>
+		<id>3</id>
+		<description>options listcontrol</description>
+		<type>listcontrol</type>
+		<onleft>2</onleft>
+		<onright>2</onright>
+		<posX>442</posX>
+		<posY>277</posY>
+		<width>482</width>
+		<height>300</height>
+		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">WindowClose</animation>
-                <textXOff2>460</textXOff2>
-                <textYOff2>10</textYOff2>
-                <spinPosX>902</spinPosX>
-                <spinPosY>535</spinPosY>
-                <textXOff>15</textXOff>
-                <textYOff>8</textYOff>
-                <textureFocus>context_item_selected.png</textureFocus>
-                <textureNoFocus>context_item.png</textureNoFocus>
-                <textureHeight>49</textureHeight>
-                <spaceBetweenItems>1</spaceBetweenItems>
-				<PinIconWidth>15</PinIconWidth>
-				<PinIconHeight>15</PinIconHeight>
-                <PinIconXOff>6</PinIconXOff>
-                <PinIconYOff>15</PinIconYOff>
-            </control>
-
+		<textXOff2>460</textXOff2>
+		<textYOff2>10</textYOff2>
+		<spinPosX>902</spinPosX>
+		<spinPosY>535</spinPosY>
+		<textXOff>15</textXOff>
+		<textYOff>8</textYOff>
+		<textureFocus>context_item_selected.png</textureFocus>
+		<textureNoFocus>context_item.png</textureNoFocus>
+		<textureHeight>49</textureHeight>
+		<spaceBetweenItems>1</spaceBetweenItems>
+		<PinIconWidth>15</PinIconWidth>
+		<PinIconHeight>15</PinIconHeight>
+		<PinIconXOff>6</PinIconXOff>
+		<PinIconYOff>15</PinIconYOff>
+	</control>
+	
 </controls>
 </window>

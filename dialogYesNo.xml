@@ -87,7 +87,7 @@
 		<description>Yes</description>
 		<type>button</type>
 		<id>11</id>
-		<posX>443</posX>
+		<posX>442</posX>
 		<posY>401</posY>
 		<textXOff>70</textXOff>
 		<textYOff>0</textYOff>
@@ -110,7 +110,7 @@
 		<description>No</description>
 		<type>button</type>
 		<id>10</id>
-		<posX>443</posX>
+		<posX>442</posX>
 		<posY>451</posY>
 		<textXOff>70</textXOff>
 		<textYOff>0</textYOff>
