@@ -16,7 +16,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>pictures</label>
+		<label>#selectedthumb</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>
@@ -212,6 +212,7 @@
 	</control>
 
 	<import>common.facade.pictures.xml</import>
+	
 	<control>
 		<id>1</id>
 		<type>image</type>
@@ -220,7 +221,19 @@
 		<width>309</width>
 		<height>203</height>
 		<texture>black.png</texture>
-		<visible>[facadeview.list|facadeview.album]+Control.HasFocus(50)</visible>
+		<visible>facadeview.list|facadeview.album</visible>
+		<animation effect="fade" time="450" reversible="false">visible</animation>
+	</control>
+	
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>125</posX>
+		<posY>207</posY>
+		<width>309</width>
+		<height>203</height>
+		<texture>defaultPictureBig.png</texture>
+		<visible>[facadeview.list|facadeview.album]+!control.hasthumb(500)+!string.equals(#selectedthumb)</visible>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
 	</control>
 
@@ -230,11 +243,11 @@
 		<posX>125</posX>
 		<posY>207</posY>
 		<width>308</width>
-		<height>203</height>
+		<height>205</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<centered>yes</centered>
-		<visible>facadeview.list|facadeview.album</visible>
+		<visible>[facadeview.list|facadeview.album]+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
 	</control>
 

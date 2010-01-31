@@ -69,6 +69,7 @@
 				<renderUnfocusText>no</renderUnfocusText>
 				<imageFolderFocus>-</imageFolderFocus>
 				<imageFolder>-</imageFolder>
+
 				<frameNoFocus>blackborders_recordings_thumbnail_nofocus.png</frameNoFocus>
     <frameFocus>blackborders_recordings_thumbnail_focus.png</frameFocus>
 			</control>

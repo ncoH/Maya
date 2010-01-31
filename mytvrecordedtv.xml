@@ -41,6 +41,19 @@
 	</control>
 
 	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>91</posX>
+        <posY>207</posY>
+        <width>365</width>
+	    <height>203</height>
+		<texture>defaultTVBig.png</texture>
+		<visible>facadeview.list+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
 		<id>500</id>
 		<type>image</type>
 		<posX>91</posX>
@@ -48,7 +61,7 @@
         <width>365</width>
 	    <height>203</height>
 		<texture>#selectedthumb</texture>
-		<visible>facadeview.list</visible>
+		<visible>facadeview.list+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>

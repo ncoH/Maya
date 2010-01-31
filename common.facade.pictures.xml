@@ -86,6 +86,7 @@
 				<textureWidth>207</textureWidth>
 				<textureHeight>138</textureHeight>
 				<textYOff>-2000</textYOff>
+				<imageFolder>-</imageFolder>
 				<imageFolderFocus>-</imageFolderFocus>
 				<frame>-</frame>
 				<frameFocus>picture_filmstrip_overlay.png</frameFocus>

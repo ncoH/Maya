@@ -255,6 +255,17 @@
 		<texture>hiddenmenu_tab_up.png</texture>
 		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
 	</control>
+	
+	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>133</posX>
+		<posY>208</posY>
+		<width>266</width>
+		<height>380</height>
+		<texture>defaultVideoBig.png</texture>
+		<visible>facadeview.list+!control.hasthumb(500)</visible>
+	</control>
 
 	<control>
 		<id>500</id>

@@ -31,7 +31,7 @@
 		<label>music</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>facadeview.list</visible>
+		<visible>facadeview.list | facadeview.album</visible>
 		<valign>middle</valign>
 	</control>
 

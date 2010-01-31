@@ -195,13 +195,24 @@
 	</control>
 	
 	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
+		<texture>DefaultMyradioBig.png</texture>
+	</control>
+	
+	<control>
 		<id>500</id>
 		<type>image</type>
 		<posX>134</posX>
 		<posY>213</posY>
 		<width>265</width>
 		<height>265</height>
-		<visible>facadeview.list|facadeview.album</visible>
+		<visible>[facadeview.list|facadeview.album]+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
 		<texture>#selectedthumb</texture>
 	</control>
 
