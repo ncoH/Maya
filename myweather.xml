@@ -139,9 +139,9 @@
 		<description>update time label</description>
 		<type>label</type>
 		<id>11</id>
-		<posX>383</posX>
+		<posX>0</posX>
 		<posY>135</posY>
-		<width>600</width>
+		<width>1366</width>
 		<label>-</label>
 		<align>center</align>
 		<font>Segoe Light22</font>
@@ -152,9 +152,9 @@
 		<description>last update time</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>383</posX>
+		<posX>0</posX>
 		<posY>135</posY>
-		<width>600</width>
+		<width>1366</width>
 		<label>#maya.weather.update.date #maya.weather.update.time</label>
 		<align>center</align>
 		<font>Segoe Light22</font>
@@ -165,9 +165,9 @@
 		<description>5-day location</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>483</posX>
+		<posX>0</posX>
 		<posY>180</posY>
-		<width>400</width>
+		<width>1366</width>
 		<label>#infoservice.weather.location - #infoservice.weather.today.condition</label>
 		<font>font12</font>
 		<textcolor>6aa5cb</textcolor>
@@ -1057,6 +1057,6 @@
 		<colordiffuse>White:#20</colordiffuse>
 	</control>
 	
-	<import>common.overlay.xml</import>
+	<import>common.overlay.mini.xml</import>
 </controls>
 </window>
