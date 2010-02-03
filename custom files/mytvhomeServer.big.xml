@@ -225,7 +225,7 @@
 		<description>Play info label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<width>266</width>
+		<width>750</width>
 		<height>37</height>
 		<posX>562</posX>
 		<posY>480</posY>

@@ -932,6 +932,89 @@
 		<keepaspectratio>yes</keepaspectratio>
 	</control>
 
+	
+	
+	
+	
+	
+	
+	<control>
+	<id>0</id>
+	<description>icon group</description>
+	<type>group</type>
+	<visible>Control.IsVisible(1000)</visible>
+	<dimColor>ffffffff</dimColor>
+	
+		<control>
+			<description>sat icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1140</posX>
+			<posY>275</posY>
+			<texture>#maya.weather.icons.sat</texture>
+			<width>90</width>
+			<height>74</height>
+		</control>
+		
+		<control>
+			<description>temp icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1140</posX>
+			<posY>340</posY>
+			<texture>#maya.weather.icons.temp</texture>
+			<width>90</width>
+			<height>74</height>
+		</control>
+		
+		<control>
+			<description>uv icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1140</posX>
+			<posY>390</posY>
+			<texture>#maya.weather.icons.uv</texture>
+			<width>90</width>
+			<height>74</height>
+		</control>
+		
+		<control>
+			<description>wind icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1140</posX>
+			<posY>435</posY>
+			<texture>#maya.weather.icons.wind</texture>
+			<width>90</width>
+			<height>74</height>
+		</control>
+		
+			<control>
+			<description>hum icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1140</posX>
+			<posY>485</posY>
+			<texture>#maya.weather.icons.hum</texture>
+			<width>90</width>
+			<height>74</height>
+		</control>
+		
+		<control>
+			<description>prec icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1140</posX>
+			<posY>543</posY>
+			<texture>#maya.weather.icons.prec</texture>
+			<width>90</width>
+			<height>74</height>
+		</control>		
+		
+	</control>
+		
+		
+
 	<control>
 		<description>Sunclock image</description>
 		<type>image</type>
