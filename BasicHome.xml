@@ -209,7 +209,7 @@
 	<layout>StackLayout</layout>
 	<dimColor>ffffffff</dimColor>
 	<height>768</height>
-	<posX>600</posX>
+	<posX>580</posX>
 	<posY>148</posY>
 
 	<control>
@@ -254,6 +254,8 @@
 		<width>355</width>
 		<height>74</height>
 		<type>button</type>
+		<textXOff>0</textXOff>
+		<textYOff>0</textYOff>
 		<label>#homeitem</label>
 		<font>Segoe Light32</font>
 		<textureFocus>-</textureFocus>
@@ -262,7 +264,6 @@
 		<ondown>802</ondown>
 		<onleft>601</onleft>
 		<onright>801</onright>
-		<textXOff>0</textXOff>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
 		<animation effect="fade" start="0" end="100" time="500" delay="0" reversible="false">Focus</animation>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
@@ -303,7 +304,7 @@
 	<layout>StackLayout</layout>
 	<dimColor>ffffffff</dimColor>
 	<height>768</height>
-	<posX>600</posX>
+	<posX>580</posX>
 	<posY>148</posY>
 
 	<control>
@@ -347,6 +348,7 @@
 		<id>802</id>
 		<width>600</width>
 		<height>74</height>
+		<textXOff>0</textXOff>
 		<textYOff>0</textYOff>
 		<type>button</type>
 		<label>#homeitem</label>
@@ -357,7 +359,6 @@
 		<ondown>801</ondown>
 		<onleft>501</onleft>
 		<onright>802</onright>
-		<textXOff>0</textXOff>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
 		<animation effect="fade" start="0" end="100" time="500" delay="0" reversible="false">Focus</animation>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
@@ -398,7 +399,7 @@
 	<layout>StackLayout</layout>
 	<dimColor>ffffffff</dimColor>
 	<height>768</height>
-	<posX>600</posX>
+	<posX>580</posX>
 	<posY>74</posY>
 
 	
@@ -432,6 +433,8 @@
 		<posY>0</posY>
 		<width>355</width>
 		<height>74</height>
+		<textXOff>0</textXOff>
+		<textYOff>0</textYOff>
 		<type>button</type>
 		<label>#homeitem</label>
 		<font>Segoe Light32</font>
@@ -441,7 +444,6 @@
 		<ondown>802</ondown>
 		<onleft>601</onleft>
 		<onright>901</onright>
-		<textXOff>0</textXOff>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
 		<animation effect="fade" start="0" end="100" time="500" delay="0" reversible="false">Focus</animation>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
@@ -494,7 +496,7 @@
 	<layout>StackLayout</layout>
 	<dimColor>ffffffff</dimColor>
 	<height>768</height>
-	<posX>600</posX>
+	<posX>580</posX>
 	<posY>74</posY>
 
 	<control>
@@ -527,6 +529,8 @@
 		<width>355</width>
 		<height>74</height>
 		<type>button</type>
+		<textXOff>0</textXOff>
+		<textYOff>0</textYOff>
 		<label>#homeitem</label>
 		<font>Segoe Light32</font>
 		<textureFocus>-</textureFocus>
@@ -535,7 +539,6 @@
 		<ondown>801</ondown>
 		<onleft>501</onleft>
 		<onright>902</onright>
-		<textXOff>0</textXOff>
 		<visible allowhiddenfocus="true">[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
 		<animation effect="fade" start="0" end="100" time="500" delay="0" reversible="false">Focus</animation>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
@@ -590,8 +593,8 @@
 	<description>Leftmenu tab</description>
 	<type>image</type>
 	<id>566</id>
-	<posX>572</posX>
-	<posY>340</posY>
+	<posX>550</posX>
+	<posY>337</posY>
 	<width>12</width>
 	<height>21</height>
 	<visible>!Control.HasFocus(2) + !Control.HasFocus(3) + !Control.HasFocus(4) + !Control.IsVisible(501) + !Control.IsVisible(601)+!string.equals(#subitem1,)</visible>
@@ -616,13 +619,13 @@
 		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
 
 	<height>768</height>
-	<posX>240</posX>
-	<posY>315</posY>
+	<posX>224</posX>
+	<posY>313</posY>
 
 	<control>
 		<id>501</id>
 		<type>button</type>
-		<height>46</height>
+		<height>47</height>
 		<width>355</width>
 		<label>#subitem1</label>
 		<font>Segoe Light22</font>
@@ -639,7 +642,7 @@
 	<control>
 		<id>502</id>
 		<type>button</type>
-		<height>46</height>
+		<height>47</height>
 		<width>355</width>
 		<label>#subitem2</label>
 		<font>Segoe Light22</font>
@@ -657,7 +660,7 @@
 	<control>
 		<id>503</id>
 		<type>button</type>
-		<height>46</height>
+		<height>47</height>
 		<width>355</width>
 		<label>#subitem3</label>
 		<font>Segoe Light22</font>
@@ -675,7 +678,7 @@
 	<control>
 		<id>504</id>
 		<type>button</type>
-		<height>46</height>
+		<height>47</height>
 		<width>355</width>
 		<label>#subitem4</label>
 		<font>Segoe Light22</font>
@@ -693,7 +696,7 @@
 	<control>
 		<id>505</id>
 		<type>button</type>
-		<height>46</height>
+		<height>47</height>
 		<width>355</width>
 		<label>#subitem5</label>
 		<font>Segoe Light22</font>
@@ -722,13 +725,13 @@
 		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
 	<height>768</height>
-	<posX>248</posX>
-	<posY>315</posY>
+	<posX>224</posX>
+	<posY>313</posY>
 
 	<control>
 		<id>601</id>
 		<type>button</type>
-		<height>46</height>
+		<height>47</height>
 		<width>355</width>
 		<label>#subitem1</label>
 		<font>Segoe Light22</font>
@@ -745,7 +748,7 @@
 	<control>
 		<id>602</id>
 		<type>button</type>
-		<height>46</height>
+		<height>47</height>
 		<width>355</width>
 		<label>#subitem2</label>
 		<font>Segoe Light22</font>
@@ -763,7 +766,7 @@
 	<control>
 		<id>603</id>
 		<type>button</type>
-		<height>46</height>
+		<height>47</height>
 		<width>355</width>
 		<label>#subitem3</label>
 		<font>Segoe Light22</font>
@@ -781,7 +784,7 @@
 	<control>
 		<id>604</id>
 		<type>button</type>
-		<height>46</height>
+		<height>47</height>
 		<width>355</width>
 		<label>#subitem4</label>
 		<font>Segoe Light22</font>
@@ -799,7 +802,7 @@
 	<control>
 		<id>605</id>
 		<type>button</type>
-		<height>46</height>
+		<height>47</height>
 		<width>355</width>
 		<label>#subitem5</label>
 		<font>Segoe Light22</font>
