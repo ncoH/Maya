@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file should contain the details view
+-->
+<window>
+<controls>
+
+	<control>
+		<description>PLAY Button</description>
+		<type>button</type>
+		<id>6</id>
+		<label>-</label>
+		<onup>6</onup>
+		<ondown>6</ondown>
+		<onleft>66</onleft>
+		<onright>6</onright>
+		<textureFocus>-</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+	</control>
+	
+	<control>
+		<description>PLAY Button</description>
+		<type>button</type>
+		<id>66</id>
+		<label>-</label>
+		<onup>66</onup>
+		<ondown>66</ondown>
+		<onleft>66</onleft>
+		<onright>6</onright>
+		<textureFocus>-</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)</visible>
+	</control>
+
+	<!--            :: MAIN DETAILS ::            -->
+	
+	<control>
+	<type>group</type>
+	<description>group 1</description>
+	<dimColor>ffffffff</dimColor>
+	
+		
+	<control>
+		<description>Vignette background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>822</posX>
+		<posY>0</posY>
+		<width>544</width>
+		<height>768</height>
+		<texture>moving_pictures_detail_vignette.png</texture>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)</visible>
+		<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+
+	<!-- Details Box -->
+	
+	<control>
+		<description>Heading</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>84</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+        <textcolor>ff85cffe</textcolor>
+		<label>#MovingPictures.Translation.MovieDetails.Label</label>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)</visible>
+		<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+
+	<control>
+		<description>Movie Title</description>
+		<type>fadelabel</type>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>180</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<label>#MovingPictures.SelectedMovie.title</label>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)</visible>
+		<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+<!-- Only in MovingPictures 0.8 -->
+	<control>
+		<description>year+runtime</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime.localized.long</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>215</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)</visible>
+		<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+<!-- -->
+
+<!-- Only in MovingPictures 0.7.x
+	<control>
+		<description>year+runtime</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime min</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>215</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)</visible>
+		<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+-->
+
+	
+	<!-- 1 genre -->
+	<control>
+		<description>genre</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.extra.genres.1</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>250</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.SelectedMovie.extra.genres.2,)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+	<!-- 2 genres -->
+	<control>
+		<description>genre</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.extra.genres.1, #MovingPictures.SelectedMovie.extra.genres.2</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>250</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.SelectedMovie.extra.genres.3,)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+	<!-- 3 genres or more -->
+	<control>
+		<description>genre</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.extra.genres.1, #MovingPictures.SelectedMovie.extra.genres.2, #MovingPictures.SelectedMovie.extra.genres.3</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>250</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+!string.equals(#MovingPictures.SelectedMovie.extra.genres.3,)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+	
+<!-- -->
+
+	<control>
+		<description>Summary</description>
+		<type>textboxscrollup</type>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>350</posY>
+		<width>365</width>
+		<height>210</height>
+		<seperator>-----------------------------------------------------------------------------------</seperator>
+		<label>#MovingPictures.SelectedMovie.summary</label>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)</visible>
+		<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+	<control>
+		<description>actors</description>
+		<type>fadelabel</type>
+		<label>#MovingPictures.SelectedMovie.extra.actors.1, #MovingPictures.SelectedMovie.extra.actors.2, #MovingPictures.SelectedMovie.extra.actors.3</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>578</posY>
+		<width>365</width>
+		<font>font11</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)</visible>
+		<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+	<!-- 1 director -->
+	<control>
+		<description>director</description>
+		<type>label</type>
+		<label>#MovingPictures.Translation.Director.Label: #MovingPictures.SelectedMovie.directors</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>601</posY>
+		<width>365</width>
+		<font>font11</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.SelectedMovie.extra.directors.2,)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+	<!-- 2 or more directors -->
+	<control>
+		<description>director</description>
+		<type>label</type>
+		<label>#MovingPictures.Translation.Directors.Label: #MovingPictures.SelectedMovie.directors</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>601</posY>
+		<width>365</width>
+		<font>font11</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+!string.equals(#MovingPictures.SelectedMovie.extra.directors.2,)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+
+	<control>
+		<description>writer</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.writers</label>
+		<id>0</id>
+		<posX>463</posX>
+		<posY>-50</posY>
+		<width>840</width>
+		<font>font11</font>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)</visible>
+		<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+<!-- Only in MovingPictures 0.8 -->
+	<control>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>902</posX>
+		<posY>298</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>stargrey.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)</visible>
+		<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+<!-- Only in MovingPictures 0.7.x
+	<control>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>902</posX>
+		<posY>298</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>stargrey.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#MovingPictures.SelectedMovie.score</percentage>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)</visible>
+		<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+-->
+
+
+<!-- MediaInfo Logos (Details View)-->
+
+
+	<!-- Video Codecs -->
+
+	<!-- H264 -->
+	<control>
+	  <description>H264</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>903</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\video\h264.png</texture> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.videocodec,H264)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+
+	<!-- DIVX -->
+	<control>
+	  <description>DIVX</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>903</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\video\divx.png</texture> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+[string.equals(#MovingPictures.LocalMedia.videocodec,DIVX)|string.starts(#MovingPictures.LocalMedia.videocodec,DX)]</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+
+	<!-- XVID -->
+	<control>
+	  <description>XVID</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>903</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\video\xvid.png</texture> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.videocodec,XVID)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+	<!--Video Resolutions-->	
+	<!-- HD 720p -->
+	<control>
+	  <description>HD 720</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>980</posX>
+	  <posY>665</posY>
+	  <width>65</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\video\720.png</texture>
+	  <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.videoresolution,720p)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+
+	<!-- HD 1080p -->
+	<control>
+	  <description>HD 1080</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>980</posX>
+	  <posY>665</posY>
+	  <width>65</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\video\1080.png</texture>
+	  <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.videoresolution,1080p)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+	<!-- HD 1080i -->
+	<control>
+	  <description>HD 1080</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>980</posX>
+	  <posY>665</posY>
+	  <width>65</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\video\1080.png</texture>
+	  <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.videoresolution,1080i)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+
+	<!-- Audio Channels / Codecs-->
+	
+
+	<!-- Dolby Digital 5.1 -->
+	<control>
+	  <description>DD 5.1</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1055</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\dolbydigital.png</texture>
+ <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+[string.equals(#MovingPictures.LocalMedia.audiocodec,AC3)]</visible>
+ <animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+
+	<!-- AAC -->
+	<control>
+	  <description>AAC</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1055</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\aac.png</texture>
+	  <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.audiocodec,AAC)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+
+	<!-- WMA -->
+	<control>
+	  <description>WMA</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1055</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\WMA.png</texture>
+	  <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.contains(#MovingPictures.LocalMedia.audiocodec,WMA)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+	<!-- DTS -->
+	<control>
+	  <description>DTS</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1055</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\dts.png</texture>
+	  <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+[string.equals(#MovingPictures.LocalMedia.audiocodec,DTS)]</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+
+	<!-- Number of channels -->
+	
+	<control>
+	  <description>1 Channel</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1150</posX>
+	  <posY>662</posY>
+	  <width>40</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\1.png</texture>
+	  <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.audiochannels,1)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+	<control>
+	  <description>2 Channels</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1150</posX>
+	  <posY>662</posY>
+	  <width>40</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\2.png</texture>
+	  <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.audiochannels,2)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+	<control>
+	  <description>6 Channels</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1150</posX>
+	  <posY>662</posY>
+	  <width>40</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\6.png</texture>
+	  <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.audiochannels,5.1)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+	<control>
+	  <description>8 Channels</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1150</posX>
+	  <posY>662</posY>
+	  <width>40</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\8.png</texture>
+	  <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.audiochannels,7.1)</visible>
+<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+</control>
+	
+	
+<control>
+	<type>group</type>
+	<description>group 2</description>
+	<dimColor>ffffffff</dimColor>
+	
+		
+		<control>
+		<description>Vignette background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>822</posX>
+		<posY>0</posY>
+		<width>544</width>
+		<height>768</height>
+		<texture>moving_pictures_detail_vignette.png</texture>
+		<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)</visible>
+	</control>
+
+	<!-- Details Box -->
+	
+	<control>
+		<description>Heading</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>84</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+        <textcolor>ff85cffe</textcolor>
+		<label>#MovingPictures.Translation.MovieDetails.Label</label>
+		<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)</visible>
+	</control>
+
+	<control>
+		<description>Movie Title</description>
+		<type>fadelabel</type>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>180</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<label>#MovingPictures.SelectedMovie.title</label>
+		<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)</visible>
+	</control>
+	
+<!-- Only in MovingPictures 0.8 -->
+	<control>
+		<description>year+runtime</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime.localized.long</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>215</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)</visible>
+	</control>
+<!-- -->
+
+<!-- Only in MovingPictures 0.7.x
+	<control>
+		<description>year+runtime</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime min</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>215</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+		<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)</visible>
+	</control>
+-->
+
+	
+	<!-- 1 genre -->
+	<control>
+		<description>genre</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.extra.genres.1</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>250</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+	<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>	<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.SelectedMovie.extra.genres.2,)</visible>
+	</control>
+	
+	<!-- 2 genres -->
+	<control>
+		<description>genre</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.extra.genres.1, #MovingPictures.SelectedMovie.extra.genres.2</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>250</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+	<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>	<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+!Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.SelectedMovie.extra.genres.3,)</visible>
+	</control>
+	
+	<!-- 3 genres or more -->
+	<control>
+		<description>director</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.extra.genres.1, #MovingPictures.SelectedMovie.extra.genres.2, #MovingPictures.SelectedMovie.extra.genres.3</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>250</posY>
+		<width>365</width>
+		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>
+	<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>	<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+!string.equals(#MovingPictures.SelectedMovie.extra.genres.3,)</visible>
+	</control>
+	
+	
+<!-- -->
+
+	<control>
+		<description>Summary</description>
+		<type>textboxscrollup</type>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>350</posY>
+		<width>365</width>
+		<height>210</height>
+		<seperator>-----------------------------------------------------------------------------------</seperator>
+		<label>#MovingPictures.SelectedMovie.summary</label>
+		<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)</visible>
+	</control>
+	
+	<control>
+		<description>actors</description>
+		<type>fadelabel</type>
+		<label>#MovingPictures.SelectedMovie.extra.actors.1, #MovingPictures.SelectedMovie.extra.actors.2, #MovingPictures.SelectedMovie.extra.actors.3</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>578</posY>
+		<width>365</width>
+		<font>font11</font>
+		<textcolor>85cffe</textcolor>
+		<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)</visible>
+	</control>
+	
+	<!-- 1 director -->
+	<control>
+		<description>director</description>
+		<type>label</type>
+		<label>#MovingPictures.Translation.Director.Label: #MovingPictures.SelectedMovie.directors</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>601</posY>
+		<width>365</width>
+		<font>font11</font>
+		<textcolor>85cffe</textcolor>
+	<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>	<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.SelectedMovie.extra.directors.2,)</visible>
+	</control>
+	
+	<!-- 2 or more directors -->
+	<control>
+		<description>director</description>
+		<type>label</type>
+		<label>#MovingPictures.Translation.Directors.Label: #MovingPictures.SelectedMovie.directors</label>
+		<id>0</id>
+		<posX>903</posX>
+		<posY>601</posY>
+		<width>365</width>
+		<font>font11</font>
+		<textcolor>85cffe</textcolor>
+	<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>	<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+!string.equals(#MovingPictures.SelectedMovie.extra.directors.2,)</visible>
+	</control>
+
+	<control>
+		<description>writer</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.writers</label>
+		<id>0</id>
+		<posX>463</posX>
+		<posY>-50</posY>
+		<width>840</width>
+		<font>font11</font>
+		<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)</visible>
+	</control>
+	
+<!-- Only in MovingPictures 0.8 -->
+	<control>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>902</posX>
+		<posY>298</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>stargrey.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
+		<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)</visible>
+	</control>
+	
+<!-- Only in MovingPictures 0.7.x
+	<control>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>902</posX>
+		<posY>298</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>stargrey.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#MovingPictures.SelectedMovie.score</percentage>
+		<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)</visible>
+	</control>
+-->
+
+
+<!-- MediaInfo Logos (Details View)-->
+
+
+	<!-- Video Codecs -->
+
+	<!-- H264 -->
+	<control>
+	  <description>H264</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>903</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\video\h264.png</texture>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.videocodec,H264)</visible>
+	</control>
+
+	<!-- DIVX -->
+	<control>
+	  <description>DIVX</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>903</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\video\divx.png</texture>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+[string.equals(#MovingPictures.LocalMedia.videocodec,DIVX)|string.starts(#MovingPictures.LocalMedia.videocodec,DX)]</visible>
+	</control>
+
+	<!-- XVID -->
+	<control>
+	  <description>XVID</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>903</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\video\xvid.png</texture>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.videocodec,XVID)</visible>
+	</control>
+	
+	<!--Video Resolutions-->	
+	<!-- HD 720p -->
+	<control>
+	  <description>HD 720</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>980</posX>
+	  <posY>665</posY>
+	  <width>65</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\video\720.png</texture>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.videoresolution,720p)</visible>
+	</control>
+
+	<!-- HD 1080p -->
+	<control>
+	  <description>HD 1080</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>980</posX>
+	  <posY>665</posY>
+	  <width>65</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\video\1080.png</texture>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.videoresolution,1080p)</visible>
+	</control>
+	
+	<!-- HD 1080i -->
+	<control>
+	  <description>HD 1080</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>980</posX>
+	  <posY>665</posY>
+	  <width>65</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\video\1080.png</texture>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.videoresolution,1080i)</visible>
+	</control>
+
+	<!-- Audio Channels / Codecs-->
+	
+
+	<!-- Dolby Digital 5.1 -->
+	<control>
+	  <description>DD 5.1</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1055</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\dolbydigital.png</texture>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+[string.equals(#MovingPictures.LocalMedia.audiocodec,AC3)]</visible>
+	</control>
+
+	<!-- AAC -->
+	<control>
+	  <description>AAC</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1055</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\aac.png</texture>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.audiocodec,AAC)</visible>
+	</control>
+
+	<!-- WMA -->
+	<control>
+	  <description>WMA</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1055</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\WMA.png</texture>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.contains(#MovingPictures.LocalMedia.audiocodec,WMA)</visible>
+	</control>
+	
+	<!-- DTS -->
+	<control>
+	  <description>DTS</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1055</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\dts.png</texture>
+	  <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	  <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+[string.equals(#MovingPictures.LocalMedia.audiocodec,DTS)]</visible>
+	</control>
+	
+
+	<!-- Number of channels -->
+	
+	<control>
+	  <description>1 Channel</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1150</posX>
+	  <posY>662</posY>
+	  <width>40</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\1.png</texture>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.audiochannels,1)</visible>
+	</control>
+	
+	<control>
+	  <description>2 Channels</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1150</posX>
+	  <posY>662</posY>
+	  <width>40</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\2.png</texture>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.audiochannels,2)</visible>
+	</control>
+	
+	<control>
+	  <description>6 Channels</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1150</posX>
+	  <posY>662</posY>
+	  <width>40</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\6.png</texture>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.audiochannels,5.1)</visible>
+	</control>
+	
+	<control>
+	  <description>8 Channels</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1150</posX>
+	  <posY>662</posY>
+	  <width>40</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\8.png</texture>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.audiochannels,7.1)</visible>
+	</control>
+</control>
+	
+</controls>
+</window>

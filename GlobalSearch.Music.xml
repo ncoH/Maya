@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>30885</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<define>#header.label:Global Search</define>
+<define>#header.image:music_logo.png</define>
+<define>#header.hover:hover_my music.png</define>
+<controls>
+	<import>common.window.xml</import>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>0</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>music search</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<id>500</id>
+		<type>image</type>
+		<posX>135</posX>
+		<posY>183</posY>
+		<width>266</width>
+		<height>266</height>
+		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
+	</control>
+	
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1366</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+		<animation effect="fade" time="200" reversible="false">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
+		
+		<control>
+		<id>199</id>
+		<type>image</type>
+		<posX>512</posX>
+		<posY>64</posY>
+		<width>342</width>
+		<height>640</height>
+		<texture>menu_bg.png</texture>
+		<visible>!Control.HasFocus(50)</visible>
+		</control>
+		
+				<control>
+				<description>Heading text label</description>
+				<type>label</type>
+				<id>199</id>
+				<posX>567</posX>
+				<posY>110</posY>
+				<label>924</label>
+				<font>Segoe Light18</font>
+				<textcolor>85cffe</textcolor>
+				</control>
+		
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>543</posX>
+				<posY>175</posY>
+				<layout>StackLayout(1)</layout>
+				
+		<control>
+			<description>Searchphrase to use</description>
+			<type>button</type>
+			<id>2</id>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+			<label>Searchphrase</label>
+			<onup>9</onup>
+			<ondown>7</ondown>
+			<onleft>50</onleft>
+			<onright>50</onright>
+		</control>
+
+		<control>
+			<description>Last searches</description>
+			<type>button</type>
+			<id>7</id>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+			<label>Search history</label>
+			<onup>2</onup>
+			<ondown>6</ondown>
+			<onleft>50</onleft>
+			<onright>50</onright>
+		</control>
+
+		<control>
+			<description>Search fields (Song, Album, Artist, etc.)</description>
+			<type>button</type>
+			<id>6</id>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+			<label>Search fields</label>
+			<ondown>3</ondown>
+			<onup>7</onup>
+			<onleft>50</onleft>
+			<onright>50</onright>
+		</control>
+
+		<control>
+			<description>Case sensitivity</description>
+			<type>togglebutton</type>
+			<id>3</id>
+			<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+		<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+		<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+		<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>24</textXOff>
+					<textYOff>12</textYOff>
+			<label>Case sensitive</label>
+			<ondown>5</ondown>
+			<onup>6</onup>
+			<onleft>50</onleft>
+			<onright>50</onright>
+		</control>
+
+		<control>
+			<description>Searchtype (start, contain, end)</description>
+			<type>selectbutton</type>
+			<id>5</id>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<texturebg>hiddenmenu_item_selected.png</texturebg>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>10</textXOff>
+				<textYOff>12</textYOff>
+				<textYOff2>12</textYOff2>
+				<textXOff2>25</textXOff2>
+			<label>Searchtype</label>
+			<ondown>8</ondown>
+			<onup>3</onup>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<subitems>
+			<subitem>Equals</subitem>
+			<subitem>Starts with</subitem>
+			<subitem>Contains</subitem>
+			<subitem>Ends with</subitem></subitems>
+			<selected>2</selected>
+		</control>
+
+		<control>
+			<description>Jump to (my) music</description>
+			<type>button</type>
+			<id>8</id>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+			<label>2</label>
+			<onup>5</onup>
+			<ondown>9</ondown>
+			<onleft>50</onleft>
+			<onright>50</onright>
+		</control>
+
+		<control>
+			<description>Jump to playing now</description>
+			<type>button</type>
+			<id>9</id>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+			<label>4540</label>
+			<onup>8</onup>
+			<ondown>2</ondown>
+			<onleft>50</onleft>
+			<onright>50</onright>
+		</control>
+
+	</control>
+	
+</control>
+
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>325</posY>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>Control.HasFocus(50)</visible>
+	</control>
+
+<import>common.facade.xml</import>
+<import>common.overlay.xml</import>
+</controls>
+</window>

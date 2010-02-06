@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>2018</id>
+    <defaultcontrol>3</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+		<control>
+            <description>group element</description>
+            <type>group</type>
+            <animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+			
+        <control>
+            <id>0</id>
+            <type>image</type>
+            <posX>409</posX>
+            <posY>164</posY>
+            <width>548</width>
+            <height>440</height>
+            <texture>context_background.png</texture>
+        </control>
+		
+        <control>
+            <id>4</id>
+            <description>Heading text label</description>
+            <type>label</type>
+            <posX>469</posX>
+            <posY>212</posY>
+			<width>426</width>
+            <font>Segoe Light18</font>
+            <textcolor>ff85cffe</textcolor>
+            <label>-</label>
+        </control>
+		
+        <control>
+            <id>5</id>
+            <description>Subtitle text label</description>
+            <type>label</type>
+            <posX>469</posX>
+            <posY>249</posY>
+            <width>426</width>
+            <font>font12</font>
+            <label/>
+        </control>
+		
+        <control>
+            <id>6</id>
+            <description>bottom text label</description>
+            <type>label</type>
+            <posX>469</posX>
+            <posY>536</posY>
+            <width>426</width>
+            <font>font12</font>
+            <label/>
+        </control>
+		
+        <control>
+            <id>3</id>
+            <description>options listcontrol</description>
+            <type>listcontrol</type>
+            <onleft>2</onleft>
+            <onright>2</onright>
+            <posX>409</posX>
+            <posY>277</posY>
+            <width>548</width>
+            <height>300</height>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="250">WindowClose</animation>
+            <spinPosX>977</spinPosX>
+            <spinPosY>484</spinPosY>
+            <textXOff>48</textXOff>
+            <PinIconXOff>39</PinIconXOff>
+            <PinIconYOff>15</PinIconYOff>
+            <PinIconWidth>40</PinIconWidth>
+            <PinIconHeight>25</PinIconHeight>
+            <keepaspectratio>yes</keepaspectratio>
+            <itemHeight>34</itemHeight>
+            <itemWidth>53</itemWidth>
+            </control>
+			
+        </control>
+    </controls>
+</window>

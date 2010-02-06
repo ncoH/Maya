@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>2001</id>
+<defaultcontrol>5</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<controls>
+
+	<control>
+		<description>background image</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>music info</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>
+
+	<control>
+		<description>Album information</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>142</posY>
+		<label>Album information</label>
+		<font>Segoe Light22</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<type>label</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>182</posY>
+		<textcolor>85cfff</textcolor>
+		<font>Segoe Light18</font>
+		<label>Artist</label>
+	</control>
+	
+	<control>
+		<description>Artist value</description>
+		<type>label</type>
+		<id>21</id>
+		<posX>555</posX>
+		<posY>218</posY>
+		<font>Segoe Light18</font>
+		<label>-</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
+		<type>label</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>254</posY>
+		<textcolor>85cfff</textcolor>
+		<font>Segoe Light18</font>
+		<label>Album</label>
+	</control>
+	
+	<control>
+		<description>Album value</description>
+		<type>label</type>
+		<id>20</id>
+		<posX>555</posX>
+		<posY>291</posY>
+		<label>-</label>
+		<font>Segoe Light18</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Genre</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>340</posY>
+		<label>174</label>
+		<textcolor>85cfff</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Year</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>364</posY>
+		<label>201</label>
+		<textcolor>85cfff</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Tones</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>388</posY>
+		<label>175</label>
+		<textcolor>85cfff</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Styles</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>412</posY>
+		<label>176</label>
+		<textcolor>85cfff</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Rating</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>436</posY>
+		<label>173</label>
+		<textcolor>85cfff</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+
+	<control>
+		<description>Genre value</description>
+		<type>label</type>
+		<id>24</id>
+		<posX>666</posX>
+		<posY>340</posY>
+		<width>600</width>
+		<label>-</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Year value</description>
+		<type>label</type>
+		<id>22</id>
+		<posX>666</posX>
+		<posY>364</posY>
+		<label>-</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Tones value</description>
+		<type>fadelabel</type>
+		<id>25</id>
+		<posX>666</posX>
+		<posY>388</posY>
+		<width>600</width>
+		<label>-</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Styles value</description>
+		<type>fadelabel</type>
+		<id>26</id>
+		<posX>666</posX>
+		<posY>412</posY>
+		<width>600</width>
+		<label>-</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Rating value</description>
+		<type>label</type>
+		<id>23</id>
+		<posX>666</posX>
+		<posY>436</posY>
+		<label>-</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<id>3</id>
+		<type>image</type>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<texture>-</texture>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>0</id>
+		<posX>92</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture>blackborders_music.png</texture>
+	</control>
+
+	<control>
+		<description>textarea</description>
+		<type>textbox</type>
+		<id>4</id>
+		<posX>555</posX>
+		<posY>487</posY>
+		<width>710</width>
+		<height>250</height>
+		<onleft>5</onleft>
+		<onright>5</onright>
+		<onup>5</onup>
+		<ondown>5</ondown>
+		<spinWidth>28</spinWidth>
+		<spinHeight>28</spinHeight>
+		<spinPosX>555</spinPosX>
+		<spinPosY>718</spinPosY>
+		<spinAlign>left</spinAlign>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Tracks/Review</description>
+		<type>button</type>
+		<id>5</id>
+		<posX>147</posX>
+		<posY>500</posY>
+		<label>182</label>
+		<onleft>4</onleft>
+		<onright>4</onright>
+		<onup>6</onup>
+		<ondown>6</ondown>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Refresh</description>
+		<type>button</type>
+		<id>6</id>
+		<posX>147</posX>
+		<posY>545</posY>
+		<label>184</label>
+		<onleft>4</onleft>
+		<onright>4</onright>
+		<onup>5</onup>
+		<ondown>5</ondown>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+</controls>
+</window>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>2016</id>
+    <defaultcontrol>4</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <control>
+            <id>0</id>
+            <type>image</type>
+            <posX>409</posX>
+            <posY>500</posY>
+            <width>548</width>
+            <height>262</height>
+            <texture>dialog_notify.png</texture>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation center="683,384" delay="100" effect="Zoom" end="100,100" start="95,95" time="550" tween="Elastic">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation center="683,384" effect="Zoom" end="200,200" start="100,100" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>3</id>
+            <description>Heading text label</description>
+            <type>label</type>
+            <posX>470</posX>
+            <posY>541</posY>
+            <width>340</width>
+            <font>Segoe Light18</font>
+            <textcolor>ff85cffe</textcolor>
+            <label>181</label>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation center="683,384" delay="100" effect="Zoom" end="100,100" start="95,95" time="550" tween="Elastic">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation center="683,384" effect="Zoom" end="200,200" start="100,100" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <description>logo</description>
+            <type>image</type>
+            <visible>window.isvisible(602)</visible>
+            <posX>818</posX>
+            <posY>535</posY>
+            <width>80</width>
+            <height>40</height>
+            <texture>dialog_tv_is_recording.png</texture>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation center="683,384" delay="100" effect="Zoom" end="100,100" start="95,95" time="550" tween="Elastic">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation center="683,384" effect="Zoom" end="200,200" start="100,100" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>5</id>
+            <description>logo</description>
+            <type>image</type>
+            <posX>470</posX>
+            <posY>600</posY>
+            <width>60</width>
+            <height>60</height>
+            <texture>#thumb</texture>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation center="683,384" delay="100" effect="Zoom" end="100,100" start="95,95" time="550" tween="Elastic">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation center="683,384" effect="Zoom" end="200,200" start="100,100" time="200">WindowClose</animation>
+            <keepaspectratio>yes</keepaspectratio>
+        </control>
+        <control>
+            <id>6</id>
+            <description>textarea</description>
+            <type>textbox</type>
+            <onleft>4</onleft>
+            <onright>4</onright>
+            <onup>4</onup>
+            <ondown>4</ondown>
+            <posX>555</posX>
+            <posY>600</posY>
+            <width>340</width>
+            <height>55</height>
+            <textcolor>ffffffff</textcolor>
+            <spinPosX>1031</spinPosX>
+            <spinPosY>-2000</spinPosY>
+            <font>font12</font>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation center="683,384" delay="100" effect="Zoom" end="100,100" start="95,95" time="550" tween="Elastic">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation center="683,384" effect="Zoom" end="200,200" start="100,100" time="200">WindowClose</animation>
+            <label>-</label>
+        </control>
+    </controls>
+</window>

@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>2600</id>
+<defaultcontrol>4</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<define>#header.label:8</define>
+<define>#header.image:weather_logo.png</define>
+<define>#header.hover:-</define>
+<define>#selecteditem:-</define>
+<controls>
+	<import>common.window.xml</import>
+
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>4</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1366</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+		<animation effect="fade" time="200" reversible="false">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
+		
+		<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>512</posX>
+		<posY>64</posY>
+		<width>342</width>
+		<height>640</height>
+		<texture>menu_bg.png</texture>
+		<visible>!Control.HasFocus(4)</visible>
+		</control>
+		
+				<control>
+				<description>Heading text label</description>
+				<type>label</type>
+				<id>1</id>
+				<posX>567</posX>
+				<posY>110</posY>
+				<label>924</label>
+				<font>Segoe Light18</font>
+				<textcolor>85cffe</textcolor>
+				</control>
+		
+			<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>543</posX>
+				<posY>175</posY>
+				<layout>StackLayout(1)</layout>
+				
+		<control>
+			<description>Switch Button</description>
+			<type>button</type>
+			<id>2</id>
+			<label>716</label>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+			<onup>5</onup>
+			<onleft>4</onleft>
+			<onright>4</onright>
+		</control>
+
+		<control>
+			<description>Refresh Button</description>
+			<type>button</type>
+			<id>3</id>
+			<onleft>4</onleft>
+			<onright>4</onright>
+			<label>184</label>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+		</control>
+
+		<control>
+			<description>weather location select</description>
+			<type>button</type>
+			<id>5</id>
+			<onleft>4</onleft>
+			<onright>4</onright>
+			<label>1028</label>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+			<ondown>2</ondown>
+		</control>
+
+	</control>
+	
+</control>
+
+	
+<!--   5-day stuff   -->
+
+	<control>
+		<description>Alternate BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>background_thumbs.png</texture>
+		<visible>Control.IsVisible(1000)|Control.IsVisible(31)</visible>
+	</control>
+
+	<control>
+		<description>5-day heading</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>433</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>8</label>
+		<font>Segoe Light40</font>
+		<textcolor>6aa5cb</textcolor>
+		<align>center</align>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+
+	<control>
+		<description>update time label</description>
+		<type>label</type>
+		<id>11</id>
+		<posX>0</posX>
+		<posY>135</posY>
+		<width>1366</width>
+		<label>-</label>
+		<align>center</align>
+		<font>Segoe Light22</font>
+		<visible>!plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+
+	<control>
+		<description>last update time</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>135</posY>
+		<width>1366</width>
+		<label>#maya.weather.update.date #maya.weather.update.time</label>
+		<align>center</align>
+		<font>Segoe Light22</font>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+	
+	<control>
+		<description>5-day location</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>180</posY>
+		<width>1366</width>
+		<label>#infoservice.weather.location - #infoservice.weather.today.condition</label>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>
+		<align>center</align>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+
+	
+	<control>
+		<description>5-day location feels like label</description>
+		<type>label</type>
+		<id>9999</id>
+		<posX>-2000</posX>
+		<posY>565</posY>
+		<visible>Control.IsVisible(31)</visible>
+	</control>
+	
+	<control>
+		<description>current condition label</description>
+		<type>label</type>
+		<id>22</id>
+		<posX>-2000</posX>
+		<posY>565</posY>
+		<label>-</label>
+		<textcolor>6aa5cb</textcolor>
+	</control>
+	
+	<control>
+		<description>horizontal line</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>236</posX>
+		<posY>554</posY>
+		<width>144</width>
+		<height>1</height>
+		<texture>weather_horizontal_bar.png</texture>
+		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+	</control>
+	
+	<control>
+		<description>current feels like static label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>235</posX>
+		<posY>560</posY>
+		<label>402</label>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>
+		<font>font11</font>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+	
+	<control>
+		<description>current feels like label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>345</posX>
+		<posY>560</posY>
+		<label>#infoservice.weather.today.feelsliketemp</label>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+	
+	<control>
+		<description>current humidity static label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>235</posX>
+		<posY>583</posY>
+		<label>406</label>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+	
+	<control>
+		<description>current humidity label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>345</posX>
+		<posY>583</posY>
+		<label>#infoservice.weather.today.humidity</label>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+	
+	<control>
+		<description>current UV Index static label</description>
+		<type>label</type>
+		<id>225</id>
+		<posX>235</posX>
+		<posY>606</posY>
+		<label>-</label>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>!plugin.isenabled(InfoService)</visible>
+	</control>
+	
+	<control>
+		<description>current UV Index static label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>235</posX>
+		<posY>606</posY>
+		<label>403</label>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+	
+	<control>
+		<description>current UV Index label</description>
+		<type>label</type>
+		<id>25</id>
+		<posX>345</posX>
+		<posY>606</posY>
+		<label>-</label>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>!plugin.isenabled(InfoService)</visible>
+	</control>
+	
+	<control>
+		<description>current UV Index label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>345</posX>
+		<posY>606</posY>
+		<label>#infoservice.weather.today.humidity</label>
+		<font>font11</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+	
+	
+	#infoservice.weather.today.humidity
+	
+	
+<!--   1-day stuff   -->
+	
+	<control>
+		<description>View Button</description>
+		<type>button</type>
+		<posX>885</posX>
+		<posY>80</posY>
+		<font>Segoe Light18</font>
+		<id>4</id>
+		<onleft>2</onleft>
+		<onright>2</onright>
+		<ondown>4</ondown>
+		<onup>4</onup>
+		<label>185</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible allowhiddenfocus="true">!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
+	</control>
+	
+	<control>
+		<description>last update date</description>
+		<type>textbox</type>
+		<id>0</id>
+		<posX>900</posX>
+		<posY>175</posY>
+		<width>350</width>
+		<label>#maya.weather.update.date</label>
+		<font>Segoe Light18</font>
+		<visible>plugin.isenabled(InfoService)+!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
+	</control>
+	
+	<control>
+		<description>last update time</description>
+		<type>textbox</type>
+		<id>0</id>
+		<posX>900</posX>
+		<posY>212</posY>
+		<width>350</width>
+		<label>#maya.weather.update.time</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light18</font>
+		<visible>plugin.isenabled(InfoService)+!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
+	</control>
+	
+	<control>
+		<description>current wind static label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>900</posX>
+		<posY>665</posY>
+		<label>Press OK to toggle day</label>
+		<textcolor>282828</textcolor>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
+	</control>
+
+	<control>
+		<description>Vignette background</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>822</posX>
+		<posY>0</posY>
+		<width>544</width>
+		<height>768</height>
+		<texture>moving_pictures_detail_vignette.png</texture>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
+	</control>
+	
+	<control>
+		<description>current temp label</description>
+		<type>label</type>
+		<id>23</id>
+		<posX>900</posX>
+		<posY>260</posY>
+		<label>-</label>
+		<font>Segoe Light40</font>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
+	</control>
+	
+	<control>
+		<description>current feels like label</description>
+		<type>label</type>
+		<id>24</id>
+		<posX>900</posX>
+		<posY>350</posY>
+		<label>-</label>
+<font>Segoe Light40</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
+	</control>
+
+	<control>
+		<description>current wind static label</description>
+		<type>label</type>
+		<id>226</id>
+		<posX>900</posX>
+		<posY>520</posY>
+		<label>-</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
+	</control>
+	
+	<control>
+		<description>current wind label</description>
+		<type>label</type>
+		<id>26</id>
+		<posX>1000</posX>
+		<posY>520</posY>
+		<label>-</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
+	</control>
+
+	<control>
+		<description>current rain static label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>900</posX>
+		<posY>565</posY>
+		<label>376</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
+	</control>
+	
+	<control>
+		<description>current rain label</description>
+		<type>label</type>
+		<id>27</id>
+		<posX>1000</posX>
+		<posY>565</posY>
+		<label>-</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
+	</control>
+
+	<control>
+		<description>current humidity static label</description>
+		<type>label</type>
+		<id>228</id>
+		<posX>900</posX>
+		<posY>587</posY>
+		<label>-</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
+	</control>
+	
+	<control>
+		<description>current humidity label</description>
+		<type>label</type>
+		<id>28</id>
+		<posX>1000</posX>
+		<posY>587</posY>
+		<label>-</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
+	</control>
+	
+	<control>
+		<description>sun rise label</description>
+		<type>label</type>
+		<id>200</id>
+		<posX>-2000</posX>
+		<posY>375</posY>
+		<label>-</label>
+		<font>font13</font>
+		<textcolor>White</textcolor>
+	</control>
+
+	<control>
+		<description>sun rise static label</description>
+		<type>label</type>
+		<id>201</id>
+		<posX>-2000</posX>
+		<posY>375</posY>
+		<label>-</label>
+		<font>font13</font>
+		<textcolor>White</textcolor>
+	</control>
+
+	<control>
+		<description>sun set label</description>
+		<type>label</type>
+		<id>202</id>
+		<posX>-2000</posX>
+		<posY>406</posY>
+		<label>-</label>
+		<font>font13</font>
+		<textcolor>White</textcolor>
+	</control>
+
+	<control>
+		<description>sun set static label</description>
+		<type>label</type>
+		<id>203</id>
+		<posX>-2000</posX>
+		<posY>406</posY>
+		<label>-</label>
+		<font>font13</font>
+		<textcolor>White</textcolor>
+	</control>
+
+	<control>
+		<description>current weather icon</description>
+		<type>image</type>
+		<id>21</id>
+		<posX>-2000</posX>
+		<posY>162</posY>
+		<texture>-</texture>
+		<colorkey>FFFF00FF</colorkey>
+		<colordiffuse>White:#20</colordiffuse>
+	</control>
+
+
+	<control>
+		<description>vertical line 1</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>400</posX>
+		<posY>280</posY>
+		<width>2</width>
+		<height>340</height>
+		<texture>vert_line.png</texture>
+		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+	</control>
+	
+	<control>
+		<description>vertical line 2</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>590</posX>
+		<posY>280</posY>
+		<width>2</width>
+		<height>340</height>
+		<texture>vert_line.png</texture>
+		<visible>Control.IsVisible(31)</visible>
+	</control>
+
+	<control>
+		<description>vertical line 3</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>775</posX>
+		<posY>280</posY>
+		<width>2</width>
+		<height>340</height>
+		<texture>vert_line.png</texture>
+		<visible>Control.IsVisible(31)</visible>
+	</control>
+	
+	<control>
+		<description>vertical line 4</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>965</posX>
+		<posY>280</posY>
+		<width>2</width>
+		<height>340</height>
+		<texture>vert_line.png</texture>
+		<visible>Control.IsVisible(31)</visible>
+	</control>
+	
+	<control>
+		<description>vertical line 6</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>1153</posX>
+		<posY>280</posY>
+		<width>2</width>
+		<height>340</height>
+		<texture>vert_line.png</texture>
+		<visible>Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+	</control>
+
+	<control>
+		<description>day 0 label</description>
+		<type>label</type>
+		<id>31</id>
+		<posX>-2000</posX>
+		<label>-</label>
+	</control>
+	
+	<control>
+		<description>day 0 label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>218</posX>
+		<posY>294</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>6030</label>
+		<font>Segoe Light20</font>
+		<textcolor>White</textcolor>
+		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+	</control>
+
+	<control>
+		<description>day 0 Hi label</description>
+		<type>label</type>
+		<id>32</id>
+		<posX>218</posX>
+		<posY>456</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>-</label>
+		<font>Segoe Light36</font>
+		<visible>!plugin.isenabled(InfoService)</visible>
+	</control>
+	
+	<control>
+		<description>day 0 Hi label (infoservice)</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>218</posX>
+		<posY>456</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>#infoservice.weather.today.maxtemp</label>
+		<font>Segoe Light36</font>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(9999) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+	
+	<control>
+		<description>day 0 low label</description>
+		<type>label</type>
+		<id>33</id>
+		<posX>218</posX>
+		<posY>517</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>-</label>
+		<font>Segoe Light36</font>
+		<textcolor>85cffe</textcolor>
+		<visible>!plugin.isenabled(InfoService)</visible>
+	</control>
+	
+	<control>
+		<description>day 0 low label (infoservice)</description>
+		<type>label</type>
+		<id>33</id>
+		<posX>218</posX>
+		<posY>517</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>#infoservice.weather.today.mintemp</label>
+		<font>Segoe Light36</font>
+		<textcolor>85cffe</textcolor>
+		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(9999) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+	</control>
+
+	<control>
+		<description>day 0 general weather label</description>
+		<type>label</type>
+		<id>34</id>
+		<posX>355</posX>
+		<posY>600</posY>
+		<label>-</label>
+		<font>font13</font>
+		<textcolor>White</textcolor>
+	</control>
+	
+	<control>
+		<description>day 0 icon</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>245</posX>
+		<posY>300</posY>
+		<texture>weather/128/#infoservice.weather.today.img.big.filenamewithext</texture>
+		<visible>Control.IsVisible(9999) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+	</control>
+
+	<control>
+		<description>day 1 label</description>
+		<type>label</type>
+		<id>41</id>
+		<posX>403</posX>
+		<posY>294</posY>
+		<label>-</label>
+		<width>185</width>
+		<align>center</align>
+		<font>Segoe Light20</font>
+		<textcolor>ffa9d0f7</textcolor>
+	</control>
+
+	<control>
+		<description>day 1 Hi label</description>
+		<type>label</type>
+		<id>42</id>
+		<posX>403</posX>
+		<posY>456</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>-</label>
+		<font>Segoe Light36</font>
+		<textcolor>White</textcolor>
+	</control>
+
+	<control>
+		<description>day 1 low label</description>
+		<type>label</type>
+		<id>43</id>
+		<posX>403</posX>
+		<posY>517</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>-</label>
+		<font>Segoe Light36</font>
+		<textcolor>85cffe</textcolor>
+	</control>
+
+	<control>
+		<description>day 1 general weather label</description>
+		<type>label</type>
+		<id>44</id>
+		<posX>533</posX>
+		<posY>600</posY>
+		<label>-</label>
+		<font>font13</font>
+		<textcolor>White</textcolor>
+	</control>
+	
+	<control>
+		<description>day 1 icon</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>430</posX>
+		<posY>300</posY>
+		<texture>weather/128/#infoservice.weather.day2.day.img.big.filenamewithext</texture>
+		<visible>Control.IsVisible(9999)</visible>
+	</control>
+
+	<control>
+		<description>day 2 label</description>
+		<type>label</type>
+		<id>51</id>
+		<posX>590</posX>
+		<posY>294</posY>
+		<label>-</label>
+		<width>185</width>
+		<align>center</align>
+		<font>Segoe Light20</font>
+		<textcolor>ffa9d0f7</textcolor>
+	</control>
+
+	<control>
+		<description>day 2 Hi label</description>
+		<type>label</type>
+		<id>52</id>
+		<posX>590</posX>
+		<posY>456</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>-</label>
+		<font>Segoe Light36</font>
+		<textcolor>White</textcolor>
+	</control>
+
+	<control>
+		<description>day 2 low label</description>
+		<type>label</type>
+		<id>53</id>
+		<posX>590</posX>
+		<posY>517</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>-</label>
+		<font>Segoe Light36</font>
+		<textcolor>85cffe</textcolor>
+	</control>
+
+	<control>
+		<description>day 2 general weather label</description>
+		<type>label</type>
+		<id>54</id>
+		<posX>711</posX>
+		<posY>600</posY>
+		<label>-</label>
+		<font>font13</font>
+		<textcolor>White</textcolor>
+	</control>
+	
+	<control>
+		<description>day 2 icon</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>620</posX>
+		<posY>300</posY>
+		<texture>weather/128/#infoservice.weather.day3.day.img.big.filenamewithext</texture>
+		<visible>Control.IsVisible(9999)</visible>
+	</control>
+
+	<control>
+		<description>day 3 label</description>
+		<type>label</type>
+		<id>61</id>
+		<posX>776</posX>
+		<posY>294</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>-</label>
+		<font>Segoe Light20</font>
+		<textcolor>ffa9d0f7</textcolor>
+	</control>
+
+	<control>
+		<description>day 3 Hi label</description>
+		<type>label</type>
+		<id>62</id>
+		<posX>776</posX>
+		<posY>456</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>-</label>
+		<font>Segoe Light36</font>
+		<textcolor>White</textcolor>
+	</control>
+
+	<control>
+		<description>day 3 low label</description>
+		<type>label</type>
+		<id>63</id>
+		<posX>776</posX>
+		<posY>517</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>-</label>
+		<font>Segoe Light36</font>
+		<textcolor>85cffe</textcolor>
+	</control>
+
+	<control>
+		<description>day 3 general weather label</description>
+		<type>label</type>
+		<id>64</id>
+		<posX>888</posX>
+		<posY>600</posY>
+		<label>-</label>
+		<font>font13</font>
+		<textcolor>White</textcolor>
+	</control>
+	
+	<control>
+		<description>day 3 icon</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>805</posX>
+		<posY>300</posY>
+		<texture>weather/128/#infoservice.weather.day4.day.img.big.filenamewithext</texture>
+		<visible>Control.IsVisible(9999)</visible>
+	</control>
+
+	<control>
+		<description>day 4 label</description>
+		<type>label</type>
+		<id>71</id>
+		<posX>965</posX>
+		<posY>294</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>-</label>
+		<font>Segoe Light20</font>
+		<textcolor>ffa9d0f7</textcolor>
+	</control>
+
+	<control>
+		<description>day 4 Hi label</description>
+		<type>label</type>
+		<id>72</id>
+		<posX>965</posX>
+		<posY>456</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>-</label>
+		<font>Segoe Light36</font>
+		<textcolor>White</textcolor>
+	</control>
+
+	<control>
+		<description>day 4 low label</description>
+		<type>label</type>
+		<id>73</id>
+		<posX>965</posX>
+		<posY>517</posY>
+		<width>185</width>
+		<align>center</align>
+		<label>-</label>
+		<font>Segoe Light36</font>
+		<textcolor>85cffe</textcolor>
+	</control>
+
+	<control>
+		<description>day 4 general weather label</description>
+		<type>label</type>
+		<id>74</id>
+		<posX>1066</posX>
+		<posY>600</posY>
+		<label>-</label>
+		<font>font13</font>
+		<textcolor>White</textcolor>
+	</control>
+	
+	<control>
+		<description>day  4 icon</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>996</posX>
+		<posY>300</posY>
+		<texture>weather/128/#infoservice.weather.day5.day.img.big.filenamewithext</texture>
+		<visible>Control.IsVisible(9999)</visible>
+	</control>
+
+	<control>
+		<description>Satellite image</description>
+		<type>image</type>
+		<id>1000</id>
+		<posX>513</posX>
+		<posY>282</posY>
+		<width>530</width>
+		<height>345</height>
+		<texture/>
+		<visible>no</visible>
+		<colorkey>0</colorkey>
+		<colordiffuse>White</colordiffuse>
+		<centered>yes</centered>
+		<keepaspectratio>yes</keepaspectratio>
+	</control>
+
+	
+	
+	
+	
+	
+	
+	<control>
+	<id>0</id>
+	<description>icon group</description>
+	<type>group</type>
+	<visible>Control.IsVisible(1000)</visible>
+	<dimColor>ffffffff</dimColor>
+	
+		<control>
+			<description>sat icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1140</posX>
+			<posY>275</posY>
+			<texture>#maya.weather.icons.sat</texture>
+			<width>90</width>
+			<height>74</height>
+		</control>
+		
+		<control>
+			<description>temp icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1140</posX>
+			<posY>340</posY>
+			<texture>#maya.weather.icons.temp</texture>
+			<width>90</width>
+			<height>74</height>
+		</control>
+		
+		<control>
+			<description>uv icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1140</posX>
+			<posY>390</posY>
+			<texture>#maya.weather.icons.uv</texture>
+			<width>90</width>
+			<height>74</height>
+		</control>
+		
+		<control>
+			<description>wind icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1140</posX>
+			<posY>435</posY>
+			<texture>#maya.weather.icons.wind</texture>
+			<width>90</width>
+			<height>74</height>
+		</control>
+		
+			<control>
+			<description>hum icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1140</posX>
+			<posY>485</posY>
+			<texture>#maya.weather.icons.hum</texture>
+			<width>90</width>
+			<height>74</height>
+		</control>
+		
+		<control>
+			<description>prec icon</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1140</posX>
+			<posY>543</posY>
+			<texture>#maya.weather.icons.prec</texture>
+			<width>90</width>
+			<height>74</height>
+		</control>		
+		
+	</control>
+		
+		
+
+	<control>
+		<description>Sunclock image</description>
+		<type>image</type>
+		<id>1200</id>
+		<label>-</label>
+		<posX>513</posX>
+		<posY>282</posY>
+		<width>530</width>
+		<height>345</height>
+		<onleft>3</onleft>
+		<onright>3</onright>
+		<onup>3</onup>
+		<ondown>3</ondown>
+	</control>
+
+
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>325</posY>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>Control.HasFocus(4)</visible>
+	</control>
+
+	
+	
+	
+
+
+	<control>
+		<description>location label</description>
+		<type>label</type>
+		<id>10</id>
+		<posX>-2000</posX>
+		<posY>87</posY>
+		<label>-</label>
+	</control>
+	
+	<control>
+		<description>current feels like static label</description>
+		<type>label</type>
+		<id>224</id>
+		<posX>-2000</posX>
+		<posY>218</posY>
+		<label>-</label>
+	</control>
+	
+	<control>
+		<description>Current Temp static label</description>
+		<type>label</type>
+		<id>223</id>
+		<posX>-2000</posX>
+		<posY>20</posY>
+		<label>-</label>
+	</control>
+	
+	<control>
+		<description>TWC Logo</description>
+		<type>image</type>
+		<id>101</id>
+		<posX>-2000</posX>
+		<posY>510</posY>
+		<width>152</width>
+		<height>80</height>
+		<texture>weather\logos\TWClogo_64px.png</texture>
+	</control>
+	
+	<control>
+		<description>day 4 icon</description>
+		<type>image</type>
+		<id>75</id>
+		<posX>-2000</posX>
+		<posY>506</posY>
+		<texture>-</texture>
+		<colorkey>FFFF00FF</colorkey>
+		<colordiffuse>White:#20</colordiffuse>
+	</control>
+	
+	<control>
+		<description>day 3 icon</description>
+		<type>image</type>
+		<id>65</id>
+		<posX>-2000</posX>
+		<posY>506</posY>
+		<texture>-</texture>
+		<colorkey>FFFF00FF</colorkey>
+		<colordiffuse>White:#20</colordiffuse>
+	</control>
+	
+
+	<control>
+		<description>day 1 icon</description>
+		<type>image</type>
+		<id>45</id>
+		<posX>-2000</posX>
+		<posY>506</posY>
+		<texture>-</texture>
+		<colorkey>FFFF00FF</colorkey>
+		<colordiffuse>White:#20</colordiffuse>
+	</control>
+	
+	<control>
+		<description>day 2 icon</description>
+		<type>image</type>
+		<id>55</id>
+		<posX>-2000</posX>
+		<posY>506</posY>
+		<texture>-</texture>
+		<colorkey>FFFF00FF</colorkey>
+		<colordiffuse>White:#20</colordiffuse>
+	</control>
+	
+
+	<control>
+		<description>day 0 icon</description>
+		<type>image</type>
+		<id>35</id>
+		<posX>-2000</posX>
+		<posY>506</posY>
+		<texture>-</texture>
+		<colorkey>FFFF00FF</colorkey>
+		<colordiffuse>White:#20</colordiffuse>
+	</control>
+	
+	<import>common.overlay.mini.xml</import>
+</controls>
+</window>
