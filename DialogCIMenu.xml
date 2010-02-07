@@ -54,28 +54,30 @@
             <label/>
         </control>
 		
-        <control>
-            <id>3</id>
-            <description>options listcontrol</description>
-            <type>listcontrol</type>
-            <onleft>2</onleft>
-            <onright>2</onright>
-            <posX>409</posX>
-            <posY>277</posY>
-            <width>548</width>
-            <height>300</height>
-            <animation effect="Fade" time="250">WindowOpen</animation>
-            <animation effect="Fade" time="250">WindowClose</animation>
-            <spinPosX>977</spinPosX>
-            <spinPosY>484</spinPosY>
-            <textXOff>48</textXOff>
-            <PinIconXOff>39</PinIconXOff>
-            <PinIconYOff>15</PinIconYOff>
-            <PinIconWidth>40</PinIconWidth>
-            <PinIconHeight>25</PinIconHeight>
-            <keepaspectratio>yes</keepaspectratio>
-            <itemHeight>34</itemHeight>
-            <itemWidth>53</itemWidth>
+	        <control>
+                <id>3</id>
+                <description>options listcontrol</description>
+                <type>listcontrol</type>
+                <onleft>3</onleft>
+                <onright>3</onright>
+                <posX>409</posX>
+                <posY>277</posY>
+                <width>548</width>
+                <height>300</height>
+                <textXOff2>460</textXOff2>
+                <textYOff2>10</textYOff2>
+                <spinPosX>902</spinPosX>
+                <spinPosY>535</spinPosY>
+                <textXOff>48</textXOff>
+                <textYOff>8</textYOff>
+                <textureFocus>context_item_selected.png</textureFocus>
+                <textureNoFocus>context_item.png</textureNoFocus>
+                <textureHeight>49</textureHeight>
+                <spaceBetweenItems>1</spaceBetweenItems>
+				<PinIconWidth>15</PinIconWidth>
+				<PinIconHeight>15</PinIconHeight>
+                <PinIconXOff>39</PinIconXOff>
+                <PinIconYOff>15</PinIconYOff>
             </control>
 			
         </control>

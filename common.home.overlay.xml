@@ -57,53 +57,9 @@
 		<visible>player.hasmedia+!control.isvisible(3337)</visible>
 	</control>
 
-	<control>
-		<description>play time label</description>
-		<type>label</type>
-		<id>1</id>
-		<posX>390</posX>
-		<posY>710</posY>
-		<label>#currentplaytime</label>
-		<align>right</align>
-		<font>font12</font>
-		<textcolor>6aa5cb</textcolor>
-		<visible>player.hasmedia+!control.isvisible(3337)</visible>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="250">WindowOpen</animation>
-	</control>
-
 
 <!--TV-->
-	<control>
-		<description>scrolling info label</description>
-		<type>fadelabel</type>
-		<id>1</id>
-		<width>210</width>
-		<height>37</height>
-		<posX>140</posX>
-		<posY>710</posY>
-		<font>font12</font>
-		<label>#Play.Current.Title\r#Play.Current.Genre\r#Play.Current.Year\r#Play.Current.Director</label>
-		<visible>player.hasmedia+!control.hastext(3337)+control.isvisible(3339)</visible>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="250">WindowOpen</animation>
-	</control>
 
-<!--Video-->
-	<control>
-		<description>scrolling info label</description>
-		<type>fadelabel</type>
-		<id>1</id>
-		<width>210</width>
-		<height>37</height>
-		<posX>140</posX>
-		<posY>710</posY>
-		<font>font12</font>
-		<label>#Play.Current.Title\r#Play.Current.Genre\r#Play.Current.Year\r#Play.Current.Director</label>
-		<visible>player.hasmedia+!control.isvisible(3337)+!control.isvisible(3339)</visible>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="250">WindowOpen</animation>
-	</control>
 
 <!--Audio-->
 	<control>

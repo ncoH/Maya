@@ -35,7 +35,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>109</posX>
-		<posY>657</posY>
+		<posY>669</posY>
 		<width>318</width>
 		<height>100</height>
 		<texture>now_playing_mini_bg.png</texture>
@@ -53,7 +53,7 @@
 		<width>190</width>
 		<height>37</height>
 		<posX>201</posX> <!-- 140 -->
-		<posY>694</posY>
+		<posY>706</posY>
 		<font>font12</font>
 		<label>#Play.Current.Title\r#Play.Current.Genre\r#Play.Current.Year\r#Play.Current.Director</label>
 		<visible>player.hasmedia</visible>
@@ -66,7 +66,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>142</posX>
-		<posY>694</posY>
+		<posY>706</posY>
 		<width>48</width>
 		<height>26</height>
 		<texture>now_playing_play.png</texture>
@@ -80,7 +80,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>142</posX>
-		<posY>694</posY>
+		<posY>706</posY>
 		<width>48</width>
 		<height>26</height>
 		<texture>now_playing_pause.png</texture>
