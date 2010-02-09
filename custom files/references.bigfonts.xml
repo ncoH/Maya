@@ -311,9 +311,9 @@
 		<downloadColor>ff80ff80</downloadColor>
 		<spaceBetweenItems>-3</spaceBetweenItems>
 		<textXOff>9</textXOff>
-		<textYOff>11</textYOff>
+		<textYOff>8</textYOff>
 		<textXOff2>0</textXOff2>
-		<textYOff2>10</textYOff2>
+		<textYOff2>8</textYOff2>
 		<itemWidth>0</itemWidth>
 		<itemHeight>0</itemHeight>
 		<IconXOff>1000</IconXOff>
@@ -448,7 +448,7 @@
 		<width>728</width>
 		<height>375</height>
 		<spinWidth>28</spinWidth>
-		<spinHeight>20</spinHeight>
+		<spinHeight>28</spinHeight>
 		<spinPosX>1084</spinPosX>
 		<spinPosY>662</spinPosY>
 		<spinColor>ffffffff</spinColor>

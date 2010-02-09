@@ -163,6 +163,6 @@
 
 	</control>
 
-<import>common.overlay.xml</import>
+<import>common.home.overlay.xml</import>
 </controls>
 </window>

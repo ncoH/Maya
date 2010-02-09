@@ -183,7 +183,7 @@
 	<width>1366</width>
 	<height>30</height>
 	<texture>rss_bg.png</texture>
-	<visible>plugin.isenabled(InfoService)</visible>
+	<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
 	<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
 	<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
 </control>
@@ -198,7 +198,7 @@
 	<height>35</height>
 	<keepaspectratio>no</keepaspectratio>
 	<texture>#rssimg</texture>
-	<visible>plugin.isenabled(InfoService)</visible>
+	<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
 	<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
 	<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
 </control>
@@ -214,7 +214,7 @@
 	<font>font10</font>
 	<textcolor>6aa5cb</textcolor>
 	<label>#infoservice.feed.titles</label>
-	<visible>plugin.isenabled(InfoService)</visible>
+	<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
 	<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
 	<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
 </control>

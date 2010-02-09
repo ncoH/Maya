@@ -3,8 +3,7 @@
 <defaultcontrol>50</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <define>#header.label:30000</define>
-  
-  <controls>
+<controls>
   
 	<control>
 		<description>BG</description>
@@ -72,116 +71,113 @@
 	</control>
 		
 	<control>
-      <description>Artist Biography</description>
-      <type>textboxscrollup</type>
-      <id>12</id>
-	  <posX>555</posX>
+		<description>Artist Biography</description>
+		<type>textboxscrollup</type>
+		<id>12</id>
+		<posX>555</posX>
 		<posY>250</posY>
 		<width>400</width>
 		<height>450</height>
-      <label>#MusicVids.ArtistBio</label>
+		<label>#MusicVids.ArtistBio</label>
     </control>
 	
 	<control>
-      <description>Fan Art</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>1366</width>
-      <height>768</height>
-      <texture>#MusicVids.ArtistImg</texture>
-	  <colordiffuse>10ffffff</colordiffuse>
-      <visible>control.isvisible(99)</visible>
-	  <animation effect="fade" time="500" delay="500">WindowOpen</animation>
-      <animation effect="fade" time="500">WindowClose</animation>
+		<description>Fan Art</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1366</width>
+		<height>768</height>
+		<texture>#MusicVids.ArtistImg</texture>
+		<colordiffuse>10ffffff</colordiffuse>
+		<visible>control.isvisible(99)</visible>
+		<animation effect="fade" time="500" delay="500">WindowOpen</animation>
+		<animation effect="fade" time="500">WindowClose</animation>
     </control>
 	
 		
-		<control>
-      <description>Video Thumb</description>
-      <type>image</type>
-	  <visible>control.isvisible(99)</visible>
-      <id>14</id>
-      <posX>70</posX>
-      <posY>150</posY>
-	  <width>430</width>
-	  <height>300</height>
-	  <keepaspectratio>true</keepaspectratio>
-	  <centered>yes</centered>
-      <texture>#MusicVids.VideoImg</texture>
+	<control>
+		<description>Video Thumb</description>
+		<type>image</type>
+		<visible>control.isvisible(99)</visible>
+		<id>14</id>
+		<posX>70</posX>
+		<posY>150</posY>
+		<width>430</width>
+		<height>300</height>
+		<keepaspectratio>true</keepaspectratio>
+		<centered>yes</centered>
+		<texture>#MusicVids.VideoImg</texture>
+	</control>
+	
+	<control>
+		<description>Most Played Video Label</description>
+		<type>label</type>
+		<label>Most Played Video:</label>
+		<textcolor>85cffe</textcolor>
+		<id>1</id>
+		<posX>75</posX>
+		<posY>460</posY>
+		<width>255</width>
     </control>
 	
     <control>
-      <description>Most Played Video Label</description>
-      <type>label</type>
-      <label>Most Played Video</label>
-	  <textcolor>85cffe</textcolor>
-      <id>1</id>
-      <posX>75</posX>
-      <posY>500</posY>
-	  <width>255</width>
-    </control>
-	
-    <control>
-      <description>Favorite Vid label</description>
-      <type>label</type>
-      <id>17</id>
-      <posX>75</posX>
-      <posY>530</posY>
-      <width>255</width>
-      <label>#MusicVids.MostPlayed</label>
+		<description>Favorite Vid label</description>
+		<type>label</type>
+		<id>17</id>
+		<posX>75</posX>
+		<posY>485</posY>
+		<width>255</width>
+		<label>#MusicVids.MostPlayed</label>
     </control>
 
     <control>
-      <description>Favorite Artist Static</description>
-      <type>label</type>
-      <label>Most Played Artist</label>
-      <textcolor>85cffe</textcolor>
-	  <id>1</id>
-      <posX>75</posX>
-      <posY>600</posY>
-	  <width>255</width>
+		<description>Favorite Artist Static</description>
+		<type>label</type>
+		<label>Most Played Artist:</label>
+		<textcolor>85cffe</textcolor>
+		<id>1</id>
+		<posX>75</posX>
+		<posY>520</posY>
+		<width>255</width>
     </control>
 	
 	 <control>
-      <description>Favorite Artist</description>
-      <type>label</type>
-      <label></label>
-      <id>19</id>
-      <posX>75</posX>
-      <posY>630</posY>
-	  <width>255</width>
-      <label>#MusicVids.FavArtist</label>
+		<description>Favorite Artist</description>
+		<type>label</type>
+		<label></label>
+		<id>19</id>
+		<posX>75</posX>
+		<posY>545</posY>
+		<width>255</width>
+		<label>#MusicVids.FavArtist</label>
     </control>
 	
-	   <control>
-      <description>Favorite Vid</description>
-      <type>image</type>
-      <id>18</id>
-      <posX>-2000</posX>
-      <posY>305</posY>
-	  <width>200</width>
-	  <height>90</height>
-      <texture>#MusicVids.MostPlayedThumb</texture>
-      <keepaspectratio>no</keepaspectratio>
+	<control>
+		<description>Favorite Vid</description>
+		<type>image</type>
+		<id>18</id>
+		<posX>-2000</posX>
+		<posY>305</posY>
+		<width>200</width>
+		<height>90</height>
+		<texture>#MusicVids.MostPlayedThumb</texture>
+		<keepaspectratio>no</keepaspectratio>
     </control>
 
     <control>
-      <description>Favorite Artist</description>
-      <type>image</type>
-	  <id>20</id>
-      <width>115</width>     
-      <posX>-2000</posX>
-      <posY>500</posY>
-	  <width>200</width>
-	  <height>90</height>
-      <texture>#MusicVids.FavArtistThumb</texture>
-	  <keepaspectratio>yes</keepaspectratio>     
+		<description>Favorite Artist</description>
+		<type>image</type>
+		<id>20</id>
+		<width>115</width>     
+		<posX>-2000</posX>
+		<posY>500</posY>
+		<width>200</width>
+		<height>90</height>
+		<texture>#MusicVids.FavArtistThumb</texture>
+		<keepaspectratio>yes</keepaspectratio>     
     </control>
-	
-
-	
 	
 	<control>
 		<description>Dummy label indicating artist/video view</description>
@@ -192,8 +188,6 @@
 		<label></label>
 	</control>
 	
-	
-  
 	<control>
 		<type>facadeview</type>
 		<id>50</id>
@@ -243,77 +237,93 @@
 		<visible>!Control.HasFocus(50)</visible>
 		</control>
 		
-				<control>
-				<description>Heading text label</description>
-				<type>label</type>
-				<id>1</id>
-				<posX>567</posX>
-				<posY>110</posY>
-				<label>924</label>
-				<font>Segoe Light18</font>
-				<textcolor>85cffe</textcolor>
-				</control>
+		<control>
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>567</posX>
+			<posY>110</posY>
+			<label>924</label>
+			<font>Segoe Light18</font>
+			<textcolor>85cffe</textcolor>
+		</control>
+		
+		<control>
+			<description>button group</description>
+			<type>group</type>
+			<posX>543</posX>
+			<posY>175</posY>
+			<layout>StackLayout(1)</layout>
+     
+			<control>
+		        <description>Random</description>
+		        <type>button</type>
+		        <id>2</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
+		        <onleft>50</onleft>
+		        <onright>50</onright>
+		        <onup>4</onup>
+		        <ondown>3</ondown>
+		        <label>Play All (Random)</label>
+			</control>
 		
 			<control>
-				<description>button group</description>
-				<type>group</type>
-				<posX>543</posX>
-				<posY>175</posY>
-				<layout>StackLayout(1)</layout>
-     
-      <control>
-        <description>Random</description>
-        <type>button</type>
-        <id>2</id>
-        <onleft>2</onleft>
-        <onright>50</onright>
-        <onup>4</onup>
-        <ondown>3</ondown>
-        <label>Play All (Random)</label>
-      </control>
+		        <description>Smart Playlist</description>
+		        <type>button</type>
+		        <id>3</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
+		        <onleft>50</onleft>
+		        <onright>50</onright>
+		        <onup>2</onup>
+		        <ondown>4</ondown>
+		        <label>Smart Playlist</label>        
+			</control>
+		
+			<control>
+		        <description>Playlist</description>
+		        <type>button</type>
+		        <id>4</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
+		        <onleft>50</onleft>
+		        <onright>50</onright>
+		        <onup>3</onup>
+		        <ondown>2</ondown>
+		        <label>Playlist</label>
+			</control>
 
-	<control>
-        <description>Smart Playlist</description>
-        <type>button</type>
-        <id>3</id>
-        <onleft>3</onleft>
-        <onright>50</onright>
-        <onup>2</onup>
-        <ondown>4</ondown>
-        <label>Smart Playlist</label>        
-      </control>
-
-     <control>
-        <description>Playlist</description>
-        <type>button</type>
-        <id>4</id>
-        <onleft>4</onleft>
-        <onright>50</onright>
-        <onup>3</onup>
-        <ondown>2</ondown>
-        <label>Playlist</label>
-      </control>
-
-  </control>
+		</control>
   
    </control>
   
   
 
 	<control>
-  <description>Sort Label Overlay</description> 
-  <type>label</type> 
-  <id>22</id> 
-  <posX>50</posX> 
-  <posY>550</posY> 
-  <label>#MusicVids.Sort</label> 
-  <align>right</align> 
-  <font>font32</font> 
-  <textcolor>20ffffff</textcolor> 
-  </control>
+		<description>Sort Label Overlay</description> 
+		<type>label</type> 
+		<id>22</id> 
+		<posX>50</posX> 
+		<posY>550</posY> 
+		<label>#MusicVids.Sort</label> 
+		<align>right</align> 
+		<font>font32</font> 
+		<textcolor>20ffffff</textcolor> 
+	</control>
   
-
-	
   	<control>
 		<description>Artist</description>
 		<type>label</type>
@@ -338,7 +348,16 @@
 		<visible>!Control.IsVisible(9999)</visible>
 	</control>
 	
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>0</posX>
+		<posY>325</posY>
+		<texture>hiddenmenu_tab.png</texture>
+		<visible>Control.HasFocus(50)</visible>
+	</control>
+	
 <import>common.overlay.xml</import>
 	
-  </controls>
+</controls>
 </window>
