@@ -20,6 +20,7 @@
 		<texture>#TV.View.thumb</texture>
 		<keepaspectratio>yes</keepaspectratio>
 	</control>
+	
 
 	<control>
 		<description>rec logo</description>
@@ -33,16 +34,16 @@
 	</control>
 
 	<control>
-		<description>Channel Name and time</description>
-		<id>0</id>
-		<type>fadelabel</type>
+		<description>On tv NEXT</description>
+		<id>37</id>
+		<type>textbox</type>
 		<width>770</width>
+		<height>24</height>
 		<posX>360</posX>
 		<posY>613</posY>
 		<font>Segoe Light14</font>
 		<textcolor>ff85cffe</textcolor>
-		<label>#TV.View.start - #TV.View.stop - #TV.View.channel</label>
-	</control>
+    </control>
 
 	<control>
 		<description>Program Button Up</description>
@@ -98,6 +99,7 @@
 		<label>#TV.View.title</label>
 		<font>Segoe Light18</font>
 	</control>
+	
 
 	<control>
 		<description>Plot</description>
