@@ -216,7 +216,7 @@
 		<id>101</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#topitem3</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -229,7 +229,7 @@
 		<id>102</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#topitem2</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -241,7 +241,7 @@
 		<id>103</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#topitem1</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -274,7 +274,7 @@
 		<id>105</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#bottomitem1</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -286,7 +286,7 @@
 		<id>106</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#bottomitem2</label>
 		<font>Segoe Light32</font>
 		<animation effect="fade" start="0" end="100" time="250" delay="300" reversible="false">visible</animation>
@@ -311,7 +311,7 @@
 		<id>201</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#topitem3</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -324,7 +324,7 @@
 		<id>202</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#topitem2</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -336,7 +336,7 @@
 		<id>203</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#topitem1</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -369,7 +369,7 @@
 		<id>205</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#bottomitem1</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -381,7 +381,7 @@
 		<id>206</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#bottomitem2</label>
 		<font>Segoe Light32</font>
 		<animation effect="fade" start="0" end="100" time="250" delay="300" reversible="false">Visible</animation>
@@ -407,7 +407,7 @@
 		<id>302</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#topitem2</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -420,7 +420,7 @@
 		<id>303</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#topitem1</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -454,7 +454,7 @@
 		<id>305</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#bottomitem1</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -466,7 +466,7 @@
 		<id>306</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#bottomitem2</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -478,7 +478,7 @@
 		<id>307</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#bottomitem3</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -503,7 +503,7 @@
 		<id>402</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#topitem2</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -516,7 +516,7 @@
 		<id>403</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#topitem1</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -549,7 +549,7 @@
 		<id>405</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#bottomitem1</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -561,7 +561,7 @@
 		<id>406</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#bottomitem2</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
@@ -573,7 +573,7 @@
 		<id>407</id>
 		<type>label</type>
 		<height>74</height>
-		<width>355</width>
+		<width>555</width>
 		<label>#bottomitem3</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
