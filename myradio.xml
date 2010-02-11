@@ -225,7 +225,6 @@
 		<height>350</height>
 		<texture>blackborders_music.png</texture>
 		<visible>facadeview.list|facadeview.album</visible>
-		<keepaspectratio>yes</keepaspectratio>
 	</control>
 
 <import>common.overlay.xml</import>

@@ -691,6 +691,19 @@ multiple view modes.
 	  <texture>Logos\video\720.png</texture>
 	  <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,720p)</visible>
 	</control>
+	
+	<!-- SD 480/576i -->
+	<control>
+	  <description>SD 480/576i</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>622</posX>
+	  <posY>693</posY>
+	  <width>65</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\video\SD.png</texture>
+	  <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.videoresolution,SD)|string.equals(#MovingPictures.LocalMedia.videoresolution,576i)]</visible>
+	</control>
 
 	<!-- HD 1080p -->
 	<control>
@@ -746,6 +759,19 @@ multiple view modes.
 	  <texture>Logos\audio\aac.png</texture>
 	  <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,AAC)</visible>
 	</control>
+	
+	<!-- MP3 -->
+	<control>
+	  <description>MP3</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>697</posX>
+	  <posY>690</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\mp3.png</texture>
+	  <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,MP3)</visible>
+	</control>
 
 	<!-- WMA -->
 	<control>
@@ -785,7 +811,7 @@ multiple view modes.
 	  <width>40</width>
 	  <keepaspectratio>yes</keepaspectratio>
 	  <texture>Logos\audio\1.png</texture>
-	  <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiochannels,1)</visible>
+	  <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiochannels,1)|string.equals(#MovingPictures.LocalMedia.audiochannels,mono)]</visible>
 	</control>
 	
 	<control>
@@ -797,7 +823,7 @@ multiple view modes.
 	  <width>40</width>
 	  <keepaspectratio>yes</keepaspectratio>
 	  <texture>Logos\audio\2.png</texture>
-	  <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiochannels,2)</visible>
+	  <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiochannels,2)|string.equals(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
 	</control>
 	
 	<control>

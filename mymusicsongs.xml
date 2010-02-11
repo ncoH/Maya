@@ -347,6 +347,8 @@
 		<texture>blackborders_music.png</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
+	
 	<import>common.overlay.xml</import>
+	
 </controls>
 </window>
