@@ -157,11 +157,11 @@
 		<id>10</id>
 		<posX>528</posX>
 		<posY>150</posY>
-		<width>720</width>
+		<width>749</width>
 		<height>600</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>1242</spinPosX>
+		<spinPosX>1245</spinPosX>
 		<spinPosY>718</spinPosY>
 		<spinAlign>right</spinAlign>
 		<spinColor>ffffffff</spinColor>
@@ -180,9 +180,9 @@
 		<remoteColor>ffFFA075</remoteColor>
 		<downloadColor>ff80ff80</downloadColor>
 		<spaceBetweenItems>-3</spaceBetweenItems>
-		<textXOff>8</textXOff>
+		<textXOff>9</textXOff>
 		<textYOff>8</textYOff>
-		<textXOff2>710</textXOff2>
+		<textXOff2>738</textXOff2>
 		<textYOff2>8</textYOff2>
 		<itemWidth>0</itemWidth>
 		<itemHeight>0</itemHeight>
@@ -312,7 +312,7 @@
 		<spaceBetweenItems>-3</spaceBetweenItems>
 		<textXOff>9</textXOff>
 		<textYOff>8</textYOff>
-		<textXOff2>0</textXOff2>
+		<textXOff2>597</textXOff2>
 		<textYOff2>8</textYOff2>
 		<itemWidth>0</itemWidth>
 		<itemHeight>0</itemHeight>
