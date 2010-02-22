@@ -405,7 +405,7 @@ multiple view modes.
 		<width>400</width>
 		<font>Segoe Light18</font>
 		<textcolor>85cffe</textcolor>
-		<visible>facadeview.list+Control.IsVisible(50)+string.equals(#MovingPictures.SelectedMovie.extra.genres.3,)</visible>
+		<visible>facadeview.list+Control.IsVisible(50)+!string.equals(#MovingPictures.SelectedMovie.extra.genres.2,)+string.equals(#MovingPictures.SelectedMovie.extra.genres.3,)</visible>
 	</control>
 	
 	<!-- 3 genres or more -->
