@@ -878,6 +878,20 @@ This file should contain the details view
 	  <texture>Logos\audio\aac.png</texture>
 	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.audiocodec,AAC)</visible>
 	</control>
+	
+	<!-- MP3 -->
+	<control>
+	  <description>MP3</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>1055</posX>
+	  <posY>662</posY>
+	  <width>75</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\audio\mp3.png</texture>
+<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.audiocodec,MP3)</visible>
+<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
 
 	<!-- WMA -->
 	<control>
