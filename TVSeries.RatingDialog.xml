@@ -13,10 +13,10 @@
             <posY>395</posY>
             <width>23</width>
             <height>19</height>
-            <textureFocus>UserRatingStarOn.png</textureFocus>
-            <textureNoFocus>UserRatingStarOn.png</textureNoFocus>
-            <AltTextureFocus>UserRatingStarOff.png</AltTextureFocus>
-            <AltTextureNoFocus>UserRatingStarOff.png</AltTextureNoFocus>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
         </control>
         <control>
             <id>101</id>
@@ -26,10 +26,10 @@
             <posY>395</posY>
             <width>23</width>
             <height>19</height>
-            <textureFocus>UserRatingStarOn.png</textureFocus>
-            <textureNoFocus>UserRatingStarOn.png</textureNoFocus>
-            <AltTextureFocus>UserRatingStarOff.png</AltTextureFocus>
-            <AltTextureNoFocus>UserRatingStarOff.png</AltTextureNoFocus>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
         </control>
         <control>
             <id>102</id>
@@ -39,10 +39,10 @@
             <posY>395</posY>
             <width>23</width>
             <height>19</height>
-            <textureFocus>UserRatingStarOn.png</textureFocus>
-            <textureNoFocus>UserRatingStarOn.png</textureNoFocus>
-            <AltTextureFocus>UserRatingStarOff.png</AltTextureFocus>
-            <AltTextureNoFocus>UserRatingStarOff.png</AltTextureNoFocus>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
         </control>
         <control>
             <id>103</id>
@@ -52,10 +52,10 @@
             <posY>395</posY>
             <width>23</width>
             <height>19</height>
-            <textureFocus>UserRatingStarOn.png</textureFocus>
-            <textureNoFocus>UserRatingStarOn.png</textureNoFocus>
-            <AltTextureFocus>UserRatingStarOff.png</AltTextureFocus>
-            <AltTextureNoFocus>UserRatingStarOff.png</AltTextureNoFocus>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
         </control>
         <control>
             <id>104</id>
@@ -65,10 +65,10 @@
             <posY>395</posY>
             <width>23</width>
             <height>19</height>
-            <textureFocus>UserRatingStarOn.png</textureFocus>
-            <textureNoFocus>UserRatingStarOn.png</textureNoFocus>
-            <AltTextureFocus>UserRatingStarOff.png</AltTextureFocus>
-            <AltTextureNoFocus>UserRatingStarOff.png</AltTextureNoFocus>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
         </control>
         <control>
             <id>105</id>
@@ -78,10 +78,10 @@
             <posY>395</posY>
             <width>23</width>
             <height>19</height>
-            <textureFocus>UserRatingStarOn.png</textureFocus>
-            <textureNoFocus>UserRatingStarOn.png</textureNoFocus>
-            <AltTextureFocus>UserRatingStarOff.png</AltTextureFocus>
-            <AltTextureNoFocus>UserRatingStarOff.png</AltTextureNoFocus>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
         </control>
         <control>
             <id>106</id>
@@ -91,10 +91,10 @@
             <posY>395</posY>
             <width>23</width>
             <height>19</height>
-            <textureFocus>UserRatingStarOn.png</textureFocus>
-            <textureNoFocus>UserRatingStarOn.png</textureNoFocus>
-            <AltTextureFocus>UserRatingStarOff.png</AltTextureFocus>
-            <AltTextureNoFocus>UserRatingStarOff.png</AltTextureNoFocus>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
         </control>
         <control>
             <id>107</id>
@@ -104,10 +104,10 @@
             <posY>395</posY>
             <width>23</width>
             <height>19</height>
-            <textureFocus>UserRatingStarOn.png</textureFocus>
-            <textureNoFocus>UserRatingStarOn.png</textureNoFocus>
-            <AltTextureFocus>UserRatingStarOff.png</AltTextureFocus>
-            <AltTextureNoFocus>UserRatingStarOff.png</AltTextureNoFocus>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
         </control>
         <control>
             <id>108</id>
@@ -117,10 +117,10 @@
             <posY>395</posY>
             <width>23</width>
             <height>19</height>
-            <textureFocus>UserRatingStarOn.png</textureFocus>
-            <textureNoFocus>UserRatingStarOn.png</textureNoFocus>
-            <AltTextureFocus>UserRatingStarOff.png</AltTextureFocus>
-            <AltTextureNoFocus>UserRatingStarOff.png</AltTextureNoFocus>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
         </control>
         <control>
             <id>109</id>
@@ -130,10 +130,10 @@
             <posY>395</posY>
             <width>23</width>
             <height>19</height>
-            <textureFocus>UserRatingStarOn.png</textureFocus>
-            <textureNoFocus>UserRatingStarOn.png</textureNoFocus>
-            <AltTextureFocus>UserRatingStarOff.png</AltTextureFocus>
-            <AltTextureNoFocus>UserRatingStarOff.png</AltTextureNoFocus>
+            <textureFocus>starwhite.png</textureFocus>
+            <textureNoFocus>starwhite.png</textureNoFocus>
+            <AltTextureFocus>stargrey.png</AltTextureFocus>
+            <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
         </control>
         <control>
             <id>7</id>

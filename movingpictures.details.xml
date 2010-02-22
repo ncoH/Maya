@@ -797,7 +797,20 @@ This file should contain the details view
 	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.videocodec,XVID)</visible>
 	</control>
 	
-	<!--Video Resolutions-->	
+	<!--Video Resolutions-->
+	<!-- SD 480/576i -->
+	<control>
+	  <description>SD 480/576i</description>
+	  <type>image</type>
+	  <id>0</id>
+	  <posX>980</posX>
+	  <posY>665</posY>
+	  <width>65</width>
+	  <keepaspectratio>yes</keepaspectratio>
+	  <texture>Logos\video\SD.png</texture> 			<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+[string.equals(#MovingPictures.LocalMedia.videoresolution,SD)|string.equals(#MovingPictures.LocalMedia.videoresolution,576i)]</visible>
+<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
 	<!-- HD 720p -->
 	<control>
 	  <description>HD 720</description>
@@ -905,7 +918,7 @@ This file should contain the details view
 	  <width>40</width>
 	  <keepaspectratio>yes</keepaspectratio>
 	  <texture>Logos\audio\1.png</texture>
-	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.audiochannels,1)</visible>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+[string.equals(#MovingPictures.LocalMedia.audiochannels,1)|string.equals(#MovingPictures.LocalMedia.audiochannels,mono)]</visible>
 	</control>
 	
 	<control>
@@ -917,7 +930,7 @@ This file should contain the details view
 	  <width>40</width>
 	  <keepaspectratio>yes</keepaspectratio>
 	  <texture>Logos\audio\2.png</texture>
-	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+string.equals(#MovingPictures.LocalMedia.audiochannels,2)</visible>
+	 <animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation> <visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(66)+!Control.HasFocus(6)+[string.equals(#MovingPictures.LocalMedia.audiochannels,2)|string.equals(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
 	</control>
 	
 	<control>
