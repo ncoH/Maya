@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>2005</id>
-<defaultcontrol>13</defaultcontrol>
+<defaultcontrol>990</defaultcontrol>
 <allowoverlay>no</allowoverlay>
 <controls>
 	<import>common.progressbar.xml</import>
@@ -29,6 +29,7 @@
 		<font>font14</font>
 		<align>center</align>
 		<label>-</label>
+		<visible>Control.IsVisible(10)</visible>
 	</control>
 
 	<control>
@@ -235,6 +236,43 @@
 		<texture>video.action.forbidden.png</texture>
 		<colordiffuse>White</colordiffuse>
 		<visible>no</visible>
+	</control>
+	
+	<control>
+		<description>Trigger button</description>
+		<posY>584</posY>
+		<type>button</type>
+		<id>990</id>
+		<label>-</label>
+		<textureFocus>-</textureFocus>
+		<onup>991</onup>
+		<ondown>990</ondown>
+		<onright>990</onright>
+		<onleft>990</onleft>
+	</control>
+	
+	<control>
+		<description>Fake trigger button expand</description>
+		<posX>657</posX>
+		<posY>559</posY>
+		<width>53</width>
+		<height>20</height>
+		<type>image</type>
+		<id>999</id>
+		<texture>osd_expand_icon.png</texture>
+		<visible>Control.HasFocus(990) + window.isosdvisible</visible>
+	</control>
+	
+	<control>
+		<description>Fake trigger button collapse</description>
+		<posX>657</posX>
+		<posY>559</posY>
+		<width>53</width>
+		<height>20</height>
+		<type>image</type>
+		<id>999</id>
+		<texture>osd_collapse_icon.png</texture>
+		<visible>!Control.HasFocus(990) + window.isosdvisible</visible>
 	</control>
 
 </controls>

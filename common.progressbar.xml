@@ -33,30 +33,6 @@
 		<texture>osd_bg.png</texture>
 		<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | [window.isvisible(2005) + [window.isosdvisible|control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking]]</visible>
 	</control>
-	
-	<control>
-		<description>Fake trigger button expand</description>
-		<posX>657</posX>
-		<posY>559</posY>
-		<width>53</width>
-		<height>20</height>
-		<type>image</type>
-		<id>999</id>
-		<texture>osd_expand_icon.png</texture>
-		<visible>Control.HasFocus(990) + window.isosdvisible</visible>
-	</control>
-	
-	<control>
-		<description>Fake trigger button collapse</description>
-		<posX>657</posX>
-		<posY>559</posY>
-		<width>53</width>
-		<height>20</height>
-		<type>image</type>
-		<id>999</id>
-		<texture>osd_collapse_icon.png</texture>
-		<visible>!Control.HasFocus(990) + window.isosdvisible</visible>
-	</control>
 
 	<control>
 		<type>progress</type>
@@ -263,7 +239,7 @@
 		<height>21</height>
 		<width>21</width>
 		<texture>osd_clock_icon.png</texture>
-		<visible>window.isosdvisible+player.playing</visible>
+		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking</visible>
 	</control>
 
 	<control>
@@ -275,9 +251,9 @@
 		<height>30</height>
 		<width>144</width>
 		<font>font14</font>
-		<align>center</align>
+		<align>right</align>
 		<label>#time</label>
-		<visible>window.isosdvisible+player.playing</visible>
+		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking</visible>
 	</control>
 
 	<control>

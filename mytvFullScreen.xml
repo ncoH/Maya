@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <id>602</id>
-<defaultcontrol>13</defaultcontrol>
+<defaultcontrol>990</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <define>#percentage:#TV.View.Percentage</define>
 <define>#currentplaytime:#TV.View.start</define>
@@ -9,6 +9,19 @@
 <define>#duration:#TV.View.stop</define>
 <controls>
 	<import>common.progressbar.tv.xml</import>
+	
+	<control>
+		<description>extra overlay</description>
+		<type>image</type>
+		<id>999</id>
+		<posX>483</posX>
+		<posY>660</posY>
+		<width>400</width>
+		<height>36</height>
+		<texture>osd_bg_extraol.png</texture>
+		<visible>Control.IsVisible(10)</visible>
+	</control>
+	
 	<control>
 		<description>row 1 label</description>
 		<type>label</type>
@@ -20,6 +33,7 @@
 		<font>font14</font>
 		<align>center</align>
 		<label>-</label>
+		<visible>Control.IsVisible(10)</visible>
 	</control>
 
 	<control>

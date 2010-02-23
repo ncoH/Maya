@@ -240,6 +240,30 @@
 		<onright>990</onright>
 		<onleft>990</onleft>
 	</control>
+	
+	<control>
+		<description>Fake trigger button expand</description>
+		<posX>657</posX>
+		<posY>559</posY>
+		<width>53</width>
+		<height>20</height>
+		<type>image</type>
+		<id>999</id>
+		<texture>osd_expand_icon.png</texture>
+		<visible>Control.HasFocus(990) + window.isosdvisible</visible>
+	</control>
+	
+	<control>
+		<description>Fake trigger button collapse</description>
+		<posX>657</posX>
+		<posY>559</posY>
+		<width>53</width>
+		<height>20</height>
+		<type>image</type>
+		<id>999</id>
+		<texture>osd_collapse_icon.png</texture>
+		<visible>!Control.HasFocus(990) + window.isosdvisible</visible>
+	</control>
 
     <control>
       <description>Sub Menu Background (subtitles)</description>

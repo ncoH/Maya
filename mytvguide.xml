@@ -192,7 +192,7 @@
 		<id>13</id>
 		<posX>435</posX>
 		<posY>533</posY>
-		<width>666</width>
+		<width>850</width>
 		<label>#TV.Guide.Title</label>
 		<font>Segoe Light18</font>
 		<animation effect="fade" time="800">WindowOpen</animation>
@@ -205,6 +205,7 @@
 		<id>14</id>
 		<posX>435</posX>
 		<posY>575</posY>
+		<width>850</width>
 		<label>#TV.Guide.Time - #TV.Guide.Genre</label>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="800">WindowOpen</animation>
