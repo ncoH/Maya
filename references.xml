@@ -38,8 +38,8 @@
 		<description>default button</description>
 		<type>button</type>
 		<id>1</id>
-		<posX>650</posX>
-		<posY>236</posY>
+		<posX>569</posX>
+		<posY>266</posY>
 		<width>239</width>
 		<height>36</height>
 		<textXOff>18</textXOff>
@@ -148,9 +148,9 @@
 		<description>default listcontrol</description>
 		<type>listcontrol</type>
 		<id>10</id>
-		<posX>528</posX>
+		<posX>557</posX>
 		<posY>150</posY>
-		<width>749</width>
+		<width>748</width>
 		<height>600</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>

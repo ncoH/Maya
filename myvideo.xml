@@ -12,7 +12,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>552</posX>
+		<posX>585</posX>
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
@@ -23,6 +23,18 @@
 		<valign>middle</valign>
 	</control>
 
+	<control>
+		<description>separator listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>525</posX>
+		<posY>136</posY>
+		<width>32</width>
+		<height>632</height>
+		<texture>listcontrol_separator.png</texture>
+		<visible>facadeview.list</visible>
+    </control>
+	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>

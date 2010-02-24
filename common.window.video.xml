@@ -59,7 +59,7 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>555</posX>
+		<posX>590</posX>
 		<posY>142</posY>
 		<width>700</width>
 		<label>#selecteditem</label>

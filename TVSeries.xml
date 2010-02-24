@@ -22,6 +22,18 @@
 		<visible>facadeview.list</visible>
     </control>
 	
+	 <control>
+		<description>separator listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>979</posX>
+		<posY>136</posY>
+		<width>32</width>
+		<height>632</height>
+		<texture>listcontrol_separator.png</texture>
+		<visible>facadeview.list</visible>
+    </control>
+	
 	<control>
 		<description>BG Banner</description>
 		<type>image</type>
@@ -1330,16 +1342,16 @@
           <description>Text List</description>
           <type>listcontrol</type>
           <id>50</id>
-          <posX>981</posX>
+          <posX>1011</posX>
 		  <posY>183</posY>
 		  <onleft>2</onleft>
           <onright>2</onright>
 		  <scrollOffset>1</scrollOffset>
           <height>490</height>
-		  <width>299</width>
+		  <width>304</width>
           <textureFocus>listcontrol_item_selected_small.png</textureFocus>
 		  <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-		  <textXOff>-65</textXOff>
+		  <textXOff>-50</textXOff>
 		  <textYOff>10</textYOff>
           <textXOff2>285</textXOff2>
 		  <textYOff2>10</textYOff2>
