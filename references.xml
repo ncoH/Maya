@@ -38,8 +38,8 @@
 		<description>default button</description>
 		<type>button</type>
 		<id>1</id>
-		<posX>569</posX>
-		<posY>266</posY>
+		<posX>650</posX>
+		<posY>236</posY>
 		<width>239</width>
 		<height>36</height>
 		<textXOff>18</textXOff>

@@ -190,7 +190,7 @@ multiple view modes.
 		<width>342</width>
 		<height>640</height>
 		<texture>menu_bg.png</texture>
-		<visible>Control.IsVisible(51)</visible>
+		<visible>!Control.HasFocus(50)</visible>
 		</control>
 		
 				<control>
@@ -354,7 +354,7 @@ multiple view modes.
 		<label>#MovingPictures.SelectedMovie.year</label>
 		<id>0</id>
 		<posX>555</posX>
-		<posY>180</posY>
+		<posY>195</posY>
 		<width>400</width>
 		<font>Segoe Light18</font>
 		<textcolor>85cffe</textcolor>
@@ -368,7 +368,7 @@ multiple view modes.
 		<label>#MovingPictures.SelectedMovie.runtime.localized.long</label>
 		<id>0</id>
 		<posX>555</posX>
-		<posY>215</posY>
+		<posY>230</posY>
 		<width>400</width>
 		<font>Segoe Light18</font>
 		<textcolor>85cffe</textcolor>
@@ -399,7 +399,7 @@ multiple view modes.
 		<label>#MovingPictures.SelectedMovie.extra.genres.1</label>
 		<id>0</id>
 		<posX>555</posX>
-		<posY>250</posY>
+		<posY>265</posY>
 		<width>400</width>
 		<font>Segoe Light18</font>
 		<textcolor>85cffe</textcolor>
@@ -413,7 +413,7 @@ multiple view modes.
 		<label>#MovingPictures.SelectedMovie.extra.genres.1, #MovingPictures.SelectedMovie.extra.genres.2</label>
 		<id>0</id>
 		<posX>555</posX>
-		<posY>250</posY>
+		<posY>265</posY>
 		<width>400</width>
 		<font>Segoe Light18</font>
 		<textcolor>85cffe</textcolor>
@@ -427,7 +427,7 @@ multiple view modes.
 		<label>#MovingPictures.SelectedMovie.extra.genres.1, #MovingPictures.SelectedMovie.extra.genres.2, #MovingPictures.SelectedMovie.extra.genres.3</label>
 		<id>0</id>
 		<posX>555</posX>
-		<posY>250</posY>
+		<posY>265</posY>
 		<width>400</width>
 		<font>Segoe Light18</font>
 		<textcolor>85cffe</textcolor>
@@ -608,7 +608,7 @@ multiple view modes.
 		<width>342</width>
 		<height>640</height>
 		<texture>menu_bg.png</texture>
-		<visible>Control.HasFocus(51)</visible>
+		<visible>Control.IsVisible(51)</visible>
 	</control>
 	
 	<control>
