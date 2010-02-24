@@ -70,7 +70,7 @@
 	<control>
 		<description>dialog line 4</description>
 		<type>fadelabel</type>
-		<id>4</id>
+		<id>5</id>
 		<posX>470</posX>
 		<posY>431</posY>
 		<label>-</label>

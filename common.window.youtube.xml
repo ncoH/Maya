@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <controls>
-<!--Dummy label-->
-	<control>
-		<description>Selected item Label</description>
-		<type>label</type>
-		<id>7773</id>
-		<posX>-2000</posX>
-		<posY>100</posY>
-		<label>#title</label>
-		<visible>control.hastext(7773)</visible>
-	</control>
 
 	<control>
 		<description>BG</description>
@@ -27,7 +17,7 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_thumbs.png</texture>
-		<visible>facadeview.smallicons|facadeview.largeicons</visible>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+!control.isvisible(47)</visible>
 	</control>
 	
 	<control>
@@ -37,7 +27,7 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_filmstrip.png</texture>
-		<visible>facadeview.filmstrip</visible>
+		<visible>facadeview.filmstrip+!control.isvisible(47)</visible>
 	</control>
 	
 	<control>
@@ -76,31 +66,30 @@
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>555</posX>
-		<posY>110</posY>
+		<posY>142</posY>
 		<width>700</width>
-		<label>#title</label>
+		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
-		<visible>facadeview.list+control.isvisible(7773)+Control.IsVisible(500)</visible>
+		<valign>middle</valign>
+		<visible>[!facadeview.filmstrip+!facadeview.smallicons+!facadeview.largeicons]+!control.isvisible(47)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="zoom" easing="out" start="50,50" end="100,100" center="683,384" time="550">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
-		<animation effect="zoom" easing="out" start="100,100" end="50,50" center="683,384" time="550">WindowClose</animation>
 	</control>
-
+	
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>555</posX>
-		<posY>130</posY>
-		<width>700</width>
+		<posX>0</posX>
+		<posY>142</posY>
+		<width>1366</width>
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
-		<visible>facadeview.list+!control.isvisible(7773)+Control.IsVisible(500)</visible>
+		<align>center</align>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!control.isvisible(47)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="zoom" start="50,50" end="100,100" center="683,384" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
-		<animation effect="zoom" start="100,100" end="50,50" center="683,384" time="200">WindowClose</animation>
+		<valign>middle</valign>
 	</control>
 
 	<control>
@@ -113,11 +102,9 @@
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<align>center</align>
-		<visible>control.isvisible(47)+Control.HasFocus(50)</visible>
+		<visible>control.isvisible(47)+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="zoom" start="50,50" end="100,100" center="683,384" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
-		<animation effect="zoom" start="100,100" end="50,50" center="683,384" time="200">WindowClose</animation>
 	</control>
 
 </controls>

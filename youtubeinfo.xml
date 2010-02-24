@@ -90,22 +90,9 @@
 		<width>1366</width>
 		<posX>0</posX>
 		<posY>180</posY>
-		<label>#Youtube.fm.NowPlaying.Video.Title</label>
+		<label>#Youtube.fm.NowPlaying.Video.Title - #Youtube.fm.NowPlaying.Artist.Name</label>
 		<font>font12</font>
 		<align>center</align>
-		<textcolor>ffffffff</textcolor>
-	</control>
-	
-	<control>
-		<description>meta label</description>
-		<type>label</type>
-		<id>47</id>
-		<posX>71</posX>
-		<posY>52</posY>
-		<label>#Youtube.fm.NowPlaying.Artist.Name</label>
-		<font>font12</font>
-		<align>left</align>
-		<textcolor>ffffffff</textcolor>
 	</control>
 	
 	<control>

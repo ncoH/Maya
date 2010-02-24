@@ -10,12 +10,12 @@
 	<control>
 		<id>500</id>
 		<type>image</type>
-		<posX>76</posX>
-		<posY>179</posY>
-		<width>375</width>
-		<height>208</height>
+		<posX>91</posX>
+        <posY>207</posY>
+        <width>365</width>
+	    <height>203</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
-		<visible>[facadeview.list|facadeview.album]+Control.HasFocus(50)</visible>
+		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
@@ -23,19 +23,20 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>0</posX>
-		<posY>144</posY>
-		<width>508</width>
-		<height>624</height>
-		<visible>[facadeview.list|facadeview.album]+Control.HasFocus(50)</visible>
-		<texture flipY="true" diffuse="Thumb_Mask.png">roundedcorners_recordings.png</texture>
+		<posX>44</posX>
+	    <posY>161</posY>
+	    <width>457</width>
+	    <height>295</height>
+		<texture>blackborders_recordings.png</texture>
+		<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 	
 	<control>
 		<type>actiongroup</type>
-		<description>action menu</description><defaultcontrol>2</defaultcontrol>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
 		<onexit>50</onexit>
 		<buttonX>0</buttonX>
 		<buttonY>0</buttonY>
@@ -210,7 +211,7 @@
 		<posX>0</posX>
 		<posY>325</posY>
 		<texture>hiddenmenu_tab.png</texture>
-		<visible>[facadeview.list|facadeview.album]+Control.HasFocus(50)</visible>
+		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.album]+Control.HasFocus(50)</visible>
 	</control>
 	
 	<control>
