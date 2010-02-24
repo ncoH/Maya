@@ -596,7 +596,7 @@ multiple view modes.
 		<width>342</width>
 		<height>640</height>
 		<texture>menu_bg.png</texture>
-		<visible>Control.HasFocus(51)</visible>
+		<visible>Control.IsVisible(51)</visible>
 	</control>
 	
 	<control>
@@ -608,7 +608,7 @@ multiple view modes.
 		<label>Movies</label>
 		<font>Segoe Light18</font>
 		<textcolor>85cffe</textcolor>
-		<visible>Control.HasFocus(51)</visible>
+		<visible>Control.IsVisible(51)</visible>
 	</control>
 
 
