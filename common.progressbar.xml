@@ -260,10 +260,12 @@
 		<description>Video Logo</description>
 		<type>image</type>
 		<id>999</id>
-		<posX>240</posX>
+		<posX>210</posX>
 		<posY>566</posY>
-		<width>80</width>
+		<width>120</width>
 		<height>80</height>
+		<align>center</align>
+     	<centered>yes</centered>
 		<texture>#Play.Current.Thumb</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<visible>window.isosdvisible</visible>

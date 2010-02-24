@@ -256,7 +256,7 @@
 		<height>21</height>
 		<width>21</width>
 		<texture>osd_clock_icon.png</texture>
-		<visible>window.isosdvisible+player.playing</visible>
+		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking</visible>
 	</control>
 
 	<control>
@@ -270,7 +270,7 @@
 		<font>font14</font>
 		<align>center</align>
 		<label>#time</label>
-		<visible>window.isosdvisible+player.playing</visible>
+		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking</visible>
 	</control>
 
 </controls>
