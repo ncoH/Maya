@@ -97,6 +97,7 @@
 					<height>49</height>
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
+					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>8</onup>
 					<ondown>3</ondown>
@@ -114,6 +115,7 @@
 					<textYOff>12</textYOff>
 					<offsetSortButtonX>240</offsetSortButtonX>
 					<offsetSortButtonY>14</offsetSortButtonY>
+					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>2</onup>
 					<ondown>6</ondown>
@@ -130,6 +132,7 @@
 					<height>49</height>
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
+					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>3</onup>
 					<ondown>7</ondown>
@@ -147,6 +150,7 @@
 					<height>49</height>
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
+					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>6</onup>
 					<ondown>8</ondown>
@@ -164,6 +168,7 @@
 					<height>49</height>
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
+					<onleft>50</onleft>
 					<onright>50</onright>
 					<ondown>2</ondown>
 					<onup>7</onup>
