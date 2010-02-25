@@ -26,28 +26,39 @@
 		<align>center</align>
 	</control>
 	
+	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>297</posX>
+		<posY>210</posY>
+		<width>335</width>
+		<height>335</height>
+		<visible>!control.hasthumb(500)</visible>
+		<texture>DefaultMyradioBig.png</texture>
+	</control>
+	
     <control>
-      <type>image</type>
-      <description>album art image</description>
-      <id>0</id>
-      <posX>297</posX>
-      <posY>210</posY>
-      <width>335</width>
-      <height>335</height>
-      <texture>#Play.Current.Thumb</texture>
+		<type>image</type>
+		<description>album art image</description>
+		<id>500</id>
+		<posX>297</posX>
+		<posY>210</posY>
+		<width>335</width>
+		<height>335</height>
+		<texture>#Play.Current.Thumb</texture>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
-      <animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowOpen</animation>
     </control>
 	
     <control>
-      <type>image</type>
-      <description>album art overlay</description>
-      <id>0</id>
-      <posX>251</posX>
-      <posY>162</posY>
-      <width>431</width>
-      <height>431</height>
-      <texture>blackborders_music_nowplaying.png</texture>
+		<type>image</type>
+		<description>album art overlay</description>
+		<id>0</id>
+		<posX>251</posX>
+		<posY>162</posY>
+		<width>431</width>
+		<height>431</height>
+		<texture>blackborders_music_nowplaying.png</texture>
     </control>
 	
 	<control>
@@ -705,7 +716,7 @@
 </control>
 
 <control>
-	<description>Tagged Tracks button</description>
+	<description>Lyrics button</description>
 	<type>button</type>
 	<posX>900</posX>
 	<posY>651</posY>
