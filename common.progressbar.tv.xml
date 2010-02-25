@@ -249,9 +249,9 @@
 
 	<control>
 		<type>image</type>
-		<id>999</id>
+		<id>997</id>
 		<description>Clock icon</description>
-		<posX>617</posX>
+		<posX>616</posX>
 		<posY>667</posY>
 		<height>21</height>
 		<width>21</width>
@@ -261,7 +261,7 @@
 
 	<control>
 		<type>label</type>
-		<id>999</id>
+		<id>998</id>
 		<description>Clock</description>
 		<posX>611</posX>
 		<posY>663</posY>
@@ -270,7 +270,21 @@
 		<font>font14</font>
 		<align>center</align>
 		<label>#time</label>
-		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking</visible>
+		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking+!string.contains(#time,A)+!string.contains(#time,a)+!string.contains(#time,P)+!string.contains(#time,p)</visible>
+	</control>
+	
+	<control>
+		<type>label</type>
+		<id>999</id>
+		<description>Clock</description>
+		<posX>743</posX>
+		<posY>663</posY>
+		<height>30</height>
+		<width>144</width>
+		<font>font14</font>
+		<align>right</align>
+		<label>#time</label>
+		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking+[string.contains(#time,A)|string.contains(#time,a)|string.contains(#time,P)|string.contains(#time,p)]</visible>
 	</control>
 
 </controls>

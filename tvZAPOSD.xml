@@ -55,10 +55,10 @@
       <description>Start Time Info</description>
       <type>label</type>
       <id>101</id>
-		<posX>255</posX>
+		<posX>214</posX>
 		<posY>704</posY>
       <label>#TV.View.start</label>
-      <align>right</align>
+      <align>left</align>
      <font>font12</font>
     </control>
 
