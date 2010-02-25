@@ -232,9 +232,9 @@
 
 	<control>
 		<type>image</type>
-		<id>997</id>
+		<id>999</id>
 		<description>Clock icon</description>
-		<posX>616</posX>
+		<posX>604</posX>
 		<posY>667</posY>
 		<height>21</height>
 		<width>21</width>
@@ -244,30 +244,16 @@
 
 	<control>
 		<type>label</type>
-		<id>998</id>
+		<id>999</id>
 		<description>Clock</description>
-		<posX>611</posX>
+		<posX>612</posX>
 		<posY>663</posY>
 		<height>30</height>
 		<width>144</width>
 		<font>font14</font>
 		<align>center</align>
 		<label>#time</label>
-		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking+!string.contains(#time,A)+!string.contains(#time,a)+!string.contains(#time,P)+!string.contains(#time,p)</visible>
-	</control>
-	
-	<control>
-		<type>label</type>
-		<id>999</id>
-		<description>Clock</description>
-		<posX>743</posX>
-		<posY>663</posY>
-		<height>30</height>
-		<width>144</width>
-		<font>font14</font>
-		<align>right</align>
-		<label>#time</label>
-		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking+[string.contains(#time,A)|string.contains(#time,a)|string.contains(#time,P)|string.contains(#time,p)]</visible>
+		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking</visible>
 	</control>
 
 	<control>
