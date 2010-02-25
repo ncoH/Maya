@@ -73,7 +73,7 @@ multiple view modes.
 		<width>32</width>
 		<height>632</height>
 		<texture>listcontrol_separator.png</texture>
-		<visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(50)</visible>
+		<visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(50) + !Control.IsVisible(51)</visible>
     </control>
 	
 	<control>
