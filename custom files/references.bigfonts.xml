@@ -537,13 +537,13 @@
 		<posX>369</posX>
 		<posY>207</posY>
 		<label>167</label>
-		<font>font14</font>
+		<font>font12</font>
 		<textcolor>ffffffff</textcolor>
 		<disabledcolor>ffffffff</disabledcolor>
-		<textureCheckmark>check-box.png</textureCheckmark>
-		<textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
-		<MarkWidth>16</MarkWidth>
-		<MarkHeight>16</MarkHeight>
+		<textureCheckmark>settings_checkmark_checked.png</textureCheckmark>
+		<textureCheckmarkNoFocus>settings_checkmark_unchecked.png</textureCheckmarkNoFocus>
+		<MarkWidth>39</MarkWidth>
+		<MarkHeight>36</MarkHeight>
 		<align>left</align>
 		<shadow>no</shadow>
 	</control>
