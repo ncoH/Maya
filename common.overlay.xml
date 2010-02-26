@@ -140,7 +140,7 @@
 		<id>1</id>
 		<posX>154</posX>
 		<posY>595</posY>
-		<width>210</width>
+		<width>221</width>
 		<label>#Play.Current.Title</label>
 		<font>font12</font>
 		<visible>player.hasmedia+control.hastext(3337)</visible>
@@ -154,7 +154,7 @@
 		<id>1</id>
 		<posX>154</posX>
 		<posY>620</posY>
-		<width>210</width>
+		<width>221</width>
 		<label>#Play.Current.Artist</label>
 		<font>font10</font>
 		<visible>player.hasmedia+control.hastext(3337)</visible>

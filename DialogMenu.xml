@@ -4,6 +4,18 @@
     <defaultcontrol>3</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <controls>
+	
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>semi_trans_back_general_menu.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+		</control>
+		
         <control>
             <description>group element</description>
             <type>group</type>
