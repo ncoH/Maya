@@ -27,22 +27,28 @@
 		<font>Segoe Light40</font>
 		<valign>middle</valign>
 	</control>
-
-<control>
-	<description>button group</description>
-	<type>group</type>
-	<posX>979</posX>
-	<posY>183</posY>
-	<layout>StackLayout</layout>
+	
+	<control>
+		<description>separator listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>979</posX>
+		<posY>136</posY>
+		<width>32</width>
+		<height>632</height>
+		<texture>listcontrol_separator.png</texture>
+    </control>
 	
 	<control>
 		<type>button</type>
 		<description>Play now</description>
 		<id>11</id>
+		<posX>1011</posX>
+		<posY>183</posY>
 		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 					<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 					<width>299</width>
-			<textXOff>14</textXOff>
+			<textXOff>32</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
 					<onleft>11</onleft>
@@ -56,10 +62,12 @@
 		<type>button</type>
 		<description>Play next</description>
 		<id>12</id>
+		<posX>1011</posX>
+		<posY>233</posY>
 		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 					<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 					<width>299</width>
-			<textXOff>14</textXOff>
+			<textXOff>32</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
 		<onleft>12</onleft>
@@ -73,10 +81,12 @@
 		<type>button</type>
 		<description>Add to playlist</description>
 		<id>13</id>
+		<posX>1011</posX>
+		<posY>283</posY>
 		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 					<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 					<width>299</width>
-			<textXOff>14</textXOff>
+			<textXOff>32</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
 		<onleft>13</onleft>
@@ -90,10 +100,12 @@
 		<type>button</type>
 		<description>Add album to playlist</description>
 		<id>14</id>
+		<posX>1011</posX>
+		<posY>333</posY>
 		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 					<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 					<width>299</width>
-			<textXOff>14</textXOff>
+			<textXOff>32</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
 		<onleft>14</onleft>
@@ -107,10 +119,12 @@
 		<type>button</type>
 		<description>Add to favorites</description>
 		<id>15</id>
+		<posX>1011</posX>
+		<posY>383</posY>
 		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 					<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 					<width>299</width>
-			<textXOff>14</textXOff>
+			<textXOff>32</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
 		<onleft>15</onleft>
@@ -120,7 +134,6 @@
 		<label>930</label>
 	</control>
 
-</control>
 
 
 	<control>

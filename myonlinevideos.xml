@@ -40,6 +40,18 @@
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>
 	</control>
+	
+	<control>
+		<description>separator listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+		<posY>136</posY>
+		<width>32</width>
+		<height>632</height>
+		<texture>listcontrol_separator.png</texture>
+		<visible>!facadeview.smallicons+!facadeview.largeicons</visible>
+    </control>
 
 	<control>
 		<description>Number of Files Label</description>
