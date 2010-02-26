@@ -402,15 +402,15 @@
 		<type>label</type>
 		<description>stream label</description>
 		<id>0</id>
-		<posX>436</posX>
-		<posY>45</posY>
-		<width>711</width>
+		<posX>0</posX>
+		<posY>142</posY>
+		<width>1366</width>
 		<label>#Play.Current.Lastfm.CurrentStream</label>
-		<font>font16</font>
-		<align>left</align>
-		<textcolor>80ffffff</textcolor>
+		<font>Segoe Light22</font>
+		<align>center</align>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
+		<valign>middle</valign>
 	</control>
 
 
