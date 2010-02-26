@@ -126,6 +126,7 @@
 				<textXOff>25</textXOff>
 				<textYOff>12</textYOff>
 				<onright>50</onright>
+				<onleft>50</onleft>
 				<onup>10</onup>
 				<ondown>3</ondown>
 			</control>
@@ -144,6 +145,7 @@
 				<offsetSortButtonX>240</offsetSortButtonX>
 				<offsetSortButtonY>14</offsetSortButtonY>
 				<onright>50</onright>
+				<onleft>50</onleft>
 				<onup>2</onup>
 				<ondown>5</ondown>
 			</control>
@@ -160,6 +162,7 @@
 				<textXOff>25</textXOff>
 				<textYOff>12</textYOff>
 				<onright>50</onright>
+				<onleft>50</onleft>
 				<onup>3</onup>
 				<ondown>6</ondown>
 			</control>
@@ -176,6 +179,7 @@
 				<textXOff>25</textXOff>
 				<textYOff>12</textYOff>
 				<onright>50</onright>
+				<onleft>50</onleft>
 				<onup>5</onup>
 				<ondown>7</ondown>
 			</control>
@@ -193,6 +197,7 @@
 				<textYOff>12</textYOff>
 				<action>100</action>
 				<onright>50</onright>
+				<onleft>50</onleft>
 				<onup>6</onup>
 				<ondown>20</ondown>
 			</control>
@@ -210,6 +215,7 @@
 				<textYOff>12</textYOff>
 				<action>33</action>
 				<onright>50</onright>
+				<onleft>50</onleft>
 				<onup>7</onup>
 				<ondown>9</ondown>
 			</control>
@@ -226,6 +232,7 @@
 				<textXOff>25</textXOff>
 				<textYOff>12</textYOff>
 				<onright>50</onright>
+				<onleft>50</onleft>
 				<onup>20</onup>
 				<ondown>10</ondown>
 			</control>
@@ -243,6 +250,7 @@
 				<textXOff>25</textXOff>
 				<textYOff>12</textYOff>
 				<onright>50</onright>
+				<onleft>50</onleft>
 				<onup>9</onup>
 				<ondown>2</ondown>
 				<visible>plugin.isenabled(My Trailers)</visible>

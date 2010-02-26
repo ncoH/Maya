@@ -30,6 +30,7 @@
 				<textXOff>36</textXOff>
 				<keepaspectratio>yes</keepaspectratio>
 				<spinCanFocus>no</spinCanFocus>
+				<dimColor>ffffffff</dimColor>
 			</control>
 
 			<control>

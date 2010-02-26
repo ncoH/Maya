@@ -43,6 +43,7 @@ This file should contain the facade view
 			<scrollOffset>1</scrollOffset>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+			<dimColor>ffffffff</dimColor>
 		</control>
 
 		<control>

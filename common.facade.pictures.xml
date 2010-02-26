@@ -24,6 +24,7 @@
 				<folderSuffix></folderSuffix>
 				<textXOff>16</textXOff>
 				<spinCanFocus>no</spinCanFocus>
+				<dimColor>ffffffff</dimColor>
 			</control>
 
 			<control>

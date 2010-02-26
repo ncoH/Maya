@@ -22,6 +22,7 @@
 				<height>450</height>
 				<textXOff>23</textXOff>
 				<spinCanFocus>no</spinCanFocus>
+				<dimColor>ffffffff</dimColor>
 			</control>
 
 			<control>

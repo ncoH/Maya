@@ -37,6 +37,18 @@
 	</control>
 	
 	<control>
+		<description>separator listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+		<posY>136</posY>
+		<width>32</width>
+		<height>632</height>
+		<texture>listcontrol_separator.png</texture>
+		<visible>facadeview.list</visible>
+    </control>
+	
+	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
@@ -92,6 +104,21 @@
 		<width>1366</width>
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>semi_trans_back_general_menu.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+		</control>
+		
+		<control>
+		<type>group</type>
+		
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
 		<animation effect="fade" time="200" reversible="false">Hidden</animation>
@@ -138,6 +165,7 @@
 					<textYOff>12</textYOff>
 					<label>100</label>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>15</onup>
 					<ondown>6</ondown>
 				</control>
@@ -154,6 +182,7 @@
 					<textYOff>12</textYOff>
 					<label>457</label>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>2</onup>
 					<ondown>3</ondown>
 				</control>
@@ -172,6 +201,7 @@
 					<offsetSortButtonX>240</offsetSortButtonX>
 					<offsetSortButtonY>14</offsetSortButtonY>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>6</onup>
 					<ondown>12</ondown>
 				</control>
@@ -188,6 +218,7 @@
 					<textYOff>12</textYOff>
 					<label>890</label>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>3</onup>
 					<ondown>11</ondown>
 				</control>
@@ -205,6 +236,7 @@
 					<label>654</label>
 					<action>100</action>
 					<onright>50</onright>
+					<onleft>50</onleft>
 				</control>
 				-->
 
@@ -221,6 +253,7 @@
 					<label>4540</label>
 					<hyperlink>510</hyperlink>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>12</onup>
 					<ondown>9</ondown>
 				</control>
@@ -238,6 +271,7 @@
 					<label>4555</label>
 					<action>33</action>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>11</onup>
 					<ondown>10</ondown>
 				</control>
@@ -254,6 +288,7 @@
 					<textYOff>12</textYOff>
 					<label>983</label>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>9</onup>
 					<ondown>200</ondown>
 				</control>
@@ -271,6 +306,7 @@
 					<label>137</label>
 					<hyperlink>30885</hyperlink>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>10</onup>
 					<ondown>15</ondown>
 				</control>
@@ -289,6 +325,7 @@
 					<label>My lyrics</label>
 					<hyperlink>90478</hyperlink>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>200</onup>
 					<ondown>2</ondown>
                     <visible>plugin.isenabled(My Lyrics)</visible>
@@ -308,6 +345,7 @@
 					<label>34000</label>
 					<hyperlink>7890</hyperlink>
 					<onright>50</onright>
+					<onleft>50</onleft>
 					<onup>10</onup>
 					<onleft>105</onleft>
 					<ondown>99</ondown>
@@ -316,7 +354,8 @@
 
 
 			</control>
-
+			
+		</control>
 
 	</control>
 

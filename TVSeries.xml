@@ -1250,6 +1250,7 @@
           <textureDown>1scroll-down.png</textureDown>
           <textureUpFocus>1scroll-up-focus.png</textureUpFocus>
           <textureDownFocus>1scroll-down-focus.png</textureDownFocus>
+		  <dimColor>ffffffff</dimColor>
         </control>
         <control>
           <description>graphical thumbpanel (series and/or seasons if set)</description>
@@ -1368,6 +1369,7 @@
           <!--<textcolor>ffffffff</textcolor>-->
           <!--<textcolor2>ffffffff</textcolor2>-->
           <!--<textcolor3>ffffffff</textcolor3>-->
+		  <dimColor>ffffffff</dimColor>
         </control>
       </control>
     </control>

@@ -25,6 +25,7 @@
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<textXOff>16</textXOff>
+				<dimColor>ffffffff</dimColor>
 			</control>
 
 			<control>
