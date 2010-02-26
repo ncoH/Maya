@@ -13,7 +13,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>584</posX>
+		<posX>581</posX>
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
