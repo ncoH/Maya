@@ -11,6 +11,18 @@
 	</control>
 	
 	<control>
+		<description>separator listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+		<posY>136</posY>
+		<width>32</width>
+		<height>632</height>
+		<texture>listcontrol_separator.png</texture>
+		<visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(50) + !Control.IsVisible(51)</visible>
+    </control>
+	
+	<control>
 		<description>Alternate BG</description>
 		<type>image</type>
 		<id>1</id>
@@ -24,7 +36,7 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>555</posX>
+		<posX>584</posX>
 		<posY>142</posY>
 		<width>700</width>
 		<label>#selecteditem</label>
