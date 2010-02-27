@@ -155,13 +155,13 @@
 		<description>default listcontrol</description>
 		<type>listcontrol</type>
 		<id>10</id>
-		<posX>557</posX>
+		<posX>524</posX>
 		<posY>150</posY>
 		<width>720</width>
 		<height>600</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>1267</spinPosX>
+		<spinPosX>1245</spinPosX>
 		<spinPosY>718</spinPosY>
 		<spinAlign>right</spinAlign>
 		<spinColor>ffffffff</spinColor>
@@ -180,7 +180,7 @@
 		<remoteColor>ffFFA075</remoteColor>
 		<downloadColor>ff80ff80</downloadColor>
 		<spaceBetweenItems>-3</spaceBetweenItems>
-		<textXOff>8</textXOff>
+		<textXOff>22</textXOff>
 		<textYOff>8</textYOff>
 		<textXOff2>0</textXOff2>
 		<textYOff2>8</textYOff2>

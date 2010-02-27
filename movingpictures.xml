@@ -68,7 +68,7 @@ multiple view modes.
 		<description>separator listview</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>979</posX>
+		<posX>947</posX>
 		<posY>136</posY>
 		<width>32</width>
 		<height>632</height>
@@ -345,18 +345,6 @@ multiple view modes.
 		<width>357</width>
 		<height>472</height>
 		<texture>blackborders_video.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
-	</control>
-	
-	<control>
-		<description>Movie Title</description>
-		<type>label</type>
-		<label>#MovingPictures.SelectedMovie.title</label>
-		<id>0</id>
-		<posX>555</posX>
-		<posY>142</posY>
-		<width>400</width>
-		<font>Segoe Light22</font>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 

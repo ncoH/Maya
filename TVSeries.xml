@@ -26,7 +26,7 @@
 		<description>separator listview</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>979</posX>
+		<posX>947</posX>
 		<posY>136</posY>
 		<width>32</width>
 		<height>632</height>
@@ -251,10 +251,10 @@
       <type>textboxscrollup</type>
       <description>Description (Episode / Season / Series Lists)</description>
       <id>631</id>
-      <posX>555</posX>
+      <posX>556</posX>
 	  <posY>330</posY>
       <width>400</width>
-	  <height>200</height>
+	  <height>215</height>
       <seperator>--------------------------------------------------------------------------------------------------------------------</seperator>
       <visible>facadeview.list+[Control.IsVisible(1239)|Control.IsVisible(1238)|Control.IsVisible(1237)]</visible>
       <label>#TVSeries.Description</label>
@@ -264,10 +264,10 @@
       <type>textboxscrollup</type>
       <description>Description (grouplist)</description>
       <id>0</id>
-      <posX>555</posX>
+      <posX>556</posX>
 	  <posY>330</posY>
       <width>400</width>
-	  <height>200</height>
+	  <height>215</height>
       <seperator>---------------------------------------------------------------------------------------------------------------------</seperator>
       <font>Segoe Light11</font>
       <visible>facadeview.list+Control.IsVisible(1240)+!Control.IsVisible(632)</visible>
@@ -1343,7 +1343,7 @@
           <description>Text List</description>
           <type>listcontrol</type>
           <id>50</id>
-          <posX>1011</posX>
+          <posX>979</posX>
 		  <posY>183</posY>
 		  <onleft>2</onleft>
           <onright>2</onright>

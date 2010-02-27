@@ -7,7 +7,7 @@
 <define>#header.image:music_logo.png</define>
 <define>#header.hover:hover_my music.png</define>
 <controls>
-	<import>common.window.xml</import>
+	<import>common.window.music.xml</import>
 	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -28,7 +28,7 @@
 		<description>separator listview</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>524</posX>
+		<posX>492</posX>
 		<posY>136</posY>
 		<width>32</width>
 		<height>632</height>
@@ -58,6 +58,20 @@
 		<width>1366</width>
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>semi_trans_back_general_menu.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+		</control>
+		
+		<control>
+		<type>group</type>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
 		<animation effect="fade" time="200" reversible="false">Hidden</animation>
@@ -223,6 +237,8 @@
 		</control>
 
 	</control>
+	
+</control>
 	
 </control>
 

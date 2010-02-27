@@ -22,6 +22,16 @@
 		<font>Segoe Light40</font>
 	</control>
 	
+	<control>
+		<description>separator listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>492</posX>
+		<posY>136</posY>
+		<width>32</width>
+		<height>632</height>
+		<texture>listcontrol_separator.png</texture>
+    </control>	
 	
 	<control>
 		<type>group</type>
@@ -125,39 +135,6 @@
 	</control>
 
 	<control>
-		<description>upcoming episodes label</description>
-		<type>label</type>
-		<id>11</id>
-		<posX>550</posX>
-		<posY>465</posY>
-		<label>1041</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light18</font>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-
-			<control>
-				<description>listcontrol</description>
-				<type>listcontrol</type>
-				<id>10</id>
-				<posY>515</posY>
-				<height>200</height>
-				<onleft>2</onleft>
-				<onright>2</onright>
-				<PinIconHeight>15</PinIconHeight>
-				<PinIconXOff>62</PinIconXOff>
-				<PinIconYOff>18</PinIconYOff>
-				<itemWidth>32</itemWidth>
-				<itemHeight>32</itemHeight>
-				<IconXOff>26</IconXOff>
-				<IconYOff>9</IconYOff>
-				<textXOff>38</textXOff>
-				<textXOff2>738</textXOff2>
-				<keepaspectratio>yes</keepaspectratio>
-			</control>
-
-	<control>
 		<description>Current program title</description>
 		<type>fadelabel</type>
 		<id>13</id>
@@ -193,12 +170,51 @@
 			<type>textboxscrollup</type>
 			<description>Description1</description>
 			<id>15</id>
-			<posX>555</posX>
+			<posX>556</posX>
 			<posY>290</posY>
 			<width>741</width>
 			<height>160</height>
 			<label>#TV.RecordedTV.Description</label>
 		</control>
+		
+	<control>
+		<description>upcoming episodes label</description>
+		<type>fadelabel</type>
+		<id>11</id>
+		<posX>555</posX>
+		<posY>465</posY>
+		<label>1041</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light18</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+			<control>
+				<description>listcontrol</description>
+				<type>listcontrol</type>
+				<id>10</id>
+				<posY>515</posY>
+				<height>200</height>
+				<posX>490</posX>
+				<width>781</width>
+				<onleft>2</onleft>
+				<onright>2</onright>
+				<scrollOffset>1</scrollOffset>
+				<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
+				<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
+				<PinIconHeight>53</PinIconHeight>
+				<PinIconWidth>34</PinIconWidth>
+				<PinIconXOff>0</PinIconXOff>
+				<PinIconYOff>0</PinIconYOff>
+				<itemWidth>32</itemWidth>
+				<itemHeight>32</itemHeight>
+				<IconXOff>60</IconXOff>
+				<IconYOff>9</IconYOff>
+				<textXOff>70</textXOff>
+				<keepaspectratio>yes</keepaspectratio>
+				<spinCanFocus>no</spinCanFocus>
+			</control>
 
 	<control>
 		<description>genre</description>

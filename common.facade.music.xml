@@ -20,8 +20,7 @@
 				<scrollOffset>1</scrollOffset>
 				<posY>183</posY>
 				<height>450</height>
-				<textXOff>23</textXOff>
-				<spinCanFocus>no</spinCanFocus>
+				<textXOff>22</textXOff>
 				<dimColor>ffffffff</dimColor>
 			</control>
 

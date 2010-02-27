@@ -132,7 +132,7 @@
 		<font>Segoe Light40</font>
 		<textcolor>6aa5cb</textcolor>
 		<align>center</align>
-		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
+		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
 	</control>
 
 	<control>
