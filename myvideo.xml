@@ -283,15 +283,6 @@
 	</control>
 
 	<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>624</posX>
-		<posY>0</posY>
-		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
-	</control>
-
-	<control>
 		<id>0</id>
 		<type>image</type>
 		<posX>133</posX>

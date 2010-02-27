@@ -177,6 +177,20 @@ multiple view modes.
 		<width>1366</width>
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>semi_trans_back_general_menu.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+		</control>
+		
+		<control>
+		<type>group</type>
+		
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
 		<animation effect="fade" time="200" reversible="false">Hidden</animation>
@@ -310,6 +324,8 @@ multiple view modes.
 		</control>
 
 	</control>
+	
+</control>
 
 	<!--            :: LIST VIEW ::            -->
 	<control>

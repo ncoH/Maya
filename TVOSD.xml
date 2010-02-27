@@ -606,7 +606,7 @@
       <textureSliderBar>osd_slider_bg2.png</textureSliderBar>
       <textureSliderNib>osd_slider_nibNF2.png</textureSliderNib>
       <textureSliderNibFocus>osd_slider_nibFO2.png</textureSliderNibFocus>
-      <onup>220</onup>
+      <onup>700</onup>
       <ondown>700</ondown>
       <onleft>700</onleft>
       <onright>700</onright>
