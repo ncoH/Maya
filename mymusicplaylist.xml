@@ -146,8 +146,8 @@
 					<onleft>50</onleft>
 					<onup>2</onup>
 					<ondown>30</ondown>
-					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
 					<height>49</height>
 					<textXOff>25</textXOff>
