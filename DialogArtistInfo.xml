@@ -14,64 +14,76 @@
 	</control>
 
 	<control>
-		<type>image</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
 		<id>1</id>
-		<posX>106</posX>
-		<posY>25</posY>
-		<texture>info_logo.png</texture>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>music info</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
 	</control>
 
 	<control>
-		<description>Artist</description>
+		<description>Album information</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>177</posX>
-		<posY>125</posY>
-		<label>493</label>
-		<font>font13</font>
-		<textcolor>FFB2D4F5</textcolor>
+		<posX>555</posX>
+		<posY>142</posY>
+		<label>Artist information</label>
+		<font>Segoe Light22</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
+		<valign>middle</valign>
 	</control>
 
+	<control>
+		<type>label</type>
+		<id>1</id>
+		<posX>555</posX>
+		<posY>182</posY>
+		<textcolor>85cfff</textcolor>
+		<font>Segoe Light18</font>
+		<label>Artist</label>
+	</control>
+	
 	<control>
 		<description>Artist value</description>
 		<type>label</type>
-		<id>20</id>
-		<posX>391</posX>
-		<posY>62</posY>
+		<id>21</id>
+		<posX>555</posX>
+		<posY>218</posY>
+		<font>Segoe Light18</font>
 		<label>-</label>
-		<font>font16</font>
-		<align>left</align>
-		<textcolor>FFFFFFFF</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
-
+	
+	
 	<control>
 		<description>Born</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>177</posX>
-		<posY>150</posY>
+		<posX>555</posX>
+		<posY>340</posY>
 		<label>686</label>
-		<font>font13</font>
-		<textcolor>FFB2D4F5</textcolor>
+		<textcolor>85cfff</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
-
+	
 	<control>
-		<description>Years Active</description>
+		<description>Years active</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>177</posX>
-		<posY>175</posY>
+		<posX>555</posX>
+		<posY>364</posY>
 		<label>687</label>
-		<font>font13</font>
-		<textcolor>FFB2D4F5</textcolor>
+		<textcolor>85cfff</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -80,11 +92,10 @@
 		<description>Genres</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>177</posX>
-		<posY>200</posY>
+		<posX>555</posX>
+		<posY>388</posY>
 		<label>135</label>
-		<font>font13</font>
-		<textcolor>FFB2D4F5</textcolor>
+		<textcolor>85cfff</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -93,24 +104,22 @@
 		<description>Tones</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>177</posX>
-		<posY>225</posY>
+		<posX>555</posX>
+		<posY>412</posY>
 		<label>175</label>
-		<font>font13</font>
-		<textcolor>FFB2D4F5</textcolor>
+		<textcolor>85cfff</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
-
+	
 	<control>
 		<description>Styles</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>177</posX>
-		<posY>250</posY>
+		<posX>555</posX>
+		<posY>436</posY>
 		<label>176</label>
-		<font>font13</font>
-		<textcolor>FFB2D4F5</textcolor>
+		<textcolor>85cfff</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -119,24 +128,10 @@
 		<description>Instruments</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>177</posX>
-		<posY>275</posY>
+		<posX>555</posX>
+		<posY>460</posY>
 		<label>688</label>
-		<font>font13</font>
-		<textcolor>FFB2D4F5</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-
-	<control>
-		<description>Artist value</description>
-		<type>label</type>
-		<id>21</id>
-		<posX>391</posX>
-		<posY>125</posY>
-		<label>-</label>
-		<font>font13</font>
-		<textcolor>FFFFFFFF</textcolor>
+		<textcolor>85cfff</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -145,11 +140,10 @@
 		<description>Born value</description>
 		<type>label</type>
 		<id>22</id>
-		<posX>391</posX>
-		<posY>150</posY>
+		<posX>666</posX>
+		<posY>340</posY>
+		<width>600</width>
 		<label>-</label>
-		<font>font13</font>
-		<textcolor>FFFFFFFF</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -158,11 +152,10 @@
 		<description>Years Active value</description>
 		<type>label</type>
 		<id>23</id>
-		<posX>391</posX>
-		<posY>175</posY>
+		<posX>666</posX>
+		<posY>364</posY>
+		<width>600</width>
 		<label>-</label>
-		<font>font13</font>
-		<textcolor>FFFFFFFF</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -171,11 +164,10 @@
 		<description>Genres value</description>
 		<type>label</type>
 		<id>24</id>
-		<posX>391</posX>
-		<posY>200</posY>
+		<posX>666</posX>
+		<posY>388</posY>
+		<width>600</width>
 		<label>-</label>
-		<font>font13</font>
-		<textcolor>FFFFFFFF</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -184,12 +176,10 @@
 		<description>Tones value</description>
 		<type>fadelabel</type>
 		<id>25</id>
-		<posX>391</posX>
-		<posY>225</posY>
-		<width>711</width>
+		<posX>666</posX>
+		<posY>412</posY>
+		<width>600</width>
 		<label>-</label>
-		<font>font13</font>
-		<textcolor>FFFFFFFF</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -198,12 +188,10 @@
 		<description>Styles value</description>
 		<type>fadelabel</type>
 		<id>26</id>
-		<posX>391</posX>
-		<posY>250</posY>
-		<width>711</width>
+		<posX>666</posX>
+		<posY>436</posY>
+		<width>600</width>
 		<label>-</label>
-		<font>font13</font>
-		<textcolor>FFFFFFFF</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -212,36 +200,49 @@
 		<description>Instruments value</description>
 		<type>label</type>
 		<id>27</id>
-		<posX>391</posX>
-		<posY>275</posY>
+		<posX>666</posX>
+		<posY>470</posY>
+		<width>600</width>
 		<label>-</label>
-		<font>font13</font>
-		<textcolor>FFFFFFFF</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
+		<id>3</id>
+		<type>image</type>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<texture>-</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
 	<control>
-		<description>artist image</description>
 		<type>image</type>
-		<id>3</id>
-		<posX>177</posX>
-		<posY>312</posY>
-		<width>177</width>
-		<height>125</height>
-		<texture>-</texture>
-		<colorkey>FFFF00FF</colorkey>
-		<colordiffuse>FFFFFFFF</colordiffuse>
-		<keepaspectratio>yes</keepaspectratio>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<id>0</id>
+		<posX>92</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture>blackborders_music.png</texture>
 	</control>
 
 	<control>
 		<description>textarea</description>
 		<type>textbox</type>
 		<id>4</id>
-		<posY>312</posY>
+		<posX>555</posX>
+		<posY>487</posY>
+		<width>710</width>
+		<height>250</height>
+		<spinWidth>28</spinWidth>
+		<spinHeight>28</spinHeight>
+		<spinPosX>555</spinPosX>
+		<spinPosY>718</spinPosY>
+		<spinAlign>left</spinAlign>
 		<onleft>5</onleft>
 		<onright>5</onright>
 		<onup>5</onup>
@@ -254,9 +255,8 @@
 		<description>Bio/Albums</description>
 		<type>button</type>
 		<id>5</id>
-		<posX>177</posX>
-		<posY>475</posY>
-		<width>160</width>
+		<posX>147</posX>
+		<posY>500</posY>
 		<label>689</label>
 		<onleft>4</onleft>
 		<onright>4</onright>
@@ -270,11 +270,9 @@
 		<description>Refresh</description>
 		<type>button</type>
 		<id>6</id>
-		<posX>177</posX>
-		<posY>520</posY>
-		<width>160</width>
+		<posX>147</posX>
+		<posY>545</posY>
 		<label>184</label>
-		<font>font13</font>
 		<onleft>4</onleft>
 		<onright>4</onright>
 		<onup>5</onup>
