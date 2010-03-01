@@ -135,6 +135,7 @@
 				<posY>183</posY>
 				<height>450</height>
 				<spinCanFocus>no</spinCanFocus>
+				<dimColor>ffffffff</dimColor>
 			</control>
 
 		</control>

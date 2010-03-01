@@ -27,6 +27,17 @@
 		<font>Segoe Light40</font>
 		<align>center</align>
 	</control>
+	
+	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>297</posX>
+		<posY>210</posY>
+		<width>335</width>
+		<height>335</height>
+		<visible>!control.hasthumb(112)</visible>
+		<texture>DefaultMyradioBig.png</texture>
+	</control>
 
 	<control>
 		<type>image</type>

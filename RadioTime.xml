@@ -12,7 +12,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>581</posX>
+		<posX>552</posX>
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
@@ -27,11 +27,13 @@
 		<description>separator listview</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>524</posX>
+		<posX>492</posX>
 		<posY>136</posY>
 		<width>32</width>
 		<height>632</height>
 		<texture>listcontrol_separator.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
     </control>
 
@@ -53,21 +55,6 @@
 	</control>
 	
 	<control>
-		<description>Selected item Label</description>
-		<type>fadelabel</type>
-		<id>1</id>
-		<posX>584</posX>
-		<posY>142</posY>
-		<width>700</width>
-		<label>#selecteditem</label>
-		<font>Segoe Light22</font>
-		<visible>[facadeview.list | facadeview.album | facadeview.playlist]+Control.IsVisible(50)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<valign>middle</valign>
-	</control>
-	
-	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
 		<defaultcontrol>2</defaultcontrol>
@@ -79,6 +66,21 @@
 		<width>1366</width>
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>semi_trans_back_general_menu.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+		</control>
+		
+		<control>
+		<type>group</type>
+		
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
 		<animation effect="fade" time="200">Hidden</animation>
@@ -220,6 +222,8 @@
 			</control>
 
 		</control>
+		
+	</control>
 
 	</control>
 	

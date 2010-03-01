@@ -7,27 +7,19 @@
 <controls>
 
 	<import>common.window.playlist.xml</import>
-
-	<control>
-		<description>Alternate BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background_thumbs.png</texture>
-		<visible>facadeview.smallicons | facadeview.largeicons</visible>
-	</control>
 	
 	<control>
 		<description>separator listview</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>524</posX>
+		<posX>492</posX>
 		<posY>136</posY>
 		<width>32</width>
 		<height>632</height>
 		<texture>listcontrol_separator.png</texture>
-		<visible>facadeview.list</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
     </control>
 	
 	<control>
@@ -35,7 +27,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>584</posX>
+		<posX>552</posX>
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
@@ -55,6 +47,8 @@
 		<width>32</width>
 		<height>632</height>
 		<texture>listcontrol_separator.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<visible>facadeview.list</visible>
     </control>
 
@@ -87,6 +81,20 @@
 		<width>1366</width>
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>semi_trans_back_general_menu.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+		</control>
+		
+		<control>
+		<type>group</type>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
 		<animation effect="fade" time="200" reversible="false">Hidden</animation>
@@ -307,6 +315,8 @@
 				</control>
 
 			</control>
+			
+		</control>
 
 
 	</control>
@@ -320,6 +330,17 @@
 		<posY>325</posY>
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>[facadeview.list | facadeview.album | facadeview.playlist | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50)</visible>
+	</control>
+	
+	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<visible>[facadeview.list | facadeview.album | facadeview.playlist]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
+		<texture>DefaultMyradioBig.png</texture>
 	</control>
 	
 	<control>

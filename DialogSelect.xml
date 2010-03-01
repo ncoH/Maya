@@ -50,6 +50,8 @@
 		<width>32</width>
 		<height>632</height>
 		<texture>listcontrol_separator.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
     </control>
 
 	<control>

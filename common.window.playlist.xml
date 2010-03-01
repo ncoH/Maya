@@ -34,7 +34,7 @@
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>584</posX>
+		<posX>555</posX>
 		<posY>142</posY>
 		<width>700</width>
 		<label>#selecteditem</label>
@@ -49,7 +49,7 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>1112</posX>
+		<posX>1242</posX>
 		<posY>690</posY>
 		<align>right</align>
 		<label>#itemcount</label>
