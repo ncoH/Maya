@@ -41,11 +41,11 @@
 				<folderSuffix></folderSuffix>
 				<onleft>2</onleft>
 				<onright>2</onright>
-				<itemWidth>103</itemWidth>
+				<itemWidth>249</itemWidth>
 				<itemHeight>140</itemHeight>
-				<textureWidth>103</textureWidth>
+				<textureWidth>249</textureWidth>
 				<textureHeight>140</textureHeight>
-				<thumbWidth>103</thumbWidth>
+				<thumbWidth>249</thumbWidth>
 				<thumbHeight>140</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
@@ -56,17 +56,13 @@
 				<textureWidthBig>148</textureWidthBig>
 				<textureHeightBig>210</textureHeightBig>
 				<keepaspectratio>no</keepaspectratio>
-				<thumbPosXBig>0</thumbPosXBig>
-				<thumbPosYBig>0</thumbPosYBig>
-				<zoomXPixels>50</zoomXPixels>
-				<zoomYPixels>79</zoomYPixels>
+				<zoomXPixels>89</zoomXPixels>
+				<zoomYPixels>50</zoomYPixels>
 				<hideUnfocusTexture>yes</hideUnfocusTexture>
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>
 				<frame>-</frame>
-				<frameFocus>-</frameFocus>
-				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,550" time="400">focus</thumbAnimation>
-				<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
+				<frameFocus>thumbnail_frame_shine.png</frameFocus>
 				<thumbZoom>no</thumbZoom>
 				<spinPosX>1190</spinPosX>
 			</control>
