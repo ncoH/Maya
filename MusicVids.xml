@@ -55,19 +55,45 @@
 	</control>
 	
 	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>91</posX>
+        <posY>207</posY>
+        <width>365</width>
+	    <height>203</height>
+		<texture>defaultTVBig.png</texture>
+		<visible>!control.hasthumb(13)</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
+		<id>1</id>
+		<type>image</type>
+		<posX>91</posX>
+		<posY>207</posY>
+		<width>365</width>
+		<height>203</height>
+		<texture>black.png</texture>
+		<visible>control.hasthumb(13) | control.hasthumb(14)</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
       <description>Artist Image</description>
       <type>image</type>
-	  <visible>!control.isvisible(99)</visible>
+	  <visible>!control.isvisible(99)|string.equals(#selecteditem,..)</visible>
       <id>13</id>
-      <posX>70</posX>
-      <posY>150</posY>
-	  <width>430</width>
-	  <height>300</height>
+      <posX>91</posX>
+      <posY>207</posY>
+	  <width>365</width>
+	  <height>203</height>
 	  <keepaspectratio>true</keepaspectratio>
 	  <centered>yes</centered>
       <texture>#MusicVids.ArtistImg</texture>
-	  <animation effect="fade" time="1000" delay="100">WindowOpen</animation>
-      <animation effect="fade" time="500">WindowClose</animation>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 		
 	<control>
@@ -79,36 +105,33 @@
 		<width>400</width>
 		<height>450</height>
 		<label>#MusicVids.ArtistBio</label>
-    </control>
-	
-	<control>
-		<description>Fan Art</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>0</posX>
-		<posY>0</posY>
-		<width>1366</width>
-		<height>768</height>
-		<texture>#MusicVids.ArtistImg</texture>
-		<colordiffuse>10ffffff</colordiffuse>
-		<visible>control.isvisible(99)</visible>
-		<animation effect="fade" time="500" delay="500">WindowOpen</animation>
-		<animation effect="fade" time="500">WindowClose</animation>
-    </control>
-	
+    </control>	
 		
 	<control>
 		<description>Video Thumb</description>
 		<type>image</type>
-		<visible>control.isvisible(99)</visible>
+		<visible>control.isvisible(99)+!string.equals(#selecteditem,..)</visible>
 		<id>14</id>
-		<posX>70</posX>
-		<posY>150</posY>
-		<width>430</width>
-		<height>300</height>
+		<posX>91</posX>
+        <posY>207</posY>
+		<width>365</width>
+	    <height>203</height>
 		<keepaspectratio>true</keepaspectratio>
 		<centered>yes</centered>
 		<texture>#MusicVids.VideoImg</texture>
+	</control>
+	
+	<control>
+		<description>Overlay</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>44</posX>
+	    <posY>161</posY>
+	    <width>457</width>
+	    <height>295</height>
+		<texture>blackborders_recordings.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 	
 	<control>
@@ -187,6 +210,19 @@
 		<posY>0</posY>
 		<label></label>
 	</control>
+	
+	<control>
+		<description>separator listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>947</posX>
+		<posY>136</posY>
+		<width>32</width>
+		<height>632</height>
+		<texture>listcontrol_separator.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+    </control>
 	
 	<control>
 		<type>facadeview</type>
