@@ -31,7 +31,7 @@
 	<control>
 		<description>separator listview</description>
 		<type>image</type>
-		<id>1</id>
+		<id>0</id>
 		<posX>979</posX>
 		<posY>136</posY>
 		<width>32</width>

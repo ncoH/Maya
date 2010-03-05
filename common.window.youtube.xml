@@ -42,7 +42,7 @@
 		<label>youtube.fm</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>facadeview.list</visible>
+		<visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
 	</control>
 	
 	<control>
@@ -56,7 +56,7 @@
 		<texture>listcontrol_separator.png</texture>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<visible>facadeview.list</visible>
+		<visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
     </control>
 	
 	<control>
@@ -71,7 +71,7 @@
 		<label>youtube.fm</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons]</visible>
+		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
 		<align>center</align>
 	</control>
 

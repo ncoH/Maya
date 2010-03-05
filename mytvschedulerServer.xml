@@ -277,32 +277,32 @@
 			</control>
 
 	</control>
-
-		<control>
-			<type>label</type>
-			<description>Current program time</description>
-			<id>14</id>
-			<posX>555</posX>
-			<posY>220</posY>
-			<textcolor>6aa5cb</textcolor>
-			<font>Segoe Light18</font>
-			<label>#TV.Scheduled.Time</label>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="fade" time="100">WindowClose</animation>
-			<visible>true</visible>
-		</control>
 		
 		<control>
 			<description>Current program channel</description>
 			<type>label</type>
 			<id>17</id>
 			<posX>555</posX>
-			<posY>185</posY>
+			<posY>180</posY>
 			<label>#TV.Scheduled.Channel</label>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>
 			<font>Segoe Light18</font>
-			<textcolor>6aa5cb</textcolor>
+			<textcolor>85cffe</textcolor>
+		</control>
+		
+		<control>
+			<type>label</type>
+			<description>Current program time</description>
+			<id>14</id>
+			<posX>555</posX>
+			<posY>215</posY>
+			<textcolor>85cffe</textcolor>
+			<font>Segoe Light18</font>
+			<label>#TV.Scheduled.Time</label>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>
+			<visible>true</visible>
 		</control>
 
 		<control>
@@ -310,7 +310,7 @@
 			<description>Description1</description>
 			<id>15</id>
 			<posX>556</posX>
-			<posY>290</posY>
+			<posY>228190</posY>
 			<width>741</width>
 			<height>80</height>
 			<label>#TV.Scheduled.Description</label>

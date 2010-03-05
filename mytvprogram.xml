@@ -153,9 +153,9 @@
 			<type>fadelabel</type>
 			<id>16</id>
 			<posX>555</posX>
-			<posY>195</posY>
+			<posY>180</posY>
 			<font>Segoe Light18</font>
-			<textcolor>6aa5cb</textcolor>
+			<textcolor>85cffe</textcolor>
 		</control>
 		
 		<control>
@@ -163,8 +163,8 @@
 			<description>Current program time</description>
 			<id>14</id>
 			<posX>555</posX>
-			<posY>230</posY>
-			<textcolor>6aa5cb</textcolor>
+			<posY>215</posY>
+			<textcolor>85cffe</textcolor>
 			<font>Segoe Light18</font>
 		</control>
 
@@ -173,7 +173,7 @@
 			<description>Description1</description>
 			<id>15</id>
 			<posX>556</posX>
-			<posY>290</posY>
+			<posY>281</posY>
 			<width>741</width>
 			<height>160</height>
 			<label>#TV.RecordedTV.Description</label>
@@ -186,7 +186,7 @@
 		<posX>555</posX>
 		<posY>465</posY>
 		<label>1041</label>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 		<font>Segoe Light18</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>

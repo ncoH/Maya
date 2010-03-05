@@ -179,7 +179,7 @@
 				<description>listcontrol</description>
 				<type>listcontrol</type>
 				<id>10</id>
-				<posY>392</posY>
+				<posY>424</posY>
 				<height>300</height>
 				<posX>490</posX>
 				<width>781</width>
@@ -206,7 +206,7 @@
 				<description>listcontrol</description>
 				<type>listcontrol</type>
 				<id>11</id>
-				<posY>392</posY>
+				<posY>424</posY>
 				<height>300</height>
 				<posX>490</posX>
 				<width>781</width>
@@ -249,12 +249,12 @@
 		<type>label</type>
 		<id>16</id>
 		<posX>555</posX>
-		<posY>195</posY>
+		<posY>180</posY>
 		<label>#TV.Search.Channel</label>
 		<font>Segoe Light18</font>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 	</control>
 
 	<control>
@@ -262,8 +262,8 @@
 		<type>label</type>
 		<id>14</id>
 		<posX>555</posX>
-		<posY>230</posY>
-		<textcolor>6aa5cb</textcolor>
+		<posY>215</posY>
+		<textcolor>85cffe</textcolor>
 		<font>Segoe Light18</font>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -275,7 +275,7 @@
 		<type>textboxscrollup</type>
 		<id>15</id>
 		<posX>556</posX>
-		<posY>290</posY>
+		<posY>281</posY>
 		<width>741</width>
 		<height>80</height>
 		<animation effect="fade" time="100">WindowOpen</animation>
