@@ -19,7 +19,7 @@
 		<width>734</width>
 		<height>348</height>
 		<posX>316</posX>
-		<posY>210</posY>
+		<posY>334</posY>
 	</control>
 
 	<control>
@@ -27,7 +27,7 @@
 		<type>label</type>
 		<id>4</id>
 		<posX>435</posX>
-		<posY>249</posY>
+		<posY>373</posY>
 		<width>426</width>
 		<label>10105</label>
 		<font>Segoe Light18</font>
@@ -39,7 +39,7 @@
 		<id>0</id>
 		<type>label</type>
 		<posX>934</posX>
-		<posY>249</posY>
+		<posY>373</posY>
 		<align>right</align>
 		<font>Segoe Light18</font>
 		<label>#time</label>
@@ -50,7 +50,7 @@
 		<type>listcontrol</type>
 		<id>35</id>
 		<posX>349</posX>
-		<posY>296</posY>
+		<posY>420</posY>
 		<width>669</width>
 		<height>220</height>
 		<textureFocus>tv_miniguide_bar_nochannelstate.png</textureFocus>
@@ -59,7 +59,7 @@
 		<textXOff>35</textXOff>
 		<textXOff2>660</textXOff2>
 		<textYOff2>31</textYOff2>
-		<textXOff3>84</textXOff3>
+		<textXOff3>85</textXOff3>
 		<textYOff3>6</textYOff3>
 		<IconXOff>13</IconXOff>
 		<IconYOff>10</IconYOff>
@@ -67,7 +67,7 @@
 		<PinIconYOff>18</PinIconYOff>
 		<PinIconWidth>-</PinIconWidth>
 		<PinIconHeight>-</PinIconHeight>
-		<spinPosY>547</spinPosY>
+		<spinPosY>614</spinPosY>
 		<spinPosX>998</spinPosX>
 		<spinColor>FFB2D4F5</spinColor>
 		<spinWidth>39</spinWidth>
@@ -93,7 +93,7 @@
 		<type>listcontrol</type>
 		<id>37</id>
 		<posX>348</posX>
-		<posY>296</posY>
+		<posY>420</posY>
 		<width>669</width>
 		<height>220</height>
 		<textureFocus>tv_miniguide_bar.png</textureFocus>
@@ -102,7 +102,7 @@
 		<textXOff>35</textXOff>
 		<textXOff2>592</textXOff2>
 		<textYOff2>31</textYOff2>
-		<textXOff3>84</textXOff3>
+		<textXOff3>85</textXOff3>
 		<textYOff3>6</textYOff3>
 		<IconXOff>13</IconXOff>
 		<IconYOff>10</IconYOff>
@@ -110,7 +110,7 @@
 		<PinIconYOff>1</PinIconYOff>
 		<PinIconWidth>-</PinIconWidth>
 		<PinIconHeight>-</PinIconHeight>
-		<spinPosY>490</spinPosY>
+		<spinPosY>614</spinPosY>
 		<spinPosX>998</spinPosX>
 		<spinColor>FFB2D4F5</spinColor>
 		<spinWidth>39</spinWidth>
@@ -136,7 +136,7 @@
 		<type>spincontrol</type>
 		<id>36</id>
 		<posX>785</posX>
-		<posY>485</posY>
+		<posY>609</posY>
 		<showrange>no</showrange>
 		<orientation>horizontal</orientation>
 		<font>font10</font>

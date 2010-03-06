@@ -8,13 +8,27 @@
 <define>#header.hover:</define>
 <controls>
 	<import>common.window.xml</import>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>tetris</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>
+	
 	<control>
 		<description>button group</description>
 		<type>group</type><!-- animations in this screen are equal for all objects, because nextblock-image got it's animation by tetris control, but it's possition is in scoreboard -->
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="150" start="-300,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="800,0">WindowClose</animation>
 		<posX>71</posX>
 		<posY>121</posY>
 		<layout>StackLayout</layout>
@@ -44,8 +58,6 @@
 		<type>group</type>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="150" start="-300,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="800,0">WindowClose</animation>
 		<control>
 			<description>Scoreboard background</description>
 			<type>image</type>
@@ -145,8 +157,6 @@
 		<type>group</type>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="150" start="-300,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="800,0">WindowClose</animation>
 		<control>
 			<description>Tetris control</description>
 			<type>tetris</type>
