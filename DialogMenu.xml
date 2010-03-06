@@ -67,7 +67,7 @@
                 <spaceBetweenItems>1</spaceBetweenItems>
 				<PinIconWidth>15</PinIconWidth>
 				<PinIconHeight>15</PinIconHeight>
-                <PinIconXOff>39</PinIconXOff>
+                <PinIconXOff>2000</PinIconXOff>
                 <PinIconYOff>15</PinIconYOff>
             </control>
         </control>

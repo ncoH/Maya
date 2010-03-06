@@ -8,6 +8,7 @@
 <define>#selecteditem:</define>
 <controls>
 	<import>common.window.xml</import>
+	<import>common.time.xml</import>
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>

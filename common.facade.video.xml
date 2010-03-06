@@ -88,6 +88,7 @@
 				<textureWidth>213</textureWidth>
 				<textureHeight>302</textureHeight>
 				<textYOff>-2000</textYOff>
+				<spinCanFocus>no</spinCanFocus>
 				<imageFolderFocus>-</imageFolderFocus>
 				<frame>-</frame>
 				<frameFocus>thumbnail_frame_shine.png</frameFocus>

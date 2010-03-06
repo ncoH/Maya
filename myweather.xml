@@ -323,6 +323,8 @@
 		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
 	</control>
 	
+<import>common.time.xml</import>
+	
 	<control>
 		<description>View Button</description>
 		<type>button</type>

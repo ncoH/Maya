@@ -17,8 +17,8 @@
 				<description>listcontrol</description>
 				<type>listcontrol</type>
 				<id>50</id>
-				<posY>330</posY>
-				<height>400</height>
+				<posY>424</posY>
+				<height>300</height>
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>

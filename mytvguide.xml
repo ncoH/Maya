@@ -293,15 +293,23 @@
 		<description>record pin</description>
 		<type>image</type>
 		<id>31</id>
+		<posX>-2000</posX>
+		<texture>tvguide_record_button.png</texture>
+		<visible>no</visible>
+	</control>
+	
+	<control>
+		<description>record pin</description>
+		<type>image</type>
+		<id>1</id>
 		<posX>385</posX>
 		<posY>543</posY>
 		<fixedheight>yes</fixedheight>
 		<centered>yes</centered>
 		<width>50</width>
 		<height>25</height>
-		<texture>tvguide_record_button.png</texture>
+		<texture>#maya.tvguide.recpin</texture>
 		<keepaspectratio>yes</keepaspectratio>
-		<visible>no</visible>
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
 	</control>

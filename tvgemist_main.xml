@@ -22,6 +22,8 @@
 		<valign>middle</valign>
 	</control>
 	
+<import>common.time.xml</import>
+	
 	<control>
 		<description>separator listview</description>
 		<type>image</type>
@@ -79,7 +81,7 @@
 		<id>1</id>
 		<type>label</type>
 		<posX>555</posX>
-		<posY>195</posY>
+		<posY>180</posY>
 		<label>Nederland 1</label>
 		<width>365</width>
 		<font>Segoe Light18</font>
@@ -93,7 +95,7 @@
 		<id>1</id>
 		<type>label</type>
 		<posX>555</posX>
-		<posY>195</posY>
+		<posY>180</posY>
 		<label>Nederland 2</label>
 		<width>365</width>
 		<font>Segoe Light18</font>
@@ -107,7 +109,7 @@
 		<id>1</id>
 		<type>label</type>
 		<posX>555</posX>
-		<posY>195</posY>
+		<posY>180</posY>
 		<label>Nederland 3</label>
 		<width>365</width>
 		<font>Segoe Light18</font>
@@ -121,7 +123,7 @@
 		<id>1</id>
 		<type>label</type>
 		<posX>555</posX>
-		<posY>195</posY>
+		<posY>180</posY>
 		<label>NET 5</label>
 		<width>365</width>
 		<font>Segoe Light18</font>
@@ -135,7 +137,7 @@
 		<id>1</id>
 		<type>label</type>
 		<posX>555</posX>
-		<posY>195</posY>
+		<posY>180</posY>
 		<label>SBS 6</label>
 		<width>365</width>
 		<font>Segoe Light18</font>
@@ -149,7 +151,7 @@
 		<id>1</id>
 		<type>label</type>
 		<posX>555</posX>
-		<posY>195</posY>
+		<posY>180</posY>
 		<label>Veronica</label>
 		<width>365</width>
 		<font>Segoe Light18</font>
@@ -163,7 +165,7 @@
 		<id>1</id>
 		<type>label</type>
 		<posX>555</posX>
-		<posY>195</posY>
+		<posY>180</posY>
 		<label>#zender</label>
 		<width>365</width>
 		<font>Segoe Light18</font>
@@ -397,7 +399,7 @@
 		<description>Description1</description>
 		<id>15</id>
 		<posX>555</posX>
-		<posY>240</posY>
+		<posY>281</posY>
 		<width>741</width>
 		<height>83</height>
 		<font>font12</font>

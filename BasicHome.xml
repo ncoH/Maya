@@ -51,43 +51,7 @@
 	<visible>Control.HasText(333)</visible>
 </control>
 
-<control>
-	<description>Maya logo</description>
-	<type>image</type>
-	<id>1</id>
-	<posX>40</posX>
-	<posY>30</posY>
-	<texture>maya_logo_small.png</texture>
-	<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
-	<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
-</control>
-
-<control>
-	<description>Maya logo</description>
-	<type>image</type>
-	<id>1</id>
-	<posX>115</posX>
-	<posY>31</posY>
-	<texture>clock_seperator.png</texture>
-	<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
-	<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
-</control>
-
-	<control>
-		<id>1</id>
-		<type>label</type>
-		<posX>133</posX>
-		<posY>20</posY>
-		<height>74</height>
-		<width>555</width>
-		<label>#time</label>
-		<font>Segoe Light22</font>
-		<textcolor>6aa5cb</textcolor>
-	<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
-	<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
-	</control>
-
-
+<import>common.time.xml</import>
 
 	<!-- Left Buttons -->
 <control>

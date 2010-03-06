@@ -38,6 +38,8 @@
 		<visible>Control.Isvisible(50)</visible>
     </control>
 	
+<import>common.time.xml</import>
+	
 	<control>
 		<id>500</id>
 		<type>image</type>
@@ -45,7 +47,7 @@
 		<posY>183</posY>
 		<width>266</width>
 		<height>266</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
+		<texture>#selectedthumb</texture>
 	</control>
 	
 	<control>

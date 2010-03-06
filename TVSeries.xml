@@ -56,6 +56,8 @@
 		<visible>facadeview.filmstrip</visible>
 	</control>
 	
+	<import>common.time.xml</import>
+	
     <control>
       <type>label</type>
       <description>Subtitle</description>
@@ -1318,44 +1320,47 @@
 		  <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,550" time="400">focus</thumbAnimation>
 		 <thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
         </control>
-		 <control>
-          <description>Filmstrip view</description>
-          <type>filmstrip</type>
-		  <dimColor>90ffffff</dimColor>
-          <id>50</id>
-          <onup>17</onup>
-          <posX>150</posX>
-		  <posY>355</posY>
-		  <width>1166</width>
-		  <height>768</height>
-		  <onup>2</onup>
-          <onleft>50</onleft>
-          <width>1225</width>
-          <spinPosY>-50</spinPosY>
-          <spinPosX>-50</spinPosX>
-		  <spinCanFocus>no</spinCanFocus>
-          <thumbWidth>213</thumbWidth>
-		  <thumbHeight>302</thumbHeight>
-          <thumbPosX>0</thumbPosX>
-		  <thumbPosY>0</thumbPosY>
-		  <itemWidth>213</itemWidth>
-		  <itemHeight>302</itemHeight>
-		  <textureWidth>218</textureWidth>
-		  <textureHeight>302</textureHeight>
-		  <textYOff>-2000</textYOff>
-          <frame>-</frame>                    
-		  <imageFolderFocus>-</imageFolderFocus>
-          <frameFocus>thumbnail_frame_shine.png</frameFocus>
-          <background>-</background>
-          <thumbs flipY="true" diffuse="Thumb_Mask.png"></thumbs>                
-          <showFrame>yes</showFrame>
-          <showFolder>no</showFolder>
-          <showBackGround>no</showBackGround>
-          <showInfoImage>no</showInfoImage>
-          <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,570" time="400">focus</thumbAnimation>
-		  <thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,570" time="100">unfocus</thumbAnimation>
-          <scrollOffset>2</scrollOffset>
-        </control>
+		
+		<control>
+			<description>Filmstrip view</description>
+			<type>filmstrip</type>
+			<dimColor>90ffffff</dimColor>
+			<id>50</id>
+				<scrollOffset>2</scrollOffset>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>
+				<posX>150</posX>
+				<posY>355</posY>
+				<width>1166</width>
+				<height>768</height>
+				<onup>2</onup>
+				<ondown>50</ondown>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<thumbWidth>214</thumbWidth>
+				<thumbHeight>302</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidth>214</itemWidth>
+				<itemHeight>302</itemHeight>
+				<textureWidth>214</textureWidth>
+				<textureHeight>302</textureHeight>
+				<textYOff>-2000</textYOff>
+				<spinCanFocus>no</spinCanFocus>
+				<imageFolderFocus>-</imageFolderFocus>
+				<frame>-</frame>
+				<frameFocus>thumbnail_frame_shine.png</frameFocus>
+				<background>-</background>
+				<thumbs flipY="true" diffuse="Thumb_Mask.png"></thumbs>
+				<showFrame>yes</showFrame>
+				<showFolder>no</showFolder>
+				<showBackGround>no</showBackGround>
+				<showInfoImage>no</showInfoImage>
+				<spinPosY>-50</spinPosY>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,570" time="400">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,570" time="100">unfocus</thumbAnimation>
+		</control>
+		
         <control>
           <description>Text List</description>
           <type>listcontrol</type>

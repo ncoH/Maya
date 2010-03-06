@@ -131,6 +131,9 @@
 		<align>center</align>
 		<valign>middle</valign>
 	</control>
+	
+<import>common.time.xml</import>
+	
 	<!-- *** CLIP TITLE & DESCRIPTION *** -->
 	                <!--
 	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -188,8 +191,6 @@
 		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.contains(#header.image,Apple Trailers.png)</visible>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="slide" time="150" start="-800,0">WindowOpen</animation>
-		<animation effect="slide" time="250" end="-800,0">WindowClose</animation>
 	</control>
 	<control>
 		<type>label</type>

@@ -54,7 +54,6 @@ multiple view modes.
 
 	<!--            :: BACKGROUNDS :: MOVIE BACKDROP :: OVERLAYS ::            -->
 <import>common.window.xml</import>
-
 	<control>
 		<description>BG</description>
 		<type>image</type>
@@ -127,6 +126,8 @@ multiple view modes.
       <!-- Do not modify the visibility for this component. It is handled by the plug-in. Use the above
            defines for conditional visibility if you dont want to use fan-art only specific views. -->
     </control>
+	
+<import>common.time.xml</import>
 	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>

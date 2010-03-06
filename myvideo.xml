@@ -54,6 +54,8 @@
 		<align>center</align>
 		<valign>middle</valign>
 	</control>
+	
+<import>common.time.xml</import>
 
 	<control>
 		<type>actiongroup</type>

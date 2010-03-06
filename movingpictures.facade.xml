@@ -59,6 +59,7 @@ This file should contain the facade view
 				<width>1166</width>
 				<height>768</height>
 				<onup>2</onup>
+				<ondown>2</ondown>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<thumbWidth>214</thumbWidth>
@@ -70,6 +71,7 @@ This file should contain the facade view
 				<textureWidth>214</textureWidth>
 				<textureHeight>302</textureHeight>
 				<textYOff>-2000</textYOff>
+				<spinCanFocus>no</spinCanFocus>
 				<imageFolderFocus>-</imageFolderFocus>
 				<frame>-</frame>
 				<frameFocus>thumbnail_frame_shine.png</frameFocus>

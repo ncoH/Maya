@@ -14,14 +14,7 @@
 		<texture>background.png</texture>
 	</control>
 
-	<control>
-		<description>header</description>
-		<type>image</type>
-		<id>30</id>
-		<posX>75</posX>
-		<posY>45</posY>
-		<texture flipY="true" diffuse="Thumb_Mask.png">musictrivia.png</texture>
-	</control>
+<import>common.time.xml</import>
 
 	<control>
 		<description>Start Button</description>

@@ -48,6 +48,8 @@
 		<texture>background_filmstrip.png</texture>
 		<visible>facadeview.filmstrip+Control.IsVisible(1026)</visible>
 	</control>
+	
+<import>common.time.xml</import>
 
 	<control>
 		<description>Number of Files Label</description>

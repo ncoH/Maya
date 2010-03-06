@@ -12,6 +12,8 @@
 		<width>1366</width>
 		<height>768</height>
 	</control>
+	
+<import>common.time.xml</import>
 
 	<control>
 		<description>Select text label</description>

@@ -20,6 +20,8 @@
 		<texture>#Youtube.fm.NowPlaying.Video.FanArt</texture>
 	</control>
 	
+<import>common.time.xml</import>
+	
 	<control>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
