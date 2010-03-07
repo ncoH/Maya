@@ -130,12 +130,13 @@ skin\Maya\Media\Logos\Video\XVID.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;
 skin\Maya\Media\Logos\Video\dvd.png;-;<Episode.EpisodeFilename>;-;contains;-;DVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HDDVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HD-DVD;-;<Restrict:Episode>
 skin\Maya\Media\Logos\Video\hddvd.png;-;<Episode.EpisodeFilename>;-;contains;-;HDDVD;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;HD-DVD;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Maya\Media\Logos\Video\bluray.png;-;<Episode.EpisodeFilename>;-;contains;-;BLURAY;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;BLU-RAY;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\Audio\2.png;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\Audio\6.png;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Maya\Media\Logos\Audio\dts.png;-;<Episode.AudioCodec>;-;=;-;DTS;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Maya\Media\Logos\Audio\dolbydigital.png;-;<Episode.AudioCodec>;-;=;-;AC3;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Maya\Media\Logos\Audio\MP3.png;-;<Episode.AudioCodec>;-;contains;-;MPA1L3;-;OR;-;<Episode.AudioCodec>;-;contains;-;MPA2L3;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;<Restrict:Episode>
 skin\Maya\Media\Logos\Audio\AAC.png;-;<Episode.AudioCodec>;-;contains;-;AAC;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\Audio\1.png;-;<Episode.AudioChannels>;-;=;-;1;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\Audio\2.png;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\Audio\6.png;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Maya\Media\Logos\aspectratio\2.35.png;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;2.5;-;AND;-;;-;=;-;;-;
 skin\Maya\Media\Logos\aspectratio\1.85.png;-;<Episode.VideoAspectRatio>;-;>;-;1.6;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;2.0;-;AND;-;;-;=;-;;-;
 skin\Maya\Media\Logos\aspectratio\1.33.png;-;<Episode.VideoAspectRatio>;-;>;-;1.2;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;1.5;-;AND;-;;-;=;-;;-;]]>
