@@ -202,6 +202,8 @@
 		<height>400</height>
 		<spinPosX>645</spinPosX>
 		<spinPosY>720</spinPosY>
+		<spinWidth>33</spinWidth>
+		<spinHeight>33</spinHeight>
 		<onleft>10</onleft>
 		<onright>10</onright>
 		<visible aloowhiddenfocus="true"></visible>

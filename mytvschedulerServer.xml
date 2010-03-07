@@ -101,6 +101,20 @@
 		<width>1366</width>
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
+				
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>semi_trans_back_general_menu.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+		</control>
+		
+		<control>
+		<type>group</type>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
 		<animation effect="fade" time="200" reversible="false">Hidden</animation>
@@ -245,6 +259,8 @@
 	</control>
 	
 </control>
+	
+</control>
 
 	<control>
 		<type>group</type>
@@ -256,7 +272,7 @@
 				<description>listcontrol</description>
 				<type>listcontrol</type>
 				<id>10</id>
-				<posY>392</posY>
+				<posY>424</posY>
 				<posX>490</posX>
 				<height>300</height>
 				<width>781</width>
@@ -312,7 +328,7 @@
 			<description>Description1</description>
 			<id>15</id>
 			<posX>556</posX>
-			<posY>228190</posY>
+			<posY>281</posY>
 			<width>741</width>
 			<height>80</height>
 			<label>#TV.Scheduled.Description</label>
