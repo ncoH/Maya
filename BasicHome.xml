@@ -644,7 +644,7 @@
 		<onup>501</onup>
 		<onleft>2</onleft>
 		<ondown>503</ondown>
-		<onright>502</onright>
+		<onright>1001</onright>
 			<visible>!string.equals(#subitem2,)+[Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
 	</control>
 	
@@ -662,7 +662,7 @@
 		<onup>502</onup>
 		<onleft>2</onleft>
 		<ondown>504</ondown>
-		<onright>503</onright>
+		<onright>1001</onright>
 			<visible>!string.equals(#subitem3,)+[Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
 	</control>
 	
@@ -680,7 +680,7 @@
 		<onup>503</onup>
 		<onleft>2</onleft>
 		<ondown>505</ondown>
-		<onright>504</onright>
+		<onright>1001</onright>
 			<visible>!string.equals(#subitem4,)+[Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
 	</control>
 	
@@ -698,7 +698,7 @@
 		<onup>504</onup>
 		<ondown>505</ondown>
 		<onleft>2</onleft>
-		<onright>505</onright>
+		<onright>1001</onright>
 			<visible>!string.equals(#subitem5,)+[Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
 	</control>
 	
@@ -750,8 +750,8 @@
 		<onup>601</onup>
 		<onleft>2</onleft>
 		<ondown>603</ondown>
-		<onright>602</onright>
-		<visible>!string.equals(#subitem2,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605]</visible>
+		<onright>1002</onright>
+		<visible>!string.equals(#subitem2,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
 	</control>
 	
 	<control>
@@ -768,8 +768,8 @@
 		<onup>602</onup>
 		<onleft>2</onleft>
 		<ondown>604</ondown>
-		<onright>603</onright>
-		<visible>!string.equals(#subitem3,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605]</visible>
+		<onright>1002</onright>
+		<visible>!string.equals(#subitem3,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
 	</control>
 	
 	<control>
@@ -786,8 +786,8 @@
 		<onup>603</onup>
 		<onleft>2</onleft>
 		<ondown>605</ondown>
-		<onright>604</onright>
-		<visible>!string.equals(#subitem4,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605]</visible>
+		<onright>1002</onright>
+		<visible>!string.equals(#subitem4,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
 	</control>
 	
 	<control>
@@ -804,8 +804,8 @@
 		<onup>604</onup>
 		<ondown>605</ondown>
 		<onleft>2</onleft>
-		<onright>605</onright>
-		<visible>!string.equals(#subitem5,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605]</visible>
+		<onright>1002</onright>
+		<visible>!string.equals(#subitem5,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
 	</control>
 	
 </control>
