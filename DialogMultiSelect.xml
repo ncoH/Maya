@@ -44,35 +44,33 @@
 			<textcolor>85cffe</textcolor>
 		</control>
 		
-		<control>
-			<type>listcontrol</type>
-			<description>options listcontrol</description>
-			<id>3</id>
-			<posX>443</posX>
-			<posY>277</posY>
-			<width>482</width>
-			<height>270</height>
-			<onleft>10</onleft>
-			<onright>10</onright>
-			<onup>3</onup>
-			<ondown>10</ondown>
-			<playedColor>ffa0d0ff</playedColor>
-			<remoteColor>ffFFA075</remoteColor>
-			<selectedColor>FFF8BC70</selectedColor>
-			<downloadColor>ff80ff80</downloadColor>
-			<textXOff2>460</textXOff2>
-			<textYOff2>10</textYOff2>
-			<spinPosX>902</spinPosX>
-			<spinPosY>534</spinPosY>
-			<textXOff>15</textXOff>
-			<textYOff>8</textYOff>
-			<textureFocus>context_item_selected.png</textureFocus>
-			<textureNoFocus>context_item.png</textureNoFocus>
-			<textureHeight>49</textureHeight>
-			<spaceBetweenItems>1</spaceBetweenItems>
-			<PinIconXOff>2</PinIconXOff>
-			<PinIconYOff>11</PinIconYOff>
-		</control>
+            <control>
+                <id>3</id>
+                <description>options listcontrol</description>
+                <type>listcontrol</type>
+				<onleft>10</onleft>
+				<onright>10</onright>
+				<onup>3</onup>
+				<ondown>10</ondown>
+                <posX>376</posX>
+                <posY>277</posY>
+                <width>548</width>
+                <height>300</height>
+                <textXOff2>525</textXOff2>
+                <textYOff2>8</textYOff2>
+                <spinPosX>902</spinPosX>
+                <spinPosY>535</spinPosY>
+                <textXOff>84</textXOff>
+                <textYOff>8</textYOff>
+                <textureFocus>context_item_selected.png</textureFocus>
+                <textureNoFocus>context_item.png</textureNoFocus>
+                <textureHeight>49</textureHeight>
+                <spaceBetweenItems>1</spaceBetweenItems>
+				<PinIconWidth>15</PinIconWidth>
+				<PinIconHeight>15</PinIconHeight>
+                <PinIconXOff>2000</PinIconXOff>
+                <PinIconYOff>15</PinIconYOff>
+            </control>
 
 		<control>
 			<type>button</type>
@@ -92,7 +90,7 @@
 			<description>Okay button</description>
 			<id>10</id>
 			<posX>565</posX>
-			<posY>500</posY>
+			<posY>530</posY>
 			<onleft>10</onleft>
 			<onright>10</onright>
 			<onup>3</onup>

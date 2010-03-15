@@ -170,7 +170,7 @@
 		<textureHeight>53</textureHeight>
 		<image>folder_focus.png</image>
 		<font>font14</font>
-		<shadedColor>20ffffff</shadedColor>
+		<shadedColor>ffffffff</shadedColor>
 		<selectedColor>ffa0d0ff</selectedColor>
 		<playedColor>ffa0d0ff</playedColor>
 		<textcolor>ffffffff</textcolor>
@@ -181,9 +181,9 @@
 		<downloadColor>ff80ff80</downloadColor>
 		<spaceBetweenItems>-3</spaceBetweenItems>
 		<textXOff>22</textXOff>
-		<textYOff>8</textYOff>
+		<textYOff>10</textYOff>
 		<textXOff2>0</textXOff2>
-		<textYOff2>8</textYOff2>
+		<textYOff2>10</textYOff2>
 		<itemWidth>0</itemWidth>
 		<itemHeight>0</itemHeight>
 		<IconXOff>1000</IconXOff>
@@ -246,7 +246,7 @@
 		<id>10</id>
 		<posX>530</posX>
 		<posY>150</posY>
-		<width>750</width>
+		<width>748</width>
 		<height>550</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
@@ -280,7 +280,7 @@
 		<suffix>|</suffix>
 	</control>
 
-	<control>
+		<control>
 		<description>default playlist item listcontrol</description>
 		<type>playlistcontrol</type>
 		<id>10</id>

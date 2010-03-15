@@ -17,9 +17,9 @@
 		<id>0</id>
 		<texture>tv_miniguide.png</texture>
 		<width>734</width>
-		<height>348</height>
+		<height>311</height>
 		<posX>316</posX>
-		<posY>334</posY>
+		<posY>455</posY>
 	</control>
 
 	<control>
@@ -27,7 +27,7 @@
 		<type>label</type>
 		<id>4</id>
 		<posX>435</posX>
-		<posY>373</posY>
+		<posY>492</posY>
 		<width>426</width>
 		<label>10105</label>
 		<font>Segoe Light18</font>
@@ -39,7 +39,7 @@
 		<id>0</id>
 		<type>label</type>
 		<posX>934</posX>
-		<posY>373</posY>
+		<posY>492</posY>
 		<align>right</align>
 		<font>Segoe Light18</font>
 		<label>#time</label>
@@ -50,34 +50,34 @@
 		<type>listcontrol</type>
 		<id>35</id>
 		<posX>349</posX>
-		<posY>420</posY>
+		<posY>540</posY>
 		<width>669</width>
-		<height>220</height>
+		<height>210</height>
 		<textureFocus>tv_miniguide_bar_nochannelstate.png</textureFocus>
 		<textureNoFocus>tv_miniguide_bar_nochannelstate_nofocus.png</textureNoFocus>
-		<textYOff>31</textYOff>
-		<textXOff>35</textXOff>
+		<textYOff>2000</textYOff>
+		<textXOff>0</textXOff>
 		<textXOff2>660</textXOff2>
-		<textYOff2>31</textYOff2>
-		<textXOff3>85</textXOff3>
-		<textYOff3>6</textYOff3>
+		<textYOff2>13</textYOff2>
+		<textXOff3>90</textXOff3>
+		<textYOff3>12</textYOff3>
 		<IconXOff>13</IconXOff>
-		<IconYOff>10</IconYOff>
-		<PinIconXOff>620</PinIconXOff>
-		<PinIconYOff>18</PinIconYOff>
+		<IconYOff>3</IconYOff>
+		<PinIconXOff>605</PinIconXOff>
+		<PinIconYOff>13</PinIconYOff>
 		<PinIconWidth>-</PinIconWidth>
 		<PinIconHeight>-</PinIconHeight>
-		<spinPosY>614</spinPosY>
-		<spinPosX>998</spinPosX>
+		<spinPosY>700</spinPosY>
+		<spinPosX>1000</spinPosX>
 		<spinColor>FFB2D4F5</spinColor>
 		<spinWidth>39</spinWidth>
 		<spinHeight>27</spinHeight>
 		<itemWidth>42</itemWidth>
 		<itemHeight>42</itemHeight>
-		<spaceBetweenItems>0</spaceBetweenItems>
-		<textureHeight>61</textureHeight>
+		<spaceBetweenItems>1</spaceBetweenItems>
+		<textureHeight>49</textureHeight>
 		<keepaspectratio>yes</keepaspectratio>
-		<font>font10</font>
+		<font>font12</font>
 		<font2>font10</font2>
 		<font3>font12</font3>
 		<textcolor>FFB2D4F5</textcolor>
@@ -93,34 +93,34 @@
 		<type>listcontrol</type>
 		<id>37</id>
 		<posX>348</posX>
-		<posY>420</posY>
+		<posY>540</posY>
 		<width>669</width>
-		<height>220</height>
+		<height>210</height>
 		<textureFocus>tv_miniguide_bar.png</textureFocus>
 		<textureNoFocus>tv_miniguide_bar_nofocus.png</textureNoFocus>
-		<textYOff>31</textYOff>
-		<textXOff>35</textXOff>
+		<textYOff>2000</textYOff>
+		<textXOff>0</textXOff>
 		<textXOff2>592</textXOff2>
-		<textYOff2>31</textYOff2>
-		<textXOff3>85</textXOff3>
-		<textYOff3>6</textYOff3>
+		<textYOff2>13</textYOff2>
+		<textXOff3>90</textXOff3>
+		<textYOff3>12</textYOff3>
 		<IconXOff>13</IconXOff>
-		<IconYOff>10</IconYOff>
-		<PinIconXOff>601</PinIconXOff>
-		<PinIconYOff>1</PinIconYOff>
+		<IconYOff>4</IconYOff>
+		<PinIconXOff>605</PinIconXOff>
+		<PinIconYOff>12</PinIconYOff>
 		<PinIconWidth>-</PinIconWidth>
 		<PinIconHeight>-</PinIconHeight>
-		<spinPosY>614</spinPosY>
-		<spinPosX>998</spinPosX>
+		<spinPosY>700</spinPosY>
+		<spinPosX>1000</spinPosX>
 		<spinColor>FFB2D4F5</spinColor>
 		<spinWidth>39</spinWidth>
 		<spinHeight>27</spinHeight>
 		<itemWidth>40</itemWidth>
 		<itemHeight>40</itemHeight>
-		<spaceBetweenItems>0</spaceBetweenItems>
-		<textureHeight>61</textureHeight>
+		<spaceBetweenItems>1</spaceBetweenItems>
+		<textureHeight>49</textureHeight>
 		<keepaspectratio>yes</keepaspectratio>
-		<font>font10</font>
+		<font>font12</font>
 		<font2>font10</font2>
 		<font3>font12</font3>
 		<textcolor>FFB2D4F5</textcolor>
@@ -135,8 +135,8 @@
 		<description>groups spin control</description>
 		<type>spincontrol</type>
 		<id>36</id>
-		<posX>785</posX>
-		<posY>609</posY>
+		<posX>740</posX>
+		<posY>695</posY>
 		<showrange>no</showrange>
 		<orientation>horizontal</orientation>
 		<font>font10</font>

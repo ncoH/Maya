@@ -170,15 +170,15 @@
 		<textureHeight>53</textureHeight>
 		<image>folder_focus.png</image>
 		<font>font12</font>
-		<shadedColor>20ffffff</shadedColor>
+		<shadedColor>ffffffff</shadedColor>
 		<selectedColor>ffa0d0ff</selectedColor>
-		<playedColor>ffa0d0ff</playedColor>
 		<textcolor>ffffffff</textcolor>
 		<textcolor2>ffffffff</textcolor2>
 		<textcolor3>ffffffff</textcolor3>
 		<colordiffuse>ffffffff</colordiffuse>
 		<remoteColor>ffFFA075</remoteColor>
 		<downloadColor>ff80ff80</downloadColor>
+		<playedColor>ffa0d0ff</playedColor>
 		<spaceBetweenItems>-3</spaceBetweenItems>
 		<textXOff>22</textXOff>
 		<textYOff>10</textYOff>
@@ -244,10 +244,10 @@
 		<description>default up/downlistcontrol</description>
 		<type>updownlistcontrol</type>
 		<id>10</id>
-		<posX>530</posX>
+		<posX>524</posX>
 		<posY>150</posY>
-		<width>750</width>
-		<height>550</height>
+		<width>748</width>
+		<height>600</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
 		<spinPosX>1111</spinPosX>
@@ -262,15 +262,16 @@
 		<textureNoFocus>list_sub_nofocus.png</textureNoFocus>
 		<textureHeight>40</textureHeight>
 		<image>folder_focus.png</image>
-		<font>font12</font>
-		<shadedColor>20ffffff</shadedColor>
-		<selectedColor>FFF8BC70</selectedColor>
+		<font>font14</font>
+		<shadedColor>ffffffff</shadedColor>
+		<selectedColor>ffa0d0ff</selectedColor>
 		<textcolor>ffffffff</textcolor>
 		<textcolor2>ffffffff</textcolor2>
 		<textcolor3>ffffffff</textcolor3>
 		<colordiffuse>ffffffff</colordiffuse>
 		<remoteColor>ffFFA075</remoteColor>
 		<downloadColor>ff80ff80</downloadColor>
+		<playedColor>ffa0d0ff</playedColor>
 		<textXOff>8</textXOff>
 		<textYOff>5</textYOff>
 		<textXOff2>0</textXOff2>
