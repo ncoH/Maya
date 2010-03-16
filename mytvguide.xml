@@ -190,10 +190,10 @@
 		<description>Current program title</description>
 		<type>fadelabel</type>
 		<id>13</id>
-		<posX>435</posX>
-		<posY>562</posY>
+		<posX>473</posX>
+		<posY>548</posY>
 		<width>850</width>
-		<label>#TV.Guide.Title</label>
+		<label>#TV.Guide.CompositeTitle</label>
 		<font>Segoe Light18</font>
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
@@ -203,8 +203,8 @@
 		<description>Current program time</description>
 		<type>label</type>
 		<id>14</id>
-		<posX>435</posX>
-		<posY>607</posY>
+		<posX>473</posX>
+		<posY>593</posY>
 		<width>850</width>
 		<label>#TV.Guide.Time - #TV.Guide.Genre</label>
 		<textcolor>85cfff</textcolor>
@@ -216,8 +216,8 @@
 		<description>Description1</description>
 		<type>textboxscrollup</type>
 		<id>15</id>
-		<posX>435</posX>
-		<posY>644</posY>
+		<posX>473</posX>
+		<posY>630</posY>
 		<width>850</width>
 		<height>110</height>
 		<label>#TV.Guide.Description</label>
@@ -302,10 +302,9 @@
 		<description>record pin</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>385</posX>
-		<posY>543</posY>
+		<posX>413</posX>
+		<posY>549</posY>
 		<fixedheight>yes</fixedheight>
-		<centered>yes</centered>
 		<height>39</height>
 		<texture>#maya.tvguide.recpin</texture>
 		<keepaspectratio>yes</keepaspectratio>

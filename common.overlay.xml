@@ -30,7 +30,7 @@
 		<label>#TV.View.channel</label>
 		<visible>player.hasmedia+control.hastext(3339)</visible>
 	</control>
-
+	
 	<control>
 		<description>fade background</description>
 		<type>image</type>
@@ -43,14 +43,13 @@
 		<visible>player.hasmedia + [!window.isvisible(7987) + !window.isvisible(96742) + !Control.IsVisible(51) | Control.IsVisible(50)]</visible>
 	</control>
 	
-	
 <!-- TV/Video -->
 	<control>
 		<description>video rectangle</description>
 		<type>image</type>
 		<id>1</id>
 		<posX>98</posX>
-		<posY>543</posY>
+		<posY>528</posY>
 		<width>335</width>
 		<height>229</height>
 		<texture>video_overlay_border.png</texture>
@@ -62,7 +61,7 @@
 		<type>videowindow</type>
 		<id>99</id>
 		<posX>143</posX>
-		<posY>588</posY>
+		<posY>573</posY>
 		<width>244</width>
 		<height>140</height>
 		<action>18</action>
@@ -123,7 +122,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>109</posX>
-		<posY>556</posY>
+		<posY>542</posY>
 		<width>313</width>
 		<height>197</height>
 		<texture>now_playing_music_bg.png</texture>
@@ -139,7 +138,7 @@
 		<description>title label</description>
 		<id>1</id>
 		<posX>154</posX>
-		<posY>595</posY>
+		<posY>581</posY>
 		<width>221</width>
 		<label>#Play.Current.Title</label>
 		<font>font12</font>
@@ -153,7 +152,7 @@
 		<description>artist label</description>
 		<id>1</id>
 		<posX>154</posX>
-		<posY>620</posY>
+		<posY>606</posY>
 		<width>221</width>
 		<label>#Play.Current.Artist</label>
 		<font>font10</font>
@@ -167,7 +166,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>153</posX>
-		<posY>637</posY>
+		<posY>623</posY>
 		<width>260</width>
 		<height>50</height>
 		<label>Now Playing #currentplaytime</label>
@@ -183,7 +182,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>156</posX>
-		<posY>686</posY>
+		<posY>672</posY>
 		<width>217</width>
 		<height>2</height>
 		<texture>now_playing_music_progress_bg.png</texture>
@@ -197,7 +196,7 @@
 		<type>progress</type>
 		<id>1</id>
 		<posX>144</posX>
-		<posY>685</posY>
+		<posY>671</posY>
 		<width>242</width>
 		<height>2</height>
 		<texturebg>-</texturebg>
@@ -215,7 +214,7 @@
 		<description>track duration label start</description>
 		<id>1</id>
 		<posX>154</posX>
-		<posY>696</posY>
+		<posY>682</posY>
 		<width>390</width>
 		<label>#currentplaytime</label>
 		<align>left</align>
@@ -229,8 +228,8 @@
 		<type>label</type>
 		<description>track duration label end</description>
 		<id>1</id>
-		<posX>373</posX>
-		<posY>696</posY>
+		<posX>374</posX>
+		<posY>682</posY>
 		<width>390</width>
 		<label>#duration</label>
 		<align>right</align>
@@ -245,7 +244,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>240</posX>
-		<posY>699</posY>
+		<posY>685</posY>
 		<width>48</width>
 		<height>26</height>
 		<texture>now_playing_play.png</texture>
@@ -259,7 +258,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>240</posX>
-		<posY>699</posY>
+		<posY>685</posY>
 		<width>48</width>
 		<height>26</height>
 		<texture>now_playing_pause.png</texture>

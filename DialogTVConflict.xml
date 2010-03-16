@@ -5,70 +5,74 @@
 <allowoverlay>no</allowoverlay>
 <controls>
 
-	<control>
-		<type>image</type>
-		<id>0</id>
-		<posX>195</posX>
-		<posY>97</posY>
-		<width>888</width>
-		<height>612</height>
-		<texture>context_background.png</texture>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>semi_trans_back_general_menu.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+			<visible>!window.isvisible(602)+!window.isvisible(2005)</visible>
+		</control>
 
-	<control>
-		<description>Heading text label</description>
-		<type>label</type>
-		<id>4</id>
-		<posX>394</posX>
-		<posY>140</posY>
-		<font>font18</font>
-		<textcolor>FFFFFFFF</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
+            <control>
+                <id>0</id>
+                <type>image</type>
+                <posX>409</posX>
+                <posY>164</posY>
+                <width>548</width>
+                <height>440</height>
+                <texture>context_background.png</texture>
+            </control>
 
-	<control>
-		<description>options listcontrol</description>
-		<type>listcontrol</type>
-		<id>3</id>
-		<posX>284</posX>
-		<posY>206</posY>
-		<width>711</width>
-		<height>250</height>
-		<textXOff>44</textXOff>
-		<textYOff>2</textYOff>
-		<textXOff2>675</textXOff2>
-		<textYOff2>36</textYOff2>
-		<textXOff3>124</textXOff3>
-		<textYOff3>36</textYOff3>
-		<IconXOff>21</IconXOff>
-		<PinIconXOff>45</PinIconXOff>
-		<PinIconYOff>19</PinIconYOff>
-		<spinPosX>840</spinPosX>
-		<spinPosY>410</spinPosY>
-		<itemWidth>62</itemWidth>
-		<itemHeight>43</itemHeight>
-		<textureFocus>recording_background_focus.png</textureFocus>
-		<textureNoFocus>recording_background_nofocus.png</textureNoFocus>
-		<spaceBetweenItems>8</spaceBetweenItems>
-		<textureHeight>62</textureHeight>
-		<keepaspectratio>no</keepaspectratio>
-		<font2>font10</font2>
-		<font3>font10</font3>
-		<ondown>11</ondown>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
+            <control>
+                <id>4</id>
+                <description>Heading text label</description>
+                <type>label</type>
+                <posX>470</posX>
+                <posY>212</posY>
+				<width>426</width>
+                <font>Segoe Light18</font>
+                <textcolor>ff85cffe</textcolor>
+            </control>
+
+            <control>
+                <id>3</id>
+                <description>options listcontrol</description>
+                <type>listcontrol</type>
+                <onleft>3</onleft>
+                <onright>3</onright>
+				<ondown>11</ondown>
+                <posX>376</posX>
+                <posY>277</posY>
+                <width>548</width>
+                <height>300</height>
+                <textXOff2>525</textXOff2>
+                <textYOff2>8</textYOff2>
+				<textYOff3>10</textYOff3>
+				<textXOff3>-2000</textXOff3>
+                <spinPosX>902</spinPosX>
+                <spinPosY>535</spinPosY>
+                <textXOff>84</textXOff>
+                <textYOff>8</textYOff>
+                <textureFocus>context_item_selected.png</textureFocus>
+                <textureNoFocus>context_item.png</textureNoFocus>
+                <textureHeight>49</textureHeight>
+                <spaceBetweenItems>1</spaceBetweenItems>
+				<PinIconWidth>15</PinIconWidth>
+				<PinIconHeight>15</PinIconHeight>
+                <PinIconXOff>2000</PinIconXOff>
+                <PinIconYOff>15</PinIconYOff>
+            </control>
 
 	<control>
 		<description>Skip new Recording</description>
 		<type>button</type>
 		<id>11</id>
-		<posX>302</posX>
-		<posY>447</posY>
-		<width>557</width>
+		<posX>500</posX>
+		<posY>400</posY>
 		<label>1110</label>
 		<onup>3</onup>
 		<ondown>12</ondown>
@@ -78,9 +82,8 @@
 		<description>Skip conflicting Recording</description>
 		<type>button</type>
 		<id>12</id>
-		<posX>302</posX>
-		<posY>497</posY>
-		<width>557</width>
+		<posX>500</posX>
+		<posY>450</posY>
 		<label>1111</label>
 		<onup>11</onup>
 		<ondown>13</ondown>
@@ -90,9 +93,8 @@
 		<description>Keep Conflict</description>
 		<type>button</type>
 		<id>13</id>
-		<posX>302</posX>
-		<posY>547</posY>
-		<width>557</width>
+		<posX>500</posX>
+		<posY>500</posY>
 		<label>1112</label>
 		<onup>12</onup>
 		<ondown>14</ondown>
@@ -102,9 +104,8 @@
 		<description>Skip conflicting Episode</description>
 		<type>button</type>
 		<id>14</id>
-		<posX>302</posX>
-		<posY>597</posY>
-		<width>557</width>
+		<posX>500</posX>
+		<posY>550</posY>
 		<label>1113</label>
 		<onup>13</onup>
 		<ondown>3</ondown>

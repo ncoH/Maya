@@ -17,7 +17,7 @@
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
-		<id>1</id>
+		<id>0</id>
 		<posX>433</posX>
 		<posY>30</posY>
 		<width>500</width>
@@ -160,7 +160,7 @@
 	
 		<control>
 		<type>imagelist</type>
-		<id>1</id>
+		<id>141</id>
 		<posX>704</posX>
 		<posY>430</posY>
 		<width>185</width>

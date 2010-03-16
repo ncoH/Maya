@@ -166,7 +166,7 @@
 		<posX>435</posX>
 		<posY>533</posY>
 		<width>666</width>
-		<label>#TV.Guide.Title</label>
+		<label>#TV.Guide.CompositeTitle</label>
 		<font>Segoe Light18</font>
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>

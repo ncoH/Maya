@@ -16,7 +16,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
-		<posX>552</posX>
+		<posX>155</posX>
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
@@ -32,7 +32,7 @@
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<posX>200</posX>
-		<posY>200</posY>
+		<posY>180</posY>
 		<control>
 			<description>TVGuide</description>
 			<type>button</type>
@@ -183,11 +183,11 @@
 		<description>TV background</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>487</posX>
-		<posY>170</posY>
-		<width>392</width>
-		<height>266</height>
-		<texture>tvhome_tvframe.png</texture>
+		<posX>515</posX>
+		<posY>20</posY>
+		<width>753</width>
+		<height>480</height>
+		<texture>tvhome_tvframe_big.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -196,10 +196,10 @@
 		<description>video window</description>
 		<type>videowindow</type>
 		<id>99</id>
-		<posX>535</posX>
-		<posY>221</posY>
-		<width>297</width>
-		<height>166</height>
+		<posX>578</posX>
+		<posY>86</posY>
+		<width>624</width>
+		<height>350</height>
 		<onleft>2</onleft>
 		<onright>2</onright>
 		<action>18</action>
@@ -212,7 +212,7 @@
 		<description>Playing Channel</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>530</posX>
+		<posX>-2000</posX>
 		<posY>418</posY>
 		<width>50</width>
 		<height>50</height>
@@ -227,8 +227,8 @@
 		<id>1</id>
 		<width>750</width>
 		<height>37</height>
-		<posX>600</posX>
-		<posY>432</posY>
+		<posX>562</posX>
+		<posY>480</posY>
 		<label>#TV.View.channel - #TV.View.start - #TV.View.stop</label>
 		<align>left</align>
 		<font>font16</font>
@@ -241,8 +241,8 @@
 		<description>Current program title</description>
 		<type>fadelabel</type>
 		<id>13</id>
-		<posX>528</posX>
-		<posY>465</posY>
+		<posX>560</posX>
+		<posY>500</posY>
 		<width>750</width>
 		<label>#TV.View.title</label>
 		<font>Segoe Light32</font>
@@ -256,8 +256,8 @@
 		<description>Description1</description>
 		<type>textboxscrollup</type>
 		<id>15</id>
-		<posX>530</posX>
-		<posY>540</posY>
+		<posX>560</posX>
+		<posY>580</posY>
 		<width>750</width>
 		<height>137</height>
 		<seperator>----------------------------------------------------------------------------------------------</seperator>

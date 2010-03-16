@@ -170,6 +170,7 @@
 		<textureHeight>53</textureHeight>
 		<image>folder_focus.png</image>
 		<font>font14</font>
+		<font2>font14</font2>
 		<shadedColor>ffffffff</shadedColor>
 		<selectedColor>ffa0d0ff</selectedColor>
 		<playedColor>ffa0d0ff</playedColor>

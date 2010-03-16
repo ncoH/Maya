@@ -5,7 +5,7 @@
 <control>
 	<description>Maya logo</description>
 	<type>image</type>
-	<id>1</id>
+	<id>0</id>
 	<posX>40</posX>
 	<posY>30</posY>
 	<texture>maya_logo_small.png</texture>
@@ -17,7 +17,7 @@
 <control>
 	<description>clock seperator</description>
 	<type>image</type>
-	<id>1</id>
+	<id>0</id>
 	<posX>115</posX>
 	<posY>31</posY>
 	<texture>clock_seperator.png</texture>
@@ -27,7 +27,7 @@
 </control>
 
 <control>
-	<id>1</id>
+	<id>0</id>
 	<type>label</type>
 	<posX>133</posX>
 	<posY>20</posY>
