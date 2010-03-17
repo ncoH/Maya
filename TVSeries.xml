@@ -1277,7 +1277,7 @@
           <id>50</id>
           <posX>127</posX>
 		  <posY>242</posY>
-          <width>1112</width>
+          <width>1212</width>
           <height>500</height>
           <!-- up/down buttons & page # -->     
 		  <onleft>2</onleft>
