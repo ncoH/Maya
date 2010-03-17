@@ -29,22 +29,29 @@
 		<font>Segoe Light40</font>
 	</control>
 	
-<control>
-	<description>button group</description>
-	<type>group</type>
-	<posX>979</posX>
-	<posY>183</posY>
-	<layout>StackLayout</layout>
-	<dimColor>ffffffff</dimColor>
+	<control>
+		<description>separator listview</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>947</posX>
+		<posY>136</posY>
+		<width>32</width>
+		<height>632</height>
+		<texture>listcontrol_separator.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+    </control>
 
 	<control>
 		<description>Play Button</description>
 		<type>button</type>
 		<id>2</id>
+		<posX>979</posX>
+		<posY>183</posY>
 		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 					<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 					<width>299</width>
-			<textXOff>14</textXOff>
+			<textXOff>33</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
 		<label>208</label>
@@ -58,12 +65,14 @@
 		<description>Plot</description>
 		<type>togglebutton</type>
 		<id>3</id>
+		<posX>979</posX>
+		<posY>233</posY>
 					<textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
 		<textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
 		<AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
 		<AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
 					<width>299</width>
-			<textXOff>14</textXOff>
+			<textXOff>32</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
 		<label>207</label>
@@ -77,12 +86,14 @@
 		<description>Cast</description>
 		<type>togglebutton</type>
 		<id>4</id>
+		<posX>979</posX>
+		<posY>283</posY>
 		<textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
 		<textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
 		<AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
 		<AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
 					<width>299</width>
-			<textXOff>14</textXOff>
+			<textXOff>32</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
 		<label>206</label>
@@ -96,10 +107,12 @@
 		<description>Refresh</description>
 		<type>button</type>
 		<id>5</id>
+		<posX>979</posX>
+		<posY>334</posY>
 		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 					<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 					<width>299</width>
-			<textXOff>14</textXOff>
+			<textXOff>32</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
 		<label>184</label>
@@ -113,12 +126,14 @@
 		<description>Watched</description>
 		<type>togglebutton</type>
 		<id>6</id>
+		<posX>979</posX>
+		<posY>384</posY>
 		<textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
 		<textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
 		<AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
 		<AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
 					<width>299</width>
-			<textXOff>14</textXOff>
+			<textXOff>32</textXOff>
 					<height>53</height>
 					<textYOff>12</textYOff>
 		<label>1010</label>
@@ -128,15 +143,13 @@
 		<ondown>10</ondown>
 	</control>
 
-	
-</control>
 
 	<control>
 		<description>spin control background 1</description>
 		<type>image</type>
 		<id>117</id>
 		<posX>979</posX>
-		<posY>449</posY>
+		<posY>434</posY>
 		<texture>listcontrol_item_small.png</texture>
 		<visible>!Control.HasFocus(10)</visible>
 	</control>
@@ -146,7 +159,7 @@
 		<type>image</type>
 		<id>117</id>
 		<posX>979</posX>
-		<posY>449</posY>
+		<posY>434</posY>
 		<texture>listcontrol_item_selected_small.png</texture>
 		<visible>Control.HasFocus(10)</visible>
 	</control>
@@ -156,7 +169,7 @@
 		<type>image</type>
 		<id>117</id>
 		<posX>979</posX>
-		<posY>503</posY>
+		<posY>485</posY>
 		<texture>listcontrol_item_small.png</texture>
 		<visible>!Control.HasFocus(11)</visible>
 	</control>
@@ -166,7 +179,7 @@
 		<type>image</type>
 		<id>117</id>
 		<posX>979</posX>
-		<posY>503</posY>
+		<posY>485</posY>
 		<texture>listcontrol_item_selected_small.png</texture>
 		<visible>Control.HasFocus(11)</visible>
 	</control>
@@ -175,8 +188,8 @@
 		<description>image title:</description>
 		<type>label</type>
 		<id>30</id>
-		<posX>993</posX>
-		<posY>462</posY>
+		<posX>1010</posX>
+		<posY>446</posY>
 		<label>734</label>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -187,7 +200,7 @@
 		<type>spincontrol</type>
 		<id>10</id>
 		<posX>1170</posX>
-		<posY>462</posY>
+		<posY>443</posY>
 		<onup>6</onup>
 		<ondown>11</ondown>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -198,8 +211,8 @@
 		<description>disc:</description>
 		<type>label</type>
 		<id>100</id>
-		<posX>993</posX>
-		<posY>516</posY>
+		<posX>1010</posX>
+		<posY>497</posY>
 		<label>427</label>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -210,7 +223,7 @@
 		<type>spincontrol</type>
 		<id>11</id>
 		<posX>1170</posX>
-		<posY>516</posY>
+		<posY>494</posY>
 		<onup>10</onup>
 		<ondown>2</ondown>
 		<onleft>5</onleft>

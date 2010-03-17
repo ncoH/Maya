@@ -105,7 +105,7 @@
 		<description>Add album to playlist</description>
 		<id>14</id>
 		<posX>1011</posX>
-		<posY>333</posY>
+		<posY>334</posY>
 		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 					<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 					<width>299</width>
@@ -124,7 +124,7 @@
 		<description>Add to favorites</description>
 		<id>15</id>
 		<posX>1011</posX>
-		<posY>383</posY>
+		<posY>384</posY>
 		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 					<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 					<width>299</width>
