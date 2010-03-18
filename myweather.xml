@@ -304,6 +304,16 @@
 		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
+	<control>
+		<description>current wind static label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>900</posX>
+		<posY>665</posY>
+		<label>Press OK to toggle day</label>
+		<visible>Control.IsVisible(31)</visible>
+	</control>
+	
 
 	
 <!--   1-day stuff   -->
