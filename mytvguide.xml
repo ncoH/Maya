@@ -63,10 +63,10 @@
 		<id>33</id>
 		<posX>350</posX>
 		<posY>117</posY>
-		<width>46</width>
-		<height>46</height>
+		<width>53</width>
+      <height>37</height>
 		<keepaspectratio>yes</keepaspectratio>
-		<zoom>yes</zoom>
+		<zoom>no</zoom>
 		<texture>defaultVideoBig.png</texture>
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
@@ -145,36 +145,36 @@
 	</control>
 	
     <control>
-      <description>Channel template</description>
-      <type>image</type>
-      <id>20</id>
-      <posX>79</posX>
-      <posY>166</posY>
-      <width>250</width>
-      <height>48</height>
+		<description>Channel template</description>
+		<type>image</type>
+		<id>20</id>
+		<posX>79</posX>
+		<posY>166</posY>
+		<width>250</width>
+		<height>48</height>
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
     </control>
 	
     <control>
-      <description>Channel image template</description>
-      <type>image</type>
-      <id>7</id>
+		<description>Channel image template</description>
+		<type>image</type>
+		<id>7</id>
 		<posX>15</posX>
-        <posY>1</posY>
-        <width>44</width>
-        <height>44</height>
-        <keepaspectratio>yes</keepaspectratio>
-        <centered>yes</centered>
+		<posY>1</posY>
+		<width>50</width>
+		<height>44</height>
+		<centered>yes</centered>
+		<keepaspectratio>yes</keepaspectratio>
 		<texture>defaultVideoBig.png</texture>
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
     </control>
 	
     <control>
-      <description>channel Label template</description>
-      <type>label</type>
-      <id>18</id>
+		<description>channel Label template</description>
+		<type>label</type>
+		<id>18</id>
 		<posX>75</posX>
 		<posY>6</posY>
 		<width>86</width>
