@@ -45,7 +45,7 @@
 		<texture>listcontrol_separator.png</texture>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<visible>facadeview.list</visible>
+		<visible>!facadeview.smallicons + !facadeview.largeicons + !facadeview.filmstrip</visible>
     </control>
 
 	<control>
