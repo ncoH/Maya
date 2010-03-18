@@ -98,7 +98,7 @@
 	<control>
       <description>Media Count Label</description>
       <type>label</type>
-      <label>Total Series: #TVSeries.SeriesCount</label>
+      <label>#TVSeries.Translation.Series.Label: #TVSeries.SeriesCount</label>
       <id>0</id>
       <posX>1242</posX>
 	  <posY>690</posY>
@@ -110,7 +110,7 @@
 	<control>
       <description>Media Count Label</description>
       <type>label</type>
-      <label>Total Episodes: #TVSeries.FilteredEpisodeCount</label>
+      <label>#TVSeries.Translation.Episodes.Label: #TVSeries.FilteredEpisodeCount</label>
       <id>0</id>
       <posX>1242</posX>
 	  <posY>690</posY>
@@ -122,7 +122,7 @@
 	<control>
       <description>Media Count Label</description>
       <type>label</type>
-      <label>Total Series: #TVSeries.SeriesCount</label>
+      <label>#TVSeries.Translation.Series.Label: #TVSeries.SeriesCount</label>
       <id>0</id>
       <posX>0</posX>
 	  <posY>178</posY>
