@@ -247,7 +247,7 @@
             <visible>Control.HasFocus(177)</visible>
             <posX>703</posX>
             <posY>536</posY>
-            <width>380</width>
+            <width>550</width>
             <font>Segoe Light18</font>
             <label>#Play.Next.Title</label>
         </control>
