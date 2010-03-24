@@ -277,7 +277,7 @@
             <onright>90478</onright>
             <onup>177</onup>
             <ondown>155</ondown>
-            <visible>Control.HasFocus(166)</visible>
+            <visible allowhiddenfocus="true">Control.HasFocus(166)</visible>
             <posX>680</posX>
             <posY>465</posY>
             <width>475</width>
@@ -313,7 +313,7 @@
             <onright>155</onright>
             <onup>166</onup>
             <ondown>90478</ondown>
-            <visible>Control.HasFocus(155)</visible>
+            <visible allowhiddenfocus="true">Control.HasFocus(155)</visible>
             <posX>680</posX>
             <posY>465</posY>
             <width>475</width>
