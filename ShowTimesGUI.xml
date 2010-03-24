@@ -355,6 +355,15 @@
 		</control>
 		
 		<control>
+			<id>1</id>
+			<type>image</type>
+			<posX>624</posX>
+			<posY>0</posY>
+			<texture>hiddenmenu_tab_up.png</texture>
+			<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+		</control>
+		
+		<control>
 			<description>separator listview</description>
 			<type>image</type>
 			<id>1</id>

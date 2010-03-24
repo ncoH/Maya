@@ -201,7 +201,7 @@
 		<id>0</id>
 		<posX>236</posX>
 		<posY>554</posY>
-		<width>144</width>
+		<width>146</width>
 		<height>1</height>
 		<texture>weather_horizontal_bar.png</texture>
 		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
@@ -224,10 +224,11 @@
 		<description>current feels like label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>345</posX>
+		<posX>380</posX>
 		<posY>560</posY>
 		<label>#infoservice.weather.today.feelsliketemp</label>
 		<font>font11</font>
+		<align>right</align>
 		<textcolor>6aa5cb</textcolor>
 		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
@@ -248,10 +249,11 @@
 		<description>current humidity label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>345</posX>
+		<posX>380</posX>
 		<posY>583</posY>
 		<label>#infoservice.weather.today.humidity</label>
 		<font>font11</font>
+		<align>right</align>
 		<textcolor>6aa5cb</textcolor>
 		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
@@ -284,10 +286,11 @@
 		<description>current UV Index label</description>
 		<type>label</type>
 		<id>25</id>
-		<posX>345</posX>
+		<posX>380</posX>
 		<posY>606</posY>
 		<label>-</label>
 		<font>font11</font>
+		<align>right</align>
 		<textcolor>6aa5cb</textcolor>
 		<visible>!plugin.isenabled(InfoService)</visible>
 	</control>
@@ -296,16 +299,17 @@
 		<description>current UV Index label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>345</posX>
+		<posX>380</posX>
 		<posY>606</posY>
 		<label>#infoservice.weather.today.humidity</label>
 		<font>font11</font>
+		<align>right</align>
 		<textcolor>6aa5cb</textcolor>
 		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
 	<control>
-		<description>current wind static label</description>
+		<description>press ok to toggle label</description>
 		<type>label</type>
 		<id>1</id>
 		<posX>900</posX>
@@ -377,7 +381,7 @@
 	</control>
 	
 	<control>
-		<description>current wind static label</description>
+		<description>press ok to toggle label</description>
 		<type>label</type>
 		<id>1</id>
 		<posX>900</posX>
@@ -437,7 +441,7 @@
 		<description>current wind label</description>
 		<type>label</type>
 		<id>26</id>
-		<posX>1000</posX>
+		<posX>1040</posX>
 		<posY>520</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
@@ -459,7 +463,7 @@
 		<description>current rain label</description>
 		<type>label</type>
 		<id>27</id>
-		<posX>1000</posX>
+		<posX>1040</posX>
 		<posY>565</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
@@ -481,7 +485,7 @@
 		<description>current humidity label</description>
 		<type>label</type>
 		<id>28</id>
-		<posX>1000</posX>
+		<posX>1040</posX>
 		<posY>587</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>

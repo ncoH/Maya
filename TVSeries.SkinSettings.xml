@@ -78,7 +78,7 @@
 <Enabled>1<Format><Episode.Aired><FormatAs><Episode.FirstAired>
 <Enabled>1<Format><Season.SeasonLabel><FormatAs>Season <Season.SeasonIndex>
 <Enabled>1<Format><Series.InfoPanelLine1Key><FormatAs>RATING
-<Enabled>1<Format><Series.InfoPanelLine1Value><FormatAs>((Trans(MyRating): <Series.myRating>)
+<Enabled>1<Format><Series.InfoPanelLine1Value><FormatAs>(Trans(MyRating): <Series.myRating>)
 <Enabled>1<Format><Series.InfoPanelLine2Key><FormatAs>Eval(PrettyNumber100(<Series.EpisodesUnWatched>))
 <Enabled>1<Format><Series.InfoPanelLine2Value><FormatAs><Series.FirstAired>
 <Enabled>1<Format><Series.InfoPanelLine3Key><FormatAs><Series.EpisodesWatched>
@@ -97,7 +97,7 @@
 <Enabled>1<Format><Season.EpisodesWatched><FormatAs>Eval(PrettyNumber100(<Season.EpisodeCount>-<Season.EpisodesUnWatched>))
 <Enabled>1<Format>x () fps<FormatAs>N / A
 <Enabled>1<Format>0 bytes<FormatAs>N / A
-<Enabled>1<Format>((Trans(MyRating): )<FormatAs> 
+<Enabled>1<Format>(Trans(MyRating): )<FormatAs> 
 <Enabled>1<Format>2channels <FormatAs>2.0 
 <Enabled>1<Format>6channels <FormatAs>5.1 
 <Enabled>1<Format>V_MPEG4/ISO/AVC<FormatAs>H264

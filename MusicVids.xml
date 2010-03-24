@@ -143,7 +143,7 @@
 		<textcolor>85cffe</textcolor>
 		<id>1</id>
 		<posX>75</posX>
-		<posY>460</posY>
+		<posY>440</posY>
 		<width>255</width>
     </control>
 	
@@ -152,7 +152,7 @@
 		<type>label</type>
 		<id>17</id>
 		<posX>75</posX>
-		<posY>485</posY>
+		<posY>465</posY>
 		<width>255</width>
 		<label>#MusicVids.MostPlayed</label>
     </control>
@@ -164,7 +164,7 @@
 		<textcolor>85cffe</textcolor>
 		<id>1</id>
 		<posX>75</posX>
-		<posY>520</posY>
+		<posY>500</posY>
 		<width>255</width>
     </control>
 	
@@ -174,7 +174,7 @@
 		<label></label>
 		<id>19</id>
 		<posX>75</posX>
-		<posY>545</posY>
+		<posY>525</posY>
 		<width>255</width>
 		<label>#MusicVids.FavArtist</label>
     </control>

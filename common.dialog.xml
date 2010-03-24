@@ -43,7 +43,7 @@
 
 	<control>
 		<description>dialog line 2</description>
-		<type>fadelabel</type>
+		<type>label</type>
 		<id>3</id>
 		<posX>470</posX>
 		<posY>367</posY>
@@ -56,7 +56,7 @@
 
 	<control>
 		<description>dialog line 3</description>
-		<type>fadelabel</type>
+		<type>label</type>
 		<id>4</id>
 		<posX>470</posX>
 		<posY>399</posY>
@@ -69,7 +69,7 @@
 
 	<control>
 		<description>dialog line 4</description>
-		<type>fadelabel</type>
+		<type>label</type>
 		<id>5</id>
 		<posX>470</posX>
 		<posY>431</posY>

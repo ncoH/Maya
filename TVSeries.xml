@@ -650,7 +650,7 @@
       <texture>#TVSeries.Series.RatingPath</texture>
       <visible>facadeview.list+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
     </control>
-	<control>      
+	<!--<control>      
       <type>label</type>
       <id>0</id>
       <posX>1120</posX>
@@ -662,7 +662,7 @@
       <textcolor>ffa9d0f7</textcolor>
       <visible>facadeview.list+[Control.IsVisible(1237)|Control.IsVisible(1238)]</visible>
     </control>
-    <!--<control>      
+<control>      
       <type>label</type>
       <id>0</id>
       <posX>930</posX>

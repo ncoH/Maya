@@ -7,7 +7,7 @@
 		<description>Dummy image</description>
 		<id>105</id>
 		<posX>-2000</posX>
-		<texture>osd_bg_top.png</texture>
+		<texture>-</texture>
 	</control>
 
 	<control>

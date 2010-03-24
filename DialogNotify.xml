@@ -46,6 +46,17 @@
             <texture>dialog_tv_is_recording.png</texture>
         </control>
 		
+      <control>
+        <description>OK button</description>
+        <type>button</type>
+        <id>4</id>
+        <posX>-2000</posX>
+        <onleft>4</onleft>
+        <onright>4</onright>
+        <onup>4</onup>
+        <ondown>4</ondown>
+      </control>
+		
         <control>
             <id>5</id>
             <description>logo</description>
