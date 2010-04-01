@@ -135,13 +135,12 @@
 		<id>7</id>
 		<posX>15</posX>
 		<posY>1</posY>
-		<width>50</width>
+		<width>44</width>
 		<height>44</height>
 		<centered>yes</centered>
+		<zoom>no</zoom>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>defaultVideoBig.png</texture>
-		<animation effect="fade" time="800">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>
     </control>
 	
     <control>
