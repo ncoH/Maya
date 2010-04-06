@@ -91,6 +91,8 @@
 					<onright>901</onright>
 					<onup>4</onup>
 					<ondown>3</ondown>
+					<label>Exit</label>
+					<textXOff>-2000</textXOff>
 					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
 					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
 				</control>
@@ -109,6 +111,8 @@
 					<onright>901</onright>
 					<onup>2</onup>
 					<ondown>4</ondown>
+					<label>1030</label>
+					<textXOff>-2000</textXOff>
 					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
 					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
 				</control>
@@ -127,6 +131,8 @@
 					<onright>901</onright>
 					<onup>3</onup>
 					<ondown>2</ondown>
+					<label>1031</label>
+					<textXOff>-2000</textXOff>
 					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
 					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
 				</control>

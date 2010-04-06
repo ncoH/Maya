@@ -357,7 +357,7 @@
 	
 	<control>
 		<description>last update date</description>
-		<type>textbox</type>
+		<type>fadelabel</type>
 		<id>0</id>
 		<posX>900</posX>
 		<posY>175</posY>

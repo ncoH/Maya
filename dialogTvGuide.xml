@@ -79,9 +79,9 @@
 		<id>6</id>
 		<width>16</width>
 		<height>16</height>
-		<posX>65</posX>
+		<posX>80</posX>
 		<textYOff>1</textYOff>
-		<posY>141</posY>
+		<posY>140</posY>
 		<showrange>no</showrange>
 		<orientation>horizontal</orientation>
 		<align>center</align>
@@ -102,8 +102,8 @@
 		<id>8</id>
 		<width>16</width>
 		<height>16</height>
-		<posX>280</posX>
-		<posY>141</posY>
+		<posX>294</posX>
+		<posY>140</posY>
 		<showrange>no</showrange>
 		<orientation>horizontal</orientation>
 		<align>center</align>
@@ -162,9 +162,9 @@
 		<description>Current program title</description>
 		<type>fadelabel</type>
 		<id>13</id>
-		<posX>435</posX>
-		<posY>533</posY>
-		<width>666</width>
+		<posX>473</posX>
+		<posY>548</posY>
+		<width>850</width>
 		<label>#TV.Guide.CompositeTitle</label>
 		<font>Segoe Light18</font>
 		<animation effect="fade" time="800">WindowOpen</animation>
@@ -175,8 +175,9 @@
 		<description>Current program time</description>
 		<type>label</type>
 		<id>14</id>
-		<posX>435</posX>
-		<posY>575</posY>
+		<posX>473</posX>
+		<posY>593</posY>
+		<width>850</width>
 		<label>#TV.Guide.Time - #TV.Guide.Genre</label>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="800">WindowOpen</animation>
@@ -187,8 +188,8 @@
 		<description>Description1</description>
 		<type>textboxscrollup</type>
 		<id>15</id>
-		<posX>435</posX>
-		<posY>607</posY>
+		<posX>473</posX>
+		<posY>630</posY>
 		<width>850</width>
 		<height>110</height>
 		<label>#TV.Guide.Description</label>
@@ -264,29 +265,40 @@
 		<description>record pin</description>
 		<type>image</type>
 		<id>31</id>
-		<posX>405</posX>
-		<posY>543</posY>
+		<posX>-2000</posX>
 		<texture>tvguide_record_button.png</texture>
 		<visible>no</visible>
+	</control>
+	
+	<control>
+		<description>record pin</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>413</posX>
+		<posY>549</posY>
+		<fixedheight>yes</fixedheight>
+		<height>39</height>
+		<texture>#maya.tvguide.recpin</texture>
+		<keepaspectratio>yes</keepaspectratio>
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>
 	</control>
 	
      <control>
-		<description>TvGroup button</description>
-		<type>button</type>
-		<id>100</id>
-		<posX>38</posX>
-		<posY>166</posY>
-		<width>40</width>
-		<height>336</height>
-		<textureFocus>blue.png</textureFocus>
-		<textureNoFocus>blue.png</textureNoFocus>
-		<label></label>
-		<onleft>60</onleft>
-		<onright>6</onright>
-		<onup>6</onup>
-		<ondown>6</ondown>
+      <description>TvGroup button</description>
+      <type>button</type>
+      <id>100</id>
+      <posX>38</posX>
+      <posY>166</posY>
+      <width>40</width>
+      <height>336</height>
+      <textureFocus>tvgroup_button_selected.png</textureFocus>
+      <textureNoFocus>blue.png</textureNoFocus>
+      <label></label>
+      <onleft>60</onleft>
+      <onright>6</onright>
+      <onup>6</onup>
+      <ondown>6</ondown>
     </control>
 	
 	<control>

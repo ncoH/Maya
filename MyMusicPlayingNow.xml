@@ -135,6 +135,7 @@
             <width>223</width>
 			<height>38</height>
 			<onup>5101</onup>
+			<onleft>166</onleft>
 			<ondown>5103</ondown>
 			<textYOff>6</textYOff>
             <textureFocus>now_playing_menuitem_selected.png</textureFocus>
@@ -200,7 +201,7 @@
         </control>
 		
         <control>
-            <id>500</id>
+            <id>112</id>
             <description>album art image</description>
             <type>image</type>
             <posX>115</posX>
@@ -449,6 +450,7 @@
             <posY>497</posY>
             <width>670</width>
 			<visible>Control.HasFocus(5102) | Control.HasFocus(166)</visible>
+			<label>33030</label>
             <font>Segoe Light18</font>
             <textcolor>85cffe</textcolor>
         </control>
@@ -461,7 +463,7 @@
             <onright>5102</onright>
             <onup>166</onup>
             <ondown>166</ondown>
-            <visible>Control.HasFocus(5102) | Control.HasFocus(166)</visible>
+            <visible allowhiddenfocus="true">Control.HasFocus(5102) | Control.HasFocus(166)</visible>
             <posX>328</posX>
             <posY>537</posY>
             <width>670</width>
@@ -488,12 +490,13 @@
             <id>28</id>
             <description>best tag tracks label</description>
             <type>fadelabel</type>
-            <posX>350</posX>
+            <posX>-2000</posX>
             <posY>497</posY>
             <width>670</width>
-			<visible>Control.HasFocus(5103) | Control.HasFocus(155)</visible>
+			<visible>no</visible>
             <font>Segoe Light18</font>
             <textcolor>85cffe</textcolor>
+			<visible allowhiddenfocus="true">Control.HasFocus(5103) | Control.HasFocus(155)</visible>
         </control>
 
 		
@@ -505,7 +508,7 @@
             <onright>5103</onright>
             <onup>155</onup>
             <ondown>155</ondown>
-            <visible>Control.HasFocus(5103) | Control.HasFocus(155)</visible>
+            <visible allowhiddenfocus="true">Control.HasFocus(5103) | Control.HasFocus(155)</visible>
             <posX>328</posX>
             <posY>537</posY>
             <width>670</width>
