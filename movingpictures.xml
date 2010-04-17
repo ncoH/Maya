@@ -60,22 +60,18 @@ multiple view modes.
 		<id>1</id>
 		<width>1366</width>
 		<height>768</height>
-		<visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(50)</visible>
+		<texture>background_list_small.png</texture>
+		<visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(51)</visible>
 	</control>
 	
 	<control>
-		<description>separator listview</description>
+		<description>BG</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>947</posX>
-		<posY>136</posY>
-		<width>32</width>
-		<height>632</height>
-		<texture>listcontrol_separator.png</texture>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(50) + !Control.IsVisible(51)</visible>
-    </control>
+		<width>1366</width>
+		<height>768</height>
+		<visible>Control.IsVisible(51)</visible>
+	</control>
 	
 	<control>
 		<description>BG</description>
@@ -138,7 +134,7 @@ multiple view modes.
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>movies</label>
+		<label>#MovingPictures.Translation.Movies.Label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
@@ -154,7 +150,7 @@ multiple view modes.
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>movies</label>
+		<label>#MovingPictures.Translation.Movies.Label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
@@ -372,7 +368,7 @@ multiple view modes.
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.year</label>
 		<id>0</id>
-		<posX>555</posX>
+		<posX>924</posX>
 		<posY>195</posY>
 		<width>400</width>
 		<font>Segoe Light18</font>
@@ -386,7 +382,7 @@ multiple view modes.
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.runtime.localized.long</label>
 		<id>0</id>
-		<posX>555</posX>
+		<posX>924</posX>
 		<posY>230</posY>
 		<width>400</width>
 		<font>Segoe Light18</font>
@@ -417,7 +413,7 @@ multiple view modes.
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.extra.genres.1</label>
 		<id>0</id>
-		<posX>555</posX>
+		<posX>924</posX>
 		<posY>265</posY>
 		<width>400</width>
 		<font>Segoe Light18</font>
@@ -431,7 +427,7 @@ multiple view modes.
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.extra.genres.1, #MovingPictures.SelectedMovie.extra.genres.2</label>
 		<id>0</id>
-		<posX>555</posX>
+		<posX>924</posX>
 		<posY>265</posY>
 		<width>400</width>
 		<font>Segoe Light18</font>
@@ -445,7 +441,7 @@ multiple view modes.
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.extra.genres.1, #MovingPictures.SelectedMovie.extra.genres.2, #MovingPictures.SelectedMovie.extra.genres.3</label>
 		<id>0</id>
-		<posX>555</posX>
+		<posX>924</posX>
 		<posY>265</posY>
 		<width>400</width>
 		<font>Segoe Light18</font>
@@ -462,7 +458,7 @@ multiple view modes.
 		<type>textboxscrollup</type>
 		<description>Summary (list)</description>
 		<id>1025</id>
-		<posX>555</posX>
+		<posX>924</posX>
 		<posY>330</posY>
 		<width>400</width>
 		<height>224</height>
@@ -479,7 +475,7 @@ multiple view modes.
 		<description>Actors value</description>
 		<type>fadelabel</type>
 		<id>0</id>
-		<posX>555</posX>
+		<posX>924</posX>
 		<posY>570</posY>
 		<width>365</width>
 		<font>font11</font>
@@ -494,7 +490,7 @@ multiple view modes.
 		<type>label</type>
 		<label>#MovingPictures.Translation.Director.Label: #MovingPictures.SelectedMovie.directors</label>
 		<id>0</id>
-		<posX>555</posX>
+		<posX>924</posX>
 		<posY>595</posY>
 		<width>365</width>
 		<font>font11</font>
@@ -508,7 +504,7 @@ multiple view modes.
 		<type>label</type>
 		<label>#MovingPictures.Translation.Directors.Label: #MovingPictures.SelectedMovie.directors</label>
 		<id>0</id>
-		<posX>555</posX>
+		<posX>924</posX>
 		<posY>595</posY>
 		<width>365</width>
 		<font>font11</font>
@@ -520,7 +516,7 @@ multiple view modes.
 	<control>
 		<type>imagelist</type>
 		<id>101</id>
-		<posX>552</posX>
+		<posX>921</posX>
 		<posY>625</posY>
 		<width>185</width>
 		<height>21</height>
@@ -564,9 +560,8 @@ multiple view modes.
 		<type>label</type>
 		<label>#MovingPictures.general.filteredmoviecount #MovingPictures.Translation.Movies.Label</label>
 		<id>0</id>
-		<posX>1242</posX>
+		<posX>555</posX>
 		<posY>690</posY>
-		<align>right</align>
 		<textcolor>6aa5cb</textcolor>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
@@ -574,14 +569,14 @@ multiple view modes.
 	<control>
 		<description>Moviecount</description>
 		<type>label</type>
-		<label>Total movies: #MovingPictures.general.filteredmoviecount</label>
+		<label>#MovingPictures.general.filteredmoviecount #MovingPictures.Translation.Movies.Label</label>
 		<id>0</id>
 		<posX>0</posX>
 		<posY>728</posY>
 		<width>1366</width>
 		<align>center</align>
 		<font>font13</font>
-		<textcolor>ffffff</textcolor>
+		<textcolor>6aa5cb</textcolor>
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
 	</control>
 	
@@ -642,6 +637,31 @@ multiple view modes.
 		<visible>Control.IsVisible(51)</visible>
 	</control>
 
+<!--            :: THUMB VIEW ::            -->
+	
+	<control>
+		<description>Cover Art</description>
+		<type>image</type>
+		<id>60</id>
+		<posX>198</posX>
+		<posY>266</posY>
+		<width>266</width>
+		<height>380</height>
+		<texture>#MovingPictures.Coverart</texture>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<description>Cover Art overlay</description>
+		<type>image</type>
+		<id>1</id>
+		<posY>219</posY>
+		<posX>152</posX>
+		<width>357</width>
+		<height>472</height>
+		<texture>blackborders_video.png</texture>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+	</control>
 
 	<!--            :: DETAILS VIEW ::            -->
 	<import>movingpictures.details.xml</import>
@@ -674,7 +694,7 @@ multiple view modes.
 	  <description>HD 720</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>545</posX>
+	  <posX>914</posX>
 	  <posY>693</posY>
 	  <width>65</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -687,7 +707,7 @@ multiple view modes.
 	  <description>SD 480/576i</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>545</posX>
+	  <posX>914</posX>
 	  <posY>693</posY>
 	  <width>65</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -700,7 +720,7 @@ multiple view modes.
 	  <description>HD 1080</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>545</posX>
+	  <posX>914</posX>
 	  <posY>693</posY>
 	  <width>65</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -713,7 +733,7 @@ multiple view modes.
 	  <description>HD 1080</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>545</posX>
+	  <posX>914</posX>
 	  <posY>693</posY>
 	  <width>65</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -728,7 +748,7 @@ multiple view modes.
 	  <description>H264</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>626</posX>
+	  <posX>995 </posX>
       <posY>690</posY>
 	  <width>75</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -741,7 +761,7 @@ multiple view modes.
 	  <description>DIVX</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>626</posX>
+	  <posX>995</posX>
 	  <posY>690</posY>
 	  <width>75</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -754,7 +774,7 @@ multiple view modes.
 	  <description>XVID</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>626</posX>
+	  <posX>995</posX>
 	  <posY>690</posY>
 	  <width>75</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -769,7 +789,7 @@ multiple view modes.
 	  <description>DD 5.1</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>710</posX>
+	  <posX>1079</posX>
 	  <posY>690</posY>
 	  <width>75</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -782,7 +802,7 @@ multiple view modes.
 	  <description>AAC</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>710</posX>
+	  <posX>1079</posX>
 	  <posY>690</posY>
 	  <width>75</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -795,7 +815,7 @@ multiple view modes.
 	  <description>MP3</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>710</posX>
+	  <posX>1079</posX>
 	  <posY>690</posY>
 	  <width>75</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -808,7 +828,7 @@ multiple view modes.
 	  <description>WMA</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>710</posX>
+	  <posX>1079</posX>
 	  <posY>690</posY>
 	  <width>75</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -821,7 +841,7 @@ multiple view modes.
 	  <description>DTS</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>710</posX>
+	  <posX>1079</posX>
 	  <posY>690</posY>
 	  <width>75</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -836,7 +856,7 @@ multiple view modes.
 	  <description>1 Channel</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>792</posX>
+	  <posX>1161</posX>
 	  <posY>690</posY>
 	  <width>40</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -848,7 +868,7 @@ multiple view modes.
 	  <description>2 Channels</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>792</posX>
+	  <posX>1161</posX>
 	  <posY>690</posY>
 	  <width>40</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -860,7 +880,7 @@ multiple view modes.
 	  <description>6 Channels</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>792</posX>
+	  <posX>1161</posX>
 	  <posY>690</posY>
 	  <width>40</width>
 	  <keepaspectratio>yes</keepaspectratio>
@@ -872,7 +892,7 @@ multiple view modes.
 	  <description>8 Channels</description>
 	  <type>image</type>
 	  <id>0</id>
-	  <posX>792</posX>
+	  <posX>1161</posX>
 	  <posY>690</posY>
 	  <width>40</width>
 	  <keepaspectratio>yes</keepaspectratio>

@@ -18,23 +18,10 @@
 		<posY>0</posY>
 		<width>1366</width>
 		<height>768</height>
-		<texture>Background.png</texture>
+		<texture>background_list_small.png</texture>
 		<visible>facadeview.list</visible>
     </control>
 	
-	 <control>
-		<description>separator listview</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>947</posX>
-		<posY>136</posY>
-		<width>32</width>
-		<height>632</height>
-		<texture>listcontrol_separator.png</texture>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<visible>facadeview.list</visible>
-    </control>
 	
 	<control>
 		<description>BG Banner</description>
@@ -98,11 +85,11 @@
 	<control>
       <description>Media Count Label</description>
       <type>label</type>
-      <label>#TVSeries.Translation.Series.Label: #TVSeries.SeriesCount</label>
+      <label>#TVSeries.Translation.Series_Plural.Label: #TVSeries.SeriesCount</label>
       <id>0</id>
-      <posX>1242</posX>
+      <posX>555</posX>
 	  <posY>690</posY>
-      <align>right</align>
+      <align>left</align>
       <textcolor>6aa5cb</textcolor>
       <visible>facadeview.list+Control.IsVisible(1237)</visible>
     </control>
@@ -112,9 +99,9 @@
       <type>label</type>
       <label>#TVSeries.Translation.Episodes.Label: #TVSeries.FilteredEpisodeCount</label>
       <id>0</id>
-      <posX>1242</posX>
+      <posX>555</posX>
 	  <posY>690</posY>
-      <align>right</align>
+      <align>left</align>
       <textcolor>6aa5cb</textcolor>
       <visible>facadeview.list+Control.IsVisible(1239)</visible>
     </control>
@@ -122,7 +109,7 @@
 	<control>
       <description>Media Count Label</description>
       <type>label</type>
-      <label>#TVSeries.Translation.Series.Label: #TVSeries.SeriesCount</label>
+      <label>#TVSeries.Translation.Series_Plural.Label: #TVSeries.SeriesCount</label>
       <id>0</id>
       <posX>0</posX>
 	  <posY>178</posY>
@@ -255,7 +242,7 @@
       <type>textboxscrollup</type>
       <description>Description (Episode / Season / Series Lists)</description>
       <id>631</id>
-      <posX>556</posX>
+      <posX>924</posX>
 	  <posY>330</posY>
       <width>400</width>
 	  <height>215</height>
@@ -268,7 +255,7 @@
       <type>textboxscrollup</type>
       <description>Description (grouplist)</description>
       <id>0</id>
-      <posX>556</posX>
+      <posX>924</posX>
 	  <posY>330</posY>
       <width>400</width>
 	  <height>215</height>
@@ -358,7 +345,7 @@
       <type>image</type>
       <description>Logos</description>
       <id>66</id>
-      <posX>545</posX>
+      <posX>914</posX>
       <posY>690</posY>
       <width>650</width>
       <height>33</height>
@@ -643,7 +630,7 @@
     <control>
       <type>image</type>
       <id>1</id>
-      <posX>555</posX>
+      <posX>924</posX>
       <posY>260</posY>
       <width>222</width>
       <height>19</height>
@@ -677,7 +664,7 @@
     <control>      
       <type>label</type>
       <id>0</id>
-      <posX>555</posX>
+      <posX>924</posX>
 	  <posY>185</posY>
 	  <width>400</width>
 	  <font>Segoe Light18</font>
@@ -700,7 +687,7 @@
     <control>      
       <type>fadelabel</type>
       <id>0</id>
-      <posX>555</posX>
+      <posX>924</posX>
 	  <posY>215</posY>
 	  <width>400</width>
 	  <font>Segoe Light18</font>
@@ -723,7 +710,7 @@
     <control>      
       <type>label</type>
       <id>0</id>
-      <posX>710</posX>
+      <posX>1079</posX>
 	  <posY>185</posY>
 	  <width>400</width>
 	  <font>Segoe Light18</font>
@@ -768,7 +755,7 @@
     <control>      
       <type>fadelabel</type>
       <id>0</id>
-      <posX>555</posX>
+      <posX>924</posX>
 	  <posY>565</posY>
 	  <width>365</width>
 	  <font>font11</font>
@@ -780,7 +767,7 @@
 	<control>      
       <type>label</type>
       <id>0</id>
-      <posX>705</posX>
+      <posX>974</posX>
 	  <posY>605</posY>
 	  <width>170</width>
 	  <font>font12</font>
@@ -792,7 +779,7 @@
 	<control>      
       <type>label</type>
       <id>0</id>
-      <posX>605</posX>
+      <posX>1074</posX>
 	  <posY>605</posY>
 	  <width>170</width>
 	  <font>font12</font>
@@ -804,7 +791,7 @@
 	<control>      
       <type>label</type>
       <id>0</id>
-      <posX>705</posX>
+      <posX>1074</posX>
 	  <posY>605</posY>
 	  <width>170</width>
 	  <font>font12</font>
@@ -816,7 +803,7 @@
 	<control>      
       <type>label</type>
       <id>0</id>
-      <posX>605</posX>
+      <posX>974</posX>
 	  <posY>605</posY>
 	  <width>170</width>
 	  <font>font12</font>
@@ -830,7 +817,7 @@
       <description>Season Watched Icon</description>
       <type>image</type>
       <id>0</id>
-      <posX>656</posX>
+      <posX>1025</posX>
 	  <posY>605</posY>
       <width>45</width>
       <height>25</height>
@@ -841,7 +828,7 @@
       <description>Un-Watched Icon</description>
       <type>image</type>
       <id>0</id>
-      <posX>555</posX>
+      <posX>924</posX>
 	  <posY>605</posY>
       <width>45</width>
       <height>25</height>
@@ -852,7 +839,7 @@
       <description>Not Available and Watched Icon</description>
       <type>image</type>
       <id>0</id>
-      <posX>555</posX>
+      <posX>924</posX>
 	  <posY>565</posY>
       <width>45</width>
       <height>25</height>
@@ -863,7 +850,7 @@
       <description>Not Available and Un-Watched Icon</description>
       <type>image</type>
       <id>0</id>
-      <posX>555</posX>
+      <posX>924</posX>
 	  <posY>565</posY>
       <width>45</width>
       <height>25</height>
@@ -889,7 +876,7 @@
       <type>fadelabel</type>
       <label>#TVSeries.Title</label>
       <id>0</id>
-      <posX>555</posX>
+      <posX>924</posX>
       <posY>185</posY>
       <width>325</width>
       <font>Segoe Light18</font>
@@ -900,7 +887,7 @@
    <control>      
       <type>image</type>
       <id>1</id>
-      <posX>555</posX>
+      <posX>924</posX>
       <posY>304</posY>
       <width>222</width>
       <height>19</height>
@@ -934,7 +921,7 @@
     <control>      
       <type>label</type>
       <id>0</id>
-      <posX>555</posX>
+      <posX>924</posX>
 	  <posY>225</posY>
 	  <width>400</width>
 	  <font>Segoe Light18</font>
@@ -957,7 +944,7 @@
     <control>      
       <type>fadelabel</type>
       <id>0</id>
-      <posX>555</posX>
+      <posX>924</posX>
 	  <posY>260</posY>
 	  <width>400</width>
 	  <font>Segoe Light18</font>
@@ -1024,7 +1011,7 @@
     <control>      
       <type>fadelabel</type>
       <id>0</id>
-      <posX>555</posX>
+      <posX>924</posX>
 	  <posY>565</posY>
 	  <width>365</width>
 	  <font>font11</font>
@@ -1362,36 +1349,39 @@
 		</control>
 		
         <control>
-          <description>Text List</description>
-          <type>listcontrol</type>
-          <id>50</id>
-          <posX>979</posX>
-		  <posY>183</posY>
-		  <onleft>2</onleft>
-          <onright>2</onright>
-		  <scrollOffset>1</scrollOffset>
-          <height>490</height>
-		  <width>304</width>
-          <textureFocus>listcontrol_item_selected_small.png</textureFocus>
-		  <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-		  <textXOff>-50</textXOff>
-		  <textYOff>10</textYOff>
-          <textXOff2>285</textXOff2>
-		  <textYOff2>10</textYOff2>
-		  <textXOff3>-2000</textXOff3>
-		  <textYOff3>6</textYOff3>
-          <IconXOff>330</IconXOff>
-		  <IconYOff>7</IconYOff>
-		  <itemWidth>72</itemWidth>
-          <itemHeight>18</itemHeight>
-          <spinColor>ffffffff</spinColor>
+			<description>Text List</description>
+			<type>listcontrol</type>
+			<id>50</id>
+			<posX>524</posX>
+			<posY>183</posY>	
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<scrollOffset>1</scrollOffset>
+			<height>490</height>
+			<width>358</width>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+			<textXOff>-50</textXOff>
+			<textYOff>10</textYOff>
+			<textXOff2>285</textXOff2>
+			<textYOff2>10</textYOff2>
+			<textXOff3>-2000</textXOff3>
+			<textYOff3>6</textYOff3>
+			<IconXOff>330</IconXOff>
+			<IconYOff>7</IconYOff>
+			<itemWidth>72</itemWidth>
+			<itemHeight>18</itemHeight>
+			<spinColor>ffffffff</spinColor>
+			<spinPosX>555</spinPosX>
+			<spinPosY>718</spinPosY>
+			<spinAlign>left</spinAlign>
 		  <!-- Uncomment to override List colors -->
           <!--<playedColor>ffffffff</playedColor>-->         
           <!--<remoteColor>ffffffff</remoteColor>-->
           <!--<textcolor>ffffffff</textcolor>-->
           <!--<textcolor2>ffffffff</textcolor2>-->
           <!--<textcolor3>ffffffff</textcolor3>-->
-		  <dimColor>ffffffff</dimColor>
+			<dimColor>ffffffff</dimColor>
         </control>
       </control>
     </control>

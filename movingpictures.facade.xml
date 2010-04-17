@@ -35,10 +35,13 @@ This file should contain the facade view
 			<id>50</id>
 			<onleft>2</onleft>
 			<onright>2</onright>
-			<posX>979</posX>
+			<posX>524</posX>
 			<posY>183</posY>
 			<height>490</height>
-			<width>304</width>
+			<width>358</width>
+			<spinPosX>555</spinPosX>
+			<spinPosY>718</spinPosY>
+			<spinAlign>left</spinAlign>
 			<textXOff>22</textXOff>
 			<scrollOffset>1</scrollOffset>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
@@ -89,9 +92,9 @@ This file should contain the facade view
 				<description>Thumbnail Panel</description>
 				<type>thumbnailpanel</type>
 				<id>50</id>
-				<posX>170</posX>
-				<posY>244</posY>
-				<width>1040</width>
+				<posX>516</posX>
+				<posY>255</posY>
+				<width>790</width>
 				<height>500</height>
 				<scrollOffset>0</scrollOffset>
 				<folderPrefix></folderPrefix>
@@ -106,22 +109,22 @@ This file should contain the facade view
 				<thumbHeight>140</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
-				<itemWidthBig>148</itemWidthBig>
-				<itemHeightBig>210</itemHeightBig>
-				<thumbWidthBig>148</thumbWidthBig>
-				<thumbHeightBig>210</thumbHeightBig>
-				<textureWidthBig>148</textureWidthBig>
-				<textureHeightBig>210</textureHeightBig>
+				<itemWidthBig>138</itemWidthBig>
+				<itemHeightBig>196</itemHeightBig>
+				<thumbWidthBig>138</thumbWidthBig>
+				<thumbHeightBig>196</thumbHeightBig>
+				<textureWidthBig>138</textureWidthBig>
+				<textureHeightBig>196</textureHeightBig>
 				<keepaspectratio>no</keepaspectratio>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
-				<zoomXPixels>50</zoomXPixels>
-				<zoomYPixels>79</zoomYPixels>
+				<zoomXPixels>0</zoomXPixels>
+				<zoomYPixels>0</zoomYPixels>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>
 				<frame>-</frame>
-				<frameFocus>thumbnail_frame_shine_thumbs.png</frameFocus>
+				<frameFocus>thumb_focus.png</frameFocus>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>no</thumbZoom>
