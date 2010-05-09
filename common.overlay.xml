@@ -127,7 +127,7 @@
       <width>82</width>
       <height>77</height>
       <texture>#Play.Current.Thumb</texture>
-      <visible>player.hasmedia+control.hastext(3337)</visible>
+      <visible>player.hasmedia+control.isvisible(3337)</visible>
 	  <animation effect="fade" time="400" delay="800">WindowOpen</animation>
 	  <animation effect="fade" time="400">WindowClose</animation>
     </control>
@@ -141,7 +141,7 @@
       <width>82</width>
       <height>77</height>
       <texture>audio_nothumb.png</texture>
-      <visible>player.hasmedia+control.hastext(3337)+!control.hasthumb(3337)</visible>
+      <visible>player.hasmedia+control.isvisible(3337)+string.equals(#Play.Current.Thumb,)</visible>
 	  <animation effect="fade" time="400" delay="800">WindowOpen</animation>
 	  <animation effect="fade" time="400">WindowClose</animation>
     </control>
