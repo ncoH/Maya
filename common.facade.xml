@@ -7,7 +7,7 @@
 		<type>group</type>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		
+		<animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="1000">WindowClose</animation>
 		<control>
 			<description>composite control consisting of a list control and a thumbnail panel</description>
 			<type>facadeview</type>
@@ -20,8 +20,12 @@
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
-				<posY>183</posY>
-				<height>450</height>
+				<posX>524</posX>
+				<posY>187</posY>
+				<height>458</height>
+				<spinPosX>560</spinPosX>
+				<spinPosY>688</spinPosY>
+				<spinAlign>left</spinAlign>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<textXOff>22</textXOff>

@@ -31,32 +31,32 @@
 	</control>
 	
 	<control>
-		<description>separator listview</description>
+		<description>listcontrol background</description>
 		<type>image</type>
-		<id>0</id>
-		<posX>979</posX>
-		<posY>136</posY>
-		<width>32</width>
-		<height>632</height>
-		<texture>listcontrol_separator.png</texture>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>179</posY>
+		<width>725</width>
+		<height>561</height>
+		<texture>music_search_bg.png</texture>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-    </control>
+	</control>
 	
 	<control>
 		<type>button</type>
 		<description>Play now</description>
 		<id>11</id>
-		<posX>1011</posX>
-		<posY>183</posY>
-		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-					<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-					<width>299</width>
-			<textXOff>32</textXOff>
-					<height>53</height>
-					<textYOff>12</textYOff>
-					<onleft>11</onleft>
-					<onright>11</onright>
+		<posX>524</posX>
+		<posY>433</posY>
+		<textureFocus>listcontrol_item_selected.png</textureFocus>
+		<textureNoFocus>listcontrol_item.png</textureNoFocus>
+		<width>724</width>
+		<textXOff>32</textXOff>
+		<height>52</height>
+		<textYOff>12</textYOff>
+		<onleft>11</onleft>
+		<onright>11</onright>
 		<onup>15</onup>
 		<ondown>12</ondown>
 		<label>4552</label>
@@ -66,16 +66,16 @@
 		<type>button</type>
 		<description>Play next</description>
 		<id>12</id>
-		<posX>1011</posX>
-		<posY>233</posY>
-		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-					<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-					<width>299</width>
-			<textXOff>32</textXOff>
-					<height>53</height>
-					<textYOff>12</textYOff>
+		<posX>524</posX>
+		<posY>484</posY>
+		<textureFocus>listcontrol_item_selected.png</textureFocus>
+		<textureNoFocus>listcontrol_item.png</textureNoFocus>
+		<width>724</width>
+		<textXOff>32</textXOff>
+		<height>52</height>
+		<textYOff>12</textYOff>
 		<onleft>12</onleft>
-					<onright>12</onright>
+		<onright>12</onright>
 		<onup>11</onup>
 		<ondown>13</ondown>
 		<label>4551</label>
@@ -85,16 +85,16 @@
 		<type>button</type>
 		<description>Add to playlist</description>
 		<id>13</id>
-		<posX>1011</posX>
-		<posY>283</posY>
-		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-					<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-					<width>299</width>
-			<textXOff>32</textXOff>
-					<height>53</height>
-					<textYOff>12</textYOff>
+		<posX>524</posX>
+		<posY>535</posY>
+		<textureFocus>listcontrol_item_selected.png</textureFocus>
+		<textureNoFocus>listcontrol_item.png</textureNoFocus>
+		<width>724</width>
+		<textXOff>32</textXOff>
+		<height>52</height>
+		<textYOff>12</textYOff>
 		<onleft>13</onleft>
-					<onright>13</onright>
+		<onright>13</onright>
 		<onup>12</onup>
 		<ondown>14</ondown>
 		<label>926</label>
@@ -104,16 +104,16 @@
 		<type>button</type>
 		<description>Add album to playlist</description>
 		<id>14</id>
-		<posX>1011</posX>
-		<posY>334</posY>
-		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-					<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-					<width>299</width>
-			<textXOff>32</textXOff>
-					<height>53</height>
-					<textYOff>12</textYOff>
+		<posX>524</posX>
+		<posY>586</posY>
+		<textureFocus>listcontrol_item_selected.png</textureFocus>
+		<textureNoFocus>listcontrol_item.png</textureNoFocus>
+		<width>724</width>
+		<textXOff>32</textXOff>
+		<height>52</height>
+		<textYOff>12</textYOff>
 		<onleft>14</onleft>
-					<onright>14</onright>
+		<onright>14</onright>
 		<onup>13</onup>
 		<ondown>15</ondown>
 		<label>33041</label>
@@ -123,16 +123,16 @@
 		<type>button</type>
 		<description>Add to favorites</description>
 		<id>15</id>
-		<posX>1011</posX>
-		<posY>384</posY>
-		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-					<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-					<width>299</width>
-			<textXOff>32</textXOff>
-					<height>53</height>
-					<textYOff>12</textYOff>
+		<posX>524</posX>
+		<posY>637</posY>
+		<textureFocus>listcontrol_item_selected.png</textureFocus>
+		<textureNoFocus>listcontrol_item.png</textureNoFocus>
+		<width>724</width>
+		<textXOff>32</textXOff>
+		<height>52</height>
+		<textYOff>12</textYOff>
 		<onleft>15</onleft>
-					<onright>15</onright>
+		<onright>15</onright>
 		<onup>14</onup>
 		<ondown>11</ondown>
 		<label>930</label>
@@ -186,7 +186,7 @@
 		<type>label</type>
 		<id>25</id>
 		<posX>555</posX>
-		<posY>182</posY>
+		<posY>198</posY>
 		<textcolor>85cfff</textcolor>
 		<font>Segoe Light18</font>
 		<label>Artist</label>
@@ -195,8 +195,8 @@
 	<control>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>555</posX>
-		<posY>218</posY>
+		<posX>664</posX>
+		<posY>198</posY>
 		<font>Segoe Light18</font>
 		<label>#artist</label>
 	</control>
@@ -205,7 +205,7 @@
 		<type>label</type>
 		<id>26</id>
 		<posX>555</posX>
-		<posY>254</posY>
+		<posY>236</posY>
 		<textcolor>85cfff</textcolor>
 		<font>Segoe Light18</font>
 		<label>Album</label>
@@ -214,8 +214,8 @@
 	<control>
 		<type>fadelabel</type>
 		<id>2</id>
-		<posX>555</posX>
-		<posY>291</posY>
+		<posX>664</posX>
+		<posY>236</posY>
 		<font>Segoe Light18</font>
 		<label>#album</label>
 	</control>
@@ -224,28 +224,28 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>555</posX>
-		<posY>327</posY>
+		<posY>274</posY>
 		<width>700</width>
 		<textcolor>85cfff</textcolor>
 		<font>Segoe Light18</font>
-		<label>Songname</label>
+		<label>Track</label>
 	</control>
 	
 	<control>
 		<type>fadelabel</type>
 		<id>3</id>
-		<posX>555</posX>
-		<posY>363</posY>
+		<posX>664</posX>
+		<posY>274</posY>
 		<width>700</width>
 		<font>Segoe Light18</font>
-		<label>#songname</label>
+		<label>#track</label>
 	</control>
 	
 	<control>
 		<type>label</type>
 		<id>28</id>
 		<posX>555</posX>
-		<posY>416</posY>
+		<posY>316</posY>
 		<textcolor>85cfff</textcolor>
 		<label>Genre</label>
 	</control>
@@ -253,8 +253,8 @@
 	<control>
 		<type>fadelabel</type>
 		<id>4</id>
-		<posX>666</posX>
-		<posY>416</posY>
+		<posX>702</posX>
+		<posY>316</posY>
 		<label>#genre</label>
 	</control>
 	
@@ -262,7 +262,7 @@
 		<type>label</type>
 		<id>29</id>
 		<posX>555</posX>
-		<posY>440</posY>
+		<posY>340</posY>
 		<textcolor>85cfff</textcolor>
 		<label>Year</label>
 	</control>
@@ -270,8 +270,8 @@
 	<control>
 		<type>fadelabel</type>
 		<id>5</id>
-		<posX>666</posX>
-		<posY>440</posY>
+		<posX>702</posX>
+		<posY>340</posY>
 		<label>#year</label>
 	</control>
 	
@@ -296,7 +296,7 @@
 		<type>label</type>
 		<id>37</id>
 		<posX>555</posX>
-		<posY>464</posY>
+		<posY>364</posY>
 		<textcolor>85cfff</textcolor>
 		<label>Last played</label>
 	</control>	
@@ -304,8 +304,8 @@
 	<control>
 		<type>fadelabel</type>
 		<id>10</id>
-		<posX>666</posX>
-		<posY>464</posY>
+		<posX>702</posX>
+		<posY>364</posY>
 		<label>#last_played</label>
 	</control>
 	
@@ -330,7 +330,7 @@
 		<type>label</type>
 		<id>31</id>
 		<posX>555</posX>
-		<posY>488</posY>
+		<posY>388</posY>
 		<textcolor>85cfff</textcolor>
 		<label>Rating</label>
 	</control>
@@ -339,8 +339,8 @@
 		<type>imagelist</type>
 		<description>-</description>
 		<id>1337</id>
-		<posX>660</posX>
-		<posY>492</posY>
+		<posX>700</posX>
+		<posY>388</posY>
 		<percentage>#SongDetails.Rating</percentage>
 		<orientation>horizontal</orientation>
 		<width>185</width>

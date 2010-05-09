@@ -19,18 +19,32 @@
 	</control>
 	
 	<control>
-		<description>separator listview</description>
+		<description>listcontrol background</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>492</posX>
-		<posY>136</posY>
-		<width>32</width>
-		<height>632</height>
-		<texture>listcontrol_separator.png</texture>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>
+		<visible>facadeview.list</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
 		<visible>facadeview.list</visible>
-    </control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
 
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -263,10 +277,10 @@
 	<control>
 		<id>1</id>
 		<type>image</type>
-		<posX>133</posX>
-		<posY>208</posY>
-		<width>266</width>
-		<height>380</height>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>358</width>
+		<height>768</height>
 		<texture flipY="true" diffuse="Thumb_Mask.png">MyTrailers/MovieStudio.png</texture>
 		<visible>Control.IsVisible(50)+string.contains(#selecteditem,Movie Studio)</visible>
 	</control>

@@ -161,13 +161,13 @@
 		<height>600</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>1216</spinPosX>
+		<spinPosX>1245</spinPosX>
 		<spinPosY>718</spinPosY>
 		<spinAlign>right</spinAlign>
 		<spinColor>FF6aa5cb</spinColor>
 		<textureFocus>listcontrol_item_selected.png</textureFocus>
 		<textureNoFocus>listcontrol_item.png</textureNoFocus>
-		<textureHeight>51</textureHeight>
+		<textureHeight>53</textureHeight>
 		<image>folder_focus.png</image>
 		<font>font12</font>
 		<font2>font12</font2>
@@ -253,7 +253,7 @@
 		<spinHeight>33</spinHeight>
 		<spinPosX>1111</spinPosX>
 		<spinPosY>662</spinPosY>
-		<spinAlign>left</spinAlign>
+		<spinAlign>Right</spinAlign>
 		<spinColor>ffffffff</spinColor>
 		<textureUp>page_up_nofocus.png</textureUp>
 		<textureDown>page_down_nofocus.png</textureDown>
@@ -308,7 +308,7 @@
 		<remoteColor>ffFFA075</remoteColor>
 		<downloadColor>ff80ff80</downloadColor>
 		<spaceBetweenItems>0</spaceBetweenItems>
-		<textXOff>20</textXOff>
+		<textXOff>22</textXOff>
 		<textYOff>10</textYOff>
 		<textXOff2>0</textXOff2>
 		<textYOff2>10</textYOff2>

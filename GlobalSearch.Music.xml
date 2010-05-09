@@ -25,18 +25,31 @@
 	</control>
 	
 	<control>
-		<description>separator listview</description>
+		<description>listcontrol background</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>492</posX>
-		<posY>136</posY>
-		<width>32</width>
-		<height>632</height>
-		<texture>listcontrol_separator.png</texture>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>512</height>
+		<texture>music_info_bg.png</texture>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<visible>Control.Isvisible(50)</visible>
-    </control>
+	</control>
+	
+	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<visible>facadeview.list</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
 	
 <import>common.time.xml</import>
 	

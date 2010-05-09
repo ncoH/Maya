@@ -18,7 +18,7 @@
 		<posY>0</posY>
 		<width>1366</width>
 		<height>768</height>
-		<texture>background_list_small.png</texture>
+		<texture>background.png</texture>
 		<visible>facadeview.list</visible>
     </control>
 	
@@ -41,6 +41,30 @@
 		<height>768</height>
 		<texture>background_filmstrip.png</texture>
 		<visible>facadeview.filmstrip</visible>
+	</control>
+	
+	<control>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>359</width>
+		<height>482</height>
+		<texture>listcontrol_bg_small.png</texture>
+		<visible>facadeview.list</visible>
+	</control>
+	
+	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>359</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info_small.png</texture>
+		<visible>facadeview.list</visible>
 	</control>
 	
 	<import>common.time.xml</import>
@@ -87,9 +111,9 @@
       <type>label</type>
       <label>#TVSeries.Translation.Series_Plural.Label: #TVSeries.SeriesCount</label>
       <id>0</id>
-      <posX>555</posX>
+      <posX>860</posX>
 	  <posY>690</posY>
-      <align>left</align>
+	  <align>right</align>
       <textcolor>6aa5cb</textcolor>
       <visible>facadeview.list+Control.IsVisible(1237)</visible>
     </control>
@@ -99,9 +123,9 @@
       <type>label</type>
       <label>#TVSeries.Translation.Episodes.Label: #TVSeries.FilteredEpisodeCount</label>
       <id>0</id>
-      <posX>555</posX>
+      <posX>860</posX>
 	  <posY>690</posY>
-      <align>left</align>
+	  <align>right</align>
       <textcolor>6aa5cb</textcolor>
       <visible>facadeview.list+Control.IsVisible(1239)</visible>
     </control>
@@ -348,7 +372,7 @@
       <posX>914</posX>
       <posY>690</posY>
       <width>650</width>
-      <height>33</height>
+      <height>26</height>
       <texture>#TVSeries.Logos</texture>
       <keepaspectratio>yes</keepaspectratio>
       <spaceBetweenItems>2</spaceBetweenItems>
@@ -364,7 +388,7 @@
       <posX>850</posX>
       <posY>670</posY>
       <width>650</width>
-      <height>40</height>
+      <height>26</height>
       <texture>#TVSeries.Logos</texture>
       <keepaspectratio>yes</keepaspectratio>
       <spaceBetweenItems>2</spaceBetweenItems>
@@ -379,7 +403,7 @@
       <posX>420</posX>
       <posY>670</posY>
       <width>650</width>
-      <height>40</height>
+      <height>26</height>
       <texture>#TVSeries.Logos</texture>
       <keepaspectratio>yes</keepaspectratio>
       <spaceBetweenItems>2</spaceBetweenItems>
@@ -1353,11 +1377,11 @@
 			<type>listcontrol</type>
 			<id>50</id>
 			<posX>524</posX>
-			<posY>183</posY>	
+			<posY>187</posY>	
 			<onleft>2</onleft>
 			<onright>2</onright>
 			<scrollOffset>1</scrollOffset>
-			<height>490</height>
+			<height>458</height>
 			<width>358</width>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
@@ -1371,9 +1395,9 @@
 			<IconYOff>7</IconYOff>
 			<itemWidth>72</itemWidth>
 			<itemHeight>18</itemHeight>
-			<spinColor>ffffffff</spinColor>
-			<spinPosX>555</spinPosX>
-			<spinPosY>718</spinPosY>
+			<spinColor>FF6aa5cb</spinColor>
+			<spinPosX>560</spinPosX>
+			<spinPosY>688</spinPosY>
 			<spinAlign>left</spinAlign>
 		  <!-- Uncomment to override List colors -->
           <!--<playedColor>ffffffff</playedColor>-->         

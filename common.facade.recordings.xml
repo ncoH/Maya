@@ -7,6 +7,7 @@
 		<type>group</type>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
+		<animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="1000">WindowClose</animation>
 		<control>
 			<description>composite control consisting of a list control and a thumbnail panel</description>
 			<type>facadeview</type>
@@ -22,8 +23,8 @@
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
-				<PinIconHeight>53</PinIconHeight>
-				<PinIconWidth>34</PinIconWidth>
+				<PinIconHeight>52</PinIconHeight>
+				<PinIconWidth>42</PinIconWidth>
 				<PinIconXOff>0</PinIconXOff>
 				<PinIconYOff>0</PinIconYOff>
 				<itemWidth>32</itemWidth>
@@ -31,6 +32,9 @@
 				<IconXOff>30</IconXOff>
 				<IconYOff>9</IconYOff>
 				<textXOff>40</textXOff>
+				<spinPosX>560</spinPosX>
+				<spinPosY>692</spinPosY>
+				<spinAlign>left</spinAlign>
 				<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
 				<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
 				<keepaspectratio>yes</keepaspectratio>

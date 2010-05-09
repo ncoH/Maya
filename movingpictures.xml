@@ -60,8 +60,6 @@ multiple view modes.
 		<id>1</id>
 		<width>1366</width>
 		<height>768</height>
-		<texture>background_list_small.png</texture>
-		<visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(51)</visible>
 	</control>
 	
 	<control>
@@ -91,6 +89,30 @@ multiple view modes.
 		<height>768</height>
 		<texture>background_filmstrip.png</texture>
 		<visible>facadeview.filmstrip+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>359</width>
+		<height>482</height>
+		<texture>listcontrol_bg_small.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>359</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info_small.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 
     <control>
@@ -558,10 +580,11 @@ multiple view modes.
 	<control>
 		<description>Moviecount</description>
 		<type>label</type>
-		<label>#MovingPictures.general.filteredmoviecount #MovingPictures.Translation.Movies.Label</label>
+		<label>#MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount</label>
 		<id>0</id>
-		<posX>555</posX>
+		<posX>860</posX>
 		<posY>690</posY>
+		<align>right</align>
 		<textcolor>6aa5cb</textcolor>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
@@ -569,7 +592,7 @@ multiple view modes.
 	<control>
 		<description>Moviecount</description>
 		<type>label</type>
-		<label>#MovingPictures.general.filteredmoviecount #MovingPictures.Translation.Movies.Label</label>
+		<label>#MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount</label>
 		<id>0</id>
 		<posX>0</posX>
 		<posY>728</posY>

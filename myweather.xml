@@ -308,12 +308,26 @@
 		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
+		<control>
+		<description>Toggle Background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>426</posX>
+		<posY>680</posY>
+		<width>553</width>
+		<height>51</height>
+		<texture>weather_toggle_bg.png</texture>
+		<visible>Control.IsVisible(31)</visible>
+	</control>
+	
+	
 	<control>
 		<description>press ok to toggle label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>900</posX>
-		<posY>665</posY>
+		<posX>584</posX>
+		<posY>694</posY>
+		<textcolor>FF6aa5cb</textcolor>
 		<label>Press OK to toggle day</label>
 		<visible>Control.IsVisible(31)</visible>
 	</control>
@@ -549,65 +563,65 @@
 
 
 	<control>
-		<description>vertical line 1</description>
+		<description>weather BG line 1</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>400</posX>
-		<posY>280</posY>
-		<width>2</width>
-		<height>340</height>
-		<texture>vert_line.png</texture>
+		<posX>220</posX>
+		<posY>308</posY>
+		<width>179</width>
+		<height>355</height>
+		<texture>weather_bg.png</texture>
 		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
 	</control>
 	
 	<control>
-		<description>vertical line 2</description>
+		<description>weather BG line 2</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>405</posX>
+		<posY>308</posY>
+		<width>179</width>
+		<height>355</height>
+		<texture>weather_bg.png</texture>
+		<visible>Control.IsVisible(31)</visible>
+	</control>
+
+	<control>
+		<description>weather BG 3</description>
 		<type>image</type>
 		<id>0</id>
 		<posX>590</posX>
-		<posY>280</posY>
-		<width>2</width>
-		<height>340</height>
-		<texture>vert_line.png</texture>
+		<posY>308</posY>
+		<width>179</width>
+		<height>355</height>
+		<texture>weather_bg.png</texture>
 		<visible>Control.IsVisible(31)</visible>
 	</control>
-
+	
 	<control>
-		<description>vertical line 3</description>
+		<description>weather BG 4</description>
 		<type>image</type>
 		<id>0</id>
 		<posX>775</posX>
-		<posY>280</posY>
-		<width>2</width>
-		<height>340</height>
-		<texture>vert_line.png</texture>
+		<posY>308</posY>
+		<width>179</width>
+		<height>355</height>
+		<texture>weather_bg.png</texture>
 		<visible>Control.IsVisible(31)</visible>
 	</control>
 	
 	<control>
-		<description>vertical line 4</description>
+		<description>weather BG 5</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>965</posX>
-		<posY>280</posY>
-		<width>2</width>
-		<height>340</height>
-		<texture>vert_line.png</texture>
+		<posX>960</posX>
+		<posY>308</posY>
+		<width>179</width>
+		<height>355</height>
+		<texture>weather_bg.png</texture>
 		<visible>Control.IsVisible(31)</visible>
 	</control>
 	
-	<control>
-		<description>vertical line 6</description>
-		<type>image</type>
-		<id>0</id>
-		<posX>1153</posX>
-		<posY>280</posY>
-		<width>2</width>
-		<height>340</height>
-		<texture>vert_line.png</texture>
-		<visible>Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
-	</control>
-
 	<control>
 		<description>day 0 label</description>
 		<type>label</type>

@@ -42,6 +42,18 @@
 	</control>
 
 	<control>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>173</posY>
+		<width>725</width>
+		<height>561</height>
+		<texture>listcontrol_bg_recordings.png</texture>
+		<visible>facadeview.list</visible>
+	</control>
+	
+	<control>
 		<id>0</id>
 		<type>image</type>
 		<posX>91</posX>

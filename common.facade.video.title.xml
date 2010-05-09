@@ -8,7 +8,6 @@
 		<control>
 			<animation effect="fade" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
-			<animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="1000">WindowClose</animation>
 			<description>composite control consisting of a list control and a thumbnail panel</description>
 			<type>facadeview</type>
 			<id>50</id>
@@ -18,16 +17,19 @@
 				<id>50</id>
 				<onleft>2</onleft>
 				<onright>2</onright>
-				<scrollOffset>1</scrollOffset>
 				<posX>524</posX>
 				<posY>187</posY>
 				<height>458</height>
+				<width>358</width>
 				<spinPosX>560</spinPosX>
 				<spinPosY>688</spinPosY>
 				<spinAlign>left</spinAlign>
 				<textXOff>22</textXOff>
+				<scrollOffset>1</scrollOffset>
+				<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+				<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 				<dimColor>ffffffff</dimColor>
-			</control>
+		</control>
 
 			<control>
 				<description>Thumbnail Panel</description>

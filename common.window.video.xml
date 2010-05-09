@@ -18,8 +18,6 @@
 		<id>1</id>
 		<width>1366</width>
 		<height>768</height>
-		<texture>background_list.png</texture>
-		<visible>facadeview.list</visible>
 	</control>
 	
 	<control>
@@ -76,7 +74,7 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>1242</posX>
+		<posX>1216</posX>
 		<posY>690</posY>
 		<align>right</align>
 		<label>#itemcount</label>

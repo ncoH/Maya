@@ -107,12 +107,40 @@
 
 <!--Audio-->
 	<control>
+      <description>album logo</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>62</posX>
+      <posY>609</posY>
+      <width>82</width>
+      <height>77</height>
+      <texture>#Play.Current.Thumb</texture>
+      <visible>player.hasmedia+control.hastext(3337)</visible>
+	  <animation effect="fade" time="400" delay="800">WindowOpen</animation>
+	  <animation effect="fade" time="400">WindowClose</animation>
+    </control>
+	
+	<control>
+      <description>no album logo</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>62</posX>
+      <posY>609</posY>
+      <width>82</width>
+      <height>77</height>
+      <texture>audio_nothumb.png</texture>
+      <visible>player.hasmedia+control.hastext(3337)+!control.hasthumb(3337)</visible>
+	  <animation effect="fade" time="400" delay="800">WindowOpen</animation>
+	  <animation effect="fade" time="400">WindowClose</animation>
+    </control>
+
+	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>109</posX>
-		<posY>542</posY>
-		<width>313</width>
-		<height>197</height>
+		<posX>21</posX>
+		<posY>568</posY>
+		<width>420</width>
+		<height>158</height>
 		<texture>now_playing_music_bg.png</texture>
 		<visible>player.hasmedia+control.hastext(3337)</visible>
 		<animation effect="slide" start="-425,0" end="0,0" tween="quadratic" easing="in" time="400" delay="300">WindowOpen</animation>
@@ -125,9 +153,9 @@
 		<type>fadelabel</type>
 		<description>title label</description>
 		<id>1</id>
-		<posX>154</posX>
-		<posY>581</posY>
-		<width>221</width>
+		<posX>182</posX>
+		<posY>646</posY>
+		<width>210</width>
 		<label>#Play.Current.Title</label>
 		<font>font12</font>
 		<visible>player.hasmedia+control.hastext(3337)</visible>
@@ -139,9 +167,9 @@
 		<type>fadelabel</type>
 		<description>artist label</description>
 		<id>1</id>
-		<posX>154</posX>
-		<posY>606</posY>
-		<width>221</width>
+		<posX>160</posX>
+		<posY>669</posY>
+		<width>230</width>
 		<label>#Play.Current.Artist</label>
 		<font>font10</font>
 		<visible>player.hasmedia+control.hastext(3337)</visible>
@@ -153,18 +181,34 @@
 		<description>nowplaying text</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>153</posX>
-		<posY>623</posY>
-		<width>260</width>
+		<posX>160</posX>
+		<posY>606</posY>
+		<width>240</width>
 		<height>50</height>
 		<label>Now Playing #currentplaytime</label>
-		<font>Segoe Light18</font>
+		<font>Segoe Light16</font>
 		<textcolor>85cffe</textcolor>
 		<visible>player.hasmedia+control.hastext(3337)</visible>
 		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
 		<animation effect="fade" time="400">WindowClose</animation>
 	</control>
+	
+	<control>
+		<description>play logo</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>160</posX>
+		<posY>651</posY>
+		<width>15</width>
+		<height>17</height>
+		<texture>now_playing_play.png</texture>
+		<visible>player.playing+player.hasmedia+control.hastext(3337)</visible>
+		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
+		<animation effect="fade" time="400">WindowClose</animation>
+	</control>
 
+	
+<!--
 	<control>
 		<description>progress bar bg</description>
 		<type>image</type>
@@ -228,20 +272,6 @@
 	</control>
 
 	<control>
-		<description>play logo</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>240</posX>
-		<posY>685</posY>
-		<width>48</width>
-		<height>26</height>
-		<texture>now_playing_play.png</texture>
-		<visible>player.playing+player.hasmedia+control.hastext(3337)</visible>
-		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
-		<animation effect="fade" time="400">WindowClose</animation>
-	</control>
-
-	<control>
 		<description>Pause logo</description>
 		<type>image</type>
 		<id>1</id>
@@ -254,6 +284,7 @@
 		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
 		<animation effect="fade" time="400">WindowClose</animation>
 	</control>
+-->
 
 </controls>
 </window>
