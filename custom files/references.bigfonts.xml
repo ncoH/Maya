@@ -164,7 +164,7 @@
 		<spinPosX>1245</spinPosX>
 		<spinPosY>718</spinPosY>
 		<spinAlign>right</spinAlign>
-		<spinColor>ffffffff</spinColor>
+		<spinColor>FF6aa5cb</spinColor>
 		<textureFocus>listcontrol_item_selected.png</textureFocus>
 		<textureNoFocus>listcontrol_item.png</textureNoFocus>
 		<textureHeight>53</textureHeight>
@@ -180,7 +180,7 @@
 		<colordiffuse>ffffffff</colordiffuse>
 		<remoteColor>ffFFA075</remoteColor>
 		<downloadColor>ff80ff80</downloadColor>
-		<spaceBetweenItems>-3</spaceBetweenItems>
+		<spaceBetweenItems>0</spaceBetweenItems>
 		<textXOff>22</textXOff>
 		<textYOff>10</textYOff>
 		<textXOff2>0</textXOff2>
@@ -286,17 +286,16 @@
 		<type>playlistcontrol</type>
 		<id>10</id>
 		<posX>524</posX>
-		<posY>150</posY>
-		<width>748</width>
-		<height>600</height>
+		<posY>187</posY>
+		<width>724</width>
+		<height>458</height>
 		<spinWidth>46</spinWidth>
 		<spinHeight>33</spinHeight>
-		<spinPosX>1245</spinPosX>
-		<spinPosY>718</spinPosY>
-		<spinAlign>right</spinAlign>
-		<spinColor>ffffffff</spinColor>
-		<spinColor>ffffffff</spinColor>
-		<textureHeight>53</textureHeight>
+		<spinPosX>560</spinPosX>
+		<spinPosY>688</spinPosY>
+		<spinAlign>left</spinAlign>
+		<spinColor>FF6aa5cb</spinColor>
+		<textureHeight>51</textureHeight>
 		<image>folder_focus.png</image>
 		<font>font14</font>
 		<shadedColor>ffffffff</shadedColor>
@@ -307,7 +306,7 @@
 		<colordiffuse>ffffffff</colordiffuse>
 		<remoteColor>ffFFA075</remoteColor>
 		<downloadColor>ff80ff80</downloadColor>
-		<spaceBetweenItems>-3</spaceBetweenItems>
+		<spaceBetweenItems>0</spaceBetweenItems>
 		<textXOff>22</textXOff>
 		<textYOff>10</textYOff>
 		<textXOff2>0</textXOff2>
@@ -324,9 +323,9 @@
 		<upBtnHeight>53</upBtnHeight>
 		<downBtnHeight>53</downBtnHeight>
 		<deleteBtnHeight>53</deleteBtnHeight>
-		<upBtnXOffset>619</upBtnXOffset>
-		<downBtnXOffset>619</downBtnXOffset>
-		<deleteBtnXOffset>619</deleteBtnXOffset>
+		<upBtnXOffset>577</upBtnXOffset>
+		<downBtnXOffset>577</downBtnXOffset>
+		<deleteBtnXOffset>577</deleteBtnXOffset>
 		<upBtnYOffset>0</upBtnYOffset>
 		<downBtnYOffset>0</downBtnYOffset>
 		<deleteBtnYOffset>0</deleteBtnYOffset>
