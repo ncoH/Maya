@@ -10,8 +10,8 @@
 	<posY>30</posY>
 	<texture>maya_logo_small.png</texture>
 	<visible>[window.isvisible(35) + string.contains(#maya.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#maya.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#maya.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#maya.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
-	<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
-	<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+	<animation effect="fade" time="200">WindowOpen</animation>
+	<animation effect="fade" time="200">WindowClose</animation>
 </control>
 
 <control>
@@ -22,8 +22,8 @@
 	<posY>31</posY>
 	<texture>clock_seperator.png</texture>
 	<visible>[window.isvisible(35) + string.contains(#maya.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#maya.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#maya.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#maya.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
-	<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
-	<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+	<animation effect="fade" time="200">WindowOpen</animation>
+	<animation effect="fade" time="200">WindowClose</animation>
 </control>
 
 <control>
@@ -37,8 +37,8 @@
 	<font>Segoe Light22</font>
 	<textcolor>6aa5cb</textcolor>
 	<visible>[window.isvisible(35) + string.contains(#maya.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#maya.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#maya.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#maya.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
-	<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
-	<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+	<animation effect="fade" time="200">WindowOpen</animation>
+	<animation effect="fade" time="200">WindowClose</animation>
 </control>
 
 </controls>

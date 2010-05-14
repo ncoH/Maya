@@ -21,6 +21,7 @@ multiple view modes.
 <define>#filmstrip.available:true</define><!-- Set to true if this skin implements the filmstrip view -->
 <define>#filmstrip.backdrop.used:false</define><!-- true if backdrop (fanart) should be displayed in this view -->
 <define>#details.backdrop.used:true</define><!-- true if backdrop (fanart) should be displayed in this view -->
+<define>#categories.backdrop.used:true</define>
 <controls>
 <!--            :: DUMMY CONTROLS ::             -->
 
@@ -92,6 +93,8 @@ multiple view modes.
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>listcontrol background</description>
 		<type>image</type>
 		<id>1</id>
@@ -104,6 +107,8 @@ multiple view modes.
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>listcontrol background info</description>
 		<type>image</type>
 		<id>1</id>
@@ -350,6 +355,8 @@ multiple view modes.
 
 	<!--            :: LIST VIEW ::            -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Default Cover Art</description>
 		<type>image</type>
 		<id>0</id>
@@ -362,6 +369,8 @@ multiple view modes.
 	</control>
 
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Cover Art</description>
 		<type>image</type>
 		<id>60</id>
@@ -374,6 +383,8 @@ multiple view modes.
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Cover Art overlay</description>
 		<type>image</type>
 		<id>1</id>
@@ -386,6 +397,8 @@ multiple view modes.
 	</control>
 
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Year below the movie title</description>
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.year</label>
@@ -400,6 +413,8 @@ multiple view modes.
 	
 <!-- Only in MovingPictures 1.0 -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>runtime</description>
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.runtime.localized.long</label>
@@ -431,6 +446,8 @@ multiple view modes.
 	
 	<!-- 1 genre -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>genre</description>
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.extra.genres.1</label>
@@ -445,6 +462,8 @@ multiple view modes.
 	
 	<!-- 2 genres -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>genre</description>
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.extra.genres.1, #MovingPictures.SelectedMovie.extra.genres.2</label>
@@ -459,6 +478,8 @@ multiple view modes.
 	
 	<!-- 3 genres or more -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>director</description>
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.extra.genres.1, #MovingPictures.SelectedMovie.extra.genres.2, #MovingPictures.SelectedMovie.extra.genres.3</label>
@@ -477,6 +498,8 @@ multiple view modes.
 	
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<type>textboxscrollup</type>
 		<description>Summary (list)</description>
 		<id>1025</id>
@@ -494,6 +517,8 @@ multiple view modes.
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Actors value</description>
 		<type>fadelabel</type>
 		<id>0</id>
@@ -508,6 +533,8 @@ multiple view modes.
 	
 	<!-- 1 director -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Directors value</description>
 		<type>label</type>
 		<label>#MovingPictures.Translation.Director.Label: #MovingPictures.SelectedMovie.directors</label>
@@ -522,6 +549,8 @@ multiple view modes.
 	
 	<!-- 2 or more directors -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Directors value</description>
 		<type>label</type>
 		<label>#MovingPictures.Translation.Directors.Label: #MovingPictures.SelectedMovie.directors</label>
@@ -536,6 +565,8 @@ multiple view modes.
 
 <!-- Only in MovingPictures 1.0 -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<type>imagelist</type>
 		<id>101</id>
 		<posX>921</posX>
@@ -578,6 +609,8 @@ multiple view modes.
 -->
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Moviecount</description>
 		<type>label</type>
 		<label>#MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount</label>
@@ -590,6 +623,8 @@ multiple view modes.
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Moviecount</description>
 		<type>label</type>
 		<label>#MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount</label>
@@ -608,6 +643,8 @@ multiple view modes.
 	
 	<!-- Only in MovingPictures 1.0 -->	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Year below the movie title</description>
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime.localized.long - #MovingPictures.SelectedMovie.genres</label>
@@ -638,6 +675,8 @@ multiple view modes.
 -->
 
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>512</posX>
@@ -649,6 +688,8 @@ multiple view modes.
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Heading text label</description>
 		<type>label</type>
 		<id>1</id>
@@ -691,6 +732,8 @@ multiple view modes.
 	<!--            :: OTHER ::            -->
 	<import>movingpictures.facade.xml</import>
 	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
@@ -700,6 +743,8 @@ multiple view modes.
 	</control>
 	
 	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>624</posX>
@@ -714,6 +759,8 @@ multiple view modes.
 	<!--Video Resolutions-->	
 	<!-- HD 720p -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>HD 720</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -727,6 +774,8 @@ multiple view modes.
 	
 	<!-- SD 480/576i -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>SD 480/576i</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -740,6 +789,8 @@ multiple view modes.
 
 	<!-- HD 1080p -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>HD 1080</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -753,6 +804,8 @@ multiple view modes.
 	
 	<!-- HD 1080i -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>HD 1080</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -768,6 +821,8 @@ multiple view modes.
 	<!-- Video Codecs -->
 	<!-- H264 -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>H264</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -781,6 +836,8 @@ multiple view modes.
 
 	<!-- DIVX -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>DIVX</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -794,6 +851,8 @@ multiple view modes.
 
 	<!-- XVID -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>XVID</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -809,6 +868,8 @@ multiple view modes.
 	<!-- Audio Channels / Codecs-->
 	<!-- Dolby Digital 5.1 -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>DD 5.1</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -822,6 +883,8 @@ multiple view modes.
 
 	<!-- AAC -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>AAC</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -835,6 +898,8 @@ multiple view modes.
 	
 	<!-- MP3 -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>MP3</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -848,6 +913,8 @@ multiple view modes.
 
 	<!-- WMA -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>WMA</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -861,6 +928,8 @@ multiple view modes.
 	
 	<!-- DTS -->
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>DTS</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -876,6 +945,8 @@ multiple view modes.
 	<!-- Number of channels -->
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>1 Channel</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -888,6 +959,8 @@ multiple view modes.
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>2 Channels</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -900,6 +973,8 @@ multiple view modes.
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>6 Channels</description>
 	  <type>image</type>
 	  <id>0</id>
@@ -912,6 +987,8 @@ multiple view modes.
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	  <description>8 Channels</description>
 	  <type>image</type>
 	  <id>0</id>

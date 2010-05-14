@@ -353,8 +353,8 @@
 	<import>common.facade.music.xml</import>
 	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
@@ -364,8 +364,8 @@
 	</control>
 	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>624</posX>

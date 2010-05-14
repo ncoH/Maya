@@ -5,7 +5,9 @@ This file should contain the facade view
 <window>
 <controls>
 
-<control>      
+<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>      
       <type>facadeview</type>
       <id>51</id>
       <control>
@@ -28,6 +30,8 @@ This file should contain the facade view
     </control>
 
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<type>facadeview</type>
 		<id>50</id>
 		<control>
@@ -138,6 +142,8 @@ This file should contain the facade view
     <control>
       <description>composite control consisting of a list control and a thumbnail panel</description>
       <type>facadeview</type>
+	  <animation effect="fade" time="100">WindowOpen</animation>
+	  <animation effect="fade" time="100">WindowClose</animation>
       <id>51</id>
       <control>
         <description>Categories List</description>

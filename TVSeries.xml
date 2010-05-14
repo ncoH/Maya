@@ -46,6 +46,8 @@
 	<control>
 		<description>listcontrol background</description>
 		<type>image</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<id>1</id>
 		<posX>524</posX>
         <posY>153</posY>
@@ -58,6 +60,8 @@
 	<control>
 		<description>listcontrol background info</description>
 		<type>image</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<id>1</id>
 		<posX>524</posX>
         <posY>678</posY>
@@ -108,6 +112,8 @@
 	
 	<control>
       <description>Media Count Label</description>
+	  <animation effect="fade" time="100">WindowOpen</animation>
+	  <animation effect="fade" time="100">WindowClose</animation>
       <type>label</type>
       <label>#TVSeries.Translation.Series_Plural.Label: #TVSeries.SeriesCount</label>
       <id>0</id>
@@ -120,6 +126,8 @@
 	
 	<control>
       <description>Media Count Label</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <type>label</type>
       <label>#TVSeries.Translation.Episodes.Label: #TVSeries.FilteredEpisodeCount</label>
       <id>0</id>
@@ -132,6 +140,8 @@
 	
 	<control>
       <description>Media Count Label</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <type>label</type>
       <label>#TVSeries.Translation.Series_Plural.Label: #TVSeries.SeriesCount</label>
       <id>0</id>
@@ -148,6 +158,8 @@
     
     <control>
       <type>image</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <description>Season image ( season image background )</description>
       <id>46</id>
       <posX>133</posX>
@@ -160,6 +172,8 @@
 	
 	<control>
       <description>Season image ( season image background ) Overlay</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <type>image</type>
       <id>0</id>
       <posX>87</posX>
@@ -176,6 +190,8 @@
     <control>
       <type>image</type>
       <description>series poster ( series poster background )</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>46</id>
       <posX>133</posX>
 	  <posY>208</posY>
@@ -188,6 +204,8 @@
 	<control>
       <type>image</type>
       <description>series poster ( series poster background ) Overlay</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>0</id>
       <posX>87</posX>
 	  <posY>161</posY>
@@ -226,6 +244,8 @@
 	
     <control>
       <description>Big Episode Thumb</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <type>image</type>
       <id>67</id>
       <posX>91</posX>
@@ -238,6 +258,8 @@
 	
 	 <control>
       <description>Big Episode Thumb overlay</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <type>image</type>
       <id>0</id>
 	  <posX>44</posX>
@@ -252,6 +274,8 @@
     <control>
       <type>fadelabel</type>
       <description>Title (Episode List)</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>640</id>
       <posX>555</posX>
 	  <posY>142</posY>
@@ -264,6 +288,8 @@
 	
     <control>
       <type>textboxscrollup</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <description>Description (Episode / Season / Series Lists)</description>
       <id>631</id>
       <posX>924</posX>
@@ -277,6 +303,8 @@
 	
     <control>
       <type>textboxscrollup</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <description>Description (grouplist)</description>
       <id>0</id>
       <posX>924</posX>
@@ -367,6 +395,8 @@
 	
     <control>
       <type>image</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <description>Logos</description>
       <id>66</id>
       <posX>914</posX>
@@ -398,6 +428,8 @@
     <!--  ***************************** LOGOS (GROUP LIST  LAYOUT) ******************************** -->
     <control>
       <type>image</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <description>thumb Logos ( in textlist group)</description>
       <id>0</id>
       <posX>420</posX>
@@ -653,6 +685,8 @@
 	 *********************** SERIES/SEASON INFO LABELS ( LIST LAYOUT) ************************** -->
     <control>
       <type>image</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>1</id>
       <posX>924</posX>
       <posY>260</posY>
@@ -687,6 +721,8 @@
     </control>-->
     <control>      
       <type>label</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>0</id>
       <posX>924</posX>
 	  <posY>185</posY>
@@ -710,6 +746,8 @@
     </control>-->
     <control>      
       <type>fadelabel</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>0</id>
       <posX>924</posX>
 	  <posY>215</posY>
@@ -733,6 +771,8 @@
     </control>-->
     <control>      
       <type>label</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>0</id>
       <posX>1079</posX>
 	  <posY>185</posY>
@@ -778,6 +818,8 @@
     </control>-->
     <control>      
       <type>fadelabel</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>0</id>
       <posX>924</posX>
 	  <posY>565</posY>
@@ -790,6 +832,8 @@
 	
 	<control>      
       <type>label</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>0</id>
       <posX>974</posX>
 	  <posY>605</posY>
@@ -802,6 +846,8 @@
 	
 	<control>      
       <type>label</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>0</id>
       <posX>1074</posX>
 	  <posY>605</posY>
@@ -814,6 +860,8 @@
 	
 	<control>      
       <type>label</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>0</id>
       <posX>1074</posX>
 	  <posY>605</posY>
@@ -826,6 +874,8 @@
 	
 	<control>      
       <type>label</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>0</id>
       <posX>974</posX>
 	  <posY>605</posY>
@@ -839,6 +889,8 @@
 	    <!-- Watched Icons for Series Poster View and Season View in List Layout -->
     <control>
       <description>Season Watched Icon</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <type>image</type>
       <id>0</id>
       <posX>1025</posX>
@@ -850,6 +902,8 @@
     </control>
     <control>
       <description>Un-Watched Icon</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <type>image</type>
       <id>0</id>
       <posX>924</posX>
@@ -861,6 +915,8 @@
     </control>
     <control>
       <description>Not Available and Watched Icon</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <type>image</type>
       <id>0</id>
       <posX>924</posX>
@@ -872,6 +928,8 @@
     </control>
     <control>
       <description>Not Available and Un-Watched Icon</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <type>image</type>
       <id>0</id>
       <posX>924</posX>
@@ -886,6 +944,8 @@
    	<control>
       <type>fadelabel</type>
       <description>Title (Episode View)</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>640</id>
       <posX>555</posX>
 	  <posY>142</posY>
@@ -898,6 +958,8 @@
 	
     <control>
       <type>fadelabel</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <label>#TVSeries.Title</label>
       <id>0</id>
       <posX>924</posX>
@@ -910,6 +972,8 @@
       
    <control>      
       <type>image</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>1</id>
       <posX>924</posX>
       <posY>304</posY>
@@ -944,6 +1008,8 @@
     </control>-->
     <control>      
       <type>label</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>0</id>
       <posX>924</posX>
 	  <posY>225</posY>
@@ -967,6 +1033,8 @@
     </control>-->
     <control>      
       <type>fadelabel</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>0</id>
       <posX>924</posX>
 	  <posY>260</posY>
@@ -1034,6 +1102,8 @@
     </control>-->
     <control>      
       <type>fadelabel</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
       <id>0</id>
       <posX>924</posX>
 	  <posY>565</posY>
@@ -1256,6 +1326,8 @@
       <posY>197</posY>
       <control>
         <description>composite control consisting of a list control and a thumbnail panel</description>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
         <type>facadeview</type>
         <id>50</id>
         <control>
@@ -1387,7 +1459,7 @@
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 			<textXOff>-50</textXOff>
 			<textYOff>10</textYOff>
-			<textXOff2>285</textXOff2>
+			<textXOff2>345</textXOff2>
 			<textYOff2>10</textYOff2>
 			<textXOff3>-2000</textXOff3>
 			<textYOff3>6</textYOff3>
@@ -1423,7 +1495,9 @@
       <keepaspectratio>yes</keepaspectratio>
     </control>
 	
-		<control>
+	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
@@ -1433,6 +1507,8 @@
 	</control>
 	
 	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>624</posX>
