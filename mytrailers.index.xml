@@ -226,7 +226,7 @@
 		<posY>208</posY>
 		<width>266</width>
 		<height>380</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">MyTrailers/JustAdded.png</texture>
+		<texture>MyTrailers/JustAdded.png</texture>
 		<visible>Control.IsVisible(50)+string.contains(#selecteditem,Just Added)</visible>
 	</control>
 	
@@ -237,7 +237,7 @@
 		<posY>208</posY>
 		<width>266</width>
 		<height>380</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">MyTrailers/Exclusive.png</texture>
+		<texture>MyTrailers/Exclusive.png</texture>
 		<visible>Control.IsVisible(50)+string.contains(#selecteditem,Exclusive)</visible>
 	</control>
 	
@@ -248,7 +248,7 @@
 		<posY>208</posY>
 		<width>266</width>
 		<height>380</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">MyTrailers/JustHD.png</texture>
+		<texture>MyTrailers/JustHD.png</texture>
 		<visible>Control.IsVisible(50)+string.contains(#selecteditem,Just HD)</visible>
 	</control>
 	
@@ -259,7 +259,7 @@
 		<posY>208</posY>
 		<width>266</width>
 		<height>380</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">MyTrailers/MostPopular.png</texture>
+		<texture>MyTrailers/MostPopular.png</texture>
 		<visible>Control.IsVisible(50)+string.contains(#selecteditem,Most Popular)</visible>
 	</control>
 	
@@ -270,18 +270,18 @@
 		<posY>208</posY>
 		<width>266</width>
 		<height>380</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">MyTrailers/Genres.png</texture>
+		<texture>MyTrailers/Genres.png</texture>
 		<visible>Control.IsVisible(50)+string.contains(#selecteditem,Genres)</visible>
 	</control>
 	
 	<control>
 		<id>1</id>
 		<type>image</type>
-		<posX>0</posX>
-		<posY>0</posY>
-		<width>358</width>
-		<height>768</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">MyTrailers/MovieStudio.png</texture>
+		<posX>133</posX>
+		<posY>208</posY>
+		<width>266</width>
+		<height>380</height>
+		<texture>MyTrailers/MovieStudio.png</texture>
 		<visible>Control.IsVisible(50)+string.contains(#selecteditem,Movie Studio)</visible>
 	</control>
 	
