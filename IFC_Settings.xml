@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>240782</id>
+    <defaultcontrol>1</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <define>#header.label:Intelligent Frame Correction</define>
+    <controls>
+        <import>common.settings.xml</import>
+        <control>
+            <id>6</id>
+            <description>Single Black Bar Height</description>
+            <type>spincontrol</type>
+            <onleft>9</onleft>
+            <onright>9</onright>
+            <onup>5</onup>
+            <ondown>7</ondown>
+            <posX>680</posX>
+            <posY>413</posY>
+            <textcolor>ffffffff</textcolor>
+            <digits>2</digits>
+            <spintype>INT</spintype>
+            <showrange>NO</showrange>
+            <align>RIGHT</align>
+        </control>
+        <control>
+            <id>7</id>
+            <description>Double Black Bar Height</description>
+            <type>spincontrol</type>
+            <onleft>9</onleft>
+            <onright>9</onright>
+            <onup>6</onup>
+            <ondown>8</ondown>
+            <posX>680</posX>
+            <posY>458</posY>
+            <textcolor>ffffffff</textcolor>
+            <digits>2</digits>
+            <spintype>INT</spintype>
+            <showrange>NO</showrange>
+            <align>RIGHT</align>
+        </control>
+        <control>
+            <id>16</id>
+            <description>Single Black Bar Height Label</description>
+            <type>label</type>
+            <posX>215</posX>
+            <posY>405</posY>
+            <font>font10</font>
+            <textcolor>ffffffff</textcolor>
+            <label>Single Black Bar Height</label>
+        </control>
+        <control>
+            <id>17</id>
+            <description>Double Black Bar Height Label</description>
+            <type>label</type>
+            <posX>215</posX>
+            <posY>450</posY>
+            <font>font10</font>
+            <textcolor>ffffffff</textcolor>
+            <label>Double Black Bar Height</label>
+        </control>
+        <control>
+            <id>8</id>
+            <description>Verbose Logging</description>
+            <type>togglebutton</type>
+            <onleft>9</onleft>
+            <onright>9</onright>
+            <onup>7</onup>
+            <ondown>18</ondown>
+            <posX>200</posX>
+            <posY>495</posY>
+            <width>311</width>
+			<font>font10</font>
+            <label>Verbose Logging</label>
+			<textalign>right</textalign>
+			<textYOff>8</textYOff>
+        </control>
+        <control>
+            <id>15</id>
+            <description>Stabilizer Label</description>
+            <type>label</type>
+            <posX>216</posX>
+            <posY>360</posY>
+            <font>font10</font>
+            <textcolor>ffffffff</textcolor>
+            <label>Stabilizer</label>
+        </control>
+        <control>
+            <id>14</id>
+            <description>Max Brightness Threshold Label</description>
+            <type>label</type>
+            <posX>216</posX>
+            <posY>315</posY>
+            <font>font10</font>
+            <textcolor>ffffffff</textcolor>
+            <label>Max Brightness Threshold</label>
+        </control>
+        <control>
+            <id>13</id>
+            <description>Min Brightness Threshold Label</description>
+            <type>label</type>
+            <posX>216</posX>
+            <posY>270</posY>
+            <font>font10</font>
+            <textcolor>ffffffff</textcolor>
+            <label>Min Brightness Threshold</label>
+        </control>
+        <control>
+            <id>12</id>
+            <description>Detection Counter Label</description>
+            <type>label</type>
+            <posX>216</posX>
+            <posY>225</posY>
+            <font>font10</font>
+            <textcolor>ffffffff</textcolor>
+            <label>Detection Counter</label>
+        </control>
+        <control>
+            <id>11</id>
+            <description>Scan Interval Label</description>
+            <type>label</type>
+            <posX>217</posX>
+            <posY>180</posY>
+            <font>font10</font>
+            <textcolor>ffffffff</textcolor>
+            <label>Scan Interval</label>
+        </control>
+        <control>
+            <id>18</id>
+            <description>Scan Interval</description>
+            <type>spincontrol</type>
+            <onleft>9</onleft>
+            <onright>9</onright>
+            <onup>9</onup>
+            <ondown>2</ondown>
+            <visible/>
+            <posX>680</posX>
+            <posY>188</posY>
+            <textcolor>ffffffff</textcolor>
+            <digits>2</digits>
+            <spintype>INT</spintype>
+            <showrange>NO</showrange>
+            <align>RIGHT</align>
+        </control>
+        <control>
+            <id>2</id>
+            <description>Detection Counter</description>
+            <type>spincontrol</type>
+            <onleft>9</onleft>
+            <onright>9</onright>
+            <onup>18</onup>
+            <ondown>3</ondown>
+            <posX>680</posX>
+            <posY>233</posY>
+            <textcolor>ffffffff</textcolor>
+            <digits>2</digits>
+            <spintype>INT</spintype>
+            <showrange>NO</showrange>
+            <align>RIGHT</align>
+        </control>
+        <control>
+            <id>3</id>
+            <description>Min Brightness Treshold</description>
+            <type>spincontrol</type>
+            <onleft>9</onleft>
+            <onright>9</onright>
+            <onup>2</onup>
+            <ondown>4</ondown>
+            <posX>680</posX>
+            <posY>278</posY>
+            <textcolor>ffffffff</textcolor>
+            <digits>2</digits>
+            <spintype>INT</spintype>
+            <showrange>NO</showrange>
+            <align>RIGHT</align>
+        </control>
+        <control>
+            <id>4</id>
+            <description>Max Brightness Treshold</description>
+            <type>spincontrol</type>
+            <onleft>9</onleft>
+            <onright>9</onright>
+            <onup>3</onup>
+            <ondown>5</ondown>
+            <posX>680</posX>
+            <posY>323</posY>
+            <textcolor>ffffffff</textcolor>
+            <digits>2</digits>
+            <spintype>INT</spintype>
+            <showrange>NO</showrange>
+            <align>RIGHT</align>
+        </control>
+        <control>
+            <id>5</id>
+            <description>Stabilizer</description>
+            <type>spincontrol</type>
+            <onleft>9</onleft>
+            <onright>9</onright>
+            <onup>4</onup>
+            <ondown>6</ondown>
+            <posX>680</posX>
+            <posY>368</posY>
+            <textcolor>ffffffff</textcolor>
+            <digits>2</digits>
+            <spintype>INT</spintype>
+            <showrange>NO</showrange>
+            <align>RIGHT</align>
+        </control>
+    </controls>
+</window>
