@@ -143,7 +143,7 @@
 				<textYOff>12</textYOff>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>6</onup>
+				<onup>9</onup>
 				<ondown>7</ondown>
 			
 			</control>
@@ -219,7 +219,6 @@
 				<ondown>6</ondown>
 			</control>
 			
-			
 			<control>
 				<description>My Presets</description>
 				<type>button</type>
@@ -234,9 +233,58 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>4</onup>
-				<ondown>5</ondown>
+				<ondown>8</ondown>
 			</control>
+			
+			<control>
+                    <id>8</id>
+                    <description>genres</description>
+                    <type>button</type>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<onleft>50</onleft>
+					<onright>50</onright>
+                    <onup>6</onup>
+                    <ondown>9</ondown>
+                    <label>#RadioTime.Translation.Genres.Label</label>
+                </control>
 
+			    <control>
+                    <id>9</id>
+                    <description>Now playing</description>
+                    <type>button</type>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<onleft>50</onleft>
+					<onright>50</onright>
+                    <onup>8</onup>
+                    <ondown>5</ondown>
+                    <label>#RadioTime.Translation.NowPlaying.Label</label>
+                </control>
+                <control>
+                    <id>10</id>
+                    <description>Random</description>
+					<type>button</type>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<onleft>50</onleft>
+					<onright>50</onright>
+                    <onup>9</onup>
+                    <ondown>2</ondown>
+                    <label>#RadioTime.Translation.Random.Label</label>
+                </control>
 		</control>
 		
 	</control>
