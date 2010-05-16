@@ -20,23 +20,37 @@
 		<label>radiotime</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
+		<visible>facadeview.list</visible>
 		<valign>middle</valign>
 	</control>
 	
 	<control>
-		<description>separator listview</description>
+		<description>listcontrol background</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>492</posX>
-		<posY>136</posY>
-		<width>32</width>
-		<height>632</height>
-		<texture>listcontrol_separator.png</texture>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>
+		<visible>facadeview.list</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
-    </control>
+	</control>
+	
+	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<visible>facadeview.list</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
 
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -275,6 +289,8 @@
 <import>common.facade.music.xml</import>
 
 	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
@@ -284,6 +300,8 @@
 	</control>
 	
 	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>624</posX>

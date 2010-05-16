@@ -5,6 +5,7 @@
 <allowoverlay>yes</allowoverlay>
 <controls>
 	<import>common.window.xml</import>
+	<import>common.time.xml</import>
 	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -22,6 +23,8 @@
 	</control>
 	
     <control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
@@ -34,10 +37,12 @@
     </control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>1242</posX>
+		<posX>1216</posX>
 		<posY>690</posY>
 		<align>right</align>
 		<label>#infoservice.feed.itemcount</label>
@@ -45,11 +50,13 @@
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Chosen selected item Description</description>
 		<type>textboxscrollup</type>
 		<id>506</id>
 		<posX>80</posX>
-		<posY>150</posY>
+		<posY>187</posY>
 		<width>450</width>
 		<height>390</height>
 		<label>-</label>
@@ -158,32 +165,54 @@
 	</control>
 	
 	<control>
-		<description>separator listview</description>
+		<description>listcontrol background</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>492</posX>
-		<posY>136</posY>
-		<width>32</width>
-		<height>632</height>
-		<texture>listcontrol_separator.png</texture>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-    </control>
+	</control>
 	
 	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="1000">WindowClose</animation>
 		<description>listcontrol</description>
 		<type>listcontrol</type>
 		<id>50</id>
 		<onleft>2</onleft>
 		<onright>2</onright>
 		<scrollOffset>1</scrollOffset>
-		<posY>183</posY>
-		<height>450</height>
+		<posX>524</posX>
+		<posY>187</posY>
+		<height>458</height>
+		<spinPosX>560</spinPosX>
+		<spinPosY>688</spinPosY>
+		<spinAlign>left</spinAlign>
 		<textXOff>22</textXOff>
 		<dimColor>ffffffff</dimColor>
 	</control>
 	
 	<control>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>0</posX>
