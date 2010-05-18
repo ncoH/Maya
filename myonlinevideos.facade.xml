@@ -20,8 +20,13 @@
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
-				<posY>424</posY>
+				<posY>427</posY>
 				<height>300</height>
+				<posX>524</posX>
+				<width>724</width>
+				<spinPosX>560</spinPosX>
+				<spinPosY>692</spinPosY>
+				<spinAlign>left</spinAlign>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<textXOff>22</textXOff>
