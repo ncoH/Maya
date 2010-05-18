@@ -68,7 +68,7 @@
 		<id>998</id>
 		<posX>1152</posX>
 		<posY>667</posY>
-		<label>#duration</label>
+		<label>#currentremaining</label>
 		<align>right</align>
 		<font>font12</font>
 		<visible>window.isosdvisible|control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking</visible>
