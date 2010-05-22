@@ -50,7 +50,7 @@
 		<width>725</width>
 		<height>561</height>
 		<texture>listcontrol_bg_recordings.png</texture>
-		<visible>facadeview.list</visible>
+        <visible>facadeview.list+!control.isvisible(51)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -534,7 +534,7 @@
 				<type>selectbutton</type>
 				<id>6</id>
 				<ondown>3</ondown>
-				<onup>7</onup>
+				<onup>8</onup>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<label>495</label>

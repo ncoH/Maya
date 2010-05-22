@@ -24,18 +24,32 @@
 	</control>
 	
 	<control>
-		<description>separator listview</description>
+		<description>listcontrol background</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>492</posX>
-		<posY>136</posY>
-		<width>32</width>
-		<height>632</height>
-		<texture>listcontrol_separator.png</texture>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<visible>facadeview.list</visible>
-    </control>
+	</control>
+	
+	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<visible>facadeview.list</visible>
+	</control>
 
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -190,6 +204,8 @@
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<id>0</id>
 		<type>image</type>
 		<posX>133</posX>
@@ -201,6 +217,8 @@
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<id>500</id>
 		<type>image</type>
 		<posX>133</posX>
@@ -213,6 +231,8 @@
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>1</id>
 		<posX>87</posX>

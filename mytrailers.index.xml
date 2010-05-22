@@ -27,7 +27,7 @@
 		<width>725</width>
 		<height>482</height>
 		<texture>listcontrol_bg.png</texture>
-		<visible>facadeview.list</visible>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
@@ -41,7 +41,7 @@
 		<width>725</width>
 		<height>51</height>
 		<texture>listcontrol_bg_info.png</texture>
-		<visible>facadeview.list</visible>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
@@ -220,10 +220,12 @@
 		<texture>hiddenmenu_tab_up.png</texture>
 		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
 	</control>
-
+	
 <!-- Custom posters-->
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>133</posX>
@@ -235,6 +237,8 @@
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>133</posX>
@@ -246,6 +250,8 @@
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>133</posX>
@@ -257,6 +263,8 @@
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>133</posX>
@@ -268,6 +276,8 @@
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>133</posX>
@@ -279,6 +289,8 @@
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>133</posX>
@@ -292,6 +304,8 @@
 <!-- Normal poster-->
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>133</posX>
@@ -303,6 +317,8 @@
 	</control>
 
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>1</id>
 		<posX>87</posX>

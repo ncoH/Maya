@@ -11,7 +11,6 @@
 <controls>
 	<import>common.window.xml</import>
 	
-	
 	<control>
 		<description>BG</description>
 		<type>image</type>
@@ -19,6 +18,19 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background.png</texture>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>list background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>200</posX>
+        <posY>153</posY>
+		<width>280</width>
+		<height>482</height>
+		<texture>tvhome_bg.png</texture>
 	</control>
 	
 	<control>
@@ -37,12 +49,13 @@
 
 	<control>
 		<type>group</type>
-		<layout>StackLayout(4)</layout>
+		<layout>StackLayout</layout>
 		<description>group element</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<posX>200</posX>
 		<posY>180</posY>
+		<width>280</width>
 		<control>
 			<description>TVGuide</description>
 			<type>button</type>
@@ -53,6 +66,12 @@
 			<ondown>11</ondown>
 			<onright>99</onright>
 			<textalign>right</textalign>
+			<width>280</width>
+			<textXOff>33</textXOff>
+			<height>51</height>
+			<textYOff>12</textYOff>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -65,6 +84,12 @@
 			<ondown>3</ondown>
 			<onright>99</onright>
 			<textalign>right</textalign>
+			<width>280</width>
+			<textXOff>33</textXOff>
+			<height>51</height>
+			<textYOff>12</textYOff>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -73,11 +98,17 @@
 			<id>3</id>
 			<label>601</label>
 			<onup>11</onup>
-			<ondown>14</ondown>
+			<ondown>7</ondown>
 			<onright>99</onright>
 			<textalign>right</textalign>
+			<width>280</width>
+			<textXOff>33</textXOff>
+			<height>51</height>
+			<textYOff>12</textYOff>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
-
+<!--
 		<control>
 			<description>Active Recordings</description>
 			<type>button</type>
@@ -90,7 +121,7 @@
 		</control>
 
 	
-<!--
+
 	<control>
 			<description>Group button</description>
 			<type>button</type>
@@ -107,10 +138,16 @@
 			<type>button</type>
 			<id>7</id>
 			<label>602</label>
-			<onup>14</onup>
+			<onup>3</onup>
 			<ondown>8</ondown>
 			<onright>99</onright>
 			<textalign>right</textalign>
+			<width>280</width>
+			<textXOff>33</textXOff>
+			<height>51</height>
+			<textYOff>12</textYOff>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -118,13 +155,17 @@
 			<type>togglebutton</type>
 			<id>8</id>
 			<label>707</label>
-			<AltTextureFocus>togglebutton-off-focus.png</AltTextureFocus>
-			<AltTextureNoFocus>togglebutton-off-nofocus.png</AltTextureNoFocus>
-			<textureFocus>togglebutton-on-focus.png</textureFocus>
-			<textureNoFocus>togglebutton-on-nofocus.png</textureNoFocus>
+			<AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
+			<AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
+			<textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
 			<onup>7</onup>
 			<ondown>9</ondown>
 			<onright>99</onright>
+			<width>280</width>
+			<textXOff>33</textXOff>
+			<height>51</height>
+			<textYOff>12</textYOff>
 			<textalign>right</textalign>
 		</control>
 
@@ -134,11 +175,17 @@
 			<id>9</id>
 			<label>692</label>
 			<onup>8</onup>
-			<ondown>10</ondown>
+			<ondown>12</ondown>
 			<onright>99</onright>
 			<textalign>right</textalign>
+			<width>280</width>
+			<textXOff>33</textXOff>
+			<height>51</height>
+			<textYOff>12</textYOff>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
-
+<!--
 		<control>
 			<description>Scheduler</description>
 			<type>button</type>
@@ -150,17 +197,23 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 		</control>
-
+-->
 		<control>
 			<description>Search</description>
 			<type>button</type>
 			<id>12</id>
 			<label>137</label>
 			<hyperlink>604</hyperlink>
-			<onup>10</onup>
+			<onup>9</onup>
 			<ondown>13</ondown>
 			<onright>99</onright>
 			<textalign>right</textalign>
+			<width>280</width>
+			<textXOff>33</textXOff>
+			<height>51</height>
+			<textYOff>12</textYOff>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -172,6 +225,12 @@
 			<ondown>2</ondown>
 			<onright>99</onright>
 			<textalign>right</textalign>
+			<width>280</width>
+			<textXOff>33</textXOff>
+			<height>51</height>
+			<textYOff>12</textYOff>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 	
@@ -193,10 +252,10 @@
 		<description>TV background</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>515</posX>
-		<posY>20</posY>
-		<width>753</width>
-		<height>480</height>
+		<posX>520</posX>
+		<posY>152</posY>
+		<width>547</width>
+		<height>348</height>
 		<texture>tvhome_tvframe_big.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -206,10 +265,10 @@
 		<description>video window</description>
 		<type>videowindow</type>
 		<id>99</id>
-		<posX>578</posX>
-		<posY>86</posY>
-		<width>624</width>
-		<height>350</height>
+		<posX>568</posX>
+		<posY>198</posY>
+		<width>448</width>
+		<height>255</height>
 		<onleft>2</onleft>
 		<onright>2</onright>
 		<action>18</action>

@@ -24,20 +24,34 @@
         <valign>middle</valign>
     </control>
 	
-	<control>
-		<description>separator listview</description>
+		<control>
+		<description>listcontrol background</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>492</posX>
-		<posY>136</posY>
-		<width>32</width>
-		<height>632</height>
-		<texture>listcontrol_separator.png</texture>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>
+		<visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(50) + !Control.IsVisible(51)</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
 		<visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(50) + !Control.IsVisible(51)</visible>
-    </control>
-    
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	 
     <control>
         <animation effect="fade" time="100">WindowOpen</animation>
         <animation effect="fade" time="100">WindowClose</animation>

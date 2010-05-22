@@ -36,7 +36,7 @@
 		<width>359</width>
 		<height>482</height>
 		<texture>listcontrol_bg_small.png</texture>
-		<visible>facadeview.list+!Control.IsVisible(50)</visible>
+		<visible>!Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>
