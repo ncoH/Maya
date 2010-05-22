@@ -19,7 +19,7 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>290</posX>
+		<posX>90</posX>
 		<posY>250</posY>
 		<texture>home.png</texture>
 		<animation effect="slide" time="800" start="-300,0">WindowOpen</animation>
@@ -33,8 +33,8 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 		<animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="550">WindowClose</animation>
 		<id>50</id>
-		<posX>700</posX>
-		<posY>180</posY>
+		<posX>480</posX>
+		<posY>148</posY>
 		<width>530</width>
 		<textcolor>ffffffff</textcolor>
 		<textColorNoFocus>30ffffff</textColorNoFocus>
@@ -58,17 +58,17 @@
 
 	<!-- Date and Time -->
 	<control>
-		<description>Date</description>
+		<description>Date label</description>
 		<type>label</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="500">WindowClose</animation>
-		<id>200</id>
-		<posX>803</posX>
-		<posY>690</posY>
+		<posX>706</posX>
+		<posY>700</posY>
+		<width>500</width>
 		<label>#date</label>
-		<align>left</align>
-		<font>font14</font>
+		<font>Segoe Light12</font>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
 	</control>
+
 
 	<control>
 		<description>Time</description>
@@ -172,6 +172,35 @@
 
 		</control>
 
+	</control>
+	
+	<!--Weather-->
+
+	<control>
+		<description>Weather image</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>605</posX>
+		<posY>650</posY>
+		<height>90</height>
+		<width>90</width>
+		<texture>weather/#infoservice.weather.today.img.small.filenamewithext</texture>
+		<visible>plugin.isenabled(InfoService)+string.contains(#maya.weather.visible,yes)</visible>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Temp label</description>
+		<type>label</type>
+		<posX>705</posX>
+		<posY>655</posY>
+		<width>500</width>
+		<label>#infoservice.weather.today.temp</label>
+		<font>Segoe Light22</font>
+		<visible>plugin.isenabled(InfoService)+string.contains(#maya.weather.visible,yes)</visible>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
 	</control>
 	
 <!--RSS-->
