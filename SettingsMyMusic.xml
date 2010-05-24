@@ -37,7 +37,7 @@
 		<id>1</id>
 		<posX>489</posX>
 		<posY>260</posY>
-		<width>334</width>
+		<width>514</width>
 		<textcolor>ff85cffe</textcolor>
 		<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 		<texture>settings_button_medium_focus.png</texture>
@@ -48,8 +48,8 @@
 			<description>Shuffle Playlist on load</description>
 			<type>checkmark</type>
 			<id>2</id>
-			<posX>770</posX>
-			<posY>266</posY>
+			<posX>950</posX>
+			<posY>269</posY>
 			<label>-</label>
 			<onup>2</onup>
 			<ondown>6</ondown>
@@ -72,7 +72,7 @@
 		<id>1</id>
 		<posX>489</posX>
 		<posY>295</posY>
-		<width>334</width>
+		<width>514</width>
 		<textcolor>ff85cffe</textcolor>
 		<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 		<texture>settings_button_medium_focus.png</texture>
@@ -83,8 +83,8 @@
 			<description>Enable ID3  other tagformats</description>
 			<type>checkmark</type>
 			<id>6</id>
-			<posX>770</posX>
-			<posY>301</posY>
+			<posX>950</posX>
+			<posY>304</posY>
 			<label>-</label>
 			<onup>2</onup>
 			<ondown>8</ondown>

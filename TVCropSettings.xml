@@ -16,7 +16,7 @@
             <posY>164</posY>
             <width>548</width>
             <height>440</height>
-            <texture>context_background.png</texture>
+            <texture>context_background_cropsettings.png</texture>
             <animation effect="Fade" time="250">WindowOpen</animation>
             <animation effect="Fade" time="250">WindowClose</animation>
         </control>
@@ -50,8 +50,8 @@
 		<description>Crop label top</description>
 		<type>label</type>
 		<id>6</id>
-		<posX>515</posX>
-		<posY>257</posY>
+		<posX>465</posX>
+		<posY>292</posY>
 		<label>11001</label>
 	</control>
 
@@ -59,8 +59,8 @@
 		<description>Cropselect top</description>
 		<type>spincontrol</type>
 		<id>8</id>
-		<posX>778</posX>
-		<posY>261</posY>
+		<posX>647</posX>
+		<posY>292</posY>
 		<onup>20</onup>
 		<ondown>12</ondown>
 		<onleft>2</onleft>
@@ -73,8 +73,8 @@
 		<description>Crop label bottom</description>
 		<type>label</type>
 		<id>10</id>
-		<posX>515</posX>
-		<posY>290</posY>
+		<posX>465</posX>
+		<posY>337</posY>
 		<label>11002</label>
 	</control>
 
@@ -82,8 +82,8 @@
 		<description>Cropselect bottom</description>
 		<type>spincontrol</type>
 		<id>12</id>
-		<posX>778</posX>
-		<posY>295</posY>
+		<posX>647</posX>
+		<posY>337</posY>
 		<onup>8</onup>
 		<ondown>16</ondown>
 		<onleft>2</onleft>
@@ -96,8 +96,8 @@
 		<description>Crop label left</description>
 		<type>label</type>
 		<id>14</id>
-		<posX>515</posX>
-		<posY>323</posY>
+		<posX>465</posX>
+		<posY>389</posY>
 		<label>11003</label>
 	</control>
 
@@ -105,8 +105,8 @@
 		<description>Cropselect left</description>
 		<type>spincontrol</type>
 		<id>16</id>
-		<posX>778</posX>
-		<posY>328</posY>
+		<posX>647</posX>
+		<posY>389</posY>
 		<onup>12</onup>
 		<ondown>20</ondown>
 		<onleft>2</onleft>
@@ -119,8 +119,8 @@
 		<description>Crop label right</description>
 		<type>label</type>
 		<id>18</id>
-		<posX>515</posX>
-		<posY>357</posY>
+		<posX>465</posX>
+		<posY>440</posY>
 		<label>11004</label>
 	</control>
 
@@ -128,8 +128,8 @@
 		<description>Cropselect right</description>
 		<type>spincontrol</type>
 		<id>20</id>
-		<posX>778</posX>
-		<posY>362</posY>
+		<posX>647</posX>
+		<posY>440</posY>
 		<onup>16</onup>
 		<ondown>8</ondown>
 		<onleft>2</onleft>

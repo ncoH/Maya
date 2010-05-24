@@ -133,7 +133,7 @@
 			<type>spincontrol</type>
 			<id>4</id>
 			<posX>1075</posX>
-			<posY>341</posY>
+			<posY>344</posY>
 			<onup>3</onup>
 			<ondown>5</ondown>
 			<onleft>10005</onleft>
@@ -150,7 +150,7 @@
 		<id>1</id>
 		<posX>484</posX>
 		<posY>406</posY>
-		<width>334</width>
+		<width>514</width>
 		<textcolor>ff85cffe</textcolor>
 		<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 		<texture>settings_button_medium_focus.png</texture>
@@ -161,8 +161,8 @@
 			<description>X-fade transitions</description>
 			<type>checkmark</type>
 			<id>5</id>
-			<posX>770</posX>
-			<posY>412</posY>
+			<posX>950</posX>
+			<posY>415</posY>
 			<label>-</label>
 			<onleft>10005</onleft>
 			<onright>10005</onright>
@@ -186,7 +186,7 @@
 		<id>1</id>
 		<posX>484</posX>
 		<posY>441</posY>
-		<width>334</width>
+		<width>514</width>
 		<textcolor>ff85cffe</textcolor>
 		<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 		<texture>settings_button_medium_focus.png</texture>
@@ -197,8 +197,8 @@
 			<description>Ken Burns transitions</description>
 			<type>checkmark</type>
 			<id>6</id>
-			<posX>770</posX>
-			<posY>447</posY>
+			<posX>950</posX>
+			<posY>450</posY>
 			<label>-</label>
 			<onleft>10005</onleft>
 			<onright>10005</onright>
@@ -222,7 +222,7 @@
 		<id>1</id>
 		<posX>484</posX>
 		<posY>477</posY>
-		<width>334</width>
+		<width>514</width>
 		<textcolor>ff85cffe</textcolor>
 		<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 		<texture>settings_button_medium_focus.png</texture>
@@ -233,8 +233,8 @@
 			<description>Random transitions</description>
 			<type>checkmark</type>
 			<id>7</id>
-			<posX>770</posX>
-			<posY>483</posY>
+			<posX>950</posX>
+			<posY>486</posY>
 			<label>-</label>
 			<onleft>10005</onleft>
 			<onright>10005</onright>
@@ -259,7 +259,7 @@
 		<id>1</id>
 		<posX>484</posX>
 		<posY>513</posY>
-		<width>334</width>
+		<width>514</width>
 		<textcolor>ff85cffe</textcolor>
 		<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 		<texture>settings_button_medium_focus.png</texture>
@@ -270,8 +270,8 @@
 			<description>Repeat/loop slideshows</description>
 			<type>checkmark</type>
 			<id>8</id>
-			<posX>770</posX>
-			<posY>519</posY>
+			<posX>950</posX>
+			<posY>521</posY>
 			<label>-</label>
 			<onleft>10005</onleft>
 			<onright>10005</onright>
@@ -295,7 +295,7 @@
 		<id>1</id>
 		<posX>484</posX>
 		<posY>549</posY>
-		<width>334</width>
+		<width>514</width>
 		<textcolor>ff85cffe</textcolor>
 		<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 		<texture>settings_button_medium_focus.png</texture>
@@ -306,8 +306,8 @@
 			<description>Auto shuffle slideshow</description>
 			<type>checkmark</type>
 			<id>9</id>
-			<posX>770</posX>
-			<posY>555</posY>
+			<posX>950</posX>
+			<posY>558</posY>
 			<label>-</label>
 			<onleft>10005</onleft>
 			<onright>10005</onright>
