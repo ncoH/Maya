@@ -702,9 +702,10 @@
 		<description>day 0 general weather label</description>
 		<type>label</type>
 		<id>34</id>
-		<posX>355</posX>
-		<posY>600</posY>
+		<posX>318</posX>
+		<posY>646</posY>
 		<label>-</label>
+		<align>center</align>
 		<font>font13</font>
 		<textcolor>White</textcolor>
 	</control>
@@ -762,9 +763,10 @@
 		<description>day 1 general weather label</description>
 		<type>label</type>
 		<id>44</id>
-		<posX>533</posX>
-		<posY>600</posY>
+		<posX>502</posX>
+		<posY>632</posY>
 		<label>-</label>
+		<align>center</align>
 		<font>font13</font>
 		<textcolor>White</textcolor>
 	</control>
@@ -822,9 +824,10 @@
 		<description>day 2 general weather label</description>
 		<type>label</type>
 		<id>54</id>
-		<posX>711</posX>
-		<posY>600</posY>
+		<posX>686</posX>
+		<posY>632</posY>
 		<label>-</label>
+		<align>center</align>
 		<font>font13</font>
 		<textcolor>White</textcolor>
 	</control>
@@ -882,9 +885,10 @@
 		<description>day 3 general weather label</description>
 		<type>label</type>
 		<id>64</id>
-		<posX>888</posX>
-		<posY>600</posY>
+		<posX>870</posX>
+		<posY>632</posY>
 		<label>-</label>
+		<align>center</align>
 		<font>font13</font>
 		<textcolor>White</textcolor>
 	</control>
@@ -942,9 +946,10 @@
 		<description>day 4 general weather label</description>
 		<type>label</type>
 		<id>74</id>
-		<posX>1066</posX>
-		<posY>600</posY>
+		<posX>1054</posX>
+		<posY>632</posY>
 		<label>-</label>
+		<align>center</align>
 		<font>font13</font>
 		<textcolor>White</textcolor>
 	</control>
