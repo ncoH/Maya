@@ -345,6 +345,44 @@
 		<visible>facadeview.list|facadeview.album</visible>
 	</control>
 
+	<!--            :: THUMB VIEW ::            -->
+	
+	<control>
+		<description>Cover Art</description>
+		<type>image</type>
+		<id>501</id>
+		<posX>198</posX>
+		<posY>266</posY>
+		<width>266</width>
+		<height>380</height>
+		<texture>#selectedthumb</texture>
+		<visible>[facadeview.smallicons|facadeview.largeicons]</visible>
+	</control>
+	
+	<control>
+		<description>Cover Art</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>198</posX>
+		<posY>266</posY>
+		<width>266</width>
+		<height>380</height>
+		<texture>defaultVideoBig.png</texture>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+!control.hasthumb(501)</visible>
+	</control>
+	
+	<control>
+		<description>Cover Art overlay</description>
+		<type>image</type>
+		<id>1</id>
+		<posY>219</posY>
+		<posX>152</posX>
+		<width>357</width>
+		<height>472</height>
+		<texture>blackborders_video.png</texture>
+		<visible>[facadeview.smallicons|facadeview.largeicons]</visible>
+	</control>
+	
 <import>common.overlay.xml</import>
 </controls>
 </window>

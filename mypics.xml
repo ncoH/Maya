@@ -273,7 +273,7 @@
 		<posY>207</posY>
 		<width>308</width>
 		<height>205</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">#selectedthumb</texture>
+		<texture>#selectedthumb</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<centered>yes</centered>
 		<visible>[facadeview.list|facadeview.album]+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
