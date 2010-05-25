@@ -2,7 +2,7 @@
 <window>
   <id>9811</id>
   <defaultcontrol>50</defaultcontrol>
-  <define>#currentmodule:series</define>
+  <define>#currentmodule:#TVSeries.Translation.Series_Plural.Label</define>
   <allowoverlay>yes</allowoverlay>
   <controls>    
 	

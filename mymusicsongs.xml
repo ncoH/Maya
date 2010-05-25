@@ -29,7 +29,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>music</label>
+		<label>2</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>
@@ -73,7 +73,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>music</label>
+		<label>2</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
