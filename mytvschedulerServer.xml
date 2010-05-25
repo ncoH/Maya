@@ -66,10 +66,24 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>1216</posX>
+		<posX>1131</posX>
 		<posY>690</posY>
 		<align>right</align>
 		<label>#itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>Control.IsVisible(10)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Objects Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1216</posX>
+		<posY>690</posY>
+		<align>right</align>
+		<label>127</label>
 		<textcolor>6aa5cb</textcolor>
 		<visible>Control.IsVisible(10)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>

@@ -54,11 +54,10 @@ multiple view modes.
 	</control>
 
 	<!--            :: BACKGROUNDS :: MOVIE BACKDROP :: OVERLAYS ::            -->
-<import>common.window.xml</import>
 	<control>
 		<description>BG</description>
 		<type>image</type>
-		<id>1</id>
+		<id>0</id>
 		<width>1366</width>
 		<height>768</height>
 	</control>
@@ -256,11 +255,11 @@ multiple view modes.
 				<type>button</type>
 				<id>2</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
 				<label>Toggle View</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
@@ -273,11 +272,11 @@ multiple view modes.
 				<type>button</type>
 				<id>3</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
 				<label>Switch View</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
@@ -288,7 +287,7 @@ multiple view modes.
 					<type>button</type>
 					<id>14</id>
 					<label>495</label>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
 					<height>49</height>
@@ -335,11 +334,11 @@ multiple view modes.
 				<type>button</type>
 				<id>66610</id>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
 				<label>Video Settings</label>
 				<hyperlink>703</hyperlink>
 				<ondown>2</ondown>
@@ -354,6 +353,22 @@ multiple view modes.
 </control>
 
 	<!--            :: LIST VIEW ::            -->
+	
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>554</posX>
+		<posY>142</posY>
+		<width>700</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light22</font>
+		<visible>facadeview.list+control.isvisible(50)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
+	</control>
+	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -640,6 +655,22 @@ multiple view modes.
 	
 	<!--            :: FILMSTRIP VIEW ::            -->
 	
+	
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>142</posY>
+		<width>1366</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light22</font>
+		<align>center</align>
+		<visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
+	</control>
 	
 	<!-- Only in MovingPictures 1.0 -->	
 	<control>
@@ -999,7 +1030,6 @@ multiple view modes.
 	  <texture>Logos\audio\8.png</texture>
 	  <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiochannels,7.1)</visible>
 	</control>
-	
 	
 <import>common.overlay.xml</import>
 </controls>

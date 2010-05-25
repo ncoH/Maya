@@ -41,7 +41,6 @@
 		<width>725</width>
 		<height>561</height>
 		<texture>listcontrol_bg_recordings.png</texture>
-		<visible>facadeview.list</visible>
 	</control>
 	
 	<control>
@@ -54,15 +53,28 @@
 	
 	<control>
 		<description>Number of Files Label</description>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>1131</posX>
+		<posY>690</posY>
+		<align>right</align>
+		<label>#itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Objects Label</description>
 		<type>label</type>
 		<id>1</id>
 		<posX>1216</posX>
 		<posY>690</posY>
 		<align>right</align>
-		<label>#itemcount</label>
+		<label>127</label>
 		<textcolor>6aa5cb</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
 	<control>
@@ -198,6 +210,8 @@
 				<IconXOff>30</IconXOff>
 				<IconYOff>9</IconYOff>
 				<textXOff>40</textXOff>
+				<spinPosX>560</spinPosX>
+				<spinPosY>692</spinPosY>
 				<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
 				<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
 				<keepaspectratio>yes</keepaspectratio>
@@ -225,6 +239,8 @@
 				<IconYOff>9</IconYOff>
 				<textXOff>40</textXOff>
 				<textXOff>40</textXOff>
+				<spinPosX>560</spinPosX>
+				<spinPosY>692</spinPosY>
 				<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
 				<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
 				<keepaspectratio>yes</keepaspectratio>

@@ -697,7 +697,7 @@
 		<textcolor>85cffe</textcolor>
 		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(9999) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
-
+<!--
 	<control>
 		<description>day 0 general weather label</description>
 		<type>label</type>
@@ -709,7 +709,7 @@
 		<font>font13</font>
 		<textcolor>White</textcolor>
 	</control>
-	
+-->	
 	<control>
 		<description>day 0 icon</description>
 		<type>image</type>
