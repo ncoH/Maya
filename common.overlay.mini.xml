@@ -34,10 +34,10 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>109</posX>
-		<posY>669</posY>
-		<width>318</width>
-		<height>100</height>
+		<posX>20</posX>
+		<posY>654</posY>
+		<width>420</width>
+		<height>104</height>
 		<texture>now_playing_mini_bg.png</texture>
 		<visible>player.hasmedia</visible>
 		<animation effect="slide" start="-425,0" end="0,0" tween="quadratic" easing="in" time="400" delay="300">WindowOpen</animation>
@@ -52,8 +52,8 @@
 		<id>1</id>
 		<width>190</width>
 		<height>37</height>
-		<posX>201</posX> <!-- 140 -->
-		<posY>706</posY>
+		<posX>96</posX> <!-- 140 -->
+		<posY>694</posY>
 		<font>font12</font>
 		<label>#Play.Current.Title\r#Play.Current.Genre\r#Play.Current.Year\r#Play.Current.Director</label>
 		<visible>player.hasmedia</visible>
@@ -65,10 +65,10 @@
 		<description>play logo</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>142</posX>
-		<posY>706</posY>
-		<width>48</width>
-		<height>26</height>
+		<posX>68</posX>
+		<posY>698</posY>
+		<width>15</width>
+		<height>17</height>
 		<texture>now_playing_play.png</texture>
 		<visible>player.playing</visible>
 		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
@@ -79,10 +79,10 @@
 		<description>Pause logo</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>142</posX>
-		<posY>706</posY>
-		<width>48</width>
-		<height>26</height>
+		<posX>68</posX>
+		<posY>698</posY>
+		<width>15</width>
+		<height>17</height>
 		<texture>now_playing_pause.png</texture>
 		<visible>player.paused</visible>
 		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
