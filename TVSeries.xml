@@ -1455,6 +1455,7 @@
 			<scrollOffset>1</scrollOffset>
 			<height>458</height>
 			<width>358</width>
+			<textureHeight>51</textureHeight>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 			<textXOff>-50</textXOff>

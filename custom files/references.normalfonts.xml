@@ -167,7 +167,7 @@
 		<spinColor>FF6aa5cb</spinColor>
 		<textureFocus>listcontrol_item_selected.png</textureFocus>
 		<textureNoFocus>listcontrol_item.png</textureNoFocus>
-		<textureHeight>53</textureHeight>
+		<textureHeight>51</textureHeight>
 		<image>folder_focus.png</image>
 		<font>font12</font>
 		<font2>font12</font2>

@@ -23,7 +23,8 @@ This file should contain the facade view
         <textXOff>14</textXOff>
         <textXOff3>10</textXOff3>
         <IconXOff>1980</IconXOff>
-		<spinPosX>-2000</spinPosX>        
+		<spinPosX>-2000</spinPosX> 
+		<textureHeight>51</textureHeight>		
         <textureFocus>hiddenmenu_item_selected.png</textureFocus>
 		<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
       </control>
@@ -49,6 +50,7 @@ This file should contain the facade view
 			<spinAlign>left</spinAlign>
 			<textXOff>22</textXOff>
 			<scrollOffset>1</scrollOffset>
+			<textureHeight>51</textureHeight>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 			<dimColor>ffffffff</dimColor>
