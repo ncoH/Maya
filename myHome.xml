@@ -17,16 +17,6 @@
 <import>common.time.xml</import>
 
 	<control>
-		<type>image</type>
-		<id>1</id>
-		<posX>90</posX>
-		<posY>250</posY>
-		<texture>home.png</texture>
-		<animation effect="slide" time="800" start="-300,0">WindowOpen</animation>
-		<animation effect="fade" time="800">WindowClose</animation>
-	</control>
-
-	<control>
 		<description>Menu</description>
 		<type>menu</type>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -34,27 +24,28 @@
 		<animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="550">WindowClose</animation>
 		<id>50</id>
 		<posX>480</posX>
-		<posY>148</posY>
-		<width>530</width>
+		<posY>130</posY>
+		<width>630</width>
 		<textcolor>ffffffff</textcolor>
-		<textColorNoFocus>30ffffff</textColorNoFocus>
+		<textColorNoFocus>50ffffff</textColorNoFocus>
 		<buttonTextXOff>77</buttonTextXOff>
-		<buttonTextYOff>10</buttonTextYOff>
+		<buttonTextYOff>0</buttonTextYOff>
 		<buttonOffset>25</buttonOffset>
-		<buttonFont>font18</buttonFont>
-		<buttonHeight>62</buttonHeight>
-		<spaceBetweenButtons>5</spaceBetweenButtons>
+		<buttonFont>Segoe Light32</buttonFont>
+		<buttonHeight>70</buttonHeight>
+		<spaceBetweenButtons>8</spaceBetweenButtons>
 		<numberOfButtons>5</numberOfButtons>
 		<hoverX>520</hoverX>
 		<hoverY>352</hoverY>
 		<hoverWidth>285</hoverWidth>
 		<hoverHeight>180</hoverHeight>
 		<hoverKeepAspectratio>yes</hoverKeepAspectratio>
-		<scrollTime>120</scrollTime>
+		<scrollTime>140</scrollTime>
 		<scrollTimeMin>60</scrollTimeMin>
 		<onright>4</onright>
 		<onleft>2</onleft>
 	</control>
+
 
 	<!-- Date and Time -->
 	<control>
