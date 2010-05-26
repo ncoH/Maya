@@ -233,7 +233,7 @@
 		<width>266</width>
 		<height>380</height>
 		<texture>MyTrailers/JustAdded.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)+string.contains(#selecteditem,Just Added)</visible>
+		<visible>[!facadeview.smallicons|!facadeview.largeicons|!facadeview.filmstrip+Control.IsVisible(50)]+string.contains(#selecteditem,Just Added)</visible>
 	</control>
 	
 	<control>
@@ -246,7 +246,7 @@
 		<width>266</width>
 		<height>380</height>
 		<texture>MyTrailers/Exclusive.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)+string.contains(#selecteditem,Exclusive)</visible>
+		<visible>Control.IsVisible(50)+string.contains(#selecteditem,Exclusive)</visible>
 	</control>
 	
 	<control>
@@ -259,7 +259,7 @@
 		<width>266</width>
 		<height>380</height>
 		<texture>MyTrailers/JustHD.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)+string.contains(#selecteditem,Just HD)</visible>
+		<visible>Control.IsVisible(50)+string.contains(#selecteditem,Just HD)</visible>
 	</control>
 	
 	<control>
@@ -272,7 +272,7 @@
 		<width>266</width>
 		<height>380</height>
 		<texture>MyTrailers/MostPopular.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)+string.contains(#selecteditem,Most Popular)</visible>
+		<visible>Control.IsVisible(50)+string.contains(#selecteditem,Most Popular)</visible>
 	</control>
 	
 	<control>
@@ -285,7 +285,7 @@
 		<width>266</width>
 		<height>380</height>
 		<texture>MyTrailers/Genres.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)+string.contains(#selecteditem,Genres)</visible>
+		<visible>Control.IsVisible(50)+string.contains(#selecteditem,Genres)</visible>
 	</control>
 	
 	<control>
@@ -298,7 +298,7 @@
 		<width>266</width>
 		<height>380</height>
 		<texture>MyTrailers/MovieStudio.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)+string.contains(#selecteditem,Movie Studio)</visible>
+		<visible>Control.IsVisible(50)+string.contains(#selecteditem,Movie Studio)</visible>
 	</control>
 	
 <!-- Normal poster-->
@@ -365,6 +365,19 @@
 		<height>472</height>
 		<texture>blackborders_video.png</texture>
 		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<id>1</id>
+		<type>image</type>
+		<posX>198</posX>
+		<posY>266</posY>
+		<width>266</width>
+		<height>380</height>
+		<texture>MyTrailers/JustAdded.png</texture>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+string.contains(#selecteditem,Just Added)</visible>
 	</control>
 	
 </controls>
