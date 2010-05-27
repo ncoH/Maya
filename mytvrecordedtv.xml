@@ -164,11 +164,11 @@
 			<ondown>3</ondown>
 			<label>100</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
 		</control>
 
 		<control>
@@ -180,13 +180,13 @@
 			<ondown>5</ondown>
 			<label>620</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
-					<offsetSortButtonX>240</offsetSortButtonX>
-					<offsetSortButtonY>14</offsetSortButtonY>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
+			<offsetSortButtonX>240</offsetSortButtonX>
+			<offsetSortButtonY>14</offsetSortButtonY>
 		</control>
 
 		<control>
@@ -199,11 +199,11 @@
 			<ondown>6</ondown>
 			<label>457</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
 		</control>
 
 		<control>
@@ -213,16 +213,16 @@
 			<onleft>50</onleft>
 			<onright>50</onright>
 			<onup>5</onup>
-			<ondown>7</ondown>
+			<ondown>9</ondown>
 			<label>624</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
 		</control>
-
+<!--
 		<control>
 			<type>button</type>
 			<description>compress button</description>
@@ -233,12 +233,77 @@
 			<ondown>2</ondown>
 			<hyperlink>609</hyperlink>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
 			<label>896</label>
+		</control>
+-->
+
+		<control>
+			<description>Empty button</description>
+			<type>button</type>
+			<id>0</id>
+			<width>279</width>
+			<height>49</height>
+			<label>-</label>
+			<visible>false</visible>
+		</control>
+
+		<control>
+			<type>button</type>
+			<description>scheduled button</description>
+			<id>9</id>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>6</onup>
+			<ondown>10</ondown>
+			<hyperlink>601</hyperlink>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
+			<label>603</label>
+		</control>
+
+		<control>
+			<type>button</type>
+			<description>tvguide button</description>
+			<id>10</id>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>9</onup>
+			<ondown>21</ondown>
+			<hyperlink>600</hyperlink>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
+			<label>600</label>
+		</control>
+
+		<control>
+			<type>button</type>
+			<description>button</description>
+			<id>21</id>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup>10</onup>
+			<ondown>2</ondown>
+			<hyperlink>604</hyperlink>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
+			<label>137</label>
 		</control>
 
 	</control>
