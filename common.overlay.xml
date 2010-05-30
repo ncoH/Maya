@@ -240,6 +240,20 @@
 		<animation effect="fade" time="400">WindowClose</animation>
 	</control>
 	
+	<control>
+		<description>pause logo</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>160</posX>
+		<posY>679</posY>
+		<width>15</width>
+		<height>17</height>
+		<texture>now_playing_pause.png</texture>
+		<visible>player.paused+player.hasaudio+control.hastext(3337)</visible>
+		<animation effect="fade" time="400" delay="800">WindowOpen</animation>
+		<animation effect="fade" time="400">WindowClose</animation>
+	</control>
+	
 <!--
 	<control>
 		<description>progress bar bg</description>
