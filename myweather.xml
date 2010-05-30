@@ -200,8 +200,8 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>236</posX>
-		<posY>554</posY>
-		<width>146</width>
+		<posY>576</posY>
+		<width>143</width>
 		<height>1</height>
 		<texture>weather_horizontal_bar.png</texture>
 		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
@@ -212,7 +212,7 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>235</posX>
-		<posY>560</posY>
+		<posY>585</posY>
 		<label>402</label>
 		<font>font12</font>
 		<textcolor>6aa5cb</textcolor>
@@ -225,7 +225,7 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>380</posX>
-		<posY>560</posY>
+		<posY>585</posY>
 		<label>#infoservice.weather.today.feelsliketemp</label>
 		<font>font11</font>
 		<align>right</align>
@@ -238,7 +238,7 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>235</posX>
-		<posY>583</posY>
+		<posY>608</posY>
 		<label>406</label>
 		<font>font11</font>
 		<textcolor>6aa5cb</textcolor>
@@ -250,7 +250,7 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>380</posX>
-		<posY>583</posY>
+		<posY>608</posY>
 		<label>#infoservice.weather.today.humidity</label>
 		<font>font11</font>
 		<align>right</align>
@@ -263,7 +263,7 @@
 		<type>label</type>
 		<id>225</id>
 		<posX>235</posX>
-		<posY>606</posY>
+		<posY>631</posY>
 		<label>-</label>
 		<font>font11</font>
 		<textcolor>6aa5cb</textcolor>
@@ -275,7 +275,7 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>235</posX>
-		<posY>606</posY>
+		<posY>631</posY>
 		<label>403</label>
 		<font>font11</font>
 		<textcolor>6aa5cb</textcolor>
@@ -287,7 +287,7 @@
 		<type>label</type>
 		<id>25</id>
 		<posX>380</posX>
-		<posY>606</posY>
+		<posY>631</posY>
 		<label>-</label>
 		<font>font11</font>
 		<align>right</align>
@@ -300,7 +300,7 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>380</posX>
-		<posY>606</posY>
+		<posY>631</posY>
 		<label>#infoservice.weather.today.humidity</label>
 		<font>font11</font>
 		<align>right</align>
@@ -635,7 +635,7 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>218</posX>
-		<posY>294</posY>
+		<posY>273</posY>
 		<width>185</width>
 		<align>center</align>
 		<label>6030</label>
@@ -760,15 +760,27 @@
 	</control>
 
 	<control>
+		<description>horizontal line</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>424</posX>
+		<posY>576</posY>
+		<width>143</width>
+		<height>1</height>
+		<texture>weather_horizontal_bar.png</texture>
+		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+	</control>
+	
+	<control>
 		<description>day 1 general weather label</description>
 		<type>label</type>
 		<id>44</id>
-		<posX>502</posX>
-		<posY>632</posY>
+		<posX>424</posX>
+		<posY>585</posY>
 		<label>-</label>
-		<align>center</align>
+		<align>left</align>
 		<font>font13</font>
-		<textcolor>White</textcolor>
+		<textcolor>6aa5cb</textcolor>
 	</control>
 	
 	<control>
@@ -821,15 +833,27 @@
 	</control>
 
 	<control>
+		<description>horizontal line</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>611</posX>
+		<posY>576</posY>
+		<width>143</width>
+		<height>1</height>
+		<texture>weather_horizontal_bar.png</texture>
+		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+	</control>
+	
+	<control>
 		<description>day 2 general weather label</description>
 		<type>label</type>
 		<id>54</id>
-		<posX>686</posX>
-		<posY>632</posY>
+		<posX>611</posX>
+		<posY>585</posY>
 		<label>-</label>
-		<align>center</align>
+		<align>left</align>
 		<font>font13</font>
-		<textcolor>White</textcolor>
+		<textcolor>6aa5cb</textcolor>
 	</control>
 	
 	<control>
@@ -882,15 +906,27 @@
 	</control>
 
 	<control>
+		<description>horizontal line</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>798</posX>
+		<posY>576</posY>
+		<width>143</width>
+		<height>1</height>
+		<texture>weather_horizontal_bar.png</texture>
+		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+	</control>
+	
+	<control>
 		<description>day 3 general weather label</description>
 		<type>label</type>
 		<id>64</id>
-		<posX>870</posX>
-		<posY>632</posY>
+		<posX>798</posX>
+		<posY>585</posY>
 		<label>-</label>
-		<align>center</align>
+		<align>left</align>
 		<font>font13</font>
-		<textcolor>White</textcolor>
+		<textcolor>6aa5cb</textcolor>
 	</control>
 	
 	<control>
@@ -941,17 +977,29 @@
 		<font>Segoe Light36</font>
 		<textcolor>85cffe</textcolor>
 	</control>
-
+	
+	<control>
+		<description>horizontal line</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>985</posX>
+		<posY>576</posY>
+		<width>143</width>
+		<height>1</height>
+		<texture>weather_horizontal_bar.png</texture>
+		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+	</control>
+	
 	<control>
 		<description>day 4 general weather label</description>
 		<type>label</type>
 		<id>74</id>
-		<posX>1054</posX>
-		<posY>632</posY>
+		<posX>985</posX>
+		<posY>585</posY>
 		<label>-</label>
-		<align>center</align>
+		<align>left</align>
 		<font>font13</font>
-		<textcolor>White</textcolor>
+		<textcolor>6aa5cb</textcolor>
 	</control>
 	
 	<control>
