@@ -357,7 +357,7 @@ multiple view modes.
 		<posX>554</posX>
 		<posY>142</posY>
 		<width>700</width>
-		<label>#selecteditem</label>
+		<label>#MovingPictures.SelectedMovie.title</label>
 		<font>Segoe Light22</font>
 		<visible>facadeview.list+control.isvisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
@@ -375,7 +375,7 @@ multiple view modes.
 		<posY>183</posY>
 		<width>266</width>
 		<height>380</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">defaultdvdcover.png</texture>
+		<texture>defaultdvdcover.png</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 
@@ -649,6 +649,20 @@ multiple view modes.
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
 	</control>
 	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>New Icon</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>119</posX>
+		<posY>193</posY>
+		<width>51</width>
+		<height>51</height>
+		<texture>new.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(9)+Control.HasThumb(60)</visible>
+	</control>
+	
 	<!--            :: FILMSTRIP VIEW ::            -->
 	
 	
@@ -731,6 +745,8 @@ multiple view modes.
 <!--            :: THUMB VIEW ::            -->
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Cover Art</description>
 		<type>image</type>
 		<id>60</id>
@@ -743,6 +759,8 @@ multiple view modes.
 	</control>
 	
 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Cover Art overlay</description>
 		<type>image</type>
 		<id>1</id>
@@ -752,6 +770,20 @@ multiple view modes.
 		<height>472</height>
 		<texture>blackborders_video.png</texture>
 		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>New Icon</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>184</posX>
+		<posY>252</posY>
+		<width>51</width>
+		<height>51</height>
+		<texture>new.png</texture>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)+!Control.IsVisible(9)+Control.HasThumb(60)</visible>
 	</control>
 
 	<!--            :: DETAILS VIEW ::            -->
