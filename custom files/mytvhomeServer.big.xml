@@ -10,6 +10,7 @@
 
 <controls>
 	<import>common.window.xml</import>
+	<import>common.time.xml</import>
 	
 	<control>
 		<description>BG</description>
@@ -39,7 +40,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>552</posX>
-		<posY>50</posY>
+		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
 		<label>television</label>
@@ -53,8 +54,8 @@
 		<description>group element</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>199</posX>
-		<posY>182</posY>
+		<posX>200</posX>
+		<posY>180</posY>
 		<width>280</width>
 		<control>
 			<description>TVGuide</description>
@@ -67,7 +68,7 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>280</width>
-			<textXOff>24</textXOff>
+			<textXOff>33</textXOff>
 			<height>51</height>
 			<textYOff>12</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
@@ -85,7 +86,7 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>280</width>
-			<textXOff>24</textXOff>
+			<textXOff>33</textXOff>
 			<height>51</height>
 			<textYOff>12</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
@@ -102,7 +103,7 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>280</width>
-			<textXOff>24</textXOff>
+			<textXOff>33</textXOff>
 			<height>51</height>
 			<textYOff>12</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
@@ -143,7 +144,7 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>280</width>
-			<textXOff>24</textXOff>
+			<textXOff>33</textXOff>
 			<height>51</height>
 			<textYOff>12</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
@@ -163,7 +164,7 @@
 			<ondown>9</ondown>
 			<onright>99</onright>
 			<width>280</width>
-			<textXOff>24</textXOff>
+			<textXOff>33</textXOff>
 			<height>51</height>
 			<textYOff>12</textYOff>
 			<textalign>right</textalign>
@@ -179,7 +180,7 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>280</width>
-			<textXOff>24</textXOff>
+			<textXOff>33</textXOff>
 			<height>51</height>
 			<textYOff>12</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
@@ -209,7 +210,7 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>280</width>
-			<textXOff>24</textXOff>
+			<textXOff>33</textXOff>
 			<height>51</height>
 			<textYOff>12</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
@@ -226,7 +227,7 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>280</width>
-			<textXOff>24</textXOff>
+			<textXOff>33</textXOff>
 			<height>51</height>
 			<textYOff>12</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
@@ -296,11 +297,11 @@
 		<id>1</id>
 		<width>750</width>
 		<height>37</height>
-		<posX>555</posX>
+		<posX>562</posX>
 		<posY>480</posY>
 		<label>#TV.View.channel - #TV.View.start - #TV.View.stop</label>
 		<align>left</align>
-		<font>font16</font>
+		<font>font14</font>
 		<textcolor>ff85cffe</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -310,11 +311,11 @@
 		<description>Current program title</description>
 		<type>fadelabel</type>
 		<id>13</id>
-		<posX>552</posX>
+		<posX>560</posX>
 		<posY>500</posY>
 		<width>750</width>
 		<label>#TV.View.title</label>
-		<font>Segoe Light32</font>
+		<font>Segoe Light22</font>
 		<align>left</align>
 		<textcolor>ffffff</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -325,8 +326,8 @@
 		<description>Description1</description>
 		<type>textboxscrollup</type>
 		<id>15</id>
-		<posX>555</posX>
-		<posY>580</posY>
+		<posX>560</posX>
+		<posY>560</posY>
 		<width>750</width>
 		<height>137</height>
 		<seperator>----------------------------------------------------------------------------------------------</seperator>
