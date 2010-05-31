@@ -212,6 +212,7 @@
 				<textXOff>40</textXOff>
 				<spinPosX>560</spinPosX>
 				<spinPosY>692</spinPosY>
+				<spinAlign>left</spinAlign>
 				<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
 				<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
 				<keepaspectratio>yes</keepaspectratio>
@@ -241,6 +242,7 @@
 				<textXOff>40</textXOff>
 				<spinPosX>560</spinPosX>
 				<spinPosY>692</spinPosY>
+				<spinAlign>left</spinAlign>
 				<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
 				<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
 				<keepaspectratio>yes</keepaspectratio>
