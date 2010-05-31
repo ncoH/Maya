@@ -256,7 +256,7 @@ multiple view modes.
 				<height>49</height>
 				<textXOff>25</textXOff>
 				<textYOff>12</textYOff>
-				<label>Toggle View</label>
+				<label>#MovingPictures.Translation.CycleView.Label</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>66610</onup>
@@ -273,7 +273,7 @@ multiple view modes.
 				<height>49</height>
 				<textXOff>25</textXOff>
 				<textYOff>12</textYOff>
-				<label>Switch View</label>
+				<label>#MovingPictures.Translation.ChangeView.Label</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
 			</control>
@@ -722,7 +722,7 @@ multiple view modes.
 		<id>1</id>
 		<posX>567</posX>
 		<posY>110</posY>
-		<label>Movies</label>
+		<label>#MovingPictures.Translation.Movies.Label</label>
 		<font>Segoe Light18</font>
 		<textcolor>85cffe</textcolor>
 		<visible>Control.IsVisible(51)</visible>
