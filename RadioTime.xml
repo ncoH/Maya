@@ -316,7 +316,7 @@
 	<control>
 		<description>Description Static</description>
 		<type>label</type>
-		<label>Description:</label>
+		<label>922</label>
 		<textcolor>85cffe</textcolor>
 		<id>0</id>
 		<posX>134</posX>
