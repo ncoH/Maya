@@ -63,7 +63,7 @@
 	<formatting import="true">
 		<![CDATA[<Enabled>1<Format><Episode.RatingPath><FormatAs>TVSeries\starEval(10*Round(<Episode.Rating>*2)/2).png
 <Enabled>1<Format><Episode.InfoPanelLine1Key><FormatAs>
-<Enabled>1<Format><Episode.InfoPanelLine1Value><FormatAs>(Trans(MyRating): <Episode.myRating>)
+<Enabled>1<Format><Episode.InfoPanelLine1Value><FormatAs><Episode.Rating>
 <Enabled>1<Format><Episode.InfoPanelLine2Key><FormatAs>FILE SIZE
 <Enabled>1<Format><Episode.InfoPanelLine2Value><FormatAs><Episode.FileSize>
 <Enabled>1<Format><Episode.InfoPanelLine3Key><FormatAs>VIDEO INFO
@@ -119,27 +119,15 @@
 <Enabled>1<Format>SMALLSPACE<FormatAs> ]]>
 	</formatting>
 	<logos import="true">
-		<![CDATA[skin\Maya\Media\Logos\Video\SD.png;-;<Episode.videoWidth>;-;<=;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\video\720.png;-;<Episode.videoWidth>;-;=;-;1280;-;OR;-;<Episode.videoHeight>;-;=;-;720;-;AND;-;;-;=;-;;-;
-skin\Maya\Media\Logos\video\1080.png;-;<Episode.videoWidth>;-;=;-;1920;-;AND;-;<Episode.videoHeight>;-;=;-;1080;-;AND;-;;-;=;-;;-;
-skin\Maya\Media\Logos\Video\H264.png;-;<Episode.VideoCodec>;-;contains;-;AVC;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\Video\MPEG2.png;-;<Episode.VideoCodec>;-;contains;-;MPEG;-;AND;-;<Episode.VideoCodec>;-;!contains;-;AVC;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\Video\DIVX.png;-;<Episode.VideoCodec>;-;contains;-;DIVX;-;OR;-;<Episode.VideoCodec>;-;contains;-;DX50;-;OR;-;<Episode.VideoCodec>;-;contains;-;DIV3;-;<Restrict:Episode>
-skin\Maya\Media\Logos\Video\XVID.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPG4;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-
-skin\Maya\Media\Logos\Video\dvd.png;-;<Episode.EpisodeFilename>;-;contains;-;DVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HDDVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HD-DVD;-;<Restrict:Episode>
-skin\Maya\Media\Logos\Video\hddvd.png;-;<Episode.EpisodeFilename>;-;contains;-;HDDVD;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;HD-DVD;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\Video\bluray.png;-;<Episode.EpisodeFilename>;-;contains;-;BLURAY;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;BLU-RAY;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\Audio\dts.png;-;<Episode.AudioCodec>;-;=;-;DTS;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\Audio\dolbydigital.png;-;<Episode.AudioCodec>;-;=;-;AC3;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\Audio\MP3.png;-;<Episode.AudioCodec>;-;contains;-;MPA1L3;-;OR;-;<Episode.AudioCodec>;-;contains;-;MPA2L3;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;<Restrict:Episode>
-skin\Maya\Media\Logos\Audio\AAC.png;-;<Episode.AudioCodec>;-;contains;-;AAC;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\Audio\1.png;-;<Episode.AudioChannels>;-;=;-;1;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\Audio\2.png;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\Audio\6.png;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\Maya\Media\Logos\aspectratio\2.35.png;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;2.5;-;AND;-;;-;=;-;;-;
-skin\Maya\Media\Logos\aspectratio\1.85.png;-;<Episode.VideoAspectRatio>;-;>;-;1.6;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;2.0;-;AND;-;;-;=;-;;-;
-skin\Maya\Media\Logos\aspectratio\1.33.png;-;<Episode.VideoAspectRatio>;-;>;-;1.2;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;1.5;-;AND;-;;-;=;-;;-;]]>
+		<![CDATA[skin\Maya\Media\Logos\video\720_h264_235.png;-;<Episode.videoWidth>;-;=;-;1280;-;OR;-;<Episode.videoHeight>;-;=;-;720;-;AND;-;<Episode.VideoCodec>;-;contains;-;AVC;-;AND;-;;-;=;-;;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;2.5;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\video\1080_h264_235.png;-;<Episode.videoWidth>;-;=;-;1920;-;OR;-;<Episode.videoHeight>;-;=;-;1080;-;AND;-;<Episode.VideoCodec>;-;contains;-;AVC;-;AND;-;;-;=;-;;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;2.5;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\Logos\video\540_xvid_235.png;-;<Episode.videoWidth>;-;<=;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;<Episode.VideoCodec>;-;contains;-;XVID;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPG4;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.6;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;2.0;-;<Restrict:Episode>
+skin\Maya\Media\Logos\video\540_divx_235.png;-;<Episode.videoWidth>;-;<=;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;<Episode.VideoCodec>;-;contains;-;DX50;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.6;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;2.0;-;<Restrict:Episode>
+skin\Maya\Media\TVSeries\logos\ac3_20.png;-;<Episode.AudioCodec>;-;=;-;AC3;-;AND;-;;-;=;-;;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\Maya\Media\TVSeries\logos\mp3_20.png;-;<Episode.AudioCodec>;-;contains;-;MPA1L3;-;OR;-;<Episode.AudioCodec>;-;contains;-;MPA2L3;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;<Restrict:Episode>
+skin\Maya\Media\Logos\subtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;1;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;subbed.;-;AND;-;;-;=;-;;-;
+skin\Maya\Media\Logos\nosubtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;0;-;AND;-;;-;=;-;;-;
+		]]>
 	</logos>	
 	<!-- Only used for Thumbnail view creation e.g. Filmstrip and WideBanners. Episode Thumbs are the exception -->
 	<!-- #TVSeries.SeriesBanner and #TVSeries.SeasonBanner properties dont use the values below, those images will be presented as they are but will be using a delay of 250ms to present image -->
