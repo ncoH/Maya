@@ -205,5 +205,6 @@
             <showrange>NO</showrange>
             <align>RIGHT</align>
         </control>
+		<import>common.time.xml</import>
     </controls>
 </window>
