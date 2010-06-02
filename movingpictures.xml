@@ -224,7 +224,7 @@ multiple view modes.
 		<width>342</width>
 		<height>640</height>
 		<texture>menu_bg.png</texture>
-		<visible>!Control.HasFocus(50)</visible>
+		<visible>!Control.IsVisible(51)+Control.IsVisible(50)</visible>
 		</control>
 		
 				<control>
@@ -244,6 +244,7 @@ multiple view modes.
 				<posX>543</posX>
 				<posY>175</posY>
 				<layout>StackLayout(1)</layout>
+				<visible>!Control.IsVisible(51)+Control.IsVisible(50)</visible>
 				
 			<control>
 				<description>Toggle View</description>
@@ -356,7 +357,7 @@ multiple view modes.
 		<posX>554</posX>
 		<posY>142</posY>
 		<width>700</width>
-		<label>#selecteditem</label>
+		<label>#MovingPictures.SelectedMovie.title</label>
 		<font>Segoe Light22</font>
 		<visible>facadeview.list+control.isvisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
@@ -374,7 +375,7 @@ multiple view modes.
 		<posY>183</posY>
 		<width>266</width>
 		<height>380</height>
-		<texture flipY="true" diffuse="Thumb_Mask.png">defaultdvdcover.png</texture>
+		<texture>defaultdvdcover.png</texture>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 
@@ -647,6 +648,20 @@ multiple view modes.
 		<textcolor>6aa5cb</textcolor>
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
 	</control>
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>New Icon</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>119</posX>
+		<posY>193</posY>
+		<width>51</width>
+		<height>51</height>
+		<texture>new.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(9)+Control.HasThumb(60)</visible>
+	</control>
 	
 	<!--            :: FILMSTRIP VIEW ::            -->
 	
@@ -731,6 +746,8 @@ multiple view modes.
 	
 	<control>
 		<description>Cover Art</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>60</id>
 		<posX>198</posX>
@@ -743,6 +760,8 @@ multiple view modes.
 	
 	<control>
 		<description>Cover Art overlay</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>1</id>
 		<posY>219</posY>
@@ -753,6 +772,20 @@ multiple view modes.
 		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
 	</control>
 
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>New Icon</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>184</posX>
+		<posY>252</posY>
+		<width>51</width>
+		<height>51</height>
+		<texture>new.png</texture>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)+!Control.IsVisible(9)+Control.HasThumb(60)</visible>
+	</control>
+	
 	<!--            :: DETAILS VIEW ::            -->
 	<import>movingpictures.details.xml</import>
 	<!--            :: OTHER ::            -->
