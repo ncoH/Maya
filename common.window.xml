@@ -49,58 +49,31 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>1131</posX>
+		<posX>1216</posX>
 		<posY>690</posY>
 		<align>right</align>
-		<label>#itemcount</label>
+		<label>#itemtype: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
 		<visible>[facadeview.list | facadeview.album | facadeview.playlist]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
 
-	<control>
-		<description>Objects Label</description>
-		<type>label</type>
-		<id>1</id>
-		<posX>1216</posX>
-		<posY>690</posY>
-		<align>right</align>
-		<label>127</label>
-		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.list | facadeview.album | facadeview.playlist]+Control.IsVisible(50)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-	
 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>640</posX>
+		<posX>0</posX>
 		<posY>178</posY>
+		<width>1366</width>
 		<align>center</align>
-		<label>#itemcount</label>
+		<label>#itemtype: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
 
-	<control>
-		<description>Objects Label</description>
-		<type>label</type>
-		<id>1</id>
-		<posX>690</posX>
-		<posY>178</posY>
-		<align>center</align>
-		<label>127</label>
-		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-	
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>

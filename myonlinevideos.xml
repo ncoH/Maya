@@ -62,7 +62,7 @@
 		<posX>1216</posX>
 		<posY>690</posY>
 		<align>right</align>
-		<label>#itemcount</label>
+		<label>#currentmodule: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
 		<visible>[!facadeview.smallicons+!facadeview.largeicons]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
@@ -77,7 +77,7 @@
 		<posY>178</posY>
 		<width>1366</width>
 		<align>center</align>
-		<label>#itemcount</label>
+		<label>#currentmodule: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
 		<visible>facadeview.smallicons|facadeview.largeicons</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
@@ -109,7 +109,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>onlinevideos</label>
+		<label>#currentmodule</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>[!facadeview.smallicons + !facadeview.largeicons] | Control.IsVisible(51)</visible>
@@ -124,7 +124,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>onlinevideos</label>
+		<label>#currentmodule</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>[facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(51)</visible>
