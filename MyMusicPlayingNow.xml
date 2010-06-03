@@ -160,7 +160,7 @@
 		
         <control>
             <id>5104</id>
-            <description>Lyrics button</description>
+            <description>Current Playlist button</description>
             <type>button</type>
             <width>223</width>
 			<height>38</height>
@@ -168,15 +168,15 @@
 			<onup>5103</onup>
 			<ondown>5105</ondown>
 			<textYOff>6</textYOff>
-			<hyperlink>90478</hyperlink>
+			<hyperlink>500</hyperlink>
             <textureFocus>now_playing_menuitem_selected.png</textureFocus>
             <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
-            <label>Lyrics</label>
+            <label>4555</label>
         </control>
 		
         <control>
             <id>5105</id>
-            <description>Current Playlist button</description>
+            <description>Lyrics button</description>
             <type>button</type>
             <width>223</width>
 			<height>38</height>
@@ -184,10 +184,11 @@
 			<onup>5104</onup>
 			<ondown>5101</ondown>
 			<textYOff>6</textYOff>
-			<hyperlink>500</hyperlink>
+			<hyperlink>90478</hyperlink>
             <textureFocus>now_playing_menuitem_selected.png</textureFocus>
             <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
-            <label>4555</label>
+            <label>Lyrics</label>
+			<visible>plugin.isenabled(My Lyrics)</visible>
         </control>
 		
 	</control>
