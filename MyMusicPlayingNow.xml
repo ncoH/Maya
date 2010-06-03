@@ -92,6 +92,8 @@
             <width>1366</width>
             <height>319</height>
             <texture>now_playing_fanart_bg.png</texture>
+            <animation effect="Fade" time="400">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
 		
         <control>
@@ -112,7 +114,8 @@
 		<layout>Stacklayout</layout>
 		<posX>1070</posX>
         <posY>525</posY>
-		
+        <animation effect="Fade" time="800">WindowOpen</animation>
+        <animation effect="Fade" time="300">WindowClose</animation>		
         <control>
             <id>5101</id>
             <description>Now Playing button</description>
@@ -202,6 +205,8 @@
             <width>188</width>
             <height>188</height>
             <texture>DefaultMyradioBig.png</texture>
+            <animation effect="Fade" time="1600">WindowOpen</animation>
+			<animation effect="Fade" time="300">WindowClose</animation>
         </control>
 		
         <control>
@@ -213,8 +218,9 @@
             <width>188</width>
             <height>188</height>
             <texture>#Play.Current.Thumb</texture>
-            <animation effect="Fade" reversible="FALSE" time="450">Visible</animation>
-            <animation effect="Fade" time="250">WindowOpen</animation>
+			<animation effect="Fade" reversible="FALSE" time="450">Visible</animation>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+			<animation effect="Fade" time="300">WindowClose</animation>
         </control>
 		
         <control>
@@ -226,6 +232,8 @@
             <width>210</width>
             <height>210</height>
             <texture>blackborders_music_nowplaying_small.png</texture>
+		    <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
 		
 		<control>
@@ -321,6 +329,8 @@
             <font>Segoe Light14</font>
             <textcolor>85cffe</textcolor>
             <label>790</label>
+		    <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
             <id>121</id>
@@ -333,6 +343,8 @@
             <font>Segoe Light14</font>
 			<textcolor>85cffe</textcolor>
             <label>#Play.Next.Title</label>
+		    <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
 
         <control>
@@ -366,6 +378,8 @@
                 <subitem>stargrey.png</subitem>
                 <subitem>starwhite.png</subitem>
             </subitems>
+	        <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
             <id>117</id>
@@ -377,6 +391,8 @@
             <height>2</height>
             <texture>now_playing_progress_back.png</texture>
 			<visible>player.hasmedia</visible>
+		    <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
 		
         <control>
@@ -400,6 +416,8 @@
             <midtexture>now_playing_progress_bar.png</midtexture>
 			<visible>player.hasmedia</visible>
             <label>#percentage</label>
+		    <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
             <id>0</id>
@@ -410,8 +428,8 @@
             <font>font11</font>
             <align>LEFT</align>
             <label>#currentplaytime</label>
-            <animation effect="Fade" time="200">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
 			<visible>player.hasmedia</visible>
         </control>
         <control>
@@ -423,8 +441,8 @@
             <font>font11</font>
             <align>RIGHT</align>
             <label>#duration</label>
-            <animation effect="Fade" time="200">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
 			<visible>player.hasmedia</visible>
         </control>
 
@@ -450,6 +468,8 @@
 			<label>33030</label>
             <font>Segoe Light18</font>
             <textcolor>85cffe</textcolor>
+		    <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
             <id>166</id>
@@ -464,8 +484,8 @@
             <posY>537</posY>
             <width>670</width>
             <height>210</height>
-            <animation effect="Fade" time="200">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
             <textXOff>13</textXOff>
             <textYOff>-6</textYOff>
             <IconXOff>10</IconXOff>
@@ -493,6 +513,8 @@
 			<label>33011</label>
             <font>Segoe Light18</font>
             <textcolor>85cffe</textcolor>
+		    <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>155</id>
