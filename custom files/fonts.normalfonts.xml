@@ -124,6 +124,15 @@
 </font>
 
 <font>
+	<name>Segoe Light26</name>
+	<filename>MayaType Light</filename>
+	<height>26</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+<font>
 	<name>Segoe Light32</name>
 	<filename>MayaType Light</filename>
 	<height>32</height>

@@ -31,7 +31,7 @@
 		<buttonTextXOff>77</buttonTextXOff>
 		<buttonTextYOff>0</buttonTextYOff>
 		<buttonOffset>25</buttonOffset>
-		<buttonFont>Segoe Light32</buttonFont>
+		<buttonFont>Segoe Light26</buttonFont>
 		<buttonHeight>70</buttonHeight>
 		<spaceBetweenButtons>8</spaceBetweenButtons>
 		<numberOfButtons>5</numberOfButtons>
