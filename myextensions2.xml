@@ -155,7 +155,7 @@
 			<height>49</height>
 			<textXOff>25</textXOff>
 			<textYOff>12</textYOff>
-			<label>Restart MP</label>
+			<label>1031</label>
 			<onright>50</onright>
 			<onup>6</onup>
 			<ondown>8</ondown>
@@ -212,6 +212,8 @@
       <font>font12</font>
       <label>#MPE.Selected.Description</label>
       <visible>facadeview.list+Control.HasFocus(50)</visible>
+	  <animation effect="fade" time="100">WindowOpen</animation>
+	  <animation effect="fade" time="100">WindowClose</animation>
     </control>
     <control>
       <description>Summary</description>
@@ -226,6 +228,8 @@
       <font>font12</font>
       <label>#MPE.Selected.VersionDescription</label>
       <visible>facadeview.list+Control.HasFocus(50)</visible>
+	  <animation effect="fade" time="100">WindowOpen</animation>
+	  <animation effect="fade" time="100">WindowClose</animation>
     </control>
 
     <import>common.facade.video.xml</import>

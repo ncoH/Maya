@@ -300,6 +300,8 @@
 		<posX>134</posX>
 		<posY>500</posY>
 		<width>255</width>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
     </control>
 	
 	 <control>
@@ -311,6 +313,8 @@
 		<posY>525</posY>
 		<width>255</width>
 		<label>#RadioTime.Selected.Format</label>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
     </control>
 	
 	<control>
@@ -322,6 +326,8 @@
 		<posX>134</posX>
 		<posY>560</posY>
 		<width>255</width>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
     </control>
 	
     <control>
@@ -332,6 +338,8 @@
 		<posY>585</posY>
 		<width>255</width>
 		<label>#RadioTime.Selected.Subtext</label>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
     </control>
 	
 <import>common.facade.music.xml</import>
@@ -367,6 +375,8 @@
 		<height>265</height>
 		<visible>[facadeview.list|facadeview.album]+[!control.hasthumb(51)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
 		<texture>DefaultMyradioBig.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 	
 	<control>
@@ -381,6 +391,8 @@
 		<align>center</align>
 		<valign>middle</valign>
 		<texture>#selectedthumb</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 
 	<control>
@@ -392,6 +404,8 @@
 		<height>350</height>
 		<texture>blackborders_music.png</texture>
 		<visible>facadeview.list|facadeview.album</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 
 <import>common.overlay.xml</import>
