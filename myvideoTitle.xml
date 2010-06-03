@@ -54,7 +54,7 @@
 		<posX>860</posX>
 		<posY>690</posY>
 		<align>right</align>
-		<label>#itemcount</label>
+		<label>#itemtype: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
 		<visible>[facadeview.list | facadeview.album | facadeview.playlist]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
@@ -69,7 +69,7 @@
 		<posY>178</posY>
 		<width>1366</width>
 		<align>center</align>
-		<label>#itemcount</label>
+		<label>#itemtype: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
@@ -328,8 +328,8 @@
 	</control>
 
 	<control>
-		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+		<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
 		<id>1</id>
 		<type>image</type>
 		<posX>624</posX>
