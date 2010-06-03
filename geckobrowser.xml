@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>16002</id>
+    <defaultcontrol>2</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <disabletopbar>true</disabletopbar>
+    <controls>
+        <control>
+            <id>1</id>
+            <description>background image</description>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+        </control>
+        <control>
+            <id>2</id>
+            <description>Back button</description>
+            <type>button</type>
+            <onleft>8</onleft>
+            <onright>3</onright>
+            <onup>2</onup>
+            <ondown>2</ondown>
+            <posX>41</posX>
+            <posY>16</posY>
+            <width>48</width>
+            <height>48</height>
+            <textureFocus>skipback_enabled.png</textureFocus>
+            <textureNoFocus>skipback_disabled.png</textureNoFocus>
+            <label>-</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>3</id>
+            <description>Forward button</description>
+            <type>button</type>
+            <onleft>2</onleft>
+            <onright>4</onright>
+            <onup>3</onup>
+            <ondown>3</ondown>
+            <posX>88</posX>
+            <posY>16</posY>
+            <width>48</width>
+            <height>48</height>
+            <textureFocus>skipforward_enabled.png</textureFocus>
+            <textureNoFocus>skipforward_disabled.png</textureNoFocus>
+            <label>-</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>4</id>
+            <description>Refresh button</description>
+            <type>button</type>
+            <onleft>3</onleft>
+            <onright>5</onright>
+            <onup>4</onup>
+            <ondown>4</ondown>
+            <posX>264</posX>
+            <posY>16</posY>
+            <width>48</width>
+            <height>48</height>
+            <textureFocus>nav_refresh_focus.png</textureFocus>
+            <textureNoFocus>nav_refresh_nofocus.png</textureNoFocus>
+            <label>-</label>
+        </control>
+        <control>
+            <id>5</id>
+            <description>Stop button</description>
+            <type>button</type>
+            <onleft>4</onleft>
+            <onright>6</onright>
+            <onup>5</onup>
+            <ondown>5</ondown>
+            <posX>176</posX>
+            <posY>16</posY>
+            <width>48</width>
+            <height>48</height>
+            <textureFocus>stop_enabled.png</textureFocus>
+            <textureNoFocus>stop_disabled.png</textureNoFocus>
+            <label>-</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>6</id>
+            <description>Home button</description>
+            <type>button</type>
+            <onleft>5</onleft>
+            <onright>7</onright>
+            <onup>6</onup>
+            <ondown>6</ondown>
+            <posX>352</posX>
+            <posY>16</posY>
+            <width>48</width>
+            <height>48</height>
+            <textureFocus>minimize_enabled.png</textureFocus>
+            <textureNoFocus>minimize_disabled.png</textureNoFocus>
+            <label>-</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>7</id>
+            <description>Favorites Button</description>
+            <type>button</type>
+            <onleft>6</onleft>
+            <onright>8</onright>
+            <onup>7</onup>
+            <ondown>7</ondown>
+            <posX>448</posX>
+            <posY>16</posY>
+            <width>48</width>
+            <height>48</height>
+            <textureFocus>stargood.png</textureFocus>
+            <textureNoFocus>stargood.png</textureNoFocus>
+            <label>-</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>8</id>
+            <description>URL button</description>
+            <type>button</type>
+            <onleft>7</onleft>
+            <onright>2</onright>
+            <onup>8</onup>
+            <ondown>8</ondown>
+            <posX>544</posX>
+            <posY>16</posY>
+            <width>48</width>
+            <height>48</height>
+            <textureFocus>searchbutton_focus.png</textureFocus>
+            <textureNoFocus>searchbutton_nofocus.png</textureNoFocus>
+            <label>-</label>
+        </control>
+        <control>
+            <id>9</id>
+            <description>Status label</description>
+            <type>label</type>
+            <posX>7</posX>
+            <posY>690</posY>
+            <font>font14</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>#geckobrowser.status</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+        <control>
+            <id>9</id>
+            <description>Link id label</description>
+            <type>label</type>
+            <posX>900</posX>
+            <posY>690</posY>
+            <font>font14</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>#geckobrowser.linkid</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>11</id>
+            <description>URL label</description>
+            <type>label</type>
+            <posX>656</posX>
+            <posY>24</posY>
+            <font>Segoe Light20</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>#geckobrowser.link.shorturl</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+    </controls>
+</window>
