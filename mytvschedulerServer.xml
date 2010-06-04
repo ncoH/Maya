@@ -4,8 +4,6 @@
 <defaultcontrol>10</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <define>#header.label:646</define>
-<define>#header.image:television_logo.png</define>
-<define>#header.hover:-</define>
 <controls>
 
 	<control>
@@ -66,24 +64,10 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>1131</posX>
-		<posY>690</posY>
-		<align>right</align>
-		<label>#itemcount</label>
-		<textcolor>6aa5cb</textcolor>
-		<visible>Control.IsVisible(10)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-	
-	<control>
-		<description>Objects Label</description>
-		<type>label</type>
-		<id>1</id>
 		<posX>1216</posX>
 		<posY>690</posY>
 		<align>right</align>
-		<label>127</label>
+		<label>#currentmodule: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
 		<visible>Control.IsVisible(10)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
@@ -352,6 +336,8 @@
 
 	<control>
 		<id>1</id>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
 		<type>image</type>
 		<posX>0</posX>
 		<posY>325</posY>
