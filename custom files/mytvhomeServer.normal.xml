@@ -63,9 +63,9 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>281</width>
-			<textXOff>33</textXOff>
+			<textXOff>23</textXOff>
 			<height>46</height>
-			<textYOff>12</textYOff>
+			<textYOff>10</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
@@ -81,9 +81,9 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>281</width>
-			<textXOff>33</textXOff>
+			<textXOff>23</textXOff>
 			<height>46</height>
-			<textYOff>12</textYOff>
+			<textYOff>10</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
@@ -98,9 +98,9 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>281</width>
-			<textXOff>33</textXOff>
+			<textXOff>23</textXOff>
 			<height>46</height>
-			<textYOff>12</textYOff>
+			<textYOff>10</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
@@ -115,9 +115,9 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>281</width>
-			<textXOff>33</textXOff>
+			<textXOff>23</textXOff>
 			<height>46</height>
-			<textYOff>12</textYOff>
+			<textYOff>10</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
@@ -145,9 +145,9 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>281</width>
-			<textXOff>33</textXOff>
+			<textXOff>23</textXOff>
 			<height>46</height>
-			<textYOff>12</textYOff>
+			<textYOff>10</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
@@ -165,9 +165,9 @@
 			<ondown>9</ondown>
 			<onright>99</onright>
 			<width>281</width>
-			<textXOff>33</textXOff>
+			<textXOff>23</textXOff>
 			<height>46</height>
-			<textYOff>12</textYOff>
+			<textYOff>10</textYOff>
 			<textalign>right</textalign>
 		</control>
 
@@ -181,9 +181,9 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>281</width>
-			<textXOff>33</textXOff>
+			<textXOff>23</textXOff>
 			<height>46</height>
-			<textYOff>12</textYOff>
+			<textYOff>10</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
@@ -199,9 +199,9 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>281</width>
-			<textXOff>33</textXOff>
+			<textXOff>23</textXOff>
 			<height>46</height>
-			<textYOff>12</textYOff>
+			<textYOff>10</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
@@ -217,9 +217,9 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>281</width>
-			<textXOff>33</textXOff>
+			<textXOff>23</textXOff>
 			<height>46</height>
-			<textYOff>12</textYOff>
+			<textYOff>10</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
@@ -234,9 +234,9 @@
 			<onright>99</onright>
 			<textalign>right</textalign>
 			<width>281</width>
-			<textXOff>33</textXOff>
+			<textXOff>23</textXOff>
 			<height>46</height>
-			<textYOff>12</textYOff>
+			<textYOff>10</textYOff>
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
