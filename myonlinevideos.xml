@@ -64,7 +64,7 @@
 		<align>right</align>
 		<label>#currentmodule: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<visible>facadeview.list+!control.isvisible(51)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -79,7 +79,7 @@
 		<align>center</align>
 		<label>#currentmodule: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>facadeview.smallicons|facadeview.largeicons</visible>
+		<visible>facadeview.smallicons|facadeview.largeicons+!control.isvisible(51)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
