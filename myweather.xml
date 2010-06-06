@@ -338,16 +338,11 @@
 
 	<control>
 		<description>Alternate BG</description>
-		<type>multiimage</type>
+		<type>image</type>
 		<id>1</id>
 		<width>1366</width>
 		<height>768</height>
-		<imagepath>weather/backgrounds/#maya.weather.background</imagepath>
-		<timeperimage>5000</timeperimage>
-        <fadetime>500</fadetime>
-        <randomize>yes</randomize>
-        <loop>yes</loop>
-        <keepaspectratio>no</keepaspectratio>
+		<texture>weather\backgrounds\#infoservice.weather.today.img.big.filenamewithoutext.jpg</texture>
 		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
 	</control>
 	
