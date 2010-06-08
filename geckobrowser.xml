@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
     <id>16002</id>
-    <defaultcontrol>2</defaultcontrol>
+    <defaultcontrol>8</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <disabletopbar>true</disabletopbar>
     <controls>
@@ -15,12 +15,22 @@
             <height>768</height>
         </control>
         <control>
+            <description>GeckoBrowser</description>
+            <type>webbrowser</type>
+            <posX>0</posX>
+            <posY>42</posY>
+            <width>1366</width>
+            <height>711</height>
+        </control>
+        <control>
             <id>0</id>
             <description>Top bar</description>
             <type>image</type>
             <posX>0</posX>
             <posY>0</posY>
             <texture>Geckobrowser\topbar.png</texture>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="250">WindowClose</animation>
         </control>
         <control>
             <id>0</id>
@@ -29,6 +39,22 @@
             <posX>0</posX>
             <posY>721</posY>
             <texture>Geckobrowser\bottombar.png</texture>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="250">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <type>label</type>
+            <visible/>
+            <posX>8</posX>
+            <posY>4</posY>
+            <width>555</width>
+            <height>36</height>
+            <font>Segoe Light22</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#time</label>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="250">WindowClose</animation>
         </control>
         <control>
             <id>2</id>
@@ -45,8 +71,8 @@
             <textureFocus>geckobrowser\left_focus.png</textureFocus>
             <textureNoFocus>geckobrowser\left_unfocus.png</textureNoFocus>
             <label>-</label>
-            <animation effect="Fade" time="200">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
         </control>
         <control>
             <id>3</id>
@@ -63,8 +89,8 @@
             <textureFocus>Geckobrowser\right_focus.png</textureFocus>
             <textureNoFocus>Geckobrowser\right_unfocus.png</textureNoFocus>
             <label>-</label>
-            <animation effect="Fade" time="200">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
         </control>
         <control>
             <id>4</id>
@@ -81,6 +107,8 @@
             <textureFocus>Geckobrowser\refresh_focus.png</textureFocus>
             <textureNoFocus>Geckobrowser\refresh_unfocus.png</textureNoFocus>
             <label>-</label>
+            <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
         </control>
         <control>
             <id>5</id>
@@ -97,8 +125,8 @@
             <textureFocus>Geckobrowser\stop_focus x363.png</textureFocus>
             <textureNoFocus>Geckobrowser\stop_unfocus x363.png</textureNoFocus>
             <label>-</label>
-            <animation effect="Fade" time="200">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
         </control>
         <control>
             <id>6</id>
@@ -115,8 +143,8 @@
             <textureFocus>Geckobrowser\home_focus.png</textureFocus>
             <textureNoFocus>Geckobrowser\home_unfocus.png</textureNoFocus>
             <label>-</label>
-            <animation effect="Fade" time="200">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
         </control>
         <control>
             <id>7</id>
@@ -133,8 +161,8 @@
             <textureFocus>Geckobrowser\home_focus.png</textureFocus>
             <textureNoFocus>Geckobrowser\fav_unfocus.png</textureNoFocus>
             <label>-</label>
-            <animation effect="Fade" time="200">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
         </control>
         <control>
             <id>8</id>
@@ -151,44 +179,46 @@
             <textureFocus>Geckobrowser\url_focus.png</textureFocus>
             <textureNoFocus>Geckobrowser\url_unfocus.png</textureNoFocus>
             <label>-</label>
+            <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
         </control>
         <control>
             <id>9</id>
             <description>Status label</description>
             <type>label</type>
             <posX>149</posX>
-            <posY>742</posY>
-            <font>font14</font>
-            <textcolor>ffffffff</textcolor>
+            <posY>740</posY>
+            <font>font13</font>
+            <textcolor>ff999999</textcolor>
             <align>LEFT</align>
             <label>#geckobrowser.status</label>
-            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
         <control>
             <id>9</id>
             <description>Link id label</description>
             <type>label</type>
-            <posX>0</posX>
-            <posY>742</posY>
-            <font>font14</font>
-            <textcolor>ffffffff</textcolor>
+            <posX>1048</posX>
+            <posY>740</posY>
+            <font>font13</font>
+            <textcolor>ff999999</textcolor>
             <align>LEFT</align>
             <label>#geckobrowser.linkid</label>
-            <animation effect="Fade" time="200">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
         </control>
         <control>
             <id>11</id>
             <description>URL label</description>
             <type>label</type>
-            <posX>768</posX>
-            <posY>11</posY>
-            <font>Segoe Light20</font>
+            <posX>776</posX>
+            <posY>8</posY>
+            <font>Segoe Light16</font>
             <textcolor>ff6aa5cb</textcolor>
             <align>LEFT</align>
             <label>#geckobrowser.link.shorturl</label>
-            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
         </control>
     </controls>
