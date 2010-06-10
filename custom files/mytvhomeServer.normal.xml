@@ -5,7 +5,6 @@
 <allowoverlay>no</allowoverlay>
 <controls>
 	<import>common.window.xml</import>
-	<import>common.time.xml</import>
 	
 	<control>
 		<description>BG</description>
@@ -43,6 +42,8 @@
 		<font>Segoe Light40</font>
 	</control>
 
+	<import>common.time.xml</import>
+	
 	<control>
 		<type>group</type>
 		<layout>StackLayout</layout>

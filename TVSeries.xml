@@ -363,7 +363,7 @@
 	  <width>700</width>
 	  <font>Segoe Light22</font>
       <label>#TVSeries.Title</label>
-      <visible>!facadeview.list+!Control.IsVisible(1242)</visible>
+      <visible>!facadeview.list+Control.IsVisible(1237)+!Control.IsVisible(1242)</visible>
 	  <valign>middle</valign>
     </control>
 	
