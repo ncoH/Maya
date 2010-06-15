@@ -185,7 +185,7 @@
 		
 	<control>
 		<description>upcoming episodes label</description>
-		<type>fadelabel</type>
+		<type>label</type>
 		<id>11</id>
 		<posX>555</posX>
 		<posY>470</posY>
