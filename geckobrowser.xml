@@ -47,7 +47,7 @@
             <type>label</type>
             <visible/>
             <posX>8</posX>
-            <posY>4</posY>
+            <posY>7</posY>
             <width>555</width>
             <height>36</height>
             <font>Segoe Light22</font>
@@ -187,8 +187,8 @@
             <description>Status label</description>
             <type>label</type>
             <posX>149</posX>
-            <posY>740</posY>
-            <font>font13</font>
+            <posY>742</posY>
+            <font>font11</font>
             <textcolor>ff999999</textcolor>
             <align>LEFT</align>
             <label>#geckobrowser.status</label>
@@ -201,7 +201,7 @@
             <type>label</type>
             <posX>1048</posX>
             <posY>740</posY>
-            <font>font13</font>
+            <font>font11</font>
             <textcolor>ff999999</textcolor>
             <align>LEFT</align>
             <label>#geckobrowser.linkid</label>
