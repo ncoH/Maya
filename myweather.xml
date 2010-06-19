@@ -341,7 +341,7 @@
 		<id>1</id>
 		<width>1366</width>
 		<height>768</height>
-		<texture>weather\backgrounds\#infoservice.weather.today.img.big.filenamewithoutext.png</texture>
+		<texture>weather\backgrounds\#infoservice.weather.today.img.big.filenamewithoutext.jpg</texture>
 		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
 	</control>
 	
