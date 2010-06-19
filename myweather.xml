@@ -211,12 +211,11 @@
 		<description>current feels like static label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>235</posX>
+		<posX>228</posX>
 		<posY>585</posY>
 		<label>402</label>
-		<font>font12</font>
-		<textcolor>6aa5cb</textcolor>
 		<font>font11</font>
+		<textcolor>85cffe</textcolor>
 		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
@@ -224,12 +223,12 @@
 		<description>current feels like label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>380</posX>
+		<posX>391</posX>
 		<posY>585</posY>
 		<label>#infoservice.weather.today.feelsliketemp</label>
 		<font>font11</font>
 		<align>right</align>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
@@ -237,11 +236,11 @@
 		<description>current humidity static label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>235</posX>
+		<posX>228</posX>
 		<posY>608</posY>
 		<label>406</label>
 		<font>font11</font>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
@@ -249,12 +248,12 @@
 		<description>current humidity label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>380</posX>
+		<posX>391</posX>
 		<posY>608</posY>
 		<label>#infoservice.weather.today.humidity</label>
 		<font>font11</font>
 		<align>right</align>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
@@ -262,11 +261,11 @@
 		<description>current UV Index static label</description>
 		<type>label</type>
 		<id>225</id>
-		<posX>235</posX>
+		<posX>231</posX>
 		<posY>631</posY>
 		<label>-</label>
 		<font>font11</font>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 		<visible>!plugin.isenabled(InfoService)</visible>
 	</control>
 	
@@ -274,11 +273,11 @@
 		<description>current UV Index static label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>235</posX>
+		<posX>228</posX>
 		<posY>631</posY>
 		<label>403</label>
 		<font>font11</font>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
@@ -286,12 +285,12 @@
 		<description>current UV Index label</description>
 		<type>label</type>
 		<id>25</id>
-		<posX>380</posX>
+		<posX>391</posX>
 		<posY>631</posY>
 		<label>-</label>
 		<font>font11</font>
 		<align>right</align>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 		<visible>!plugin.isenabled(InfoService)</visible>
 	</control>
 	
@@ -299,12 +298,12 @@
 		<description>current UV Index label</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>380</posX>
+		<posX>391</posX>
 		<posY>631</posY>
 		<label>#infoservice.weather.today.humidity</label>
 		<font>font11</font>
 		<align>right</align>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
@@ -342,7 +341,7 @@
 		<id>1</id>
 		<width>1366</width>
 		<height>768</height>
-		<texture>weather\backgrounds\#infoservice.weather.today.img.big.filenamewithoutext.jpg</texture>
+		<texture>weather\backgrounds\#infoservice.weather.today.img.big.filenamewithoutext.png</texture>
 		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
 	</control>
 	
@@ -508,7 +507,7 @@
 		<posX>-2000</posX>
 		<posY>375</posY>
 		<label>-</label>
-		<font>font13</font>
+		<font>font11</font>
 		<textcolor>White</textcolor>
 	</control>
 
@@ -519,7 +518,7 @@
 		<posX>-2000</posX>
 		<posY>375</posY>
 		<label>-</label>
-		<font>font13</font>
+		<font>font11</font>
 		<textcolor>White</textcolor>
 	</control>
 
@@ -530,7 +529,7 @@
 		<posX>-2000</posX>
 		<posY>406</posY>
 		<label>-</label>
-		<font>font13</font>
+		<font>font11</font>
 		<textcolor>White</textcolor>
 	</control>
 
@@ -541,7 +540,7 @@
 		<posX>-2000</posX>
 		<posY>406</posY>
 		<label>-</label>
-		<font>font13</font>
+		<font>font11</font>
 		<textcolor>White</textcolor>
 	</control>
 
@@ -701,7 +700,7 @@
 		<posY>646</posY>
 		<label>-</label>
 		<align>center</align>
-		<font>font13</font>
+		<font>font11</font>
 		<textcolor>White</textcolor>
 	</control>
 -->	
@@ -720,7 +719,7 @@
 		<type>label</type>
 		<id>41</id>
 		<posX>403</posX>
-		<posY>294</posY>
+		<posY>273</posY>
 		<label>-</label>
 		<width>185</width>
 		<align>center</align>
@@ -774,7 +773,7 @@
 		<posY>585</posY>
 		<label>-</label>
 		<align>left</align>
-		<font>font13</font>
+		<font>font11</font>
 		<textcolor>6aa5cb</textcolor>
 	</control>
 	
@@ -793,7 +792,7 @@
 		<type>label</type>
 		<id>51</id>
 		<posX>590</posX>
-		<posY>294</posY>
+		<posY>273</posY>
 		<label>-</label>
 		<width>185</width>
 		<align>center</align>
@@ -847,7 +846,7 @@
 		<posY>585</posY>
 		<label>-</label>
 		<align>left</align>
-		<font>font13</font>
+		<font>font11</font>
 		<textcolor>6aa5cb</textcolor>
 	</control>
 	
@@ -866,7 +865,7 @@
 		<type>label</type>
 		<id>61</id>
 		<posX>776</posX>
-		<posY>294</posY>
+		<posY>273</posY>
 		<width>185</width>
 		<align>center</align>
 		<label>-</label>
@@ -920,7 +919,7 @@
 		<posY>585</posY>
 		<label>-</label>
 		<align>left</align>
-		<font>font13</font>
+		<font>font11</font>
 		<textcolor>6aa5cb</textcolor>
 	</control>
 	
@@ -939,7 +938,7 @@
 		<type>label</type>
 		<id>71</id>
 		<posX>965</posX>
-		<posY>294</posY>
+		<posY>273</posY>
 		<width>185</width>
 		<align>center</align>
 		<label>-</label>
@@ -993,7 +992,7 @@
 		<posY>585</posY>
 		<label>-</label>
 		<align>left</align>
-		<font>font13</font>
+		<font>font11</font>
 		<textcolor>6aa5cb</textcolor>
 	</control>
 	
