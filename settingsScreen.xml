@@ -20,11 +20,11 @@
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
+		<type>fadelabel</type>
 		<id>1</id>
 		<posX>504</posX>
 		<posY>125</posY>
-		<width>500</width>
+		<width>660</width>
 		<height>100</height>
 		<label>6023</label>
 		<textcolor>6aa5cb</textcolor>
@@ -44,7 +44,7 @@
 			<description>UI Calibration button</description>
 			<type>button</type>
 			<id>2</id>
-			<width>259</width>
+			<width>289</width>
 	<textureFocus>settings_button_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
@@ -58,7 +58,7 @@
 			<description>Screen Calibration button</description>
 			<type>button</type>
 			<id>3</id>
-			<width>259</width>
+			<width>289</width>
 	<textureFocus>settings_button_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>
@@ -71,7 +71,7 @@
 			<description>Scroll speed button</description>
 			<type>button</type>
 			<id>4</id>
-			<width>259</width>
+			<width>289</width>
 	<textureFocus>settings_button_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 	<textcolor>ff85cffe</textcolor>

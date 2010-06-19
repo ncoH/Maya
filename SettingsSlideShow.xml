@@ -162,7 +162,7 @@
 			<type>checkmark</type>
 			<id>5</id>
 			<posX>950</posX>
-			<posY>415</posY>
+			<posY>413</posY>
 			<label>-</label>
 			<onleft>10005</onleft>
 			<onright>10005</onright>
@@ -198,7 +198,7 @@
 			<type>checkmark</type>
 			<id>6</id>
 			<posX>950</posX>
-			<posY>450</posY>
+			<posY>448</posY>
 			<label>-</label>
 			<onleft>10005</onleft>
 			<onright>10005</onright>
@@ -211,7 +211,7 @@
 			<description>Ken Burns label</description>
 			<type>label</type>
 			<id>0</id>
-			<posX>502</posX>
+			<posX>507</posX>
 			<posY>445</posY>
 			<textcolor>ff85cffe</textcolor>
 			<label>13008</label>
@@ -234,7 +234,7 @@
 			<type>checkmark</type>
 			<id>7</id>
 			<posX>950</posX>
-			<posY>486</posY>
+			<posY>484</posY>
 			<label>-</label>
 			<onleft>10005</onleft>
 			<onright>10005</onright>
@@ -271,7 +271,7 @@
 			<type>checkmark</type>
 			<id>8</id>
 			<posX>950</posX>
-			<posY>521</posY>
+			<posY>519</posY>
 			<label>-</label>
 			<onleft>10005</onleft>
 			<onright>10005</onright>
@@ -307,7 +307,7 @@
 			<type>checkmark</type>
 			<id>9</id>
 			<posX>950</posX>
-			<posY>558</posY>
+			<posY>556</posY>
 			<label>-</label>
 			<onleft>10005</onleft>
 			<onright>10005</onright>

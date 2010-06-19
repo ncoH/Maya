@@ -35,12 +35,13 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>489</posX>
+		<posX>488</posX>
 		<posY>260</posY>
-		<width>514</width>
+		<width>679</width>
+		<height>37</height>
 		<textcolor>ff85cffe</textcolor>
 		<textcolorNoFocus>ff85cffe</textcolorNoFocus>
-		<texture>settings_button_medium_focus.png</texture>
+		<texture>settings_button_large_focus.png</texture>
 		<visible>Control.HasFocus(2)</visible>
 	</control>
 		
@@ -48,8 +49,8 @@
 			<description>Shuffle Playlist on load</description>
 			<type>checkmark</type>
 			<id>2</id>
-			<posX>950</posX>
-			<posY>269</posY>
+			<posX>1110</posX>
+			<posY>267</posY>
 			<label>-</label>
 			<onup>2</onup>
 			<ondown>6</ondown>
@@ -70,12 +71,13 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>489</posX>
+		<posX>488</posX>
 		<posY>295</posY>
-		<width>514</width>
+		<width>679</width>
+		<height>37</height>
 		<textcolor>ff85cffe</textcolor>
 		<textcolorNoFocus>ff85cffe</textcolorNoFocus>
-		<texture>settings_button_medium_focus.png</texture>
+		<texture>settings_button_large_focus.png</texture>
 		<visible>Control.HasFocus(6)</visible>
 	</control>
 
@@ -83,8 +85,8 @@
 			<description>Enable ID3  other tagformats</description>
 			<type>checkmark</type>
 			<id>6</id>
-			<posX>950</posX>
-			<posY>304</posY>
+			<posX>1110</posX>
+			<posY>302</posY>
 			<label>-</label>
 			<onup>2</onup>
 			<ondown>8</ondown>
@@ -118,9 +120,10 @@
 			<label>334</label>
 			<posX>489</posX>
 			<posY>367</posY>
-			<width>476</width>
-			<textureFocus>settings_button_wide_focus.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
+			<width>679</width>
+			<height>37</height>
+			<textureFocus>settings_button_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
 			<textcolor>ff85cffe</textcolor>
 			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<onup>6</onup>
@@ -145,9 +148,10 @@
 			<label>485</label>
 			<posX>489</posX>
 			<posY>402</posY>
-			<width>476</width>
-			<textureFocus>settings_button_wide_focus.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
+			<width>679</width>
+			<height>37</height>
+			<textureFocus>settings_button_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
 			<textcolor>ff85cffe</textcolor>
 			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<onup>8</onup>
@@ -172,9 +176,10 @@
 			<label>422</label>
 			<posX>489</posX>
 			<posY>438</posY>
-			<width>476</width>
-			<textureFocus>settings_button_wide_focus.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
+			<width>679</width>
+			<height>37</height>
+			<textureFocus>settings_button_large_focus.png</textureFocus>
+			<textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
 			<textcolor>ff85cffe</textcolor>
 			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<onup>13</onup>
