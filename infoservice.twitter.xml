@@ -96,7 +96,7 @@
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
 		<animation effect="fade" time="200" reversible="false">Hidden</animation>
 		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
-		
+		<animation effect="Fade" time="100">WindowClose</animation>
 		<control>
 			<id>1</id>
 			<type>image</type>
@@ -212,7 +212,7 @@
 		<type>listcontrol</type>
 		<id>50</id>
 		<onleft>2</onleft>
-		<onright>2</onright>
+		<onright>50</onright>
 		<scrollOffset>1</scrollOffset>
 		<posY>183</posY>
 		<height>450</height>

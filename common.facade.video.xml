@@ -17,7 +17,7 @@
 				<type>listcontrol</type>
 				<id>50</id>
 				<onleft>2</onleft>
-				<onright>2</onright>
+				<onright>50</onright>
 				<scrollOffset>1</scrollOffset>
 				<posX>524</posX>
 				<posY>187</posY>
@@ -41,7 +41,7 @@
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<onleft>2</onleft>
-				<onright>2</onright>
+				<onright>50</onright>
 				<itemWidth>103</itemWidth>
 				<itemHeight>140</itemHeight>
 				<textureWidth>103</textureWidth>
@@ -116,7 +116,7 @@
 				<type>playlistcontrol</type>
 				<id>50</id>
 				<onleft>2</onleft>
-				<onright>2</onright>
+				<onright>50</onright>
 				<scrollOffset>1</scrollOffset>
 				<posY>183</posY>
 				<height>450</height>

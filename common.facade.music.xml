@@ -17,7 +17,7 @@
 				<type>listcontrol</type>
 				<id>50</id>
 				<onleft>2</onleft>
-				<onright>2</onright>
+				<onright>50</onright>
 				<scrollOffset>1</scrollOffset>
 				<posX>524</posX>
 				<posY>187</posY>
@@ -61,7 +61,7 @@
 				<textureFocus>listcontrol_item_selected_big.png</textureFocus>
 				<textureNoFocus>listcontrol_item_big.png</textureNoFocus>
                 <onleft>2</onleft>
-                <onright>2</onright>
+                <onright>50</onright>
                 <keepaspectratio>yes</keepaspectratio>
 			</control>
 			
@@ -80,7 +80,7 @@
 				<textureDownFocus>page_down_focus.png</textureDownFocus>
 				<scrollOffset>0</scrollOffset>
 				<onleft>2</onleft>
-				<onright>2</onright>
+				<onright>50</onright>
 				<itemWidth>107</itemWidth>
 				<itemHeight>107</itemHeight>
 				<textureWidth>107</textureWidth>
@@ -156,7 +156,7 @@
 				<type>playlistcontrol</type>
 				<id>50</id>
 				<onleft>2</onleft>
-				<onright>2</onright>
+				<onright>50</onright>
 				<scrollOffset>1</scrollOffset>
 				<posY>183</posY>
 				<height>450</height>

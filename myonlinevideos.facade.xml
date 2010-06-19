@@ -18,7 +18,7 @@
 				<type>listcontrol</type>
 				<id>50</id>
 				<onleft>2</onleft>
-				<onright>2</onright>
+				<onright>50</onright>
 				<scrollOffset>1</scrollOffset>
 				<posY>427</posY>
 				<height>300</height>
@@ -45,7 +45,7 @@
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<onleft>2</onleft>
-				<onright>2</onright>
+				<onright>50</onright>
 				<itemWidth>249</itemWidth>
 				<itemHeight>140</itemHeight>
 				<textureWidth>249</textureWidth>

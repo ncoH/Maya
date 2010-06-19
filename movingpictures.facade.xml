@@ -40,7 +40,7 @@ This file should contain the facade view
 			<type>listcontrol</type>
 			<id>50</id>
 			<onleft>2</onleft>
-			<onright>2</onright>
+			<onright>50</onright>
 			<posX>524</posX>
 			<posY>187</posY>
 			<height>458</height>
@@ -107,7 +107,7 @@ This file should contain the facade view
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<onleft>2</onleft>
-				<onright>2</onright>
+				<onright>50</onright>
 				<itemWidth>103</itemWidth>
 				<itemHeight>140</itemHeight>
 				<textureWidth>103</textureWidth>

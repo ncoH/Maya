@@ -18,7 +18,7 @@
 				<type>listcontrol</type>
 				<id>50</id>
 				<onleft>2</onleft>
-				<onright>2</onright>
+				<onright>50</onright>
 				<scrollOffset>1</scrollOffset>
 				<posX>524</posX>
 				<posY>187</posY>
@@ -38,7 +38,7 @@
 				<id>50</id>
 				<scrollOffset>0</scrollOffset>
 				<onleft>2</onleft>
-				<onright>2</onright>
+				<onright>50</onright>
 			</control>
 
 			<control>
@@ -46,7 +46,7 @@
 				<type>filmstrip</type>
 				<id>50</id>
 				<onleft>2</onleft>
-				<onright>2</onright>
+				<onright>50</onright>
 				<onup>2</onup>
 				<ondown>2</ondown>
 			</control>

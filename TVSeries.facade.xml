@@ -20,7 +20,7 @@
 			<subtype>album</subtype>
 			<id>50</id>
 			<onleft>2</onleft>
-			<onright>2</onright>		
+			<onright>50</onright>		
         </control>
     <control>
 		<description>graphical thumbpanel (series and/or seasons if set)</description>
@@ -33,7 +33,7 @@
         <height>500</height>
         <!-- up/down buttons & page # -->     
 		<onleft>2</onleft>
-        <onright>2</onright>		  
+        <onright>50</onright>		  
 		<spinColor>FFFFFFFF</spinColor>
 		<spinPosX>555</spinPosX>
 		<spinPosY>705</spinPosY>
@@ -120,7 +120,7 @@
 		<posX>524</posX>
 		<posY>187</posY>	
 		<onleft>2</onleft>
-		<onright>2</onright>
+		<onright>50</onright>
 		<scrollOffset>1</scrollOffset>
 		<height>458</height>
 		<width>358</width>
