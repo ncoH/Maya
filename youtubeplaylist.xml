@@ -25,6 +25,7 @@
       <dimColor>00ffffff</dimColor>
       <visible>!Control.HasFocus(50)</visible>
       <animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
+	  <animation effect="Fade" time="100">WindowClose</animation>
       <control>
         <type>image</type>
         <posX>26</posX>
