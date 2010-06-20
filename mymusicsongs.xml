@@ -314,7 +314,7 @@
 					<height>49</height>
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
-					<label>My lyrics</label>
+					<label>#SkinTranslation.Translations.mylyrics.Label</label>
 					<hyperlink>90478</hyperlink>
 					<onright>50</onright>
 					<onleft>50</onleft>

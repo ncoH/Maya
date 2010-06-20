@@ -938,6 +938,7 @@
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
 		<animation effect="Fade" time="100">WindowClose</animation>
+
 		<control>
 			<type>image</type>
 			<id>0</id>

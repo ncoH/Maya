@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin translation file -->
+<!-- Danish (DA) -->
+<!-- Last Updated: 20th Jun 2010 -->
+
+<strings>
+	<!-- # -->
+
+	<!-- A -->
+
+	<!-- B -->
+
+	<!-- C -->
+
+	<!-- D -->
+
+	<!-- E -->
+
+	<!-- F -->
+	<string Field="format">Format:</string>
+	
+	<!-- G -->
+
+	<!-- H -->
+
+	<!-- I -->
+
+	<!-- L -->
+	<string Field="lyrics">Sangtekst</string>
+	
+	<!-- M -->
+	<string Field="mylyrics">Sangtekst</string>
+
+	<!-- N -->
+
+	<!-- O -->
+
+	<!-- P -->
+	<string Field="weather.toggleday">Tryk OK for dagsudsigt</string>
+	
+	<!-- R -->
+
+	<!-- S -->
+
+	<!-- T -->
+
+	<!-- U -->
+
+	<!-- V -->
+
+	<!-- W -->
+
+	<!-- Y -->
+
+</strings>

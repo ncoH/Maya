@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin translation file -->
+<!-- English (US) -->
+<!-- Last Updated: 20th Jun 2010 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+
+<strings>
+	<!-- # -->
+
+	<!-- A -->
+
+	<!-- B -->
+
+	<!-- C -->
+
+	<!-- D -->
+
+	<!-- E -->
+
+	<!-- F -->
+	<string Field="format">Format:</string>
+	
+	<!-- G -->
+
+	<!-- H -->
+
+	<!-- I -->
+
+	<!-- L -->
+	<string Field="lyrics">Sangtekst</string>
+	
+	<!-- M -->
+	<string Field="mylyrics">Sangtekst</string>
+
+	<!-- N -->
+
+	<!-- O -->
+
+	<!-- P -->
+	<string Field="weather.toggleday">Press OK to toggle day</string>
+	
+	<!-- R -->
+
+	<!-- S -->
+
+	<!-- T -->
+
+	<!-- U -->
+
+	<!-- V -->
+
+	<!-- W -->
+
+	<!-- Y -->
+
+</strings>

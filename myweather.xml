@@ -483,7 +483,7 @@
 		<type>label</type>
 		<id>228</id>
 		<posX>900</posX>
-		<posY>587</posY>
+		<posY>595</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
 		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
@@ -494,7 +494,7 @@
 		<type>label</type>
 		<id>28</id>
 		<posX>1040</posX>
-		<posY>587</posY>
+		<posY>595</posY>
 		<label>-</label>
 		<textcolor>6aa5cb</textcolor>
 		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
@@ -648,21 +648,9 @@
 		<align>center</align>
 		<label>-</label>
 		<font>Segoe Light36</font>
-		<visible>!plugin.isenabled(InfoService)</visible>
+		<visible>Control.IsVisible(9999) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
 	</control>
 	
-	<control>
-		<description>day 0 Hi label (infoservice)</description>
-		<type>label</type>
-		<id>0</id>
-		<posX>218</posX>
-		<posY>456</posY>
-		<width>185</width>
-		<align>center</align>
-		<label>#infoservice.weather.today.maxtemp</label>
-		<font>Segoe Light36</font>
-		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(9999) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
-	</control>
 	
 	<control>
 		<description>day 0 low label</description>
@@ -675,22 +663,9 @@
 		<label>-</label>
 		<font>Segoe Light36</font>
 		<textcolor>85cffe</textcolor>
-		<visible>!plugin.isenabled(InfoService)</visible>
+		<visible>Control.IsVisible(9999) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
 	</control>
 	
-	<control>
-		<description>day 0 low label (infoservice)</description>
-		<type>label</type>
-		<id>33</id>
-		<posX>218</posX>
-		<posY>517</posY>
-		<width>185</width>
-		<align>center</align>
-		<label>#infoservice.weather.today.mintemp</label>
-		<font>Segoe Light36</font>
-		<textcolor>85cffe</textcolor>
-		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(9999) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
-	</control>
 <!--
 	<control>
 		<description>day 0 general weather label</description>
@@ -762,7 +737,7 @@
 		<width>143</width>
 		<height>1</height>
 		<texture>weather_horizontal_bar.png</texture>
-		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+		<visible>Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -783,7 +758,7 @@
 		<id>1</id>
 		<posX>430</posX>
 		<posY>300</posY>
-		<texture>weather/128/#infoservice.weather.day2.day.img.big.filenamewithext</texture>
+		<texture>weather/128/#infoservice.weather.forecast2.day.img.big.filenamewithext</texture>
 		<visible>Control.IsVisible(9999)</visible>
 	</control>
 
@@ -835,7 +810,7 @@
 		<width>143</width>
 		<height>1</height>
 		<texture>weather_horizontal_bar.png</texture>
-		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+		<visible>Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -856,7 +831,7 @@
 		<id>1</id>
 		<posX>620</posX>
 		<posY>300</posY>
-		<texture>weather/128/#infoservice.weather.day3.day.img.big.filenamewithext</texture>
+		<texture>weather/128/#infoservice.weather.forecast3.day.img.big.filenamewithext</texture>
 		<visible>Control.IsVisible(9999)</visible>
 	</control>
 
@@ -908,7 +883,7 @@
 		<width>143</width>
 		<height>1</height>
 		<texture>weather_horizontal_bar.png</texture>
-		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+		<visible>Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -929,7 +904,7 @@
 		<id>1</id>
 		<posX>805</posX>
 		<posY>300</posY>
-		<texture>weather/128/#infoservice.weather.day4.day.img.big.filenamewithext</texture>
+		<texture>weather/128/#infoservice.weather.forecast4.day.img.big.filenamewithext</texture>
 		<visible>Control.IsVisible(9999)</visible>
 	</control>
 
@@ -981,7 +956,7 @@
 		<width>143</width>
 		<height>1</height>
 		<texture>weather_horizontal_bar.png</texture>
-		<visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
+		<visible>Control.IsVisible(9999)</visible>
 	</control>
 	
 	<control>
@@ -1002,7 +977,7 @@
 		<id>1</id>
 		<posX>996</posX>
 		<posY>300</posY>
-		<texture>weather/128/#infoservice.weather.day5.day.img.big.filenamewithext</texture>
+		<texture>weather/128/#infoservice.weather.forecast5.day.img.big.filenamewithext</texture>
 		<visible>Control.IsVisible(9999)</visible>
 	</control>
 

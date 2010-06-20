@@ -190,7 +190,7 @@
 			<hyperlink>90478</hyperlink>
             <textureFocus>now_playing_menuitem_selected.png</textureFocus>
             <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
-            <label>Lyrics</label>
+            <label>#SkinTranslation.Translations.lyrics.Label</label>
 			<visible>plugin.isenabled(My Lyrics)</visible>
         </control>
 		
