@@ -27,10 +27,10 @@
 	<!-- I -->
 
 	<!-- L -->
-	<string Field="lyrics">Sangtekst</string>
+	<string Field="lyrics">Lyrics</string>
 	
 	<!-- M -->
-	<string Field="mylyrics">Sangtekst</string>
+	<string Field="mylyrics">My Lyrics</string>
 
 	<!-- N -->
 
