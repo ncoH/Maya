@@ -3,6 +3,17 @@
 <controls>
 
 	<control>
+        <description>dummy to fix images disappearing (MP BUG)</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>2000</posX>
+        <posY>2000</posY>
+        <width>10</width>
+        <height>10</height>
+        <texture>-</texture>
+        <visible>player.forwarding|player.rewinding|player.paused</visible>
+    </control>
+	<control>
 		<type>image</type>
 		<description>Dummy image</description>
 		<id>105</id>
@@ -14,10 +25,10 @@
 		<description>Description bg</description>
 		<type>image</type>
 		<id>992</id>
-		<posX>191</posX>
-		<posY>558</posY>
-		<width>984</width>
-		<height>117</height>
+		<posX>176</posX>
+		<posY>546</posY>
+		<width>1009</width>
+		<height>177</height>
 		<texture>osd_bg_description2.png</texture>
 		<visible>window.isosdvisible</visible>
 	</control>
@@ -26,65 +37,88 @@
 		<type>image</type>
 		<description>OSD Background</description>
 		<id>994</id>
-		<posX>179</posX>
-		<posY>648</posY>
-		<width>1008</width>
-		<height>81</height>
+		<posX>188</posX>
+		<posY>664</posY>
+		<width>985</width>
+		<height>47</height>
 		<texture>osd_bg.png</texture>
-		<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | [window.isvisible(2005) + [window.isosdvisible|control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking]]</visible>
+		<visible>window.isosdvisible</visible>
 	</control>
 
+	<control>
+		<type>image</type>
+		<description>OSD Pause Background</description>
+		<id>993</id>
+		<posX>177</posX>
+		<posY>653</posY>
+		<width>1009</width>
+		<height>70</height>
+		<texture>osd_bg_pause.png</texture>
+		<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | [window.isvisible(2005) + [window.isosdvisible|control.isvisible(105)]+[player.paused|player.rewinding|player.forwarding|player.seeking]]</visible>
+	</control>
+	
 	<control>
 		<type>progress</type>
 		<description>Track Progress</description>
 		<id>996</id>
-		<posX>179</posX>
-		<posY>700</posY>
-		<width>988</width>
-		<height>12</height>
+		<posX>331</posX>
+		<posY>681</posY>
+		<width>694</width>
+		<height>10</height>
 		<label>#percentage</label>
 		<texturebg>-</texturebg>
 		<lefttexture>osd_progress_left.png</lefttexture>
 		<midtexture>osd_progress_mid.png</midtexture>
 		<righttexture>osd_progress_right.png</righttexture>
-		<visible>window.isosdvisible|control.isvisible(105)</visible>
+		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(105)|Control.IsVisible(10)|player.seeking</visible>
 	</control>
 
 	<control>
 		<description>Start Time Info</description>
 		<type>label</type>
 		<id>997</id>
-		<posX>215</posX>
-		<posY>667</posY>
+		<posX>235</posX>
+		<posY>675</posY>
 		<label>#currentplaytime</label>
 		<align>left</align>
 		<font>font12</font>
-		<visible>window.isosdvisible|control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking</visible>
+		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(105)|Control.IsVisible(10)|player.seeking</visible>
 	</control>
 
 	<control>
 		<description>End Time Info</description>
 		<type>label</type>
 		<id>998</id>
-		<posX>1152</posX>
-		<posY>667</posY>
+		<posX>1136</posX>
+		<posY>675</posY>
 		<label>#currentremaining</label>
 		<align>right</align>
 		<font>font12</font>
-		<visible>window.isosdvisible|control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking</visible>
+		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(105)|Control.IsVisible(10)|player.seeking</visible>
 	</control>
 
 	<control>
 		<type>label</type>
 		<id>999</id>
 		<description>Pause</description>
-		<posX>611</posX>
-		<posY>663</posY>
+		<posX>575</posX>
+		<posY>323</posY>
 		<height>30</height>
 		<width>144</width>
-		<font>font14</font>
+		<font>font18</font>
 		<align>center</align>
-		<label>Pause</label>
+		<label>19011</label>
+		<visible>!Control.IsVisible(10) + !Control.IsVisible(11) + !Control.IsVisible(12) + [[window.isosdvisible+player.paused]|[!window.isosdvisible+player.paused]]</visible>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>0</id>
+		<posX>539</posX>
+		<posY>292</posY>
+		<height>91</height>
+		<width>217</width>
+		<texture>osd_bg_extraol.png</texture>
 		<visible>!Control.IsVisible(10) + !Control.IsVisible(11) + !Control.IsVisible(12) + [[window.isosdvisible+player.paused]|[!window.isosdvisible+player.paused]]</visible>
 	</control>
 	
@@ -92,11 +126,11 @@
     <control>
 		<description>2x label</description>
 		<type>label</type>
-		<posX>611</posX>
-		<posY>663</posY>
+		<posX>575</posX>
+		<posY>323</posY>
 		<height>30</height>
 		<width>144</width>
-		<font>font14</font>
+		<font>font18</font>
 		<align>center</align>
 		<visible>player.forwarding2x</visible>
 		<label>FFW 2x</label>
@@ -106,11 +140,11 @@
     <control>
 		<description>4x label</description>
 		<type>label</type>
-		<posX>611</posX>
-		<posY>663</posY>
+		<posX>575</posX>
+		<posY>323</posY>
 		<height>30</height>
 		<width>144</width>
-		<font>font14</font>
+		<font>font18</font>
 		<align>center</align>
 		<visible>player.forwarding4x</visible>
 		<label>FFW 4x</label>
@@ -120,11 +154,11 @@
     <control>
 		<description>8x label</description>
 		<type>label</type>
-		<posX>611</posX>
-		<posY>663</posY>
+		<posX>575</posX>
+		<posY>323</posY>
 		<height>30</height>
 		<width>144</width>
-		<font>font14</font>
+		<font>font18</font>
 		<align>center</align>
 		<visible>player.forwarding8x</visible>
 		<label>FFW 8x</label>
@@ -134,11 +168,11 @@
     <control>
 		<description>16x label</description>
 		<type>label</type>
-		<posX>611</posX>
-		<posY>663</posY>
+		<posX>575</posX>
+		<posY>323</posY>
 		<height>30</height>
 		<width>144</width>
-		<font>font14</font>
+		<font>font18</font>
 		<align>center</align>
 		<visible>player.forwarding16x</visible>
 		<label>FFW 16x</label>
@@ -148,11 +182,11 @@
     <control>
 		<description>32x label</description>
 		<type>label</type>
-		<posX>611</posX>
-		<posY>663</posY>
+		<posX>575</posX>
+		<posY>323</posY>
 		<height>30</height>
 		<width>144</width>
-		<font>font14</font>
+		<font>font18</font>
 		<align>center</align>
 		<visible>player.forwarding32x</visible>
 		<label>FFW 32x</label>
@@ -163,11 +197,11 @@
     <control>
 		<description>2x label</description>
 		<type>label</type>
-		<posX>611</posX>
-		<posY>663</posY>
+		<posX>575</posX>
+		<posY>323</posY>
 		<height>30</height>
 		<width>144</width>
-		<font>font14</font>
+		<font>font18</font>
 		<align>center</align>
 		<visible>player.rewinding2x</visible>
 		<label>REW 2x</label>
@@ -177,11 +211,11 @@
     <control>
 		<description>4x label</description>
 		<type>label</type>
-		<posX>611</posX>
-		<posY>663</posY>
+		<posX>575</posX>
+		<posY>323</posY>
 		<height>30</height>
 		<width>144</width>
-		<font>font14</font>
+		<font>font18</font>
 		<align>center</align>
 		<visible>player.rewinding4x</visible>
 		<label>REW 4x</label>
@@ -191,11 +225,11 @@
     <control>
 		<description>8x label</description>
 		<type>label</type>
-		<posX>611</posX>
-		<posY>663</posY>
+		<posX>575</posX>
+		<posY>323</posY>
 		<height>30</height>
 		<width>144</width>
-		<font>font14</font>
+		<font>font18</font>
 		<align>center</align>
 		<visible>player.rewinding8x</visible>
 		<label>REW 8x</label>
@@ -205,11 +239,11 @@
     <control>
 		<description>16x label</description>
 		<type>label</type>
-		<posX>611</posX>
-		<posY>663</posY>
+		<posX>575</posX>
+		<posY>323</posY>
 		<height>30</height>
 		<width>144</width>
-		<font>font14</font>
+		<font>font18</font>
 		<align>center</align>
 		<visible>player.rewinding16x</visible>
 		<label>REW 16x</label>
@@ -219,17 +253,17 @@
     <control>
 		<description>32x label</description>
 		<type>label</type>
-		<posX>611</posX>
-		<posY>663</posY>
+		<posX>575</posX>
+		<posY>323</posY>
 		<height>30</height>
 		<width>144</width>
-		<font>font14</font>
+		<font>font18</font>
 		<align>center</align>
 		<visible>player.rewinding32x</visible>
 		<label>REW 32x</label>
 		<animation effect="fade" time="250">visiblechange</animation>
     </control>
-
+<!--
 	<control>
 		<type>image</type>
 		<id>999</id>
@@ -241,18 +275,18 @@
 		<texture>osd_clock_icon.png</texture>
 		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking</visible>
 	</control>
-
+-->
 	<control>
 		<type>label</type>
 		<id>999</id>
 		<description>Clock</description>
-		<posX>612</posX>
-		<posY>663</posY>
-		<height>30</height>
+		<posX>1049</posX>
+		<posY>585</posY>
 		<width>144</width>
-		<font>font14</font>
-		<align>center</align>
+		<font>Segoe Light22</font>
+		<align>left</align>
 		<label>#time</label>
+		<textcolor>ff85cffe</textcolor>
 		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking</visible>
 	</control>
 

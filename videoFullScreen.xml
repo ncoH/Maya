@@ -10,10 +10,10 @@
 		<description>extra overlay</description>
 		<type>image</type>
 		<id>999</id>
-		<posX>483</posX>
-		<posY>660</posY>
-		<width>400</width>
-		<height>36</height>
+		<posX>539</posX>
+		<posY>292</posY>
+		<height>91</height>
+		<width>217</width>
 		<texture>osd_bg_extraol.png</texture>
 		<visible>Control.IsVisible(10)</visible>
 	</control>
@@ -22,11 +22,11 @@
 		<description>row 1 label</description>
 		<type>label</type>
 		<id>10</id>
-		<posX>483</posX>
-		<posY>663</posY>
+		<posX>442</posX>
+		<posY>323</posY>
 		<height>30</height>
 		<width>400</width>
-		<font>font14</font>
+		<font>font18</font>
 		<align>center</align>
 		<label>-</label>
 		<visible>Control.IsVisible(10)</visible>
@@ -36,11 +36,11 @@
 		<description>row 2 label</description>
 		<type>label</type>
 		<id>11</id>
-		<posX>611</posX>
-		<posY>663</posY>
+		<posX>575</posX>
+		<posY>323</posY>
 		<height>30</height>
 		<width>144</width>
-		<font>font14</font>
+		<font>font18</font>
 		<align>center</align>
 		<label>-</label>
 	</control>
@@ -49,11 +49,11 @@
 		<description>row 3 label</description>
 		<type>label</type>
 		<id>12</id>
-		<posX>611</posX>
-		<posY>663</posY>
+		<posX>575</posX>
+		<posY>323</posY>
 		<height>30</height>
 		<width>144</width>
-		<font>font14</font>
+		<font>font18</font>
 		<align>center</align>
 		<label>-</label>
 	</control>

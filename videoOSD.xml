@@ -9,10 +9,10 @@
 		<description>Description bg</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>191</posX>
-		<posY>558</posY>
-		<width>984</width>
-		<height>117</height>
+		<posX>176</posX>
+		<posY>546</posY>
+		<width>1009</width>
+		<height>177</height>
 		<texture>osd_bg_description2.png</texture>
 		<visible>window.isvisible(11)</visible>
 	</control>
@@ -21,14 +21,14 @@
 		<type>image</type>
 		<description>OSD Background</description>
 		<id>1</id>
-		<posX>179</posX>
-		<posY>648</posY>
-		<width>1008</width>
-		<height>81</height>
+		<posX>188</posX>
+		<posY>664</posY>
+		<width>985</width>
+		<height>47</height>
 		<texture>osd_bg.png</texture>
 		<visible>window.isvisible(11)</visible>
 	</control>
-	
+<!--	
 	<control>
 		<type>image</type>
 		<id>999</id>
@@ -40,18 +40,18 @@
 		<texture>osd_clock_icon.png</texture>
 		<visible>window.isvisible(11)</visible>
 	</control>
-
+-->
 	<control>
 		<type>label</type>
 		<id>999</id>
 		<description>Clock</description>
-		<posX>611</posX>
-		<posY>663</posY>
-		<height>30</height>
+		<posX>1049</posX>
+		<posY>585</posY>
 		<width>144</width>
-		<font>font14</font>
-		<align>center</align>
+		<font>Segoe Light22</font>
+		<align>left</align>
 		<label>#time</label>
+		<textcolor>ff85cffe</textcolor>
 		<visible>window.isvisible(11)</visible>
 	</control>
 
@@ -59,7 +59,7 @@
 		<description>Movie Name</description>
 		<id>0</id>
 		<type>fadelabel</type>
-		<width>770</width>
+		<width>640</width>
 		<height>24</height>
 		<posX>360</posX>
 		<posY>575</posY>
