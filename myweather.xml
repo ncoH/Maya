@@ -157,7 +157,7 @@
 		<width>1366</width>
 		<label>#infoservice.weather.lastupdated.message</label>
 		<align>center</align>
-		<font>Segoe Light14</font>
+		<font>Segoe Light22</font>
 		<visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
 	</control>
 	
