@@ -8,7 +8,7 @@
 		<description>Movie Name</description>
 		<id>0</id>
 		<type>fadelabel</type>
-		<width>770</width>
+		<width>640</width>
 		<height>24</height>
 		<posX>360</posX>
 		<posY>575</posY>
