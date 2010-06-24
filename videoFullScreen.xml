@@ -15,7 +15,7 @@
 		<height>91</height>
 		<width>217</width>
 		<texture>osd_bg_extraol.png</texture>
-		<visible>Control.IsVisible(10)</visible>
+		<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | [window.isvisible(2005) + [window.isosdvisible|control.isvisible(105)]+[player.paused|player.rewinding|player.forwarding]]</visible>
 	</control>
 	
 	<control>
