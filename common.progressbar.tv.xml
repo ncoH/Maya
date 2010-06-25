@@ -40,7 +40,7 @@
 		<description>OSD Background</description>
 		<id>994</id>
 		<posX>188</posX>
-		<posY>664</posY>
+		<posY>665</posY>
 		<width>985</width>
 		<height>47</height>
 		<texture>osd_bg.png</texture>
@@ -54,8 +54,8 @@
 		<type>image</type>
 		<description>OSD Pause Background</description>
 		<id>993</id>
-		<posX>177</posX>
-		<posY>653</posY>
+		<posX>176</posX>
+		<posY>654</posY>
 		<width>1009</width>
 		<height>70</height>
 		<texture>osd_bg_pause.png</texture>
@@ -70,7 +70,7 @@
 		<type>tvprogress</type>
 		<id>993</id>
 		<posX>342</posX>
-		<posY>681</posY>
+		<posY>682</posY>
 		<width>694</width>
 		<height>10</height>
 		<toptexture>-</toptexture>
