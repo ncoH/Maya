@@ -19,7 +19,10 @@
 		<height>91</height>
 		<width>217</width>
 		<texture>osd_bg_extraol.png</texture>
-		<visible>Control.IsVisible(10)</visible>
+		<animation effect="fade" time="300">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>	  
+		<animation effect="fade" time="300">VisibleChange</animation>
+		<visible>player.rewinding|Control.IsVisible(10)|player.forwarding|player.paused</visible>
 	</control>
 	
 	<control>

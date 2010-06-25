@@ -29,6 +29,9 @@
 		<width>1008</width>
 		<height>177</height>
 		<texture>osd_bg_description2.png</texture>
+		<animation effect="fade" time="300">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>	  
+		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>window.isosdvisible</visible>
 	</control>
 
@@ -37,23 +40,29 @@
 		<description>OSD Background</description>
 		<id>994</id>
 		<posX>188</posX>
-		<posY>665</posY>
+		<posY>664</posY>
 		<width>985</width>
 		<height>47</height>
 		<texture>osd_bg.png</texture>
-		<visible>window.isosdvisible</visible>
+		<animation effect="fade" time="300">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>	  
+		<animation effect="fade" time="300">VisibleChange</animation>
+		<visible>window.isosdvisible|control.isvisible(105)+!player.paused</visible>
 	</control>
 
 	<control>
 		<type>image</type>
 		<description>OSD Pause Background</description>
 		<id>993</id>
-		<posX>176</posX>
-		<posY>654</posY>
+		<posX>177</posX>
+		<posY>653</posY>
 		<width>1009</width>
 		<height>70</height>
 		<texture>osd_bg_pause.png</texture>
-		<visible>control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking</visible>
+		<animation effect="fade" time="300">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>	  
+		<animation effect="fade" time="300">VisibleChange</animation>
+		<visible>window.isosdvisible|control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking</visible>
 	</control>
 	
 	<control>
@@ -61,7 +70,7 @@
 		<type>tvprogress</type>
 		<id>993</id>
 		<posX>342</posX>
-		<posY>682</posY>
+		<posY>681</posY>
 		<width>694</width>
 		<height>10</height>
 		<toptexture>-</toptexture>
@@ -87,6 +96,9 @@
 		<toplabel/>
 		<font>font10</font>
 		<textcolor>FF000000</textcolor>
+		<animation effect="fade" time="300">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>	  
+		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>window.isosdvisible|control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking</visible>
 	</control>
 
@@ -98,6 +110,9 @@
 		<posY>675</posY>
 		<label>#currentplaytime</label>
 		<font>font12</font>
+		<animation effect="fade" time="300">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>	  
+		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>window.isosdvisible|control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking</visible>
 	</control>
 
@@ -110,6 +125,9 @@
 		<label>#duration</label>
 		<align>right</align>
 		<font>font12</font>
+		<animation effect="fade" time="300">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>	  
+		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>window.isosdvisible|control.isvisible(105)|player.paused|player.rewinding|player.forwarding|player.seeking</visible>
 	</control>
 
@@ -124,17 +142,9 @@
 		<font>font18</font>
 		<align>center</align>
 		<label>19011</label>
-		<visible>[window.isosdvisible+player.paused]|[!window.isosdvisible+player.paused]</visible>
-	</control>
-	
-	<control>
-		<type>image</type>
-		<id>0</id>
-		<posX>539</posX>
-		<posY>292</posY>
-		<height>91</height>
-		<width>217</width>
-		<texture>osd_bg_extraol.png</texture>
+		<animation effect="fade" time="300">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>	  
+		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>[window.isosdvisible+player.paused]|[!window.isosdvisible+player.paused]</visible>
 	</control>
 	
@@ -280,20 +290,6 @@
 		<animation effect="fade" time="250">visiblechange</animation>
     </control>
 
-<!--
-	<control>
-		<type>image</type>
-		<id>999</id>
-		<description>Clock icon</description>
-		<posX>604</posX>
-		<posY>667</posY>
-		<height>21</height>
-		<width>21</width>
-		<texture>osd_clock_icon.png</texture>
-		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking</visible>
-	</control>
-
--->
 	<control>
 		<type>label</type>
 		<id>999</id>

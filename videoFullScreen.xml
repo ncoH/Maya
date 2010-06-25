@@ -5,7 +5,19 @@
 <allowoverlay>no</allowoverlay>
 <controls>
 	<import>common.progressbar.xml</import>
-	
+
+	<control>
+        <description>dummy to fix images disappearing (MP BUG)</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>2000</posX>
+        <posY>2000</posY>
+        <width>10</width>
+        <height>10</height>
+        <texture>-</texture>
+        <visible>player.forwarding|player.rewinding|player.paused</visible>
+    </control>	
+
 	<control>
 		<description>extra overlay</description>
 		<type>image</type>
@@ -15,9 +27,8 @@
 		<height>91</height>
 		<width>217</width>
 		<texture>osd_bg_extraol.png</texture>
-		<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | [window.isvisible(2005) + [window.isosdvisible|control.isvisible(105)]+[player.paused|player.rewinding|player.forwarding]]</visible>
+		<visible>player.rewinding|Control.IsVisible(10)|player.forwarding|player.paused</visible>
 	</control>
-	
 	<control>
 		<description>row 1 label</description>
 		<type>label</type>
@@ -260,6 +271,9 @@
 		<type>image</type>
 		<id>999</id>
 		<texture>osd_expand_icon.png</texture>
+		<animation effect="fade" time="300">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>	  
+		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>Control.HasFocus(990) + window.isosdvisible</visible>
 	</control>
 	
@@ -272,8 +286,10 @@
 		<type>image</type>
 		<id>999</id>
 		<texture>osd_collapse_icon.png</texture>
+		<animation effect="fade" time="300">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>	  
+		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>!Control.HasFocus(990) + window.isosdvisible</visible>
 	</control>
-
 </controls>
 </window>
