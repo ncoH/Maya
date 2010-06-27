@@ -14,9 +14,6 @@
 		<height>177</height>
 		<texture>osd_bg_description2.png</texture>
 		<visible>window.isosdvisible</visible>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
 	</control>
 	
 	<control>
@@ -29,9 +26,6 @@
 		<posY>575</posY>
 		<font>Segoe Light18</font>
 		<label>#Play.Current.Title</label>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
 	</control>
 	
 	<control>
@@ -44,9 +38,6 @@
 		<font>Segoe Light14</font>
 		<textcolor>ff85cffe</textcolor>
 		<label>#Play.Current.Genre - #Play.Current.Year</label>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
 	</control>
 	
 	<control>
@@ -60,9 +51,6 @@
 		<align>left</align>
 		<label>#time</label>
 		<textcolor>ff85cffe</textcolor>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking</visible>
 	</control>
 
@@ -78,9 +66,6 @@
      	<centered>yes</centered>
 		<texture>#Play.Current.Thumb</texture>
 		<keepaspectratio>yes</keepaspectratio>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>window.isosdvisible</visible>
 	</control>
 
@@ -255,9 +240,6 @@
 		<type>image</type>
 		<id>999</id>
 		<texture>osd_expand_icon.png</texture>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>Control.HasFocus(990) + window.isosdvisible</visible>
 	</control>
 	
@@ -270,9 +252,6 @@
 		<type>image</type>
 		<id>999</id>
 		<texture>osd_collapse_icon.png</texture>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>!Control.HasFocus(990) + window.isosdvisible</visible>
 	</control>
 

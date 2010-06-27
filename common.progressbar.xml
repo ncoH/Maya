@@ -17,9 +17,6 @@
 		<width>985</width>
 		<height>47</height>
 		<texture>osd_bg.png</texture>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | [window.isvisible(2005) + [window.isosdvisible|control.isvisible(105)]]</visible>
 	</control>
 
@@ -32,10 +29,7 @@
 		<width>1009</width>
 		<height>70</height>
 		<texture>osd_bg_pause.png</texture>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
-		<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | [window.isvisible(2005) + [window.isosdvisible|control.isvisible(105)]] + [player.rewinding|player.forwarding|player.paused|player.seeking]]</visible>
+ 		<visible>Control.IsVisible(10) | Control.IsVisible(11) | Control.IsVisible(12) | [window.isvisible(2005) + [window.isosdvisible|control.isvisible(105)]] + [player.rewinding|player.forwarding|player.paused|player.seeking]]</visible>
 	</control>
 
 	<control>
@@ -51,9 +45,6 @@
 		<lefttexture>osd_progress_left.png</lefttexture>
 		<midtexture>osd_progress_mid.png</midtexture>
 		<righttexture>osd_progress_right.png</righttexture>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(105)|Control.IsVisible(10)|player.seeking</visible>
 	</control>
 
@@ -66,9 +57,6 @@
 		<label>#currentplaytime</label>
 		<align>left</align>
 		<font>font12</font>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(105)|Control.IsVisible(10)|player.seeking</visible>
 	</control>
 
@@ -81,9 +69,6 @@
 		<label>#currentremaining</label>
 		<align>right</align>
 		<font>font12</font>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(105)|Control.IsVisible(10)|player.seeking</visible>
 	</control>
 
@@ -98,9 +83,6 @@
 		<font>font18</font>
 		<align>center</align>
 		<label>19011</label>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>!Control.IsVisible(10) + !Control.IsVisible(11) + !Control.IsVisible(12) + [[window.isosdvisible+player.paused]|[!window.isosdvisible+player.paused]]</visible>
 	</control>
 	

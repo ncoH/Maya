@@ -271,9 +271,6 @@
 		<type>image</type>
 		<id>999</id>
 		<texture>osd_expand_icon.png</texture>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>Control.HasFocus(990) + window.isosdvisible</visible>
 	</control>
 	
@@ -286,9 +283,6 @@
 		<type>image</type>
 		<id>999</id>
 		<texture>osd_collapse_icon.png</texture>
-		<animation effect="fade" time="300">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>	  
-		<animation effect="fade" time="300">VisibleChange</animation>
 		<visible>!Control.HasFocus(990) + window.isosdvisible</visible>
 	</control>
 </controls>
