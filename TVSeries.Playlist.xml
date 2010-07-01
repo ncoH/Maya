@@ -3,12 +3,63 @@
   <id>9813</id>
   <defaultcontrol>23</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <define>#header.label:136</define>
-  <define>#header.image:tvseries_logo.png</define>
-  <define>#header.hover:-</define>
   <controls>
   
-    <import>common.window.video.xml</import>
+    <control>
+		<description>Background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1366</width>
+		<height>768</height>
+		<texture>background.png</texture>
+    </control>
+	
+    <control>
+		<type>label</type>
+		<description>Subtitle</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>#TVSeries.Translation.Series_Plural.Label playlist</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+    </control>
+ 
+    <control>
+		<type>fadelabel</type>
+		<description>Title</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<id>640</id>
+		<posX>555</posX>
+		<posY>142</posY>
+		<width>700</width>
+		<font>Segoe Light22</font>
+		<label>#selecteditem</label>
+		<valign>middle</valign>
+    </control>
+  
+ 	<control>
+		<description>Media Count Label</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<label>#itemcount</label>
+		<id>0</id>
+		<posX>1216</posX>
+		<posY>690</posY>
+		<align>right</align>
+		<textcolor>6aa5cb</textcolor>
+    </control>
+ 
     <import>common.time.xml</import>
 
 	<control>
@@ -36,8 +87,48 @@
 		<texture>listcontrol_bg_info.png</texture>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<visible>facadeview.playlist</visible>
 	</control>
+
+    <control>
+		<type>image</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>Logos</description>
+		<id>66</id>
+		<posX>710</posX>
+		<posY>690</posY>
+		<width>650</width>
+		<height>29</height>
+		<texture>#TVSeries.Logos</texture>
+		<keepaspectratio>yes</keepaspectratio>
+    </control>	
+
+	<control>
+		<type>image</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<id>0</id>
+		<posX>625</posX>
+		<posY>691</posY>
+		<width>140</width>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\frame_imdb.png</texture>
+		<align>left</align>
+	</control>
+
+	<control>      
+		<type>label</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<id>0</id>
+		<posX>658</posX>
+		<posY>693</posY>
+		<width>400</width>
+		<font>font12</font>
+		<textcolor>ffffff</textcolor>
+		<label>#TVSeries.Episode.InfoPanelLine1Value</label>
+		<textcolor>ffffff</textcolor>
+    </control>
 	
 	<control>
 		<type>actiongroup</type>
@@ -425,6 +516,8 @@
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
+	
+    <import>common.overlay.xml</import>
 	
   </controls>
 </window>
