@@ -730,12 +730,12 @@
 		<animation effect="fade" time="100">WindowClose</animation>
       <type>image</type>
       <id>0</id>
-      <posX>924</posX>
-	  <posY>565</posY>
+      <posX>1025</posX>
+	  <posY>605</posY>
       <width>45</width>
       <height>25</height>
       <texture>watched_icon.png</texture>
-      <visible>[[Control.IsVisible(1237)+Control.IsVisible(1242)]|Control.IsVisible(1238)]+facadeview.list+Control.IsVisible(1243)+!Control.IsVisible(1244)</visible>
+      <visible>[[Control.IsVisible(1237)+Control.IsVisible(1242)]|Control.IsVisible(1238)]+facadeview.list+!Control.IsVisible(1244)</visible>
     </control>
     <control>
       <description>Not Available and Un-Watched Icon</description>
@@ -744,11 +744,11 @@
       <type>image</type>
       <id>0</id>
       <posX>924</posX>
-	  <posY>565</posY>
+	  <posY>605</posY>
       <width>45</width>
       <height>25</height>
       <texture>unwatched_icon.png</texture>
-      <visible>[[Control.IsVisible(1237)+Control.IsVisible(1242)]|Control.IsVisible(1238)]+facadeview.list+!Control.IsVisible(1243)+!Control.IsVisible(1244)</visible>
+      <visible>[[Control.IsVisible(1237)+Control.IsVisible(1242)]|Control.IsVisible(1238)]+facadeview.list+!Control.IsVisible(1244)</visible>
     </control>
 
    <!-- Watched Icons for Series Poster View and Season View in Widebanners Layout -->
@@ -789,7 +789,7 @@
       <width>45</width>
       <height>25</height>
       <texture>watched_icon.png</texture>
-      <visible>[[Control.IsVisible(1237)+!Control.IsVisible(1242)]|!Control.IsVisible(1238)]+facadeview.largeicons+Control.IsVisible(1243)+!Control.IsVisible(1244)</visible>
+      <visible>[[Control.IsVisible(1237)+!Control.IsVisible(1242)]|!Control.IsVisible(1238)]+facadeview.largeicons+!Control.IsVisible(1244)</visible>
     </control>
     <control>
       <description>Not Available and Un-Watched Icon</description>
@@ -802,7 +802,7 @@
       <width>45</width>
       <height>25</height>
       <texture>unwatched_icon.png</texture>
-      <visible>[[Control.IsVisible(1237)+!Control.IsVisible(1242)]|!Control.IsVisible(1238)]+facadeview.largeicons+!Control.IsVisible(1243)+!Control.IsVisible(1244)</visible>
+      <visible>[[Control.IsVisible(1237)+!Control.IsVisible(1242)]|!Control.IsVisible(1238)]+facadeview.largeicons+!Control.IsVisible(1244)</visible>
     </control>
 
     <!-- *********************** EPISODE INFO LABELS ( LIST LAYOUT) ************************** -->
