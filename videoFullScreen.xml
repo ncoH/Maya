@@ -17,7 +17,7 @@
         <texture>-</texture>
         <visible>player.forwarding|player.rewinding|player.paused</visible>
     </control>	
-
+	
 	<control>
 		<description>row 1 label</description>
 		<type>label</type>

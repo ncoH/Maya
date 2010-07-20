@@ -51,7 +51,7 @@
 		<align>left</align>
 		<label>#time</label>
 		<textcolor>ff85cffe</textcolor>
-		<visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking</visible>
+		<visible>window.isosdvisible+[player.playing|player.paused]+!player.rewinding+!player.forwarding+!player.seeking</visible>
 	</control>
 
 	<control>
