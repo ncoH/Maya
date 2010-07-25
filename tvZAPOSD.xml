@@ -11,8 +11,8 @@
 		<id>0</id>
 		<posX>180</posX>
 		<posY>583</posY>
-		<width>516</width>
-		<height>186</height>
+		<width>566</width>
+		<height>177</height>
 		<texture>tv_zaposd_bg.png</texture>
 	</control>
 
@@ -20,8 +20,8 @@
 		<description>TV Logo</description>
 		<type>image</type>
 		<id>10</id>
-		<posX>213</posX>
-		<posY>599</posY>
+		<posX>201</posX>
+		<posY>614</posY>
 		<width>70</width>
 		<height>70</height>
 		<texture>#TV.View.thumb</texture>
@@ -33,9 +33,9 @@
       <type>textbox</type>
       <id>36</id>
       <posX>302</posX>
-	  <width>354</width>
+	  <width>420</width>
 	  <height>30</height>
-      <posY>590</posY>
+      <posY>605</posY>
       <label>-</label>
       <font>Segoe Light18</font>
     </control>
@@ -45,7 +45,7 @@
 		<type>label</type>
 		<id>35</id>
 		<posX>302</posX>
-		<posY>633</posY>
+		<posY>648</posY>
 		<width>354</width>
 		<label>-</label>
 		<font>Segoe Light14</font>
@@ -56,7 +56,7 @@
       <type>label</type>
       <id>101</id>
 		<posX>214</posX>
-		<posY>704</posY>
+		<posY>711</posY>
       <label>#TV.View.start</label>
       <align>left</align>
      <font>font12</font>
@@ -67,8 +67,8 @@
       <description>End Time Info</description>
       <type>label</type>
       <id>102</id>
-      <posX>667</posX>
-      <posY>704</posY>
+      <posX>716</posX>
+      <posY>711</posY>
       <label>#TV.View.stop</label>
       <align>right</align>
       <font>font12</font>
@@ -78,10 +78,10 @@
       <description>Progress Bar</description>
       <type>progress</type>
       <id>1</id>
-		<posX>179</posX>
-		<posY>740</posY>
-      <width>494</width>
-      <height>12</height>
+		<posX>266</posX>
+		<posY>718</posY>
+      <width>388</width>
+      <height>10</height>
       <texturebg>-</texturebg>
 	  <lefttexture>osd_progress_left.png</lefttexture>
 		<midtexture>osd_progress_mid.png</midtexture>
