@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>6622</id>
+    <defaultcontrol>2</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <define>#header.label:Music Trivia</define>
+    <controls>
+        <import>common.window.title.xml</import>
+        <control>
+            <id>2</id>
+            <description>Start Button</description>
+            <type>button</type>
+            <onleft>2</onleft>
+            <onright>50</onright>
+            <onup>17</onup>
+            <ondown>3</ondown>
+            <posX>60</posX>
+            <posY>140</posY>
+            <textureFocus>menu_list_focus.png</textureFocus>
+            <label>#MusicTrivia.Translation.NewGame.Label</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>3</id>
+            <description>Stop</description>
+            <type>button</type>
+            <onleft>3</onleft>
+            <onright>50</onright>
+            <onup>2</onup>
+            <ondown>4</ondown>
+            <posX>60</posX>
+            <posY>180</posY>
+            <textureFocus>menu_list_focus.png</textureFocus>
+            <label>#MusicTrivia.Translation.StopGame.Label</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>4</id>
+            <description>Tries</description>
+            <type>selectbutton</type>
+            <onleft>4</onleft>
+            <onright>50</onright>
+            <onup>3</onup>
+            <ondown>5</ondown>
+            <posX>60</posX>
+            <posY>220</posY>
+            <textureFocus>menu_list_focus.png</textureFocus>
+            <label/>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>5</id>
+            <description>Time</description>
+            <type>selectbutton</type>
+            <onleft>5</onleft>
+            <onright>50</onright>
+            <onup>4</onup>
+            <ondown>901</ondown>
+            <posX>60</posX>
+            <posY>260</posY>
+            <label/>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>901</id>
+            <description>Options</description>
+            <type>button</type>
+            <onleft>901</onleft>
+            <onright>50</onright>
+            <onup>5</onup>
+            <ondown>2</ondown>
+            <posX>60</posX>
+            <posY>300</posY>
+            <action>106</action>
+            <textureFocus>menu_list_focus.png</textureFocus>
+            <label>#MusicTrivia.Translation.GameSetup.Label</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>11</id>
+            <description>Timer value label</description>
+            <type>label</type>
+            <visible>String.Contains(#MusicTrivia.Game.InProgress,true)</visible>
+            <posX>523</posX>
+            <posY>184</posY>
+            <font>Segoe Light36</font>
+            <textcolor>ffffffff</textcolor>
+            <align>RIGHT</align>
+            <label/>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>11</id>
+            <description>Points label</description>
+            <type>label</type>
+            <visible>String.Contains(#MusicTrivia.Game.InProgress,true)</visible>
+            <posX>400</posX>
+            <posY>280</posY>
+            <font>font24</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>#MusicTrivia.Translation.Points.Label:</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>12</id>
+            <description>Points value label</description>
+            <type>label</type>
+            <visible>String.Contains(#MusicTrivia.Game.InProgress,true)</visible>
+            <posX>570</posX>
+            <posY>280</posY>
+            <font>font24</font>
+            <textcolor>ffffffff</textcolor>
+            <align>RIGHT</align>
+            <label/>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>510</id>
+            <description>Player 1 label</description>
+            <type>label</type>
+            <posX>75</posX>
+            <posY>360</posY>
+            <font>font18</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>#MusicTrivia.Translation.PlayerOne.Label</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>511</id>
+            <description>P1 correct label</description>
+            <type>label</type>
+            <visible/>
+            <posX>86</posX>
+            <posY>404</posY>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>#MusicTrivia.Translation.CorrectClean.Label:</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>512</id>
+            <description>p1 correct</description>
+            <type>label</type>
+            <visible/>
+            <posX>195</posX>
+            <posY>404</posY>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label/>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>513</id>
+            <description>p1 wrong label</description>
+            <type>label</type>
+            <visible/>
+            <posX>86</posX>
+            <posY>436</posY>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>#MusicTrivia.Translation.WrongClean.Label:</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>514</id>
+            <description>P1 wrong</description>
+            <type>label</type>
+            <visible/>
+            <posX>195</posX>
+            <posY>436</posY>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label/>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>515</id>
+            <description>P1 score</description>
+            <type>label</type>
+            <visible/>
+            <posX>86</posX>
+            <posY>472</posY>
+            <font>font18</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>#MusicTrivia.Translation.Score.Label:</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>516</id>
+            <description>P1 point</description>
+            <type>label</type>
+            <visible/>
+            <posX>205</posX>
+            <posY>472</posY>
+            <font>font18</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label/>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>520</id>
+            <description>Player 2 label</description>
+            <type>label</type>
+            <posX>75</posX>
+            <posY>525</posY>
+            <font>font18</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>#MusicTrivia.Translation.PlayerTwo.Label</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>521</id>
+            <description>p2 correct: label</description>
+            <type>label</type>
+            <visible/>
+            <posX>87</posX>
+            <posY>570</posY>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>#MusicTrivia.Translation.CorrectClean.Label:</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>522</id>
+            <description>p2 number of correct label</description>
+            <type>label</type>
+            <visible/>
+            <posX>195</posX>
+            <posY>570</posY>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label/>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>523</id>
+            <description>p2 wrong: label</description>
+            <type>label</type>
+            <visible/>
+            <posX>88</posX>
+            <posY>601</posY>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>#MusicTrivia.Translation.WrongClean.Label:</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>524</id>
+            <description>p2 number wrong label</description>
+            <type>label</type>
+            <visible/>
+            <posX>195</posX>
+            <posY>601</posY>
+            <font>font13</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label/>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>525</id>
+            <description>p2 score: label</description>
+            <type>label</type>
+            <visible/>
+            <posX>88</posX>
+            <posY>637</posY>
+            <font>font18</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>#MusicTrivia.Translation.Score.Label:</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>526</id>
+            <description>p2 number score label</description>
+            <type>label</type>
+            <visible/>
+            <posX>205</posX>
+            <posY>637</posY>
+            <font>font18</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label/>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>50</id>
+            <description>scheduler recordings listcontrol</description>
+            <type>listcontrol</type>
+            <onleft>3</onleft>
+            <onright>50</onright>
+            <posX>695</posX>
+            <posY>200</posY>
+            <width>600</width>
+            <height>521</height>
+            <font>font14</font>
+            <font2>font10</font2>
+            <font3>font11</font3>
+            <textXOff>27</textXOff>
+            <textXOff2>0</textXOff2>
+            <textXOff3>99</textXOff3>
+            <textYOff>11</textYOff>
+            <textYOff2>88</textYOff2>
+            <textYOff3>40</textYOff3>
+            <IconXOff>22</IconXOff>
+            <IconYOff>16</IconYOff>
+            <textcolor2>ffa9d0f7</textcolor2>
+            <textcolor3>ffa9d0f7</textcolor3>
+            <itemHeight>60</itemHeight>
+            <itemWidth>60</itemWidth>
+            <textureHeight>100</textureHeight>
+            <keepaspectratio>yes</keepaspectratio>
+        </control>
+        <control>
+            <id>500</id>
+            <description>DUMMY BUTTON - optional for hidden menu visibility</description>
+            <type>button</type>
+            <onleft>2</onleft>
+            <onright>50</onright>
+            <onup>500</onup>
+            <ondown>500</ondown>
+            <visible>no</visible>
+            <posX>540</posX>
+            <posY>0</posY>
+            <width>800</width>
+            <height>720</height>
+            <textureFocus>-</textureFocus>
+            <textureNoFocus>-</textureNoFocus>
+            <label/>
+        </control>
+        <import>common.time.xml</import>
+    </controls>
+</window>
