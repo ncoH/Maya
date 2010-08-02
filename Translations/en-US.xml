@@ -31,7 +31,8 @@
 	
 	<!-- M -->
 	<string Field="mylyrics">My Lyrics</string>
-
+	<string Field="music.songs">Songs:</string>
+	
 	<!-- N -->
 
 	<!-- O -->

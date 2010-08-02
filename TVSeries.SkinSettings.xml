@@ -11,8 +11,13 @@
 	-->
 	
 	<!-- version may be useful for logging purposes and/or future upgrades -->
-	<version>1.1.0.0</version>
+	<version>1.3.0.0</version>
 
+	<!-- Skin Defines -->
+	<defines>		
+        <property key="blah">false</property>	
+    </defines>
+	
 	<!-- 
 		Possible Layout Types supported by the plugin, the defined layout will be what is loaded by default for the corresponding view:	
 		
@@ -34,6 +39,44 @@
 				layout="List"
 	
 	-->
+	
+	<!-- Position of 'NEW' stamp in thumb views -->
+	<!-- Draws 'tvseries_newlabel.png' on thumbnail -->
+	<thumbstamp>
+		<widebanners>
+			<posx>0</posx>
+			<posy>-5</posy>
+		</widebanners>
+		<posters>
+			<posx>0</posx>
+			<posy>-5</posy>
+		</posters>
+	</thumbstamp>
+	
+	<!-- Define the images loaded in Video OSD -->
+	<!-- Note: You can reorder the items to set priority -->
+	<!-- Values of custom tag is a path to custom image, where you could use:
+			thumbs\ relative path - <![CDATA[thumbs\Media\custom.png]]>,
+			skin\ relative path - <![CDATA[skin\*SKIN NAME*\Media\custom.png]]>,
+			absolute path - <![CDATA[C:\Media\custom.png]]>
+			with any of episode/season/series database fields (<Series.ID> for example)
+	-->
+	<videoosdimages import="true">
+		<episode use="true" />
+		<series use="true" />		
+		<season use="true" />		
+		<!--<custom use="false"><![CDATA[skin\StreamedMP\Media\custom.png]]></custom>-->
+	</videoosdimages>
+	
+	<!-- Define the images loaded in properties during play -->	
+	<videoplayimages import="true">
+		<property>
+			<name>TVSeries.Play.ClearArt</name>
+			<value><![CDATA[thumbs\ClearArt\<Series.ID>.png]]></value>
+		</property>
+		<!-- You can define multiple properties -->
+	</videoplayimages>
+	
 	
 	<layouts>
 		<group List="true" SmallIcons="true" />
@@ -112,6 +155,7 @@
 <Enabled>1<Format>A_AAC<FormatAs>AAC
 <Enabled>1<Format>A_AC3<FormatAs>AC3
 <Enabled>1<Format><Series.RatingPath><FormatAs>TVSeries\starEval(10*Round(<Series.Rating>*2)/2).png
+<Enabled>1<Format><Series.LogoPath><FormatAs><Series.ID>.png
 <Enabled>1<Format>SeriesEpisodeCount<FormatAs><Series.EpisodeCount> Episodes
 <Enabled>1<Format>SeasonEpisodeCount<FormatAs><Season.EpisodeCount> Episodes
 <Enabled>1<Format>SeriesWatchedAndUnWatched<FormatAs>Eval(PrettyNumber100(<Series.EpisodesUnWatched>))        Eval(PrettyNumber100(<Series.EpisodeCount>-<Series.EpisodesUnWatched>))

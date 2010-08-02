@@ -1,57 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <window>
-<id>2901</id>
-<defaultcontrol>990</defaultcontrol>
-<allowoverlay>no</allowoverlay>
-<controls>
-
-	<control>
-      <description>TVSeries ClearArt</description>
+  <id>4759</id>
+  <defaultcontrol>213</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#percentage:#percentage</define>
+  <define>#currentplaytime:#currentplaytime</define>
+  <define>#currentremaining:#currentremaining</define>
+  <controls>
+    <control>
+      <description>background</description>
       <type>image</type>
-      <id>0</id>
-      <posX>915</posX>
-      <posY>432</posY>
-      <width>250</width>
-      <height>126</height>
-      <texture>#TVSeries.Play.ClearArt</texture>	  
-    </control>
-
-	<control>
-		<description>Description bg</description>
-		<type>image</type>
-		<id>992</id>
+      <id>992</id>
 		<posX>176</posX>
 		<posY>546</posY>
 		<width>1009</width>
 		<height>177</height>
-		<texture>osd_bg_description2.png</texture>
-		<visible>window.isosdvisible</visible>
-	</control>
-	
-	<control>
-		<description>Movie Name</description>
-		<id>0</id>
-		<type>fadelabel</type>
-		<width>640</width>
-		<height>24</height>
-		<posX>360</posX>
-		<posY>575</posY>
-		<font>Segoe Light18</font>
-		<label>#Play.Current.Title</label>
-	</control>
-	
-	<control>
-		<description>Channel Name and time</description>
-		<id>0</id>
-		<type>fadelabel</type>
-		<width>770</width>
-		<posX>360</posX>
-		<posY>613</posY>
-		<font>Segoe Light14</font>
-		<textcolor>ff85cffe</textcolor>
-		<label>#Play.Current.Genre - #Play.Current.Year</label>
-	</control>
-	
+      <texture>osd_bg_description2.png</texture>
+    </control>
 	<control>
 		<type>label</type>
 		<id>999</id>
@@ -63,24 +28,42 @@
 		<align>left</align>
 		<label>#time</label>
 		<textcolor>ff85cffe</textcolor>
-		<visible>window.isosdvisible+[player.playing|player.paused]+!player.rewinding+!player.forwarding+!player.seeking</visible>
 	</control>
-
+    <control>
+      <description>Current Logo</description>
+      <type>image</type>
+      <id>999</id>
+	  <posX>210</posX>
+	  <posY>566</posY>
+	  <width>120</width>
+	  <height>80</height>
+	  <align>center</align>
+      <centered>yes</centered>
+      <texture>#Play.Current.Thumb</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <description>Title Name</description>
+      <id>35</id>
+		<type>fadelabel</type>
+		<width>640</width>
+		<height>24</height>
+		<posX>360</posX>
+		<posY>575</posY>
+		<font>Segoe Light18</font>
+      <label>#Play.Current.Title</label>
+    </control>
 	<control>
-		<description>Video Logo</description>
-		<type>image</type>
-		<id>999</id>
-		<posX>210</posX>
-		<posY>566</posY>
-		<width>120</width>
-		<height>80</height>
-		<align>center</align>
-     	<centered>yes</centered>
-		<texture>#Play.Current.Thumb</texture>
-		<keepaspectratio>yes</keepaspectratio>
-		<visible>window.isosdvisible</visible>
+		<description>Channel Name and time</description>
+		<id>0</id>
+		<type>fadelabel</type>
+		<width>770</width>
+		<posX>360</posX>
+		<posY>613</posY>
+		<font>Segoe Light14</font>
+		<textcolor>ff85cffe</textcolor>
+		<label>#Play.Current.Year</label>
 	</control>
-
 	<control>
 		<description>Plot</description>
 		<type>textboxscrollup</type>
@@ -730,7 +713,5 @@
       <spinPosY>600</spinPosY>
       <visible>no</visible>
     </control>
-    <import>common.progressbar.xml</import>
-
-</controls>
+  </controls>
 </window>

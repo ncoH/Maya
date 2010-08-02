@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+    <control>
+      <description>GROUP: RecentlyAdded Series</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <!-- CHANGE the ID value (represented as xxxx) of isvisible(xxxx) to the value of the ID in basichome you want this to show.
+           If you want it to show on multiple you can chain them like so; control.isvisible(xxxx) + control.isvisible(xxxx2) etc. -->
+      <visible>control.isvisible(1001) + !string.equals(#infoservice.recentlyAdded.series1.thumb,) + string.contains(#maya.recentlyAddedSeries,yes)</visible>
+ 		<animation effect="fade" time="1000">WindowOpen</animation>
+		<animation effect="fade" time="1000">WindowClose</animation>
+      <control>
+        <description>Series 1 thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>896</posX>
+        <posY>89</posY>
+        <height>147</height>
+		<width>113</width>
+        <texture>#infoservice.recentlyAdded.series1.thumb</texture>
+      </control>
+      <control>
+        <description>Series 1 Rounded Cover</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>877</posX>
+        <posY>71</posY>
+        <height>181</height>
+        <width>151</width>
+        <texture>blackborders_video.png</texture>
+      </control>      
+      <control>
+        <description>Series 1 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>98</posY>
+        <width>258</width>
+        <label>#infoservice.recentlyAdded.series1.title</label>
+        <font>Segoe Light18</font>
+        <textcolor>85cfff</textcolor>
+      </control>
+      <control>
+        <description>Series 1 title</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>151</posY>
+        <width>255</width>
+        <label>#infoservice.recentlyAdded.series1.episodetitle</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Series 1 episode</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>206</posY>
+        <width>255</width>
+        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #infoservice.recentlyAdded.series1.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #infoservice.recentlyAdded.series1.episodenumber</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Series 2 thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>896</posX>
+        <posY>288</posY>
+        <height>147</height>
+		<width>113</width>		
+        <texture>#infoservice.recentlyAdded.series2.thumb</texture>
+      </control>
+      <control>
+        <description>Series 2 Rounded Cover</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>877</posX>
+        <posY>270</posY>
+        <height>181</height>
+        <width>151</width>
+        <texture>blackborders_video.png</texture>
+      </control>      
+      <control>
+        <description>Series 2 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>299</posY>
+        <width>258</width>
+        <label>#infoservice.recentlyAdded.series2.title</label>
+        <font>Segoe Light18</font>
+        <textcolor>85cfff</textcolor>
+      </control>
+      <control>
+        <description>Series 2 title</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>352</posY>
+        <width>255</width>
+        <label>#infoservice.recentlyAdded.series2.episodetitle</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Series 2 episode</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>405</posY>
+        <width>258</width>
+        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #infoservice.recentlyAdded.series2.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #infoservice.recentlyAdded.series2.episodenumber</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Series 3 thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>896</posX>
+        <posY>488</posY>
+        <height>147</height>
+		<width>113</width>
+        <texture>#infoservice.recentlyAdded.series3.thumb</texture>
+      </control>
+      <control>
+        <description>Series 3 Rounded Cover</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>877</posX>
+        <posY>470</posY>
+        <height>181</height>
+        <width>151</width>
+        <texture>blackborders_video.png</texture>
+      </control>      
+      <control>
+        <description>Series 3 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>498</posY>
+        <width>255</width>
+        <label>#infoservice.recentlyAdded.series3.title</label>
+        <font>Segoe Light18</font>
+        <textcolor>85cfff</textcolor>
+      </control>
+      <control>
+        <description>Series 3 title</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>551</posY>
+        <width>255</width>
+        <label>#infoservice.recentlyAdded.series3.episodetitle</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Series 3 episode</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>604</posY>
+        <width>255</width>
+        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #infoservice.recentlyAdded.series3.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #infoservice.recentlyAdded.series3.episodenumber</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+    </control>
+  </controls>
+</window>

@@ -13,13 +13,13 @@ multiple view modes.
   are parameters to give the skinner a tiny bit more control over the presentation.
 -->
 <define>#largeicons.available:true</define><!-- true if this skin implements the largeicons view -->
-<define>#largeicons.backdrop.used:false</define><!-- true if backdrop (fanart) should be displayed in this view -->
+<define>#largeicons.backdrop.used:true</define><!-- true if backdrop (fanart) should be displayed in this view -->
 <define>#smallicons.available:true</define><!-- Set to true if this skin implements the smallicons view -->
-<define>#smallicons.backdrop.used:false</define><!-- true if backdrop (fanart) should be displayed in this view -->
+<define>#smallicons.backdrop.used:true</define><!-- true if backdrop (fanart) should be displayed in this view -->
 <define>#list.available:true</define><!-- Set to true if this skin implements the list view -->
-<define>#list.backdrop.used:false</define><!-- true if backdrop (fanart) should be displayed in this view -->
+<define>#list.backdrop.used:true</define><!-- true if backdrop (fanart) should be displayed in this view -->
 <define>#filmstrip.available:true</define><!-- Set to true if this skin implements the filmstrip view -->
-<define>#filmstrip.backdrop.used:false</define><!-- true if backdrop (fanart) should be displayed in this view -->
+<define>#filmstrip.backdrop.used:true</define><!-- true if backdrop (fanart) should be displayed in this view -->
 <define>#details.backdrop.used:true</define><!-- true if backdrop (fanart) should be displayed in this view -->
 <define>#categories.backdrop.used:true</define>
 <controls>
@@ -54,22 +54,17 @@ multiple view modes.
 	</control>
 
 	<!--            :: BACKGROUNDS :: MOVIE BACKDROP :: OVERLAYS ::            -->
+	
+	<import>movingpictures.fanart.xml</import>
 	<control>
 		<description>BG</description>
 		<type>image</type>
 		<id>0</id>
 		<width>1366</width>
 		<height>768</height>
+		<visible>Control.IsVisible(50) + !string.contains(#maya.fanart.MovingPictures,yes)</visible>
 	</control>
 	
-	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<visible>Control.IsVisible(51)</visible>
-	</control>
 	
 	<control>
 		<description>BG</description>
@@ -78,7 +73,7 @@ multiple view modes.
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_thumbs.png</texture>
-		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<visible>[[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)] + !string.contains(#maya.fanart.MovingPictures,yes)</visible>
 	</control>
 
 	<control>
@@ -88,7 +83,7 @@ multiple view modes.
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_filmstrip.png</texture>
-		<visible>facadeview.filmstrip+Control.IsVisible(50)</visible>
+		<visible>[facadeview.filmstrip+Control.IsVisible(50)] + !string.contains(#maya.fanart.MovingPictures,yes)</visible>
 	</control>
 	
 	<control>
@@ -102,7 +97,7 @@ multiple view modes.
 		<width>359</width>
 		<height>482</height>
 		<texture>listcontrol_bg_small.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list+Control.IsVisible(50)] + !string.contains(#maya.fanart.MovingPictures,yes)</visible>
 	</control>
 	
 	<control>
@@ -116,34 +111,9 @@ multiple view modes.
 		<width>359</width>
 		<height>51</height>
 		<texture>listcontrol_bg_info_small.png</texture>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
+		<visible>[facadeview.list+Control.IsVisible(50)] + !string.contains(#maya.fanart.MovingPictures,yes)</visible>
 	</control>
 
-    <control>
-      <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>1366</width>
-      <height>768</height>
-      <texture>#MovingPictures.Backdrop</texture>
-	  <animation effect="fade" time="300">visible</animation>
-      <animation effect="fade" time="300" delay="300">hidden</animation>
-    </control>
-    <control>
-      <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
-      <type>image</type>
-      <id>11</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>1366</width>
-      <height>768</height>
-      <texture>#MovingPictures.Backdrop2</texture>
-	  <animation effect="fade" time="300">visible</animation>
-      <animation effect="fade" time="300" delay="300">hidden</animation>
-    </control>
-	
 <import>common.time.xml</import>
 	
 	<control>

@@ -8,7 +8,7 @@
 	<!-- # -->
 
 	<!-- A -->
-
+	<string Field="tv.recordings">Aufnahmen</string>
 	<!-- B -->
 
 	<!-- C -->
@@ -31,7 +31,8 @@
 	
 	<!-- M -->
 	<string Field="mylyrics">Liedtext</string>
-
+	<string Field="music.songs">Lieder:</string>
+	
 	<!-- N -->
 
 	<!-- O -->
@@ -40,6 +41,8 @@
 	<string Field="weather.toggleday">OK dr&#252;cken um Tag zu &#228;ndern</string>
 	
 	<!-- R -->
+	<string Field="recentlyAdded.Season">Staffel</string>
+	<string Field="recentlyAdded.Episode">Folge</string>
 
 	<!-- S -->
 

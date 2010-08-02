@@ -6,10 +6,12 @@
   <allowoverlay>yes</allowoverlay>
   <controls>    
 	
+	<import>TVSeries.fanart.enable.xml</import>
 	<!-- Import Dummy Controls to handle visibility -->
 	<import>TVSeries.dummy.xml</import>
   
     <!-- ********************** BACKGROUNDS************************************** -->
+	
     <control>
 		<description>Background</description>
 		<type>image</type>
@@ -19,7 +21,7 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background.png</texture>
-		<visible>facadeview.list|facadeview.largeicons</visible>
+		<visible>[facadeview.list|facadeview.largeicons] + !string.contains(#maya.fanart.TVSeries,yes)</visible>
     </control>
 	
 	
@@ -30,7 +32,7 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_filmstrip.png</texture>
-		<visible>facadeview.filmstrip</visible>
+		<visible>facadeview.filmstrip+!string.contains(#maya.fanart.TVSeries,yes)</visible>
 	</control>
 	
 	<control>
@@ -44,7 +46,7 @@
 		<width>359</width>
 		<height>482</height>
 		<texture>listcontrol_bg_small.png</texture>
-		<visible>facadeview.list</visible>
+		<visible>facadeview.list+!string.contains(#maya.fanart.TVSeries,yes)</visible>
 	</control>
 	
 	<control>
@@ -58,7 +60,7 @@
 		<width>359</width>
 		<height>51</height>
 		<texture>listcontrol_bg_info_small.png</texture>
-		<visible>facadeview.list</visible>
+		<visible>facadeview.list+!string.contains(#maya.fanart.TVSeries,yes)</visible>
 	</control>
 	
 	<control>
@@ -72,7 +74,7 @@
 		<width>725</width>
 		<height>512</height>
 		<texture>music_info_bg.png</texture>
-		<visible>facadeview.largeicons+Control.IsVisible(50)</visible>
+		<visible>[facadeview.largeicons+Control.IsVisible(50)] + !string.contains(#maya.fanart.TVSeries,yes)</visible>
 	</control>
 	
 	<control>
@@ -86,7 +88,7 @@
 		<width>725</width>
 		<height>51</height>
 		<texture>listcontrol_bg_info.png</texture>
-		<visible>facadeview.largeicons+Control.IsVisible(50)</visible>
+		<visible>[facadeview.largeicons+Control.IsVisible(50)] + !string.contains(#maya.fanart.TVSeries,yes)</visible>
 	</control>
 	
 	<import>common.time.xml</import>
@@ -187,6 +189,48 @@
 	  <textcolor>6aa5cb</textcolor>
       <visible>facadeview.largeicons</visible>
     </control>
+	
+	<control>
+		<type>image</type>
+		<description>series logo</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<id>0</id>
+		<posX>150</posX>
+		<posY>630</posY>
+		<width>194</width>
+		<height>75</height>
+		<texture>TVSeries\showLogos\#TVSeries.Series.LogoPath</texture>
+		<visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)</visible>
+    </control>
+	
+	<control>
+		<type>image</type>
+		<description>series logo</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<id>0</id>
+		<posX>150</posX>
+		<posY>480</posY>
+		<width>194</width>
+		<height>75</height>
+		<texture>TVSeries\showLogos\#TVSeries.Series.LogoPath</texture>
+		<visible>facadeview.list+Control.IsVisible(1239)</visible>
+    </control>
+	
+	<control>
+		<type>image</type>
+		<description>series logo</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<id>0</id>
+		<posX>980</posX>
+		<posY>180</posY>
+		<width>194</width>
+		<height>75</height>
+		<texture>TVSeries\showLogos\#TVSeries.Series.LogoPath</texture>
+		<visible>!facadeview.list+Control.IsVisible(1237)+!Control.IsVisible(1242)</visible>
+    </control>
     
 	<!-- ***************************************** SEASON DVD COVER (SEASON/EPISODE LIST LAYOUT) ***************************************************************** -->
     
@@ -248,6 +292,7 @@
 	  <texture>blackborders_video.png</texture>
       <visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)</visible>
     </control>
+	
 	
 	<!-- *****************************************  SERIES BANNER ( LIST LAYOUT) ***************************************************************** -->
     
@@ -464,7 +509,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
       <id>1</id>
       <posX>555</posX>
-      <posY>612</posY>
+      <posY>602</posY>
       <width>222</width>
       <height>19</height>
       <texture>#TVSeries.Series.RatingPath</texture>
@@ -735,7 +780,7 @@
       <width>45</width>
       <height>25</height>
       <texture>watched_icon.png</texture>
-      <visible>[[Control.IsVisible(1237)+Control.IsVisible(1242)]|Control.IsVisible(1238)]+facadeview.list+!Control.IsVisible(1244)</visible>
+      <visible>[[Control.IsVisible(1237)+Control.IsVisible(1242)]|Control.IsVisible(1238)]+facadeview.list+Control.IsVisible(1243)+!Control.IsVisible(1244)</visible>
     </control>
     <control>
       <description>Not Available and Un-Watched Icon</description>
@@ -748,7 +793,7 @@
       <width>45</width>
       <height>25</height>
       <texture>unwatched_icon.png</texture>
-      <visible>[[Control.IsVisible(1237)+Control.IsVisible(1242)]|Control.IsVisible(1238)]+facadeview.list+!Control.IsVisible(1244)</visible>
+      <visible>[[Control.IsVisible(1237)+Control.IsVisible(1242)]|Control.IsVisible(1238)]+facadeview.list+!Control.IsVisible(1243)+!Control.IsVisible(1244)</visible>
     </control>
 
    <!-- Watched Icons for Series Poster View and Season View in Widebanners Layout -->
@@ -789,7 +834,7 @@
       <width>45</width>
       <height>25</height>
       <texture>watched_icon.png</texture>
-      <visible>[[Control.IsVisible(1237)+!Control.IsVisible(1242)]|!Control.IsVisible(1238)]+facadeview.largeicons+!Control.IsVisible(1244)</visible>
+      <visible>[[Control.IsVisible(1237)+!Control.IsVisible(1242)]|!Control.IsVisible(1238)]+facadeview.largeicons+Control.IsVisible(1243)+!Control.IsVisible(1244)</visible>
     </control>
     <control>
       <description>Not Available and Un-Watched Icon</description>
@@ -802,7 +847,7 @@
       <width>45</width>
       <height>25</height>
       <texture>unwatched_icon.png</texture>
-      <visible>[[Control.IsVisible(1237)+!Control.IsVisible(1242)]|!Control.IsVisible(1238)]+facadeview.largeicons+!Control.IsVisible(1244)</visible>
+      <visible>[[Control.IsVisible(1237)+!Control.IsVisible(1242)]|!Control.IsVisible(1238)]+facadeview.largeicons+!Control.IsVisible(1243)+!Control.IsVisible(1244)</visible>
     </control>
 
     <!-- *********************** EPISODE INFO LABELS ( LIST LAYOUT) ************************** -->

@@ -907,5 +907,6 @@
 </control>
 
 <import>common.home.overlay.xml</import>
+<import>BasicHome.recentlyadded.xml</import>
 </controls>
 </window>
