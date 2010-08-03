@@ -41,6 +41,8 @@
 	<string Field="weather.toggleday">Press OK to toggle day</string>
 	
 	<!-- R -->
+	<string Field="recentlyAdded.Season">Season</string>
+	<string Field="recentlyAdded.Episode">Episode</string>
 
 	<!-- S -->
 
