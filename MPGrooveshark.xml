@@ -282,7 +282,7 @@
             <width>445</width>
             <font>font11</font>
             <align>CENTER</align>
-            <label>#mpgrooveshark.current.title - #mpgrooveshark.current.artist - #mpgrooveshark.current.currentplaytime</label>
+            <label>#mpgrooveshark.current.title - #mpgrooveshark.current.artist - #currentplaytime</label>
             <animation effect="Fade" time="200">WindowClose</animation>
             <animation effect="Fade" time="800">WindowOpen</animation>
         </control>
