@@ -98,6 +98,7 @@
             <font>font16</font>
             <textcolor>ffffffff</textcolor>
             <label>#mpgrooveshark.current.search</label>
+			<visible allowhiddenfocus="true">Control.HasFocus(50)|Control.HasFocus(5103)</visible>
             <animation effect="Fade" reversible="FALSE" time="200">WindowOpen</animation>
             <animation effect="Fade" reversible="FALSE" time="200">WindowClose</animation>
         </control>

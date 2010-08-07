@@ -164,7 +164,7 @@
             <height>23</height>
             <font>Segoe Light14</font>
             <textcolor>ffffffff</textcolor>
-            <label>#mpgrooveshark.current.currentplaytime / #mpgrooveshark.current.duration</label>
+            <label>#currentplaytime / #duration</label>
         </control>
         <control>
             <id>0</id>
@@ -209,27 +209,16 @@
             <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
-			<id>1</id>
+            <id>1</id>
             <description>No media playing</description>
             <type>fadelabel</type>
             <visible>[Control.HasFocus(5101)]+!player.hasmedia</visible>
             <posX>480</posX>
             <posY>496</posY>
-			<width>350</width>
-            <font>Segoe Light16</font>
+            <width>350</width>
+            <font>Segoe Light18</font>
             <label>no media playing</label>
         </control>
-		<!--
-        <control>
-            <description>Playlist no media</description>
-            <type>label</type>
-            <visible>!control.hasthumb(51)+[control.hasfocus(2)|control.hasfocus(5102)|control.hasfocus(5103)|control.hasfocus(50)|control.hasfocus(51)]</visible>
-            <posX>350</posX>
-            <posY>533</posY>
-            <font>font14</font>
-            <label>No playlist is loaded</label>
-        </control>
-		-->
         <control>
             <id>0</id>
             <description>playlist label</description>
@@ -241,6 +230,8 @@
             <font>Segoe Light14</font>
             <textcolor>ff99cccc</textcolor>
             <label>136</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>0</id>
@@ -290,7 +281,10 @@
             <posY>700</posY>
             <width>445</width>
             <font>font11</font>
+            <align>CENTER</align>
             <label>#mpgrooveshark.current.title - #mpgrooveshark.current.artist - #mpgrooveshark.current.currentplaytime</label>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation effect="Fade" time="800">WindowOpen</animation>
         </control>
         <control>
             <description>Panel menu</description>
@@ -366,5 +360,17 @@
         </control>
         <import>MPGrooveshark.facade.xml</import>
         <import>common.time.xml</import>
+        <control>
+            <id>99</id>
+            <description>dummy video preview window required for the plugin</description>
+            <type>videowindow</type>
+            <posX>10</posX>
+            <posY>10</posY>
+            <width>2</width>
+            <height>2</height>
+            <textureFocus>-</textureFocus>
+            <keepaspectratio>no</keepaspectratio>
+            <centered>yes</centered>
+        </control>
     </controls>
 </window>
