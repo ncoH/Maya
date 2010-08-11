@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
   <controls>
+	<control>
+		<type>image</type>
+		<id>123</id>
+		<posX>-2000</posX>
+		<posY>-2000</posY>
+		<texture>-</texture>
+	</control>
     <control>
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>control.isvisible(1001) + ![string.starts(#infoservice.recentlyAdded.series1.fanart,#)|string.starts(#infoservice.recentlyAdded.series1.thumb,#)] + string.contains(#maya.recentlyAddedSeries,yes)</visible>
- 		<animation effect="fade" time="1000">WindowOpen</animation>
-		<animation effect="fade" time="1000">WindowClose</animation>
+      <visible>control.isvisible(123) + ![string.starts(#infoservice.recentlyAdded.series1.fanart,#)|string.starts(#infoservice.recentlyAdded.series1.thumb,#)] + string.contains(#maya.recentlyAddedSeries,yes)</visible>
+		<animation effect="slide" start="325,0" end="0,0" tween="quadratic" easing="in" time="800" delay="300">visible</animation>
+		<animation effect="fade" time="700" delay="300">visible</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
       <control>
         <description>Header label</description>
         <type>label</type>
@@ -57,9 +66,11 @@
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>control.isvisible(1001) + ![string.starts(#infoservice.recentlyAdded.series2.fanart,#)|string.starts(#infoservice.recentlyAdded.series2.thumb,#)] + string.contains(#maya.recentlyAddedSeries,yes)</visible>
- 		<animation effect="fade" time="1000">WindowOpen</animation>
-		<animation effect="fade" time="1000">WindowClose</animation>
+      <visible>control.isvisible(123) + ![string.starts(#infoservice.recentlyAdded.series2.fanart,#)|string.starts(#infoservice.recentlyAdded.series2.thumb,#)]</visible>
+		<animation effect="slide" start="325,0" end="0,0" tween="quadratic" easing="in" time="800" delay="300">visible</animation>
+		<animation effect="fade" time="700" delay="300">visible</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
       <control>
         <description>Series 2 name</description>
         <type>fadelabel</type>
@@ -87,9 +98,11 @@
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>control.isvisible(1001) + ![string.starts(#infoservice.recentlyAdded.series3.fanart,#)|string.starts(#infoservice.recentlyAdded.series3.thumb,#)] + string.contains(#maya.recentlyAddedSeries,yes)</visible>
- 		<animation effect="fade" time="1000">WindowOpen</animation>
-		<animation effect="fade" time="1000">WindowClose</animation>
+      <visible>control.isvisible(123) + ![string.starts(#infoservice.recentlyAdded.series3.fanart,#)|string.starts(#infoservice.recentlyAdded.series3.thumb,#)]</visible>
+		<animation effect="slide" start="325,0" end="0,0" tween="quadratic" easing="in" time="800" delay="300">visible</animation>
+		<animation effect="fade" time="700" delay="300">visible</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
       <control>
         <type>fadelabel</type>
         <id>0</id>
