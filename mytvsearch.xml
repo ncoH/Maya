@@ -227,7 +227,7 @@
 				<posY>427</posY>
 				<height>300</height>
 				<posX>524</posX>
-				<width>724</width>>
+				<width>724</width>
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
@@ -237,6 +237,7 @@
 				<PinIconYOff>0</PinIconYOff>
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
+				<IconXOff>30</IconXOff>
 				<IconYOff>9</IconYOff>
 				<textXOff>40</textXOff>
 				<textXOff>40</textXOff>
