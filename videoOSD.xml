@@ -44,12 +44,46 @@
 		<description>Channel Name and time</description>
 		<id>0</id>
 		<type>fadelabel</type>
-		<width>770</width>
+		<width>450</width>
 		<posX>360</posX>
 		<posY>613</posY>
 		<font>Segoe Light14</font>
 		<textcolor>ff85cffe</textcolor>
 		<label>#Play.Current.Genre - #Play.Current.Year</label>
+	</control>
+	
+	<control>
+		<description>Videocodecs</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>825</posX>
+		<posY>608</posY>
+		<width>66</width>
+		<height>45</height>
+		<texture>logos\video\#Play.Current.VideoCodec.Texture.png</texture>
+	</control>
+
+
+	<control>
+		<description>Audiocodecs</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>890</posX>
+		<posY>608</posY>
+		<width>66</width>
+		<height>45</height>
+		<texture>logos\audio\#Play.Current.AudioCodec.Texture.png</texture>
+	</control>
+	
+	<control>
+		<description>Videoresolution</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>945</posX>
+		<posY>608</posY>
+		<width>66</width>
+		<height>45</height>
+		<texture>logos\resolution\#Play.Current.VideoResolution.png</texture>
 	</control>
 	
 	<control>

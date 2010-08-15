@@ -12,12 +12,25 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>925</posX>
-		<posY>690</posY>
-		<width>140</width>
+		<posY>676</posY>
+		<width>75</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\bluray.png</texture>
-		<align>left</align>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.videoresolution,1080p)|string.equals(#MovingPictures.LocalMedia.videoresolution,720p)]+string.equals(#MovingPictures.LocalMedia.videocodec,H264)</visible>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,1080p)+string.equals(#MovingPictures.LocalMedia.videocodec,H264)</visible>
+	</control>
+	
+	<control>
+		<description>BluRay Rip</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>925</posX>
+		<posY>676</posY>
+		<width>75</width>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\source\blurayrip.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,720p)+string.equals(#MovingPictures.LocalMedia.videocodec,H264)</visible>
 	</control>
 	
 	<control>
@@ -27,135 +40,82 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>925</posX>
-		<posY>690</posY>
-		<width>140</width>
+		<posY>676</posY>
+		<width>75</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\dvd.png</texture>
-		<align>left</align>
 		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoformat,DVD)</visible>
 	</control>
 	
 	<control>
-		<description>SD</description>
+		<description>DVD Rip</description>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
 		<posX>925</posX>
-		<posY>690</posY>
-		<width>140</width>
+		<posY>676</posY>
+		<width>75</width>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\source\sd.png</texture>
-		<align>left</align>
+		<texture>Logos\source\dvdrip.png</texture>
 		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,SD)+!string.equals(#MovingPictures.LocalMedia.videoformat,DVD)</visible>
 	</control>
 	
-	
-	<!-- Video -->
 	<control>
-		<description>HD 1080 h264 235</description>
+		<description>DVD R5</description>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>980</posX>
-		<posY>690</posY>
-		<width>140</width>
+		<posX>925</posX>
+		<posY>676</posY>
+		<width>75</width>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\video\1080_h264_235.png</texture>
-		<align>left</align>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,1080p)+string.equals(#MovingPictures.LocalMedia.videocodec,H264)+string.equals(#MovingPictures.LocalMedia.videoaspectratio,widescreen)</visible>
+		<texture>Logos\source\dvdr5.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.contains(#MovingPictures.LocalMedia.FullPath,R5)</visible>
 	</control>
 	
 	<control>
-		<description>HD 720 h264 235</description>
+		<description>DVD Screener</description>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>980</posX>
-		<posY>690</posY>
-		<width>140</width>
+		<posX>925</posX>
+		<posY>676</posY>
+		<width>75</width>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\video\720_h264_235.png</texture>
-		<align>left</align>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,720p)+string.equals(#MovingPictures.LocalMedia.videocodec,H264)+string.equals(#MovingPictures.LocalMedia.videoaspectratio,widescreen)</visible>
+		<texture>Logos\source\screener.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.contains(#MovingPictures.LocalMedia.FullPath,screener)</visible>
 	</control>
 	
 	<control>
-		<description>SD 540 mpeg2 235</description>
+		<description>CAM</description>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>980</posX>
-		<posY>690</posY>
-		<width>140</width>
+		<posX>925</posX>
+		<posY>676</posY>
+		<width>75</width>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\video\540_mpeg2_235.png</texture>
-		<align>left</align>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,SD)+string.equals(#MovingPictures.LocalMedia.videocodec,MP2V)+string.equals(#MovingPictures.LocalMedia.videoaspectratio,widescreen)</visible>
+		<texture>Logos\source\cam.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.contains(#MovingPictures.LocalMedia.FullPath,cam)</visible>
 	</control>
 	
+	<!-- Videocodec -->
 	<control>
-		<description>SD 540 h264 235</description>
+		<description>Videocodecs</description>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>980</posX>
-		<posY>690</posY>
-		<width>140</width>
-		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\video\540_h264_235.png</texture>
-		<align>left</align>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,SD)+string.equals(#MovingPictures.LocalMedia.videocodec,H264)+string.equals(#MovingPictures.LocalMedia.videoaspectratio,widescreen)</visible>
-	</control>
-	
-	
-	<control>
-		<description>SD 540 xvid 235</description>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>image</type>
-		<id>0</id>
-		<posX>980</posX>
-		<posY>690</posY>
-		<width>140</width>
-		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\video\540_xvid_235.png</texture>
-		<align>left</align>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,SD)+string.equals(#MovingPictures.LocalMedia.videocodec,xvid)+string.equals(#MovingPictures.LocalMedia.videoaspectratio,widescreen)</visible>
-	</control>
-	
-	<control>
-		<description>SD 540 divx 235</description>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>image</type>
-		<id>0</id>
-		<posX>980</posX>
-		<posY>690</posY>
-		<width>140</width>
-		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\video\540_xvid_235.png</texture>
-		<align>left</align>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,SD)+string.equals(#MovingPictures.LocalMedia.videocodec,divx)+string.equals(#MovingPictures.LocalMedia.videoaspectratio,widescreen)</visible>
-	</control>
-	
-	<control>
-		<description>SD 540 xvid 133</description>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>image</type>
-		<id>0</id>
-		<posX>980</posX>
-		<posY>690</posY>
-		<width>140</width>
-		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\video\540_xvid_133.png</texture>
-		<align>left</align>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,SD)+string.equals(#MovingPictures.LocalMedia.videocodec,xvid)+string.equals(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)</visible>
+		<posX>1000</posX>
+		<posY>675</posY>
+		<width>80</width>
+		<height>54</height>
+		<texture>Logos\video\#MovingPictures.LocalMedia.videocodec.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 	</control>
 	
 		<!-- Audio -->
@@ -165,12 +125,11 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1075</posX>
-		<posY>690</posY>
-		<width>140</width>
+		<posX>1085</posX>
+		<posY>675</posY>
+		<width>100</width>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\audio\ac3_51.png</texture>
-		<align>left</align>
+		<texture>Logos\audio\dd51.png</texture>
 		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiocodec,AC3)+string.equals(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
 	</control>
 	
@@ -180,13 +139,12 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1075</posX>
-		<posY>690</posY>
-		<width>140</width>
+		<posX>1085</posX>
+		<posY>675</posY>
+		<width>100</width>
+		<texture>Logos\audio\dolby20.png</texture>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\audio\ac3_20.png</texture>
-		<align>left</align>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiocodec,AC3)+string.equals(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiocodec,AC3)+string.equals(#MovingPictures.LocalMedia.audiochannels,2)]</visible>
 	</control>
 	
 	<control>
@@ -195,13 +153,12 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1075</posX>
-		<posY>690</posY>
-		<width>140</width>
+		<posX>1085</posX>
+		<posY>675</posY>
+		<width>100</width>
+		<texture>Logos\audio\dts51.png</texture>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\audio\dts_51.png</texture>
-		<align>left</align>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiocodec,DTS)+string.equals(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,DTS)+string.equals(#MovingPictures.LocalMedia.audiochannels,5.1)</visible>
 	</control>
 	
 	<control>
@@ -210,13 +167,40 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1075</posX>
-		<posY>690</posY>
-		<width>140</width>
+		<posX>1085</posX>
+		<posY>675</posY>
+		<width>100</width>
+		<texture>Logos\audio\dts71.png</texture>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\audio\dts_71.png</texture>
-		<align>left</align>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,DTS)+[string.equals(#MovingPictures.LocalMedia.audiochannels,7.1)|string.equals(#MovingPictures.LocalMedia.audiochannels,7)]</visible>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,DTS)+string.equals(#MovingPictures.LocalMedia.audiochannels,7)</visible>
+	</control>
+	
+	<control>
+		<description>True HD 5.1</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1085</posX>
+		<posY>675</posY>
+		<width>100</width>
+		<texture>Logos\audio\truehd51.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,TRUEHD)+string.equals(#MovingPictures.LocalMedia.audiochannels,5.1)</visible>
+	</control>
+	
+	<control>
+		<description>True HD 7.1</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1085</posX>
+		<posY>675</posY>
+		<width>100</width>
+		<texture>Logos\audio\truehd71.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,TRUEHD)+string.equals(#MovingPictures.LocalMedia.audiochannels,7)</visible>
 	</control>
 	
 	<control>
@@ -225,42 +209,143 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1075</posX>
-		<posY>690</posY>
-		<width>140</width>
+		<posX>1085</posX>
+		<posY>675</posY>
+		<width>100</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\mp3_20.png</texture>
-		<align>left</align>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiocodec,MP3)+string.equals(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,MP3)+string.equals(#MovingPictures.LocalMedia.audiochannels,stereo)</visible>
 	</control>
-	
+
 	<control>
 		<description>PCM 2.0</description>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1075</posX>
-		<posY>690</posY>
-		<width>140</width>
+		<posX>1085</posX>
+		<posY>675</posY>
+		<width>100</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\pcm_20.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,PCM)+string.equals(#MovingPictures.LocalMedia.audiochannels,stereo)</visible>
+	</control>
+	
+	<!-- Resolution -->
+	<control>
+		<description>1080p</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1175</posX>
+		<posY>675</posY>
+		<width>80</width>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\resolution\1080.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,1080p)</visible>
+	</control>
+	
+	<control>
+		<description>720p</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1175</posX>
+		<posY>675</posY>
+		<width>80</width>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\resolution\720.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,720p)</visible>
+	</control>
+	
+	<control>
+		<description>SD</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1175</posX>
+		<posY>675</posY>
+		<width>80</width>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\resolution\480.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,SD)</visible>
+	</control>
+	
+	<control>
+		<description>576p</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1175</posX>
+		<posY>675</posY>
+		<width>80</width>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\resolution\576.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,576p)</visible>
+	</control>
+
+	<control>
+		<description>540</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1175</posX>
+		<posY>675</posY>
+		<width>80</width>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\resolution\540.png</texture>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,540)</visible>
+	</control>
+	
+		<!-- Aspectratio -->
+	
+	<control>
+		<description>2.35 / widescreen</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1235</posX>
+		<posY>675</posY>
+		<width>80</width>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\aspectratio\2.35.png</texture>
 		<align>left</align>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiocodec,PCM)+string.equals(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoaspectratio,widescreen)</visible>
 	</control>	
 	
-		<!-- rating -->
+	<control>
+		<description>1.33 / fullscreen</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1240</posX>
+		<posY>675</posY>
+		<width>80</width>
+		<keepaspectratio>yes</keepaspectratio>
+		<texture>Logos\aspectratio\1.33.png</texture>
+		<align>left</align>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)</visible>
+	</control>	
+	
+		<!-- rating 
 	<control>
 		<type>image</type>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<id>0</id>
-		<posX>1225</posX>
-		<posY>690</posY>
-		<width>140</width>
+		<posX>1255</posX>
+		<posY>672</posY>
+		<width>105</width>
+		<colordiffuse>FFe1e1e1</colordiffuse>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>Logos\frame_imdb.png</texture>
-		<align>left</align>
+		<texture>Logos\frame_imdb_1.png</texture>
 		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 	</control>
 	
@@ -271,26 +356,25 @@
 		<type>label</type>
 		<label>#MovingPictures.SelectedMovie.score.invariant</label>
 		<id>0</id>
-		<posX>1257</posX>
-		<posY>692</posY>
+		<posX>1305</posX>
+		<posY>688</posY>
 		<width>400</width>
 		<font>font12</font>
 		<textcolor>ffffff</textcolor>
 		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 	</control>
-	
-		<!-- subtitles -->
+-->
+	<!-- subtitles -->
 	<control>
 		<type>image</type>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<id>0</id>
-		<posX>1305</posX>
-		<posY>690</posY>
-		<width>140</width>
-		<keepaspectratio>yes</keepaspectratio>
+		<posX>1280</posX>
+		<posY>675</posY>
+		<width>80</width>
+		<height>54</height>
 		<texture>Logos\subtitles.png</texture>
-		<align>left</align>
 		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.hassubtitles,True)</visible>
 	</control>
 	
@@ -299,14 +383,14 @@
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<id>0</id>
-		<posX>1305</posX>
-		<posY>690</posY>
-		<width>140</width>
-		<keepaspectratio>yes</keepaspectratio>
+		<posX>1280</posX>
+		<posY>675</posY>
+		<width>80</width>
+		<height>54</height>
 		<texture>Logos\nosubtitles.png</texture>
-		<align>left</align>
 		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.hassubtitles,False)</visible>
 	</control>
+
 
 	</controls>
 </window>

@@ -457,10 +457,10 @@
 		<animation effect="fade" time="100">WindowClose</animation>
       <description>Logos</description>
       <id>66</id>
-      <posX>1009</posX>
-      <posY>690</posY>
+      <posX>925</posX>
+      <posY>675</posY>
       <width>650</width>
-      <height>29</height>
+      <height>54</height>
       <texture>#TVSeries.Logos</texture>
       <keepaspectratio>yes</keepaspectratio>
       <visible>facadeview.list+[Control.IsVisible(1237)|Control.IsVisible(1238)|Control.IsVisible(1239)]</visible>
@@ -474,10 +474,10 @@
 		<animation effect="fade" time="100">WindowClose</animation>
       <description>Logos</description>
       <id>66</id>
-      <posX>1009</posX>
-      <posY>690</posY>
+      <posX>925</posX>
+      <posY>675</posY>
       <width>650</width>
-      <height>29</height>
+      <height>54</height>
       <texture>#TVSeries.Logos</texture>
       <keepaspectratio>yes</keepaspectratio>
       <visible>[!facadeview.list+Control.IsVisible(1237)]|[!facadeview.list+Control.IsVisible(1238)]</visible>
@@ -490,10 +490,10 @@
 		<animation effect="fade" time="100">WindowClose</animation>
       <description>thumb Logos ( in textlist group)</description>
       <id>0</id>
-      <posX>1009</posX>
-      <posY>690</posY>
+      <posX>925</posX>
+      <posY>675</posY>
       <width>650</width>
-      <height>29</height>
+      <height>54</height>
       <texture>#TVSeries.Logos</texture>
       <keepaspectratio>yes</keepaspectratio>
       <visible>Control.IsVisible(1240)</visible>
@@ -892,36 +892,6 @@
       <height>19</height>
       <texture>#TVSeries.Episode.RatingPath</texture>
       <visible>[Control.IsVisible(1239)|Control.IsVisible(1237)]</visible>
-    </control>
-
-		<!-- rating -->
-	<control>
-	  <type>image</type>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-	  <id>0</id>
-	  <posX>925</posX>
-	  <posY>691</posY>
-	  <width>140</width>
-	  <keepaspectratio>yes</keepaspectratio>
-	  <texture>Logos\frame_imdb.png</texture>
-	  <align>left</align>
-	  <visible>Control.IsVisible(1239)</visible>
-	</control>
-
-	<control>      
-		<type>label</type>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<id>0</id>
-		<posX>958</posX>
-		<posY>693</posY>
-		<width>400</width>
-		<font>font12</font>
-		<textcolor>ffffff</textcolor>
-		<label>#TVSeries.Episode.InfoPanelLine1Value</label>
-		<textcolor>ffffff</textcolor>
-		<visible>Control.IsVisible(1239)</visible>
     </control>
 
     <control>      
