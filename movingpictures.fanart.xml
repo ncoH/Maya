@@ -55,7 +55,7 @@
 		<width>507</width>
 		<height>768</height>
 		<texture>fanart_list_bg.png</texture>
-		<visible>[facadeview.list+Control.IsVisible(50)] + string.contains(#maya.fanart.TVSeries,yes)</visible>
+		<visible>[facadeview.list+Control.IsVisible(50)] + string.contains(#maya.fanart.MovingPictures,yes)</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
