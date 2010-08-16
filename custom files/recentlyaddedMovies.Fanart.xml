@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+	<control>
+		<type>image</type>
+		<id>119</id>
+		<posX>-2000</posX>
+		<posY>-2000</posY>
+		<texture>-</texture>
+	</control>
+    <control>
+      <description>GROUP: RecentlyAdded Movie</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>control.isvisible(119) + ![string.starts(#maya.recentlyAdded.movie1.fanart,#)|string.starts(#maya.recentlyAdded.movie1.thumb,#)] + string.contains(#maya.recentlyAddedMovies,yes)</visible>
+		<animation effect="slide" start="325,0" end="0,0" tween="quadratic" easing="in" time="800" delay="300">visible</animation>
+		<animation effect="fade" time="700" delay="300">visible</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+      <control>
+        <description>Header label</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>155</posY>
+        <width>258</width>
+        <label>LASTEST MOVIES</label>
+        <font>Segoe Light16</font>
+        <textcolor>85cfff</textcolor>
+      </control>
+      <control>
+        <description>Movie 1 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>345</posY>
+        <width>258</width>
+        <label>#maya.recentlyAdded.movie1.title</label>
+        <font>font14</font>
+        <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+        <description>Movie 1 runtime</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>372</posY>
+        <width>275</width>
+        <label>#maya.recentlyAdded.movie1.runtime</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+      <control>
+		<type>imagelist</type>
+		<id>0</id>
+		<posX>1155</posX>
+		<posY>375</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>20</textureWidth>
+		<textureHeight>17</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#maya.recentlyAdded.movie1.score</percentage>
+      </control>  
+      <control>
+        <description>Movie 1 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>192</posY>
+        <width>268</width>
+        <height>151</height>
+        <keepaspectratio>true</keepaspectratio>
+        <texture>#maya.recentlyAdded.movie1.fanart</texture>
+      </control>
+    </control>
+    <control>
+      <description>GROUP: RecentlyAdded Movie</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>control.isvisible(119) + ![string.starts(#maya.recentlyAdded.movie2.fanart,#)|string.starts(#maya.recentlyAdded.movie2.thumb,#)] + string.contains(#maya.recentlyAddedMovies,yes)</visible>
+		<animation effect="slide" start="325,0" end="0,0" tween="quadratic" easing="in" time="800" delay="300">visible</animation>
+		<animation effect="fade" time="700" delay="300">visible</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+      <control>
+        <description>Movie 2 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>395</posY>
+        <width>258</width>
+        <label>#maya.recentlyAdded.movie2.title</label>
+        <font>font14</font>
+        <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+        <description>Movie 2 runtime</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>422</posY>
+        <width>275</width>
+        <label>#maya.recentlyAdded.movie2.runtime</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+      <control>
+		<type>imagelist</type>
+		<id>0</id>
+		<posX>1155</posX>
+		<posY>425</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>20</textureWidth>
+		<textureHeight>17</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#maya.recentlyAdded.movie2.score</percentage>
+      </control>
+    </control>
+    <control>
+      <description>GROUP: RecentlyAdded Movie</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>control.isvisible(119) + ![string.starts(#maya.recentlyAdded.movie3.fanart,#)|string.starts(#maya.recentlyAdded.movie3.thumb,#)] + string.contains(#maya.recentlyAddedMovies,yes)</visible>
+		<animation effect="slide" start="325,0" end="0,0" tween="quadratic" easing="in" time="800" delay="300">visible</animation>
+		<animation effect="fade" time="700" delay="300">visible</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+      <control>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>445</posY>
+        <width>258</width>
+        <label>#maya.recentlyAdded.movie3.title</label>
+        <font>font14</font>
+        <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+        <description>Movie 3 runtime</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>472</posY>
+        <width>275</width>
+        <label>#maya.recentlyAdded.movie3.runtime</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+      <control>
+		<type>imagelist</type>
+		<id>0</id>
+		<posX>1155</posX>
+		<posY>475</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>20</textureWidth>
+		<textureHeight>17</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#maya.recentlyAdded.movie3.score</percentage>
+      </control>
+    </control>
+  </controls>
+</window>
