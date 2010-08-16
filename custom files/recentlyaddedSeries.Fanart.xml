@@ -66,7 +66,7 @@
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>control.isvisible(123) + ![string.starts(#infoservice.recentlyAdded.series2.fanart,#)|string.starts(#infoservice.recentlyAdded.series2.thumb,#)]</visible>
+      <visible>control.isvisible(123) + ![string.starts(#infoservice.recentlyAdded.series2.fanart,#)|string.starts(#infoservice.recentlyAdded.series2.thumb,#)] + string.contains(#maya.recentlyAddedSeries,yes)</visible>
 		<animation effect="slide" start="325,0" end="0,0" tween="quadratic" easing="in" time="800" delay="300">visible</animation>
 		<animation effect="fade" time="700" delay="300">visible</animation>
 		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -98,7 +98,7 @@
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>control.isvisible(123) + ![string.starts(#infoservice.recentlyAdded.series3.fanart,#)|string.starts(#infoservice.recentlyAdded.series3.thumb,#)]</visible>
+      <visible>control.isvisible(123) + ![string.starts(#infoservice.recentlyAdded.series3.fanart,#)|string.starts(#infoservice.recentlyAdded.series3.thumb,#)] + string.contains(#maya.recentlyAddedSeries,yes)</visible>
 		<animation effect="slide" start="325,0" end="0,0" tween="quadratic" easing="in" time="800" delay="300">visible</animation>
 		<animation effect="fade" time="700" delay="300">visible</animation>
 		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
