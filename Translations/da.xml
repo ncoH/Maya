@@ -2,6 +2,7 @@
 <!-- Skin translation file -->
 <!-- Danish (DA) -->
 <!-- Last Updated: 20th Jun 2010 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
 
 <strings>
 	<!-- # -->
@@ -30,6 +31,7 @@
 	
 	<!-- M -->
 	<string Field="mylyrics">Sangtekst</string>
+	<string Field="music.songs">Sange:</string>
 
 	<!-- N -->
 
@@ -39,7 +41,9 @@
 	<string Field="weather.toggleday">Tryk OK for dagsudsigt</string>
 	
 	<!-- R -->
-
+	<string Field="recentlyAdded.Season">Sæson</string>
+	<string Field="recentlyAdded.Episode">Afsnit</string>
+	
 	<!-- S -->
 
 	<!-- T -->
