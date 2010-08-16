@@ -21,6 +21,8 @@
             <spintype>INT</spintype>
             <showrange>NO</showrange>
             <align>RIGHT</align>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>7</id>
@@ -37,26 +39,32 @@
             <spintype>INT</spintype>
             <showrange>NO</showrange>
             <align>RIGHT</align>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>16</id>
             <description>Single Black Bar Height Label</description>
             <type>label</type>
             <posX>215</posX>
-            <posY>405</posY>
-            <font>font10</font>
+            <posY>409</posY>
+            <font>font14</font>
             <textcolor>ffffffff</textcolor>
             <label>Single Black Bar Height</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>17</id>
             <description>Double Black Bar Height Label</description>
             <type>label</type>
             <posX>215</posX>
-            <posY>450</posY>
-            <font>font10</font>
+            <posY>454</posY>
+            <font>font14</font>
             <textcolor>ffffffff</textcolor>
             <label>Double Black Bar Height</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>8</id>
@@ -68,61 +76,74 @@
             <ondown>18</ondown>
             <posX>200</posX>
             <posY>495</posY>
-            <width>311</width>
-			<font>font10</font>
+            <width>321</width>
+            <height>42</height>
+            <font>font14</font>
             <label>Verbose Logging</label>
-			<textalign>right</textalign>
-			<textYOff>8</textYOff>
+            <textalign>RIGHT</textalign>
+            <textYOff>8</textYOff>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>15</id>
             <description>Stabilizer Label</description>
             <type>label</type>
             <posX>216</posX>
-            <posY>360</posY>
-            <font>font10</font>
+            <posY>364</posY>
+            <font>font14</font>
             <textcolor>ffffffff</textcolor>
             <label>Stabilizer</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>14</id>
             <description>Max Brightness Threshold Label</description>
             <type>label</type>
             <posX>216</posX>
-            <posY>315</posY>
-            <font>font10</font>
+            <posY>319</posY>
+            <font>font14</font>
             <textcolor>ffffffff</textcolor>
             <label>Max Brightness Threshold</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>13</id>
             <description>Min Brightness Threshold Label</description>
             <type>label</type>
             <posX>216</posX>
-            <posY>270</posY>
-            <font>font10</font>
+            <posY>274</posY>
+            <font>font14</font>
             <textcolor>ffffffff</textcolor>
             <label>Min Brightness Threshold</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>12</id>
             <description>Detection Counter Label</description>
             <type>label</type>
             <posX>216</posX>
-            <posY>225</posY>
-            <font>font10</font>
+            <posY>229</posY>
+            <font>font14</font>
             <textcolor>ffffffff</textcolor>
             <label>Detection Counter</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>11</id>
             <description>Scan Interval Label</description>
             <type>label</type>
             <posX>217</posX>
-            <posY>180</posY>
-            <font>font10</font>
+            <posY>184</posY>
+            <font>font14</font>
             <textcolor>ffffffff</textcolor>
             <label>Scan Interval</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>18</id>
@@ -140,6 +161,8 @@
             <spintype>INT</spintype>
             <showrange>NO</showrange>
             <align>RIGHT</align>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>2</id>
@@ -156,6 +179,8 @@
             <spintype>INT</spintype>
             <showrange>NO</showrange>
             <align>RIGHT</align>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>3</id>
@@ -172,6 +197,8 @@
             <spintype>INT</spintype>
             <showrange>NO</showrange>
             <align>RIGHT</align>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>4</id>
@@ -188,6 +215,8 @@
             <spintype>INT</spintype>
             <showrange>NO</showrange>
             <align>RIGHT</align>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>5</id>
@@ -204,7 +233,9 @@
             <spintype>INT</spintype>
             <showrange>NO</showrange>
             <align>RIGHT</align>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
-		<import>common.time.xml</import>
+        <import>common.time.xml</import>
     </controls>
 </window>
