@@ -182,7 +182,7 @@
             <id>0</id>
             <description>Summary</description>
             <type>textboxscrollup</type>
-            <visible>facadeview.list+Control.HasFocus(50)</visible>
+            <visible/>
             <posX>56</posX>
             <posY>248</posY>
             <width>397</width>
@@ -198,7 +198,7 @@
             <id>0</id>
             <description>Changelog</description>
             <type>textboxscrollup</type>
-            <visible>facadeview.list+Control.HasFocus(50)</visible>
+            <visible/>
             <posX>56</posX>
             <posY>527</posY>
             <width>397</width>
