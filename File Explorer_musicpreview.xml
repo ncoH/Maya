@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-    <id>557314</id>
-    <defaultcontrol>10</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
-    <controls>
+    	<id>557314</id>
+    	<defaultcontrol>10</defaultcontrol>
+    	<allowoverlay>no</allowoverlay>
+	<animation effect="fade" time="250">WindowOpen</animation>
+	<animation effect="fade" time="250">WindowClose</animation>
+	<controls>
+
         <control>
             <id>50</id>
             <type>image</type>
