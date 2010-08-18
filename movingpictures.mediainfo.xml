@@ -144,7 +144,7 @@
 		<width>100</width>
 		<texture>Logos\audio\dolby20.png</texture>
 		<keepaspectratio>yes</keepaspectratio>
-		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiocodec,AC3)+string.equals(#MovingPictures.LocalMedia.audiochannels,2)]</visible>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiocodec,AC3)+[string.equals(#MovingPictures.LocalMedia.audiochannels,2)|string.equals(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
 	</control>
 	
 	<control>
