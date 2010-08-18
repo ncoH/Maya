@@ -6,41 +6,19 @@
     <animation effect="Fade" end="100" start="100" time="250">WindowClose</animation>
     <define>#header.label:File Explorer</define>
     <controls>
-
         <import>common.window.title.xml</import>
         <import>common.time.xml</import>
-
         <control>
             <id>1</id>
             <description>listcontrol background</description>
             <type>image</type>
             <posX>55</posX>
-            <posY>176</posY>
+            <posY>185</posY>
             <width>1259</width>
             <height>537</height>
             <texture>listcontrol_bg.png</texture>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
-        </control>
-        <control>
-            <id>0</id>
-            <description>Label image 2</description>
-            <type>image</type>
-            <posX>777</posX>
-            <posY>112</posY>
-            <texture>menu_list_focus.png</texture>
-            <animation effect="Fade" time="200">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
-        </control>
-        <control>
-            <id>0</id>
-            <description>Label image 1</description>
-            <type>image</type>
-            <posX>126</posX>
-            <posY>112</posY>
-            <texture>menu_list_focus.png</texture>
-            <animation effect="Fade" time="200">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>3</id>
@@ -51,9 +29,9 @@
             <onup>3</onup>
             <ondown>3</ondown>
             <posX>55</posX>
-            <posY>176</posY>
+            <posY>185</posY>
             <width>610</width>
-            <height>415</height>
+            <height>420</height>
             <animation delay="50" effect="Fade" time="250">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
             <spinPosX>240</spinPosX>
@@ -67,9 +45,9 @@
             <onup>4</onup>
             <ondown>4</ondown>
             <posX>704</posX>
-            <posY>176</posY>
+            <posY>185</posY>
             <width>610</width>
-            <height>415</height>
+            <height>420</height>
             <animation delay="50" effect="Fade" time="250">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
         </control>
@@ -78,7 +56,7 @@
             <description>label left</description>
             <type>label</type>
             <posX>73</posX>
-            <posY>600</posY>
+            <posY>615</posY>
             <font>font10</font>
             <textcolor>ffffffff</textcolor>
             <align>LEFT</align>
@@ -89,7 +67,7 @@
             <description>label right</description>
             <type>label</type>
             <posX>721</posX>
-            <posY>600</posY>
+            <posY>615</posY>
             <font>font10</font>
             <textcolor>ffffffff</textcolor>
             <align>LEFT</align>
@@ -99,9 +77,9 @@
             <id>9</id>
             <description>labeldir left</description>
             <type>label</type>
-            <posX>200</posX>
-            <posY>157</posY>
-            <font>font10</font>
+            <posX>55</posX>
+            <posY>160</posY>
+            <font>Segoe Light12</font>
             <textcolor>ffffffff</textcolor>
             <align>LEFT</align>
             <label>Test</label>
@@ -112,9 +90,9 @@
             <id>10</id>
             <description>labeldir right</description>
             <type>label</type>
-            <posX>840</posX>
-            <posY>157</posY>
-            <font>font10</font>
+            <posX>704</posX>
+            <posY>160</posY>
+            <font>Segoe Light12</font>
             <textcolor>ffffffff</textcolor>
             <align>LEFT</align>
             <label>Test</label>
@@ -129,9 +107,14 @@
             <onright>2</onright>
             <onup>2</onup>
             <ondown>4</ondown>
-            <posX>800</posX>
-            <posY>116</posY>
+            <posX>704</posX>
+            <posY>115</posY>
+            <width>230</width>
+            <font>Segoe Light14</font>
+            <textureFocus>button-small-focus.png</textureFocus>
             <label>Menu right</label>
+            <textalign>CENTER</textalign>
+            <textYOff>0</textYOff>
             <animation effect="Fade" time="200">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
         </control>
@@ -143,9 +126,14 @@
             <onright>2</onright>
             <onup>11</onup>
             <ondown>3</ondown>
-            <posX>150</posX>
-            <posY>116</posY>
+            <posX>55</posX>
+            <posY>115</posY>
+            <width>230</width>
+            <font>Segoe Light14</font>
+            <textureFocus>button-small-focus.png</textureFocus>
             <label>Menu left</label>
+            <textalign>CENTER</textalign>
+            <textYOff>0</textYOff>
             <animation effect="Fade" time="200">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
         </control>
