@@ -783,6 +783,8 @@ multiple view modes.
 		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
 	</control>
 <import>common.overlay.xml</import>
-<import>movingpictures.mediainfo.xml</import>
+<import>movingpictures.mediainfo.listview.xml</import>
+<import>movingpictures.mediainfo.filmstrip.xml</import>
+<import>movingpictures.mediainfo.thumbview.xml</import>
 </controls>
 </window>
