@@ -6,7 +6,7 @@
     <define>#header.label:Sleep Control</define>
     <controls>
         <import>common.settings.xml</import>
-        <import>common.overlay.xml</import>
+
         <control>
             <type>image</type>
             <posX>110</posX>
@@ -27,6 +27,10 @@
             <animation effect="Fade" time="200">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
         </control>
+		
+		        <import>common.overlay.xml</import>
+				<import>common.time.xml</import>
+				
         <control>
             <description>group element</description>
             <type>group</type>
@@ -216,6 +220,6 @@
             <label>-</label>
             <scrollWrapString/>
         </control>
-        <import>common.time.xml</import>
+
     </controls>
 </window>
