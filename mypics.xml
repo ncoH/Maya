@@ -4,9 +4,11 @@
 <defaultcontrol>2</defaultcontrol>
 <allowoverlay>no</allowoverlay>
 <define>#header.image:pictures_logo.png</define>
+<define>#header.label:1</define>
 <controls>
-<import>common.window.pictures.xml</import>
-<import>common.time.xml</import>
+
+	<import>common.window.pictures.xml</import>
+	<import>common.time.xml</import>
 
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -17,7 +19,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>1</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>

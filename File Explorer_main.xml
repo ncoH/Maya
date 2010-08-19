@@ -3,11 +3,12 @@
     <id>557311</id>
     <defaultcontrol>11</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <animation effect="Fade" end="100" start="100" time="250">WindowClose</animation>
     <define>#header.label:File Explorer</define>
     <controls>
+	
         <import>common.window.title.xml</import>
         <import>common.time.xml</import>
+		
         <control>
             <id>1</id>
             <description>listcontrol background</description>
@@ -15,14 +16,14 @@
             <posX>55</posX>
             <posY>185</posY>
             <width>1259</width>
-            <height>537</height>
+            <height>560</height>
             <texture>listcontrol_bg.png</texture>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
         <control>
             <id>3</id>
-            <description>file listcontrol</description>
+            <description>file listcontrol left</description>
             <type>listcontrol</type>
             <onleft>11</onleft>
             <onright>4</onright>
@@ -34,11 +35,11 @@
             <height>420</height>
             <animation delay="50" effect="Fade" time="250">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
-            <spinPosX>240</spinPosX>
+            <spinPosX>650</spinPosX>
         </control>
         <control>
             <id>4</id>
-            <description>file listcontrol</description>
+            <description>file listcontrol right</description>
             <type>listcontrol</type>
             <onleft>3</onleft>
             <onright>2</onright>
@@ -50,6 +51,7 @@
             <height>420</height>
             <animation delay="50" effect="Fade" time="250">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
+			<spinPosX>1300</spinPosX>
         </control>
         <control>
             <id>6</id>

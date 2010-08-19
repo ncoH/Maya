@@ -3,11 +3,12 @@
     <controls>
         <control>
             <id>0</id>
-            <description>Bagground</description>
+            <description>Background</description>
             <type>image</type>
             <width>1366</width>
             <height>768</height>
         </control>
+		
         <control>
             <id>0</id>
             <type>label</type>
