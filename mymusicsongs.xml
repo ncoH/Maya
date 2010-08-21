@@ -300,7 +300,7 @@
 					<onleft>50</onleft>
 					<onup>10</onup>
 					<ondown>15</ondown>
-					<visible>plugin.isenabled(Global Search)</visible>
+					<visible>plugin.isenabled(Search music)</visible>
 				</control>
 
 

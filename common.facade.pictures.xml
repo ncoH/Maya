@@ -44,20 +44,20 @@
 				<scrollOffset>1</scrollOffset>
 				<onleft>2</onleft>
 				<onright>50</onright>
-				<itemWidth>207</itemWidth>
-				<itemHeight>139</itemHeight>
-				<textureWidth>207</textureWidth>
-				<textureHeight>139</textureHeight>
-				<thumbWidth>207</thumbWidth>
-				<thumbHeight>139</thumbHeight>
+                <itemWidth>150</itemWidth>
+                <itemHeight>150</itemHeight>
+                <textureWidth>151</textureWidth>
+                <textureHeight>150</textureHeight>
+                <thumbWidth>140</thumbWidth>
+                <thumbHeight>140</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
-				<itemWidthBig>224</itemWidthBig>
-				<itemHeightBig>227</itemHeightBig>
-				<thumbWidthBig>207</thumbWidthBig>
-				<thumbHeightBig>157</thumbHeightBig>
-				<textureWidthBig>219</textureWidthBig>
-				<textureHeightBig>167</textureHeightBig>
+				<itemWidthBig>244</itemWidthBig>
+				<itemHeightBig>247</itemHeightBig>
+				<thumbWidthBig>247</thumbWidthBig>
+				<thumbHeightBig>197</thumbHeightBig>
+				<textureWidthBig>259</textureWidthBig>
+				<textureHeightBig>217</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
 				<zoomXPixels>44</zoomXPixels>
@@ -74,7 +74,7 @@
 				<thumbZoom>no</thumbZoom>
 				<spinPosX>1190</spinPosX>
 			</control>
-			
+				
 			<control>
 				<description>Filmstrip view</description>
 				<type>filmstrip</type>
