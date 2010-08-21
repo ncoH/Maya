@@ -5,23 +5,6 @@
     <allowoverlay>no</allowoverlay>
     <define>#header.label:-</define>
     <controls>
-        <control>
-            <id>500</id>
-            <description>DUMMY BUTTON - optional for hidden menu visibility</description>
-            <type>button</type>
-            <onleft>2</onleft>
-            <onright>50</onright>
-            <onup>500</onup>
-            <ondown>500</ondown>
-            <visible>no</visible>
-            <posX>540</posX>
-            <posY>0</posY>
-            <width>800</width>
-            <height>720</height>
-            <textureFocus>-</textureFocus>
-            <textureNoFocus>-</textureNoFocus>
-            <label/>
-        </control>
         <import>common.window.title.xml</import>
         <control>
             <id>0</id>
@@ -67,10 +50,19 @@
             <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
         </control>
         <control>
+            <type>image</type>
+            <visible>String.Contains(#MusicTrivia.Game.InProgress,true)</visible>
+            <posX>0</posX>
+            <posY>0</posY>
+            <texture>Lyrics_overlay_NP.png</texture>
+            <animation effect="Fade" time="400">Visible</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
             <id>1</id>
             <description>listcontrol background</description>
             <type>image</type>
-            <visible>facadeview.list</visible>
+            <visible>yes</visible>
             <posX>0</posX>
             <posY>104</posY>
             <width>321</width>
@@ -91,6 +83,7 @@
             <posY>281</posY>
             <textureFocus>menu_list_focus.png</textureFocus>
             <label>#MusicTrivia.Translation.NewGame.Label</label>
+            <textalign>RIGHT</textalign>
             <animation effect="Fade" time="200">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
         </control>
@@ -106,6 +99,7 @@
             <posY>281</posY>
             <textureFocus>menu_list_focus.png</textureFocus>
             <label>#MusicTrivia.Translation.StopGame.Label</label>
+            <textalign>RIGHT</textalign>
             <animation effect="Fade" time="200">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
         </control>
@@ -350,10 +344,10 @@
             <description>listcontrol background</description>
             <type>image</type>
             <visible>facadeview.list</visible>
-            <posX>765</posX>
-            <posY>375</posY>
+            <posX>767</posX>
+            <posY>368</posY>
             <width>601</width>
-            <height>393</height>
+            <height>403</height>
             <texture>listcontrol_bg.png</texture>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -364,10 +358,10 @@
             <type>listcontrol</type>
             <onleft>3</onleft>
             <onright>50</onright>
-            <posX>766</posX>
-            <posY>375</posY>
+            <posX>767</posX>
+            <posY>368</posY>
             <width>600</width>
-            <height>565</height>
+            <height>575</height>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
             <font>font14</font>
@@ -422,6 +416,23 @@
             <posX>0</posX>
             <posY>0</posY>
             <width>1</width>
+        </control>
+        <control>
+            <id>500</id>
+            <description>DUMMY BUTTON - optional for hidden menu visibility</description>
+            <type>button</type>
+            <onleft>2</onleft>
+            <onright>50</onright>
+            <onup>500</onup>
+            <ondown>500</ondown>
+            <visible>no</visible>
+            <posX>540</posX>
+            <posY>0</posY>
+            <width>800</width>
+            <height>720</height>
+            <textureFocus>-</textureFocus>
+            <textureNoFocus>-</textureNoFocus>
+            <label/>
         </control>
         <control>
             <description>action menu</description>
@@ -489,6 +500,7 @@
                         <ondown>4</ondown>
                         <width>279</width>
                         <height>49</height>
+                        <action>106</action>
                         <textureFocus>hiddenmenu_item_selected.png</textureFocus>
                         <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
                         <label>#MusicTrivia.Translation.GameSetup.Label</label>
@@ -505,8 +517,9 @@
                         <ondown>5</ondown>
                         <width>279</width>
                         <height>49</height>
-                        <textureFocus/>
-                        <textureNoFocus/>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <disabledcolor>60ffffff</disabledcolor>
                         <label/>
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
@@ -521,8 +534,9 @@
                         <ondown>901</ondown>
                         <width>279</width>
                         <height>49</height>
-                        <textureFocus/>
-                        <textureNoFocus/>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <disabledcolor>60ffffff</disabledcolor>
                         <label/>
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>

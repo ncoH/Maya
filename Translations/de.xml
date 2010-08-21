@@ -28,6 +28,8 @@
 
 	<!-- L -->
 	<string Field="lyrics">Liedtext</string>
+	<string Field="Latest.movies">Neueste Filme</string>
+	<string Field="Latest.episodes">Neuste Episoden</string>
 	
 	<!-- M -->
 	<string Field="mylyrics">Liedtext</string>

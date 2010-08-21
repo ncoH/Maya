@@ -24,7 +24,7 @@
         <posX>995</posX>
         <posY>155</posY>
         <width>258</width>
-        <label>LASTEST EPISODES</label>
+        <label>#SkinTranslation.Translations.Latest.episodes</label>
         <font>Segoe Light16</font>
         <textcolor>85cfff</textcolor>
       </control>

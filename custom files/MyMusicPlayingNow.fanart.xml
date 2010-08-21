@@ -79,6 +79,19 @@
         </control>
         <control>
             <id>0</id>
+            <description>Mylyrics overlay</description>
+            <type>image</type>
+            <visible>window.istopmost(90478)</visible>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>Lyrics_overlay_NP.png</texture>
+            <animation effect="Fade" time="400">WindowOpen</animation>
+            <animation effect="Fade" end="0" start="0" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
             <type>image</type>
             <posX>0</posX>
             <posY>448</posY>
@@ -101,6 +114,20 @@
             <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
+            <id>0</id>
+            <type>image</type>
+            <visible>!control.hasthumb(500)</visible>
+            <posX>115</posX>
+            <posY>513</posY>
+            <width>188</width>
+            <height>188</height>
+            <texture>DefaultMyradioBig.png</texture>
+            <animation effect="Fade" time="1600">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+            <animation effect="Fade" time="1000" delay="200">VisibleChange</animation>
+        </control>
+        <control>
+            <description>Menu</description>
             <type>group</type>
             <posX>1018</posX>
             <posY>526</posY>
@@ -111,6 +138,11 @@
                 <id>5101</id>
                 <description>Now Playing button</description>
                 <type>button</type>
+                <onleft>5101</onleft>
+                <onright>5101</onright>
+                <onup>5105</onup>
+                <ondown>5102</ondown>
+                <visible>!window.isvisible(90478)</visible>
                 <width>276</width>
                 <height>38</height>
                 <textureFocus>now_playing_menuitem_selected.png</textureFocus>
@@ -122,6 +154,11 @@
                 <id>5102</id>
                 <description>Top Album Tracks button</description>
                 <type>button</type>
+                <onleft>166</onleft>
+                <onright>5102</onright>
+                <onup>5101</onup>
+                <ondown>5103</ondown>
+                <visible>!window.isvisible(90478)</visible>
                 <posX>650</posX>
                 <posY>235</posY>
                 <width>276</width>
@@ -135,8 +172,13 @@
                 <id>5103</id>
                 <description>Tagged Tracks button</description>
                 <type>button</type>
+                <onleft>155</onleft>
+                <onright>5103</onright>
+                <onup>5102</onup>
+                <ondown>5104</ondown>
+                <visible>!window.isvisible(90478)</visible>
                 <posX>650</posX>
-                <posY>235</posY>
+                <posY>234</posY>
                 <width>276</width>
                 <height>38</height>
                 <textureFocus>now_playing_menuitem_selected.png</textureFocus>
@@ -148,6 +190,13 @@
                 <id>5104</id>
                 <description>Current Playlist button</description>
                 <type>button</type>
+                <onleft>5104</onleft>
+                <onright>5104</onright>
+                <onup>5103</onup>
+                <ondown>5105</ondown>
+                <visible>!window.isvisible(90478)</visible>
+                <posX>650</posX>
+                <posY>235</posY>
                 <width>276</width>
                 <height>38</height>
                 <hyperlink>500</hyperlink>
@@ -160,11 +209,13 @@
                 <id>5105</id>
                 <description>Lyrics button</description>
                 <type>button</type>
+                <onleft>5105</onleft>
+                <onright>5105</onright>
                 <onup>5104</onup>
                 <ondown>5101</ondown>
-                <visible>plugin.isenabled(My Lyrics)</visible>
+                <visible>plugin.isenabled(My Lyrics)+!window.isvisible(90478)+!window.isvisible(90478)+!window.isvisible(90478)</visible>
                 <posX>609</posX>
-                <posY>242</posY>
+                <posY>241</posY>
                 <width>276</width>
                 <height>38</height>
                 <hyperlink>90478</hyperlink>
@@ -173,18 +224,6 @@
                 <label>#SkinTranslation.Translations.lyrics.Label</label>
                 <textYOff>6</textYOff>
             </control>
-        </control>
-        <control>
-            <id>0</id>
-            <type>image</type>
-            <visible>!control.hasthumb(500)</visible>
-            <posX>115</posX>
-            <posY>513</posY>
-            <width>188</width>
-            <height>188</height>
-            <texture>DefaultMyradioBig.png</texture>
-            <animation effect="Fade" time="1600">WindowOpen</animation>
-            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
             <id>112</id>
@@ -198,6 +237,7 @@
             <animation effect="Fade" reversible="FALSE" time="450">Visible</animation>
             <animation effect="Fade" time="800">WindowOpen</animation>
             <animation effect="Fade" time="300">WindowClose</animation>
+			<animation effect="Fade" time="500">VisibleChange</animation>
         </control>
         <control>
             <id>0</id>
@@ -215,7 +255,7 @@
             <id>0</id>
             <description>title label</description>
             <type>fadelabel</type>
-            <visible>Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
             <posX>350</posX>
             <posY>497</posY>
             <width>550</width>
@@ -229,7 +269,7 @@
             <id>0</id>
             <description>title label</description>
             <type>fadelabel</type>
-            <visible>Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
             <posX>480</posX>
             <posY>497</posY>
             <width>497</width>
@@ -242,7 +282,7 @@
             <id>0</id>
             <description>artist label</description>
             <type>fadelabel</type>
-            <visible>Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
             <posX>350</posX>
             <posY>533</posY>
             <width>550</width>
@@ -256,7 +296,7 @@
             <id>0</id>
             <description>artist label</description>
             <type>fadelabel</type>
-            <visible>Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
             <posX>480</posX>
             <posY>533</posY>
             <width>497</width>
@@ -269,7 +309,7 @@
             <id>0</id>
             <description>album label</description>
             <type>fadelabel</type>
-            <visible>Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
             <posX>350</posX>
             <posY>563</posY>
             <width>550</width>
@@ -283,7 +323,7 @@
             <id>0</id>
             <description>album label</description>
             <type>fadelabel</type>
-            <visible>Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
             <posX>480</posX>
             <posY>563</posY>
             <width>497</width>
@@ -296,9 +336,9 @@
             <id>0</id>
             <description>up next label</description>
             <type>label</type>
-            <visible>Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
             <posX>350</posX>
-            <posY>610</posY>
+            <posY>593</posY>
             <font>Segoe Light14</font>
             <textcolor>ff85cffe</textcolor>
             <label>790</label>
@@ -306,16 +346,16 @@
             <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
-            <id>121</id>
+            <id>0</id>
             <description>next track label</description>
             <type>fadelabel</type>
-            <visible>Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
-            <posX>480</posX>
-            <posY>610</posY>
-            <width>497</width>
+            <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)] + player.hasmedia</visible>
+            <posX>370</posX>
+            <posY>624</posY>
+            <width>607</width>
             <font>Segoe Light14</font>
             <textcolor>ff85cffe</textcolor>
-            <label>#Play.Next.Title</label>
+            <label>#Play.Next.Artist - #Play.Next.Title - #Play.Next.Album</label>
             <animation effect="Fade" time="800">WindowOpen</animation>
             <animation effect="Fade" time="300">WindowClose</animation>
         </control>
@@ -336,9 +376,9 @@
             <id>141</id>
             <description>Rating</description>
             <type>imagelist</type>
-            <visible>Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
             <posX>349</posX>
-            <posY>652</posY>
+            <posY>655</posY>
             <width>185</width>
             <height>21</height>
             <textureHeight>19</textureHeight>
@@ -359,9 +399,9 @@
             <description>Progress background</description>
             <type>image</type>
             <visible>player.hasmedia</visible>
-            <posX>353</posX>
+            <posX>350</posX>
             <posY>688</posY>
-            <width>632</width>
+            <width>628</width>
             <height>2</height>
             <texture>now_playing_progress_back.png</texture>
             <animation effect="Fade" time="800">WindowOpen</animation>
@@ -378,17 +418,17 @@
             <description>progress bar</description>
             <type>progress</type>
             <visible>player.hasmedia</visible>
-            <posX>341</posX>
+            <posX>340</posX>
             <posY>688</posY>
-            <width>644</width>
+            <width>648</width>
             <height>2</height>
             <texturebg>-</texturebg>
             <lefttexture>now_playing_progress_bar.png</lefttexture>
             <righttexture>now_playing_progress_bar.png</righttexture>
             <midtexture>now_playing_progress_bar.png</midtexture>
             <label>#percentage</label>
-            <animation effect="Fade" time="800">WindowOpen</animation>
-            <animation effect="Fade" time="300">WindowClose</animation>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <control>
             <id>0</id>
@@ -408,7 +448,7 @@
             <description>track duration label</description>
             <type>fadelabel</type>
             <visible>player.hasmedia</visible>
-            <posX>970</posX>
+            <posX>977</posX>
             <posY>695</posY>
             <width>135</width>
             <font>font11</font>
@@ -416,16 +456,6 @@
             <label>#duration</label>
             <animation effect="Fade" time="800">WindowOpen</animation>
             <animation effect="Fade" time="300">WindowClose</animation>
-        </control>
-        <control>
-            <id>123</id>
-            <description>next artist label</description>
-            <type>fadelabel</type>
-            <posX>-2000</posX>
-            <posY>655</posY>
-            <width>380</width>
-            <font>font12</font>
-            <label>#Play.Next.Artist</label>
         </control>
         <control>
             <id>0</id>
@@ -514,6 +544,12 @@
             <textureHeight>38</textureHeight>
             <textureNoFocus>-</textureNoFocus>
             <spaceBetweenItems>0</spaceBetweenItems>
+        </control>
+        <control>
+            <description>group element</description>
+            <type>group</type>
+            <animation effect="Fade" reversible="FALSE" time="200">WindowOpen</animation>
+            <animation effect="Fade" reversible="FALSE" time="200">WindowClose</animation>
         </control>
         <control>
             <id>77</id>
@@ -788,5 +824,117 @@
             <animation effect="Fade" time="200">WindowClose</animation>
         </control>
         <import>common.time.xml</import>
+        <control>
+            <description>playing status</description>
+            <type>group</type>
+            <posX>645</posX>
+            <posY>697</posY>
+            <width>58</width>
+            <height>19</height>
+            <animation effect="Fade" time="250">VisibleChange</animation>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <font>font11</font>
+            <align>center</align>
+            <control>
+                <description>2x label</description>
+                <type>label</type>
+                <visible>player.forwarding2x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>FFW 2x</label>
+            </control>
+            <control>
+                <description>4x label</description>
+                <type>label</type>
+                <visible>player.forwarding4x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>FFW 4x</label>
+            </control>
+            <control>
+                <description>8x label</description>
+                <type>label</type>
+                <visible>player.forwarding8x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>FFW 8x</label>
+            </control>
+            <control>
+                <description>16x label</description>
+                <type>label</type>
+                <visible>player.forwarding16x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>FFW 16x</label>
+            </control>
+            <control>
+                <description>32x label</description>
+                <type>label</type>
+                <visible>player.forwarding32x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>FFW 32x</label>
+            </control>
+            <control>
+                <description>2x label</description>
+                <type>label</type>
+                <visible>player.rewinding2x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>REW 2x</label>
+            </control>
+            <control>
+                <description>4x label</description>
+                <type>label</type>
+                <visible>player.rewinding4x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>REW 4x</label>
+            </control>
+            <control>
+                <description>8x label</description>
+                <type>label</type>
+                <visible>player.rewinding8x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>REW 8x</label>
+            </control>
+            <control>
+                <description>16x label</description>
+                <type>label</type>
+                <visible>player.rewinding16x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>REW 16x</label>
+            </control>
+            <control>
+                <description>32x label</description>
+                <type>label</type>
+                <visible>player.rewinding32x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>REW 32x</label>
+            </control>
+            <control>
+                <description>Pause</description>
+                <type>label</type>
+                <visible>player.paused</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>112</label>
+            </control>
+        </control>
     </controls>
 </window>

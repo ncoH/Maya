@@ -306,7 +306,7 @@ multiple view modes.
 				<height>49</height>
 				<textXOff>25</textXOff>
 				<textYOff>12</textYOff>
-				<label>Video Settings</label>
+				<label>#SkinTranslation.Translations.video.settings</label>
 				<hyperlink>703</hyperlink>
 				<ondown>2</ondown>
 				<onleft>50</onleft>

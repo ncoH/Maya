@@ -21,6 +21,13 @@
 	<string Field="format">Format:</string>
 	
 	<!-- G -->
+	<string Field="global.search.musicsearch">musik søgning</string>
+	<string Field="global.search.lastplayed">Sidst spillet</string>
+	<string Field="global.search.Searchphrase">Søgeord</string>
+	<string Field="global.search.Searchhistory">Historik</string>
+	<string Field="global.search.Searchfields">Søgefelt</string>
+	<string Field="global.search.Casesensitive">Case sensitive</string>
+	<string Field="global.search.Searchtype">Søgetype</string>
 
 	<!-- H -->
 
@@ -28,6 +35,8 @@
 
 	<!-- L -->
 	<string Field="lyrics">Sangtekst</string>
+	<string Field="Latest.movies">Seneste film</string>
+	<string Field="Latest.episodes">Seneste tvafsnit</string>
 	
 	<!-- M -->
 	<string Field="mylyrics">Sangtekst</string>
@@ -47,10 +56,12 @@
 	<!-- S -->
 
 	<!-- T -->
-
+	<string Field="lyrics.tag">Tag</string>
+	
 	<!-- U -->
 
 	<!-- V -->
+	<string Field="video.settings">Video indstillinger</string>
 
 	<!-- W -->
 

@@ -21,6 +21,13 @@
 	<string Field="format">Format:</string>
 	
 	<!-- G -->
+	<string Field="global.search.musicsearch">music search</string>
+	<string Field="global.search.lastplayed">Last played</string>
+	<string Field="global.search.Searchphrase">Searchphrase</string>
+	<string Field="global.search.Searchhistory">Search history</string>
+	<string Field="global.search.Searchfields">Search fields</string>
+	<string Field="global.search.Casesensitive">Case sensitive</string>
+	<string Field="global.search.Searchtype">Searchtype</string>
 
 	<!-- H -->
 
@@ -28,6 +35,8 @@
 
 	<!-- L -->
 	<string Field="lyrics">Lyrics</string>
+	<string Field="Latest.movies">Latest movies</string>
+	<string Field="Latest.episodes">Latest episodes</string>
 	
 	<!-- M -->
 	<string Field="mylyrics">My Lyrics</string>
@@ -45,12 +54,14 @@
 	<string Field="recentlyAdded.Episode">Episode</string>
 
 	<!-- S -->
-
+	
 	<!-- T -->
+	<string Field="lyrics.tag">Tag</string>
 
 	<!-- U -->
 
 	<!-- V -->
+	<string Field="video.settings">Video Settings</string>
 
 	<!-- W -->
 

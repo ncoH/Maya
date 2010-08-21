@@ -42,22 +42,6 @@
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
-		<id>1</id>
-		<posX>552</posX>
-		<posY>30</posY>
-		<width>500</width>
-		<height>100</height>
-		<label>mytrailers</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<visible>!Control.IsVisible(50)</visible>
-		<valign>middle</valign>
-	</control>
-	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>

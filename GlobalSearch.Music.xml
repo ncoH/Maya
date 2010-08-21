@@ -75,6 +75,8 @@
 		<width>1366</width>
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
+        <animation effect="Fade" time="100">WindowOpen</animation>
+        <animation effect="Fade" time="100">WindowClose</animation>
 		
 		<control>
 			<type>image</type>
@@ -133,7 +135,7 @@
 					<height>49</height>
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
-			<label>Searchphrase</label>
+			<label>#SkinTranslation.Translations.global.search.Searchphrase.Label</label>
 			<onup>9</onup>
 			<ondown>7</ondown>
 			<onleft>50</onleft>
@@ -150,7 +152,7 @@
 					<height>49</height>
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
-			<label>Search history</label>
+			<label>#SkinTranslation.Translations.global.search.Searchhistory.Label</label>
 			<onup>2</onup>
 			<ondown>6</ondown>
 			<onleft>50</onleft>
@@ -167,7 +169,7 @@
 					<height>49</height>
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
-			<label>Search fields</label>
+			<label>#SkinTranslation.Translations.global.search.Searchfields.Label</label>
 			<ondown>3</ondown>
 			<onup>7</onup>
 			<onleft>50</onleft>
@@ -186,7 +188,7 @@
 					<height>49</height>
 					<textXOff>24</textXOff>
 					<textYOff>12</textYOff>
-			<label>Case sensitive</label>
+			<label>#SkinTranslation.Translations.global.search.Casesensitive.Label</label>
 			<ondown>5</ondown>
 			<onup>6</onup>
 			<onleft>50</onleft>
@@ -206,7 +208,7 @@
 				<textYOff>12</textYOff>
 				<textYOff2>12</textYOff2>
 				<textXOff2>25</textXOff2>
-			<label>Searchtype</label>
+			<label>#SkinTranslation.Translations.global.search.Searchtype.Label</label>
 			<ondown>8</ondown>
 			<onup>3</onup>
 			<onleft>50</onleft>
