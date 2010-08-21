@@ -207,10 +207,10 @@
 	<control>
 		<id>1</id>
 		<type>image</type>
-		<posX>456</posX>
-		<posY>246</posY>
-		<width>462</width>
-		<height>313</height>
+		<posX>459</posX>
+		<posY>236</posY>
+		<width>430</width>
+		<height>283</height>
 		<texture>black.png</texture>
 		<visible>facadeview.filmstrip</visible>
 		<animation effect="fade" time="450" reversible="false">visible</animation>
@@ -219,10 +219,10 @@
 	<control>
 		<id>500</id>
 		<type>image</type>
-		<posX>456</posX>
-		<posY>246</posY>
-		<width>460</width>
-		<height>313</height>
+		<posX>459</posX>
+		<posY>236</posY>
+		<width>430</width>
+		<height>283</height>
 		<texture>#selectedthumb</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<centered>yes</centered>
@@ -233,10 +233,10 @@
 	<control>
 		<id>1</id>
 		<type>image</type>
-		<posX>401</posX>
+		<posX>426</posX>
 		<posY>184</posY>
-		<width>570</width>
-		<height>433</height>
+		<width>500</width>
+		<height>383</height>
 		<texture>blackborders_pictures_filmstrip.png</texture>
 		<visible>facadeview.filmstrip</visible>
 		<animation effect="fade" time="450" reversible="false">visible</animation>

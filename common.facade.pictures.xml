@@ -67,8 +67,14 @@
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>
 				<spinCanFocus>no</spinCanFocus>
+				<frame>-</frame>
+				<frameFocus>picture_filmstrip_overlay.png</frameFocus>
+				<shadowAngle>90</shadowAngle>
+    			<shadowDistance>50</shadowDistance>
+				<thumbZoom>no</thumbZoom>
+				<spinPosX>1190</spinPosX>
 			</control>
-
+			
 			<control>
 				<description>Filmstrip view</description>
 				<type>filmstrip</type>
@@ -104,6 +110,7 @@
 				<showInfoImage>no</showInfoImage>
 
 			</control>
+
 
 		</control>
 

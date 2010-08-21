@@ -4,37 +4,71 @@
     <defaultcontrol>50</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <define>#header.label:14001</define>
-    <define>#header.image:-</define>
-    <define>#header.hover:-</define>
+<!-- 	<define>#header.background:hover_extensions.png</define> -->
     <controls>
-        <import>common.window.xml</import>
+	
+        <import>common.window.extensions.xml</import>
         <import>common.time.xml</import>
+		
         <control>
             <id>1</id>
-            <description>listcontrol background</description>
-            <type>image</type>
-            <visible>facadeview.list</visible>
-            <posX>524</posX>
-            <posY>153</posY>
-            <width>725</width>
-            <height>482</height>
-            <texture>listcontrol_bg.png</texture>
+            <type>label</type>
+            <visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+
         <control>
             <id>1</id>
-            <description>listcontrol background info</description>
-            <type>image</type>
-            <visible>facadeview.list</visible>
-            <posX>524</posX>
-            <posY>678</posY>
-            <width>725</width>
-            <height>51</height>
-            <texture>listcontrol_bg_info.png</texture>
+            <type>label</type>
+            <visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
+            <posX>433</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <align>CENTER</align>
+            <label>#header.label</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+
+	<control>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
+	</control>
+	
+	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
+	</control>
+	
         <control>
             <description>action menu</description>
             <type>actiongroup</type>
@@ -169,24 +203,16 @@
                 </control>
             </control>
         </control>
-        <control>
-            <id>1</id>
-            <type>image</type>
-            <posX>0</posX>
-            <posY>325</posY>
-            <texture>hiddenmenu_tab.png</texture>
-            <animation delay="600" effect="Slide" end="0,0" start="-60,0" time="400" tween="Quadratic">WindowOpen</animation>
-            <animation delay="100" effect="Slide" end="-60,0" start="0,0" time="400" tween="Quadratic">WindowClose</animation>
-        </control>
+
         <control>
             <id>0</id>
             <description>Summary</description>
             <type>textboxscrollup</type>
             <visible/>
             <posX>56</posX>
-            <posY>248</posY>
-            <width>397</width>
-            <height>258</height>
+            <posY>250</posY>
+            <width>415</width>
+            <height>100</height>
             <animation effect="Fade" time="300">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
             <textcolor>ffFFFFFF</textcolor>
@@ -200,9 +226,9 @@
             <type>textboxscrollup</type>
             <visible/>
             <posX>56</posX>
-            <posY>527</posY>
-            <width>397</width>
-            <height>196</height>
+            <posY>377</posY>
+            <width>415</width>
+            <height>200</height>
             <animation effect="Fade" time="300">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
             <textcolor>ffFFFFFF</textcolor>
@@ -210,7 +236,19 @@
             <font>font12</font>
             <label>#MPE.Selected.VersionDescription</label>
         </control>
+		
+		<control>
+            <id>1</id>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>325</posY>
+            <texture>hiddenmenu_tab.png</texture>
+            <animation delay="600" effect="Slide" end="0,0" start="-60,0" time="400" tween="Quadratic">WindowOpen</animation>
+            <animation delay="100" effect="Slide" end="-60,0" start="0,0" time="400" tween="Quadratic">WindowClose</animation>
+        </control>
+		
         <import>common.facade.video.xml</import>
+		
         <control>
             <id>1</id>
             <description>no preview logo</description>
@@ -221,10 +259,11 @@
             <width>161</width>
             <height>121</height>
             <texture>audio_nothumb.png</texture>
-            <animation effect="Fade" time="300">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
             <overlay>yes</overlay>
             <keepaspectratio>yes</keepaspectratio>
+			<visible>facadeview.list +Control.IsVisible(50)</visible>
+			<animation effect="Fade" time="300">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
             <centered>yes</centered>
         </control>
         <control>
@@ -236,11 +275,15 @@
             <width>161</width>
             <height>121</height>
             <texture>#selectedthumb</texture>
-            <animation effect="Fade" time="300">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
             <overlay>yes</overlay>
             <keepaspectratio>yes</keepaspectratio>
+			<visible>facadeview.list +Control.IsVisible(50)</visible>
+			<animation effect="Fade" time="300">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
             <centered>yes</centered>
         </control>
+		
+        <import>common.overlay.xml</import>
+		
     </controls>
 </window>
