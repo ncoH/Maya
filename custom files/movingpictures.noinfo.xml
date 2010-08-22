@@ -248,6 +248,8 @@ multiple view modes.
 				<label>#MovingPictures.Translation.ChangeView.Label</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
+				<onup>2</onup>
+				<ondown>14</ondown>
 			</control>
 <!-- Only in MovingPictures 1.0 -->
 				<control>
@@ -263,40 +265,26 @@ multiple view modes.
 					<textYOff>12</textYOff>
 					<onright>50</onright>
 					<onup>3</onup>
+					<ondown>15</ondown>
+				</control>
+				
+				<control>
+					<description>Parental controls</description>
+					<type>button</type>
+					<id>15</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<label>#MovingPictures.Translation.ToggleParentalLock.Label</label>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>14</onup>
 					<ondown>66610</ondown>
 				</control>
-
-
-
-	
-<!--
-		<control>
-				<description>Empty button</description>
-				<type>button</type>
-				<id>0</id>
-				<label>-</label>
-				<visible>false</visible>
-			</control>
-
-			<control>
-				<description>Filters Menu</description>
-				<type>button</type>
-				<id>4</id>
-				<label>Filters</label>
-				<onleft>50</onleft>
-				<visible>false</visible>
-			</control>
-
-			<control>
-				<description>Settings Menu</description>
-				<type>button</type>
-				<id>5</id>
-				<label>Settings</label>
-				<onleft>50</onleft>
-				<visible>false</visible>
-			</control>
-
-	-->
+				
 			<control>
 				<description>Video Settings</description>
 				<type>button</type>
@@ -307,12 +295,26 @@ multiple view modes.
 				<height>49</height>
 				<textXOff>25</textXOff>
 				<textYOff>12</textYOff>
-				<label>Video Settings</label>
-				<hyperlink>703</hyperlink>
-				<ondown>2</ondown>
-				<onleft>50</onleft>
-				<onright>50</onright>
+					<label>#SkinTranslation.Translations.Video.settings.Label</label>
+					<hyperlink>703</hyperlink>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>15</onup>
+					<ondown>66611</ondown>
 			</control>
+			
+			<control>
+					<description>SubCentral</description>
+					<id>66611</id>
+					<type>button</type>
+					<label>Check for Subtitles</label>
+					<hyperlink>84623</hyperlink>
+					<visible>plugin.isenabled(SubCentral)</visible>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<onup>66610</onup>
+					<ondown>2</ondown>     
+				</control>	
 
 		</control>
 

@@ -130,11 +130,11 @@
 			<type>button</type>
 			<id>2</id>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
 			<label>#SkinTranslation.Translations.global.search.Searchphrase.Label</label>
 			<onup>9</onup>
 			<ondown>7</ondown>
@@ -147,11 +147,11 @@
 			<type>button</type>
 			<id>7</id>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
 			<label>#SkinTranslation.Translations.global.search.Searchhistory.Label</label>
 			<onup>2</onup>
 			<ondown>6</ondown>
@@ -164,11 +164,11 @@
 			<type>button</type>
 			<id>6</id>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
 			<label>#SkinTranslation.Translations.global.search.Searchfields.Label</label>
 			<ondown>3</ondown>
 			<onup>7</onup>
@@ -181,14 +181,14 @@
 			<type>togglebutton</type>
 			<id>3</id>
 			<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-		<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-		<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-		<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>24</textXOff>
-					<textYOff>12</textYOff>
-			<label>#SkinTranslation.Translations.global.search.Casesensitive.Label</label>
+			<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+			<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+			<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>24</textXOff>
+			<textYOff>12</textYOff>
+			<label>Case Sensitive</label>
 			<ondown>5</ondown>
 			<onup>6</onup>
 			<onleft>50</onleft>

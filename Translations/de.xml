@@ -8,7 +8,7 @@
 	<!-- # -->
 
 	<!-- A -->
-	<string Field="tv.recordings">Aufnahmen</string>
+
 	<!-- B -->
 
 	<!-- C -->
@@ -21,13 +21,20 @@
 	<string Field="format">Format:</string>
 	
 	<!-- G -->
-
+	<string Field="global.search.musicsearch">Musik Suche</string>
+	<string Field="global.search.lastplayed">Zuletzt gespielt</string>
+	<string Field="global.search.Searchphrase">Suchphrase</string>
+	<string Field="global.search.Searchhistory">Suchverlauf</string>
+	<string Field="global.search.Searchfields">Suchfeld</string>
+	<string Field="global.search.Casesensitive">Groß-Kleinschreibung</string>
+	<string Field="global.search.Searchtype">Suchart</string>
 	<!-- H -->
 
 	<!-- I -->
 
 	<!-- L -->
 	<string Field="lyrics">Liedtext</string>
+	<string Field="lyrics.tag">Anhang</string>
 	<string Field="Latest.movies">Neueste Filme</string>
 	<string Field="Latest.episodes">Neuste Episoden</string>
 	
@@ -49,11 +56,11 @@
 	<!-- S -->
 
 	<!-- T -->
-
+	<string Field="tv.recordings">Aufnahmen</string>
 	<!-- U -->
 
 	<!-- V -->
-
+	<string Field="video.settings">Video Einstellungen</string>
 	<!-- W -->
 
 	<!-- Y -->

@@ -213,8 +213,8 @@
 		<description>Category Logo</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>75</posX>
-		<posY>100</posY>
+        <posX>555</posX>
+        <posY>255</posY>
 		<width>105</width>
 		<height>35</height>
 		<texture>#header.image</texture>
@@ -253,7 +253,7 @@
 		<description>Description</description>
 		<id>0</id>
 			<posX>556</posX>
-			<posY>281</posY>
+			<posY>291</posY>
 			<width>680</width>
 			<height>110</height>
 		<seperator>----------------------------------------------------------------------------------------</seperator>
@@ -302,8 +302,8 @@
 		<description>Category Logo</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>75</posX>
-		<posY>60</posY>
+        <posX>555</posX>
+        <posY>255</posY>
 		<width>105</width>
 		<height>35</height>
 		<texture>#header.image</texture>
