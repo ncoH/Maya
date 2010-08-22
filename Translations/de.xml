@@ -36,7 +36,7 @@
 	<string Field="lyrics">Liedtext</string>
 	<string Field="lyrics.tag">Anhang</string>
 	<string Field="Latest.movies">Neueste Filme</string>
-	<string Field="Latest.episodes">Neuste Episoden</string>
+	<string Field="Latest.episodes">Neueste Episoden</string>
 	
 	<!-- M -->
 	<string Field="mylyrics">Liedtext</string>
