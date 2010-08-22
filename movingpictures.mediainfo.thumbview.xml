@@ -12,7 +12,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>800</posX>
-		<posY>676</posY>
+		<posY>696</posY>
 		<width>75</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\bluray.png</texture>
@@ -26,7 +26,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>800</posX>
-		<posY>676</posY>
+		<posY>696</posY>
 		<width>75</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\blurayrip.png</texture>
@@ -40,7 +40,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>800</posX>
-		<posY>676</posY>
+		<posY>696</posY>
 		<width>75</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\dvd.png</texture>
@@ -54,7 +54,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>800</posX>
-		<posY>676</posY>
+		<posY>696</posY>
 		<width>75</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\dvdrip.png</texture>
@@ -70,7 +70,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>875</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>80</width>
 		<height>54</height>
 		<texture>Logos\video\#MovingPictures.LocalMedia.videocodec.png</texture>
@@ -85,7 +85,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>960</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>100</width>
 		<colordiffuse>FFe1e1e1</colordiffuse>
 		<keepaspectratio>yes</keepaspectratio>
@@ -100,7 +100,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>960</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>100</width>
 		<texture>Logos\audio\dolby20.png</texture>
 		<keepaspectratio>yes</keepaspectratio>
@@ -114,7 +114,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>960</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>100</width>
 		<texture>Logos\audio\dts51.png</texture>
 		<keepaspectratio>yes</keepaspectratio>
@@ -128,7 +128,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>960</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>100</width>
 		<texture>Logos\audio\dts71.png</texture>
 		<keepaspectratio>yes</keepaspectratio>
@@ -142,7 +142,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>960</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>100</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\mp3_20.png</texture>
@@ -156,7 +156,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>960</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>100</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\pcm_20.png</texture>
@@ -171,7 +171,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1050</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\resolution\1080.png</texture>
@@ -185,7 +185,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1050</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\resolution\720.png</texture>
@@ -199,7 +199,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1050</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\resolution\480.png</texture>
@@ -213,7 +213,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1050</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\resolution\576.png</texture>
@@ -227,7 +227,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1050</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\resolution\540.png</texture>
@@ -243,7 +243,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1110</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\aspectratio\2.35.png</texture>
@@ -258,7 +258,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>1115</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\aspectratio\1.33.png</texture>
@@ -303,7 +303,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<id>0</id>
 		<posX>1155</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>80</width>
 		<height>54</height>
 		<texture>Logos\subtitles.png</texture>
@@ -316,7 +316,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<id>0</id>
 		<posX>1155</posX>
-		<posY>675</posY>
+		<posY>695</posY>
 		<width>80</width>
 		<height>54</height>
 		<texture>Logos\nosubtitles.png</texture>

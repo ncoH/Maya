@@ -418,6 +418,22 @@ multiple view modes.
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
+		<description>Moviecount</description>
+		<type>label</type>
+		<label>#MovingPictures.Translation.Movies.Label: #MovingPictures.general.filteredmoviecount</label>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>728</posY>
+		<width>1366</width>
+		<align>center</align>
+		<font>font13</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 		<description>New Icon</description>
 		<type>image</type>
 		<id>0</id>

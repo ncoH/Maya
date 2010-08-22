@@ -11,7 +11,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>855</posX>
+		<posX>821</posX>
 		<posY>696</posY>
 		<width>75</width>
 		<keepaspectratio>yes</keepaspectratio>
@@ -25,7 +25,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>855</posX>
+		<posX>821</posX>
 		<posY>696</posY>
 		<width>75</width>
 		<keepaspectratio>yes</keepaspectratio>
@@ -39,7 +39,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>855</posX>
+		<posX>821</posX>
 		<posY>696</posY>
 		<width>75</width>
 		<keepaspectratio>yes</keepaspectratio>
@@ -53,7 +53,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>855</posX>
+		<posX>821</posX>
 		<posY>696</posY>
 		<width>75</width>
 		<keepaspectratio>yes</keepaspectratio>
@@ -69,7 +69,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>930</posX>
+		<posX>894</posX>
 		<posY>695</posY>
 		<width>80</width>
 		<height>54</height>
@@ -84,7 +84,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1015</posX>
+		<posX>975</posX>
 		<posY>695</posY>
 		<width>100</width>
 		<colordiffuse>FFe1e1e1</colordiffuse>
@@ -99,7 +99,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1015</posX>
+		<posX>975</posX>
 		<posY>695</posY>
 		<width>100</width>
 		<texture>Logos\audio\dolby20.png</texture>
@@ -113,7 +113,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1015</posX>
+		<posX>975</posX>
 		<posY>695</posY>
 		<width>100</width>
 		<texture>Logos\audio\dts51.png</texture>
@@ -127,7 +127,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1015</posX>
+		<posX>975</posX>
 		<posY>695</posY>
 		<width>100</width>
 		<texture>Logos\audio\dts71.png</texture>
@@ -141,7 +141,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1015</posX>
+		<posX>975</posX>
 		<posY>695</posY>
 		<width>100</width>
 		<keepaspectratio>yes</keepaspectratio>
@@ -155,7 +155,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1015</posX>
+		<posX>975</posX>
 		<posY>695</posY>
 		<width>100</width>
 		<keepaspectratio>yes</keepaspectratio>
@@ -170,7 +170,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1105</posX>
+		<posX>1065</posX>
 		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
@@ -184,7 +184,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1105</posX>
+		<posX>1065</posX>
 		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
@@ -198,7 +198,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1105</posX>
+		<posX>1065</posX>
 		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
@@ -212,7 +212,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1105</posX>
+		<posX>1065</posX>
 		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
@@ -226,7 +226,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1105</posX>
+		<posX>1065</posX>
 		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
@@ -242,7 +242,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1165</posX>
+		<posX>1123</posX>
 		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
@@ -257,7 +257,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1170</posX>
+		<posX>1129</posX>
 		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
@@ -302,7 +302,7 @@
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<id>0</id>
-		<posX>1210</posX>
+		<posX>1168</posX>
 		<posY>695</posY>
 		<width>80</width>
 		<height>54</height>
@@ -315,7 +315,7 @@
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<id>0</id>
-		<posX>1210</posX>
+		<posX>1168</posX>
 		<posY>695</posY>
 		<width>80</width>
 		<height>54</height>

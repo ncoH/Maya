@@ -100,20 +100,20 @@ This file should contain the facade view
 				<type>thumbnailpanel</type>
 				<id>50</id>
 				<posX>516</posX>
-				<posY>255</posY>
-				<width>790</width>
-				<height>500</height>
+				<posY>260</posY>
+				<width>720</width>
+				<height>480</height>
 				<scrollOffset>0</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<onleft>2</onleft>
-				<onright>50</onright>
-				<itemWidth>103</itemWidth>
-				<itemHeight>140</itemHeight>
-				<textureWidth>103</textureWidth>
-				<textureHeight>140</textureHeight>
-				<thumbWidth>103</thumbWidth>
-				<thumbHeight>140</thumbHeight>
+				<onright>2</onright>
+				<itemWidth>86</itemWidth>
+				<itemHeight>130</itemHeight>
+				<textureWidth>86</textureWidth>
+				<textureHeight>130</textureHeight>
+				<thumbWidth>86</thumbWidth>
+				<thumbHeight>130</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
 				<itemWidthBig>138</itemWidthBig>
