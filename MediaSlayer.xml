@@ -4,7 +4,7 @@
     <defaultcontrol>3</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <define>#header.label:Media Slayer</define>
-	<animation effect="fade" time="250" start="100" end="100">WindowClose</animation>
+<!-- 	<define>#header.background:hover_mediaslayer.png</define> -->
     <controls>
 	
         <import>common.window.xml</import>
