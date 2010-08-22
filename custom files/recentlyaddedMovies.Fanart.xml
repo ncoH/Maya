@@ -24,7 +24,7 @@
         <posX>995</posX>
         <posY>155</posY>
         <width>258</width>
-        <label>#SkinTranslation.Translations.Latest.movies</label>
+        <label>#SkinTranslation.Translations.Latest.movies.Label</label>
         <font>Segoe Light16</font>
         <textcolor>85cfff</textcolor>
       </control>

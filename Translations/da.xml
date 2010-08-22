@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Skin translation file -->
 <!-- Danish (DA) -->
-<!-- Last Updated: 20th Jun 2010 -->
+<!-- Last Updated: 22th aug 2010 -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
 
 <strings>
@@ -12,6 +12,7 @@
 	<!-- B -->
 
 	<!-- C -->
+	<string Field="check.subtitles">Led efter undertekster</string>
 
 	<!-- D -->
 

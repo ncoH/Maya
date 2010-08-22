@@ -294,7 +294,7 @@ multiple view modes.
 				<height>49</height>
 				<textXOff>25</textXOff>
 				<textYOff>12</textYOff>
-					<label>#SkinTranslation.Translations.Video.settings.Label</label>
+					<label>#SkinTranslation.Translations.video.settings.Label</label>
 					<hyperlink>703</hyperlink>
 					<onleft>50</onleft>
 					<onright>50</onright>
@@ -306,7 +306,11 @@ multiple view modes.
 					<description>SubCentral</description>
 					<id>66611</id>
 					<type>button</type>
-					<label>Check for Subtitles</label>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<label>#SkinTranslation.Translations.check.subtitles.Label</label>
 					<hyperlink>84623</hyperlink>
 					<visible>plugin.isenabled(SubCentral)</visible>
 					<onleft>50</onleft>
