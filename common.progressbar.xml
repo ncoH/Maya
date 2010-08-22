@@ -29,7 +29,7 @@
 		<width>1009</width>
 		<height>91</height>
 		<texture>osd_bg_pause.png</texture>
-		<visible>Control.IsVisible(10)|player.paused</visible>
+		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(105)|Control.IsVisible(10)|player.seeking</visible>
 	</control>
 
 	
@@ -58,7 +58,7 @@
 		<label>#currentplaytime</label>
 		<align>left</align>
 		<font>font12</font>
-		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|control.isvisible(10)|player.seeking</visible>
+		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(105)|Control.IsVisible(10)|player.seeking</visible>
 	</control>
 
 	<control>
@@ -70,7 +70,7 @@
 		<label>#currentremaining</label>
 		<align>right</align>
 		<font>font12</font>
-		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|control.isvisible(10)|player.seeking</visible>
+		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(105)|Control.IsVisible(10)|player.seeking</visible>
 	</control>
 
 	<control>

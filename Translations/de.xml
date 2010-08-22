@@ -12,7 +12,8 @@
 	<!-- B -->
 
 	<!-- C -->
-
+	<string Field="check.subtitles">Überprüfe auf Untertitel</string>
+	
 	<!-- D -->
 
 	<!-- E -->
@@ -23,6 +24,8 @@
 	<!-- G -->
 	<string Field="global.search.musicsearch">Musik Suche</string>
 	<string Field="global.search.lastplayed">Zuletzt gespielt</string>
+	<string Field="global.search.filename">Dateiname</string>
+	<string Field="global.search.playcount">Abspielzähler</string>	
 	<string Field="global.search.Searchphrase">Suchphrase</string>
 	<string Field="global.search.Searchhistory">Suchverlauf</string>
 	<string Field="global.search.Searchfields">Suchfeld</string>
@@ -61,6 +64,7 @@
 
 	<!-- V -->
 	<string Field="video.settings">Video Einstellungen</string>
+	
 	<!-- W -->
 
 	<!-- Y -->
