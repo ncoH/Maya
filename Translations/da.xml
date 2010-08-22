@@ -24,6 +24,8 @@
 	<!-- G -->
 	<string Field="global.search.musicsearch">musik søgning</string>
 	<string Field="global.search.lastplayed">Sidst spillet</string>
+	<string Field="global.search.filename">Filenavn</string>
+	<string Field="global.search.playcount">Spillet</string>
 	<string Field="global.search.Searchphrase">Søgeord</string>
 	<string Field="global.search.Searchhistory">Historik</string>
 	<string Field="global.search.Searchfields">Søgefelt</string>

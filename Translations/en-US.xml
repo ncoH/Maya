@@ -24,6 +24,8 @@
 	<!-- G -->
 	<string Field="global.search.musicsearch">music search</string>
 	<string Field="global.search.lastplayed">Last played</string>
+	<string Field="global.search.filename">Filename</string>
+	<string Field="global.search.playcount">Playcount</string>
 	<string Field="global.search.Searchphrase">Searchphrase</string>
 	<string Field="global.search.Searchhistory">Search history</string>
 	<string Field="global.search.Searchfields">Search fields</string>
