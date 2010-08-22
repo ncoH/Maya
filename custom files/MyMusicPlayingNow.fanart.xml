@@ -523,7 +523,7 @@
             <onright>5103</onright>
             <onup>155</onup>
             <ondown>155</ondown>
-            <visible>Control.HasFocus(5103)</visible>
+            <visible>Control.HasFocus(5103) | Control.HasFocus(155)</visible>
             <posX>328</posX>
             <posY>537</posY>
             <width>649</width>
