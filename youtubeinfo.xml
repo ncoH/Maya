@@ -1,14 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>29052</id><defaultcontrol>50</defaultcontrol>
+	<id>29052</id>
+	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<define>#header.hover:hover_musicvideo.png</define>
-	<define>#header.title:YouTube Videos</define>
-	<define>#header.label:YouTube Videos</define>
-	<define>#header.image:-</define>
+	<define>#header.label:4540</define>
 <controls>
-	<import>common.window.youtube.xml</import>
-	
+
+        <control>
+            <description>Background</description>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>
+        </control>
+        <control>
+            <id>1</id>
+            <type>label</type>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>	
+
 	<control>
 		<description>Fan Art</description>
 		<type>image</type>
@@ -60,11 +80,11 @@
 		<description>TV background</description>
 		<type>image</type>
 		<id>1</id>
-		<posX>487</posX>
+		<posX>450</posX>
 		<posY>170</posY>
-		<width>392</width>
-		<height>266</height>
-		<texture>tvhome_tvframe.png</texture>
+	    <width>455</width>
+	    <height>295</height>
+		<texture>blackborders_recordings.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -73,10 +93,10 @@
 		<description>video window</description>
 		<type>videowindow</type>
 		<id>99</id>
-		<posX>535</posX>
-		<posY>221</posY>
-		<width>297</width>
-		<height>166</height>
+		<posX>495</posX>
+		<posY>215</posY>
+        <width>368</width>
+	    <height>205</height>
 		<onleft>2</onleft>
 		<onright>2</onright>
 		<action>18</action>

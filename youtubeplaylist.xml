@@ -3,6 +3,7 @@
     <id>29051</id>
     <defaultcontrol>50</defaultcontrol>
     <allowoverlay>no</allowoverlay>
+	<define>#header.label:136</define>	
     <controls>
 
         <import>common.window.youtube.xml</import>
@@ -18,7 +19,7 @@
             <height>66</height>
             <font>Segoe Light40</font>
             <textcolor>ff6aa5cb</textcolor>
-            <label>playlist</label>
+            <label>#header.label</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
@@ -34,49 +35,11 @@
             <font>Segoe Light40</font>
             <textcolor>ff6aa5cb</textcolor>
             <align>CENTER</align>
-            <label>playlist</label>
+            <label>#header.label</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
 
-	<control>
-		<id>0</id>
-		<type>image</type>
-		<posX>91</posX>
-        	<posY>207</posY>
-        	<width>365</width>
-	    	<height>203</height>
-		<texture>defaultTVBig.png</texture>
-		<visible>[facadeview.playlist|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-	</control>
-	
-	<control>
-		<id>500</id>
-		<type>image</type>
-		<posX>91</posX>
-        	<posY>207</posY>
-        	<width>365</width>
-	    	<height>203</height>
-		<texture>#selectedthumb</texture>
-		<visible>[facadeview.playlist|facadeview.album]+Control.IsVisible(50)</visible>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-	</control>
-	
-	<control>
-		<type>image</type>
-		<id>1</id>
-		<posX>44</posX>
-	    	<posY>161</posY>
-	    	<width>457</width>
-	    	<height>295</height>
-		<texture>blackborders_recordings.png</texture>
-		<visible>[facadeview.playlist|facadeview.album]+Control.IsVisible(50)</visible>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-	</control>
 
 	<control>
 		<type>actiongroup</type>
@@ -105,8 +68,8 @@
 		<type>group</type>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
-		<animation effect="fade" time="200" reversible="false">Hidden</animation>
-		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
+		<animation effect="fade" time="200">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">Hidden</animation>
 		
 		<control>
 			<id>1</id>
@@ -131,11 +94,11 @@
 		</control>
 		
 		<control>
-			<description>button group</description>
-			<type>group</type>
-			<posX>543</posX>
-			<posY>175</posY>
-			<layout>StackLayout(1)</layout>
+						<description>button group</description>
+						<type>group</type>
+						<posX>543</posX>
+						<posY>175</posY>
+						<layout>StackLayout(1)</layout>
 
                     <control>
                         <id>2</id>
@@ -145,8 +108,8 @@
                         <ondown>20</ondown>
                         <width>279</width>
                         <height>49</height>
-			<onleft>50</onleft>
-			<onright>50</onright>
+						<onleft>50</onleft>
+						<onright>50</onright>
                         <textureFocus>hiddenmenu_item_selected.png</textureFocus>
                         <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
                         <label></label>
@@ -161,8 +124,8 @@
                         <ondown>30</ondown>
                         <width>279</width>
                         <height>49</height>
-			<onleft>50</onleft>
-			<onright>50</onright>
+						<onleft>50</onleft>
+						<onright>50</onright>
                         <textureFocus>hiddenmenu_item_selected.png</textureFocus>
                         <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
                         <label>191</label>
@@ -177,16 +140,16 @@
                         <ondown>10</ondown>
                         <width>279</width>
                         <height>49</height>
-			<onleft>50</onleft>
-			<onright>50</onright>
-			<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-			<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-			<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-			<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+						<onleft>50</onleft>
+						<onright>50</onright>
+						<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+						<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+						<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+						<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
                         <label>486</label>
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
-			<visible>true</visible>
+						<visible>true</visible>
                     </control>
                     <control>
                         <id>10</id>
@@ -196,8 +159,8 @@
                         <ondown>21</ondown>
                         <width>279</width>
                         <height>49</height>
-			<onleft>50</onleft>
-			<onright>50</onright>
+						<onleft>50</onleft>
+						<onright>50</onright>
                         <textureFocus>hiddenmenu_item_selected.png</textureFocus>
                         <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
                         <label>983</label>
@@ -212,8 +175,8 @@
                         <ondown>22</ondown>
                         <width>279</width>
                         <height>49</height>
-			<onleft>50</onleft>
-			<onright>50</onright>
+						<onleft>50</onleft>
+						<onright>50</onright>
                         <textureFocus>hiddenmenu_item_selected.png</textureFocus>
                         <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
                         <label>190</label>
@@ -228,8 +191,8 @@
                         <ondown>26</ondown>
                         <width>279</width>
                         <height>49</height>
-			<onleft>50</onleft>
-			<onright>50</onright>
+						<onleft>50</onleft>
+						<onright>50</onright>
                         <textureFocus>hiddenmenu_item_selected.png</textureFocus>
                         <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
                         <label>192</label>
@@ -244,8 +207,8 @@
                         <ondown>28</ondown>
                         <width>279</width>
                         <height>49</height>
-			<onleft>50</onleft>
-			<onright>50</onright>
+						<onleft>50</onleft>
+						<onright>50</onright>
                         <textureFocus>hiddenmenu_item_selected.png</textureFocus>
                         <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
                         <label>4540</label>
@@ -260,8 +223,8 @@
                         <ondown>27</ondown>
                         <width>279</width>
                         <height>49</height>
-			<onleft>50</onleft>
-			<onright>50</onright>
+						<onleft>50</onleft>
+						<onright>50</onright>
                         <textureFocus>hiddenmenu_item_selected.png</textureFocus>
                         <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
                         <label>33001</label>
@@ -279,14 +242,14 @@
                         <height>49</height>
 			<onleft>50</onleft>
 			<onright>50</onright>
-			<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-			<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-			<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-			<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+						<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+						<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+						<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+						<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
                         <label>33000</label>
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
-			<visible>true</visible>
+						<visible>true</visible>
                         <visible>plugin.isenabled(Audioscrobbler)</visible>
                     </control>
                     <control>
@@ -297,8 +260,8 @@
                         <ondown>2</ondown>
                         <width>279</width>
                         <height>49</height>
-			<onleft>50</onleft>
-			<onright>50</onright>
+						<onleft>50</onleft>
+						<onright>50</onright>
                         <textureFocus>hiddenmenu_item_selected.png</textureFocus>
                         <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
                         <label>Scrobbler: </label>
