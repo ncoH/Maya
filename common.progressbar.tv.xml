@@ -46,7 +46,7 @@
 		<width>1009</width>
 		<height>91</height>
 		<texture>osd_bg_pause.png</texture>
-		<visible>Control.IsVisible(10)|player.paused</visible>
+		<visible>Control.IsVisible(10)|player.paused|player.rewinding|player.forwarding</visible>
 	</control>
 	
 	<control>
