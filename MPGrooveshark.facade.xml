@@ -25,7 +25,7 @@
 				<id>50</id>
 				<posX>350</posX>
 				<posY>104</posY>
-				<height>394</height>
+				<height>369</height>
 				<width>633</width>
 				<IconXOff>0</IconXOff>
 				<IconYOff>0</IconYOff>
@@ -42,7 +42,7 @@
 				<spinAlign>Right</spinAlign>
 				<spinCanFocus>no</spinCanFocus>
 				<spinPosY>56</spinPosY>
-				<spinPosX>950</spinPosX>
+				<spinPosX>984</spinPosX>
 				<spinAlign>Right</spinAlign>
 				<spinWidth>30</spinWidth>
 				<spinHeight>30</spinHeight>
@@ -71,7 +71,7 @@
                 <downBtnYOffset>0</downBtnYOffset>
                 <deleteBtnXOffset>492</deleteBtnXOffset>
                 <deleteBtnYOffset>0</deleteBtnYOffset>
-                <textureHeight>52</textureHeight>
+                <textureHeight>51</textureHeight>
                 <IconXOff>1000</IconXOff>
                 <textXOff2>0</textXOff2>
                 <textYOff2>0</textYOff2>
@@ -110,7 +110,7 @@
 		<posX>350</posX>
 		<width>200</width>
 		<height>26</height>
-		<label>Search term:</label>
+		<label>#SkinTranslation.Translations.grooveshark.Searchterm.Label:</label>
 		<visible>Control.HasText(53)</visible>
 		<font>Segoe Light14</font>	  	  
 		<textcolor>ff85cffe</textcolor>

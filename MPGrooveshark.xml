@@ -114,6 +114,19 @@
             <animation effect="Fade" time="300">WindowClose</animation>
             <animation effect="Fade" time="400">WindowOpen</animation>
         </control>
+		<control>
+			<description>listcontrol background</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>350</posX>
+			<posY>104</posY>
+			<height>344</height>
+			<width>633</width>
+			<texture>listcontrol_bg.png</texture>
+			<visible>control.isvisible(50)</visible>
+			<animation effect="fade" time="400">WindowOpen</animation>
+			<animation effect="fade" time="300">WindowClose</animation>
+		</control>
         <control>
             <id>0</id>
             <description>artist label</description>
@@ -324,7 +337,7 @@
                 <action>51</action>
                 <textureFocus>now_playing_menuitem_selected.png</textureFocus>
                 <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
-                <label>Playlist</label>
+                <label>4553</label>
                 <textYOff>6</textYOff>
             </control>
             <control>
@@ -342,7 +355,7 @@
                 <arguments/>
                 <textureFocus>now_playing_menuitem_selected.png</textureFocus>
                 <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
-                <label>Search</label>
+                <label>#SkinTranslation.Translations.grooveshark.Search.Label</label>
                 <textYOff>6</textYOff>
             </control>
         </control>
