@@ -206,8 +206,8 @@
             <font>font24</font>
             <textcolor>ffffffff</textcolor>
             <label>#MPE.Selected.Version</label>
-            <animation effect="Fade" time="300">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
         </control>
         <control>
             <id>0</id>
@@ -218,8 +218,8 @@
             <posY>450</posY>
             <width>385</width>
             <height>236</height>
-            <animation effect="Fade" time="300">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
             <label>#MPE.Selected.Description</label>
             <textcolor>ffFFFFFF</textcolor>
         </control>
@@ -232,8 +232,8 @@
             <posY>450</posY>
             <width>385</width>
             <height>104</height>
-            <animation effect="Fade" time="300">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
             <label>#MPE.Selected.Description</label>
             <textcolor>ffFFFFFF</textcolor>
         </control>
@@ -262,8 +262,8 @@
             <width>227</width>
             <height>220</height>
             <texture>audio_nothumb.png</texture>
-            <animation effect="Fade" time="300">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
             <overlay>yes</overlay>
             <keepaspectratio>yes</keepaspectratio>
             <centered>yes</centered>
@@ -272,14 +272,14 @@
             <id>600</id>
             <description>Plugin logo</description>
             <type>image</type>
-            <visible>facadeview.list +Control.IsVisible(50)</visible>
+            <visible>facadeview.list+Control.IsVisible(50)</visible>
             <posX>56</posX>
             <posY>113</posY>
             <width>227</width>
             <height>220</height>
             <texture>#selectedthumb</texture>
-            <animation effect="Fade" time="300">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
             <overlay>yes</overlay>
             <keepaspectratio>yes</keepaspectratio>
             <centered>yes</centered>
@@ -287,14 +287,14 @@
         <control>
             <id>0</id>
             <type>image</type>
-            <visible>facadeview.list +Control.IsVisible(50)</visible>
+            <visible>facadeview.list+Control.IsVisible(50)</visible>
             <posX>36</posX>
             <posY>93</posY>
             <width>272</width>
             <height>271</height>
             <texture>blackborders_music_nowplaying.png</texture>
-            <animation effect="Fade" time="300">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
             <overlay>yes</overlay>
             <keepaspectratio>yes</keepaspectratio>
             <centered>yes</centered>
