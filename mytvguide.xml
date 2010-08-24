@@ -4,7 +4,6 @@
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
-	<import>common.window.xml</import>
 	
 	<control>
 		<description>BG</description>

@@ -60,15 +60,15 @@
                 <type>listcontrol</type>
                 <onleft>3</onleft>
                 <onright>3</onright>
-                <posX>409</posX>
+                <posX>376</posX>
                 <posY>277</posY>
                 <width>548</width>
                 <height>300</height>
-                <textXOff2>460</textXOff2>
-                <textYOff2>10</textYOff2>
+                <textXOff2>525</textXOff2>
+                <textYOff2>8</textYOff2>
                 <spinPosX>902</spinPosX>
                 <spinPosY>535</spinPosY>
-                <textXOff>48</textXOff>
+                <textXOff>84</textXOff>
                 <textYOff>8</textYOff>
                 <textureFocus>context_item_selected.png</textureFocus>
                 <textureNoFocus>context_item.png</textureNoFocus>
@@ -76,7 +76,7 @@
                 <spaceBetweenItems>1</spaceBetweenItems>
 				<PinIconWidth>15</PinIconWidth>
 				<PinIconHeight>15</PinIconHeight>
-                <PinIconXOff>39</PinIconXOff>
+                <PinIconXOff>2000</PinIconXOff>
                 <PinIconYOff>15</PinIconYOff>
             </control>
 			
