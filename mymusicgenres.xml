@@ -373,10 +373,36 @@
 		<posY>213</posY>
 		<width>265</width>
 		<height>265</height>
-		<visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
+		<visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]+!string.equals(#selecteditem,..)</visible>
 		<texture>DefaultMyradioBig.png</texture>
 	</control>
 	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<id>0</id>
+		<type>image</type>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]+string.equals(#selecteditem,..)</visible>
+		<texture>DefaultShortcutBig.png</texture>
+	</control>
+
+    <control>
+	    <id>0</id>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>	    
+		<type>image</type>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<visible>[facadeview.list|facadeview.album]+!string.equals(#selecteditem,..)</visible>
+		<texture>black.png</texture>
+	</control>
+		
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -386,6 +412,8 @@
 		<posY>213</posY>
 		<width>265</width>
 		<height>265</height>
+		<keepaspectratio>true</keepaspectratio>
+		<centered>true</centered>
 		<visible>[facadeview.list|facadeview.album]</visible>
 		<texture>#selectedthumb</texture>
 	</control>
