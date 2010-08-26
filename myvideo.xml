@@ -6,6 +6,7 @@
 <define>#header.label:#selecteditem</define>
 <define>#header.image:videos_logo.png</define>
 <controls>
+
 	<import>common.window.video.xml</import>
 	
 	

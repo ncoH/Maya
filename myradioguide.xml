@@ -5,14 +5,7 @@
 <allowoverlay>no</allowoverlay>
 <controls>
 
-	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background.png</texture>
-	</control>
+        <import>common.window.background.xml</import>
 	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>

@@ -59,7 +59,7 @@
 	<string Field="recentlyAdded.Episode">Folge</string>
 
 	<!-- S -->
-
+	<string Field="SleepControl">Schlafplaner</string>
 	<!-- T -->
 	<string Field="tv.recordings">Aufnahmen</string>
 	<!-- U -->
