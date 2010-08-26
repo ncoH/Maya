@@ -3,54 +3,71 @@
     <id>7969</id>
     <defaultcontrol>2</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <define>#header.label:Sleep Control</define>
     <controls>
-        <import>common.settings.xml</import>
-
-        <control>
-            <type>image</type>
-            <posX>110</posX>
-            <posY>131</posY>
-            <width>373</width>
-            <height>488</height>
-            <texture>sleeptimer_navigation_panel.png</texture>
-            <animation effect="Fade" time="200">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
-        </control>
-        <control>
-            <type>image</type>
-            <posX>432</posX>
-            <posY>240</posY>
-            <width>700</width>
-            <height>288</height>
-            <texture>sleeptimer_main_panel.png</texture>
-            <animation effect="Fade" time="200">WindowOpen</animation>
-            <animation effect="Fade" time="200">WindowClose</animation>
-        </control>
+	
+        <import>common.window.background.xml</import>
+        <import>common.overlay.xml</import>
 		
-		        <import>common.overlay.xml</import>
-				<import>common.time.xml</import>
-				
         <control>
-            <description>group element</description>
+            <id>1</id>
+            <type>image</type>
+            <posX>127</posX>
+            <posY>60</posY>
+            <width>360</width>
+            <height>640</height>
+            <texture>settings_navigation_panel.png</texture>
+        </control>
+        <control>
+            <type>image</type>
+            <posX>434</posX>
+            <posY>60</posY>
+            <width>820</width>
+            <height>640</height>
+            <texture>settings_main_panel.png</texture>
+        </control>
+        <control>
+            <id>121</id>
+            <description>Settings label</description>
+            <type>label</type>
+            <posX>192</posX>
+            <posY>164</posY>
+            <width>380</width>
+            <font>Segoe Light18</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>897</label>
+        </control>
+        <control>
+            <id>1</id>
+            <description>Pluginlabel</description>
+            <type>label</type>
+            <posX>500</posX>
+            <posY>140</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>sleepcontrol</label>
+            <valign>middle</valign>
+        </control>
+        <control>
+            <description>buttons</description>
             <type>group</type>
-            <posX>156</posX>
-            <posY>270</posY>
+            <posX>175</posX>
+            <posY>260</posY>
             <layout>StackLayout</layout>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="250">WindowClose</animation>
             <control>
                 <id>2</id>
                 <description>Sleep Mode</description>
                 <type>button</type>
                 <onup>17</onup>
                 <ondown>3</ondown>
-                <posX>651</posX>
-                <posY>236</posY>
-                <width>280</width>
+                <width>259</width>
                 <textureFocus>settings_button_focus.png</textureFocus>
+                <textureNoFocus>-</textureNoFocus>
                 <label>Sleep Mode</label>
-                <textalign>RIGHT</textalign>
-                <animation effect="Fade" time="200">WindowOpen</animation>
-                <animation effect="Fade" time="200">WindowClose</animation>
+                <textalign>LEFT</textalign>
             </control>
             <control>
                 <id>3</id>
@@ -58,12 +75,11 @@
                 <type>button</type>
                 <onup>2</onup>
                 <ondown>4</ondown>
-                <width>280</width>
+                <width>259</width>
                 <textureFocus>settings_button_focus.png</textureFocus>
+                <textureNoFocus>-</textureNoFocus>
                 <label>Set Timer</label>
-                <textalign>RIGHT</textalign>
-                <animation effect="Fade" time="200">WindowOpen</animation>
-                <animation effect="Fade" time="200">WindowClose</animation>
+                <textalign>LEFT</textalign>
             </control>
             <control>
                 <id>4</id>
@@ -71,12 +87,11 @@
                 <type>button</type>
                 <onup>3</onup>
                 <ondown>5</ondown>
-                <width>280</width>
+                <width>259</width>
                 <textureFocus>settings_button_focus.png</textureFocus>
+                <textureNoFocus>-</textureNoFocus>
                 <label>Start Timer</label>
-                <textalign>RIGHT</textalign>
-                <animation effect="Fade" time="200">WindowOpen</animation>
-                <animation effect="Fade" time="200">WindowClose</animation>
+                <textalign>LEFT</textalign>
             </control>
             <control>
                 <id>5</id>
@@ -84,12 +99,11 @@
                 <type>button</type>
                 <onup>4</onup>
                 <ondown>6</ondown>
-                <width>280</width>
+                <width>259</width>
                 <textureFocus>settings_button_focus.png</textureFocus>
+                <textureNoFocus>-</textureNoFocus>
                 <label>Pause timer</label>
-                <textalign>RIGHT</textalign>
-                <animation effect="Fade" time="200">WindowOpen</animation>
-                <animation effect="Fade" time="200">WindowClose</animation>
+                <textalign>LEFT</textalign>
             </control>
             <control>
                 <id>6</id>
@@ -97,12 +111,11 @@
                 <type>button</type>
                 <onup>5</onup>
                 <ondown>7</ondown>
-                <width>280</width>
+                <width>259</width>
                 <textureFocus>settings_button_focus.png</textureFocus>
+                <textureNoFocus>-</textureNoFocus>
                 <label>Increment Timer</label>
-                <textalign>RIGHT</textalign>
-                <animation effect="Fade" time="200">WindowOpen</animation>
-                <animation effect="Fade" time="200">WindowClose</animation>
+                <textalign>LEFT</textalign>
             </control>
             <control>
                 <id>7</id>
@@ -110,12 +123,11 @@
                 <type>button</type>
                 <onup>6</onup>
                 <ondown>8</ondown>
-                <width>280</width>
+                <width>259</width>
                 <textureFocus>settings_button_focus.png</textureFocus>
+                <textureNoFocus>-</textureNoFocus>
                 <label>Decrement Timer</label>
-                <textalign>RIGHT</textalign>
-                <animation effect="Fade" time="200">WindowOpen</animation>
-                <animation effect="Fade" time="200">WindowClose</animation>
+                <textalign>LEFT</textalign>
             </control>
             <control>
                 <id>8</id>
@@ -123,26 +135,26 @@
                 <type>togglebutton</type>
                 <onup>7</onup>
                 <ondown>2</ondown>
-                <posX>535</posX>
-                <posY>250</posY>
-                <width>280</width>
-                <textureFocus>settings_button_focus.png</textureFocus>
-                <label>Wait until rec. finished</label>
-                <textalign>RIGHT</textalign>
-                <animation effect="Fade" time="200">WindowOpen</animation>
-                <animation effect="Fade" time="200">WindowClose</animation>
+                <width>259</width>
+                <textureFocus>selectionbar_focus_toggle on.png</textureFocus>
+				<textureNoFocus>selectionbar_unfocus_toggle on.png</textureNoFocus>
+                <label>Wait until tasks finished</label>
+                <AltTextureFocus>selectionbar_focus_toggle off.png</AltTextureFocus>
+				<AltTextureNoFocus>selectionbar_unfocus_toggle off.png</AltTextureNoFocus>
             </control>
         </control>
+		
         <control>
             <id>0</id>
             <description>Sleep Activity</description>
             <type>label</type>
-            <posX>480</posX>
-            <posY>322</posY>
+            <posX>540</posX>
+            <posY>480</posY>
             <width>625</width>
-            <height>29</height>
-            <font>font18</font>
-            <textcolor>ffffffff</textcolor>
+            <height>31</height>
+            <font>Segoe Light18</font>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
             <align>CENTER</align>
             <label>#SleepControl.Activity</label>
             <animation effect="Fade" time="500">WindowOpen</animation>
@@ -152,11 +164,11 @@
             <id>0</id>
             <description>Sleep Method</description>
             <type>label</type>
-            <posX>480</posX>
-            <posY>368</posY>
+            <posX>540</posX>
+            <posY>625</posY>
             <width>625</width>
-            <font>font14</font>
-            <textcolor>90ffffff</textcolor>
+            <font>Segoe Light12</font>
+            <textcolor>60ffffff</textcolor>
             <align>CENTER</align>
             <label>#SleepControl.Method</label>
             <animation effect="Fade" time="500">WindowOpen</animation>
@@ -166,11 +178,10 @@
             <id>0</id>
             <description>Sleep Counter</description>
             <type>label</type>
-            <posX>480</posX>
-            <posY>400</posY>
+            <posX>540</posX>
+            <posY>550</posY>
             <width>625</width>
-            <height>38</height>
-            <font>font24</font>
+            <font>Segoe Light40</font>
             <textcolor>ffffffff</textcolor>
             <align>CENTER</align>
             <label>#SleepControl.Counter</label>
@@ -181,12 +192,11 @@
             <id>0</id>
             <description>Sleep Status</description>
             <type>label</type>
-            <posX>480</posX>
-            <posY>470</posY>
+            <posX>540</posX>
+            <posY>600</posY>
             <width>625</width>
-            <height>25</height>
-            <font>font16</font>
-            <textcolor>ffffffff</textcolor>
+            <font>Segoe Light12</font>
+            <textcolor>60ffffff</textcolor>
             <align>CENTER</align>
             <label>#SleepControl.Start #SleepControl.End</label>
             <animation effect="Fade" time="500">WindowOpen</animation>
@@ -196,17 +206,28 @@
             <id>0</id>
             <description>Sleep Status</description>
             <type>label</type>
-            <posX>480</posX>
-            <posY>435</posY>
+            <posX>540</posX>
+            <posY>430</posY>
             <width>625</width>
-            <height>25</height>
-            <font>font16</font>
+            <font>Segoe Light18</font>
             <textcolor>90ffffff</textcolor>
             <align>CENTER</align>
             <label>#SleepControl.Status</label>
             <animation effect="Fade" time="500">WindowOpen</animation>
             <animation effect="Fade" time="500">WindowClose</animation>
         </control>
+
+        <control>
+            <id>0</id>
+            <description>Sleep Control Counter background</description>
+            <type>image</type>
+            <posX>725</posX>
+            <posY>519</posY>
+            <texture>timer_background.png</texture>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+		
         <control>
             <id>50</id>
             <description>Dummy Button</description>
@@ -220,6 +241,5 @@
             <label>-</label>
             <scrollWrapString/>
         </control>
-
     </controls>
 </window>

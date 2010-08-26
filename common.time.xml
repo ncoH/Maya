@@ -42,30 +42,30 @@
             <description>Sleep Counter</description>
             <type>label</type>
             <visible>!string.equals(#SleepControl.Text,)+plugin.isenabled(Sleep Control)</visible>
-            <posX>60</posX>
-            <posY>75</posY>
+            <posX>40</posX>
+            <posY>90</posY>
             <width>500</width>
-            <height>25</height>
-            <font>Segoe Light16</font>
-            <textcolor>ffffffff</textcolor>
+            <height>16</height>
+            <font>font10</font>
+            <textcolor>ff02db4c</textcolor>
             <align>LEFT</align>
-            <label>#SleepControl.Counter</label>
+            <label>Shutdown in #SleepControl.Counter</label>
             <animation effect="Fade" time="200">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
         </control>
-		<control>
-		    <id>0</id>
-			<description>Sleep Control setting type</description>
+        <control>
+            <id>0</id>
+            <description>Sleep Control setting type</description>
             <type>image</type>
-            <posX>160</posX>
-            <posY>80</posY>
-            <width>30</width>
-            <height>30</height>
-            <texture>#SleepControl.Image</texture>
+            <visible>!string.equals(#SleepControl.Image,)+plugin.isenabled(Sleep Control)</visible>
+            <posX>199</posX>
+            <posY>87</posY>
+            <width>24</width>
+            <height>24</height>
+            <texture>timer_notify.png</texture>
             <animation effect="Fade" time="200">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
-			<visible>!string.equals(#SleepControl.Image,)+plugin.isenabled(Sleep Control)</visible>
             <keepaspectratio>yes</keepaspectratio>
-		</control>
+        </control>
     </controls>
 </window>

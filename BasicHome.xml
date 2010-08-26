@@ -7,7 +7,7 @@
 <define>#menuitemFocus:FFFFFFFF</define>
 <define>#menuitemNoFocus:6aa5cb</define>
 <allowoverlay>yes</allowoverlay>
-<disabletopbar>yes</disabletopbar>
+<disabletopbar>no</disabletopbar>
 <controls>
 
 <control>
@@ -74,7 +74,7 @@
 				<animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
 				<posX>71</posX>
 				<posY>150</posY>
-				<visible>Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+				<visible>Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4) | Control.HasFocus(5)</visible>
 				
 				<control>
 					<description>Exit Button</description>
@@ -89,7 +89,7 @@
 					<textureFocus>exit_button_focus.png</textureFocus>
 					<action>97</action>
 					<onright>901</onright>
-					<onup>4</onup>
+					<onup>5</onup>
 					<ondown>3</ondown>
 					<label>Exit</label>
 					<textXOff>-2000</textXOff>
@@ -130,13 +130,33 @@
 					<action>98</action>
 					<onright>901</onright>
 					<onup>3</onup>
-					<ondown>2</ondown>
+					<ondown>5</ondown>
 					<label>1031</label>
 					<textXOff>-2000</textXOff>
 					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
 					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
 				</control>
-
+				
+				<control>
+					<description>Sleepcontrol Button</description>
+					<type>button</type>
+					<id>5</id>
+					<posX>15</posX>
+					<posY>550</posY>
+					<width>93</width>
+					<height>96</height>
+					<textureNoFocus>timer_button_unfocus.png</textureNoFocus>
+					<textureFocus>timer_button_focus.png</textureFocus>
+					<hyperlink>7969</hyperlink>
+					<onright>901</onright>
+					<visible>!string.equals(#SleepControl.Text,)+plugin.isenabled(Sleep Control)</visible>
+					<onup>4</onup>
+					<ondown>2</ondown>
+					<label>#SkinTranslation.Translations.SleepControl.Label</label>
+					<textXOff>-2000</textXOff>
+					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
+				</control>
 			</control>
 
 
