@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>25650</id>
-<defaultcontrol>50</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
+	<id>25650</id>
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:Radio Time</define>
 <controls>
 
 	<import>common.window.xml</import>
@@ -17,7 +18,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>radiotime</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>
@@ -234,9 +235,26 @@
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>4</onup>
+				<ondown>11</ondown>
+			</control>
+
+			<control>
+				<description>Fast Presets</description>
+				<type>button</type>
+				<id>11</id>
+				<label>#RadioTime.Translation.FastPresets.Label</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+				<width>279</width>
+				<height>49</height>
+				<textXOff>25</textXOff>
+				<textYOff>12</textYOff>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<onup>6</onup>
 				<ondown>8</ondown>
 			</control>
-			
+				
 			<control>
                     <id>8</id>
                     <description>genres</description>
@@ -249,7 +267,7 @@
 					<textYOff>12</textYOff>
 					<onleft>50</onleft>
 					<onright>50</onright>
-                    <onup>6</onup>
+                    <onup>11</onup>
                     <ondown>9</ondown>
                     <label>#RadioTime.Translation.Genres.Label</label>
                 </control>
@@ -270,6 +288,7 @@
                     <ondown>5</ondown>
                     <label>#RadioTime.Translation.NowPlaying.Label</label>
                 </control>
+				
                 <control>
                     <id>10</id>
                     <description>Random</description>
@@ -283,9 +302,10 @@
 					<onleft>50</onleft>
 					<onright>50</onright>
                     <onup>9</onup>
-                    <ondown>2</ondown>
+                    <ondown>91</ondown>
                     <label>#RadioTime.Translation.Random.Label</label>
                 </control>
+				
 		</control>
 		
 	</control>

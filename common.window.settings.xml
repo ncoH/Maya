@@ -11,8 +11,6 @@
 	</control>
 
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
 		<posX>552</posX>
@@ -22,11 +20,11 @@
 		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 	
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
 		<id>1</id>
 		<posX>552</posX>
@@ -35,20 +33,8 @@
 		<height>100</height>
 		<label>5</label>
 		<font>Segoe Light22</font>
-	</control>
-
-	<control>
-		<description>Hover image</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>136</posX>
-		<posY>500</posY>
-		<width>286</width>
-		<height>197</height>
-		<texture>#header.hover</texture>
-		<visible>!videoplayer.usingoverlays</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 
 </controls>

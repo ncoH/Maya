@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>700</id>
-<defaultcontrol>10004</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
-<controls>
-<import>common.window.xml</import>
-<import>settings.menu.xml</import>
+		<id>700</id>
+		<defaultcontrol>10004</defaultcontrol>
+		<allowoverlay>yes</allowoverlay>
+	<controls>
+	
+		<import>common.window.xml</import>
+		<import>settings.menu.xml</import>
 
 	<control>
 		<type>image</type>
@@ -46,9 +47,9 @@
 			<type>button</type>
 			<width>334</width>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>24</id>
 			<label>6000</label>
 			<onup>37</onup>
@@ -59,9 +60,9 @@
 			<type>button</type>
 			<width>334</width>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>35</id>
 			<label>6036</label>
 		</control>
@@ -71,9 +72,9 @@
 			<type>button</type>
 			<width>334</width>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>25</id>
 			<label>6001</label>
 		</control>
@@ -83,9 +84,9 @@
 			<type>button</type>
 			<width>334</width>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>36</id>
 			<label>6039</label>
 		</control>
@@ -95,9 +96,9 @@
 			<type>button</type>
 			<width>334</width>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>33</id>
 			<label>6002</label>
 		</control>
@@ -107,9 +108,9 @@
 			<type>button</type>
 			<width>334</width>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>27</id>
 			<label>6003</label>
 		</control>
@@ -119,9 +120,9 @@
 			<type>button</type>
 			<width>334</width>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>28</id>
 			<label>6004</label>
 			<ondown>31</ondown>
@@ -132,9 +133,9 @@
 			<type>button</type>
 			<width>334</width>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>31</id>
 			<label>6007</label>
 			<hyperlink>701</hyperlink>
@@ -146,9 +147,9 @@
 			<type>button</type>
 			<width>334</width>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>30</id>
 			<label>6006</label>
 		</control>
@@ -158,9 +159,9 @@
 			<type>button</type>
 			<width>334</width>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>26</id>
 			<label>777</label>
 		</control>
@@ -170,9 +171,9 @@
 			<type>button</type>
 			<width>334</width>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>29</id>
 			<label>6005</label>
 		</control>
@@ -182,9 +183,9 @@
 			<type>button</type>
 			<width>334</width>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>32</id>
 			<label>6008</label>
 			<hyperlink>702</hyperlink>
@@ -195,9 +196,9 @@
 			<type>button</type>
 			<width>334</width>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>34</id>
 			<label>6009</label>
 			<ondown>37</ondown>
@@ -210,9 +211,9 @@
 			<type>button</type>
 			<width>334</width>
 			<textureFocus>settings_button_medium_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-	<textcolor>ff85cffe</textcolor>
-	<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<textcolor>ff85cffe</textcolor>
+			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
 			<id>37</id>
 			<label>6010</label>
 			<hyperlink>707</hyperlink>

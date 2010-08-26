@@ -4,10 +4,10 @@
 <defaultcontrol>24</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <define>#header.label:6103</define>
-<define>#header.image:settings_logo.png</define>
-<define>#header.hover:hover_my tv.png</define>
 <controls>
-	<import>common.settings.xml</import>
+
+	<import>common.window.settings.xml</import>
+	
 	<control>
 		<type>button</type>
 		<description>Manual</description>

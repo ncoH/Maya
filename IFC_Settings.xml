@@ -5,7 +5,10 @@
     <allowoverlay>yes</allowoverlay>
     <define>#header.label:Intelligent Frame Correction</define>
     <controls>
-        <import>common.settings.xml</import>
+	
+        <import>common.window.settings.xml</import>
+		<import>common.time.xml</import>
+		
         <control>
             <id>6</id>
             <description>Single Black Bar Height</description>
@@ -236,6 +239,6 @@
             <animation effect="Fade" time="200">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
         </control>
-        <import>common.time.xml</import>
+		
     </controls>
 </window>
