@@ -16,7 +16,7 @@
             <posX>575</posX>
             <posY>480</posY>
             <width>210</width>
-            <textureFocus>button-small-focus.png</textureFocus>
+            <textureFocus>small_button_focus.png</textureFocus>
             <label>186</label>
             <textalign>CENTER</textalign>
             <textYOff>0</textYOff>
