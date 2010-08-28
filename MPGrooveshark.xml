@@ -3,7 +3,6 @@
     <id>730718</id>
     <defaultcontrol>5101</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <disabletopbar>yes</disabletopbar>
     <define>#usePlayFanart:Yes</define>
     <controls>
         <control>
@@ -120,7 +119,7 @@
 			<id>1</id>
 			<posX>350</posX>
 			<posY>104</posY>
-			<height>344</height>
+			<height>352</height>
 			<width>633</width>
 			<texture>listcontrol_bg.png</texture>
 			<visible>control.isvisible(50)</visible>

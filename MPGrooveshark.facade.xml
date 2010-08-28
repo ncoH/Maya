@@ -4,7 +4,7 @@
         <control>
             <id>0</id>
             <type>image</type>
-			<visible>Control.HasFocus(2)|Control.HasFocus(50)</visible>
+            <visible>Control.HasFocus(2)|Control.HasFocus(50)</visible>
             <posX>0</posX>
             <posY>448</posY>
             <width>1366</width>
@@ -13,54 +13,53 @@
             <animation effect="Fade" time="400">WindowOpen</animation>
             <animation effect="Fade" time="300">WindowClose</animation>
         </control>
-		<control>
-			<description>group element</description>
-			<type>group</type>
-            <animation effect="Fade" reversible="FALSE" time="400">WindowOpen</animation>
-            <animation effect="Fade" reversible="FALSE" time="200">WindowClose</animation>
-			<control>
-				<description>listcontrol</description>
-				<type>listcontrol</type>
-				<visible>Control.HasFocus(5103)|Control.HasFocus(2)|Control.HasFocus(50)</visible>
-				<id>50</id>
-				<posX>350</posX>
-				<posY>104</posY>
-				<height>369</height>
-				<width>633</width>
-				<IconXOff>0</IconXOff>
-				<IconYOff>0</IconYOff>
-				<itemWidth>45</itemWidth>
-				<itemHeight>45</itemHeight>
-				<textureHeight>45</textureHeight>
-				<textXOff>5</textXOff>
-                <onleft>5103</onleft>
-                <onright>5103</onright>
-				<textXOff2>2000</textXOff2>
-				<textYOff2>0</textYOff2>	
-				<textXOff3>2000</textXOff3>
-				<textYOff3>0</textYOff3>		  
-				<spinAlign>Right</spinAlign>
-				<spinCanFocus>no</spinCanFocus>
-				<spinPosY>56</spinPosY>
-				<spinPosX>984</spinPosX>
-				<spinAlign>Right</spinAlign>
-				<spinWidth>30</spinWidth>
-				<spinHeight>30</spinHeight>
-				<!--<onup>50</onup>-->
-			</control>
-		</control>
         <control>
             <description>group element</description>
             <type>group</type>
-            <animation effect="Fade" reversible="FALSE" time="200">WindowOpen</animation>
+            <animation effect="Fade" reversible="FALSE" time="400">WindowOpen</animation>
             <animation effect="Fade" reversible="FALSE" time="200">WindowClose</animation>
+            <control>
+                <id>50</id>
+                <description>listcontrol</description>
+                <type>listcontrol</type>
+                <onleft>5103</onleft>
+                <onright>5103</onright>
+                <visible>Control.HasFocus(5103)|Control.HasFocus(2)|Control.HasFocus(50)</visible>
+                <posX>350</posX>
+                <posY>104</posY>
+                <width>633</width>
+                <height>370</height>
+                <IconXOff>0</IconXOff>
+                <IconYOff>0</IconYOff>
+                <itemWidth>45</itemWidth>
+                <itemHeight>45</itemHeight>
+                <textureHeight>45</textureHeight>
+                <textXOff>5</textXOff>
+                <textXOff2>2000</textXOff2>
+                <textYOff2>0</textYOff2>
+                <textXOff3>2000</textXOff3>
+                <textYOff3>0</textYOff3>
+                <spinAlign>Right</spinAlign>
+                <spinCanFocus>no</spinCanFocus>
+                <spinPosY>423</spinPosY>
+                <spinPosX>387</spinPosX>
+                <spinAlign>Right</spinAlign>
+                <spinWidth>30</spinWidth>
+                <spinHeight>30</spinHeight>
+            </control>
+        </control>
+        <control>
+            <description>group element</description>
+            <type>group</type>
+            <animation effect="Fade" reversible="FALSE" time="100">WindowOpen</animation>
+            <animation effect="Fade" reversible="FALSE" time="100">WindowClose</animation>
             <control>
                 <id>51</id>
                 <description>playlist listcontrol</description>
                 <type>playlistcontrol</type>
                 <onleft>5102</onleft>
                 <onright>5102</onright>
-				<visible>Control.HasFocus(5103)|Control.HasFocus(2)|Control.HasFocus(50)|Control.HasFocus(5102)|Control.HasFocus(51)</visible>
+                <visible>Control.HasFocus(5103)|Control.HasFocus(2)|Control.HasFocus(50)|Control.HasFocus(5102)|Control.HasFocus(51)</visible>
                 <posX>350</posX>
                 <posY>530</posY>
                 <width>633</width>
@@ -91,32 +90,32 @@
             <description>Search Term</description>
             <type>fadelabel</type>
             <visible>Control.HasFocus(50)|Control.HasFocus(5103)</visible>
-            <posX>490</posX>
+            <posX>495</posX>
             <posY>54</posY>
-            <width>336</width>
-            <height>23</height>
+            <width>483</width>
+            <height>25</height>
             <font>font16</font>
             <textcolor>ffffffff</textcolor>
             <label>#mpgrooveshark.current.search</label>
-			<visible allowhiddenfocus="true">Control.HasFocus(50)|Control.HasFocus(5103)</visible>
-            <animation effect="Fade" reversible="FALSE" time="200">WindowOpen</animation>
-            <animation effect="Fade" reversible="FALSE" time="200">WindowClose</animation>
+            <animation effect="Fade" reversible="FALSE" time="100">WindowOpen</animation>
+            <animation effect="Fade" reversible="FALSE" time="100">WindowClose</animation>
+            <textalign>left</textalign>
         </control>
-	<control>
-		<type>fadelabel</type>
-		<description>Search term</description>
-		<id>0</id>
-		<posY>53</posY>
-		<posX>350</posX>
-		<width>200</width>
-		<height>26</height>
-		<label>#SkinTranslation.Translations.grooveshark.Searchterm.Label:</label>
-		<visible>Control.HasText(53)</visible>
-		<font>Segoe Light14</font>	  	  
-		<textcolor>ff85cffe</textcolor>
-		<visible allowhiddenfocus="true">Control.HasFocus(50)|Control.HasFocus(5103)</visible>
-        <animation effect="Fade" reversible="FALSE" time="200">WindowOpen</animation>
-        <animation effect="Fade" reversible="FALSE" time="200">WindowClose</animation>
-    </control>	
+        <control>
+            <id>0</id>
+            <description>Search term</description>
+            <type>fadelabel</type>
+            <visible>Control.HasFocus(50)|Control.HasFocus(5103)</visible>
+            <posX>355</posX>
+            <posY>53</posY>
+            <width>200</width>
+            <height>24</height>
+            <font>Segoe Light14</font>
+            <textcolor>ff85cffe</textcolor>
+            <label>#SkinTranslation.Translations.grooveshark.Searchterm.Label:</label>
+            <animation effect="Fade" reversible="FALSE" time="100">WindowOpen</animation>
+            <animation effect="Fade" reversible="FALSE" time="100">WindowClose</animation>
+            <textalign>left</textalign>
+        </control>
     </controls>
 </window>
