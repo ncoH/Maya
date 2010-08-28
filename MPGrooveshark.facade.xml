@@ -42,7 +42,7 @@
                 <spinAlign>Right</spinAlign>
                 <spinCanFocus>no</spinCanFocus>
                 <spinPosY>423</spinPosY>
-                <spinPosX>387</spinPosX>
+                <spinPosX>390</spinPosX>
                 <spinAlign>Right</spinAlign>
                 <spinWidth>30</spinWidth>
                 <spinHeight>30</spinHeight>
@@ -90,16 +90,16 @@
             <description>Search Term</description>
             <type>fadelabel</type>
             <visible>Control.HasFocus(50)|Control.HasFocus(5103)</visible>
-            <posX>495</posX>
+            <posX>505</posX>
             <posY>54</posY>
-            <width>483</width>
+            <width>480</width>
             <height>25</height>
             <font>font16</font>
             <textcolor>ffffffff</textcolor>
+			<textalign>left</textalign>
             <label>#mpgrooveshark.current.search</label>
             <animation effect="Fade" reversible="FALSE" time="100">WindowOpen</animation>
             <animation effect="Fade" reversible="FALSE" time="100">WindowClose</animation>
-            <textalign>left</textalign>
         </control>
         <control>
             <id>0</id>
@@ -108,14 +108,14 @@
             <visible>Control.HasFocus(50)|Control.HasFocus(5103)</visible>
             <posX>355</posX>
             <posY>53</posY>
-            <width>200</width>
+            <width>180</width>
             <height>24</height>
             <font>Segoe Light14</font>
             <textcolor>ff85cffe</textcolor>
+			<textalign>left</textalign>
             <label>#SkinTranslation.Translations.grooveshark.Searchterm.Label:</label>
             <animation effect="Fade" reversible="FALSE" time="100">WindowOpen</animation>
             <animation effect="Fade" reversible="FALSE" time="100">WindowClose</animation>
-            <textalign>left</textalign>
         </control>
     </controls>
 </window>
