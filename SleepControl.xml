@@ -134,14 +134,29 @@
                 <description>Wait until TV Recording finished</description>
                 <type>togglebutton</type>
                 <onup>7</onup>
-                <ondown>2</ondown>
+                <ondown>9</ondown>
                 <width>259</width>
                 <textureFocus>selectionbar_focus_toggle on.png</textureFocus>
 				<textureNoFocus>selectionbar_unfocus_toggle on.png</textureNoFocus>
-                <label>Wait until tasks finished</label>
                 <AltTextureFocus>selectionbar_focus_toggle off.png</AltTextureFocus>
 				<AltTextureNoFocus>selectionbar_unfocus_toggle off.png</AltTextureNoFocus>
+                <label>Wait until tasks finished</label>	
+                <textalign>LEFT</textalign>					
             </control>
+            <control>
+                <id>9</id>
+                <description>Volume Reduction</description>
+                <type>togglebutton</type>
+                <onup>8</onup>
+                <ondown>2</ondown>
+                <width>259</width>
+                <textureFocus>selectionbar_focus_toggle on.png</textureFocus>
+				<textureNoFocus>selectionbar_unfocus_toggle on.png</textureNoFocus>				
+                <AltTextureFocus>selectionbar_focus_toggle off.png</AltTextureFocus>
+				<AltTextureNoFocus>selectionbar_unfocus_toggle off.png</AltTextureNoFocus>
+                <label>Volume Reduction</label>				
+                <textalign>LEFT</textalign>				
+            </control>			
         </control>
 		
         <control>
