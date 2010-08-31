@@ -38,7 +38,7 @@
 			<id>10001</id>
 			<label>1200</label>
 			<hyperlink>615</hyperlink>
-			<onup>10009</onup>
+			<onup>10010</onup>
 			<width>259</width>
 	<textureFocus>settings_button_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
@@ -130,6 +130,18 @@
 	<textureNoFocus>-</textureNoFocus>
 			<label>9100</label>
 			<hyperlink>9000</hyperlink>
+			<ondown>10010</ondown>
+		</control>
+		
+				<control>
+			<description>I.F.C</description>
+			<type>button</type>
+			<id>10010</id>
+			<width>259</width>
+	<textureFocus>settings_button_focus.png</textureFocus>
+	<textureNoFocus>-</textureNoFocus>
+			<label>I.F.C.</label>
+			<hyperlink>240782</hyperlink>
 			<ondown>10001</ondown>
 		</control>
 		
