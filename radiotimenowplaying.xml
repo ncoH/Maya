@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
     <id>25652</id>
-    <defaultcontrol>155</defaultcontrol>
+    <defaultcontrol>5101</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-	<define>#header.image:radiotime_logo.png</define>
-	<define>#usePlayFanart:Yes</define>
+    <define>#header.label:Radio Time</define>
+    <define>#usePlayFanart:Yes</define>
     <controls>
-	
-	    <import>common.window.title.xml</import>
-        <import>common.time.xml</import>
-    
+        <control>
+            <id>0</id>
+            <description>background image</description>
+            <type>image</type>
+        </control>
         <control>
             <id>91919295</id>
             <description>DUMMY CONTROL FOR PLAYING FANART 1 VISIBILITY CONDITION</description>
@@ -77,218 +78,502 @@
             <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
             <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
         </control>
+        <control>
+            <id>0</id>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>448</posY>
+            <width>1366</width>
+            <height>319</height>
+            <texture>now_playing_fanart_bg.png</texture>
+            <animation effect="Fade" time="400">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
 
+        <control>
+            <id>0</id>
+            <description>Menu label</description>
+            <type>label</type>
+            <posX>1032</posX>
+            <posY>480</posY>
+            <font>Segoe Light18</font>
+            <textcolor>ff85cfff</textcolor>
+            <label>924</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <type>image</type>
+            <visible>!control.hasthumb(500)</visible>
+            <posX>115</posX>
+            <posY>513</posY>
+            <width>188</width>
+            <height>188</height>
+            <texture>DefaultMyradioBig.png</texture>
+            <animation effect="Fade" time="1600">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+            <animation delay="200" effect="Fade" time="1000">VisibleChange</animation>
+        </control>
+        <control>
+            <description>Menu</description>
+            <type>group</type>
+            <posX>1018</posX>
+            <posY>526</posY>
+            <layout>Stacklayout</layout>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+            <control>
+                <id>5101</id>
+                <description>Now Playing button</description>
+                <type>button</type>
+                <onleft>5101</onleft>
+                <onright>5101</onright>
+                <onup>5103</onup>
+                <ondown>5102</ondown>
+                <visible>!window.isvisible(90478)</visible>
+                <width>276</width>
+                <height>38</height>
+                <textureFocus>now_playing_menuitem_selected.png</textureFocus>
+                <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
+                <label>4540</label>
+                <textYOff>6</textYOff>
+            </control>
+            <control>
+                <id>5102</id>
+                <description>Playlist button</description>
+                <type>button</type>
+                <onleft>5102</onleft>
+                <onright>5102</onright>
+                <onup>5101</onup>
+                <ondown>5103</ondown>
+                <visible>!window.isvisible(90478)</visible>				
+                <posX>650</posX>
+                <posY>235</posY>
+                <width>276</width>
+                <height>38</height>
+                <hyperlink>500</hyperlink>				
+                <textureFocus>now_playing_menuitem_selected.png</textureFocus>
+                <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
+                <label>4555</label>
+                <textYOff>6</textYOff>
+            </control>
+            <control>
+                <id>5103</id>
+                <description>Lyrics button</description>
+                <type>button</type>
+                <onleft>5103</onleft>
+                <onright>5103</onright>
+                <onup>5102</onup>
+                <ondown>5104</ondown>
+                <visible>!window.isvisible(90478)</visible>				
+                <posX>650</posX>
+                <posY>235</posY>
+                <width>276</width>
+                <height>38</height>
+                <hyperlink>90478</hyperlink>				
+                <textureFocus>now_playing_menuitem_selected.png</textureFocus>
+                <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
+                <label>#SkinTranslation.Translations.lyrics.Label</label>
+                <textYOff>6</textYOff>
+            </control>
+            <control>
+                <id>5104</id>
+                <description>Home button</description>
+                <type>button</type>
+                <onleft>5104</onleft>
+                <onright>5104</onright>
+                <onup>5103</onup>
+                <ondown>5101</ondown>
+                <visible>!window.isvisible(90478)</visible>				
+                <posX>650</posX>
+                <posY>235</posY>
+                <width>276</width>
+                <height>38</height>
+                <hyperlink>25650</hyperlink>				
+                <textureFocus>now_playing_menuitem_selected.png</textureFocus>
+                <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
+                <label>RadioTime Home</label>
+                <textYOff>6</textYOff>
+            </control>			
+        </control>
         <control>
             <id>112</id>
             <description>album art image</description>
             <type>image</type>
-            <posX>633</posX>
-            <posY>89</posY>
-            <width>365</width>
-            <height>367</height>
+            <posX>115</posX>
+            <posY>513</posY>
+            <width>188</width>
+            <height>188</height>
             <texture>#RadioTime.Play.Image</texture>
-            <animation effect="Fade" time="250">WindowOpen</animation>
-            <keepaspectratio>yes</keepaspectratio>
-            <centered>yes</centered>
+            <animation effect="Fade" reversible="FALSE" time="450">Visible</animation>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+            <animation effect="Fade" time="500">VisibleChange</animation>
         </control>
         <control>
             <id>0</id>
-            <description>Title label</description>
-            <type>fadelabel</type>
-            <posX>57</posX>
-            <posY>323</posY>
-            <width>468</width>
-            <height>30</height>
-            <font>font18</font>
-            <label>#RadioTime.Play.Language</label>
-            <animation effect="Fade" time="150">WindowOpen</animation>
+            <description>album art overlay</description>
+            <type>image</type>
+            <posX>104</posX>
+            <posY>502</posY>
+            <width>210</width>
+            <height>210</height>
+            <texture>blackborders_music_nowplaying_small.png</texture>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
             <id>0</id>
-            <description>Artist label</description>
+            <description>title label</description>
             <type>fadelabel</type>
-            <posX>56</posX>
-            <posY>202</posY>
-            <width>468</width>
-            <height>28</height>
-            <font>font16</font>
-            <label>#RadioTime.Play.Description</label>
-            <animation effect="Fade" time="150">WindowOpen</animation>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(20)</visible>
+            <posX>350</posX>
+            <posY>497</posY>
+            <width>550</width>
+            <font>Segoe Light18</font>
+            <textcolor>ff85cffe</textcolor>
+            <label>Station</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
             <id>0</id>
-            <description>Artist label</description>
+            <description>title label</description>
             <type>fadelabel</type>
-            <posX>54</posX>
-            <posY>160</posY>
-            <width>468</width>
-            <height>28</height>
-            <font>font16</font>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(20)</visible>
+            <posX>480</posX>
+            <posY>497</posY>
+            <width>497</width>
+            <font>Segoe Light18</font>
             <label>#RadioTime.Play.Station</label>
-            <animation effect="Fade" time="150">WindowOpen</animation>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
             <id>0</id>
-            <description>track label</description>
+            <description>artist label</description>
             <type>fadelabel</type>
-            <posX>56</posX>
-            <posY>281</posY>
-            <width>468</width>
-            <height>28</height>
-            <font>font16</font>
-            <label>#RadioTime.Play.Slogan</label>
-            <animation effect="Fade" time="250">WindowOpen</animation>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(20)</visible>
+            <posX>350</posX>
+            <posY>533</posY>
+            <width>550</width>
+            <font>Segoe Light14</font>
+            <textcolor>ff85cffe</textcolor>
+            <label>Description</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
             <id>0</id>
-            <description>track label</description>
+            <description>artist label</description>
             <type>fadelabel</type>
-            <posX>56</posX>
-            <posY>242</posY>
-            <width>468</width>
-            <height>28</height>
-            <font>font16</font>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(20)</visible>
+            <posX>480</posX>
+            <posY>533</posY>
+            <width>497</width>
+            <font>Segoe Light14</font>
+            <label>#RadioTime.Play.Description</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <description>album label</description>
+            <type>fadelabel</type>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(20)</visible>
+            <posX>350</posX>
+            <posY>563</posY>
+            <width>550</width>
+            <font>Segoe Light14</font>
+            <textcolor>ff85cffe</textcolor>
+            <label>Album</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <description>album label</description>
+            <type>fadelabel</type>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(20)</visible>
+            <posX>480</posX>
+            <posY>563</posY>
+            <width>497</width>
+            <font>Segoe Light14</font>
+            <label>#Play.Current.Album</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <description>up next label</description>
+            <type>label</type>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(20)</visible>
+            <posX>350</posX>
+            <posY>593</posY>
+            <font>Segoe Light14</font>
+            <textcolor>ff85cffe</textcolor>
+            <label>Location</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <description>next track label</description>
+            <type>fadelabel</type>
+            <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(20)] + player.hasmedia</visible>
+            <posX>480</posX>
+            <posY>593</posY>
+            <width>497</width>
+            <font>Segoe Light14</font>
+            <textcolor>ff85cffe</textcolor>
             <label>#RadioTime.Play.Location</label>
-            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
             <id>0</id>
-            <description>track label</description>
+            <description>Current Artist label</description>
+            <type>label</type>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(20)</visible>
+            <posX>350</posX>
+            <posY>623</posY>
+            <font>Segoe Light14</font>
+            <textcolor>ff85cffe</textcolor>
+            <label>Artist</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <description>Current Artist</description>
             <type>fadelabel</type>
-            <posX>56</posX>
-            <posY>363</posY>
-            <width>468</width>
-            <height>28</height>
-            <font>font16</font>
+            <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(20)] + player.hasmedia</visible>
+            <posX>480</posX>
+            <posY>623</posY>
+            <width>497</width>
+            <font>Segoe Light14</font>
+            <textcolor>ff85cffe</textcolor>
             <label>#Play.Current.Artist</label>
-            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
             <id>0</id>
-            <description>track label</description>
+            <description>Current Title label</description>
+            <type>label</type>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(20)</visible>
+            <posX>350</posX>
+            <posY>653</posY>
+            <font>Segoe Light14</font>
+            <textcolor>ff85cffe</textcolor>
+            <label>Title</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <description>Current Title</description>
             <type>fadelabel</type>
-            <posX>56</posX>
-            <posY>403</posY>
-            <width>468</width>
-            <height>28</height>
-            <font>font16</font>
+            <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(20)] + player.hasmedia</visible>
+            <posX>480</posX>
+            <posY>653</posY>
+            <width>497</width>
+            <font>Segoe Light14</font>
+            <textcolor>ff85cffe</textcolor>
             <label>#Play.Current.Title</label>
-            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <description>year label</description>
+            <type>fadelabel</type>
+            <posX>-2000</posX>
+            <posY>442</posY>
+            <width>390</width>
+            <font>font12</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#Play.Current.Year</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
             <id>117</id>
             <description>Progress background</description>
             <type>image</type>
             <visible>player.hasmedia</visible>
-            <posX>636</posX>
-            <posY>486</posY>
-            <width>336</width>
-            <height>30</height>
-            <texture>osd_progress_background.png</texture>
-            <animation effect="Fade" time="150">WindowOpen</animation>
+            <posX>350</posX>
+            <posY>688</posY>
+            <width>628</width>
+            <height>2</height>
+            <texture>now_playing_progress_back.png</texture>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
         <control>
             <id>118</id>
-            <description>track progress</description>
+            <description>progress bar</description>
             <type>progress</type>
-            <visible>player.hasmedia</visible>
-            <posX>631</posX>
-            <posY>490</posY>
-            <width>350</width>
-            <label>#percentage</label>
+            <posX>-2000</posX>
         </control>
         <control>
             <id>0</id>
-            <description>track progress label</description>
-            <type>label</type>
+            <description>progress bar</description>
+            <type>progress</type>
             <visible>player.hasmedia</visible>
-            <posX>563</posX>
-            <posY>486</posY>
-            <font>font14</font>
-            <textcolor>80ffffff</textcolor>
-            <align>LEFT</align>
-            <label>#currentplaytime</label>
-            <animation effect="Fade" time="250">WindowOpen</animation>
+            <posX>340</posX>
+            <posY>688</posY>
+            <width>648</width>
+            <height>2</height>
+            <texturebg>-</texturebg>
+            <lefttexture>now_playing_progress_bar.png</lefttexture>
+            <righttexture>now_playing_progress_bar.png</righttexture>
+            <midtexture>now_playing_progress_bar.png</midtexture>
+            <label>#percentage</label>
+            <animation>WindowOpen</animation>
+            <animation>WindowClose</animation>
         </control>
         <control>
             <id>0</id>
             <description>track duration label</description>
             <type>label</type>
             <visible>player.hasmedia</visible>
-            <posX>1045</posX>
-            <posY>486</posY>
-            <font>font14</font>
-            <textcolor>80ffffff</textcolor>
+            <posX>354</posX>
+            <posY>695</posY>
+            <font>font11</font>
+            <align>LEFT</align>
+            <label>#currentplaytime</label>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
+        </control>
+        <control>
+            <id>0</id>
+            <description>track duration label</description>
+            <type>fadelabel</type>
+            <visible>player.hasmedia</visible>
+            <posX>977</posX>
+            <posY>695</posY>
+            <width>135</width>
+            <font>font11</font>
             <align>RIGHT</align>
             <label>#duration</label>
-            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="800">WindowOpen</animation>
+            <animation effect="Fade" time="300">WindowClose</animation>
         </control>
+
         <control>
-            <id>166</id>
-            <description>list genres</description>
-            <type>listcontrol</type>
-            <onright>155</onright>
-            <ondown>155</ondown>
-            <posX>28</posX>
-            <posY>545</posY>
-            <width>391</width>
-            <height>168</height>
-            <textXOff>7</textXOff>
-            <IconXOff>1</IconXOff>
-            <spinColor>-</spinColor>
-            <image>-</image>
-            <textureUp>-</textureUp>
-            <textureDown>-</textureDown>
-            <textureUpFocus>-</textureUpFocus>
-            <textureDownFocus>-</textureDownFocus>
-            <textureFocus>list_sub_focus_arrow_small.png</textureFocus>
-            <textureNoFocus>-</textureNoFocus>
+            <description>playing status</description>
+            <type>group</type>
+            <posX>647</posX>
+            <posY>697</posY>
+            <width>54</width>
+            <height>19</height>
+            <animation effect="Fade" time="250">VisibleChange</animation>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <font>font11</font>
+            <align>center</align>
+            <control>
+                <description>2x label</description>
+                <type>label</type>
+                <visible>player.forwarding2x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>FFW 2x</label>
+            </control>
+            <control>
+                <description>4x label</description>
+                <type>label</type>
+                <visible>player.forwarding4x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>FFW 4x</label>
+            </control>
+            <control>
+                <description>8x label</description>
+                <type>label</type>
+                <visible>player.forwarding8x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>FFW 8x</label>
+            </control>
+            <control>
+                <description>16x label</description>
+                <type>label</type>
+                <visible>player.forwarding16x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>FFW 16x</label>
+            </control>
+            <control>
+                <description>32x label</description>
+                <type>label</type>
+                <visible>player.forwarding32x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>FFW 32x</label>
+            </control>
+            <control>
+                <description>2x label</description>
+                <type>label</type>
+                <visible>player.rewinding2x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>REW 2x</label>
+            </control>
+            <control>
+                <description>4x label</description>
+                <type>label</type>
+                <visible>player.rewinding4x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>REW 4x</label>
+            </control>
+            <control>
+                <description>8x label</description>
+                <type>label</type>
+                <visible>player.rewinding8x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>REW 8x</label>
+            </control>
+            <control>
+                <description>16x label</description>
+                <type>label</type>
+                <visible>player.rewinding16x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>REW 16x</label>
+            </control>
+            <control>
+                <description>32x label</description>
+                <type>label</type>
+                <visible>player.rewinding32x</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>REW 32x</label>
+            </control>
+            <control>
+                <description>Pause</description>
+                <type>label</type>
+                <visible>player.paused</visible>
+                <posX>674</posX>
+                <posY>708</posY>
+                <align>CENTER</align>
+                <label>112</label>
+            </control>
         </control>
-        <control>
-            <id>155</id>
-            <description>list similar</description>
-            <type>listcontrol</type>
-            <onleft>166</onleft>
-            <onup>166</onup>
-            <posX>643</posX>
-            <posY>545</posY>
-            <width>533</width>
-            <height>168</height>
-            <textXOff>7</textXOff>
-            <IconXOff>1</IconXOff>
-            <spinColor>-</spinColor>
-            <image>-</image>
-            <textureUp>-</textureUp>
-            <textureNoFocus>-</textureNoFocus>
-            <textureDown>-</textureDown>
-            <textureUpFocus>-</textureUpFocus>
-            <textureDownFocus>-</textureDownFocus>
-            <textureFocus>list_sub_focus_arrow.png</textureFocus>
-            <textcolor>White</textcolor>
-        </control>
-        <control>
-            <id>29</id>
-            <description>Genres</description>
-            <type>fadelabel</type>
-            <posX>76</posX>
-            <posY>517</posY>
-            <width>497</width>
-            <label>#RadioTime.Translation.Genres.Label</label>
-        </control>
-        <control>
-            <id>28</id>
-            <description>similar stations</description>
-            <type>fadelabel</type>
-            <posX>694</posX>
-            <posY>517</posY>
-            <width>497</width>
-            <label>#RadioTime.Translation.SimilarStations.Label</label>
-        </control>
-        <control>
-            <type>fadelabel</type>
-            <posX>531</posX>
-            <posY>35</posY>
-            <width>711</width>
-        </control>
+        <import>common.time.xml</import>
     </controls>
 </window>
