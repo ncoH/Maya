@@ -21,10 +21,10 @@
             <id>1</id>
             <type>label</type>
             <posX>552</posX>
-            <posY>15</posY>
+            <posY>30</posY>
             <width>500</width>
-            <height>66</height>
-            <font>Segoe Light26</font>
+            <height>100</height>
+            <font>Segoe Light40</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>#header.label</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
