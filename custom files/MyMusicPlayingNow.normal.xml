@@ -9,30 +9,6 @@
             <description>background image</description>
             <type>image</type>
         </control>
-        <control>
-            <id>91919295</id>
-            <description>DUMMY CONTROL FOR PLAYING FANART 1 VISIBILITY CONDITION</description>
-            <type>label</type>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1</width>
-        </control>
-        <control>
-            <id>91919296</id>
-            <description>DUMMY CONTROL FOR PLAYING FANART 2 VISIBILITY CONDITION</description>
-            <type>label</type>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1</width>
-        </control>
-        <control>
-            <id>91919294</id>
-            <description>DUMMY CONTROL FOR PLAYING FANART AVAILABILITY CONDITION</description>
-            <type>label</type>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1</width>
-        </control>
 
         <control>
             <id>0</id>
