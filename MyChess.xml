@@ -123,8 +123,8 @@
         <control>
             <type>group</type>
             <dimColor>ffffffff</dimColor>
-            <animation effect="Slide" reversible="FALSE" start="900,0" time="200" tween="Circle">WindowOpen</animation>
-            <animation effect="Slide" end="900,0" reversible="FALSE" time="200" tween="Circle">WindowClose</animation>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="250">WindowClose</animation>
             <control>
                 <id>1200</id>
                 <description>background</description>
@@ -150,7 +150,7 @@
                 <type>button</type>
                 <onleft>2</onleft>
                 <onright>500</onright>
-                <onup>8</onup>
+                <onup>17</onup>
                 <ondown>3</ondown>
                 <label>Start</label>
                 <textalign>RIGHT</textalign>

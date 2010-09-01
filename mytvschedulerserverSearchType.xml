@@ -3,19 +3,50 @@
 <id>746</id>
 <defaultcontrol>2</defaultcontrol>
 <allowoverlay>no</allowoverlay>
-<define>#header.image:television_logo.png</define>
 <define>#header.label:6035</define>
-<define>#header.hover:-</define>
 <controls>
+
 	<import>common.window.xml</import>
+
+	<control>
+		<description>Header Label</description>		
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<description>list background</description>	
+		<type>image</type>
+		<id>1</id>
+		<posX>200</posX>
+        <posY>153</posY>
+		<width>281</width>
+		<height>520</height>
+		<texture>tvhome_bg.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>		
+	</control>
+	
 	<control>
 		<type>group</type>
 		<layout>StackLayout</layout>
 		<description>group element</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>71</posX>
-		<posY>121</posY>
+		<posX>200</posX>
+		<posY>180</posY>
+		<width>281</width>
+		
 		<control>
 			<description>Quick Record</description>
 			<type>button</type>
@@ -24,6 +55,13 @@
 			<onup>17</onup>
 			<ondown>3</ondown>
 			<onright>99</onright>
+			<textureFocus>listcontrol_item_selected.png</textureFocus>
+			<textureNoFocus>listcontrol_item.png</textureNoFocus>
+			<textalign>right</textalign>
+			<width>281</width>
+			<textXOff>23</textXOff>
+			<height>46</height>
+			<textYOff>10</textYOff>				
 		</control>
 
 		<control>
@@ -34,6 +72,13 @@
 			<onup>2</onup>
 			<ondown>6</ondown>
 			<onright>99</onright>
+			<textureFocus>listcontrol_item_selected.png</textureFocus>
+			<textureNoFocus>listcontrol_item.png</textureNoFocus>
+			<textalign>right</textalign>
+			<width>281</width>
+			<textXOff>23</textXOff>
+			<height>46</height>
+			<textYOff>10</textYOff>				
 		</control>
 
 		<control>
@@ -44,6 +89,13 @@
 			<onup>3</onup>
 			<ondown>7</ondown>
 			<onright>99</onright>
+			<textureFocus>listcontrol_item_selected.png</textureFocus>
+			<textureNoFocus>listcontrol_item.png</textureNoFocus>
+			<textalign>right</textalign>
+			<width>281</width>
+			<textXOff>23</textXOff>
+			<height>46</height>
+			<textYOff>10</textYOff>				
 		</control>
 
 		<control>
@@ -54,6 +106,13 @@
 			<onup>6</onup>
 			<ondown>8</ondown>
 			<onright>99</onright>
+			<textureFocus>listcontrol_item_selected.png</textureFocus>
+			<textureNoFocus>listcontrol_item.png</textureNoFocus>
+			<textalign>right</textalign>
+			<width>281</width>
+			<textXOff>23</textXOff>
+			<height>46</height>
+			<textYOff>10</textYOff>				
 		</control>
 
 		<control>
@@ -64,6 +123,13 @@
 			<onup>7</onup>
 			<ondown>9</ondown>
 			<onright>99</onright>
+			<textureFocus>listcontrol_item_selected.png</textureFocus>
+			<textureNoFocus>listcontrol_item.png</textureNoFocus>
+			<textalign>right</textalign>
+			<width>281</width>
+			<textXOff>23</textXOff>
+			<height>46</height>
+			<textYOff>10</textYOff>				
 		</control>
 
 		<control>
@@ -75,9 +141,17 @@
 			<onup>8</onup>
 			<ondown>10</ondown>
 			<onright>99</onright>
+			<textureFocus>listcontrol_item_selected.png</textureFocus>
+			<textureNoFocus>listcontrol_item.png</textureNoFocus>
+			<textalign>right</textalign>
+			<width>281</width>
+			<textXOff>23</textXOff>
+			<height>46</height>
+			<textYOff>10</textYOff>				
 		</control>
-
 	</control>
+	
+<import>common.time.xml</import>
 
 </controls>
 </window>

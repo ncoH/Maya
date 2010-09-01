@@ -30,24 +30,24 @@
 			<description>list background</description>
 			<type>image</type>
 			<id>1</id>
-			<posX>71</posX>
-			<posY>121</posY>
-			<width>280</width>
-			<height>533</height>
+			<posX>200</posX>
+			<posY>153</posY>
+			<width>281</width>
+			<height>520</height>
 			<texture>tvhome_bg.png</texture>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>		
 	</control>
 	
 	<control>
-			<type>group</type>
-			<layout>StackLayout</layout>
-			<description>group element</description>
-			<posX>71</posX>
-			<posY>121</posY>
-			<width>280</width>
-			<animation effect="Fade" time="100">WindowOpen</animation>
-			<animation effect="Fade" time="100">WindowClose</animation>			
+		<type>group</type>
+		<layout>StackLayout</layout>
+		<description>group element</description>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<posX>200</posX>
+		<posY>180</posY>
+		<width>281</width>	
 
     <control>
 			<description>Rip Disc</description>

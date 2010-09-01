@@ -3,7 +3,6 @@
 <id>748</id>
 <defaultcontrol>2</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
-<define>#header.image:television_logo.png</define>
 <define>#header.label:1037</define>
 <define>#selecteditem:</define>
 <controls>
@@ -11,6 +10,7 @@
 	<import>common.time.xml</import>
 
 	<control>
+		<description>Header Label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
@@ -19,7 +19,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>programme info</label>
+		<label>programm info</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<valign>middle</valign>
@@ -37,6 +37,19 @@
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
+
+	<control>
+		<description>list background</description>	
+		<type>image</type>
+		<id>1</id>
+		<posX>200</posX>
+        <posY>153</posY>
+		<width>281</width>
+		<height>520</height>
+		<texture>tvhome_bg.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>		
+	</control>
 	
 	<control>
 		<type>group</type>
@@ -44,17 +57,24 @@
 		<description>group element</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>150</posX>
-		<posY>190</posY>
-		
+		<posX>200</posX>
+		<posY>180</posY>
+		<width>281</width>
 		<control>
 			<description>Record</description>
 			<type>button</type>
 			<id>2</id>
+			<label>600</label>
 			<onup>17</onup>
 			<ondown>3</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
+			<width>281</width>
+			<textXOff>23</textXOff>
+			<height>46</height>
+			<textYOff>10</textYOff>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -66,6 +86,12 @@
 			<ondown>4</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
+			<width>281</width>
+			<textXOff>23</textXOff>
+			<height>46</height>
+			<textYOff>10</textYOff>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -77,6 +103,12 @@
 			<ondown>5</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
+			<width>281</width>
+			<textXOff>23</textXOff>
+			<height>46</height>
+			<textYOff>10</textYOff>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -84,13 +116,18 @@
 			<type>togglebutton</type>
 			<id>5</id>
 			<label>1040</label>
-			<textcolor>White</textcolor>
-			<colordiffuse>White</colordiffuse>
-			<disabledcolor>60ffffff</disabledcolor>
+			<AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
+			<AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
+			<textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
 			<onup>4</onup>
 			<ondown>6</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
+			<width>281</width>
+			<textXOff>23</textXOff>
+			<height>46</height>
+			<textYOff>10</textYOff>
 		</control>
 
 		<control>
@@ -102,6 +139,12 @@
 			<ondown>7</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
+			<width>281</width>
+			<textXOff>23</textXOff>
+			<height>46</height>
+			<textYOff>10</textYOff>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -113,6 +156,12 @@
 			<ondown>8</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
+			<width>281</width>
+			<textXOff>23</textXOff>
+			<height>46</height>
+			<textYOff>10</textYOff>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -124,6 +173,12 @@
 			<ondown>9</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
+			<width>281</width>
+			<textXOff>23</textXOff>
+			<height>46</height>
+			<textYOff>10</textYOff>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -135,6 +190,12 @@
 			<ondown>99</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
+			<width>281</width>
+			<textXOff>23</textXOff>
+			<height>46</height>
+			<textYOff>10</textYOff>
+			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 	</control>
@@ -208,19 +269,23 @@
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
-				<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
-				<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
 				<PinIconHeight>53</PinIconHeight>
 				<PinIconWidth>34</PinIconWidth>
 				<PinIconXOff>0</PinIconXOff>
 				<PinIconYOff>0</PinIconYOff>
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
-				<IconXOff>60</IconXOff>
+				<IconXOff>30</IconXOff>
 				<IconYOff>9</IconYOff>
-				<textXOff>70</textXOff>
+				<textXOff>40</textXOff>
+				<spinPosX>560</spinPosX>
+				<spinPosY>692</spinPosY>
+				<spinAlign>left</spinAlign>
+				<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
+				<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
 				<keepaspectratio>yes</keepaspectratio>
 				<spinCanFocus>no</spinCanFocus>
+				<dimColor>ffffffff</dimColor>
 			</control>
 
 	<control>
