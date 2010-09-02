@@ -24,23 +24,11 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>movies</label>
+		<label>3</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 	</control>
 	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<description>listcontrol background</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>524</posX>
-        <posY>153</posY>
-		<width>359</width>
-		<height>482</height>
-		<texture>listcontrol_bg_small.png</texture>
-	</control>
 	
 	<control>
 		<description>Play Button</description>
@@ -48,12 +36,6 @@
 		<id>2</id>
 		<posX>524</posX>
 		<posY>187</posY>
-		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-		<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-		<width>358</width>
-		<textXOff>33</textXOff>
-		<height>51</height>
-		<textYOff>12</textYOff>
 		<label>208</label>
 		<onleft>22</onleft>
 		<onright>22</onright>
@@ -68,14 +50,6 @@
 		<id>3</id>
 		<posX>524</posX>
 		<posY>238</posY>
-		<textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
-		<textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
-		<AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
-		<AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
-		<width>358</width>
-		<textXOff>32</textXOff>
-		<height>51</height>
-		<textYOff>12</textYOff>
 		<label>207</label>
 		<onleft>22</onleft>
 		<onright>22</onright>
@@ -90,14 +64,6 @@
 		<id>4</id>
 		<posX>524</posX>
 		<posY>289</posY>
-		<textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
-		<textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
-		<AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
-		<AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
-		<width>358</width>
-		<textXOff>32</textXOff>
-		<height>51</height>
-		<textYOff>12</textYOff>
 		<label>206</label>
 		<onleft>22</onleft>
 		<onright>22</onright>
@@ -112,12 +78,6 @@
 		<id>5</id>
 		<posX>524</posX>
 		<posY>340</posY>
-		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-		<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-		<width>358</width>
-		<textXOff>32</textXOff>
-		<height>51</height>
-		<textYOff>12</textYOff>
 		<label>184</label>
 		<onleft>22</onleft>
 		<onright>22</onright>
@@ -132,14 +92,6 @@
 		<id>6</id>
 		<posX>524</posX>
 		<posY>391</posY>
-		<textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
-		<textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
-		<AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
-		<AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
-		<width>358</width>
-		<textXOff>32</textXOff>
-		<height>51</height>
-		<textYOff>12</textYOff>
 		<label>1010</label>
 		<onleft>22</onleft>
 		<onright>22</onright>
@@ -155,7 +107,7 @@
 		<id>117</id>
 		<posX>524</posX>
 		<posY>442</posY>
-		<texture>listcontrol_item_small.png</texture>
+		<texture>-</texture>
 		<visible>!Control.HasFocus(10)</visible>
 	</control>
 	
@@ -165,7 +117,9 @@
 		<id>117</id>
 		<posX>524</posX>
 		<posY>442</posY>
-		<texture>listcontrol_item_selected_small.png</texture>
+		<width>239</width>
+		<height>36</height>
+		<texture>settings_button_medium_focus.png</texture>
 		<visible>Control.HasFocus(10)</visible>
 	</control>
 	
@@ -175,7 +129,7 @@
 		<id>117</id>
 		<posX>524</posX>
 		<posY>493</posY>
-		<texture>listcontrol_item_small.png</texture>
+		<texture>-</texture>
 		<visible>!Control.HasFocus(11)</visible>
 	</control>
 	
@@ -185,7 +139,9 @@
 		<id>117</id>
 		<posX>524</posX>
 		<posY>493</posY>
-		<texture>listcontrol_item_selected_small.png</texture>
+		<width>239</width>
+		<height>36</height>
+		<texture>settings_button_medium_focus.png</texture>
 		<visible>Control.HasFocus(11)</visible>
 	</control>
 	
@@ -193,8 +149,8 @@
 		<description>image title:</description>
 		<type>label</type>
 		<id>30</id>
-		<posX>555</posX>
-		<posY>451</posY>
+		<posX>540</posX>
+		<posY>448</posY>
 		<label>734</label>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -205,8 +161,8 @@
 		<description>spin control</description>
 		<type>spincontrol</type>
 		<id>10</id>
-		<posX>715</posX>
-		<posY>451</posY>
+		<posX>645</posX>
+		<posY>446</posY>
 		<onup>6</onup>
 		<ondown>11</ondown>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -217,7 +173,7 @@
 		<description>disc:</description>
 		<type>label</type>
 		<id>100</id>
-		<posX>555</posX>
+		<posX>540</posX>
 		<posY>503</posY>
 		<label>427</label>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -229,7 +185,7 @@
 		<description>disc select</description>
 		<type>spincontrol</type>
 		<id>11</id>
-		<posX>715</posX>
+		<posX>652</posX>
 		<posY>500</posY>
 		<onup>10</onup>
 		<ondown>2</ondown>
@@ -263,7 +219,7 @@
 		<posY>195</posY>
 		<width>400</width>
 		<label>#year</label>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 		<font>Segoe Light18</font>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -277,7 +233,7 @@
 		<posY>230</posY>
 		<width>400</width>
 		<label>#runtime min</label>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 		<font>Segoe Light18</font>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -291,7 +247,7 @@
 		<posY>265</posY>
 		<width>400</width>
 		<label>#genre</label>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 		<font>Segoe Light18</font>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -346,7 +302,7 @@
 		<width>365</width>
 		<label>#director</label>
 		<font>font11</font>
-		<textcolor>6aa5cb</textcolor>
+		<textcolor>85cffe</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
