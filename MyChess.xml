@@ -150,7 +150,7 @@
                 <type>button</type>
                 <onleft>2</onleft>
                 <onright>500</onright>
-                <onup>17</onup>
+                <onup>8</onup>
                 <ondown>3</ondown>
                 <label>Start</label>
                 <textalign>RIGHT</textalign>

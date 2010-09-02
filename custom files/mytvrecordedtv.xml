@@ -4,11 +4,13 @@
 <defaultcontrol>11</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <define>#header.label:652</define>
-<define>#header.image:recorded_logo.png</define>
 <controls>
 	<import>common.window.recordings.xml</import>
 	<import>common.time.xml</import>
+	
+	
 	<control>
+		<description>Header Label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>

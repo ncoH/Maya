@@ -37,19 +37,6 @@
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
-
-	<control>
-		<description>list background</description>	
-		<type>image</type>
-		<id>1</id>
-		<posX>200</posX>
-        <posY>153</posY>
-		<width>281</width>
-		<height>520</height>
-		<texture>tvhome_bg.png</texture>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>		
-	</control>
 	
 	<control>
 		<type>group</type>
@@ -57,24 +44,17 @@
 		<description>group element</description>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-		<posX>200</posX>
-		<posY>180</posY>
-		<width>281</width>
+		<posX>150</posX>
+		<posY>190</posY>
+		
 		<control>
 			<description>Record</description>
 			<type>button</type>
 			<id>2</id>
-			<label>600</label>
 			<onup>17</onup>
 			<ondown>3</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
-			<width>281</width>
-			<textXOff>23</textXOff>
-			<height>46</height>
-			<textYOff>10</textYOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -86,12 +66,6 @@
 			<ondown>4</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
-			<width>281</width>
-			<textXOff>23</textXOff>
-			<height>46</height>
-			<textYOff>10</textYOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -103,12 +77,6 @@
 			<ondown>5</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
-			<width>281</width>
-			<textXOff>23</textXOff>
-			<height>46</height>
-			<textYOff>10</textYOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -116,18 +84,13 @@
 			<type>togglebutton</type>
 			<id>5</id>
 			<label>1040</label>
-			<AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
-			<AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
-			<textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
+			<textcolor>White</textcolor>
+			<colordiffuse>White</colordiffuse>
+			<disabledcolor>60ffffff</disabledcolor>
 			<onup>4</onup>
 			<ondown>6</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
-			<width>281</width>
-			<textXOff>23</textXOff>
-			<height>46</height>
-			<textYOff>10</textYOff>
 		</control>
 
 		<control>
@@ -139,12 +102,6 @@
 			<ondown>7</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
-			<width>281</width>
-			<textXOff>23</textXOff>
-			<height>46</height>
-			<textYOff>10</textYOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -156,12 +113,6 @@
 			<ondown>8</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
-			<width>281</width>
-			<textXOff>23</textXOff>
-			<height>46</height>
-			<textYOff>10</textYOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -173,12 +124,6 @@
 			<ondown>9</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
-			<width>281</width>
-			<textXOff>23</textXOff>
-			<height>46</height>
-			<textYOff>10</textYOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 		<control>
@@ -190,12 +135,6 @@
 			<ondown>99</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
-			<width>281</width>
-			<textXOff>23</textXOff>
-			<height>46</height>
-			<textYOff>10</textYOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
 	</control>
