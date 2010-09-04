@@ -217,7 +217,7 @@
             <posX>56</posX>
             <posY>450</posY>
             <width>385</width>
-            <height>236</height>
+            <height>280</height>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
             <label>#MPE.Selected.Description</label>
