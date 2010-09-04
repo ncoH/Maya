@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>762</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>no</allowoverlay>
+	<id>762</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
 <controls>
 
         <import>common.window.background.xml</import>
@@ -16,7 +16,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>radio guide</label>
+		<label>Radio Guide</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 	</control>
@@ -26,11 +26,13 @@
 		<type>label</type>
 		<id>0</id>
 		<posX>1329</posX>
-		<posY>52</posY>
+		<posY>64</posY>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light22</font>
 		<align>right</align>
 		<label>#time</label>
+		<animation effect="fade" time="800">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>				
     </control>
 	
     <control>
@@ -130,17 +132,16 @@
 	
     <control>
       <description>Channel image template</description>
-      <type>image</type>
-      <id>7</id>
+		<type>image</type>
+		<id>7</id>
 		<posX>15</posX>
-        <posY>1</posY>
-        <width>44</width>
-        <height>44</height>
-        <keepaspectratio>yes</keepaspectratio>
-        <centered>yes</centered>
-		<texture>defaultVideoBig.png</texture>
-		<animation effect="fade" time="800">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>
+		<posY>1</posY>
+		<width>44</width>
+		<height>44</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<zoom>no</zoom>
+		<centered>yes</centered>
+		<texture>defaultVideo.png</texture>		
     </control>
 
     <control>

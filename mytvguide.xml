@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-  <id>600</id>
-  <defaultcontrol>2</defaultcontrol>
-  <allowoverlay>no</allowoverlay>
+	<id>600</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
   <controls>
 	
         <import>common.window.background.xml</import>
@@ -31,6 +31,8 @@
 		<font>Segoe Light22</font>
 		<align>right</align>
 		<label>#time</label>
+		<animation effect="fade" time="800">WindowOpen</animation>
+		<animation effect="fade" time="300">WindowClose</animation>				
     </control>
 	
     <control>
@@ -65,12 +67,11 @@
 		<posX>350</posX>
 		<posY>117</posY>
 		<width>53</width>
-      <height>37</height>
+		<height>37</height>
 		<keepaspectratio>yes</keepaspectratio>
 		<zoom>no</zoom>
-		<texture>defaultVideoBig.png</texture>
-		<animation effect="fade" time="800">WindowOpen</animation>
-		<animation effect="fade" time="300">WindowClose</animation>
+		<centered>yes</centered>
+		<texture>defaultVideo.png</texture>		
 	</control>
 	
     <!-- Timeheader background must be dedfined before Timeheader label template -->
@@ -165,10 +166,10 @@
 		<posY>1</posY>
 		<width>44</width>
 		<height>44</height>
-		<centered>yes</centered>
-		<zoom>no</zoom>
 		<keepaspectratio>yes</keepaspectratio>
-		<texture>defaultVideoBig.png</texture>
+		<zoom>no</zoom>
+		<centered>yes</centered>
+		<texture>defaultVideo.png</texture>	
     </control>
 	
     <control>
