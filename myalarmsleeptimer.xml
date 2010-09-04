@@ -4,10 +4,26 @@
 <defaultcontrol>3</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <define>#header.label:859</define>
-<define>#header.image:alarm_logo.png</define>
-<define>#header.hover:-</define>
 <controls>
+
 	<import>common.window.xml</import>
+    <import>common.time.xml</import>
+ 
+        <control>
+            <id>1</id>
+            <type>label</type>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+            <valign>middle</valign>
+        </control>
+	
 	<control>
 		<description>sleep time label</description>
 		<type>label</type>

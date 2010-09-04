@@ -101,74 +101,61 @@
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<control>
+			<description>Sort Genres</description>		
 			<type>sortbutton</type>
 			<id>2</id>
 			<label>620</label>
-			<onup>17</onup>
-			<ondown>4</ondown>
+			<ondown>20</ondown>
 			<textalign>right</textalign>
 			<offsetSortButtonX>21</offsetSortButtonX>
 		</control>
 
         <control>
-			<description>Search by Genres</description>
-			<type>togglebutton</type>
-			<id>4</id>
-			<colordiffuse>ffffffff</colordiffuse>
-			<label>725</label>
+			<description>View by Title/Genre</description>		
+			<id>20</id>
+			<type>button</type>
+			<label>1522</label>
 			<onup>2</onup>
-			<ondown>5</ondown>
+			<ondown>7</ondown>
 			<textalign>right</textalign>
 		</control>
 
 		<control>
-			<description>Search by Title</description>
-			<type>togglebutton</type>
-			<id>5</id>
-			<colordiffuse>ffffffff</colordiffuse>
-			<label>726</label>
-			<onup>4</onup>
-			<ondown>6</ondown>
-			<textalign>right</textalign>
-		</control>
-
-		<control>
-			<description>Search by Description</description>
-			<type>togglebutton</type>
-			<id>6</id>
-			<label>922</label>
-			<colordiffuse>ffffffff</colordiffuse>
-			<onup>5</onup>
-			<ondown>7</ondown>		
-			<textalign>right</textalign>
-        </control>
-		
-        <control>
-			<description>Letter button</description>
+			<description>Starts with</description>
 			<type>selectbutton</type>
 			<id>7</id>
 			<label>872</label>
-			<onup>6</onup>
-			<ondown>19</ondown>			
+			<onup>20</onup>
+			<ondown>19</ondown>
+			<textalign>right</textalign>
+		</control>
+
+		<control>
+			<description>sms input</description>
+			<type>button</type>
+			<id>19</id>
+			<label>2051</label>
+			<onup>7</onup>
+			<ondown>21</ondown>		
 			<textalign>right</textalign>
         </control>
 		
         <control>
-			<description>sms input</description>
+			<description>Search by Description</description>
 			<type>button</type>
-			<id>19</id>
-			<label>137</label>
-			<onup>7</onup>
-			<ondown>8</ondown>
+			<id>21</id>
+			<label>1523</label>
+			<onup>19</onup>
+			<ondown>8</ondown>			
 			<textalign>right</textalign>
         </control>
-		
+				
         <control>
 			<description>Title button</description>
 			<type>selectbutton</type>
 			<id>8</id>
 			<label>873</label>
-			<onup>19</onup>
+			<onup>21</onup>
 			<ondown>9</ondown>
 			<textalign>right</textalign>
 		</control>
@@ -181,9 +168,8 @@
 			<onup>8</onup>
 			<ondown>2</ondown>
 			<textalign>right</textalign>
-        </control>
-
-      </control>
+		</control>
+	</control>
 
 	<control>
 		<type>group</type>
