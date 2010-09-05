@@ -3,7 +3,6 @@
 <id>2</id>
 <defaultcontrol>2</defaultcontrol>
 <allowoverlay>no</allowoverlay>
-<define>#header.image:pictures_logo.png</define>
 <define>#header.label:1</define>
 <controls>
 
