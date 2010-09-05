@@ -107,6 +107,20 @@
             <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
 		</control>
 		
+        <control>
+            <id>0</id>
+            <description>Fanart Overlay</description>
+            <type>image</type>
+            <visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919294)</visible>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>Lyrics_overlay_NP.png</texture>
+            <animation effect="Fade" time="400">WindowOpen</animation>
+            <animation effect="Fade" end="0" start="0" time="300">WindowClose</animation>
+        </control>		
+		
 		<control>
 			<description>group element</description>
 			<type>group</type>
