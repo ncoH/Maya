@@ -18,11 +18,11 @@
         </control>
         <control>
             <id>1</id>
-            <type>label</type>
+            <type>fadelabel</type>
             <posX>504</posX>
             <posY>125</posY>
-            <width>500</width>
-            <height>66</height>
+            <width>663</width>
+            <height>100</height>
             <font>Segoe Light40</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>Intelligent Frame Correction</label>
