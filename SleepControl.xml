@@ -4,9 +4,7 @@
     <defaultcontrol>2</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <controls>
-	
         <import>common.window.background.xml</import>
-		
         <control>
             <id>1</id>
             <type>image</type>
@@ -136,11 +134,11 @@
                 <ondown>9</ondown>
                 <width>259</width>
                 <textureFocus>selectionbar_focus_toggle on.png</textureFocus>
-				<textureNoFocus>selectionbar_unfocus_toggle on.png</textureNoFocus>
+                <textureNoFocus>selectionbar_unfocus_toggle on.png</textureNoFocus>
+                <label>Wait until tasks finished</label>
+                <textalign>LEFT</textalign>
                 <AltTextureFocus>selectionbar_focus_toggle off.png</AltTextureFocus>
-				<AltTextureNoFocus>selectionbar_unfocus_toggle off.png</AltTextureNoFocus>
-                <label>Wait until tasks finished</label>	
-                <textalign>LEFT</textalign>					
+                <AltTextureNoFocus>selectionbar_unfocus_toggle off.png</AltTextureNoFocus>
             </control>
             <control>
                 <id>9</id>
@@ -150,38 +148,37 @@
                 <ondown>2</ondown>
                 <width>259</width>
                 <textureFocus>selectionbar_focus_toggle on.png</textureFocus>
-				<textureNoFocus>selectionbar_unfocus_toggle on.png</textureNoFocus>				
+                <textureNoFocus>selectionbar_unfocus_toggle on.png</textureNoFocus>
+                <label>Volume Reduction</label>
+                <textalign>LEFT</textalign>
                 <AltTextureFocus>selectionbar_focus_toggle off.png</AltTextureFocus>
-				<AltTextureNoFocus>selectionbar_unfocus_toggle off.png</AltTextureNoFocus>
-                <label>Volume Reduction</label>				
-                <textalign>LEFT</textalign>				
-            </control>			
+                <AltTextureNoFocus>selectionbar_unfocus_toggle off.png</AltTextureNoFocus>
+            </control>
         </control>
-		
         <control>
             <id>0</id>
             <description>Sleep Activity</description>
             <type>label</type>
-            <posX>540</posX>
-            <posY>480</posY>
+            <posX>530</posX>
+            <posY>355</posY>
             <width>625</width>
-            <height>31</height>
-            <font>Segoe Light18</font>
-			<textcolor>ff85cffe</textcolor>
-			<textcolorNoFocus>ff85cffe</textcolorNoFocus>
+            <height>33</height>
+            <font>Segoe Light20</font>
+            <textcolor>ff85cffe</textcolor>
             <align>CENTER</align>
             <label>#SleepControl.Activity</label>
             <animation effect="Fade" time="500">WindowOpen</animation>
             <animation effect="Fade" time="500">WindowClose</animation>
+            <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         </control>
         <control>
             <id>0</id>
             <description>Sleep Method</description>
             <type>label</type>
-            <posX>540</posX>
-            <posY>625</posY>
+            <posX>530</posX>
+            <posY>520</posY>
             <width>625</width>
-            <font>Segoe Light12</font>
+            <font>Segoe Light14</font>
             <textcolor>60ffffff</textcolor>
             <align>CENTER</align>
             <label>#SleepControl.Method</label>
@@ -192,8 +189,8 @@
             <id>0</id>
             <description>Sleep Counter</description>
             <type>label</type>
-            <posX>540</posX>
-            <posY>550</posY>
+            <posX>530</posX>
+            <posY>430</posY>
             <width>625</width>
             <font>Segoe Light40</font>
             <textcolor>ffffffff</textcolor>
@@ -206,10 +203,10 @@
             <id>0</id>
             <description>Sleep Status</description>
             <type>label</type>
-            <posX>540</posX>
-            <posY>600</posY>
+            <posX>530</posX>
+            <posY>485</posY>
             <width>625</width>
-            <font>Segoe Light12</font>
+            <font>Segoe Light14</font>
             <textcolor>60ffffff</textcolor>
             <align>CENTER</align>
             <label>#SleepControl.Start #SleepControl.End</label>
@@ -220,8 +217,8 @@
             <id>0</id>
             <description>Sleep Status</description>
             <type>label</type>
-            <posX>540</posX>
-            <posY>430</posY>
+            <posX>530</posX>
+            <posY>315</posY>
             <width>625</width>
             <font>Segoe Light18</font>
             <textcolor>90ffffff</textcolor>
@@ -230,18 +227,16 @@
             <animation effect="Fade" time="500">WindowOpen</animation>
             <animation effect="Fade" time="500">WindowClose</animation>
         </control>
-
         <control>
             <id>0</id>
             <description>Sleep Control Counter background</description>
             <type>image</type>
-            <posX>725</posX>
-            <posY>519</posY>
+            <posX>715</posX>
+            <posY>398</posY>
             <texture>timer_background.png</texture>
             <animation effect="Fade" time="200">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
         </control>
-		
         <control>
             <id>50</id>
             <description>Dummy Button</description>
