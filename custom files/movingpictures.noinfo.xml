@@ -231,7 +231,7 @@ multiple view modes.
 				<label>#MovingPictures.Translation.CycleView.Label</label>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<onup>66610</onup>
+				<onup>66611</onup>
 				<ondown>3</ondown>
 			</control>
 
