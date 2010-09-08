@@ -111,7 +111,7 @@
             <width>180</width>
             <height>24</height>
             <font>Segoe Light14</font>
-            <textcolor>ff85cffe</textcolor>
+            <textcolor>ffFFFFFF</textcolor>
 			<textalign>left</textalign>
             <label>#SkinTranslation.Translations.grooveshark.Searchterm.Label:</label>
             <animation effect="Fade" reversible="FALSE" time="100">WindowOpen</animation>

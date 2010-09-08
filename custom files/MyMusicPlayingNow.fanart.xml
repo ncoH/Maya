@@ -10,30 +10,35 @@
             <description>background image</description>
             <type>image</type>
         </control>
+
         <control>
-            <id>91919295</id>
-            <description>DUMMY CONTROL FOR PLAYING FANART 1 VISIBILITY CONDITION</description>
+			<description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
             <type>label</type>
+			<id>91919295</id>
             <posX>0</posX>
             <posY>0</posY>
             <width>1</width>
         </control>
+
         <control>
-            <id>91919296</id>
-            <description>DUMMY CONTROL FOR PLAYING FANART 2 VISIBILITY CONDITION</description>
+			<description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
             <type>label</type>
+			<id>91919296</id>
             <posX>0</posX>
             <posY>0</posY>
             <width>1</width>
         </control>
+
         <control>
-            <id>91919294</id>
-            <description>DUMMY CONTROL FOR PLAYING FANART AVAILABILITY CONDITION</description>
+			<description>DUMMY CONTROLL FOR PLAYING FANART2 AVAILABILITY CONDITION</description>
             <type>label</type>
+			<id>91919294</id>
             <posX>0</posX>
             <posY>0</posY>
             <width>1</width>
+			<visible>no</visible>
         </control>
+
         <control>
             <id>0</id>
             <description>DEFAULT BACKGROUND WHEN FANART NOT AVAILABLE</description>
@@ -43,45 +48,48 @@
             <posY>0</posY>
             <width>1366</width>
             <height>768</height>
-            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
-            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
             <imagepath>music</imagepath>
             <timeperimage>30000</timeperimage>
             <fadetime>800</fadetime>
             <loop>yes</loop>
             <randomize>True</randomize>
+            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
+            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>			
         </control>
+		
         <control>
-            <id>897688</id>
             <description>FANART IMAGE 1</description>
+			<id>897688</id>
             <type>image</type>
-            <visible>control.isvisible(91919295)+control.isvisible(91919294)</visible>
-            <posX>0</posX>
-            <posY>0</posY>
+			<posx>0</posx>
+			<posy>0</posy>
             <width>1366</width>
             <height>768</height>
             <texture>#fanarthandler.music.backdrop1.play</texture>
+			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919295)</visible>
             <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
             <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
         </control>
+
         <control>
-            <id>897689</id>
             <description>FANART IMAGE 2</description>
+			<id>897689</id>
             <type>image</type>
-            <visible>control.isvisible(91919296)+control.isvisible(91919294)</visible>
-            <posX>0</posX>
-            <posY>0</posY>
+			<posx>0</posx>
+			<posy>0</posy>
             <width>1366</width>
             <height>768</height>
             <texture>#fanarthandler.music.backdrop2.play</texture>
+			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919296)</visible>
             <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
             <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
         </control>
+
         <control>
             <id>0</id>
             <description>Mylyrics overlay</description>
             <type>image</type>
-            <visible>window.istopmost(90478)</visible>
+            <visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919294)+window.isvisible(90478)</visible>
             <posX>0</posX>
             <posY>0</posY>
             <width>1366</width>
@@ -90,6 +98,7 @@
             <animation effect="Fade" time="400">WindowOpen</animation>
             <animation effect="Fade" end="0" start="0" time="300">WindowClose</animation>
         </control>
+		
         <control>
             <id>0</id>
             <type>image</type>
@@ -823,7 +832,7 @@
             <animation effect="Fade" time="200">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
         </control>
-        <import>common.time.xml</import>
+
         <control>
             <description>playing status</description>
             <type>group</type>
@@ -936,5 +945,8 @@
                 <label>112</label>
             </control>
         </control>
+		
+        <import>common.time.white.xml</import>
+		
     </controls>
 </window>

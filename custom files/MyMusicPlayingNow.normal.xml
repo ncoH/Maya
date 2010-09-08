@@ -14,7 +14,7 @@
             <id>0</id>
             <description>Mylyrics overlay</description>
             <type>image</type>
-            <visible>window.istopmost(90478)</visible>
+            <visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919294)+window.isvisible(90478)</visible>
             <posX>0</posX>
             <posY>0</posY>
             <width>1366</width>
@@ -23,6 +23,7 @@
             <animation effect="Fade" time="400">WindowOpen</animation>
             <animation effect="Fade" end="0" start="0" time="300">WindowClose</animation>
         </control>
+		
         <control>
             <id>0</id>
             <type>image</type>
@@ -756,7 +757,7 @@
             <animation effect="Fade" time="200">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
         </control>
-        <import>common.time.xml</import>
+
         <control>
             <description>playing status</description>
             <type>group</type>
@@ -869,5 +870,8 @@
                 <label>112</label>
             </control>
         </control>
+		
+        <import>common.time.white.xml</import>
+		
     </controls>
 </window>

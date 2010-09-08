@@ -26,7 +26,7 @@
 		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<valign>middle</valign>
+		<valign>middle</valign>	
 	</control>
 
 		<control>
@@ -671,7 +671,7 @@
 		<visible>Control.HasFocus(123) | Control.HasFocus(155) | Control.HasFocus(177)</visible>
 	</control>
 
-<import>common.time.xml</import>
+<import>common.time.white.xml</import>
 	
 </controls>
 </window>

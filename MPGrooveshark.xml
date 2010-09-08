@@ -370,8 +370,10 @@
             <animation effect="Fade" time="800">WindowOpen</animation>
             <animation effect="Fade" time="300">WindowClose</animation>
         </control>
+		
         <import>MPGrooveshark.facade.xml</import>
-        <import>common.time.xml</import>
+        <import>common.time.white.xml</import>
+		
         <control>
             <id>99</id>
             <description>dummy video preview window required for the plugin</description>
