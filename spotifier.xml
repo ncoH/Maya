@@ -8,48 +8,6 @@
 	<controls>
 	
 		<import>common.window.music.xml</import>
-		<import>common.time.xml</import>
-
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
-		<id>1</id>
-		<posX>552</posX>
-		<posY>30</posY>
-		<width>500</width>
-		<height>100</height>
-		<label>#header.label</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<valign>middle</valign>
-	</control>
-		
-	<control>
-		<description>listcontrol background</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>524</posX>
-        <posY>153</posY>
-		<width>725</width>
-		<height>482</height>
-		<texture>listcontrol_bg.png</texture>	
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>		
-	</control>
-	
-	<control>
-		<description>listcontrol background info</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>524</posX>
-        <posY>678</posY>
-		<width>725</width>
-		<height>51</height>
-		<texture>listcontrol_bg_info.png</texture>	
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>		
-	</control>
 
 		<control>
 			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
@@ -120,7 +78,48 @@
             <animation effect="Fade" time="400">WindowOpen</animation>
             <animation effect="Fade" end="0" start="0" time="300">WindowClose</animation>
         </control>		
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>
 		
+	<control>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>		
+	</control>
+	
+	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>		
+	</control>
+	
 		<control>
 			<description>group element</description>
 			<type>group</type>
@@ -392,8 +391,8 @@
 			<texture>hiddenmenu_tab.png</texture>
 			<visible>!Control.HasFocus(2)+!Control.HasFocus(3)+!Control.HasFocus(4)+!Control.HasFocus(30)+!Control.HasFocus(32)</visible>
 	</control>
-	
-<import>common.overlay.xml</import>
-	
+
+		<import>common.time.white.xml</import>		
+	<import>common.overlay.xml</import>
 </controls>
 </window>

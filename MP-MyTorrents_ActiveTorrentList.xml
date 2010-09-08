@@ -118,5 +118,6 @@
 				</control>
 			</control>
 
-	</controls>
+	<import>common.overlay.xml</import>
+</controls>
 </window>

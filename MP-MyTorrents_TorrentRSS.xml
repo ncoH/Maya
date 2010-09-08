@@ -120,5 +120,7 @@
                 <textalign>RIGHT</textalign>
             </control>
         </control>
-    </controls>
-</window>
+
+	<import>common.overlay.xml</import>
+</controls>
+</window>		

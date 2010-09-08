@@ -4,7 +4,6 @@
     <defaultcontrol>2</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <define>#header.label:#burner_title</define>
-<!-- 	<define>#header.background:hover_my burner.png</define>	 -->
     <controls>
 	
         <control>
@@ -229,5 +228,7 @@
                 <textalign>RIGHT</textalign>
             </control>
         </control>
-    </controls>
-</window>
+
+	<import>common.overlay.xml</import>
+</controls>
+</window>		
