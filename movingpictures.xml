@@ -301,7 +301,7 @@ multiple view modes.
 					<onup>15</onup>
 					<ondown>66611</ondown>
 			</control>
-			
+<!--			
 			<control>
 					<description>SubCentral</description>
 					<type>button</type>					
@@ -320,7 +320,7 @@ multiple view modes.
 					<onup>66610</onup>
 					<ondown>2</ondown>     
 				</control>	
-
+-->
 		</control>
 
 	</control>
