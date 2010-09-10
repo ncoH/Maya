@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>702</id>
+<defaultcontrol>24</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<define>#header.label:6008</define>
+<controls>
+
+	<import>common.window.settings.xml</import>
+    <import>common.time.xml</import>	
+	
+	<control>
+		<type>button</type>
+		<id>24</id>
+		<posX>99</posX>
+		<posY>188</posY>
+		<label>971</label>
+		<ondown>25</ondown>
+		<onup>24</onup>
+		<onleft>10</onleft>
+		<onright>10</onright>
+	</control>
+
+	<control>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>tvchannels listcontrol</description>
+		<type>updownlistcontrol</type>
+		<id>10</id>
+		<posX>524</posX>
+		<posY>170</posY>
+		<width>725</width>
+		<height>500</height>
+		<keepaspectratio>no</keepaspectratio>
+		<font2>font10</font2>
+		<font3>font10</font3>
+		<textXOff>35</textXOff>
+		<textYOff>5</textYOff>		
+		<itemWidth>26</itemWidth>
+		<itemHeight>26</itemHeight>
+		<IconXOff>14</IconXOff>
+		<IconYOff>6</IconYOff>
+		<spinPosX>1150</spinPosX>
+		<spinPosY>690</spinPosY>
+		<spinAlign>right</spinAlign>		
+		<onleft>24</onleft>
+		<onright>24</onright>
+		<onup>2</onup>
+		<ondown>2</ondown>
+	</control>
+
+</controls>
+</window>

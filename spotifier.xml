@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>47286</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:Spotifier</define>
+	<define>#usePlayFanart:Yes</define>
+	<controls>
+	
+		<import>common.window.music.xml</import>
+
+		<control>
+			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+			<type>label</type>
+			<id>91919295</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>
+		</control>
+
+		<control>
+			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+			<type>label</type>
+			<id>91919296</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>
+		</control>
+
+		<control>
+			<description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
+			<type>label</type>
+			<id>91919294</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>
+			<visible>no</visible>
+		</control>      
+
+		<control>
+			<description>FANART IMAGE 1</description>
+			<id>897688</id>
+			<type>image</type>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#fanarthandler.music.backdrop1.play</texture>
+			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919295)</visible>
+            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
+            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
+		</control>
+
+		<control>
+			<description>FANART IMAGE 2</description>
+			<id>897689</id>
+			<type>image</type>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#fanarthandler.music.backdrop2.play</texture>
+			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919296)</visible>
+            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
+            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
+		</control>
+		
+        <control>
+            <id>0</id>
+            <description>Fanart Overlay</description>
+            <type>image</type>
+            <visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919294)</visible>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>Lyrics_overlay_NP.png</texture>
+            <animation effect="Fade" time="400">WindowOpen</animation>
+            <animation effect="Fade" end="0" start="0" time="300">WindowClose</animation>
+        </control>		
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>
+		
+	<control>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>		
+	</control>
+	
+	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>		
+	</control>
+	
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<control>
+				<id>300</id>
+				<description>Playlist</description>
+				<type>playlistcontrol</type>
+				<onleft>2</onleft>
+				<onright>50</onright>
+				<scrollOffset>1</scrollOffset>
+				<posY>183</posY>
+				<height>450</height>
+				<spinCanFocus>no</spinCanFocus>
+				<dimColor>ffffffff</dimColor>				
+				<animation effect="fade" time="100">WindowOpen</animation>
+				<animation effect="fade" time="100">WindowClose</animation>						
+			</control>
+		</control>
+		
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<control>
+				<id>200</id>
+				<description>Track List</description>
+				<type>listcontrol</type>
+				<onleft>2</onleft>
+				<onright>2</onright>
+				<scrollOffset>1</scrollOffset>
+				<posX>524</posX>
+				<posY>187</posY>
+				<height>458</height>
+				<spinPosX>560</spinPosX>
+				<spinPosY>688</spinPosY>
+				<spinAlign>left</spinAlign>
+				<textXOff>22</textXOff>
+				<dimColor>ffffffff</dimColor>
+				<animation effect="fade" time="100">WindowOpen</animation>
+				<animation effect="fade" time="100">WindowClose</animation>				
+			</control>
+		</control>
+
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1366</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+		<animation effect="Fade" time="100">WindowClose</animation>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>semi_trans_back_general_menu.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+		</control>
+		
+		<control>
+		<type>group</type>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+		<animation effect="fade" time="200" reversible="false">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>	
+		<control>
+			<id>1</id>
+			<type>image</type>
+			<posX>512</posX>
+			<posY>64</posY>
+			<width>342</width>
+			<height>640</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
+		</control>
+
+		<control>
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>567</posX>
+			<posY>110</posY>
+			<label>924</label>
+			<font>Segoe Light18</font>
+			<textcolor>85cffe</textcolor>
+		</control>
+
+		<control>
+			<description>button group</description>
+			<type>group</type>
+			<posX>543</posX>
+			<posY>175</posY>
+			<layout>StackLayout(1)</layout>	
+			<control>	
+					<id>2</id>
+					<description>Search Music</description>
+					<type>button</type>
+					<onup>30</onup>
+					<ondown>3</ondown>
+					<visible/>
+					<label>Search Music</label>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>	
+					<onright>200</onright>
+					<onleft>200</onleft>
+				</control>
+				<control>
+					<id>3</id>
+					<description>Current Playlist</description>
+					<type>button</type>
+					<onup>2</onup>
+					<ondown>4</ondown>
+					<visible/>
+					<label>Current Playlist</label>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>		
+					<onright>200</onright>
+					<onleft>200</onleft>					
+				</control>
+				<control>
+					<id>4</id>
+					<description>Playlists</description>
+					<type>button</type>
+					<onup>3</onup>
+					<ondown>32</ondown>
+					<visible/>
+					<label>Playlists</label>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<onright>200</onright>
+					<onleft>200</onleft>					
+				</control>
+				<control>
+					<id>32</id>
+					<description>Shuffle on/off button</description>
+					<type>togglebutton</type>
+					<onright>200</onright>
+					<onup>4</onup>
+					<ondown>30</ondown>
+					<label>Shuffle</label>
+					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+					<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+					<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>	
+					<onright>200</onright>
+					<onleft>200</onleft>					
+				</control>
+				<control>
+					<id>30</id>
+					<description>Repeat on/off button</description>
+					<type>togglebutton</type>
+					<onright>200</onright>
+					<onup>32</onup>
+					<ondown>2</ondown>
+					<label>Repeat</label>
+					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+					<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+					<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>	
+					<onright>200</onright>
+					<onleft>200</onleft>					
+			</control>
+
+		</control>
+
+	</control>
+	
+</control>
+
+	
+		<!-- NOT USED -->
+		<control>
+			<id>10</id>
+			<type>image</type>
+			<posX>2078</posX>
+			<posY>191</posY>
+			<width>215</width>
+			<height>202</height>
+			<texture>missing_Coverart.png</texture>
+		</control>
+		<control>
+			<id>0</id>
+			<description>play time label</description>
+			<type>label</type>
+			<visible/>
+			<posX>2391</posX>
+			<posY>602</posY>
+			<font>font60</font>
+			<textcolor>20ffffff</textcolor>
+			<align>LEFT</align>
+			<label>#Spotifier.CurrentPlaytime</label>
+			<animation effect="Fade" time="250">VisibleChange</animation>
+		</control>
+
+	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<visible>!Control.HasFocus(50)</visible>
+		<texture>DefaultMyradioBig.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
+		<id>51</id>
+		<type>image</type>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<visible>!Control.HasFocus(50)</visible>
+		<keepaspectratio>yes</keepaspectratio>
+		<align>center</align>
+		<valign>middle</valign>
+		<texture>#selectedthumb</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>92</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture>blackborders_music.png</texture>
+		<visible>!Control.HasFocus(50)</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
+	<control>
+			<id>1</id>
+			<type>image</type>
+			<posX>0</posX>
+			<posY>325</posY>
+			<texture>hiddenmenu_tab.png</texture>
+			<visible>!Control.HasFocus(2)+!Control.HasFocus(3)+!Control.HasFocus(4)+!Control.HasFocus(30)+!Control.HasFocus(32)</visible>
+	</control>
+
+		<import>common.time.white.xml</import>		
+	<import>common.overlay.xml</import>
+</controls>
+</window>
