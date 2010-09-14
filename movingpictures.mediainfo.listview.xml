@@ -148,6 +148,34 @@
 	</control>
 	
 	<control>
+		<description>Dolby Digital 1.0</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1085</posX>
+		<posY>675</posY>
+		<width>100</width>
+		<texture>Logos\audio\dd10.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiocodec,AC3)+[string.equals(#MovingPictures.LocalMedia.audiochannels,1)|string.equals(#MovingPictures.LocalMedia.audiochannels,mono)]</visible>
+	</control>
+	
+	<control>
+		<description>Dolby Digital 5.0</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1085</posX>
+		<posY>675</posY>
+		<width>100</width>
+		<texture>Logos\audio\dd50.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
+		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiocodec,AC3)+[string.equals(#MovingPictures.LocalMedia.audiochannels,5)|string.equals(#MovingPictures.LocalMedia.audiochannels,5.0)]</visible>
+	</control>
+	
+	<control>
 		<description>DTS 5.1</description>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
