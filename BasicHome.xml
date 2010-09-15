@@ -208,17 +208,6 @@
 		<textcolorNoFocus>22ffffff</textcolorNoFocus>
 	</control>
 
-
-	
-
-	
-
-	
-
-	
-
-
-
 <control>
 	<id>701</id>
 	<description>down group</description>
@@ -262,11 +251,11 @@
 		<label>#topitem1</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
-			<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
-	<animation effect="slide" start="0,0" end="0,-74" time="250" acceleration="-0.4" reversible="false">visible</animation>
+		<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
+		<animation effect="slide" start="0,0" end="0,-74" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
-		<control>
+	<control>
 		<id>801</id>
 		<width>355</width>
 		<height>74</height>
@@ -284,7 +273,7 @@
 		<visible allowhiddenfocus="true">[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
 		<animation effect="fade" start="0" end="100" time="500" delay="0" reversible="false">Focus</animation>
 		<textcolorNoFocus>ffffffff</textcolorNoFocus>
-	<animation effect="slide" start="0,0" end="0,-74" time="250" acceleration="-0.4" reversible="false">visible</animation>
+		<animation effect="slide" start="0,0" end="0,-74" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
 	<control>
@@ -295,8 +284,8 @@
 		<label>#bottomitem1</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
-			<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
-	<animation effect="slide" start="0,0" end="0,-74" time="250" acceleration="-0.4" reversible="false">visible</animation>
+		<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
+		<animation effect="slide" start="0,0" end="0,-74" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
 	
 	<control>
@@ -307,8 +296,8 @@
 		<label>#bottomitem2</label>
 		<font>Segoe Light32</font>
 		<animation effect="fade" start="0" end="100" time="250" delay="300" reversible="false">visible</animation>
-			<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
-	<animation effect="slide" start="0,0" end="0,-74" time="250" acceleration="-0.4" reversible="false">visible</animation>
+		<visible>[!Control.IsVisible(202) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(801) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
+		<animation effect="slide" start="0,0" end="0,-74" time="250" acceleration="-0.4" reversible="false">visible</animation>
 		<textcolor>6aa5cb</textcolor>
 	</control>
 	
@@ -835,8 +824,6 @@
 	</control>
 	
 </control>
-
-
 
 <!--Weather-->
 

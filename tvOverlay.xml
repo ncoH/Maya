@@ -9,11 +9,11 @@
 		<description>rec logo</description>
 		<type>image</type>
 		<id>4</id>
-		<posX>140</posX>
+		<posX>136</posX>
 		<posY>0</posY>
 		<texture>basichome_isrecording.png</texture>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<animation effect="fade" time="200">WindowOpen</animation>
 	</control>
 
 </controls>

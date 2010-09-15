@@ -42,14 +42,13 @@
             <description>Sleep Counter</description>
             <type>label</type>
             <visible>!string.equals(#SleepControl.Text,)+plugin.isenabled(Sleep Control)</visible>
-            <posX>40</posX>
-            <posY>90</posY>
-            <width>500</width>
-            <height>16</height>
+            <posX>84</posX>
+            <posY>2</posY>
+            <width>200</width>
             <font>font10</font>
-            <textcolor>ff02db4c</textcolor>
+            <textcolor>ff009900</textcolor>
             <align>LEFT</align>
-            <label>Shutdown in #SleepControl.Counter</label>
+            <label>#SleepControl.Counter</label>
             <animation effect="Fade" time="200">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
         </control>
@@ -58,14 +57,11 @@
             <description>Sleep Control setting type</description>
             <type>image</type>
             <visible>!string.equals(#SleepControl.Image,)+plugin.isenabled(Sleep Control)</visible>
-            <posX>199</posX>
-            <posY>87</posY>
-            <width>24</width>
-            <height>24</height>
-            <texture>timer_notify.png</texture>
+            <posX>40</posX>
+            <posY>0</posY>
+            <texture>sleeptimer_notify.png</texture>
             <animation effect="Fade" time="200">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
-            <keepaspectratio>yes</keepaspectratio>
         </control>
     </controls>
 </window>
