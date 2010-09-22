@@ -12,7 +12,7 @@
 	<!-- B -->
 
 	<!-- C -->
-	<string Field="check.subtitles">Led efter undertekster</string>
+	<string Field="check.subtitles">Hent undertekst</string>
 
 	<!-- D -->
 
@@ -31,7 +31,9 @@
 	<string Field="global.search.Searchfields">Søgefelt</string>
 	<string Field="global.search.Casesensitive">Case sensitive</string>
 	<string Field="global.search.Searchtype">Søgetype</string>
-
+	<string Field="grooveshark.Searchterm">Søgeord</string>
+	<string Field="grooveshark.Search">Søg</string>
+	
 	<!-- H -->
 
 	<!-- I -->
@@ -50,14 +52,15 @@
 	<!-- O -->
 
 	<!-- P -->
-	<string Field="weather.toggleday">Tryk OK for dagsudsigt</string>
+
 	
 	<!-- R -->
 	<string Field="recentlyAdded.Season">Sæson</string>
 	<string Field="recentlyAdded.Episode">Afsnit</string>
 	
 	<!-- S -->
-
+	<string Field="SleepControl">Sleep-timer</string>
+	
 	<!-- T -->
 	<string Field="lyrics.tag">Tag</string>
 	
@@ -67,7 +70,8 @@
 	<string Field="video.settings">Video indstillinger</string>
 
 	<!-- W -->
-
+	<string Field="weather.toggleday">Tryk OK for dagsudsigt</string>
+	
 	<!-- Y -->
 
 </strings>
