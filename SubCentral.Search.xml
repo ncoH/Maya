@@ -45,7 +45,7 @@
                 <textYOff>5</textYOff>
                 <textXOff2>-2000</textXOff2>
                 <textYOff2>-2000</textYOff2>
-                <textXOff3>3</textXOff3>
+                <textXOff3>10</textXOff3>
                 <textYOff3>5</textYOff3>
                 <font>font12</font>
                 <font2>font12</font2>
@@ -141,7 +141,7 @@
             <font>font11</font>
             <textcolor>ffffffff</textcolor>
             <align>LEFT</align>
-            <label>#SubCentral.Search.Source.Text</label>
+            <label>#SubCentral.Search.Source.Name</label>
             <animation effect="Fade" time="250">VisibleChange</animation>
             <wrapString> : : : </wrapString>
         </control>
@@ -155,7 +155,7 @@
             <width>176</width>
             <font>font11</font>
             <textcolor>ffffffff</textcolor>
-            <label>#SubCentral.Search.SearchType.Text</label>
+            <label>#SubCentral.Search.SearchType.NiceType</label>
             <animation effect="Fade" time="250">VisibleChange</animation>
             <wrapString> : : : </wrapString>
         </control>
@@ -237,7 +237,7 @@
             <posY>304</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>
-            <label>#SubCentral.SkinTranslationFrom.Label</label>
+            <label>#SubCentral.Translation.From.Label</label>
         </control>
         <control>
             <type>label</type>
@@ -255,7 +255,7 @@
             <posY>304</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>
-            <label>#SubCentral.SkinTranslationSearchType.Label</label>
+            <label>#SubCentral.Translation.SearchType.Label</label>
         </control>
     </controls>
 </window>

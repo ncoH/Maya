@@ -7,7 +7,7 @@
             <type>button</type>
             <onleft>216</onleft>
             <onright>217</onright>
-            <onup>17</onup>
+            <onup>211</onup>
             <ondown>222</ondown>
             <visible>Control.IsVisible(103)</visible>
             <posX>797</posX>
@@ -15,7 +15,7 @@
             <width>181</width>
             <height>37</height>
             <textureFocus>settings_button_focus.png</textureFocus>
-            <textureNoFocus>search_input_no_focus.png</textureNoFocus>
+            <textureNoFocus>settings_button_small_nofocus.png</textureNoFocus>
             <textcolor>ffffffff</textcolor>
             <textcolorNoFocus>ff6aa5cb</textcolorNoFocus>
             <label>#SubCentral.Translation.Movie.Label</label>
@@ -30,7 +30,7 @@
             <type>button</type>
             <onleft>216</onleft>
             <onright>217</onright>
-            <onup>17</onup>
+            <onup>211</onup>
             <ondown>222</ondown>
             <visible>Control.IsVisible(103)</visible>
             <posX>986</posX>
@@ -38,7 +38,7 @@
             <width>181</width>
             <height>37</height>
             <textureFocus>settings_button_focus.png</textureFocus>
-            <textureNoFocus>search_input_no_focus.png</textureNoFocus>
+            <textureNoFocus>settings_button_small_nofocus.png</textureNoFocus>
             <textcolor>ffffffff</textcolor>
             <textcolorNoFocus>ff6aa5cb</textcolorNoFocus>
             <label>#SubCentral.Translation.TVShow.Label</label>
@@ -133,7 +133,7 @@
             <description>Year Button</description>
             <type>button</type>
             <onleft>223</onleft>
-            <onright>214</onright>
+            <onright>223</onright>
             <onup>222</onup>
             <ondown>221</ondown>
             <visible>Control.IsVisible(103)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,MOVIE)</visible>
@@ -165,8 +165,8 @@
             <id>221</id>
             <description>IMDb Button</description>
             <type>button</type>
-            <onleft>225</onleft>
-            <onright>214</onright>
+            <onleft>221</onleft>
+            <onright>221</onright>
             <onup>223</onup>
             <ondown>224</ondown>
             <visible>Control.IsVisible(103)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,MOVIE)</visible>
@@ -199,7 +199,7 @@
             <description>Season Button</description>
             <type>button</type>
             <onleft>224</onleft>
-            <onright>214</onright>
+            <onright>224</onright>
             <onup>221</onup>
             <ondown>225</ondown>
             <visible>Control.IsVisible(103)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,TVSHOW)</visible>
@@ -232,7 +232,7 @@
             <description>Episode Button</description>
             <type>button</type>
             <onleft>221</onleft>
-            <onright>214</onright>
+            <onright>221</onright>
             <onup>224</onup>
             <ondown>214</ondown>
             <visible>Control.IsVisible(103)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,TVSHOW)</visible>
@@ -274,7 +274,7 @@
             <width>181</width>
             <height>34</height>
             <textureFocus>settings_button_focus.png</textureFocus>
-            <textureNoFocus>search_input_no_focus.png</textureNoFocus>
+            <textureNoFocus>settings_button_small_nofocus.png</textureNoFocus>
             <textcolor>ffffffff</textcolor>
             <textcolorNoFocus>ff6aa5cb</textcolorNoFocus>
             <label>Clear files</label>
@@ -297,10 +297,10 @@
             <description>Media Files</description>
             <type>textboxscrollup</type>
             <visible>Control.IsVisible(103)</visible>
-            <posX>509</posX>
-            <posY>446</posY>
-            <width>658</width>
-            <height>148</height>
+            <posX>519</posX>
+            <posY>456</posY>
+            <width>638</width>
+            <height>128</height>
             <animation effect="Fade" time="250">VisibleChange</animation>
             <textureNoFocus>search_input_no_focus.png</textureNoFocus>
             <font>font12</font>
@@ -323,7 +323,7 @@
             <width>181</width>
             <height>37</height>
             <textureFocus>settings_button_focus.png</textureFocus>
-            <textureNoFocus>search_input_no_focus.png</textureNoFocus>
+            <textureNoFocus>settings_button_small_nofocus.png</textureNoFocus>
             <textcolor>ffffffff</textcolor>
             <textcolorNoFocus>ff6aa5cb</textcolorNoFocus>
             <label>OK/Search</label>
@@ -346,7 +346,7 @@
             <width>181</width>
             <height>37</height>
             <textureFocus>cancel_button_focus.png</textureFocus>
-            <textureNoFocus>search_input_no_focus.png</textureNoFocus>
+            <textureNoFocus>settings_button_small_nofocus.png</textureNoFocus>
             <textcolor>ffffffff</textcolor>
             <textcolorNoFocus>ff6aa5cb</textcolorNoFocus>
             <label>Cancel</label>
@@ -369,7 +369,7 @@
             <width>181</width>
             <height>37</height>
             <textureFocus>settings_button_focus.png</textureFocus>
-            <textureNoFocus>search_input_no_focus.png</textureNoFocus>
+            <textureNoFocus>settings_button_small_nofocus.png</textureNoFocus>
             <textcolor>ffffffff</textcolor>
             <textcolorNoFocus>ff6aa5cb</textcolorNoFocus>
             <label>Revert</label>
@@ -385,7 +385,7 @@
             <posY>248</posY>
             <font>font16</font>
             <textcolor>ff6aa5cb</textcolor>
-            <label>#SubCentral.Translation.ManualSearch.Label</label>
+            <label>#SubCentral.Header.ShortLabel</label>
         </control>
     </controls>
 </window>
