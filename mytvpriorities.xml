@@ -4,29 +4,26 @@
 	<defaultcontrol>10</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<define>#header.label:877</define>
-	<define>#header.image:television_logo.png</define><controls>
 
 	<import>common.window.xml</import>
+	<import>common.time.xml</import>
 	
 	<control>
-		<description>BG</description>
-		<type>image</type>
+		<description>Header Label</description>		
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
 		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
 	</control>
 
-	<control>
-		<type>image</type>
-		<id>1</id>
-		<posX>106</posX>
-		<posY>12</posY>
-		<texture>television_logo.png</texture>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-
-	
 	<control>
 		<type>group</type>
 		<description>group element</description>
