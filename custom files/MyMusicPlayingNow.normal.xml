@@ -168,6 +168,9 @@
             <width>188</width>
             <height>188</height>
             <texture>#Play.Current.Thumb</texture>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>	
+			<zoom>yes</zoom>			
             <animation effect="Fade" reversible="FALSE" time="450">Visible</animation>
             <animation effect="Fade" time="800">WindowOpen</animation>
             <animation effect="Fade" time="300">WindowClose</animation>

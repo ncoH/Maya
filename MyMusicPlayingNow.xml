@@ -66,7 +66,7 @@
             <width>1366</width>
             <height>768</height>
             <texture>#fanarthandler.music.backdrop1.play</texture>
-			<visible>plugin.isenabled(Fanart Handler)control.isvisible(91919295)+control.isvisible(91919294)</visible>
+			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919295)</visible>
             <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
             <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
         </control>
@@ -80,7 +80,7 @@
             <width>1366</width>
             <height>768</height>
             <texture>#fanarthandler.music.backdrop2.play</texture>
-			<visible>plugin.isenabled(Fanart Handler)control.isvisible(91919296)+control.isvisible(91919294)</visible>
+			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919296)</visible>
             <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
             <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
         </control>
@@ -243,10 +243,11 @@
             <width>188</width>
             <height>188</height>
             <texture>#Play.Current.Thumb</texture>
-            <animation effect="Fade" reversible="FALSE" time="450">Visible</animation>
+			<keepaspectratio>yes</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>yes</zoom>			
             <animation effect="Fade" time="800">WindowOpen</animation>
             <animation effect="Fade" time="300">WindowClose</animation>
-			<animation effect="Fade" time="500">VisibleChange</animation>
         </control>
         <control>
             <id>0</id>
