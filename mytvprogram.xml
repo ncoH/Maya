@@ -17,7 +17,7 @@
 		<id>1</id>
 		<posX>552</posX>
 		<posY>30</posY>
-		<width>500</width>
+		<width>550</width>
 		<height>100</height>
 		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
