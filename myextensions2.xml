@@ -204,7 +204,7 @@
             <posY>375</posY>
             <width>385</width>
             <font>font24</font>
-            <textcolor>ffffffff</textcolor>
+            <textcolor>ff6aa5cb</textcolor>
             <label>#MPE.Selected.Version</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -237,7 +237,6 @@
             <label>#MPE.Selected.Description</label>
             <textcolor>ffFFFFFF</textcolor>
         </control>
-
 		
         <control>
             <id>1</id>

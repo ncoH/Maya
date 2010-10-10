@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Skin translation file -->
 <!-- Spanish (es) -->
-<!-- Last Updated: 22 August 2010 -->
+<!-- Last Updated: 10 October 2010 -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
 
 <strings>
@@ -12,6 +12,7 @@
 	<!-- B -->
 
 	<!-- C -->
+	<string Field="check.subtitles">Buscar subtítulos</string>
 
 	<!-- D -->
 
@@ -23,18 +24,22 @@
 	<!-- G -->
 	<string Field="global.search.musicsearch">Buscar Música</string>
         <string Field="global.search.lastplayed">Última Reproducción</string>
+	<string Field="global.search.filename">Nombre</string>
+	<string Field="global.search.playcount">Nº de reproducciones</string>
         <string Field="global.search.Searchphrase">Buscar Frase</string>
         <string Field="global.search.Searchhistory">Historial Búsqueda</string>
         <string Field="global.search.Searchfields">Buscar Campos</string>
         <string Field="global.search.Casesensitive">Precisión</string>
         <string Field="global.search.Searchtype">Tipo Búsqueda</string>
-
+	<string Field="grooveshark.Searchterm">Término de búsqueda</string>
+	<string Field="grooveshark.Search">Buscar</string>
 	<!-- H -->
 
 	<!-- I -->
 
 	<!-- L -->
 	<string Field="lyrics">Letras</string>
+	<string Field="lyrics.tag">Etiqueta</string>
         <string Field="Latest.movies">Últimas Películas</string>
         <string Field="Latest.episodes">Últimos Episodios</string>
 	
@@ -47,16 +52,15 @@
 	<!-- O -->
 
 	<!-- P -->
-	<string Field="weather.toggleday">Presionar OK para cambiar de día</string>
 	
 	<!-- R -->
         <string Field="recentlyAdded.Season">Temporada</string>
         <string Field="recentlyAdded.Episode">Episodio</string>
 
 	<!-- S -->
+	<string Field="SleepControl">Programador</string>
 
 	<!-- T -->
-        <string Field="lyrics.tag">Etiqueta</string>
 
 	<!-- U -->
 
@@ -64,6 +68,7 @@
 	<string Field="video.settings">Configuración Vídeo</string>
 
 	<!-- W -->
+	<string Field="weather.toggleday">Pulsa OK para cambiar de día</string>
 
 	<!-- Y -->
 
