@@ -3,9 +3,10 @@
 	<id>4755</id><defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<define>#header.label</define>
-	<define>#header.Extension.label:#header.label</define>
 	<define>#header.image</define>
+	<define>#header.Extension.label:#header.label</define>
 <controls>
+
 <!--Dummy label-->
 
 	<control>
@@ -60,7 +61,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>1216</posX>
-		<posY>690</posY>
+		<posY>695</posY>
 		<align>right</align>
 		<label>#currentmodule: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
@@ -131,6 +132,21 @@
 		<align>center</align>
 		<valign>middle</valign>
 	</control>
+
+    <control>
+		<description>Buffering Label</description>	
+		<type>label</type>	
+		<id>0</id>
+		<posX>950</posX>
+		<posY>695</posY>
+		<label>#OnlineVideos.buffered % #OnlineVideos.Translation.Buffered.Label</label>
+		<align>right</align>
+		<font>font12</font>
+		<textcolor>6aa5cb</textcolor>		
+		<visible>string.equals(#OnlineVideos.IsBuffering, true) + !player.hasmedia</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+    </control>
 	
 <import>common.time.xml</import>
 	
@@ -312,8 +328,8 @@
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
 	<control>
+		<description>Category</description>	
 		<type>label</type>
-		<description>Category</description>
 		<id>0</id>
 		<posX>80</posX>
 		<posY>100</posY>
@@ -324,6 +340,7 @@
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
+	
 	<!-- *** HIDDEN MENU *** -->
 	<control>
 		<type>actiongroup</type>
@@ -388,7 +405,7 @@
 				<id>2</id>
 				<ondown>12</ondown>
 				<onup>4</onup>
-				<label>101</label>
+				<label>#OnlineVideos.Translation.LayoutList.Label</label>   
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 				<width>279</width>
@@ -405,7 +422,7 @@
 				<id>12</id>
 				<ondown>11</ondown>
 				<onup>2</onup>
-				<label>Enter Pin</label>
+				<label>#OnlineVideos.Translation.EnterPin.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 				<width>279</width>
@@ -422,7 +439,7 @@
 				<id>11</id>
 				<ondown>10</ondown>
 				<onup>12</onup>
-				<label>932</label>
+				<label>#OnlineVideos.Translation.Favourites.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 				<width>279</width>
@@ -439,7 +456,7 @@
 				<id>10</id>
 				<ondown>9</ondown>
 				<onup>11</onup>
-				<label>137</label>
+				<label>#OnlineVideos.Translation.Search.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 				<width>279</width>
@@ -458,7 +475,7 @@
 				<onup>10</onup>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<label>2053</label>
+				<label>#OnlineVideos.Translation.Category.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 				<texturebg>hiddenmenu_item_selected.png</texturebg>
@@ -478,7 +495,7 @@
 				<onup>9</onup>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<label>Max Results</label>
+				<label>#OnlineVideos.Translation.MaxResults.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 				<texturebg>hiddenmenu_item_selected.png</texturebg>
@@ -498,7 +515,7 @@
 				<onup>5</onup>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<label>Timeframe</label>
+				<label>#OnlineVideos.Translation.Timeframe.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 				<texturebg>hiddenmenu_item_selected.png</texturebg>
@@ -511,12 +528,13 @@
 				<visible>no</visible>
 			</control>
 			
-			        <control>
-          <type>button</type>
-          <description>Update button</description>
-          <id>8</id>
-          <onup>7</onup>
-		  <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<control>
+				<description>Update button</description>			
+				<type>button</type>
+				<id>8</id>
+				<onup>7</onup>
+				<label>#OnlineVideos.Translation.Refresh.Label</label>				
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 				<width>279</width>
 				<height>49</height>
@@ -526,10 +544,8 @@
 				<onright>50</onright>
 				<onup>7</onup>
 				<ondown>6</ondown>
-          <label>184</label>
         </control>
-			
-			
+					
 			<control>
 				<description>Order By</description>
 				<type>selectbutton</type>
@@ -538,7 +554,7 @@
 				<onup>8</onup>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<label>495</label>
+				<label>#OnlineVideos.Translation.SortOptions.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 				<texturebg>hiddenmenu_item_selected.png</texturebg>
@@ -550,6 +566,7 @@
 				<textXOff2>25</textXOff2>
 				<visible>no</visible>
 			</control>
+			
 			<control>
 				<description>Next Page</description>
 				<type>button</type>
@@ -558,7 +575,7 @@
 				<onup>6</onup>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<label>1975</label>
+				<label>#OnlineVideos.Translation.NextPage.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 				<width>279</width>
@@ -567,6 +584,7 @@
 				<textYOff>12</textYOff>
 				<visible>no</visible>
 			</control>
+			
 			<control>
 				<description>Previous Page</description>
 				<type>button</type>
@@ -575,7 +593,7 @@
 				<onup>3</onup>
 				<onleft>50</onleft>
 				<onright>50</onright>
-				<label>30004</label>
+				<label>#OnlineVideos.Translation.PreviousPage.Label</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 				<width>279</width>
@@ -587,6 +605,7 @@
 		</control>
 	</control>
 </control>
+
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
@@ -607,9 +626,10 @@
 		<texture>hiddenmenu_tab_up.png</texture>
 		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
 	</control>
+	
 	<import>myonlinevideos.facade.xml</import>
 	<import>myonlinevideos.details.xml</import>
 	<import>common.overlay.xml</import>
+	
 </controls>
-<define>#header.Extension.label2:#header.label</define>
 </window>
