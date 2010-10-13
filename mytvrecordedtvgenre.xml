@@ -15,16 +15,6 @@
 	<control>
 		<type>image</type>
 		<id>1</id>
-		<posX>106</posX>
-		<posY>12</posY>
-		<texture>television_logo.png</texture>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-
-	<control>
-		<type>image</type>
-		<id>1</id>
 		<posX>136</posX>
 		<posY>500</posY>
 		<width>286</width>

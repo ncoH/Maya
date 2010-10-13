@@ -27,6 +27,7 @@
 	</control>
 	
 	<control>
+		<description>Header Label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
