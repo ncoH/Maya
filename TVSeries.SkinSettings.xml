@@ -116,7 +116,7 @@
 <Enabled>1<Format><Episode.InfoPanelLine5Key><FormatAs>WRITER
 <Enabled>1<Format><Episode.InfoPanelLine5Value><FormatAs><Episode.Writer>
 <Enabled>1<Format><Episode.InfoPanelLine6Key><FormatAs>GUEST STARS
-<Enabled>1<Format><Episode.InfoPanelLine6Value><FormatAs><Episode.GuestStars>
+<Enabled>1<Format><Episode.InfoPanelLine6Value><FormatAs><Episode.Actors>
 <Enabled>1<Format><Episode.SeasonLabel><FormatAs>Season <Episode.SeasonIndex>
 <Enabled>1<Format><Episode.Aired><FormatAs><Episode.FirstAired>
 <Enabled>1<Format><Season.SeasonLabel><FormatAs>Season <Season.SeasonIndex>

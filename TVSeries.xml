@@ -932,7 +932,22 @@
 	  <width>365</width>
 	  <font>font11</font>
 	  <textcolor>85cffe</textcolor>
-      <label>#TVSeries.Episode.InfoPanelLine6Value</label>
+      <label>#TVSeries.Series.InfoPanelLine6Value</label>
+      <visible>Control.IsVisible(1239)</visible>
+    </control>
+	
+
+    <control>      
+      <type>fadelabel</type>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+      <id>0</id>
+      <posX>924</posX>
+	  <posY>595</posY>
+	  <width>365</width>
+	  <font>font11</font>
+	  <textcolor>85cffe</textcolor>
+      <label>#TVSeries.Translation.Director.Label: #TVSeries.Episode.InfoPanelLine4Value</label>
       <visible>Control.IsVisible(1239)</visible>
     </control>
 	
