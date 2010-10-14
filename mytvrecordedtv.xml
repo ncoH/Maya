@@ -5,6 +5,7 @@
 <allowoverlay>yes</allowoverlay>
 <define>#header.label:652</define>
 <controls>
+
 	<import>common.window.recordings.xml</import>
 	<import>common.time.xml</import>
 	
@@ -27,6 +28,7 @@
 	</control>
 	
 	<control>
+		<description>Header Label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
@@ -44,9 +46,9 @@
 	</control>
 
 	<control>
+		<description>listcontrol background</description>	
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<description>listcontrol background</description>
 		<type>image</type>
 		<id>1</id>
 		<posX>524</posX>
@@ -243,6 +245,7 @@
 			<label>896</label>
 		</control>
 -->
+
 		<control>
 			<description>Empty button</description>
 			<type>button</type>
@@ -252,6 +255,7 @@
 			<label>-</label>
 			<visible>false</visible>
 		</control>
+
 		<control>
 			<type>button</type>
 			<description>scheduled button</description>
