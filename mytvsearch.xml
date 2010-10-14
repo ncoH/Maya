@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>604</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
-<controls>
+	<id>604</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:724</define>  
+	<controls>
 
 	<control>
 		<description>BG</description>
@@ -25,7 +26,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>724</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<valign>middle</valign>
