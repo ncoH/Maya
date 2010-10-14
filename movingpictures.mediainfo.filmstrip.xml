@@ -285,7 +285,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1129</posX>
+		<posX>1123</posX>
 		<posY>695</posY>
 		<width>80</width>
 		<keepaspectratio>yes</keepaspectratio>
