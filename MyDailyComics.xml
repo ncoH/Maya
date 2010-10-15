@@ -4,16 +4,47 @@
     <defaultcontrol>2</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <define>#header.label:My Daily Comics</define>
+	<define>#header.background:hover_my daily comics.png</define>	
     <define>#selecteditem:-</define>
     <controls>
+	
         <control>
-            <id>1</id>
-            <description>Alternate BG</description>
+            <description>Background</description>
             <type>image</type>
+            <id>1</id>			
+            <posX>0</posX>
+            <posY>0</posY>
             <width>1366</width>
             <height>768</height>
-            <texture>background_thumbs.png</texture>
+            <texture>background.png</texture>
+			<visible>!string.contains(#maya.backgroundImage,yes)</visible>			
         </control>
+		
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+		
+        <import>common.time.xml</import>		
         <control>
             <id>1</id>
             <type>label</type>
@@ -27,9 +58,7 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
-		
-        <import>common.time.xml</import>
-		
+				
         <control>
             <description>button group</description>
             <type>group</type>

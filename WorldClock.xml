@@ -4,6 +4,7 @@
 	<defaultcontrol>70</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<define>#header.label:World Clock</define>
+	<define>#header.background:hover_worldclock.png</define>	
 	<controls>
 	
 		<import>common.window.title.xml</import>

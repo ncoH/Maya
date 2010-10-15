@@ -4,7 +4,10 @@
   <id>15634330</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
+	<define>#header.label:StreamRadio</define>
+	<define>#header.background:hover_my streamradio.png</define>  
   <controls>
+  
     <import>common.window.xml</import>
     <import>common.time.xml</import>
 	
@@ -17,7 +20,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>Streamradio</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>

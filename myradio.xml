@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>30</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
-<define>#header.label:#selecteditem</define>
+	<id>30</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:666</define>
+	<define>#header.background:hover_my radio.png</define>
 <controls>
+
 	<import>common.window.xml</import>
 	<import>common.time.xml</import>
 	
@@ -17,7 +19,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>Radio</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>
@@ -33,7 +35,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>radio</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
@@ -42,9 +44,9 @@
 	</control>
 	
 	<control>
+		<description>listcontrol background</description>	
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<description>listcontrol background</description>
 		<type>image</type>
 		<id>1</id>
 		<posX>524</posX>
@@ -56,9 +58,9 @@
 	</control>
 	
 	<control>
+		<description>listcontrol background info</description>	
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<description>listcontrol background info</description>
 		<type>image</type>
 		<id>1</id>
 		<posX>524</posX>
@@ -142,7 +144,7 @@
 					<textYOff>12</textYOff>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<onup>8</onup>
+					<onup>10</onup>
 					<ondown>3</ondown>
 				</control>
 
@@ -213,15 +215,49 @@
 					<textYOff>12</textYOff>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<ondown>2</ondown>
+					<ondown>9</ondown>
 					<onup>7</onup>
 					<hyperlink>762</hyperlink>
 				</control>
 
-			</control>
-			
-		</control>
+				<control>
+					<description>Radio Recordings</description>
+					<type>button</type>
+					<id>9</id>
+					<label>914</label>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<ondown>10</ondown>
+					<onup>8</onup>
+					<hyperlink>763</hyperlink>
+				</control>
 
+				<control>
+					<description>Radio Search</description>
+					<type>button</type>
+					<id>10</id>
+					<label>137</label>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<onleft>50</onleft>
+					<onright>50</onright>
+					<ondown>2</ondown>
+					<onup>9</onup>
+					<hyperlink>8900</hyperlink>
+				</control>
+				
+			</control>			
+		</control>
 	</control>
 
 	<import>common.facade.music.xml</import>

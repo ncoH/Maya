@@ -4,7 +4,44 @@
     <defaultcontrol>5101</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <define>#usePlayFanart:Yes</define>
+	<define>#header.background:hover_mp grooveshark.png</define>	
     <controls>
+
+        <control>
+            <description>Background</description>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>
+			<visible>!string.contains(#maya.backgroundImage,yes)</visible>			
+        </control>
+		
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+		
         <control>
             <id>100</id>
             <description>DUMMY CONTROLL FOR IS PLAYING CONDITION</description>
@@ -38,11 +75,7 @@
             <posY>0</posY>
             <width>1</width>
         </control>
-        <control>
-            <type>image</type>
-            <posX>0</posX>
-            <posY>0</posY>
-        </control>
+
         <control>
             <id>0</id>
             <description>music background image</description>

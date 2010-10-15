@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>603</id>
-<defaultcontrol>11</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
-<define>#header.label:652</define>
+	<id>603</id>
+	<defaultcontrol>11</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:652</define>
+	<define>#header.background:hover_my tv.png</define>
 <controls>
+
 	<import>common.window.recordings.xml</import>
 	<import>common.time.xml</import>
 	

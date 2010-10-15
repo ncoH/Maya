@@ -2,30 +2,11 @@
 <window>
 	<id>2497</id><defaultcontrol>50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<define>#header.background:hover_myemulators.png</define>	
 <controls>
+
 	<import>common.window.xml</import>
-	<control>
-		<description>Alternate BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background_thumbs.png</texture>
-		<visible>facadeview.smallicons|facadeview.largeicons</visible>
-	</control>
-	
-	<control>
-		<description>Alternate BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background_filmstrip.png</texture>
-		<visible>facadeview.filmstrip</visible>
-	</control>
-	
-<import>common.time.xml</import>
-	
+		
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -35,7 +16,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>myemulators</label>
+		<label>My Emulators</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>
@@ -79,7 +60,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>myemulators</label>
+		<label>My Emulators</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons]</visible>

@@ -4,9 +4,46 @@
     <defaultcontrol>11</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <define>#header.label:File Explorer</define>
+	<define>#header.background:hover_file explorer.png</define>	
     <controls>
 	
         <import>common.window.title.xml</import>
+		
+        <control>
+            <description>Background</description>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>
+			<visible>!string.contains(#maya.backgroundImage,yes)</visible>			
+        </control>
+		
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+		
         <import>common.time.xml</import>
 		
         <control>

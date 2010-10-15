@@ -6,15 +6,45 @@
     <animation effect="Fade" time="250">WindowOpen</animation>
     <animation effect="Fade" time="250">WindowClose</animation>
     <define>#header.label:#SubCentral.Header.Label</define>
-    <define>#header.background.custom:bg.jpg</define>
+	<define>#header.background:hover_subcentral.png</define>	
     <controls>
+
         <control>
-            <id>1</id>
-            <description>BG</description>
+            <description>Background</description>
             <type>image</type>
+            <id>1</id>			
+            <posX>0</posX>
+            <posY>0</posY>
             <width>1366</width>
             <height>768</height>
+            <texture>background.png</texture>
+			<visible>!string.contains(#maya.backgroundImage,yes)</visible>			
         </control>
+		
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+		
         <control>
             <id>101</id>
             <description>Visible when in the main view mode.</description>

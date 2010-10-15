@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>4755</id><defaultcontrol>50</defaultcontrol>
+	<id>4755</id>
+	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<define>#header.label</define>
 	<define>#header.image</define>
 	<define>#header.Extension.label:#header.label</define>
+	<define>#useSelectedFanart:Yes</define>
+	<define>#header.background:hover_OnlineVideos.png</define>	
 <controls>
 
 <!--Dummy label-->
 
-	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-	</control>
+        <control>
+            <description>Background</description>
+            <type>image</type>
+			<id>1</id>			
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>
+			<visible>!string.contains(#maya.backgroundImage,yes)</visible>			
+        </control>
 	
 	<control>
 		<description>Alternate BG</description>
@@ -27,6 +32,32 @@
 		<visible>[facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(51)</visible>
 	</control>
 
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+		
+        <import>common.time.xml</import>
+		
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
@@ -147,9 +178,7 @@
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
     </control>
-	
-<import>common.time.xml</import>
-	
+		
 	<!-- *** CLIP TITLE & DESCRIPTION *** -->
 	                <!--
 	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

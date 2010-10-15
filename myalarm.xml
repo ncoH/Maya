@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-  <id>5000</id>
-  <defaultcontrol>2</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>
-  <define>#header.label:#MyAlarm.Translation.Alarm.Label</define>
+	<id>5000</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:#MyAlarm.Translation.Alarm.Label</define>
+	<define>#header.background:hover_my alarm.png</define>  
   <controls>
 
-    <import>common.window.xml</import>
-    <import>common.time.xml</import>
+		<import>common.window.xml</import>
+        <import>common.time.xml</import>	
  
         <control>
             <id>1</id>

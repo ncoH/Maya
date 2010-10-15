@@ -4,7 +4,8 @@
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<define>#header.label:Spotifier</define>
-	<define>#usePlayFanart:Yes</define>
+	<define>#usePlayFanart:Yes</define>	
+	<define>#header.background:hover_spotifier.png</define>
 	<controls>
 	
 		<import>common.window.music.xml</import>

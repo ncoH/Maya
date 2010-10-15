@@ -4,6 +4,7 @@
     <defaultcontrol>2</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <define>#header.label:#burner_title</define>
+	<define>#header.background:hover_my burner.png</define>	
     <controls>
 	
         <control>
@@ -13,12 +14,39 @@
             <posY>0</posY>
             <width>1366</width>
             <height>768</height>
-            <texture>background.png</texture>
+            <texture>background.png</texture>	
         </control>
+		
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+		
         <import>common.time.xml</import>
+		
         <control>
+			<description>Header Label</description>				
             <id>1</id>
-            <type>label</type>
+            <type>fadelabel</type>
             <posX>552</posX>
             <posY>30</posY>
             <width>500</width>
@@ -29,6 +57,7 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>1</id>
             <description>listcontrol background</description>
@@ -42,6 +71,7 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <description>group element</description>
             <type>group</type>

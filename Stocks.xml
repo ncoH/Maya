@@ -4,9 +4,12 @@
     <defaultcontrol>50</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <define>#header.label:Stocks &amp; Indices</define>
+	<define>#header.background:hover_stocks.png</define>	
     <controls>
+	
         <import>common.window.xml</import>
         <import>common.time.xml</import>
+		
         <control>
             <id>1</id>
             <type>label</type>

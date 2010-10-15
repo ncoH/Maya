@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>28</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>no</allowoverlay>
+	<id>28</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:136</define>
+	<define>#useSelectedFanart:Yes</define>	
+	<define>#header.background:hover_my videos.png</define>
 <controls>
 
 	<import>common.window.playlist.xml</import>
-
-	<control>
-		<description>Alternate BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background_thumbs.png</texture>
-		<visible>facadeview.smallicons | facadeview.largeicons</visible>
-	</control>
+	<import>common.time.xml</import>	
 	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -26,7 +20,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>playlist</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
@@ -77,9 +71,7 @@
 		<align>center</align>
 		<valign>middle</valign>
 	</control>
-	
-<import>common.time.xml</import>
-	
+		
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>

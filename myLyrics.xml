@@ -5,7 +5,8 @@
     <allowoverlay>no</allowoverlay>
 	<define>#MyLyrics.BlacklistedControlIDs:5106,5107,5108,5109</define>
 	<define>#MyLyrics.EnableMouseControl:yes</define>
-    <define>#usePlayFanart:Yes</define>	
+	<define>#usePlayFanart:Yes</define>
+	<define>#header.background:hover_my lyrics.png</define>
 	<controls>
 		<import>MyMusicPlayingNow.xml</import>
         <import>common.window.lyrics.xml</import>		

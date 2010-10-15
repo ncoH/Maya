@@ -12,13 +12,16 @@
 		<visible>control.hastext(7773)</visible>
 	</control>
 
-	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-	</control>
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>1</id>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>
+		</control>
 	
 	<control>
 		<description>Alternate BG</description>
@@ -40,6 +43,30 @@
 		<visible>facadeview.filmstrip</visible>
 	</control>
 
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+		
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>

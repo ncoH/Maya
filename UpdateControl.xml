@@ -3,7 +3,8 @@
 	<id>7984</id>
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>no</allowoverlay>	
-	<define>#header.label:Update Control</define>	
+	<define>#header.label:Update Control</define>
+	<define>#header.background:hover_updatecontrol.png</define>	
 	<define>#itemcount:</define>	
 	<controls>
 	

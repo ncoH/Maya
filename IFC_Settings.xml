@@ -3,8 +3,45 @@
     <id>240782</id>
     <defaultcontrol>10010</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
+	<define>#header.label:Intelligent Frame Correction</define>	
+	<define>#header.background:hover_settings.png</define>	
     <controls>
-        <import>common.window.xml</import>
+
+        <control>
+            <description>Background</description>
+            <type>image</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>
+			<visible>!string.contains(#maya.backgroundImage,yes)</visible>			
+        </control>
+		
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+		
         <import>settings.menu.xml</import>
 		
         <control>
@@ -16,6 +53,7 @@
             <height>640</height>
             <texture>settings_main_panel.png</texture>
         </control>
+		
         <control>
             <id>1</id>
             <type>fadelabel</type>
@@ -25,11 +63,12 @@
             <height>100</height>
             <font>Segoe Light40</font>
             <textcolor>ff6aa5cb</textcolor>
-            <label>Intelligent Frame Correction</label>
+            <label>#header.label</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
             <valign>middle</valign>
         </control>
+		
         <control>
             <description>group element</description>
             <type>group</type>

@@ -2,19 +2,13 @@
 <window>
 	<id>29052</id>
 	<defaultcontrol>50</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<allowoverlay>yes</allowoverlay>
 	<define>#header.label:4540</define>
+	<define>#header.background:hover_youtubefm.png</define>	
 <controls>
 
-        <control>
-            <description>Background</description>
-            <type>image</type>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1366</width>
-            <height>768</height>
-            <texture>background.png</texture>
-        </control>
+        <import>common.window.youtube.xml</import>
+		
         <control>
             <id>1</id>
             <type>label</type>

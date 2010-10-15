@@ -3,13 +3,43 @@
     <id>510</id>
     <defaultcontrol>5101</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <define>#usePlayFanart:Yes</define>
+	<define>#usePlayFanart:Yes</define>
+	<define>#header.background:hover_my music.png</define>	
     <controls>
+
         <control>
-            <id>0</id>
-            <description>background image</description>
+            <description>Background</description>
             <type>image</type>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>	
         </control>
+		
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>	
 
         <control>
 			<description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
@@ -244,10 +274,12 @@
             <height>188</height>
             <texture>#Play.Current.Thumb</texture>
 			<keepaspectratio>yes</keepaspectratio>
-			<centered>yes</centered>
+			<centered>yes</centered>	
 			<zoom>yes</zoom>			
+            <animation effect="Fade" reversible="FALSE" time="450">Visible</animation>
             <animation effect="Fade" time="800">WindowOpen</animation>
             <animation effect="Fade" time="300">WindowClose</animation>
+			<animation effect="Fade" time="500">VisibleChange</animation>
         </control>
         <control>
             <id>0</id>

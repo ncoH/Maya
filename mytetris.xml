@@ -3,8 +3,8 @@
 	<id>7776</id>
 	<defaultcontrol>10</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<define>#header.label:tetris</define>
-	<define>#header.image:tetris\logo.png</define>
+	<define>#header.label:Tetris</define>
+	<define>#header.background:hover_tetris.png</define>
 
 	<controls>
 		<import>common.window.xml</import>

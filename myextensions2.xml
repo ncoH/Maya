@@ -4,9 +4,12 @@
     <defaultcontrol>50</defaultcontrol>
     <allowoverlay>player.hasmedia+!facadeview.filmstrip</allowoverlay>
     <define>#header.label:14001</define>
+	<define>#header.background:hover_extensions.png</define>	
     <controls>
+	
         <import>common.window.extensions.xml</import>
         <import>common.time.xml</import>
+		
         <control>
             <id>1</id>
             <type>label</type>
@@ -21,6 +24,7 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>1</id>
             <type>label</type>

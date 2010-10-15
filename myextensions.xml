@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>800</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
+	<id>800</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:14001</define>	
+	<define>#header.background:hover_mpei.png</define>
 <controls>
+
 	<import>common.window.xml</import>
 	
 	<control>

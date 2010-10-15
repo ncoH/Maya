@@ -5,12 +5,7 @@
     <allowoverlay>no</allowoverlay>
     <disabletopbar>true</disabletopbar>
     <controls>
-        <control>
-            <description>Bagground</description>
-            <type>image</type>
-            <posX>0</posX>
-            <posY>0</posY>
-        </control>
+
         <control>
             <id>0</id>
             <description>bar image</description>

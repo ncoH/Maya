@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>2600</id>
-<defaultcontrol>4</defaultcontrol>
-<allowoverlay>no</allowoverlay>
-<define>#header.label:8</define>
-<define>#header.image:weather_logo.png</define>
-<define>#header.hover:-</define>
-<define>#selecteditem:-</define>
+	<id>2600</id>
+	<defaultcontrol>4</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:8</define>
+	<define>#selecteditem:-</define>
+	<define>#header.background:hover_my weather.png</define>
 <controls>
-	<import>common.window.xml</import>
 
+	<import>common.window.xml</import>
+	
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
 		<defaultcontrol>2</defaultcontrol>
-		<onexit>4</onexit>
+		<onexit>50</onexit>
 		<buttonX>0</buttonX>
 		<buttonY>0</buttonY>
 		<buttonwidth>0</buttonwidth>
@@ -22,6 +22,20 @@
 		<width>1366</width>
 		<height>768</height>
 		<dimColor>00ffffff</dimColor>
+				
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>semi_trans_back_general_menu.png</texture>
+			<colordiffuse>90ffffff</colordiffuse>
+			<animation effect="fade" time="200">windowopen</animation>
+			<animation effect="fade" time="400">windowclose</animation>
+		</control>
+		
+		<control>
+		<type>group</type>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
 		<animation effect="fade" time="200" reversible="false">Hidden</animation>
@@ -38,7 +52,7 @@
 		<visible>!Control.HasFocus(4)</visible>
 		</control>
 		
-				<control>
+		<control>
 				<description>Heading text label</description>
 				<type>label</type>
 				<id>1</id>
@@ -47,9 +61,9 @@
 				<label>924</label>
 				<font>Segoe Light18</font>
 				<textcolor>85cffe</textcolor>
-				</control>
+		</control>
 		
-			<control>
+		<control>
 				<description>button group</description>
 				<type>group</type>
 				<posX>543</posX>
@@ -101,25 +115,16 @@
 					<textXOff>25</textXOff>
 					<textYOff>12</textYOff>
 			<ondown>2</ondown>
+        </control>
 		</control>
-
 	</control>
 	
 </control>
-
 	
 <!--   5-day stuff   -->
 
-	<control>
-		<description>Alternate BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background_thumbs.png</texture>
-		<visible>Control.IsVisible(1000)|Control.IsVisible(31)</visible>
-	</control>
 
+	
 	<control>
 		<description>5-day heading</description>
 		<type>label</type>
@@ -344,9 +349,7 @@
 		<texture>weather\backgrounds\#infoservice.weather.today.img.big.filenamewithoutext.jpg</texture>
 		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
 	</control>
-	
-<import>common.time.xml</import>
-	
+		
 	<control>
 		<description>View Button</description>
 		<type>button</type>
@@ -1204,6 +1207,8 @@
 		<colordiffuse>White:#20</colordiffuse>
 	</control>
 	
+	<import>common.time.xml</import>	
 	<import>common.overlay.mini.xml</import>
+	
 </controls>
 </window>

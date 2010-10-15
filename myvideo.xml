@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>6</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
-<define>#header.label:#selecteditem</define>
+	<id>6</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:3</define>
+	<define>#useSelectedFanart:Yes</define>
+	<define>#header.background:hover_my videos.png</define>
 <controls>
 
 	<import>common.window.video.xml</import>
-	
-	
+	<import>common.time.xml</import>	
+		
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -18,7 +20,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>3</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>
@@ -34,7 +36,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>3</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
@@ -70,9 +72,6 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 	
-	
-<import>common.time.xml</import>
-
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>

@@ -4,8 +4,11 @@
     <defaultcontrol>2</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <define>#header.label:-</define>
+	<define>#header.background:hover_musictrivia.png</define>	
     <controls>
+	
         <import>common.window.title.xml</import>
+		
         <control>
             <id>0</id>
             <description>DEFAULT BACKGROUND WHEN FANART NOT AVAILABLE</description>

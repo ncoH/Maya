@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>2</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>no</allowoverlay>
-<define>#header.label:1</define>
+	<id>2</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:1</define>
+	<define>#header.background:hover_my pictures.png</define>
 <controls>
 
 	<import>common.window.pictures.xml</import>
@@ -62,7 +63,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>1</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>

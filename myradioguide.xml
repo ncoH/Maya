@@ -3,6 +3,8 @@
 	<id>762</id>
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
+	<define>#header.label:Radio Guide</define>
+	<define>#header.background:hover_my radio.png</define>	
 <controls>
 
         <import>common.window.background.xml</import>
@@ -16,7 +18,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>Radio Guide</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 	</control>

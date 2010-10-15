@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>500</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
-<define>#header.label:#selecteditem</define>
+	<id>500</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:#selecteditem</define>
+	<define>#useSelectedFanart:Yes</define>
+	<define>#header.background:hover_my music.png</define>
 <controls>
 
 	<import>common.window.playlist.xml</import>
@@ -18,7 +20,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>playlist</label>
+		<label>Playlist</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
@@ -34,7 +36,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>playlist</label>
+		<label>Playlist</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>

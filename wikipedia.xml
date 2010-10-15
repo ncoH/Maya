@@ -1,21 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>4711</id>
-<defaultcontrol>10</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
+	<id>4711</id>
+	<defaultcontrol>10</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:2516</define>
+	<define>#header.background:hover_wikipedia.png</define>
 <controls>
 
 	
-	<control>
-		<description>Alternate BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background_thumbs.png</texture>
-	</control>
+		<control>
+			<description>Alternate BG</description>
+			<type>image</type>
+			<id>1</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>background_thumbs.png</texture>
+			<visible>!string.contains(#maya.backgroundImage,yes)</visible>			
+		</control>
 	
-<import>common.time.xml</import>
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+		
+        <import>common.time.xml</import>
 	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -26,7 +53,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>wikipedia</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<align>center</align>

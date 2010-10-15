@@ -4,17 +4,45 @@
     <defaultcontrol>10</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <define>#header.label:Score Center</define>
-    <define>#useSelectedFanart:Yes</define>
+	<define>#useSelectedFanart:Yes</define>
+	<define>#header.background:hover_score center.png</define>
     <controls>
+	
         <control>
-            <description>BackGround</description>
+            <description>Background</description>
             <type>image</type>
             <posX>0</posX>
             <posY>0</posY>
             <width>1366</width>
             <height>768</height>
             <texture>background.png</texture>
+			<visible>!string.contains(#maya.backgroundImage,yes)</visible>			
         </control>
+		
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+		
         <control>
             <id>91919291</id>
             <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
@@ -69,7 +97,9 @@
             <posx>0</posx>
             <posy>0</posy>
         </control>
+		
         <import>common.time.xml</import>
+		
         <control>
             <description>Title</description>
             <type>label</type>

@@ -4,6 +4,7 @@
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<define>#header.label:Radio Time</define>
+	<define>#header.background:hover_radiotime.png</define>	
 <controls>
 
 	<import>common.window.xml</import>

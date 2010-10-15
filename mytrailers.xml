@@ -1,7 +1,8 @@
 <window>
-<id>5900</id>
-<defaultcontrol>50</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
+	<id>5900</id>
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.background:hover_my trailers.png</define>
 <controls>
 
 	<import>common.window.default.xml</import>
