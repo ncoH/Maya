@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>0</id>
+	<id>34</id>
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<disabletopbar>no</disabletopbar>
-	<rememberLastFocusedControl>yes</rememberLastFocusedControl>	
+	
 <controls>
 
 	<control>
@@ -37,8 +37,8 @@
 		<numberOfButtons>5</numberOfButtons>
 		<hoverX>0</hoverX>
 		<hoverY>0</hoverY>
-		<hoverWidth>-</hoverWidth>
-		<hoverHeight>-</hoverHeight>
+		<hoverWidth>1366</hoverWidth>
+		<hoverHeight>768</hoverHeight>
 		<hoverKeepAspectratio>no</hoverKeepAspectratio>
 		<scrollTime>140</scrollTime>
 		<scrollTimeMin>60</scrollTimeMin>
@@ -46,6 +46,18 @@
 		<onleft>2</onleft>
 	</control>
 
+	<control>
+		<description>Fanart Overlay</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1366</width>
+		<height>768</height>
+		<texture>basichome_fanart_overlay.png</texture>
+		<visible>string.contains(#maya.backgroundImage,yes)</visible>
+	</control>
+	
 <import>common.time.xml</import>
 	
 	<!-- Date and Time -->
@@ -61,7 +73,6 @@
 		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
 	</control>
 
-
 	<control>
 		<description>Time</description>
 		<type>label</type>
@@ -76,6 +87,7 @@
 		<textcolor>6aa5cb</textcolor>
 	</control>
 
+	
 	<!-- TOPBAR Buttons -->
 <control>
 		<type>actiongroup</type>
@@ -217,50 +229,50 @@
 	
 <!--RSS-->
 
-<control>
-	<description>RSS background</description>
-	<type>image</type>
-	<id>1</id>
-	<posX>0</posX>
-	<posY>738</posY>
-	<width>1366</width>
-	<height>30</height>
-	<texture>rss_bg.png</texture>
-	<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
-	<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
-	<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
-</control>
+	<control>
+		<description>RSS background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>738</posY>
+		<width>1366</width>
+		<height>30</height>
+		<texture>rss_bg.png</texture>
+		<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
+		<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
+		<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
+	</control>
 
-<control>
-	<description>RSS image</description>
-	<type>image</type>
-	<id>1</id>
-	<posX>0</posX>
-	<posY>625</posY>
-	<width>140</width>
-	<height>35</height>
-	<keepaspectratio>no</keepaspectratio>
-	<texture>#rssimg</texture>
-	<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
-	<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
-	<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
-</control>
+	<control>
+		<description>RSS image</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>625</posY>
+		<width>140</width>
+		<height>35</height>
+		<keepaspectratio>no</keepaspectratio>
+		<texture>#rssimg</texture>
+		<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
+		<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
+		<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
+	</control>
 
-<control>
-	<description>RSS items</description>
-	<type>fadelabel</type>
-	<id>1</id>
-	<posX>15</posX>
-	<posY>743</posY>
-	<width>1336</width>
-	<height>30</height>
-	<font>font10</font>
-	<textcolor>6aa5cb</textcolor>
-	<label>#infoservice.feed.titles</label>
-	<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
-	<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
-	<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
-</control>
+	<control>
+		<description>RSS items</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>15</posX>
+		<posY>743</posY>
+		<width>1336</width>
+		<height>30</height>
+		<font>font10</font>
+		<textcolor>6aa5cb</textcolor>
+		<label>#infoservice.feed.titles</label>
+		<visible>plugin.isenabled(InfoService)+string.contains(#maya.rss.visible,yes)</visible>
+		<animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
+		<animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
+	</control>
 
 <import>common.home.overlay.xml</import>
 </controls>
