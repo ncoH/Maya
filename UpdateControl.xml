@@ -115,7 +115,7 @@
 				<id>2</id>
 				<label>Show installed updates</label>
                 <onright>50</onright>				
-				<onup>5</onup>
+				<onup>7</onup>
 				<ondown>3</ondown>
                 <width>279</width>
                 <height>49</height>
@@ -154,13 +154,48 @@
                 <textXOff>25</textXOff>
 				<textYOff>12</textYOff>				
 			</control>
+			
+			<control>
+				<description>Restore Points</description>
+				<type>togglebutton</type>
+				<id>5</id>
+				<label>Restore Points</label>
+                <onright>50</onright>				
+				<onup>4</onup>
+				<ondown>6</ondown>
+                <width>279</width>
+                <height>49</height>
+				<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+				<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+				<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>				
+                <textXOff>25</textXOff>
+				<textYOff>12</textYOff>			
+			</control>
+			
 			<control>
 				<description>Reboot</description>
 				<type>button</type>
-				<id>5</id>
+				<id>6</id>
 				<label>Reboot</label>
                 <onright>50</onright>				
-				<onup>4</onup>
+				<onup>5</onup>
+				<ondown>7</ondown>
+                <width>279</width>
+                <height>49</height>
+                <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                <textXOff>25</textXOff>
+				<textYOff>12</textYOff>			
+			</control>
+
+			<control>
+				<description>Clean</description>
+				<type>button</type>
+				<id>7</id>
+				<label>Clean distribution folder</label>
+                <onright>50</onright>				
+				<onup>6</onup>
 				<ondown>2</ondown>
                 <width>279</width>
                 <height>49</height>
@@ -169,9 +204,10 @@
                 <textXOff>25</textXOff>
 				<textYOff>12</textYOff>			
 			</control>
-                </control>
+			
             </control>
         </control>
+    </control>
 
 		<!-- *** Action *** -->
 		<control>
@@ -230,7 +266,7 @@
             <posY>345</posY>
             <width>385</width>
             <font>font18</font>
-            <textcolor>ffffffff</textcolor>
+			<textcolor>6aa5cb</textcolor>
             <label>#UpdateControl.UpdateDate</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
