@@ -208,8 +208,22 @@
             </control>
         </control>
     </control>
+	
+		<!-- *** Progress *** -->		
+		<control>
+			<description>Download Progress</description>	
+			<type>label</type>	
+			<id>0</id>
+			<posX>950</posX>
+			<posY>695</posY>
+			<label>Progress: #UpdateControl.DownloadOverallProgress%, #UpdateControl.InstallOverallProgress% done.</label>
+			<align>right</align>
+			<font>font12</font>
+			<textcolor>6aa5cb</textcolor>	
+			<visible>!string.equals(#UpdateControl.DownloadOverallProgress,0)</visible>
+		</control>	
 
-		<!-- *** Action *** -->
+		<!-- *** Action *** -->		
 		<control>
 			<description>Action</description>
 			<type>fadelabel</type>
@@ -236,7 +250,7 @@
 			<visible>!string.equals(#UpdateControl.Action, )</visible>
     </control>
 	
-		<!-- *** Update list *** -->
+		<!-- *** Update list *** -->	
 		<control>
 			<description>listcontrol</description>
 			<type>listcontrol</type>
@@ -257,6 +271,18 @@
 			<dimColor>ffffffff</dimColor>			
 		</control>
 
+		<!-- *** Item Selection Image *** -->		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posX>56</posX>
+			<posY>382</posY>
+			<width>30</width>
+			<height>30</height>
+			<texture>#UpdateControl.UpdateSeverityImage</texture>
+			<visible>control.hasfocus(50)+!string.equals(#UpdateControl.UpdateTitle, )</visible>
+		</control>
+	
         <control>
             <id>0</id>
             <description>Update Date</description>
@@ -277,7 +303,7 @@
             <description>Update Severity</description>
             <type>fadelabel</type>
             <visible>!facadeview.filmstrip+control.hasfocus(50)</visible>
-            <posX>56</posX>
+            <posX>85</posX>
             <posY>380</posY>
             <width>385</width>
             <font>font16</font>

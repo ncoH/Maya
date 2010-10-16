@@ -2,9 +2,12 @@
 <window>
 	<id>705</id><defaultcontrol>10002</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
+	<define>#header.background:hover_settings.png</define>	
 <controls>
+
 	<import>common.window.xml</import>
 	<import>settings.menu.xml</import>
+	
 	<control>
 		<type>image</type>
 		<id>1</id>

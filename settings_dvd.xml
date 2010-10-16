@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>704</id>
-<defaultcontrol>10007</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
+	<id>704</id>
+	<defaultcontrol>10007</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.background:hover_settings.png</define>
 <controls>
+
 <import>common.window.xml</import>
 <import>settings.menu.xml</import>
 

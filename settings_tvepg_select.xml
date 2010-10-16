@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>707</id>
-<defaultcontrol>24</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
-<define>#header.label:6103</define>
+	<id>707</id>
+	<defaultcontrol>24</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:6103</define>
+	<define>#header.background:hover_settings.png</define>
 <controls>
 
-	<import>common.window.settings.xml</import>
-	
+		<import>common.window.settings.xml</import>
+        <import>common.time.xml</import>
+		
 	<control>
 		<type>button</type>
 		<description>Manual</description>

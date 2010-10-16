@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>702</id>
-<defaultcontrol>24</defaultcontrol>
-<allowoverlay>no</allowoverlay>
-<define>#header.label:6008</define>
+	<id>702</id>
+	<defaultcontrol>24</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:6008</define>
+	<define>#header.background:hover_settings.png</define>	
 <controls>
 
 	<import>common.window.settings.xml</import>

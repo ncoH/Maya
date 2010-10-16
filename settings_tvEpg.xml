@@ -4,8 +4,8 @@
     <defaultcontrol>10</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <define>#header.label:6011</define>
+	<define>#header.background:hover_settings.png</define>	
     <controls>
-
 	
         <import>common.window.settings.xml</import>
         <import>common.time.xml</import>
