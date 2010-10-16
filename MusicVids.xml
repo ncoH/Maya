@@ -15,8 +15,7 @@
             <posY>0</posY>
             <width>1366</width>
             <height>768</height>
-            <texture>background.png</texture>
-			<visible>!string.contains(#maya.backgroundImage,yes)</visible>			
+            <texture>background.png</texture>		
         </control>
 		
 		<control>

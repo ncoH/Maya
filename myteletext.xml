@@ -1,18 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>7700</id>
-<defaultcontrol>502</defaultcontrol>
-<allowoverlay>no</allowoverlay>
+	<id>7700</id>
+	<defaultcontrol>502</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:1441</define>	
+	<define>#header.background:hover_my tv.png</define>
 <controls>
 
-	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-	</control>
+        <control>
+            <description>Background</description>
+            <type>image</type>
+			<id>1</id>			
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>	
+        </control>
+		
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
 
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+		
+        <import>common.time.xml</import>
+		
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -22,7 +53,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>television</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 	</control>

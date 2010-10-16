@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>748</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
-<define>#header.label:1037</define>
-<define>#selecteditem:</define>
+	<id>748</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:1037</define>
+	<define>#selecteditem:</define>
+	<define>#header.background:hover_my tv.png</define>
 <controls>
+
 	<import>common.window.xml</import>
 	<import>common.time.xml</import>
 

@@ -1,19 +1,48 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>2700</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
+	<id>2700</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:9</define>	
+	<define>#header.background:hover_my news.png</define>
 <controls>
 
-	<control>
-		<description>background image</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-	</control>
-	
-<import>common.time.xml</import>
+        <control>
+            <description>Background</description>
+            <type>image</type>
+			<id>1</id>			
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>	
+        </control>
+		
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+		</control>
+		
+        <import>common.time.xml</import>
 	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -24,7 +53,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>news</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 	</control>
@@ -172,11 +201,11 @@
 			<id>4</id>
 			<label>706</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
 			<onleft>50</onleft>
 			<onright>50</onright>
 			<onup>2</onup>
@@ -189,11 +218,11 @@
 			<id>2</id>
 			<label>184</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
+			<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+			<width>279</width>
+			<height>49</height>
+			<textXOff>25</textXOff>
+			<textYOff>12</textYOff>
 			<onleft>50</onleft>
 			<onright>50</onright>
 			<onup>4</onup>

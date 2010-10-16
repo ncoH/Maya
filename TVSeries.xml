@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-  <id>9811</id>
-  <defaultcontrol>50</defaultcontrol>
-  <define>#currentmodule:#TVSeries.Translation.Series_Plural.Label</define>
-  <allowoverlay>yes</allowoverlay>
+	<id>9811</id>
+	<defaultcontrol>50</defaultcontrol>
+	<define>#currentmodule:#TVSeries.Translation.Series_Plural.Label</define>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.background:hover_my tv series.png</define>  
   <controls>    
 	
 	<import>TVSeries.fanart.enable.xml</import>
@@ -34,7 +35,31 @@
 		<texture>background_filmstrip.png</texture>
 		<visible>facadeview.filmstrip+!string.contains(#maya.fanart.TVSeries,yes)</visible>
 	</control>
-	
+
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.backgroundImage,yes)+!string.contains(#maya.fanart.TVSeries,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.backgroundImage,yes)+!string.contains(#maya.fanart.TVSeries,yes)</visible>
+		</control>
+		
 	<control>
 		<description>listcontrol background</description>
 		<type>image</type>
