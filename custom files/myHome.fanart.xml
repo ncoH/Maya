@@ -19,9 +19,8 @@
 	<control>
 		<description>Menu</description>
 		<type>menu</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="550">WindowClose</animation>
+		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
 		<id>50</id>
 		<posX>480</posX>
 		<posY>130</posY>
