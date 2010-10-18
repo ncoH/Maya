@@ -9,6 +9,7 @@
         <control>
             <description>Background</description>
             <type>image</type>
+			<id>0</id>
             <posX>0</posX>
             <posY>0</posY>
             <width>1366</width>
