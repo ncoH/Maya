@@ -10,7 +10,7 @@
 		<type>image</type>
 		<id>0</id>
 		<posX>180</posX>
-		<posY>583</posY>
+		<posY>543</posY>
 		<width>566</width>
 		<height>177</height>
 		<texture>tv_zaposd_bg.png</texture>
@@ -21,7 +21,7 @@
 		<type>image</type>
 		<id>10</id>
 		<posX>201</posX>
-		<posY>614</posY>
+		<posY>574</posY>
 		<width>70</width>
 		<height>70</height>
 		<texture>#TV.View.thumb</texture>
@@ -35,7 +35,7 @@
       <posX>302</posX>
 	  <width>420</width>
 	  <height>30</height>
-      <posY>605</posY>
+      <posY>565</posY>
       <label>-</label>
       <font>Segoe Light18</font>
     </control>
@@ -45,7 +45,7 @@
 		<type>label</type>
 		<id>35</id>
 		<posX>302</posX>
-		<posY>648</posY>
+		<posY>608</posY>
 		<width>354</width>
 		<label>-</label>
 		<font>Segoe Light14</font>
@@ -56,7 +56,7 @@
       <type>label</type>
       <id>101</id>
 		<posX>214</posX>
-		<posY>711</posY>
+		<posY>671</posY>
       <label>#TV.View.start</label>
       <align>left</align>
      <font>font12</font>
@@ -68,7 +68,7 @@
       <type>label</type>
       <id>102</id>
       <posX>716</posX>
-      <posY>711</posY>
+      <posY>671</posY>
       <label>#TV.View.stop</label>
       <align>right</align>
       <font>font12</font>
@@ -79,7 +79,7 @@
       <type>progress</type>
       <id>1</id>
 		<posX>266</posX>
-		<posY>718</posY>
+		<posY>678</posY>
       <width>388</width>
       <height>10</height>
       <texturebg>-</texturebg>
@@ -95,7 +95,7 @@
       <type>image</type>
       <id>39</id>
       <posX>418</posX>
-      <posY>699</posY>
+      <posY>659</posY>
       <texture>tv_zaposd_rec.png</texture>
     </control>
 	
@@ -106,7 +106,7 @@
       <width>900</width>
       <height>37</height>
       <posX>-2000</posX>
-      <posY>642</posY>
+      <posY>602</posY>
       <align>left</align>
       <font>font13</font>
       <textcolor>FFB2D4F5</textcolor>

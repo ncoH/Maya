@@ -10,8 +10,8 @@
 	<control>
 		<type>image</type>
 		<id>100</id>
-		<posX>444</posX>
-		<posY>517</posY>
+		<posX>464</posX>
+		<posY>497</posY>
 		<texture>progress_background.png</texture>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
@@ -21,10 +21,10 @@
 		<description>progress control</description>
 		<type>progress</type>
 		<id>20</id>
-		<posX>431</posX>
-		<posY>517</posY>
-		<width>482</width>
-		<height>12</height>
+		<posX>456</posX>
+		<posY>499</posY>
+		<width>432</width>
+		<height>11</height>
 		<texturebg>-</texturebg>
 		<lefttexture>osd_progress_left.png</lefttexture>
 		<midtexture>osd_progress_mid.png</midtexture>
