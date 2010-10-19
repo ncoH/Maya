@@ -9,7 +9,7 @@
             <id>1</id>
             <type>image</type>
             <width>1366</width>
-            <height>81</height>
+            <height>77</height>
             <texture>background_bar.png</texture>
         </control>
         <control>
@@ -20,14 +20,16 @@
             <onright>26</onright>
             <onup>21</onup>
             <ondown>2</ondown>
-            <posX>284</posX>
-            <posY>12</posY>
-            <width>50</width>
-            <height>52</height>
+            <posX>263</posX>
+            <posY>0</posY>
+            <width>76</width>
+            <height>57</height>
             <action>10</action>
             <textureFocus>back_enabled.png</textureFocus>
             <textureNoFocus>back_disabled.png</textureNoFocus>
             <label>-</label>
+			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
             <id>26</id>
@@ -37,14 +39,17 @@
             <onright>22</onright>
             <onup>26</onup>
             <ondown>2</ondown>
-            <posX>359</posX>
-            <posY>12</posY>
-            <width>50</width>
-            <height>52</height>
+            <posX>336</posX>
+            <posY>0</posY>
+            <width>76</width>
+            <height>57</height>
             <action>115</action>
             <textureFocus>nav_refresh_focus.png</textureFocus>
             <textureNoFocus>nav_refresh_nofocus.png</textureNoFocus>
             <label>-</label>
+			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
+
         </control>
         <control>
             <id>22</id>
@@ -54,14 +59,16 @@
             <onright>23</onright>
             <onup>22</onup>
             <ondown>2</ondown>
-            <posX>434</posX>
-            <posY>12</posY>
-            <width>50</width>
-            <height>52</height>
+            <posX>413</posX>
+            <posY>0</posY>
+            <width>76</width>
+            <height>57</height>
             <action>15</action>
             <textureFocus>skipback_enabled.png</textureFocus>
             <textureNoFocus>skipback_disabled.png</textureNoFocus>
             <label>-</label>
+			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
             <id>23</id>
@@ -71,14 +78,16 @@
             <onright>24</onright>
             <onup>23</onup>
             <ondown>2</ondown>
-            <posX>511</posX>
-            <posY>12</posY>
-            <width>50</width>
-            <height>52</height>
+            <posX>488</posX>
+            <posY>0</posY>
+            <width>76</width>
+            <height>57</height>
             <action>78</action>
             <textureFocus>rew_enabled.png</textureFocus>
             <textureNoFocus>rew_disabled.png</textureNoFocus>
             <label>-</label>
+			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
             <id>24</id>
@@ -88,14 +97,16 @@
             <onright>25</onright>
             <onup>24</onup>
             <ondown>2</ondown>
-            <posX>585</posX>
-            <posY>12</posY>
-            <width>50</width>
-            <height>52</height>
+            <posX>569</posX>
+            <posY>0</posY>
+            <width>76</width>
+            <height>57</height>
             <action>79</action>
             <textureFocus>play_enabled.png</textureFocus>
             <textureNoFocus>play_disabled.png</textureNoFocus>
             <label>-</label>
+			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
             <id>25</id>
@@ -105,14 +116,16 @@
             <onright>27</onright>
             <onup>25</onup>
             <ondown>2</ondown>
-            <posX>660</posX>
-            <posY>12</posY>
-            <width>50</width>
-            <height>52</height>
+            <posX>645</posX>
+            <posY>0</posY>
+            <width>76</width>
+            <height>57</height>
             <action>12</action>
             <textureFocus>pause_enabled.png</textureFocus>
             <textureNoFocus>pause_disabled.png</textureNoFocus>
             <label>-</label>
+			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
             <id>27</id>
@@ -122,14 +135,16 @@
             <onright>28</onright>
             <onup>27</onup>
             <ondown>2</ondown>
-            <posX>735</posX>
-            <posY>12</posY>
-            <width>50</width>
-            <height>52</height>
+            <posX>722</posX>
+            <posY>0</posY>
+            <width>76</width>
+            <height>57</height>
             <action>13</action>
             <textureFocus>stop_enabled.png</textureFocus>
             <textureNoFocus>stop_disabled.png</textureNoFocus>
             <label>-</label>
+			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
             <id>28</id>
@@ -139,14 +154,16 @@
             <onright>29</onright>
             <onup>28</onup>
             <ondown>2</ondown>
-            <posX>810</posX>
-            <posY>12</posY>
-            <width>50</width>
-            <height>52</height>
+            <posX>799</posX>
+            <posY>0</posY>
+            <width>76</width>
+            <height>57</height>
             <action>77</action>
             <textureFocus>fastforward_enabled.png</textureFocus>
             <textureNoFocus>fastforward_disabled.png</textureNoFocus>
             <label>-</label>
+			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
             <id>29</id>
@@ -156,14 +173,16 @@
             <onright>30</onright>
             <onup>29</onup>
             <ondown>2</ondown>
-            <posX>885</posX>
-            <posY>12</posY>
-            <width>50</width>
-            <height>52</height>
+            <posX>876</posX>
+            <posY>0</posY>
+            <width>76</width>
+            <height>57</height>
             <action>14</action>
             <textureFocus>skipforward_enabled.png</textureFocus>
             <textureNoFocus>skipforward_disabled.png</textureNoFocus>
             <label>-</label>
+			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
             <id>30</id>
@@ -173,14 +192,16 @@
             <onright>31</onright>
             <onup>30</onup>
             <ondown>2</ondown>
-            <posX>960</posX>
-            <posY>12</posY>
-            <width>50</width>
-            <height>52</height>
+            <posX>952</posX>
+            <posY>0</posY>
+            <width>76</width>
+            <height>57</height>
             <action>18</action>
             <textureFocus>minimize_enabled.png</textureFocus>
             <textureNoFocus>minimize_disabled.png</textureNoFocus>
             <label>-</label>
+			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
             <id>31</id>
@@ -190,14 +211,16 @@
             <onright>21</onright>
             <onup>31</onup>
             <ondown>2</ondown>
-            <posX>1035</posX>
-            <posY>12</posY>
-            <width>50</width>
-            <height>52</height>
+            <posX>1029</posX>
+            <posY>0</posY>
+            <width>76</width>
+            <height>57</height>
             <action>97</action>
             <textureFocus>exit_enabled.png</textureFocus>
             <textureNoFocus>exit_disabled.png</textureNoFocus>
             <label>-</label>
+			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
     </controls>
 </window>
