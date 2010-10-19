@@ -16,8 +16,8 @@
 		<type>image</type>
 		<id>0</id>
 		<texture>tv_miniguide_big.png</texture>
-		<width>734</width>
-		<height>530</height>
+		<width>733</width>
+		<height>528</height>
 		<posX>316</posX>
 		<posY>152</posY>
 	</control>
@@ -49,19 +49,19 @@
 		<description>list to show channels without channel state logos</description>
 		<type>listcontrol</type>
 		<id>35</id>
-		<posX>349</posX>
-		<posY>237</posY>
-		<width>669</width>
+		<posX>417</posX>
+		<posY>245</posY>
+		<width>531</width>
 		<height>400</height>
-		<textureFocus>tv_miniguide_bar_nochannelstate.png</textureFocus>
-		<textureNoFocus>tv_miniguide_bar_nochannelstate_nofocus.png</textureNoFocus>
+		<textureFocus>tv_miniguide_bar.png</textureFocus>
+		<textureNoFocus>tv_miniguide_bar_nofocus.png</textureNoFocus>
 		<textYOff>31</textYOff>
-		<textXOff>35</textXOff>
-		<textXOff2>660</textXOff2>
+		<textXOff>-32</textXOff>
+		<textXOff2>522</textXOff2>
 		<textYOff2>31</textYOff2>
-		<textXOff3>85</textXOff3>
+		<textXOff3>20</textXOff3>
 		<textYOff3>6</textYOff3>
-		<IconXOff>13</IconXOff>
+		<IconXOff>-54</IconXOff>
 		<IconYOff>10</IconYOff>
 		<PinIconWidth>-</PinIconWidth>
 		<PinIconHeight>-</PinIconHeight>
@@ -90,27 +90,27 @@
 		<description>list to show channels with channel state logos</description>
 		<type>listcontrol</type>
 		<id>37</id>
-		<posX>348</posX>
-		<posY>237</posY>
-		<width>669</width>
+		<posX>417</posX>
+		<posY>245</posY>
+		<width>531</width>
 		<height>400</height>
 		<textureFocus>tv_miniguide_bar.png</textureFocus>
 		<textureNoFocus>tv_miniguide_bar_nofocus.png</textureNoFocus>
 		<textYOff>31</textYOff>
-		<textXOff>35</textXOff>
-		<textXOff2>592</textXOff2>
+		<textXOff>-32</textXOff>
+		<textXOff2>522</textXOff2>
 		<textYOff2>31</textYOff2>
-		<textXOff3>85</textXOff3>
+		<textXOff3>20</textXOff3>
 		<textYOff3>6</textYOff3>
-		<IconXOff>13</IconXOff>
+		<IconXOff>-54</IconXOff>
 		<IconYOff>10</IconYOff>
-		<PinIconXOff>601</PinIconXOff>
+		<PinIconXOff>531</PinIconXOff>
 		<PinIconYOff>2</PinIconYOff>
 		<PinIconWidth>67</PinIconWidth>
 		<PinIconHeight>59</PinIconHeight>
 		<spinPosY>614</spinPosY>
 		<spinPosX>998</spinPosX>
-		<spinColor>FFB2D4F5</spinColor>
+		<spinColor>FFFFFFFF</spinColor>
 		<spinWidth>39</spinWidth>
 		<spinHeight>27</spinHeight>
 		<itemWidth>40</itemWidth>
@@ -134,7 +134,7 @@
 		<type>spincontrol</type>
 		<id>36</id>
 		<posX>785</posX>
-		<posY>609</posY>
+		<posY>610</posY>
 		<showrange>no</showrange>
 		<orientation>horizontal</orientation>
 		<font>font10</font>
