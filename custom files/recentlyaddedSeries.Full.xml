@@ -14,7 +14,7 @@
       <dimColor>0xffffffff</dimColor>
       <!-- CHANGE the ID value (represented as xxxx) of isvisible(xxxx) to the value of the ID in basichome you want this to show.
            If you want it to show on multiple you can chain them like so; control.isvisible(xxxx) + control.isvisible(xxxx2) etc. -->
-      <visible>control.isvisible(123) + !string.equals(#infoservice.recentlyAdded.series1.thumb,) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5) + string.contains(#maya.recentlyAddedSeries,yes)</visible>
+      <visible>control.isvisible(123) + !string.equals(#maya.recentlyAdded.series1.thumb,) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5) + string.contains(#maya.recentlyAddedSeries,yes)</visible>
       <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
 	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -30,7 +30,7 @@
         <posY>89</posY>
         <height>147</height>
 		<width>113</width>
-        <texture>#infoservice.recentlyAdded.series1.thumb</texture>
+        <texture>#maya.recentlyAdded.series1.thumb</texture>
       </control>
       <control>
         <description>Series 1 Rounded Cover</description>
@@ -49,31 +49,34 @@
         <posX>1020</posX>
         <posY>98</posY>
         <width>258</width>
-        <label>#infoservice.recentlyAdded.series1.title</label>
+        <label>#maya.recentlyAdded.series1.title</label>
         <font>Segoe Light18</font>
         <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
       <control>
         <description>Series 1 title</description>
-        <type>label</type>
+        <type>fadelabel</type>
         <id>0</id>
         <posX>1020</posX>
         <posY>151</posY>
         <width>255</width>
-        <label>#infoservice.recentlyAdded.series1.episodetitle</label>
+        <label>#maya.recentlyAdded.series1.episodetitle</label>
         <font>font12</font>
         <textcolor>White</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
       <control>
         <description>Series 1 episode</description>
-        <type>label</type>
+        <type>fadelabel</type>
         <id>0</id>
         <posX>1020</posX>
         <posY>206</posY>
         <width>255</width>
-        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #infoservice.recentlyAdded.series1.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #infoservice.recentlyAdded.series1.episodenumber</label>
+        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #maya.recentlyAdded.series1.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #maya.recentlyAdded.series1.episodenumber</label>
         <font>font10</font>
         <textcolor>White</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
       <control>
         <description>Series 2 thumb</description>
@@ -83,7 +86,7 @@
         <posY>288</posY>
         <height>147</height>
 		<width>113</width>		
-        <texture>#infoservice.recentlyAdded.series2.thumb</texture>
+        <texture>#maya.recentlyAdded.series2.thumb</texture>
       </control>
       <control>
         <description>Series 2 Rounded Cover</description>
@@ -102,31 +105,34 @@
         <posX>1020</posX>
         <posY>299</posY>
         <width>258</width>
-        <label>#infoservice.recentlyAdded.series2.title</label>
+        <label>#maya.recentlyAdded.series2.title</label>
         <font>Segoe Light18</font>
         <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
       <control>
         <description>Series 2 title</description>
-        <type>label</type>
+        <type>fadelabel</type>
         <id>0</id>
         <posX>1020</posX>
         <posY>352</posY>
         <width>255</width>
-        <label>#infoservice.recentlyAdded.series2.episodetitle</label>
+        <label>#maya.recentlyAdded.series2.episodetitle</label>
         <font>font12</font>
         <textcolor>White</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
       <control>
         <description>Series 2 episode</description>
-        <type>label</type>
+        <type>fadelabel</type>
         <id>0</id>
         <posX>1020</posX>
         <posY>405</posY>
         <width>258</width>
-        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #infoservice.recentlyAdded.series2.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #infoservice.recentlyAdded.series2.episodenumber</label>
+        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #maya.recentlyAdded.series2.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #maya.recentlyAdded.series2.episodenumber</label>
         <font>font10</font>
         <textcolor>White</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
       <control>
         <description>Series 3 thumb</description>
@@ -136,7 +142,7 @@
         <posY>488</posY>
         <height>147</height>
 		<width>113</width>
-        <texture>#infoservice.recentlyAdded.series3.thumb</texture>
+        <texture>#maya.recentlyAdded.series3.thumb</texture>
       </control>
       <control>
         <description>Series 3 Rounded Cover</description>
@@ -155,9 +161,10 @@
         <posX>1020</posX>
         <posY>498</posY>
         <width>255</width>
-        <label>#infoservice.recentlyAdded.series3.title</label>
+        <label>#maya.recentlyAdded.series3.title</label>
         <font>Segoe Light18</font>
         <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
       <control>
         <description>Series 3 title</description>
@@ -166,20 +173,22 @@
         <posX>1020</posX>
         <posY>551</posY>
         <width>255</width>
-        <label>#infoservice.recentlyAdded.series3.episodetitle</label>
+        <label>#maya.recentlyAdded.series3.episodetitle</label>
         <font>font12</font>
         <textcolor>White</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
       <control>
         <description>Series 3 episode</description>
-        <type>label</type>
+        <type>fadelabel</type>
         <id>0</id>
         <posX>1020</posX>
         <posY>604</posY>
         <width>255</width>
-        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #infoservice.recentlyAdded.series3.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #infoservice.recentlyAdded.series3.episodenumber</label>
+        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #maya.recentlyAdded.series3.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #maya.recentlyAdded.series3.episodenumber</label>
         <font>font10</font>
         <textcolor>White</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
     </control>
   </controls>
