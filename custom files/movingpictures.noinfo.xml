@@ -97,7 +97,7 @@ multiple view modes.
 			<width>1366</width>
 			<height>768</height>
 			<texture>#header.background</texture>	
-			<visible>string.contains(#maya.bgImage.Plugins,yes)+!string.contains(#maya.fanart.MovingPictures,yes)</visible>
+			<visible>[string.contains(#maya.bgImage.Plugins,yes)+!string.contains(#maya.fanart.MovingPictures,yes)+!Control.IsVisible(51)] + ![!Control.IsVisible(50)+!Control.IsVisible(51)]</visible>
 		</control>
 
 		<control>
@@ -109,7 +109,7 @@ multiple view modes.
 			<width>1366</width>
 			<height>768</height>
 			<texture>basichome_fanart_overlay.png</texture>
-			<visible>string.contains(#maya.bgImage.Plugins,yes)+!string.contains(#maya.fanart.MovingPictures,yes)</visible>
+			<visible>[string.contains(#maya.bgImage.Plugins,yes)+!string.contains(#maya.fanart.MovingPictures,yes)+!Control.IsVisible(51)] + ![!Control.IsVisible(50)+!Control.IsVisible(51)]</visible>
 		</control>
 		
 	<control>
