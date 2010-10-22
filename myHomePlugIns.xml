@@ -3,8 +3,7 @@
 	<id>34</id>
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<disabletopbar>no</disabletopbar>
-	
+	<disabletopbar>no</disabletopbar>	
 <controls>
 
 	<control>
@@ -15,7 +14,7 @@
             <height>768</height>
             <texture>background.png</texture>			
 	</control>
-
+	
 	<control>
 		<description>Menu</description>
 		<type>menu</type>
@@ -44,7 +43,7 @@
 		<onright>4</onright>
 		<onleft>2</onleft>
 	</control>
-
+	
 	<control>
 		<description>Fanart Overlay</description>
 		<type>image</type>
