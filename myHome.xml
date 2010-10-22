@@ -36,13 +36,25 @@
 		<numberOfButtons>5</numberOfButtons>
 		<hoverX>0</hoverX>
 		<hoverY>0</hoverY>
-		<hoverWidth>-</hoverWidth>
-		<hoverHeight>-</hoverHeight>
+		<hoverWidth>1366</hoverWidth>
+		<hoverHeight>768</hoverHeight>
 		<hoverKeepAspectratio>no</hoverKeepAspectratio>
 		<scrollTime>140</scrollTime>
 		<scrollTimeMin>60</scrollTimeMin>
 		<onright>4</onright>
 		<onleft>2</onleft>
+	</control>
+
+	<control>
+		<description>Fanart Overlay</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1366</width>
+		<height>768</height>
+		<texture>basichome_fanart_overlay.png</texture>
+		<visible>string.contains(#maya.backgroundImage,yes)</visible>
 	</control>
 
 <import>common.time.xml</import>

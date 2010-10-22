@@ -8,6 +8,7 @@ multiple view modes.
 <id>96742</id>
 <defaultcontrol>50</defaultcontrol>
 <allowoverlay>no</allowoverlay>
+<define>#header.background:hover_moving pictures.png</define>
 <!--
   This set of defines are read by the plug-in and used to determine aspects of it's behavior. These
   are parameters to give the skinner a tiny bit more control over the presentation.
@@ -85,7 +86,31 @@ multiple view modes.
 		<texture>background_filmstrip.png</texture>
 		<visible>[facadeview.filmstrip+Control.IsVisible(50)] + !string.contains(#maya.fanart.MovingPictures,yes)</visible>
 	</control>
-	
+
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.bgImage.Plugins,yes)+!string.contains(#maya.fanart.MovingPictures,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.bgImage.Plugins,yes)+!string.contains(#maya.fanart.MovingPictures,yes)</visible>
+		</control>
+		
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -301,7 +326,7 @@ multiple view modes.
 					<onup>15</onup>
 					<ondown>66611</ondown>
 			</control>
-<!--			
+			
 			<control>
 					<description>SubCentral</description>
 					<type>button</type>					
@@ -320,7 +345,7 @@ multiple view modes.
 					<onup>66610</onup>
 					<ondown>2</ondown>     
 				</control>	
--->
+
 		</control>
 
 	</control>

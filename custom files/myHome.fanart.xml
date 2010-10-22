@@ -15,7 +15,7 @@
             <height>768</height>
             <texture>background.png</texture>			
 	</control>
-
+	
 	<control>
 		<description>Menu</description>
 		<type>menu</type>
@@ -44,7 +44,7 @@
 		<onright>4</onright>
 		<onleft>2</onleft>
 	</control>
-
+	
 	<control>
 		<description>Fanart Overlay</description>
 		<type>image</type>

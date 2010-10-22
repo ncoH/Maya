@@ -45,7 +45,7 @@
 			<width>1366</width>
 			<height>768</height>
 			<texture>#header.background</texture>	
-			<visible>string.contains(#maya.backgroundImage,yes)+!string.contains(#maya.fanart.TVSeries,yes)</visible>
+			<visible>string.contains(#maya.bgImage.Plugins,yes)+!string.contains(#maya.fanart.TVSeries,yes)</visible>
 		</control>
 
 		<control>
@@ -57,7 +57,7 @@
 			<width>1366</width>
 			<height>768</height>
 			<texture>basichome_fanart_overlay.png</texture>
-			<visible>string.contains(#maya.backgroundImage,yes)+!string.contains(#maya.fanart.TVSeries,yes)</visible>
+			<visible>string.contains(#maya.bgImage.Plugins,yes)+!string.contains(#maya.fanart.TVSeries,yes)</visible>
 		</control>
 		
 	<control>
