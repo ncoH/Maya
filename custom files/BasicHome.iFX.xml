@@ -70,8 +70,7 @@
     <width>1366</width>
     <height>768</height>
     <visible>Control.IsVisible(1201) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-    <animation effect="fade" start="0" end="100" delay="200" time="450">visible</animation>
-    <animation effect="fade" start="100" end="0" delay="200" time="450">hidden</animation>
+	<animation effect="fade" start="10" end="100" time="1000">Visible</animation>	
 	<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
     <texture>#bgimage1</texture>
 </control>
@@ -85,8 +84,7 @@
     <width>1368</width>
     <height>768</height>
     <visible>Control.IsVisible(1202) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-    <animation effect="fade" start="0" end="100" delay="200" time="450">visible</animation>
-    <animation effect="fade" start="100" end="0" delay="200" time="450">hidden</animation>
+	<animation effect="fade" start="10" end="100" time="1000">Visible</animation>
 	<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
     <texture>#bgimage2</texture>
 </control> 

@@ -41,57 +41,6 @@
 </control>
 
 <control>
-    <description>dummy label for image 1 visibility</description>
-    <type>label</type>
-    <id>1201</id>
-    <posX>-2000</posX>
-    <posY>200</posY>
-    <label>#visbgimage1</label>
-    <visible>Control.HasText(1201)</visible>
-</control>
-
-<control>
-    <description>dummy label for image 2 visibility</description>
-    <type>label</type>
-    <id>1202</id>
-    <posX>-2000</posX>
-    <posY>200</posY>
-    <label>#visbgimage2</label>
-    <visible>Control.HasText(1202)</visible>
-</control>
-
-
-<control>
-    <description>background image 1</description>
-    <type>image</type>
-    <id>1101</id>
-    <posX>0</posX>
-    <posY>0</posY>
-    <width>1366</width>
-    <height>768</height>
-    <visible>Control.IsVisible(1201) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-    <animation effect="fade" start="0" end="100" delay="200" time="450">visible</animation>
-    <animation effect="fade" start="100" end="0" delay="200" time="450">hidden</animation>
-	<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
-    <texture>#bgimage1</texture>
-</control>
-
-<control>
-    <description>background image 2</description>
-    <type>image</type>
-    <id>1102</id>
-    <posX>0</posX>
-    <posY>0</posY>
-    <width>1368</width>
-    <height>768</height>
-    <visible>Control.IsVisible(1202) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-    <animation effect="fade" start="0" end="100" delay="200" time="450">visible</animation>
-    <animation effect="fade" start="100" end="0" delay="200" time="450">hidden</animation>
-	<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
-    <texture>#bgimage2</texture>
-</control> 
-
-<control>
 	<description>DEFAULT BACKGROUND</description>
 	<type>image</type>
 	<id>0</id>
@@ -100,19 +49,6 @@
 	<width>1366</width>
 	<height>768</height>
 	<texture>background.png</texture>
-    <visible>!string.contains(#maya.backgroundImage,yes)</visible>
-</control>
-
-<control>
-	<description>Fanart Overlay</description>
-	<type>image</type>
-	<id>0</id>
-	<posX>0</posX>
-	<posY>0</posY>
-	<width>1366</width>
-	<height>768</height>
-	<texture>basichome_fanart_overlay.png</texture>
-    <visible>string.contains(#maya.backgroundImage,yes)</visible>
 </control>
 
 <import>common.time.xml</import>

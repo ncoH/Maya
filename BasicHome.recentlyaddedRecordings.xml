@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+	<control>
+		<type>image</type>
+		<id>118</id>
+		<posX>-2000</posX>
+		<posY>-2000</posY>
+		<texture>-</texture>
+	</control>
+    <control>
+      <description>GROUP: RecentlyAdded Recordings</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>control.isvisible(118) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5) + string.contains(#maya.recentlyAddedRecordings,yes)</visible>
+      <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+      <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
+	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+      <animation effect="slide" end="300,0" time="1500" acceleration="-0.1" reversible="false">Hidden</animation>
+      <animation effect="slide" start="300,0" end="0,0" time="1000" acceleration="-0.1" reversible="false">Visible</animation>
+	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+	  <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+      <control>
+        <description>Header label</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>155</posY>
+        <width>258</width>
+        <label>#SkinTranslation.Translations.Latest.recordings.Label</label>
+        <font>Segoe Light16</font>
+        <textcolor>85cfff</textcolor>
+      </control>
+      <control>
+        <description>Recording 1 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>345</posY>
+        <width>258</width>
+        <label>#fanarthandler.tvrecordings.latest1.title</label>
+        <font>font14</font>
+        <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+        <description>Recording 1 runtime</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>372</posY>
+        <width>275</width>
+        <label>#fanarthandler.tvrecordings.latest1.genre</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+      <control>
+        <description>Recording 1 thumb/fanart</description>
+        <type>image</type>
+        <id>20</id>
+        <posX>995</posX>
+        <posY>192</posY>
+        <width>268</width>
+        <height>151</height>
+        <keepaspectratio>true</keepaspectratio>
+        <texture>#fanarthandler.tvrecordings.latest1.thumb</texture>
+      </control>
+      <control>
+        <description>Recording 1 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>192</posY>
+        <width>268</width>
+        <height>151</height>
+        <keepaspectratio>true</keepaspectratio>
+        <texture>defaultTVBig.png</texture>
+		<visible>!control.hasthumb(20)</visible>
+      </control>
+    </control>
+    <control>
+      <description>GROUP: RecentlyAdded Recordings</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>control.isvisible(118) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5) + string.contains(#maya.recentlyAddedRecordings,yes)</visible>
+      <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+      <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
+	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+      <animation effect="slide" end="300,0" time="1500" acceleration="-0.1" reversible="false">Hidden</animation>
+      <animation effect="slide" start="300,0" end="0,0" time="1000" acceleration="-0.1" reversible="false">Visible</animation>
+	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+	  <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+      <control>
+        <description>Recording 2 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>395</posY>
+        <width>258</width>
+        <label>#fanarthandler.tvrecordings.latest2.title</label>
+        <font>font14</font>
+        <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+        <description>Recording 2 runtime</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>422</posY>
+        <width>275</width>
+        <label>#fanarthandler.tvrecordings.latest2.genre</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+    </control>
+    <control>
+      <description>GROUP: RecentlyAdded Recordings</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>control.isvisible(118) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5) + string.contains(#maya.recentlyAddedRecordings,yes)</visible>
+      <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+      <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
+	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+      <animation effect="slide" end="300,0" time="1500" acceleration="-0.1" reversible="false">Hidden</animation>
+      <animation effect="slide" start="300,0" end="0,0" time="1000" acceleration="-0.1" reversible="false">Visible</animation>
+	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+	  <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+      <control>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>445</posY>
+        <width>258</width>
+        <label>#fanarthandler.tvrecordings.latest3.title</label>
+        <font>font14</font>
+        <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+        <description>Recording 3 runtime</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>472</posY>
+        <width>275</width>
+        <label>#fanarthandler.tvrecordings.latest3.genre</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+    </control>
+  </controls>
+</window>

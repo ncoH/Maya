@@ -42,6 +42,8 @@
 	<string Field="lyrics.tag">Anhang</string>
 	<string Field="Latest.movies">Neueste Filme</string>
 	<string Field="Latest.episodes">Neueste Episoden</string>
+	<string Field="Latest.recordings">Neueste Aufnahmen</string>
+	<string Field="Latest.albums">Neueste Alben</string>
 	
 	<!-- M -->
 	<string Field="mylyrics">Liedtext</string>
