@@ -68,6 +68,7 @@
                 <textureNoFocus>-</textureNoFocus>
                 <label>Sleep Mode</label>
                 <textalign>LEFT</textalign>
+				<font>font11</font>
             </control>
             <control>
                 <id>3</id>
@@ -80,6 +81,7 @@
                 <textureNoFocus>-</textureNoFocus>
                 <label>Set Timer</label>
                 <textalign>LEFT</textalign>
+				<font>font11</font>
             </control>
             <control>
                 <id>4</id>
@@ -92,6 +94,7 @@
                 <textureNoFocus>-</textureNoFocus>
                 <label>Start Timer</label>
                 <textalign>LEFT</textalign>
+				<font>font11</font>
             </control>
             <control>
                 <id>5</id>
@@ -104,6 +107,7 @@
                 <textureNoFocus>-</textureNoFocus>
                 <label>Pause timer</label>
                 <textalign>LEFT</textalign>
+				<font>font11</font>
             </control>
             <control>
                 <id>6</id>
@@ -116,6 +120,7 @@
                 <textureNoFocus>-</textureNoFocus>
                 <label>Increment Timer</label>
                 <textalign>LEFT</textalign>
+				<font>font11</font>
             </control>
             <control>
                 <id>7</id>
@@ -128,6 +133,7 @@
                 <textureNoFocus>-</textureNoFocus>
                 <label>Decrement Timer</label>
                 <textalign>LEFT</textalign>
+				<font>font11</font>
             </control>
             <control>
                 <id>8</id>
@@ -140,6 +146,7 @@
                 <textureNoFocus>selectionbar_unfocus_toggle on.png</textureNoFocus>
                 <label>Wait until tasks finished</label>
                 <textalign>LEFT</textalign>
+				<font>font11</font>
                 <AltTextureFocus>selectionbar_focus_toggle off.png</AltTextureFocus>
                 <AltTextureNoFocus>selectionbar_unfocus_toggle off.png</AltTextureNoFocus>
             </control>
@@ -154,6 +161,7 @@
                 <textureNoFocus>selectionbar_unfocus_toggle on.png</textureNoFocus>
                 <label>Volume Reduction</label>
                 <textalign>LEFT</textalign>
+				<font>font11</font>
                 <AltTextureFocus>selectionbar_focus_toggle off.png</AltTextureFocus>
                 <AltTextureNoFocus>selectionbar_unfocus_toggle off.png</AltTextureNoFocus>
             </control>
