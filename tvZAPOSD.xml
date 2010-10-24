@@ -52,64 +52,89 @@
 	</control>
 	
     <control>
-      <description>Start Time Info</description>
-      <type>label</type>
-      <id>101</id>
+		<description>Start Time Info 24h</description>
+		<type>label</type>
+		<id>101</id>
 		<posX>214</posX>
 		<posY>671</posY>
-      <label>#TV.View.start</label>
-      <align>left</align>
-     <font>font12</font>
-    </control>
-
-	
-    <control>
-      <description>End Time Info</description>
-      <type>label</type>
-      <id>102</id>
-      <posX>716</posX>
-      <posY>671</posY>
-      <label>#TV.View.stop</label>
-      <align>right</align>
-      <font>font12</font>
+		<label>#TV.View.start</label>
+		<align>left</align>
+		<font>font12</font>
+		<visible>![string.contains(#time,AM)|string.contains(#time,PM)]</visible>
     </control>
 	
     <control>
-      <description>Progress Bar</description>
-      <type>progress</type>
-      <id>1</id>
+		<description>Start Time Info 12h</description>
+		<type>label</type>
+		<id>101</id>
+		<posX>200</posX>
+		<posY>674</posY>
+		<label>#TV.View.start</label>
+		<align>left</align>
+		<font>font10</font>
+		<visible>[string.contains(#time,AM)|string.contains(#time,PM)]</visible>
+    </control>
+	
+    <control>
+		<description>End Time Info 24h</description>
+		<type>label</type>
+		<id>102</id>
+		<posX>716</posX>
+		<posY>671</posY>
+		<label>#TV.View.stop</label>
+		<align>right</align>
+		<font>font12</font>
+		<visible>![string.contains(#time,AM)|string.contains(#time,PM)]</visible>
+    </control>
+	
+    <control>
+		<description>End Time Info 12h</description>
+		<type>label</type>
+		<id>102</id>
+		<posX>726</posX>
+		<posY>674</posY>
+		<label>#TV.View.stop</label>
+		<align>right</align>
+		<font>font10</font>
+		<visible>[string.contains(#time,AM)|string.contains(#time,PM)]</visible>
+    </control>
+	
+    <control>
+		<description>Progress Bar</description>
+		<type>progress</type>
+		<id>1</id>
 		<posX>266</posX>
 		<posY>678</posY>
-      <width>388</width>
-      <height>10</height>
-      <texturebg>-</texturebg>
-	  <lefttexture>osd_progress_left.png</lefttexture>
+		<width>388</width>
+		<height>10</height>
+		<texturebg>-</texturebg>
+		<lefttexture>osd_progress_left.png</lefttexture>
 		<midtexture>osd_progress_mid.png</midtexture>
 		<righttexture>osd_progress_right.png</righttexture>
-      <visible>yes</visible>
-      <label>#TV.View.Percentage</label>
+		<visible>yes</visible>
+		<label>#TV.View.Percentage</label>
     </control>
 	
     <control>
-      <description>rec logo</description>
-      <type>image</type>
-      <id>39</id>
-      <posX>418</posX>
-      <posY>659</posY>
-      <texture>tv_zaposd_rec.png</texture>
+		<description>rec logo</description>
+		<type>image</type>
+		<id>39</id>
+		<posX>418</posX>
+		<posY>659</posY>
+		<texture>tv_zaposd_rec.png</texture>
     </control>
 	
     <control>
-      <description>On tv NEXT</description>
-      <id>37</id>
-      <type>textbox</type>
-      <width>900</width>
-      <height>37</height>
-      <posX>-2000</posX>
-      <posY>602</posY>
-      <align>left</align>
-      <font>font13</font>
-      <textcolor>FFB2D4F5</textcolor>
+		<description>On tv NEXT</description>
+		<id>37</id>
+		<type>textbox</type>
+		<width>900</width>
+		<height>37</height>
+		<posX>-2000</posX>
+		<posY>602</posY>
+		<align>left</align>
+		<font>font13</font>
+		<textcolor>FFB2D4F5</textcolor>
     </control>
 	
 	

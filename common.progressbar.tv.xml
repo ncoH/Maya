@@ -84,18 +84,29 @@
 	</control>
 
 	<control>
-		<description>Start Time Info</description>
+		<description>Start Time Info 24h</description>
 		<type>label</type>
 		<id>997</id>
 		<posX>235</posX>
 		<posY>675</posY>
 		<label>#currentplaytime</label>
 		<font>font12</font>
-		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|control.isvisible(10)|player.seeking</visible>
+		<visible>[window.isosdvisible|player.paused|player.rewinding|player.forwarding|control.isvisible(10)|player.seeking] + ![string.contains(#time,AM)|string.contains(#time,PM)]</visible>
 	</control>
 
 	<control>
-		<description>End Time Info</description>
+		<description>Start Time Info 12h</description>
+		<type>label</type>
+		<id>997</id>
+		<posX>215</posX>
+		<posY>675</posY>
+		<label>#currentplaytime</label>
+		<font>font12</font>
+		<visible>[window.isosdvisible|player.paused|player.rewinding|player.forwarding|control.isvisible(10)|player.seeking] + [string.contains(#time,AM)|string.contains(#time,PM)]</visible>
+	</control>
+	
+	<control>
+		<description>End Time Info 24h</description>
 		<type>label</type>
 		<id>998</id>
 		<posX>1136</posX>
@@ -103,7 +114,19 @@
 		<label>#duration</label>
 		<align>right</align>
 		<font>font12</font>
-		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|control.isvisible(10)|player.seeking</visible>
+		<visible>[window.isosdvisible|player.paused|player.rewinding|player.forwarding|control.isvisible(10)|player.seeking] + ![string.contains(#time,AM)|string.contains(#time,PM)]</visible>
+	</control>
+	
+	<control>
+		<description>End Time Info 12h</description>
+		<type>label</type>
+		<id>998</id>
+		<posX>1146</posX>
+		<posY>675</posY>
+		<label>#duration</label>
+		<align>right</align>
+		<font>font12</font>
+		<visible>[window.isosdvisible|player.paused|player.rewinding|player.forwarding|control.isvisible(10)|player.seeking] + [string.contains(#time,AM)|string.contains(#time,PM)]</visible>
 	</control>
 
 	<control>
@@ -265,7 +288,7 @@
 	<control>
 		<type>label</type>
 		<id>999</id>
-		<description>Clock</description>
+		<description>Clock 24h</description>
 		<posX>1049</posX>
 		<posY>585</posY>
 		<width>144</width>
@@ -273,7 +296,21 @@
 		<align>left</align>
 		<label>#time</label>
 		<textcolor>ff85cffe</textcolor>
-		<visible>window.isosdvisible+[player.playing|player.paused]+!player.rewinding+!player.forwarding+!player.seeking</visible>
+		<visible>[window.isosdvisible+[player.playing|player.paused]+!player.rewinding+!player.forwarding+!player.seeking] + ![string.contains(#time,AM)|string.contains(#time,PM)]</visible>
+	</control>
+	
+	<control>
+		<type>label</type>
+		<id>999</id>
+		<description>Clock 12h</description>
+		<posX>1020</posX>
+		<posY>610</posY>
+		<width>144</width>
+		<font>Segoe Light20</font>
+		<align>center</align>
+		<label>#time</label>
+		<textcolor>ff85cffe</textcolor>
+		<visible>[window.isosdvisible+[player.playing|player.paused]+!player.rewinding+!player.forwarding+!player.seeking] + [string.contains(#time,AM)|string.contains(#time,PM)]</visible>
 	</control>
 
 </controls>
