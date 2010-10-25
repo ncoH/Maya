@@ -4,60 +4,38 @@
     <defaultcontrol>11</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <define>#header.label:File Explorer</define>
-	<define>#header.background:hover_file explorer.png</define>	
+    <define>#header.background:hover_file explorer.png</define>
     <controls>
 	
-        <import>common.window.title.xml</import>
-		
-        <control>
-            <description>Background</description>
-            <type>image</type>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1366</width>
-            <height>768</height>
-            <texture>background.png</texture>
-			<visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>			
-        </control>
-		
-		<control>
-			<description>Fanart Background</description>
-			<type>image</type>
-			<id>0</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1366</width>
-			<height>768</height>
-			<texture>#header.background</texture>	
-			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
-		</control>
-
-		<control>
-			<description>Fanart Overlay</description>
-			<type>image</type>
-			<id>0</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1366</width>
-			<height>768</height>
-			<texture>basichome_fanart_overlay.png</texture>
-			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
-		</control>
-		
+        <import>common.window.title.xml</import>	
         <import>common.time.xml</import>
 		
         <control>
             <id>1</id>
-            <description>listcontrol background</description>
+            <description>listcontrol background left</description>
             <type>image</type>
             <posX>55</posX>
             <posY>185</posY>
-            <width>1259</width>
-            <height>560</height>
+            <width>610</width>
+            <height>482</height>
             <texture>listcontrol_bg.png</texture>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
+        <control>
+            <id>1</id>
+            <description>listcontrol background right</description>
+            <type>image</type>
+            <posX>704</posX>
+            <posY>185</posY>
+            <width>610</width>
+            <height>482</height>
+            <texture>listcontrol_bg.png</texture>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+		
         <control>
             <id>3</id>
             <description>file listcontrol left</description>
@@ -72,8 +50,23 @@
             <height>420</height>
             <animation delay="50" effect="Fade" time="250">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
-            <spinPosX>650</spinPosX>
+            <spinPosX>640</spinPosX>
+			<spinPosY>688</spinPosY>			
         </control>
+
+	<control>
+		<description>listcontrol background info left</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>55</posX>
+        <posY>678</posY>
+		<width>610</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
         <control>
             <id>4</id>
             <description>file listcontrol right</description>
@@ -88,16 +81,31 @@
             <height>420</height>
             <animation delay="50" effect="Fade" time="250">WindowOpen</animation>
             <animation effect="Fade" time="200">WindowClose</animation>
-			<spinPosX>1300</spinPosX>
+            <spinPosX>1292</spinPosX>
+			<spinPosY>688</spinPosY>			
         </control>
+
+	<control>
+		<description>listcontrol background info right</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>704</posX>
+        <posY>678</posY>
+		<width>610</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
         <control>
             <id>6</id>
             <description>label left</description>
             <type>label</type>
-            <posX>73</posX>
-            <posY>615</posY>
-            <font>font10</font>
-            <textcolor>ffffffff</textcolor>
+            <posX>85</posX>
+            <posY>555</posY>
+            <font>font11</font>
+            <textcolor>ff6aa5cb</textcolor>
             <align>LEFT</align>
             <label>Test</label>
         </control>
@@ -105,10 +113,10 @@
             <id>7</id>
             <description>label right</description>
             <type>label</type>
-            <posX>721</posX>
-            <posY>615</posY>
-            <font>font10</font>
-            <textcolor>ffffffff</textcolor>
+            <posX>735</posX>
+            <posY>555</posY>
+            <font>font11</font>
+            <textcolor>ff6aa5cb</textcolor>
             <align>LEFT</align>
             <label>Test</label>
         </control>
@@ -116,7 +124,7 @@
             <id>9</id>
             <description>labeldir left</description>
             <type>label</type>
-            <posX>55</posX>
+            <posX>75</posX>
             <posY>160</posY>
             <font>Segoe Light12</font>
             <textcolor>ffffffff</textcolor>
@@ -129,7 +137,7 @@
             <id>10</id>
             <description>labeldir right</description>
             <type>label</type>
-            <posX>704</posX>
+            <posX>712</posX>
             <posY>160</posY>
             <font>Segoe Light12</font>
             <textcolor>ffffffff</textcolor>

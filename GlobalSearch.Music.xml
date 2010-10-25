@@ -4,12 +4,10 @@
     <defaultcontrol>2</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <define>#header.label:Global Search</define>
-    <define>#header.image:music_logo.png</define>
 	<define>#header.background:hover_search music.png</define>
     <controls>
 
         <import>common.window.music.xml</import>
-        <import>common.facade.music.xml</import>
 		
         <control>
             <description>Background</description>
@@ -319,7 +317,8 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
-		
+
+        <import>common.facade.music.xml</import>		
         <import>common.overlay.xml</import>
     </controls>
 </window>
