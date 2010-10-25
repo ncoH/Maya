@@ -5,7 +5,10 @@
 		<type>image</type>
 		<description>Dummy image</description>
 		<id>105</id>
-		<posX>-2000</posX>
+        <posX>2000</posX>
+        <posY>2000</posY>
+        <width>10</width>
+        <height>10</height>
 		<texture>osd_bg_top.png</texture>
 	</control>
 	<control>

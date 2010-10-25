@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
   <controls>
- 	<control>
-		<type>image</type>
+	<control>
+		<type>label</type>
 		<id>119</id>
 		<posX>-2000</posX>
 		<posY>-2000</posY>
-		<texture>-</texture>
+		<label>-</label>
 	</control>
     <control>
       <description>GROUP: RecentlyAdded Movies</description>

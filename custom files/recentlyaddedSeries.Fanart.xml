@@ -2,11 +2,11 @@
 <window>
   <controls>
 	<control>
-		<type>image</type>
+		<type>label</type>
 		<id>123</id>
 		<posX>-2000</posX>
 		<posY>-2000</posY>
-		<texture>-</texture>
+		<label>-</label>
 	</control>
     <control>
       <description>GROUP: RecentlyAdded Series</description>

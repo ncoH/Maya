@@ -2,11 +2,11 @@
 <window>
   <controls>
 	<control>
-		<type>image</type>
+		<type>label</type>
 		<id>118</id>
 		<posX>-2000</posX>
 		<posY>-2000</posY>
-		<texture>-</texture>
+		<label>-</label>
 	</control>
     <control>
       <description>GROUP: RecentlyAdded Recordings</description>
@@ -36,16 +36,43 @@
         <type>fadelabel</type>
         <id>0</id>
         <posX>995</posX>
+        <posY>225</posY>
+        <width>258</width>
+        <label>#fanarthandler.tvrecordings.latest1.title</label>
+        <font>font14</font>
+        <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>30</scrollStartDelaySec>
+		<visible>!control.hasthumb(9999)</visible>
+      </control>
+      <control>
+        <description>Recording 1 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>995</posX>
         <posY>345</posY>
         <width>258</width>
         <label>#fanarthandler.tvrecordings.latest1.title</label>
         <font>font14</font>
         <textcolor>85cfff</textcolor>
-		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<scrollStartDelaySec>30</scrollStartDelaySec>
+		<visible>control.hasthumb(9999)</visible>
       </control>
       <control>
         <description>Recording 1 runtime</description>
-        <type>label</type>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>252</posY>
+        <width>275</width>
+        <label>#fanarthandler.tvrecordings.latest1.genre</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>30</scrollStartDelaySec>
+		<visible>!control.hasthumb(9999)</visible>
+      </control>
+      <control>
+        <description>Recording 1 runtime</description>
+        <type>fadelabel</type>
         <id>0</id>
         <posX>995</posX>
         <posY>372</posY>
@@ -53,29 +80,19 @@
         <label>#fanarthandler.tvrecordings.latest1.genre</label>
         <font>font12</font>
         <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>30</scrollStartDelaySec>
+		<visible>control.hasthumb(9999)</visible>
       </control>
       <control>
         <description>Recording 1 thumb/fanart</description>
         <type>image</type>
-        <id>20</id>
+        <id>9999</id>
         <posX>995</posX>
         <posY>192</posY>
         <width>268</width>
         <height>151</height>
         <keepaspectratio>true</keepaspectratio>
         <texture>#fanarthandler.tvrecordings.latest1.thumb</texture>
-      </control>
-      <control>
-        <description>Recording 1 thumb/fanart</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>995</posX>
-        <posY>192</posY>
-        <width>268</width>
-        <height>151</height>
-        <keepaspectratio>true</keepaspectratio>
-        <texture>defaultTVBig.png</texture>
-		<visible>!control.hasthumb(20)</visible>
       </control>
     </control>
     <control>
@@ -95,16 +112,43 @@
         <type>fadelabel</type>
         <id>0</id>
         <posX>995</posX>
+        <posY>275</posY>
+        <width>258</width>
+        <label>#fanarthandler.tvrecordings.latest2.title</label>
+        <font>font14</font>
+        <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>30</scrollStartDelaySec>
+		<visible>!control.hasthumb(9999)</visible>
+      </control>
+      <control>
+        <description>Recording 2 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>995</posX>
         <posY>395</posY>
         <width>258</width>
         <label>#fanarthandler.tvrecordings.latest2.title</label>
         <font>font14</font>
         <textcolor>85cfff</textcolor>
-		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<scrollStartDelaySec>30</scrollStartDelaySec>
+		<visible>control.hasthumb(9999)</visible>
       </control>
       <control>
         <description>Recording 2 runtime</description>
-        <type>label</type>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>302</posY>
+        <width>275</width>
+        <label>#fanarthandler.tvrecordings.latest2.genre</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>30</scrollStartDelaySec>
+		<visible>!control.hasthumb(9999)</visible>
+      </control>
+      <control>
+        <description>Recording 2 runtime</description>
+        <type>fadelabel</type>
         <id>0</id>
         <posX>995</posX>
         <posY>422</posY>
@@ -112,6 +156,8 @@
         <label>#fanarthandler.tvrecordings.latest2.genre</label>
         <font>font12</font>
         <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>30</scrollStartDelaySec>
+		<visible>control.hasthumb(9999)</visible>
       </control>
     </control>
     <control>
@@ -130,16 +176,42 @@
         <type>fadelabel</type>
         <id>0</id>
         <posX>995</posX>
+        <posY>325</posY>
+        <width>258</width>
+        <label>#fanarthandler.tvrecordings.latest3.title</label>
+        <font>font14</font>
+        <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>30</scrollStartDelaySec>
+		<visible>!control.hasthumb(9999)</visible>
+      </control>
+      <control>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>995</posX>
         <posY>445</posY>
         <width>258</width>
         <label>#fanarthandler.tvrecordings.latest3.title</label>
         <font>font14</font>
         <textcolor>85cfff</textcolor>
-		<scrollStartDelaySec>10</scrollStartDelaySec>
+		<scrollStartDelaySec>30</scrollStartDelaySec>
+		<visible>control.hasthumb(9999)</visible>
       </control>
       <control>
         <description>Recording 3 runtime</description>
-        <type>label</type>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>995</posX>
+        <posY>352</posY>
+        <width>275</width>
+        <label>#fanarthandler.tvrecordings.latest3.genre</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>30</scrollStartDelaySec>
+		<visible>!control.hasthumb(9999)</visible>
+      </control>
+      <control>
+        <description>Recording 3 runtime</description>
+        <type>fadelabel</type>
         <id>0</id>
         <posX>995</posX>
         <posY>472</posY>
@@ -147,6 +219,8 @@
         <label>#fanarthandler.tvrecordings.latest3.genre</label>
         <font>font12</font>
         <textcolor>ffffff</textcolor>
+		<scrollStartDelaySec>30</scrollStartDelaySec>
+		<visible>control.hasthumb(9999)</visible>
       </control>
     </control>
   </controls>
