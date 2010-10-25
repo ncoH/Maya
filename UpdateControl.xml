@@ -38,6 +38,7 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>1</id>
             <description>listcontrol background info</description>
@@ -119,6 +120,7 @@
 				<ondown>3</ondown>
                 <width>279</width>
                 <height>49</height>
+				<font>font11</font>						
                 <textureFocus>hiddenmenu_item_selected.png</textureFocus>
                 <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
                 <textXOff>25</textXOff>
@@ -134,6 +136,7 @@
 				<ondown>4</ondown>
                 <width>279</width>
                 <height>49</height>
+				<font>font11</font>						
                 <textureFocus>hiddenmenu_item_selected.png</textureFocus>
                 <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
                 <textXOff>25</textXOff>
@@ -149,6 +152,7 @@
 				<ondown>5</ondown>
                 <width>279</width>
                 <height>49</height>
+				<font>font11</font>						
                 <textureFocus>hiddenmenu_item_selected.png</textureFocus>
                 <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
                 <textXOff>25</textXOff>
@@ -165,6 +169,7 @@
 				<ondown>6</ondown>
                 <width>279</width>
                 <height>49</height>
+				<font>font11</font>						
 				<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
 				<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
 				<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
@@ -183,6 +188,7 @@
 				<ondown>7</ondown>
                 <width>279</width>
                 <height>49</height>
+				<font>font11</font>						
                 <textureFocus>hiddenmenu_item_selected.png</textureFocus>
                 <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
                 <textXOff>25</textXOff>
@@ -199,6 +205,7 @@
 				<ondown>2</ondown>
                 <width>279</width>
                 <height>49</height>
+				<font>font11</font>				
                 <textureFocus>hiddenmenu_item_selected.png</textureFocus>
                 <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
                 <textXOff>25</textXOff>
@@ -266,8 +273,10 @@
 			<textXOff>22</textXOff>
 			<itemWidth>26</itemWidth>
 			<itemHeight>26</itemHeight>
-			<IconXOff>10</IconXOff>
-			<IconYOff>8</IconYOff>			
+			<IconXOff>20</IconXOff>
+			<IconYOff>12</IconYOff>	
+			<PinIconXOff>8</PinIconXOff>
+			<PinIconYOff>14</PinIconYOff>			
 			<dimColor>ffffffff</dimColor>			
 		</control>
 
@@ -322,7 +331,7 @@
             <posY>415</posY>
             <width>385</width>
             <font>font16</font>
-            <textcolor>ffffffff</textcolor>
+			<textcolor>6aa5cb</textcolor>
             <label>#UpdateControl.UpdateSize</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>

@@ -108,8 +108,8 @@
             <posX>620</posX>
             <posY>212</posY>
             <width>120</width>
-            <font>font12</font>
-            <textcolor>90ffffff</textcolor>
+            <font>font11</font>
+            <textcolor>ff6aa5cb</textcolor>
             <label>Directory:</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -120,7 +120,7 @@
             <type>label</type>
             <posX>745</posX>
             <posY>212</posY>
-            <font>font12</font>
+            <font>font11</font>
             <label>#MediaTip.MusicDirectoryName (#MediaTip.MusicDirectorySize)</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -132,8 +132,8 @@
             <posX>620</posX>
             <posY>235</posY>
             <width>120</width>
-            <font>font12</font>
-            <textcolor>90ffffff</textcolor>
+            <font>font11</font>
+            <textcolor>ff6aa5cb</textcolor>
             <label>Files:</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -144,7 +144,7 @@
             <type>label</type>
             <posX>745</posX>
             <posY>235</posY>
-            <font>font12</font>
+            <font>font11</font>
             <label>#MediaTip.MusicDirectoryFileCount</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -180,8 +180,8 @@
             <posX>620</posX>
             <posY>297</posY>
             <width>120</width>
-            <font>font12</font>
-            <textcolor>90ffffff</textcolor>
+            <font>font11</font>
+            <textcolor>ff6aa5cb</textcolor>
             <label>Directory:</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -192,7 +192,7 @@
             <type>label</type>
             <posX>745</posX>
             <posY>297</posY>
-            <font>font12</font>
+            <font>font11</font>
             <label>#MediaTip.VideoDirectoryName (#MediaTip.VideoDirectorySize)</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -204,8 +204,8 @@
             <posX>620</posX>
             <posY>320</posY>
             <width>120</width>
-            <font>font12</font>
-            <textcolor>90ffffff</textcolor>
+            <font>font11</font>
+            <textcolor>ff6aa5cb</textcolor>
             <label>Files:</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -216,7 +216,7 @@
             <type>label</type>
             <posX>745</posX>
             <posY>320</posY>
-            <font>font12</font>
+            <font>font11</font>
             <label>#MediaTip.VideoDirectoryFileCount</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -252,8 +252,8 @@
             <posX>620</posX>
             <posY>382</posY>
             <width>120</width>
-            <font>font12</font>
-            <textcolor>90ffffff</textcolor>
+            <font>font11</font>
+            <textcolor>ff6aa5cb</textcolor>
             <label>Directory:</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -264,7 +264,7 @@
             <type>label</type>
             <posX>745</posX>
             <posY>382</posY>
-            <font>font12</font>
+            <font>font11</font>
             <label>#MediaTip.PictureDirectoryName (#MediaTip.PictureDirectorySize)</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -276,8 +276,8 @@
             <posX>620</posX>
             <posY>405</posY>
             <width>120</width>
-            <font>font12</font>
-            <textcolor>90ffffff</textcolor>
+            <font>font11</font>
+            <textcolor>ff6aa5cb</textcolor>
             <label>Files:</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -288,7 +288,7 @@
             <type>label</type>
             <posX>745</posX>
             <posY>405</posY>
-            <font>font12</font>
+            <font>font11</font>
             <label>#MediaTip.PictureDirectoryFileCount</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -327,8 +327,8 @@
             <posX>620</posX>
             <posY>467</posY>
             <width>120</width>
-            <font>font12</font>
-            <textcolor>90ffffff</textcolor>
+            <font>font11</font>
+            <textcolor>ff6aa5cb</textcolor>
             <label>Directory:</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -340,7 +340,7 @@
             <visible>!string.equals(#MediaTip.AdditionalDirectory0Name,)</visible>
             <posX>745</posX>
             <posY>467</posY>
-            <font>font12</font>
+            <font>font11</font>
             <label>#MediaTip.AdditionalDirectory0Name (#MediaTip.AdditionalDirectory0Size)</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -353,8 +353,8 @@
             <posX>620</posX>
             <posY>490</posY>
             <width>120</width>
-            <font>font12</font>
-            <textcolor>90ffffff</textcolor>
+            <font>font11</font>
+            <textcolor>ff6aa5cb</textcolor>
             <label>Files:</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -366,7 +366,7 @@
             <visible>!string.equals(#MediaTip.AdditionalDirectory0FileCount,)</visible>
             <posX>745</posX>
             <posY>490</posY>
-            <font>font12</font>
+            <font>font11</font>
             <label>#MediaTip.AdditionalDirectory0FileCount</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -405,8 +405,8 @@
             <posX>620</posX>
             <posY>552</posY>
             <width>120</width>
-            <font>font12</font>
-            <textcolor>90ffffff</textcolor>
+            <font>font11</font>
+            <textcolor>ff6aa5cb</textcolor>
             <label>Directory:</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -418,7 +418,7 @@
             <visible>!string.equals(#MediaTip.AdditionalDirectory1Name,)</visible>
             <posX>745</posX>
             <posY>552</posY>
-            <font>font12</font>
+            <font>font11</font>
             <label>#MediaTip.AdditionalDirectory1Name (#MediaTip.AdditionalDirectory1Size)</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -431,8 +431,8 @@
             <posX>620</posX>
             <posY>575</posY>
             <width>120</width>
-            <font>font12</font>
-            <textcolor>90ffffff</textcolor>
+            <font>font11</font>
+            <textcolor>ff6aa5cb</textcolor>
             <label>Files:</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
@@ -444,7 +444,7 @@
             <visible>!string.equals(#MediaTip.AdditionalDirectory1FileCount,)</visible>
             <posX>745</posX>
             <posY>575</posY>
-            <font>font12</font>
+            <font>font11</font>
             <label>#MediaTip.AdditionalDirectory1FileCount</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
