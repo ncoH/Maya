@@ -10,8 +10,8 @@
             <width>1366</width>
             <height>768</height>
             <texture>#TVSeries.Fanart.1</texture>
-            <animation effect="fade" time="200">visible</animation>
-            <animation effect="fade" time="200" delay="00">hidden</animation>
+			<animation effect="fade" time="300">visible</animation>
+			<animation effect="fade" time="300" delay="300">hidden</animation>
 			<visible>string.contains(#maya.fanart.TVSeries,yes)</visible>
         </control>
         <control>
@@ -23,8 +23,8 @@
             <width>1366</width>
             <height>768</height>
             <texture>#TVSeries.Fanart.2</texture>
-            <animation effect="fade" time="200">visible</animation>
-            <animation effect="fade" time="200" delay="200">hidden</animation>
+			<animation effect="fade" time="300">visible</animation>
+			<animation effect="fade" time="300" delay="300">hidden</animation>
 			<visible>string.contains(#maya.fanart.TVSeries,yes)</visible>
         </control>   
 	
