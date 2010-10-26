@@ -6,11 +6,9 @@
 	<define>#header.label</define>
 	<define>#header.image</define>
 	<define>#header.Extension.label:#header.label</define>
-	<define>#useSelectedFanart:Yes</define>
 	<define>#header.background:hover_OnlineVideos.png</define>	
 <controls>
 
-<!--Dummy label-->
 
         <control>
             <description>Background</description>
@@ -19,7 +17,7 @@
             <width>1366</width>
             <height>768</height>
             <texture>background.png</texture>
-			<visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>			
+			<visible>[!facadeview.smallicons + !facadeview.largeicons]+!Control.IsVisible(51)+!string.contains(#maya.backgroundImage,yes)</visible>			
         </control>
 	
 	<control>
@@ -41,7 +39,7 @@
 			<width>1366</width>
 			<height>768</height>
 			<texture>#header.background</texture>	
-			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
 		</control>
 
 		<control>
@@ -53,7 +51,7 @@
 			<width>1366</width>
 			<height>768</height>
 			<texture>basichome_fanart_overlay.png</texture>
-			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+			<visible>string.contains(#maya.backgroundImage,yes)</visible>
 		</control>
 		
         <import>common.time.xml</import>
@@ -94,9 +92,37 @@
 		<posX>1216</posX>
 		<posY>695</posY>
 		<align>right</align>
-		<label>#currentmodule: #itemcount</label>
+		<label>#OnlineVideos.Translation.Categories.Label: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>facadeview.list+!control.isvisible(51)</visible>
+		<visible>facadeview.list+!control.isvisible(51)+string.equals(#OnlineVideos.state, categories)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1216</posX>
+		<posY>695</posY>
+		<align>right</align>
+		<label>#OnlineVideos.Translation.Sites.Label: #itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>facadeview.list+!control.isvisible(51)+string.equals(#OnlineVideos.state, sites)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1216</posX>
+		<posY>695</posY>
+		<align>right</align>
+		<label>#OnlineVideos.Translation.Videos.Label: #itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>facadeview.list+!control.isvisible(51)+string.equals(#OnlineVideos.state, videos)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -141,10 +167,10 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>#currentmodule</label>
+		<label>Online Videos</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>[!facadeview.smallicons + !facadeview.largeicons] | Control.IsVisible(51)</visible>
+		<visible>[!facadeview.smallicons + !facadeview.largeicons]+!Control.IsVisible(51)</visible>
 		<valign>middle</valign>
 	</control>
 	<control>
@@ -156,7 +182,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>#currentmodule</label>
+		<label>Online Videos</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>[facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(51)</visible>
@@ -190,41 +216,16 @@
 	<control>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
-		<id>0</id>
-		<type>image</type>
-		<posX>134</posX>
-		<posY>213</posY>
-		<width>265</width>
-		<height>265</height>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons]+string.contains(#selectedthumb,OnlineVideos\Icons)</visible>
-		<texture>DefaultMyradioBig.png</texture>
-	</control>
-	
-	<control>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
 		<id>500</id>
 		<type>image</type>
-		<posX>134</posX>
-		<posY>213</posY>
-		<width>265</width>
-		<height>265</height>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons]+string.contains(#selectedthumb,OnlineVideos\Icons)</visible>
+		<posX>91</posX>
+        <posY>208</posY>
+        <width>365</width>
+	    <height>203</height>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons]</visible>
 		<texture>Logos\#selecteditem.png</texture>
 	</control>
 
-	<control>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<type>image</type>
-		<id>1</id>
-		<posX>92</posX>
-		<posY>169</posY>
-		<width>350</width>
-		<height>350</height>
-		<texture>blackborders_music.png</texture>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.equals(#selectedthumb,)+string.contains(#selectedthumb,OnlineVideos\Icons)</visible>
-	</control>
 	
 	<control>
 		<description>Thumb</description>
@@ -235,7 +236,7 @@
         <width>365</width>
 	    <height>203</height>
 		<texture>#selectedthumb</texture>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.contains(#header.image,Apple Trailers.png)+!string.contains(#selectedthumb,OnlineVideos\Icons)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.equals(#OnlineVideos.state,sites)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -249,7 +250,21 @@
 	    <width>457</width>
 	    <height>295</height>
 		<texture>blackborders_recordings.png</texture>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.equals(#selectedthumb,)+!string.contains(#header.image,Apple Trailers.png)+!string.contains(#selectedthumb,OnlineVideos\Icons)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.equals(#selectedthumb,)+control.hasthumb(500)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Overlay</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>44</posX>
+	    <posY>161</posY>
+	    <width>457</width>
+	    <height>295</height>
+		<texture>blackborders_recordings.png</texture>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.equals(#selectedthumb,)+!string.contains(#selectedthumb,OnlineVideos\Icons)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -258,25 +273,12 @@
 		<description>Category Logo</description>
 		<type>image</type>
 		<id>0</id>
-        <posX>555</posX>
-        <posY>255</posY>
+        <posX>548</posX>
+        <posY>240</posY>
 		<width>105</width>
 		<height>35</height>
 		<texture>#header.image</texture>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.contains(#header.image,Apple Trailers.png)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-	<control>
-		<type>label</type>
-		<description>Category</description>
-		<id>0</id>
-			<posX>555</posX>
-			<posY>180</posY>
-			<font>Segoe Light18</font>
-			<textcolor>85cffe</textcolor>
-		<label>#header.label</label>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.contains(#header.image,Apple Trailers.png)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.equals(#selecteditem,..)+!string.contains(#header.image,Apple Trailers.png)+!string.equals(#OnlineVideos.state, details)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -284,12 +286,11 @@
 		<type>label</type>
 		<description>Current video length</description>
 		<id>5001</id>
-			<posX>555</posX>
-			<posY>215</posY>
-			<textcolor>85cffe</textcolor>
-			<font>Segoe Light18</font>
+		<posX>555</posX>
+		<posY>191</posY>
+		<font>Segoe Light18</font>
 		<label>#OnlineVideos.length</label>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.contains(#header.image,Apple Trailers.png)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons]</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -297,13 +298,27 @@
 		<type>textboxscrollup</type>
 		<description>Description</description>
 		<id>0</id>
-			<posX>556</posX>
-			<posY>291</posY>
-			<width>680</width>
-			<height>110</height>
+		<posX>556</posX>
+		<posY>191</posY>
+		<width>680</width>
+		<height>110</height>
 		<seperator>----------------------------------------------------------------------------------------</seperator>
 		<label>#OnlineVideos.desc</label>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.contains(#header.image,Apple Trailers.png)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons]+string.equals(#OnlineVideos.state,sites)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+	<control>
+		<type>textboxscrollup</type>
+		<description>Description</description>
+		<id>0</id>
+		<posX>556</posX>
+		<posY>281</posY>
+		<width>680</width>
+		<height>110</height>
+		<seperator>----------------------------------------------------------------------------------------</seperator>
+		<label>#OnlineVideos.desc</label>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.equals(#OnlineVideos.state,sites)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -313,7 +328,75 @@
 	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	                -->
 	
+	<control>
+		<description>Thumb</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>91</posX>
+        <posY>243</posY>
+        <width>365</width>
+	    <height>205</height>
+		<texture>#selectedthumb</texture>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#OnlineVideos.state,sites)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
 	
+	<control>
+		<description>Overlay</description>
+		<type>image</type>
+		<id>0</id>
+		<posX>44</posX>
+	    <posY>198</posY>
+	    <width>457</width>
+	    <height>295</height>
+		<texture>blackborders_recordings.png</texture>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#selectedthumb,)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<type>label</type>
+		<description>Current video length</description>
+		<id>5001</id>
+		<posX>482</posX>
+		<posY>486</posY>
+		<font>Segoe Light18</font>
+		<label>#OnlineVideos.length</label>
+		<visible>[facadeview.smallicons|facadeview.largeicons]</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+	
+	<control>
+		<type>textboxscrollup</type>
+		<description>Description</description>
+		<id>0</id>
+		<posX>482</posX>
+		<posY>556</posY>
+		<width>680</width>
+		<height>110</height>
+		<seperator>----------------------------------------------------------------------------------------</seperator>
+		<label>#OnlineVideos.desc</label>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#OnlineVideos.state,sites)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>482</posX>
+		<posY>699</posY>
+		<align>left</align>
+		<label>#OnlineVideos.Translation.Videos.Label: #itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>[facadeview.smallicons|facadeview.largeicons]+!control.isvisible(51)+string.equals(#OnlineVideos.state, videos)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
 	                
 	                <!--
 	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

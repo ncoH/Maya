@@ -1,123 +1,173 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-  <controls>    
-	<control>
-		<id>23</id>
+  <controls> 
+ 	<control>
+		<description>listcontrol background</description>
 		<type>image</type>
-		<posX>133</posX>
-		<posY>208</posY>
-		<width>266</width>
-		<height>380</height>
-		<texture>#OnlineVideos.movieposter</texture>
-		<visible>no</visible>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>173</posY>
+		<width>725</width>
+		<height>561</height>
+		<texture>listcontrol_bg_recordings.png</texture>
+        <visible>string.equals(#OnlineVideos.state, details)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
-	
 	<control>
 		<type>image</type>
-		<id>24</id>
+		<description>movie border</description>
+		<id>23</id>
 		<posX>87</posX>
 		<posY>161</posY>
 		<width>357</width>
 		<height>472</height>
 		<texture>blackborders_video.png</texture>
-		<visible>no</visible>
-	</control>
-	
-	
-	<control>
-		<description>Selected item Label</description>
-		<type>fadelabel</type>
-		<id>1</id>
-		<posX>555</posX>
-		<posY>142</posY>
-		<width>700</width>
-		<label>#header.Extension.label</label>
-		<font>Segoe Light22</font>
-		<visible>control.isvisible(53)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-		<valign>middle</valign>
-	</control>
-	
-	
-	<control>
-		<description>listcontrol</description>
-		<type>listcontrol</type>
-		<id>51</id>
-		<onleft>51</onleft>
-		<onright>51</onright>
-			<posX>979</posX>
-			<posY>183</posY>
-			<height>490</height>
-			<width>299</width>
-			<textXOff>14</textXOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-		<visible>no</visible>
-	</control>
-	
-<control>
-         <type>label</type>
-         <description>Runtime txt</description>
-         <id>54</id>
-         <posX>-2000</posX>
-         <posY>230</posY>
-         <label>172</label>
-         <visible>no</visible>
-         <textcolor>ffb2d4f5</textcolor>
+		<visible>string.equals(#OnlineVideos.state, details)</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
     </control>
-
     <control>
-      <type>label</type>
-      <description>year value</description>
-      <id>55</id>
+		<type>image</type>
+		<description>movie poster</description>
+		<id>24</id>
+		<posX>133</posX>
+		<posY>208</posY>
+		<width>266</width>
+		<height>380</height>
+		<visible>string.equals(#OnlineVideos.state, details)</visible>
+		<texture>#OnlineVideos.Details.Poster</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+		<type>listcontrol</type>
+		<description>videolist</description>      
+		<id>51</id>
+		<posX>524</posX>
+		<posY>583</posY>
+		<height>152</height>
+		<width>724</width>
+		<spinPosX>560</spinPosX>
+		<spinPosY>692</spinPosY>
+		<spinAlign>left</spinAlign>
+		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+		<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+		<spinCanFocus>no</spinCanFocus>
+		<onright>51</onright>
+		<onleft>51</onleft>
+		<onup>51</onup>
+		<ondown>51</ondown>
+		<visible>string.equals(#OnlineVideos.state, details)</visible>
+    </control>
+    <control>
+		<type>label</type>
+		<description>Cast txt</description>
+		<id>52</id>
+		<posX>555</posX>
+		<posY>340</posY>
+		<width>365</width>	
+		<textcolor>85cffe</textcolor>
+		<label>#OnlineVideos.Translation.Actors.Label</label>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+    </control>
+    <control>
+		<type>fadelabel</type>
+		<description>cast value</description>
+		<id>53</id>
+		<posX>695</posX>
+		<posY>341</posY>
+		<width>550</width>
+		<align>left</align>
+		<textcolor>ffffff</textcolor>
+		<label>#OnlineVideos.Details.Actors</label>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+    </control>    
+    <control>
+		<type>label</type>
+		<description>Directors txt</description>
+		<id>54</id>
+		<posX>555</posX>
+		<posY>314</posY>
+		<width>365</width>
+		<textcolor>85cffe</textcolor>
+		<label>#OnlineVideos.Translation.Directors.Label</label>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+    </control>    
+    <control>
+		<type>fadelabel</type>
+		<description>Directors value</description>
+		<id>55</id>
+		<posX>695</posX>
+		<posY>314</posY>
+		<width>550</width>
+		<align>left</align>
+		<textcolor>ffffff</textcolor>
+		<label>#OnlineVideos.Details.Directors</label>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+    </control>    
+    <control>
+		<type>label</type>
+		<description>Release date txt</description>
+		<id>56</id>
 		<posX>555</posX>
 		<posY>195</posY>
 		<width>400</width>
 		<font>Segoe Light18</font>
 		<textcolor>85cffe</textcolor>
-      <label>#OnlineVideos.releasedate</label>
-      <visible>no</visible>
+		<label>#OnlineVideos.Translation.DateOfRelease.Label:</label>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
     </control>
-
     <control>
-      <type>fadelabel</type>
-      <description>genre value</description>
-      <id>57</id>
+		<type>label</type>
+		<description>Realease date value</description>
+		<id>57</id>
+		<posX>955</posX>
+		<posY>195</posY>
+		<width>400</width>
+		<align>left</align>
+		<font>Segoe Light18</font>
+		<textcolor>ffffff</textcolor>
+		<align>right</align>
+		<label>#OnlineVideos.Details.ReleaseDate</label>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+    </control>
+    <control>
+		<type>label</type>
+		<description>Genre txt</description>
+		<id>58</id>
 		<posX>555</posX>
 		<posY>230</posY>
 		<width>400</width>
 		<font>Segoe Light18</font>
 		<textcolor>85cffe</textcolor>
-      <label>#OnlineVideos.genre</label>
-      <visible>no</visible>
-    </control>    
-
-    <control>
-      <type>textboxscrollup</type>
-      <description>Plot value</description>
-      <id>59</id>
-		<posX>555</posX>
-		<posY>330</posY>
-		<width>400</width>
-		<height>224</height>
-      <visible>no</visible>
-		<seperator>-----------------------------------------------------------------------------------</seperator>
-      <label>#OnlineVideos.trailerdesc</label>
-    </control>    
-	
-    <control>
-      <type>textbox</type>
-      <description>cast value</description>
-      <id>53</id>
-		<posX>555</posX>
-		<posY>565</posY>
-		<width>365</width>
-		<font>font11</font>
-		<textcolor>85cffe</textcolor>
-      <label>#OnlineVideos.cast</label>
-      <visible>no</visible>
+		<label>#OnlineVideos.Translation.Genre.Label:</label>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
     </control>
-	
+    <control>
+		<type>fadelabel</type>
+		<description>genre value</description>
+		<id>59</id>
+		<posX>655</posX>
+		<posY>230</posY>
+		<width>550</width>
+		<font>Segoe Light18</font>
+		<align>left</align>
+		<textcolor>ffffff</textcolor>
+		<label>#OnlineVideos.Details.Genres</label>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+    </control>
+    <control>
+		<type>textboxscrollup</type>
+		<description>Plot value</description>
+		<id>61</id>
+		<posX>556</posX>
+		<posY>394</posY>
+		<width>680</width>
+		<height>160</height>
+		<textcolor>ffFFFFFF</textcolor>
+		<visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+		<label>#OnlineVideos.Details.Synopsis</label>
+    </control>    
   </controls>
 </window>
