@@ -2,6 +2,21 @@
 <window>
   <controls> 
  	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>0</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>Online Videos</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<visible>string.equals(#OnlineVideos.state, details)</visible>
+		<valign>middle</valign>
+	</control>
+ 	<control>
 		<description>listcontrol background</description>
 		<type>image</type>
 		<id>1</id>
