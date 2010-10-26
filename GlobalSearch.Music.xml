@@ -7,8 +7,6 @@
 	<define>#header.background:hover_search music.png</define>
     <controls>
 
-        <import>common.window.music.xml</import>
-		
         <control>
             <description>Background</description>
             <type>image</type>
@@ -87,6 +85,52 @@
         </control>
 
 	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>554</posX>
+		<posY>142</posY>
+		<width>665</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light22</font>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+!control.isvisible(53)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1216</posX>
+		<posY>690</posY>
+		<align>right</align>
+		<label>#currentmodule: #itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+	
+        <control>
+            <id>0</id>
+            <type>label</type>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>62</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#SkinTranslation.Translations.global.search.musicsearch.Label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+            <valign>middle</valign>
+        </control>
+	
+        <import>common.time.xml</import>
+		
+	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
 		<defaultcontrol>2</defaultcontrol>
@@ -151,7 +195,7 @@
                         <type>button</type>
                         <onleft>50</onleft>
                         <onright>50</onright>
-                        <onup>9</onup>
+                        <onup>10</onup>
                         <ondown>7</ondown>
                         <width>279</width>
                         <height>49</height>
@@ -257,7 +301,7 @@
                         <onleft>50</onleft>
                         <onright>50</onright>
                         <onup>8</onup>
-                        <ondown>2</ondown>
+                        <ondown>10</ondown>
                         <width>279</width>
                         <height>49</height>
                         <textureFocus>hiddenmenu_item_selected.png</textureFocus>
@@ -266,9 +310,30 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+                    <control>
+                        <id>10</id>
+                        <description>Lyrics</description>
+                        <type>button</type>
+                        <onleft>11</onleft>
+                        <onright>11</onright>
+                        <onup>9</onup>
+                        <ondown>2</ondown>
+                        <visible>plugin.isenabled(My Lyrics)</visible>
+                        <width>279</width>
+                        <height>49</height>
+                        <hyperlink>90478</hyperlink>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label>#SkinTranslation.Translations.mylyrics.Label</label>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>					
                 </control>
             </control>
         </control>
+		
+        <import>common.facade.music.xml</import>	
+		
         <control>
             <id>1</id>
             <type>image</type>
@@ -279,46 +344,49 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
-        <control>
-            <id>0</id>
-            <type>image</type>
-            <visible>facadeview.list+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
-            <posX>134</posX>
-            <posY>213</posY>
-            <width>265</width>
-            <height>265</height>
-            <texture>DefaultMyradioBig.png</texture>
-            <animation effect="Fade" time="100">WindowOpen</animation>
-            <animation effect="Fade" time="100">WindowClose</animation>
-        </control>
-        <control>
-            <id>500</id>
-            <description>Cover Art</description>
-            <type>image</type>
-            <visible>facadeview.list+Control.IsVisible(50)+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
-            <posX>134</posX>
-            <posY>213</posY>
-            <width>265</width>
-            <height>265</height>
-            <texture>#selectedthumb</texture>
-            <animation effect="Fade" time="100">WindowOpen</animation>
-            <animation effect="Fade" time="100">WindowClose</animation>
-        </control>
-        <control>
-            <id>1</id>
-            <description>Cover Art overlay</description>
-            <type>image</type>
-            <visible>facadeview.list+Control.IsVisible(50)</visible>
-            <posX>92</posX>
-            <posY>169</posY>
-            <width>350</width>
-            <height>350</height>
-            <texture>blackborders_music.png</texture>
-            <animation effect="Fade" time="100">WindowOpen</animation>
-            <animation effect="Fade" time="100">WindowClose</animation>
-        </control>
-
-        <import>common.facade.music.xml</import>		
-        <import>common.overlay.xml</import>
-    </controls>
+		
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<id>0</id>
+		<type>image</type>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<visible>!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)</visible>
+		<texture>DefaultMyradioBig.png</texture>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>Cover Art</description>
+		<type>image</type>
+		<id>500</id>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<texture>#selectedthumb</texture>
+		<visible>Control.IsVisible(50)+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>Cover Art overlay</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>92</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture>blackborders_music.png</texture>
+		<visible>Control.IsVisible(50)</visible>
+	</control>
+	
+	<import>common.overlay.xml</import>
+	
+</controls>
 </window>
