@@ -50,7 +50,7 @@
 		<description>time label 12h</description>
 		<id>0</id>
 		<type>label</type>
-		<posX>975</posX>
+		<posX>985</posX>
 		<posY>191</posY>
 		<align>right</align>
 		<font>Segoe Light18</font>
