@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Skin translation file -->
 <!-- Danish (DA) -->
-<!-- Last Updated: 22th aug 2010 -->
+<!-- Last Updated: 27th okt 2010 -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
 
 <strings>
@@ -31,6 +31,8 @@
 	<string Field="global.search.Searchfields">Søgefelt</string>
 	<string Field="global.search.Casesensitive">Case sensitive</string>
 	<string Field="global.search.Searchtype">Søgetype</string>
+	<string Field="grooveshark.Searchterm">Søgeord</string>
+	<string Field="grooveshark.Search">Søg</string>
 
 	<!-- H -->
 
@@ -38,8 +40,11 @@
 
 	<!-- L -->
 	<string Field="lyrics">Sangtekst</string>
+	<string Field="lyrics.tag">Tag</string>
 	<string Field="Latest.movies">Seneste film</string>
 	<string Field="Latest.episodes">Seneste tvafsnit</string>
+	<string Field="Latest.recordings">Seneste optagelser</string>
+	<string Field="Latest.albums">Seneste album</string>
 	
 	<!-- M -->
 	<string Field="mylyrics">Sangtekst</string>
@@ -50,7 +55,6 @@
 	<!-- O -->
 
 	<!-- P -->
-	<string Field="weather.toggleday">Tryk OK for dagsudsigt</string>
 	
 	<!-- R -->
 	<string Field="recentlyAdded.Season">Sæson</string>
@@ -67,7 +71,8 @@
 	<string Field="video.settings">Video indstillinger</string>
 
 	<!-- W -->
-
+	<string Field="weather.toggleday">Tryk OK for dagsudsigt</string>
+	
 	<!-- Y -->
 
 </strings>
