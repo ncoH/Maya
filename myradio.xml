@@ -11,6 +11,7 @@
 	<import>common.time.xml</import>
 	
 	<control>
+		<description>Header label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
@@ -25,24 +26,7 @@
 		<visible>facadeview.list</visible>
 		<valign>middle</valign>
 	</control>
-	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
-		<id>1</id>
-		<posX>433</posX>
-		<posY>30</posY>
-		<width>500</width>
-		<height>100</height>
-		<label>#header.label</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
-		<align>center</align>
-		<valign>middle</valign>
-	</control>
-	
+		
 	<control>
 		<description>listcontrol background</description>	
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -70,7 +54,24 @@
 		<texture>listcontrol_bg_info.png</texture>
 		<visible>facadeview.list</visible>
 	</control>
-	
+
+	<control>
+		<description>Header label</description>		
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>433</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
+		<align>center</align>
+		<valign>middle</valign>
+	</control>	
 	
 	<control>
 		<type>actiongroup</type>
