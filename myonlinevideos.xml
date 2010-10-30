@@ -51,7 +51,19 @@
 			<width>1366</width>
 			<height>768</height>
 			<texture>basichome_fanart_overlay.png</texture>
-			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+			<visible>facadeview.list+!Control.IsVisible(51)+string.contains(#maya.bgImage.Plugins,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>fanart_overlay_thumbs.png</texture>
+			<visible>[facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(51)+string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 		
         <import>common.time.xml</import>
@@ -173,6 +185,7 @@
 		<visible>[!facadeview.smallicons + !facadeview.largeicons]+!Control.IsVisible(51)</visible>
 		<valign>middle</valign>
 	</control>
+	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -278,10 +291,11 @@
 		<width>105</width>
 		<height>35</height>
 		<texture>#header.image</texture>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!string.equals(#selecteditem,..)+!string.contains(#header.image,Apple Trailers.png)+!string.equals(#OnlineVideos.state, details)</visible>
+		<visible>[!facadeview.list+!facadeview.smallicons+!facadeview.largeicons]+!string.equals(#selecteditem,..)+!string.contains(#header.image,Apple Trailers.png)+!string.equals(#OnlineVideos.state, details)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
+	
 	<control>
 		<type>label</type>
 		<description>Current video length</description>

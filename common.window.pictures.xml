@@ -30,7 +30,7 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_filmstrip.png</texture>
-		<visible>facadeview.filmstrip</visible>
+		<visible>facadeview.filmstrip|facadeview.coverflow</visible>
 	</control>
 
 		<control>
@@ -54,7 +54,31 @@
 			<width>1366</width>
 			<height>768</height>
 			<texture>basichome_fanart_overlay.png</texture>
-			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+			<visible>facadeview.list+string.contains(#maya.bgImage.Plugins,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>fanart_overlay_thumbs.png</texture>
+			<visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip+string.contains(#maya.bgImage.Plugins,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>background_coverflow.png</texture>
+			<visible>facadeview.coverflow+string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 		
 	<control>
@@ -98,7 +122,7 @@
 		<align>center</align>
 		<label>#currentmodule: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -114,7 +138,7 @@
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<align>center</align>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>

@@ -102,6 +102,7 @@
 	<import>common.window.music.xml</import>
 	
 	<control>
+		<description>Header Label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
@@ -110,7 +111,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>music</label>
+		<label>Music</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list | facadeview.album</visible>
@@ -132,6 +133,7 @@
 	</control>
 
 	<control>
+		<description>Header Label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
@@ -140,7 +142,7 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>music</label>
+		<label>Music</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
