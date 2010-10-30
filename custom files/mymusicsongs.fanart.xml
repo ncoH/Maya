@@ -9,7 +9,8 @@
 <define>#useSelectedFanart:Yes</define>
 <controls>
 
-
+	<import>common.window.music.xml</import>
+	
 	<!--            :: Fanart ::            -->	
 	
 		<control>
@@ -108,10 +109,9 @@
 		<texture>fanart_overlay_filmstrip.png</texture>
 		<visible>[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip] + control.isvisible(91919293)</visible>
 	</control>
-	
-	<import>common.window.music.xml</import>
-	
+		
 	<control>
+		<description>Header label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
@@ -128,6 +128,7 @@
 	</control>
 	
 	<control>
+		<description>Header label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
