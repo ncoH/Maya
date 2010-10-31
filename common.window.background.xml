@@ -55,7 +55,7 @@
 			<width>1366</width>
 			<height>768</height>
 			<texture>basichome_fanart_overlay.png</texture>
-			<visible>facadeview.list+string.contains(#maya.bgImage.Plugins,yes)</visible>
+			<visible>[!facadeview.smallicons|!facadeview.largeicons|!facadeview.filmstrip]+string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 
 		<control>
@@ -67,7 +67,7 @@
 			<width>1366</width>
 			<height>768</height>
 			<texture>fanart_overlay_thumbs.png</texture>
-			<visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip+string.contains(#maya.bgImage.Plugins,yes)</visible>
+			<visible>[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip]+string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 		
     </controls>
