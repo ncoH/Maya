@@ -4,11 +4,11 @@
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<define>#header.label:Radio Guide</define>
-	<define>#header.background:hover_my radio.png</define>	  
-  <controls>
-  
+	<define>#header.background:hover_my radio.png</define>	
+<controls>
+
         <import>common.window.background.xml</import>
-		
+	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -36,7 +36,7 @@
 		<animation effect="fade" time="800">WindowOpen</animation>
 		<animation effect="fade" time="300">WindowClose</animation>				
     </control>
-
+	
     <control>
       <description>TVGUIDE Panel</description>
       <type>image</type>
@@ -48,7 +48,7 @@
       <colordiffuse>ffffffff</colordiffuse>
       <texture>-</texture>
     </control>
-	
+
 	<!-- Timeheader background must be dedfined before Timeheader label template -->
 	    <!-- b/c Timeheader is on the background and will be rendered first -->
 	<control>

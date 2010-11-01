@@ -2,11 +2,13 @@
 <window>
 	<id>748</id>
 	<defaultcontrol>2</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:1037</define>
+	<define>#selecteditem:</define>
 	<define>#header.background:hover_my tv.png</define>
 <controls>
 
-	<import>common.window.xml</import>
+	<import>common.window.background.xml</import>
 	<import>common.time.xml</import>
 	
 	<control>
@@ -17,9 +19,9 @@
 		<id>1</id>
 		<posX>552</posX>
 		<posY>30</posY>
-		<width>500</width>
+		<width>550</width>
 		<height>100</height>
-		<label>programme info</label>
+		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<valign>middle</valign>
@@ -30,23 +32,10 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>524</posX>
-        <posY>153</posY>
+        <posY>173</posY>
 		<width>725</width>
-		<height>482</height>
-		<texture>listcontrol_bg.png</texture>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-	</control>
-	
-	<control>
-		<description>listcontrol background info</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>524</posX>
-        <posY>678</posY>
-		<width>725</width>
-		<height>51</height>
-		<texture>listcontrol_bg_info.png</texture>
+		<height>561</height>
+		<texture>listcontrol_bg_recordings.png</texture>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
@@ -64,7 +53,6 @@
 			<description>Record</description>
 			<type>button</type>
 			<id>2</id>
-			<label/>
 			<onup>17</onup>
 			<ondown>3</ondown>
 			<onright>10</onright>
@@ -97,7 +85,7 @@
 			<description>Only new episodes</description>
 			<type>togglebutton</type>
 			<id>5</id>
-			<label>Only new episodes</label>
+			<label>Only new Episodes</label>
 			<onup>4</onup>
 			<ondown>8</ondown>
 			<onright>10</onright>
@@ -127,13 +115,58 @@
 		</control>
 		
 	</control>
-	
+
+	<control>
+		<description>Current program title</description>
+		<type>fadelabel</type>
+		<id>13</id>
+		<posX>555</posX>
+		<posY>142</posY>
+		<width>680</width>
+		<font>Segoe Light22</font>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+		<valign>middle</valign>
+	</control>
+		
+		<control>
+			<description>Current program channel</description>
+			<type>fadelabel</type>
+			<id>16</id>
+			<posX>555</posX>
+			<posY>180</posY>
+			<font>Segoe Light18</font>
+			<textcolor>85cffe</textcolor>
+		</control>
+		
+		<control>
+			<type>label</type>
+			<description>Current program time</description>
+			<id>14</id>
+			<posX>555</posX>
+			<posY>215</posY>
+			<textcolor>85cffe</textcolor>
+			<font>Segoe Light18</font>
+		</control>
+
+		<control>
+			<type>textboxscrollup</type>
+			<description>Description1</description>
+			<id>15</id>
+			<posX>556</posX>
+			<posY>281</posY>
+			<width>680</width>
+			<height>160</height>
+			<label>#TV.RecordedTV.Description</label>
+		</control>
+		
 	<control>
 		<description>upcoming episodes label</description>
-		<type>fadelabel</type>
+		<type>label</type>
 		<id>11</id>
 		<posX>555</posX>
 		<posY>470</posY>
+		<width>680</width>
 		<label>1041</label>
 		<textcolor>85cffe</textcolor>
 		<font>Segoe Light18</font>
@@ -141,90 +174,62 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 	
-	<control>
-		<description>listcontrol</description>
-		<type>listcontrol</type>
-		<id>10</id>
-		<posY>525</posY>
-		<height>200</height>
-		<posX>490</posX>
-		<width>781</width>
-		<onleft>2</onleft>
-		<onright>2</onright>
-		<scrollOffset>1</scrollOffset>
-		<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
-		<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
-		<PinIconHeight>53</PinIconHeight>
-		<PinIconWidth>34</PinIconWidth>
-		<PinIconXOff>0</PinIconXOff>
-		<PinIconYOff>0</PinIconYOff>
-		<itemWidth>32</itemWidth>
-		<itemHeight>32</itemHeight>
-		<IconXOff>60</IconXOff>
-		<IconYOff>9</IconYOff>
-		<textXOff>70</textXOff>
-		<keepaspectratio>yes</keepaspectratio>
-		<spinCanFocus>no</spinCanFocus>
-	</control>
-	
-	<control>
-		<description>Current program title</description>
-		<type>fadelabel</type>
-		<id>13</id>
-		<posX>555</posX>
-		<posY>142</posY>
-		<width>700</width>
-		<font>Segoe Light22</font>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-		<valign>middle</valign>
-	</control>
-	
-	<control>
-		<description>Current program channel</description>
-		<type>fadelabel</type>
-		<id>16</id>
-		<posX>555</posX>
-		<posY>180</posY>
-		<font>Segoe Light18</font>
-		<textcolor>85cffe</textcolor>
-	</control>
-	
-	<control>
-		<type>label</type>
-		<description>Current program time</description>
-		<id>14</id>
-		<posX>555</posX>
-		<posY>215</posY>
-		<textcolor>85cffe</textcolor>
-		<font>Segoe Light18</font>
-	</control>
-	
-	<control>
-		<type>textboxscrollup</type>
-		<description>Description1</description>
-		<id>15</id>
-		<posX>556</posX>
-		<posY>281</posY>
-		<width>741</width>
-		<height>160</height>
-		<label>#TV.RecordedTV.Description</label>
-	</control>
-	
+			<control>
+				<description>listcontrol</description>
+				<type>listcontrol</type>
+				<id>10</id>
+				<posY>525</posY>
+				<height>200</height>
+				<posX>524</posX>
+				<width>724</width>
+				<onleft>2</onleft>
+				<onright>2</onright>
+				<scrollOffset>1</scrollOffset>
+				<PinIconHeight>53</PinIconHeight>
+				<PinIconWidth>34</PinIconWidth>
+				<PinIconXOff>0</PinIconXOff>
+				<PinIconYOff>0</PinIconYOff>
+				<itemWidth>32</itemWidth>
+				<itemHeight>32</itemHeight>
+				<IconXOff>30</IconXOff>
+				<IconYOff>9</IconYOff>
+				<textXOff>40</textXOff>
+				<spinPosX>560</spinPosX>
+				<spinPosY>692</spinPosY>
+				<spinAlign>left</spinAlign>
+				<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
+				<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
+				<keepaspectratio>yes</keepaspectratio>
+				<spinCanFocus>no</spinCanFocus>
+				<dimColor>ffffffff</dimColor>
+			</control>
+			
 	<control>
 		<description>genre</description>
 		<type>label</type>
 		<id>17</id>
-		<posX>1260</posX>
+		<posX>-2000</posX>
 		<posY>185</posY>
 		<align>right</align>
 		<font>font13</font>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="250">WindowClose</animation>		
 	</control>
 	
-	<import>common.overlay.xml</import>
-	
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1216</posX>
+		<posY>690</posY>
+		<align>right</align>
+		<label>#itemcount</label>
+		<textcolor>6aa5cb</textcolor>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+<import>common.overlay.xml</import>
 </controls>
 </window>
