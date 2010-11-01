@@ -2,12 +2,12 @@
 <window>
     <id>16001</id>
     <defaultcontrol>50</defaultcontrol>
-    <allowoverlay>player.hasmedia+!facadeview.filmstrip</allowoverlay>
+    <allowoverlay>yes</allowoverlay>
     <define>#header.label:InfoService Feeds</define>
 	<define>#header.background:hover_infoservice.png</define>	
     <controls>
 	
-        <import>common.window.xml</import>
+        <import>common.window.background.xml</import>
         <import>common.time.xml</import>
 		
         <control>
@@ -24,6 +24,7 @@
             <animation effect="Fade" time="100">WindowClose</animation>
             <valign>middle</valign>
         </control>
+		
         <control>
             <id>1</id>
             <description>Selected item Label</description>
@@ -37,6 +38,7 @@
             <animation effect="Fade" time="100">WindowClose</animation>
             <valign>middle</valign>
         </control>
+		
         <control>
             <id>0</id>
             <description>Number of Files Label</description>

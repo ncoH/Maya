@@ -6,8 +6,8 @@
 	<define>#header.label:600</define>
 	<define>#header.background:hover_my tv.png</define>	
   <controls>
-	
-        <import>common.window.background.xml</import>
+
+		<import>common.window.background.xml</import>	
 		
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>

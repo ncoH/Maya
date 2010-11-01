@@ -20,9 +20,10 @@
             <posY>0</posY>
             <width>1366</width>
             <height>768</height>
-            <texture>background.png</texture>		
+            <texture>background.png</texture>	
+			<visible>facadeview.list+!control.isvisible(91919293)</visible>			
 		</control>
-	
+
 	<control>
 		<description>Alternate BG</description>
 		<type>image</type>
@@ -30,7 +31,7 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_thumbs.png</texture>
-		<visible>facadeview.smallicons|facadeview.largeicons</visible>		
+		<visible>[facadeview.smallicons|facadeview.largeicons] +!control.isvisible(91919293)</visible>		
 	</control>
 	
 	<control>
@@ -40,45 +41,37 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_filmstrip.png</texture>
-		<visible>facadeview.filmstrip|facadeview.coverflow</visible>
+		<visible>[facadeview.filmstrip|facadeview.coverflow]+!control.isvisible(91919293)</visible>
 	</control>
-
-		<control>
-			<description>Fanart Background</description>
-			<type>image</type>
-			<id>1</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1366</width>
-			<height>768</height>
-			<texture>#header.background</texture>	
-			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
-		</control>
-
- 		<control>
-			<description>Fanart Overlay</description>
-			<type>image</type>
-			<id>1</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1366</width>
-			<height>768</height>
-			<texture>basichome_fanart_overlay.png</texture>
-			<visible>facadeview.list+string.contains(#maya.bgImage.Plugins,yes)</visible>
-		</control>
 		
-		<control>
-			<description>Fanart Overlay</description>
-			<type>image</type>
-			<id>1</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1366</width>
-			<height>768</height>
-			<texture>fanart_overlay_thumbs.png</texture>
-			<visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip+string.contains(#maya.bgImage.Plugins,yes)</visible>
-		</control>
-		
+	<control>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>
+		<visible>facadeview.list+!control.isvisible(91919293)</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<visible>facadeview.list+!control.isvisible(91919293)</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+			
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
@@ -88,7 +81,7 @@
 		<width>700</width>
 		<label>#title</label>
 		<font>Segoe Light22</font>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+control.isvisible(7773)+!control.isvisible(53)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip+!facadeview.coverflow]+control.isvisible(7773)+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>
@@ -103,7 +96,7 @@
 		<width>700</width>
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+!control.isvisible(7773)+!control.isvisible(53)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip+!facadeview.coverflow]+!control.isvisible(7773)+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>
@@ -118,7 +111,7 @@
 		<align>right</align>
 		<label>#itemtype: #itemcount </label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip+!facadeview.coverflow]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -133,7 +126,7 @@
 		<label>#title</label>
 		<font>Segoe Light22</font>
 		<align>center</align>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+control.isvisible(7773)+!control.isvisible(53)</visible>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+control.isvisible(7773)+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>
@@ -149,7 +142,7 @@
 		<align>center</align>
 		<label>#itemtype: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons</visible>
+		<visible>facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -164,7 +157,7 @@
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<align>center</align>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!control.isvisible(7773)+!control.isvisible(53)</visible>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+!control.isvisible(7773)+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>

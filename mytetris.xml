@@ -7,7 +7,7 @@
 	<define>#header.background:hover_tetris.png</define>
 
 	<controls>
-		<import>common.window.xml</import>
+		<import>common.window.background.xml</import>
 		<import>common.time.xml</import>
 	
 	<control>

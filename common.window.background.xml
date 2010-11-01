@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-    <controls>
+<controls>
 
 		<control>
 			<description>BG</description>
@@ -11,8 +11,8 @@
             <width>1366</width>
             <height>768</height>
             <texture>background.png</texture>
+			<visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>			
 		</control>
-
 	
 	<control>
 		<description>Alternate BG</description>
@@ -55,7 +55,7 @@
 			<width>1366</width>
 			<height>768</height>
 			<texture>basichome_fanart_overlay.png</texture>
-			<visible>[!facadeview.smallicons|!facadeview.largeicons|!facadeview.filmstrip]+string.contains(#maya.bgImage.Plugins,yes)</visible>
+			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 
 		<control>
