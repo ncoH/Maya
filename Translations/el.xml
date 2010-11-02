@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin translation file -->
+<!-- Greek (EL) -->
+<!-- Last Updated: 01st Nov 2010 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+
+<strings>
+	<!-- # -->
+
+	<!-- A -->
+
+	<!-- B -->
+
+	<!-- C -->
+	<string Field="check.subtitles">Έλεγχος για υπότιτλους</string>
+	
+	<!-- D -->
+
+	<!-- E -->
+
+	<!-- F -->
+	<string Field="format">Μορφή:</string>
+	
+	<!-- G -->
+	<string Field="global.search.musicsearch">αναζήτηση μουσικής</string>
+	<string Field="global.search.lastplayed">Τελευταία αναπαραγωγή</string>
+	<string Field="global.search.filename">Όνομα αρχείου</string>
+	<string Field="global.search.playcount">Επαναλήψεις</string>
+	<string Field="global.search.Searchphrase">Φράση αναζήτησης</string>
+	<string Field="global.search.Searchhistory">Αναζήτηση ιστορικού</string>
+	<string Field="global.search.Searchfields">Αναζήτηση πεδίων</string>
+	<string Field="global.search.Casesensitive">Με σημασία πεζών-ΚΕΦΑΛΑΙΩΝ</string>
+	<string Field="global.search.Searchtype">Τύπος αναζήτησης</string>
+	<string Field="grooveshark.Searchterm">Όρος αναζήτησης</string>
+	<string Field="grooveshark.Search">Αναζήτηση</string>
+	<!-- H -->
+
+	<!-- I -->
+
+	<!-- L -->
+	<string Field="lyrics">Στίχοι</string>
+	<string Field="lyrics.tag">Ετικέτα</string>
+	<string Field="Latest.movies">Τελευταίες ταινίες</string>
+	<string Field="Latest.episodes">Τελευταία επεισόδια</string>
+	<string Field="Latest.recordings">Τελευταίες εγγραφές</string>
+	<string Field="Latest.albums">Τελευταία άλμπουμ</string>
+	
+	<!-- M -->
+	<string Field="mylyrics">Στίχοι</string>
+	<string Field="music.songs">Τραγούδια:</string>
+	
+	<!-- N -->
+
+	<!-- O -->
+
+	<!-- P -->
+	
+	<!-- R -->
+	<string Field="recentlyAdded.Season">Κύκλος</string>
+	<string Field="recentlyAdded.Episode">Επεισόδιο</string>
+	
+	<!-- S -->
+	<string Field="SleepControl">Χρονοδιακόπτης</string>
+	
+	<!-- T -->
+
+	<!-- U -->
+
+	<!-- V -->
+	<string Field="video.settings">Ρυθμίσεις βίντεο</string>
+	
+	<!-- W -->
+	<string Field="weather.toggleday">Πιέστε ΟΚ για προβολή ημέρας</string>
+	
+	<!-- Y -->
+
+</strings>
