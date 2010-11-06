@@ -316,6 +316,19 @@
       <visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)</visible>
     </control>
 	
+    <control>
+        <id>0</id>
+        <type>image</type>
+        <visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)+!control.hasthumb(46)</visible>
+      <posX>133</posX>
+	  <posY>208</posY>
+	  <width>266</width>
+	  <height>380</height>
+        <texture>defaultVideoSeenBig.png</texture>
+        <animation effect="Fade" time="100">WindowOpen</animation>
+        <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+
 	<control>
       <type>image</type>
       <description>series poster ( series poster background ) Overlay</description>
@@ -371,8 +384,22 @@
       <texture>#TVSeries.EpisodeImage</texture>
       <visible>Control.IsVisible(1239)+facadeview.list</visible>
     </control>
+    
+	<control>
+		<description>Big Episode default Thumb</description>
+        <id>0</id>
+        <type>image</type>
+        <visible>Control.IsVisible(1239)+facadeview.list+!control.hasthumb(67)</visible>
+        <posX>91</posX>
+        <posY>207</posY>
+        <width>365</width>
+        <height>203</height>
+        <texture>defaultTVBig.png</texture>
+        <animation effect="Fade" time="100">WindowOpen</animation>
+        <animation effect="Fade" time="100">WindowClose</animation>
+    </control>	
 	
-	 <control>
+	<control>
       <description>Big Episode Thumb overlay</description>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
