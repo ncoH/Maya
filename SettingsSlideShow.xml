@@ -6,8 +6,8 @@
 	<define>#header.background:hover_settings.png</define>	
 <controls>
 
-<import>common.window.xml</import>
-<import>settings.menu.xml</import>
+		<import>common.window.background.xml</import>
+		<import>settings.menu.xml</import>
 
 	<control>
 		<type>image</type>

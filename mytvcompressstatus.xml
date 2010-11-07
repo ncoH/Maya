@@ -1,41 +1,30 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>613</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
-<define>#header.label:126</define>
-<define>#header.image:television_logo.png</define>
-<define>#header.hover:-</define>
+	<id>613</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:126</define>
+	<define>#header.background:hover_my tv.png</define>
 <controls>
-	<import>common.window.xml</import>
-	<control>
-		<description>Date</description>
-		<type>label</type>
-		<id>200</id>
-		<posX>1226</posX>
-		<posY>37</posY>
-		<label>#date</label>
-		<align>right</align>
-		<font>font13</font>
-		<textcolor>ffa9d0f7</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
 
-	<control>
-		<description>Time</description>
-		<type>label</type>
-		<id>201</id>
-		<posX>1226</posX>
-		<posY>62</posY>
-		<label>#time</label>
-		<align>right</align>
-		<font>font13</font>
-		<textcolor>ffa9d0f7</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-
+        <import>common.window.background.xml</import>		
+        <import>common.time.xml</import>		
+		
+        <control>
+            <id>1</id>
+            <type>label</type>
+			<description>Header label</description>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+		
 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>

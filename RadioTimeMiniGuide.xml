@@ -4,6 +4,7 @@
   <defaultcontrol>35</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <control>
       <type>image</type>
       <id>0</id>
@@ -12,6 +13,7 @@
       <texture>black.png</texture>
       <colordiffuse>60ffffff</colordiffuse>
     </control>
+	
     <control>
       <description>background image</description>
       <type>image</type>
@@ -22,6 +24,7 @@
       <posX>106</posX>
       <posY>75</posY>
     </control>
+	
     <control>
       <description>exit button</description>
       <type>button</type>

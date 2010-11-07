@@ -3,46 +3,25 @@
     <id>557312</id>
     <defaultcontrol>2</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-	<define>#header.background:hover_file explorer.png</define>		
-	
+	<define>#header.background:hover_file explorer.png</define>			
     <controls>
 	
-        <import>common.window.xml</import>
+        <import>common.window.background.xml</import>			
 		
         <control>
-            <description>Background</description>
-            <type>image</type>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1366</width>
-            <height>768</height>
-            <texture>background.png</texture>
-			<visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>			
+            <id>1</id>
+            <type>label</type>
+			<description>Header label</description>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
         </control>
-		
-		<control>
-			<description>Fanart Background</description>
-			<type>image</type>
-			<id>0</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1366</width>
-			<height>768</height>
-			<texture>#header.background</texture>	
-			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
-		</control>
-
-		<control>
-			<description>Fanart Overlay</description>
-			<type>image</type>
-			<id>0</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1366</width>
-			<height>768</height>
-			<texture>basichome_fanart_overlay.png</texture>
-			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
-		</control>
 				
         <control>
             <id>2</id>

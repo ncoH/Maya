@@ -7,12 +7,13 @@
 	<define>#header.background:hover_my_minesweeper.png</define>	
     <controls>
 
-	<import>common.window.background.xml</import>
-	<import>common.time.xml</import>
+        <import>common.window.background.xml</import>		
+        <import>common.time.xml</import>		
 		
         <control>
             <id>1</id>
             <type>label</type>
+			<description>Header label</description>
             <posX>552</posX>
             <posY>30</posY>
             <width>500</width>

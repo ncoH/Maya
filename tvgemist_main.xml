@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>6799</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
+	<id>6799</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:TVgemist</define>
+	<define>#header.background:hover_my tv.png</define>	
 <controls>
-<import>common.window.xml</import>
+
+	<import>common.window.xml</import>
+	<import>common.time.xml</import>
 
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -21,9 +25,7 @@
 		<visible>facadeview.list</visible>
 		<valign>middle</valign>
 	</control>
-	
-<import>common.time.xml</import>
-	
+		
 	<control>
 		<description>listcontrol background</description>
 		<type>image</type>

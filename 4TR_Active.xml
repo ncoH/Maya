@@ -4,8 +4,25 @@
   <defaultcontrol>10</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
-    <import>common.window.xml</import>
-	<import>common.time.xml</import>
+  
+        <import>common.window.background.xml</import>		
+        <import>common.time.xml</import>		
+		
+        <control>
+            <id>1</id>
+            <type>label</type>
+			<description>Header label</description>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+	
     <control>
       <type>label</type>
       <description>Number of Files Label</description>
@@ -15,6 +32,7 @@
       <label>#itemcount</label>
       <visible>false</visible>
     </control>
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -26,6 +44,7 @@
       <animation effect="slide" time="10" end="-300,0">WindowClose</animation>
       <animation effect="slide" time="10" start="-300,0">WindowOpen</animation>
     </control>
+	
     <control>
         <id>1</id>
         <type>image</type>
@@ -34,6 +53,7 @@
         <texture>hiddenmenu_tab.png</texture>
         <visible>Control.HasFocus(10)</visible>
     </control>
+	
       <control>
         <type>actiongroup</type>
         <description>action menu</description>

@@ -6,51 +6,25 @@
 	<define>#currentmodule:movies</define>
 	<define>#itemcount:-</define>
 <controls>
-	<control>
-		<description>fanart</description>
-		<type>image</type>
-		<id>1000</id>
-		<posX>0</posX>
-		<posY>0</posY>
-		<texture>#Fanart</texture>
-		<width>1366</width>
-		<height>768</height>
-		<animation effect="fade" time="400">WindowClose</animation>
-		<animation effect="fade" time="400">WindowOpen</animation>
-		<visible>no</visible>
-	</control>
 	
-	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<visible>facadeview.list+Control.IsVisible(1026)</visible>
-	</control>
-	
-	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background_thumbs.png</texture>
-		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(1026)</visible>
-	</control>
-
-	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background_filmstrip.png</texture>
-		<visible>facadeview.filmstrip+Control.IsVisible(1026)</visible>
-	</control>
-	
-<import>common.time.xml</import>
-
+        <import>common.window.background.xml</import>		
+        <import>common.time.xml</import>		
+		
+        <control>
+            <id>1</id>
+            <type>label</type>
+			<description>Header label</description>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+		
 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>

@@ -1,14 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-  <id>1987</id>
-  <defaultcontrol>50</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>
-  <define>#header.label</define>
-  <define>#header.hover</define>
+	<id>1987</id>
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:Video Search</define>
+	<define>#header.background:hover_Films.jpg</define>
   <controls>
-    <import>common.window.xml</import>
+  
+    <import>common.window.background.xml</import>	
+    <import>common.time.xml</import>
     <import>VideoSearch.facade.xml</import>
     <import>VideoSearch.details.xml</import>
+
+ 	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>550</width>
+		<height>100</height>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+	</control>
 	
     <control>
       <description>Status</description>
@@ -67,7 +84,6 @@
       <height>720</height>
       <dimColor>00ffffff</dimColor>
 	  
-
       <control>
         <description>button group</description>
         <type>group</type>
@@ -96,5 +112,6 @@
         </control>
       </control>
     </control>
+	
   </controls>
 </window>

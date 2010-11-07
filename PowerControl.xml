@@ -6,42 +6,14 @@
     <define>#header.background:hover_powercontrol.png</define>
     <define>#header.label:Power Control</define>
     <controls>
-        <control>
-            <description>Background</description>
-            <type>image</type>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1366</width>
-            <height>768</height>
-            <texture>background.png</texture>
-        </control>
-        <control>
-            <id>0</id>
-            <description>Fanart Background</description>
-            <type>image</type>
-            <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1366</width>
-            <height>768</height>
-            <texture>#header.background</texture>
-        </control>
-        <control>
-            <id>0</id>
-            <description>Fanart Overlay</description>
-            <type>image</type>
-            <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1366</width>
-            <height>768</height>
-            <texture>basichome_fanart_overlay.png</texture>
-        </control>
-        <import>common.time.xml</import>
+
+        <import>common.window.background.xml</import>		
+        <import>common.time.xml</import>		
+		
         <control>
             <id>1</id>
-            <description>Header Label</description>
-            <type>fadelabel</type>
+            <type>label</type>
+			<description>Header label</description>
             <posX>552</posX>
             <posY>30</posY>
             <width>500</width>
@@ -52,6 +24,7 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>1</id>
             <description>listcontrol background</description>

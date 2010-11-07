@@ -4,8 +4,8 @@
   <defaultcontrol>101</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <define>#currentmodule:Movies</define>
-  <define>#itemcount:-</define>
   <controls>
+  
    <control>
       <description>movies background image</description>
       <type>image</type>
@@ -16,6 +16,7 @@
       <height>768</height>
       <texture>background.png</texture>
     </control>
+	
     <control>
       <description>fanart</description>
       <type>image</type>
@@ -28,6 +29,7 @@
       <animation effect="fade" time="400">WindowClose</animation>
       <animation effect="fade" time="400">WindowOpen</animation>
     </control>
+	
     <control>
       <type>group</type>
       <description>group element</description>
