@@ -11,27 +11,28 @@
             <width>1366</width>
             <height>768</height>
             <texture>background.png</texture>
+			<visible>facadeview.playlist|facadeview.list</visible>			
+		</control>
+		
+		<control>
+			<description>Alternate BG</description>
+			<type>image</type>
+			<id>1</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>background_thumbs.png</texture>
+			<visible>facadeview.smallicons|facadeview.largeicons</visible>
 		</control>
 	
-	<control>
-		<description>Alternate BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background_thumbs.png</texture>
-		<visible>facadeview.smallicons | facadeview.largeicons</visible>
-	</control>
-	
-	<control>
-		<description>Alternate BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background_filmstrip.png</texture>
-		<visible>facadeview.filmstrip</visible>
-	</control>
+		<control>
+			<description>Alternate BG</description>
+			<type>image</type>
+			<id>1</id>
+			<width>1366</width>
+			<height>768</height>
+			<texture>background_filmstrip.png</texture>
+			<visible>facadeview.filmstrip</visible>
+		</control>
 
 		<control>
 			<description>Fanart Background</description>
@@ -54,7 +55,7 @@
 			<width>1366</width>
 			<height>768</height>
 			<texture>basichome_fanart_overlay.png</texture>
-			<visible>facadeview.list+string.contains(#maya.bgImage.Plugins,yes)</visible>
+			<visible>[facadeview.playlist|facadeview.list]+string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 
 		<control>
@@ -66,7 +67,7 @@
 			<width>1366</width>
 			<height>768</height>
 			<texture>fanart_overlay_thumbs.png</texture>
-			<visible>facadeview.smallicons|facadeview.album|facadeview.playlist+string.contains(#maya.bgImage.Plugins,yes)</visible>
+			<visible>[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip]+string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 		
 	<control>

@@ -268,9 +268,65 @@
 		<texture>TVSeries\showLogos\#TVSeries.Series.LogoPath</texture>
 		<visible>!facadeview.list+Control.IsVisible(1237)+!Control.IsVisible(1242)</visible>
     </control>
+ 
+ 	<!-- *****************************************  SERIES POSTER ( LIST LAYOUT) ***************************************************************** -->
     
+    <control>
+        <id>0</id>
+        <type>image</type>
+		<posX>133</posX>
+		<posY>208</posY>
+		<width>266</width>
+		<height>380</height>
+        <texture>defaultVideoSeenBig.png</texture>
+        <visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)+!control.hasthumb(46)</visible>		
+        <animation effect="Fade" time="100">WindowOpen</animation>
+        <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+	
+    <control>
+		<type>image</type>
+		<description>series poster ( series poster background )</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<id>46</id>
+		<posX>133</posX>
+		<posY>208</posY>
+		<width>266</width>
+		<height>380</height>
+		<texture>#TVSeries.SeriesPoster</texture>
+		<visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)</visible>
+    </control>
+
+	<control>
+		<type>image</type>
+		<description>series poster ( series poster background ) Overlay</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<id>0</id>
+		<posX>87</posX>
+		<posY>161</posY>
+		<width>357</width>
+		<height>472</height>
+		<texture>blackborders_video.png</texture>
+		<visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)</visible>
+    </control>
+	
 	<!-- ***************************************** SEASON DVD COVER (SEASON/EPISODE LIST LAYOUT) ***************************************************************** -->
-    
+
+     <control>
+        <id>0</id>
+        <type>image</type>
+		<posX>133</posX>
+		<posY>208</posY>
+		<width>266</width>
+		<height>380</height>
+        <texture>defaultVideoSeenBig.png</texture>
+        <visible>[Control.IsVisible(1238)]+facadeview.list+!control.hasthumb(46)</visible>		
+        <animation effect="Fade" time="100">WindowOpen</animation>
+        <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+	
     <control>
       <type>image</type>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -298,51 +354,50 @@
 	  <texture>blackborders_video.png</texture>
       <visible>[Control.IsVisible(1238)]+facadeview.list</visible>
     </control>
-	
-	<!-- *****************************************  SERIES POSTER ( LIST LAYOUT) ***************************************************************** -->
-    
 
-    <control>
-      <type>image</type>
-      <description>series poster ( series poster background )</description>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-      <id>46</id>
-      <posX>133</posX>
-	  <posY>208</posY>
-	  <width>266</width>
-	  <height>380</height>
-      <texture>#TVSeries.SeriesPoster</texture>
-      <visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)</visible>
-    </control>
-	
-    <control>
+	<!-- ***************************************** THUMB / EPISODE (LIST LAYOUT) ***************************************************************** -->
+    
+	<control>
+		<description>Big Episode default Thumb</description>
         <id>0</id>
         <type>image</type>
-        <visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)+!control.hasthumb(46)</visible>
-      <posX>133</posX>
-	  <posY>208</posY>
-	  <width>266</width>
-	  <height>380</height>
-        <texture>defaultVideoSeenBig.png</texture>
+        <posX>91</posX>
+        <posY>207</posY>
+        <width>365</width>
+        <height>203</height>
+        <texture>defaultTVBig.png</texture>
+        <visible>Control.IsVisible(1239)+facadeview.list+!control.hasthumb(67)</visible>		
         <animation effect="Fade" time="100">WindowOpen</animation>
         <animation effect="Fade" time="100">WindowClose</animation>
-    </control>
-
-	<control>
-      <type>image</type>
-      <description>series poster ( series poster background ) Overlay</description>
+    </control>	
+	
+    <control>
+		<description>Big Episode Thumb</description>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-      <id>0</id>
-      <posX>87</posX>
-	  <posY>161</posY>
-	  <width>357</width>
-	  <height>472</height>
-	  <texture>blackborders_video.png</texture>
-      <visible>Control.IsVisible(1237)+facadeview.list+Control.IsVisible(1242)</visible>
+		<type>image</type>
+		<id>67</id>
+		<posX>91</posX>
+		<posY>207</posY>
+		<width>365</width>
+		<height>203</height>
+		<texture>#TVSeries.EpisodeImage</texture>
+		<visible>Control.IsVisible(1239)+facadeview.list</visible>
     </control>
-	
+    	
+	<control>
+		<description>Big Episode Thumb overlay</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>44</posX>
+		<posY>161</posY>
+		<width>457</width>
+		<height>295</height>
+		<texture>blackborders_recordings.png</texture>
+		<visible>Control.IsVisible(1239)+facadeview.list</visible>
+    </control>
 	
 	<!-- *****************************************  SERIES BANNER ( LIST LAYOUT) ***************************************************************** -->
     
@@ -368,51 +423,6 @@
       <visible>Control.IsVisible(1237)+facadeview.list+!Control.IsVisible(1242)</visible>
     </control>	
 		  
-	<!-- ***************************************** THUMB / EPISODE (LIST LAYOUT) ***************************************************************** -->
-    
-	
-    <control>
-      <description>Big Episode Thumb</description>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-      <type>image</type>
-      <id>67</id>
-      <posX>91</posX>
-      <posY>207</posY>
-      <width>365</width>
-	  <height>203</height>
-      <texture>#TVSeries.EpisodeImage</texture>
-      <visible>Control.IsVisible(1239)+facadeview.list</visible>
-    </control>
-    
-	<control>
-		<description>Big Episode default Thumb</description>
-        <id>0</id>
-        <type>image</type>
-        <visible>Control.IsVisible(1239)+facadeview.list+!control.hasthumb(67)</visible>
-        <posX>91</posX>
-        <posY>207</posY>
-        <width>365</width>
-        <height>203</height>
-        <texture>defaultTVBig.png</texture>
-        <animation effect="Fade" time="100">WindowOpen</animation>
-        <animation effect="Fade" time="100">WindowClose</animation>
-    </control>	
-	
-	<control>
-      <description>Big Episode Thumb overlay</description>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-      <type>image</type>
-      <id>0</id>
-	  <posX>44</posX>
-	  <posY>161</posY>
-	  <width>457</width>
-	  <height>295</height>
-	  <texture>blackborders_recordings.png</texture>
-      <visible>Control.IsVisible(1239)+facadeview.list</visible>
-    </control>
-	
     <!-- *****************************************INFORMATION IN LIST VIEW***************************************************************** -->
     <control>
       <type>fadelabel</type>
