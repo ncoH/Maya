@@ -3,7 +3,7 @@
     <id>1009</id>
     <defaultcontrol>41</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <define>#header.label:913</define>
+    <define>#header.label:SysInfo</define>
     <define>#header.background:hover_settings.png</define>
     <define>#selecteditem:-</define>
     <controls>

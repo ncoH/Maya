@@ -8,7 +8,7 @@
 	<define>#itemcount:</define>	
 	<controls>
 	
-        <import>common.window.extensions.xml</import>
+        <import>common.window.background.xml</import>
         <import>common.time.xml</import>
 		
         <control>
