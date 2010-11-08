@@ -614,7 +614,7 @@
 	<posY>337</posY>
 	<width>12</width>
 	<height>21</height>
-	<visible>!Control.HasFocus(2) + !Control.HasFocus(3) + !Control.HasFocus(4) + !Control.IsVisible(501) + !Control.IsVisible(601)+!string.equals(#subitem1,)</visible>
+	<visible>!Control.HasFocus(2) + !Control.HasFocus(3) + !Control.HasFocus(4) + !Control.HasFocus(5) + !Control.IsVisible(501) + !Control.IsVisible(601)+!string.equals(#subitem1,)</visible>
 	<animation effect="fade" start="100" end="0" time="0" delay="0" reversible="false">WindowClose</animation>
 	<animation effect="fade" start="0" end="100" time="200" delay="450">Visible</animation>
 	<texture>leftmenu_arrow.png</texture>
