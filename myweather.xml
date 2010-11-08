@@ -27,7 +27,7 @@
 			<posY>0</posY>
 			<width>1366</width>
 			<height>768</height>
-			<texture>#header.background</texture>	
+			<texture>weather\backgrounds\#infoservice.weather.today.img.small.filenamewithoutext//weather.jpg</texture>
 			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 
@@ -381,7 +381,7 @@
 		<id>1</id>
 		<width>1366</width>
 		<height>768</height>
-		<texture>weather\backgrounds\#infoservice.weather.today.img.big.filenamewithoutext.jpg</texture>
+		<texture>weather\backgrounds\#infoservice.weather.today.img.big.filenamewithoutext//weather.jpg</texture>		
 		<visible>!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(31)</visible>
 	</control>
 		
@@ -1033,12 +1033,6 @@
 		<centered>yes</centered>
 		<keepaspectratio>yes</keepaspectratio>
 	</control>
-
-	
-	
-	
-	
-	
 	
 	<control>
 	<id>0</id>
@@ -1113,9 +1107,7 @@
 			<height>74</height>
 		</control>		
 		
-	</control>
-		
-		
+	</control>	
 
 	<control>
 		<description>Sunclock image</description>
@@ -1132,7 +1124,6 @@
 		<ondown>3</ondown>
 	</control>
 
-
 	<control>
 		<id>1</id>
 		<type>image</type>
@@ -1141,11 +1132,6 @@
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>Control.HasFocus(4)</visible>
 	</control>
-
-	
-	
-	
-
 
 	<control>
 		<description>location label</description>

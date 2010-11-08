@@ -84,7 +84,7 @@
     <width>1368</width>
     <height>768</height>
     <visible>Control.IsVisible(1202) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
-	<animation effect="fade" start="10" end="100" time="1000">Visible</animation>	
+	<animation effect="fade" start="10" end="100" time="1000">Visible</animation>
 	<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
     <texture>#bgimage2</texture>
 </control> 
@@ -676,7 +676,7 @@
 	<posY>337</posY>
 	<width>12</width>
 	<height>21</height>
-	<visible>!Control.HasFocus(2) + !Control.HasFocus(3) + !Control.HasFocus(4) + !Control.HasFocus(5) + !Control.IsVisible(501) + !Control.IsVisible(601)+!string.equals(#subitem1,)</visible>
+	<visible>!Control.HasFocus(2) + !Control.HasFocus(3) + !Control.HasFocus(4) + !Control.IsVisible(501) + !Control.IsVisible(601)+!string.equals(#subitem1,)</visible>
 	<animation effect="fade" start="100" end="0" time="0" delay="0" reversible="false">WindowClose</animation>
 	<animation effect="fade" start="0" end="100" time="200" delay="450">Visible</animation>
 	<texture>leftmenu_arrow.png</texture>
@@ -910,7 +910,7 @@
 		<posY>650</posY>
 		<height>90</height>
 		<width>90</width>
-		<texture>weather/#infoservice.weather.today.img.small.filenamewithext</texture>
+		<texture>Weather/128/#infoservice.weather.today.img.big.filenamewithext</texture>
 		<visible>plugin.isenabled(InfoService)+string.contains(#maya.weather.visible,yes)</visible>
 		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
