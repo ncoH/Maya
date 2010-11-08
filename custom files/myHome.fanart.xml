@@ -207,7 +207,7 @@
 		<posY>650</posY>
 		<height>90</height>
 		<width>90</width>
-		<texture>weather/#infoservice.weather.today.img.small.filenamewithext</texture>
+		<texture>Weather/128/#infoservice.weather.today.img.big.filenamewithext</texture>
 		<visible>plugin.isenabled(InfoService)+string.contains(#maya.weather.visible,yes)</visible>
 		<animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
