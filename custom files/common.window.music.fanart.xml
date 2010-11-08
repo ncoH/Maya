@@ -56,7 +56,7 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_filmstrip.png</texture>
-		<visible>facadeview.filmstrip+!control.isvisible(91919293)</visible>
+		<visible>facadeview.filmstrip|facadeview.coverflow+!control.isvisible(91919293)</visible>
 	</control>
 
 	<control>
@@ -68,7 +68,7 @@
 		<width>665</width>
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+!control.isvisible(53)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip+!facadeview.coverflow]+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>
@@ -83,7 +83,7 @@
 		<align>right</align>
 		<label>#currentmodule: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+Control.IsVisible(50)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip+!facadeview.coverflow]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -98,7 +98,7 @@
 		<align>center</align>
 		<label>#currentmodule: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons</visible>
+		<visible>facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -113,7 +113,7 @@
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<align>center</align>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!control.isvisible(53)</visible>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>

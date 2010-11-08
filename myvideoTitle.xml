@@ -36,7 +36,7 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_filmstrip.png</texture>
-		<visible>facadeview.filmstrip</visible>
+		<visible>facadeview.filmstrip|facadeview.coverflow</visible>
 	</control>
 
 		<control>
@@ -51,21 +51,32 @@
 			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 
-		<control>
+ 		<control>
 			<description>Fanart Overlay</description>
 			<type>image</type>
-			<id>0</id>
+			<id>1</id>
 			<posX>0</posX>
 			<posY>0</posY>
 			<width>1366</width>
 			<height>768</height>
 			<texture>basichome_fanart_overlay.png</texture>
-			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+			<visible>facadeview.list+string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 		
-        <import>common.time.xml</import>
-		
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>fanart_overlay_thumbs.png</texture>
+			<visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip+string.contains(#maya.bgImage.Plugins,yes)</visible>
+		</control>
+				
 	<control>
+		<description>Header label</description>			
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
@@ -82,6 +93,7 @@
 	</control>
 	
 	<control>
+		<description>Header label</description>			
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
@@ -93,11 +105,13 @@
 		<label>3</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
+		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons | facadeview.coverflow</visible>
 		<align>center</align>
 		<valign>middle</valign>
 	</control>
-	
+
+        <import>common.time.xml</import>
+		
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
@@ -137,7 +151,7 @@
 		<align>center</align>
 		<label>#itemtype: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
@@ -152,7 +166,7 @@
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<align>center</align>
-		<visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow] + Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>
@@ -386,7 +400,7 @@
 		<posX>624</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+		<visible>facadeview.filmstrip | facadeview.coverflow+Control.HasFocus(50)</visible>
 	</control>
 	
 	<!-- info visible when in list view for titles -->

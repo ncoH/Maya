@@ -12,7 +12,7 @@
 	<import>common.time.xml</import>
 	
 	<control>
-		<description>Header label</description>			
+		<description>Header label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
@@ -69,7 +69,7 @@
 		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
+		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons | facadeview.coverflow</visible>
 		<align>center</align>
 		<valign>middle</valign>
 	</control>
@@ -363,7 +363,7 @@
 		<posX>624</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.HasFocus(50)</visible>
 	</control>
 	
 	<control>

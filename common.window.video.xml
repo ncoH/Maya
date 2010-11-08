@@ -31,7 +31,7 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_thumbs.png</texture>
-		<visible>[facadeview.smallicons|facadeview.largeicons] +!control.isvisible(91919293)</visible>		
+		<visible>[facadeview.smallicons|facadeview.largeicons]+!control.isvisible(91919293)</visible>		
 	</control>
 	
 	<control>

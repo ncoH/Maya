@@ -4,8 +4,6 @@
 <defaultcontrol>2</defaultcontrol>
 <allowoverlay>yes</allowoverlay>
 <define>#header.label:#selecteditem</define>
-<define>#header.image:music_logo.png</define>
-<define>#header.hover:</define>
 <define>#useSelectedFanart:Yes</define>
 <controls>
 
@@ -53,7 +51,7 @@
 			<centered>yes</centered>
 			<zoom>yes</zoom>
 			<texture>#fanarthandler.music.backdrop1.selected</texture>  
-			<visible>[facadeview.filmstrip|facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons]+control.isvisible(91919291)+control.isvisible(91919293)</visible>	
+			<visible>[facadeview.filmstrip|facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+control.isvisible(91919291)+control.isvisible(91919293)</visible>	
 			<animation effect="fade" time="450">visible</animation>
 			<animation effect="fade" time="450" delay="300">hidden</animation>
 		</control>
@@ -70,7 +68,7 @@
 			<centered>yes</centered>
 			<zoom>yes</zoom>
 			<texture>#fanarthandler.music.backdrop2.selected</texture>  
-			<visible>[facadeview.filmstrip|facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons]+control.isvisible(91919292)+control.isvisible(91919293)</visible>
+			<visible>[facadeview.filmstrip|facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+control.isvisible(91919292)+control.isvisible(91919293)</visible>
 			<animation effect="fade" time="450">visible</animation>
 			<animation effect="fade" time="450" delay="300">hidden</animation>
 		</control>	
@@ -109,7 +107,17 @@
 		<texture>fanart_overlay_filmstrip.png</texture>
 		<visible>[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip] + control.isvisible(91919293)</visible>
 	</control>
-		
+
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>background_coverflow.png</texture>
+		<visible>facadeview.coverflow + control.isvisible(91919293)</visible>
+	</control>
+	
 	<control>
 		<description>Header label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -140,7 +148,7 @@
 		<label>2</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
+		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons | facadeview.coverflow</visible>
 		<align>center</align>
 		<valign>middle</valign>
 	</control>
@@ -436,7 +444,7 @@
 		<posX>624</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow]+Control.HasFocus(50)</visible>
 	</control>
 	
 	<control>

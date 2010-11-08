@@ -15,25 +15,36 @@
     <control>
       <type>image</type>
       <id>0</id>
-      <posX>430</posX>
-      <posY>192</posY>
-      <width>657</width>
-      <height>335</height>
-      <texture>dialog-invite.png</texture>
+      <posX>288</posX>
+      <posY>393</posY>
+      <width>788</width>
+      <height>375</height>
+      <texture>keyboard_bg.png</texture>
     </control>
+
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>344</posX>
+      <posY>446</posY>
+      <width>28</width>
+      <height>26</height>
+      <texture>keyboard_search.png</texture>
+    </control>
+	
 		<!-- DEFAULT KEYBOARD -->
 		<control>
 			<description>standard keyboard</description>
 			<type>standardKeyboard</type>
 			<id>1</id>
-			<keyboardPosX>450</keyboardPosX>
-			<keyboardPosY>250</keyboardPosY>
-			<keyWidth>50</keyWidth>
-			<keyHeight>50</keyHeight>
+			<keyboardPosX>347</keyboardPosX>
+			<keyboardPosY>490</keyboardPosY>
+			<keyWidth>56</keyWidth>
+			<keyHeight>53</keyHeight>
 			<keyHSpacing>0</keyHSpacing>
-			<keyVSpacing>0</keyVSpacing>
+			<keyVSpacing>2</keyVSpacing>
 			<modeKeySpacing>0</modeKeySpacing>
-			<modeKeyWidth>100</modeKeyWidth>
+			<modeKeyWidth>110</modeKeyWidth>
 			<searchModeKeyWidth>130</searchModeKeyWidth>
 			<label></label>
 			<labelAlign>center</labelAlign>
@@ -50,20 +61,20 @@
 			<labelBoxHeight>30</labelBoxHeight>
 			<labelBoxTexture>-</labelBoxTexture>
 			<showLabelAsInitialText>no</showLabelAsInitialText>
-			<inputTextBoxPosX>451</inputTextBoxPosX>
-			<inputTextBoxPosY>210</inputTextBoxPosY>
-			<inputTextBoxWidth>-1</inputTextBoxWidth>
-			<inputTextBoxHeight>40</inputTextBoxHeight>
+			<inputTextBoxPosX>390</inputTextBoxPosX>
+			<inputTextBoxPosY>445</inputTextBoxPosY>
+			<inputTextBoxWidth>636</inputTextBoxWidth>
+			<inputTextBoxHeight>37</inputTextBoxHeight>
 			<inputTextAlign>left</inputTextAlign>
 			<inputTextOffX>18</inputTextOffX>
 			<inputTextOffY>2</inputTextOffY>
 			<inputTextFont>font16</inputTextFont>
-			<inputTextBoxTexture>button-nofocus.png</inputTextBoxTexture>
-			<inputTextColor>FF000000</inputTextColor>
+			<inputTextBoxTexture>keyboard_input_box.png</inputTextBoxTexture>
+			<inputTextColor>FFFFFFFF</inputTextColor>
 			<inputTextShadowAngle>0</inputTextShadowAngle>
 			<inputTextShadowDistance>0</inputTextShadowDistance>
 			<inputTextShadowColor>FF000000</inputTextShadowColor>
-			<charKeyFont>font14</charKeyFont>
+			<charKeyFont>Segoe Light16</charKeyFont>
 			<namedKeyFont>font10</namedKeyFont>
 			<keyTextShadowAngle>0</keyTextShadowAngle>
 			<keyTextShadowDistance>0</keyTextShadowDistance>
@@ -73,7 +84,7 @@
 			<keyHighlightColor>ffffffff</keyHighlightColor>
 			<keyPressedColor>ffffffff</keyPressedColor>
 			<keyDisabledColor>FFFFFFFF</keyDisabledColor>
-			<keyFontColor>ff87cefa</keyFontColor>
+			<keyFontColor>ff68a3c9</keyFontColor>
 			<keySelFontColor>FFffffff</keySelFontColor>
 			<keyDisabledFontColor>FF808080</keyDisabledFontColor>
 		</control>

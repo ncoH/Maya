@@ -5,114 +5,11 @@
 	<allowoverlay>yes</allowoverlay>
 	<define>#header.label:3</define>
 	<define>#useSelectedFanart:Yes</define>
-	<define>#header.background:hover_my videos.png</define>	
+	<define>#header.background:hover_my videos.png</define>
 <controls>
 
-
-	<import>common.window.video.xml</import>	
-	
-	<!--            :: Fanart ::            -->	
-	
-		<control>
-			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
-			<type>label</type>
-			<id>91919291</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1</width>	
-		</control>
-
-		<control>
-			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
-			<type>label</type>
-			<id>91919292</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1</width>	
-		</control>
-
-		<control>
-			<description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
-			<type>label</type>
-			<id>91919293</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1</width>	
-			<visible>no</visible>
-		</control>	
-
-		<control>
-			<description>FANART BACKGROUND 1</description>
-			<id>0</id>
-			<type>image</type>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1366</width>
-			<height>768</height>
-			<texture>#fanarthandler.movie.backdrop1.selected</texture>
-			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919291)+control.isvisible(91919293)</visible>
-			<animation effect="fade" time="450">visible</animation>
-			<animation effect="fade" time="450" delay="300">hidden</animation>
-		</control>
-
-		<control>
-			<description>FANART BACKGROUND 2</description>
-			<id>0</id>
-			<type>image</type>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1366</width>
-			<height>768</height>
-			<texture>#fanarthandler.movie.backdrop2.selected</texture>
-			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919292)+control.isvisible(91919293)</visible>
-			<animation effect="fade" time="450">visible</animation>
-			<animation effect="fade" time="450" delay="300">hidden</animation>
-		</control>
-
-	<control>
-		<description>Fanart Overlay</description>
-		<type>image</type>
-		<id>0</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>fanart_overlay.png</texture>
-		<visible>facadeview.list+control.isvisible(91919293)</visible>
-	</control>
-
-	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<description>listcontrol background</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>449</posX>
-        <posY>0</posY>
-		<width>873</width>
-		<height>768</height>
-		<texture>fanart_widelist_bg.png</texture>
-		<visible>facadeview.list+control.isvisible(91919293)</visible>
-	</control>
-	
-	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>fanart_overlay_filmstrip.png</texture>
-		<visible>[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip] + control.isvisible(91919293)</visible>
-	</control>
-	
-	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background_coverflow.png</texture>
-		<visible>facadeview.coverflow + control.isvisible(91919293)</visible>
-	</control>
+	<import>common.window.video.xml</import>
+	<import>common.time.xml</import>	
 		
 	<control>
 		<description>Header label</description>		
@@ -129,6 +26,34 @@
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>
 		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>	
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>153</posY>
+		<width>725</width>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>
+		<visible>facadeview.list</visible>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>	
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<visible>facadeview.list</visible>
 	</control>
 
 	<control>
@@ -148,8 +73,6 @@
 		<align>center</align>
 		<valign>middle</valign>
 	</control>
-
-	<import>common.time.xml</import>	
 	
 	<control>
 		<type>actiongroup</type>

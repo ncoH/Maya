@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <controls>
-
+<!--Dummy label-->
 	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<visible>facadeview.list+!control.isvisible(91919293)</visible>
+		<description>Selected item Label</description>
+		<type>label</type>
+		<id>7773</id>
+		<posX>-2000</posX>
+		<posY>100</posY>
+		<label>#title</label>
+		<visible>control.hastext(7773)</visible>
 	</control>
-	
+
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>1</id>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>	
+			<visible>facadeview.list+!control.isvisible(91919293)</visible>			
+		</control>
+
 	<control>
 		<description>listcontrol background</description>
 		<type>image</type>
@@ -46,7 +59,7 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_thumbs.png</texture>
-		<visible>facadeview.smallicons|facadeview.largeicons+!control.isvisible(91919293)</visible>
+		<visible>[facadeview.smallicons | facadeview.largeicons]+!control.isvisible(91919293)</visible>		
 	</control>
 	
 	<control>
@@ -56,7 +69,22 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_filmstrip.png</texture>
-		<visible>facadeview.filmstrip|facadeview.coverflow+!control.isvisible(91919293)</visible>
+		<visible>[facadeview.filmstrip | facadeview.coverflow]+!control.isvisible(91919293)</visible>
+	</control>
+				
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>554</posX>
+		<posY>142</posY>
+		<width>700</width>
+		<label>#title</label>
+		<font>Segoe Light22</font>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip+!facadeview.coverflow]+control.isvisible(7773)+!control.isvisible(53)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
 	</control>
 
 	<control>
@@ -65,10 +93,10 @@
 		<id>1</id>
 		<posX>554</posX>
 		<posY>142</posY>
-		<width>665</width>
+		<width>700</width>
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip+!facadeview.coverflow]+!control.isvisible(53)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip+!facadeview.coverflow]+!control.isvisible(7773)+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>
@@ -81,11 +109,27 @@
 		<posX>1216</posX>
 		<posY>690</posY>
 		<align>right</align>
-		<label>#currentmodule: #itemcount</label>
+		<label>#itemtype: #itemcount </label>
 		<textcolor>6aa5cb</textcolor>
 		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip+!facadeview.coverflow]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>142</posY>
+		<width>1366</width>
+		<label>#title</label>
+		<font>Segoe Light22</font>
+		<align>center</align>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+control.isvisible(7773)+!control.isvisible(53)</visible>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
 	</control>
 
 	<control>
@@ -96,13 +140,13 @@
 		<posY>178</posY>
 		<width>1366</width>
 		<align>center</align>
-		<label>#currentmodule: #itemcount</label>
+		<label>#itemtype: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow</visible>
+		<visible>facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
-	
+
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
@@ -113,7 +157,7 @@
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<align>center</align>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+!control.isvisible(53)</visible>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+!control.isvisible(7773)+!control.isvisible(53)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>

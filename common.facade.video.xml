@@ -8,7 +8,6 @@
 		<control>
 			<animation effect="fade" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
-			<animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="1000">WindowClose</animation>
 			<description>composite control consisting of a list control and a thumbnail panel</description>
 			<type>facadeview</type>
 			<id>50</id>
@@ -111,6 +110,311 @@
 				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,570" time="100">unfocus</thumbAnimation>
 		</control>
 
+        <control>
+          <description>Cover Flow view</description>
+          <type>coverflow</type>
+          <colordiffuse>90ffffff</colordiffuse>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <posX>0</posX>
+          <posY>270</posY>
+          <width>1366</width>
+          <height>768</height>
+          <onup>2</onup>
+          <onleft>50</onleft>
+          <onright>50</onright>		  
+          <selectedCard>0</selectedCard>
+		  <cardWidth>280</cardWidth>
+		  <cardHeight>385</cardHeight>
+          <angle>45</angle>
+          <sideShift>310</sideShift>
+          <sideGap>210</sideGap>
+          <sideDepth>280</sideDepth>
+          <offsetY>0</offsetY>
+          <selectedOffsetY>0</selectedOffsetY>
+          <speed>8</speed>
+          <showFrame>yes</showFrame>
+          <frame>thumbnail_frame_shine_thumbs.png</frame>
+          <frameFocus>thumbnail_frame_shine_thumbs.png</frameFocus>
+          <frameWidth>280</frameWidth>
+          <frameHeight>385</frameHeight>
+          <spinSpeed>8</spinSpeed>
+          <unfocusedAlpha>FF</unfocusedAlpha>
+          <folderPrefix></folderPrefix>
+          <folderSuffix></folderSuffix>
+          <font1>font13</font1>
+          <font2>font11</font2>
+          <label1>#title</label1>
+          <label2>#genre</label2>
+          <textColor>FFFFFFFF</textColor>
+          <remoteColor>FFFF0000</remoteColor>
+          <playedColor>FFA0D0FF</playedColor>
+          <downloadColor>FF00FF00</downloadColor>
+          <selectedColor>FFFFFFFF</selectedColor>
+          <shadowAngle>45</shadowAngle>
+          <shadowDistance>1</shadowDistance>
+          <shadowColor>FF000000</shadowColor>
+          <label1YOff>1430</label1YOff>
+          <label2YOff>1390</label2YOff>
+          <pageSize>5</pageSize>
+          <scrollbarBackground>bar_hor.png</scrollbarBackground>
+          <scrollbarLeft>mouse_left_horizontal.png</scrollbarLeft>
+          <scrollbarRight>mouse_right_horizontal.png</scrollbarRight>
+          <scrollbarYOff>450</scrollbarYOff>
+          <showScrollbar>no</showScrollbar>
+		  <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask.png"/>
+          <subitems>
+            <subitem>
+              <![CDATA[
+                <controls>
+                  <control>
+                    <description>background</description>
+                    <type>image</type>
+                    <posX>0</posX>
+                    <posY>0</posY>
+                    <width>280</width>
+                    <height>385</height>
+                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask.png">background.png</texture>
+                  </control>
+
+                  <control>
+                    <description>Movie Details</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>10</posY>
+                    <width>210</width>
+                    <label>Movie Details</label>
+                    <font>font13</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>genre</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>40</posY>
+                    <width>210</width>
+                    <label>#genre</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>year</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>60</posY>
+                    <width>210</width>
+                    <label>#year</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>runtime</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>80</posY>
+                    <width>210</width>
+                    <label>#runtime min</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>rating</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>100</posY>
+                    <width>210</width>
+                    <label>#rating</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>votes</description>
+                    <type>label</type>
+                    <posX>50</posX>
+                    <posY>100</posY>
+                    <width>210</width>
+                    <label>(#votes votes)</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>Director</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>140</posY>
+                    <width>210</width>
+                    <label>Director</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>director</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>160</posY>
+                    <width>210</width>
+                    <label>#director</label>
+                    <font>font9</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>plot</description>
+                    <type>textboxscrollup</type>
+                    <posX>30</posX>
+                    <posY>180</posY>
+                    <width>210</width>
+                    <height>150</height>
+                    <label>#plot</label>
+                    <font>font9</font>
+                    <lineSpacing>1</lineSpacing>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+<!--
+                  <control>
+                    <description>cast</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>70</posY>
+                    <width>1000</width>
+                    <label>#cast</label>
+                    <font>font9</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+					<visible>no</visible>
+                  </control>
+
+                  <control>
+                    <description>dvdlabel</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>90</posY>
+                    <width>1000</width>
+                    <label>#dvdlabel</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>imdb number</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>110</posY>
+                    <width>1000</width>
+                    <label>#imdbnumber</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>file</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>130</posY>
+                    <width>1000</width>
+                    <label>#file</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                     
+                  <control>
+                    <description>plot outline</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>170</posY>
+                    <width>1000</width>
+                    <label>#plotoutline</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>tagline</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>1000</posY>
+                    <width>1000</width>
+                    <label>#tagline</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>credits</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>250</posY>
+                    <width>1000</width>
+                    <label>#credits</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>thumb</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>270</posY>
+                    <width>1000</width>
+                    <label>#thumb</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>title</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>290</posY>
+                    <width>1000</width>
+                    <label>#title</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>mpaa rating</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>350</posY>
+                    <width>1000</width>
+                    <label>#mpaarating</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>watched</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>370</posY>
+                    <width>1000</width>
+                    <label>#iswatched</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+-->
+
+                </controls>
+              ]]>
+            </subitem>
+          </subitems>
+        </control>
+		
 			<control>
 				<description>playlist listcontrol</description>
 				<type>playlistcontrol</type>
