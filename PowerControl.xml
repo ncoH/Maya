@@ -6,14 +6,14 @@
     <define>#header.background:hover_powercontrol.png</define>
     <define>#header.label:Power Control</define>
     <controls>
-
-        <import>common.window.background.xml</import>		
-        <import>common.time.xml</import>		
+	
+        <import>common.window.background.xml</import>
+        <import>common.time.xml</import>
 		
         <control>
             <id>1</id>
+            <description>Header label</description>
             <type>label</type>
-			<description>Header label</description>
             <posX>552</posX>
             <posY>30</posY>
             <width>500</width>
@@ -30,13 +30,14 @@
             <description>listcontrol background</description>
             <type>image</type>
             <posX>524</posX>
-            <posY>153</posY>
+            <posY>173</posY>
             <width>725</width>
-            <height>482</height>
-            <texture>listcontrol_bg.png</texture>
+            <height>561</height>
+            <texture>listcontrol_bg_recordings.png</texture>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <description>button group</description>
             <type>group</type>
@@ -49,7 +50,7 @@
                 <id>2</id>
                 <description>Action</description>
                 <type>button</type>
-                <onup>4</onup>
+                <onup>5</onup>
                 <ondown>3</ondown>
                 <font>font11</font>
                 <label>Action</label>
@@ -57,19 +58,29 @@
             </control>
             <control>
                 <id>3</id>
-                <description>Action Scheduler</description>
-                <type>togglebutton</type>
+                <description>Network Browser</description>
+                <type>button</type>
                 <onup>2</onup>
                 <ondown>4</ondown>
+                <font>font11</font>
+                <label>Network Browser</label>
+                <textalign>RIGHT</textalign>
+            </control>
+            <control>
+                <id>4</id>
+                <description>Action Scheduler</description>
+                <type>togglebutton</type>
+                <onup>3</onup>
+                <ondown>5</ondown>
                 <font>font11</font>
                 <label>Action Scheduler</label>
                 <textalign>RIGHT</textalign>
             </control>
             <control>
-                <id>4</id>
+                <id>5</id>
                 <description>Alive Check Scheduler</description>
                 <type>togglebutton</type>
-                <onup>3</onup>
+                <onup>4</onup>
                 <ondown>2</ondown>
                 <font>font11</font>
                 <label>Alive Check Scheduler</label>
@@ -91,7 +102,7 @@
             <description>Network Device 0 Image</description>
             <type>image</type>
             <posX>540</posX>
-            <posY>125</posY>
+            <posY>130</posY>
             <width>32</width>
             <height>32</height>
             <texture>#PowerControl.NetworkDevice0TypeImage</texture>
@@ -109,7 +120,7 @@
             <description>IP Address Label</description>
             <type>label</type>
             <posX>585</posX>
-            <posY>150</posY>
+            <posY>155</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>IP Address:</label>
@@ -119,7 +130,7 @@
             <description>IP Address Value</description>
             <type>label</type>
             <posX>790</posX>
-            <posY>150</posY>
+            <posY>155</posY>
             <font>font11</font>
             <label>#PowerControl.NetworkDevice0IPAddress</label>
         </control>
@@ -128,7 +139,7 @@
             <description>MAC Address Label</description>
             <type>label</type>
             <posX>585</posX>
-            <posY>165</posY>
+            <posY>180</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>MAC Address:</label>
@@ -138,7 +149,7 @@
             <description>MAC Address Value</description>
             <type>label</type>
             <posX>790</posX>
-            <posY>165</posY>
+            <posY>180</posY>
             <font>font11</font>
             <label>#PowerControl.NetworkDevice0MACAddress</label>
         </control>
@@ -151,7 +162,7 @@
             <onup>50</onup>
             <ondown>20</ondown>
             <posX>585</posX>
-            <posY>190</posY>
+            <posY>205</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_shutdown_focus.png</textureFocus>
@@ -166,7 +177,7 @@
             <onup>51</onup>
             <ondown>21</ondown>
             <posX>625</posX>
-            <posY>190</posY>
+            <posY>205</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_hibernate_focus.png</textureFocus>
@@ -181,7 +192,7 @@
             <onup>52</onup>
             <ondown>22</ondown>
             <posX>665</posX>
-            <posY>190</posY>
+            <posY>205</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_standby_focus.png</textureFocus>
@@ -196,7 +207,7 @@
             <onup>53</onup>
             <ondown>23</ondown>
             <posX>705</posX>
-            <posY>190</posY>
+            <posY>205</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_restart_focus.png</textureFocus>
@@ -211,7 +222,7 @@
             <onup>54</onup>
             <ondown>24</ondown>
             <posX>745</posX>
-            <posY>190</posY>
+            <posY>205</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_wakeup_focus.png</textureFocus>
@@ -222,7 +233,7 @@
             <description>Network Device 0 Alive</description>
             <type>image</type>
             <posX>790</posX>
-            <posY>190</posY>
+            <posY>205</posY>
             <width>32</width>
             <height>32</height>
             <texture>#PowerControl.NetworkDevice0AliveImage</texture>
@@ -232,7 +243,7 @@
             <description>Network Device 1 Image</description>
             <type>image</type>
             <posX>540</posX>
-            <posY>225</posY>
+            <posY>245</posY>
             <width>32</width>
             <height>32</height>
             <texture>#PowerControl.NetworkDevice1TypeImage</texture>
@@ -242,7 +253,7 @@
             <description>Network Device 1 Description</description>
             <type>label</type>
             <posX>585</posX>
-            <posY>230</posY>
+            <posY>245</posY>
             <label>#PowerControl.NetworkDevice1Type #PowerControl.NetworkDevice1Description (#PowerControl.NetworkDevice1State)</label>
         </control>
         <control>
@@ -250,7 +261,7 @@
             <description>IP Address Label</description>
             <type>label</type>
             <posX>585</posX>
-            <posY>250</posY>
+            <posY>270</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>IP Address:</label>
@@ -260,7 +271,7 @@
             <description>IP Address Value</description>
             <type>label</type>
             <posX>790</posX>
-            <posY>250</posY>
+            <posY>270</posY>
             <font>font11</font>
             <label>#PowerControl.NetworkDevice1IPAddress</label>
         </control>
@@ -269,7 +280,7 @@
             <description>MAC Address Label</description>
             <type>label</type>
             <posX>585</posX>
-            <posY>265</posY>
+            <posY>295</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>MAC Address:</label>
@@ -279,7 +290,7 @@
             <description>MAC Address Value</description>
             <type>label</type>
             <posX>790</posX>
-            <posY>265</posY>
+            <posY>295</posY>
             <font>font11</font>
             <label>#PowerControl.NetworkDevice1MACAddress</label>
         </control>
@@ -292,7 +303,7 @@
             <onup>10</onup>
             <ondown>30</ondown>
             <posX>585</posX>
-            <posY>290</posY>
+            <posY>320</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_shutdown_focus.png</textureFocus>
@@ -307,7 +318,7 @@
             <onup>11</onup>
             <ondown>31</ondown>
             <posX>625</posX>
-            <posY>290</posY>
+            <posY>320</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_hibernate_focus.png</textureFocus>
@@ -322,7 +333,7 @@
             <onup>12</onup>
             <ondown>32</ondown>
             <posX>665</posX>
-            <posY>290</posY>
+            <posY>320</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_standby_focus.png</textureFocus>
@@ -337,7 +348,7 @@
             <onup>13</onup>
             <ondown>33</ondown>
             <posX>705</posX>
-            <posY>290</posY>
+            <posY>320</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_restart_focus.png</textureFocus>
@@ -352,7 +363,7 @@
             <onup>14</onup>
             <ondown>34</ondown>
             <posX>745</posX>
-            <posY>290</posY>
+            <posY>320</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_wakeup_focus.png</textureFocus>
@@ -363,7 +374,7 @@
             <description>Network Device 1 Alive</description>
             <type>image</type>
             <posX>790</posX>
-            <posY>290</posY>
+            <posY>320</posY>
             <width>32</width>
             <height>32</height>
             <texture>#PowerControl.NetworkDevice1AliveImage</texture>
@@ -373,7 +384,7 @@
             <description>Network Device 2 Image</description>
             <type>image</type>
             <posX>540</posX>
-            <posY>325</posY>
+            <posY>360</posY>
             <width>32</width>
             <height>32</height>
             <texture>#PowerControl.NetworkDevice2TypeImage</texture>
@@ -383,7 +394,7 @@
             <description>Network Device 2 Description</description>
             <type>label</type>
             <posX>585</posX>
-            <posY>330</posY>
+            <posY>360</posY>
             <label>#PowerControl.NetworkDevice2Type #PowerControl.NetworkDevice2Description (#PowerControl.NetworkDevice2State)</label>
         </control>
         <control>
@@ -391,7 +402,7 @@
             <description>IP Address Label</description>
             <type>label</type>
             <posX>585</posX>
-            <posY>350</posY>
+            <posY>385</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>IP Address:</label>
@@ -401,7 +412,7 @@
             <description>IP Address Value</description>
             <type>label</type>
             <posX>790</posX>
-            <posY>350</posY>
+            <posY>385</posY>
             <font>font11</font>
             <label>#PowerControl.NetworkDevice2IPAddress</label>
         </control>
@@ -410,7 +421,7 @@
             <description>MAC Address Label</description>
             <type>label</type>
             <posX>585</posX>
-            <posY>365</posY>
+            <posY>410</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>MAC Address:</label>
@@ -420,7 +431,7 @@
             <description>MAC Address Value</description>
             <type>label</type>
             <posX>790</posX>
-            <posY>365</posY>
+            <posY>410</posY>
             <font>font11</font>
             <label>#PowerControl.NetworkDevice2MACAddress</label>
         </control>
@@ -433,7 +444,7 @@
             <onup>20</onup>
             <ondown>40</ondown>
             <posX>585</posX>
-            <posY>390</posY>
+            <posY>435</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_shutdown_focus.png</textureFocus>
@@ -448,7 +459,7 @@
             <onup>21</onup>
             <ondown>41</ondown>
             <posX>625</posX>
-            <posY>390</posY>
+            <posY>435</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_hibernate_focus.png</textureFocus>
@@ -463,7 +474,7 @@
             <onup>22</onup>
             <ondown>42</ondown>
             <posX>665</posX>
-            <posY>390</posY>
+            <posY>435</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_standby_focus.png</textureFocus>
@@ -478,7 +489,7 @@
             <onup>23</onup>
             <ondown>43</ondown>
             <posX>705</posX>
-            <posY>390</posY>
+            <posY>435</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_restart_focus.png</textureFocus>
@@ -493,7 +504,7 @@
             <onup>24</onup>
             <ondown>44</ondown>
             <posX>745</posX>
-            <posY>390</posY>
+            <posY>435</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_wakeup_focus.png</textureFocus>
@@ -504,7 +515,7 @@
             <description>Network Device 2 Alive</description>
             <type>image</type>
             <posX>790</posX>
-            <posY>390</posY>
+            <posY>435</posY>
             <width>32</width>
             <height>32</height>
             <texture>#PowerControl.NetworkDevice2AliveImage</texture>
@@ -514,7 +525,7 @@
             <description>Network Device 3 Image</description>
             <type>image</type>
             <posX>540</posX>
-            <posY>425</posY>
+            <posY>475</posY>
             <width>32</width>
             <height>32</height>
             <texture>#PowerControl.NetworkDevice3TypeImage</texture>
@@ -524,7 +535,7 @@
             <description>Network Device 3 Description</description>
             <type>label</type>
             <posX>585</posX>
-            <posY>430</posY>
+            <posY>475</posY>
             <label>#PowerControl.NetworkDevice3Type #PowerControl.NetworkDevice3Description (#PowerControl.NetworkDevice3State)</label>
         </control>
         <control>
@@ -532,7 +543,7 @@
             <description>IP Address Label</description>
             <type>label</type>
             <posX>585</posX>
-            <posY>450</posY>
+            <posY>500</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>IP Address:</label>
@@ -542,7 +553,7 @@
             <description>IP Address Value</description>
             <type>label</type>
             <posX>790</posX>
-            <posY>450</posY>
+            <posY>500</posY>
             <font>font11</font>
             <label>#PowerControl.NetworkDevice3IPAddress</label>
         </control>
@@ -551,7 +562,7 @@
             <description>MAC Address Label</description>
             <type>label</type>
             <posX>585</posX>
-            <posY>465</posY>
+            <posY>525</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>MAC Address:</label>
@@ -561,7 +572,7 @@
             <description>MAC Address Value</description>
             <type>label</type>
             <posX>790</posX>
-            <posY>465</posY>
+            <posY>525</posY>
             <font>font11</font>
             <label>#PowerControl.NetworkDevice3MACAddress</label>
         </control>
@@ -574,7 +585,7 @@
             <onup>30</onup>
             <ondown>50</ondown>
             <posX>585</posX>
-            <posY>490</posY>
+            <posY>550</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_shutdown_focus.png</textureFocus>
@@ -589,7 +600,7 @@
             <onup>31</onup>
             <ondown>51</ondown>
             <posX>625</posX>
-            <posY>490</posY>
+            <posY>550</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_hibernate_focus.png</textureFocus>
@@ -604,7 +615,7 @@
             <onup>32</onup>
             <ondown>52</ondown>
             <posX>665</posX>
-            <posY>490</posY>
+            <posY>550</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_standby_focus.png</textureFocus>
@@ -619,7 +630,7 @@
             <onup>33</onup>
             <ondown>53</ondown>
             <posX>705</posX>
-            <posY>490</posY>
+            <posY>550</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_restart_focus.png</textureFocus>
@@ -634,7 +645,7 @@
             <onup>34</onup>
             <ondown>54</ondown>
             <posX>745</posX>
-            <posY>490</posY>
+            <posY>550</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_wakeup_focus.png</textureFocus>
@@ -645,7 +656,7 @@
             <description>Network Device 3 Alive</description>
             <type>image</type>
             <posX>790</posX>
-            <posY>490</posY>
+            <posY>550</posY>
             <width>32</width>
             <height>32</height>
             <texture>#PowerControl.NetworkDevice3AliveImage</texture>
@@ -655,7 +666,7 @@
             <description>Network Device 4 Image</description>
             <type>image</type>
             <posX>540</posX>
-            <posY>525</posY>
+            <posY>590</posY>
             <width>32</width>
             <height>32</height>
             <texture>#PowerControl.NetworkDevice4TypeImage</texture>
@@ -665,7 +676,7 @@
             <description>Network Device 4 Description</description>
             <type>label</type>
             <posX>585</posX>
-            <posY>530</posY>
+            <posY>590</posY>
             <label>#PowerControl.NetworkDevice4Type #PowerControl.NetworkDevice4Description (#PowerControl.NetworkDevice4State)</label>
         </control>
         <control>
@@ -673,7 +684,7 @@
             <description>IP Address Label</description>
             <type>label</type>
             <posX>585</posX>
-            <posY>550</posY>
+            <posY>615</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>IP Address:</label>
@@ -683,7 +694,7 @@
             <description>IP Address Value</description>
             <type>label</type>
             <posX>790</posX>
-            <posY>550</posY>
+            <posY>615</posY>
             <font>font11</font>
             <label>#PowerControl.NetworkDevice4IPAddress</label>
         </control>
@@ -692,7 +703,7 @@
             <description>MAC Address Label</description>
             <type>label</type>
             <posX>585</posX>
-            <posY>565</posY>
+            <posY>640</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>MAC Address:</label>
@@ -702,7 +713,7 @@
             <description>MAC Address Value</description>
             <type>label</type>
             <posX>790</posX>
-            <posY>565</posY>
+            <posY>640</posY>
             <font>font11</font>
             <label>#PowerControl.NetworkDevice4MACAddress</label>
         </control>
@@ -715,7 +726,7 @@
             <onup>40</onup>
             <ondown>10</ondown>
             <posX>585</posX>
-            <posY>590</posY>
+            <posY>665</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_shutdown_focus.png</textureFocus>
@@ -730,7 +741,7 @@
             <onup>41</onup>
             <ondown>11</ondown>
             <posX>625</posX>
-            <posY>590</posY>
+            <posY>665</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_hibernate_focus.png</textureFocus>
@@ -745,7 +756,7 @@
             <onup>42</onup>
             <ondown>12</ondown>
             <posX>665</posX>
-            <posY>590</posY>
+            <posY>665</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_standby_focus.png</textureFocus>
@@ -760,7 +771,7 @@
             <onup>43</onup>
             <ondown>13</ondown>
             <posX>705</posX>
-            <posY>590</posY>
+            <posY>665</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_restart_focus.png</textureFocus>
@@ -775,7 +786,7 @@
             <onup>44</onup>
             <ondown>14</ondown>
             <posX>745</posX>
-            <posY>590</posY>
+            <posY>665</posY>
             <width>32</width>
             <height>32</height>
             <textureFocus>button_wakeup_focus.png</textureFocus>
@@ -786,7 +797,7 @@
             <description>Network Device 4 Alive</description>
             <type>image</type>
             <posX>790</posX>
-            <posY>590</posY>
+            <posY>665</posY>
             <width>32</width>
             <height>32</height>
             <texture>#PowerControl.NetworkDevice4AliveImage</texture>

@@ -128,8 +128,8 @@
 		  <cardHeight>385</cardHeight>
           <angle>45</angle>
           <sideShift>310</sideShift>
-          <sideGap>210</sideGap>
-          <sideDepth>280</sideDepth>
+          <sideGap>100</sideGap>
+          <sideDepth>270</sideDepth>
           <offsetY>0</offsetY>
           <selectedOffsetY>0</selectedOffsetY>
           <speed>8</speed>
