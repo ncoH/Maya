@@ -134,8 +134,8 @@
           <selectedOffsetY>0</selectedOffsetY>
           <speed>8</speed>
           <showFrame>yes</showFrame>
-          <frame>thumbnail_frame_shine_thumbs.png</frame>
-          <frameFocus>thumbnail_frame_shine_thumbs.png</frameFocus>
+          <frame>coverflow_glass_overlay_videos.png</frame>
+          <frameFocus>coverflow_glass_overlay_videos.png</frameFocus>
           <frameWidth>280</frameWidth>
           <frameHeight>385</frameHeight>
           <spinSpeed>8</spinSpeed>
@@ -162,7 +162,7 @@
           <scrollbarRight>mouse_right_horizontal.png</scrollbarRight>
           <scrollbarYOff>450</scrollbarYOff>
           <showScrollbar>no</showScrollbar>
-		  <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask.png"/>
+		  <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png"/>
           <subitems>
             <subitem>
               <![CDATA[
@@ -174,7 +174,7 @@
                     <posY>0</posY>
                     <width>280</width>
                     <height>385</height>
-                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask.png">background.png</texture>
+                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png">background.png</texture>
                   </control>
 
                   <control>

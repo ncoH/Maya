@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>54537689</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:Browse the Web</define>
+	<define>#header.background:hover_BrowseTheWeb.png</define> 
+	<controls>
+	
+		<import>common.window.background.xml</import>
+		<import>common.time.xml</import>
+
+        <control>
+            <id>1</id>
+            <type>label</type>
+			<description>Header label</description>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+		
+		<control>
+			<description>Status label</description>
+			<id>9</id>
+            <type>fadelabel</type>
+            <posX>554</posX>
+            <posY>142</posY>
+            <width>700</width>
+            <font>Segoe Light22</font>
+			<label>#btWeb.status</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+            <valign>middle</valign>
+		</control>
+		
+		<control>
+			<description>Link id label</description>
+			<type>label</type>
+			<id>9</id>
+			<posX>554</posX>
+			<posY>175</posY>
+			<width>665</width>
+			<label>#btWeb.linkid</label>
+			<font>font13</font>
+			<align>right</align>
+			<textcolor>ffffffff</textcolor>
+			<animation effect="fade" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+		</control>
+
+	</controls>
+</window>

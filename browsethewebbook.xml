@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>54537689</id>
+	<defaultcontrol>50</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:Browse the Web - Favorites</define>
+	<define>#header.background:hover_BrowseTheWeb.png</define> 
+	<controls>
+	
+		<import>common.window.background.xml</import>
+		<import>common.time.xml</import>
+			
+        <control>
+            <id>1</id>
+            <type>label</type>
+			<description>Header label</description>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+
+        <control>
+			<description>listcontrol background</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>524</posX>
+			<posY>153</posY>
+			<width>725</width>
+			<height>482</height>
+            <texture>listcontrol_bg_small.png</texture>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>554</posX>
+		<posY>142</posY>
+		<width>665</width>
+		<label>#selecteditem</label>
+		<font>Segoe Light22</font>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+		<valign>middle</valign>
+	</control>
+			
+		<control>
+			<description>group element</description>
+			<type>group</type>
+			<animation effect="fade" time="200">WindowOpen</animation>
+			<animation effect="fade" time="200">WindowClose</animation>
+			<control>
+				<description>listcontrol</description>
+				<type>listcontrol</type>
+				<id>50</id>
+				<onleft>2</onleft>
+				<onright>50</onright>
+				<scrollOffset>1</scrollOffset>
+				<posX>524</posX>
+				<posY>187</posY>
+				<height>458</height>
+				<spinPosX>560</spinPosX>
+				<spinPosY>688</spinPosY>
+				<spinAlign>left</spinAlign>
+				<textXOff>22</textXOff>
+				<dimColor>ffffffff</dimColor>
+			</control>
+		</control>     
+
+	</controls>
+</window>
