@@ -1010,6 +1010,16 @@
       <visible>Control.IsVisible(1239)</visible>
     </control>
 	
+		<!-- Dummy for Director label -->
+		
+    <control>      
+      <type>label</type>
+      <id>1200</id>
+      <posX>-2000</posX>
+	  <posY>-2000</posY>
+      <label>#TVSeries.Episode.InfoPanelLine4Value</label>
+      <visible>Control.IsVisible(1239)+Control.HasText(1200)</visible>
+    </control>
 
     <control>      
       <type>fadelabel</type>
@@ -1022,7 +1032,7 @@
 	  <font>font11</font>
 	  <textcolor>85cffe</textcolor>
       <label>#TVSeries.Translation.Director.Label: #TVSeries.Episode.InfoPanelLine4Value</label>
-      <visible>Control.IsVisible(1239)</visible>
+      <visible>Control.IsVisible(1239)+Control.HasText(1200)</visible>
     </control>
 	
 	
