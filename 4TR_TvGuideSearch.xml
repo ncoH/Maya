@@ -39,26 +39,18 @@
 		<texture>listcontrol_bg_recordings.png</texture>
 	</control>
 
-	<control>
-		<description>Number of Files Label</description>
+    <control>
 		<type>label</type>
-		<id>12</id>
-		<posX>-2000</posX>
-		<label>#itemcount</label>
-	</control>
-	
-	<control>
 		<description>Number of Files Label</description>
-		<type>label</type>
 		<id>12</id>
-		<posX>1200</posX>
-		<posY>693</posY>
+		<posX>1216</posX>
+		<posY>690</posY>
 		<align>right</align>
 		<label>#itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+    </control>
 	
 	<control>
 		<description>Selected item Label</description>

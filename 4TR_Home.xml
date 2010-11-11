@@ -202,23 +202,6 @@
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
 
-<!-- 		<control>
-			<description>Scheduler</description>
-			<type>button</type>
-			<id>10</id>
-			<label>603</label>
-			<hyperlink>601</hyperlink>
-			<onup>9</onup>
-			<ondown>2</ondown>
-			<onright>99</onright>
-			<textalign>right</textalign>
-			<width>281</width>
-			<textXOff>23</textXOff>
-			<height>46</height>
-			<textYOff>10</textYOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-		</control> -->
 	</control>
 	
 	<control>
@@ -271,7 +254,7 @@
 		<height>37</height>
 		<posX>562</posX>
 		<posY>480</posY>
-		<label>#TV.View.channel - #TV.View.start - #TV.View.stop</label>
+		<label>#TV.View.channel   #TV.View.start - #TV.View.stop</label>
 		<align>left</align>
 		<font>font14</font>
 		<textcolor>ff85cffe</textcolor>

@@ -252,7 +252,7 @@
         <label>#Radio.View.channel - #Radio.View.start - #Radio.View.stop</label>
         <align>left</align>
         <font>font16</font>
-        <textcolor>ff85cffe</textcolor>
+		<textcolor>ff85cffe</textcolor>
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
     </control>

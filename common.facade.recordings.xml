@@ -21,12 +21,12 @@
 				<posX>524</posX>
 				<width>724</width>
 				<onleft>2</onleft>
-				<onright>50</onright>
+				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
 				<PinIconHeight>51</PinIconHeight>
 				<PinIconWidth>43</PinIconWidth>
 				<PinIconXOff>0</PinIconXOff>
-				<PinIconYOff>1</PinIconYOff>
+				<PinIconYOff>6</PinIconYOff>
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
 				<IconXOff>40</IconXOff>

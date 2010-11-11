@@ -17,8 +17,8 @@
 				<type>listcontrol</type>
 				<id>50</id>
 				<posY>427</posY>
-				<height>300</height>
 				<posX>524</posX>
+				<height>300</height>				
 				<width>724</width>
 				<onleft>2</onleft>
 				<onright>2</onright>
@@ -26,7 +26,7 @@
 				<PinIconHeight>51</PinIconHeight>
 				<PinIconWidth>43</PinIconWidth>
 				<PinIconXOff>0</PinIconXOff>
-				<PinIconYOff>1</PinIconYOff>
+				<PinIconYOff>6</PinIconYOff>
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
 				<IconXOff>40</IconXOff>

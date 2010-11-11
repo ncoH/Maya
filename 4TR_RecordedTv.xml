@@ -9,8 +9,7 @@
 
 	<import>common.window.recordings.xml</import>
 	<import>common.time.xml</import>
-	
-	
+		
 	<control>
 		<description>Header Label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -255,7 +254,7 @@
 			<posY>180</posY>
 			<label>#TV.RecordedTV.Channel</label>
 			<font>Segoe Light18</font>
-			<textcolor>85cffe</textcolor>
+			<textcolor>6aa5cb</textcolor>
 			<visible>facadeview.list</visible>
 		</control>
 		
@@ -265,7 +264,7 @@
 			<id>0</id>
 			<posX>555</posX>
 			<posY>215</posY>
-			<textcolor>85cffe</textcolor>
+			<textcolor>6aa5cb</textcolor>
 			<font>Segoe Light18</font>
 			<label>#TV.RecordedTV.Time</label>
 			<visible>facadeview.list</visible>
