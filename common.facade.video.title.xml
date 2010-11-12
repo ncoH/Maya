@@ -17,6 +17,7 @@
 				<id>50</id>
 				<onleft>2</onleft>
 				<onright>50</onright>
+				<scrollOffset>1</scrollOffset>
 				<posX>524</posX>
 				<posY>187</posY>
 				<height>458</height>
@@ -35,15 +36,15 @@
 				<description>Thumbnail Panel</description>
 				<type>thumbnailpanel</type>
 				<id>50</id>
+				<onleft>2</onleft>
+				<onright>50</onright>					
 				<posX>516</posX>
 				<posY>255</posY>
 				<width>790</width>
 				<height>500</height>
-				<scrollOffset>0</scrollOffset>
+				<scrollOffset>1</scrollOffset>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<onleft>2</onleft>
-				<onright>50</onright>
 				<itemWidth>103</itemWidth>
 				<itemHeight>140</itemHeight>
 				<textureWidth>103</textureWidth>
@@ -74,22 +75,22 @@
 				<spinPosX>1190</spinPosX>
 			</control>
 
-					<control>
-			<description>Filmstrip view</description>
-			<type>filmstrip</type>
-			<dimColor>90ffffff</dimColor>
-			<id>50</id>
+			<control>
+				<description>Filmstrip view</description>
+				<type>filmstrip</type>
+				<dimColor>90ffffff</dimColor>
+				<id>50</id>
 				<scrollOffset>2</scrollOffset>
+				<onup>2</onup>
+				<ondown>50</ondown>
+				<onleft>50</onleft>
+				<onright>50</onright>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<posX>150</posX>
 				<posY>355</posY>
 				<width>1166</width>
 				<height>768</height>
-				<onup>2</onup>
-				<ondown>2</ondown>
-				<onleft>50</onleft>
-				<onright>50</onright>
 				<thumbWidth>214</thumbWidth>
 				<thumbHeight>302</thumbHeight>
 				<thumbPosX>0</thumbPosX>
@@ -119,13 +120,14 @@
           <colordiffuse>90ffffff</colordiffuse>
           <dimColor>90ffffff</dimColor>
           <id>50</id>
-          <posX>0</posX>
-          <posY>270</posY>
-          <width>1366</width>
-          <height>768</height>
           <onup>2</onup>
+		  <ondown>50</ondown>		  
           <onleft>50</onleft>
-          <onright>50</onright>		  
+          <onright>50</onright>				  
+          <posX>0</posX>
+          <posY>285</posY>
+          <width>1366</width>
+          <height>768</height>	  
           <selectedCard>0</selectedCard>
 		  <cardWidth>280</cardWidth>
 		  <cardHeight>385</cardHeight>
@@ -165,7 +167,7 @@
           <scrollbarRight>mouse_right_horizontal.png</scrollbarRight>
           <scrollbarYOff>450</scrollbarYOff>
           <showScrollbar>no</showScrollbar>
-		  <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask.png"/>
+		  <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png"/>
           <subitems>
             <subitem>
               <![CDATA[
@@ -177,7 +179,7 @@
                     <posY>0</posY>
                     <width>280</width>
                     <height>385</height>
-                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask.png">background.png</texture>
+                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png">background.png</texture>
                   </control>
 
                   <control>

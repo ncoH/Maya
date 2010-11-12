@@ -165,7 +165,7 @@
 			<id>2</id>
 			<onleft>50</onleft>
 			<onright>50</onright>
-			<onup>7</onup>
+			<onup>21</onup>
 			<ondown>3</ondown>
 			<label>100</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>

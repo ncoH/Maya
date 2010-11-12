@@ -29,34 +29,6 @@
 	</control>
 	
 	<control>
-		<description>listcontrol background</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>524</posX>
-        <posY>153</posY>
-		<width>725</width>
-		<height>482</height>
-		<texture>listcontrol_bg.png</texture>
-		<visible>facadeview.list</visible>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-	</control>
-	
-	<control>
-		<description>listcontrol background info</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>524</posX>
-        <posY>678</posY>
-		<width>725</width>
-		<height>51</height>
-		<texture>listcontrol_bg_info.png</texture>
-		<visible>facadeview.list</visible>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-	</control>
-
-	<control>
 		<description>Header Label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -73,7 +45,60 @@
 		<align>center</align>
 		<valign>middle</valign>
 	</control>
+
+	<control>
+		<description>listcontrol background</description>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>173</posY>
+		<width>725</width>
+		<height>561</height>
+		<texture>listcontrol_bg_recordings.png</texture>
+		<visible>facadeview.list</visible>
+	</control>
 	
+	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>91</posX>
+        <posY>207</posY>
+        <width>365</width>
+	    <height>203</height>
+		<texture>defaultTVBig.png</texture>
+		<visible>facadeview.list+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
+		<id>500</id>
+		<type>image</type>
+		<posX>91</posX>
+        <posY>207</posY>
+        <width>365</width>
+	    <height>203</height>
+		<texture>#selectedthumb</texture>
+		<visible>facadeview.list+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>44</posX>
+	    <posY>161</posY>
+	    <width>457</width>
+	    <height>295</height>
+		<texture>blackborders_recordings.png</texture>
+		<visible>facadeview.list</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
@@ -140,7 +165,7 @@
 			<id>2</id>
 			<onleft>50</onleft>
 			<onright>50</onright>
-			<onup>7</onup>
+			<onup>21</onup>
 			<ondown>3</ondown>
 			<label>100</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
@@ -221,6 +246,7 @@
 			<label>896</label>
 		</control>
 -->
+
 		<control>
 			<description>Empty button</description>
 			<type>button</type>
@@ -229,8 +255,9 @@
 			<height>49</height>
 			<label>-</label>
 			<visible>false</visible>
-		 </control>
-		 <control>
+		</control>
+
+		<control>
 			<type>button</type>
 			<description>scheduled button</description>
 			<id>9</id>
@@ -246,9 +273,9 @@
 			<textXOff>25</textXOff>
 			<textYOff>12</textYOff>
 			<label>603</label>
-		 </control>
+		</control>
 
-		 <control>
+		<control>
 			<type>button</type>
 			<description>tvguide button</description>
 			<id>10</id>
@@ -264,9 +291,9 @@
 			<textXOff>25</textXOff>
 			<textYOff>12</textYOff>
 			<label>600</label>
-		 </control>
+		</control>
 
-		 <control>
+		<control>
 			<type>button</type>
 			<description>button</description>
 			<id>21</id>
@@ -284,8 +311,10 @@
 			<label>137</label>
 		</control>
 
-		</control>
-	</control>	
+	</control>
+
+	</control>
+	
 </control>
 
 	<control>
@@ -306,8 +335,8 @@
 			<description>Current program channel</description>
 			<type>label</type>
 			<id>0</id>
-			<posX>92</posX>
-			<posY>166</posY>
+			<posX>555</posX>
+			<posY>180</posY>
 			<label>#TV.RecordedTV.Channel</label>
 			<font>Segoe Light18</font>
 			<textcolor>85cffe</textcolor>
@@ -318,8 +347,8 @@
 			<type>label</type>
 			<description>Current program time</description>
 			<id>0</id>
-			<posX>92</posX>
-			<posY>201</posY>
+			<posX>555</posX>
+			<posY>215</posY>
 			<textcolor>85cffe</textcolor>
 			<font>Segoe Light18</font>
 			<label>#TV.RecordedTV.Time</label>
@@ -330,10 +359,10 @@
 			<type>textboxscrollup</type>
 			<description>Description1</description>
 			<id>0</id>
-			<posX>93</posX>
+			<posX>556</posX>
 			<posY>281</posY>
-			<width>351</width>
-			<height>272</height>
+			<width>680</width>
+			<height>110</height>
 			<font>font12</font>
 			<label>#TV.RecordedTV.Description</label>
 			<visible>facadeview.list</visible>

@@ -22,12 +22,11 @@
 				<posY>187</posY>
 				<height>458</height>
 				<folderPrefix></folderPrefix>
-				<folderSuffix></folderSuffix>
-				<textXOff>16</textXOff>
+				<folderSuffix></folderSuffix>				
 				<spinPosX>560</spinPosX>
 				<spinPosY>688</spinPosY>
 				<spinAlign>left</spinAlign>
-				<spinCanFocus>no</spinCanFocus>
+				<textXOff>22</textXOff>
 				<dimColor>ffffffff</dimColor>
 			</control>
 
@@ -36,13 +35,13 @@
 				<type>thumbnailpanel</type>
 				<dimColor>90ffffff</dimColor>
 				<id>50</id>
+				<onleft>2</onleft>
+				<onright>50</onright>					
 				<posX>163</posX>
 				<posY>242</posY>
 				<width>1040</width>
 				<height>500</height>
 				<scrollOffset>1</scrollOffset>
-				<onleft>2</onleft>
-				<onright>50</onright>
                 <itemWidth>150</itemWidth>
                 <itemHeight>150</itemHeight>
                 <textureWidth>151</textureWidth>
@@ -80,14 +79,16 @@
 				<dimColor>90ffffff</dimColor>
 				<id>50</id>
 				<scrollOffset>2</scrollOffset>
+				<onup>2</onup>
+				<ondown>50</ondown>
+				<onleft>50</onleft>
+				<onright>50</onright>				
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
 				<posX>164</posX>
 				<posY>539</posY>
 				<width>1036</width>
 				<height>768</height>
-				<onup>2</onup>
-				<onleft>50</onleft>
 				<thumbWidth>207</thumbWidth>
 				<thumbHeight>138</thumbHeight>
 				<thumbPosX>0</thumbPosX>
@@ -115,28 +116,29 @@
           <colordiffuse>90ffffff</colordiffuse>
           <dimColor>90ffffff</dimColor>
           <id>50</id>
+          <onup>2</onup>
+		  <ondown>50</ondown>		  
+          <onleft>50</onleft>
+          <onright>50</onright>	
           <posX>0</posX>
           <posY>300</posY>
           <width>1366</width>
           <height>768</height>
-          <onup>2</onup>
-          <onleft>50</onleft>
-          <onright>50</onright>	
           <selectedCard>0</selectedCard>
-          <cardWidth>365</cardWidth>
-          <cardHeight>260</cardHeight>
+          <cardWidth>385</cardWidth>
+          <cardHeight>280</cardHeight>
           <angle>65</angle>
-		  <sideShift>380</sideShift>
-		  <sideGap>150</sideGap>
+		  <sideShift>405</sideShift>
+		  <sideGap>120</sideGap>
 		  <sideDepth>280</sideDepth>
           <offsetY>0</offsetY>
           <selectedOffsetY>0</selectedOffsetY>
           <speed>8</speed>
           <showFrame>yes</showFrame>
-          <frame>thumbnail_frame_shine.png</frame>
-          <frameFocus>thumbnail_frame_shine.png</frameFocus>
-          <frameWidth>365</frameWidth>
-          <frameHeight>260</frameHeight>
+          <frame>coverflow_glass_overlay_music.png</frame>
+          <frameFocus>coverflow_glass_overlay_music.png</frameFocus>
+          <frameWidth>385</frameWidth>
+          <frameHeight>280</frameHeight>
           <spinSpeed>8</spinSpeed>
           <unfocusedAlpha>FF</unfocusedAlpha>
           <folderPrefix></folderPrefix>
@@ -161,52 +163,54 @@
           <scrollbarRight>mouse_right_horizontal.png</scrollbarRight>
           <scrollbarYOff>455</scrollbarYOff>
           <showScrollbar>no</showScrollbar>
-					<cards flipY="yes" diffuse="Thumb_Mask.png"/>
+					<cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png"/>
 					<subitems>
 						<subitem>
 							<![CDATA[
                 <controls>
                   <control>
-                <description>background</description>
-                <type>image</type>
-                <posX>0</posX>
-                <posY>0</posY>
-                <width>359</width>
-                <height>255</height>
-                <texture flipY="yes" diffuse="Thumb_Mask.png" mask="defaultPictureBig.png">background.png</texture>
-              </control>
-              <control>
-                <description>Picture Details</description>
-                <type>label</type>
-                <posX>30</posX>
-                <posY>10</posY>
-                <width>210</width>
-                <label>Picture Details</label>
-                <font>font13</font>
-                <textcolor>FFFFFFFF</textcolor>
-              </control>
-              <control>
-                <description>genre</description>
-                <type>label</type>
-                <posX>20</posX>
-                <posY>40</posY>
-                <width>210</width>
-                <label>#selecteditem</label>
-                <font>font10</font>
-                <textcolor>FFFFFFFF</textcolor>
-              </control>
-              <control>
-                <description>year</description>
-                <type>label</type>
-                <posX>20</posX>
-                <posY>60</posY>
-                <width>210</width>
-                <label>#selecteditem2</label>
-                <font>font10</font>
-                <textcolor>FFFFFFFF</textcolor>
-              </control>
-            </controls>]]></subitem>
-        </subitems>
+                    <description>background</description>
+                    <type>image</type>
+                    <posX>0</posX>
+                    <posY>0</posY>
+                    <width>385</width>
+                    <height>280</height>
+                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png">background.png</texture>
+                  </control>
+				     <control>
+                    <description>Picture Details</description>
+                    <type>label</type>
+                    <posX>20</posX>
+                    <posY>10</posY>
+                    <width>210</width>
+                    <label>Picture Details</label>
+                    <font>font13</font>
+                    <textcolor>ff7F9EB2</textcolor>
+                  </control>
+                  <control>
+                    <description>picture name</description>
+                    <type>label</type>
+                    <posX>20</posX>
+                    <posY>40</posY>
+                    <width>210</width>
+                    <label>#selecteditem</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+				  <control>
+                    <description>picture size</description>
+                    <type>label</type>
+                    <posX>20</posX>
+                    <posY>60</posY>
+                    <width>210</width>
+                    <label>#selecteditem2</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                </controls>
+              ]]>
+						</subitem>
+					</subitems>
       </control>
     </control>
   </control>
