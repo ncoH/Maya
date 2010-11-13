@@ -3,22 +3,20 @@
 	<id>4755</id>
 	<defaultcontrol>50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<define>#header.label</define>
-	<define>#header.image</define>
 	<define>#header.Extension.label:#header.label</define>
 	<define>#header.background:hover_OnlineVideos.png</define>	
 <controls>
 
-
-        <control>
-            <description>Background</description>
-            <type>image</type>
-			<id>1</id>			
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>1</id>
+            <posX>0</posX>
+            <posY>0</posY>
             <width>1366</width>
             <height>768</height>
             <texture>background.png</texture>
-			<visible>[!facadeview.smallicons + !facadeview.largeicons]+!Control.IsVisible(51)+!string.contains(#maya.backgroundImage,yes)</visible>			
-        </control>
+		</control>
 	
 	<control>
 		<description>Alternate BG</description>
@@ -27,19 +25,19 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>background_thumbs.png</texture>
-		<visible>[facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(51)</visible>
+		<visible>[facadeview.smallicons | facadeview.largeicons]</visible>
 	</control>
-
+	
 		<control>
 			<description>Fanart Background</description>
 			<type>image</type>
-			<id>0</id>
+			<id>1</id>
 			<posX>0</posX>
 			<posY>0</posY>
 			<width>1366</width>
 			<height>768</height>
 			<texture>#header.background</texture>	
-			<visible>string.contains(#maya.backgroundImage,yes)</visible>
+			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 
 		<control>
@@ -51,22 +49,55 @@
 			<width>1366</width>
 			<height>768</height>
 			<texture>basichome_fanart_overlay.png</texture>
-			<visible>facadeview.list+!Control.IsVisible(51)+string.contains(#maya.bgImage.Plugins,yes)</visible>
+			<visible>[!facadeview.smallicons | !facadeview.largeicons]+string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 
 		<control>
 			<description>Fanart Overlay</description>
 			<type>image</type>
-			<id>0</id>
+			<id>1</id>
 			<posX>0</posX>
 			<posY>0</posY>
 			<width>1366</width>
 			<height>768</height>
 			<texture>fanart_overlay_thumbs.png</texture>
-			<visible>[facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(51)+string.contains(#maya.bgImage.Plugins,yes)</visible>
+			<visible>[facadeview.smallicons | facadeview.largeicons]+string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 		
-        <import>common.time.xml</import>
+	<import>common.time.xml</import>
+		
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>0</id>
+		<posX>552</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>Online Videos</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<visible>[!facadeview.smallicons + !facadeview.largeicons]+!Control.IsVisible(51)</visible>
+		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>0</id>
+		<posX>433</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>Online Videos</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<visible>[facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(51)</visible>
+		<align>center</align>
+		<valign>middle</valign>
+	</control>
 		
 	<control>
 		<description>Selected item Label</description>
@@ -169,40 +200,7 @@
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>
 	</control>
-	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
-		<id>0</id>
-		<posX>552</posX>
-		<posY>30</posY>
-		<width>500</width>
-		<height>100</height>
-		<label>Online Videos</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<visible>[!facadeview.smallicons + !facadeview.largeicons]+!Control.IsVisible(51)</visible>
-		<valign>middle</valign>
-	</control>
-	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
-		<id>0</id>
-		<posX>433</posX>
-		<posY>30</posY>
-		<width>500</width>
-		<height>100</height>
-		<label>Online Videos</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<visible>[facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(51)</visible>
-		<align>center</align>
-		<valign>middle</valign>
-	</control>
-
+			
     <control>
 		<description>Buffering Label</description>	
 		<type>label</type>	
@@ -398,7 +396,7 @@
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
 	
-	<control>
+<!-- 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
@@ -410,7 +408,7 @@
 		<visible>[facadeview.smallicons|facadeview.largeicons]+!control.isvisible(51)+string.equals(#OnlineVideos.state, videos)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
+	</control> -->
 	                
 	                <!--
 	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::

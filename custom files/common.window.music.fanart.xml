@@ -65,7 +65,7 @@
 		<id>1</id>
 		<posX>554</posX>
 		<posY>142</posY>
-		<width>665</width>
+		<width>663</width>
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip+!facadeview.coverflow]+!control.isvisible(53)</visible>

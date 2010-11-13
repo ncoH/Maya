@@ -4,7 +4,6 @@
     <defaultcontrol>50</defaultcontrol>
     <allowoverlay>no</allowoverlay>
 	<define>#header.label:YouTube.fm</define>
-	<define>#useSelectedFanart:Yes</define>
 	<define>#header.background:hover_youtubefm.png</define>	
     <controls>
 	
@@ -112,21 +111,21 @@
         <control>
             <id>1</id>
             <type>imagelist</type>
-            <visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)</visible>
             <posX>75</posX>
             <posY>445</posY>
             <width>185</width>
             <height>21</height>
             <textureHeight>19</textureHeight>
             <textureWidth>23</textureWidth>
-	    <percentage>#Youtube.fm.Curent.Video.Rating</percentage>
+			<percentage>#Youtube.fm.Curent.Video.Rating</percentage>
             <imagesToDraw>5</imagesToDraw>
             <orientation>HORIZONTAL</orientation>
             <align>LEFT</align>
             <subitems>
-                <subitem>starblue.png</subitem>
-                <subitem>starwhite.png</subitem>
+            <subitem>starblue.png</subitem>
+            <subitem>starwhite.png</subitem>
             </subitems>
+			<visible>[facadeview.smallicons|facadeview.list|facadeview.largeicons|facadeview.album]+[control.hasfocus(50)]</visible>			
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
@@ -140,11 +139,12 @@
 		<width>330</width>
 		<font>font11</font>
 		<label>Loved by #Youtube.fm.Curent.Video.FavoriteCount Users</label>
-        <visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.smallicons|facadeview.list|facadeview.largeicons|facadeview.album]+[control.hasfocus(50)]</visible>
         <animation effect="Fade" time="100">WindowOpen</animation>
         <animation effect="Fade" time="100">WindowClose</animation>
 		<wrapString> : : </wrapString>
 	</control>
+	
 	<control>
 		<description>title2</description>
 		<type>fadelabel</type>
@@ -154,9 +154,9 @@
 		<width>350</width>
 		<font>font11</font>
 		<label>Viewed by #Youtube.fm.Curent.Video.ViewCount Users</label>
-            	<visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)</visible>
-            	<animation effect="Fade" time="100">WindowOpen</animation>
-            	<animation effect="Fade" time="100">WindowClose</animation>
+		<visible>[facadeview.smallicons|facadeview.list|facadeview.largeicons|facadeview.album]+[control.hasfocus(50)]</visible>
+        <animation effect="Fade" time="100">WindowOpen</animation>
+        <animation effect="Fade" time="100">WindowClose</animation>
 		<wrapString> : : </wrapString>
 	</control>
 
@@ -330,7 +330,9 @@
                 </control>
             </control>
         </control>
+		
         <import>common.facade.music.xml</import>
+		
         <control>
             <id>1</id>
             <type>image</type>
@@ -347,6 +349,7 @@
             <posY>0</posY>
             <texture>hiddenmenu_tab_up.png</texture>
         </control>
+		
         <import>common.overlay.xml</import>
     </controls>
 </window>

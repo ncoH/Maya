@@ -75,7 +75,7 @@
 		<id>1</id>
 		<posX>555</posX>
 		<posY>142</posY>
-		<width>700</width>
+		<width>663</width>
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
