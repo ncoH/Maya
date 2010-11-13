@@ -379,7 +379,7 @@
             <id>0</id>
             <description>up next label</description>
             <type>label</type>
-            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)] + Control.HasText(1200)</visible>
             <posX>350</posX>
             <posY>593</posY>
             <font>Segoe Light14</font>
@@ -388,11 +388,19 @@
             <animation effect="Fade" time="800">WindowOpen</animation>
             <animation effect="Fade" time="300">WindowClose</animation>
         </control>
+		<control>
+			<type>label</type>
+			<description>Dummy control for next track</description>
+			<id>1200</id>
+			<posX>-2000</posX>
+			<posY>-2000</posY>
+			<label>#Play.Next.Artist</label>
+		</control>
         <control>
             <id>0</id>
             <description>next track label</description>
             <type>fadelabel</type>
-            <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)] + player.hasmedia</visible>
+            <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)] + player.hasmedia+Control.HasText(1200)</visible>
             <posX>370</posX>
             <posY>624</posY>
             <width>607</width>
