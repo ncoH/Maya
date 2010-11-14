@@ -3,17 +3,14 @@
     <id>16002</id>
     <defaultcontrol>8</defaultcontrol>
     <allowoverlay>no</allowoverlay>
+	<define>#header.label:Geckobrowser</define>
+	<define>#header.background:hover_BrowseTheWeb.png</define> 		
     <disabletopbar>true</disabletopbar>
     <controls>
-        <control>
-            <id>0</id>
-            <description>baggrund image</description>
-            <type>image</type>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1366</width>
-            <height>768</height>
-        </control>
+	
+		<import>common.window.background.xml</import>
+		<import>common.time.xml</import>
+		
         <control>
             <description>GeckoBrowser</description>
             <type>webbrowser</type>
@@ -22,6 +19,7 @@
             <width>1366</width>
             <height>711</height>
         </control>
+		
         <control>
             <id>0</id>
             <description>Top bar</description>

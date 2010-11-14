@@ -1,67 +1,64 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>54537689</id>
+	<id>54537688</id>
 	<defaultcontrol>50</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<allowoverlay>yes</allowoverlay>
 	<define>#header.label:Browse the Web - Favorites</define>
 	<define>#header.background:hover_BrowseTheWeb.png</define> 
+	<disabletopbar>no</disabletopbar>	
 	<controls>
 	
 		<import>common.window.background.xml</import>
 		<import>common.time.xml</import>
 			
         <control>
-            <id>1</id>
-            <type>label</type>
-			<description>Header label</description>
-            <posX>552</posX>
-            <posY>30</posY>
-            <width>500</width>
-            <height>66</height>
-            <font>Segoe Light40</font>
-            <textcolor>ff6aa5cb</textcolor>
-            <label>#header.label</label>
-            <animation effect="Fade" time="100">WindowOpen</animation>
-            <animation effect="Fade" time="100">WindowClose</animation>
+		<description>Header Label</description>		
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>433</posX>
+		<posY>30</posY>
+		<width>500</width>
+		<height>100</height>
+		<label>#header.label</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<align>center</align>
+		<valign>middle</valign>
         </control>
 
-        <control>
-			<description>listcontrol background</description>
-			<type>image</type>
-			<id>1</id>
-			<posX>524</posX>
-			<posY>153</posY>
-			<width>725</width>
-			<height>482</height>
-            <texture>listcontrol_bg_small.png</texture>
-            <animation effect="Fade" time="100">WindowOpen</animation>
-            <animation effect="Fade" time="100">WindowClose</animation>
-        </control>
-
+    
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
-		<posX>554</posX>
+		<posX>0</posX>
 		<posY>142</posY>
-		<width>665</width>
+		<width>1366</width>
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
+		<align>center</align>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>
 	</control>
-			
+ 
+    <control>
+      <description>group element</description>
+      <type>group</type>
 		<control>
-			<description>group element</description>
-			<type>group</type>
+			<description>composite control consisting of a list control and a thumbnail panel</description>
+			<type>facadeview</type>
+			<id>50</id>
 			<animation effect="fade" time="200">WindowOpen</animation>
-			<animation effect="fade" time="200">WindowClose</animation>
+			<animation effect="fade" time="200">WindowClose</animation>		
+		
 			<control>
 				<description>listcontrol</description>
 				<type>listcontrol</type>
 				<id>50</id>
-				<onleft>2</onleft>
+				<onleft>50</onleft>
 				<onright>50</onright>
 				<scrollOffset>1</scrollOffset>
 				<posX>524</posX>
@@ -73,7 +70,99 @@
 				<textXOff>22</textXOff>
 				<dimColor>ffffffff</dimColor>
 			</control>
-		</control>     
+		
+			<control>
+				<description>Thumbnail Panel</description>
+				<type>thumbnailpanel</type>
+				<id>50</id>
+				<onleft>50</onleft>
+				<onright>50</onright>				
+				<posX>516</posX>
+				<posY>255</posY>
+				<width>790</width>
+				<height>500</height>
+				<scrollOffset>1</scrollOffset>
+				<itemWidth>103</itemWidth>
+				<itemHeight>140</itemHeight>
+				<textureWidth>103</textureWidth>
+				<textureHeight>140</textureHeight>
+				<thumbWidth>103</thumbWidth>
+				<thumbHeight>140</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidthBig>138</itemWidthBig>
+				<itemHeightBig>196</itemHeightBig>
+				<thumbWidthBig>138</thumbWidthBig>
+				<thumbHeightBig>196</thumbHeightBig>
+				<textureWidthBig>138</textureWidthBig>
+				<textureHeightBig>196</textureHeightBig>
+				<keepaspectratio>no</keepaspectratio>
+				<thumbPosXBig>0</thumbPosXBig>
+				<thumbPosYBig>0</thumbPosYBig>
+				<zoomXPixels>0</zoomXPixels>
+				<zoomYPixels>0</zoomYPixels>
+				<hideUnfocusTexture>no</hideUnfocusTexture>
+				<renderFocusText>no</renderFocusText>
+				<renderUnfocusText>no</renderUnfocusText>
+				<frame>-</frame>
+				<frameFocus>thumb_focus.png</frameFocus>
+				<shadowAngle>90</shadowAngle>
+    			<shadowDistance>50</shadowDistance>
+				<thumbZoom>no</thumbZoom>
+				<spinPosX>1190</spinPosX>				
+			</control>
 
-	</controls>
+			<control>
+				<description>Filmstrip view</description>
+				<type>filmstrip</type>
+				<dimColor>90ffffff</dimColor>
+				<id>50</id>
+				<scrollOffset>2</scrollOffset>
+				<onup>2</onup>
+				<ondown>50</ondown>
+				<onleft>50</onleft>
+				<onright>50</onright>
+				<folderPrefix></folderPrefix>
+				<folderSuffix></folderSuffix>				
+				<posX>150</posX>
+				<posY>355</posY>
+				<width>1166</width>
+				<height>768</height>
+				<thumbWidth>214</thumbWidth>
+				<thumbHeight>302</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidth>214</itemWidth>
+				<itemHeight>302</itemHeight>
+				<textureWidth>214</textureWidth>
+				<textureHeight>302</textureHeight>
+				<textYOff>-2000</textYOff>
+				<spinCanFocus>no</spinCanFocus>
+				<imageFolderFocus>-</imageFolderFocus>
+				<frame>-</frame>
+				<frameFocus>thumbnail_frame_shine.png</frameFocus>
+				<background>-</background>
+				<thumbs flipY="true" diffuse="Thumb_Mask.png"></thumbs>
+				<showFrame>yes</showFrame>
+				<showFolder>no</showFolder>
+				<showBackGround>no</showBackGround>
+				<showInfoImage>no</showInfoImage>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,570" time="400">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,570" time="100">unfocus</thumbAnimation>
+			</control>
+		
+			<control>
+				<description>playlist listcontrol</description>
+				<type>playlistcontrol</type>
+				<id>50</id>
+				<onleft>2</onleft>
+				<onright>2</onright>
+				<scrollOffset>1</scrollOffset>
+				<posY>183</posY>
+				<height>450</height>
+			</control>
+      </control>
+</control>
+	
+</controls>
 </window>

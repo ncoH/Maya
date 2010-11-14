@@ -2,9 +2,10 @@
 <window>
 	<id>54537689</id>
 	<defaultcontrol>2</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<allowoverlay>yes</allowoverlay>
 	<define>#header.label:Browse the Web</define>
-	<define>#header.background:hover_BrowseTheWeb.png</define> 
+	<define>#header.background:hover_BrowseTheWeb.png</define> 	
+    <disabletopbar>true</disabletopbar>	
 	<controls>
 	
 		<import>common.window.background.xml</import>
@@ -29,11 +30,11 @@
 			<description>Status label</description>
 			<id>9</id>
             <type>fadelabel</type>
-            <posX>554</posX>
-            <posY>142</posY>
-            <width>700</width>
-            <font>Segoe Light22</font>
-			<label>#btWeb.status</label>
+			<posX>10</posX>
+			<posY>720</posY>
+            <width>1200</width>			
+            <font>Segoe Light16</font>
+			<label>#btWeb.status</label>		
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
             <valign>middle</valign>
@@ -43,15 +44,15 @@
 			<description>Link id label</description>
 			<type>label</type>
 			<id>9</id>
-			<posX>554</posX>
-			<posY>175</posY>
-			<width>665</width>
+			<posX>1260</posX>
+			<posY>720</posY>
 			<label>#btWeb.linkid</label>
-			<font>font13</font>
+			<font>Segoe Light16</font>
 			<align>right</align>
 			<textcolor>ffffffff</textcolor>
 			<animation effect="fade" time="200">WindowOpen</animation>
 			<animation effect="fade" time="200">WindowClose</animation>
+            <valign>middle</valign>			
 		</control>
 
 	</controls>
