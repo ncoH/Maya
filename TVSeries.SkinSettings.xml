@@ -164,7 +164,6 @@
 	</formatting>
 	<logos import="true">
 		<![CDATA[skin\Maya\Media\Logos\source\DVD.png;-;<Episode.EpisodeFilename>;-;contains;-;DVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HDDVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HD-DVD;-;<Restrict:Episode>
-skin\Maya\Media\Logos\source\HDTV.png;-;<Episode.EpisodeFilename>;-;contains;-;HDTV;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Maya\Media\Logos\source\HDDVD.png;-;<Episode.EpisodeFilename>;-;contains;-;HDDVD;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;HD-DVD;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Maya\Media\Logos\source\bluray.png;-;<Episode.EpisodeFilename>;-;contains;-;BLURAY;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;BLU-RAY;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\Maya\Media\Logos\source\blurayrip.png;-;<Episode.EpisodeFilename>;-;contains;-;BDRip;-;AND;-;;-;=;-;;-;<Restrict:Episode>
