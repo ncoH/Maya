@@ -21,6 +21,7 @@
             <description>group element</description>
             <type>group</type>
             <animation effect="fade" time="250">WindowOpen</animation>
+            <animation effect="fade" time="400">WindowClose</animation>
 			<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
 	
             <control>
