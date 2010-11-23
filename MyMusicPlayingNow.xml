@@ -400,7 +400,7 @@
             <id>0</id>
             <description>next track label</description>
             <type>fadelabel</type>
-            <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)] + player.hasmedia+Control.HasText(1200)</visible>
+            <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)] + player.hasmedia +Control.HasText(1200)</visible>
             <posX>370</posX>
             <posY>624</posY>
             <width>607</width>

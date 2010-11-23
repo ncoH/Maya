@@ -149,13 +149,13 @@
 					<onright>50</onright>
 					<onleft>50</onleft>
 					<onup>15</onup>
-					<ondown>6</ondown>
+					<ondown>5</ondown>
 				</control>
 
 				<control>
 					<description>Switch View</description>
 					<type>button</type>
-					<id>6</id>
+					<id>5</id>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
@@ -184,7 +184,7 @@
 					<offsetSortButtonY>14</offsetSortButtonY>
 					<onright>50</onright>
 					<onleft>50</onleft>
-					<onup>6</onup>
+					<onup>5</onup>
 					<ondown>12</ondown>
 				</control>
 

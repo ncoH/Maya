@@ -332,7 +332,7 @@
 		<label>#topitem3</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
-		<animation effect="fade" start="100" end="0" reversible="false">Visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" reversible="false">Visible</animation>
 			<visible>[!Control.IsVisible(102) + !Control.IsVisible(302) + !Control.IsVisible(402)] + [Control.HasFocus(1001) | Control.HasFocus(802) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
 	<animation effect="slide" start="0,0" end="0,-74" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
@@ -499,7 +499,7 @@
 		<label>#bottomitem3</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
-		<animation effect="fade" start="100" end="0" reversible="false">Visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" reversible="false">Visible</animation>
 			<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(402)] + [Control.HasFocus(1002) | Control.HasFocus(901) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
 	<animation effect="slide" start="0,0" end="0,74" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>
@@ -594,7 +594,7 @@
 		<label>#bottomitem3</label>
 		<font>Segoe Light32</font>
 		<textcolor>6aa5cb</textcolor>
-		<animation effect="fade" start="100" end="0" reversible="false">Visible</animation>
+		<animation effect="fade" start="100" end="0" time="0" reversible="false">Visible</animation>
 			<visible>[!Control.IsVisible(102) + !Control.IsVisible(202) + !Control.IsVisible(302)] + [Control.HasFocus(1001) | Control.HasFocus(902) | Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
 	<animation effect="slide" start="0,0" end="0,74" time="250" acceleration="-0.4" reversible="false">visible</animation>
 	</control>

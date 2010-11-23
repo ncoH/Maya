@@ -1,15 +1,122 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>501</id>
-	<defaultcontrol>2</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<define>#header.label:2</define>
-	<define>#useSelectedFanart:Yes</define>
-	<define>#header.background:hover_my music.png</define>
+<id>501</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<define>#header.label:#selecteditem</define>
+<define>#useSelectedFanart:Yes</define>
 <controls>
 
 	<import>common.window.music.xml</import>
-	<import>common.time.xml</import>
+	
+	<!--            :: Fanart ::            -->	
+	
+		<control>
+			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+			<type>label</type>
+			<id>91919291</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+		</control>
+
+		<control>
+			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+			<type>label</type>
+			<id>91919292</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+		</control>
+
+		<control>
+			<description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
+			<type>label</type>
+			<id>91919293</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+			<visible>no</visible>
+		</control>		   	   
+
+		<control>
+			<description>FANART BACKGROUND 1</description>
+			<id>897686</id>
+			<type>image</type>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<keepaspectratio>no</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>yes</zoom>
+			<texture>#fanarthandler.music.backdrop1.selected</texture>  
+			<visible>[facadeview.filmstrip|facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+control.isvisible(91919291)+control.isvisible(91919293)</visible>	
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="450" delay="300">hidden</animation>
+		</control>
+
+		<control>
+			<description>FANART BACKGROUND 2</description>
+			<id>897687</id>
+			<type>image</type>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<keepaspectratio>no</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>yes</zoom>
+			<texture>#fanarthandler.music.backdrop2.selected</texture>  
+			<visible>[facadeview.filmstrip|facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+control.isvisible(91919292)+control.isvisible(91919293)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="450" delay="300">hidden</animation>
+		</control>	
+
+	<control>
+		<description>Fanart Overlay</description>
+		<type>image</type>
+		<id>0</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>fanart_overlay.png</texture>
+		<visible>facadeview.list+control.isvisible(91919293)</visible>
+	</control>
+
+	
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>listcontrol background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>449</posX>
+        <posY>0</posY>
+		<width>873</width>
+		<height>768</height>
+		<texture>fanart_widelist_bg.png</texture>
+		<visible>facadeview.list+control.isvisible(91919293)</visible>
+	</control>
+	
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>fanart_overlay_filmstrip.png</texture>
+		<visible>[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip] + control.isvisible(91919293)</visible>
+	</control>
+
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>background_coverflow.png</texture>
+		<visible>facadeview.coverflow + control.isvisible(91919293)</visible>
+	</control>
 	
 	<control>
 		<description>Header label</description>		
@@ -21,41 +128,13 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>#header.label</label>
+		<label>2</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>
 		<valign>middle</valign>
 	</control>
 	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<description>listcontrol background</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>524</posX>
-        <posY>153</posY>
-		<width>725</width>
-		<height>482</height>
-		<texture>listcontrol_bg.png</texture>
-		<visible>facadeview.list</visible>
-	</control>
-	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<description>listcontrol background info</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>524</posX>
-        <posY>678</posY>
-		<width>725</width>
-		<height>51</height>
-		<texture>listcontrol_bg_info.png</texture>
-		<visible>facadeview.list</visible>
-	</control>
-
 	<control>
 		<description>Header label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -66,13 +145,15 @@
 		<posY>30</posY>
 		<width>500</width>
 		<height>100</height>
-		<label>#header.label</label>
+		<label>2</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons | facadeview.coverflow</visible>
 		<align>center</align>
 		<valign>middle</valign>
 	</control>
+
+<import>common.time.xml</import>
 	
 	<control>
 		<type>actiongroup</type>
@@ -149,13 +230,13 @@
 					<onright>50</onright>
 					<onleft>50</onleft>
 					<onup>15</onup>
-					<ondown>6</ondown>
+					<ondown>5</ondown>
 				</control>
 
 				<control>
 					<description>Switch View</description>
 					<type>button</type>
-					<id>6</id>
+					<id>5</id>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
@@ -184,7 +265,7 @@
 					<offsetSortButtonY>14</offsetSortButtonY>
 					<onright>50</onright>
 					<onleft>50</onleft>
-					<onup>6</onup>
+					<onup>5</onup>
 					<ondown>12</ondown>
 				</control>
 
