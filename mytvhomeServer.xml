@@ -222,7 +222,7 @@
 		<control>
 			<description>Teletext</description>
 			<type>button</type>
-			<id>13</id>
+			<id>0</id>
 			<label>1441</label>
 			<onup>12</onup>
 			<ondown>2</ondown>
@@ -312,7 +312,7 @@
 	<control>
 		<description>Current program title</description>
 		<type>fadelabel</type>
-		<id>13</id>
+		<id>0</id>
 		<posX>560</posX>
 		<posY>500</posY>
 		<width>750</width>
