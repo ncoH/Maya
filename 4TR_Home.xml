@@ -265,7 +265,7 @@
 	<control>
 		<description>Current program title</description>
 		<type>fadelabel</type>
-		<id>13</id>
+		<id>1</id>
 		<posX>560</posX>
 		<posY>500</posY>
 		<width>750</width>
