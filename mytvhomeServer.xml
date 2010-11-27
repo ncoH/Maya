@@ -117,19 +117,6 @@
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
-	
-<!--
-	<control>
-			<description>Group button</description>
-			<type>button</type>
-			<id>6</id>
-			<label>971</label>
-			<onup>3</onup>
-			<ondown>7</ondown>
-			<onright>99</onright>
-		</control>
-
-	-->
 		<control>
 			<description>Channel button</description>
 			<type>button</type>
@@ -222,7 +209,7 @@
 		<control>
 			<description>Teletext</description>
 			<type>button</type>
-			<id>0</id>
+			<id>13</id>
 			<label>1441</label>
 			<onup>12</onup>
 			<ondown>2</ondown>
@@ -236,19 +223,6 @@
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
 		</control>
 
-	
-<!--
-	<control>
-			<description>TuningDetails</description>
-			<type>button</type>
-			<id>14</id>
-			<label>200041</label>
-			<onup>13</onup>
-			<ondown>2</ondown>
-			<onright>99</onright>
-		</control>
-
-	-->
 	</control>
 
 	<control>
