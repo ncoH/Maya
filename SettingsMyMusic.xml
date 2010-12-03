@@ -83,7 +83,7 @@
 		<visible>Control.HasFocus(6)</visible>
 	</control>
 
-		<control>
+<!-- 		<control>
 			<description>Enable ID3  other tagformats</description>
 			<type>checkmark</type>
 			<id>6</id>
@@ -104,7 +104,7 @@
 			<posY>299</posY>
 			<textcolor>ff85cffe</textcolor>
 			<label>258</label>
-		</control>
+		</control> -->
 
 		<control>
 			<description>Reorganize My Music Database label</description>

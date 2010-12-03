@@ -4,13 +4,13 @@
 	<skin>
 		<width>1366</width>
 		<height>768</height>
-		<version>1.1.0.0</version>
+		<version>1.2.0.0</version>
 	</skin>
 
 	<control>
 		<description>default image</description>
 		<type>image</type>
-		<id>1</id>
+		<id>0</id>
 		<posX>0</posX>
 		<posY>0</posY>
 		<texture>background.png</texture>
@@ -25,7 +25,7 @@
 	<control>
 		<description>default label</description>
 		<type>label</type>
-		<id>1</id>
+		<id>0</id>
 		<posX>151</posX>
 		<posY>80</posY>
 		<label>6</label>
@@ -37,7 +37,7 @@
 	<control>
 		<description>default button</description>
 		<type>button</type>
-		<id>1</id>
+		<id>0</id>
 		<posX>650</posX>
 		<posY>236</posY>
 		<width>239</width>
@@ -54,7 +54,7 @@
 	<control>
 		<description>default updownbutton</description>
 		<type>updownbutton</type>
-		<id>1</id>
+		<id>0</id>
 		<posX>533</posX>
 		<posY>250</posY>
 		<width>260</width>
@@ -73,7 +73,7 @@
 	<control>
 		<description>playlist item button</description>
 		<type>playlistbutton</type>
-		<id>5</id>
+		<id>0</id>
 		<posX>177</posX>
 		<posY>125</posY>
 		<width>755</width>
@@ -111,7 +111,7 @@
 	<control>
 		<description>default togglebutton</description>
 		<type>togglebutton</type>
-		<id>4</id>
+		<id>0</id>
 		<posX>533</posX>
 		<posY>250</posY>
 		<width>239</width>
@@ -132,7 +132,7 @@
 	<control>
 		<description>sort button</description>
 		<type>sortbutton</type>
-		<id>3</id>
+		<id>0</id>
 		<width>239</width>
 		<height>36</height>
 		<textXOff>18</textXOff>
@@ -154,7 +154,7 @@
 	<control>
 		<description>default listcontrol</description>
 		<type>listcontrol</type>
-		<id>10</id>
+		<id>0</id>
 		<posX>524</posX>
 		<posY>150</posY>
 		<width>724</width>
@@ -198,7 +198,7 @@
 	<control>
 		<description>default checklistcontrol</description>
 		<type>checklistcontrol</type>
-		<id>10</id>
+		<id>0</id>
 		<posX>462</posX>
 		<posY>121</posY>
 		<width>755</width>
@@ -244,7 +244,7 @@
 	<control>
 		<description>default up/downlistcontrol</description>
 		<type>updownlistcontrol</type>
-		<id>10</id>
+		<id>0</id>
 		<posX>524</posX>
 		<posY>150</posY>
 		<width>748</width>
@@ -285,7 +285,7 @@
 	<control>
 		<description>default playlist item listcontrol</description>
 		<type>playlistcontrol</type>
-		<id>10</id>
+		<id>0</id>
 		<posX>524</posX>
 		<posY>187</posY>
 		<width>724</width>
@@ -343,7 +343,7 @@
 	<control>
 		<description>default thumbnail panel</description>
 		<type>thumbnailpanel</type>
-		<id>11</id>
+		<id>0</id>
 		<posX>142</posX>
 		<posY>121</posY>
 		<width>1173</width>
@@ -385,7 +385,7 @@
 	<control>
 		<description>default filmstrip</description>
 		<type>filmstrip</type>
-		<id>11</id>
+		<id>0</id>
 		<posX>142</posX>
 		<posY>525</posY>
 		<width>1300</width>
@@ -437,7 +437,7 @@
 	<control>
 		<description>default fadelabel</description>
 		<type>fadelabel</type>
-		<id>5</id>
+		<id>0</id>
 		<posX>97</posX>
 		<posY>662</posY>
 		<width>320</width>
@@ -449,7 +449,7 @@
 	<control>
 		<description>default textarea</description>
 		<type>textbox</type>
-		<id>4</id>
+		<id>0</id>
 		<posX>391</posX>
 		<posY>275</posY>
 		<width>728</width>
@@ -479,7 +479,7 @@
 	<control>
 		<description>default progress control</description>
 		<type>progress</type>
-		<id>20</id>
+		<id>0</id>
 		<posX>124</posX>
 		<posY>710</posY>
 		<height>13</height>
@@ -493,7 +493,7 @@
 	<control>
 		<description>default horizontal scrollbar control</description>
 		<type>hscrollbar</type>
-		<id>20</id>
+		<id>0</id>
 		<posX>177</posX>
 		<posY>406</posY>
 		<texturebg>bar_hor.png</texturebg>
@@ -505,7 +505,7 @@
 	<control>
 		<description>default vertical scrollbar control</description>
 		<type>vscrollbar</type>
-		<id>20</id>
+		<id>0</id>
 		<posX>177</posX>
 		<posY>31</posY>
 		<scrollbarbg>bar_vert.png</scrollbarbg>
@@ -517,7 +517,7 @@
 	<control>
 		<description>default spin control</description>
 		<type>spincontrol</type>
-		<id>2</id>
+		<id>0</id>
 		<posX>586</posX>
 		<posY>157</posY>
 		<width>33</width>
@@ -537,7 +537,7 @@
 	<control>
 		<description>default checkmark</description>
 		<type>checkmark</type>
-		<id>4</id>
+		<id>0</id>
 		<posX>369</posX>
 		<posY>207</posY>
 		<label>167</label>
@@ -555,7 +555,7 @@
 	<control>
 		<description>default select button</description>
 		<type>selectbutton</type>
-		<id>6</id>
+		<id>0</id>
 		<posX>97</posX>
 		<posY>287</posY>
 		<width>252</width>
@@ -566,11 +566,6 @@
 		<textXOff2>17</textXOff2>
 		<textYOff2>4</textYOff2>
 		<textureFocus>menu_list_focus.png</textureFocus>
-<!--
-	<textureNoFocus>menu_list_nofocus1.png</textureNoFocus>
-		<texturebg>menu_list_nofocus1.png</texturebg>
--->
-
 		<textureLeft>arrow_round_left_nofocus.png</textureLeft>
 		<textureLeftFocus>arrow_round_left_focus.png</textureLeftFocus>
 		<textureRight>arrow_round_right_nofocus.png</textureRight>
@@ -579,11 +574,6 @@
 		<textcolor>white</textcolor>
 		<colordiffuse>white</colordiffuse>
 		<disabledcolor>60ffffff</disabledcolor>
-<!--
-	<animation effect="zoom" start="100,100" end="105,105" time="100">focus</animation>
-		<animation effect="zoom" start="105,105" end="100,100" time="300">unfocus</animation>
--->
-
 	</control>
 
 </controls>

@@ -335,14 +335,12 @@
 				</control>
 				-->
 
-
-			</control>
-			
+			</control>			
 		</control>
-
 	</control>
 
 	<import>common.facade.music.xml</import>
+    <import>common.facade.scrolling.xml</import>	
 	
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>

@@ -245,6 +245,7 @@
 	</control>
 
 	<import>common.facade.pictures.xml</import>
+    <import>common.facade.scrolling.xml</import>	
 	
 	<control>
 		<id>1</id>
