@@ -47,7 +47,7 @@
             <posY>690</posY>
             <textcolor>ff6aa5cb</textcolor>
             <align>RIGHT</align>
-            <label>#infoservice.feed.itemcount</label>
+			<label>#infoservice.feed.itemcount #infoservice.feed.itemtype</label>			
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>

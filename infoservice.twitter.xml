@@ -31,7 +31,7 @@
 		<posX>1216</posX>
 		<posY>690</posY>
 		<align>right</align>
-		<label>#infoservice.twitter.itemcount</label>
+		<label>#infoservice.twitter.itemcount #infoservice.twitter.itemtype</label>		
 		<textcolor>6aa5cb</textcolor>
 	</control>
 	
