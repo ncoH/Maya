@@ -63,16 +63,29 @@
 	</control>
 
 	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
 		<description>listcontrol background</description>
 		<type>image</type>
 		<id>1</id>
 		<posX>524</posX>
-        <posY>173</posY>
+        <posY>153</posY>
 		<width>725</width>
-		<height>561</height>
-		<texture>listcontrol_bg_recordings.png</texture>
+		<height>482</height>
+		<texture>listcontrol_bg.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>listcontrol background info</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>678</posY>
+		<width>725</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 			
 	<control>
@@ -166,7 +179,7 @@
 		<posX>555</posX>
 		<posY>200</posY>
 		<width>663</width>
-		<height>500</height>
+		<height>410</height>
 		<label>#Actor.Biography</label>
 		<font>font13</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -208,14 +221,14 @@
 		<posX>555</posX>
 		<posY>200</posY>
 		<width>663</width>
-		<height>500</height>
+		<height>410</height>
 		<onleft>4</onleft>
 		<onright>4</onright>
 		<onup>4</onup>
 		<ondown>4</ondown>
 		<label>#Actor.Movies</label>
 		<spinPosX>560</spinPosX>
-		<spinPosY>700</spinPosY>
+		<spinPosY>693</spinPosY>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>		
 	</control>	
