@@ -42,7 +42,7 @@
 		<control>
 			<description>Fanart Background</description>
 			<type>image</type>
-			<id>0</id>
+			<id>1</id>
 			<posX>0</posX>
 			<posY>0</posY>
 			<width>1366</width>
@@ -84,7 +84,7 @@
 		<posX>552</posX>
 		<posY>30</posY>
 		<width>500</width>
-		<height>100</height>
+		<height>66</height>
 		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
