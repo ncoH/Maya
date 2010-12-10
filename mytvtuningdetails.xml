@@ -664,5 +664,53 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
+	<control>
+		<id>27</id>
+		<description>TS packets Transferred</description>
+		<type>fadelabel</type>
+		<posX>555</posX>
+		<posY>678</posY>
+		<width>120</width>			
+		<textcolor>85cfff</textcolor>	
+		<label>TS packets Transferred</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>			
+	</control>
+
+	<control>
+		<description>TS packets Transferred value</description>
+		<type>label</type>
+		<id>5</id>
+		<posX>700</posX>
+		<posY>678</posY>	
+		<label>#TV.TuningDetails.TSPacketsTransferred</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
+    <control>
+		<description>Has CI Menu</description>
+		<type>fadelabel</type>
+		<id>26</id>
+		<posX>1020</posX>
+		<posY>678</posY>
+		<width>120</width>			
+		<textcolor>85cfff</textcolor>		
+		<label>CI Menu supported</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+    </control>
+
+	<control>
+		<description>Has CI Menu value</description>
+		<type>label</type>
+		<id>5</id>
+		<posX>1163</posX>
+		<posY>678</posY>	
+		<label>#TV.TuningDetails.HasCiMenuSupport</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
 </controls>
 </window>
