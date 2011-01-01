@@ -3,7 +3,7 @@
 	<id>748</id>
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<define>#header.label:1037</define>
+	<define>#header.label:100748</define>
 	<define>#selecteditem:</define>
 	<define>#header.background:hover_my tv.png</define>
 <controls>

@@ -255,6 +255,7 @@
 		<spinPosY>662</spinPosY>
 		<spinAlign>Right</spinAlign>
 		<spinColor>ffffffff</spinColor>
+		<spinCanFocus>no</spinCanFocus>
 		<textureUp>page_up_nofocus.png</textureUp>
 		<textureDown>page_down_nofocus.png</textureDown>
 		<textureUpFocus>page_up_focus.png</textureUpFocus>
@@ -380,6 +381,7 @@
 		<spinPosX>400</spinPosX>
 		<spinPosY>718</spinPosY>
 		<spinAlign>right</spinAlign>
+		<spinCanFocus>no</spinCanFocus>
 	</control>
 
 	<control>
