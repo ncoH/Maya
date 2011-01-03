@@ -528,6 +528,38 @@ This file should contain the details view
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.audiocodec,PCM)+string.equals(#MovingPictures.LocalMedia.audiochannels,stereo)</visible>
 		<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
 	</control>	
+	
+	<control>
+		<description>AAC 5.1</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1038</posX>
+		<posY>655</posY>
+		<width>98</width>
+		<texture>Logos\audio\aac51.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
+		<align>left</align>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.audiocodec,AAC)+string.equals(#MovingPictures.LocalMedia.audiochannels,5.1)</visible>
+		<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+	<control>
+		<description>AAC 7.1</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1038</posX>
+		<posY>655</posY>
+		<width>98</width>
+		<texture>Logos\audio\aac71.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
+		<align>left</align>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+Control.HasFocus(6)+!Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.audiocodec,AAC)+string.equals(#MovingPictures.LocalMedia.audiochannels,7)</visible>
+		<animation effect="slide" start="-800" end="0" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
 
 	<!-- Resolution -->
 	<control>
@@ -1148,6 +1180,38 @@ This file should contain the details view
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+!Control.HasFocus(6)+Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.audiocodec,PCM)+string.equals(#MovingPictures.LocalMedia.audiochannels,stereo)</visible>
 		<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
 	</control>	
+	
+	<control>
+		<description>AAC 5.1</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1038</posX>
+		<posY>655</posY>
+		<width>98</width>
+		<texture>Logos\audio\aac51.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
+		<align>left</align>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+!Control.HasFocus(6)+Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.audiocodec,AAC)+string.equals(#MovingPictures.LocalMedia.audiochannels,5.1)</visible>
+		<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
+	
+	<control>
+		<description>AAC 7.1</description>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>0</id>
+		<posX>1038</posX>
+		<posY>655</posY>
+		<width>98</width>
+		<texture>Logos\audio\aac71.png</texture>
+		<keepaspectratio>yes</keepaspectratio>
+		<align>left</align>
+		<visible>!Control.IsVisible(50)+!Control.IsVisible(51)+!Control.HasFocus(6)+Control.HasFocus(66)+string.equals(#MovingPictures.LocalMedia.audiocodec,AAC)+string.equals(#MovingPictures.LocalMedia.audiochannels,7)</visible>
+		<animation effect="slide" start="0" end="-800" time="500" tween="quadratic" easing="out" reversible="false">Visible</animation>
+	</control>
 
 	<!-- Resolution -->
 	<control>
