@@ -39,34 +39,36 @@
 				<onright>50</onright>					
 				<posX>163</posX>
 				<posY>242</posY>
-				<width>1040</width>
+				<width>1140</width>
 				<height>500</height>
 				<scrollOffset>1</scrollOffset>
                 <itemWidth>150</itemWidth>
-                <itemHeight>150</itemHeight>
-                <textureWidth>151</textureWidth>
-                <textureHeight>150</textureHeight>
-                <thumbWidth>140</thumbWidth>
-                <thumbHeight>140</thumbHeight>
+                <itemHeight>110</itemHeight>
+                <textureWidth>150</textureWidth>
+                <textureHeight>110</textureHeight>
+                <thumbWidth>150</thumbWidth>
+                <thumbHeight>110</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
-				<itemWidthBig>244</itemWidthBig>
-				<itemHeightBig>247</itemHeightBig>
-				<thumbWidthBig>247</thumbWidthBig>
-				<thumbHeightBig>197</thumbHeightBig>
-				<textureWidthBig>259</textureWidthBig>
-				<textureHeightBig>217</textureHeightBig>
+				<itemWidthBig>223</itemWidthBig>
+				<itemHeightBig>155</itemHeightBig>
+				<thumbWidthBig>223</thumbWidthBig>
+				<thumbHeightBig>155</thumbHeightBig>
+				<textureWidthBig>223</textureWidthBig>
+				<textureHeightBig>155</textureHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
-				<zoomXPixels>44</zoomXPixels>
-				<zoomYPixels>30</zoomYPixels>
-				<thumbZoom>yes</thumbZoom>
+				<zoomXPixels>0</zoomXPixels>
+				<zoomYPixels>0</zoomYPixels>
+				<thumbZoom>no</thumbZoom>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>
 				<spinCanFocus>no</spinCanFocus>
 				<frame>-</frame>
-				<frameFocus>picture_filmstrip_overlay.png</frameFocus>
+				<frameNoFocus>pictures_thumb_nofocus.png</frameNoFocus>
+				<frameFocus>pictures_thumb_focus.png</frameFocus>
+				<textureMask>pictures_thumb_mask.png</textureMask>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>no</thumbZoom>
@@ -78,36 +80,40 @@
 				<type>filmstrip</type>
 				<dimColor>90ffffff</dimColor>
 				<id>50</id>
-				<scrollOffset>2</scrollOffset>
+				<scrollOffset>1</scrollOffset>
 				<onup>2</onup>
 				<ondown>50</ondown>
 				<onleft>50</onleft>
 				<onright>50</onright>				
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<posX>164</posX>
-				<posY>539</posY>
-				<width>1036</width>
+				<posX>136</posX>
+				<posY>324</posY>
+				<width>1366</width>
 				<height>768</height>
-				<thumbWidth>207</thumbWidth>
-				<thumbHeight>138</thumbHeight>
+				<thumbWidth>362</thumbWidth>
+				<thumbHeight>249</thumbHeight>
 				<thumbPosX>0</thumbPosX>
 				<thumbPosY>0</thumbPosY>
-				<itemWidth>207</itemWidth>
-				<itemHeight>138</itemHeight>
-				<textureWidth>207</textureWidth>
-				<textureHeight>138</textureHeight>
+				<itemWidth>360</itemWidth>
+				<itemHeight>248</itemHeight>
+				<textureWidth>361</textureWidth>
+				<textureHeight>249</textureHeight>
 				<textYOff>-2000</textYOff>
 				<imageFolder>-</imageFolder>
 				<imageFolderFocus>-</imageFolderFocus>
 				<frame>-</frame>
-				<frameFocus>picture_filmstrip_overlay.png</frameFocus>
+				<frameNoFocus>pictures_filmstrip_nofocus.png</frameNoFocus>
+				<frameFocus>pictures_filmstrip_focus.png</frameFocus>
+				<keepaspectratio>no</keepaspectratio>
 				<background>-</background>
-				<thumbs flipY="true" diffuse="Thumb_Mask.png"></thumbs>
+				<thumbs mask="pictures_filmstrip_mask.png" flipY="true" diffuse="Thumb_Mask.png"></thumbs>
 				<showFrame>yes</showFrame>
 				<showFolder>no</showFolder>
 				<showBackGround>no</showBackGround>
 				<showInfoImage>no</showInfoImage>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,520" time="400">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,520" time="100">unfocus</thumbAnimation>
 			</control>
 
        <control>

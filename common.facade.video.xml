@@ -37,25 +37,24 @@
 				<onleft>2</onleft>
 				<onright>50</onright>				
 				<posX>516</posX>
-				<posY>255</posY>
-				<width>790</width>
-				<height>500</height>
+				<posY>244</posY>
+				<width>800</width>
+				<height>550</height>
 				<scrollOffset>1</scrollOffset>
-				<itemWidth>103</itemWidth>
-				<itemHeight>140</itemHeight>
-				<textureWidth>103</textureWidth>
-				<textureHeight>140</textureHeight>
-				<thumbWidth>103</thumbWidth>
-				<thumbHeight>140</thumbHeight>
-				<thumbPosX>0</thumbPosX>
-				<thumbPosY>0</thumbPosY>
-				<itemWidthBig>138</itemWidthBig>
-				<itemHeightBig>196</itemHeightBig>
-				<thumbWidthBig>138</thumbWidthBig>
-				<thumbHeightBig>196</thumbHeightBig>
-				<textureWidthBig>138</textureWidthBig>
-				<textureHeightBig>196</textureHeightBig>
-				<keepaspectratio>no</keepaspectratio>
+				  <itemWidth>100</itemWidth>
+				  <itemHeight>144</itemHeight>
+				  <textureWidth>100</textureWidth>
+				  <textureHeight>144</textureHeight>
+				  <thumbWidth>100</thumbWidth>
+				  <thumbHeight>144</thumbHeight>
+				  <thumbPosX>0</thumbPosX>
+				  <thumbPosY>0</thumbPosY>
+				<textureWidthBig>153</textureWidthBig>
+				<textureHeightBig>216</textureHeightBig>
+				<itemWidthBig>153</itemWidthBig>
+				<itemHeightBig>216</itemHeightBig>
+				<thumbWidthBig>153</thumbWidthBig>
+				<thumbHeightBig>216</thumbHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
 				<zoomXPixels>0</zoomXPixels>
@@ -63,8 +62,11 @@
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>
-				<frame>-</frame>
-				<frameFocus>thumb_focus.png</frameFocus>
+				<showFrame>yes</showFrame>
+				<frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
+				<frameFocus>video_thumb_focus.png</frameFocus>
+				<textureMask>video_thumb_mask.png</textureMask>
+				<keepaspectratio>no</keepaspectratio>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>no</thumbZoom>

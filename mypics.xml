@@ -205,44 +205,7 @@
 			</control>
 
 		</control>
-
-	<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>459</posX>
-		<posY>236</posY>
-		<width>430</width>
-		<height>283</height>
-		<texture>black.png</texture>
-		<visible>facadeview.filmstrip</visible>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
-	</control>
-		
-	<control>
-		<id>500</id>
-		<type>image</type>
-		<posX>459</posX>
-		<posY>236</posY>
-		<width>430</width>
-		<height>283</height>
-		<texture>#selectedthumb</texture>
-		<keepaspectratio>yes</keepaspectratio>
-		<centered>yes</centered>
-		<visible>facadeview.filmstrip</visible>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
-	</control>
 	
-	<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>426</posX>
-		<posY>184</posY>
-		<width>500</width>
-		<height>383</height>
-		<texture>blackborders_pictures_filmstrip.png</texture>
-		<visible>facadeview.filmstrip</visible>
-		<animation effect="fade" time="450" reversible="false">visible</animation>
-	</control>
 
 	<import>common.facade.pictures.xml</import>
     <import>common.facade.scrolling.xml</import>	
