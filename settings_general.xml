@@ -56,7 +56,7 @@
 		
 		<control>
 			<description>Language</description>
-			<type>selectbutton</type>
+			<type>button</type>
 			<id>11</id>
 			<label>248</label>
 			<width>334</width>
