@@ -99,30 +99,27 @@ This file should contain the facade view
 				<description>Thumbnail Panel</description>
 				<type>thumbnailpanel</type>
 				<id>50</id>
-				<posX>516</posX>
-				<posY>260</posY>
-				<width>720</width>
-				<height>480</height>
-				<scrollOffset>0</scrollOffset>
-				<folderPrefix></folderPrefix>
-				<folderSuffix></folderSuffix>
 				<onleft>2</onleft>
-				<onright>2</onright>
-				<itemWidth>86</itemWidth>
-				<itemHeight>130</itemHeight>
-				<textureWidth>86</textureWidth>
-				<textureHeight>130</textureHeight>
-				<thumbWidth>86</thumbWidth>
-				<thumbHeight>130</thumbHeight>
-				<thumbPosX>0</thumbPosX>
-				<thumbPosY>0</thumbPosY>
-				<itemWidthBig>138</itemWidthBig>
-				<itemHeightBig>196</itemHeightBig>
-				<thumbWidthBig>138</thumbWidthBig>
-				<thumbHeightBig>196</thumbHeightBig>
-				<textureWidthBig>138</textureWidthBig>
-				<textureHeightBig>196</textureHeightBig>
-				<keepaspectratio>no</keepaspectratio>
+				<onright>50</onright>				
+				<posX>516</posX>
+				<posY>244</posY>
+				<width>800</width>
+				<height>550</height>
+				<scrollOffset>1</scrollOffset>
+				  <itemWidth>100</itemWidth>
+				  <itemHeight>144</itemHeight>
+				  <textureWidth>100</textureWidth>
+				  <textureHeight>144</textureHeight>
+				  <thumbWidth>100</thumbWidth>
+				  <thumbHeight>144</thumbHeight>
+				  <thumbPosX>0</thumbPosX>
+				  <thumbPosY>0</thumbPosY>
+				<textureWidthBig>153</textureWidthBig>
+				<textureHeightBig>216</textureHeightBig>
+				<itemWidthBig>153</itemWidthBig>
+				<itemHeightBig>216</itemHeightBig>
+				<thumbWidthBig>153</thumbWidthBig>
+				<thumbHeightBig>216</thumbHeightBig>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
 				<zoomXPixels>0</zoomXPixels>
@@ -130,13 +127,17 @@ This file should contain the facade view
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>
-				<frame>-</frame>
-				<frameFocus>thumb_focus.png</frameFocus>
+				<showFrame>yes</showFrame>
+				<frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
+				<frameFocus>video_thumb_focus.png</frameFocus>
+				<textureMask>video_thumb_mask.png</textureMask>
+				<keepaspectratio>no</keepaspectratio>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>no</thumbZoom>
-				<spinPosX>1190</spinPosX>
+				<spinPosX>1190</spinPosX>				
 			</control>
+
 
 	</control>
 	

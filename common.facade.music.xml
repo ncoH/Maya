@@ -16,7 +16,7 @@
 				<type>listcontrol</type>
 				<id>50</id>
 				<onleft>2</onleft>
-				<onright>50</onright>
+				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
 				<posX>524</posX>
 				<posY>187</posY>
@@ -61,8 +61,8 @@
 				<spinCanFocus>no</spinCanFocus>
 				<textureFocus>listcontrol_item_selected_big.png</textureFocus>
 				<textureNoFocus>listcontrol_item_big.png</textureNoFocus>
-                <onleft>2</onleft>
-                <onright>50</onright>
+				<onleft>2</onleft>
+				<onright>2</onright>
                 <keepaspectratio>yes</keepaspectratio>
 			</control>
 			
@@ -71,52 +71,47 @@
 				<type>thumbnailpanel</type>
 				<id>50</id>
 				<onleft>2</onleft>
-				<onright>50</onright>					
+				<onright>2</onright>				
 				<posX>150</posX>
 				<posY>240</posY>
 				<width>1100</width>
 				<height>450</height>
 				<spinColor>ffffffff</spinColor>
-				<textureUp>page_up_nofocus.png</textureUp>
-				<textureDown>page_down_nofocus.png</textureDown>
-				<textureUpFocus>page_up_focus.png</textureUpFocus>
-				<textureDownFocus>page_down_focus.png</textureDownFocus>
 				<scrollOffset>1</scrollOffset>
-				<itemWidth>107</itemWidth>
-				<itemHeight>107</itemHeight>
-				<textureWidth>107</textureWidth>
-				<textureHeight>107</textureHeight>
-				<thumbWidth>107</thumbWidth>
-				<thumbHeight>107</thumbHeight>
-				<thumbPosX>1</thumbPosX>
-				<thumbPosY>1</thumbPosY>
+				<itemWidth>108</itemWidth>
+				<itemHeight>109</itemHeight>
+				<textureWidth>108</textureWidth>
+				<textureHeight>109</textureHeight>
+				<thumbWidth>108</thumbWidth>
+				<thumbHeight>109</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
 				<thumbZoom>no</thumbZoom>
 				<imageFolder>-</imageFolder>
     			<imageFolderFocus>-</imageFolderFocus>
 				<suffix>|</suffix>
-				<itemWidthBig>214</itemWidthBig>
-				<itemHeightBig>214</itemHeightBig>
-				<textureWidthBig>214</textureWidthBig>
-				<textureHeightBig>214</textureHeightBig>
-				<thumbWidthBig>214</thumbWidthBig>
-				<thumbHeightBig>214</thumbHeightBig>
-				<thumbPosXBig>1</thumbPosXBig>
-				<thumbPosYBig>1</thumbPosYBig>
+				<itemWidthBig>215</itemWidthBig>
+				<itemHeightBig>216</itemHeightBig>
+				<textureWidthBig>215</textureWidthBig>
+				<textureHeightBig>216</textureHeightBig>
+				<thumbWidthBig>215</thumbWidthBig>
+				<thumbHeightBig>216</thumbHeightBig>
+				<thumbPosXBig>0</thumbPosXBig>
+				<thumbPosYBig>0</thumbPosYBig>
 				<thumbZoom>no</thumbZoom>
 				<enableFocusZoom>no</enableFocusZoom>
-				<zoomXPixels>50</zoomXPixels>
-				<zoomYPixels>50</zoomYPixels>
+				<zoomXPixels>0</zoomXPixels>
+				<zoomYPixels>0</zoomYPixels>
 				<keepaspectratio>no</keepaspectratio>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>
 				<folderPrefix></folderPrefix>
 				<folderSuffix></folderSuffix>
-				<textureUp>-</textureUp>
-				<textureDown>-</textureDown>
-				<textureUpFocus>-</textureUpFocus>
-				<textureDownFocus>-</textureDownFocus>
-				<spinPosX>1190</spinPosX>
+				<frameNoFocus>music_thumb_nofocus.png</frameNoFocus>
+				<frameFocus>music_thumb_focus.png</frameFocus>
+				<textureMask>music_thumb_mask.png</textureMask>
+				<spinPosX>-2000</spinPosX>
 			</control>
 
 			<control>
@@ -126,7 +121,7 @@
 				<id>50</id>
 				<scrollOffset>2</scrollOffset>
 				<onup>2</onup>
-				<ondown>50</ondown>
+				<ondown>2</ondown>
 				<onleft>50</onleft>
 				<onright>50</onright>				
 				<folderPrefix></folderPrefix>
@@ -161,7 +156,7 @@
           <dimColor>90ffffff</dimColor>
           <id>50</id>
           <onup>2</onup>
-		  <ondown>50</ondown>		  
+		  <ondown>2</ondown>		  
           <onleft>50</onleft>
           <onright>50</onright>	
           <posX>0</posX>
