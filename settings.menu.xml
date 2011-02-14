@@ -31,118 +31,115 @@
 		<posX>175</posX>
 		<posY>260</posY>
 		<layout>StackLayout</layout>
-		
-		<control>
-			<description>Wizard</description>
-			<type>button</type>
-			<id>10001</id>
-			<label>1200</label>
-			<hyperlink>615</hyperlink>
-			<onup>10010</onup>
-			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
-		</control>
 
 		<control>
 			<description>General</description>
 			<type>button</type>
-			<id>10002</id>
+			<id>10001</id>
 			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
 			<label>128</label>
 			<hyperlink>705</hyperlink>
+			<onup>10009</onup>				
+			<ondown>10002</ondown>			
 		</control>
 
 		<control>
 			<description>Screen</description>
 			<type>button</type>
-			<id>10003</id>
+			<id>10002</id>
 			<width>259</width>
 	<textureFocus>settings_button_focus.png</textureFocus>
 	<textureNoFocus>-</textureNoFocus>
 			<label>6023</label>
 			<hyperlink>9</hyperlink>
+			<ondown>10003</ondown>			
 		</control>
 
 		<control>
 			<description>TV</description>
 			<type>button</type>
-			<id>10004</id>
+			<id>10003</id>
 			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
 			<label>605</label>
 			<hyperlink>700</hyperlink>
+			<ondown>10004</ondown>			
 		</control>
 
 		<control>
 			<description>My Pictures</description>
 			<type>button</type>
-			<id>10005</id>
+			<id>10004</id>
 			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
 			<label>1</label>
 			<hyperlink>12</hyperlink>
+			<ondown>10005</ondown>			
 		</control>
 
 		<control>
 			<description>Movies</description>
 			<type>button</type>
-			<id>10006</id>
+			<id>10005</id>
 			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
 			<label>3</label>
 			<hyperlink>703</hyperlink>
+			<ondown>10006</ondown>			
 		</control>
 
 		<control>
 			<description>My DVD</description>
 			<type>button</type>
-			<id>10007</id>
+			<id>10006</id>
 			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
 			<label>1027</label>
 			<hyperlink>704</hyperlink>
+			<ondown>10007</ondown>			
 		</control>
 
 		<control>
 			<description>My Music</description>
 			<type>button</type>
-			<id>10008</id>
+			<id>10007</id>
 			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
 			<label>2</label>
 			<hyperlink>14</hyperlink>
+			<ondown>10008</ondown>			
 		</control>
 
 		<control>
 			<description>MiniDisplay</description>
 			<type>button</type>
-			<id>10009</id>
+			<id>10008</id>
 			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
 			<label>9100</label>
 			<hyperlink>9000</hyperlink>
-			<ondown>10010</ondown>
+			<ondown>10009</ondown>
 		</control>
 		
-				<control>
+		<control>
 			<description>I.F.C</description>
 			<type>button</type>
-			<id>10010</id>
+			<id>10009</id>
 			<width>259</width>
-	<textureFocus>settings_button_focus.png</textureFocus>
-	<textureNoFocus>-</textureNoFocus>
+			<textureFocus>settings_button_focus.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
 			<label>I.F.C.</label>
 			<hyperlink>240782</hyperlink>
 			<ondown>10001</ondown>
+			<visible>plugin.isenabled(Intelligent Frame Correction)</visible>		
 		</control>
 		
 </control>
