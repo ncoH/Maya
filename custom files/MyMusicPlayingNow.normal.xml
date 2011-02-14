@@ -91,6 +91,7 @@
             <animation effect="Fade" time="300">WindowClose</animation>
             <animation effect="Fade" time="1000" delay="200">VisibleChange</animation>
         </control>
+		
         <control>
             <description>Menu</description>
             <type>group</type>
@@ -101,21 +102,22 @@
             <animation effect="Fade" time="300">WindowClose</animation>
             <control>
                 <id>5101</id>
-                <description>Now Playing button</description>
+                <description>Playlist button</description>
                 <type>button</type>
                 <onleft>5101</onleft>
                 <onright>5101</onright>
-                <onup>5105</onup>
+                <onup>5104</onup>
                 <ondown>5102</ondown>
                 <visible>!window.isvisible(90478)</visible>
                 <width>276</width>
                 <height>38</height>
+                <hyperlink>500</hyperlink>
                 <textureFocus>now_playing_menuitem_selected.png</textureFocus>
                 <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
-                <label>4540</label>
+                <label>4555</label>
                 <textYOff>6</textYOff>
             </control>
-            <control>
+<!--             <control>
                 <id>5102</id>
                 <description>Top Album Tracks button</description>
                 <type>button</type>
@@ -132,18 +134,18 @@
                 <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
                 <label>33030</label>
                 <textYOff>6</textYOff>
-            </control>
+            </control> -->
             <control>
-                <id>5103</id>
+                <id>5102</id>
                 <description>Tagged Tracks button</description>
                 <type>button</type>
                 <onleft>155</onleft>
-                <onright>5103</onright>
-                <onup>5102</onup>
-                <ondown>5104</ondown>
+                <onright>5102</onright>
+                <onup>5101</onup>
+                <ondown>30</ondown>
                 <visible>!window.isvisible(90478)</visible>
                 <posX>650</posX>
-                <posY>234</posY>
+                <posY>235</posY>
                 <width>276</width>
                 <height>38</height>
                 <textureFocus>now_playing_menuitem_selected.png</textureFocus>
@@ -151,36 +153,56 @@
                 <label>33011</label>
                 <textYOff>6</textYOff>
             </control>
-            <control>
-                <id>5104</id>
-                <description>Current Playlist button</description>
+			
+			<control>
+                <id>30</id>
+                <description>Last.fm Love button</description>
                 <type>button</type>
-                <onleft>5104</onleft>
-                <onright>5104</onright>
-                <onup>5103</onup>
-                <ondown>5105</ondown>
+                <onleft>30</onleft>
+                <onright>30</onright>
+                <onup>5102</onup>
+                <ondown>31</ondown>
                 <visible>!window.isvisible(90478)</visible>
                 <posX>650</posX>
                 <posY>235</posY>
                 <width>276</width>
                 <height>38</height>
-                <hyperlink>500</hyperlink>
                 <textureFocus>now_playing_menuitem_selected.png</textureFocus>
                 <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
-                <label>4555</label>
+                <label>34010</label>
                 <textYOff>6</textYOff>
             </control>
-            <control>
-                <id>5105</id>
+			
+			<control>
+                <id>31</id>
+                <description>Last.fm Ban button</description>
+                <type>button</type>
+                <onleft>31</onleft>
+                <onright>31</onright>
+                <onup>30</onup>
+                <ondown>5104</ondown>
+                <visible>!window.isvisible(90478)</visible>
+                <posX>650</posX>
+                <posY>235</posY>
+                <width>276</width>
+                <height>38</height>
+                <textureFocus>now_playing_menuitem_selected.png</textureFocus>
+                <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
+                <label>Ban</label>
+                <textYOff>6</textYOff>
+            </control>			
+			
+           <control>
+                <id>5104</id>
                 <description>Lyrics button</description>
                 <type>button</type>
-                <onleft>5105</onleft>
-                <onright>5105</onright>
-                <onup>5104</onup>
+                <onleft>5104</onleft>
+                <onright>5104</onright>
+                <onup>31</onup>
                 <ondown>5101</ondown>
-                <visible>plugin.isenabled(My Lyrics)+!window.isvisible(90478)+!window.isvisible(90478)+!window.isvisible(90478)</visible>
-                <posX>609</posX>
-                <posY>241</posY>
+                <visible>plugin.isenabled(My Lyrics)+!window.isvisible(90478)</visible>
+                <posX>650</posX>
+                <posY>235</posY>
                 <width>276</width>
                 <height>38</height>
                 <hyperlink>90478</hyperlink>
@@ -188,8 +210,9 @@
                 <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
                 <label>#SkinTranslation.Translations.lyrics.Label</label>
                 <textYOff>6</textYOff>
-            </control>
+            </control>						
         </control>
+		
         <control>
             <id>112</id>
             <description>album art image</description>
@@ -223,7 +246,7 @@
             <id>0</id>
             <description>title label</description>
             <type>fadelabel</type>
-            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
             <posX>350</posX>
             <posY>497</posY>
             <width>550</width>
@@ -237,7 +260,7 @@
             <id>0</id>
             <description>title label</description>
             <type>fadelabel</type>
-            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
             <posX>480</posX>
             <posY>497</posY>
             <width>497</width>
@@ -250,7 +273,7 @@
             <id>0</id>
             <description>artist label</description>
             <type>fadelabel</type>
-            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
             <posX>350</posX>
             <posY>533</posY>
             <width>550</width>
@@ -264,7 +287,7 @@
             <id>0</id>
             <description>artist label</description>
             <type>fadelabel</type>
-            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
             <posX>480</posX>
             <posY>533</posY>
             <width>497</width>
@@ -277,7 +300,7 @@
             <id>0</id>
             <description>album label</description>
             <type>fadelabel</type>
-            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
             <posX>350</posX>
             <posY>563</posY>
             <width>550</width>
@@ -291,7 +314,7 @@
             <id>0</id>
             <description>album label</description>
             <type>fadelabel</type>
-            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
             <posX>480</posX>
             <posY>563</posY>
             <width>497</width>
@@ -304,7 +327,7 @@
             <id>0</id>
             <description>up next label</description>
             <type>label</type>
-            <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)]+Control.HasText(1200)</visible>
+            <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)] + Control.HasText(1200)</visible>
             <posX>350</posX>
             <posY>593</posY>
             <font>Segoe Light14</font>
@@ -325,7 +348,7 @@
             <id>0</id>
             <description>next track label</description>
             <type>fadelabel</type>
-            <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)] + player.hasmedia + Control.HasText(1200)</visible>
+            <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)] + player.hasmedia +Control.HasText(1200)</visible>
             <posX>370</posX>
             <posY>624</posY>
             <width>607</width>
@@ -352,7 +375,7 @@
             <id>141</id>
             <description>Rating</description>
             <type>imagelist</type>
-            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20) | Control.HasFocus(5105)</visible>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
             <posX>349</posX>
             <posY>655</posY>
             <width>185</width>
@@ -438,7 +461,7 @@
             <description>list of top album tracks label</description>
             <type>fadelabel</type>
             <visible>Control.HasFocus(5102) | Control.HasFocus(166)</visible>
-            <posX>350</posX>
+            <posX>-2350</posX>
             <posY>497</posY>
             <width>627</width>
             <font>Segoe Light18</font>
@@ -456,7 +479,7 @@
             <onup>166</onup>
             <ondown>166</ondown>
             <visible>Control.HasFocus(5102) | Control.HasFocus(166)</visible>
-            <posX>328</posX>
+            <posX>-2328</posX>
             <posY>537</posY>
             <width>649</width>
             <height>210</height>
@@ -481,7 +504,7 @@
             <id>0</id>
             <description>list of tagged tracks label</description>
             <type>fadelabel</type>
-            <visible>Control.HasFocus(5103) | Control.HasFocus(155)</visible>
+            <visible>Control.HasFocus(5102) | Control.HasFocus(155)</visible>
             <posX>350</posX>
             <posY>497</posY>
             <width>627</width>
@@ -499,7 +522,7 @@
             <onright>5103</onright>
             <onup>155</onup>
             <ondown>155</ondown>
-            <visible>Control.HasFocus(5103) | Control.HasFocus(155)</visible>
+            <visible>Control.HasFocus(5102) | Control.HasFocus(155)</visible>
             <posX>328</posX>
             <posY>537</posY>
             <width>649</width>
