@@ -50,7 +50,7 @@
 			<centered>yes</centered>
 			<zoom>yes</zoom>
 			<texture>#fanarthandler.music.backdrop1.selected</texture>  
-			<visible>[facadeview.filmstrip|facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+control.isvisible(91919291)+control.isvisible(91919293)</visible>	
+			<visible>[facadeview.filmstrip|facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons]+control.isvisible(91919291)+control.isvisible(91919293)</visible>	
 			<animation effect="fade" time="450">visible</animation>
 			<animation effect="fade" time="450" delay="300">hidden</animation>
 		</control>
@@ -67,7 +67,7 @@
 			<centered>yes</centered>
 			<zoom>yes</zoom>
 			<texture>#fanarthandler.music.backdrop2.selected</texture>  
-			<visible>[facadeview.filmstrip|facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+control.isvisible(91919292)+control.isvisible(91919293)</visible>
+			<visible>[facadeview.filmstrip|facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons]+control.isvisible(91919292)+control.isvisible(91919293)</visible>
 			<animation effect="fade" time="450">visible</animation>
 			<animation effect="fade" time="450" delay="300">hidden</animation>
 		</control>	
@@ -79,7 +79,7 @@
 		<width>1366</width>
 		<height>768</height>
 		<texture>fanart_overlay.png</texture>
-		<visible>[facadeview.list | facadeview.album]+control.isvisible(91919293)</visible>
+		<visible>facadeview.list+control.isvisible(91919293)</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
@@ -96,27 +96,7 @@
 		<width>873</width>
 		<height>768</height>
 		<texture>fanart_widelist_bg.png</texture>
-		<visible>[facadeview.list | facadeview.album]+control.isvisible(91919293)</visible>
-	</control>
-	
-	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>fanart_overlay_filmstrip.png</texture>
-		<visible>[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip] + control.isvisible(91919293)</visible>
-	</control>
-
-	<control>
-		<description>BG</description>
-		<type>image</type>
-		<id>1</id>
-		<width>1366</width>
-		<height>768</height>
-		<texture>background_coverflow.png</texture>
-		<visible>facadeview.coverflow + control.isvisible(91919293)</visible>
+		<visible>facadeview.list+control.isvisible(91919293)</visible>
 	</control>
 
 	<import>common.window.music.xml</import>
@@ -149,7 +129,7 @@
 		<width>725</width>
 		<height>482</height>
 		<texture>listcontrol_bg.png</texture>
-		<visible>!facadeview.smallicons + !facadeview.largeicons + !facadeview.filmstrip + !facadeview.coverflow</visible>
+		<visible>!facadeview.smallicons + !facadeview.largeicons + !facadeview.filmstrip</visible>
 	</control>
 
 	<control>
@@ -165,7 +145,7 @@
 		<label>Music</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons | facadeview.coverflow</visible>
+		<visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
 		<align>center</align>
 		<valign>middle</valign>
 	</control>
@@ -230,7 +210,7 @@
 				<type>group</type>
 				<posX>543</posX>
 				<posY>175</posY>
-				<layout>StackLayout(1)</layout>
+				<layout>StackLayout(0, Vertical, true)</layout>
 				
 				<control>
 					<description>View-As</description>

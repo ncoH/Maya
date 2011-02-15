@@ -111,7 +111,7 @@
 				<type>group</type>
 				<posX>543</posX>
 				<posY>175</posY>
-				<layout>StackLayout(1)</layout>
+				<layout>StackLayout(0, Vertical, true)</layout>
 				
         <control>
             <type>button</type>
