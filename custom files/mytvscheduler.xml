@@ -295,12 +295,13 @@
 	</control>
 		
 		<control>
-			<description>Current program channel</description>
+			<description>Current program title</description>
 			<type>label</type>
 			<id>17</id>
 			<posX>555</posX>
 			<posY>180</posY>
-			<label>#TV.Scheduled.Channel</label>
+			<width>663</width>			
+			<label>#TV.Scheduled.Title</label>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>
 			<font>Segoe Light18</font>
@@ -322,11 +323,23 @@
 		</control>
 
 		<control>
+			<description>Current program genre</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>555</posX>
+			<posY>253</posY>
+			<width>380</width>
+			<font>font12</font>			
+			<label>#TV.Scheduled.Genre</label>
+			<visible>!string.equals(#TV.Scheduled.Genre,-)+ facadeview.list </visible>			
+		</control>
+		
+		<control>
 			<type>textboxscrollup</type>
 			<description>Description1</description>
 			<id>15</id>
-			<posX>556</posX>
-			<posY>281</posY>
+			<posX>555</posX>
+			<posY>300</posY>
 			<width>680</width>
 			<height>110</height>
 			<label>#TV.Scheduled.Description</label>

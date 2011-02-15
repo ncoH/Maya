@@ -400,12 +400,13 @@
 		<!-- List -->
 		
 		<control>
-			<description>Current program channel</description>
+			<description>Current program title</description>
 			<type>label</type>
-			<id>0</id>
+			<id>13</id>
 			<posX>555</posX>
 			<posY>180</posY>
-			<label>#Radio.Recorded.Channel</label>
+			<width>663</width>			
+			<label>#Radio.Recorded.Title</label>
 			<font>Segoe Light18</font>
 			<textcolor>85cffe</textcolor>  
 			<visible>facadeview.list</visible>			
@@ -428,34 +429,21 @@
 			<type>label</type>
 			<id>0</id>
 			<posX>555</posX>
-			<posY>250</posY>
+			<posY>253</posY>
 			<width>380</width>
+			<font>font12</font>			
 			<label>#Radio.Recorded.Genre</label>
-			<visible>!string.equals(#Radio.Recorded.Genre,-)+ facadeview.list </visible>
-			
+			<visible>!string.equals(#Radio.Recorded.Genre,-)+ facadeview.list </visible>			
 		</control>
 	
-		<control>
-			<description>Current program title</description>
-			<type>fadelabel</type>
-			<id>13</id>
-			<posX>555</posX>
-			<posY>285</posY>
-			<width>271</width>
-			<textcolor>85cffe</textcolor>
-			<font>Segoe Light18</font>			
-			<label>#Radio.Recorded.Title</label> 
-			<visible>facadeview.list</visible>			
-		</control>
-
 		<control>
 			<type>textboxscrollup</type>
 			<description>Description1</description>
 			<id>0</id>
 			<posX>556</posX>
-			<posY>320</posY>
-			<width>351</width>
-			<height>100</height>
+			<posY>300</posY>
+			<width>663</width>
+			<height>90</height>
 			<font>font12</font>
 			<label>#Radio.Recorded.Description</label>  
 			<visible>facadeview.list</visible>				
