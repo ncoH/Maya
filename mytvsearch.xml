@@ -12,7 +12,7 @@
 		
         <control>
             <id>1</id>
-            <type>label</type>
+            <type>fadelabel</type>
 			<description>Header label</description>
             <posX>552</posX>
             <posY>30</posY>
