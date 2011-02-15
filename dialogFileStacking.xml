@@ -4,14 +4,28 @@
 <defaultcontrol>1</defaultcontrol>
 <allowoverlay>no</allowoverlay>
 <controls>
+
 	<import>common.dialog.xml</import>
-	
-	
+		
 <control>
 <type>group</type>
 <posX></posX>
 <animation effect="slide" start="0,0" end="0,-15" time="0">WindowOpen</animation>
 
+    <control>
+        <id>0</id>
+        <description>Movie Title value</description>
+        <type>fadelabel</type>
+        <posX>470</posX>
+        <posY>463</posY>
+        <width>426</width>
+        <font>font13</font>
+        <align>LEFT</align>
+        <label>#stackedMovie.Selected</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+    </control>
+		
 	<control>
 		<description>CD1</description>
 		<type>button</type>
