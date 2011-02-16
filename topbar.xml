@@ -17,7 +17,7 @@
             <description>Back button</description>
             <type>button</type>
             <onleft>31</onleft>
-            <onright>26</onright>
+            <onright>22</onright>
             <onup>21</onup>
             <ondown>2</ondown>
             <posX>263</posX>
@@ -32,34 +32,14 @@
 			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
-            <id>26</id>
-            <description>basichome button button</description>
+            <id>22</id>
+            <description>Skip Back button</description>
             <type>button</type>
             <onleft>21</onleft>
-            <onright>22</onright>
-            <onup>26</onup>
-            <ondown>2</ondown>
-            <posX>336</posX>
-            <posY>0</posY>
-            <width>76</width>
-            <height>57</height>
-            <action>115</action>
-            <textureFocus>nav_refresh_focus.png</textureFocus>
-            <textureNoFocus>nav_refresh_nofocus.png</textureNoFocus>
-            <label>-</label>
-			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
-			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
-
-        </control>
-        <control>
-            <id>22</id>
-            <description>back button</description>
-            <type>button</type>
-            <onleft>26</onleft>
             <onright>23</onright>
             <onup>22</onup>
             <ondown>2</ondown>
-            <posX>413</posX>
+            <posX>336</posX>
             <posY>0</posY>
             <width>76</width>
             <height>57</height>
@@ -69,16 +49,17 @@
             <label>-</label>
 			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
 			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
+
         </control>
         <control>
             <id>23</id>
-            <description>rewind button</description>
+            <description>Rewind button</description>
             <type>button</type>
             <onleft>22</onleft>
             <onright>24</onright>
             <onup>23</onup>
             <ondown>2</ondown>
-            <posX>488</posX>
+            <posX>413</posX>
             <posY>0</posY>
             <width>76</width>
             <height>57</height>
@@ -91,112 +72,131 @@
         </control>
         <control>
             <id>24</id>
-            <description>play button</description>
+            <description>Play button</description>
             <type>button</type>
             <onleft>23</onleft>
             <onright>25</onright>
             <onup>24</onup>
             <ondown>2</ondown>
-            <posX>569</posX>
+            <posX>488</posX>
             <posY>0</posY>
             <width>76</width>
             <height>57</height>
             <action>79</action>
             <textureFocus>play_enabled.png</textureFocus>
-            <textureNoFocus>play_disabled.png</textureNoFocus>
+            <textureNoFocus>play_disabled.png</textureNoFocus>			
             <label>-</label>
 			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
 			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
             <id>25</id>
-            <description>pause button</description>
+            <description>Pause button</description>
             <type>button</type>
             <onleft>24</onleft>
             <onright>27</onright>
             <onup>25</onup>
             <ondown>2</ondown>
-            <posX>645</posX>
+            <posX>569</posX>
             <posY>0</posY>
             <width>76</width>
             <height>57</height>
             <action>12</action>
             <textureFocus>pause_enabled.png</textureFocus>
-            <textureNoFocus>pause_disabled.png</textureNoFocus>
+            <textureNoFocus>pause_disabled.png</textureNoFocus>			
             <label>-</label>
 			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
 			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
             <id>27</id>
-            <description>stop button</description>
+            <description>Stop button</description>
             <type>button</type>
             <onleft>25</onleft>
             <onright>28</onright>
             <onup>27</onup>
             <ondown>2</ondown>
-            <posX>722</posX>
+            <posX>645</posX>
             <posY>0</posY>
             <width>76</width>
             <height>57</height>
             <action>13</action>
             <textureFocus>stop_enabled.png</textureFocus>
-            <textureNoFocus>stop_disabled.png</textureNoFocus>
+            <textureNoFocus>stop_disabled.png</textureNoFocus>			
             <label>-</label>
 			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
 			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
             <id>28</id>
-            <description>fast forward button</description>
+            <description>Fast Forward button</description>
             <type>button</type>
             <onleft>27</onleft>
             <onright>29</onright>
             <onup>28</onup>
             <ondown>2</ondown>
-            <posX>799</posX>
+            <posX>722</posX>
             <posY>0</posY>
             <width>76</width>
             <height>57</height>
             <action>77</action>
             <textureFocus>fastforward_enabled.png</textureFocus>
-            <textureNoFocus>fastforward_disabled.png</textureNoFocus>
+            <textureNoFocus>fastforward_disabled.png</textureNoFocus>			
             <label>-</label>
 			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
 			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
             <id>29</id>
-            <description>next button</description>
+            <description>Next button</description>
             <type>button</type>
             <onleft>28</onleft>
             <onright>30</onright>
             <onup>29</onup>
             <ondown>2</ondown>
-            <posX>876</posX>
+            <posX>799</posX>
             <posY>0</posY>
             <width>76</width>
             <height>57</height>
             <action>14</action>
             <textureFocus>skipforward_enabled.png</textureFocus>
-            <textureNoFocus>skipforward_disabled.png</textureNoFocus>
+            <textureNoFocus>skipforward_disabled.png</textureNoFocus>			
             <label>-</label>
 			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
 			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
         </control>
         <control>
             <id>30</id>
-            <description>Minimize button</description>
+            <description>Shutdown button</description>
             <type>button</type>
             <onleft>29</onleft>
-            <onright>31</onright>
+            <onright>26</onright>
             <onup>30</onup>
+            <ondown>2</ondown>
+            <posX>876</posX>
+            <posY>0</posY>
+            <width>76</width>
+            <height>57</height>
+            <action>99</action>
+            <textureFocus>nav_refresh_focus.png</textureFocus>
+            <textureNoFocus>nav_refresh_nofocus.png</textureNoFocus>			
+            <label>-</label>
+			<animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
+			<animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
+        </control>
+        <control>
+            <id>26</id>
+            <description>Basichome button</description>
+            <type>button</type>
+            <onleft>30</onleft>
+            <onright>31</onright>
+            <onup>26</onup>
             <ondown>2</ondown>
             <posX>952</posX>
             <posY>0</posY>
             <width>76</width>
             <height>57</height>
-            <action>18</action>
+            <action>115</action>
             <textureFocus>minimize_enabled.png</textureFocus>
             <textureNoFocus>minimize_disabled.png</textureNoFocus>
             <label>-</label>
@@ -207,7 +207,7 @@
             <id>31</id>
             <description>Exit button</description>
             <type>button</type>
-            <onleft>30</onleft>
+            <onleft>26</onleft>
             <onright>21</onright>
             <onup>31</onup>
             <ondown>2</ondown>
