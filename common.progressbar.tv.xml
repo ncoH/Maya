@@ -46,7 +46,7 @@
 		<width>1009</width>
 		<height>91</height>
 		<texture>osd_bg_pause.png</texture>
-		<visible>Control.IsVisible(10)|player.paused|player.rewinding|player.forwarding</visible>
+		<visible>Control.IsVisible(10) | [player.paused + window.ispauseosdvisible] | [player.rewinding|player.forwarding]</visible>
 	</control>
 	
 	<control>
@@ -80,7 +80,7 @@
 		<toplabel/>
 		<font>font10</font>
 		<textcolor>FF000000</textcolor>
-		<visible>window.isosdvisible|player.paused|player.rewinding|player.forwarding|Control.IsVisible(105)|Control.IsVisible(10)|player.seeking</visible>
+		<visible>window.isosdvisible | [player.paused + window.ispauseosdvisible] | [player.rewinding|player.forwarding|Control.IsVisible(105)|Control.IsVisible(10)|player.seeking]</visible>
 	</control>
 
 	<control>
@@ -91,7 +91,7 @@
 		<posY>675</posY>
 		<label>#currentplaytime</label>
 		<font>font12</font>
-		<visible>[window.isosdvisible|player.paused|player.rewinding|player.forwarding|control.isvisible(10)|player.seeking] + ![string.contains(#time,AM)|string.contains(#time,PM)]</visible>
+		<visible>[window.isosdvisible | [player.paused + window.ispauseosdvisible] | [player.rewinding|player.forwarding|control.isvisible(10)|player.seeking]] + ![string.contains(#time,AM)|string.contains(#time,PM)]</visible>
 	</control>
 
 	<control>
@@ -102,7 +102,7 @@
 		<posY>675</posY>
 		<label>#currentplaytime</label>
 		<font>font12</font>
-		<visible>[window.isosdvisible|player.paused|player.rewinding|player.forwarding|control.isvisible(10)|player.seeking] + [string.contains(#time,AM)|string.contains(#time,PM)]</visible>
+		<visible>[window.isosdvisible | [player.paused + window.ispauseosdvisible] | [player.rewinding|player.forwarding|control.isvisible(10)|player.seeking]] + [string.contains(#time,AM)|string.contains(#time,PM)]</visible>
 	</control>
 	
 	<control>
@@ -114,7 +114,7 @@
 		<label>#duration</label>
 		<align>right</align>
 		<font>font12</font>
-		<visible>[window.isosdvisible|player.paused|player.rewinding|player.forwarding|control.isvisible(10)|player.seeking] + ![string.contains(#time,AM)|string.contains(#time,PM)]</visible>
+		<visible>[window.isosdvisible | [player.paused + window.ispauseosdvisible] | [player.rewinding|player.forwarding|control.isvisible(10)|player.seeking]] + ![string.contains(#time,AM)|string.contains(#time,PM)]</visible>
 	</control>
 	
 	<control>
@@ -126,7 +126,7 @@
 		<label>#duration</label>
 		<align>right</align>
 		<font>font12</font>
-		<visible>[window.isosdvisible|player.paused|player.rewinding|player.forwarding|control.isvisible(10)|player.seeking] + [string.contains(#time,AM)|string.contains(#time,PM)]</visible>
+		<visible>[window.isosdvisible | [player.paused + window.ispauseosdvisible] | [player.rewinding|player.forwarding|control.isvisible(10)|player.seeking]] + [string.contains(#time,AM)|string.contains(#time,PM)]</visible>
 	</control>
 
 	<control>
@@ -140,7 +140,7 @@
 		<font>font14</font>
 		<align>center</align>
 		<label>19011</label>
-		<visible>!Control.IsVisible(10) + !Control.IsVisible(11) + !Control.IsVisible(12) + [[window.isosdvisible+player.paused]|[!window.isosdvisible+player.paused]]</visible>
+		<visible>!Control.IsVisible(10) + !Control.IsVisible(11) + !Control.IsVisible(12) + [[window.isosdvisible+player.paused]|[!window.isosdvisible+player.paused]] + window.ispauseosdvisible</visible>
 	</control>
 	
 	<!-- FFW labels -->
