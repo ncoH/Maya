@@ -186,11 +186,6 @@ multiple view modes.
 		<valign>middle</valign>
 	</control>
 	
-	
-	
-	
-	
-
 	<!--            :: HIDDEN MENU ::            -->
 	<control>
 		<type>actiongroup</type>
@@ -216,9 +211,8 @@ multiple view modes.
 			<animation effect="fade" time="400">windowclose</animation>
 		</control>
 		
-		<control>
-		<type>group</type>
-		
+	<control>
+		<type>group</type>		
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
 		<animation effect="fade" time="200" reversible="false">Hidden</animation>
@@ -246,7 +240,7 @@ multiple view modes.
 				<textcolor>85cffe</textcolor>
 			</control>
 		
-			<control>
+				<control>
 					<description>button group</description>
 					<type>group</type>
 					<posX>543</posX>
@@ -254,7 +248,7 @@ multiple view modes.
 					<layout>StackLayout(0, Vertical, true)</layout>
 					<visible>!Control.IsVisible(51)+Control.IsVisible(50)</visible>
 				
-			<control>
+				<control>
 					<description>Toggle View</description>
 					<type>button</type>
 					<id>2</id>
@@ -269,9 +263,9 @@ multiple view modes.
 					<onright>50</onright>
 					<onup>66611</onup>
 					<ondown>3</ondown>
-			</control>
+				</control>
 
-			<control>
+				<control>
 					<description>Switch View</description>
 					<type>button</type>
 					<id>3</id>
@@ -286,8 +280,8 @@ multiple view modes.
 					<onright>50</onright>
 					<onup>2</onup>
 					<ondown>14</ondown>
-			</control>
-<!-- Only in MovingPictures 1.0 -->
+				</control>
+
 				<control>
 					<description>Sort</description>
 					<type>button</type>
@@ -359,9 +353,7 @@ multiple view modes.
 				</control>	
 
 		</control>
-
-	</control>
-	
+	</control>	
 </control>
 
 	<!--            :: LIST VIEW ::            -->
@@ -438,7 +430,6 @@ multiple view modes.
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 	
-<!-- Only in MovingPictures 1.0 -->
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -453,23 +444,6 @@ multiple view modes.
 		<textcolor>85cffe</textcolor>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
-<!-- -->
-
-
-<!-- Only in MovingPictures 0.7.x
-	<control>
-		<description>runtime</description>
-		<type>label</type>
-		<label>#MovingPictures.SelectedMovie.runtime min</label>
-		<id>0</id>
-		<posX>555</posX>
-		<posY>230</posY>
-		<width>400</width>
-		<font>Segoe Light18</font>
-		<textcolor>85cffe</textcolor>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
-	</control>
--->
 	
 	<!-- 1 genre -->
 	<control>
@@ -518,11 +492,43 @@ multiple view modes.
 		<textcolor>85cffe</textcolor>
 		<visible>facadeview.list+Control.IsVisible(50)+!string.equals(#MovingPictures.SelectedMovie.extra.genres.3,)</visible>
 	</control>
-	
-	
-	
-	
-	
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>921</posX>
+		<posY>308</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>10</imagesToDraw>
+		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+	</control>
+
+	<control>
+		<description>Rating value</description>
+		<type>label</type>
+		<label>#MovingPictures.SelectedMovie.score.localized / 10</label>
+		<id>0</id>
+		<posX>1170</posX>
+		<posY>308</posY>
+		<width>220</width>
+		<font>font12</font>		
+		<align>left</align>		
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
 	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -531,9 +537,9 @@ multiple view modes.
 		<description>Summary (list)</description>
 		<id>1025</id>
 		<posX>924</posX>
-		<posY>330</posY>
+		<posY>340</posY>
 		<width>400</width>
-		<height>224</height>
+		<height>243</height>
 		<label>#MovingPictures.SelectedMovie.summary</label>
 		<seperator>---------------------------------------------------------------------------------------------------------</seperator>
 		<onleft>1026</onleft>
@@ -550,11 +556,11 @@ multiple view modes.
 		<type>fadelabel</type>
 		<id>0</id>
 		<posX>924</posX>
-		<posY>570</posY>
+		<posY>590</posY>
 		<width>365</width>
 		<font>font11</font>
 		<textcolor>85cffe</textcolor>
-		<label>#MovingPictures.SelectedMovie.extra.actors.1, #MovingPictures.SelectedMovie.extra.actors.2, #MovingPictures.SelectedMovie.extra.actors.3</label>
+		<label>#MovingPictures.SelectedMovie.actors</label>
 		<visible>facadeview.list+Control.IsVisible(50)</visible>
 	</control>
 	
@@ -567,7 +573,7 @@ multiple view modes.
 		<label>#MovingPictures.Translation.Director.Label: #MovingPictures.SelectedMovie.directors</label>
 		<id>0</id>
 		<posX>924</posX>
-		<posY>595</posY>
+		<posY>613</posY>
 		<width>365</width>
 		<font>font11</font>
 		<textcolor>85cffe</textcolor>
@@ -583,57 +589,12 @@ multiple view modes.
 		<label>#MovingPictures.Translation.Directors.Label: #MovingPictures.SelectedMovie.directors</label>
 		<id>0</id>
 		<posX>924</posX>
-		<posY>595</posY>
+		<posY>615</posY>
 		<width>365</width>
 		<font>font11</font>
 		<textcolor>85cffe</textcolor>
 		<visible>facadeview.list+Control.IsVisible(50)+!string.equals(#MovingPictures.SelectedMovie.extra.directors.2,)</visible>
 	</control>
-
-<!-- Only in MovingPictures 1.0 -->
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>imagelist</type>
-		<id>101</id>
-		<posX>921</posX>
-		<posY>625</posY>
-		<width>185</width>
-		<height>21</height>
-		<textureWidth>23</textureWidth>
-		<textureHeight>19</textureHeight>
-		<subitems>
-		<subitem>starblue.png</subitem>
-		<subitem>starwhite.png</subitem>
-		</subitems>
-		<orientation>horizontal</orientation>
-		<align>left</align>
-		<imagesToDraw>5</imagesToDraw>
-		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
-	</control>
-	
-<!-- Only in MovingPictures 0.7.x
-	<control>
-		<type>imagelist</type>
-		<id>101</id>
-		<posX>552</posX>
-		<posY>625</posY>
-		<width>185</width>
-		<height>21</height>
-		<textureWidth>23</textureWidth>
-		<textureHeight>19</textureHeight>
-		<subitems>
-		<subitem>starblue.png</subitem>
-		<subitem>starwhite.png</subitem>
-		</subitems>
-		<orientation>horizontal</orientation>
-		<align>left</align>
-		<imagesToDraw>5</imagesToDraw>
-		<percentage>#MovingPictures.SelectedMovie.score</percentage>
-		<visible>facadeview.list+Control.IsVisible(50)</visible>
-	</control>
--->
 	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -680,8 +641,7 @@ multiple view modes.
 	</control>
 	
 	<!--            :: FILMSTRIP VIEW ::            -->
-	
-	
+		
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
@@ -698,7 +658,6 @@ multiple view modes.
 		<valign>middle</valign>
 	</control>
 	
-	<!-- Only in MovingPictures 1.0 -->	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -715,22 +674,28 @@ multiple view modes.
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
 	</control>
 
-	<!-- Only in MovingPictures 0.7.x
 	<control>
-		<description>runtime</description>
-		<type>label</type>
-		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime min - #MovingPictures.SelectedMovie.genres</label>
-		<id>0</id>
-		<posX>0</posX>
-		<posY>178</posY>
-		<width>1366</width>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>773</posX>
+		<posY>187</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
 		<align>center</align>
-		<font>font13</font>
-		<textcolor>6aa5cb</textcolor>
+		<imagesToDraw>10</imagesToDraw>
+		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
 	</control>
--->
-
+	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -806,6 +771,7 @@ multiple view modes.
 	<import>movingpictures.details.xml</import>
 	<!--            :: OTHER ::            -->
 	<import>movingpictures.facade.xml</import>
+	
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>

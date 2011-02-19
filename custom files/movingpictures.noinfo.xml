@@ -187,11 +187,6 @@ multiple view modes.
 		<valign>middle</valign>
 	</control>
 	
-	
-	
-	
-	
-
 	<!--            :: HIDDEN MENU ::            -->
 	<control>
 		<type>actiongroup</type>
@@ -217,9 +212,8 @@ multiple view modes.
 			<animation effect="fade" time="400">windowclose</animation>
 		</control>
 		
-		<control>
-		<type>group</type>
-		
+	<control>
+		<type>group</type>		
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
 		<animation effect="fade" time="200" reversible="false">Hidden</animation>
@@ -255,7 +249,7 @@ multiple view modes.
 				<layout>StackLayout(0, Vertical, true)</layout>
 				<visible>!Control.IsVisible(51)+Control.IsVisible(50)</visible>
 				
-			<control>
+				<control>
 					<description>Toggle View</description>
 					<type>button</type>
 					<id>2</id>
@@ -270,9 +264,9 @@ multiple view modes.
 					<onright>50</onright>
 					<onup>66611</onup>
 					<ondown>3</ondown>
-			</control>
+				</control>
 
-			<control>
+				<control>
 					<description>Switch View</description>
 					<type>button</type>
 					<id>3</id>
@@ -287,8 +281,8 @@ multiple view modes.
 					<onright>50</onright>
 					<onup>2</onup>
 					<ondown>14</ondown>
-			</control>
-<!-- Only in MovingPictures 1.0 -->
+				</control>
+
 				<control>
 					<description>Sort</description>
 					<type>button</type>
@@ -322,7 +316,7 @@ multiple view modes.
 					<ondown>66610</ondown>
 				</control>
 				
-			<control>
+				<control>
 					<description>Video Settings</description>
 					<type>button</type>
 					<id>66610</id>
@@ -338,9 +332,9 @@ multiple view modes.
 					<onright>50</onright>
 					<onup>15</onup>
 					<ondown>66611</ondown>
-			</control>
+				</control>
 			
-			<control>
+				<control>
 					<description>SubCentral</description>
 					<type>button</type>					
 					<id>66611</id>
@@ -360,9 +354,7 @@ multiple view modes.
 				</control>	
 
 		</control>
-
-	</control>
-	
+	</control>	
 </control>
 
 	<!--            :: LIST VIEW ::            -->
@@ -433,13 +425,35 @@ multiple view modes.
 		<id>0</id>
 		<posX>555</posX>
 		<posY>602</posY>
-		<width>670</width>
+		<width>420</width>
 		<align>left</align>
 		<font>font12</font>
 		<textcolor>6aa5cb</textcolor>
 		<visible>facadeview.list+!player.hasmedia+Control.IsVisible(50)</visible>
 	</control>
 
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>990</posX>
+		<posY>605</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>10</imagesToDraw>
+		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
+		<visible>facadeview.list+Control.IsVisible(50)</visible>
+	</control>
+	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -485,8 +499,7 @@ multiple view modes.
 	</control>
 	
 	<!--            :: FILMSTRIP VIEW ::            -->
-	
-	
+		
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
@@ -503,7 +516,6 @@ multiple view modes.
 		<valign>middle</valign>
 	</control>
 	
-	<!-- Only in MovingPictures 1.0 -->	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -519,23 +531,29 @@ multiple view modes.
 		<textcolor>6aa5cb</textcolor>
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
 	</control>
-	
-	<!-- Only in MovingPictures 0.7.x
+
 	<control>
-		<description>runtime</description>
-		<type>label</type>
-		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime min - #MovingPictures.SelectedMovie.genres</label>
-		<id>0</id>
-		<posX>0</posX>
-		<posY>178</posY>
-		<width>1366</width>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>imagelist</type>
+		<id>101</id>
+		<posX>773</posX>
+		<posY>187</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
 		<align>center</align>
-		<font>font13</font>
-		<textcolor>6aa5cb</textcolor>
+		<imagesToDraw>10</imagesToDraw>
+		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
 	</control>
--->
-
+	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -607,10 +625,11 @@ multiple view modes.
 		<visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)+!Control.IsVisible(9)+Control.HasThumb(60)</visible>
 	</control>
 	
-	<!--            :: DETAILS VIEW ::            -->
+	<!--            :: DETAILS VIEW ::      -->
 	<import>movingpictures.details.xml</import>
 	<!--            :: OTHER ::            -->
 	<import>movingpictures.facade.xml</import>
+	
 	<control>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
@@ -632,6 +651,7 @@ multiple view modes.
 		<texture>hiddenmenu_tab_up.png</texture>
 		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
 	</control>
+	
 <import>common.overlay.xml</import>
 <import>movingpictures.mediainfo.listview.xml</import>
 <import>movingpictures.mediainfo.thumbview.xml</import>
