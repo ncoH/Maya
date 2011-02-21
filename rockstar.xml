@@ -4,7 +4,8 @@
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<define>#header.label:Rockstar</define>
-	<define>#header.background:hover_spotifier.png</define>
+	<define>#useSelectedFanart:Yes</define>	
+	<define>#header.background:hover_rockstar.png</define>
 	<controls>
 	
         <import>common.window.background.xml</import>		
@@ -68,6 +69,9 @@
 		<control>
 			<description>group element</description>
 			<type>group</type>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>		
+			
 			<control>
 				<id>300</id>
 				<description>Playlist</description>
@@ -82,15 +86,9 @@
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
 				<IconXOff>8</IconXOff>
-				<IconYOff>12</IconYOff>				
-				<animation effect="fade" time="100">WindowOpen</animation>
-				<animation effect="fade" time="100">WindowClose</animation>						
+				<IconYOff>12</IconYOff>									
 			</control>
-		</control>
 		
-		<control>
-			<description>group element</description>
-			<type>group</type>
 			<control>
 				<id>200</id>
 				<description>Track List</description>
@@ -109,9 +107,7 @@
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
 				<IconXOff>8</IconXOff>
-				<IconYOff>12</IconYOff>				
-				<animation effect="fade" time="100">WindowOpen</animation>
-				<animation effect="fade" time="100">WindowClose</animation>				
+				<IconYOff>12</IconYOff>							
 			</control>
 		</control>
 
@@ -180,7 +176,7 @@
 					<id>2</id>
 					<description>Search Music</description>
 					<type>button</type>
-					<onup>30</onup>
+					<onup>20</onup>
 					<ondown>3</ondown>
 					<visible/>
 					<label>Search Music</label>
@@ -195,12 +191,12 @@
 				</control>
 				<control>
 					<id>3</id>
-					<description>Current Playlist</description>
+					<description>Default Playlist</description>
 					<type>button</type>
 					<onup>2</onup>
 					<ondown>4</ondown>
 					<visible/>
-					<label>Current Playlist</label>
+					<label>Default Playlist</label>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
@@ -252,7 +248,7 @@
 					<type>togglebutton</type>
 					<onright>200</onright>
 					<onup>32</onup>
-					<ondown>2</ondown>
+					<ondown>20</ondown>
 					<label>Repeat</label>
 					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
@@ -265,6 +261,24 @@
 					<onright>200</onright>
 					<onleft>200</onleft>					
 			</control>
+				<control>
+					<id>20</id>
+					<description>Popular Songs</description>
+					<type>button</type>
+					<onright>200</onright>
+					<onup>30</onup>
+					<ondown>2</ondown>
+					<visible/>					
+					<label>Popular Songs</label>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<onright>200</onright>
+					<onleft>200</onleft>					
+			</control>			
 
 			</control>			
 		</control>
@@ -292,8 +306,8 @@
             <visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>
 			<posX>134</posX>
 			<posY>535</posY>
-			<width>255</width>		
-            <label>#Rockstar.SelectedTrack.AlbumName</label>
+			<width>255</width>	
+            <label>#Rockstar.SelectedTrack.TrackName</label>			
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>					
         </control>
@@ -306,24 +320,38 @@
 			<posX>134</posX>
 			<posY>565</posY>
 			<width>255</width>	
-            <label>#Rockstar.SelectedTrack.TrackName</label>
+            <label>#Rockstar.SelectedTrack.AlbumName</label>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>					
         </control>
 
 		<control>
 			<id>0</id>
-			<description>play time label</description>
+			<description>Album Year</description>
 			<type>label</type>
             <visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>			
 			<posX>134</posX>
 			<posY>590</posY>
 			<width>255</width>
             <align>LEFT</align>
-            <label>#Rockstar.CurrentPlaytime</label>
+			<label>#Rockstar.SelectedTrack.AlbumYear</label>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>		
 		</control>
+		
+		<control>
+			<id>0</id>
+			<description>play time label</description>
+			<type>label</type>
+            <visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>			
+			<posX>134</posX>
+			<posY>615</posY>
+			<width>255</width>
+            <align>LEFT</align>
+            <label>#Rockstar.CurrentPlaytime</label>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>		
+		</control>		
 		
 		<!-- NOT USED -->
 		<control>
