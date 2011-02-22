@@ -72,7 +72,8 @@
 	<videoplayimages import="true">
 		<property>
 			<name>TVSeries.Play.ClearArt</name>
-			<value><![CDATA[thumbs\ClearArt\<Series.ID>.png]]></value>
+			<value>
+			        <![CDATA[thumbs\ClearArt\<Series.ID>.png]]></value>
 		</property>
 		<!-- You can define multiple properties -->
 	</videoplayimages>
@@ -80,8 +81,8 @@
 	
 	<layouts>
 		<group List="true" SmallIcons="true" />
-		<series ListPosters="true" ListBanners="false" Filmstrip="true" WideBanners="true" />
-		<season List="true" Filmstrip="true" />
+		<series ListPosters="true" ListBanners="false" Filmstrip="true" WideBanners="true" Coverflow="true"/>
+		<season List="true" Filmstrip="true" Coverflow="true"/>
 		<episode List="true" />
 	</layouts>
 	
@@ -202,7 +203,9 @@ skin\Maya\Media\TVSeries\logos\nosubtitles.png;-;<Episode.AvailableSubtitles>;-;
 	<graphicsquality import="true">
 		<seriesbanners>65</seriesbanners>
 		<seriesposters>50</seriesposters>
+		<seriescoverflow>50</seriescoverflow>  		
 		<seasonbanners>75</seasonbanners>
+		<seasoncoverflow>90</seasoncoverflow>		
 		<episodethumbs>80</episodethumbs>
 	</graphicsquality>
 </settings>

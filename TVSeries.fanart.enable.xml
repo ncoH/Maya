@@ -50,6 +50,16 @@
 		<texture>fanart_overlay_filmstrip.png</texture>
 		<visible>facadeview.filmstrip+string.contains(#maya.fanart.TVSeries,yes)</visible>
 	</control>
+
+	<control>
+		<description>BG</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>background_coverflow.png</texture>
+		<visible>facadeview.coverflow+string.contains(#maya.fanart.TVSeries,yes)</visible>
+	</control>
 	
 	<control>
 		<description>fanart list background</description>
