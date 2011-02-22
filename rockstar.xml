@@ -4,12 +4,86 @@
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<define>#header.label:Rockstar</define>
-	<define>#useSelectedFanart:Yes</define>	
+	<define>#usePlayFanart:Yes</define>
 	<define>#header.background:hover_rockstar.png</define>
 	<controls>
 	
         <import>common.window.background.xml</import>		
         <import>common.time.xml</import>		
+
+        <control>
+			<description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
+            <type>label</type>
+			<id>91919295</id>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1</width>
+        </control>
+
+        <control>
+			<description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
+            <type>label</type>
+			<id>91919296</id>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1</width>
+        </control>
+
+        <control>
+			<description>DUMMY CONTROLL FOR PLAYING FANART2 AVAILABILITY CONDITION</description>
+            <type>label</type>
+			<id>91919294</id>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1</width>
+			<visible>no</visible>
+        </control>
+
+        <control>
+            <id>0</id>
+            <description>DEFAULT BACKGROUND WHEN FANART NOT AVAILABLE</description>
+            <type>multiimage</type>
+            <visible>!control.isvisible(91919294)</visible>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <imagepath>music</imagepath>
+            <timeperimage>30000</timeperimage>
+            <fadetime>800</fadetime>
+            <loop>yes</loop>
+            <randomize>True</randomize>
+            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
+            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>			
+        </control>
+		
+        <control>
+            <description>FANART IMAGE 1</description>
+			<id>897688</id>
+            <type>image</type>
+			<posx>0</posx>
+			<posy>0</posy>
+            <width>1366</width>
+            <height>768</height>
+            <texture>#fanarthandler.music.backdrop1.play</texture>
+			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919295)</visible>
+            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
+            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
+        </control>
+
+        <control>
+            <description>FANART IMAGE 2</description>
+			<id>897689</id>
+            <type>image</type>
+			<posx>0</posx>
+			<posy>0</posy>
+            <width>1366</width>
+            <height>768</height>
+            <texture>#fanarthandler.music.backdrop2.play</texture>
+			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919296)</visible>
+            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
+            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
+        </control>
 		
         <control>
             <id>1</id>
@@ -176,7 +250,7 @@
 					<id>2</id>
 					<description>Search Music</description>
 					<type>button</type>
-					<onup>20</onup>
+					<onup>30</onup>
 					<ondown>3</ondown>
 					<visible/>
 					<label>Search Music</label>
@@ -211,7 +285,7 @@
 					<description>Playlists</description>
 					<type>button</type>
 					<onup>3</onup>
-					<ondown>32</ondown>
+					<ondown>20</ondown>
 					<visible/>
 					<label>Playlists</label>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
@@ -223,12 +297,32 @@
 					<onright>200</onright>
 					<onleft>200</onleft>					
 				</control>
+				
+				<control>
+					<id>20</id>
+					<description>Popular Songs</description>
+					<type>button</type>
+					<onright>200</onright>
+					<onup>4</onup>
+					<ondown>32</ondown>
+					<visible/>					
+					<label>Popular Songs</label>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<onright>200</onright>
+					<onleft>200</onleft>					
+				</control>	
+			
 				<control>
 					<id>32</id>
 					<description>Shuffle on/off button</description>
 					<type>togglebutton</type>
 					<onright>200</onright>
-					<onup>4</onup>
+					<onup>20</onup>
 					<ondown>30</ondown>
 					<label>Shuffle</label>
 					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
@@ -248,7 +342,7 @@
 					<type>togglebutton</type>
 					<onright>200</onright>
 					<onup>32</onup>
-					<ondown>20</ondown>
+					<ondown>2</ondown>
 					<label>Repeat</label>
 					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
@@ -260,25 +354,7 @@
 					<textYOff>12</textYOff>	
 					<onright>200</onright>
 					<onleft>200</onleft>					
-			</control>
-				<control>
-					<id>20</id>
-					<description>Popular Songs</description>
-					<type>button</type>
-					<onright>200</onright>
-					<onup>30</onup>
-					<ondown>2</ondown>
-					<visible/>					
-					<label>Popular Songs</label>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
-					<onright>200</onright>
-					<onleft>200</onleft>					
-			</control>			
+			</control>		
 
 			</control>			
 		</control>
@@ -307,20 +383,7 @@
 			<posX>134</posX>
 			<posY>535</posY>
 			<width>255</width>	
-            <label>#Rockstar.SelectedTrack.TrackName</label>			
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="fade" time="100">WindowClose</animation>					
-        </control>
-		
-        <control>
-            <id>0</id>
-            <description>Track Name</description>
-            <type>fadelabel</type>
-            <visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>
-			<posX>134</posX>
-			<posY>565</posY>
-			<width>255</width>	
-            <label>#Rockstar.SelectedTrack.AlbumName</label>
+            <label>#Rockstar.SelectedTrack.AlbumName</label>			
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>					
         </control>
@@ -331,27 +394,28 @@
 			<type>label</type>
             <visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>			
 			<posX>134</posX>
-			<posY>590</posY>
+			<posY>565</posY>
 			<width>255</width>
             <align>LEFT</align>
+			<textcolor>6aa5cb</textcolor>			
 			<label>#Rockstar.SelectedTrack.AlbumYear</label>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>		
 		</control>
 		
-		<control>
-			<id>0</id>
-			<description>play time label</description>
-			<type>label</type>
-            <visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>			
+        <control>
+            <id>0</id>
+            <description>Track Name</description>
+            <type>fadelabel</type>
+            <visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>
 			<posX>134</posX>
-			<posY>615</posY>
-			<width>255</width>
-            <align>LEFT</align>
-            <label>#Rockstar.CurrentPlaytime</label>
+			<posY>595</posY>
+			<width>255</width>			
+			<label>#Rockstar.SelectedTrack.TrackName</label>
 			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="fade" time="100">WindowClose</animation>		
-		</control>		
+			<animation effect="fade" time="100">WindowClose</animation>					
+        </control>
+		
 		
 		<!-- NOT USED -->
 		<control>
