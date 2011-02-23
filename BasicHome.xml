@@ -6,6 +6,14 @@
 <define>#selectedfont:Segoe Light32</define>
 <define>#menuitemFocus:FFFFFFFF</define>
 <define>#menuitemNoFocus:6aa5cb</define>
+<define>#useRandomGamesUserFanart:Yes</define>
+<define>#useRandomMovingPicturesFanart:Yes</define>
+<define>#useRandomMusicScraperFanart:Yes</define>
+<define>#useRandomPicturesUserFanart:Yes</define>
+<define>#useRandomPluginsUserFanart:Yes</define>
+<define>#useRandomScoreCenterUserFanart:Yes</define> 
+<define>#useRandomTVUserFanart:Yes</define>
+<define>#useRandomTVSeriesFanart:Yes</define>
 <allowoverlay>yes</allowoverlay>
 <disabletopbar>no</disabletopbar>
 <controls>
@@ -47,7 +55,7 @@
     <posX>-2000</posX>
     <posY>200</posY>
     <label>#visbgimage1</label>
-    <visible>Control.HasText(1201)</visible>
+    <visible>Control.HasText(1201) + ![control.hasfocus(221) | control.hasfocus(222) | control.hasfocus(223) | control.hasfocus(231) | control.hasfocus(232) | control.hasfocus(233)]</visible>
 </control>
 
 <control>
@@ -57,14 +65,16 @@
     <posX>-2000</posX>
     <posY>200</posY>
     <label>#visbgimage2</label>
-    <visible>Control.HasText(1202)</visible>
+    <visible>Control.HasText(1202) + ![control.hasfocus(221) | control.hasfocus(222) | control.hasfocus(223) | control.hasfocus(231) | control.hasfocus(232) | control.hasfocus(233)]</visible>
 </control>
 
+
+<import>BasicHome.FanartHandler.xml</import>
 
 <control>
     <description>background image 1</description>
     <type>image</type>
-    <id>1101</id>
+    <id>0</id>
     <posX>0</posX>
     <posY>0</posY>
     <width>1366</width>
@@ -72,6 +82,7 @@
     <visible>Control.IsVisible(1201) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
 	<animation effect="fade" start="10" end="100" time="1000">Visible</animation>	
 	<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+	<shouldCache>true</shouldCache>
     <texture>#bgimage1</texture>
 </control>
 
@@ -86,7 +97,110 @@
     <visible>Control.IsVisible(1202) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
 	<animation effect="fade" start="10" end="100" time="1000">Visible</animation>
 	<animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+	<shouldCache>true</shouldCache>
     <texture>#bgimage2</texture>
+</control> 
+
+<control>
+    <description>TVSeries selected Fanart 1</description>
+    <type>image</type>
+    <id>0</id>
+    <posX>0</posX>
+    <posY>0</posY>
+    <width>1368</width>
+    <height>768</height>
+    <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(231)</visible>
+	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
+	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	<shouldCache>true</shouldCache>
+    <texture>#maya.recentlyAdded.series1.fanart</texture>
+</control> 
+
+<control>
+    <description>TVSeries selected Fanart 2</description>
+    <type>image</type>
+    <id>0</id>
+    <posX>0</posX>
+    <posY>0</posY>
+    <width>1368</width>
+    <height>768</height>
+    <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(232)</visible>
+	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
+	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	<shouldCache>true</shouldCache>
+    <texture>#maya.recentlyAdded.series2.fanart</texture>
+</control> 
+
+<control>
+    <description>TVSeries selected Fanart 3</description>
+    <type>image</type>
+    <id>0</id>
+    <posX>0</posX>
+    <posY>0</posY>
+    <width>1368</width>
+    <height>768</height>
+    <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(233)</visible>
+	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
+	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	<shouldCache>true</shouldCache>
+    <texture>#maya.recentlyAdded.series3.fanart</texture>
+</control> 
+
+<control>
+    <description>Movies selected Fanart 1</description>
+    <type>image</type>
+    <id>0</id>
+    <posX>0</posX>
+    <posY>0</posY>
+    <width>1368</width>
+    <height>768</height>
+    <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(221)</visible>
+	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
+	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	<shouldCache>true</shouldCache>
+    <texture>#maya.recentlyAdded.movie1.fanart</texture>
+</control> 
+
+<control>
+    <description>Movies selected Fanart 2</description>
+    <type>image</type>
+    <id>0</id>
+    <posX>0</posX>
+    <posY>0</posY>
+    <width>1368</width>
+    <height>768</height>
+    <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(222)</visible>
+	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
+	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	<shouldCache>true</shouldCache>
+    <texture>#maya.recentlyAdded.movie2.fanart</texture>
+</control> 
+
+<control>
+    <description>Movies selected Fanart 3</description>
+    <type>image</type>
+    <id>0</id>
+    <posX>0</posX>
+    <posY>0</posY>
+    <width>1368</width>
+    <height>768</height>
+    <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(223)</visible>
+	<animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
+	<animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	<shouldCache>true</shouldCache>
+    <texture>#maya.recentlyAdded.movie3.fanart</texture>
 </control> 
 
 <control>
@@ -98,6 +212,7 @@
 	<width>1366</width>
 	<height>768</height>
 	<texture>background.png</texture>
+	<shouldCache>true</shouldCache>
     <visible>!string.contains(#maya.backgroundImage,yes)</visible>
 </control>
 
@@ -110,6 +225,7 @@
 	<width>1366</width>
 	<height>768</height>
 	<texture>basichome_fanart_overlay.png</texture>
+	<shouldCache>true</shouldCache>
     <visible>string.contains(#maya.backgroundImage,yes)</visible>
 </control>
 
@@ -676,12 +792,11 @@
 	<posY>337</posY>
 	<width>12</width>
 	<height>21</height>
-	<visible>!Control.HasFocus(2) + !Control.HasFocus(3) + !Control.HasFocus(4) + !Control.HasFocus(5) + !Control.IsVisible(501) + !Control.IsVisible(601)+!string.equals(#subitem1,)</visible>
+	<visible>!Control.HasFocus(2) + !Control.HasFocus(3) + !Control.HasFocus(4) + !Control.HasFocus(5) + !Control.IsVisible(501) + !Control.IsVisible(601)+!string.equals(#subitem1,) + ![control.hasfocus(221) | control.hasfocus(222) | control.hasfocus(223) | control.hasfocus(231) | control.hasfocus(232) | control.hasfocus(233)]</visible>
 	<animation effect="fade" start="100" end="0" time="0" delay="0" reversible="false">WindowClose</animation>
 	<animation effect="fade" start="0" end="100" time="200" delay="450">Visible</animation>
 	<texture>leftmenu_arrow.png</texture>
 </control>
-
 
 
 <!--Submenu-->
@@ -993,5 +1108,6 @@
 <import>BasicHome.recentlyaddedMovies.xml</import>
 <import>BasicHome.recentlyaddedMusic.xml</import>
 <import>BasicHome.recentlyaddedRecordings.xml</import>
+<import>BasicHome.Fanart.Scraper.xml</import>
 </controls>
 </window>

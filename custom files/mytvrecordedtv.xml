@@ -41,7 +41,7 @@
 		<label>604</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip</visible>
+		<visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow</visible>
 		<align>center</align>
 		<valign>middle</valign>
 	</control>
@@ -419,12 +419,14 @@
 			<type>label</type>
 			<description>Current program time</description>
 			<id>0</id>
-			<posX>515</posX>
-			<posY>682</posY>
-			<textcolor>6aa5cb</textcolor>
+			<posX>493</posX>
+			<posY>728</posY>
+			<width>400</width>
+			<align>center</align>
 			<font>Segoe Light18</font>
+			<textcolor>6aa5cb</textcolor>
 			<label>#selecteditem2</label>
-			<visible>facadeview.filmstrip</visible>
+			<visible>facadeview.filmstrip|facadeview.coverflow</visible>		
 		</control>
 
 	</control>
@@ -448,7 +450,7 @@
 		<posX>624</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+		<visible>[facadeview.filmstrip|facadeview.coverflow]+Control.HasFocus(50)</visible>
 	</control>
 	
 </controls>

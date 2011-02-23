@@ -931,5 +931,6 @@
 <import>BasicHome.recentlyaddedMovies.xml</import>
 <import>BasicHome.recentlyaddedMusic.xml</import>
 <import>BasicHome.recentlyaddedRecordings.xml</import>
+<import>BasicHome.Fanart.Scraper.xml</import>
 </controls>
 </window>

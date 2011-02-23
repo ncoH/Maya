@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<controls>
+		<control>
+			<description>DUMMY CONTROL FOR FANART HANDLER IS SCRAPING VISIBILITY CONDITION</description>
+			<type>label</type>
+			<id>91919280</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>
+			<visible>no</visible>
+		</control>
+	
+		<control>
+			<description>Scraping Header</description>
+			<type>label</type>
+			<id>0</id>
+			<posX>1320</posX>
+			<posY>20</posY>
+			<width>400</width>
+            <font>Segoe Light22</font>
+            <textcolor>ff6aa5cb</textcolor>
+			<label>Fanart Scraping  #fanarthandler.scraper.percent.completed%</label>
+			<align>right</align>
+			<visible>control.isvisible(91919280)+plugin.isenabled(Fanart Handler)</visible> 
+<!-- 			<visible>control.isvisible(91919280)+plugin.isenabled(Fanart Handler)+string.equals(#maya.show.scraping,yes)</visible> 	 -->		
+			<animation effect="fade" time="250">visiblechange</animation>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+	</controls>
+</window>
