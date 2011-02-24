@@ -177,6 +177,7 @@
           <showFrame>yes</showFrame>
           <frame>coverflow_glass_overlay_videos.png</frame>
           <frameFocus>coverflow_glass_overlay_videos.png</frameFocus>
+		  <keepaspectratio>no</keepaspectratio>		 		  
           <frameWidth>280</frameWidth>
           <frameHeight>385</frameHeight>
           <spinSpeed>8</spinSpeed>

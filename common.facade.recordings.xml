@@ -154,6 +154,7 @@
           <showFrame>yes</showFrame>
           <frame>coverflow_glass_overlay_music.png</frame>
           <frameFocus>coverflow_glass_overlay_music.png</frameFocus>
+		  <keepaspectratio>no</keepaspectratio>		 		  
           <frameWidth>385</frameWidth>
           <frameHeight>280</frameHeight>
           <spinSpeed>8</spinSpeed>
