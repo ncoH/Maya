@@ -360,7 +360,7 @@
 			<visible>facadeview.list</visible>
 		</control>
 		
-		<!-- Thumb -->
+		<!-- Thumb --> 			<!-- Filmstrip -->
 		
 		<control>
 			<description>Current program channel</description>

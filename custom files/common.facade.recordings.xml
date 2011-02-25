@@ -51,7 +51,7 @@
 				<posX>163</posX>
 				<posY>242</posY>
 				<width>1140</width>
-				<height>500</height>
+				<height>400</height>
 				<scrollOffset>1</scrollOffset>
                 <itemWidth>150</itemWidth>
                 <itemHeight>110</itemHeight>
@@ -80,6 +80,7 @@
 				<frameNoFocus>pictures_thumb_nofocus.png</frameNoFocus>
 				<frameFocus>pictures_thumb_focus.png</frameFocus>
 				<textureMask>pictures_thumb_mask.png</textureMask>
+				<keepaspectratio>no</keepaspectratio>				
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>no</thumbZoom>
@@ -194,36 +195,6 @@
                     <width>385</width>
                     <height>280</height>
                     <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png">background.png</texture>
-                  </control>
-				     <control>
-                    <description>Picture Details</description>
-                    <type>label</type>
-                    <posX>20</posX>
-                    <posY>10</posY>
-                    <width>210</width>
-                    <label>Picture Details</label>
-                    <font>font13</font>
-                    <textcolor>ff7F9EB2</textcolor>
-                  </control>
-                  <control>
-                    <description>picture name</description>
-                    <type>label</type>
-                    <posX>20</posX>
-                    <posY>40</posY>
-                    <width>210</width>
-                    <label>#selecteditem</label>
-                    <font>font10</font>
-                    <textcolor>FFFFFFFF</textcolor>
-                  </control>
-				  <control>
-                    <description>picture size</description>
-                    <type>label</type>
-                    <posX>20</posX>
-                    <posY>60</posY>
-                    <width>210</width>
-                    <label>#selecteditem2</label>
-                    <font>font10</font>
-                    <textcolor>FFFFFFFF</textcolor>
                   </control>
                 </controls>
               ]]>

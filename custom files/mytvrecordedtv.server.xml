@@ -9,8 +9,7 @@
 
 	<import>common.window.recordings.xml</import>
 	<import>common.time.xml</import>
-	
-	
+		
 	<control>
 		<description>Header Label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -321,8 +320,7 @@
 			<label>#TV.RecordedTV.Genre</label>
 			<visible>!string.equals(#TV.RecordedTV.Genre,-)+ facadeview.list </visible>			
 		</control>
-		
-		
+				
 		<control>
 			<type>textboxscrollup</type>
 			<description>Description1</description>

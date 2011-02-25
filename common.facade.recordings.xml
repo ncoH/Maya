@@ -51,7 +51,7 @@
 				<posX>163</posX>
 				<posY>242</posY>
 				<width>1140</width>
-				<height>500</height>
+				<height>400</height>
 				<scrollOffset>1</scrollOffset>
                 <itemWidth>150</itemWidth>
                 <itemHeight>110</itemHeight>
@@ -80,6 +80,7 @@
 				<frameNoFocus>pictures_thumb_nofocus.png</frameNoFocus>
 				<frameFocus>pictures_thumb_focus.png</frameFocus>
 				<textureMask>pictures_thumb_mask.png</textureMask>
+				<keepaspectratio>no</keepaspectratio>				
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>no</thumbZoom>
