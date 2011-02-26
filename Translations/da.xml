@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Skin translation file -->
 <!-- Danish (DA) -->
-<!-- Last Updated: 27th okt 2010 -->
+<!-- Last Updated: 26th feb 2011 -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
 
 <strings>
@@ -12,7 +12,7 @@
 	<!-- B -->
 
 	<!-- C -->
-	<string Field="check.subtitles">Led efter undertekster</string>
+	<string Field="check.subtitles">Find undertekster</string>
 
 	<!-- D -->
 
@@ -61,14 +61,14 @@
 	<string Field="recentlyAdded.Episode">Afsnit</string>
 	
 	<!-- S -->
-
+	<string Field="SleepControl">Sleep-timer</string>
+	
 	<!-- T -->
-	<string Field="lyrics.tag">Tag</string>
 	
 	<!-- U -->
 
 	<!-- V -->
-	<string Field="video.settings">Video indstillinger</string>
+	<string Field="video.settings">Videoindstillinger</string>
 
 	<!-- W -->
 	<string Field="weather.toggleday">Tryk OK for dagsudsigt</string>
