@@ -120,6 +120,5 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
-		</control>
 	</controls>
 </window>
