@@ -312,7 +312,7 @@
 					<width>279</width>
 					<height>49</height>
 					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
+					<textYOff>12</textYOff>	
 					<onright>200</onright>
 					<onleft>200</onleft>					
 				</control>	
@@ -434,7 +434,7 @@
 			<posX>0</posX>
 			<posY>325</posY>
 			<texture>hiddenmenu_tab.png</texture>
-			<visible>!Control.HasFocus(2)+!Control.HasFocus(3)+!Control.HasFocus(4)+!Control.HasFocus(30)+!Control.HasFocus(32)</visible>
+			<visible>!Control.HasFocus(2)+!Control.HasFocus(3)+!Control.HasFocus(4)+!Control.HasFocus(20)+!Control.HasFocus(30)+!Control.HasFocus(32)</visible>
 	</control>
 	
 	<control>
