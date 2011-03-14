@@ -519,7 +519,7 @@
             <description>list of tagged tracks</description>
             <type>listcontrol</type>
             <onleft>155</onleft>
-            <onright>5103</onright>
+            <onright>5102</onright>
             <onup>155</onup>
             <ondown>155</ondown>
             <visible>Control.HasFocus(5102) | Control.HasFocus(155)</visible>
@@ -534,7 +534,7 @@
             <IconXOff>10</IconXOff>
             <spinColor>-</spinColor>
             <image>-</image>
-            <font>Segoe Light18</font>
+            <font>Segoe Light14</font>
             <textureUp>-</textureUp>
             <textureDown>-</textureDown>
             <textureUpFocus>-</textureUpFocus>

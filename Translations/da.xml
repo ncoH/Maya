@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Skin translation file -->
 <!-- Danish (DA) -->
-<!-- Last Updated: 26th feb 2011 -->
+<!-- Last Updated: 14th marts 2011 -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
 
 <strings>
@@ -19,6 +19,7 @@
 	<!-- E -->
 
 	<!-- F -->
+	<string Field="fanart.scraping">Henter FanArt</string>
 	<string Field="format">Format:</string>
 	
 	<!-- G -->

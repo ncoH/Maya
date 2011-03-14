@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Skin translation file -->
 <!-- English (US) -->
-<!-- Last Updated: 22th Aug 2010 -->
+<!-- Last Updated: 14th Marts 2011 -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
 
 <strings>
@@ -19,6 +19,7 @@
 	<!-- E -->
 
 	<!-- F -->
+	<string Field="fanart.scraping">Fanart Scraping</string>
 	<string Field="format">Format:</string>
 	
 	<!-- G -->

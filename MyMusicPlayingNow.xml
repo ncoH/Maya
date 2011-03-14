@@ -166,6 +166,7 @@
             <animation effect="Fade" time="300">WindowClose</animation>
             <animation effect="Fade" time="1000" delay="200">VisibleChange</animation>
         </control>
+		
         <control>
             <description>Menu</description>
             <type>group</type>
@@ -284,9 +285,9 @@
                 <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
                 <label>#SkinTranslation.Translations.lyrics.Label</label>
                 <textYOff>6</textYOff>
-            </control>
-						
+            </control>						
         </control>
+		
         <control>
             <id>112</id>
             <description>album art image</description>
@@ -593,7 +594,7 @@
             <description>list of tagged tracks</description>
             <type>listcontrol</type>
             <onleft>155</onleft>
-            <onright>5103</onright>
+            <onright>5102</onright>
             <onup>155</onup>
             <ondown>155</ondown>
             <visible>Control.HasFocus(5102) | Control.HasFocus(155)</visible>
@@ -608,7 +609,7 @@
             <IconXOff>10</IconXOff>
             <spinColor>-</spinColor>
             <image>-</image>
-            <font>Segoe Light18</font>
+            <font>Segoe Light14</font>
             <textureUp>-</textureUp>
             <textureDown>-</textureDown>
             <textureUpFocus>-</textureUpFocus>
