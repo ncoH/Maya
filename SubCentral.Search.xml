@@ -4,7 +4,7 @@
         <control>
             <type>image</type>
             <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
-            <posX>973</posX>
+            <posX>-2000</posX>
             <posY>300</posY>
             <width>188</width>
             <texture>search_input_no_focus.png</texture>
@@ -12,10 +12,10 @@
         <control>
             <type>image</type>
             <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
-            <posX>697</posX>
-            <posY>405</posY>
-            <width>464</width>
-            <height>188</height>
+            <posX>620</posX>
+            <posY>350</posY>
+            <width>541</width>
+            <height>243</height>
             <texture>search_input_no_focus.png</texture>
         </control>
         <control>
@@ -30,10 +30,10 @@
                 <onup>50</onup>
                 <ondown>50</ondown>
                 <visible>Control.IsVisible(102)</visible>
-                <posX>697</posX>
-                <posY>405</posY>
-                <width>464</width>
-                <height>253</height>
+                <posX>620</posX>
+                <posY>350</posY>
+                <width>541</width>
+                <height>308</height>
                 <animation effect="Fade" time="250">VisibleChange</animation>
                 <scrollOffset>2</scrollOffset>
                 <textureHeight>38</textureHeight>
@@ -46,7 +46,7 @@
                 <textXOff2>-2000</textXOff2>
                 <textYOff2>-2000</textYOff2>
                 <textXOff3>10</textXOff3>
-                <textYOff3>5</textYOff3>
+                <textYOff3>9</textYOff3>
                 <font>font12</font>
                 <font2>font12</font2>
                 <textcolor>ff6aa5cb</textcolor>
@@ -54,7 +54,7 @@
                 <font3>font10</font3>
                 <spinWidth>30</spinWidth>
                 <spinHeight>30</spinHeight>
-                <spinPosX>743</spinPosX>
+                <spinPosX>747</spinPosX>
                 <spinPosY>620</spinPosY>
                 <PinIconXOff>627</PinIconXOff>
                 <PinIconYOff>4</PinIconYOff>
@@ -67,10 +67,10 @@
             <description>Cover Art</description>
             <type>image</type>
             <visible>Control.IsVisible(102)</visible>
-            <posX>509</posX>
-            <posY>405</posY>
-            <width>130</width>
-            <height>188</height>
+            <posX>506</posX>
+            <posY>350</posY>
+            <width>94</width>
+            <height>135</height>
             <texture flipY="true" diffuse="Thumb_Mask.png">#SubCentral.Search.Media.Thumb</texture>
             <animation effect="Fade" time="250">VisibleChange</animation>
             <keepaspectratio>no</keepaspectratio>
@@ -93,10 +93,10 @@
             <description>Cover Art default</description>
             <type>image</type>
             <visible>Control.IsVisible(102)</visible>
-            <posX>509</posX>
-            <posY>405</posY>
-            <width>130</width>
-            <height>188</height>
+            <posX>506</posX>
+            <posY>350</posY>
+            <width>94</width>
+            <height>135</height>
             <texture>#SubCentral.Search.Media.Thumb</texture>
             <animation effect="Fade" time="250">VisibleChange</animation>
             <keepaspectratio>no</keepaspectratio>
@@ -104,9 +104,9 @@
         <control>
             <type>image</type>
             <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
-            <posX>619</posX>
-            <posY>335</posY>
-            <width>542</width>
+            <posX>620</posX>
+            <posY>280</posY>
+            <width>541</width>
             <texture>search_input_no_focus.png</texture>
         </control>
         <control>
@@ -114,10 +114,10 @@
             <description>Cover Art Default</description>
             <type>image</type>
             <visible>Control.IsVisible(102)+!Control.HasThumb(911)</visible>
-            <posX>509</posX>
-            <posY>405</posY>
-            <width>130</width>
-            <height>188</height>
+            <posX>506</posX>
+            <posY>350</posY>
+            <width>94</width>
+            <height>135</height>
             <texture>defaultVideoBig.png</texture>
             <animation effect="Fade" time="250">VisibleChange</animation>
             <keepaspectratio>no</keepaspectratio>
@@ -125,8 +125,8 @@
         <control>
             <type>image</type>
             <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
-            <posX>620</posX>
-            <posY>300</posY>
+            <posX>-2000</posX>
+            <posY>299</posY>
             <width>227</width>
             <texture>search_input_no_focus.png</texture>
         </control>
@@ -135,7 +135,7 @@
             <description>source media</description>
             <type>fadelabel</type>
             <visible>Control.IsVisible(102)</visible>
-            <posX>626</posX>
+            <posX>-2000</posX>
             <posY>304</posY>
             <width>215</width>
             <font>font11</font>
@@ -150,7 +150,7 @@
             <description>search type</description>
             <type>fadelabel</type>
             <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
-            <posX>980</posX>
+            <posX>-2000</posX>
             <posY>304</posY>
             <width>176</width>
             <font>font11</font>
@@ -164,9 +164,9 @@
             <description>media title</description>
             <type>fadelabel</type>
             <visible>Control.IsVisible(102)+String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
-            <posX>626</posX>
+            <posX>630</posX>
             <posY>246</posY>
-            <width>535</width>
+            <width>537</width>
             <font>font16</font>
             <textcolor>ffffffff</textcolor>
             <align>LEFT</align>
@@ -179,9 +179,9 @@
             <description>media title with year</description>
             <type>fadelabel</type>
             <visible>Control.IsVisible(102)+[String.Equals(#SubCentral.Search.SearchType.Type,MOVIE)|String.Equals(#SubCentral.Search.SearchType.Type,IMDb)]</visible>
-            <posX>626</posX>
+            <posX>630</posX>
             <posY>246</posY>
-            <width>535</width>
+            <width>537</width>
             <font>font16</font>
             <textcolor>ffffffff</textcolor>
             <align>LEFT</align>
@@ -194,9 +194,9 @@
             <description>media title with SE</description>
             <type>fadelabel</type>
             <visible>Control.IsVisible(102)+String.Equals(#SubCentral.Search.SearchType.Type,TVSHOW)</visible>
-            <posX>626</posX>
+            <posX>630</posX>
             <posY>246</posY>
-            <width>535</width>
+            <width>537</width>
             <font>font16</font>
             <textcolor>ffffffff</textcolor>
             <align>LEFT</align>
@@ -210,9 +210,9 @@
             <type>fadelabel</type>
             <visible>Control.IsVisible(102)</visible>
             <colordiffuse>ffffffff</colordiffuse>
-            <posX>626</posX>
-            <posY>340</posY>
-            <width>528</width>
+            <posX>630</posX>
+            <posY>288</posY>
+            <width>537</width>
             <height>17</height>
             <font>font11</font>
             <textcolor>ffffffff</textcolor>
@@ -228,12 +228,12 @@
             <posY>244</posY>
             <font>font16</font>
             <textcolor>ff6aa5cb</textcolor>
-            <label>Title</label>
+            <label>#SubCentral.Translation.Title.Label</label>
         </control>
         <control>
             <type>label</type>
             <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
-            <posX>509</posX>
+            <posX>-2000</posX>
             <posY>304</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>
@@ -243,7 +243,7 @@
             <type>label</type>
             <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
             <posX>509</posX>
-            <posY>340</posY>
+            <posY>286</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>863</label>
@@ -251,7 +251,7 @@
         <control>
             <type>label</type>
             <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
-            <posX>855</posX>
+            <posX>-2000</posX>
             <posY>304</posY>
             <font>font11</font>
             <textcolor>ff6aa5cb</textcolor>

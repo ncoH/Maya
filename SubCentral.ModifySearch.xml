@@ -139,7 +139,7 @@
             <visible>Control.IsVisible(103)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,MOVIE)</visible>
             <posX>614</posX>
             <posY>336</posY>
-            <width>554</width>
+            <width>211</width>
             <height>34</height>
             <textureFocus>search_input_focus.png</textureFocus>
             <textureNoFocus>search_input_no_focus.png</textureNoFocus>
@@ -172,7 +172,7 @@
             <visible>Control.IsVisible(103)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,MOVIE)</visible>
             <posX>613</posX>
             <posY>373</posY>
-            <width>554</width>
+            <width>213</width>
             <height>34</height>
             <textureFocus>search_input_focus.png</textureFocus>
             <textureNoFocus>search_input_no_focus.png</textureNoFocus>
@@ -205,7 +205,7 @@
             <visible>Control.IsVisible(103)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,TVSHOW)</visible>
             <posX>613</posX>
             <posY>336</posY>
-            <width>554</width>
+            <width>212</width>
             <height>34</height>
             <textureFocus>search_input_focus.png</textureFocus>
             <textureNoFocus>search_input_no_focus.png</textureNoFocus>
@@ -232,13 +232,13 @@
             <description>Episode Button</description>
             <type>button</type>
             <onleft>221</onleft>
-            <onright>221</onright>
+            <onright>226</onright>
             <onup>224</onup>
             <ondown>214</ondown>
             <visible>Control.IsVisible(103)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,TVSHOW)</visible>
             <posX>613</posX>
             <posY>373</posY>
-            <width>554</width>
+            <width>212</width>
             <height>34</height>
             <textureFocus>search_input_focus.png</textureFocus>
             <textureNoFocus>search_input_no_focus.png</textureNoFocus>
@@ -287,9 +287,9 @@
             <type>image</type>
             <visible>Control.IsVisible(103)</visible>
             <posX>509</posX>
-            <posY>446</posY>
+            <posY>472</posY>
             <width>658</width>
-            <height>148</height>
+            <height>122</height>
             <texture>search_input_no_focus.png</texture>
         </control>
         <control>
@@ -298,9 +298,9 @@
             <type>textboxscrollup</type>
             <visible>Control.IsVisible(103)</visible>
             <posX>519</posX>
-            <posY>456</posY>
+            <posY>480</posY>
             <width>638</width>
-            <height>128</height>
+            <height>104</height>
             <animation effect="Fade" time="250">VisibleChange</animation>
             <textureNoFocus>search_input_no_focus.png</textureNoFocus>
             <font>font12</font>
@@ -386,6 +386,25 @@
             <font>font16</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>#SubCentral.Header.ShortLabel</label>
+        </control>
+        <control>
+            <id>226</id>
+            <description>Absolute Numbering Button</description>
+            <type>checkmark</type>
+            <onleft>225</onleft>
+            <onright>214</onright>
+            <onup>224</onup>
+            <ondown>214</ondown>
+            <visible>Control.isvisible(103)+String.Equals(#SubCentral.ModifySearch.SearchType.Type,TVSHOW)</visible>
+            <posX>962</posX>
+            <posY>371</posY>
+            <font>font12</font>
+            <textcolor>ffffffff</textcolor>
+            <disabledcolor>ff6aa5cb</disabledcolor>
+            <textcolorNoFocus>ff6aa5cb</textcolorNoFocus>
+            <align>LEFT</align>
+            <label>#SubCentral.Translation.AbsoluteNumbering.Label</label>
+            <animation>visiblechange</animation>
         </control>
     </controls>
 </window>
