@@ -15,7 +15,7 @@
 		<description>Header Label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
+		<type>fadelabel</type>
 		<id>1</id>
 		<posX>552</posX>
 		<posY>30</posY>
@@ -147,6 +147,8 @@
 			<posY>180</posY>
 			<font>Segoe Light18</font>
 			<textcolor>85cffe</textcolor>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>			
 		</control>
 		
 		<control>
@@ -157,6 +159,8 @@
 			<posY>215</posY>
 			<textcolor>85cffe</textcolor>
 			<font>Segoe Light18</font>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>			
 		</control>
 
 		<control>
@@ -168,6 +172,8 @@
 			<width>680</width>
 			<height>160</height>
 			<label>#TV.RecordedTV.Description</label>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>			
 		</control>
 		
 	<control>

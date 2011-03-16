@@ -242,10 +242,10 @@
 		<description>video window</description>
 		<type>videowindow</type>
 		<id>99</id>
-		<posX>568</posX>
-		<posY>198</posY>
-		<width>448</width>
-		<height>255</height>
+		<posX>572</posX>
+		<posY>200</posY>
+		<width>446</width>
+		<height>250</height>
 		<onleft>2</onleft>
 		<onright>2</onright>
 		<action>18</action>

@@ -10,20 +10,20 @@
         <import>common.window.background.xml</import>		
         <import>common.time.xml</import>		
 		
-        <control>
-            <id>1</id>
-            <type>label</type>
-			<description>Header label</description>
-            <posX>552</posX>
-            <posY>30</posY>
-            <width>500</width>
-            <height>66</height>
-            <font>Segoe Light40</font>
-            <textcolor>ff6aa5cb</textcolor>
-            <label>#header.label</label>
-            <animation effect="Fade" time="100">WindowOpen</animation>
-            <animation effect="Fade" time="100">WindowClose</animation>
-        </control>
+    <control>
+        <id>1</id>
+        <type>fadelabel</type>
+		<description>Header label</description>
+        <posX>552</posX>
+        <posY>30</posY>
+        <width>500</width>
+        <height>66</height>
+        <font>Segoe Light40</font>
+        <textcolor>ff6aa5cb</textcolor>
+        <label>#header.label</label>
+        <animation effect="Fade" time="100">WindowOpen</animation>
+        <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
 	
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
@@ -33,7 +33,7 @@
 		<id>1</id>
 		<posX>524</posX>
         <posY>173</posY>
-		<width>725</width>
+		<width>755</width>
 		<height>561</height>
 		<texture>listcontrol_bg_recordings.png</texture>
 	</control>
@@ -56,9 +56,9 @@
 		<type>videowindow</type>
 		<id>99</id>
 		<posX>135</posX>
-		<posY>221</posY>
-		<width>297</width>
-		<height>166</height>
+		<posY>220</posY>
+		<width>298</width>
+		<height>167</height>
 		<onleft>2</onleft>
 		<onright>2</onright>
 		<action>18</action>
@@ -133,8 +133,8 @@
 		<description>Signal level 0</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>742</posX>
-		<posY>374</posY>
+		<posX>762</posX>
+		<posY>380</posY>
 		<label> 0</label>
 		<font>font10</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -145,8 +145,8 @@
 		<description>Signal level 100</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>1183</posX>
-		<posY>374</posY>
+		<posX>1203</posX>
+		<posY>380</posY>
 		<label> 100</label>
 		<font>font10</font>
 		<align>right</align>
@@ -158,8 +158,8 @@
 		<description>Progress background</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>747</posX>
-		<posY>396</posY>
+		<posX>767</posX>
+		<posY>402</posY>
 		<width>436</width>
 		<height>3</height>
 		<texture>blue.png</texture>
@@ -169,8 +169,8 @@
 		<description>Signal level progress bar</description>
 		<type>progress</type>
 		<id>23</id>
-		<posX>735</posX>
-		<posY>396</posY>
+		<posX>755</posX>
+		<posY>402</posY>
 		<width>460</width>
 		<height>3</height>
 		<label>#TV.TuningDetails.SignalLevel</label>
@@ -188,7 +188,7 @@
 		<type>label</type>
 		<id>24</id>
 		<posX>555</posX>
-		<posY>409</posY>
+		<posY>408</posY>
 		<label>Signal quality</label>
 		<font>Segoe Light18</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -199,8 +199,8 @@
 		<description>Signal level 0</description>
 		<type>label</type>
 		<id> 0</id>
-		<posX>742</posX>
-		<posY>409</posY>
+		<posX>762</posX>
+		<posY>415</posY>
 		<label> 0</label>
 		<font>font10</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
@@ -211,8 +211,8 @@
 		<description>Signal level 100</description>
 		<type>label</type>
 		<id>0</id>
-		<posX>1183</posX>
-		<posY>409</posY>
+		<posX>1203</posX>
+		<posY>415</posY>
 		<label> 100</label>
 		<font>font10</font>
 		<align>right</align>
@@ -224,8 +224,8 @@
 		<description>Progress background</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>747</posX>
-		<posY>431</posY>
+		<posX>767</posX>
+		<posY>437</posY>
 		<width>436</width>
 		<height>3</height>
 		<texture>blue.png</texture>
@@ -235,8 +235,8 @@
 		<description>Signal quality progress bar</description>
 		<type>progress</type>
 		<id>25</id>
-		<posX>735</posX>
-		<posY>431</posY>
+		<posX>755</posX>
+		<posY>437</posY>
 		<width>460</width>
 		<height>3</height>
 		<label>#TV.TuningDetails.SignalQuality</label>
@@ -711,6 +711,30 @@
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
+	
+	<control>
+		<description>Discontinuities</description>
+		<type>fadelabel</type>
+		<id>28</id>
+		<posX>555</posX>
+		<posY>702</posY>
+		<width>100</width>			
+		<textcolor>85cfff</textcolor>		
+		<label>Discontinuities</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+    </control>
+	
+	<control>
+		<description>Discontinuities value</description>
+		<type>label</type>
+		<id>5</id>
+		<posX>700</posX>
+		<posY>702</posY>
+		<label>#TV.TuningDetails.Discontinuities</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+    </control>
 	
 </controls>
 </window>

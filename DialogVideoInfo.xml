@@ -422,6 +422,5 @@
 			<animation effect="fade" time="100">WindowClose</animation>				
         </control>
 		
-        <import>common.overlay.xml</import>
     </controls>
 </window>

@@ -213,8 +213,8 @@
 		<width>547</width>
 		<height>348</height>
 		<texture>tvhome_tvframe_big.png</texture>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 
 	<control>
@@ -229,8 +229,8 @@
 		<onright>2</onright>
 		<action>18</action>
 		<textureFocus>tv_green_border.png</textureFocus>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 	
     <control>
@@ -242,8 +242,8 @@
         <width>50</width>
         <height>50</height>
         <texture>#TV.View.thumb</texture>
-        <animation effect="fade" time="250">WindowOpen</animation>
-        <animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
     </control>
 
 	<control>
@@ -258,8 +258,8 @@
 		<align>left</align>
 		<font>font14</font>
 		<textcolor>ff85cffe</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 
 	<control>
@@ -273,8 +273,8 @@
 		<font>Segoe Light22</font>
 		<align>left</align>
 		<textcolor>ffffff</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 
 	<control>
@@ -287,8 +287,8 @@
 		<height>137</height>
 		<seperator>----------------------------------------------------------------------------------------------</seperator>
 		<label>#TV.View.description</label>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 
 	<control>
@@ -300,8 +300,8 @@
 		<width>622</width>
 		<height>15</height>
 		<texture>osd_progress_background_tvhome.png</texture>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 
 	<control>
@@ -314,19 +314,21 @@
 		<height>15</height>
 		<label>#TV.View.Percentage</label>
 		<visible>yes</visible>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 	
     <control>
-      <description>Channel label</description>
-      <type>label</type>
-      <id>13</id>
-      <posX>-2000</posX>
-      <posY>540</posY>
-      <label>602</label>
-      <font>font13</font>
-      <align>right</align>
+		<description>Channel label</description>
+		<type>label</type>
+		<id>13</id>
+		<posX>-2000</posX>
+		<posY>540</posY>
+		<label>602</label>
+		<font>font13</font>
+		<align>right</align>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>	  
     </control>
 
 	<control>

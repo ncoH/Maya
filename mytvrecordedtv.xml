@@ -15,7 +15,7 @@
 		<description>Header Label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
+		<type>fadelabel</type>
 		<id>1</id>
 		<posX>552</posX>
 		<posY>30</posY>
@@ -442,6 +442,8 @@
 		<posY>325</posY>
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>		
 	</control>
 	
 	<control>
@@ -451,6 +453,8 @@
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
 		<visible>[facadeview.filmstrip|facadeview.coverflow]+Control.HasFocus(50)</visible>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>		
 	</control>
 	
 </controls>

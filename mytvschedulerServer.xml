@@ -12,7 +12,7 @@
 		
         <control>
             <id>1</id>
-            <type>label</type>
+            <type>fadelabel</type>
 			<description>Header label</description>
             <posX>552</posX>
             <posY>30</posY>
@@ -231,7 +231,7 @@
 			<textYOff>12</textYOff>
 		</control>
 
-<!-- 		<control>
+		<control>
 			<description>Conflicts</description>
 			<type>button</type>
 			<id>9</id>
@@ -247,7 +247,7 @@
 			<height>49</height>
 			<textXOff>25</textXOff>
 			<textYOff>12</textYOff>
-		</control> -->
+		</control>
 
 	</control>
 	
@@ -331,7 +331,9 @@
 			<width>380</width>
 			<font>font12</font>			
 			<label>#TV.Scheduled.Genre</label>
-			<visible>!string.equals(#TV.Scheduled.Genre,-)+ facadeview.list </visible>			
+			<visible>!string.equals(#TV.Scheduled.Genre,-)+ facadeview.list </visible>	
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>			
 		</control>
 		
 		<control>
@@ -349,13 +351,13 @@
 
 	<control>
 		<id>1</id>
-		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
 		<type>image</type>
 		<posX>0</posX>
 		<posY>325</posY>
 		<texture>hiddenmenu_tab.png</texture>
 		<visible>Control.HasFocus(10)</visible>
+		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>		
 	</control>
 		
 <import>common.overlay.xml</import>

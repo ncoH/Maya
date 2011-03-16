@@ -115,7 +115,7 @@
 		
 	</control>
 
-	<control>
+		<control>
 			<description>Current program title</description>
 			<type>fadelabel</type>
 			<id>13</id>
@@ -123,9 +123,10 @@
 			<posY>130</posY>
 			<width>663</width>
 			<font>Segoe Light22</font>
-			<animation effect="fade" time="250">WindowOpen</animation>
-			<animation effect="fade" time="250">WindowClose</animation>
-	</control>
+			<visible>control.hasfocus(10)</visible>			
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>
+		</control>
 		
 		<control>
 			<description>Current program channel</description>
@@ -134,27 +135,36 @@
 			<posX>-2000</posX>
 			<posY>180</posY>
 			<font>Segoe Light18</font>
-            <textcolor>6aa5cb</textcolor>	
+			<textcolor>6aa5cb</textcolor>	
+			<visible>control.hasfocus(10)</visible>		
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>		
 		</control>
 
-	<control>
-		<description>genre</description>
-		<type>label</type>
-		<id>17</id>
-		<posX>555</posX>
-		<posY>180</posY>
-		<font>Segoe Light18</font>
-		<textcolor>6aa5cb</textcolor>
-	</control>
+		<control>
+			<description>genre</description>
+			<type>label</type>
+			<id>17</id>
+			<posX>555</posX>
+			<posY>180</posY>
+			<font>Segoe Light18</font>
+			<textcolor>6aa5cb</textcolor>
+			<visible>control.hasfocus(10)</visible>	
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>		
+		</control>
 	
 		<control>
+			<description>Current program time</description>		
 			<type>label</type>
-			<description>Current program time</description>
 			<id>14</id>
 			<posX>555</posX>
 			<posY>215</posY>
             <textcolor>6aa5cb</textcolor>
 			<font>Segoe Light18</font>
+			<visible>control.hasfocus(10)</visible>		
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>		
 		</control>
 
 		<control>
@@ -167,6 +177,9 @@
 			<height>110</height>
 			<font>font12</font>
 			<label>#TV.RecordedTV.Description</label>
+			<visible>control.hasfocus(10)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>			
 		</control>
 		
 		<control>
@@ -179,8 +192,9 @@
 			<label>1041</label>
             <textcolor>6aa5cb</textcolor>
 			<font>Segoe Light18</font>
-			<animation effect="fade" time="250">WindowOpen</animation>
-			<animation effect="fade" time="250">WindowClose</animation>
+			<visible>control.hasfocus(10)</visible>				
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>			
 	</control>
 	
 			<control>
@@ -224,5 +238,6 @@
 	</control>
 
 <import>common.overlay.xml</import>
+
 </controls>
 </window>
