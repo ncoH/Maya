@@ -100,7 +100,6 @@
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<id>1</id>
 		<posX>1216</posX>
 		<posY>690</posY>
 		<align>right</align>
