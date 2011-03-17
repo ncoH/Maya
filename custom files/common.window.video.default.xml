@@ -128,7 +128,7 @@
 		<posX>1216</posX>
 		<posY>690</posY>
 		<align>right</align>
-		<label>#itemtype: #itemcount </label>
+		<label>#currentmodule: #itemcount </label>
 		<textcolor>6aa5cb</textcolor>
 		<visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip+!facadeview.coverflow]+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
@@ -159,7 +159,7 @@
 		<posY>178</posY>
 		<width>1366</width>
 		<align>center</align>
-		<label>#itemtype: #itemcount</label>
+		<label>#currentmodule: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
 		<visible>facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
