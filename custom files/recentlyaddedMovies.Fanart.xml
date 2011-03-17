@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
   <controls>
-	<control>
-		<type>label</type>
-		<id>119</id>
-		<posX>-2000</posX>
-		<posY>-2000</posY>
-		<label>-</label>
-	</control>
     <control>
       <description>GROUP: RecentlyAdded Movie</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>control.isvisible(119) + ![string.starts(#maya.recentlyAdded.movie1.fanart,#)|string.starts(#maya.recentlyAdded.movie1.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5) + string.contains(#maya.recentlyAddedMovies,yes)</visible>
+      <visible>string.contains(#recentMedia,MovingPictures) + ![string.starts(#maya.recentlyAdded.movie1.fanart,#)|string.starts(#maya.recentlyAdded.movie1.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
       <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
 	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -83,6 +76,23 @@
         <keepaspectratio>true</keepaspectratio>
         <texture>#maya.recentlyAdded.movie1.fanart</texture>
       </control>
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>221</id>
+        <posX>975</posX>
+        <posY>350</posY>
+		<width>15</width>
+		<height>17</height>
+        <textureFocus>now_playing_play.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>801</onleft>
+        <onright>221</onright>
+		<onup>223</onup>
+        <ondown>222</ondown>
+        <font>font12</font>
+    </control>
     </control>
     <control>
       <description>GROUP: RecentlyAdded Movie</description>
@@ -137,6 +147,23 @@
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#maya.recentlyAdded.movie2.score</percentage>
       </control>
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>222</id>
+        <posX>975</posX>
+        <posY>400</posY>
+		<width>15</width>
+		<height>17</height>
+        <textureFocus>now_playing_play.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>801</onleft>
+        <onright>222</onright>
+        <onup>221</onup>
+		<ondown>223</ondown>
+        <font>font12</font>
+    </control>
     </control>
     <control>
       <description>GROUP: RecentlyAdded Movie</description>
@@ -190,6 +217,23 @@
 		<imagesToDraw>5</imagesToDraw>
 		<percentage>#maya.recentlyAdded.movie3.score</percentage>
       </control>
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>223</id>
+        <posX>975</posX>
+        <posY>450</posY>
+		<width>15</width>
+		<height>17</height>
+        <textureFocus>now_playing_play.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>801</onleft>
+        <onright>223</onright>
+        <onup>222</onup>
+		<ondown>221</ondown>
+        <font>font12</font>
+    </control>
     </control>
   </controls>
 </window>
