@@ -448,7 +448,7 @@
 
         <control>
             <id>0</id>
-            <description>year label</description>
+            <description>Year label</description>
             <type>fadelabel</type>
             <posX>350</posX>
             <posY>593</posY>
@@ -456,19 +456,21 @@
             <font>Segoe Light14</font>
             <textcolor>ff85cffe</textcolor>
             <label>201</label>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>			
             <animation effect="Fade" time="800">WindowOpen</animation>
             <animation effect="Fade" time="300">WindowClose</animation>
         </control>
 		
         <control>
             <id>0</id>
-            <description>year label</description>
+            <description>Year label</description>
             <type>label</type>
             <posX>480</posX>
             <posY>593</posY>
             <width>300</width>
             <font>Segoe Light14</font>
             <label>#Play.Current.Year</label>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>			
             <animation effect="Fade" time="800">WindowOpen</animation>
             <animation effect="Fade" time="300">WindowClose</animation>
         </control>

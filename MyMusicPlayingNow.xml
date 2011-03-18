@@ -3,10 +3,9 @@
     <id>510</id>
     <defaultcontrol>5101</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-	<define>#usePlayFanart:Yes</define>
 	<define>#header.background:hover_my music.png</define>	
     <controls>
-
+	
         <control>
             <description>Background</description>
             <type>image</type>
@@ -40,81 +39,7 @@
 			<height>768</height>
 			<texture>basichome_fanart_overlay.png</texture>
 			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
-		</control>	
-
-        <control>
-			<description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
-            <type>label</type>
-			<id>91919295</id>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1</width>
-        </control>
-
-        <control>
-			<description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
-            <type>label</type>
-			<id>91919296</id>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1</width>
-        </control>
-
-        <control>
-			<description>DUMMY CONTROLL FOR PLAYING FANART2 AVAILABILITY CONDITION</description>
-            <type>label</type>
-			<id>91919294</id>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1</width>
-			<visible>no</visible>
-        </control>
-
-        <control>
-            <id>0</id>
-            <description>DEFAULT BACKGROUND WHEN FANART NOT AVAILABLE</description>
-            <type>multiimage</type>
-            <visible>!control.isvisible(91919294)</visible>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1366</width>
-            <height>768</height>
-            <imagepath>music</imagepath>
-            <timeperimage>30000</timeperimage>
-            <fadetime>800</fadetime>
-            <loop>yes</loop>
-            <randomize>True</randomize>
-            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
-            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>			
-        </control>
-		
-        <control>
-            <description>FANART IMAGE 1</description>
-			<id>897688</id>
-            <type>image</type>
-			<posx>0</posx>
-			<posy>0</posy>
-            <width>1366</width>
-            <height>768</height>
-            <texture>#fanarthandler.music.backdrop1.play</texture>
-			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919295)</visible>
-            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
-            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
-        </control>
-
-        <control>
-            <description>FANART IMAGE 2</description>
-			<id>897689</id>
-            <type>image</type>
-			<posx>0</posx>
-			<posy>0</posy>
-            <width>1366</width>
-            <height>768</height>
-            <texture>#fanarthandler.music.backdrop2.play</texture>
-			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919296)</visible>
-            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
-            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
-        </control>
+		</control>
 
         <control>
             <id>0</id>
@@ -321,6 +246,7 @@
             <animation effect="Fade" time="300">WindowClose</animation>
         </control>
 		
+		
         <control>
             <id>0</id>
             <description>title label</description>
@@ -448,7 +374,7 @@
 
         <control>
             <id>0</id>
-            <description>year label</description>
+            <description>Year label</description>
             <type>fadelabel</type>
             <posX>350</posX>
             <posY>593</posY>
@@ -456,19 +382,21 @@
             <font>Segoe Light14</font>
             <textcolor>ff85cffe</textcolor>
             <label>201</label>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>			
             <animation effect="Fade" time="800">WindowOpen</animation>
             <animation effect="Fade" time="300">WindowClose</animation>
         </control>
 		
         <control>
             <id>0</id>
-            <description>year label</description>
+            <description>Year label</description>
             <type>label</type>
             <posX>480</posX>
             <posY>593</posY>
             <width>300</width>
             <font>Segoe Light14</font>
             <label>#Play.Current.Year</label>
+            <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>			
             <animation effect="Fade" time="800">WindowOpen</animation>
             <animation effect="Fade" time="300">WindowClose</animation>
         </control>
