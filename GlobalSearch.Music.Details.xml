@@ -3,7 +3,8 @@
     <id>510</id>
     <defaultcontrol>11</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <define>#header.label:Search Details</define>	
+    <define>#header.label:#SkinTranslation.Translations.global.search.header.Label</define>	
+	<define>#useSelectedFanart:Yes</define>	
 	<define>#header.background:hover_search music.png</define>
 	
     <controls>
@@ -45,7 +46,7 @@
 
         <control>
             <id>0</id>
-            <type>label</type>
+            <type>fadelabel</type>
             <posX>552</posX>
             <posY>30</posY>
             <width>500</width>
@@ -57,9 +58,23 @@
             <animation effect="Fade" time="100">WindowClose</animation>
             <valign>middle</valign>
         </control>
+
+        <control>
+            <id>1</id>
+            <description>information label</description>
+            <type>fadelabel</type>
+            <posX>555</posX>
+            <posY>136</posY>
+            <width>700</width>
+            <font>Segoe Light22</font>
+            <label>1020</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+            <valign>middle</valign>
+        </control>
 		
         <control>
-            <id>555</id>
+            <id>1</id>
             <description>listcontrol background</description>
             <type>image</type>
             <posX>524</posX>
@@ -111,6 +126,7 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>13</id>
             <description>Add to playlist</description>
@@ -131,6 +147,7 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>14</id>
             <description>Add album to playlist</description>
@@ -151,6 +168,7 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>15</id>
             <description>Add to favorites</description>
@@ -171,19 +189,7 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
-        <control>
-            <id>555</id>
-            <description>information label</description>
-            <type>fadelabel</type>
-            <posX>555</posX>
-            <posY>136</posY>
-            <width>700</width>
-            <font>Segoe Light22</font>
-            <label>1020</label>
-            <animation effect="Fade" time="100">WindowOpen</animation>
-            <animation effect="Fade" time="100">WindowClose</animation>
-            <valign>middle</valign>
-        </control>
+				
         <control>
             <id>555</id>
             <description>default tumb</description>
@@ -197,6 +203,7 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>7</id>
             <description>album art image</description>
@@ -205,10 +212,11 @@
             <posY>190</posY>
             <width>265</width>
             <height>263</height>
-            <texture/>
+			<texture>#selectedthumb</texture>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>555</id>
             <description>overlay</description>
@@ -221,6 +229,7 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>25</id>
             <description>Artist label</description>
@@ -233,20 +242,21 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>1</id>
             <description>Artist</description>
             <type>fadelabel</type>
-            <posX>704</posX>
+            <posX>730</posX>
             <posY>176</posY>
-            <width>546</width>
+            <width>560</width>
             <font>Segoe Light16</font>
             <textcolor>ffffffff</textcolor>
             <label>#artist</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
-            <disabledcolor>ff808080</disabledcolor>
         </control>
+		
         <control>
             <id>26</id>
             <description>album label</description>
@@ -257,20 +267,23 @@
             <textcolor>ff85cfff</textcolor>
             <label>483</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
-            <animation effect="Fade" time="100">WindowClose</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>		
         </control>
+		
         <control>
             <id>2</id>
             <description>album</description>
             <type>fadelabel</type>
-            <posX>704</posX>
+            <posX>730</posX>
             <posY>208</posY>
-            <width>545</width>
+            <width>560</width>
             <font>Segoe Light16</font>
             <label>#album</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
+            <disabledcolor>ff808080</disabledcolor>			
         </control>
+		
         <control>
             <id>27</id>
             <description>track label</description>
@@ -282,20 +295,23 @@
             <textcolor>ff85cfff</textcolor>
             <label>435</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
-            <animation effect="Fade" time="100">WindowClose</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>	
         </control>
+		
         <control>
             <id>3</id>
             <description>track</description>
             <type>fadelabel</type>
-            <posX>704</posX>
+            <posX>730</posX>
             <posY>240</posY>
-            <width>545</width>
+            <width>560</width>
             <font>Segoe Light16</font>
             <label>#track</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
+            <disabledcolor>ff808080</disabledcolor>			
         </control>
+		
         <control>
             <id>28</id>
             <description>genre label</description>
@@ -308,11 +324,12 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>4</id>
             <description>genre</description>
             <type>fadelabel</type>
-            <posX>704</posX>
+            <posX>730</posX>
             <posY>272</posY>
             <font>Segoe Light12</font>
             <textcolor>ffffffff</textcolor>
@@ -321,6 +338,7 @@
             <animation effect="Fade" time="100">WindowClose</animation>
             <disabledcolor>ff808080</disabledcolor>
         </control>
+		
         <control>
             <id>29</id>
             <description>year label</description>
@@ -333,11 +351,12 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>5</id>
             <description>year</description>
             <type>fadelabel</type>
-            <posX>704</posX>
+            <posX>730</posX>
             <posY>297</posY>
             <font>Segoe Light12</font>
             <textcolor>ffffffff</textcolor>
@@ -346,6 +365,7 @@
             <animation effect="Fade" time="100">WindowClose</animation>
             <disabledcolor>ff808080</disabledcolor>
         </control>
+		
         <control>
             <id>35</id>
             <description>play count label</description>
@@ -359,17 +379,19 @@
             <animation effect="Fade" time="100">WindowClose</animation>
             <disabledcolor>ff808080</disabledcolor>
         </control>
+		
         <control>
             <id>8</id>
             <description>play count</description>
             <type>fadelabel</type>
-            <posX>704</posX>
+            <posX>730</posX>
             <posY>349</posY>
             <font>Segoe Light12</font>
             <label>#tp</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>37</id>
             <description>last played label</description>
@@ -382,11 +404,12 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>10</id>
             <description>last played</description>
             <type>fadelabel</type>
-            <posX>704</posX>
+            <posX>730</posX>
             <posY>323</posY>
             <font>Segoe Light12</font>
             <textcolor>ffffffff</textcolor>
@@ -395,6 +418,7 @@
             <animation effect="Fade" time="100">WindowClose</animation>
             <disabledcolor>ff808080</disabledcolor>
         </control>
+		
         <control>
             <id>30</id>
             <description>Filename label</description>
@@ -407,11 +431,12 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>6</id>
             <description>filename</description>
             <type>fadelabel</type>
-            <posX>704</posX>
+            <posX>730</posX>
             <posY>376</posY>
             <font>Segoe Light12</font>
             <textcolor>ffffffff</textcolor>
@@ -420,6 +445,7 @@
             <animation effect="Fade" time="100">WindowClose</animation>
             <disabledcolor>ff808080</disabledcolor>
         </control>
+		
         <control>
             <id>31</id>
             <description>rating label</description>
@@ -428,15 +454,16 @@
             <posY>403</posY>
             <font>Segoe Light12</font>
             <textcolor>ff85cfff</textcolor>
-            <label>931</label>
+            <label>#SkinTranslation.Translations.global.search.rating.Label</label>
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>1337</id>
             <description>rating</description>
             <type>imagelist</type>
-            <posX>704</posX>
+            <posX>730</posX>
             <posY>404</posY>
             <width>185</width>
             <height>21</height>
@@ -452,6 +479,7 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
             <id>9</id>
             <type>fadelabel</type>
@@ -461,16 +489,17 @@
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
+		
         <control>
-            <id>555</id>
+            <id>1</id>
             <description>left menu</description>
             <type>image</type>
             <visible>Control.HasFocus(11)|Control.HasFocus(12)|Control.HasFocus(13)|Control.HasFocus(14)|Control.HasFocus(15)</visible>
             <posX>0</posX>
             <posY>325</posY>
             <texture>hiddenmenu_tab.png</texture>
-            <animation effect="Fade" time="100">WindowOpen</animation>
-            <animation effect="Fade" time="100">WindowClose</animation>
+			<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>	
         </control>
 		
 	<control>
@@ -546,6 +575,7 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
                         <id>1002</id>
                         <description>Now playing</description>
@@ -563,6 +593,7 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
                         <id>1003</id>
                         <description>Current Playlist</description>
@@ -580,6 +611,7 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
                         <id>1004</id>
                         <description>My Playlists</description>
@@ -596,9 +628,10 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
+                        <description>Jump to MyMusic</description>				
                         <id>1005</id>
-                        <description>Jump to (my) music</description>
                         <type>button</type>
                         <onleft>11</onleft>
                         <onright>11</onright>
@@ -614,9 +647,10 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
+                       <description>Lyrics</description>					
                         <id>1006</id>
-                        <description>Lyrics</description>
                         <type>button</type>
                         <onleft>11</onleft>
                         <onright>11</onright>
@@ -632,6 +666,7 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                 </control>
             </control>
         </control>

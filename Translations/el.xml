@@ -19,6 +19,7 @@
 	<!-- E -->
 
 	<!-- F -->
+	<string Field="fanart.scraping">Fanart Scraping</string>	
 	<string Field="format">Μορφή:</string>
 	
 	<!-- G -->
@@ -31,8 +32,11 @@
 	<string Field="global.search.Searchfields">Αναζήτηση πεδίων</string>
 	<string Field="global.search.Casesensitive">Με σημασία πεζών-ΚΕΦΑΛΑΙΩΝ</string>
 	<string Field="global.search.Searchtype">Τύπος αναζήτησης</string>
+	<string Field="global.search.rating">Rating</string>	
+	<string Field="global.search.header">Search Details</string>
 	<string Field="grooveshark.Searchterm">Όρος αναζήτησης</string>
 	<string Field="grooveshark.Search">Αναζήτηση</string>
+	
 	<!-- H -->
 
 	<!-- I -->

@@ -32,8 +32,11 @@
 	<string Field="global.search.Searchfields">Search fields</string>
 	<string Field="global.search.Casesensitive">Case sensitive</string>
 	<string Field="global.search.Searchtype">Searchtype</string>
+	<string Field="global.search.rating">Rating</string>	
+	<string Field="global.search.header">Search Details</string>		
 	<string Field="grooveshark.Searchterm">Search Term</string>
 	<string Field="grooveshark.Search">Search</string>
+	
 	<!-- H -->
 
 	<!-- I -->

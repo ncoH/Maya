@@ -32,6 +32,8 @@
 	<string Field="global.search.Searchfields">Søgefelt</string>
 	<string Field="global.search.Casesensitive">Case sensitive</string>
 	<string Field="global.search.Searchtype">Søgetype</string>
+	<string Field="global.search.rating">Rating</string>	
+	<string Field="global.search.header">Search Details</string>	
 	<string Field="grooveshark.Searchterm">Søgeord</string>
 	<string Field="grooveshark.Search">Søg</string>
 

@@ -20,18 +20,24 @@
 	<!-- E -->
 
 	<!-- F -->
+	<string Field="fanart.scraping">Fanart Scraping</string>	
 	<string Field="format">Formato:</string>
 	
 	<!-- G -->
-	<!-- This part is probably related to the GlobalSearch plugin, wich I don't use, hope it's all right! -->
 	<string Field="global.search.musicsearch">Cerca Musica</string>
 	<string Field="global.search.lastplayed">Ultimo riprodotto</string>
+	<string Field="global.search.filename">Filename</string>
+	<string Field="global.search.playcount">Playcount</string>	
 	<string Field="global.search.Searchphrase">Criterio di ricerca</string>
 	<string Field="global.search.Searchhistory">Cronologia di ricerca</string>
 	<string Field="global.search.Searchfields">Campi di ricerca</string>
 	<string Field="global.search.Casesensitive">Maiuscole e minuscole</string>
-	<!-- there's no such thing as "Case sensitive" in italian, maybe someone would prefer "Sensibile alle maiuscole" as reported on Wikipedia, but I think that "Maiuscole e Minuscole" can be better understood by non-programming people! -->
 	<string Field="global.search.Searchtype">Tipo di ricerca</string>
+	<string Field="global.search.rating">Rating</string>	
+	<string Field="global.search.header">Search Details</string>
+	<string Field="grooveshark.Searchterm">Search Term</string>
+	<string Field="grooveshark.Search">Search</string>	
+	
 	<!-- H -->
 
 	<!-- I -->
@@ -41,10 +47,11 @@
 	<string Field="lyrics.tag">Tag</string>
 	<string Field="Latest.movies">Ultimi film</string>
 	<string Field="Latest.episodes">Ultimi episodi</string>
+	<string Field="Latest.recordings">Latest recordings</string>
+	<string Field="Latest.albums">Latest albums</string>	
 	
 	<!-- M -->
 	<string Field="mylyrics">My Lyrics</string>
-	<!-- if this is related to the MyLyrics plugin, I'd leave it untouched, as the plugin name is not translated when installed on an italian language OS -->
 	<string Field="music.songs">Canzoni:</string>
 	
 	<!-- N -->
@@ -58,6 +65,7 @@
 	<string Field="recentlyAdded.Episode">Episodio</string>
 
 	<!-- S -->
+	<string Field="SleepControl">SleepTimer</string>	
 	
 	<!-- T -->
 

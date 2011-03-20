@@ -31,8 +31,11 @@
         <string Field="global.search.Searchfields">Szukaj w polu</string>
         <string Field="global.search.Casesensitive">Wielkość liter ma znaczenie</string>
         <string Field="global.search.Searchtype">Typ wyszukiwania</string>
+		<string Field="global.search.rating">Rating</string>	
+		<string Field="global.search.header">Search Details</string>		
         <string Field="grooveshark.Searchterm">Wyszukiwane hasło</string>
         <string Field="grooveshark.Search">Wyszukiwanie</string>
+		
         <!-- H -->
 
         <!-- I -->

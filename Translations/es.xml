@@ -19,20 +19,24 @@
 	<!-- E -->
 
 	<!-- F -->
+	<string Field="fanart.scraping">Fanart Scraping</string>	
 	<string Field="format">Formato:</string>
 	
 	<!-- G -->
 	<string Field="global.search.musicsearch">Buscar Música</string>
-        <string Field="global.search.lastplayed">Última Reproducción</string>
+    <string Field="global.search.lastplayed">Última Reproducción</string>
 	<string Field="global.search.filename">Nombre</string>
 	<string Field="global.search.playcount">Nº de reproducciones</string>
-        <string Field="global.search.Searchphrase">Buscar Frase</string>
-        <string Field="global.search.Searchhistory">Historial Búsqueda</string>
-        <string Field="global.search.Searchfields">Buscar Campos</string>
-        <string Field="global.search.Casesensitive">Precisión</string>
-        <string Field="global.search.Searchtype">Tipo Búsqueda</string>
+    <string Field="global.search.Searchphrase">Buscar Frase</string>
+    <string Field="global.search.Searchhistory">Historial Búsqueda</string>
+    <string Field="global.search.Searchfields">Buscar Campos</string>
+    <string Field="global.search.Casesensitive">Precisión</string>
+    <string Field="global.search.Searchtype">Tipo Búsqueda</string>
+	<string Field="global.search.rating">Rating</string>	
+	<string Field="global.search.header">Search Details</string>		
 	<string Field="grooveshark.Searchterm">Término de búsqueda</string>
 	<string Field="grooveshark.Search">Buscar</string>
+	
 	<!-- H -->
 
 	<!-- I -->
@@ -40,8 +44,8 @@
 	<!-- L -->
 	<string Field="lyrics">Letras</string>
 	<string Field="lyrics.tag">Etiqueta</string>
-        <string Field="Latest.movies">Últimas Películas</string>
-        <string Field="Latest.episodes">Últimos Episodios</string>
+    <string Field="Latest.movies">Últimas Películas</string>
+    <string Field="Latest.episodes">Últimos Episodios</string>
 	<string Field="Latest.recordings">Últimas Grabaciones</string>
 	<string Field="Latest.albums">Últimos Álbumes</string>
 	
@@ -56,8 +60,8 @@
 	<!-- P -->
 	
 	<!-- R -->
-        <string Field="recentlyAdded.Season">Temporada</string>
-        <string Field="recentlyAdded.Episode">Episodio</string>
+    <string Field="recentlyAdded.Season">Temporada</string>
+    <string Field="recentlyAdded.Episode">Episodio</string>
 
 	<!-- S -->
 	<string Field="SleepControl">Programador</string>
