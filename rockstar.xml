@@ -5,12 +5,34 @@
 	<allowoverlay>yes</allowoverlay>
 	<define>#header.label:Rockstar</define>
 	<define>#usePlayFanart:Yes</define>
+	<define>#useRandomMusicFanart:Yes</define>
 	<define>#header.background:hover_rockstar.png</define>
 	<controls>
 	
-        <import>common.window.background.xml</import>		
-        <import>common.time.xml</import>		
+		<control>
+			<description>BG</description>
+			<type>image</type>
+			<id>1</id>
+            <posX>0</posX>
+            <posY>0</posY>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>
+			<visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>			
+		</control>
 
+		<control>
+			<description>Fanart Background</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>#header.background</texture>	
+			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+		</control>
+		
         <control>
 			<description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
             <type>label</type>
@@ -100,18 +122,45 @@
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
 
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+		</control>
+		
+        <import>common.time.xml</import>
+		
 	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>554</posX>
 		<posY>142</posY>
-		<width>665</width>
+		<width>663</width>
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>
+	</control>
+
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1216</posX>
+		<posY>690</posY>
+		<align>right</align>
+		<label>#currentmodule</label>
+		<textcolor>6aa5cb</textcolor>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
 	
 	<control>
@@ -184,7 +233,7 @@
 				<IconYOff>12</IconYOff>							
 			</control>
 		</control>
-
+	
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
@@ -342,7 +391,7 @@
 					<type>togglebutton</type>
 					<onright>200</onright>
 					<onup>32</onup>
-					<ondown>2</ondown>
+					<ondown>11</ondown>
 					<label>Repeat</label>
 					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
@@ -356,10 +405,70 @@
 					<onleft>200</onleft>					
 			</control>		
 
+<!-- 				<control>
+					<description>Now playing</description>
+					<type>button</type>
+					<id>11</id>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<width>279</width>
+					<height>49</height>
+					<textXOff>25</textXOff>
+					<textYOff>12</textYOff>
+					<label>4540</label>
+					<hyperlink>510</hyperlink>
+					<onright>50</onright>
+					<onleft>50</onleft>
+					<onup>30</onup>
+					<ondown>2</ondown>
+				</control> -->
+				
 			</control>			
 		</control>
 	</control>
 
+	<control>
+		<id>0</id>
+		<type>image</type>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<visible>[Control.HasFocus(200)|Control.HasFocus(300)]+!Control.HasThumb(10)</visible>
+		<texture>DefaultMyradioBig.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+	<control>
+		<id>10</id>
+		<type>image</type>
+		<posX>134</posX>
+		<posY>213</posY>
+		<width>265</width>
+		<height>265</height>
+		<visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>
+		<keepaspectratio>yes</keepaspectratio>
+		<centered>yes</centered>	
+		<zoom>yes</zoom>
+		<texture>-</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>92</posX>
+		<posY>169</posY>
+		<width>350</width>
+		<height>350</height>
+		<texture>blackborders_music.png</texture>	
+		<visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>		
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
         <control>
             <id>0</id>
             <description>Artist Name</description>
@@ -374,7 +483,7 @@
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>			
         </control>
-
+		
         <control>
             <id>0</id>
             <description>Album Name</description>
@@ -407,7 +516,7 @@
             <id>0</id>
             <description>Track Name</description>
             <type>fadelabel</type>
-            <visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>
+            <visible>[Control.HasFocus(200)|Control.HasFocus(300)]+!Control.HasFocus(50)</visible>
 			<posX>134</posX>
 			<posY>595</posY>
 			<width>255</width>			
@@ -437,48 +546,7 @@
 			<visible>!Control.HasFocus(2)+!Control.HasFocus(3)+!Control.HasFocus(4)+!Control.HasFocus(20)+!Control.HasFocus(30)+!Control.HasFocus(32)</visible>
 	</control>
 	
-	<control>
-		<id>0</id>
-		<type>image</type>
-		<posX>134</posX>
-		<posY>213</posY>
-		<width>265</width>
-		<height>265</height>
-		<visible>!Control.HasFocus(50)</visible>
-		<texture>DefaultMyradioBig.png</texture>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-	</control>
-	
-	<control>
-		<id>15</id>
-		<type>image</type>
-		<posX>134</posX>
-		<posY>213</posY>
-		<width>265</width>
-		<height>265</height>
-		<visible>!Control.HasFocus(50)</visible>
-		<keepaspectratio>yes</keepaspectratio>
-		<align>center</align>
-		<valign>middle</valign>
-		<texture>#Play.Current.Thumb</texture>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-	</control>
 
-	<control>
-		<type>image</type>
-		<id>1</id>
-		<posX>92</posX>
-		<posY>169</posY>
-		<width>350</width>
-		<height>350</height>
-		<texture>blackborders_music.png</texture>
-		<visible>!Control.HasFocus(50)</visible>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-	</control>
 		
-        <import>common.overlay.xml</import>
     </controls>
 </window>
