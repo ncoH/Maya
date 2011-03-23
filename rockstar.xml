@@ -230,7 +230,7 @@
 					<onup>30</onup>
 					<ondown>3</ondown>
 					<visible/>
-					<label>Search Music</label>
+					<label>#SkinTranslation.Translations.rockstar.search.Label</label>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
@@ -248,7 +248,7 @@
 					<onup>2</onup>
 					<ondown>4</ondown>
 					<visible/>
-					<label>Default Playlist</label>
+					<label>#SkinTranslation.Translations.rockstar.default.playlist.Label</label>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
@@ -266,7 +266,7 @@
 					<onup>3</onup>
 					<ondown>20</ondown>
 					<visible/>
-					<label>Playlists</label>
+					<label>#SkinTranslation.Translations.rockstar.playlists.Label</label>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
@@ -285,7 +285,7 @@
 					<onup>4</onup>
 					<ondown>32</ondown>
 					<visible/>					
-					<label>Popular Songs</label>
+					<label>#SkinTranslation.Translations.rockstar.popular.songs.Label</label>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
 					<width>279</width>
@@ -303,7 +303,7 @@
 					<onright>200</onright>
 					<onup>20</onup>
 					<ondown>30</ondown>
-					<label>Shuffle</label>
+					<label>191</label>
 					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
 					<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
@@ -323,7 +323,7 @@
 					<onright>200</onright>
 					<onup>32</onup>
 					<ondown>11</ondown>
-					<label>Repeat</label>
+					<label>486</label>
 					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
 					<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>

@@ -62,6 +62,11 @@
 	<!-- R -->
 	<string Field="recentlyAdded.Season">Season</string>
 	<string Field="recentlyAdded.Episode">Episode</string>
+	<string Field="rockstar.search">Search Music</string>
+	<string Field="rockstar.default.playlist">Default Playlist</string>
+	<string Field="rockstar.popular.songs">Popular Songs</string>
+	<string Field="rockstar.playlists">Playlists</string>
+	<string Field="rockstar.track">Track</string>	
 
 	<!-- S -->
 	<string Field="SleepControl">SleepTimer</string>
