@@ -7,41 +7,7 @@
 	<define>#header.background:hover_my radio.png</define>	
   <controls>
   
-        <control>
-            <description>Background</description>
-            <type>image</type>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1366</width>
-            <height>768</height>
-            <texture>background.png</texture>
-			<visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>			
-        </control>
-		
-		<control>
-			<description>Fanart Background</description>
-			<type>image</type>
-			<id>0</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1366</width>
-			<height>768</height>
-			<texture>#header.background</texture>	
-			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
-		</control>
-
-		<control>
-			<description>Fanart Overlay</description>
-			<type>image</type>
-			<id>0</id>
-			<posX>0</posX>
-			<posY>0</posY>
-			<width>1366</width>
-			<height>768</height>
-			<texture>basichome_fanart_overlay.png</texture>
-			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
-		</control>
-		
+        <import>common.window.background.xml</import>		
         <import>common.time.xml</import>
 
 	<control>
@@ -72,36 +38,32 @@
 		<height>561</height>
 		<texture>listcontrol_bg_recordings.png</texture>
 	</control>
-	
+
 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>12</id>
-		<posX>1131</posX>
-		<posY>690</posY>
+		<posX>-2000</posX>
+		<label>#itemcount #itemtype</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>		
+	</control>
+	
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1216</posX>
+		<posY>692</posY>
 		<align>right</align>
-		<label>#selectedindex/#itemcount</label>
+		<label>#itemtype: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<visible>string.equals(#selectedindex)+string.equals(#itemcount)</visible>		
+		<visible>[control.hasfocus(10)|control.hasfocus(11)]</visible>			
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
 	<control>
-		<description>Number of Files Label</description>
-		<type>label</type>
-		<id>1</id>
-		<posX>1231</posX>
-		<posY>690</posY>
-		<align>right</align>
-		<label>#itemtype</label>
-		<textcolor>6aa5cb</textcolor>
-		<visible>string.equals(#selectedindex)+string.equals(#itemcount)</visible>			
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-	
-    <control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
@@ -113,7 +75,7 @@
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<valign>middle</valign>
-    </control>
+	</control>
 	
 	<control>
 		<type>group</type>
@@ -213,7 +175,7 @@
 				<posX>524</posX>
 				<width>724</width>
 				<onleft>2</onleft>
-				<onright>11</onright>
+				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
 				<PinIconHeight>53</PinIconHeight>
 				<PinIconWidth>34</PinIconWidth>
@@ -233,7 +195,7 @@
 				<spinCanFocus>no</spinCanFocus>
 				<dimColor>ffffffff</dimColor>
 			</control>
-	  
+			
 			<control>
 				<description>listcontrol</description>
 				<type>listcontrol</type>

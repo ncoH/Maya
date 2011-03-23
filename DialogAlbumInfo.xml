@@ -31,6 +31,68 @@
 			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 
+		<control>
+			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+			<type>label</type>
+			<id>91919291</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+		</control>
+
+		<control>
+			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+			<type>label</type>
+			<id>91919292</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+		</control>
+
+		<control>
+			<description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
+			<type>label</type>
+			<id>91919293</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+			<visible>no</visible>
+		</control>		   	   
+
+		<control>
+			<description>FANART BACKGROUND 1</description>
+			<id>897686</id>
+			<type>image</type>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<keepaspectratio>no</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>yes</zoom>
+			<texture>#fanarthandler.music.backdrop1.selected</texture>  
+			<visible>control.isvisible(91919291)+control.isvisible(91919293)</visible>	
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="450" delay="300">hidden</animation>
+		</control>
+
+		<control>
+			<description>FANART BACKGROUND 2</description>
+			<id>897687</id>
+			<type>image</type>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<keepaspectratio>no</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>yes</zoom>
+			<texture>#fanarthandler.music.backdrop2.selected</texture>  
+			<visible>control.isvisible(91919292)+control.isvisible(91919293)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="450" delay="300">hidden</animation>
+		</control>	
+		
  		<control>
 			<description>Fanart Overlay</description>
 			<type>image</type>
@@ -43,7 +105,6 @@
 			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>		
 
-		<import>common.time.xml</import>
 		
 	<control>
 		<description>Header label</description>			
@@ -61,7 +122,9 @@
 		<visible>facadeview.list</visible>
 		<valign>middle</valign>
 	</control>
-	
+
+		<import>common.time.xml</import>
+		
 	<control>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
@@ -265,16 +328,20 @@
 	</control>
 
 	<control>
+		<description>artist art image</description>	
 		<id>3</id>
 		<type>image</type>
 		<posX>134</posX>
 		<posY>213</posY>
 		<width>265</width>
 		<height>265</height>
-		<texture>-</texture>
+		<texture>-</texture>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>		
 	</control>
 
 	<control>
+		<description>Cover Art overlay</description>
 		<type>image</type>
 		<id>0</id>
 		<posX>92</posX>
@@ -282,6 +349,8 @@
 		<width>350</width>
 		<height>350</height>
 		<texture>blackborders_music.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>		
 	</control>
 
 	<control>

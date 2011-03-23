@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-<id>501</id>
-<defaultcontrol>2</defaultcontrol>
-<allowoverlay>yes</allowoverlay>
-<define>#header.label:#selecteditem</define>
-<define>#useSelectedFanart:Yes</define>
+	<id>501</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	<define>#header.label:#selecteditem</define>
+	<define>#useSelectedFanart:Yes</define>
 <controls>
 
 	<import>common.window.music.xml</import>
