@@ -62,6 +62,11 @@
 	<!-- R -->
 	<string Field="recentlyAdded.Season">Sezóna</string>
 	<string Field="recentlyAdded.Episode">Epizoda</string>
+	<string Field="rockstar.search">Hledat hudbu</string>
+	<string Field="rockstar.default.playlist">Výchozí seznam stop</string>
+	<string Field="rockstar.popular.songs">Oblíbené skladby</string>
+	<string Field="rockstar.playlists">Seznamy stop</string>
+	<string Field="rockstar.track">Stopa</string>	
 
 	<!-- S -->
 	<string Field="SleepControl">Časovač usínání</string>

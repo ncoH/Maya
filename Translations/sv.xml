@@ -73,6 +73,11 @@
         <!-- R -->
         <string Field="recentlyAdded.Season">Säsong</string>
         <string Field="recentlyAdded.Episode">Avsnitt</string>
+		<string Field="rockstar.search">Sök musik</string>
+		<string Field="rockstar.default.playlist">Fördefinierad spellista</string>
+		<string Field="rockstar.popular.songs">Populära spår</string>
+		<string Field="rockstar.playlists">Spellistor</string>
+		<string Field="rockstar.track">Spår</string>		
 
 
         <!-- S -->
