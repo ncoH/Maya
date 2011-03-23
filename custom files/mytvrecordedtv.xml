@@ -292,7 +292,7 @@
 			<label>137</label>
 		</control>
 
-	</control>
+		</control>
 	</control>
 </control>
 
@@ -311,46 +311,52 @@
 		<!-- List -->
 		
 		<control>
-			<description>Current program title</description>
-			<type>label</type>
-			<id>0</id>
+			<description>Current program channel</description>
+			<type>fadelabel</type>
+			<id>16</id>
 			<posX>555</posX>
 			<posY>180</posY>
-			<width>663</width>			
-			<label>#TV.RecordedTV.Title</label>
 			<font>Segoe Light18</font>
 			<textcolor>85cffe</textcolor>
-			<visible>facadeview.list</visible>
+			<label>#TV.RecordedTV.Channel</label>			
+			<visible>facadeview.list</visible>			
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>			
 		</control>
 		
 		<control>
 			<type>label</type>
 			<description>Current program time</description>
-			<id>0</id>
+			<id>14</id>
 			<posX>555</posX>
 			<posY>215</posY>
 			<textcolor>85cffe</textcolor>
 			<font>Segoe Light18</font>
 			<label>#TV.RecordedTV.Time</label>
 			<visible>facadeview.list</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>					
 		</control>
 
 		<control>
 			<description>Current program genre</description>
 			<type>label</type>
-			<id>0</id>
+			<id>17</id>
 			<posX>555</posX>
-			<posY>253</posY>
+			<posY>255</posY>
 			<width>380</width>
-			<font>font12</font>			
+			<font>Segoe Light12</font>	
+			<textcolor>85cffe</textcolor>			
 			<label>#TV.RecordedTV.Genre</label>
-			<visible>!string.equals(#TV.RecordedTV.Genre,-)+ facadeview.list </visible>			
+			<visible>!string.equals(#TV.RecordedTV.Genre,-)+ facadeview.list </visible>	
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>					
 		</control>
 		
 		<control>
 			<type>textboxscrollup</type>
 			<description>Description1</description>
-			<id>0</id>
+			<id>15</id>
 			<posX>555</posX>
 			<posY>300</posY>
 			<width>663</width>
@@ -358,6 +364,8 @@
 			<font>font12</font>
 			<label>#TV.RecordedTV.Description</label>
 			<visible>facadeview.list</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>					
 		</control>
 		
 		<!-- Thumb --> 			<!-- Filmstrip -->

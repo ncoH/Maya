@@ -5,7 +5,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<define>#header.label:Rockstar</define>
 	<define>#usePlayFanart:Yes</define>
-	<define>#useRandomMusicFanart:Yes</define>
+	<define>#useSelectedFanart:Yes</define>
 	<define>#header.background:hover_rockstar.png</define>
 	<controls>
 	
@@ -33,79 +33,7 @@
 			<visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
 		</control>
 		
-        <control>
-			<description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
-            <type>label</type>
-			<id>91919295</id>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1</width>
-        </control>
-
-        <control>
-			<description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
-            <type>label</type>
-			<id>91919296</id>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1</width>
-        </control>
-
-        <control>
-			<description>DUMMY CONTROLL FOR PLAYING FANART2 AVAILABILITY CONDITION</description>
-            <type>label</type>
-			<id>91919294</id>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1</width>
-			<visible>no</visible>
-        </control>
-
-        <control>
-            <id>0</id>
-            <description>DEFAULT BACKGROUND WHEN FANART NOT AVAILABLE</description>
-            <type>multiimage</type>
-            <visible>!control.isvisible(91919294)</visible>
-            <posX>0</posX>
-            <posY>0</posY>
-            <width>1366</width>
-            <height>768</height>
-            <imagepath>music</imagepath>
-            <timeperimage>30000</timeperimage>
-            <fadetime>800</fadetime>
-            <loop>yes</loop>
-            <randomize>True</randomize>
-            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
-            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>			
-        </control>
-		
-        <control>
-            <description>FANART IMAGE 1</description>
-			<id>897688</id>
-            <type>image</type>
-			<posx>0</posx>
-			<posy>0</posy>
-            <width>1366</width>
-            <height>768</height>
-            <texture>#fanarthandler.music.backdrop1.play</texture>
-			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919295)</visible>
-            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
-            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
-        </control>
-
-        <control>
-            <description>FANART IMAGE 2</description>
-			<id>897689</id>
-            <type>image</type>
-			<posx>0</posx>
-			<posy>0</posy>
-            <width>1366</width>
-            <height>768</height>
-            <texture>#fanarthandler.music.backdrop2.play</texture>
-			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919296)</visible>
-            <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
-            <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
-        </control>
+		<import>rockstar.autofanart.xml</import>
 		
         <control>
             <id>1</id>
@@ -312,6 +240,7 @@
 					<onright>200</onright>
 					<onleft>200</onleft>
 				</control>
+				
 				<control>
 					<id>3</id>
 					<description>Default Playlist</description>
@@ -329,6 +258,7 @@
 					<onright>200</onright>
 					<onleft>200</onleft>					
 				</control>
+				
 				<control>
 					<id>4</id>
 					<description>Playlists</description>
@@ -385,6 +315,7 @@
 					<onright>200</onright>
 					<onleft>200</onleft>					
 				</control>
+				
 				<control>
 					<id>30</id>
 					<description>Repeat on/off button</description>
@@ -404,24 +335,6 @@
 					<onright>200</onright>
 					<onleft>200</onleft>					
 			</control>		
-
-<!-- 				<control>
-					<description>Now playing</description>
-					<type>button</type>
-					<id>11</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
-					<label>4540</label>
-					<hyperlink>510</hyperlink>
-					<onright>50</onright>
-					<onleft>50</onleft>
-					<onup>30</onup>
-					<ondown>2</ondown>
-				</control> -->
 				
 			</control>			
 		</control>
@@ -431,7 +344,7 @@
 		<id>0</id>
 		<type>image</type>
 		<posX>134</posX>
-		<posY>213</posY>
+		<posY>200</posY>
 		<width>265</width>
 		<height>265</height>
 		<visible>[Control.HasFocus(200)|Control.HasFocus(300)]+!Control.HasThumb(10)</visible>
@@ -444,7 +357,7 @@
 		<id>10</id>
 		<type>image</type>
 		<posX>134</posX>
-		<posY>213</posY>
+		<posY>200</posY>
 		<width>265</width>
 		<height>265</height>
 		<visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>
@@ -460,7 +373,7 @@
 		<type>image</type>
 		<id>1</id>
 		<posX>92</posX>
-		<posY>169</posY>
+		<posY>155</posY>
 		<width>350</width>
 		<height>350</height>
 		<texture>blackborders_music.png</texture>	
@@ -475,7 +388,7 @@
             <type>fadelabel</type>
             <visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>
 			<posX>134</posX>
-			<posY>500</posY>
+			<posY>485</posY>
 			<width>255</width>	
 			<textcolor>6aa5cb</textcolor>	
 			<font>font16</font>			
@@ -488,16 +401,16 @@
             <id>0</id>
             <description>Album Name</description>
             <type>fadelabel</type>
-            <visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>
 			<posX>134</posX>
-			<posY>535</posY>
+			<posY>520</posY>
 			<width>255</width>	
-            <label>#Rockstar.SelectedTrack.AlbumName</label>			
+            <label>#Rockstar.SelectedTrack.AlbumName  #Rockstar.SelectedTrack.AlbumYear</label>	
+            <visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>			
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>					
         </control>
 
-		<control>
+<!-- 		<control>
 			<id>0</id>
 			<description>Album Year</description>
 			<type>label</type>
@@ -510,32 +423,20 @@
 			<label>#Rockstar.SelectedTrack.AlbumYear</label>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>		
-		</control>
+		</control> -->
 		
         <control>
             <id>0</id>
             <description>Track Name</description>
             <type>fadelabel</type>
-            <visible>[Control.HasFocus(200)|Control.HasFocus(300)]+!Control.HasFocus(50)</visible>
+            <visible>[Control.HasFocus(200)|Control.HasFocus(300)]</visible>
 			<posX>134</posX>
-			<posY>595</posY>
+			<posY>545</posY>
 			<width>255</width>			
 			<label>#Rockstar.SelectedTrack.TrackName</label>
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>					
         </control>
-		
-		
-		<!-- NOT USED -->
-		<control>
-			<id>10</id>
-			<type>image</type>
-			<posX>2078</posX>
-			<posY>191</posY>
-			<width>215</width>
-			<height>202</height>
-			<texture>missing_Coverart.png</texture>
-		</control>
 		
 	<control>
 			<id>1</id>
@@ -544,9 +445,11 @@
 			<posY>325</posY>
 			<texture>hiddenmenu_tab.png</texture>
 			<visible>!Control.HasFocus(2)+!Control.HasFocus(3)+!Control.HasFocus(4)+!Control.HasFocus(20)+!Control.HasFocus(30)+!Control.HasFocus(32)</visible>
+			<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>					
 	</control>
 	
-
+	<import>common.home.overlay.xml</import>
 		
     </controls>
 </window>

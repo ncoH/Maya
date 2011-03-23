@@ -73,7 +73,7 @@
 		<type>label</type>
 		<id>1</id>
 		<posX>1216</posX>
-		<posY>690</posY>
+		<posY>692</posY>
 		<align>right</align>
 		<label>#currentmodule: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
@@ -249,10 +249,8 @@
 			<textYOff>12</textYOff>
 		</control>
 
-	</control>
-	
-</control>
-	
+		</control>
+	</control>	
 </control>
 
 	<control>
@@ -293,19 +291,36 @@
 			</control>
 
 	</control>
-		
+
+		<!-- List -->
+
+		<!-- not used -->		
 		<control>
 			<description>Current program title</description>
-			<type>label</type>
-			<id>17</id>
-			<posX>555</posX>
+			<type>fadelabel</type>
+			<id>13</id>
+			<posX>-2000</posX>
 			<posY>180</posY>
 			<width>663</width>			
 			<label>#TV.Scheduled.Title</label>
-			<animation effect="fade" time="100">WindowOpen</animation>
-			<animation effect="fade" time="100">WindowClose</animation>
 			<font>Segoe Light18</font>
 			<textcolor>85cffe</textcolor>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>			
+		</control>
+
+		<control>
+			<description>Current program channel</description>
+			<type>fadelabel</type>
+			<id>16</id>
+			<posX>555</posX>
+			<posY>180</posY>
+			<width>663</width>			
+			<label>#TV.Scheduled.Channel</label>
+			<font>Segoe Light18</font>
+			<textcolor>85cffe</textcolor>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>			
 		</control>
 		
 		<control>
@@ -325,13 +340,14 @@
 		<control>
 			<description>Current program genre</description>
 			<type>label</type>
-			<id>0</id>
+			<id>17</id>
 			<posX>555</posX>
 			<posY>253</posY>
 			<width>380</width>
-			<font>font12</font>			
+			<font>Segoe Light12</font>	
+			<textcolor>85cffe</textcolor>			
 			<label>#TV.Scheduled.Genre</label>
-			<visible>!string.equals(#TV.Scheduled.Genre,-)+ facadeview.list </visible>	
+			<visible>!string.equals(#TV.Scheduled.Genre,-)</visible>	
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>			
 		</control>
@@ -341,7 +357,7 @@
 			<description>Description1</description>
 			<id>15</id>
 			<posX>555</posX>
-			<posY>300</posY>
+			<posY>290</posY>
 			<width>680</width>
 			<height>110</height>
 			<label>#TV.Scheduled.Description</label>
@@ -361,5 +377,6 @@
 	</control>
 		
 <import>common.overlay.xml</import>
+
 </controls>
 </window>

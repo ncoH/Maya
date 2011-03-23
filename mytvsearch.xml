@@ -5,7 +5,7 @@
 	<allowoverlay>yes</allowoverlay>
 	<define>#header.label:724</define> 
 	<define>#header.background:hover_my tv.png</define>	
-	<controls>
+<controls>
 
         <import>common.window.background.xml</import>		
         <import>common.time.xml</import>		
@@ -26,9 +26,9 @@
         </control>
 	
 	<control>
+		<description>listcontrol background</description>	
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<description>listcontrol background</description>
 		<type>image</type>
 		<id>1</id>
 		<posX>524</posX>
@@ -43,31 +43,21 @@
 		<type>label</type>
 		<id>12</id>
 		<posX>-2000</posX>
-		<label>#itemcount</label>
+		<label>#itemcount #itemtype</label>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>		
 	</control>
 	
 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
-		<posX>1131</posX>
-		<posY>690</posY>
-		<align>right</align>
-		<label>#itemcount</label>
-		<textcolor>6aa5cb</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-	
-	<control>
-		<description>Objects Label</description>
-		<type>label</type>
-		<id>1</id>
 		<posX>1216</posX>
-		<posY>690</posY>
+		<posY>692</posY>
 		<align>right</align>
-		<label>127</label>
+		<label>#currentmodule: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
+		<visible>[control.hasfocus(10)|control.hasfocus(11)]</visible>			
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
@@ -252,11 +242,12 @@
 		<id>16</id>
 		<posX>555</posX>
 		<posY>180</posY>
-		<label>#TV.Search.Channel</label>
 		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>		
+		<label>#TV.Search.Channel</label>		
+		<visible>[control.hasfocus(10)|control.hasfocus(11)]</visible>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<textcolor>85cffe</textcolor>
 	</control>
 
 	<control>
@@ -267,36 +258,40 @@
 		<posY>215</posY>
 		<textcolor>85cffe</textcolor>
 		<font>Segoe Light18</font>
+		<label>#TV.Search.Time</label>		
+		<visible>[control.hasfocus(10)|control.hasfocus(11)]</visible>			
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<label>#TV.Search.Time</label>
 	</control>
 
+	<control>
+		<description>Current program genre</description>
+		<type>label</type>
+		<id>17</id>
+		<posX>-2000</posX>
+		<posY>253</posY>
+		<width>380</width>
+		<font>Segoe Light12</font>	
+		<textcolor>85cffe</textcolor>		
+		<label>#TV.Search.Genre</label>
+		<visible>[control.hasfocus(10)|control.hasfocus(11)]</visible>		
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
 	<control>
 		<description>Description1</description>
 		<type>textboxscrollup</type>
 		<id>15</id>
-		<posX>556</posX>
-		<posY>281</posY>
+		<posX>555</posX>
+		<posY>255</posY>
 		<width>680</width>
-		<height>110</height>
+		<height>150</height>
+		<label>#TV.Search.Description</label>		
+		<visible>[control.hasfocus(10)|control.hasfocus(11)]</visible>			
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<label>#TV.Search.Description</label>
-	</control>
 
-	<control>
-		<description>genre</description>
-		<type>label</type>
-		<id>17</id>
-		<posX>-2000</posX>
-		<posY>520</posY>
-		<label>#TV.Search.Genre</label>
-		<align>right</align>
-		<font>font13</font>
-		<textcolor>FFB2D4F5</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
 <import>common.overlay.xml</import>

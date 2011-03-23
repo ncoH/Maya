@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Skin translation file -->
 <!-- Polsh (PL) -->
-<!-- Last Updated: 15th March 2011 -->
+<!-- Last Updated: 22th March 2011 -->
 
 <strings>
         <!-- # -->
@@ -19,7 +19,7 @@
 
         <!-- F -->
         <string Field="fanart.scraping">Sciągnij Fanart</string>
-        <string Field="format">Format:</string>
+        <string Field="format">Format</string>
         
         <!-- G -->
         <string Field="global.search.musicsearch">Wyszukiwanie Muzyki</string>
@@ -31,8 +31,8 @@
         <string Field="global.search.Searchfields">Szukaj w polu</string>
         <string Field="global.search.Casesensitive">Wielkość liter ma znaczenie</string>
         <string Field="global.search.Searchtype">Typ wyszukiwania</string>
-		<string Field="global.search.rating">Rating</string>	
-		<string Field="global.search.header">Search Details</string>		
+		<string Field="global.search.rating">Ocena</string>	
+		<string Field="global.search.header">Szczegóły wyszukiwania</string>		
         <string Field="grooveshark.Searchterm">Wyszukiwane hasło</string>
         <string Field="grooveshark.Search">Wyszukiwanie</string>
 		
@@ -49,8 +49,8 @@
         <string Field="Latest.albums">Najnowsze albumy</string>
         
         <!-- M -->
-        <string Field="mylyrics">Moje Tekst</string>
-        <string Field="music.songs">Piosenki:</string>
+        <string Field="mylyrics">Moje Teksty</string>
+        <string Field="music.songs">Piosenki</string>
         
         <!-- N -->
 

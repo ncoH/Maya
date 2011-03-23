@@ -4,7 +4,6 @@
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<define>#header.label:100748</define>
-	<define>#selecteditem:</define>
 	<define>#header.background:hover_my tv.png</define>
 <controls>
 
@@ -53,7 +52,7 @@
 			<description>Record</description>
 			<type>button</type>
 			<id>2</id>
-			<onup>17</onup>
+			<onup>9</onup>
 			<ondown>3</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
@@ -120,7 +119,7 @@
 			<id>9</id>
 			<label>1445</label>
 			<onup>8</onup>
-			<ondown>99</ondown>
+			<ondown>2</ondown>
 			<onright>10</onright>
 			<textalign>right</textalign>
 		</control>
@@ -132,7 +131,7 @@
 		<id>13</id>
 		<posX>555</posX>
 		<posY>142</posY>
-		<width>680</width>
+		<width>663</width>
 		<font>Segoe Light22</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
@@ -147,6 +146,7 @@
 			<posY>180</posY>
 			<font>Segoe Light18</font>
 			<textcolor>85cffe</textcolor>
+			<label>#TV.RecordedTV.Channel</label>				
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>			
 		</control>
@@ -159,16 +159,31 @@
 			<posY>215</posY>
 			<textcolor>85cffe</textcolor>
 			<font>Segoe Light18</font>
+			<label>#TV.RecordedTV.Time</label>			
 			<animation effect="fade" time="100">WindowOpen</animation>
 			<animation effect="fade" time="100">WindowClose</animation>			
 		</control>
 
 		<control>
+			<description>Current program genre</description>
+			<type>label</type>
+			<id>17</id>
+			<posX>555</posX>
+			<posY>255</posY>
+			<width>380</width>
+			<font>Segoe Light12</font>	
+			<textcolor>85cffe</textcolor>			
+			<label>#TV.RecordedTV.Genre</label>	
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+	
+		<control>
 			<type>textboxscrollup</type>
 			<description>Description1</description>
 			<id>15</id>
-			<posX>556</posX>
-			<posY>281</posY>
+			<posX>555</posX>
+			<posY>290</posY>
 			<width>680</width>
 			<height>160</height>
 			<label>#TV.RecordedTV.Description</label>
@@ -219,22 +234,15 @@
 				<spinCanFocus>no</spinCanFocus>
 				<dimColor>ffffffff</dimColor>
 			</control>
-
-	<control>
-		<description>genre</description>
-		<type>label</type>
-		<id>17</id>
-		<posX>-2000</posX>
-	</control>
 	
 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>
 		<id>1</id>
 		<posX>1216</posX>
-		<posY>690</posY>
+		<posY>692</posY>
 		<align>right</align>
-		<label>#itemcount</label>
+		<label>#currentmodule: #itemcount</label>
 		<textcolor>6aa5cb</textcolor>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
