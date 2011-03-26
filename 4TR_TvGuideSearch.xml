@@ -43,14 +43,28 @@
 		<type>label</type>
 		<description>Number of Files Label</description>
 		<id>12</id>
+		<posX>-2000</posX>
+		<align>right</align>
+		<label>#itemcount #itemtype</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>control.hasfocus(10)</visible>			
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+    </control>
+
+	<control>
+		<description>Number of Files Label</description>
+		<type>label</type>
+		<id>1</id>
 		<posX>1216</posX>
-		<posY>690</posY>
+		<posY>692</posY>
 		<align>right</align>
 		<label>#itemcount</label>
 		<textcolor>6aa5cb</textcolor>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-    </control>
+		<visible>control.hasfocus(10)</visible>			
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
 	
 	<control>
 		<description>Selected item Label</description>
@@ -124,6 +138,7 @@
 				<posY>427</posY>
 				<height>300</height>
 				<posX>524</posX>
+				<width>724</width>
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
@@ -133,46 +148,46 @@
 				<PinIconYOff>0</PinIconYOff>
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
-				<IconXOff>60</IconXOff>
+				<IconXOff>30</IconXOff>
 				<IconYOff>9</IconYOff>
-				<textXOff>70</textXOff>
-				<textXOff3>2000</textXOff3>
+				<textXOff>40</textXOff>
+				<spinPosX>560</spinPosX>
+				<spinPosY>692</spinPosY>
+				<spinAlign>left</spinAlign>
 				<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
 				<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
 				<keepaspectratio>yes</keepaspectratio>
 				<spinCanFocus>no</spinCanFocus>
 				<dimColor>ffffffff</dimColor>
-				<spinPosX>560</spinPosX>
-				<spinPosY>688</spinPosY>
-				<spinAlign>left</spinAlign>				
-			</control>
-	</control>			
-	  
+			</control>		
+	</control>
+	
 	<control>
 		<description>Current program title</description>
 		<type>fadelabel</type>
 		<id>13</id>
-		<posX>555</posX>
-		<posY>180</posY>
-		<width>663</width>
+		<posX>-2000</posX>
+		<posY>545</posY>
+		<width>424</width>
 		<label>#TV.Search.Title</label>
-		<font>Segoe Light18</font>
+		<font>font13</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
-<!-- 	<control>
+	<control>
 		<description>Current channel</description>
 		<type>label</type>
 		<id>16</id>
 		<posX>555</posX>
 		<posY>180</posY>
-		<label>#TV.Search.Channel</label>
 		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>		
+		<label>#TV.Search.Channel</label>		
+		<visible>control.hasfocus(10)</visible>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<textcolor>85cffe</textcolor>
-	</control> -->
+	</control>
 
 	<control>
 		<description>Current program time</description>
@@ -182,36 +197,40 @@
 		<posY>215</posY>
 		<textcolor>85cffe</textcolor>
 		<font>Segoe Light18</font>
+		<label>#TV.Search.Time</label>		
+		<visible>control.hasfocus(10)</visible>			
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<label>#TV.Search.Time</label>
 	</control>
 
+	<control>
+		<description>Current program genre</description>
+		<type>label</type>
+		<id>17</id>
+		<posX>-2000</posX>
+		<posY>253</posY>
+		<width>380</width>
+		<font>Segoe Light12</font>	
+		<textcolor>85cffe</textcolor>		
+		<label>#TV.Search.Genre</label>
+		<visible>control.hasfocus(10)</visible>		
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+	
 	<control>
 		<description>Description1</description>
 		<type>textboxscrollup</type>
 		<id>15</id>
-		<posX>556</posX>
-		<posY>281</posY>
+		<posX>555</posX>
+		<posY>260</posY>
 		<width>680</width>
-		<height>110</height>
+		<height>150</height>
+		<label>#TV.Search.Description</label>		
+		<visible>control.hasfocus(10)</visible>			
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<label>#TV.Search.Description</label>
-	</control>
 
-	<control>
-		<description>genre</description>
-		<type>label</type>
-		<id>17</id>
-		<posX>-2000</posX>
-		<posY>520</posY>
-		<label>#TV.Search.Genre</label>
-		<align>right</align>
-		<font>font13</font>
-		<textcolor>FFB2D4F5</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
 <import>common.overlay.xml</import>

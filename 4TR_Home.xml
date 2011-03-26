@@ -1,11 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 	<id>1</id>
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
- 	<define>#header.label:Television</define>	
-	<define>#header.background:hover_my tv.png</define> 
-  <controls>
-  
+	<define>#header.label:Television</define>	
+	<define>#header.background:hover_my tv.png</define>
+<controls>
+
         <import>common.window.background.xml</import>		
         <import>common.time.xml</import>		
 		
@@ -16,7 +17,7 @@
             <posX>552</posX>
             <posY>30</posY>
             <width>500</width>
-            <height>66</height>
+            <height>100</height>
             <font>Segoe Light40</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>#header.label</label>
@@ -36,20 +37,6 @@
 		<height>520</height>
 		<texture>tvhome_bg.png</texture>
 	</control>
-	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
-		<id>1</id>
-		<posX>552</posX>
-		<posY>30</posY>
-		<width>500</width>
-		<height>100</height>
-		<label>#header.label</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-	</control>
 
 	<control>
 		<type>group</type>
@@ -60,7 +47,7 @@
 		<posX>200</posX>
 		<posY>180</posY>
 		<width>281</width>
-
+		
 		<control>
 			<description>TVGuide</description>
 			<type>button</type>
@@ -83,7 +70,7 @@
 			<description>Search TVGuide</description>
 			<type>button</type>
 			<id>3</id>
-			<label>Search</label>
+			<label>137</label>
 			<onup>2</onup>
 			<ondown>4</ondown>
 			<onright>99</onright>
@@ -155,7 +142,7 @@
 			<description>UpcomingPrograms</description>
 			<type>button</type>
 			<id>7</id>
-			<label>Upcoming Programs</label>
+			<label>603</label>
 			<onup>6</onup>
 			<ondown>8</ondown>
 			<onright>99</onright>
@@ -172,7 +159,7 @@
 			<description>ActiveRecordings</description>
 			<type>button</type>
 			<id>8</id>
-			<label>Active Recordings</label>
+			<label>692</label>
 			<onup>7</onup>
 			<ondown>9</ondown>
 			<onright>99</onright>
@@ -189,7 +176,7 @@
 			<description>Teletext</description>
 			<type>button</type>
 			<id>9</id>
-			<label>Teletext</label>
+			<label>1441</label>
 			<onup>8</onup>
 			<ondown>2</ondown>
 			<onright>99</onright>

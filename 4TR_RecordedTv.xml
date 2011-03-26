@@ -7,7 +7,7 @@
 	<define>#header.background:hover_my tv.png</define>
 <controls>
 
-	<import>common.window.recordings.xml</import>
+	<import>common.window.4tr.recordings.xml</import>
 	<import>common.time.xml</import>
 		
 	<control>
@@ -248,43 +248,63 @@
 		
 		<control>
 			<description>Current program channel</description>
-			<type>label</type>
-			<id>0</id>
+			<type>fadelabel</type>
+			<id>16</id>
 			<posX>555</posX>
 			<posY>180</posY>
-			<width>663</width>				
-			<label>#TV.RecordedTV.Channel</label>
 			<font>Segoe Light18</font>
-			<textcolor>6aa5cb</textcolor>
-			<visible>facadeview.list</visible>
+			<textcolor>85cffe</textcolor>
+			<label>#TV.RecordedTV.Channel</label>			
+			<visible>facadeview.list</visible>			
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>			
 		</control>
 		
 		<control>
 			<type>label</type>
 			<description>Current program time</description>
-			<id>0</id>
+			<id>14</id>
 			<posX>555</posX>
 			<posY>215</posY>
 			<textcolor>85cffe</textcolor>
 			<font>Segoe Light18</font>
 			<label>#TV.RecordedTV.Time</label>
 			<visible>facadeview.list</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>					
+		</control>
+
+		<control>
+			<description>Current program genre</description>
+			<type>label</type>
+			<id>17</id>
+			<posX>555</posX>
+			<posY>255</posY>
+			<width>380</width>
+			<font>Segoe Light12</font>	
+			<textcolor>85cffe</textcolor>			
+			<label>#TV.RecordedTV.Genre</label>
+			<visible>!string.equals(#TV.RecordedTV.Genre,-)+ facadeview.list </visible>	
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>					
 		</control>
 		
 		<control>
 			<type>textboxscrollup</type>
 			<description>Description1</description>
-			<id>0</id>
-			<posX>556</posX>
-			<posY>281</posY>
-			<width>680</width>
+			<id>15</id>
+			<posX>555</posX>
+			<posY>290</posY>
+			<width>663</width>
 			<height>110</height>
 			<font>font12</font>
 			<label>#TV.RecordedTV.Description</label>
 			<visible>facadeview.list</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>					
 		</control>
 		
-		<!-- Thumb --> 	
+		<!-- Thumb --> 			<!-- Filmstrip -->
 		
 		<control>
 			<description>Current program channel</description>
@@ -349,7 +369,7 @@
 			<align>center</align>
 			<font>Segoe Light18</font>
 			<textcolor>6aa5cb</textcolor>
-			<label>#TV.RecordedTV.Time</label>
+			<label>#selecteditem2</label>
 			<visible>facadeview.filmstrip|facadeview.coverflow</visible>		
 		</control>
 		
