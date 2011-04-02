@@ -12,9 +12,7 @@
 
 	<control>
 		<description>Header Label</description>		
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
+		<type>fadelabel</type>
 		<id>1</id>
 		<posX>552</posX>
 		<posY>30</posY>
@@ -24,6 +22,8 @@
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<valign>middle</valign>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>		
 	</control>
 	
 	<control>
@@ -39,28 +39,34 @@
 		<texture>listcontrol_bg_recordings.png</texture>
 	</control>
 
-	<control>
-		<description>Number of Files Label</description>
+    <control>
 		<type>label</type>
+		<description>Number of Files Label</description>
 		<id>12</id>
 		<posX>-2000</posX>
-		<label>#itemcount</label>
-	</control>
+		<align>right</align>
+		<label>#itemcount #itemtype</label>
+		<textcolor>6aa5cb</textcolor>
+		<visible>control.hasfocus(10)</visible>			
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+    </control>
 	
 	<control>
 		<description>Number of Files Label</description>
 		<type>label</type>
-		<id>12</id>
-		<posX>1200</posX>
-		<posY>693</posY>
+		<id>1</id>
+		<posX>1216</posX>
+		<posY>692</posY>
 		<align>right</align>
 		<label>#itemcount</label>
 		<textcolor>6aa5cb</textcolor>
+		<visible>control.hasfocus(10)</visible>			
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
-
-    <control>
+	
+	<control>
 		<description>Selected item Label</description>
 		<type>fadelabel</type>
 		<id>1</id>
@@ -72,7 +78,7 @@
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
 		<valign>middle</valign>
-    </control>
+	</control>
 	
 	<control>
 		<type>group</type>
@@ -82,48 +88,41 @@
 		<layout>StackLayout</layout>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-	  
+		
       <control>
-        <description>Search by title</description>	  
         <type>button</type>
+        <description>Search by title</description>
         <id>2</id>
-        <posX>70</posX>
-        <posY>120</posY>
-        <onleft>2</onleft>
+        <onleft>10</onleft>
         <onright>10</onright>
         <onup>17</onup>
         <ondown>3</ondown>
-        <font>font13</font>
         <label>6032</label>
-		<textalign>right</textalign>			
+		<textalign>right</textalign>		
       </control>
 	  
       <control>
         <type>button</type>
         <id>3</id>
-        <posX>70</posX>
-        <posY>165</posY>
-        <onleft>2</onleft>
+        <onleft>10</onleft>
         <onright>10</onright>
         <onup>2</onup>
         <ondown>4</ondown>
         <label>192</label>
-		<textalign>right</textalign>			
+		<textalign>right</textalign>
       </control>
 	  
       <control>
         <type>sortbutton</type>
         <id>4</id>
-        <posX>70</posX>
-        <posY>210</posY>
-		<onleft>3</onleft>
-		<onright>10</onright>
+        <onleft>10</onleft>
+        <onright>10</onright>
         <onup>3</onup>
-        <ondown>2</ondown>
+        <ondown>99</ondown>
         <label>620</label>
 		<textalign>right</textalign>
-		<offsetSortButtonX>21</offsetSortButtonX>			
-      </control>
+		<offsetSortButtonX>21</offsetSortButtonX>		
+      </control>	  
     </control>
 	
 	<control>
@@ -139,6 +138,7 @@
 				<posY>427</posY>
 				<height>300</height>
 				<posX>524</posX>
+				<width>724</width>
 				<onleft>2</onleft>
 				<onright>2</onright>
 				<scrollOffset>1</scrollOffset>
@@ -148,87 +148,91 @@
 				<PinIconYOff>0</PinIconYOff>
 				<itemWidth>32</itemWidth>
 				<itemHeight>32</itemHeight>
-				<IconXOff>60</IconXOff>
+				<IconXOff>30</IconXOff>
 				<IconYOff>9</IconYOff>
-				<textXOff>70</textXOff>
-				<textXOff3>2000</textXOff3>
+				<textXOff>40</textXOff>
+				<spinPosX>560</spinPosX>
+				<spinPosY>692</spinPosY>
+				<spinAlign>left</spinAlign>
 				<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
 				<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
 				<keepaspectratio>yes</keepaspectratio>
 				<spinCanFocus>no</spinCanFocus>
 				<dimColor>ffffffff</dimColor>
-				<spinPosX>560</spinPosX>
-				<spinPosY>688</spinPosY>
-				<spinAlign>left</spinAlign>						
-			</control>
-	</control>	
+			</control>		
+	</control>
 	
-    <control>
+	<control>
 		<description>Current program title</description>
 		<type>fadelabel</type>
 		<id>13</id>
-		<posX>555</posX>
-		<posY>180</posY>
-		<width>663</width>
+		<posX>-2000</posX>
+		<posY>545</posY>
+		<width>424</width>
 		<label>#Radio.Search.Title</label>
-		<font>Segoe Light18</font>
+		<font>font13</font>
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-   </control>
-   
-<!--     <control>
+	</control>
+
+	<control>
 		<description>Current channel</description>
 		<type>label</type>
 		<id>16</id>
 		<posX>555</posX>
 		<posY>180</posY>
-		<label>#Radio.Search.Channel</label>
 		<font>Segoe Light18</font>
+		<textcolor>85cffe</textcolor>		
+		<label>#Radio.Search.Channel</label>		
+		<visible>control.hasfocus(10)</visible>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<textcolor>85cffe</textcolor>
-    </control> -->
-	
-    <control>
+	</control>
+
+	<control>
 		<description>Current program time</description>
 		<type>label</type>
 		<id>14</id>
 		<posX>555</posX>
 		<posY>215</posY>
-		<label>#Radio.Search.Time</label>		
 		<textcolor>85cffe</textcolor>
 		<font>Segoe Light18</font>
+		<label>#Radio.Search.Time</label>		
+		<visible>control.hasfocus(10)</visible>			
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-    </control>
-	
-    <control>
-		<description>Description1</description>
-		<type>textboxscrollup</type>
-		<id>15</id>
-		<posX>556</posX>
-		<posY>281</posY>
-		<width>680</width>
-		<height>110</height>
-		<label>#Radio.Search.Description</label>		
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-    </control>
-	  
-    <control>
-		<description>genre</description>
+	</control>
+
+	<control>
+		<description>Current program genre</description>
 		<type>label</type>
 		<id>17</id>
 		<posX>-2000</posX>
-		<posY>520</posY>
+		<posY>253</posY>
+		<width>380</width>
+		<font>Segoe Light12</font>	
+		<textcolor>85cffe</textcolor>		
 		<label>#Radio.Search.Genre</label>
-		<align>right</align>
-		<font>font13</font>
-		<textcolor>FFB2D4F5</textcolor>
+		<visible>control.hasfocus(10)</visible>		
 		<animation effect="fade" time="250">WindowOpen</animation>
 		<animation effect="fade" time="250">WindowClose</animation>
-    </control>
+	</control>
 	
+	<control>
+		<description>Description1</description>
+		<type>textboxscrollup</type>
+		<id>15</id>
+		<posX>555</posX>
+		<posY>260</posY>
+		<width>680</width>
+		<height>150</height>
+		<label>#Radio.Search.Description</label>		
+		<visible>control.hasfocus(10)</visible>			
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+
+	</control>
+
 <import>common.overlay.xml</import>
 
 </controls>

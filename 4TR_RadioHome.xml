@@ -37,20 +37,6 @@
 		<height>520</height>
 		<texture>tvhome_bg.png</texture>
 	</control>
-	
-	<control>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
-		<id>1</id>
-		<posX>552</posX>
-		<posY>30</posY>
-		<width>500</width>
-		<height>100</height>
-		<label>#header.label</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-	</control>
 		
 	<control>
 		<type>group</type>
@@ -182,6 +168,7 @@
 			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
 			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
+	  
 	</control>
 	
 	<control>
@@ -213,23 +200,8 @@
 		<animation effect="fade" time="250">WindowClose</animation>
 	</control>
 
-	<control>
-		<description>Current program title</description>
-		<type>fadelabel</type>
-		<id>13</id>
-		<posX>560</posX>
-		<posY>500</posY>
-		<width>750</width>
-        <label>#Radio.View.title</label>
-		<font>Segoe Light22</font>
-		<align>left</align>
-		<textcolor>ffffff</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-	
     <control>
-        <description>Playing Channel</description>
+        <description>Playing Channel Icon</description>
         <type>image</type>
         <id>1</id>
         <posX>-2000</posX>
@@ -237,8 +209,8 @@
         <width>50</width>
         <height>50</height>
         <texture>#Radio.View.thumb</texture>
-        <animation effect="fade" time="250">WindowOpen</animation>
-        <animation effect="fade" time="250">WindowClose</animation>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
     </control>
 
      <control>
@@ -257,19 +229,21 @@
         <animation effect="fade" time="250">WindowClose</animation>
     </control>
 	
-    <control>
-      <description>Current Channelname</description>
-      <type>fadelabel</type>
-      <id>13</id>
-      <posX>-2000</posX>
-      <posY>620</posY>
-      <width>400</width>
-      <label>#Radio.View.channel</label>
-      <font>font13</font>
-      <align>right</align>
-      <textcolor>ffa9d0f7</textcolor>
-    </control>
-	
+	<control>
+		<description>Current program title</description>
+		<type>fadelabel</type>
+		<id>1</id>
+		<posX>560</posX>
+		<posY>500</posY>
+		<width>750</width>
+        <label>#Radio.View.title</label>
+		<font>Segoe Light22</font>
+		<align>left</align>
+		<textcolor>ffffff</textcolor>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
 	<control>
 		<description>Description1</description>
 		<type>textboxscrollup</type>
@@ -279,67 +253,51 @@
 		<width>750</width>
 		<height>137</height>
 		<seperator>----------------------------------------------------------------------------------------------</seperator>
-		<label>#Radio.View.description</label>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
+		<label>#TV.View.description</label>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
 	</control>
 
-<!--     <control>
-      <description>Progress background</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>-2000</posX>
-      <posY>501</posY>
-      <width>502</width>
-      <height>12</height>
-      <texture>osd_progress_background.png</texture>
-    </control>
+	<control>
+		<description>Progress background</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>2576</posX>
+		<posY>480</posY>
+		<width>622</width>
+		<height>15</height>
+		<texture>osd_progress_background_tvhome.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+
+	<control>
+		<description>progress bar</description>
+		<type>progress</type>
+		<id>20</id>
+		<posX>2565</posX>
+		<posY>480</posY>
+		<width>640</width>
+		<height>15</height>
+		<label>#TV.View.Percentage</label>
+		<visible>yes</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
 	
     <control>
-      <description>progress bar</description>
-      <type>progress</type>
-      <id>20</id>
-      <posX>-2000</posX>
-      <posY>501</posY>
-      <width>527</width>
-      <height>12</height>
-      <label>#Radio.View.Percentage</label>
-      <visible>yes</visible>
-    </control> -->
-	
-    <control>
-      <description>Channel label</description>
-      <type>label</type>
-      <id>13</id>
-      <posX>-2000</posX>
-      <posY>590</posY>
-      <label>602</label>
-      <font>font13</font>
-      <align>right</align>
+		<description>Channel label</description>
+		<type>label</type>
+		<id>13</id>
+		<posX>-2000</posX>
+		<posY>540</posY>
+		<label>602</label>
+		<font>font13</font>
+		<align>right</align>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>	  
     </control>
-		
-<!--     <control>
-      <description>Recording Channel</description>
-      <type>image</type>
-      <id>22</id>
-      <posX>983</posX>
-      <posY>122</posY>
-      <width>100</width>
-      <height>100</height>
-      <texture>#Radio.Record.thumb</texture>
-    </control>
-	
-    <control>
-      <description>record info label</description>
-      <type>fadelabel</type>
-      <id>23</id>
-      <width>346</width>
-      <posX>1000</posX>
-      <posY>245</posY>
-      <label>#Radio.Record.channel\r#Radio.Record.title\r#Radio.Record.start-#Radio.Record.stop</label>
-      <font>font12</font>
-    </control> -->
-	
+
 	<control>
 		<description>record pin</description>
 		<type>image</type>

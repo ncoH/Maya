@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 	<id>49852</id>
-	<defaultcontrol>50</defaultcontrol>
+	<defaultcontrol>11</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 	<define>#header.label:604</define>
 	<define>#header.background:hover_my radio.png</define>	 
 <controls>
   
-	<import>common.window.recordings.xml</import>
+	<import>common.window.4tr.recordings.xml</import>
 	<import>common.time.xml</import>
 			
 	<control>
 		<description>Header label</description>		
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
+		<type>fadelabel</type>
 		<id>1</id>
 		<posX>552</posX>
 		<posY>30</posY>
@@ -25,20 +25,6 @@
 		<font>Segoe Light40</font>
 		<visible>facadeview.list</visible>		
 		<valign>middle</valign>
-	</control>
-	
-	<control>
-		<description>listcontrol background</description>	
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>image</type>
-		<id>1</id>
-		<posX>524</posX>
-        <posY>173</posY>
-		<width>725</width>
-		<height>561</height>
-		<texture>listcontrol_bg_recordings.png</texture>
-		<visible>facadeview.list</visible>
 	</control>
 
 	<control>
@@ -54,9 +40,23 @@
 		<label>#header.label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip</visible>
+		<visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow</visible>
 		<align>center</align>
 		<valign>middle</valign>
+	</control>
+	
+	<control>
+		<description>listcontrol background</description>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>image</type>
+		<id>1</id>
+		<posX>524</posX>
+        <posY>173</posY>
+		<width>725</width>
+		<height>561</height>
+		<texture>listcontrol_bg_recordings.png</texture>
+		<visible>facadeview.list</visible>
 	</control>
 	
 	<control>
@@ -244,44 +244,66 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 
 		<!-- List -->
-	  
-      <control>
-        <type>fadelabel</type>
-        <description>Current program title</description>
-        <id>13</id>
-        <posX>310</posX>
-        <posY>590</posY>
-        <width>600</width>
-        <font>font13</font>
-        <label>#Radio.RecordedTV.Title</label>
-        <disabledcolor>fffffff</disabledcolor>
-      </control>
-	  
-      <control>
-        <type>label</type>
-        <description>Current program time</description>
-        <id>14</id>
-        <posX>310</posX>
-        <posY>620</posY>
-        <label>#Radio.RecordedTV.Time</label>
-        <font>font13</font>
-        <textcolor>ffa9d0f7</textcolor>
-      </control>
-	  
-      <control>
-        <type>textboxscrollup</type>
-        <description>Description1</description>
-        <id>15</id>
-        <posX>310</posX>
-        <posY>650</posY>
-        <width>650</width>
-        <height>94</height>
-        <font>font12</font>
-        <label>#Radio.RecordedTV.Description</label>
-        <textcolor>ffffffff</textcolor>
-      </control>
+		
+		<control>
+			<description>Current program channel</description>
+			<type>fadelabel</type>
+			<id>16</id>
+			<posX>555</posX>
+			<posY>180</posY>
+			<font>Segoe Light18</font>
+			<textcolor>85cffe</textcolor>
+			<label>#Radio.RecordedTV.Channel</label>			
+			<visible>facadeview.list</visible>			
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>			
+		</control>
+		
+		<control>
+			<type>label</type>
+			<description>Current program time</description>
+			<id>14</id>
+			<posX>555</posX>
+			<posY>215</posY>
+			<textcolor>85cffe</textcolor>
+			<font>Segoe Light18</font>
+			<label>#Radio.RecordedTV.Time</label>
+			<visible>facadeview.list</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>					
+		</control>
 
-		<!-- Thumb -->
+		<control>
+			<description>Current program genre</description>
+			<type>label</type>
+			<id>17</id>
+			<posX>555</posX>
+			<posY>255</posY>
+			<width>380</width>
+			<font>Segoe Light12</font>	
+			<textcolor>85cffe</textcolor>			
+			<label>#Radio.RecordedTV.Genre</label>
+			<visible>!string.equals(#TV.RecordedTV.Genre,-)+ facadeview.list </visible>	
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>					
+		</control>
+		
+		<control>
+			<type>textboxscrollup</type>
+			<description>Description1</description>
+			<id>15</id>
+			<posX>555</posX>
+			<posY>290</posY>
+			<width>663</width>
+			<height>110</height>
+			<font>font12</font>
+			<label>#Radio.RecordedTV.Description</label>
+			<visible>facadeview.list</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>					
+		</control>
+
+		<!-- Thumb --> 			<!-- Filmstrip -->
 		
 		<control>
 			<description>Current program channel</description>
@@ -289,14 +311,14 @@
 			<id>0</id>
 			<posX>515</posX>
 			<posY>610</posY>
-			<label>#Radio.RecordedTV.Title</label>
+			<label>#Radio.RecordedTV.Channel</label>
 			<font>Segoe Light18</font>
 			<textcolor>6aa5cb</textcolor>
 			<align>right</align>
 			<visible>facadeview.smallicons|facadeview.largeicons</visible>
 		</control>
 		
-<!-- 		<control>
+		<control>
 			<type>label</type>
 			<description>Current program genre</description>
 			<id>0</id>
@@ -304,10 +326,10 @@
 			<posY>643</posY>
 			<textcolor>6aa5cb</textcolor>
 			<font>Segoe Light18</font>
-			<label>#Radio.Recorded.Genre</label>
+			<label>#Radio.RecordedTV.Genre</label>
 			<align>right</align>
 			<visible>facadeview.smallicons|facadeview.largeicons</visible>
-		</control> -->
+		</control>
 			
 		<control>
 			<type>label</type>
@@ -340,14 +362,17 @@
 			<type>label</type>
 			<description>Current program time</description>
 			<id>0</id>
-			<posX>515</posX>
-			<posY>682</posY>
-			<textcolor>6aa5cb</textcolor>
+			<posX>493</posX>
+			<posY>728</posY>
+			<width>400</width>
+			<align>center</align>
 			<font>Segoe Light18</font>
+			<textcolor>6aa5cb</textcolor>
 			<label>#selecteditem2</label>
-			<visible>facadeview.filmstrip</visible>
+			<visible>facadeview.filmstrip|facadeview.coverflow</visible>		
 		</control>
-	</control>		  
+		
+	</control>
 
 	<import>common.facade.recordings.xml</import>
 	<import>common.overlay.xml</import>
@@ -369,11 +394,10 @@
 		<posX>624</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+		<visible>[facadeview.filmstrip|facadeview.coverflow]+Control.HasFocus(50)</visible>
 		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
 		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>			
 	</control>
 	
-
 </controls>
 </window>

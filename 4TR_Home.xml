@@ -17,7 +17,7 @@
             <posX>552</posX>
             <posY>30</posY>
             <width>500</width>
-            <height>100</height>
+            <height>66</height>
             <font>Segoe Light40</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>#header.label</label>
@@ -221,7 +221,7 @@
 	</control>
 	
     <control>
-        <description>Playing Channel</description>
+        <description>Playing Channel Icon</description>
         <type>image</type>
         <id>1</id>
         <posX>-2000</posX>
@@ -241,7 +241,7 @@
 		<height>37</height>
 		<posX>562</posX>
 		<posY>480</posY>
-		<label>#TV.View.channel   #TV.View.start - #TV.View.stop</label>
+		<label>#TV.View.channel - #TV.View.start - #TV.View.stop</label>
 		<align>left</align>
 		<font>font14</font>
 		<textcolor>ff85cffe</textcolor>
