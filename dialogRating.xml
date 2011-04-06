@@ -16,11 +16,12 @@
             <id>0</id>
             <type>image</type>
             <posX>409</posX>
-		<posY>213</posY>
-		<width>548</width>
-		<height>342</height>
-		<texture>dialog_background.png</texture>
+			<posY>213</posY>
+			<width>548</width>
+			<height>342</height>
+			<texture>dialog_background.png</texture>
         </control>
+		
         <control>
             <id>2</id>
             <description>dialog Heading</description>

@@ -34,9 +34,10 @@
 			<control>
 				<description>Thumbnail Panel</description>
 				<type>thumbnailpanel</type>
+				<dimColor>90ffffff</dimColor>				
 				<id>50</id>
 				<onleft>2</onleft>
-				<onright>2</onright>	
+				<onright>50</onright>	
 				<posX>482</posX>
 				<posY>236</posY>
 				<width>800</width>
@@ -56,16 +57,19 @@
 				<thumbHeightBig>110</thumbHeightBig>
 				<textureWidthBig>198</textureWidthBig>
 				<textureHeightBig>110</textureHeightBig>
-				<keepaspectratio>no</keepaspectratio>
 				<thumbPosXBig>0</thumbPosXBig>
 				<thumbPosYBig>0</thumbPosYBig>
 				<zoomXPixels>0</zoomXPixels>
 				<zoomYPixels>0</zoomYPixels>
+				<thumbZoom>no</thumbZoom>
 				<hideUnfocusTexture>no</hideUnfocusTexture>
 				<renderFocusText>no</renderFocusText>
 				<renderUnfocusText>no</renderUnfocusText>
+				<spinCanFocus>no</spinCanFocus>
 				<frame>-</frame>
-				<frameFocus>thumb_focus_onlinevideos.png</frameFocus>
+				<frameNoFocus>pictures_thumb_nofocus.png</frameNoFocus>
+				<frameFocus>pictures_thumb_focus.png</frameFocus>
+				<textureMask>pictures_thumb_mask.png</textureMask>
 				<shadowAngle>90</shadowAngle>
     			<shadowDistance>50</shadowDistance>
 				<thumbZoom>no</thumbZoom>

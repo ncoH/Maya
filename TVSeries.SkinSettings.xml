@@ -11,34 +11,47 @@
 	-->
 	
 	<!-- version may be useful for logging purposes and/or future upgrades -->
-	<version>1.3.0.0</version>
+	<version>1.4.0.0</version>
 
-	<!-- Skin Defines -->
-	<defines>		
-        <property key="blah">false</property>	
-    </defines>
-	
-	<!-- 
-		Possible Layout Types supported by the plugin, the defined layout will be what is loaded by default for the corresponding view:	
-		
+  <!-- Skin Defines -->
+  <defines>
+    <!-- fanart can be disabled per layout and/or per view by setting to false -->
+    <property key="fanart.seriesview">true</property>
+    <property key="fanart.seasonview">true</property>
+    <property key="fanart.episodeview">true</property>
+    <property key="fanart.listlayout">true</property>
+    <property key="fanart.iconslayout">true</property>
+    <property key="fanart.filmstriplayout">true</property>
+    <property key="fanart.coverflowlayout">true</property>
+  </defines>
+  
+  
+  <!-- 
+		Possible Layout Types supported by the plugin, the defined layout will be what is loaded by default for the corresponding view:
+
 		AppendImageToList attribute is a setting that the plugin reads to determine if Episode/Season/Series images should be added to the List control
 		Enabling this will take a hit in performance, enable it only if your skin specifically requires it.
 		
 			Groups:
 				layout="List"
-				layout="SmallIcons"
+				layout="SmallIcons" <not supported>
 			Series:
 				layout="ListPosters"
-				layout="ListBanners" 
+				layout="ListBanners"
 				layout="Filmstrip"
 				layout="WideBanners"
+				layout="Coverflow"
 			Season:
 				layout="List"
-				layout="Filmstrip" 
+				layout="Filmstrip"
+				layout="Coverflow"
 			Episode:
 				layout="List"
-	
-	-->
+			
+		Notes:
+		item1 = <text3> (left aligned)
+		item3 = <text2> (right aligned)
+	-->	
 	
 	<!-- Position of 'NEW' stamp in thumb views -->
 	<!-- Draws 'tvseries_newlabel.png' on thumbnail -->
