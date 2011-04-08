@@ -9,8 +9,95 @@
     <controls>
 
         <import>common.window.youtube.xml</import>
-        <import>common.time.xml</import>
+		
+	<!--            :: Fanart ::            -->	
+	
+		<control>
+			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+			<type>label</type>
+			<id>91919291</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+		</control>
 
+		<control>
+			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+			<type>label</type>
+			<id>91919292</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+		</control>
+
+		<control>
+			<description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
+			<type>label</type>
+			<id>91919293</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+			<visible>no</visible>
+		</control>		   	   
+
+		<control>
+			<description>FANART BACKGROUND 1</description>
+			<id>897686</id>
+			<type>image</type>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<keepaspectratio>no</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>yes</zoom>
+			<texture>#fanarthandler.music.backdrop1.selected</texture>  
+			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919291)+control.isvisible(91919293)</visible>	
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="450" delay="300">hidden</animation>
+		</control>
+
+		<control>
+			<description>FANART BACKGROUND 2</description>
+			<id>897687</id>
+			<type>image</type>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<keepaspectratio>no</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>yes</zoom>
+			<texture>#fanarthandler.music.backdrop2.selected</texture>  
+			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919292)+control.isvisible(91919293)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="450" delay="300">hidden</animation>
+		</control>	
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>[!facadeview.filmstrip+!facadeview.smallicons+!facadeview.largeicons]+string.contains(#maya.bgImage.Plugins,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>fanart_overlay_thumbs.png</texture>
+			<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+string.contains(#maya.bgImage.Plugins,yes)</visible>
+		</control>
+		
         <control>
             <id>1</id>
             <type>label</type>
@@ -42,6 +129,8 @@
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
 
+        <import>common.time.xml</import>
+		
 	<control>
 		<description>listcontrol background</description>
 		<type>image</type>
@@ -69,6 +158,7 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
 	</control>
+
 	
 	<control>
 		<type>actiongroup</type>
@@ -122,7 +212,7 @@
 			<textcolor>85cffe</textcolor>
 		</control>
 		
-		<control>
+				<control>
 						<description>button group</description>
 						<type>group</type>
 						<posX>543</posX>
@@ -145,6 +235,7 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
                         <id>20</id>
                         <description>Shuffle button</description>
@@ -161,6 +252,7 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
                         <id>30</id>
                         <description>Repeat on/off button</description>
@@ -180,6 +272,7 @@
                         <textYOff>12</textYOff>
 						<visible>true</visible>
                     </control>
+					
                     <control>
                         <id>10</id>
                         <description>My Playlists</description>
@@ -196,6 +289,7 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
                         <id>21</id>
                         <description>Save button</description>
@@ -212,6 +306,7 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
                         <id>22</id>
                         <description>Clear button</description>
@@ -228,6 +323,7 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
                         <id>26</id>
                         <description>Now playing</description>
@@ -244,6 +340,7 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
                         <id>28</id>
                         <description>scrobble mode button</description>
@@ -261,6 +358,7 @@
                         <textYOff>12</textYOff>
                         <visible>plugin.isenabled(Audioscrobbler)</visible>
                     </control>
+					
                     <control>
                         <id>27</id>
                         <description>scrobble on/off button</description>
@@ -269,8 +367,8 @@
                         <ondown>29</ondown>
                         <width>279</width>
                         <height>49</height>
-			<onleft>50</onleft>
-			<onright>50</onright>
+						<onleft>50</onleft>
+						<onright>50</onright>
 						<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
 						<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
 						<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
@@ -281,6 +379,7 @@
 						<visible>true</visible>
                         <visible>plugin.isenabled(Audioscrobbler)</visible>
                     </control>
+					
                     <control>
                         <id>29</id>
                         <description>scrobble user button</description>
@@ -298,27 +397,32 @@
                         <textYOff>12</textYOff>
                         <visible>plugin.isenabled(Audioscrobbler)</visible>
                     </control>
+					
                 </control>
             </control>
         </control>
 
-        <import>common.facade.video.xml</import>
+        <import>common.facade.youtube.xml</import>
 
-	<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>0</posX>
-		<posY>325</posY>
-		<texture>hiddenmenu_tab.png</texture>
+        <control>
+			<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+			<id>1</id>
+			<type>image</type>
+			<posX>0</posX>
+			<posY>325</posY>
+			<texture>hiddenmenu_tab.png</texture>
 		<visible>[facadeview.playlist|facadeview.smallicons|facadeview.largeicons|facadeview.album]+Control.HasFocus(50)</visible>
 	</control>
 	
-	<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>624</posX>
-		<posY>0</posY>
-		<texture>hiddenmenu_tab_up.png</texture>
+        <control>
+			<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+			<id>1</id>
+			<type>image</type>
+			<posX>624</posX>
+			<posY>0</posY>
+			<texture>hiddenmenu_tab_up.png</texture>
 		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
 	</control>
 	 

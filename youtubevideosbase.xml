@@ -4,16 +4,103 @@
     <defaultcontrol>50</defaultcontrol>
     <allowoverlay>no</allowoverlay>
 	<define>#header.label:YouTube.fm</define>
+	<define>#useSelectedFanart:Yes</define>		
 	<define>#header.background:hover_youtubefm.png</define>	
     <controls>
 	
         <import>common.window.youtube.xml</import>
-        <import>common.time.xml</import>
 		
+	<!--            :: Fanart ::            -->	
+	
+		<control>
+			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+			<type>label</type>
+			<id>91919291</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+		</control>
+
+		<control>
+			<description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+			<type>label</type>
+			<id>91919292</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+		</control>
+
+		<control>
+			<description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
+			<type>label</type>
+			<id>91919293</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1</width>	
+			<visible>no</visible>
+		</control>		   	   
+
+		<control>
+			<description>FANART BACKGROUND 1</description>
+			<id>897686</id>
+			<type>image</type>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<keepaspectratio>no</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>yes</zoom>
+			<texture>#fanarthandler.music.backdrop1.selected</texture>  
+			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919291)+control.isvisible(91919293)</visible>	
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="450" delay="300">hidden</animation>
+		</control>
+
+		<control>
+			<description>FANART BACKGROUND 2</description>
+			<id>897687</id>
+			<type>image</type>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<keepaspectratio>no</keepaspectratio>
+			<centered>yes</centered>
+			<zoom>yes</zoom>
+			<texture>#fanarthandler.music.backdrop2.selected</texture>  
+			<visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919292)+control.isvisible(91919293)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="450" delay="300">hidden</animation>
+		</control>	
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>basichome_fanart_overlay.png</texture>
+			<visible>[!facadeview.filmstrip+!facadeview.smallicons+!facadeview.largeicons]+string.contains(#maya.bgImage.Plugins,yes)</visible>
+		</control>
+
+		<control>
+			<description>Fanart Overlay</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>0</posX>
+			<posY>0</posY>
+			<width>1366</width>
+			<height>768</height>
+			<texture>fanart_overlay_thumbs.png</texture>
+			<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+string.contains(#maya.bgImage.Plugins,yes)</visible>
+		</control>
+	
         <control>
             <id>1</id>
             <type>label</type>
-            <visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
             <posX>552</posX>
             <posY>30</posY>
             <width>500</width>
@@ -21,6 +108,7 @@
             <font>Segoe Light40</font>
             <textcolor>ff6aa5cb</textcolor>
             <label>#header.label</label>
+			<visible>[!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons]</visible>			
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
@@ -28,7 +116,6 @@
         <control>
             <id>1</id>
             <type>label</type>
-            <visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
             <posX>433</posX>
             <posY>30</posY>
             <width>500</width>
@@ -37,10 +124,13 @@
             <textcolor>ff6aa5cb</textcolor>
             <align>CENTER</align>
             <label>#header.label</label>
+            <visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons]</visible>			
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
 
+        <import>common.time.xml</import>
+		
 	<control>
 		<description>listcontrol background</description>
 		<type>image</type>
@@ -52,7 +142,7 @@
 		<texture>listcontrol_bg.png</texture>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
+        <visible>[!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons]</visible>
 	</control>
 	
 	<control>
@@ -66,8 +156,10 @@
 		<texture>listcontrol_bg_info.png</texture>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
-		<visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
+        <visible>[!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons]</visible>
 	</control>
+
+	<!--            :: LIST VIEW ::            -->
 	
         <control>
             <id>0</id>
@@ -118,20 +210,20 @@
             <textureHeight>19</textureHeight>
             <textureWidth>23</textureWidth>
 			<percentage>#Youtube.fm.Curent.Video.Rating</percentage>
-            <imagesToDraw>5</imagesToDraw>
+            <imagesToDraw>10</imagesToDraw>
             <orientation>HORIZONTAL</orientation>
             <align>LEFT</align>
             <subitems>
             <subitem>starblue.png</subitem>
             <subitem>starwhite.png</subitem>
             </subitems>
-			<visible>[facadeview.smallicons|facadeview.list|facadeview.largeicons|facadeview.album]+[control.hasfocus(50)]</visible>			
+			<visible>[!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons]+control.hasfocus(50)</visible>			
             <animation effect="Fade" time="100">WindowOpen</animation>
             <animation effect="Fade" time="100">WindowClose</animation>
         </control>
-
+		
 	<control>
-		<description>title2</description>
+		<description>title 1</description>
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>75</posX>
@@ -139,14 +231,13 @@
 		<width>330</width>
 		<font>font11</font>
 		<label>Loved by #Youtube.fm.Curent.Video.FavoriteCount Users</label>
-		<visible>[facadeview.smallicons|facadeview.list|facadeview.largeicons|facadeview.album]+[control.hasfocus(50)]</visible>
+		<visible>[!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons]+control.hasfocus(50)</visible>
         <animation effect="Fade" time="100">WindowOpen</animation>
         <animation effect="Fade" time="100">WindowClose</animation>
-		<wrapString> : : </wrapString>
 	</control>
 	
 	<control>
-		<description>title2</description>
+		<description>title 2</description>
 		<type>fadelabel</type>
 		<id>1</id>
 		<posX>75</posX>
@@ -154,12 +245,53 @@
 		<width>350</width>
 		<font>font11</font>
 		<label>Viewed by #Youtube.fm.Curent.Video.ViewCount Users</label>
-		<visible>[facadeview.smallicons|facadeview.list|facadeview.largeicons|facadeview.album]+[control.hasfocus(50)]</visible>
+		<visible>[!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons]+control.hasfocus(50)</visible>
         <animation effect="Fade" time="100">WindowOpen</animation>
         <animation effect="Fade" time="100">WindowClose</animation>
-		<wrapString> : : </wrapString>
 	</control>
 
+
+	<!--            :: FILMSTRIP VIEW ::            -->
+
+	<control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<description>Year below the movie title</description>
+		<type>label</type>
+		<label>Loved by #Youtube.fm.Curent.Video.FavoriteCount Users - Viewed by #Youtube.fm.Curent.Video.ViewCount Users</label>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>168</posY>
+		<width>1366</width>
+		<align>center</align>
+		<font>font13</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons]+control.hasfocus(50)</visible>
+	</control>
+	
+    <control>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>imagelist</type>
+		<id>1</id>
+		<posX>773</posX>
+		<posY>184</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>center</align>
+		<imagesToDraw>10</imagesToDraw>
+		<percentage>#Youtube.fm.Curent.Video.Rating</percentage>		
+		<visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons]+control.hasfocus(50)</visible>			
+    </control>
+
+		
         <control>
             <description>action menu</description>
             <type>actiongroup</type>
@@ -214,13 +346,31 @@
                     <posX>543</posX>
                     <posY>175</posY>
                     <layout>StackLayout(0, Vertical, true)</layout>
+					
+                    <control>
+                        <id>3</id>
+                        <description>Swich view</description>
+                        <type>button</type>
+                        <onleft>50</onleft>
+                        <onright>50</onright>
+                        <onup>106</onup>
+                        <ondown>5</ondown>
+                        <width>279</width>
+                        <height>49</height>
+                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+                        <label/>
+                        <textXOff>25</textXOff>
+                        <textYOff>12</textYOff>
+                    </control>
+					
                     <control>
                         <id>5</id>
                         <description>Search Button</description>
                         <type>button</type>
                         <onleft>50</onleft>
                         <onright>50</onright>
-                        <onup>106</onup>
+                        <onup>3</onup>
                         <ondown>6</ondown>
                         <width>279</width>
                         <height>49</height>
@@ -230,6 +380,7 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
                         <id>6</id>
                         <description>Search History</description>
@@ -237,7 +388,7 @@
                         <onleft>50</onleft>
                         <onright>50</onright>
                         <onup>5</onup>
-                        <ondown>3</ondown>
+                        <ondown>2</ondown>
                         <width>279</width>
                         <height>49</height>
                         <textureFocus>hiddenmenu_item_selected.png</textureFocus>
@@ -246,29 +397,14 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
-                    <control>
-                        <id>3</id>
-                        <description>Swich view</description>
-                        <type>button</type>
-                        <onleft>50</onleft>
-                        <onright>50</onright>
-                        <onup>6</onup>
-                        <ondown>2</ondown>
-                        <width>279</width>
-                        <height>49</height>
-                        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-                        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-                        <label/>
-                        <textXOff>25</textXOff>
-                        <textYOff>12</textYOff>
-                    </control>
+
                     <control>
                         <id>2</id>
                         <description>Home</description>
                         <type>button</type>
                         <onleft>50</onleft>
                         <onright>50</onright>
-                        <onup>3</onup>
+                        <onup>6</onup>
                         <ondown>7</ondown>
                         <width>279</width>
                         <height>49</height>
@@ -278,6 +414,7 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
                         <id>7</id>
                         <description>Playlist</description>
@@ -294,6 +431,7 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
                         <id>8</id>
                         <description>Now playing</description>
@@ -310,6 +448,7 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                     <control>
                         <id>106</id>
                         <description>Lastfmbutton</description>
@@ -317,7 +456,7 @@
                         <onleft>50</onleft>
                         <onright>50</onright>
                         <onup>8</onup>
-                        <ondown>5</ondown>
+                        <ondown>3</ondown>
                         <width>279</width>
                         <height>49</height>
                         <hyperlink>7890</hyperlink>
@@ -327,27 +466,33 @@
                         <textXOff>25</textXOff>
                         <textYOff>12</textYOff>
                     </control>
+					
                 </control>
             </control>
         </control>
 		
-        <import>common.facade.music.xml</import>
+        <import>common.facade.youtube.xml</import>
 		
         <control>
-            <id>1</id>
-            <type>image</type>
+			<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+			<id>1</id>
+			<type>image</type>
+			<posX>0</posX>
+			<posY>325</posY>
+			<texture>hiddenmenu_tab.png</texture>
             <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons|facadeview.album]+Control.HasFocus(50)</visible>
-            <posX>0</posX>
-            <posY>325</posY>
-            <texture>hiddenmenu_tab.png</texture>
         </control>
+		
         <control>
-            <id>1</id>
-            <type>image</type>
+			<animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+			<id>1</id>
+			<type>image</type>
+			<posX>624</posX>
+			<posY>0</posY>
+			<texture>hiddenmenu_tab_up.png</texture>
             <visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
-            <posX>624</posX>
-            <posY>0</posY>
-            <texture>hiddenmenu_tab_up.png</texture>
         </control>
 		
         <import>common.overlay.xml</import>
