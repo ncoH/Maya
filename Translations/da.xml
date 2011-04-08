@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Skin translation file -->
 <!-- Danish (DA) -->
-<!-- Last Updated: 14th marts 2011 -->
+<!-- Last Updated: 8th april 2011 -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
 
 <strings>
@@ -62,6 +62,11 @@
 	<!-- R -->
 	<string Field="recentlyAdded.Season">Sæson</string>
 	<string Field="recentlyAdded.Episode">Afsnit</string>
+	<string Field="rockstar.search">Søg musik</string>
+	<string Field="rockstar.default.playlist">Default playlist</string>
+	<string Field="rockstar.popular.songs">Populære sange</string>
+	<string Field="rockstar.playlists">Playlister</string>
+	<string Field="rockstar.track">Track</string>	
 	
 	<!-- S -->
 	<string Field="SleepControl">Sleep-timer</string>
