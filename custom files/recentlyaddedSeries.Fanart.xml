@@ -81,7 +81,7 @@
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.contains(#recentMedia,TVSeries) + ![string.starts(#maya.recentlyAdded.series2.fanart,#)|string.starts(#maya.recentlyAdded.series2.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5) + string.contains(#maya.recentlyAddedSeries,yes)</visible>
+      <visible>string.contains(#recentMedia,TVSeries) + ![string.starts(#maya.recentlyAdded.series2.fanart,#)|string.starts(#maya.recentlyAdded.series2.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
       <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
 	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -134,7 +134,7 @@
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.contains(#recentMedia,TVSeries) + ![string.starts(#maya.recentlyAdded.series3.fanart,#)|string.starts(#maya.recentlyAdded.series3.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5) + string.contains(#maya.recentlyAddedSeries,yes)</visible>
+      <visible>string.contains(#recentMedia,TVSeries) + ![string.starts(#maya.recentlyAdded.series3.fanart,#)|string.starts(#maya.recentlyAdded.series3.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
       <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
 	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
