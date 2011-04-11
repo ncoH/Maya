@@ -172,7 +172,7 @@
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
-		<percentage>#maya.recentlyAdded.movie1.score</percentage>
+		<percentage>#maya.recentlyAdded.movie2.score</percentage>
       </control> 
 	<control>
         <description>Play Button</description>
@@ -261,7 +261,7 @@
 		<orientation>horizontal</orientation>
 		<align>left</align>
 		<imagesToDraw>5</imagesToDraw>
-		<percentage>#maya.recentlyAdded.movie1.score</percentage>
+		<percentage>#maya.recentlyAdded.movie3.score</percentage>
       </control> 
 	<control>
         <description>Play Button</description>
