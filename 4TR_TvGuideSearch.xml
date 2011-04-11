@@ -95,7 +95,7 @@
         <id>2</id>
         <onleft>10</onleft>
         <onright>10</onright>
-        <onup>17</onup>
+        <onup>4</onup>
         <ondown>3</ondown>
         <label>6032</label>
 		<textalign>right</textalign>		
@@ -118,7 +118,7 @@
         <onleft>10</onleft>
         <onright>10</onright>
         <onup>3</onup>
-        <ondown>99</ondown>
+        <ondown>2</ondown>
         <label>620</label>
 		<textalign>right</textalign>
 		<offsetSortButtonX>21</offsetSortButtonX>		
