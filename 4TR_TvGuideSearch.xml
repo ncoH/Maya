@@ -151,6 +151,7 @@
 				<IconXOff>30</IconXOff>
 				<IconYOff>9</IconYOff>
 				<textXOff>40</textXOff>
+				<textXOff3>-2000</textXOff3>				
 				<spinPosX>560</spinPosX>
 				<spinPosY>692</spinPosY>
 				<spinAlign>left</spinAlign>
