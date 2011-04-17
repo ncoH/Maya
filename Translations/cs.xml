@@ -21,6 +21,7 @@
 	<!-- F -->
 	<string Field="fanart.scraping">Vytváření pozadí</string>
 	<string Field="format">Formát:</string>
+	<string Field="find.trailer">Filmová ukázka</string> 	
 	
 	<!-- G -->
 	<string Field="global.search.musicsearch">hledání hudby</string>
@@ -48,6 +49,7 @@
 	<string Field="Latest.episodes">Nejnovější epizody</string>
 	<string Field="Latest.recordings">Nejnovější nahrávky</string>
 	<string Field="Latest.albums">Nejnovější alba</string>
+	<string Field="Latest.pictures">Nejnovější obrázky</string> 	
 	
 	<!-- M -->
 	<string Field="mylyrics">Texty</string>

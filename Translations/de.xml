@@ -21,6 +21,7 @@
 	<!-- F -->
 	<string Field="fanart.scraping">Erstelle Fanart</string>
 	<string Field="format">Format:</string>
+	<string Field="find.trailer">Filmvorschau</string>	
 	
 	<!-- G -->
 	<string Field="global.search.musicsearch">Musiksuche</string>
@@ -47,6 +48,7 @@
 	<string Field="Latest.episodes">Neueste Folgen</string>
 	<string Field="Latest.recordings">Neueste Aufnahmen</string>
 	<string Field="Latest.albums">Neueste Alben</string>
+	<string Field="Latest.pictures">Neueste Bilder</string>	
 	
 	<!-- M -->
 	<string Field="mylyrics">Meine Texte</string>
