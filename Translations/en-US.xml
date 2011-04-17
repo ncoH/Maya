@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Skin translation file -->
 <!-- English (US) -->
-<!-- Last Updated: 14th Marts 2011 -->
+<!-- Last Updated: 17th april 2011 -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
 
 <strings>
@@ -21,6 +21,7 @@
 	<!-- F -->
 	<string Field="fanart.scraping">Fanart Scraping</string>
 	<string Field="format">Format:</string>
+	<string Field="find.trailer">Trailer</string>
 	
 	<!-- G -->
 	<string Field="global.search.musicsearch">music search</string>
@@ -48,6 +49,7 @@
 	<string Field="Latest.episodes">Latest episodes</string>
 	<string Field="Latest.recordings">Latest recordings</string>
 	<string Field="Latest.albums">Latest albums</string>
+	<string Field="Latest.pictures">Latest pictures</string>
 	
 	<!-- M -->
 	<string Field="mylyrics">My Lyrics</string>

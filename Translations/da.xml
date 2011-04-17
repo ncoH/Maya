@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Skin translation file -->
 <!-- Danish (DA) -->
-<!-- Last Updated: 8th april 2011 -->
+<!-- Last Updated: 17th april 2011 -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
 
 <strings>
@@ -21,6 +21,7 @@
 	<!-- F -->
 	<string Field="fanart.scraping">Henter FanArt</string>
 	<string Field="format">Format:</string>
+	<string Field="find.trailer">Trailer</string>
 	
 	<!-- G -->
 	<string Field="global.search.musicsearch">musik søgning</string>
@@ -48,6 +49,7 @@
 	<string Field="Latest.episodes">Seneste tvafsnit</string>
 	<string Field="Latest.recordings">Seneste optagelser</string>
 	<string Field="Latest.albums">Seneste album</string>
+	<string Field="Latest.pictures">Seneste billeder</string>
 	
 	<!-- M -->
 	<string Field="mylyrics">Sangtekst</string>
