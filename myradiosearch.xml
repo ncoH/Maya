@@ -95,10 +95,10 @@
         <label>620</label>
         <onleft>10</onleft>
         <onright>10</onright>
-        <onup>17</onup>
+        <onup>21</onup>
         <ondown>20</ondown>
-			<textalign>right</textalign>
-			<offsetSortButtonX>21</offsetSortButtonX>	
+		<textalign>right</textalign>
+		<offsetSortButtonX>21</offsetSortButtonX>	
       </control>
 	  
       <control>
@@ -114,7 +114,7 @@
         <onright>10</onright>
         <onup>2</onup>
         <ondown>7</ondown>
-			<textalign>right</textalign>		
+		<textalign>right</textalign>		
       </control>
 	  
       <control>
@@ -128,7 +128,7 @@
         <onright>10</onright>
         <onup>20</onup>
         <ondown>19</ondown>
-			<textalign>right</textalign>		
+		<textalign>right</textalign>		
       </control>
 	  
       <control>
@@ -142,7 +142,7 @@
         <ondown>21</ondown>
         <onleft>10</onleft>
         <onright>10</onright>
-			<textalign>right</textalign>		
+		<textalign>right</textalign>		
       </control>
 	  
       <control>
@@ -156,7 +156,7 @@
         <ondown>2</ondown>
         <onleft>10</onleft>
         <onright>10</onright>
-			<textalign>right</textalign>		
+		<textalign>right</textalign>		
       </control>
     </control>
 	
