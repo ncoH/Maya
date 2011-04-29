@@ -137,7 +137,177 @@ This file should contain the facade view
 				<spinPosX>1190</spinPosX>				
 			</control>
 
+        <control>
+          <description>Cover Flow view</description>
+          <type>coverflow</type>
+          <colordiffuse>90ffffff</colordiffuse>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <onup>2</onup>
+		  <ondown>50</ondown>		  
+          <onleft>50</onleft>
+          <onright>50</onright>			  
+          <posX>0</posX>
+          <posY>285</posY>
+          <width>1366</width>
+          <height>768</height>	  
+          <selectedCard>0</selectedCard>
+		  <cardWidth>280</cardWidth>
+		  <cardHeight>385</cardHeight>
+          <angle>45</angle>
+          <sideShift>310</sideShift>
+          <sideGap>100</sideGap>
+          <sideDepth>270</sideDepth>
+          <offsetY>0</offsetY>
+          <selectedOffsetY>0</selectedOffsetY>
+          <speed>8</speed>
+          <showFrame>yes</showFrame>
+          <frame>coverflow_glass_overlay_videos.png</frame>
+          <frameFocus>coverflow_glass_overlay_videos.png</frameFocus>
+		  <keepaspectratio>no</keepaspectratio>		  
+          <frameWidth>280</frameWidth>
+          <frameHeight>385</frameHeight>
+          <spinSpeed>8</spinSpeed>
+          <unfocusedAlpha>FF</unfocusedAlpha>
+          <folderPrefix></folderPrefix>
+          <folderSuffix></folderSuffix>
+          <font1>font13</font1>
+          <font2>font11</font2>
+          <label1>#title</label1>
+          <label2>#genre</label2>
+          <textColor>FFFFFFFF</textColor>
+          <remoteColor>FFFF0000</remoteColor>
+          <playedColor>FFA0D0FF</playedColor>
+          <downloadColor>FF00FF00</downloadColor>
+          <selectedColor>FFFFFFFF</selectedColor>
+          <shadowAngle>45</shadowAngle>
+          <shadowDistance>1</shadowDistance>
+          <shadowColor>FF000000</shadowColor>
+          <label1YOff>1430</label1YOff>
+          <label2YOff>1390</label2YOff>
+          <pageSize>5</pageSize>
+          <scrollbarBackground>bar_hor.png</scrollbarBackground>
+          <scrollbarLeft>mouse_left_horizontal.png</scrollbarLeft>
+          <scrollbarRight>mouse_right_horizontal.png</scrollbarRight>
+          <scrollbarYOff>450</scrollbarYOff>
+          <showScrollbar>no</showScrollbar>
+		  <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png"/>
+          <subitems>
+            <subitem>
+              <![CDATA[
+                <controls>
+                  <control>
+                    <description>background</description>
+                    <type>image</type>
+                    <posX>0</posX>
+                    <posY>0</posY>
+                    <width>280</width>
+                    <height>385</height>
+                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png">background.png</texture>
+                  </control>
 
+                  <control>
+                    <description>Movie Details</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>10</posY>
+                    <width>210</width>
+                    <label>Movie Details</label>
+                    <font>font13</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>genre</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>40</posY>
+                    <width>210</width>
+                    <label>#genre</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>year</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>60</posY>
+                    <width>210</width>
+                    <label>#year</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>runtime</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>80</posY>
+                    <width>210</width>
+                    <label>#runtime min</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>rating</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>100</posY>
+                    <width>210</width>
+                    <label>#rating</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>votes</description>
+                    <type>label</type>
+                    <posX>50</posX>
+                    <posY>100</posY>
+                    <width>210</width>
+                    <label>(#votes votes)</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>Director</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>140</posY>
+                    <width>210</width>
+                    <label>Director</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>director</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>160</posY>
+                    <width>210</width>
+                    <label>#director</label>
+                    <font>font9</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>plot</description>
+                    <type>textboxscrollup</type>
+                    <posX>30</posX>
+                    <posY>180</posY>
+                    <width>210</width>
+                    <height>150</height>
+                    <label>#plot</label>
+                    <font>font9</font>
+                    <lineSpacing>1</lineSpacing>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                </controls>
+              ]]>
+            </subitem>
+          </subitems>
+        </control>	
+		
 	</control>
 	
 	

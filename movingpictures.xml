@@ -21,6 +21,8 @@ multiple view modes.
 <define>#list.backdrop.used:true</define><!-- true if backdrop (fanart) should be displayed in this view -->
 <define>#filmstrip.available:true</define><!-- Set to true if this skin implements the filmstrip view -->
 <define>#filmstrip.backdrop.used:true</define><!-- true if backdrop (fanart) should be displayed in this view -->
+<define>#coverflow.available:true</define><!-- Set to true if this skin implements the coverflow view -->
+<define>#coverflow.backdrop.used:true</define><!-- true if backdrop (fanart) should be displayed in this view -->
 <define>#details.backdrop.used:true</define><!-- true if backdrop (fanart) should be displayed in this view -->
 <define>#categories.backdrop.used:true</define>
 <controls>
@@ -120,7 +122,7 @@ multiple view modes.
 			<width>1366</width>
 			<height>768</height>
 			<texture>fanart_overlay_thumbs.png</texture>
-			<visible>[[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip]+string.contains(#maya.bgImage.Plugins,yes)+!string.contains(#maya.fanart.MovingPictures,yes)+!Control.IsVisible(51)] + ![!Control.IsVisible(50)+!Control.IsVisible(51)]</visible>			
+			<visible>[[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+string.contains(#maya.bgImage.Plugins,yes)+!string.contains(#maya.fanart.MovingPictures,yes)+!Control.IsVisible(51)] + ![!Control.IsVisible(50)+!Control.IsVisible(51)]</visible>			
 		</control>
 		
 	<control>
@@ -181,7 +183,7 @@ multiple view modes.
 		<label>#MovingPictures.Translation.Movies.Label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+Control.IsVisible(50)</visible>
 		<align>center</align>
 		<valign>middle</valign>
 	</control>
@@ -349,8 +351,8 @@ multiple view modes.
 					<onleft>50</onleft>
 					<onright>50</onright>
 					<onup>66610</onup>
-					<ondown>4755</ondown>     
-			</control>
+					<ondown>4755</ondown>   
+				</control>	
 
 			<control>
 					<description>Lookup trailer in Online vidoes with either imdb (or title)</description>
@@ -370,7 +372,7 @@ multiple view modes.
 					<onright>50</onright>
 					<onup>66611</onup>
 					<ondown>2</ondown>     
-			</control>			
+			</control>
 
 		</control>
 	</control>	
@@ -643,7 +645,7 @@ multiple view modes.
 		<align>center</align>
 		<font>font13</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+!player.hasmedia+Control.IsVisible(50)</visible>
 	</control>
 
 	<control>
@@ -672,7 +674,7 @@ multiple view modes.
 		<label>#selecteditem</label>
 		<font>Segoe Light22</font>
 		<align>center</align>
-		<visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons] + Control.IsVisible(50)</visible>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+!player.hasmedia+Control.IsVisible(50)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 		<valign>middle</valign>
@@ -691,7 +693,7 @@ multiple view modes.
 		<align>center</align>
 		<font>font13</font>
 		<textcolor>6aa5cb</textcolor>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+!player.hasmedia+Control.IsVisible(50)</visible>
 	</control>
 
 	<control>
@@ -713,7 +715,7 @@ multiple view modes.
 		<align>center</align>
 		<imagesToDraw>10</imagesToDraw>
 		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
-		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!player.hasmedia+Control.IsVisible(50)</visible>
+		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+!player.hasmedia+Control.IsVisible(50)</visible>
 	</control>
 	
 	<control>
@@ -811,8 +813,9 @@ multiple view modes.
 		<posX>624</posX>
 		<posY>0</posY>
 		<texture>hiddenmenu_tab_up.png</texture>
-		<visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+		<visible>[facadeview.filmstrip|facadeview.coverflow]+Control.HasFocus(50)</visible>
 	</control>
+	
 <import>common.overlay.xml</import>
 <import>movingpictures.mediainfo.listview.xml</import>
 <import>movingpictures.mediainfo.filmstrip.xml</import>
