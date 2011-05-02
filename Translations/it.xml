@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Skin translation file -->
 <!-- Italiano -->
-<!-- translated by JackRackham -->
-<!-- Last Updated: 22th Aug 2010 -->
+<!-- translated by JackRackham/CyberTex -->
+<!-- Last Updated: 27th april 2011 -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
 
 <strings>
@@ -22,11 +22,12 @@
 	<!-- F -->
 	<string Field="fanart.scraping">Fanart Scraping</string>	
 	<string Field="format">Formato:</string>
+	<string Field="find.trailer">Trailer</string>
 	
 	<!-- G -->
 	<string Field="global.search.musicsearch">Cerca Musica</string>
 	<string Field="global.search.lastplayed">Ultimo riprodotto</string>
-	<string Field="global.search.filename">Filename</string>
+	<string Field="global.search.filename">Nome file</string>
 	<string Field="global.search.playcount">Playcount</string>	
 	<string Field="global.search.Searchphrase">Criterio di ricerca</string>
 	<string Field="global.search.Searchhistory">Cronologia di ricerca</string>
@@ -34,9 +35,9 @@
 	<string Field="global.search.Casesensitive">Maiuscole e minuscole</string>
 	<string Field="global.search.Searchtype">Tipo di ricerca</string>
 	<string Field="global.search.rating">Rating</string>	
-	<string Field="global.search.header">Search Details</string>
-	<string Field="grooveshark.Searchterm">Search Term</string>
-	<string Field="grooveshark.Search">Search</string>	
+	<string Field="global.search.header">Dettagli ricerca</string>
+	<string Field="grooveshark.Searchterm">Termini ricerca</string>
+	<string Field="grooveshark.Search">Cerca</string>	
 	
 	<!-- H -->
 
@@ -47,11 +48,12 @@
 	<string Field="lyrics.tag">Tag</string>
 	<string Field="Latest.movies">Ultimi film</string>
 	<string Field="Latest.episodes">Ultimi episodi</string>
-	<string Field="Latest.recordings">Latest recordings</string>
-	<string Field="Latest.albums">Latest albums</string>	
+	<string Field="Latest.recordings">Ultime registrazioni</string>
+	<string Field="Latest.albums">Ultimi album</string>	
+	<string Field="Latest.pictures">Ultime immagini</string>
 	
 	<!-- M -->
-	<string Field="mylyrics">My Lyrics</string>
+	<string Field="mylyrics">I Miei Testi</string>
 	<string Field="music.songs">Canzoni:</string>
 	
 	<!-- N -->
@@ -63,9 +65,14 @@
 	<!-- R -->
 	<string Field="recentlyAdded.Season">Stagione</string>
 	<string Field="recentlyAdded.Episode">Episodio</string>
+	<string Field="rockstar.search">Ricerca musica</string>
+	<string Field="rockstar.default.playlist">Lista di riproduzione predefinita</string>
+	<string Field="rockstar.popular.songs">Canzoni popolari</string>
+	<string Field="rockstar.playlists">Liste di riproduzione</string>
+	<string Field="rockstar.track">Traccia</string>	
 
 	<!-- S -->
-	<string Field="SleepControl">SleepTimer</string>	
+	<string Field="SleepControl">Timer per Sleep</string>	
 	
 	<!-- T -->
 

@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Skin translation file -->
-<!-- English (US) -->
-<!-- Last Updated: 14th Marts 2011 -->
+<!-- Swedish (SE) -->
+<!-- Last Updated: 2th may 2011 -->
 <!-- Note: English is the fallback for any strings not found in other languages -->
 
 
@@ -27,6 +27,7 @@
 
         <!-- F -->
         <string Field="fanart.scraping">Fanart hämtas</string>
+	<string Field="find.trailer">Trailer</string>
         <string Field="format">Format:</string>
         
         <!-- G -->
@@ -53,10 +54,11 @@
         <!-- L -->
         <string Field="lyrics">Text</string>
         <string Field="lyrics.tag">Tagg</string>
-        <string Field="Latest.movies">Senaste filmerna</string>
-        <string Field="Latest.episodes">Senaste serieavsnitten</string>
-        <string Field="Latest.recordings">Senaste inspelningarna</string>
         <string Field="Latest.albums">Senaste albumen</string>
+        <string Field="Latest.episodes">Senaste serieavsnitten</string>
+        <string Field="Latest.movies">Senaste filmerna</string>
+	<string Field="Latest.pictures">Senaste bilderna</string>
+        <string Field="Latest.recordings">Senaste inspelningarna</string>
         
         <!-- M -->
         <string Field="mylyrics">My Lyrics</string>
@@ -73,11 +75,11 @@
         <!-- R -->
         <string Field="recentlyAdded.Season">Säsong</string>
         <string Field="recentlyAdded.Episode">Avsnitt</string>
-		<string Field="rockstar.search">Sök musik</string>
-		<string Field="rockstar.default.playlist">Fördefinierad spellista</string>
-		<string Field="rockstar.popular.songs">Populära spår</string>
-		<string Field="rockstar.playlists">Spellistor</string>
-		<string Field="rockstar.track">Spår</string>		
+	<string Field="rockstar.search">Sök musik</string>
+	<string Field="rockstar.default.playlist">Fördefinierad spellista</string>
+	<string Field="rockstar.popular.songs">Populära spår</string>
+	<string Field="rockstar.playlists">Spellistor</string>
+	<string Field="rockstar.track">Spår</string>		
 
 
         <!-- S -->

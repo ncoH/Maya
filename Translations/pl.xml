@@ -20,6 +20,7 @@
         <!-- F -->
         <string Field="fanart.scraping">Sciągnij Fanart</string>
         <string Field="format">Format</string>
+        <string Field="find.trailer">Zwiastun</string>
         
         <!-- G -->
         <string Field="global.search.musicsearch">Wyszukiwanie Muzyki</string>
@@ -31,8 +32,8 @@
         <string Field="global.search.Searchfields">Szukaj w polu</string>
         <string Field="global.search.Casesensitive">Wielkość liter ma znaczenie</string>
         <string Field="global.search.Searchtype">Typ wyszukiwania</string>
-		<string Field="global.search.rating">Ocena</string>	
-		<string Field="global.search.header">Szczegóły wyszukiwania</string>		
+        <string Field="global.search.rating">Ocena</string>	
+        <string Field="global.search.header">Szczegóły wyszukiwania</string>		
         <string Field="grooveshark.Searchterm">Wyszukiwane hasło</string>
         <string Field="grooveshark.Search">Wyszukiwanie</string>
 		
@@ -47,6 +48,7 @@
         <string Field="Latest.episodes">Najnowsze odcinki</string>
         <string Field="Latest.recordings">Najnowsze nagrania</string>
         <string Field="Latest.albums">Najnowsze albumy</string>
+        <string Field="Latest.pictures">Najnowsze zdjęcia</string>
         
         <!-- M -->
         <string Field="mylyrics">Moje Teksty</string>

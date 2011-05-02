@@ -28,7 +28,8 @@
   <!-- F -->
   <string Field="fanart.scraping">Smámyndaleit</string>
   <string Field="format">Forsníða:</string>
-
+  <string Field="find.trailer">Sýnishortn</string>
+  
   <!-- G -->
   <string Field="global.search.musicsearch">Tónlistarleit</string>
   <string Field="global.search.lastplayed">Síðast spilað</string>
@@ -57,7 +58,8 @@
   <string Field="Latest.episodes">Nýjustu þáttaraðirnar</string>
   <string Field="Latest.recordings">Síðustu upptökurnar</string>
   <string Field="Latest.albums">Nýjasta tónlistin</string>
-
+  <string Field="Latest.pictures">Nýjustu ljósmyndirnar</string>
+  
   <!-- M -->
   <string Field="mylyrics">Lagatextar</string>
   <string Field="music.songs">Lög:</string>
