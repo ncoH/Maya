@@ -6,15 +6,6 @@
 	<disabletopbar>no</disabletopbar>
 	<rememberLastFocusedControl>yes</rememberLastFocusedControl>	
 <controls>
-
-	<control>
-            <description>background image</description>	
-			<id>1</id>
-            <type>image</type>
-            <width>1366</width>
-            <height>768</height>
-            <texture>background.png</texture>			
-	</control>
 	
 	<control>
 		<description>Menu</description>
@@ -43,6 +34,16 @@
 		<scrollTimeMin>60</scrollTimeMin>
 		<onright>4</onright>
 		<onleft>2</onleft>
+	</control>
+
+	<control>
+            <description>background image</description>	
+			<id>1</id>
+            <type>image</type>
+            <width>1366</width>
+            <height>768</height>
+            <texture>background.png</texture>	
+			<visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>				
 	</control>
 	
 	<control>
