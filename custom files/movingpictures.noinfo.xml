@@ -559,7 +559,7 @@ multiple view modes.
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>imagelist</type>
 		<id>101</id>
-		<posX>773</posX>
+		<posX>569</posX>
 		<posY>187</posY>
 		<width>185</width>
 		<height>21</height>
@@ -570,7 +570,7 @@ multiple view modes.
 		<subitem>starwhite.png</subitem>
 		</subitems>
 		<orientation>horizontal</orientation>
-		<align>center</align>
+		<align>left</align>
 		<imagesToDraw>10</imagesToDraw>
 		<percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
 		<visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+!player.hasmedia+Control.IsVisible(50)</visible>

@@ -297,19 +297,6 @@
 	</control>
 	
 	<control>
-		<type>label</type>
-		<description>Current video length</description>
-		<id>5001</id>
-		<posX>555</posX>
-		<posY>191</posY>
-		<font>Segoe Light18</font>
-		<label>#OnlineVideos.length</label>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons]</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-	
-	<control>
 		<type>textboxscrollup</type>
 		<description>Description</description>
 		<id>0</id>
@@ -370,19 +357,6 @@
 	    <height>295</height>
 		<texture>blackborders_recordings.png</texture>
 		<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#selectedthumb,)+!Control.IsVisible(51)</visible>
-		<animation effect="fade" time="200">WindowOpen</animation>
-		<animation effect="fade" time="200">WindowClose</animation>
-	</control>
-
-	<control>
-		<type>label</type>
-		<description>Current video length</description>
-		<id>5001</id>
-		<posX>482</posX>
-		<posY>486</posY>
-		<font>Segoe Light18</font>
-		<label>#OnlineVideos.length</label>
-		<visible>[facadeview.smallicons|facadeview.largeicons]+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
