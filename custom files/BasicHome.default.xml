@@ -933,6 +933,6 @@
 <import>BasicHome.recentlyaddedPictures.xml</import>
 <import>BasicHome.recentlyaddedRecordings.xml</import>
 <import>BasicHome.Fanart.Scraper.xml</import>
-<!-- <import>BasicHome.forcast.Weather.xml</import> -->
+<import>BasicHome.forcast.Weather.xml</import>
 </controls>
 </window>

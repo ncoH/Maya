@@ -226,7 +226,7 @@
 	<height>768</height>
 	<texture>hover_shutdown.png</texture>
 	<shouldCache>true</shouldCache>
-    <visible>string.contains(#maya.backgroundImage,yes) + Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4) | Control.HasFocus(5)</visible>
+    <visible>string.contains(#maya.backgroundImage,yes) + Control.HasFocus(2) + Control.HasFocus(3) + Control.HasFocus(4) + Control.HasFocus(5)</visible>
 </control>
 
 <control>
@@ -1108,6 +1108,6 @@
 <import>BasicHome.recentlyaddedPictures.xml</import>
 <import>BasicHome.recentlyaddedRecordings.xml</import>
 <import>BasicHome.Fanart.Scraper.xml</import>
-<!-- <import>BasicHome.forcast.Weather.xml</import> -->
+<import>BasicHome.forcast.Weather.xml</import>
 </controls>
 </window>
