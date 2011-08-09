@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>702</id>
+  <defaultcontrol>24</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:6008</define>
+  <define>#header.background:hover_settings.png</define>
+  <controls>
+    <import>common.window.settings.xml</import>
+    <import>common.time.xml</import>
+    <control>
+      <type>button</type>
+      <id>24</id>
+      <posX>139</posX>
+      <posY>264</posY>
+      <label>971</label>
+      <ondown>25</ondown>
+      <onup>24</onup>
+      <onleft>10</onleft>
+      <onright>10</onright>
+    </control>
+    <control>
+      <description>listcontrol background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>736</posX>
+      <posY>215</posY>
+      <width>1019</width>
+      <height>677</height>
+      <texture>listcontrol_bg.png</texture>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <description>listcontrol background info</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>736</posX>
+      <posY>953</posY>
+      <width>1019</width>
+      <height>71</height>
+      <texture>listcontrol_bg_info.png</texture>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <description>tvchannels listcontrol</description>
+      <type>updownlistcontrol</type>
+      <id>10</id>
+      <posX>736</posX>
+      <posY>239</posY>
+      <width>1019</width>
+      <height>703</height>
+      <keepaspectratio>no</keepaspectratio>
+      <font2>font10</font2>
+      <font3>font10</font3>
+      <textXOff>49</textXOff>
+      <textYOff>7</textYOff>
+      <itemWidth>36</itemWidth>
+      <itemHeight>36</itemHeight>
+      <IconXOff>19</IconXOff>
+      <IconYOff>8</IconYOff>
+      <spinPosX>1616</spinPosX>
+      <spinPosY>970</spinPosY>
+      <spinAlign>right</spinAlign>
+      <onleft>24</onleft>
+      <onright>24</onright>
+      <onup>2</onup>
+      <ondown>2</ondown>
+    </control>
+  </controls>
+</window>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <controls>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>574</posX>
+      <posY>299</posY>
+      <width>770</width>
+      <height>480</height>
+      <texture>dialog_background.png</texture>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="400">WindowClose</animation>
+      <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>Heading text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>660</posX>
+      <posY>367</posY>
+      <width>598</width>
+      <label>181</label>
+      <font>Segoe Light18</font>
+      <textcolor>85cffe</textcolor>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="400">WindowClose</animation>
+      <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>dialog line 1</description>
+      <type>fadelabel</type>
+      <id>2</id>
+      <posX>660</posX>
+      <posY>471</posY>
+      <label>-</label>
+      <width>598</width>
+      <font>font12</font>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="400">WindowClose</animation>
+      <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>dialog line 2</description>
+      <type>label</type>
+      <id>3</id>
+      <posX>660</posX>
+      <posY>516</posY>
+      <label>-</label>
+      <width>598</width>
+      <font>font12</font>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="400">WindowClose</animation>
+      <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>dialog line 3</description>
+      <type>label</type>
+      <id>4</id>
+      <posX>660</posX>
+      <posY>561</posY>
+      <label>-</label>
+      <width>598</width>
+      <font>font12</font>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="400">WindowClose</animation>
+      <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+    </control>
+    <control>
+      <description>dialog line 4</description>
+      <type>label</type>
+      <id>5</id>
+      <posX>660</posX>
+      <posY>606</posY>
+      <label>-</label>
+      <width>598</width>
+      <font>font12</font>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="400">WindowClose</animation>
+      <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+    </control>
+  </controls>
+</window>

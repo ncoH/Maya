@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>749</id>
+  <defaultcontrol>1</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+    <control>
+      <type>image</type>
+      <description>bar</description>
+      <id>0</id>
+      <posX>148</posX>
+      <posY>755</posY>
+      <width>1518</width>
+      <height>262</height>
+      <texture>dialog_background.png</texture>
+    </control>
+    <control>
+      <type>progress</type>
+      <description>Progress Bar</description>
+      <id>1</id>
+      <posX>559</posX>
+      <posY>843</posY>
+      <width>498</width>
+      <height>8</height>
+      <texturebg>osd_progress_back.png</texturebg>
+    </control>
+    <control>
+      <type>label</type>
+      <description>Quality</description>
+      <id>101</id>
+      <posX>319</posX>
+      <posY>829</posY>
+      <label>988</label>
+      <align>left</align>
+    </control>
+    <control>
+      <type>label</type>
+      <description>notify</description>
+      <id>102</id>
+      <posX>319</posX>
+      <posY>787</posY>
+      <label>-</label>
+    </control>
+    <control>
+      <description>TV Logo</description>
+      <type>image</type>
+      <id>10</id>
+      <posX>1298</posX>
+      <posY>798</posY>
+      <width>174</width>
+      <height>122</height>
+      <texture>#TV.View.thumb</texture>
+      <centered>yes</centered>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+  </controls>
+</window>

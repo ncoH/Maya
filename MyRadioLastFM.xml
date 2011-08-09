@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>7890</id>
+  <defaultcontrol>15</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#selecteditem:#Play.Current.Lastfm.CurrentStream</define>
+  <define>#header.label:34000</define>
+  <define>#usePlayFanart:Yes</define>
+  <define>#header.background:hover_LastFmRadio.png</define>
+  <controls>
+    <control>
+      <description>Background</description>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+      <visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>
+    </control>
+    <control>
+      <description>Fanart Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#header.background</texture>
+      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+    </control>
+    <control>
+      <description>Fanart Overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>basichome_fanart_overlay.png</texture>
+      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+    </control>
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <type>label</type>
+      <id>1</id>
+      <posX>775</posX>
+      <posY>42</posY>
+      <width>702</width>
+      <height>140</height>
+      <label>#header.label</label>
+      <textcolor>6aa5cb</textcolor>
+      <font>Segoe Light40</font>
+      <valign>middle</valign>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>91919295</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>91919296</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
+      <type>label</type>
+      <id>91919294</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <visible>no</visible>
+    </control>
+    <control>
+      <description>FANART IMAGE 1</description>
+      <id>897688</id>
+      <type>image</type>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.music.backdrop1.play</texture>
+      <visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919295)</visible>
+      <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
+      <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
+    </control>
+    <control>
+      <description>FANART IMAGE 2</description>
+      <id>897689</id>
+      <type>image</type>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.music.backdrop2.play</texture>
+      <visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919296)</visible>
+      <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
+      <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Fanart Overlay</description>
+      <type>image</type>
+      <visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919294)</visible>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>Lyrics_overlay_NP.png</texture>
+      <animation effect="Fade" time="400">WindowOpen</animation>
+      <animation effect="Fade" end="0" start="0" time="300">WindowClose</animation>
+    </control>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>417</posX>
+      <posY>295</posY>
+      <width>470</width>
+      <height>471</height>
+      <visible>!control.hasthumb(112)</visible>
+      <texture>DefaultMyradioBig.png</texture>
+    </control>
+    <control>
+      <type>image</type>
+      <description>artist art image</description>
+      <id>112</id>
+      <posX>417</posX>
+      <posY>295</posY>
+      <width>470</width>
+      <height>471</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>yes</zoom>
+      <texture>#Play.Current.ArtistThumb</texture>
+      <visible>player.hasmedia</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <type>image</type>
+      <description>album art overlay</description>
+      <id>0</id>
+      <posX>352</posX>
+      <posY>227</posY>
+      <width>605</width>
+      <height>606</height>
+      <texture>blackborders_music_nowplaying.png</texture>
+    </control>
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <defaultcontrol>2</defaultcontrol>
+      <onexit>50</onexit>
+      <buttonX>0</buttonX>
+      <buttonY>0</buttonY>
+      <buttonwidth>0</buttonwidth>
+      <buttonheight>0</buttonheight>
+      <width>1920</width>
+      <height>1080</height>
+      <dimColor>00ffffff</dimColor>
+      <animation effect="Fade" time="100">WindowClose</animation>
+      <control>
+        <type>image</type>
+        <id>0</id>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>semi_trans_back_general_menu.png</texture>
+        <colordiffuse>90ffffff</colordiffuse>
+        <animation effect="fade" time="200">windowopen</animation>
+        <animation effect="fade" time="400">windowclose</animation>
+      </control>
+      <control>
+        <type>group</type>
+        <animation effect="fade" time="250">Visible</animation>
+        <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+        <animation effect="fade" time="200" reversible="false">Hidden</animation>
+        <animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
+        <control>
+          <id>1</id>
+          <type>image</type>
+          <posX>719</posX>
+          <posY>90</posY>
+          <width>480</width>
+          <height>900</height>
+          <texture>menu_bg.png</texture>
+          <visible>!Control.HasFocus(50)</visible>
+        </control>
+        <control>
+          <description>Heading text label</description>
+          <type>label</type>
+          <id>1</id>
+          <posX>796</posX>
+          <posY>154</posY>
+          <label>924</label>
+          <font>Segoe Light18</font>
+          <textcolor>85cffe</textcolor>
+        </control>
+        <control>
+          <description>button group</description>
+          <type>group</type>
+          <posX>763</posX>
+          <posY>246</posY>
+          <layout>StackLayout(0, Vertical, true)</layout>
+          <control>
+            <description>start a stream</description>
+            <type>button</type>
+            <id>10</id>
+            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+            <width>392</width>
+            <height>68</height>
+            <textXOff>35</textXOff>
+            <textYOff>16</textYOff>
+            <label>34001</label>
+            <onleft>123</onleft>
+            <onright>123</onright>
+            <onup>666</onup>
+            <ondown>15</ondown>
+          </control>
+          <control>
+            <description>choose artist</description>
+            <type>button</type>
+            <id>15</id>
+            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+            <width>392</width>
+            <height>68</height>
+            <textXOff>35</textXOff>
+            <textYOff>16</textYOff>
+            <label>Artists</label>
+            <onleft>123</onleft>
+            <onright>123</onright>
+            <onup>10</onup>
+            <ondown>20</ondown>
+          </control>
+          <control>
+            <description>choose tag</description>
+            <type>button</type>
+            <id>20</id>
+            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+            <width>392</width>
+            <height>68</height>
+            <textXOff>35</textXOff>
+            <textYOff>16</textYOff>
+            <label>Tags</label>
+            <onleft>123</onleft>
+            <onright>123</onright>
+            <onup>15</onup>
+            <ondown>30</ondown>
+          </control>
+          <control>
+            <description>choose friend</description>
+            <type>button</type>
+            <id>30</id>
+            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+            <width>392</width>
+            <height>68</height>
+            <textXOff>35</textXOff>
+            <textYOff>16</textYOff>
+            <label>Friends</label>
+            <onleft>123</onleft>
+            <onright>123</onright>
+            <onup>20</onup>
+            <ondown>35</ondown>
+          </control>
+          <control>
+            <description>toggle submit mode</description>
+            <type>togglebutton</type>
+            <id>35</id>
+            <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+            <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+            <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+            <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+            <width>392</width>
+            <height>68</height>
+            <textXOff>33</textXOff>
+            <textYOff>16</textYOff>
+            <label>34014</label>
+            <onleft>123</onleft>
+            <onright>123</onright>
+            <onup>30</onup>
+            <ondown>40</ondown>
+            <visible>true</visible>
+          </control>
+          <control>
+            <description>toggle discovery mode</description>
+            <type>togglebutton</type>
+            <id>40</id>
+            <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+            <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+            <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+            <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+            <width>392</width>
+            <height>68</height>
+            <textXOff>33</textXOff>
+            <textYOff>16</textYOff>
+            <label>34013</label>
+            <onleft>123</onleft>
+            <onright>123</onright>
+            <onup>35</onup>
+            <ondown>50</ondown>
+            <visible>false</visible>
+          </control>
+        </control>
+        <control>
+          <description>Last.fm logo</description>
+          <type>image</type>
+          <id>0</id>
+          <posX>882</posX>
+          <posY>815</posY>
+          <width>154</width>
+          <height>84</height>
+          <texture>last_fm_logo_blue.png</texture>
+        </control>
+      </control>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>artist label</description>
+      <id>0</id>
+      <posX>989</posX>
+      <posY>255</posY>
+      <width>773</width>
+      <label>Artist</label>
+      <font>Segoe Light18</font>
+      <textcolor>85cfff</textcolor>
+      <animation effect="fade" time="800">WindowOpen</animation>
+      <animation effect="fade" time="300">WindowClose</animation>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>artist label</description>
+      <id>0</id>
+      <posX>989</posX>
+      <posY>306</posY>
+      <width>773</width>
+      <label>#Play.Current.Artist</label>
+      <font>Segoe Light18</font>
+      <animation effect="fade" time="800">WindowOpen</animation>
+      <animation effect="fade" time="300">WindowClose</animation>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>album label</description>
+      <id>0</id>
+      <posX>989</posX>
+      <posY>357</posY>
+      <width>773</width>
+      <label>Album</label>
+      <font>Segoe Light18</font>
+      <textcolor>85cfff</textcolor>
+      <animation effect="fade" time="800">WindowOpen</animation>
+      <animation effect="fade" time="300">WindowClose</animation>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>album label</description>
+      <id>0</id>
+      <posX>989</posX>
+      <posY>407</posY>
+      <width>773</width>
+      <label>#Play.Current.Album</label>
+      <font>Segoe Light18</font>
+      <animation effect="fade" time="800">WindowOpen</animation>
+      <animation effect="fade" time="300">WindowClose</animation>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>title label</description>
+      <id>0</id>
+      <posX>989</posX>
+      <posY>458</posY>
+      <width>773</width>
+      <label>Songname</label>
+      <font>Segoe Light18</font>
+      <textcolor>85cfff</textcolor>
+      <animation effect="fade" time="800">WindowOpen</animation>
+      <animation effect="fade" time="300">WindowClose</animation>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>title label</description>
+      <id>0</id>
+      <posX>989</posX>
+      <posY>509</posY>
+      <width>773</width>
+      <label>#Play.Current.Title</label>
+      <font>Segoe Light18</font>
+      <animation effect="fade" time="800">WindowOpen</animation>
+      <animation effect="fade" time="300">WindowClose</animation>
+    </control>
+    <control>
+      <type>imagelist</type>
+      <id>1</id>
+      <posX>989</posX>
+      <posY>604</posY>
+      <width>260</width>
+      <height>29</height>
+      <textureWidth>32</textureWidth>
+      <textureHeight>26</textureHeight>
+      <subitems>
+        <subitem>starblue.png</subitem>
+        <subitem>starwhite.png</subitem>
+      </subitems>
+      <orientation>horizontal</orientation>
+      <align>left</align>
+      <imagesToDraw>5</imagesToDraw>
+      <percentage>#Play.Current.Rating</percentage>
+      <visible>Control.HasFocus(177)</visible>
+    </control>
+    <control>
+      <description>Progress background</description>
+      <type>image</type>
+      <id>117</id>
+      <posX>992</posX>
+      <posY>646</posY>
+      <width>506</width>
+      <height>2</height>
+      <texture>blue.png</texture>
+      <visible>player.hasmedia+Control.HasFocus(177)</visible>
+    </control>
+    <control>
+      <description>progress bar</description>
+      <type>progress</type>
+      <id>118</id>
+      <posX>-2000</posX>
+      <posY>646</posY>
+      <width>506</width>
+      <height>2</height>
+      <texturebg>-</texturebg>
+      <lefttexture>now_playing_progress_bar.png</lefttexture>
+      <midtexture>now_playing_progress_bar.png</midtexture>
+      <righttexture>now_playing_progress_bar.png</righttexture>
+      <visible>player.hasmedia+Control.HasFocus(177)</visible>
+    </control>
+    <control>
+      <description>progress bar</description>
+      <type>progress</type>
+      <id>0</id>
+      <posX>975</posX>
+      <posY>646</posY>
+      <width>506</width>
+      <height>2</height>
+      <texturebg>-</texturebg>
+      <label>#percentage</label>
+      <lefttexture>now_playing_progress_bar.png</lefttexture>
+      <midtexture>now_playing_progress_bar.png</midtexture>
+      <righttexture>now_playing_progress_bar.png</righttexture>
+      <visible>player.hasmedia+Control.HasFocus(177)</visible>
+    </control>
+    <control>
+      <type>label</type>
+      <description>track duration label</description>
+      <id>0</id>
+      <posX>989</posX>
+      <posY>660</posY>
+      <label>#currentplaytime</label>
+      <align>left</align>
+      <font>font11</font>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+      <visible>Control.HasFocus(177)</visible>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>track duration label</description>
+      <id>0</id>
+      <posX>1498</posX>
+      <posY>660</posY>
+      <label>#duration</label>
+      <align>right</align>
+      <font>font11</font>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+      <visible>Control.HasFocus(177)</visible>
+    </control>
+    <control>
+      <type>label</type>
+      <description>stream label</description>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>199</posY>
+      <width>1920</width>
+      <label>#Play.Current.Lastfm.CurrentStream</label>
+      <font>Segoe Light22</font>
+      <align>center</align>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <valign>middle</valign>
+    </control>
+    <control>
+      <type>label</type>
+      <description>similar hint</description>
+      <id>443</id>
+      <posX>-2000</posX>
+    </control>
+    <control>
+      <type>label</type>
+      <description>Playlist label</description>
+      <id>0</id>
+      <posX>988</posX>
+      <posY>604</posY>
+      <label>Similar to artist</label>
+      <font>Segoe Light18</font>
+      <textcolor>85cfff</textcolor>
+      <visible>Control.HasFocus(155) + control.hastext(444)</visible>
+    </control>
+    <control>
+      <type>textbox</type>
+      <description>Similar artists box</description>
+      <id>444</id>
+      <posX>988</posX>
+      <posY>653</posY>
+      <width>773</width>
+      <height>182</height>
+      <label>#Play.Current.Lastfm.SimilarArtists</label>
+      <font>Segoe Light18</font>
+      <visible>Control.HasFocus(155)</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <type>label</type>
+      <description>tag hint</description>
+      <id>332</id>
+      <posX>-2000</posX>
+    </control>
+    <control>
+      <type>textbox</type>
+      <description>Track tags box</description>
+      <id>333</id>
+      <posX>-2000</posX>
+    </control>
+    <control>
+      <type>fadelabel</type>
+      <description>best album tracks label</description>
+      <id>29</id>
+      <posX>-2000</posX>
+    </control>
+    <control>
+      <type>label</type>
+      <description>Playlist label</description>
+      <id>0</id>
+      <posX>988</posX>
+      <posY>604</posY>
+      <label>Playlist</label>
+      <font>Segoe Light18</font>
+      <textcolor>85cfff</textcolor>
+      <visible>Control.HasFocus(123)</visible>
+    </control>
+    <control>
+      <type>listcontrol</type>
+      <description>list of best album tracks</description>
+      <id>123</id>
+      <onright>155</onright>
+      <onleft>15</onleft>
+      <ondown>155</ondown>
+      <onup>177</onup>
+      <posX>955</posX>
+      <posY>662</posY>
+      <width>773</width>
+      <height>253</height>
+      <textXOff>18</textXOff>
+      <textYOff>-6</textYOff>
+      <IconXOff>14</IconXOff>
+      <spinColor>-</spinColor>
+      <image>-</image>
+      <font>Segoe Light18</font>
+      <textureUp>-</textureUp>
+      <textureDown>-</textureDown>
+      <textureUpFocus>-</textureUpFocus>
+      <textureDownFocus>-</textureDownFocus>
+      <textureFocus>list_sub_focus_arrow_small.png</textureFocus>
+      <textureHeight>53</textureHeight>
+      <textureNoFocus>-</textureNoFocus>
+      <spaceBetweenItems>0</spaceBetweenItems>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+      <visible allowhiddenfocus="true">player.hasmedia + Control.HasFocus(123)</visible>
+    </control>
+    <control>
+      <description>Now Playing button</description>
+      <type>button</type>
+      <posX>968</posX>
+      <posY>863</posY>
+      <id>177</id>
+      <ondown>123</ondown>
+      <onup>155</onup>
+      <onright>15</onright>
+      <onleft>15</onleft>
+      <label>Now Playing</label>
+      <width>295</width>
+      <textureFocus>button-small-focus.png</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+    </control>
+    <control>
+      <description>Top Album Tracks button</description>
+      <type>button</type>
+      <posX>968</posX>
+      <posY>915</posY>
+      <id>0</id>
+      <label>Playlist</label>
+      <width>295</width>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+    </control>
+    <control>
+      <description>Top Album Tracks button</description>
+      <type>button</type>
+      <posX>968</posX>
+      <posY>915</posY>
+      <id>0</id>
+      <label>Playlist</label>
+      <width>295</width>
+      <textureFocus>button-small-focus.png</textureFocus>
+      <textureNoFocus>button-small-focus.png</textureNoFocus>
+      <visible>Control.HasFocus(123)</visible>
+    </control>
+    <control>
+      <description>Similar Artists button</description>
+      <type>button</type>
+      <posX>968</posX>
+      <posY>967</posY>
+      <id>155</id>
+      <ondown>177</ondown>
+      <onup>123</onup>
+      <onright>15</onright>
+      <onleft>15</onleft>
+      <label>Similar Artists</label>
+      <width>295</width>
+      <textureFocus>button-small-focus.png</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+    </control>
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>457</posY>
+      <texture>hiddenmenu_tab.png</texture>
+      <visible>Control.HasFocus(123) | Control.HasFocus(155) | Control.HasFocus(177)</visible>
+    </control>
+    <import>common.time.white.xml</import>
+  </controls>
+</window>

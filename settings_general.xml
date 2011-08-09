@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>705</id>
+  <defaultcontrol>10002</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.background:hover_settings.png</define>
+  <controls>
+    <import>common.window.background.xml</import>
+    <import>settings.menu.xml</import>
+    <control>
+      <type>image</type>
+      <id>1</id>
+      <posX>610</posX>
+      <posY>84</posY>
+      <width>1152</width>
+      <height>900</height>
+      <texture>settings_main_panel.png</texture>
+    </control>
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <type>label</type>
+      <id>1</id>
+      <posX>708</posX>
+      <posY>175</posY>
+      <width>702</width>
+      <height>140</height>
+      <label>128</label>
+      <textcolor>6aa5cb</textcolor>
+      <font>Segoe Light40</font>
+      <valign>middle</valign>
+    </control>
+    <control>
+      <description>buttons</description>
+      <type>group</type>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <posX>687</posX>
+      <posY>365</posY>
+      <layout>GridLayout(2, 7, 120, 0, 1)</layout>
+      <control>
+        <description>Skin</description>
+        <type>button</type>
+        <id>10</id>
+        <label>166</label>
+        <onup>17</onup>
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+        <width>469</width>
+      </control>
+      <control>
+        <description>Language</description>
+        <type>button</type>
+        <id>11</id>
+        <label>248</label>
+        <width>469</width>
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <texturebg>settings_button_medium_focus.png</texturebg>
+        <textXOff>12</textXOff>
+        <textYOff>7</textYOff>
+        <textYOff2>7</textYOff2>
+        <textXOff2>35</textXOff2>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+      </control>
+      <control>
+        <description>Start in fullscreen mode</description>
+        <type>togglebutton</type>
+        <id>12</id>
+        <label>1047</label>
+        <width>469</width>
+        <textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+        <textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+        <AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+        <AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+      </control>
+      <control>
+        <description>Screensaver</description>
+        <type>togglebutton</type>
+        <id>13</id>
+        <label>360</label>
+        <width>469</width>
+        <textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+        <textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+        <AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+        <AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+      </control>
+      <control>
+        <description>Skip steps screen button</description>
+        <type>button</type>
+        <id>21</id>
+        <label>6024</label>
+        <width>469</width>
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <hyperlink>708</hyperlink>
+        <ondown>99</ondown>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+      </control>
+    </control>
+    <control>
+      <description>Skin Preview</description>
+      <type>image</type>
+      <id>20</id>
+      <posX>-2000</posX>
+    </control>
+    <control>
+      <description>Skin preview image</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1221</posX>
+      <posY>383</posY>
+      <width>437</width>
+      <height>246</height>
+      <texture flipY="true" diffuse="Thumb_Mask.png">settings_preview.png</texture>
+    </control>
+  </controls>
+</window>

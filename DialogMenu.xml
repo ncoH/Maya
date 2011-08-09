@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>2012</id>
+  <defaultcontrol>3</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>semi_trans_back_general_menu.png</texture>
+      <colordiffuse>90ffffff</colordiffuse>
+      <animation effect="fade" time="200">windowopen</animation>
+      <animation effect="fade" time="400">windowclose</animation>
+      <visible>!window.isvisible(602)+!window.isvisible(2005)</visible>
+    </control>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="400">WindowClose</animation>
+      <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
+      <control>
+        <id>0</id>
+        <type>image</type>
+        <posX>574</posX>
+        <posY>230</posY>
+        <width>770</width>
+        <height>618</height>
+        <texture>context_background.png</texture>
+      </control>
+      <control>
+        <id>4</id>
+        <description>Heading text label</description>
+        <type>label</type>
+        <posX>660</posX>
+        <posY>298</posY>
+        <width>598</width>
+        <font>Segoe Light18</font>
+        <textcolor>ff85cffe</textcolor>
+        <label>181</label>
+      </control>
+      <control>
+        <id>3</id>
+        <description>options listcontrol</description>
+        <type>listcontrol</type>
+        <onleft>3</onleft>
+        <onright>3</onright>
+        <posX>528</posX>
+        <posY>389</posY>
+        <width>770</width>
+        <height>421</height>
+        <textXOff2>737</textXOff2>
+        <textYOff2>11</textYOff2>
+        <spinPosX>1267</spinPosX>
+        <spinPosY>752</spinPosY>
+        <textXOff>118</textXOff>
+        <textYOff>11</textYOff>
+        <textureFocus>context_item_selected.png</textureFocus>
+        <textureNoFocus>context_item.png</textureNoFocus>
+        <textureHeight>68</textureHeight>
+        <spaceBetweenItems>1</spaceBetweenItems>
+        <PinIconWidth>15</PinIconWidth>
+        <PinIconHeight>15</PinIconHeight>
+        <PinIconXOff>2000</PinIconXOff>
+        <PinIconYOff>15</PinIconYOff>
+      </control>
+    </control>
+  </controls>
+</window>

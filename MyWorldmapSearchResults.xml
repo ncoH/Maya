@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>10237</id>
+  <defaultcontrol>5</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>yes</disabletopbar>
+  <controls>
+    <control>
+      <id>25</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>421</height>
+      <texture>topbar_upper_gradient.png</texture>
+      <animation effect="Fade" time="250">Visible</animation>
+      <animation effect="Fade" time="250">Hidden</animation>
+    </control>
+    <control>
+      <id>24</id>
+      <type>label</type>
+      <posX>775</posX>
+      <posY>42</posY>
+      <width>702</width>
+      <height>92</height>
+      <font>Segoe Light26</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <label>Search results</label>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <id>1</id>
+      <description>listcontrol background</description>
+      <type>image</type>
+      <posX>736</posX>
+      <posY>215</posY>
+      <width>1019</width>
+      <height>677</height>
+      <texture>listcontrol_bg.png</texture>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+      <animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="1000">WindowClose</animation>
+      <control>
+        <id>5</id>
+        <description>Search Results</description>
+        <type>listcontrol</type>
+        <scrollOffset>1</scrollOffset>
+        <posX>736</posX>
+        <posY>262</posY>
+        <height>644</height>
+        <spinPosX>787</spinPosX>
+        <spinPosY>967</spinPosY>
+        <spinAlign>left</spinAlign>
+        <textXOff>30</textXOff>
+        <dimColor>ffffffff</dimColor>
+        <animation effect="fade" time="100">WindowOpen</animation>
+        <animation effect="fade" time="100">WindowClose</animation>
+      </control>
+    </control>
+    <import>common.time.xml</import>
+  </controls>
+</window>

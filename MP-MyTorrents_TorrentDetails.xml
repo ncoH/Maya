@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>5680</id>
+  <defaultcontrol>5</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:Torrent Details</define>
+  <define>#header.background:hover_mytorrents.png</define>
+  <controls>
+    <import>common.window.background.xml</import>
+    <import>common.time.xml</import>
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>775</posX>
+      <posY>42</posY>
+      <width>702</width>
+      <height>92</height>
+      <font>Segoe Light40</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <label>#header.label</label>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <id>1</id>
+      <description>listcontrol background</description>
+      <type>image</type>
+      <visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
+      <posX>736</posX>
+      <posY>215</posY>
+      <width>1019</width>
+      <height>677</height>
+      <texture>listcontrol_bg.png</texture>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <description>button group</description>
+      <type>group</type>
+      <posX>99</posX>
+      <posY>170</posY>
+      <layout>StackLayout</layout>
+      <animation effect="Fade" time="250">WindowOpen</animation>
+      <animation effect="Fade" time="250">WindowClose</animation>
+      <control>
+        <description>Try Me</description>
+        <type>button</type>
+        <id>4</id>
+        <posX>84</posX>
+        <posY>895</posY>
+        <label>Back</label>
+        <onup>5</onup>
+        <ondown>5</ondown>
+        <onright>5</onright>
+        <onleft>5</onleft>
+        <textalign>RIGHT</textalign>
+      </control>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>140</posY>
+      <label>Name: </label>
+      <textcolor>90ffffff</textcolor>
+      <font>font12</font>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>168</posY>
+      <width>506</width>
+      <label>#MyTorrents.Details.Name</label>
+      <align>left</align>
+      <textcolor>ffffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>225</posY>
+      <label>ETA: </label>
+      <font>font12</font>
+      <textcolor>90ffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>253</posY>
+      <label>#MyTorrents.Details.ETA</label>
+      <align>left</align>
+      <textcolor>ffffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>309</posY>
+      <label>Downloading: </label>
+      <font>font12</font>
+      <textcolor>90ffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>337</posY>
+      <label>#MyTorrents.Details.DownloadSpeed</label>
+      <align>left</align>
+      <textcolor>ffffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>393</posY>
+      <label>Uploading: </label>
+      <font>font12</font>
+      <textcolor>90ffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>421</posY>
+      <label>#MyTorrents.Details.UploadSpeed</label>
+      <align>left</align>
+      <textcolor>ffffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>478</posY>
+      <label>Size: </label>
+      <font>font12</font>
+      <textcolor>90ffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>506</posY>
+      <label>#MyTorrents.Details.Size</label>
+      <align>left</align>
+      <textcolor>ffffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>562</posY>
+      <label>Peers: </label>
+      <font>font12</font>
+      <textcolor>90ffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>590</posY>
+      <label>#MyTorrents.Details.Peers</label>
+      <align>left</align>
+      <textcolor>ffffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>646</posY>
+      <label>Seeds: </label>
+      <font>font12</font>
+      <textcolor>90ffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>675</posY>
+      <label>#MyTorrents.Details.Seeds</label>
+      <align>left</align>
+      <textcolor>ffffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>731</posY>
+      <label>Progress: </label>
+      <font>font12</font>
+      <textcolor>90ffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>759</posY>
+      <label>#MyTorrents.Details.Progress%</label>
+      <align>left</align>
+      <textcolor>ffffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>815</posY>
+      <label>Ratio: </label>
+      <font>font12</font>
+      <textcolor>90ffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <description>text label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>42</posX>
+      <posY>843</posY>
+      <label>#MyTorrents.Details.Ratio</label>
+      <align>left</align>
+      <textcolor>ffffffff</textcolor>
+      <visible>control.hasfocus(5)</visible>
+      <animation effect="fade" time="250">visiblechange</animation>
+      <animation effect="fade" time="250" delay="200">WindowOpen</animation>
+      <animation effect="fade" time="250" delay="0">WindowClose</animation>
+    </control>
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+      <animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="1000">WindowClose</animation>
+      <control>
+        <description>listcontrol</description>
+        <type>listcontrol</type>
+        <id>5</id>
+        <onup>4</onup>
+        <ondown>4</ondown>
+        <onright>4</onright>
+        <onleft>4</onleft>
+        <scrollOffset>1</scrollOffset>
+        <posX>736</posX>
+        <posY>262</posY>
+        <height>644</height>
+        <spinPosX>787</spinPosX>
+        <spinPosY>967</spinPosY>
+        <spinAlign>left</spinAlign>
+        <textXOff>30</textXOff>
+        <dimColor>ffffffff</dimColor>
+      </control>
+    </control>
+  </controls>
+</window>

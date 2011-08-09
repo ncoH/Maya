@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8"-->
+<!--
+This file should contain the facade view
+-->
+<window>
+  <controls>
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <type>facadeview</type>
+      <id>51</id>
+      <control>
+        <description>Categories List</description>
+        <type>listcontrol</type>
+        <id>51</id>
+        <onleft>51</onleft>
+        <onright>51</onright>
+        <posX>763</posX>
+        <posY>246</posY>
+        <height>815</height>
+        <width>390</width>
+        <textXOff>19</textXOff>
+        <textXOff3>14</textXOff3>
+        <IconXOff>2783</IconXOff>
+        <spinPosX>-2000</spinPosX>
+        <textureHeight>71</textureHeight>
+        <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+      </control>
+    </control>
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <type>facadeview</type>
+      <id>50</id>
+      <control>
+        <description>Movie List</description>
+        <type>listcontrol</type>
+        <id>50</id>
+        <onleft>2</onleft>
+        <onright>50</onright>
+        <posX>736</posX>
+        <posY>262</posY>
+        <height>644</height>
+        <width>503</width>
+        <spinPosX>787</spinPosX>
+        <spinPosY>967</spinPosY>
+        <spinAlign>left</spinAlign>
+        <textXOff>30</textXOff>
+        <scrollOffset>1</scrollOffset>
+        <textureHeight>71</textureHeight>
+        <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+        <dimColor>ffffffff</dimColor>
+      </control>
+      <control>
+        <description>Filmstrip view</description>
+        <type>filmstrip</type>
+        <dimColor>90ffffff</dimColor>
+        <id>50</id>
+        <scrollOffset>2</scrollOffset>
+        <posX>210</posX>
+        <posY>499</posY>
+        <width>1638</width>
+        <height>1080</height>
+        <onup>2</onup>
+        <ondown>2</ondown>
+        <onleft>50</onleft>
+        <onright>50</onright>
+        <thumbWidth>300</thumbWidth>
+        <thumbHeight>424</thumbHeight>
+        <thumbPosX>0</thumbPosX>
+        <thumbPosY>0</thumbPosY>
+        <itemWidth>300</itemWidth>
+        <itemHeight>424</itemHeight>
+        <textureWidth>300</textureWidth>
+        <textureHeight>424</textureHeight>
+        <textYOff>-2000</textYOff>
+        <spinCanFocus>no</spinCanFocus>
+        <imageFolderFocus>-</imageFolderFocus>
+        <frame>-</frame>
+        <frameFocus>thumbnail_frame_shine.png</frameFocus>
+        <background>-</background>
+        <thumbs flipY="true" diffuse="Thumb_Mask.png">
+        </thumbs>
+        <showFrame>yes</showFrame>
+        <showFolder>no</showFolder>
+        <showBackGround>no</showBackGround>
+        <showInfoImage>no</showInfoImage>
+        <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,570" time="400">focus</thumbAnimation>
+        <thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,570" time="100">unfocus</thumbAnimation>
+      </control>
+      <control>
+        <description>Thumbnail Panel</description>
+        <type>thumbnailpanel</type>
+        <id>50</id>
+        <onleft>2</onleft>
+        <onright>50</onright>
+        <posX>725</posX>
+        <posY>343</posY>
+        <width>1124</width>
+        <height>773</height>
+        <scrollOffset>1</scrollOffset>
+        <itemWidth>140</itemWidth>
+        <itemHeight>202</itemHeight>
+        <textureWidth>140</textureWidth>
+        <textureHeight>202</textureHeight>
+        <thumbWidth>140</thumbWidth>
+        <thumbHeight>202</thumbHeight>
+        <thumbPosX>0</thumbPosX>
+        <thumbPosY>0</thumbPosY>
+        <textureWidthBig>215</textureWidthBig>
+        <textureHeightBig>303</textureHeightBig>
+        <itemWidthBig>215</itemWidthBig>
+        <itemHeightBig>303</itemHeightBig>
+        <thumbWidthBig>215</thumbWidthBig>
+        <thumbHeightBig>303</thumbHeightBig>
+        <thumbPosXBig>0</thumbPosXBig>
+        <thumbPosYBig>0</thumbPosYBig>
+        <zoomXPixels>0</zoomXPixels>
+        <zoomYPixels>0</zoomYPixels>
+        <hideUnfocusTexture>no</hideUnfocusTexture>
+        <renderFocusText>no</renderFocusText>
+        <renderUnfocusText>no</renderUnfocusText>
+        <showFrame>yes</showFrame>
+        <frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
+        <frameFocus>video_thumb_focus.png</frameFocus>
+        <textureMask>video_thumb_mask.png</textureMask>
+        <keepaspectratio>no</keepaspectratio>
+        <shadowAngle>90</shadowAngle>
+        <shadowDistance>50</shadowDistance>
+        <thumbZoom>no</thumbZoom>
+        <spinPosX>1672</spinPosX>
+      </control>
+      <control>
+        <description>Cover Flow view</description>
+        <type>coverflow</type>
+        <colordiffuse>90ffffff</colordiffuse>
+        <dimColor>90ffffff</dimColor>
+        <id>50</id>
+        <onup>2</onup>
+        <ondown>50</ondown>
+        <onleft>50</onleft>
+        <onright>50</onright>
+        <posX>0</posX>
+        <posY>400</posY>
+        <width>1920</width>
+        <height>1080</height>
+        <selectedCard>0</selectedCard>
+        <cardWidth>393</cardWidth>
+        <cardHeight>541</cardHeight>
+        <angle>45</angle>
+        <sideShift>310</sideShift>
+        <sideGap>100</sideGap>
+        <sideDepth>270</sideDepth>
+        <offsetY>0</offsetY>
+        <selectedOffsetY>0</selectedOffsetY>
+        <speed>8</speed>
+        <showFrame>yes</showFrame>
+        <frame>coverflow_glass_overlay_videos.png</frame>
+        <frameFocus>coverflow_glass_overlay_videos.png</frameFocus>
+        <keepaspectratio>no</keepaspectratio>
+        <frameWidth>393</frameWidth>
+        <frameHeight>541</frameHeight>
+        <spinSpeed>8</spinSpeed>
+        <unfocusedAlpha>FF</unfocusedAlpha>
+        <font1>font13</font1>
+        <font2>font11</font2>
+        <label1>#title</label1>
+        <label2>#genre</label2>
+        <textColor>FFFFFFFF</textColor>
+        <remoteColor>FFFF0000</remoteColor>
+        <playedColor>FFA0D0FF</playedColor>
+        <downloadColor>FF00FF00</downloadColor>
+        <selectedColor>FFFFFFFF</selectedColor>
+        <shadowAngle>45</shadowAngle>
+        <shadowDistance>1</shadowDistance>
+        <shadowColor>FF000000</shadowColor>
+        <label1YOff>1430</label1YOff>
+        <label2YOff>1390</label2YOff>
+        <pageSize>5</pageSize>
+        <scrollbarBackground>bar_hor.png</scrollbarBackground>
+        <scrollbarLeft>mouse_left_horizontal.png</scrollbarLeft>
+        <scrollbarRight>mouse_right_horizontal.png</scrollbarRight>
+        <scrollbarYOff>632</scrollbarYOff>
+        <showScrollbar>no</showScrollbar>
+        <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png" />
+        <subitems>
+          <subitem>
+                &lt;controls&gt;
+                  &lt;control&gt;
+                    &lt;description&gt;background&lt;/description&gt;
+                    &lt;type&gt;image&lt;/type&gt;
+                    &lt;posX&gt;0&lt;/posX&gt;
+                    &lt;posY&gt;0&lt;/posY&gt;
+                    &lt;width&gt;280&lt;/width&gt;
+                    &lt;height&gt;385&lt;/height&gt;
+                    &lt;texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png"&gt;background.png&lt;/texture&gt;
+                  &lt;/control&gt;
+
+                  &lt;control&gt;
+                    &lt;description&gt;Movie Details&lt;/description&gt;
+                    &lt;type&gt;label&lt;/type&gt;
+                    &lt;posX&gt;30&lt;/posX&gt;
+                    &lt;posY&gt;10&lt;/posY&gt;
+                    &lt;width&gt;210&lt;/width&gt;
+                    &lt;label&gt;Movie Details&lt;/label&gt;
+                    &lt;font&gt;font13&lt;/font&gt;
+                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
+                  &lt;/control&gt;
+
+                  &lt;control&gt;
+                    &lt;description&gt;genre&lt;/description&gt;
+                    &lt;type&gt;label&lt;/type&gt;
+                    &lt;posX&gt;30&lt;/posX&gt;
+                    &lt;posY&gt;40&lt;/posY&gt;
+                    &lt;width&gt;210&lt;/width&gt;
+                    &lt;label&gt;#genre&lt;/label&gt;
+                    &lt;font&gt;font10&lt;/font&gt;
+                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
+                  &lt;/control&gt;
+                  &lt;control&gt;
+                    &lt;description&gt;year&lt;/description&gt;
+                    &lt;type&gt;label&lt;/type&gt;
+                    &lt;posX&gt;30&lt;/posX&gt;
+                    &lt;posY&gt;60&lt;/posY&gt;
+                    &lt;width&gt;210&lt;/width&gt;
+                    &lt;label&gt;#year&lt;/label&gt;
+                    &lt;font&gt;font10&lt;/font&gt;
+                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
+                  &lt;/control&gt;
+                  &lt;control&gt;
+                    &lt;description&gt;runtime&lt;/description&gt;
+                    &lt;type&gt;label&lt;/type&gt;
+                    &lt;posX&gt;30&lt;/posX&gt;
+                    &lt;posY&gt;80&lt;/posY&gt;
+                    &lt;width&gt;210&lt;/width&gt;
+                    &lt;label&gt;#runtime min&lt;/label&gt;
+                    &lt;font&gt;font10&lt;/font&gt;
+                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
+                  &lt;/control&gt;
+                  &lt;control&gt;
+                    &lt;description&gt;rating&lt;/description&gt;
+                    &lt;type&gt;label&lt;/type&gt;
+                    &lt;posX&gt;30&lt;/posX&gt;
+                    &lt;posY&gt;100&lt;/posY&gt;
+                    &lt;width&gt;210&lt;/width&gt;
+                    &lt;label&gt;#rating&lt;/label&gt;
+                    &lt;font&gt;font10&lt;/font&gt;
+                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
+                  &lt;/control&gt;
+                  &lt;control&gt;
+                    &lt;description&gt;votes&lt;/description&gt;
+                    &lt;type&gt;label&lt;/type&gt;
+                    &lt;posX&gt;50&lt;/posX&gt;
+                    &lt;posY&gt;100&lt;/posY&gt;
+                    &lt;width&gt;210&lt;/width&gt;
+                    &lt;label&gt;(#votes votes)&lt;/label&gt;
+                    &lt;font&gt;font10&lt;/font&gt;
+                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
+                  &lt;/control&gt;
+
+                  &lt;control&gt;
+                    &lt;description&gt;Director&lt;/description&gt;
+                    &lt;type&gt;label&lt;/type&gt;
+                    &lt;posX&gt;30&lt;/posX&gt;
+                    &lt;posY&gt;140&lt;/posY&gt;
+                    &lt;width&gt;210&lt;/width&gt;
+                    &lt;label&gt;Director&lt;/label&gt;
+                    &lt;font&gt;font10&lt;/font&gt;
+                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
+                  &lt;/control&gt;
+
+                  &lt;control&gt;
+                    &lt;description&gt;director&lt;/description&gt;
+                    &lt;type&gt;label&lt;/type&gt;
+                    &lt;posX&gt;30&lt;/posX&gt;
+                    &lt;posY&gt;160&lt;/posY&gt;
+                    &lt;width&gt;210&lt;/width&gt;
+                    &lt;label&gt;#director&lt;/label&gt;
+                    &lt;font&gt;font9&lt;/font&gt;
+                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
+                  &lt;/control&gt;
+
+                  &lt;control&gt;
+                    &lt;description&gt;plot&lt;/description&gt;
+                    &lt;type&gt;textboxscrollup&lt;/type&gt;
+                    &lt;posX&gt;30&lt;/posX&gt;
+                    &lt;posY&gt;180&lt;/posY&gt;
+                    &lt;width&gt;210&lt;/width&gt;
+                    &lt;height&gt;150&lt;/height&gt;
+                    &lt;label&gt;#plot&lt;/label&gt;
+                    &lt;font&gt;font9&lt;/font&gt;
+                    &lt;lineSpacing&gt;1&lt;/lineSpacing&gt;
+                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
+                  &lt;/control&gt;
+                &lt;/controls&gt;
+              </subitem>
+        </subitems>
+      </control>
+    </control>
+    <control>
+      <description>composite control consisting of a list control and a thumbnail panel</description>
+      <type>facadeview</type>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <id>51</id>
+      <control>
+        <description>Categories List</description>
+        <type>listcontrol</type>
+        <id>51</id>
+        <posX>14</posX>
+        <posY>175</posY>
+        <width>562</width>
+        <height>703</height>
+        <spinPosX>1827</spinPosX>
+        <spinPosY>1012</spinPosY>
+        <textureFocus>MovingPictures\menu_focus.png</textureFocus>
+        <textureNoFocus>dialog_button_nofocus.png</textureNoFocus>
+        <textXOff>-20</textXOff>
+        <textXOff2>716</textXOff2>
+        <textXOff3>42</textXOff3>
+        <IconXOff>2783</IconXOff>
+        <!-- group headers -->
+        <textcolor3>ff148489</textcolor3>
+        <!-- unwatched movies -->
+        <textcolor>ffffffff</textcolor>
+        <!-- watched movies -->
+        <playedColor>ff444444</playedColor>
+        <!-- offline movies -->
+        <remoteColor>ff880000</remoteColor>
+      </control>
+    </control>
+  </controls>
+</window>

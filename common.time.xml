@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+  
+    <control>
+      <id>0</id>
+      <description>Maya logo</description>
+      <type>image</type>
+      <visible>[window.isvisible(35) + string.contains(#maya.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#maya.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#maya.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#maya.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
+      <posX>55</posX>
+      <posY>31</posY>
+      <width>81</width>
+      <height>60</height>	  
+      <texture>maya_logo.png</texture>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>clock seperator</description>
+      <type>image</type>
+      <visible>[window.isvisible(35) + string.contains(#maya.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#maya.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#maya.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#maya.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
+      <posX>163</posX>
+      <posY>33</posY>
+      <texture>top_separator.png</texture>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <type>label</type>
+      <visible>[window.isvisible(35) + string.contains(#maya.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#maya.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#maya.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#maya.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
+      <posX>186</posX>
+      <posY>28</posY>
+      <width>780</width>
+      <height>50</height>
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <label>#time</label>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>Sleep Counter</description>
+      <type>label</type>
+      <visible>!string.equals(#SleepControl.Text,)+plugin.isenabled(Sleep Control)</visible>
+      <posX>118</posX>
+      <posY>2</posY>
+      <width>281</width>
+      <font>font10</font>
+      <textcolor>ff009900</textcolor>
+      <align>LEFT</align>
+      <label>#SleepControl.Counter</label>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>Sleep Control setting type</description>
+      <type>image</type>
+      <visible>!string.equals(#SleepControl.Image,)+plugin.isenabled(Sleep Control)</visible>
+      <posX>56</posX>
+      <posY>0</posY>
+      <texture>sleeptimer_notify.png</texture>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+	
+  </controls>
+</window>

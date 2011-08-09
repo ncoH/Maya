@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>706</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:6011</define>
+  <define>#header.background:hover_settings.png</define>
+  <controls>
+    <import>common.window.settings.xml</import>
+    <import>common.time.xml</import>
+    <control>
+      <description>listcontrol background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>736</posX>
+      <posY>215</posY>
+      <width>1019</width>
+      <height>677</height>
+      <texture>listcontrol_bg.png</texture>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <description>listcontrol background info</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>736</posX>
+      <posY>953</posY>
+      <width>1019</width>
+      <height>71</height>
+      <texture>listcontrol_bg_info.png</texture>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Grab EPG from DVB transmission for the following channels</description>
+      <type>label</type>
+      <posX>736</posX>
+      <posY>243</posY>
+      <label>6012</label>
+    </control>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <posX>184</posX>
+      <posY>246</posY>
+      <layout>StackLayout</layout>
+      <control>
+        <id>2</id>
+        <description>Select all</description>
+        <type>button</type>
+        <onright>10</onright>
+        <onup>0</onup>
+        <ondown>3</ondown>
+        <label>188</label>
+      </control>
+      <control>
+        <id>3</id>
+        <description>Select None</description>
+        <type>button</type>
+        <onright>10</onright>
+        <onup>2</onup>
+        <ondown>99</ondown>
+        <label>1448</label>
+      </control>
+    </control>
+    <control>
+      <id>10</id>
+      <description>channel listcontrol</description>
+      <type>checklistcontrol</type>
+      <posX>736</posX>
+      <posY>281</posY>
+      <width>1019</width>
+      <height>703</height>
+      <onleft>2</onleft>
+      <onright>10</onright>
+      <onup>10</onup>
+      <ondown>10</ondown>
+      <MarkOffsetX>19</MarkOffsetX>
+      <MarkOffsetY>14</MarkOffsetY>
+      <textXOff>49</textXOff>
+      <textYOff>7</textYOff>
+      <textXOff2>0</textXOff2>
+      <textYOff2>7</textYOff2>
+      <IconXOff>19</IconXOff>
+      <IconYOff>14</IconYOff>
+      <spinPosX>1561</spinPosX>
+      <spinPosY>930</spinPosY>
+      <spinPosX>1616</spinPosX>
+      <spinPosY>970</spinPosY>
+      <spinAlign>right</spinAlign>
+      <spaceBetweenItems>0</spaceBetweenItems>
+      <keepaspectratio>no</keepaspectratio>
+    </control>
+  </controls>
+</window>

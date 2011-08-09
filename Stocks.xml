@@ -1,0 +1,3194 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>7973</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:Stocks &amp; Indices</define>
+  <define>#header.background:hover_stocks.png</define>
+  <controls>
+    <import>common.window.background.xml</import>
+    <import>common.time.xml</import>
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>775</posX>
+      <posY>42</posY>
+      <width>702</width>
+      <height>92</height>
+      <font>Segoe Light40</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <label>#header.label</label>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <id>1</id>
+      <description>listcontrol background</description>
+      <type>image</type>
+      <posX>736</posX>
+      <posY>215</posY>
+      <width>1019</width>
+      <height>790</height>
+      <texture>listcontrol_bg.png</texture>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Type</description>
+      <type>fadelabel</type>
+      <posX>778</posX>
+      <posY>171</posY>
+      <width>843</width>
+      <font>Segoe Light22</font>
+      <label>#Stocks.Type</label>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+      <valign>middle</valign>
+    </control>
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <defaultcontrol>2</defaultcontrol>
+      <onexit>50</onexit>
+      <buttonX>0</buttonX>
+      <buttonY>0</buttonY>
+      <buttonwidth>0</buttonwidth>
+      <buttonheight>0</buttonheight>
+      <width>1920</width>
+      <height>1080</height>
+      <dimColor>00ffffff</dimColor>
+      <animation effect="Fade" time="100">WindowClose</animation>
+      <control>
+        <type>image</type>
+        <id>0</id>
+        <width>1920</width>
+        <height>1080</height>
+        <texture>semi_trans_back_general_menu.png</texture>
+        <colordiffuse>90ffffff</colordiffuse>
+        <animation effect="fade" time="200">windowopen</animation>
+        <animation effect="fade" time="400">windowclose</animation>
+      </control>
+      <control>
+        <type>group</type>
+        <animation effect="fade" time="250">Visible</animation>
+        <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+        <animation effect="fade" time="200" reversible="false">Hidden</animation>
+        <animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
+        <control>
+          <id>1</id>
+          <type>image</type>
+          <posX>719</posX>
+          <posY>90</posY>
+          <width>480</width>
+          <height>900</height>
+          <texture>menu_bg.png</texture>
+          <visible>!Control.HasFocus(50)</visible>
+        </control>
+        <control>
+          <description>Heading text label</description>
+          <type>label</type>
+          <id>1</id>
+          <posX>796</posX>
+          <posY>154</posY>
+          <label>924</label>
+          <font>Segoe Light18</font>
+          <textcolor>85cffe</textcolor>
+        </control>
+        <control>
+          <description>button group</description>
+          <type>group</type>
+          <posX>763</posX>
+          <posY>246</posY>
+          <layout>StackLayout(0, Vertical, true)</layout>
+          <control>
+            <id>2</id>
+            <description>Switch</description>
+            <type>button</type>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>17</onup>
+            <ondown>3</ondown>
+            <width>392</width>
+            <height>68</height>
+            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+            <label>Switch</label>
+            <textXOff>35</textXOff>
+            <textYOff>16</textYOff>
+          </control>
+          <control>
+            <id>3</id>
+            <description>Portfolio Password</description>
+            <type>button</type>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>2</onup>
+            <ondown>4</ondown>
+            <width>392</width>
+            <height>68</height>
+            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+            <label>Portfolio Password</label>
+            <textXOff>35</textXOff>
+            <textYOff>16</textYOff>
+          </control>
+          <control>
+            <id>4</id>
+            <description>Refresh</description>
+            <type>button</type>
+            <onleft>50</onleft>
+            <onright>50</onright>
+            <onup>3</onup>
+            <ondown>2</ondown>
+            <width>392</width>
+            <height>68</height>
+            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+            <label>Refresh</label>
+            <textXOff>35</textXOff>
+            <textYOff>16</textYOff>
+          </control>
+        </control>
+      </control>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopIndex Indicator 0</description>
+      <type>image</type>
+      <posX>704</posX>
+      <posY>246</posY>
+      <width>44</width>
+      <height>45</height>
+      <texture>Stocks/#Stocks.TopIndex0Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopIndex Name 0</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>217</posY>
+      <width>323</width>
+      <height>23</height>
+      <font>font11</font>
+      <align>LEFT</align>
+      <label>#Stocks.TopIndex0Name</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopIndex Last 0</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>239</posY>
+      <width>323</width>
+      <height>53</height>
+      <font>font24</font>
+      <textcolor>b0ffffff</textcolor>
+      <align>LEFT</align>
+      <label>#Stocks.TopIndex0Last</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopIndex Indicator 1</description>
+      <type>image</type>
+      <posX>1061</posX>
+      <posY>246</posY>
+      <width>44</width>
+      <height>45</height>
+      <texture>Stocks/#Stocks.TopIndex1Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopIndex Name 1</description>
+      <type>fadelabel</type>
+      <posX>1116</posX>
+      <posY>217</posY>
+      <width>323</width>
+      <height>23</height>
+      <font>font11</font>
+      <align>LEFT</align>
+      <label>#Stocks.TopIndex1Name</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopIndex Last 1</description>
+      <type>fadelabel</type>
+      <posX>1116</posX>
+      <posY>239</posY>
+      <width>323</width>
+      <height>53</height>
+      <font>font24</font>
+      <textcolor>b0ffffff</textcolor>
+      <align>LEFT</align>
+      <label>#Stocks.TopIndex1Last</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopIndex Indicator 2</description>
+      <type>image</type>
+      <posX>1419</posX>
+      <posY>246</posY>
+      <width>44</width>
+      <height>45</height>
+      <texture>Stocks/#Stocks.TopIndex2Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopIndex Name 2</description>
+      <type>fadelabel</type>
+      <posX>1474</posX>
+      <posY>217</posY>
+      <width>323</width>
+      <height>23</height>
+      <font>font11</font>
+      <align>LEFT</align>
+      <label>#Stocks.TopIndex2Name</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopIndex Last 2</description>
+      <type>fadelabel</type>
+      <posX>1474</posX>
+      <posY>239</posY>
+      <width>323</width>
+      <height>53</height>
+      <font>font24</font>
+      <textcolor>b0ffffff</textcolor>
+      <align>LEFT</align>
+      <label>#Stocks.TopIndex2Last</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 0</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>316</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index0Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>100</id>
+      <description>Index Value 0</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>313</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index0Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 0</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>345</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index0Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 1</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>386</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index1Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>101</id>
+      <description>Index Value 1</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>383</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index1Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 1</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>416</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index1Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 2</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>457</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index2Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>102</id>
+      <description>Index Value 2</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>454</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index2Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 2</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>486</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index2Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 3</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>527</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index3Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>103</id>
+      <description>Index Value 3</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>524</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index3Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 3</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>556</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index3Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 4</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>597</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index4Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>104</id>
+      <description>Index Value 4</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>594</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index4Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 4</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>627</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index4Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 5</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>667</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index5Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>105</id>
+      <description>Index Value 5</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>665</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index5Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 5</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>697</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index5Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 6</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>738</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index6Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>106</id>
+      <description>Index Value 6</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>735</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index6Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 6</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>767</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index6Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 7</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>808</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index7Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>107</id>
+      <description>Index Value 7</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>805</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index7Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 7</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>838</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index7Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 8</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>878</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index8Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>108</id>
+      <description>Index Value 8</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>876</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index8Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 8</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>908</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index8Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 9</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>949</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index9Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>109</id>
+      <description>Index Value 9</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>946</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index9Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 9</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>978</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index9Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 10</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>316</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index10Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>110</id>
+      <description>Index Value 10</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>313</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index10Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 10</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>345</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index10Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 11</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>386</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index11Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>111</id>
+      <description>Index Value 11</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>383</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index11Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 11</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>416</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index11Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 12</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>457</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index12Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>112</id>
+      <description>Index Value 12</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>454</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index12Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 12</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>486</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index12Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 13</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>527</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index13Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>113</id>
+      <description>Index Value 13</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>524</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index13Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 13</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>556</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index13Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 14</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>597</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index14Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>114</id>
+      <description>Index Value 4</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>594</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index14Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 14</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>627</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index14Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 15</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>667</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index15Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>115</id>
+      <description>Index Value 15</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>665</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index15Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 15</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>697</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index15Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 16</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>738</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index16Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>116</id>
+      <description>Index Value 16</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>735</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index16Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 16</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>767</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index16Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 17</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>808</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index17Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>117</id>
+      <description>Index Value 17</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>805</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index17Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 17</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>838</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index17Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 18</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>878</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index18Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>118</id>
+      <description>Index Value 18</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>876</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index18Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 18</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>908</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index18Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Index Indicator 19</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>949</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Index19Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>119</id>
+      <description>Index Value 19</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>946</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Index19Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Index Value 19</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>978</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Index19Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopStock Indicator 0</description>
+      <type>image</type>
+      <posX>704</posX>
+      <posY>246</posY>
+      <width>44</width>
+      <height>45</height>
+      <texture>Stocks/#Stocks.TopStock0Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopStock Name 0</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>217</posY>
+      <width>323</width>
+      <height>23</height>
+      <font>font11</font>
+      <align>LEFT</align>
+      <label>#Stocks.TopStock0Name</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopStock Last 0</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>239</posY>
+      <width>323</width>
+      <height>53</height>
+      <font>font24</font>
+      <textcolor>b0ffffff</textcolor>
+      <align>LEFT</align>
+      <label>#Stocks.TopStock0Last</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopStock Indicator 1</description>
+      <type>image</type>
+      <posX>1061</posX>
+      <posY>246</posY>
+      <width>44</width>
+      <height>45</height>
+      <texture>Stocks/#Stocks.TopStock1Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopStock Name 1</description>
+      <type>fadelabel</type>
+      <posX>1116</posX>
+      <posY>217</posY>
+      <width>323</width>
+      <height>23</height>
+      <font>font11</font>
+      <align>LEFT</align>
+      <label>#Stocks.TopStock1Name</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopStock Last 1</description>
+      <type>fadelabel</type>
+      <posX>1116</posX>
+      <posY>239</posY>
+      <width>323</width>
+      <height>53</height>
+      <font>font24</font>
+      <textcolor>b0ffffff</textcolor>
+      <align>LEFT</align>
+      <label>#Stocks.TopStock1Last</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopStock Indicator 2</description>
+      <type>image</type>
+      <posX>1419</posX>
+      <posY>246</posY>
+      <width>44</width>
+      <height>45</height>
+      <texture>Stocks/#Stocks.TopStock2Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopStock Name 2</description>
+      <type>fadelabel</type>
+      <posX>1474</posX>
+      <posY>217</posY>
+      <width>323</width>
+      <height>23</height>
+      <font>font11</font>
+      <align>LEFT</align>
+      <label>#Stocks.TopStock2Name</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopStock Last 2</description>
+      <type>fadelabel</type>
+      <posX>1474</posX>
+      <posY>239</posY>
+      <width>323</width>
+      <height>53</height>
+      <font>font24</font>
+      <textcolor>b0ffffff</textcolor>
+      <align>LEFT</align>
+      <label>#Stocks.TopStock2Last</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 0</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>316</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock0Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>200</id>
+      <description>Stock Value 0</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>313</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock0Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 0</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>345</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock0Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 1</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>386</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock1Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>201</id>
+      <description>Stock Value 1</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>383</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock1Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 1</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>416</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock1Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 2</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>457</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock2Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>202</id>
+      <description>Stock Value 2</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>454</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock2Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 2</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>486</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock2Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 3</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>527</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock3Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>203</id>
+      <description>Stock Value 3</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>524</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock3Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 3</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>556</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock3Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 4</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>597</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock4Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>204</id>
+      <description>Stock Value 4</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>594</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock4Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 4</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>627</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock4Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 5</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>667</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock5Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>205</id>
+      <description>Stock Value 5</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>665</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock5Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 5</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>697</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock5Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 6</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>738</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock6Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>206</id>
+      <description>Stock Value 6</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>735</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock6Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 6</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>767</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock6Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 7</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>808</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock7Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>207</id>
+      <description>Stock Value 7</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>805</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock7Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 7</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>838</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock7Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 8</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>878</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock8Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 8</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>908</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock8Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>208</id>
+      <description>Stock Value 8</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>876</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock8Name</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 9</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>949</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock9Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>209</id>
+      <description>Stock Value 9</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>946</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock9Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 9</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>978</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock9Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 10</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>316</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock10Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>210</id>
+      <description>Stock Value 10</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>313</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock10Name</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 11</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>386</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock11Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 10</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>345</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock10Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>211</id>
+      <description>Stock Value 11</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>383</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock11Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 11</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>416</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock11Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 12</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>457</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock12Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>212</id>
+      <description>Stock Value 12</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>454</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock12Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 12</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>486</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock12Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 13</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>527</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock13Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>213</id>
+      <description>Stock Value 13</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>524</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock13Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 13</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>556</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock13Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 14</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>597</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock14Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>214</id>
+      <description>Stock Value 4</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>594</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock14Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 14</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>627</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock14Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 15</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>667</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock15Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>215</id>
+      <description>Stock Value 15</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>665</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock15Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 15</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>697</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock15Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 16</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>738</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock16Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>216</id>
+      <description>Stock Value 16</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>735</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock16Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 16</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>767</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock16Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 17</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>808</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock17Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>217</id>
+      <description>Stock Value 17</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>805</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock17Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 17</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>838</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock17Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 18</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>878</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock18Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>218</id>
+      <description>Stock Value 18</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>876</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock18Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 18</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>908</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock18Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Stock Indicator 19</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>949</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Stock19Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>219</id>
+      <description>Stock Value 19</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>946</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Stock19Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Stock Value 19</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>978</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Stock19Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopPortfolio Indicator 0</description>
+      <type>image</type>
+      <posX>704</posX>
+      <posY>246</posY>
+      <width>44</width>
+      <height>45</height>
+      <texture>Stocks/#Stocks.TopPortfolio0Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopPortfolio Name 0</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>217</posY>
+      <width>323</width>
+      <height>23</height>
+      <font>font11</font>
+      <align>LEFT</align>
+      <label>#Stocks.TopPortfolio0Name</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopPortfolio Last 0</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>239</posY>
+      <width>323</width>
+      <height>53</height>
+      <font>font24</font>
+      <textcolor>b0ffffff</textcolor>
+      <align>LEFT</align>
+      <label>#Stocks.TopPortfolio0Last</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopPortfolio Indicator 1</description>
+      <type>image</type>
+      <posX>1061</posX>
+      <posY>246</posY>
+      <width>44</width>
+      <height>45</height>
+      <texture>Stocks/#Stocks.TopPortfolio1Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopPortfolio Name 1</description>
+      <type>fadelabel</type>
+      <posX>1116</posX>
+      <posY>217</posY>
+      <width>323</width>
+      <height>23</height>
+      <font>font11</font>
+      <align>LEFT</align>
+      <label>#Stocks.TopPortfolio1Name</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopPortfolio Last 1</description>
+      <type>fadelabel</type>
+      <posX>1116</posX>
+      <posY>239</posY>
+      <width>323</width>
+      <height>53</height>
+      <font>font24</font>
+      <textcolor>b0ffffff</textcolor>
+      <align>LEFT</align>
+      <label>#Stocks.TopPortfolio1Last</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopPortfolio Indicator 2</description>
+      <type>image</type>
+      <posX>1419</posX>
+      <posY>246</posY>
+      <width>44</width>
+      <height>45</height>
+      <texture>Stocks/#Stocks.TopPortfolio2Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopPortfolio Name 2</description>
+      <type>fadelabel</type>
+      <posX>1474</posX>
+      <posY>217</posY>
+      <width>323</width>
+      <height>23</height>
+      <font>font11</font>
+      <align>LEFT</align>
+      <label>#Stocks.TopPortfolio2Name</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>TopPortfolio Last 2</description>
+      <type>fadelabel</type>
+      <posX>1474</posX>
+      <posY>239</posY>
+      <width>323</width>
+      <height>53</height>
+      <font>font24</font>
+      <textcolor>b0ffffff</textcolor>
+      <align>LEFT</align>
+      <label>#Stocks.TopPortfolio2Last</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 0</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>316</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio0Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>300</id>
+      <description>Portfolio Value 0</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>313</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio0Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 0</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>345</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio0Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 1</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>386</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio1Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>301</id>
+      <description>Portfolio Value 1</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>383</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio1Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 1</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>416</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio1Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 2</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>457</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio2Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>302</id>
+      <description>Portfolio Value 2</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>454</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio2Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 2</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>486</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio2Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 3</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>527</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio3Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>303</id>
+      <description>Portfolio Value 3</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>524</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio3Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 3</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>556</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio3Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 4</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>597</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio4Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>304</id>
+      <description>Portfolio Value 4</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>594</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio4Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 4</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>627</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio4Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 5</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>667</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio5Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>305</id>
+      <description>Portfolio Value 5</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>665</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio5Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 5</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>697</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio5Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 6</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>738</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio6Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>306</id>
+      <description>Portfolio Value 6</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>735</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio6Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 6</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>767</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio6Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 7</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>808</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio7Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>307</id>
+      <description>Portfolio Value 7</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>805</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio7Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 7</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>838</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio7Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 8</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>878</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio8Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>308</id>
+      <description>Portfolio Value 8</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>876</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio8Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 8</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>908</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio8Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 9</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>949</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio9Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>309</id>
+      <description>Portfolio Value 9</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>946</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio9Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 9</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>978</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio9Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 10</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>316</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio10Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>310</id>
+      <description>Portfolio Value 10</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>313</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio10Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 10</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>345</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio10Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 11</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>386</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio11Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>311</id>
+      <description>Portfolio Value 11</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>383</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio11Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 11</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>416</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio11Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 12</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>457</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio12Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>312</id>
+      <description>Portfolio Value 12</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>454</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio12Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 12</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>486</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio12Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 13</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>527</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio13Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>313</id>
+      <description>Portfolio Value 13</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>524</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio13Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 13</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>556</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio13Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 14</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>597</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio14Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>314</id>
+      <description>Portfolio Value 4</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>594</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio14Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 14</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>627</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio14Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 15</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>667</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio15Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>315</id>
+      <description>Portfolio Value 15</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>665</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio15Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 15</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>697</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio15Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 16</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>738</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio16Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>316</id>
+      <description>Portfolio Value 16</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>735</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio16Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 16</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>767</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio16Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 17</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>808</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio17Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>317</id>
+      <description>Portfolio Value 17</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>805</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio17Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 17</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>838</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio17Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 18</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>878</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio18Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>318</id>
+      <description>Portfolio Value 18</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>876</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio18Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 18</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>908</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio18Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Portfolio Indicator 19</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>949</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Portfolio19Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>319</id>
+      <description>Portfolio Value 19</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>946</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Portfolio19Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Portfolio Value 19</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>978</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Portfolio19Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>500</id>
+      <description>Portfolio Summary</description>
+      <type>label</type>
+      <posX>78</posX>
+      <posY>260</posY>
+      <width>562</width>
+      <font>font13</font>
+      <label>#Stocks.PortfolioSummary</label>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 0</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>316</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency0Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>400</id>
+      <description>Currency Value 0</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>313</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency0Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 0</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>345</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency0Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 1</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>386</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency1Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>401</id>
+      <description>Currency Value 1</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>383</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency1Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 1</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>416</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency1Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 2</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>457</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency2Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>402</id>
+      <description>Currency Value 2</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>454</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency2Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 2</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>486</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency2Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 3</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>527</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency3Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>403</id>
+      <description>Currency Value 3</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>524</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency3Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 3</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>556</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency3Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 4</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>597</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency4Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>404</id>
+      <description>Currency Value 4</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>594</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency4Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 4</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>627</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency4Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 5</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>667</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency5Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>405</id>
+      <description>Currency Value 5</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>665</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency5Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 5</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>697</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency5Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 6</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>738</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency6Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>406</id>
+      <description>Currency Value 6</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>735</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency6Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 6</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>767</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency6Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 7</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>808</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency7Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>407</id>
+      <description>Currency Value 7</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>805</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency7Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 7</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>838</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency7Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 8</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>878</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency8Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>408</id>
+      <description>Currency Value 8</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>876</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency8Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 8</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>908</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency8Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 9</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>949</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency9Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>409</id>
+      <description>Currency Value 9</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>946</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency9Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 9</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>978</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency9Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 10</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>316</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency10Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>410</id>
+      <description>Currency Value 10</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>313</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency10Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 10</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>345</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency10Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 11</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>386</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency11Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>411</id>
+      <description>Currency Value 11</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>383</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency11Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 11</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>416</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency11Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 12</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>457</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency12Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>412</id>
+      <description>Currency Value 12</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>454</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency12Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 12</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>486</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency12Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 13</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>527</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency13Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>413</id>
+      <description>Currency Value 13</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>524</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency13Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 13</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>556</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency13Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 14</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>597</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency14Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>414</id>
+      <description>Currency Value 4</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>594</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency14Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 14</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>627</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency14Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 15</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>667</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency15Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>415</id>
+      <description>Currency Value 15</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>665</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency15Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 15</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>697</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency15Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 16</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>738</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency16Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>416</id>
+      <description>Currency Value 16</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>735</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency16Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 16</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>767</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency16Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 17</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>808</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency17Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>417</id>
+      <description>Currency Value 17</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>805</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency17Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 17</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>838</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency17Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 18</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>878</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency18Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>418</id>
+      <description>Currency Value 18</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>876</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency18Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 18</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>908</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency18Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Currency Indicator 19</description>
+      <type>image</type>
+      <posX>714</posX>
+      <posY>949</posY>
+      <width>23</width>
+      <height>23</height>
+      <texture>Stocks/#Stocks.Currency19Indicator</texture>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>419</id>
+      <description>Currency Value 19</description>
+      <type>label</type>
+      <posX>759</posX>
+      <posY>946</posY>
+      <width>1026</width>
+      <font>font12</font>
+      <label>#Stocks.Currency19Name</label>
+    </control>
+    <control>
+      <id>0</id>
+      <description>Currency Value 19</description>
+      <type>fadelabel</type>
+      <posX>759</posX>
+      <posY>978</posY>
+      <width>1026</width>
+      <font>font11</font>
+      <textcolor>b0ffffff</textcolor>
+      <label>#Stocks.Currency19Summary</label>
+      <wrapString> : : : </wrapString>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Logo</description>
+      <type>image</type>
+      <posX>78</posX>
+      <posY>196</posY>
+      <width>56</width>
+      <height>56</height>
+      <texture>stocks.png</texture>
+      <animation effect="Fade" time="250">WindowOpen</animation>
+      <animation effect="Fade" time="250">WindowClose</animation>
+      <keepaspectratio>yes</keepaspectratio>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Provider Info</description>
+      <type>label</type>
+      <visible>control.hasfocus(50)</visible>
+      <posX>78</posX>
+      <posY>295</posY>
+      <font>font13</font>
+      <label>Provided by Yahoo! Finance</label>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <id>1</id>
+      <description>Provider Info</description>
+      <type>label</type>
+      <visible>control.hasfocus(50)</visible>
+      <posX>78</posX>
+      <posY>323</posY>
+      <font>font13</font>
+      <label>Quotes are delayed</label>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <id>50</id>
+      <description>DUMMY BUTTON</description>
+      <type>button</type>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <posX>674</posX>
+      <posY>0</posY>
+      <width>1124</width>
+      <height>1012</height>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <label />
+    </control>
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <visible>Control.HasFocus(50)</visible>
+      <posX>0</posX>
+      <posY>457</posY>
+      <texture>hiddenmenu_tab.png</texture>
+      <animation delay="600" effect="Slide" end="0,0" start="-60,0" time="400" tween="Quadratic">WindowOpen</animation>
+      <animation delay="100" effect="Slide" end="-60,0" start="0,0" time="400" tween="Quadratic">WindowClose</animation>
+    </control>
+    <import>common.overlay.xml</import>
+  </controls>
+</window>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>7676</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:My Daily Comics</define>
+  <define>#header.background:hover_my daily comics.png</define>
+  <controls>
+    <import>common.window.background.xml</import>
+    <import>common.time.xml</import>
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>775</posX>
+      <posY>42</posY>
+      <width>702</width>
+      <height>92</height>
+      <font>Segoe Light40</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <label>#header.label</label>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <posX>775</posX>
+      <posY>42</posY>
+      <width>702</width>
+      <height>92</height>
+      <font>Segoe Light40</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <label>#header.label</label>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <description>button group</description>
+      <type>group</type>
+      <posX>99</posX>
+      <posY>170</posY>
+      <layout>StackLayout</layout>
+      <animation effect="Fade" time="250">WindowOpen</animation>
+      <animation effect="Fade" time="250">WindowClose</animation>
+      <control>
+        <id>2</id>
+        <description>Comic button</description>
+        <type>selectbutton</type>
+        <onup>1</onup>
+        <ondown>3</ondown>
+        <label>Comic</label>
+        <textalign>RIGHT</textalign>
+      </control>
+      <control>
+        <id>3</id>
+        <description>Date button</description>
+        <type>selectbutton</type>
+        <onup>2</onup>
+        <ondown>1</ondown>
+        <label>Date</label>
+        <textalign>RIGHT</textalign>
+      </control>
+    </control>
+    <control>
+      <id>100</id>
+      <description>Comic Image</description>
+      <type>image</type>
+      <posX>14</posX>
+      <posY>327</posY>
+      <width>1891</width>
+      <height>703</height>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+      <centered>true</centered>
+    </control>
+    <control>
+      <id>102</id>
+      <description>Language Flag</description>
+      <type>image</type>
+      <posX>1799</posX>
+      <posY>126</posY>
+      <width>67</width>
+      <height>67</height>
+      <centered>no</centered>
+      <texture>
+      </texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <id>101</id>
+      <description>Comic Banner</description>
+      <type>image</type>
+      <posX>1560</posX>
+      <posY>49</posY>
+      <width>309</width>
+      <height>63</height>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+      <centered>true</centered>
+    </control>
+    <control>
+      <description>Dummy button for hidden menu</description>
+      <type>button</type>
+      <id>50</id>
+      <posX>562</posX>
+      <posY>0</posY>
+      <width>1124</width>
+      <height>1012</height>
+      <label />
+      <onright>2</onright>
+      <onleft>2</onleft>
+      <ondown>50</ondown>
+      <onup>50</onup>
+      <textureFocus>-</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+    </control>
+    <import>common.overlay.xml</import>
+  </controls>
+</window>

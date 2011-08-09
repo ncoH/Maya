@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <controls>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="1000">WindowClose</animation>
+      <control>
+        <description>composite control consisting of a list control and a thumbnail panel</description>
+        <type>facadeview</type>
+        <id>50</id>
+        <control>
+          <description>listcontrol</description>
+          <type>listcontrol</type>
+          <id>50</id>
+          <posX>736</posX>
+          <posY>262</posY>
+          <height>644</height>
+          <spinPosX>787</spinPosX>
+          <spinPosY>967</spinPosY>
+          <spinAlign>left</spinAlign>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <scrollOffset>1</scrollOffset>
+          <textXOff>30</textXOff>
+          <spinCanFocus>no</spinCanFocus>
+        </control>
+        <control>
+          <description>Thumbnail Panel</description>
+          <type>thumbnailpanel</type>
+          <posX>365</posX>
+          <width>618</width>
+          <id>50</id>
+          <scrollOffset>0</scrollOffset>
+          <onleft>2</onleft>
+          <onright>2</onright>
+        </control>
+      </control>
+    </control>
+  </controls>
+</window>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>90478</id>
+  <defaultcontrol>20</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#MyLyrics.BlacklistedControlIDs:5106,5107,5108,5109</define>
+  <define>#MyLyrics.EnableMouseControl:yes</define>
+  <define>#usePlayFanart:Yes</define>
+  <define>#header.background:hover_my lyrics.png</define>
+  <controls>
+    <import>MyMusicPlayingNow.xml</import>
+    <import>common.window.lyrics.xml</import>
+    <import>common.time.white.xml</import>
+  </controls>
+</window>

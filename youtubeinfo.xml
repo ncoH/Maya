@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>29052</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:4540</define>
+  <define>#useSelectedFanart:Yes</define>
+  <define>#header.background:hover_youtubefm.png</define>
+  <controls>
+    <import>common.window.youtube.xml</import>
+    <control>
+      <description>Fan Art</description>
+      <type>image</type>
+      <id>95</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#Youtube.fm.NowPlaying.Video.FanArt</texture>
+    </control>
+    <control>
+      <description>Fanart Overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>basichome_fanart_overlay.png</texture>
+    </control>
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <posX>608</posX>
+      <posY>42</posY>
+      <width>702</width>
+      <height>92</height>
+      <font>Segoe Light40</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <align>CENTER</align>
+      <label>#header.label</label>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+    <import>common.time.xml</import>
+    <control>
+      <description>Meta Label</description>
+      <type>fadelabel</type>
+      <id>47</id>
+      <posX>0</posX>
+      <posY>185</posY>
+      <width>1920</width>
+      <font>Segoe Light22</font>
+      <align>center</align>
+      <label>#Youtube.fm.NowPlaying.Artist.Name - #Youtube.fm.NowPlaying.Video.Title</label>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+      <valign>middle</valign>
+    </control>
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Year below the movie title</description>
+      <type>label</type>
+      <label>Loved by #Youtube.fm.Curent.Video.FavoriteCount Users - Viewed by #Youtube.fm.Curent.Video.ViewCount Users</label>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>236</posY>
+      <width>1920</width>
+      <align>center</align>
+      <font>font13</font>
+      <textcolor>6aa5cb</textcolor>
+    </control>
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <type>imagelist</type>
+      <id>1</id>
+      <posX>1086</posX>
+      <posY>258</posY>
+      <width>260</width>
+      <height>29</height>
+      <textureWidth>32</textureWidth>
+      <textureHeight>26</textureHeight>
+      <subitems>
+        <subitem>starblue.png</subitem>
+        <subitem>starwhite.png</subitem>
+      </subitems>
+      <orientation>horizontal</orientation>
+      <align>center</align>
+      <imagesToDraw>10</imagesToDraw>
+      <percentage>#Youtube.fm.Curent.Video.Rating</percentage>
+    </control>
+    <control>
+      <description>TV background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>632</posX>
+      <posY>253</posY>
+      <width>639</width>
+      <height>414</height>
+      <texture>blackborders_recordings.png</texture>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>video window</description>
+      <type>videowindow</type>
+      <id>99</id>
+      <posX>695</posX>
+      <posY>319</posY>
+      <width>513</width>
+      <height>284</height>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <action>18</action>
+      <textureFocus>tv_green_border.png</textureFocus>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>similar videos</description>
+      <type>thumbnailpanel</type>
+      <dimColor>90ffffff</dimColor>
+      <id>50</id>
+      <posX>63</posX>
+      <posY>871</posY>
+      <width>1827</width>
+      <height>210</height>
+      <scrollOffset>1</scrollOffset>
+      <onleft>133</onleft>
+      <onright>133</onright>
+      <scrollOffset>1</scrollOffset>
+      <itemWidth>210</itemWidth>
+      <itemHeight>154</itemHeight>
+      <textureWidth>210</textureWidth>
+      <textureHeight>154</textureHeight>
+      <thumbWidth>210</thumbWidth>
+      <thumbHeight>154</thumbHeight>
+      <thumbPosX>0</thumbPosX>
+      <thumbPosY>0</thumbPosY>
+      <itemWidthBig>313</itemWidthBig>
+      <itemHeightBig>217</itemHeightBig>
+      <thumbWidthBig>313</thumbWidthBig>
+      <thumbHeightBig>217</thumbHeightBig>
+      <textureWidthBig>313</textureWidthBig>
+      <textureHeightBig>217</textureHeightBig>
+      <thumbPosXBig>0</thumbPosXBig>
+      <thumbPosYBig>0</thumbPosYBig>
+      <zoomXPixels>0</zoomXPixels>
+      <zoomYPixels>0</zoomYPixels>
+      <thumbZoom>no</thumbZoom>
+      <hideUnfocusTexture>no</hideUnfocusTexture>
+      <renderFocusText>no</renderFocusText>
+      <renderUnfocusText>no</renderUnfocusText>
+      <spinCanFocus>no</spinCanFocus>
+      <frame>-</frame>
+      <frameNoFocus>pictures_thumb_nofocus.png</frameNoFocus>
+      <frameFocus>pictures_thumb_focus.png</frameFocus>
+      <textureMask>pictures_thumb_mask.png</textureMask>
+      <keepaspectratio>no</keepaspectratio>
+      <shadowAngle>90</shadowAngle>
+      <shadowDistance>50</shadowDistance>
+      <thumbZoom>no</thumbZoom>
+      <textureUp>page_up_nofocus.png</textureUp>
+      <textureDown>page_down_nofocus.png</textureDown>
+      <textureUpFocus>page_up_focus.png</textureUpFocus>
+      <textureDownFocus>page_down_focus.png</textureDownFocus>
+      <spinWidth>33</spinWidth>
+      <spinHeight>33</spinHeight>
+      <spinPosX>-2000</spinPosX>
+      <spinPosY>1012</spinPosY>
+      <spinAlign>Right</spinAlign>
+    </control>
+  </controls>
+</window>
