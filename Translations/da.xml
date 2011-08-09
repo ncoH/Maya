@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin translation file -->
+<!-- Danish (DA) -->
+<!-- Last Updated: 17th april 2011 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+
+<strings>
+	<!-- # -->
+
+	<!-- A -->
+
+	<!-- B -->
+
+	<!-- C -->
+	<string Field="check.subtitles">Find undertekster</string>
+
+	<!-- D -->
+
+	<!-- E -->
+
+	<!-- F -->
+	<string Field="fanart.scraping">Henter FanArt</string>
+	<string Field="format">Format:</string>
+	<string Field="find.trailer">Trailer</string>
+	
+	<!-- G -->
+	<string Field="global.search.musicsearch">musik søgning</string>
+	<string Field="global.search.lastplayed">Sidst spillet</string>
+	<string Field="global.search.filename">Filenavn</string>
+	<string Field="global.search.playcount">Spillet</string>
+	<string Field="global.search.Searchphrase">Søgeord</string>
+	<string Field="global.search.Searchhistory">Historik</string>
+	<string Field="global.search.Searchfields">Søgefelt</string>
+	<string Field="global.search.Casesensitive">Case sensitive</string>
+	<string Field="global.search.Searchtype">Søgetype</string>
+	<string Field="global.search.rating">Rating</string>	
+	<string Field="global.search.header">Search Details</string>	
+	<string Field="grooveshark.Searchterm">Søgeord</string>
+	<string Field="grooveshark.Search">Søg</string>
+
+	<!-- H -->
+
+	<!-- I -->
+
+	<!-- L -->
+	<string Field="lyrics">Sangtekst</string>
+	<string Field="lyrics.tag">Tag</string>
+	<string Field="Latest.movies">Seneste film</string>
+	<string Field="Latest.episodes">Seneste tvafsnit</string>
+	<string Field="Latest.recordings">Seneste optagelser</string>
+	<string Field="Latest.albums">Seneste album</string>
+	<string Field="Latest.pictures">Seneste billeder</string>
+	
+	<!-- M -->
+	<string Field="mylyrics">Sangtekst</string>
+	<string Field="music.songs">Sange:</string>
+
+	<!-- N -->
+
+	<!-- O -->
+
+	<!-- P -->
+	
+	<!-- R -->
+	<string Field="recentlyAdded.Season">Sæson</string>
+	<string Field="recentlyAdded.Episode">Afsnit</string>
+	<string Field="rockstar.search">Søg musik</string>
+	<string Field="rockstar.default.playlist">Default playlist</string>
+	<string Field="rockstar.popular.songs">Populære sange</string>
+	<string Field="rockstar.playlists">Playlister</string>
+	<string Field="rockstar.track">Track</string>	
+	
+	<!-- S -->
+	<string Field="SleepControl">Sleep-timer</string>
+	
+	<!-- T -->
+	
+	<!-- U -->
+
+	<!-- V -->
+	<string Field="video.settings">Videoindstillinger</string>
+
+	<!-- W -->
+	<string Field="weather.toggleday">Tryk OK for dagsudsigt</string>
+	
+	<!-- Y -->
+
+</strings>

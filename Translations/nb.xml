@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin translation file -->
+<!-- Norwegian (Bokmål) -->
+<!-- Last Updated: 14th Marts 2011 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+
+<strings>
+        <!-- # -->
+
+        <!-- A -->
+
+        <!-- B -->
+
+        <!-- C -->
+        <string Field="check.subtitles">Se etter undertekster</string>
+
+        <!-- D -->
+
+        <!-- E -->
+
+        <!-- F -->
+        <string Field="fanart.scraping">Henter FanArt</string>
+        <string Field="format">Format:</string>
+        
+        <!-- G -->
+        <string Field="global.search.musicsearch">Musikk søk</string>
+        <string Field="global.search.lastplayed">Sist spilt</string>
+        <string Field="global.search.filename">Filnavn</string>
+        <string Field="global.search.playcount">Spillet</string>
+        <string Field="global.search.Searchphrase">Søkeord</string>
+        <string Field="global.search.Searchhistory">Søke historikk</string>
+        <string Field="global.search.Searchfields">Søkefelt</string>
+        <string Field="global.search.Casesensitive">Case sensitive</string>
+        <string Field="global.search.Searchtype">Søketype</string>
+		<string Field="global.search.rating">Rating</string>	
+		<string Field="global.search.header">Search Details</string>		
+        <string Field="grooveshark.Searchterm">Søkeord</string>
+        <string Field="grooveshark.Search">Søk</string>
+		
+        <!-- H -->
+
+        <!-- I -->
+
+        <!-- L -->
+        <string Field="lyrics">Sangtekst</string>
+        <string Field="lyrics.tag">Tag</string>
+        <string Field="Latest.movies">Siste film</string>
+        <string Field="Latest.episodes">Siste epsidode</string>
+        <string Field="Latest.recordings">Siste opptak</string>
+        <string Field="Latest.albums">Siste album</string>
+        
+        <!-- M -->
+        <string Field="mylyrics">Sangtekst</string>
+        <string Field="music.songs">Sang:</string>
+        
+        <!-- N -->
+
+        <!-- O -->
+
+        <!-- P -->
+        
+        <!-- R -->
+        <string Field="recentlyAdded.Season">Sesong</string>
+        <string Field="recentlyAdded.Episode">Episode</string>
+
+        <!-- S -->
+        <string Field="SleepControl">SleepTimer</string>
+        
+        <!-- T -->
+
+        <!-- U -->
+
+        <!-- V -->
+        <string Field="video.settings">Video innstillinger</string>
+
+        <!-- W -->
+        <string Field="weather.toggleday">Press OK for å bla igjennom dager</string>
+        
+        <!-- Y -->
+
+</strings>

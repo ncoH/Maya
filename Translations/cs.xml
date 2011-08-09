@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Skin translation file -->
+<!-- Czech (CS) -->
+<!-- Last Updated: 20.3.2011 -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+
+<strings>
+	<!-- # -->
+
+	<!-- A -->
+
+	<!-- B -->
+
+	<!-- C -->
+	<string Field="check.subtitles">Najít titulky</string>
+
+	<!-- D -->
+
+	<!-- E -->
+
+	<!-- F -->
+	<string Field="fanart.scraping">Vytváření pozadí</string>
+	<string Field="format">Formát:</string>
+	<string Field="find.trailer">Filmová ukázka</string> 	
+	
+	<!-- G -->
+	<string Field="global.search.musicsearch">hledání hudby</string>
+	<string Field="global.search.lastplayed">Naposledy přehrávané</string>
+	<string Field="global.search.filename">Název souboru</string>
+	<string Field="global.search.playcount">Počet přehrání</string>
+	<string Field="global.search.Searchphrase">Hledaná fráze</string>
+	<string Field="global.search.Searchhistory">Historie hledání</string>
+	<string Field="global.search.Searchfields">Pole hledání</string>
+	<string Field="global.search.Casesensitive">Rozlišovat velikost písmen</string>
+	<string Field="global.search.Searchtype">Typ hledání</string>
+	<string Field="global.search.rating">Hodnocení</string>	
+	<string Field="global.search.header">Podrobnosti hledání</string>		
+	<string Field="grooveshark.Searchterm">Hledaný termín</string>
+	<string Field="grooveshark.Search">Hledat</string>
+	
+	<!-- H -->
+
+	<!-- I -->
+
+	<!-- L -->
+	<string Field="lyrics">Texty</string>
+	<string Field="lyrics.tag">Štítek</string>
+	<string Field="Latest.movies">Nejnovější filmy</string>
+	<string Field="Latest.episodes">Nejnovější epizody</string>
+	<string Field="Latest.recordings">Nejnovější nahrávky</string>
+	<string Field="Latest.albums">Nejnovější alba</string>
+	<string Field="Latest.pictures">Nejnovější obrázky</string> 	
+	
+	<!-- M -->
+	<string Field="mylyrics">Texty</string>
+	<string Field="music.songs">Skladby:</string>
+	
+	<!-- N -->
+
+	<!-- O -->
+
+	<!-- P -->
+	
+	<!-- R -->
+	<string Field="recentlyAdded.Season">Sezóna</string>
+	<string Field="recentlyAdded.Episode">Epizoda</string>
+	<string Field="rockstar.search">Hledat hudbu</string>
+	<string Field="rockstar.default.playlist">Výchozí seznam stop</string>
+	<string Field="rockstar.popular.songs">Oblíbené skladby</string>
+	<string Field="rockstar.playlists">Seznamy stop</string>
+	<string Field="rockstar.track">Stopa</string>	
+
+	<!-- S -->
+	<string Field="SleepControl">Časovač usínání</string>
+	
+	<!-- T -->
+
+	<!-- U -->
+
+	<!-- V -->
+	<string Field="video.settings">Nastavení videa</string>
+
+	<!-- W -->
+	<string Field="weather.toggleday">Stiskněte OK pro přepnutí dne</string>
+	
+	<!-- Y -->
+
+</strings>
