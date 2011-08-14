@@ -8,8 +8,10 @@
   <define>#useSelectedFanart:Yes</define>
   <define>#header.background:hover_my music.png</define>
   <controls>
+  
     <import>common.window.music.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <description>Header label</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -26,6 +28,7 @@
       <visible>facadeview.list</visible>
       <valign>middle</valign>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -39,6 +42,7 @@
       <texture>listcontrol_bg.png</texture>
       <visible>facadeview.list</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -52,6 +56,7 @@
       <texture>listcontrol_bg_info.png</texture>
       <visible>facadeview.list</visible>
     </control>
+	
     <control>
       <description>Header label</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -65,10 +70,11 @@
       <label>#header.label</label>
       <textcolor>6aa5cb</textcolor>
       <font>Segoe Light40</font>
-      <visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons | facadeview.coverflow</visible>
+      <visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons | facadeview.coverflow]</visible>
       <align>center</align>
       <valign>middle</valign>
     </control>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -189,23 +195,6 @@
             <onup>3</onup>
             <ondown>11</ondown>
           </control>
-          <!--
-			<control>
-					<description>Eject Disc</description>
-					<type>button</type>
-					<id>13</id>
-					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>279</width>
-					<height>49</height>
-					<textXOff>25</textXOff>
-					<textYOff>12</textYOff>
-					<label>654</label>
-					<action>100</action>
-					<onright>50</onright>
-					<onleft>50</onleft>
-				</control>
-				-->
           <control>
             <description>Now playing</description>
             <type>button</type>
@@ -315,28 +304,7 @@
         </control>
       </control>
     </control>
-    <import>common.facade.music.xml</import>
-    <import>common.facade.scrolling.xml</import>
-    <control>
-      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
-      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
-      <id>1</id>
-      <type>image</type>
-      <posX>0</posX>
-      <posY>457</posY>
-      <texture>hiddenmenu_tab.png</texture>
-      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
-    </control>
-    <control>
-      <animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
-      <animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
-      <id>1</id>
-      <type>image</type>
-      <posX>877</posX>
-      <posY>0</posY>
-      <texture>hiddenmenu_tab_up.png</texture>
-      <visible>[facadeview.filmstrip | facadeview.coverflow]+Control.HasFocus(50)</visible>
-    </control>
+		
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -349,6 +317,7 @@
       <visible>facadeview.list+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
       <texture>DefaultMyradioBig.png</texture>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -362,6 +331,7 @@
       <texture>#selectedthumb</texture>
       <visible>facadeview.list+Control.IsVisible(50)+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -375,6 +345,31 @@
       <texture>blackborders_music.png</texture>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+
+    <control>
+      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+      <id>1</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>440</posY>
+      <texture>hiddenmenu_tab.png</texture>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+    </control>
+	
+    <control>
+      <animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+      <id>1</id>
+      <type>image</type>
+      <posX>858</posX>
+      <posY>0</posY>
+      <texture>hiddenmenu_tab_up.png</texture>
+      <visible>[facadeview.filmstrip | facadeview.coverflow]+Control.HasFocus(50)</visible>
+    </control>
+	
+    <import>common.facade.music.xml</import>	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

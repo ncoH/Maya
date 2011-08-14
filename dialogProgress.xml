@@ -11,17 +11,19 @@
       <id>100</id>
       <posX>652</posX>
       <posY>698</posY>
+      <width>607</width>	  
       <texture>progress_background.png</texture>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
     </control>
+	
     <control>
       <description>progress control</description>
       <type>progress</type>
       <id>20</id>
-      <posX>640</posX>
-      <posY>701</posY>
-      <width>607</width>
+      <posX>643</posX>
+      <posY>698</posY>
+      <width>625</width>
       <height>15</height>
       <texturebg>-</texturebg>
       <lefttexture>osd_progress_left.png</lefttexture>
@@ -30,6 +32,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
     </control>
+	
     <control>
       <description>Cancel button</description>
       <type>button</type>

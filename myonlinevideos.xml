@@ -8,6 +8,7 @@
   <define>#header.background:hover_OnlineVideos.png</define>
   <define>#useSelectedFanart:Yes</define>
   <controls>
+  
     <control>
       <description>BG</description>
       <type>image</type>
@@ -18,6 +19,7 @@
       <height>1080</height>
       <texture>background.png</texture>
     </control>
+	
     <control>
       <description>Alternate BG</description>
       <type>image</type>
@@ -27,6 +29,7 @@
       <texture>background_thumbs.png</texture>
       <visible>[facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(51)</visible>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -38,6 +41,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -49,6 +53,7 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>[!facadeview.smallicons | !facadeview.largeicons]+string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -60,7 +65,9 @@
       <texture>fanart_overlay_thumbs.png</texture>
       <visible>[facadeview.smallicons | facadeview.largeicons]+string.contains(#maya.bgImage.Plugins,yes)+!Control.IsVisible(51)</visible>
     </control>
+	
     <import>common.time.xml</import>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -76,6 +83,7 @@
       <visible>[!facadeview.smallicons + !facadeview.largeicons]+!Control.IsVisible(51)</visible>
       <valign>middle</valign>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -92,6 +100,7 @@
       <align>center</align>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -106,6 +115,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -119,6 +129,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -132,6 +143,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -145,6 +157,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -158,6 +171,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -172,6 +186,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -187,6 +202,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Buffering Label</description>
       <type>label</type>
@@ -201,6 +217,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <!-- *** CLIP TITLE & DESCRIPTION *** -->
     <!--
 	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -216,9 +233,13 @@
       <posY>292</posY>
       <width>513</width>
       <height>285</height>
+      <zoom>no</zoom>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>	  
       <visible>[!facadeview.smallicons+!facadeview.largeicons]+!Control.IsVisible(51)</visible>
       <texture>Logos\#selecteditem.png</texture>
     </control>
+	
     <control>
       <description>Thumb</description>
       <type>image</type>
@@ -228,10 +249,14 @@
       <width>513</width>
       <height>285</height>
       <texture>#selectedthumb</texture>
+      <zoom>no</zoom>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>	  
       <visible>[!facadeview.smallicons+!facadeview.largeicons]+!Control.IsVisible(51)+!string.equals(#OnlineVideos.state,sites)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Overlay</description>
       <type>image</type>
@@ -245,6 +270,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Overlay</description>
       <type>image</type>
@@ -299,6 +325,8 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
+	
     <!--
 	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	                ::::::::::::::::::::::::::::::::::     THUMBNAIL VIEW      ::::::::::::::::::
@@ -312,11 +340,15 @@
       <posY>341</posY>
       <width>513</width>
       <height>288</height>
+      <zoom>no</zoom>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>	  
       <texture>#selectedthumb</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#OnlineVideos.state,sites)+!Control.IsVisible(51)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Overlay</description>
       <type>image</type>
@@ -325,11 +357,15 @@
       <posY>278</posY>
       <width>642</width>
       <height>414</height>
+      <zoom>no</zoom>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>	  
       <texture>blackborders_recordings.png</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#selectedthumb,)+!Control.IsVisible(51)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <type>textboxscrollup</type>
       <description>Description</description>
@@ -344,6 +380,8 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
+	
     <!--
 	                :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 	                ::::::::::::::::::::::::::::::::::  VIEW  Apple Trailers   ::::::::::::::::::
@@ -357,11 +395,15 @@
       <posY>292</posY>
       <width>373</width>
       <height>534</height>
+      <zoom>no</zoom>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>	  
       <texture>#selectedthumb</texture>
       <visible>[!facadeview.smallicons+!facadeview.largeicons]+string.contains(#header.image,Apple Trailers.png)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <type>image</type>
       <id>0</id>
@@ -369,11 +411,15 @@
       <posY>226</posY>
       <width>501</width>
       <height>663</height>
+      <zoom>no</zoom>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>	  
       <texture>blackborders_video.png</texture>
       <visible>[!facadeview.smallicons+!facadeview.largeicons]+string.contains(#header.image,Apple Trailers.png)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Category Logo</description>
       <type>image</type>
@@ -387,6 +433,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Category</description>
       <type>label</type>
@@ -400,6 +447,8 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
+	
     <!-- *** HIDDEN MENU *** -->
     <control>
       <type>actiongroup</type>
@@ -675,6 +724,7 @@
         </control>
       </control>
     </control>
+	
     <control>
       <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
@@ -685,6 +735,7 @@
       <texture>hiddenmenu_tab.png</texture>
       <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
     </control>
+	
     <control>
       <animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
@@ -695,8 +746,10 @@
       <texture>hiddenmenu_tab_up.png</texture>
       <visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
     </control>
+	
     <import>myonlinevideos.facade.xml</import>
     <import>myonlinevideos.details.xml</import>
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

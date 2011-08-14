@@ -20,8 +20,8 @@
         <id>0</id>
         <posX>1259</posX>
         <posY>125</posY>
-        <height>206</height>
-        <width>158</width>
+        <height>220</height>
+        <width>150</width>
         <texture>#maya.recentlyAdded.series1.thumb</texture>
       </control>
       <control>
@@ -30,8 +30,8 @@
         <id>0</id>
         <posX>1232</posX>
         <posY>99</posY>
-        <height>254</height>
-        <width>212</width>
+        <height>272</height>
+        <width>203</width>
         <texture>blackborders_video.png</texture>
       </control>
       <control>
@@ -76,8 +76,8 @@
         <id>231</id>
         <posX>1260</posX>
         <posY>125</posY>
-        <height>205</height>
-        <width>157</width>
+        <height>219</height>
+        <width>149</width>
         <textureFocus>thumb_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
@@ -87,14 +87,15 @@
         <ondown>232</ondown>
         <font>font12</font>
       </control>
+	  
       <control>
         <description>Series 2 thumb</description>
         <type>image</type>
         <id>0</id>
         <posX>1259</posX>
         <posY>405</posY>
-        <height>206</height>
-        <width>158</width>
+        <height>220</height>
+        <width>150</width>
         <texture>#maya.recentlyAdded.series2.thumb</texture>
       </control>
       <control>
@@ -103,8 +104,8 @@
         <id>0</id>
         <posX>1232</posX>
         <posY>379</posY>
-        <height>254</height>
-        <width>212</width>
+        <height>272</height>
+        <width>203</width>
         <texture>blackborders_video.png</texture>
       </control>
       <control>
@@ -149,8 +150,8 @@
         <id>232</id>
         <posX>1260</posX>
         <posY>405</posY>
-        <height>205</height>
-        <width>157</width>
+        <height>219</height>
+        <width>149</width>
         <textureFocus>thumb_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
@@ -160,14 +161,15 @@
         <ondown>233</ondown>
         <font>font12</font>
       </control>
+	  
       <control>
         <description>Series 3 thumb</description>
         <type>image</type>
         <id>0</id>
         <posX>1259</posX>
         <posY>686</posY>
-        <height>206</height>
-        <width>158</width>
+        <height>220</height>
+        <width>150</width>
         <texture>#maya.recentlyAdded.series3.thumb</texture>
       </control>
       <control>
@@ -176,8 +178,8 @@
         <id>0</id>
         <posX>1232</posX>
         <posY>660</posY>
-        <height>254</height>
-        <width>212</width>
+        <height>272</height>
+        <width>203</width>
         <texture>blackborders_video.png</texture>
       </control>
       <control>
@@ -222,8 +224,8 @@
         <id>233</id>
         <posX>1260</posX>
         <posY>686</posY>
-        <height>205</height>
-        <width>157</width>
+        <height>219</height>
+        <width>149</width>
         <textureFocus>thumb_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>

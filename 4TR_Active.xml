@@ -289,8 +289,7 @@
       <type>image</type>
       <posX>0</posX>
       <posY>457</posY>
-      <texture>hiddenmenu_tab.png</texture>
-      <visible>Control.HasFocus(10)</visible>
+	  <texture>hiddenmenu_tab.png</texture>
       <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
     </control>

@@ -6,9 +6,11 @@
   <define>#header.label:InfoService Feeds</define>
   <define>#header.background:hover_infoservice.png</define>
   <controls>
-            <import>common.window.background.xml</import>
+  
+    <import>common.window.background.xml</import>
     <import>common.time.xml</import>
-            <control>
+	
+    <control>
       <id>1</id>
       <type>label</type>
       <description>Header label</description>
@@ -22,7 +24,8 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
-            <control>
+	
+    <control>
       <id>1</id>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -35,7 +38,8 @@
       <animation effect="Fade" time="100">WindowClose</animation>
       <valign>middle</valign>
     </control>
-            <control>
+	
+    <control>
       <id>0</id>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -47,7 +51,8 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
-            <control>
+	
+    <control>
       <id>506</id>
       <description>Chosen selected item Description</description>
       <type>textboxscrollup</type>
@@ -61,6 +66,7 @@
       <label>#infoservice.feed.selected.description</label>
       <seperator>----------------------------------------------------------------------------------------------</seperator>
     </control>
+	
     <control>
       <id>506</id>
       <description>Chosen selected item Description</description>
@@ -75,7 +81,8 @@
       <label>#infoservice.feed.selected.description</label>
       <seperator>----------------------------------------------------------------------------------------------</seperator>
     </control>
-    	<control>
+	
+    <control>
       <type>actiongroup</type>
       <description>action menu</description>
       <defaultcontrol>2</defaultcontrol>
@@ -211,6 +218,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background info</description>
@@ -223,7 +231,8 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
-            <control>
+	
+    <control>
       <id>50</id>
       <description>listcontrol</description>
       <type>listcontrol</type>
@@ -242,7 +251,8 @@
       <spinAlign>left</spinAlign>
       <textXOff>30</textXOff>
     </control>
-            <control>
+	
+    <control>
       <id>1</id>
       <type>image</type>
       <visible>Control.HasFocus(50)</visible>
@@ -252,7 +262,8 @@
       <animation delay="600" effect="Slide" end="0,0" start="-60,0" time="400" tween="Quadratic">WindowOpen</animation>
       <animation delay="100" effect="Slide" end="-60,0" start="0,0" time="400" tween="Quadratic">WindowClose</animation>
     </control>
-            <control>
+	
+    <control>
       <id>600</id>
       <description>Plugin logo</description>
       <type>image</type>
@@ -268,6 +279,8 @@
       <keepaspectratio>yes</keepaspectratio>
       <centered>yes</centered>
     </control>
-            <import>common.overlay.xml</import>
+	
+    <import>common.overlay.xml</import>
+	
   </controls>
 </window>

@@ -54,6 +54,12 @@
 	<!-- M -->
 	<string Field="mylyrics">My Lyrics</string>
 	<string Field="music.songs">Songs:</string>
+	<string Field="MovPic.Overview">Start/Overview</string>
+	<string Field="MovPic.Description">Description</string>
+	<string Field="MovPic.Techinfo">Technical Info</string>	
+	<string Field="MovPic.ReleaseDate">Release date</string>	
+	<string Field="MovPic.Runtime">Runtime</string>	
+	<string Field="MovPic.Minutes">minutes</string>		
 	
 	<!-- N -->
 

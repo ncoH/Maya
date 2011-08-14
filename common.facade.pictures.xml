@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
     <control>
@@ -27,6 +26,7 @@
           <textXOff>30</textXOff>
           <dimColor>ffffffff</dimColor>
         </control>
+		
         <control>
           <description>Thumbnail Panel</description>
           <type>thumbnailpanel</type>
@@ -68,9 +68,8 @@
           <textureMask>pictures_thumb_mask.png</textureMask>
           <shadowAngle>90</shadowAngle>
           <shadowDistance>50</shadowDistance>
-          <thumbZoom>no</thumbZoom>
-          <spinPosX>1672</spinPosX>
         </control>
+		
         <control>
           <description>Filmstrip view</description>
           <type>filmstrip</type>
@@ -93,23 +92,23 @@
           <itemHeight>348</itemHeight>
           <textureWidth>507</textureWidth>
           <textureHeight>350</textureHeight>
-          <textYOff>-2000</textYOff>
+          <textYOff>-2000</textYOff>	  
           <imageFolder>-</imageFolder>
           <imageFolderFocus>-</imageFolderFocus>
+          <showFrame>yes</showFrame>		  
           <frame>-</frame>
           <frameNoFocus>pictures_filmstrip_nofocus.png</frameNoFocus>
           <frameFocus>pictures_filmstrip_focus.png</frameFocus>
           <keepaspectratio>no</keepaspectratio>
           <background>-</background>
-          <thumbs mask="pictures_filmstrip_mask.png" flipY="true" diffuse="Thumb_Mask.png">
-          </thumbs>
-          <showFrame>yes</showFrame>
+          <thumbs mask="pictures_filmstrip_mask.png" flipY="true" diffuse="Thumb_Mask.png"></thumbs>
           <showFolder>no</showFolder>
           <showBackGround>no</showBackGround>
           <showInfoImage>no</showInfoImage>
-          <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,520" time="400">focus</thumbAnimation>
-          <thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,520" time="100">unfocus</thumbAnimation>
+          <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="118,118" center="0,630" time="400">focus</thumbAnimation>
+          <thumbAnimation effect="zoom" start="118,118" reversible="false" end="100,100" center="0,630" time="100">unfocus</thumbAnimation>
         </control>
+
         <control>
           <description>Cover Flow view</description>
           <type>coverflow</type>

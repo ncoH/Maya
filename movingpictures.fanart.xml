@@ -14,6 +14,7 @@
       <animation effect="fade" time="300">visible</animation>
       <animation effect="fade" time="300" delay="300">hidden</animation>
     </control>
+	
     <control>
       <description>Alternate Movie Backdrop - Toggles Load with Component 1 for animations on visibiltiy</description>
       <type>image</type>
@@ -26,6 +27,7 @@
       <animation effect="fade" time="300">visible</animation>
       <animation effect="fade" time="300" delay="300">hidden</animation>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -35,6 +37,7 @@
       <texture>fanart_overlay.png</texture>
       <visible>[facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)] + string.contains(#maya.fanart.MovingPictures,yes)</visible>
     </control>
+	
     <control>
       <description>BG</description>
       <type>image</type>
@@ -44,6 +47,7 @@
       <texture>fanart_overlay_filmstrip.png</texture>
       <visible>[[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip]+Control.IsVisible(50)] + string.contains(#maya.fanart.MovingPictures,yes)</visible>
     </control>
+	
     <control>
       <description>BG</description>
       <type>image</type>
@@ -53,6 +57,7 @@
       <texture>background_coverflow.png</texture>
       <visible>facadeview.coverflow+Control.IsVisible(50) + string.contains(#maya.fanart.MovingPictures,yes)</visible>
     </control>
+	
     <control>
       <description>fanart list background</description>
       <type>image</type>
@@ -66,5 +71,6 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

@@ -2,6 +2,7 @@
 <!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
+  
     <control>
       <type>image</type>
       <id>1</id>
@@ -11,6 +12,7 @@
       <height>900</height>
       <texture>settings_navigation_panel.png</texture>
     </control>
+	
     <control>
       <type>label</type>
       <description>Settings label</description>
@@ -22,6 +24,7 @@
       <font>Segoe Light18</font>
       <textcolor>6aa5cb</textcolor>
     </control>
+	
     <control>
       <description>buttons</description>
       <type>group</type>
@@ -29,7 +32,7 @@
       <animation effect="fade" time="250">WindowClose</animation>
       <posX>245</posX>
       <posY>365</posY>
-      <layout>StackLayout</layout>
+      <layout>StackLayout(0, Vertical, true)</layout>
       <control>
         <description>General</description>
         <type>button</type>
@@ -39,9 +42,20 @@
         <textureNoFocus>-</textureNoFocus>
         <label>128</label>
         <hyperlink>705</hyperlink>
-        <onup>10009</onup>
-        <ondown>10002</ondown>
+        <onup>10010</onup>
+        <ondown>10011</ondown>
       </control>
+	<control>
+		<description>Skin Settings</description>
+		<type>button</type>
+		<id>10011</id>
+        <width>364</width>
+		<textureFocus>settings_button_focus.png</textureFocus>
+		<textureNoFocus>-</textureNoFocus>
+		<label>Skin Settings</label>
+		<hyperlink>155100</hyperlink>
+        <ondown>10002</ondown>			
+	</control>	  
       <control>
         <description>Screen</description>
         <type>button</type>
@@ -128,9 +142,22 @@
         <textureNoFocus>-</textureNoFocus>
         <label>I.F.C.</label>
         <hyperlink>240782</hyperlink>
-        <ondown>10001</ondown>
+        <ondown>10010</ondown>
         <visible>plugin.isenabled(Intelligent Frame Correction)</visible>
       </control>
+      <control>
+        <description>Trakt</description>
+        <type>button</type>
+        <id>10010</id>
+        <width>364</width>
+        <textureFocus>settings_button_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>Trakt Settings</label>
+        <hyperlink>87271</hyperlink>
+        <ondown>10001</ondown>
+        <visible>plugin.isenabled(Trakt)</visible>
+      </control>	  
     </control>
+	
   </controls>
 </window>

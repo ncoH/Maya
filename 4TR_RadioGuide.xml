@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
+
 <window>
   <id>762</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,7 +7,9 @@
   <define>#header.label:Radio Guide</define>
   <define>#header.background:hover_my radio.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -21,6 +23,7 @@
       <textcolor>6aa5cb</textcolor>
       <font>Segoe Light40</font>
     </control>
+	
     <control>
       <description>Date</description>
       <type>label</type>
@@ -34,6 +37,7 @@
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <description>TVGUIDE Panel</description>
       <type>image</type>
@@ -45,6 +49,34 @@
       <colordiffuse>ffffffff</colordiffuse>
       <texture>-</texture>
     </control>
+	
+    <control>
+      <description>Single Channel Label</description>
+      <type>label</type>
+      <id>32</id>
+      <posX>612</posX>
+      <posY>168</posY>
+      <font>font16</font>
+      <align>left</align>
+      <textcolor>6aa5cb</textcolor>
+      <animation effect="fade" time="800">WindowOpen</animation>
+      <animation effect="fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Single Channel Image</description>
+      <type>image</type>
+      <id>33</id>
+      <posX>491</posX>
+      <posY>164</posY>
+      <width>74</width>
+      <height>52</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <zoom>no</zoom>
+      <centered>yes</centered>
+      <texture>defaultVideo.png</texture>
+    </control>
+	
     <!-- Timeheader background must be dedfined before Timeheader label template -->
     <!-- b/c Timeheader is on the background and will be rendered first -->
     <control>
@@ -59,6 +91,7 @@
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <description>time header label template</description>
       <type>label</type>
@@ -70,15 +103,16 @@
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <description>day spin control</description>
       <type>spincontrol</type>
       <id>6</id>
       <width>22</width>
       <height>22</height>
-      <posX>91</posX>
+      <posX>112</posX>
       <textYOff>1</textYOff>
-      <posY>198</posY>
+      <posY>196</posY>
       <showrange>no</showrange>
       <orientation>horizontal</orientation>
       <align>center</align>
@@ -92,14 +126,15 @@
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <description>time interval spin control</description>
       <type>spincontrol</type>
       <id>8</id>
       <width>22</width>
       <height>22</height>
-      <posX>393</posX>
-      <posY>198</posY>
+      <posX>413</posX>
+      <posY>196</posY>
       <showrange>no</showrange>
       <orientation>horizontal</orientation>
       <align>center</align>
@@ -112,6 +147,7 @@
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <description>Channel template</description>
       <type>image</type>
@@ -123,6 +159,7 @@
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <description>Channel image template</description>
       <type>image</type>
@@ -136,6 +173,7 @@
       <centered>yes</centered>
       <texture>defaultVideo.png</texture>
     </control>
+	
     <control>
       <description>channel Label template</description>
       <type>label</type>
@@ -149,41 +187,46 @@
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <description>Current program title</description>
       <type>fadelabel</type>
       <id>13</id>
-      <posX>611</posX>
-      <posY>749</posY>
-      <width>936</width>
-      <label>#Radio.Guide.Title</label>
+      <posX>664</posX>
+      <posY>770</posY>
+      <width>1194</width>
+      <label>#Radio.Guide.CompositeTitle</label>
       <font>Segoe Light18</font>
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <description>Current program time</description>
       <type>label</type>
       <id>14</id>
-      <posX>611</posX>
-      <posY>808</posY>
-      <label>#Radio.Guide.Time - #Radio.Guide.Genre</label>
-      <textcolor>6aa5cb</textcolor>
+      <posX>664</posX>
+      <posY>833</posY>
+      <width>1194</width>
+      <label>#Radio.Guide.Time #Radio.Guide.ChannelName #Radio.Guide.DurationMins #Radio.Guide.Genre</label>
+      <textcolor>85cfff</textcolor>
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <description>Description1</description>
       <type>textboxscrollup</type>
       <id>15</id>
-      <posX>611</posX>
-      <posY>853</posY>
+      <posX>664</posX>
+      <posY>885</posY>
       <width>1194</width>
       <height>154</height>
       <label>#Radio.Guide.Description</label>
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <description>template for program title dark area</description>
       <type>label</type>
@@ -192,9 +235,12 @@
       <label>-</label>
       <font>font13tvg</font>
       <textcolor>FFFFFFF0</textcolor>
+      <posX>14</posX>
+      <posY>8</posY>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>template for program title light area</description>
       <type>label</type>
@@ -203,9 +249,12 @@
       <label>-</label>
       <font>font13tvg</font>
       <textcolor>99CCFF</textcolor>
+      <posX>14</posX>
+      <posY>8</posY>
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <description>vertical timeline</description>
       <type>image</type>
@@ -219,6 +268,7 @@
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <description>Horizontal scrollbar</description>
       <type>hscrollbar</type>
@@ -231,6 +281,7 @@
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <description>Vertical scrollbar</description>
       <type>vscrollbar</type>
@@ -243,16 +294,99 @@
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
+<!--     <control>
+      <description>template for program running button</description>
+      <type>button3part</type>
+      <id>35</id>
+      <textureFocusedLeft>tvguide_button_selected_left.png</textureFocusedLeft>
+      <textureNonFocusedLeft>tvguide_button_left.png</textureNonFocusedLeft>
+      <textureFocusedMid>tvguide_button_selected_middle.png</textureFocusedMid>
+      <textureNonFocusedMid>tvguide_button_middle.png</textureNonFocusedMid>
+      <textureFocusedRight>tvguide_button_selected_right.png</textureFocusedRight>
+      <textureNonFocusedRight>tvguide_button_right.png</textureNonFocusedRight>
+      <textureIcon>-</textureIcon>
+    </control>
+	
+    <control>
+      <description>template for program not running button</description>
+      <type>button3part</type>
+      <id>36</id>
+      <textureFocusedLeft>tvguide_button_selected_left.png</textureFocusedLeft>
+      <textureNonFocusedLeft>tvguide_button_light_left.png</textureNonFocusedLeft>
+      <textureFocusedMid>tvguide_button_selected_middle.png</textureFocusedMid>
+      <textureNonFocusedMid>tvguide_button_light_middle.png</textureNonFocusedMid>
+      <textureFocusedRight>tvguide_button_selected_right.png</textureFocusedRight>
+      <textureNonFocusedRight>tvguide_button_light_right.png</textureNonFocusedRight>
+      <textureIcon>-</textureIcon>
+    </control>
+	
+    <control>
+      <description>template for program notify button</description>
+      <type>button3part</type>
+      <id>37</id>
+      <textureFocusedLeft>tvguide_notifyButton_Focus_left.png</textureFocusedLeft>
+      <textureNonFocusedLeft>tvguide_notifyButton_noFocus_left.png</textureNonFocusedLeft>
+      <textureFocusedMid>tvguide_notifyButton_Focus_middle.png</textureFocusedMid>
+      <textureNonFocusedMid>tvguide_notifyButton_noFocus_middle.png</textureNonFocusedMid>
+      <textureFocusedRight>tvguide_notifyButton_Focus_right.png</textureFocusedRight>
+      <textureNonFocusedRight>tvguide_notifyButton_noFocus_right.png</textureNonFocusedRight>
+      <textureIcon>-</textureIcon>
+    </control>
+	
+    <control>
+      <description>template for program record button</description>
+      <type>button3part</type>
+      <id>38</id>
+      <textureFocusedLeft>tvguide_recButton_Focus_left.png</textureFocusedLeft>
+      <textureNonFocusedLeft>tvguide_recButton_noFocus_left.png</textureNonFocusedLeft>
+      <textureFocusedMid>tvguide_recButton_Focus_middle.png</textureFocusedMid>
+      <textureNonFocusedMid>tvguide_recButton_noFocus_middle.png</textureNonFocusedMid>
+      <textureFocusedRight>tvguide_recButton_Focus_right.png</textureFocusedRight>
+      <textureNonFocusedRight>tvguide_recButton_Focus_right.png</textureNonFocusedRight>
+      <textureIcon>-</textureIcon>
+    </control> -->
+	
     <control>
       <description>record pin</description>
       <type>image</type>
       <id>31</id>
-      <posX>463</posX>
-      <posY>756</posY>
+      <posX>-2000</posX>
       <texture>tvguide_record_button.png</texture>
       <visible>no</visible>
-      <animation effect="fade" time="800">WindowOpen</animation>
-      <animation effect="fade" time="300">WindowClose</animation>
     </control>
+
+     <control>
+      <description>RadioGroup button</description>
+      <type>button</type>
+      <id>100</id>
+      <posX>53</posX>
+      <posY>233</posY>
+      <width>56</width>
+      <height>467</height>
+      <textureFocus>tvgroup_button_selected.png</textureFocus>
+      <textureNoFocus>blue.png</textureNoFocus>
+      <label></label>
+      <onleft>60</onleft>
+      <onright>6</onright>
+      <onup>6</onup>
+      <ondown>6</ondown>
+    </control>
+	
+    <control>
+      <description>RadioGroup button label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>80</posX>
+      <posY>686</posY>
+      <valign>middle</valign>
+      <label>#Radio.Guide.ChangeGroup</label>
+      <font>Segoe Light16</font>
+      <textcolor>6aa5cb</textcolor>
+      <animation effect="rotate" end="90" time="0">WindowOpen</animation>
+    </control>
+	
+    <import>common.home.overlay.xml</import>
+	
   </controls>
 </window>

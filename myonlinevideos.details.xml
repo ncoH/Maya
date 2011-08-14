@@ -15,6 +15,7 @@
       <visible>string.equals(#OnlineVideos.state, details)</visible>
       <valign>middle</valign>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -30,6 +31,7 @@
       <visible>string.equals(#OnlineVideos.state, details)</visible>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -43,6 +45,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <type>image</type>
       <description>movie border</description>
@@ -56,6 +59,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <type>image</type>
       <description>movie poster</description>
@@ -69,6 +73,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <type>listcontrol</type>
       <description>videolist</description>
@@ -89,6 +94,7 @@
       <ondown>51</ondown>
       <visible>string.equals(#OnlineVideos.state, details)</visible>
     </control>
+	
     <control>
       <type>label</type>
       <description>Cast txt</description>
@@ -100,6 +106,7 @@
       <label>#OnlineVideos.Translation.Actors.Label</label>
       <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>cast value</description>
@@ -112,6 +119,7 @@
       <label>#OnlineVideos.Details.Actors</label>
       <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
     </control>
+	
     <control>
       <type>label</type>
       <description>Directors txt</description>
@@ -123,6 +131,7 @@
       <label>#OnlineVideos.Translation.Directors.Label</label>
       <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>Directors value</description>
@@ -135,6 +144,7 @@
       <label>#OnlineVideos.Details.Directors</label>
       <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>Release date txt</description>
@@ -147,6 +157,7 @@
       <label>#OnlineVideos.Translation.DateOfRelease.Label:</label>
       <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
     </control>
+	
     <control>
       <type>label</type>
       <description>Realease date value</description>
@@ -161,6 +172,7 @@
       <label>#OnlineVideos.Details.ReleaseDate</label>
       <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
     </control>
+	
     <control>
       <type>label</type>
       <description>Genre txt</description>
@@ -173,6 +185,7 @@
       <label>#OnlineVideos.Translation.Genre.Label:</label>
       <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>genre value</description>
@@ -186,6 +199,7 @@
       <label>#OnlineVideos.Details.Genres</label>
       <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
     </control>
+	
     <control>
       <type>textboxscrollup</type>
       <description>Plot value</description>
@@ -198,5 +212,6 @@
       <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
       <label>#OnlineVideos.Details.Synopsis</label>
     </control>
+	
   </controls>
 </window>

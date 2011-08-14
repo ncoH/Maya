@@ -5,9 +5,9 @@
   <defaultcontrol>4</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <define>#header.label:8</define>
-  <define>#selecteditem:-</define>
   <define>#header.background:hover_my weather.png</define>
   <controls>
+  
     <control>
       <description>BG</description>
       <type>image</type>
@@ -18,6 +18,7 @@
       <height>1080</height>
       <texture>background_thumbs.png</texture>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -29,6 +30,7 @@
       <texture>weather\backgrounds\#infoservice.weather.today.img.small.filenamewithoutext//weather.jpg</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -40,6 +42,7 @@
       <texture>fanart_overlay_thumbs.png</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -141,6 +144,7 @@
         </control>
       </control>
     </control>
+	
     <!--   5-day stuff   -->
     <control>
       <description>5-day heading</description>
@@ -180,6 +184,7 @@
       <font>Segoe Light22</font>
       <visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
     </control>
+	
     <control>
       <description>5-day location</description>
       <type>label</type>
@@ -193,6 +198,7 @@
       <align>center</align>
       <visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
     </control>
+	
     <control>
       <description>5-day location feels like label</description>
       <type>label</type>
@@ -201,6 +207,7 @@
       <posY>794</posY>
       <visible>Control.IsVisible(31)</visible>
     </control>
+	
     <control>
       <description>current condition label</description>
       <type>label</type>
@@ -210,6 +217,7 @@
       <label>-</label>
       <textcolor>6aa5cb</textcolor>
     </control>
+	
     <control>
       <description>horizontal line</description>
       <type>image</type>
@@ -221,6 +229,7 @@
       <texture>weather_horizontal_bar.png</texture>
       <visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
     </control>
+	
     <control>
       <description>current feels like static label</description>
       <type>label</type>
@@ -232,6 +241,7 @@
       <textcolor>85cffe</textcolor>
       <visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
     </control>
+	
     <control>
       <description>current feels like label</description>
       <type>label</type>
@@ -244,6 +254,7 @@
       <textcolor>85cffe</textcolor>
       <visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
     </control>
+	
     <control>
       <description>current humidity static label</description>
       <type>label</type>
@@ -255,6 +266,7 @@
       <textcolor>85cffe</textcolor>
       <visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
     </control>
+	
     <control>
       <description>current humidity label</description>
       <type>label</type>
@@ -267,6 +279,7 @@
       <textcolor>85cffe</textcolor>
       <visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
     </control>
+	
     <control>
       <description>current UV Index static label</description>
       <type>label</type>
@@ -278,6 +291,7 @@
       <textcolor>85cffe</textcolor>
       <visible>!plugin.isenabled(InfoService)</visible>
     </control>
+	
     <control>
       <description>current UV Index static label</description>
       <type>label</type>
@@ -289,6 +303,7 @@
       <textcolor>85cffe</textcolor>
       <visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
     </control>
+	
     <control>
       <description>current UV Index label</description>
       <type>fadelabel</type>
@@ -302,6 +317,7 @@
       <textcolor>85cffe</textcolor>
       <visible>!plugin.isenabled(InfoService)</visible>
     </control>
+	
     <control>
       <description>current UV Index label</description>
       <type>fadelabel</type>
@@ -315,6 +331,7 @@
       <textcolor>85cffe</textcolor>
       <visible>plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
     </control>
+	
     <control>
       <description>Toggle Background</description>
       <type>image</type>
@@ -326,16 +343,19 @@
       <texture>weather_toggle_bg.png</texture>
       <visible>Control.IsVisible(31)</visible>
     </control>
+	
     <control>
       <description>press ok to toggle label</description>
       <type>label</type>
       <id>1</id>
-      <posX>820</posX>
-      <posY>975</posY>
+      <posX>985</posX>
+      <posY>993</posY>
       <textcolor>FF6aa5cb</textcolor>
+      <align>center</align>	  
       <label>#SkinTranslation.Translations.weather.toggleday.Label</label>
       <visible>Control.IsVisible(31)</visible>
     </control>
+	
     <!--   1-day stuff   -->
     <control>
       <description>Alternate BG</description>
@@ -927,6 +947,7 @@
       <texture>weather/128/#infoservice.weather.forecast5.day.img.big.filenamewithext</texture>
       <visible>Control.IsVisible(9999)</visible>
     </control>
+	
     <control>
       <description>Satellite image</description>
       <type>image</type>
@@ -942,6 +963,7 @@
       <centered>yes</centered>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
     <control>
       <id>0</id>
       <description>icon group</description>
@@ -1009,6 +1031,7 @@
         <height>104</height>
       </control>
     </control>
+	
     <control>
       <description>Sunclock image</description>
       <type>image</type>
@@ -1023,14 +1046,7 @@
       <onup>3</onup>
       <ondown>3</ondown>
     </control>
-    <control>
-      <id>1</id>
-      <type>image</type>
-      <posX>0</posX>
-      <posY>457</posY>
-      <texture>hiddenmenu_tab.png</texture>
-      <visible>Control.HasFocus(4)</visible>
-    </control>
+	
     <control>
       <description>location label</description>
       <type>label</type>
@@ -1115,7 +1131,18 @@
       <colorkey>FFFF00FF</colorkey>
       <colordiffuse>White:#20</colordiffuse>
     </control>
+
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>457</posY>
+      <texture>hiddenmenu_tab.png</texture>
+      <visible>Control.HasFocus(4)</visible>
+    </control>
+	
     <import>common.time.xml</import>
     <import>common.overlay.mini.xml</import>
+	
   </controls>
 </window>

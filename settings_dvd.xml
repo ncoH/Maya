@@ -6,8 +6,10 @@
   <allowoverlay>yes</allowoverlay>
   <define>#header.background:hover_settings.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>settings.menu.xml</import>
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -17,6 +19,7 @@
       <height>900</height>
       <texture>settings_main_panel.png</texture>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -31,6 +34,7 @@
       <font>Segoe Light40</font>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>buttons</description>
       <type>group</type>

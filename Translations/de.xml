@@ -53,6 +53,12 @@
 	<!-- M -->
 	<string Field="mylyrics">Meine Texte</string>
 	<string Field="music.songs">Lieder:</string>
+	<string Field="MovPic.Overview">Start/Übersicht</string>
+	<string Field="MovPic.Description">Beschreibung</string>
+	<string Field="MovPic.Techinfo">Technische Infos</string>	
+	<string Field="MovPic.ReleaseDate">Veröffentlicht</string>	
+	<string Field="MovPic.Runtime">Laufzeit</string>	
+	<string Field="MovPic.Minutes">minuten</string>		
 	
 	<!-- N -->
 

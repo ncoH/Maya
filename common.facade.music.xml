@@ -27,6 +27,7 @@
           <textXOff>30</textXOff>
           <dimColor>ffffffff</dimColor>
         </control>
+		
         <control>
           <description>album view listcontrol</description>
           <type>listcontrol</type>
@@ -62,6 +63,7 @@
           <onright>2</onright>
           <keepaspectratio>yes</keepaspectratio>
         </control>
+		
         <control>
           <description>Thumbnail Panel</description>
           <type>thumbnailpanel</type>
@@ -107,6 +109,7 @@
           <textureMask>music_thumb_mask.png</textureMask>
           <spinPosX>-2000</spinPosX>
         </control>
+		
         <control>
           <description>Filmstrip view</description>
           <type>filmstrip</type>
@@ -117,30 +120,41 @@
           <ondown>2</ondown>
           <onleft>50</onleft>
           <onright>50</onright>
-          <posX>108</posX>
-          <posY>358</posY>
-          <width>1827</width>
-          <height>1012</height>
-          <thumbWidth>281</thumbWidth>
-          <thumbHeight>281</thumbHeight>
-          <thumbPosX>5</thumbPosX>
-          <thumbPosY>5</thumbPosY>
-          <itemWidth>351</itemWidth>
-          <itemHeight>324</itemHeight>
-          <textureWidth>295</textureWidth>
-          <textureHeight>295</textureHeight>
-          <thumbs flipY="true" diffuse="Thumb_Mask.png">
-          </thumbs>
-          <InfoImage flipY="true" diffuse="Thumb_Mask.png">
-          </InfoImage>
-          <showFrame>yes</showFrame>
-          <textYOff>-2000</textYOff>
-          <showFolder>no</showFolder>
-          <showBackGround>no</showBackGround>
-          <showInfoImage>no</showInfoImage>
-          <thumbAnimation effect="zoom" start="100,100" end="130,130" time="200">focus</thumbAnimation>
-          <thumbAnimation effect="zoom" start="130,130" end="100,100" time="200">unfocus</thumbAnimation>
+          <posX>118</posX>
+          <posY>480</posY>
+          <width>1690</width>
+          <height>768</height>
+          <thumbWidth>320</thumbWidth>
+          <thumbHeight>320</thumbHeight>
+          <thumbPosX>0</thumbPosX>
+          <thumbPosY>0</thumbPosY>
+          <itemWidth>335</itemWidth>
+          <itemHeight>335</itemHeight>
+          <textureWidth>320</textureWidth>
+          <textureHeight>320</textureHeight>
+          <frame>coverflow_glass_overlay_music.png</frame>
+          <frameFocus>coverflow_glass_overlay_music.png</frameFocus>
+          <frameWidth>320</frameWidth>
+          <frameHeight>320</frameHeight>		  
+          <thumbs flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png"></thumbs>
+          <InfoImage flipY="true" diffuse="Thumb_Mask.png"></InfoImage>
+		  <showFrame>yes</showFrame>
+		  <textYOff>-2000</textYOff>
+		  <showFolder>no</showFolder>
+		  <showBackGround>no</showBackGround>
+		  <showInfoImage>no</showInfoImage>
+		  <keepaspectratio>no</keepaspectratio>
+          <scrollbarBackground>scrollbar_bg.png</scrollbarBackground>
+          <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+          <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+          <scrollbarWidth>689</scrollbarWidth>
+		  <scrollbarHeight>4</scrollbarHeight>
+          <scrollbarYOff>538</scrollbarYOff>
+          <spinPosX>-2000</spinPosX>
+		  <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="125,125" center="0,600" time="200">focus</thumbAnimation>
+		  <thumbAnimation effect="zoom" start="125,125" reversible="false" end="100,100" center="0,700" time="100">unfocus</thumbAnimation>
         </control>
+		
         <control>
           <description>Cover Flow view</description>
           <type>coverflow</type>
@@ -152,7 +166,7 @@
           <onleft>50</onleft>
           <onright>50</onright>
           <posX>0</posX>
-          <posY>421</posY>
+          <posY>480</posY>
           <width>1920</width>
           <height>1080</height>
           <selectedCard>0</selectedCard>
@@ -170,7 +184,6 @@
           <frameFocus>coverflow_glass_overlay_music.png</frameFocus>
           <frameWidth>421</frameWidth>
           <frameHeight>421</frameHeight>
-          <spinSpeed>8</spinSpeed>
           <unfocusedAlpha>FF</unfocusedAlpha>
           <font1>font13</font1>
           <font2>font11</font2>
@@ -192,47 +205,51 @@
           <scrollbarRight>mouse_right_horizontal.png</scrollbarRight>
           <scrollbarYOff>639</scrollbarYOff>
           <showScrollbar>no</showScrollbar>
+		  <keepaspectratio>no</keepaspectratio>		  
           <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png">
           </cards>
           <subitems>
             <subitem>                
-			  &lt;controls&gt;
-              &lt;control&gt;
-                &lt;description&gt;background&lt;/description&gt;
-                &lt;type&gt;image&lt;/type&gt;
-                &lt;posX&gt;0&lt;/posX&gt;
-                &lt;posY&gt;0&lt;/posY&gt;
-                &lt;width&gt;300&lt;/width&gt;
-                &lt;height&gt;300&lt;/height&gt;
-                &lt;texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png"&gt;background.png&lt;/texture&gt;
-              &lt;/control&gt;
+              <![CDATA[                
+			  <controls>
+              <control>
+                <description>background</description>
+                <type>image</type>
+                <posX>0</posX>
+                <posY>0</posY>
+                <width>300</width>
+                <height>300</height>
+                <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png">background.png</texture>
+              </control>
 			  
-              &lt;control&gt;
-                &lt;description&gt;Musik Details&lt;/description&gt;
-                &lt;type&gt;label&lt;/type&gt;
-                &lt;posX&gt;30&lt;/posX&gt;
-                &lt;posY&gt;10&lt;/posY&gt;
-                &lt;width&gt;210&lt;/width&gt;
-                &lt;label&gt;Music Details&lt;/label&gt;
-                &lt;font&gt;font13&lt;/font&gt;
-                &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-              &lt;/control&gt;
+              <control>
+                <description>Musik Details</description>
+                <type>label</type>
+                <posX>30</posX>
+                <posY>10</posY>
+                <width>210</width>
+                <label>Music Details</label>
+                <font>font13</font>
+                <textcolor>FFFFFFFF</textcolor>
+              </control>
 			  
-              &lt;control&gt;
-                &lt;description&gt;genre&lt;/description&gt;
-                &lt;type&gt;label&lt;/type&gt;
-                &lt;posX&gt;30&lt;/posX&gt;
-                &lt;posY&gt;40&lt;/posY&gt;
-                &lt;width&gt;210&lt;/width&gt;
-                &lt;label&gt;#selecteditem&lt;/label&gt;
-                &lt;font&gt;font10&lt;/font&gt;
-                &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-              &lt;/control&gt;
+              <control>
+                <description>genre</description>
+                <type>label</type>
+                <posX>30</posX>
+                <posY>40</posY>
+                <width>210</width>
+                <label>#selecteditem</label>
+                <font>font10</font>
+                <textcolor>FFFFFFFF</textcolor>
+              </control>
               
-                &lt;/controls&gt;
+                </controls>
+              ]]>
               </subitem>
           </subitems>
         </control>
+		
         <control>
           <description>playlist listcontrol</description>
           <type>playlistcontrol</type>
@@ -245,6 +262,7 @@
           <spinCanFocus>no</spinCanFocus>
           <dimColor>ffffffff</dimColor>
         </control>
+		
       </control>
     </control>
   </controls>

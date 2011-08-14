@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>30</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,8 +6,10 @@
   <define>#header.label:Radio</define>
   <define>#header.background:hover_my radio.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -23,6 +24,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -35,6 +37,7 @@
       <height>731</height>
       <texture>tvhome_bg.png</texture>
     </control>
+	
     <control>
       <type>group</type>
       <layout>StackLayout</layout>
@@ -48,8 +51,9 @@
         <description>TVGuide</description>
         <type>button</type>
         <id>2</id>
-        <label>TV Guide</label>
-        <onup>8</onup>
+        <label>600</label>
+        <hyperlink>600</hyperlink>
+        <onup>9</onup>
         <ondown>3</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
@@ -64,7 +68,7 @@
         <description>Search TVGuide</description>
         <type>button</type>
         <id>3</id>
-        <label>Search</label>
+        <label>137</label>
         <onup>2</onup>
         <ondown>4</ondown>
         <onright>99</onright>
@@ -80,7 +84,8 @@
         <description>Recordings</description>
         <type>button</type>
         <id>4</id>
-        <label>Recorded TV</label>
+        <label>604</label>
+        <hyperlink>603</hyperlink>
         <onup>3</onup>
         <ondown>5</ondown>
         <onright>99</onright>
@@ -130,7 +135,7 @@
         <description>UpcomingPrograms</description>
         <type>button</type>
         <id>7</id>
-        <label>Upcoming Programs</label>
+        <label>603</label>
         <onup>6</onup>
         <ondown>8</ondown>
         <onright>99</onright>
@@ -146,8 +151,24 @@
         <description>ActiveRecordings</description>
         <type>button</type>
         <id>8</id>
-        <label>Active Recordings</label>
+        <label>692</label>
         <onup>7</onup>
+        <ondown>9</ondown>
+        <onright>99</onright>
+        <textalign>right</textalign>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
+        <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+      </control>
+      <control>
+        <description>Teletext</description>
+        <type>button</type>
+        <id>9</id>
+        <label>1441</label>
+        <onup>8</onup>
         <ondown>2</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
@@ -159,6 +180,7 @@
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
     </control>
+	
     <control>
       <description>TV background</description>
       <type>image</type>
@@ -168,9 +190,10 @@
       <width>768</width>
       <height>489</height>
       <texture>tvhome_tvframe_big.png</texture>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>video window</description>
       <type>videowindow</type>
@@ -183,9 +206,10 @@
       <onright>2</onright>
       <action>18</action>
       <textureFocus>tv_green_border.png</textureFocus>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Playing Channel Icon</description>
       <type>image</type>
@@ -198,21 +222,23 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Play info label</description>
       <type>fadelabel</type>
       <id>1</id>
-      <width>373</width>
+      <width>1054</width>
       <height>52</height>
       <posX>789</posX>
       <posY>675</posY>
-      <label>#Radio.View.channel - #Radio.View.start - #Radio.View.stop</label>
+	  <label>#Radio.View.start - #Radio.View.stop #Radio.View.channel #Radio.Guide.Genre</label>
       <align>left</align>
-      <font>font16</font>
+      <font>font14</font>
       <textcolor>ff85cffe</textcolor>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Current program title</description>
       <type>fadelabel</type>
@@ -224,9 +250,10 @@
       <font>Segoe Light22</font>
       <align>left</align>
       <textcolor>ffffff</textcolor>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Description1</description>
       <type>textboxscrollup</type>
@@ -236,10 +263,11 @@
       <width>1054</width>
       <height>192</height>
       <seperator>----------------------------------------------------------------------------------------------</seperator>
-      <label>#TV.View.description</label>
+      <label>#Radio.View.description</label>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Progress background</description>
       <type>image</type>
@@ -252,6 +280,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>progress bar</description>
       <type>progress</type>
@@ -265,6 +294,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Channel label</description>
       <type>label</type>
@@ -277,6 +307,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>record pin</description>
       <type>image</type>
@@ -288,5 +319,6 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

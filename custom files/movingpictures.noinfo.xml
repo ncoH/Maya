@@ -38,33 +38,13 @@ multiple view modes.
   <!-- true if backdrop (fanart) should be displayed in this view -->
   <define>#categories.backdrop.used:true</define>
   <controls>
+  
     <!--            :: DUMMY CONTROLS ::             -->
-    <control>
-      <description>Visibile when filtering by watched flag. Only unwatched movies are listed.</description>
-      <type>label</type>
-      <id>8</id>
-      <posX>-50</posX>
-      <posY>-50</posY>
-      <width>0</width>
-    </control>
-    <control>
-      <description>Visibile when the currently selected movie has been watched</description>
-      <type>label</type>
-      <id>9</id>
-      <posX>-50</posX>
-      <posY>-50</posY>
-      <width>0</width>
-    </control>
-    <control>
-      <description>Visibile when filtering by remote control searching.</description>
-      <type>label</type>
-      <id>10</id>
-      <posX>-50</posX>
-      <posY>-50</posY>
-      <width>0</width>
-    </control>
+    <import>movingpictures.dummy.xml</import>
+
     <!--            :: BACKGROUNDS :: MOVIE BACKDROP :: OVERLAYS ::            -->
     <import>movingpictures.fanart.xml</import>
+	
     <control>
       <description>BG</description>
       <type>image</type>
@@ -73,6 +53,7 @@ multiple view modes.
       <height>1080</height>
       <visible>Control.IsVisible(50) + !string.contains(#maya.fanart.MovingPictures,yes)</visible>
     </control>
+	
     <control>
       <description>BG</description>
       <type>image</type>
@@ -82,6 +63,7 @@ multiple view modes.
       <texture>background_thumbs.png</texture>
       <visible>[[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)] + !string.contains(#maya.fanart.MovingPictures,yes)</visible>
     </control>
+	
     <control>
       <description>BG</description>
       <type>image</type>
@@ -91,6 +73,7 @@ multiple view modes.
       <texture>background_filmstrip.png</texture>
       <visible>[facadeview.filmstrip+Control.IsVisible(50)] + !string.contains(#maya.fanart.MovingPictures,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -102,6 +85,7 @@ multiple view modes.
       <texture>#header.background</texture>
       <visible>[string.contains(#maya.bgImage.Plugins,yes)+!string.contains(#maya.fanart.MovingPictures,yes)+!Control.IsVisible(51)] + ![!Control.IsVisible(50)+!Control.IsVisible(51)]</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -113,6 +97,7 @@ multiple view modes.
       <texture>basichome_fanart_overlay.png</texture>
       <visible>[facadeview.list+string.contains(#maya.bgImage.Plugins,yes)+!string.contains(#maya.fanart.MovingPictures,yes)+!Control.IsVisible(51)] + ![!Control.IsVisible(50)+!Control.IsVisible(51)]</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -124,6 +109,7 @@ multiple view modes.
       <texture>fanart_overlay_thumbs.png</texture>
       <visible>[[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow]+string.contains(#maya.bgImage.Plugins,yes)+!string.contains(#maya.fanart.MovingPictures,yes)+!Control.IsVisible(51)] + ![!Control.IsVisible(50)+!Control.IsVisible(51)]</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -137,6 +123,7 @@ multiple view modes.
       <texture>listcontrol_bg_info.png</texture>
       <visible>[facadeview.list+Control.IsVisible(50)] + !string.contains(#maya.fanart.MovingPictures,yes)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -150,7 +137,9 @@ multiple view modes.
       <texture>listcontrol_bg.png</texture>
       <visible>[facadeview.list+Control.IsVisible(50)] + !string.contains(#maya.fanart.MovingPictures,yes)</visible>
     </control>
+	
     <import>common.time.xml</import>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -166,6 +155,7 @@ multiple view modes.
       <visible>facadeview.list+Control.IsVisible(50)</visible>
       <valign>middle</valign>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -182,6 +172,7 @@ multiple view modes.
       <align>center</align>
       <valign>middle</valign>
     </control>
+	
     <!--            :: HIDDEN MENU ::            -->
     <control>
       <type>actiongroup</type>
@@ -359,6 +350,7 @@ multiple view modes.
         </control>
       </control>
     </control>
+	
     <!--            :: LIST VIEW ::            -->
     <control>
       <description>Selected item Label</description>
@@ -374,6 +366,7 @@ multiple view modes.
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -387,6 +380,7 @@ multiple view modes.
       <texture>defaultdvdcover.png</texture>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -400,6 +394,7 @@ multiple view modes.
       <texture>#MovingPictures.Coverart</texture>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -413,6 +408,7 @@ multiple view modes.
       <texture>blackborders_video.png</texture>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -449,6 +445,7 @@ multiple view modes.
       <percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -462,6 +459,7 @@ multiple view modes.
       <textcolor>6aa5cb</textcolor>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -477,6 +475,7 @@ multiple view modes.
       <textcolor>6aa5cb</textcolor>
       <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+!player.hasmedia+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -490,6 +489,7 @@ multiple view modes.
       <texture>new.png</texture>
       <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(9)+Control.HasThumb(60)</visible>
     </control>
+	
     <!--            :: FILMSTRIP VIEW ::            -->
     <control>
       <description>Selected item Label</description>
@@ -506,6 +506,7 @@ multiple view modes.
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -521,6 +522,7 @@ multiple view modes.
       <textcolor>6aa5cb</textcolor>
       <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+!player.hasmedia+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -542,6 +544,7 @@ multiple view modes.
       <percentage>#MovingPictures.SelectedMovie.score.rounded</percentage>
       <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+!player.hasmedia+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -554,6 +557,7 @@ multiple view modes.
       <texture>menu_bg.png</texture>
       <visible>Control.IsVisible(51)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -567,6 +571,7 @@ multiple view modes.
       <textcolor>85cffe</textcolor>
       <visible>Control.IsVisible(51)</visible>
     </control>
+	
     <!--            :: THUMB VIEW ::            -->
     <control>
       <description>Cover Art</description>
@@ -581,6 +586,7 @@ multiple view modes.
       <texture>#MovingPictures.Coverart</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <description>Cover Art overlay</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -594,6 +600,7 @@ multiple view modes.
       <texture>blackborders_video.png</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -607,33 +614,35 @@ multiple view modes.
       <texture>new.png</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)+!Control.IsVisible(9)+Control.HasThumb(60)</visible>
     </control>
-    <!--            :: DETAILS VIEW ::      -->
-    <import>movingpictures.details.xml</import>
-    <!--            :: OTHER ::            -->
-    <import>movingpictures.facade.xml</import>
+	
     <control>
       <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
       <id>1</id>
       <type>image</type>
       <posX>0</posX>
-      <posY>457</posY>
+      <posY>440</posY>
       <texture>hiddenmenu_tab.png</texture>
       <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
     </control>
+	
     <control>
       <animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
       <id>1</id>
       <type>image</type>
-      <posX>877</posX>
+      <posX>858</posX>
       <posY>0</posY>
       <texture>hiddenmenu_tab_up.png</texture>
       <visible>[facadeview.filmstrip|facadeview.coverflow]+Control.HasFocus(50)</visible>
     </control>
-    <import>common.overlay.xml</import>
+
+    <import>movingpictures.details.xml</import>
+    <import>movingpictures.facade.xml</import>	
     <import>movingpictures.mediainfo.listview.xml</import>
     <import>movingpictures.mediainfo.filmstrip.xml</import>
     <import>movingpictures.mediainfo.thumbview.xml</import>
+    <import>common.overlay.xml</import>
+	
   </controls>
 </window>

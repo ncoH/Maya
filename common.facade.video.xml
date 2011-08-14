@@ -27,6 +27,7 @@
           <textXOff>30</textXOff>
           <dimColor>ffffffff</dimColor>
         </control>
+		
         <control>
           <description>Thumbnail Panel</description>
           <type>thumbnailpanel</type>
@@ -69,6 +70,7 @@
           <thumbZoom>no</thumbZoom>
           <spinPosX>1672</spinPosX>
         </control>
+		
         <control>
           <description>Filmstrip view</description>
           <type>filmstrip</type>
@@ -106,6 +108,7 @@
           <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,570" time="400">focus</thumbAnimation>
           <thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,570" time="100">unfocus</thumbAnimation>
         </control>
+		
         <control>
           <description>Cover Flow view</description>
           <type>coverflow</type>

@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>1</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,8 +6,10 @@
   <define>#header.label:Television</define>
   <define>#header.background:hover_my tv.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -23,6 +24,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -35,6 +37,7 @@
       <height>731</height>
       <texture>tvhome_bg.png</texture>
     </control>
+	
     <control>
       <type>group</type>
       <layout>StackLayout</layout>
@@ -177,6 +180,7 @@
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
     </control>
+	
     <control>
       <description>TV background</description>
       <type>image</type>
@@ -189,6 +193,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>video window</description>
       <type>videowindow</type>
@@ -204,6 +209,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Playing Channel Icon</description>
       <type>image</type>
@@ -216,6 +222,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Play info label</description>
       <type>fadelabel</type>
@@ -224,13 +231,14 @@
       <height>52</height>
       <posX>789</posX>
       <posY>675</posY>
-      <label>#TV.View.channel - #TV.View.start - #TV.View.stop</label>
+	  <label>#TV.View.start - #TV.View.stop #TV.View.channel #TV.Guide.Genre</label>
       <align>left</align>
       <font>font14</font>
       <textcolor>ff85cffe</textcolor>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Current program title</description>
       <type>fadelabel</type>
@@ -245,6 +253,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Description1</description>
       <type>textboxscrollup</type>
@@ -258,6 +267,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Progress background</description>
       <type>image</type>
@@ -270,6 +280,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>progress bar</description>
       <type>progress</type>
@@ -283,6 +294,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Channel label</description>
       <type>label</type>
@@ -295,6 +307,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>record pin</description>
       <type>image</type>
@@ -306,5 +319,6 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
   </controls>
 </window>
