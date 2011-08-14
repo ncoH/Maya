@@ -4,14 +4,7 @@
 	<defaultcontrol>1</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-	  <!--control>
-      <type>image</type>
-      <id>0</id>
-      <width>1366</width>
-      <height>768</height>
-      <texture>black.bmp</texture>
-      <colordiffuse>80ffffff</colordiffuse>
-    </control-->
+	
     <control>
       <type>image</type>
       <id>0</id>
