@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>35</id>
   <defaultcontrol>901</defaultcontrol>
@@ -18,6 +17,7 @@
   <allowoverlay>yes</allowoverlay>
   <disabletopbar>no</disabletopbar>
   <controls>
+  
     <control>
       <description>dummy label for topbar</description>
       <type>label</type>
@@ -27,6 +27,7 @@
       <label>#showtopbar</label>
       <visible>Control.HasText(331)</visible>
     </control>
+	
     <control>
       <description>dummy label for weather</description>
       <type>label</type>
@@ -36,6 +37,7 @@
       <label>#showweather</label>
       <visible>Control.HasText(332)</visible>
     </control>
+	
     <control>
       <description>dummy label for weather</description>
       <type>label</type>
@@ -45,6 +47,7 @@
       <label>#showrss</label>
       <visible>Control.HasText(333)</visible>
     </control>
+	
     <control>
       <description>dummy label for image 1 visibility</description>
       <type>label</type>
@@ -54,6 +57,7 @@
       <label>#visbgimage1</label>
       <visible>Control.HasText(1201) + ![control.hasfocus(221) | control.hasfocus(222) | control.hasfocus(223) | control.hasfocus(231) | control.hasfocus(232) | control.hasfocus(233)]</visible>
     </control>
+	
     <control>
       <description>dummy label for image 2 visibility</description>
       <type>label</type>
@@ -63,7 +67,9 @@
       <label>#visbgimage2</label>
       <visible>Control.HasText(1202) + ![control.hasfocus(221) | control.hasfocus(222) | control.hasfocus(223) | control.hasfocus(231) | control.hasfocus(232) | control.hasfocus(233)]</visible>
     </control>
+	
     <import>BasicHome.FanartHandler.xml</import>
+	
     <control>
       <description>background image 1</description>
       <type>image</type>
@@ -78,6 +84,7 @@
       <shouldCache>true</shouldCache>
       <texture>#bgimage1</texture>
     </control>
+	
     <control>
       <description>background image 2</description>
       <type>image</type>
@@ -92,6 +99,7 @@
       <shouldCache>true</shouldCache>
       <texture>#bgimage2</texture>
     </control>
+	
     <control>
       <description>TVSeries selected Fanart 1</description>
       <type>image</type>
@@ -108,6 +116,7 @@
       <shouldCache>true</shouldCache>
       <texture>#maya.recentlyAdded.series1.fanart</texture>
     </control>
+	
     <control>
       <description>TVSeries selected Fanart 2</description>
       <type>image</type>
@@ -124,6 +133,7 @@
       <shouldCache>true</shouldCache>
       <texture>#maya.recentlyAdded.series2.fanart</texture>
     </control>
+	
     <control>
       <description>TVSeries selected Fanart 3</description>
       <type>image</type>
@@ -140,6 +150,7 @@
       <shouldCache>true</shouldCache>
       <texture>#maya.recentlyAdded.series3.fanart</texture>
     </control>
+	
     <control>
       <description>Movies selected Fanart 1</description>
       <type>image</type>
@@ -156,6 +167,7 @@
       <shouldCache>true</shouldCache>
       <texture>#maya.recentlyAdded.movie1.fanart</texture>
     </control>
+	
     <control>
       <description>Movies selected Fanart 2</description>
       <type>image</type>
@@ -172,6 +184,7 @@
       <shouldCache>true</shouldCache>
       <texture>#maya.recentlyAdded.movie2.fanart</texture>
     </control>
+	
     <control>
       <description>Movies selected Fanart 3</description>
       <type>image</type>
@@ -188,6 +201,7 @@
       <shouldCache>true</shouldCache>
       <texture>#maya.recentlyAdded.movie3.fanart</texture>
     </control>
+	
     <control>
       <description>DEFAULT BACKGROUND</description>
       <type>image</type>
@@ -200,6 +214,7 @@
       <shouldCache>true</shouldCache>
       <visible>!string.contains(#maya.backgroundImage,yes)</visible>
     </control>
+	
     <control>
       <description>Exit Fanart Overlay</description>
       <type>image</type>
@@ -210,8 +225,9 @@
       <height>1080</height>
       <texture>hover_shutdown.png</texture>
       <shouldCache>true</shouldCache>
-      <visible>string.contains(#maya.backgroundImage,yes) + Control.HasFocus(2) + Control.HasFocus(3) + Control.HasFocus(4) + Control.HasFocus(5)</visible>
-    </control>
+	  <visible>string.contains(#maya.backgroundImage,yes) + Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4) | Control.HasFocus(5)</visible>
+	</control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -224,12 +240,14 @@
       <shouldCache>true</shouldCache>
       <visible>string.contains(#maya.backgroundImage,yes)</visible>
     </control>
+	
     <import>common.time.xml</import>
+	
     <!-- Left Buttons -->
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
-      <defaultcontrol>3</defaultcontrol>
+      <defaultcontrol>2</defaultcontrol>
       <onexit>0</onexit>
       <buttonX>0</buttonX>
       <buttonY>0</buttonY>
@@ -326,6 +344,7 @@
         </control>
       </control>
     </control>
+	
     <control>
       <type>group</type>
       <id>0</id>
@@ -545,6 +564,7 @@
           <textcolor>6aa5cb</textcolor>
         </control>
       </control>
+	  
       <control>
         <id>703</id>
         <description>up group</description>
@@ -633,6 +653,7 @@
           <animation effect="slide" start="0,0" end="0,74" time="250" acceleration="-0.4" reversible="false">visible</animation>
         </control>
       </control>
+	  
       <control>
         <id>704</id>
         <description>up group</description>
@@ -721,6 +742,7 @@
         </control>
       </control>
     </control>
+	
     <control>
       <description>Leftmenu tab</description>
       <type>image</type>
@@ -734,6 +756,7 @@
       <animation effect="fade" start="0" end="100" time="200" delay="450">Visible</animation>
       <texture>leftmenu_arrow.png</texture>
     </control>
+	
     <!--Submenu-->
     <control>
       <id>500</id>
@@ -833,6 +856,7 @@
         <visible>!string.equals(#subitem5,)+[Control.HasFocus(501) | Control.HasFocus(502) | Control.HasFocus(503) | Control.HasFocus(504) | Control.HasFocus(505)]</visible>
       </control>
     </control>
+	
     <control>
       <id>600</id>
       <description>submenu group</description>
@@ -932,6 +956,7 @@
         <visible>!string.equals(#subitem5,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
       </control>
     </control>
+	
     <!--Weather-->
     <control>
       <description>Weather image</description>
@@ -946,6 +971,7 @@
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Temp label</description>
       <type>label</type>
@@ -958,6 +984,7 @@
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Date label</description>
       <type>label</type>
@@ -969,13 +996,14 @@
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
     </control>
+	
     <!--RSS-->
     <control>
       <description>RSS background</description>
       <type>image</type>
       <id>1</id>
       <posX>0</posX>
-      <posY>1037</posY>
+      <posY>1038</posY>
       <width>1920</width>
       <height>42</height>
       <texture>rss_bg.png</texture>
@@ -983,12 +1011,13 @@
       <animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
       <animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
     </control>
+	
     <control>
       <description>RSS image</description>
       <type>image</type>
       <id>1</id>
       <posX>0</posX>
-      <posY>878</posY>
+      <posY>879</posY>
       <width>196</width>
       <height>49</height>
       <keepaspectratio>no</keepaspectratio>
@@ -997,12 +1026,13 @@
       <animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
       <animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
     </control>
+	
     <control>
       <description>RSS items</description>
       <type>fadelabel</type>
       <id>1</id>
       <posX>21</posX>
-      <posY>1044</posY>
+      <posY>1045</posY>
       <width>1877</width>
       <height>42</height>
       <font>font10</font>
@@ -1012,6 +1042,20 @@
       <animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
       <animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
     </control>
+
+	<control>
+      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+	  <id>1</id>
+	  <type>image</type>
+	  <posX>0</posX>
+	  <posY>440</posY>
+	  <width>64</width>
+	  <height>199</height>
+	  <texture>hiddenmenu_tab.png</texture>
+	  <visible>![Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4) | Control.HasFocus(5)]</visible>
+	</control>
+	
     <import>common.home.overlay.xml</import>
     <import>BasicHome.recentlyaddedSeries.xml</import>
     <import>BasicHome.recentlyaddedMovies.xml</import>
@@ -1020,5 +1064,6 @@
     <import>BasicHome.recentlyaddedRecordings.xml</import>
     <import>BasicHome.Fanart.Scraper.xml</import>
     <import>BasicHome.forcast.Weather.xml</import>
+	
   </controls>
 </window>

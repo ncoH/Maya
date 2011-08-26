@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>9813</id>
   <defaultcontrol>23</defaultcontrol>
@@ -7,6 +6,7 @@
   <define>#header.label:136</define>
   <define>#header.background:hover_my tv series.png</define>
   <controls>
+  
     <control>
       <description>BG</description>
       <type>image</type>
@@ -18,6 +18,7 @@
       <texture>background.png</texture>
       <visible>facadeview.playlist|facadeview.list</visible>
     </control>
+	
     <control>
       <description>Alternate BG</description>
       <type>image</type>
@@ -27,6 +28,7 @@
       <texture>background_thumbs.png</texture>
       <visible>facadeview.smallicons|facadeview.largeicons</visible>
     </control>
+	
     <control>
       <description>Alternate BG</description>
       <type>image</type>
@@ -36,6 +38,7 @@
       <texture>background_filmstrip.png</texture>
       <visible>facadeview.filmstrip</visible>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -47,6 +50,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -58,6 +62,7 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>[facadeview.playlist|facadeview.list]+string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -69,6 +74,7 @@
       <texture>fanart_overlay_thumbs.png</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip]+string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -83,6 +89,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -98,7 +105,9 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <import>common.time.xml</import>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -113,6 +122,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -128,6 +138,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Media Count Label</description>
       <type>label</type>
@@ -141,6 +152,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Media Count Label</description>
       <type>label</type>
@@ -155,6 +167,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -168,6 +181,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>listcontrol background info</description>
       <type>image</type>
@@ -181,6 +195,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <type>image</type>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -194,6 +209,7 @@
       <texture>#TVSeries.Logos</texture>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
     <control>
       <type>image</type>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -206,6 +222,7 @@
       <texture>Logos\frame_imdb.png</texture>
       <align>left</align>
     </control>
+	
     <control>
       <type>label</type>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -219,6 +236,7 @@
       <label>#TVSeries.Episode.InfoPanelLine1Value</label>
       <textcolor>ffffff</textcolor>
     </control>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -250,7 +268,7 @@
         <control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -415,6 +433,7 @@
         </control>
       </control>
     </control>
+	
     <control>
       <description>group element</description>
       <type>group</type>
@@ -450,6 +469,7 @@
           <spinCanFocus>no</spinCanFocus>
           <dimColor>ffffffff</dimColor>
         </control>
+		
         <control>
           <description>Thumbnail Panel</description>
           <type>thumbnailpanel</type>
@@ -490,6 +510,7 @@
           <frameNoFocus>blackborders_recordings_thumbnail_nofocus.png</frameNoFocus>
           <frameFocus>blackborders_recordings_thumbnail_focus.png</frameFocus>
         </control>
+		
         <control>
           <description>Filmstrip view</description>
           <type>filmstrip</type>
@@ -521,6 +542,7 @@
           <showInfoImage>no</showInfoImage>
           <frameFocus>blackborders_recordings.png</frameFocus>
         </control>
+		
         <control>
           <description>playlist listcontrol</description>
           <type>playlistcontrol</type>
@@ -533,22 +555,7 @@
         </control>
       </control>
     </control>
-    <control>
-      <id>1</id>
-      <type>image</type>
-      <posX>0</posX>
-      <posY>457</posY>
-      <texture>hiddenmenu_tab.png</texture>
-      <visible>[facadeview.playlist|facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
-    </control>
-    <control>
-      <id>1</id>
-      <type>image</type>
-      <posX>877</posX>
-      <posY>0</posY>
-      <texture>hiddenmenu_tab_up.png</texture>
-      <visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
-    </control>
+	
     <control>
       <id>0</id>
       <type>image</type>
@@ -561,6 +568,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>500</id>
       <type>image</type>
@@ -573,6 +581,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -585,6 +594,25 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>440</posY>
+      <texture>hiddenmenu_tab.png</texture>
+      <visible>[facadeview.playlist|facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+    </control>
+	
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <posX>858</posX>
+      <posY>0</posY>
+      <texture>hiddenmenu_tab_up.png</texture>
+      <visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+    </control>
+	
     <import>common.overlay.xml</import>
   </controls>
 </window>

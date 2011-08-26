@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>34</id>
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <disabletopbar>no</disabletopbar>
   <controls>
+  
     <control>
       <description>background image</description>
       <id>1</id>
@@ -14,6 +14,7 @@
       <height>1080</height>
       <texture>background.png</texture>
     </control>
+	
     <control>
       <description>Menu</description>
       <type>menu</type>
@@ -42,6 +43,20 @@
       <onright>4</onright>
       <onleft>2</onleft>
     </control>
+
+    <control>
+      <description>Exit Fanart Overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>hover_shutdown.png</texture>
+      <shouldCache>true</shouldCache>
+	  <visible>string.contains(#maya.backgroundImage,yes) + Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4) | Control.HasFocus(5)</visible>
+	</control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -53,7 +68,9 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>string.contains(#maya.backgroundImage,yes)</visible>
     </control>
+	
     <import>common.time.xml</import>
+	
     <!-- Date and Time -->
     <control>
       <description>Date label</description>
@@ -66,6 +83,7 @@
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Time</description>
       <type>label</type>
@@ -79,6 +97,7 @@
       <font>font12</font>
       <textcolor>6aa5cb</textcolor>
     </control>
+	
     <!-- TOPBAR Buttons -->
     <control>
       <type>actiongroup</type>
@@ -181,6 +200,7 @@
         </control>
       </control>
     </control>
+	
     <!--Weather-->
     <control>
       <description>Weather image</description>
@@ -195,6 +215,7 @@
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Temp label</description>
       <type>label</type>
@@ -207,13 +228,14 @@
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
     </control>
+	
     <!--RSS-->
     <control>
       <description>RSS background</description>
       <type>image</type>
       <id>1</id>
       <posX>0</posX>
-      <posY>1037</posY>
+      <posY>1038</posY>
       <width>1920</width>
       <height>42</height>
       <texture>rss_bg.png</texture>
@@ -221,12 +243,13 @@
       <animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
       <animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
     </control>
+	
     <control>
       <description>RSS image</description>
       <type>image</type>
       <id>1</id>
       <posX>0</posX>
-      <posY>878</posY>
+      <posY>879</posY>
       <width>196</width>
       <height>49</height>
       <keepaspectratio>no</keepaspectratio>
@@ -235,12 +258,13 @@
       <animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
       <animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
     </control>
+	
     <control>
       <description>RSS items</description>
       <type>fadelabel</type>
       <id>1</id>
       <posX>21</posX>
-      <posY>1044</posY>
+      <posY>1045</posY>
       <width>1877</width>
       <height>42</height>
       <font>font10</font>
@@ -250,6 +274,21 @@
       <animation effect="slide" start="0,100" end="0,0" tween="quadratic" easing="in" time="400" delay="100">WindowOpen</animation>
       <animation effect="slide" end="0,100" tween="quadratic" easing="in" time="400" delay="150">WindowClose</animation>
     </control>
+
+	<control>
+      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+	  <id>1</id>
+	  <type>image</type>
+	  <posX>0</posX>
+	  <posY>440</posY>
+	  <width>64</width>
+	  <height>199</height>
+	  <texture>hiddenmenu_tab.png</texture>
+	  <visible>![Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4) | Control.HasFocus(5)]</visible>
+	</control>
+	
     <import>common.home.overlay.xml</import>
+	
   </controls>
 </window>

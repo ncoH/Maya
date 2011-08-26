@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>763</id>
   <defaultcontrol>50</defaultcontrol>
@@ -7,60 +6,10 @@
   <define>#header.label:914</define>
   <define>#header.background:hover_my radio.png</define>
   <controls>
-    <control>
-      <description>Background</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>background.png</texture>
-      <visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>
-    </control>
-    <control>
-      <description>Alternate BG</description>
-      <type>image</type>
-      <id>1</id>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>background_filmstrip.png</texture>
-      <visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip</visible>
-    </control>
-    <control>
-      <description>Fanart Background</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>#header.background</texture>
-      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
-    </control>
-    <control>
-      <description>Fanart Overlay</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>basichome_fanart_overlay.png</texture>
-      <visible>facadeview.list+string.contains(#maya.bgImage.Plugins,yes)</visible>
-    </control>
-    <control>
-      <description>Fanart Overlay</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>fanart_overlay_thumbs.png</texture>
-      <visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip+string.contains(#maya.bgImage.Plugins,yes)</visible>
-    </control>
+
+    <import>common.window.recordings.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <description>Header Label</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -74,9 +23,10 @@
       <label>#header.label</label>
       <textcolor>6aa5cb</textcolor>
       <font>Segoe Light40</font>
-      <visible>facadeview.list</visible>
+      <visible>facadeview.list|facadeview.album</visible>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Header Label</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -90,10 +40,11 @@
       <label>#header.label</label>
       <textcolor>6aa5cb</textcolor>
       <font>Segoe Light40</font>
-      <visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip</visible>
+      <visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow</visible>
       <align>center</align>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -103,10 +54,11 @@
       <width>1019</width>
       <height>677</height>
       <texture>listcontrol_bg.png</texture>
-      <visible>facadeview.list</visible>
+      <visible>facadeview.list|facadeview.album</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>listcontrol background info</description>
       <type>image</type>
@@ -116,79 +68,11 @@
       <width>1019</width>
       <height>71</height>
       <texture>listcontrol_bg_info.png</texture>
-      <visible>facadeview.list</visible>
+      <visible>facadeview.list|facadeview.album</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
-    <!--     <control>
-      <description>Number of Files Label</description>
-      <type>label</type>
-      <id>12</id>
-      <posX>462</posX>
-      <posY>682</posY>
-      <label>#selectedindex/#itemcount #itemtype</label>
-      <font>font10</font>
-      <align>left</align>
-      <textcolor>FFFFFFFF</textcolor>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-      <visible>string.equals(#selectedindex)+string.equals(#itemcount)</visible>
-    </control> -->
-    <control>
-      <description>Number of Files Label</description>
-      <type>label</type>
-      <id>12</id>
-      <posX>1589</posX>
-      <posY>970</posY>
-      <align>right</align>
-      <label>#selectedindex/#itemcount</label>
-      <textcolor>6aa5cb</textcolor>
-      <visible>string.equals(#selectedindex)+string.equals(#itemcount)</visible>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-    </control>
-    <control>
-      <description>Number of Files Label</description>
-      <type>label</type>
-      <id>1</id>
-      <posX>1730</posX>
-      <posY>970</posY>
-      <align>right</align>
-      <label>#itemtype</label>
-      <textcolor>6aa5cb</textcolor>
-      <visible>string.equals(#selectedindex)+string.equals(#itemcount)</visible>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-    </control>
-    <control>
-      <description>Selected item Label</description>
-      <type>fadelabel</type>
-      <id>1</id>
-      <posX>778</posX>
-      <posY>199</posY>
-      <width>931</width>
-      <label>#selecteditem</label>
-      <font>Segoe Light22</font>
-      <visible>[facadeview.list | facadeview.album | facadeview.playlist]+Control.IsVisible(50)</visible>
-      <animation effect="fade" time="200">WindowOpen</animation>
-      <animation effect="fade" time="200">WindowClose</animation>
-      <valign>middle</valign>
-    </control>
-    <control>
-      <description>Selected item Label</description>
-      <type>fadelabel</type>
-      <id>1</id>
-      <posX>0</posX>
-      <posY>199</posY>
-      <width>1920</width>
-      <label>#selecteditem</label>
-      <font>Segoe Light22</font>
-      <align>center</align>
-      <visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons | facadeview.album] + Control.IsVisible(50)</visible>
-      <animation effect="fade" time="200">WindowOpen</animation>
-      <animation effect="fade" time="200">WindowClose</animation>
-      <valign>middle</valign>
-    </control>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -220,7 +104,7 @@
         <control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -345,17 +229,7 @@
         </control>
       </control>
     </control>
-    <!--     <control>
-      <type>image</type>
-      <posX>462</posX>
-      <posY>475</posY>
-      <width>80</width>
-      <height>73</height>
-      <keepaspectratio>yes</keepaspectratio>
-      <centered>yes</centered>
-      <zoom>no</zoom>
-      <texture>#Radio.Recorded.thumb</texture>
-    </control> -->
+	
     <control>
       <type>group</type>
       <description>group element</description>
@@ -367,53 +241,53 @@
       <height>819</height>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
+	  
       <!-- List -->
       <control>
-        <description>Current program title</description>
+        <description>Current program channel</description>
         <type>label</type>
-        <id>13</id>
+        <id>17</id>
         <posX>129</posX>
         <posY>232</posY>
         <width>534</width>
-        <label>#Radio.Recorded.Title</label>
+        <label>#Radio.Recorded.Channel</label>
         <font>Segoe Light18</font>
         <textcolor>85cffe</textcolor>
-        <visible>facadeview.list</visible>
+        <visible>facadeview.list|facadeview.album</visible>
+        <animation effect="fade" time="100">WindowOpen</animation>
+        <animation effect="fade" time="100">WindowClose</animation>
       </control>
+	  
       <control>
-        <type>label</type>
+        <type>fadelabel</type>
         <description>Current program time</description>
-        <id>0</id>
+        <id>14</id>
         <posX>129</posX>
         <posY>281</posY>
+        <width>534</width>		
         <textcolor>85cffe</textcolor>
         <font>Segoe Light18</font>
-        <label>#Radio.Recorded.Time</label>
-        <visible>facadeview.list</visible>
+        <label>#Radio.Recorded.Time #Radio.Recorded.Genre</label>
+        <visible>facadeview.list|facadeview.album</visible>
+        <animation effect="fade" time="100">WindowOpen</animation>
+        <animation effect="fade" time="100">WindowClose</animation>
       </control>
-      <control>
-        <description>Current program genre</description>
-        <type>label</type>
-        <id>0</id>
-        <posX>129</posX>
-        <posY>337</posY>
-        <width>534</width>
-        <font>font12</font>
-        <label>#Radio.Recorded.Genre</label>
-        <visible>!string.equals(#Radio.Recorded.Genre,-)+ facadeview.list </visible>
-      </control>
+	  
       <control>
         <type>textboxscrollup</type>
         <description>Description1</description>
-        <id>0</id>
+        <id>15</id>
         <posX>130</posX>
-        <posY>421</posY>
+        <posY>345</posY>
         <width>534</width>
-        <height>379</height>
+        <height>410</height>
         <font>font12</font>
         <label>#Radio.Recorded.Description</label>
-        <visible>facadeview.list</visible>
+        <visible>facadeview.list|facadeview.album</visible>
+        <animation effect="fade" time="100">WindowOpen</animation>
+        <animation effect="fade" time="100">WindowClose</animation>
       </control>
+	  
       <!-- Thumb -->
       <control>
         <description>Current program channel</description>
@@ -427,30 +301,33 @@
         <align>right</align>
         <visible>facadeview.smallicons|facadeview.largeicons</visible>
       </control>
-      <control>
-        <type>label</type>
-        <description>Current program genre</description>
-        <id>0</id>
-        <posX>723</posX>
-        <posY>904</posY>
-        <textcolor>6aa5cb</textcolor>
-        <font>Segoe Light18</font>
-        <label>#Radio.Recorded.Genre</label>
-        <align>right</align>
-        <visible>facadeview.smallicons|facadeview.largeicons</visible>
-      </control>
+	  
       <control>
         <type>label</type>
         <description>Current program time</description>
         <id>0</id>
         <posX>723</posX>
-        <posY>959</posY>
+        <posY>905</posY>
         <textcolor>6aa5cb</textcolor>
         <font>Segoe Light18</font>
         <label>#Radio.Recorded.Time</label>
         <align>right</align>
         <visible>facadeview.smallicons|facadeview.largeicons</visible>
       </control>
+
+      <control>
+        <type>label</type>
+        <description>Current program genre</description>
+        <id>0</id>
+        <posX>723</posX>
+        <posY>952</posY>
+        <textcolor>6aa5cb</textcolor>
+        <font>Segoe Light18</font>
+        <label>#Radio.Recorded.Genre</label>
+        <align>right</align>
+        <visible>facadeview.smallicons|facadeview.largeicons</visible>
+      </control>
+	  
       <control>
         <type>textboxscrollup</type>
         <description>Description1</description>
@@ -462,41 +339,47 @@
         <label>#Radio.Recorded.Description</label>
         <visible>facadeview.smallicons|facadeview.largeicons</visible>
       </control>
+	  
       <!-- Filmstrip -->
       <control>
         <type>label</type>
         <description>Current program time</description>
         <id>0</id>
-        <posX>723</posX>
-        <posY>959</posY>
-        <textcolor>6aa5cb</textcolor>
+        <posX>692</posX>
+        <posY>1023</posY>
+        <width>562</width>
+        <align>center</align>
         <font>Segoe Light18</font>
+        <textcolor>6aa5cb</textcolor>
         <label>#selecteditem2</label>
-        <visible>facadeview.filmstrip</visible>
+        <visible>facadeview.filmstrip|facadeview.coverflow</visible>
       </control>
     </control>
-    <import>common.facade.recordings.xml</import>
-    <import>common.facade.scrolling.xml</import>
+
     <control>
       <id>1</id>
       <type>image</type>
       <posX>0</posX>
-      <posY>457</posY>
+      <posY>440</posY>
       <texture>hiddenmenu_tab.png</texture>
-      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+      <visible>[facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
       <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <type>image</type>
-      <posX>877</posX>
+      <posX>858</posX>
       <posY>0</posY>
       <texture>hiddenmenu_tab_up.png</texture>
-      <visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
+      <visible>[facadeview.filmstrip|facadeview.coverflow]+Control.HasFocus(50)</visible>
       <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
     </control>
+	
+    <import>common.facade.recordings.xml</import>
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

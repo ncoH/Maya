@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>602</id>
   <defaultcontrol>990</defaultcontrol>
@@ -9,7 +8,9 @@
   <define>#currentremaining:#TV.View.stop</define>
   <define>#duration:#TV.View.stop</define>
   <controls>
+  
     <import>common.progressbar.tv.xml</import>
+	
     <control>
       <description>row 1 label</description>
       <type>label</type>
@@ -23,6 +24,7 @@
       <label>-</label>
       <visible>Control.IsVisible(10)</visible>
     </control>
+	
     <control>
       <description>row 2 label</description>
       <type>label</type>
@@ -35,6 +37,7 @@
       <align>center</align>
       <label>-</label>
     </control>
+	
     <control>
       <description>row 3 label</description>
       <type>label</type>
@@ -47,6 +50,7 @@
       <align>center</align>
       <label>-</label>
     </control>
+	
     <control>
       <description>channelname</description>
       <type>label</type>
@@ -58,6 +62,7 @@
       <visible>no</visible>
       <align>right</align>
     </control>
+	
     <control>
       <description>skip steps</description>
       <type>label</type>
@@ -71,6 +76,7 @@
       <label>-</label>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>pause image</description>
       <type>image</type>
@@ -83,6 +89,7 @@
       <texture>osdpausenf.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>2x image</description>
       <type>image</type>
@@ -95,6 +102,7 @@
       <texture>video+2x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>4x image</description>
       <type>image</type>
@@ -107,6 +115,7 @@
       <texture>video+4x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>8x image</description>
       <type>image</type>
@@ -119,6 +128,7 @@
       <texture>video+8x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>16x image</description>
       <type>image</type>
@@ -131,6 +141,7 @@
       <texture>video+16x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>32x image</description>
       <type>image</type>
@@ -143,6 +154,7 @@
       <texture>video+32x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>- 2x image</description>
       <type>image</type>
@@ -155,6 +167,7 @@
       <texture>video-2x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>- 4x image</description>
       <type>image</type>
@@ -167,6 +180,7 @@
       <texture>video-4x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>- 8x image</description>
       <type>image</type>
@@ -179,6 +193,7 @@
       <texture>video-8x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>- 16x image</description>
       <type>image</type>
@@ -191,6 +206,7 @@
       <texture>video-16x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>- 32x image</description>
       <type>image</type>
@@ -203,6 +219,7 @@
       <texture>video-32x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>rec logo</description>
       <type>image</type>
@@ -213,6 +230,7 @@
       <height>67</height>
       <texture>osdrecordnf.png</texture>
     </control>
+	
     <control>
       <description>MSGBox</description>
       <type>button</type>
@@ -225,6 +243,7 @@
       <textureFocus>bar_hor.png</textureFocus>
       <textureNoFocus>bar_hor.png</textureNoFocus>
     </control>
+	
     <control>
       <description>MSGBox label 1</description>
       <type>label</type>
@@ -238,6 +257,7 @@
       <textcolor>FFFFFFFF</textcolor>
       <visible>yes</visible>
     </control>
+	
     <control>
       <description>MSGBox label 2</description>
       <type>label</type>
@@ -251,6 +271,7 @@
       <textcolor>FFFFFFFF</textcolor>
       <visible>yes</visible>
     </control>
+	
     <control>
       <description>MSGBox label 3</description>
       <type>label</type>
@@ -264,6 +285,7 @@
       <textcolor>FFFFFFFF</textcolor>
       <visible>yes</visible>
     </control>
+	
     <control>
       <description>MSGBox label 2</description>
       <type>label</type>
@@ -277,6 +299,7 @@
       <textcolor>FFFFFFFF</textcolor>
       <visible>yes</visible>
     </control>
+	
     <control>
       <type>image</type>
       <id>500</id>
@@ -288,6 +311,7 @@
       <colordiffuse>White</colordiffuse>
       <visible>no</visible>
     </control>
+	
     <control>
       <type>volumebar</type>
       <id>501</id>
@@ -300,5 +324,6 @@
       <colordiffuse>White</colordiffuse>
       <visible>no</visible>
     </control>
+	
   </controls>
 </window>

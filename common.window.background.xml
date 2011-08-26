@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
     <control>
@@ -13,6 +12,7 @@
       <texture>background.png</texture>
       <visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Alternate BG</description>
       <type>image</type>
@@ -22,6 +22,7 @@
       <texture>background_thumbs.png</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <description>Alternate BG</description>
       <type>image</type>
@@ -31,6 +32,7 @@
       <texture>background_filmstrip.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -42,6 +44,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -53,6 +56,7 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -64,5 +68,6 @@
       <texture>fanart_overlay_thumbs.png</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip]+string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
   </controls>
 </window>

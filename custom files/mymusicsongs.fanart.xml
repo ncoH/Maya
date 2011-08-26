@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>501</id>
   <defaultcontrol>2</defaultcontrol>
@@ -19,6 +18,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
       <type>label</type>
@@ -27,6 +27,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
       <type>label</type>
@@ -78,7 +79,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>fanart_overlay.png</texture>
-      <visible>facadeview.list+control.isvisible(91919293)</visible>
+      <visible>[facadeview.list|facadeview.album]+control.isvisible(91919293)</visible>
     </control>
 	
     <control>
@@ -92,7 +93,7 @@
       <width>1227</width>
       <height>1080</height>
       <texture>fanart_widelist_bg.png</texture>
-      <visible>facadeview.list+control.isvisible(91919293)</visible>
+      <visible>[facadeview.list|facadeview.album]+control.isvisible(91919293)</visible>
     </control>
 	
     <control>
@@ -128,7 +129,7 @@
       <label>2</label>
       <textcolor>6aa5cb</textcolor>
       <font>Segoe Light40</font>
-      <visible>facadeview.list</visible>
+      <visible>[facadeview.list|facadeview.album]</visible>
       <valign>middle</valign>
     </control>
 	
@@ -183,7 +184,7 @@
         <control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -391,7 +392,7 @@
       <posY>299</posY>
       <width>372</width>
       <height>372</height>
-      <visible>facadeview.list+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
+      <visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
       <texture>DefaultMyradioBig.png</texture>
     </control>
 	
@@ -406,7 +407,7 @@
       <width>372</width>
       <height>372</height>
       <texture>#selectedthumb</texture>
-      <visible>facadeview.list+Control.IsVisible(50)+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
+      <visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
     </control>
 	
     <control>
@@ -420,7 +421,7 @@
       <width>491</width>
       <height>492</height>
       <texture>blackborders_music.png</texture>
-      <visible>facadeview.list+Control.IsVisible(50)</visible>
+      <visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)</visible>
     </control>
 
     <control>
@@ -431,7 +432,7 @@
       <posX>0</posX>
       <posY>440</posY>
       <texture>hiddenmenu_tab.png</texture>
-      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+      <visible>[facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
     </control>
 	
     <control>

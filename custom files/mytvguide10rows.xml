@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>600</id>
   <defaultcontrol>2</defaultcontrol>
@@ -193,7 +192,7 @@
       <type>fadelabel</type>
       <id>13</id>
       <posX>112</posX>
-      <posY>883</posY>
+      <posY>882</posY>
       <width>773</width>
       <label>#TV.Guide.CompositeTitle</label>
       <font>Segoe Light18</font>
@@ -206,7 +205,7 @@
       <type>label</type>
       <id>14</id>
       <posX>112</posX>
-      <posY>939</posY>
+      <posY>938</posY>
       <width>773</width>
      <label>#TV.Guide.Time #TV.Guide.ChannelName #TV.Guide.DurationMins #TV.Guide.Genre</label>
       <textcolor>85cfff</textcolor>
@@ -219,9 +218,9 @@
       <type>textboxscrollup</type>
       <id>15</id>
       <posX>913</posX>
-      <posY>883</posY>
+      <posY>888</posY>
       <width>955</width>
-      <height>182</height>
+      <height>180</height>
       <label>#TV.Guide.Description</label>
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
@@ -361,7 +360,7 @@
       <posX>53</posX>
       <posY>163</posY>
       <width>56</width>
-      <height>677</height>
+      <height>670</height>
       <textureFocus>tvgroup_button_selected.png</textureFocus>
       <textureNoFocus>blue.png</textureNoFocus>
       <label></label>

@@ -94,7 +94,7 @@
       <width>1920</width>
       <height>1080</height>
       <dimColor>00ffffff</dimColor>
-      		<control>
+      <control>
         <type>image</type>
         <id>0</id>
         <width>1920</width>
@@ -104,7 +104,7 @@
         <animation effect="fade" time="200">windowopen</animation>
         <animation effect="fade" time="400">windowclose</animation>
       </control>
-      		<control>
+      <control>
         <type>group</type>
         <animation effect="fade" time="250">Visible</animation>
         <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
@@ -113,14 +113,14 @@
         		<control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
           <texture>menu_bg.png</texture>
           <visible>!Control.HasFocus(50)</visible>
         </control>
-        				<control>
+        <control>
           <description>Heading text label</description>
           <type>label</type>
           <id>1</id>
@@ -130,13 +130,13 @@
           <font>Segoe Light18</font>
           <textcolor>85cffe</textcolor>
         </control>
-        			<control>
+       <control>
           <description>button group</description>
           <type>group</type>
           <posX>763</posX>
           <posY>246</posY>
           <layout>StackLayout(0, Vertical, true)</layout>
-                          <control>
+        <control>
             <id>2</id>
             <description>Refresh Button</description>
             <type>button</type>
@@ -251,18 +251,7 @@
       <spinAlign>left</spinAlign>
       <textXOff>30</textXOff>
     </control>
-	
-    <control>
-      <id>1</id>
-      <type>image</type>
-      <visible>Control.HasFocus(50)</visible>
-      <posX>0</posX>
-      <posY>457</posY>
-      <texture>hiddenmenu_tab.png</texture>
-      <animation delay="600" effect="Slide" end="0,0" start="-60,0" time="400" tween="Quadratic">WindowOpen</animation>
-      <animation delay="100" effect="Slide" end="-60,0" start="0,0" time="400" tween="Quadratic">WindowClose</animation>
-    </control>
-	
+		
     <control>
       <id>600</id>
       <description>Plugin logo</description>
@@ -278,6 +267,17 @@
       <overlay>yes</overlay>
       <keepaspectratio>yes</keepaspectratio>
       <centered>yes</centered>
+    </control>
+
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <visible>Control.HasFocus(50)</visible>
+      <posX>0</posX>
+      <posY>440</posY>
+      <texture>hiddenmenu_tab.png</texture>
+      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
     </control>
 	
     <import>common.overlay.xml</import>

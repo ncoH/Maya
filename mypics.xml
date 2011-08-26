@@ -7,8 +7,10 @@
   <define>#header.label:1</define>
   <define>#header.background:hover_my pictures.png</define>
   <controls>
+  
     <import>common.window.pictures.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <description>Header label</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -25,6 +27,7 @@
       <visible>facadeview.list</visible>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -191,8 +194,9 @@
         </control>
       </control>
     </control>
+	
     <import>common.facade.pictures.xml</import>
-    <import>common.facade.scrolling.xml</import>
+	
     <control>
       <id>1</id>
       <type>image</type>
@@ -257,7 +261,7 @@
       <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
       <id>1</id>
       <type>image</type>
-      <posX>877</posX>
+      <posX>858</posX>
       <posY>0</posY>
       <texture>hiddenmenu_tab_up.png</texture>
       <visible>facadeview.filmstrip|facadeview.coverflow+Control.HasFocus(50)</visible>

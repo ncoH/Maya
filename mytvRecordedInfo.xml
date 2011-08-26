@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>759</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,8 +6,10 @@
   <define>#header.label:100748</define>
   <define>#header.background:hover_my tv.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -23,6 +24,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <type>group</type>
       <layout>StackLayout</layout>
@@ -42,6 +44,7 @@
         <label>1042</label>
       </control>
     </control>
+	
     <control>
       <description>Current program title</description>
       <type>fadelabel</type>
@@ -53,6 +56,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Current program channel</description>
       <type>fadelabel</type>
@@ -63,6 +67,7 @@
       <textcolor>85cffe</textcolor>
       <label>#TV.RecordedTV.Channel</label>
     </control>
+	
     <control>
       <type>label</type>
       <description>Current program time</description>
@@ -72,6 +77,7 @@
       <textcolor>85cffe</textcolor>
       <font>Segoe Light18</font>
     </control>
+	
     <control>
       <type>textboxscrollup</type>
       <description>Description1</description>
@@ -83,6 +89,7 @@
       <font>font12</font>
       <label>#TV.RecordedTV.Description</label>
     </control>
+	
     <control>
       <description>genre</description>
       <type>label</type>
@@ -95,6 +102,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>Current program title</description>
@@ -107,6 +115,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <type>label</type>
       <description>Current program time</description>
@@ -118,6 +127,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <type>textboxscrollup</type>
       <description>Description1</description>
@@ -133,6 +143,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <type>label</type>
       <description>genre</description>
@@ -145,6 +156,8 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

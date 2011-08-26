@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>7890</id>
   <defaultcontrol>15</defaultcontrol>
@@ -9,6 +8,7 @@
   <define>#usePlayFanart:Yes</define>
   <define>#header.background:hover_LastFmRadio.png</define>
   <controls>
+  
     <control>
       <description>Background</description>
       <type>image</type>
@@ -19,6 +19,7 @@
       <texture>background.png</texture>
       <visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -30,6 +31,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -41,6 +43,7 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -55,6 +58,7 @@
       <font>Segoe Light40</font>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
       <type>label</type>
@@ -80,6 +84,7 @@
       <width>1</width>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>FANART IMAGE 1</description>
       <id>897688</id>
@@ -93,6 +98,7 @@
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
       <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
     </control>
+	
     <control>
       <description>FANART IMAGE 2</description>
       <id>897689</id>
@@ -106,6 +112,7 @@
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
       <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>Fanart Overlay</description>
@@ -119,6 +126,7 @@
       <animation effect="Fade" time="400">WindowOpen</animation>
       <animation effect="Fade" end="0" start="0" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <type>image</type>
@@ -129,6 +137,7 @@
       <visible>!control.hasthumb(112)</visible>
       <texture>DefaultMyradioBig.png</texture>
     </control>
+	
     <control>
       <type>image</type>
       <description>artist art image</description>
@@ -145,6 +154,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <type>image</type>
       <description>album art overlay</description>
@@ -155,6 +165,7 @@
       <height>606</height>
       <texture>blackborders_music_nowplaying.png</texture>
     </control>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -187,7 +198,7 @@
         <control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>

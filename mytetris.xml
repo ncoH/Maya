@@ -7,8 +7,10 @@
   <define>#header.label:Tetris</define>
   <define>#header.background:hover_tetris.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -23,6 +25,7 @@
       <font>Segoe Light40</font>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>button group</description>
       <type>group</type>

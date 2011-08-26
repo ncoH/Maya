@@ -1,46 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 	<controls>
-
-    <!--            :: BACKGROUNDS ::           	 -->
-
-    <control>
-      <description>BG</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>background.png</texture>
-      <visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>
-    </control>
-	
-    <control>
-      <description>Fanart Background</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>hover_trakt.png</texture>
-      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
-    </control>
-	
-    <control>
-      <description>Fanart Overlay</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>0</posX>
-      <posY>0</posY>
-      <width>1920</width>
-      <height>1080</height>
-      <texture>basichome_fanart_overlay.png</texture>
-      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
-    </control>
-	
-    <import>common.time.xml</import>
 	
     <control>
       <id>1</id>
@@ -78,92 +38,84 @@
       <type>group</type>
       <posX>245</posX>
       <posY>365</posY>
-      <layout>StackLayout</layout>
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
-      <layout>StackLayout</layout>
+	  <layout>StackLayout(0, Vertical, true)</layout>
 			<control>
-				<description>Trakt Calendar</description>
+				<description>Calendar</description>
 				<type>button</type>
-				<id>9991</id>
+				<id>10</id>
 				<label>#Trakt.Translation.Calendar.Label</label>
 				<hyperlink>87259</hyperlink>
-				<onup>9996</onup>
-				<onleft>#defaultcontrol</onleft>
-				<width>364</width>
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>				
+				<onup>15</onup>					
+				<width>364</width>				
 				<textalign>LEFT</textalign>
-				<font>font11</font>						
+				<font>font11</font>	
+				<textureFocus>settings_button_large_focus.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>				
 			</control>
 			<control>
 				<description>Friends</description>
 				<type>button</type>
-				<id>9992</id>
-				<label>#Trakt.Translation.Friends.Label</label>
+				<id>11</id>				
 				<hyperlink>87260</hyperlink>
-				<onleft>#defaultcontrol</onleft>
-				<width>364</width>
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>				
+				<label>#Trakt.Translation.Friends.Label</label>
+				<width>364</width>			
 				<textalign>LEFT</textalign>
-				<font>font11</font>						
+				<font>font11</font>				
+				<textureFocus>settings_button_large_focus.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>					
 			</control>
 			<control>
 				<description>Recommendations</description>
 				<type>button</type>
-				<id>9993</id>
-				<label>#Trakt.Translation.Recommendations.Label</label>
+				<id>12</id>			
 				<hyperlink>87261</hyperlink>
-				<onleft>#defaultcontrol</onleft>
-				<width>364</width>
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>				
+				<label>#Trakt.Translation.Recommendations.Label</label>
+				<width>364</width>			
 				<textalign>LEFT</textalign>
-				<font>font11</font>						
+				<font>font11</font>		
+				<textureFocus>settings_button_large_focus.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>					
 			</control>
 			<control>
 				<description>Trending</description>
 				<type>button</type>
-				<id>9994</id>
-				<label>#Trakt.Translation.Trending.Label</label>
+				<id>13</id>		
 				<hyperlink>87264</hyperlink>
-				<onleft>#defaultcontrol</onleft>
-				<width>364</width>
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>				
+				<label>#Trakt.Translation.Trending.Label</label>
+				<width>364</width>			
 				<textalign>LEFT</textalign>
-				<font>font11</font>						
+				<font>font11</font>	
+				<textureFocus>settings_button_large_focus.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>					
 			</control>
 			<control>
 				<description>Watch List</description>
 				<type>button</type>
-				<id>9995</id>
-				<label>#Trakt.Translation.WatchList.Label</label>
+				<id>14</id>			
 				<hyperlink>87267</hyperlink>
-				<onleft>#defaultcontrol</onleft>
-				<width>364</width>
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>				
+				<label>#Trakt.Translation.WatchList.Label</label>
+				<width>364</width>			
 				<textalign>LEFT</textalign>
-				<font>font11</font>						
+				<font>font11</font>		
+				<textureFocus>settings_button_large_focus.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>					
 			</control>
 			<control>
 				<description>Settings</description>
 				<type>button</type>
-				<id>9996</id>
+				<id>15</id>		
 				<label>#Trakt.Translation.Settings.Label</label>
 				<hyperlink>87271</hyperlink>
-				<onleft>#defaultcontrol</onleft>
-				<width>364</width>
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>				
+				<ondown>10</ondown>
+				<width>364</width>		
 				<textalign>LEFT</textalign>
-				<font>font11</font>						
+				<font>font11</font>		
+				<textureFocus>settings_button_large_focus.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>					
 			</control>
 		</control>
-
-		<import>common.overlay.xml</import>
 		
 	</controls>
 </window>

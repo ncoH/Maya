@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
     <control>
@@ -10,6 +9,7 @@
       <height>1080</height>
       <visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip]+!control.isvisible(91919293)</visible>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -23,6 +23,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>listcontrol background info</description>
       <type>image</type>
@@ -36,6 +37,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Alternate BG</description>
       <type>image</type>
@@ -43,8 +45,9 @@
       <width>1920</width>
       <height>1080</height>
       <texture>background_thumbs.png</texture>
-      <visible>facadeview.smallicons|facadeview.largeicons+!control.isvisible(91919293)</visible>
+      <visible>[facadeview.smallicons|facadeview.largeicons]+!control.isvisible(91919293)</visible>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -59,6 +62,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -72,6 +76,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -86,6 +91,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -101,5 +107,6 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
   </controls>
 </window>

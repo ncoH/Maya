@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>49851</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,8 +6,10 @@
   <define>#header.label:Radio Search</define>
   <define>#header.background:hover_my radio.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <description>Header Label</description>
       <type>fadelabel</type>
@@ -24,6 +25,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -36,6 +38,7 @@
       <height>788</height>
       <texture>listcontrol_bg_recordings.png</texture>
     </control>
+	
     <control>
       <type>label</type>
       <description>Number of Files Label</description>
@@ -48,6 +51,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -61,6 +65,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -74,6 +79,7 @@
       <animation effect="fade" time="250">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <type>group</type>
       <description>group element</description>
@@ -115,6 +121,7 @@
         <offsetSortButtonX>29</offsetSortButtonX>
       </control>
     </control>
+	
     <control>
       <type>group</type>
       <description>group element</description>
@@ -152,6 +159,7 @@
         <dimColor>ffffffff</dimColor>
       </control>
     </control>
+	
     <control>
       <description>Current program title</description>
       <type>fadelabel</type>
@@ -164,6 +172,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Current channel</description>
       <type>label</type>
@@ -177,6 +186,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Current program time</description>
       <type>label</type>
@@ -190,6 +200,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Current program genre</description>
       <type>label</type>
@@ -204,6 +215,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Description1</description>
       <type>textboxscrollup</type>
@@ -217,6 +229,8 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

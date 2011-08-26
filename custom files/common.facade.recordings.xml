@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
     <control>
@@ -13,8 +12,39 @@
         <type>facadeview</type>
         <id>50</id>
         <control>
-          <description>listcontrol</description>
+			<description>listcontrol</description>
+			<type>listcontrol</type>
+			<id>50</id>
+			<posY>600</posY>
+			<height>421</height>
+			<posX>736</posX>
+			<width>1017</width>
+			<onleft>2</onleft>
+			<onright>2</onright>
+			<scrollOffset>1</scrollOffset>
+			<PinIconHeight>51</PinIconHeight>
+			<PinIconWidth>43</PinIconWidth>
+			<PinIconXOff>3</PinIconXOff>
+			<PinIconYOff>8</PinIconYOff>
+			<itemWidth>44</itemWidth>
+			<itemHeight>45</itemHeight>
+			<IconXOff>42</IconXOff>
+			<IconYOff>12</IconYOff>
+			<textXOff>56</textXOff>
+			<spinPosX>787</spinPosX>
+			<spinPosY>973</spinPosY>
+			<spinAlign>left</spinAlign>
+			<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
+			<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
+			<keepaspectratio>yes</keepaspectratio>
+			<spinCanFocus>no</spinCanFocus>
+			<dimColor>ffffffff</dimColor>
+        </control>
+
+        <control>
+          <description>album view listcontrol</description>
           <type>listcontrol</type>
+          <subtype>album</subtype>
           <id>50</id>
           <onleft>2</onleft>
           <onright>50</onright>
@@ -25,21 +55,28 @@
           <width>1017</width>
           <PinIconHeight>51</PinIconHeight>
           <PinIconWidth>43</PinIconWidth>
-          <PinIconXOff>0</PinIconXOff>
-          <PinIconYOff>1</PinIconYOff>
-          <itemWidth>44</itemWidth>
-          <itemHeight>45</itemHeight>
+          <PinIconXOff>8</PinIconXOff>
+          <PinIconYOff>20</PinIconYOff>
+          <itemWidth>64</itemWidth>
+          <itemHeight>65</itemHeight>
           <IconXOff>56</IconXOff>
           <IconYOff>12</IconYOff>
           <textXOff>56</textXOff>
+          <textYOff>5</textYOff>		  
+          <textXOff2>0</textXOff2>	
+          <textYOff2>51</textYOff2>			  
+          <textXOff3>130</textXOff3>	
+          <textYOff3>51</textYOff3>			  
           <spinPosX>787</spinPosX>
           <spinPosY>973</spinPosY>
           <spinAlign>left</spinAlign>
+          <textureHeight>90</textureHeight>		  
           <textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
           <textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
           <keepaspectratio>yes</keepaspectratio>
           <dimColor>ffffffff</dimColor>
         </control>
+		
         <control>
           <description>Thumbnail Panel</description>
           <type>thumbnailpanel</type>
@@ -85,6 +122,7 @@
           <thumbZoom>no</thumbZoom>
           <spinPosX>1672</spinPosX>
         </control>
+		
         <control>
           <description>Filmstrip view</description>
           <type>filmstrip</type>
@@ -115,15 +153,15 @@
           <frameFocus>pictures_filmstrip_focus.png</frameFocus>
           <keepaspectratio>no</keepaspectratio>
           <background>-</background>
-          <thumbs mask="pictures_filmstrip_mask.png" flipY="true" diffuse="Thumb_Mask.png">
-          </thumbs>
+          <thumbs mask="pictures_filmstrip_mask.png" flipY="true" diffuse="Thumb_Mask.png"></thumbs>
           <showFrame>yes</showFrame>
           <showFolder>no</showFolder>
           <showBackGround>no</showBackGround>
           <showInfoImage>no</showInfoImage>
-          <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,520" time="400">focus</thumbAnimation>
-          <thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,520" time="100">unfocus</thumbAnimation>
+          <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="118,118" center="0,630" time="400">focus</thumbAnimation>
+          <thumbAnimation effect="zoom" start="118,118" reversible="false" end="100,100" center="0,630" time="100">unfocus</thumbAnimation>
         </control>
+		
         <control>
           <description>Cover Flow view</description>
           <type>coverflow</type>
@@ -179,17 +217,49 @@
           <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png" />
           <subitems>
             <subitem>
-                &lt;controls&gt;
-                  &lt;control&gt;
-                    &lt;description&gt;background&lt;/description&gt;
-                    &lt;type&gt;image&lt;/type&gt;
-                    &lt;posX&gt;0&lt;/posX&gt;
-                    &lt;posY&gt;0&lt;/posY&gt;
-                    &lt;width&gt;385&lt;/width&gt;
-                    &lt;height&gt;280&lt;/height&gt;
-                    &lt;texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png"&gt;background.png&lt;/texture&gt;
-                  &lt;/control&gt;
-                &lt;/controls&gt;
+							<![CDATA[
+                <controls>
+                  <control>
+                    <description>background</description>
+                    <type>image</type>
+                    <posX>0</posX>
+                    <posY>0</posY>
+                    <width>385</width>
+                    <height>280</height>
+                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png">background.png</texture>
+                  </control>
+				     <control>
+                    <description>Picture Details</description>
+                    <type>label</type>
+                    <posX>20</posX>
+                    <posY>10</posY>
+                    <width>210</width>
+                    <label>Picture Details</label>
+                    <font>font13</font>
+                    <textcolor>ff7F9EB2</textcolor>
+                  </control>
+                  <control>
+                    <description>picture name</description>
+                    <type>label</type>
+                    <posX>20</posX>
+                    <posY>40</posY>
+                    <width>210</width>
+                    <label>#selecteditem</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+				  <control>
+                    <description>picture size</description>
+                    <type>label</type>
+                    <posX>20</posX>
+                    <posY>60</posY>
+                    <width>210</width>
+                    <label>#selecteditem2</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                </controls>
+              ]]>
               </subitem>
           </subitems>
         </control>

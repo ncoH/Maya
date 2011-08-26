@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>604</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,8 +6,10 @@
   <define>#header.label:724</define>
   <define>#header.background:hover_my tv.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>fadelabel</type>
@@ -23,6 +24,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -35,6 +37,7 @@
       <height>788</height>
       <texture>listcontrol_bg_recordings.png</texture>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -44,6 +47,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -57,6 +61,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -70,6 +75,7 @@
       <animation effect="fade" time="250">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <type>group</type>
       <description>group element</description>
@@ -142,41 +148,37 @@
         <textalign>right</textalign>
       </control>
     </control>
+	
     <control>
-      <type>group</type>
-      <description>group element</description>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-      <animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="1000">WindowClose</animation>
-      <control>
-        <description>listcontrol</description>
-        <type>listcontrol</type>
-        <id>10</id>
-        <posY>600</posY>
-        <height>421</height>
-        <posX>736</posX>
-        <width>1017</width>
-        <onleft>2</onleft>
-        <onright>2</onright>
-        <scrollOffset>1</scrollOffset>
-        <PinIconHeight>53</PinIconHeight>
-        <PinIconWidth>34</PinIconWidth>
-        <PinIconXOff>0</PinIconXOff>
-        <PinIconYOff>0</PinIconYOff>
-        <itemWidth>44</itemWidth>
-        <itemHeight>45</itemHeight>
-        <IconXOff>42</IconXOff>
-        <IconYOff>12</IconYOff>
-        <textXOff>56</textXOff>
-        <spinPosX>787</spinPosX>
-        <spinPosY>973</spinPosY>
-        <spinAlign>left</spinAlign>
-        <textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
-        <textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
-        <keepaspectratio>yes</keepaspectratio>
-        <spinCanFocus>no</spinCanFocus>
-        <dimColor>ffffffff</dimColor>
-      </control>
+      <description>listcontrol</description>
+      <type>listcontrol</type>
+      <id>10</id>
+      <posY>738</posY>
+      <height>281</height>
+      <posX>736</posX>
+      <width>1017</width>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <scrollOffset>1</scrollOffset>
+      <PinIconHeight>51</PinIconHeight>
+      <PinIconWidth>43</PinIconWidth>
+      <PinIconXOff>3</PinIconXOff>
+      <PinIconYOff>8</PinIconYOff>
+      <itemWidth>44</itemWidth>
+      <itemHeight>45</itemHeight>
+      <IconXOff>42</IconXOff>
+      <IconYOff>12</IconYOff>
+      <textXOff>56</textXOff>
+      <spinPosX>787</spinPosX>
+      <spinPosY>973</spinPosY>
+      <spinAlign>left</spinAlign>
+      <textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
+      <textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
+      <keepaspectratio>yes</keepaspectratio>
+      <spinCanFocus>no</spinCanFocus>
+      <dimColor>ffffffff</dimColor>
+    </control>
+	  
       <control>
         <description>listcontrol</description>
         <type>listcontrol</type>
@@ -188,15 +190,15 @@
         <onleft>2</onleft>
         <onright>2</onright>
         <scrollOffset>1</scrollOffset>
-        <PinIconHeight>53</PinIconHeight>
-        <PinIconWidth>34</PinIconWidth>
-        <PinIconXOff>0</PinIconXOff>
-        <PinIconYOff>0</PinIconYOff>
-        <itemWidth>44</itemWidth>
-        <itemHeight>45</itemHeight>
-        <IconXOff>42</IconXOff>
-        <IconYOff>12</IconYOff>
-        <textXOff>56</textXOff>
+		<PinIconHeight>51</PinIconHeight>
+		<PinIconWidth>43</PinIconWidth>
+		<PinIconXOff>3</PinIconXOff>
+		<PinIconYOff>8</PinIconYOff>
+		<itemWidth>44</itemWidth>
+		<itemHeight>45</itemHeight>
+		<IconXOff>42</IconXOff>
+		<IconYOff>12</IconYOff>
+		<textXOff>56</textXOff>
         <spinPosX>787</spinPosX>
         <spinPosY>973</spinPosY>
         <spinAlign>left</spinAlign>
@@ -206,7 +208,7 @@
         <spinCanFocus>no</spinCanFocus>
         <dimColor>ffffffff</dimColor>
       </control>
-    </control>
+	  
     <control>
       <description>Current program title</description>
       <type>fadelabel</type>
@@ -219,6 +221,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Current channel</description>
       <type>label</type>
@@ -232,6 +235,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Current program time</description>
       <type>label</type>
@@ -245,6 +249,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Current program genre</description>
       <type>label</type>
@@ -259,6 +264,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Description1</description>
       <type>textboxscrollup</type>
@@ -272,6 +278,8 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

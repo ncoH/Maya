@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>1</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,8 +6,10 @@
   <define>#header.label:Television</define>
   <define>#header.background:hover_my tv.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -23,6 +24,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -35,6 +37,7 @@
       <height>731</height>
       <texture>tvhome_bg.png</texture>
     </control>
+	
     <control>
       <type>group</type>
       <layout>StackLayout</layout>
@@ -211,35 +214,38 @@
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
     </control>
+	
     <control>
       <description>TV background</description>
       <type>image</type>
       <id>1</id>
       <posX>730</posX>
-      <posY>213</posY>
+      <posY>183</posY>
       <width>768</width>
       <height>489</height>
       <texture>tvhome_tvframe_big.png</texture>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>video window</description>
       <type>videowindow</type>
       <id>99</id>
-      <posX>803</posX>
-      <posY>281</posY>
-      <width>626</width>
-      <height>351</height>
+      <posX>798</posX>
+      <posY>248</posY>
+      <width>629</width>
+      <height>358</height>
       <onleft>2</onleft>
       <onright>2</onright>
       <action>18</action>
       <textureFocus>tv_green_border.png</textureFocus>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
-      <description>Playing Channel</description>
+      <description>Playing Channel Icon</description>
       <type>image</type>
       <id>1</id>
       <posX>-2000</posX>
@@ -247,9 +253,10 @@
       <width>70</width>
       <height>70</height>
       <texture>#TV.View.thumb</texture>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Play info label</description>
       <type>fadelabel</type>
@@ -257,14 +264,15 @@
       <width>1054</width>
       <height>52</height>
       <posX>789</posX>
-      <posY>675</posY>
-      <label>#TV.View.channel - #TV.View.start - #TV.View.stop</label>
+      <posY>665</posY>
+	  <label>#TV.View.start - #TV.View.stop #TV.View.channel #TV.Guide.Genre</label>
       <align>left</align>
       <font>font14</font>
       <textcolor>ff85cffe</textcolor>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Current program title</description>
       <type>fadelabel</type>
@@ -276,9 +284,10 @@
       <font>Segoe Light22</font>
       <align>left</align>
       <textcolor>ffffff</textcolor>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Description1</description>
       <type>textboxscrollup</type>
@@ -289,65 +298,80 @@
       <height>192</height>
       <seperator>----------------------------------------------------------------------------------------------</seperator>
       <label>#TV.View.description</label>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
     </control>
+
+    <control>
+        <id>112</id>
+        <description>On Next</description>
+        <type>label</type>
+        <posX>787</posX>
+        <posY>995</posY>
+        <width>180</width>
+        <font>font12</font>
+        <textcolor>ff85cffe</textcolor>
+        <align>left</align>
+        <label>209</label>
+        <animation effect="Fade" time="250">WindowOpen</animation>
+        <animation effect="Fade" time="250">WindowClose</animation>			
+    </control>
+
+    <control>
+        <id>112</id>
+        <description>On Next Program Title</description>
+        <type>fadelabel</type>
+        <posX>1000</posX>
+        <posY>995</posY>
+        <width>600</width>
+        <font>font12</font>
+        <textcolor>ff85cffe</textcolor>
+        <align>LEFT</align>
+        <label>: #TV.Next.title</label>
+        <animation effect="Fade" time="250">WindowOpen</animation>
+        <animation effect="Fade" time="250">WindowClose</animation>			
+    </control>
+		
     <control>
       <description>Progress background</description>
       <type>image</type>
       <id>1</id>
-      <posX>3620</posX>
-      <posY>675</posY>
-      <width>874</width>
-      <height>21</height>
-      <texture>osd_progress_background_tvhome.png</texture>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
+      <posX>785</posX>
+      <posY>640</posY>
+      <width>660</width>
+      <height>13</height>
+      <texture>osd_progress_background_medium.png</texture>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>progress bar</description>
       <type>progress</type>
       <id>20</id>
-      <posX>3605</posX>
-      <posY>675</posY>
-      <width>899</width>
-      <height>21</height>
+      <posX>774</posX>
+      <posY>640</posY>
+      <width>660</width>
+      <height>13</height>
       <label>#TV.View.Percentage</label>
       <visible>yes</visible>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
     </control>
-    <!--
-	<control>
-		<description>program title 1</description>
-		<type>fadelabel</type>
-		<id>0</id>
-		<posX>20</posX>
-		<posY>100</posY>
-		<width>622</width>
-		<label>#TV.Recording1.Title</label>
-		<font>font13</font>
-		<align>left</align>
-		<textcolor>FFB2D4F5</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
-
-	<control>
-		<description>program title 1</description>
-		<type>fadelabel</type>
-		<id>0</id>
-		<posX>20</posX>
-		<posY>200</posY>
-		<width>622</width>
-		<label>#TV.Recording2.Title</label>
-		<font>font13</font>
-		<align>left</align>
-		<textcolor>FFB2D4F5</textcolor>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-	</control>
--->
+	
+    <control>
+      <description>Channel label</description>
+      <type>label</type>
+      <id>13</id>
+      <posX>-2000</posX>
+      <posY>759</posY>
+      <label>602</label>
+      <font>font13</font>
+      <align>right</align>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+		
     <control>
       <description>record pin</description>
       <type>image</type>
@@ -359,5 +383,6 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

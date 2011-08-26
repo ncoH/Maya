@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>500</id>
   <defaultcontrol>2</defaultcontrol>
@@ -8,6 +7,7 @@
   <define>#useSelectedFanart:Yes</define>
   <define>#header.background:hover_my music.png</define>
   <controls>
+  
     <import>common.window.playlist.xml</import>
     <import>common.time.xml</import>
     <control>
@@ -26,6 +26,7 @@
       <visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Header label</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -43,6 +44,7 @@
       <align>center</align>
       <valign>middle</valign>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -56,6 +58,7 @@
       <texture>listcontrol_bg.png</texture>
       <visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -69,6 +72,7 @@
       <texture>listcontrol_bg_info.png</texture>
       <visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
     </control>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -100,7 +104,7 @@
         <control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -252,67 +256,10 @@
             <textYOff>16</textYOff>
             <visible>plugin.isenabled(My Lyrics)</visible>
           </control>
-          <control>
-            <description>scrobble mode button</description>
-            <type>button</type>
-            <id>28</id>
-            <label>33001</label>
-            <onright>50</onright>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <visible>plugin.isenabled(Audioscrobbler)</visible>
-          </control>
-          <control>
-            <description>scrobble on/off button</description>
-            <type>togglebutton</type>
-            <id>27</id>
-            <label>33000</label>
-            <onright>50</onright>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-            <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-            <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
-            <visible>plugin.isenabled(Audioscrobbler)</visible>
-          </control>
-          <control>
-            <description>scrobble user button</description>
-            <type>button</type>
-            <id>29</id>
-            <label>Scrobbler:</label>
-            <onright>50</onright>
-            <onup>27</onup>
-            <ondown>2</ondown>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <visible>plugin.isenabled(Audioscrobbler)</visible>
-          </control>
         </control>
       </control>
     </control>
-    <import>common.facade.music.xml</import>
-    <import>common.facade.scrolling.xml</import>
-    <control>
-      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
-      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
-      <id>1</id>
-      <type>image</type>
-      <posX>0</posX>
-      <posY>457</posY>
-      <texture>hiddenmenu_tab.png</texture>
-      <visible>[facadeview.list | facadeview.album | facadeview.playlist | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50)</visible>
-    </control>
+		
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -325,6 +272,7 @@
       <visible>[facadeview.list | facadeview.album | facadeview.playlist]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
       <texture>DefaultMyradioBig.png</texture>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -337,6 +285,7 @@
       <texture>#Play.Current.Thumb</texture>
       <visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -349,6 +298,7 @@
       <texture>#selectedthumb</texture>
       <visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -361,6 +311,20 @@
       <texture>blackborders_music.png</texture>
       <visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
     </control>
+
+    <control>
+      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+      <id>1</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>440</posY>
+      <texture>hiddenmenu_tab.png</texture>
+      <visible>[facadeview.list | facadeview.album | facadeview.playlist | facadeview.smallicons | facadeview.largeicons]+Control.HasFocus(50)</visible>
+    </control>
+	
+    <import>common.facade.music.xml</import>	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

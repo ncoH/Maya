@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
     <control>
@@ -174,7 +173,7 @@
           <cardHeight>421</cardHeight>
           <angle>65</angle>
           <sideShift>310</sideShift>
-          <sideGap>210</sideGap>
+          <sideGap>180</sideGap>
           <sideDepth>280</sideDepth>
           <offsetY>0</offsetY>
           <selectedOffsetY>0</selectedOffsetY>

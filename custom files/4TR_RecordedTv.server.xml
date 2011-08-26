@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>603</id>
   <defaultcontrol>11</defaultcontrol>
@@ -7,8 +6,10 @@
   <define>#header.label:652</define>
   <define>#header.background:hover_my tv.png</define>
   <controls>
-    <import>common.window.recordings.xml</import>
+  
+    <import>common.window.4tr.recordings.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <description>Header Label</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -22,9 +23,10 @@
       <label>604</label>
       <textcolor>6aa5cb</textcolor>
       <font>Segoe Light40</font>
-      <visible>facadeview.list</visible>
+      <visible>facadeview.list|facadeview.album</visible>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Header Label</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -42,6 +44,7 @@
       <align>center</align>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -51,10 +54,11 @@
       <width>1019</width>
       <height>677</height>
       <texture>listcontrol_bg.png</texture>
-      <visible>facadeview.list</visible>
+      <visible>facadeview.list|facadeview.album</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>listcontrol background info</description>
       <type>image</type>
@@ -64,10 +68,11 @@
       <width>1019</width>
       <height>71</height>
       <texture>listcontrol_bg_info.png</texture>
-      <visible>facadeview.list</visible>
+      <visible>facadeview.list|facadeview.album</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -99,7 +104,7 @@
         <control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -191,6 +196,7 @@
         </control>
       </control>
     </control>
+	
     <control>
       <id>0</id>
       <type>image</type>
@@ -199,10 +205,11 @@
       <width>513</width>
       <height>285</height>
       <texture>defaultTVBig.png</texture>
-      <visible>facadeview.list+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
+      <visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>500</id>
       <type>image</type>
@@ -211,10 +218,11 @@
       <width>513</width>
       <height>285</height>
       <texture>#selectedthumb</texture>
-      <visible>facadeview.list+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
+      <visible>[facadeview.list|facadeview.album]+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -223,10 +231,11 @@
       <width>642</width>
       <height>414</height>
       <texture>blackborders_recordings.png</texture>
-      <visible>facadeview.list</visible>
+      <visible>facadeview.list|facadeview.album</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <type>group</type>
       <description>group element</description>
@@ -238,6 +247,7 @@
       <height>819</height>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
+	  
       <!-- List -->
       <control>
         <description>Current program channel</description>
@@ -245,72 +255,79 @@
         <id>0</id>
         <posX>129</posX>
         <posY>604</posY>
-        <width>534</width>
+        <width>520</width>
         <label>#TV.RecordedTV.Channel</label>
         <font>Segoe Light18</font>
         <textcolor>85cffe</textcolor>
-        <visible>facadeview.list</visible>
+        <visible>facadeview.list|facadeview.album</visible>
       </control>
+	  
       <control>
-        <type>label</type>
+        <type>fadelabel</type>
         <description>Current program time</description>
         <id>0</id>
         <posX>129</posX>
         <posY>653</posY>
+        <width>520</width>		
         <textcolor>85cffe</textcolor>
         <font>Segoe Light18</font>
-        <label>#TV.RecordedTV.Time</label>
-        <visible>facadeview.list</visible>
+        <label>#TV.RecordedTV.Time #TV.RecordedTV.Genre</label>
+        <visible>facadeview.list|facadeview.album</visible>
       </control>
+	  
       <control>
         <type>textboxscrollup</type>
         <description>Description1</description>
         <id>0</id>
         <posX>130</posX>
-        <posY>759</posY>
-        <width>534</width>
-        <height>239</height>
+        <posY>718</posY>
+        <width>520</width>
+        <height>290</height>
         <font>font12</font>
         <label>#TV.RecordedTV.Description</label>
-        <visible>facadeview.list</visible>
+        <visible>facadeview.list|facadeview.album</visible>
       </control>
+	  
       <!-- Thumb -->
       <control>
         <description>Current program channel</description>
         <type>label</type>
         <id>0</id>
         <posX>723</posX>
-        <posY>857</posY>
+        <posY>858</posY>
         <label>#TV.RecordedTV.Channel</label>
         <font>Segoe Light18</font>
         <textcolor>6aa5cb</textcolor>
         <align>right</align>
         <visible>facadeview.smallicons|facadeview.largeicons</visible>
       </control>
-      <control>
-        <type>label</type>
-        <description>Current program genre</description>
-        <id>0</id>
-        <posX>723</posX>
-        <posY>904</posY>
-        <textcolor>6aa5cb</textcolor>
-        <font>Segoe Light18</font>
-        <label>#TV.RecordedTV.Genre</label>
-        <align>right</align>
-        <visible>facadeview.smallicons|facadeview.largeicons</visible>
-      </control>
+	  
       <control>
         <type>label</type>
         <description>Current program time</description>
         <id>0</id>
         <posX>723</posX>
-        <posY>959</posY>
+        <posY>905</posY>
         <textcolor>6aa5cb</textcolor>
         <font>Segoe Light18</font>
         <label>#TV.RecordedTV.Time</label>
         <align>right</align>
         <visible>facadeview.smallicons|facadeview.largeicons</visible>
       </control>
+
+      <control>
+        <type>label</type>
+        <description>Current program genre</description>
+        <id>0</id>
+        <posX>723</posX>
+        <posY>952</posY>
+        <textcolor>6aa5cb</textcolor>
+        <font>Segoe Light18</font>
+        <label>#TV.RecordedTV.Genre</label>
+        <align>right</align>
+        <visible>facadeview.smallicons|facadeview.largeicons</visible>
+      </control>
+	  
       <control>
         <type>textboxscrollup</type>
         <description>Description1</description>
@@ -322,6 +339,7 @@
         <label>#TV.RecordedTV.Description</label>
         <visible>facadeview.smallicons|facadeview.largeicons</visible>
       </control>
+	  
       <!-- Filmstrip -->
       <control>
         <type>label</type>
@@ -337,28 +355,31 @@
         <visible>facadeview.filmstrip|facadeview.coverflow</visible>
       </control>
     </control>
-    <import>common.facade.recordings.xml</import>
-    <import>common.overlay.xml</import>
-    <import>common.facade.scrolling.xml</import>
+
     <control>
       <id>1</id>
       <type>image</type>
       <posX>0</posX>
-      <posY>457</posY>
+      <posY>440</posY>
       <texture>hiddenmenu_tab.png</texture>
-      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+      <visible>[facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
       <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <type>image</type>
-      <posX>877</posX>
+      <posX>858</posX>
       <posY>0</posY>
       <texture>hiddenmenu_tab_up.png</texture>
       <visible>[facadeview.filmstrip|facadeview.coverflow]+Control.HasFocus(50)</visible>
       <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
     </control>
+	
+    <import>common.facade.recordings.xml</import>
+    <import>common.overlay.xml</import>
+	
   </controls>
 </window>

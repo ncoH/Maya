@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>3</id>
   <defaultcontrol>6</defaultcontrol>
@@ -7,8 +6,10 @@
   <define>#header.label:#curheader</define>
   <define>#header.background:hover_my programs.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -23,6 +24,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Screenshot</description>
       <type>image</type>
@@ -35,6 +37,7 @@
       <align>center</align>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -48,6 +51,7 @@
       <animation effect="slide" time="500" tween="quadratic" easing="out" reversible="false" start="697,0" end="0,0">visible</animation>
       <animation effect="slide" time="500" tween="quadratic" easing="out" reversible="false" end="697,0">hidden</animation>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -61,6 +65,7 @@
       <animation effect="slide" time="500" tween="quadratic" easing="out" reversible="false" start="697,0" end="0,0">visible</animation>
       <animation effect="slide" time="500" tween="quadratic" easing="out" reversible="false" end="697,0">hidden</animation>
     </control>
+	
     <control>
       <description>action menu</description>
       <type>actiongroup</type>
@@ -93,7 +98,7 @@
           <id>1</id>
           <type>image</type>
           <visible>!Control.HasFocus(50)</visible>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -154,6 +159,8 @@
         </control>
       </control>
     </control>
+	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

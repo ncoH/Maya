@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>747</id>
   <defaultcontrol>7</defaultcontrol>
@@ -7,8 +6,10 @@
   <define>#header.label:6035</define>
   <define>#header.background:hover_my tv.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -23,6 +24,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -35,6 +37,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>listcontrol background info</description>
       <type>image</type>
@@ -47,6 +50,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -61,6 +65,7 @@
       <valign>middle</valign>
       <visible>string.equals(#TV.Scheduled.Title,)</visible>
     </control>
+	
     <control>
       <description>status</description>
       <type>label</type>
@@ -72,42 +77,37 @@
       <align>right</align>
       <textcolor>ffffffff</textcolor>
     </control>
+	
     <control>
-      <type>group</type>
-      <description>group element</description>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-      <control>
-        <description>listcontrol</description>
-        <type>listcontrol</type>
-        <id>50</id>
-        <posX>736</posX>
-        <posY>262</posY>
-        <height>644</height>
-        <onleft>7</onleft>
-        <onright>7</onright>
-        <onup>7</onup>
-        <ondown>7</ondown>
-        <scrollOffset>1</scrollOffset>
-        <PinIconHeight>51</PinIconHeight>
-        <PinIconWidth>43</PinIconWidth>
-        <PinIconXOff>0</PinIconXOff>
-        <PinIconYOff>1</PinIconYOff>
-        <itemWidth>44</itemWidth>
-        <itemHeight>45</itemHeight>
-        <IconXOff>56</IconXOff>
-        <IconYOff>12</IconYOff>
-        <textXOff>56</textXOff>
-        <spinPosX>787</spinPosX>
-        <spinPosY>967</spinPosY>
-        <spinAlign>left</spinAlign>
-        <textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
-        <textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
-        <keepaspectratio>yes</keepaspectratio>
-        <spinCanFocus>no</spinCanFocus>
-        <dimColor>ffffffff</dimColor>
-      </control>
+      <description>listcontrol</description>
+      <type>listcontrol</type>
+      <id>10</id>
+      <posY>738</posY>
+      <height>281</height>
+      <posX>736</posX>
+      <width>1017</width>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <scrollOffset>1</scrollOffset>
+      <PinIconHeight>51</PinIconHeight>
+      <PinIconWidth>43</PinIconWidth>
+      <PinIconXOff>3</PinIconXOff>
+      <PinIconYOff>8</PinIconYOff>
+      <itemWidth>44</itemWidth>
+      <itemHeight>45</itemHeight>
+      <IconXOff>42</IconXOff>
+      <IconYOff>12</IconYOff>
+      <textXOff>56</textXOff>
+      <spinPosX>787</spinPosX>
+      <spinPosY>973</spinPosY>
+      <spinAlign>left</spinAlign>
+      <textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
+      <textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
+      <keepaspectratio>yes</keepaspectratio>
+      <spinCanFocus>no</spinCanFocus>
+      <dimColor>ffffffff</dimColor>
     </control>
+	
     <control>
       <type>group</type>
       <layout>StackLayout</layout>
@@ -144,5 +144,6 @@
         <onright>50</onright>
       </control>
     </control>
+	
   </controls>
 </window>

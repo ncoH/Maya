@@ -7,7 +7,8 @@
 	<define>#defaultcontrol:2</define>
 	<define>#defaultcontrol.onright:9996</define>
 	<controls>
-	
+
+        <import>Trakt.Common.Background.xml</import>	
 		<import>Trakt.Common.xml</import>
         <import>common.time.xml</import>
 

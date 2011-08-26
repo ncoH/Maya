@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
     <control>
@@ -12,6 +11,7 @@
       <height>1080</height>
       <texture>background.png</texture>
     </control>
+	
     <control>
       <description>Alternate BG</description>
       <type>image</type>
@@ -21,6 +21,7 @@
       <texture>background_filmstrip.png</texture>
       <visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip|facadeview.coverflow</visible>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -32,6 +33,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -41,8 +43,9 @@
       <width>1920</width>
       <height>1080</height>
       <texture>basichome_fanart_overlay.png</texture>
-      <visible>facadeview.list+string.contains(#maya.bgImage.Plugins,yes)</visible>
+      <visible>]facadeview.list|facadeview.album]+string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -52,8 +55,9 @@
       <width>1920</width>
       <height>1080</height>
       <texture>fanart_overlay_thumbs.png</texture>
-      <visible>facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip+string.contains(#maya.bgImage.Plugins,yes)</visible>
+      <visible>[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip]+string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -65,6 +69,7 @@
       <texture>background_coverflow.png</texture>
       <visible>facadeview.coverflow+string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -74,11 +79,12 @@
       <width>931</width>
       <label>#selecteditem</label>
       <font>Segoe Light22</font>
-      <visible>[facadeview.list | facadeview.album | facadeview.playlist]+Control.IsVisible(50)</visible>
+      <visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -88,10 +94,11 @@
       <align>right</align>
       <label>#currentmodule: #itemcount</label>
       <textcolor>6aa5cb</textcolor>
-      <visible>[facadeview.list | facadeview.album | facadeview.playlist]+Control.IsVisible(50)</visible>
+      <visible>[facadeview.list|facadeview.album]+Control.IsVisible(50)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -106,6 +113,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -116,10 +124,11 @@
       <label>#selecteditem</label>
       <font>Segoe Light22</font>
       <align>center</align>
-      <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.album | facadeview.coverflow] + Control.IsVisible(50)</visible>
+      <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow] + Control.IsVisible(50)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
   </controls>
 </window>

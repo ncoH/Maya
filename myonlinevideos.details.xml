@@ -1,7 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
+ 
+<!--     <control>
+      <description>Add to Trakt Movie/Show Watch List</description>
+      <type>button</type>
+      <id>97258</id>
+      <label>#Trakt.Translation.AddToWatchList.Label</label>
+      <onup>51</onup>
+      <ondown>51</ondown>
+      <onright>51</onright>
+      <onleft>51</onleft>
+      <posX>918</posX>
+      <posY>78</posY>
+      <width>267</width>
+      <height>35</height>
+      <font>font11</font>
+      <visible>string.equals(#OnlineVideos.state,details)+[string.equals(#OnlineVideos.selectedSiteUtil,IMDB)|string.equals(#OnlineVideos.selectedSiteUtil,ITMovieTrailers)]+plugin.isenabled(Trakt)</visible>
+    </control> -->
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -12,7 +29,7 @@
       <width>931</width>
       <label>#OnlineVideos.Details.Title</label>
       <font>Segoe Light22</font>
-      <visible>string.equals(#OnlineVideos.state, details)</visible>
+      <visible>string.equals(#OnlineVideos.state, details) + [string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers) | string.equals(#OnlineVideos.selectedSiteUtil, IMDb)]</visible>
       <valign>middle</valign>
     </control>
 	
@@ -28,7 +45,7 @@
       <label>Online Videos</label>
       <textcolor>6aa5cb</textcolor>
       <font>Segoe Light40</font>
-      <visible>string.equals(#OnlineVideos.state, details)</visible>
+      <visible>string.equals(#OnlineVideos.state, details) + [string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers) | string.equals(#OnlineVideos.selectedSiteUtil, IMDb)]</visible>
       <valign>middle</valign>
     </control>
 	
@@ -104,7 +121,7 @@
       <width>513</width>
       <textcolor>85cffe</textcolor>
       <label>#OnlineVideos.Translation.Actors.Label</label>
-      <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+      <visible>string.equals(#OnlineVideos.state, details) + [string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers) | string.equals(#OnlineVideos.selectedSiteUtil, IMDb)]</visible>
     </control>
 	
     <control>
@@ -117,7 +134,7 @@
       <align>left</align>
       <textcolor>ffffff</textcolor>
       <label>#OnlineVideos.Details.Actors</label>
-      <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+      <visible>string.equals(#OnlineVideos.state, details) + [string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers) | string.equals(#OnlineVideos.selectedSiteUtil, IMDb)]</visible>
     </control>
 	
     <control>
@@ -129,7 +146,7 @@
       <width>513</width>
       <textcolor>85cffe</textcolor>
       <label>#OnlineVideos.Translation.Directors.Label</label>
-      <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+      <visible>string.equals(#OnlineVideos.state, details) + [string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers) | string.equals(#OnlineVideos.selectedSiteUtil, IMDb)]</visible>
     </control>
 	
     <control>
@@ -142,7 +159,7 @@
       <align>left</align>
       <textcolor>ffffff</textcolor>
       <label>#OnlineVideos.Details.Directors</label>
-      <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+      <visible>string.equals(#OnlineVideos.state, details) + [string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers) | string.equals(#OnlineVideos.selectedSiteUtil, IMDb)]</visible>
     </control>
 	
     <control>
@@ -155,7 +172,7 @@
       <font>Segoe Light18</font>
       <textcolor>85cffe</textcolor>
       <label>#OnlineVideos.Translation.DateOfRelease.Label:</label>
-      <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+      <visible>string.equals(#OnlineVideos.state, details) + [string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers) | string.equals(#OnlineVideos.selectedSiteUtil, IMDb)]</visible>
     </control>
 	
     <control>
@@ -170,7 +187,7 @@
       <textcolor>ffffff</textcolor>
       <align>left</align>
       <label>#OnlineVideos.Details.ReleaseDate</label>
-      <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+      <visible>string.equals(#OnlineVideos.state, details) + [string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers) | string.equals(#OnlineVideos.selectedSiteUtil, IMDb)]</visible>
     </control>
 	
     <control>
@@ -183,7 +200,7 @@
       <font>Segoe Light18</font>
       <textcolor>85cffe</textcolor>
       <label>#OnlineVideos.Translation.Genre.Label:</label>
-      <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+      <visible>string.equals(#OnlineVideos.state, details) + [string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers) | string.equals(#OnlineVideos.selectedSiteUtil, IMDb)]</visible>
     </control>
 	
     <control>
@@ -197,7 +214,7 @@
       <align>left</align>
       <textcolor>ffffff</textcolor>
       <label>#OnlineVideos.Details.Genres</label>
-      <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+      <visible>string.equals(#OnlineVideos.state, details) + [string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers) | string.equals(#OnlineVideos.selectedSiteUtil, IMDb)]</visible>
     </control>
 	
     <control>
@@ -209,7 +226,7 @@
       <width>955</width>
       <height>225</height>
       <textcolor>ffFFFFFF</textcolor>
-      <visible>string.equals(#OnlineVideos.state, details) + string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers)</visible>
+      <visible>string.equals(#OnlineVideos.state, details) + [string.equals(#OnlineVideos.selectedSiteUtil, ITMovieTrailers) | string.equals(#OnlineVideos.selectedSiteUtil, IMDb)]</visible>
       <label>#OnlineVideos.Details.Synopsis</label>
     </control>
 	

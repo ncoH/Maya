@@ -7,6 +7,7 @@
   <define>#header.label:Global Search</define>
   <define>#header.background:hover_search music.png</define>
   <controls>
+  
     <control>
       <description>Background</description>
       <type>image</type>
@@ -17,6 +18,7 @@
       <texture>background.png</texture>
       <visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -28,6 +30,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -39,7 +42,9 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <import>common.time.xml</import>
+	
     <control>
       <id>0</id>
       <type>label</type>
@@ -314,17 +319,7 @@
         </control>
       </control>
     </control>
-    <import>common.facade.music.xml</import>
-    <control>
-      <id>1</id>
-      <type>image</type>
-      <posX>0</posX>
-      <posY>457</posY>
-      <texture>hiddenmenu_tab.png</texture>
-      <visible>Control.HasFocus(50)</visible>
-      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
-      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
-    </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -337,6 +332,7 @@
       <visible>!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)</visible>
       <texture>DefaultMyradioBig.png</texture>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -350,6 +346,7 @@
       <texture>#selectedthumb</texture>
       <visible>Control.IsVisible(50)+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -363,6 +360,20 @@
       <texture>blackborders_music.png</texture>
       <visible>Control.IsVisible(50)</visible>
     </control>
+
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>440</posY>
+      <texture>hiddenmenu_tab.png</texture>
+      <visible>Control.HasFocus(50)</visible>
+      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+    </control>
+
+    <import>common.facade.music.xml</import>	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

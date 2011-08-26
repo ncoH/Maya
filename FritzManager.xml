@@ -7,9 +7,11 @@
   <define>#header.label:FritzBox Manager</define>
   <define>#header.background:hover_FritzBox.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.facade.pictures.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -24,6 +26,7 @@
       <font>Segoe Light40</font>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -36,6 +39,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>listcontrol background info</description>
       <type>image</type>
@@ -48,6 +52,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -220,6 +225,7 @@
       <animation effect="fade" time="450" reversible="false">visible</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>500</id>
       <type>image</type>
@@ -234,6 +240,7 @@
       <animation effect="fade" time="450" reversible="false">visible</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -245,16 +252,19 @@
       <visible>facadeview.list+Control.HasFocus(50)</visible>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
       <id>1</id>
       <type>image</type>
       <posX>0</posX>
-      <posY>457</posY>
+      <posY>440</posY>
       <texture>hiddenmenu_tab.png</texture>
       <visible>Control.HasFocus(50)</visible>
     </control>
+	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

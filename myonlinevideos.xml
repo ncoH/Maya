@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>4755</id>
   <defaultcontrol>50</defaultcontrol>
@@ -243,7 +242,7 @@
     <control>
       <description>Thumb</description>
       <type>image</type>
-      <id>1</id>
+      <id>500</id>
       <posX>127</posX>
       <posY>291</posY>
       <width>513</width>
@@ -252,7 +251,7 @@
       <zoom>no</zoom>
       <keepaspectratio>yes</keepaspectratio>
       <centered>yes</centered>	  
-      <visible>[!facadeview.smallicons+!facadeview.largeicons]+!Control.IsVisible(51)+!string.equals(#OnlineVideos.state,sites)</visible>
+      <visible>[!facadeview.smallicons+!facadeview.largeicons]+!Control.IsVisible(51)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
@@ -266,7 +265,7 @@
       <width>642</width>
       <height>414</height>
       <texture>blackborders_recordings.png</texture>
-      <visible>[!facadeview.smallicons+!facadeview.largeicons]+!Control.IsVisible(51)+!string.equals(#selectedthumb,)+control.hasthumb(500)</visible>
+      <visible>[!facadeview.smallicons+!facadeview.largeicons]+!Control.IsVisible(51)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
@@ -280,10 +279,11 @@
       <width>642</width>
       <height>414</height>
       <texture>blackborders_recordings.png</texture>
-      <visible>[!facadeview.smallicons+!facadeview.largeicons]+!Control.IsVisible(51)+!string.equals(#selectedthumb,)+!string.contains(#selectedthumb,OnlineVideos\Icons)</visible>
+      <visible>[!facadeview.smallicons+!facadeview.largeicons]+!Control.IsVisible(51)+!string.contains(#selectedthumb,OnlineVideos\Icons)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Category Logo</description>
       <type>image</type>
@@ -297,6 +297,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <type>textboxscrollup</type>
       <description>Description</description>
@@ -311,6 +312,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+
     <control>
       <type>textboxscrollup</type>
       <description>Description</description>
@@ -335,7 +337,7 @@
     <control>
       <description>Thumb</description>
       <type>image</type>
-      <id>1</id>
+      <id>500</id>
       <posX>127</posX>
       <posY>341</posY>
       <width>513</width>
@@ -344,7 +346,7 @@
       <keepaspectratio>yes</keepaspectratio>
       <centered>yes</centered>	  
       <texture>#selectedthumb</texture>
-      <visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#OnlineVideos.state,sites)+!Control.IsVisible(51)</visible>
+      <visible>[facadeview.smallicons|facadeview.largeicons]+!Control.IsVisible(51)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
@@ -376,7 +378,7 @@
       <height>154</height>
       <seperator>----------------------------------------------------------------------------------------</seperator>
       <label>#OnlineVideos.desc</label>
-      <visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#OnlineVideos.state,sites)+!Control.IsVisible(51)</visible>
+      <visible>[facadeview.smallicons|facadeview.largeicons]+!Control.IsVisible(51)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
@@ -482,7 +484,7 @@
         <control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -731,7 +733,7 @@
       <id>1</id>
       <type>image</type>
       <posX>0</posX>
-      <posY>457</posY>
+      <posY>440</posY>
       <texture>hiddenmenu_tab.png</texture>
       <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
     </control>
@@ -741,7 +743,7 @@
       <animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
       <id>1</id>
       <type>image</type>
-      <posX>877</posX>
+      <posX>858</posX>
       <posY>0</posY>
       <texture>hiddenmenu_tab_up.png</texture>
       <visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
