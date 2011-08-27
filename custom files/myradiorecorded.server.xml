@@ -133,7 +133,7 @@
             <id>2</id>
             <onleft>50</onleft>
             <onright>50</onright>
-            <onup>7</onup>
+            <onup>8</onup>
             <ondown>3</ondown>
             <label>100</label>
             <textureFocus>hiddenmenu_item_selected.png</textureFocus>
@@ -205,27 +205,11 @@
             <textYOff>16</textYOff>
             <onleft>50</onleft>
             <onright>50</onright>
-            <ondown>7</ondown>
+            <ondown>2</ondown>
             <onup>6</onup>
             <hyperlink>762</hyperlink>
           </control>
-          <control>
-            <type>button</type>
-            <description>compress button</description>
-            <id>7</id>
-            <onleft>50</onleft>
-            <onright>50</onright>
-            <onup>8</onup>
-            <ondown>2</ondown>
-            <hyperlink>609</hyperlink>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <label>896</label>
-          </control>
+		  
         </control>
       </control>
     </control>

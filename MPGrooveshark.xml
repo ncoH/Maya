@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>730718</id>
   <defaultcontrol>5101</defaultcontrol>
@@ -7,6 +6,7 @@
   <define>#usePlayFanart:Yes</define>
   <define>#header.background:hover_mp grooveshark.png</define>
   <controls>
+  
     <control>
       <description>Background</description>
       <type>image</type>
@@ -17,6 +17,7 @@
       <texture>background.png</texture>
       <visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -28,6 +29,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -39,6 +41,7 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <id>100</id>
       <description>DUMMY CONTROLL FOR IS PLAYING CONDITION</description>
@@ -48,6 +51,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <id>91919295</id>
       <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
@@ -56,6 +60,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <id>91919296</id>
       <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
@@ -64,6 +69,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <id>91919294</id>
       <description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
@@ -72,6 +78,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <id>0</id>
       <description>music background image</description>
@@ -91,6 +98,7 @@
       <loop>yes</loop>
       <randomize>True</randomize>
     </control>
+	
     <control>
       <id>897686</id>
       <description>FANART BACKGROUND 1</description>
@@ -107,6 +115,7 @@
       <centered>yes</centered>
       <zoom>yes</zoom>
     </control>
+	
     <control>
       <id>897687</id>
       <description>FANART BACKGROUND 2</description>
@@ -123,6 +132,7 @@
       <centered>yes</centered>
       <zoom>yes</zoom>
     </control>
+	
     <control>
       <id>0</id>
       <description>Overlay</description>
@@ -133,6 +143,7 @@
       <height>1080</height>
       <texture>music_now_playing_overlay.png</texture>
     </control>
+	
     <control>
       <description>panel</description>
       <type>image</type>
@@ -142,6 +153,7 @@
       <animation effect="Fade" time="300">WindowClose</animation>
       <animation effect="Fade" time="400">WindowOpen</animation>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -155,6 +167,7 @@
       <animation effect="fade" time="400">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>artist label</description>
@@ -168,6 +181,7 @@
       <textcolor>ffffffff</textcolor>
       <label>#mpgrooveshark.current.artist</label>
     </control>
+	
     <control>
       <id>0</id>
       <description>album label</description>
@@ -181,6 +195,7 @@
       <textcolor>ffffffff</textcolor>
       <label>#mpgrooveshark.current.album</label>
     </control>
+	
     <control>
       <id>0</id>
       <description>track label</description>
@@ -194,6 +209,7 @@
       <textcolor>ffffffff</textcolor>
       <label>#mpgrooveshark.current.title</label>
     </control>
+	
     <control>
       <id>0</id>
       <description>playtime label</description>
@@ -207,6 +223,7 @@
       <textcolor>ffffffff</textcolor>
       <label>#currentplaytime / #duration</label>
     </control>
+	
     <control>
       <id>0</id>
       <description>title label</description>
@@ -221,6 +238,7 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>artist label</description>
@@ -235,6 +253,7 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>album label</description>
@@ -249,6 +268,7 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>No media playing</description>
@@ -260,6 +280,7 @@
       <font>Segoe Light18</font>
       <label>no media playing</label>
     </control>
+	
     <control>
       <id>0</id>
       <description>playlist label</description>
@@ -274,6 +295,7 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <type>image</type>
@@ -286,6 +308,7 @@
       <animation effect="Fade" time="1600">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>album art overlay</description>
@@ -299,6 +322,7 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>112</id>
       <description>album art image</description>
@@ -313,6 +337,7 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Now playing</description>
@@ -327,6 +352,7 @@
       <animation effect="Fade" time="200">WindowClose</animation>
       <animation effect="Fade" time="800">WindowOpen</animation>
     </control>
+	
     <control>
       <description>Panel menu</description>
       <type>group</type>
@@ -350,6 +376,7 @@
         <label>4540</label>
         <textYOff>8</textYOff>
       </control>
+	  
       <control>
         <id>5102</id>
         <description>Current Playlist button</description>
@@ -368,6 +395,7 @@
         <label>4553</label>
         <textYOff>8</textYOff>
       </control>
+	  
       <control>
         <id>5103</id>
         <description>Search Term</description>
@@ -386,6 +414,7 @@
         <textYOff>8</textYOff>
       </control>
     </control>
+	
     <control>
       <id>0</id>
       <description>Menu label</description>
@@ -398,8 +427,10 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <import>MPGrooveshark.facade.xml</import>
     <import>common.time.white.xml</import>
+	
     <control>
       <id>99</id>
       <description>dummy video preview window required for the plugin</description>
@@ -412,5 +443,6 @@
       <keepaspectratio>no</keepaspectratio>
       <centered>yes</centered>
     </control>
+	
   </controls>
 </window>

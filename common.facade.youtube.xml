@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
     <control>
@@ -11,6 +10,7 @@
         <description>composite control consisting of a list control and a thumbnail panel</description>
         <type>facadeview</type>
         <id>50</id>
+		
         <control>
           <description>listcontrol</description>
           <type>listcontrol</type>
@@ -27,6 +27,7 @@
           <textXOff>30</textXOff>
           <dimColor>ffffffff</dimColor>
         </control>
+		
         <control>
           <description>album view listcontrol</description>
           <type>listcontrol</type>
@@ -62,6 +63,7 @@
           <onright>2</onright>
           <keepaspectratio>yes</keepaspectratio>
         </control>
+		
         <control>
           <description>Thumbnail Panel</description>
           <type>thumbnailpanel</type>
@@ -107,6 +109,7 @@
           <thumbZoom>no</thumbZoom>
           <spinPosX>1672</spinPosX>
         </control>
+		
         <control>
           <description>Filmstrip view</description>
           <type>filmstrip</type>
@@ -146,6 +149,7 @@
           <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,520" time="400">focus</thumbAnimation>
           <thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,520" time="100">unfocus</thumbAnimation>
         </control>
+		
         <control>
           <description>Cover Flow view</description>
           <type>coverflow</type>
@@ -199,22 +203,25 @@
           <scrollbarYOff>639</scrollbarYOff>
           <showScrollbar>no</showScrollbar>
           <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png" />
-          <subitems>
-            <subitem>
-                &lt;controls&gt;
-                  &lt;control&gt;
-                    &lt;description&gt;background&lt;/description&gt;
-                    &lt;type&gt;image&lt;/type&gt;
-                    &lt;posX&gt;0&lt;/posX&gt;
-                    &lt;posY&gt;0&lt;/posY&gt;
-                    &lt;width&gt;385&lt;/width&gt;
-                    &lt;height&gt;280&lt;/height&gt;
-                    &lt;texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png"&gt;background.png&lt;/texture&gt;
-                  &lt;/control&gt;
-                &lt;/controls&gt;
-              </subitem>
-          </subitems>
-        </control>
+		  <subitems>
+		  <subitem>
+							<![CDATA[
+                <controls>
+                  <control>
+                    <description>background</description>
+                    <type>image</type>
+                    <posX>0</posX>
+                    <posY>0</posY>
+                    <width>385</width>
+                    <height>280</height>
+                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png">background.png</texture>
+                  </control>
+                </controls>
+              ]]>
+		</subitem>
+		</subitems>
+    </control>
+		
         <control>
           <description>playlist listcontrol</description>
           <type>playlistcontrol</type>
@@ -227,6 +234,7 @@
           <spinCanFocus>no</spinCanFocus>
           <dimColor>ffffffff</dimColor>
         </control>
+		
       </control>
     </control>
   </controls>

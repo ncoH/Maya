@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
     <control>
@@ -58,6 +57,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>Sleep Control setting type</description>
@@ -69,5 +69,6 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

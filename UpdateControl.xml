@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>7984</id>
   <defaultcontrol>2</defaultcontrol>
@@ -8,8 +7,10 @@
   <define>#header.background:hover_updatecontrol.png</define>
   <define>#itemcount:</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -23,6 +24,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background</description>
@@ -36,6 +38,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background info</description>
@@ -49,6 +52,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <!-- *** Buttons *** -->
     <control>
       <description>action menu</description>
@@ -82,7 +86,7 @@
           <id>1</id>
           <type>image</type>
           <visible>!Control.HasFocus(50)</visible>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -205,6 +209,7 @@
         </control>
       </control>
     </control>
+	
     <!-- *** Progress *** -->
     <control>
       <description>Download Progress</description>
@@ -218,6 +223,7 @@
       <textcolor>6aa5cb</textcolor>
       <visible>!string.equals(#UpdateControl.DownloadOverallProgress,0)</visible>
     </control>
+	
     <!-- *** Action *** -->
     <control>
       <description>Action</description>
@@ -230,6 +236,7 @@
       <font>font11</font>
       <align>right</align>
     </control>
+	
     <control>
       <description>Working Animation</description>
       <type>animation</type>
@@ -243,6 +250,7 @@
       <keepaspectratio>yes</keepaspectratio>
       <visible>!string.equals(#UpdateControl.Action, )</visible>
     </control>
+	
     <!-- *** Update list *** -->
     <control>
       <description>listcontrol</description>
@@ -265,6 +273,7 @@
       <PinIconYOff>14</PinIconYOff>
       <dimColor>ffffffff</dimColor>
     </control>
+	
     <!-- *** Item Selection Image *** -->
     <control>
       <type>image</type>
@@ -276,6 +285,7 @@
       <texture>#UpdateControl.UpdateSeverityImage</texture>
       <visible>control.hasfocus(50)+!string.equals(#UpdateControl.UpdateTitle, )</visible>
     </control>
+	
     <control>
       <id>0</id>
       <description>Update Date</description>
@@ -290,6 +300,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>Update Severity</description>
@@ -304,6 +315,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>Update Size</description>
@@ -318,6 +330,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Action</description>
       <type>textboxscrollup</type>
@@ -332,6 +345,7 @@
       <animation effect="Fade" time="100">WindowClose</animation>
       <textcolor>ffFFFFFF</textcolor>
     </control>
+	
     <control>
       <description>Action</description>
       <type>textboxscrollup</type>
@@ -346,16 +360,7 @@
       <animation effect="Fade" time="100">WindowClose</animation>
       <textcolor>ffFFFFFF</textcolor>
     </control>
-    <control>
-      <id>1</id>
-      <type>image</type>
-      <visible>Control.HasFocus(50)</visible>
-      <posX>0</posX>
-      <posY>457</posY>
-      <texture>hiddenmenu_tab.png</texture>
-      <animation delay="600" effect="Slide" end="0,0" start="-60,0" time="400" tween="Quadratic">WindowOpen</animation>
-      <animation delay="100" effect="Slide" end="-60,0" start="0,0" time="400" tween="Quadratic">WindowClose</animation>
-    </control>
+	
     <control>
       <id>600</id>
       <description>Plugin logo</description>
@@ -372,6 +377,19 @@
       <keepaspectratio>yes</keepaspectratio>
       <centered>yes</centered>
     </control>
+
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <visible>Control.HasFocus(50)</visible>
+      <posX>0</posX>
+      <posY>440</posY>
+      <texture>hiddenmenu_tab.png</texture>
+      <animation delay="600" effect="Slide" end="0,0" start="-60,0" time="400" tween="Quadratic">WindowOpen</animation>
+      <animation delay="100" effect="Slide" end="-60,0" start="0,0" time="400" tween="Quadratic">WindowClose</animation>
+    </control>
+	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

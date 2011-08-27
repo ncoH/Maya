@@ -9,6 +9,7 @@ This file should contain the facade view
       <animation effect="fade" time="100">WindowClose</animation>
       <type>facadeview</type>
       <id>51</id>
+	  
       <control>
         <description>Categories List</description>
         <type>listcontrol</type>

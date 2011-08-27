@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>803</id>
   <defaultcontrol>50</defaultcontrol>
@@ -7,8 +6,10 @@
   <define>#header.label:14001</define>
   <define>#header.background:hover_extensions.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -23,6 +24,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -36,6 +38,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>group element</description>
       <type>group</type>
@@ -64,6 +67,7 @@
         </control>
       </control>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -77,6 +81,7 @@
       <animation effect="fade" time="100">WindowClose</animation>
       <visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(50) + !Control.IsVisible(51)</visible>
     </control>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -108,7 +113,7 @@
         <control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -148,5 +153,6 @@
         </control>
       </control>
     </control>
+	
   </controls>
 </window>

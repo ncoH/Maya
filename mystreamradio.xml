@@ -1,6 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>15634330</id>
   <defaultcontrol>50</defaultcontrol>
@@ -8,6 +6,7 @@
   <define>#header.label:StreamRadio</define>
   <define>#header.background:hover_my streamradio.png</define>
   <controls>
+  
     <control>
       <description>BG</description>
       <type>image</type>
@@ -19,6 +18,7 @@
       <texture>background.png</texture>
       <visible>!facadeview.smallicons|!facadeview.largeicons|!facadeview.album</visible>
     </control>
+	
     <control>
       <description>Alternate BG</description>
       <type>image</type>
@@ -28,6 +28,7 @@
       <texture>background_thumbs.png</texture>
       <visible>facadeview.smallicons|facadeview.largeicons|facadeview.album</visible>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -39,6 +40,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -50,6 +52,7 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>[!facadeview.smallicons |!facadeview.largeicons |!facadeview.album]+string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -61,7 +64,9 @@
       <texture>fanart_overlay_thumbs.png</texture>
       <visible>[facadeview.smallicons |facadeview.largeicons | facadeview.album]+string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <import>common.time.xml</import>
+	
     <control>
       <description>Header Label</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -78,6 +83,7 @@
       <visible>facadeview.list</visible>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Header Label</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -95,6 +101,7 @@
       <align>center</align>
       <valign>middle</valign>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -108,6 +115,7 @@
       <texture>listcontrol_bg.png</texture>
       <visible>facadeview.list</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -121,6 +129,7 @@
       <texture>listcontrol_bg_info.png</texture>
       <visible>facadeview.list</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -133,6 +142,7 @@
       <visible>facadeview.list+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
       <texture>DefaultMyradioBig.png</texture>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -146,6 +156,7 @@
       <texture>#selectedthumb</texture>
       <visible>facadeview.list+Control.IsVisible(50)+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -159,6 +170,7 @@
       <texture>blackborders_music.png</texture>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -190,7 +202,7 @@
         <control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -292,23 +304,27 @@
         </control>
       </control>
     </control>
-    <import>common.facade.music.xml</import>
-    <import>common.overlay.xml</import>
+
     <control>
       <id>1</id>
       <type>image</type>
       <posX>0</posX>
-      <posY>457</posY>
+      <posY>440</posY>
       <texture>hiddenmenu_tab.png</texture>
       <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
     </control>
+	
     <control>
       <id>1</id>
       <type>image</type>
-      <posX>877</posX>
+      <posX>858</posX>
       <posY>0</posY>
       <texture>hiddenmenu_tab_up.png</texture>
       <visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
     </control>
+	
+    <import>common.facade.music.xml</import>
+    <import>common.overlay.xml</import>
+	
   </controls>
 </window>

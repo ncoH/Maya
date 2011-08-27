@@ -1,5 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <id>30885</id>
   <defaultcontrol>2</defaultcontrol>
@@ -59,6 +58,7 @@
       <animation effect="Fade" time="100">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background</description>
@@ -71,6 +71,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background info</description>
@@ -83,6 +84,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -97,6 +99,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -110,6 +113,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <type>label</type>
@@ -124,7 +128,9 @@
       <animation effect="Fade" time="100">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <import>common.time.xml</import>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -156,7 +162,7 @@
         <control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>

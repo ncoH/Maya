@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>801</id>
   <defaultcontrol>50</defaultcontrol>
-  <allowoverlay>player.hasmedia+!facadeview.filmstrip</allowoverlay>
+  <allowoverlay>no</allowoverlay>
   <define>#header.label:14001</define>
   <define>#header.background:hover_extensions.png</define>
   <controls>
+  
     <import>common.window.extensions.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -23,6 +24,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -38,6 +40,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background</description>
@@ -51,6 +54,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background info</description>
@@ -64,6 +68,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>action menu</description>
       <type>actiongroup</type>
@@ -96,7 +101,7 @@
           <id>1</id>
           <type>image</type>
           <visible>!Control.HasFocus(50)</visible>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -197,6 +202,7 @@
         </control>
       </control>
     </control>
+	
     <control>
       <id>0</id>
       <description>Current program title</description>
@@ -211,6 +217,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>Changelog</description>
@@ -225,6 +232,7 @@
       <label>#MPE.Selected.Description</label>
       <textcolor>ffFFFFFF</textcolor>
     </control>
+	
     <control>
       <id>0</id>
       <description>Changelog</description>
@@ -239,6 +247,7 @@
       <label>#MPE.Selected.Description</label>
       <textcolor>ffFFFFFF</textcolor>
     </control>
+	
     <control>
       <id>1</id>
       <type>image</type>
@@ -249,7 +258,7 @@
       <animation delay="600" effect="Slide" end="0,0" start="-60,0" time="400" tween="Quadratic">WindowOpen</animation>
       <animation delay="100" effect="Slide" end="-60,0" start="0,0" time="400" tween="Quadratic">WindowClose</animation>
     </control>
-    <import>common.facade.video.xml</import>
+	
     <control>
       <id>1</id>
       <description>no preview logo</description>
@@ -266,6 +275,7 @@
       <keepaspectratio>yes</keepaspectratio>
       <centered>yes</centered>
     </control>
+	
     <control>
       <id>600</id>
       <description>Plugin logo</description>
@@ -282,6 +292,7 @@
       <keepaspectratio>yes</keepaspectratio>
       <centered>yes</centered>
     </control>
+	
     <control>
       <id>0</id>
       <type>image</type>
@@ -297,6 +308,9 @@
       <keepaspectratio>yes</keepaspectratio>
       <centered>yes</centered>
     </control>
+
+    <import>common.facade.video.xml</import>	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

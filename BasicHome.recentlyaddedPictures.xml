@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8"-->
 <window>
   <controls>
+  
     <control>
       <description>GROUP: RecentlyAdded Pictures</description>
       <type>group</type>
@@ -24,6 +24,18 @@
         <height>133</height>
         <texture>#fanarthandler.picture.latest1.thumb</texture>
       </control>
+
+      <control>
+        <description>Default Pictures 1 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1259</posX>
+        <posY>126</posY>
+        <width>264</width>
+        <height>133</height>
+        <texture>defaultPictureBig.thumb</texture>
+      </control>
+	  
       <control>
         <id>0</id>
         <description>Pictures art overlay</description>
@@ -34,6 +46,7 @@
         <height>182</height>
         <texture>blackborders_pictures.png</texture>
       </control>
+	  
       <control>
         <description>Pictures 1 filename</description>
         <type>fadelabel</type>
@@ -46,6 +59,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Pictures 1 added</description>
         <type>label</type>
@@ -58,6 +72,7 @@
         <textcolor>ffffff</textcolor>
       </control>
     </control>
+	
     <control>
       <description>GROUP: RecentlyAdded Pictures</description>
       <type>group</type>
@@ -80,6 +95,18 @@
         <height>133</height>
         <texture>#fanarthandler.picture.latest2.thumb</texture>
       </control>
+
+      <control>
+        <description>Default Pictures 2 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1259</posX>
+        <posY>407</posY>
+        <width>264</width>
+        <height>133</height>
+        <texture>defaultPictureBig.thumb</texture>
+      </control>
+	  
       <control>
         <id>0</id>
         <description>Pictures art overlay</description>
@@ -90,6 +117,7 @@
         <height>182</height>
         <texture>blackborders_pictures.png</texture>
       </control>
+	  
       <control>
         <description>Pictures 2 filename</description>
         <type>fadelabel</type>
@@ -102,6 +130,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Pictures 2 added</description>
         <type>label</type>
@@ -114,6 +143,7 @@
         <textcolor>ffffff</textcolor>
       </control>
     </control>
+	
     <control>
       <description>GROUP: RecentlyAdded Pictures</description>
       <type>group</type>
@@ -136,6 +166,18 @@
         <height>133</height>
         <texture>#fanarthandler.picture.latest3.thumb</texture>
       </control>
+
+      <control>
+        <description>Default Pictures 3 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1259</posX>
+        <posY>689</posY>
+        <width>264</width>
+        <height>133</height>
+        <texture>defaultPictureBig.thumb</texture>
+      </control>
+	  
       <control>
         <id>0</id>
         <description>Pictures art overlay</description>
@@ -146,6 +188,7 @@
         <height>182</height>
         <texture>blackborders_pictures.png</texture>
       </control>
+	  
       <control>
         <description>Pictures 3 filename</description>
         <type>fadelabel</type>
@@ -158,6 +201,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Pictures 3 added</description>
         <type>label</type>
@@ -170,5 +214,6 @@
         <textcolor>ffffff</textcolor>
       </control>
     </control>
+	
   </controls>
 </window>

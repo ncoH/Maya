@@ -236,7 +236,7 @@
       <type>image</type>
       <id>1</id>
       <posX>0</posX>
-      <posY>1037</posY>
+      <posY>1038</posY>
       <width>1920</width>
       <height>42</height>
       <texture>rss_bg.png</texture>
@@ -250,7 +250,7 @@
       <type>image</type>
       <id>1</id>
       <posX>0</posX>
-      <posY>878</posY>
+      <posY>879</posY>
       <width>196</width>
       <height>49</height>
       <keepaspectratio>no</keepaspectratio>
@@ -265,7 +265,7 @@
       <type>fadelabel</type>
       <id>1</id>
       <posX>21</posX>
-      <posY>1044</posY>
+      <posY>1045</posY>
       <width>1877</width>
       <height>42</height>
       <font>font10</font>

@@ -344,5 +344,6 @@ This file should contain the facade view
         <remoteColor>ff880000</remoteColor>
       </control>
     </control>
+	
   </controls>
 </window>

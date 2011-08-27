@@ -124,7 +124,7 @@
         <PinIconYOff>5</PinIconYOff>
         <PinIconWidth>87</PinIconWidth>
         <PinIconHeight>79</PinIconHeight>
-        <spinPosY>865</spinPosY>
+        <spinPosY>868</spinPosY>
         <spinPosX>1305</spinPosX>
         <spinColor>FFFFFFFF</spinColor>
         <spinWidth>54</spinWidth>
@@ -151,7 +151,7 @@
         <type>spincontrol</type>
         <id>36</id>
         <posX>603</posX>
-        <posY>857</posY>
+        <posY>860</posY>
         <showrange>no</showrange>
         <orientation>horizontal</orientation>
         <font>font10</font>

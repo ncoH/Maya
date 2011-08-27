@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>
   </id>
   <controls>
+  
     <!-- Dummy -->
     <control>
       <description>dummy (visible when music is playing)</description>
@@ -13,6 +13,7 @@
       <label>#Play.Current.Artist</label>
       <visible>Player.HasAudio+control.hastext(3337)</visible>
     </control>
+	
     <control>
       <description>dummy (visible when there is a next track)</description>
       <type>label</type>
@@ -21,6 +22,7 @@
       <label>#Play.Next.Title</label>
       <visible>Player.HasAudio+control.hastext(3338)</visible>
     </control>
+	
     <control>
       <description>dummy (visible when tv is running)</description>
       <type>label</type>
@@ -29,6 +31,7 @@
       <label>#TV.View.channel</label>
       <visible>Player.HasVideo+!control.hastext(3337)</visible>
     </control>
+	
     <!-- TV/Video -->
     <control>
       <description>video rectangle</description>
@@ -41,6 +44,7 @@
       <texture>video_overlay_border.png</texture>
       <visible>player.hasvideo+!control.hastext(3337)</visible>
     </control>
+	
     <control>
       <description>video preview window</description>
       <type>videowindow</type>
@@ -53,6 +57,7 @@
       <textureFocus>tv_green_border.png</textureFocus>
       <visible>player.hasvideo+!control.hastext(3337)</visible>
     </control>
+	
     <control>
       <description>play time label</description>
       <type>label</type>
@@ -68,6 +73,7 @@
       <animation effect="fade" time="250">WindowClose</animation>
       <animation effect="fade" time="250">WindowOpen</animation>
     </control>
+	
     <!--TV-->
     <control>
       <description>scrolling info label</description>
@@ -84,6 +90,7 @@
       <animation effect="fade" time="250">WindowClose</animation>
       <animation effect="fade" time="250">WindowOpen</animation>
     </control>
+	
     <!--Video-->
     <control>
       <description>scrolling info label</description>
@@ -100,6 +107,7 @@
       <animation effect="fade" time="250">WindowClose</animation>
       <animation effect="fade" time="250">WindowOpen</animation>
     </control>
+	
     <!--Audio-->
     <control>
       <description>album logo</description>
@@ -116,6 +124,7 @@
       <animation effect="slide" start="0,0" end="-425,0" tween="quadratic" easing="in" time="400" delay="300">WindowClose</animation>
       <animation effect="fade" time="700" delay="400">WindowClose</animation>
     </control>
+	
     <control>
       <description>no album logo</description>
       <type>image</type>
@@ -131,6 +140,7 @@
       <animation effect="slide" start="0,0" end="-425,0" tween="quadratic" easing="in" time="400" delay="300">WindowClose</animation>
       <animation effect="fade" time="700" delay="400">WindowClose</animation>
     </control>
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -145,6 +155,7 @@
       <animation effect="slide" start="0,0" end="-425,0" tween="quadratic" easing="in" time="400" delay="300">WindowClose</animation>
       <animation effect="fade" time="700" delay="400">WindowClose</animation>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>title label</description>
@@ -158,6 +169,7 @@
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>artist label</description>
@@ -171,6 +183,7 @@
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
+	
     <control>
       <description>nowplaying label</description>
       <type>label</type>
@@ -186,6 +199,7 @@
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
+	
     <control>
       <description>nowplaying text</description>
       <type>label</type>
@@ -202,6 +216,7 @@
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
+	
     <control>
       <description>play logo</description>
       <type>image</type>
@@ -215,6 +230,7 @@
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
+	
     <control>
       <description>pause logo</description>
       <type>image</type>
@@ -228,6 +244,7 @@
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
+	
     <!--
 	<control>
 		<description>progress bar bg</description>
@@ -321,6 +338,7 @@
       <animation effect="slide" start="0,0" end="-425,0" tween="quadratic" easing="in" time="400" delay="300">WindowClose</animation>
       <animation effect="fade" time="700" delay="400">WindowClose</animation>
     </control>
+	
     <control>
       <description>no radio logo</description>
       <type>image</type>
@@ -336,6 +354,7 @@
       <animation effect="slide" start="0,0" end="-425,0" tween="quadratic" easing="in" time="400" delay="300">WindowClose</animation>
       <animation effect="fade" time="700" delay="400">WindowClose</animation>
     </control>
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -350,6 +369,7 @@
       <animation effect="slide" start="0,0" end="-425,0" tween="quadratic" easing="in" time="400" delay="300">WindowClose</animation>
       <animation effect="fade" time="700" delay="400">WindowClose</animation>
     </control>
+	
     <control>
       <description>nowplaying text</description>
       <type>label</type>
@@ -365,6 +385,7 @@
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
+	
     <control>
       <description>nowplaying time</description>
       <type>label</type>
@@ -381,6 +402,7 @@
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
+	
     <control>
       <description>Current Channel</description>
       <type>fadelabel</type>
@@ -394,6 +416,7 @@
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
+	
     <control>
       <description>play logo</description>
       <type>image</type>
@@ -407,5 +430,6 @@
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

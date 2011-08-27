@@ -265,7 +265,7 @@
       <width>642</width>
       <height>414</height>
       <texture>blackborders_recordings.png</texture>
-      <visible>[!facadeview.smallicons+!facadeview.largeicons]+!Control.IsVisible(51)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!Control.IsVisible(51)+!string.equals(#selectedthumb,)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
@@ -279,7 +279,7 @@
       <width>642</width>
       <height>414</height>
       <texture>blackborders_recordings.png</texture>
-      <visible>[!facadeview.smallicons+!facadeview.largeicons]+!Control.IsVisible(51)+!string.contains(#selectedthumb,OnlineVideos\Icons)</visible>
+      <visible>[!facadeview.smallicons+!facadeview.largeicons]+!Control.IsVisible(51)+!string.equals(#selectedthumb,)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>

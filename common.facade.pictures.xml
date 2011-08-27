@@ -161,51 +161,53 @@
           <scrollbarYOff>639</scrollbarYOff>
           <showScrollbar>no</showScrollbar>
           <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png" />
-          <subitems>
-            <subitem>
-                &lt;controls&gt;
-                  &lt;control&gt;
-                    &lt;description&gt;background&lt;/description&gt;
-                    &lt;type&gt;image&lt;/type&gt;
-                    &lt;posX&gt;0&lt;/posX&gt;
-                    &lt;posY&gt;0&lt;/posY&gt;
-                    &lt;width&gt;385&lt;/width&gt;
-                    &lt;height&gt;280&lt;/height&gt;
-                    &lt;texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png"&gt;background.png&lt;/texture&gt;
-                  &lt;/control&gt;
-				     &lt;control&gt;
-                    &lt;description&gt;Picture Details&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;20&lt;/posX&gt;
-                    &lt;posY&gt;10&lt;/posY&gt;
-                    &lt;width&gt;210&lt;/width&gt;
-                    &lt;label&gt;Picture Details&lt;/label&gt;
-                    &lt;font&gt;font13&lt;/font&gt;
-                    &lt;textcolor&gt;ff7F9EB2&lt;/textcolor&gt;
-                  &lt;/control&gt;
-                  &lt;control&gt;
-                    &lt;description&gt;picture name&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;20&lt;/posX&gt;
-                    &lt;posY&gt;40&lt;/posY&gt;
-                    &lt;width&gt;210&lt;/width&gt;
-                    &lt;label&gt;#selecteditem&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
-				  &lt;control&gt;
-                    &lt;description&gt;picture size&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;20&lt;/posX&gt;
-                    &lt;posY&gt;60&lt;/posY&gt;
-                    &lt;width&gt;210&lt;/width&gt;
-                    &lt;label&gt;#selecteditem2&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
-                &lt;/controls&gt;
-              </subitem>
-          </subitems>
+					<subitems>
+						<subitem>
+							<![CDATA[
+                <controls>
+                  <control>
+                    <description>background</description>
+                    <type>image</type>
+                    <posX>0</posX>
+                    <posY>0</posY>
+                    <width>385</width>
+                    <height>280</height>
+                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png">background.png</texture>
+                  </control>
+				     <control>
+                    <description>Picture Details</description>
+                    <type>label</type>
+                    <posX>20</posX>
+                    <posY>10</posY>
+                    <width>210</width>
+                    <label>Picture Details</label>
+                    <font>font13</font>
+                    <textcolor>ff7F9EB2</textcolor>
+                  </control>
+                  <control>
+                    <description>picture name</description>
+                    <type>label</type>
+                    <posX>20</posX>
+                    <posY>40</posY>
+                    <width>210</width>
+                    <label>#selecteditem</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+				  <control>
+                    <description>picture size</description>
+                    <type>label</type>
+                    <posX>20</posX>
+                    <posY>60</posY>
+                    <width>210</width>
+                    <label>#selecteditem2</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                </controls>
+              ]]>
+						</subitem>
+					</subitems>
         </control>
       </control>
     </control>

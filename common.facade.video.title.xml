@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
     <control>
@@ -11,6 +10,7 @@
         <description>composite control consisting of a list control and a thumbnail panel</description>
         <type>facadeview</type>
         <id>50</id>
+		
         <control>
           <description>listcontrol</description>
           <type>listcontrol</type>
@@ -31,6 +31,7 @@
           <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
           <dimColor>ffffffff</dimColor>
         </control>
+		
         <control>
           <description>Thumbnail Panel</description>
           <type>thumbnailpanel</type>
@@ -73,6 +74,7 @@
           <thumbZoom>no</thumbZoom>
           <spinPosX>1672</spinPosX>
         </control>
+		
         <control>
           <description>Filmstrip view</description>
           <type>filmstrip</type>
@@ -110,6 +112,7 @@
           <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,570" time="400">focus</thumbAnimation>
           <thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,570" time="100">unfocus</thumbAnimation>
         </control>
+		
         <control>
           <description>Cover Flow view</description>
           <type>coverflow</type>
@@ -164,253 +167,256 @@
           <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png" />
           <subitems>
             <subitem>
-                &lt;controls&gt;
-                  &lt;control&gt;
-                    &lt;description&gt;background&lt;/description&gt;
-                    &lt;type&gt;image&lt;/type&gt;
-                    &lt;posX&gt;0&lt;/posX&gt;
-                    &lt;posY&gt;0&lt;/posY&gt;
-                    &lt;width&gt;280&lt;/width&gt;
-                    &lt;height&gt;385&lt;/height&gt;
-                    &lt;texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png"&gt;background.png&lt;/texture&gt;
-                  &lt;/control&gt;
+              <![CDATA[
+                <controls>
+                  <control>
+                    <description>background</description>
+                    <type>image</type>
+                    <posX>0</posX>
+                    <posY>0</posY>
+                    <width>280</width>
+                    <height>385</height>
+                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png">background.png</texture>
+                  </control>
 
-                  &lt;control&gt;
-                    &lt;description&gt;Movie Details&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;10&lt;/posY&gt;
-                    &lt;width&gt;210&lt;/width&gt;
-                    &lt;label&gt;Movie Details&lt;/label&gt;
-                    &lt;font&gt;font13&lt;/font&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
+                  <control>
+                    <description>Movie Details</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>10</posY>
+                    <width>210</width>
+                    <label>Movie Details</label>
+                    <font>font13</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
 
-                  &lt;control&gt;
-                    &lt;description&gt;genre&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;40&lt;/posY&gt;
-                    &lt;width&gt;210&lt;/width&gt;
-                    &lt;label&gt;#genre&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
-                  &lt;control&gt;
-                    &lt;description&gt;year&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;60&lt;/posY&gt;
-                    &lt;width&gt;210&lt;/width&gt;
-                    &lt;label&gt;#year&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
-                  &lt;control&gt;
-                    &lt;description&gt;runtime&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;80&lt;/posY&gt;
-                    &lt;width&gt;210&lt;/width&gt;
-                    &lt;label&gt;#runtime min&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
-                  &lt;control&gt;
-                    &lt;description&gt;rating&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;100&lt;/posY&gt;
-                    &lt;width&gt;210&lt;/width&gt;
-                    &lt;label&gt;#rating&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
-                  &lt;control&gt;
-                    &lt;description&gt;votes&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;50&lt;/posX&gt;
-                    &lt;posY&gt;100&lt;/posY&gt;
-                    &lt;width&gt;210&lt;/width&gt;
-                    &lt;label&gt;(#votes votes)&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
+                  <control>
+                    <description>genre</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>40</posY>
+                    <width>210</width>
+                    <label>#genre</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>year</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>60</posY>
+                    <width>210</width>
+                    <label>#year</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>runtime</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>80</posY>
+                    <width>210</width>
+                    <label>#runtime min</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>rating</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>100</posY>
+                    <width>210</width>
+                    <label>#rating</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>votes</description>
+                    <type>label</type>
+                    <posX>50</posX>
+                    <posY>100</posY>
+                    <width>210</width>
+                    <label>(#votes votes)</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
 
-                  &lt;control&gt;
-                    &lt;description&gt;Director&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;140&lt;/posY&gt;
-                    &lt;width&gt;210&lt;/width&gt;
-                    &lt;label&gt;Director&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
+                  <control>
+                    <description>Director</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>140</posY>
+                    <width>210</width>
+                    <label>Director</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
 
-                  &lt;control&gt;
-                    &lt;description&gt;director&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;160&lt;/posY&gt;
-                    &lt;width&gt;210&lt;/width&gt;
-                    &lt;label&gt;#director&lt;/label&gt;
-                    &lt;font&gt;font9&lt;/font&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
+                  <control>
+                    <description>director</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>160</posY>
+                    <width>210</width>
+                    <label>#director</label>
+                    <font>font9</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
 
-                  &lt;control&gt;
-                    &lt;description&gt;plot&lt;/description&gt;
-                    &lt;type&gt;textboxscrollup&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;180&lt;/posY&gt;
-                    &lt;width&gt;210&lt;/width&gt;
-                    &lt;height&gt;150&lt;/height&gt;
-                    &lt;label&gt;#plot&lt;/label&gt;
-                    &lt;font&gt;font9&lt;/font&gt;
-                    &lt;lineSpacing&gt;1&lt;/lineSpacing&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
+                  <control>
+                    <description>plot</description>
+                    <type>textboxscrollup</type>
+                    <posX>30</posX>
+                    <posY>180</posY>
+                    <width>210</width>
+                    <height>150</height>
+                    <label>#plot</label>
+                    <font>font9</font>
+                    <lineSpacing>1</lineSpacing>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
 
-&lt;!--
-                  &lt;control&gt;
-                    &lt;description&gt;cast&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;70&lt;/posY&gt;
-                    &lt;width&gt;1000&lt;/width&gt;
-                    &lt;label&gt;#cast&lt;/label&gt;
-                    &lt;font&gt;font9&lt;/font&gt;
-                    &lt;align&gt;left&lt;/align&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-					&lt;visible&gt;no&lt;/visible&gt;
-                  &lt;/control&gt;
+<!--
+                  <control>
+                    <description>cast</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>70</posY>
+                    <width>1000</width>
+                    <label>#cast</label>
+                    <font>font9</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+					<visible>no</visible>
+                  </control>
 
-                  &lt;control&gt;
-                    &lt;description&gt;dvdlabel&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;90&lt;/posY&gt;
-                    &lt;width&gt;1000&lt;/width&gt;
-                    &lt;label&gt;#dvdlabel&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;align&gt;left&lt;/align&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
+                  <control>
+                    <description>dvdlabel</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>90</posY>
+                    <width>1000</width>
+                    <label>#dvdlabel</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
 
-                  &lt;control&gt;
-                    &lt;description&gt;imdb number&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;110&lt;/posY&gt;
-                    &lt;width&gt;1000&lt;/width&gt;
-                    &lt;label&gt;#imdbnumber&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;align&gt;left&lt;/align&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
+                  <control>
+                    <description>imdb number</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>110</posY>
+                    <width>1000</width>
+                    <label>#imdbnumber</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
 
-                  &lt;control&gt;
-                    &lt;description&gt;file&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;130&lt;/posY&gt;
-                    &lt;width&gt;1000&lt;/width&gt;
-                    &lt;label&gt;#file&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;align&gt;left&lt;/align&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
+                  <control>
+                    <description>file</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>130</posY>
+                    <width>1000</width>
+                    <label>#file</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
                      
-                  &lt;control&gt;
-                    &lt;description&gt;plot outline&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;170&lt;/posY&gt;
-                    &lt;width&gt;1000&lt;/width&gt;
-                    &lt;label&gt;#plotoutline&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;align&gt;left&lt;/align&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
+                  <control>
+                    <description>plot outline</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>170</posY>
+                    <width>1000</width>
+                    <label>#plotoutline</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
 
-                  &lt;control&gt;
-                    &lt;description&gt;tagline&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;1000&lt;/posY&gt;
-                    &lt;width&gt;1000&lt;/width&gt;
-                    &lt;label&gt;#tagline&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;align&gt;left&lt;/align&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
+                  <control>
+                    <description>tagline</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>1000</posY>
+                    <width>1000</width>
+                    <label>#tagline</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
 
-                  &lt;control&gt;
-                    &lt;description&gt;credits&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;250&lt;/posY&gt;
-                    &lt;width&gt;1000&lt;/width&gt;
-                    &lt;label&gt;#credits&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;align&gt;left&lt;/align&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
+                  <control>
+                    <description>credits</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>250</posY>
+                    <width>1000</width>
+                    <label>#credits</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
 
-                  &lt;control&gt;
-                    &lt;description&gt;thumb&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;270&lt;/posY&gt;
-                    &lt;width&gt;1000&lt;/width&gt;
-                    &lt;label&gt;#thumb&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;align&gt;left&lt;/align&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
+                  <control>
+                    <description>thumb</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>270</posY>
+                    <width>1000</width>
+                    <label>#thumb</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
 
-                  &lt;control&gt;
-                    &lt;description&gt;title&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;290&lt;/posY&gt;
-                    &lt;width&gt;1000&lt;/width&gt;
-                    &lt;label&gt;#title&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;align&gt;left&lt;/align&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
+                  <control>
+                    <description>title</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>290</posY>
+                    <width>1000</width>
+                    <label>#title</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
 
-                  &lt;control&gt;
-                    &lt;description&gt;mpaa rating&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;350&lt;/posY&gt;
-                    &lt;width&gt;1000&lt;/width&gt;
-                    &lt;label&gt;#mpaarating&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;align&gt;left&lt;/align&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
+                  <control>
+                    <description>mpaa rating</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>350</posY>
+                    <width>1000</width>
+                    <label>#mpaarating</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
 
-                  &lt;control&gt;
-                    &lt;description&gt;watched&lt;/description&gt;
-                    &lt;type&gt;label&lt;/type&gt;
-                    &lt;posX&gt;30&lt;/posX&gt;
-                    &lt;posY&gt;370&lt;/posY&gt;
-                    &lt;width&gt;1000&lt;/width&gt;
-                    &lt;label&gt;#iswatched&lt;/label&gt;
-                    &lt;font&gt;font10&lt;/font&gt;
-                    &lt;align&gt;left&lt;/align&gt;
-                    &lt;textcolor&gt;FFFFFFFF&lt;/textcolor&gt;
-                  &lt;/control&gt;
---&gt;
+                  <control>
+                    <description>watched</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>370</posY>
+                    <width>1000</width>
+                    <label>#iswatched</label>
+                    <font>font10</font>
+                    <align>left</align>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+-->
 
-                &lt;/controls&gt;
-              </subitem>
+                </controls>
+              ]]>
+            </subitem>
           </subitems>
         </control>
+		
         <control>
           <description>playlist listcontrol</description>
           <type>playlistcontrol</type>
@@ -421,6 +427,7 @@
           <posY>257</posY>
           <height>632</height>
         </control>
+		
       </control>
     </control>
   </controls>

@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8"-->
 <window>
   <controls>
+  
     <control>
       <description>GROUP: RecentlyAdded Movies</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,MovingPictures) + !string.equals(#maya.recentlyAdded.movie1.thumb,) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <visible>string.equals(#recentMedia,MovingPictures) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
       <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -24,6 +24,18 @@
         <width>150</width>
         <texture>#maya.recentlyAdded.movie1.thumb</texture>
       </control>
+
+      <control>
+        <description>Default Movie 1 thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1259</posX>
+        <posY>125</posY>
+        <height>220</height>
+        <width>150</width>
+        <texture>defaultVideoBig.png</texture>
+      </control>
+	  
       <control>
         <description>Movie 1 Rounded Cover</description>
         <type>image</type>
@@ -34,6 +46,7 @@
         <width>203</width>
         <texture>blackborders_video.png</texture>
       </control>
+	  
       <control>
         <description>Movie 1 name</description>
         <type>fadelabel</type>
@@ -46,6 +59,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Movie 1 title</description>
         <type>label</type>
@@ -57,6 +71,7 @@
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
+	  
       <control>
         <description>Movie 1 Genre</description>
         <type>label</type>
@@ -68,6 +83,7 @@
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
+	  
       <control>
         <type>imagelist</type>
         <id>0</id>
@@ -86,6 +102,7 @@
         <imagesToDraw>5</imagesToDraw>
         <percentage>#maya.recentlyAdded.movie1.score</percentage>
       </control>
+	  
       <control>
         <description>Play Button</description>
         <type>button</type>
@@ -114,6 +131,18 @@
         <width>150</width>
         <texture>#maya.recentlyAdded.movie2.thumb</texture>
       </control>
+
+      <control>
+        <description>Default Movie 2 thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1259</posX>
+        <posY>405</posY>
+        <height>220</height>
+        <width>150</width>
+        <texture>defaultVideoBig.png</texture>
+      </control>
+	  
       <control>
         <description>Movie 2 Rounded Cover</description>
         <type>image</type>
@@ -124,6 +153,7 @@
         <width>203</width>
         <texture>blackborders_video.png</texture>
       </control>
+	  
       <control>
         <description>Movie 2 name</description>
         <type>fadelabel</type>
@@ -136,6 +166,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Movie 2 title</description>
         <type>label</type>
@@ -147,6 +178,7 @@
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
+	  
       <control>
         <description>Movie 2 Genre</description>
         <type>label</type>
@@ -158,6 +190,7 @@
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
+	  
       <control>
         <type>imagelist</type>
         <id>0</id>
@@ -176,6 +209,7 @@
         <imagesToDraw>5</imagesToDraw>
         <percentage>#maya.recentlyAdded.movie2.score</percentage>
       </control>
+	  
       <control>
         <description>Play Button</description>
         <type>button</type>
@@ -204,6 +238,18 @@
         <width>150</width>
         <texture>#maya.recentlyAdded.movie3.thumb</texture>
       </control>
+
+      <control>
+        <description>Default Movie 3 thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1259</posX>
+        <posY>686</posY>
+        <height>220</height>
+        <width>150</width>
+        <texture>defaultVideoBig.png</texture>
+      </control>
+	  
       <control>
         <description>Movie 3 Rounded Cover</description>
         <type>image</type>
@@ -214,6 +260,7 @@
         <width>203</width>
         <texture>blackborders_video.png</texture>
       </control>
+	  
       <control>
         <description>Movie 3 name</description>
         <type>fadelabel</type>
@@ -226,6 +273,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Movie 3 title</description>
         <type>fadelabel</type>
@@ -237,6 +285,7 @@
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
+	  
       <control>
         <description>Movie 3 Genre</description>
         <type>label</type>
@@ -248,6 +297,7 @@
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
+	  
       <control>
         <type>imagelist</type>
         <id>0</id>
@@ -266,6 +316,7 @@
         <imagesToDraw>5</imagesToDraw>
         <percentage>#maya.recentlyAdded.movie3.score</percentage>
       </control>
+	  
       <control>
         <description>Play Button</description>
         <type>button</type>
@@ -284,5 +335,6 @@
         <font>font12</font>
       </control>
     </control>
+	
   </controls>
 </window>

@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>3009</id>
   <defaultcontrol>35</defaultcontrol>
@@ -20,6 +19,7 @@
         <posX>444</posX>
         <posY>469</posY>
       </control>
+	  
       <control>
         <description>Heading text label</description>
         <type>label</type>
@@ -31,6 +31,7 @@
         <font>Segoe Light18</font>
         <textcolor>85cffe</textcolor>
       </control>
+	  
       <control>
         <description>time label 24h</description>
         <id>0</id>
@@ -42,6 +43,7 @@
         <label>#time</label>
         <visible>![string.contains(#time,AM)|string.contains(#time,PM)]</visible>
       </control>
+	  
       <control>
         <description>time label 12h</description>
         <id>0</id>
@@ -53,6 +55,7 @@
         <label>#time</label>
         <visible>[string.contains(#time,AM)|string.contains(#time,PM)]</visible>
       </control>
+	  
       <control>
         <description>list to show channels without channel state logos</description>
         <type>listcontrol</type>
@@ -69,14 +72,14 @@
         <textYOff2>43</textYOff2>
         <textXOff3>28</textXOff3>
         <textYOff3>8</textYOff3>
-        <IconXOff>-54</IconXOff>
-        <IconYOff>14</IconYOff>
-        <PinIconXOff>531</PinIconXOff>
-        <PinIconYOff>2</PinIconYOff>
-        <PinIconWidth>-</PinIconWidth>
-        <PinIconHeight>-</PinIconHeight>
+        <IconXOff>-76</IconXOff>
+        <IconYOff>16</IconYOff>
+        <PinIconXOff>750</PinIconXOff>
+        <PinIconYOff>5</PinIconYOff>
+        <PinIconWidth>87</PinIconWidth>
+        <PinIconHeight>79</PinIconHeight>
         <spinPosY>863</spinPosY>
-        <spinPosX>1402</spinPosX>
+        <spinPosX>1305</spinPosX>
         <spinColor>FFB2D4F5</spinColor>
         <spinWidth>54</spinWidth>
         <spinHeight>37</spinHeight>
@@ -96,6 +99,7 @@
         <onleft>36</onleft>
         <onright>34</onright>
       </control>
+	  
       <control>
         <description>list to show channels with channel state logos</description>
         <type>listcontrol</type>
@@ -112,14 +116,14 @@
         <textYOff2>43</textYOff2>
         <textXOff3>28</textXOff3>
         <textYOff3>8</textYOff3>
-        <IconXOff>-54</IconXOff>
-        <IconYOff>14</IconYOff>
-        <PinIconXOff>531</PinIconXOff>
-        <PinIconYOff>2</PinIconYOff>
-        <PinIconWidth>67</PinIconWidth>
-        <PinIconHeight>59</PinIconHeight>
-        <spinPosY>871</spinPosY>
-        <spinPosX>1402</spinPosX>
+        <IconXOff>-76</IconXOff>
+        <IconYOff>16</IconYOff>
+        <PinIconXOff>750</PinIconXOff>
+        <PinIconYOff>5</PinIconYOff>
+        <PinIconWidth>87</PinIconWidth>
+        <PinIconHeight>79</PinIconHeight>
+        <spinPosY>868</spinPosY>
+        <spinPosX>1305</spinPosX>
         <spinColor>FFFFFFFF</spinColor>
         <spinWidth>54</spinWidth>
         <spinHeight>37</spinHeight>
@@ -139,12 +143,13 @@
         <onleft>36</onleft>
         <onright>34</onright>
       </control>
+	  
       <control>
         <description>groups spin control</description>
         <type>spincontrol</type>
         <id>36</id>
-        <posX>1103</posX>
-        <posY>864</posY>
+        <posX>603</posX>
+        <posY>857</posY>
         <showrange>no</showrange>
         <orientation>horizontal</orientation>
         <font>font10</font>
@@ -160,6 +165,7 @@
         <onleft>36</onleft>
         <align>center</align>
       </control>
+	  
     </control>
   </controls>
 </window>

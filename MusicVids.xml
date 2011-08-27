@@ -8,8 +8,10 @@
   <define>#useSelectedFanart:Yes</define>
   <define>#header.background:hover_musicvids.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -24,6 +26,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -37,6 +40,7 @@
       <textcolor>6aa5cb</textcolor>
       <font>Segoe Light40</font>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -50,6 +54,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Artist name</description>
       <type>label</type>
@@ -62,6 +67,7 @@
       <textcolor>85cffe</textcolor>
       <visible>!Control.IsVisible(9999)</visible>
     </control>
+	
     <control>
       <id>0</id>
       <type>image</type>
@@ -74,6 +80,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <type>image</type>
@@ -86,6 +93,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Artist Image</description>
       <type>image</type>
@@ -101,6 +109,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Artist Biography</description>
       <type>textboxscrollup</type>
@@ -111,6 +120,7 @@
       <height>583</height>
       <label>#MusicVids.ArtistBio</label>
     </control>
+	
     <control>
       <description>Video Thumb</description>
       <type>image</type>
@@ -124,6 +134,7 @@
       <centered>yes</centered>
       <texture>#MusicVids.VideoImg</texture>
     </control>
+	
     <control>
       <description>Overlay</description>
       <type>image</type>
@@ -136,6 +147,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Most Played Video Label</description>
       <type>label</type>
@@ -146,6 +158,7 @@
       <posY>618</posY>
       <width>358</width>
     </control>
+	
     <control>
       <description>Favorite Vid label</description>
       <type>label</type>
@@ -155,6 +168,7 @@
       <width>358</width>
       <label>#MusicVids.MostPlayed</label>
     </control>
+	
     <control>
       <description>Favorite Artist Static</description>
       <type>label</type>
@@ -165,6 +179,7 @@
       <posY>703</posY>
       <width>358</width>
     </control>
+	
     <control>
       <description>Favorite Artist</description>
       <type>label</type>
@@ -176,6 +191,7 @@
       <width>358</width>
       <label>#MusicVids.FavArtist</label>
     </control>
+	
     <control>
       <description>Favorite Vid</description>
       <type>image</type>
@@ -187,6 +203,7 @@
       <texture>#MusicVids.MostPlayedThumb</texture>
       <keepaspectratio>no</keepaspectratio>
     </control>
+	
     <control>
       <description>Favorite Artist</description>
       <type>image</type>
@@ -199,15 +216,16 @@
       <texture>#MusicVids.FavArtistThumb</texture>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
     <control>
       <description>Dummy label indicating artist/video view</description>
       <type>label</type>
       <id>99</id>
       <posX>0</posX>
       <posY>0</posY>
-      <label>
-      </label>
+      <label></label>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -220,6 +238,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>listcontrol background info</description>
       <type>image</type>
@@ -232,6 +251,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <type>facadeview</type>
       <id>50</id>
@@ -253,6 +273,7 @@
         <dimColor>ffffffff</dimColor>
       </control>
     </control>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -284,7 +305,7 @@
         <control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -358,6 +379,7 @@
         </control>
       </control>
     </control>
+	
     <control>
       <description>Sort Label Overlay</description>
       <type>label</type>
@@ -369,6 +391,7 @@
       <font>font32</font>
       <textcolor>20ffffff</textcolor>
     </control>
+	
     <control>
       <description>Artist</description>
       <type>label</type>
@@ -380,6 +403,7 @@
       <textcolor>6aa5cb</textcolor>
       <visible>string.equals(#MusicVids.Hierachy,Artists)</visible>
     </control>
+	
     <control>
       <description>Videocount</description>
       <type>label</type>
@@ -391,14 +415,16 @@
       <textcolor>6aa5cb</textcolor>
       <visible>!Control.IsVisible(9999)</visible>
     </control>
+	
     <control>
       <id>1</id>
       <type>image</type>
       <posX>0</posX>
-      <posY>457</posY>
+      <posY>440</posY>
       <texture>hiddenmenu_tab.png</texture>
       <visible>Control.HasFocus(50)</visible>
     </control>
+	
     <import>common.overlay.xml</import>
   </controls>
 </window>

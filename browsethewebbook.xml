@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>54537688</id>
   <defaultcontrol>50</defaultcontrol>
@@ -8,8 +7,10 @@
   <define>#header.background:hover_BrowseTheWeb.png</define>
   <disabletopbar>no</disabletopbar>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <description>Header Label</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -26,6 +27,7 @@
       <align>center</align>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -40,6 +42,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>action menu</description>
       <type>actiongroup</type>
@@ -72,7 +75,7 @@
           <id>1</id>
           <type>image</type>
           <visible>!Control.HasFocus(50)</visible>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8"-->
 <window>
   <controls>
+  
     <control>
       <description>GROUP: RecentlyAdded Movie</description>
       <type>group</type>
@@ -25,6 +25,7 @@
         <font>Segoe Light16</font>
         <textcolor>85cfff</textcolor>
       </control>
+	  
       <control>
         <description>Movie 1 name</description>
         <type>fadelabel</type>
@@ -37,6 +38,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Movie 1 runtime</description>
         <type>label</type>
@@ -48,6 +50,7 @@
         <font>font12</font>
         <textcolor>ffffff</textcolor>
       </control>
+	  
       <control>
         <type>imagelist</type>
         <id>0</id>
@@ -66,6 +69,7 @@
         <imagesToDraw>5</imagesToDraw>
         <percentage>#maya.recentlyAdded.movie1.score</percentage>
       </control>
+	  
       <control>
         <description>Movie 1 thumb/fanart</description>
         <type>image</type>
@@ -77,6 +81,7 @@
         <keepaspectratio>true</keepaspectratio>
         <texture>#maya.recentlyAdded.movie1.fanart</texture>
       </control>
+	  
       <control>
         <description>Play Button</description>
         <type>button</type>
@@ -95,6 +100,7 @@
         <font>font12</font>
       </control>
     </control>
+	
     <control>
       <description>GROUP: RecentlyAdded Movie</description>
       <type>group</type>
@@ -119,6 +125,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Movie 2 runtime</description>
         <type>label</type>
@@ -130,6 +137,7 @@
         <font>font12</font>
         <textcolor>ffffff</textcolor>
       </control>
+	  
       <control>
         <type>imagelist</type>
         <id>0</id>
@@ -148,6 +156,7 @@
         <imagesToDraw>5</imagesToDraw>
         <percentage>#maya.recentlyAdded.movie2.score</percentage>
       </control>
+	  
       <control>
         <description>Play Button</description>
         <type>button</type>
@@ -166,6 +175,7 @@
         <font>font12</font>
       </control>
     </control>
+	
     <control>
       <description>GROUP: RecentlyAdded Movie</description>
       <type>group</type>
@@ -189,6 +199,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Movie 3 runtime</description>
         <type>label</type>
@@ -200,6 +211,7 @@
         <font>font12</font>
         <textcolor>ffffff</textcolor>
       </control>
+	  
       <control>
         <type>imagelist</type>
         <id>0</id>
@@ -218,6 +230,7 @@
         <imagesToDraw>5</imagesToDraw>
         <percentage>#maya.recentlyAdded.movie3.score</percentage>
       </control>
+	  
       <control>
         <description>Play Button</description>
         <type>button</type>
@@ -236,5 +249,6 @@
         <font>font12</font>
       </control>
     </control>
+	
   </controls>
 </window>

@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>6622</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <define>#header.background:hover_musictrivia.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
+	
     <control>
       <id>0</id>
       <description>DEFAULT BACKGROUND WHEN FANART NOT AVAILABLE</description>
@@ -24,6 +25,7 @@
       <loop>yes</loop>
       <randomize>True</randomize>
     </control>
+	
     <control>
       <id>897689</id>
       <description>FANART IMAGE 2</description>
@@ -37,6 +39,7 @@
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
       <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
     </control>
+	
     <control>
       <id>897688</id>
       <description>FANART IMAGE 1</description>
@@ -50,6 +53,7 @@
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
       <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
     </control>
+	
     <control>
       <type>image</type>
       <visible>String.Contains(#MusicTrivia.Game.InProgress,true)</visible>
@@ -59,6 +63,7 @@
       <animation effect="Fade" time="400">Visible</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background</description>
@@ -72,6 +77,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>2</id>
       <description>Start Button</description>
@@ -88,6 +94,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>3</id>
       <description>Stop</description>
@@ -104,6 +111,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>11</id>
       <description>Timer value label</description>
@@ -118,6 +126,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>11</id>
       <description>Points label</description>
@@ -132,6 +141,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>12</id>
       <description>Points value label</description>
@@ -146,6 +156,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>510</id>
       <description>Player 1 label</description>
@@ -243,6 +254,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>520</id>
       <description>Player 2 label</description>
@@ -256,6 +268,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>521</id>
       <description>p2 correct: label</description>
@@ -270,6 +283,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>522</id>
       <description>p2 number of correct label</description>
@@ -284,6 +298,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>523</id>
       <description>p2 wrong: label</description>
@@ -298,6 +313,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>524</id>
       <description>p2 number wrong label</description>
@@ -312,6 +328,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>525</id>
       <description>p2 score: label</description>
@@ -326,6 +343,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>526</id>
       <description>p2 number score label</description>
@@ -340,6 +358,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background</description>
@@ -353,6 +372,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>50</id>
       <description>tracks</description>
@@ -383,17 +403,9 @@
       <textureHeight>140</textureHeight>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
     <import>common.time.xml</import>
-    <control>
-      <id>1</id>
-      <type>image</type>
-      <visible>Control.HasFocus(2)</visible>
-      <posX>0</posX>
-      <posY>457</posY>
-      <texture>hiddenmenu_tab.png</texture>
-      <animation delay="600" effect="Slide" end="0,0" start="-60,0" time="400" tween="Quadratic">WindowOpen</animation>
-      <animation delay="100" effect="Slide" end="-60,0" start="0,0" time="400" tween="Quadratic">WindowClose</animation>
-    </control>
+	
     <control>
       <id>91919295</id>
       <description>DUMMY CONTROL FOR PLAYING FANART 1 VISIBILITY CONDITION</description>
@@ -402,6 +414,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <id>91919296</id>
       <description>DUMMY CONTROL FOR PLAYING FANART 2 VISIBILITY CONDITION</description>
@@ -410,6 +423,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <id>91919294</id>
       <description>DUMMY CONTROL FOR PLAYING FANART AVAILABILITY CONDITION</description>
@@ -418,6 +432,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <id>500</id>
       <description>DUMMY BUTTON - optional for hidden menu visibility</description>
@@ -435,6 +450,7 @@
       <textureNoFocus>-</textureNoFocus>
       <label />
     </control>
+	
     <control>
       <description>action menu</description>
       <type>actiongroup</type>
@@ -469,7 +485,7 @@
           <id>1</id>
           <type>image</type>
           <visible>!Control.HasFocus(50)</visible>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -485,6 +501,7 @@
           <textcolor>ff85cffe</textcolor>
           <label>924</label>
         </control>
+		
         <control>
           <description>button group</description>
           <type>group</type>
@@ -545,5 +562,17 @@
         </control>
       </control>
     </control>
+	
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <visible>Control.HasFocus(2)</visible>
+      <posX>0</posX>
+      <posY>440</posY>
+      <texture>hiddenmenu_tab.png</texture>
+      <animation delay="600" effect="Slide" end="0,0" start="-60,0" time="400" tween="Quadratic">WindowOpen</animation>
+      <animation delay="100" effect="Slide" end="-60,0" start="0,0" time="400" tween="Quadratic">WindowClose</animation>
+    </control>
+	
   </controls>
 </window>

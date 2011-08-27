@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
+  
     <control>
       <id>0</id>
       <type>image</type>
@@ -14,6 +14,7 @@
       <animation effect="Fade" time="400">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <description>group element</description>
       <type>group</type>
@@ -49,6 +50,7 @@
         <spinHeight>42</spinHeight>
       </control>
     </control>
+	
     <control>
       <description>group element</description>
       <type>group</type>
@@ -86,6 +88,7 @@
         <remoteColor>ff77ccff</remoteColor>
       </control>
     </control>
+	
     <control>
       <id>53</id>
       <description>Search Term</description>
@@ -102,6 +105,7 @@
       <animation effect="Fade" reversible="FALSE" time="100">WindowOpen</animation>
       <animation effect="Fade" reversible="FALSE" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>Search term</description>
@@ -118,5 +122,6 @@
       <animation effect="Fade" reversible="FALSE" time="100">WindowOpen</animation>
       <animation effect="Fade" reversible="FALSE" time="100">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

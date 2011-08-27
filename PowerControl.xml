@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>7983</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,8 +6,10 @@
   <define>#header.background:hover_powercontrol.png</define>
   <define>#header.label:Power Control</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <description>Header label</description>
@@ -23,6 +24,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background</description>
@@ -35,6 +37,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>button group</description>
       <type>group</type>
@@ -84,6 +87,7 @@
         <textalign>RIGHT</textalign>
       </control>
     </control>
+	
     <control>
       <id>0</id>
       <description>Action</description>
@@ -799,6 +803,8 @@
       <height>45</height>
       <texture>#PowerControl.NetworkDevice4AliveImage</texture>
     </control>
+	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

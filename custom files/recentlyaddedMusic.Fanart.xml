@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8"-->
 <window>
   <controls>
+  
     <control>
       <description>GROUP: RecentlyAdded Music</description>
       <type>group</type>
@@ -25,6 +25,7 @@
         <font>Segoe Light16</font>
         <textcolor>85cfff</textcolor>
       </control>
+	  
       <control>
         <description>Music 1 artist</description>
         <type>fadelabel</type>
@@ -37,6 +38,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Music 1 album</description>
         <type>label</type>
@@ -48,6 +50,7 @@
         <font>font12</font>
         <textcolor>ffffff</textcolor>
       </control>
+	  
       <control>
         <description>Music 1 thumb/fanart</description>
         <type>image</type>
@@ -60,6 +63,7 @@
         <texture>#fanarthandler.music.latest1.thumb</texture>
       </control>
     </control>
+	
     <control>
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
@@ -84,6 +88,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Music 2 album</description>
         <type>label</type>
@@ -96,6 +101,7 @@
         <textcolor>ffffff</textcolor>
       </control>
     </control>
+	
     <control>
       <description>GROUP: RecentlyAdded Music</description>
       <type>group</type>
@@ -119,6 +125,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Music 3 album</description>
         <type>label</type>
@@ -131,5 +138,6 @@
         <textcolor>ffffff</textcolor>
       </control>
     </control>
+	
   </controls>
 </window>

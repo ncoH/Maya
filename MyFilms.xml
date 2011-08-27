@@ -6,7 +6,9 @@
   <define>#header.label:My Films</define>
   <define>#header.background:hover_MyFilms.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
+	
     <control>
       <type>label</type>
       <description>(Folder) - Visible when Folder or selection - Label use for Hide or unHide some items with Skin visible conditions</description>
@@ -16,6 +18,7 @@
       <visible>yes</visible>
       <focusable>no</focusable>
     </control>
+	
     <control>
       <type>label</type>
       <description>(Fanart) - Visible when Fanart found</description>
@@ -25,6 +28,7 @@
       <visible>yes</visible>
       <focusable>no</focusable>
     </control>
+	
     <control>
       <description>fanart</description>
       <type>image</type>
@@ -41,6 +45,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>fanart2</description>
       <type>image</type>
@@ -57,6 +62,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -66,6 +72,7 @@
       <texture>fanart_overlay.png</texture>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <description>BG</description>
       <type>image</type>
@@ -75,6 +82,7 @@
       <texture>fanart_overlay_filmstrip.png</texture>
       <visible>[[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip]+Control.IsVisible(50)]</visible>
     </control>
+	
     <control>
       <description>BG</description>
       <type>image</type>
@@ -84,6 +92,7 @@
       <texture>background_coverflow.png</texture>
       <visible>facadeview.coverflow+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <description>fanart list background</description>
       <type>image</type>
@@ -97,7 +106,9 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <import>common.time.xml</import>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -113,6 +124,7 @@
       <visible>facadeview.list+Control.IsVisible(50)</visible>
       <valign>middle</valign>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -129,6 +141,7 @@
       <align>center</align>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Selection display</description>
       <type>fadelabel</type>
@@ -142,7 +155,9 @@
       <animation effect="fade" time="250">WindowClose</animation>
       <animation effect="fade" time="250">WindowOpen</animation>
     </control>
+	
     <import>MyFilms.common.facade.xml</import>
+	
     <!--            :: LIST VIEW ::            -->
     <control>
       <description>Selected item Label</description>
@@ -158,6 +173,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -172,6 +188,7 @@
       <textcolor>85cffe</textcolor>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -186,6 +203,7 @@
       <textcolor>85cffe</textcolor>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -200,6 +218,7 @@
       <textcolor>85cffe</textcolor>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -221,6 +240,7 @@
       <percentage>#myfilms.db.rating.value</percentage>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <description>Rating value</description>
       <type>label</type>
@@ -235,6 +255,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -253,6 +274,7 @@
       <ondown>1026</ondown>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -267,6 +289,7 @@
       <textcolor>85cffe</textcolor>
       <visible>facadeview.list+Control.IsVisible(50)+string.equals(#myfilms.db.actors.value)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -281,6 +304,7 @@
       <textcolor>85cffe</textcolor>
       <visible>facadeview.list+Control.IsVisible(50)+string.equals(#myfilms.db.director.value)</visible>
     </control>
+	
     <control>
       <type>image</type>
       <description>thumb Logos ID 2012 (Combined ID2001 and ID2002)</description>
@@ -294,6 +318,7 @@
       <visible>facadeview.list+Control.IsVisible(50)</visible>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <type>label</type>
       <id>2073</id>
@@ -306,6 +331,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -319,6 +345,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <!--            :: FILMSTRIP VIEW ::            -->
     <control>
       <description>Selected item Label</description>
@@ -335,6 +362,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -350,6 +378,7 @@
       <textcolor>6aa5cb</textcolor>
       <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -371,6 +400,7 @@
       <percentage>#myfilms.db.rating.value</percentage>
       <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -386,6 +416,7 @@
       <spaceBetweenItems>0</spaceBetweenItems>
       <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -401,6 +432,7 @@
       <label>#itemtype: #itemcount</label>
       <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+Control.IsVisible(50)</visible>
     </control>
+	
     <!--            :: THUMB VIEW ::            -->
     <control>
       <description>Cover Art</description>
@@ -415,6 +447,7 @@
       <texture>#myfilms.coverimage</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <description>Cover Art overlay</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -428,6 +461,7 @@
       <texture>blackborders_video.png</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons]+Control.IsVisible(50)</visible>
     </control>
+	
     <!-- Fanrt/Movie Available Info -->
     <control>
       <description>Movie available Info Label</description>
@@ -441,6 +475,7 @@
       <textcolor>6aa5cb</textcolor>
       <visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)</visible>
     </control>
+	
     <control>
       <description>Movie unavailable Icon</description>
       <type>image</type>
@@ -454,6 +489,7 @@
       <centered>yes</centered>
       <visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)+!string.equals(#myfilms.user.source.value)</visible>
     </control>
+	
     <control>
       <description>Movie available Icon</description>
       <type>image</type>
@@ -467,6 +503,7 @@
       <centered>yes</centered>
       <visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)+string.equals(#myfilms.user.source.value)</visible>
     </control>
+	
     <!-- Trailer Available Info -->
     <control>
       <description>Trailer available Info Label</description>
@@ -480,6 +517,7 @@
       <textcolor>6aa5cb</textcolor>
       <visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)</visible>
     </control>
+	
     <control>
       <description>Trailer Count</description>
       <type>label</type>
@@ -492,6 +530,7 @@
       <textcolor>6aa5cb</textcolor>
       <visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)</visible>
     </control>
+	
     <control>
       <description>Trailer unavailable Icon</description>
       <type>image</type>
@@ -505,6 +544,7 @@
       <centered>yes</centered>
       <visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)+!string.equals(#myfilms.user.sourcetrailer.value)</visible>
     </control>
+	
     <control>
       <description>Trailer available Icon</description>
       <type>image</type>
@@ -518,6 +558,7 @@
       <centered>yes</centered>
       <visible>!control.isvisible(34)+facadeview.list+control.hasfocus(50)+string.equals(#myfilms.user.sourcetrailer.value)</visible>
     </control>
+	
     <!-- Global Overlay Filter Info -->
     <control>
       <description>Filters group</description>
@@ -576,6 +617,7 @@
 			<animation effect="fade" time="250">WindowOpen</animation>
 		</control> -->
     </control>
+	
     <!-- COMMON FACADES -->
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -590,6 +632,7 @@
       <texture>defaultdvdcover.png</texture>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -603,6 +646,7 @@
       <texture>#myfilms.coverimage</texture>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -616,6 +660,7 @@
       <texture>blackborders_video.png</texture>
       <visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
+	
     <!-- 		<control>
 			<description>Cover Art</description>
 			<type>image</type>
@@ -628,6 +673,7 @@
 			<texture>#myfilms.coverimage</texture>
 			<visible>no</visible>
 		</control>   -->
+		
     <!--            :: HIDDEN MENU ::            -->
     <control>
       <type>actiongroup</type>
@@ -661,7 +707,7 @@
         <control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>

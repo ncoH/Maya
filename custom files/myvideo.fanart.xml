@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>6</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,7 +6,9 @@
   <define>#header.label:3</define>
   <define>#useSelectedFanart:Yes</define>
   <controls>
+  
     <import>common.window.video.xml</import>
+	
     <!--            :: Fanart ::            -->
     <control>
       <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
@@ -17,6 +18,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
       <type>label</type>
@@ -25,6 +27,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
       <type>label</type>
@@ -34,6 +37,7 @@
       <width>1</width>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>FANART BACKGROUND 1</description>
       <id>0</id>
@@ -47,6 +51,7 @@
       <animation effect="fade" time="450">visible</animation>
       <animation effect="fade" time="450" delay="300">hidden</animation>
     </control>
+	
     <control>
       <description>FANART BACKGROUND 2</description>
       <id>0</id>
@@ -60,6 +65,7 @@
       <animation effect="fade" time="450">visible</animation>
       <animation effect="fade" time="450" delay="300">hidden</animation>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -69,6 +75,7 @@
       <texture>fanart_overlay.png</texture>
       <visible>facadeview.list+control.isvisible(91919293)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -82,6 +89,7 @@
       <texture>fanart_widelist_bg.png</texture>
       <visible>facadeview.list+control.isvisible(91919293)</visible>
     </control>
+	
     <control>
       <description>BG</description>
       <type>image</type>
@@ -91,6 +99,7 @@
       <texture>fanart_overlay_filmstrip.png</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip] + control.isvisible(91919293)</visible>
     </control>
+	
     <control>
       <description>BG</description>
       <type>image</type>
@@ -100,6 +109,7 @@
       <texture>background_coverflow.png</texture>
       <visible>facadeview.coverflow + control.isvisible(91919293)</visible>
     </control>
+	
     <control>
       <description>Header label</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -116,6 +126,7 @@
       <visible>facadeview.list</visible>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Header label</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -133,7 +144,9 @@
       <align>center</align>
       <valign>middle</valign>
     </control>
+	
     <import>common.time.xml</import>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -166,7 +179,7 @@
         <control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -326,27 +339,7 @@
         </control>
       </control>
     </control>
-    <import>common.facade.video.xml</import>
-    <control>
-      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
-      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
-      <id>1</id>
-      <type>image</type>
-      <posX>0</posX>
-      <posY>457</posY>
-      <texture>hiddenmenu_tab.png</texture>
-      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
-    </control>
-    <control>
-      <animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
-      <animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
-      <id>1</id>
-      <type>image</type>
-      <posX>877</posX>
-      <posY>0</posY>
-      <texture>hiddenmenu_tab_up.png</texture>
-      <visible>[facadeview.filmstrip | facadeview.coverflow]+Control.HasFocus(50)</visible>
-    </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -359,6 +352,7 @@
       <texture>defaultVideoBig.png</texture>
       <visible>facadeview.list+!control.hasthumb(500)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -371,6 +365,7 @@
       <texture>#selectedthumb</texture>
       <visible>facadeview.list</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -383,6 +378,7 @@
       <texture>blackborders_video.png</texture>
       <visible>facadeview.list|facadeview.album</visible>
     </control>
+	
     <!--            :: THUMB VIEW ::            -->
     <control>
       <description>Cover Art</description>
@@ -397,6 +393,7 @@
       <texture>#selectedthumb</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons]</visible>
     </control>
+	
     <control>
       <description>Cover Art</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -410,6 +407,7 @@
       <texture>defaultVideoBig.png</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons]+!control.hasthumb(501)</visible>
     </control>
+	
     <control>
       <description>Cover Art overlay</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -423,6 +421,31 @@
       <texture>blackborders_video.png</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons]</visible>
     </control>
+	
+    <control>
+      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+      <id>1</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>440</posY>
+      <texture>hiddenmenu_tab.png</texture>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+    </control>
+	
+    <control>
+      <animation effect="slide" start="0,-60" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="0,-60" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+      <id>1</id>
+      <type>image</type>
+      <posX>858</posX>
+      <posY>0</posY>
+      <texture>hiddenmenu_tab_up.png</texture>
+      <visible>[facadeview.filmstrip | facadeview.coverflow]+Control.HasFocus(50)</visible>
+    </control>
+
+    <import>common.facade.video.xml</import>	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

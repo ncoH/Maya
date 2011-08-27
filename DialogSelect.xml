@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>2000</id>
   <defaultcontrol>3</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <control>
       <description>background image</description>
       <type>image</type>
@@ -12,7 +12,9 @@
       <width>1920</width>
       <height>1080</height>
     </control>
+	
     <import>common.time.xml</import>
+	
     <control>
       <description>Select text label</description>
       <type>label</type>
@@ -27,6 +29,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>

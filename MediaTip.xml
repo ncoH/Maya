@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>7980</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,8 +6,10 @@
   <define>#header.label:MediaTip</define>
   <define>#header.background:hover_mediatip.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -23,6 +24,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background</description>
@@ -35,6 +37,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>button group</description>
       <type>group</type>
@@ -77,6 +80,7 @@
         <textalign>RIGHT</textalign>
       </control>
     </control>
+	
     <control>
       <id>1</id>
       <description>Music</description>
@@ -90,6 +94,7 @@
       <animation effect="Fade" time="250">WindowClose</animation>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
     <control>
       <id>1</id>
       <description>Music Headline</description>
@@ -101,6 +106,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Music Directory Name/Size Label</description>
@@ -114,6 +120,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Music Directory Name/Size Value</description>
@@ -125,6 +132,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Music File Count Label</description>
@@ -138,6 +146,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Music File Count Value</description>
@@ -149,6 +158,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Video</description>
@@ -162,6 +172,7 @@
       <animation effect="Fade" time="250">WindowClose</animation>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
     <control>
       <id>1</id>
       <description>Videos Headline</description>
@@ -173,6 +184,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Video Directory Name/Size Label</description>
@@ -186,6 +198,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Video Directory Name/Size Value</description>
@@ -197,6 +210,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Video File Count Label</description>
@@ -210,6 +224,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Video File Count Value</description>
@@ -221,6 +236,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Picture</description>
@@ -234,6 +250,7 @@
       <animation effect="Fade" time="250">WindowClose</animation>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
     <control>
       <id>1</id>
       <description>Picture Headline</description>
@@ -245,6 +262,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Picture Directory Name/Size Label</description>
@@ -258,6 +276,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Picture Directory Name/Size Value</description>
@@ -269,6 +288,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Picture File Count Label</description>
@@ -282,6 +302,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Picture File Count Value</description>
@@ -293,6 +314,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Additional #1 Image</description>
@@ -307,6 +329,7 @@
       <animation effect="Fade" time="250">WindowClose</animation>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
     <control>
       <id>1</id>
       <description>Additional #1 Headline</description>
@@ -319,6 +342,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Additional #1 Directory Name/Size Label</description>
@@ -333,6 +357,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Additional #1 Directory Name/Size Value</description>
@@ -345,6 +370,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Additional #1 File Count Label</description>
@@ -359,6 +385,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Additional #1 File Count Value</description>
@@ -371,6 +398,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Additional #2 Image</description>
@@ -385,6 +413,7 @@
       <animation effect="Fade" time="250">WindowClose</animation>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
     <control>
       <id>1</id>
       <description>Additional #2 Headline</description>
@@ -397,6 +426,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Additional #2 Directory Name/Size Label</description>
@@ -411,6 +441,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Additional #2 Directory Name/Size Value</description>
@@ -423,6 +454,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Additional #2 File Count Label</description>
@@ -437,6 +469,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Additional #2 File Count Value</description>
@@ -449,5 +482,6 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8"-->
 <window>
   <controls>
+  
     <control>
       <description>GROUP: RecentlyAdded Recordings</description>
       <type>group</type>
@@ -24,6 +24,18 @@
         <height>133</height>
         <texture>#fanarthandler.tvrecordings.latest1.thumb</texture>
       </control>
+
+      <control>
+        <description>Default Recordings 1 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1259</posX>
+        <posY>126</posY>
+        <width>264</width>
+        <height>133</height>
+        <texture>defaultPictureBig.png</texture>
+      </control>
+	  
       <control>
         <id>0</id>
         <description>Recordings art overlay</description>
@@ -34,6 +46,7 @@
         <height>182</height>
         <texture>blackborders_pictures.png</texture>
       </control>
+	  
       <control>
         <description>Recordings 1 title</description>
         <type>fadelabel</type>
@@ -46,6 +59,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Recordings 1 genre</description>
         <type>label</type>
@@ -58,6 +72,7 @@
         <textcolor>ffffff</textcolor>
       </control>
     </control>
+	
     <control>
       <description>GROUP: RecentlyAdded Recordings</description>
       <type>group</type>
@@ -80,6 +95,18 @@
         <height>133</height>
         <texture>#fanarthandler.tvrecordings.latest2.thumb</texture>
       </control>
+
+      <control>
+        <description>Default Recordings 2 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1259</posX>
+        <posY>407</posY>
+        <width>264</width>
+        <height>133</height>
+        <texture>defaultPictureBig.png</texture>
+      </control>
+	  
       <control>
         <id>0</id>
         <description>Recordings art overlay</description>
@@ -90,6 +117,7 @@
         <height>182</height>
         <texture>blackborders_pictures.png</texture>
       </control>
+	  
       <control>
         <description>Recordings 2 title</description>
         <type>fadelabel</type>
@@ -102,6 +130,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Recordings 2 genre</description>
         <type>label</type>
@@ -114,6 +143,7 @@
         <textcolor>ffffff</textcolor>
       </control>
     </control>
+	
     <control>
       <description>GROUP: RecentlyAdded Recordings</description>
       <type>group</type>
@@ -136,6 +166,18 @@
         <height>133</height>
         <texture>#fanarthandler.tvrecordings.latest3.thumb</texture>
       </control>
+
+      <control>
+        <description>Default Recordings 3 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1259</posX>
+        <posY>689</posY>
+        <width>264</width>
+        <height>133</height>
+        <texture>defaultPictureBig.png</texture>
+      </control>
+	  
       <control>
         <id>0</id>
         <description>Recordings art overlay</description>
@@ -146,6 +188,7 @@
         <height>182</height>
         <texture>blackborders_pictures.png</texture>
       </control>
+	  
       <control>
         <description>Recordings 3 title</description>
         <type>fadelabel</type>
@@ -158,6 +201,7 @@
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
       </control>
+	  
       <control>
         <description>Recordings 3 genre</description>
         <type>label</type>
@@ -170,5 +214,6 @@
         <textcolor>ffffff</textcolor>
       </control>
     </control>
+	
   </controls>
 </window>

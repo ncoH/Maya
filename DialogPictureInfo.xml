@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>2014</id>
   <defaultcontrol>6</defaultcontrol>
@@ -7,6 +6,7 @@
   <define>#header.label:Picture Infos</define>
   <define>#header.background:hover_my tv.png</define>
   <controls>
+  
     <control>
       <id>1</id>
       <description>BG</description>
@@ -17,6 +17,7 @@
       <height>1080</height>
       <texture>background.png</texture>
     </control>
+	
     <control>
       <id>1</id>
       <description>Fanart Background</description>
@@ -28,6 +29,7 @@
       <height>1080</height>
       <texture>#header.background</texture>
     </control>
+	
     <control>
       <id>1</id>
       <description>Fanart Overlay</description>
@@ -39,7 +41,9 @@
       <height>1080</height>
       <texture>basichome_fanart_overlay.png</texture>
     </control>
+	
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <description>Header label</description>
@@ -54,6 +58,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>20</id>
       <description>Image Title</description>
@@ -67,6 +72,7 @@
       <animation effect="Fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <id>1</id>
       <description>Dimensions txt</description>
@@ -79,6 +85,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Resolution txt</description>
@@ -91,6 +98,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Flash txt</description>
@@ -103,6 +111,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Metering mode txt</description>
@@ -115,6 +124,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Exposure Compensation txt</description>
@@ -127,6 +137,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Shutterspeed txt</description>
@@ -139,6 +150,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Date Taken txt</description>
@@ -151,6 +163,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Fstop txt</description>
@@ -163,6 +176,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Exposure Time txt</description>

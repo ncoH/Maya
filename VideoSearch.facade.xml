@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
     <control>
@@ -13,6 +12,7 @@
         <description>composite control consisting of a list control and a thumbnail panel</description>
         <type>facadeview</type>
         <id>50</id>
+		
         <control>
           <description>listcontrol</description>
           <type>listcontrol</type>
@@ -21,6 +21,7 @@
           <onleft>102</onleft>
           <onup>66</onup>
         </control>
+		
         <control>
           <description>Thumbnail Panel</description>
           <type>thumbnailpanel</type>

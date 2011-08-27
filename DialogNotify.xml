@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>2016</id>
   <defaultcontrol>4</defaultcontrol>
@@ -20,6 +19,7 @@
         <height>368</height>
         <texture>dialog_notify.png</texture>
       </control>
+	  
       <control>
         <id>3</id>
         <description>Heading text label</description>
@@ -42,6 +42,7 @@
         <height>56</height>
         <texture>dialog_tv_is_recording.png</texture>
       </control>
+	  
       <control>
         <id>4</id>
         <description>OK button</description>
@@ -52,6 +53,7 @@
         <ondown>4</ondown>
         <posX>-2000</posX>
       </control>
+	  
       <control>
         <id>5</id>
         <description>logo</description>
@@ -63,6 +65,7 @@
         <texture>#thumb</texture>
         <keepaspectratio>yes</keepaspectratio>
       </control>
+	  
       <control>
         <id>6</id>
         <description>textarea</description>
@@ -81,6 +84,7 @@
         <font>font12</font>
         <label>-</label>
       </control>
+	  
     </control>
   </controls>
 </window>

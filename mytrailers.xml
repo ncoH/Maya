@@ -5,11 +5,13 @@
   <allowoverlay>yes</allowoverlay>
   <define>#header.background:hover_my trailers.png</define>
   <controls>
+  
     <import>common.window.default.xml</import>
     <import>common.facade.video.xml</import>
     <import>common.time.xml</import>
     <import>mytrailers.index.xml</import>
     <import>mytrailers.details.xml</import>
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

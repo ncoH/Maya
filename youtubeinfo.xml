@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>29052</id>
   <defaultcontrol>50</defaultcontrol>
@@ -8,7 +7,9 @@
   <define>#useSelectedFanart:Yes</define>
   <define>#header.background:hover_youtubefm.png</define>
   <controls>
+  
     <import>common.window.youtube.xml</import>
+	
     <control>
       <description>Fan Art</description>
       <type>image</type>
@@ -19,6 +20,7 @@
       <height>1080</height>
       <texture>#Youtube.fm.NowPlaying.Video.FanArt</texture>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -29,6 +31,7 @@
       <height>1080</height>
       <texture>basichome_fanart_overlay.png</texture>
     </control>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -43,7 +46,9 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <import>common.time.xml</import>
+	
     <control>
       <description>Meta Label</description>
       <type>fadelabel</type>
@@ -58,6 +63,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -72,6 +78,7 @@
       <font>font13</font>
       <textcolor>6aa5cb</textcolor>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -92,6 +99,7 @@
       <imagesToDraw>10</imagesToDraw>
       <percentage>#Youtube.fm.Curent.Video.Rating</percentage>
     </control>
+	
     <control>
       <description>TV background</description>
       <type>image</type>
@@ -104,6 +112,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>video window</description>
       <type>videowindow</type>
@@ -119,6 +128,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>similar videos</description>
       <type>thumbnailpanel</type>
@@ -173,5 +183,6 @@
       <spinPosY>1012</spinPosY>
       <spinAlign>Right</spinAlign>
     </control>
+	
   </controls>
 </window>

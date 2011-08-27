@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8"-->
 <window>
   <controls>
     <control>
@@ -10,6 +9,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <description>DUMMY CONTROLL FOR RANDOM FANART 2 VISIBILITY CONDITION</description>
       <type>label</type>
@@ -18,6 +18,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <description>DUMMY CONTROLL FOR PLAYING FANART 1 VISIBILITY CONDITION</description>
       <type>label</type>
@@ -26,6 +27,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <description>DUMMY CONTROLL FOR PLAYING FANART 2 VISIBILITY CONDITION</description>
       <type>label</type>
@@ -34,6 +36,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <description>DUMMY CONTROLL FOR PLAYING FANART AVAILABILITY CONDITION</description>
       <type>label</type>
@@ -43,6 +46,7 @@
       <width>1</width>
       <visible>no</visible>
     </control>
+	
     <control>
       <id>0</id>
       <description>DEFAULT BACKGROUND WHEN FANART NOT AVAILABLE</description>
@@ -60,6 +64,7 @@
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
       <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
     </control>
+	
     <control>
       <description>FANART Random Image 1</description>
       <id>0</id>
@@ -73,6 +78,7 @@
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
       <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
     </control>
+	
     <control>
       <description>FANART Random Image 2</description>
       <id>0</id>
@@ -86,6 +92,7 @@
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
       <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
     </control>
+	
     <control>
       <description>FANART IMAGE 1</description>
       <id>0</id>
@@ -99,6 +106,7 @@
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
       <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
     </control>
+	
     <control>
       <description>FANART IMAGE 2</description>
       <id>0</id>
@@ -112,5 +120,6 @@
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
       <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
     </control>
+	
   </controls>
 </window>
