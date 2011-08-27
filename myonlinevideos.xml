@@ -249,7 +249,7 @@
         <width>365</width>
 	    <height>203</height>
 		<texture>#selectedthumb</texture>
-		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!Control.IsVisible(51)+!string.equals(#OnlineVideos.state,sites)</visible>
+		<visible>[!facadeview.smallicons+!facadeview.largeicons]+!Control.IsVisible(51)</visible>
 		<animation effect="fade" time="200">WindowOpen</animation>
 		<animation effect="fade" time="200">WindowClose</animation>
 	</control>
