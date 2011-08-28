@@ -14,17 +14,7 @@
       <animation effect="slide" start="300,0" end="0,0" time="1000" acceleration="-0.1" reversible="false">Visible</animation>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
-      <control>
-        <description>Music 1 thumb/fanart</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>1262</posX>
-        <posY>129</posY>
-        <width>196</width>
-        <height>196</height>
-        <texture>#fanarthandler.music.latest1.thumb</texture>
-      </control>
-
+	  
       <control>
         <description>Default Music 1 thumb/fanart</description>
         <type>image</type>
@@ -34,6 +24,17 @@
         <width>196</width>
         <height>196</height>
         <texture>defaultAudioBig.png</texture>	
+      </control>
+	  
+      <control>
+        <description>Music 1 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1262</posX>
+        <posY>129</posY>
+        <width>196</width>
+        <height>196</height>
+        <texture>#fanarthandler.music.latest1.thumb</texture>
       </control>
 	  
       <control>
@@ -97,17 +98,7 @@
       <animation effect="slide" start="300,0" end="0,0" time="1000" acceleration="-0.1" reversible="false">Visible</animation>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
-      <control>
-        <description>Music 2 thumb/fanart</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>1262</posX>
-        <posY>409</posY>
-        <width>196</width>
-        <height>196</height>
-        <texture>#fanarthandler.music.latest2.thumb</texture>
-      </control>
-
+	  
       <control>
         <description>Default Music 2 thumb/fanart</description>
         <type>image</type>
@@ -117,6 +108,17 @@
         <width>196</width>
         <height>196</height>
         <texture>defaultAudioBig.png</texture>	
+      </control>
+	  
+      <control>
+        <description>Music 2 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1262</posX>
+        <posY>409</posY>
+        <width>196</width>
+        <height>196</height>
+        <texture>#fanarthandler.music.latest2.thumb</texture>
       </control>
 	  
       <control>
@@ -180,17 +182,7 @@
       <animation effect="slide" start="300,0" end="0,0" time="1000" acceleration="-0.1" reversible="false">Visible</animation>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
-      <control>
-        <description>Music 3 thumb/fanart</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>1262</posX>
-        <posY>690</posY>
-        <width>196</width>
-        <height>196</height>
-        <texture>#fanarthandler.music.latest3.thumb</texture>
-      </control>
-
+	  
       <control>
         <description>Default Music 3 thumb/fanart</description>
         <type>image</type>
@@ -200,6 +192,17 @@
         <width>196</width>
         <height>196</height>
         <texture>defaultAudioBig.png</texture>
+      </control>
+	  
+      <control>
+        <description>Music 3 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1262</posX>
+        <posY>690</posY>
+        <width>196</width>
+        <height>196</height>
+        <texture>#fanarthandler.music.latest3.thumb</texture>
       </control>
 		
       <control>

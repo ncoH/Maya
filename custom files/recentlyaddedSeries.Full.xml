@@ -14,16 +14,6 @@
       <animation effect="slide" start="300,0" end="0,0" time="1000" acceleration="-0.1" reversible="false">Visible</animation>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
-      <control>
-        <description>Series 1 thumb</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>1259</posX>
-        <posY>125</posY>
-        <height>220</height>
-        <width>150</width>
-        <texture>#maya.recentlyAdded.series1.thumb</texture>
-      </control>
 
       <control>
         <description>Default Series 1 thumb</description>
@@ -34,6 +24,17 @@
         <height>220</height>
         <width>150</width>
         <texture>defaultVideoBig.png</texture>
+      </control>
+	  
+      <control>
+        <description>Series 1 thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1259</posX>
+        <posY>125</posY>
+        <height>220</height>
+        <width>150</width>
+        <texture>#maya.recentlyAdded.series1.thumb</texture>
       </control>
 	  
       <control>
@@ -103,17 +104,6 @@
         <ondown>232</ondown>
         <font>font12</font>
       </control>
-	  
-      <control>
-        <description>Series 2 thumb</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>1259</posX>
-        <posY>405</posY>
-        <height>220</height>
-        <width>150</width>
-        <texture>#maya.recentlyAdded.series2.thumb</texture>
-      </control>
 
       <control>
         <description>Default Series 2 thumb</description>
@@ -124,6 +114,17 @@
         <height>220</height>
         <width>150</width>
         <texture>defaultVideoBig.png</texture>
+      </control>
+	  
+      <control>
+        <description>Series 2 thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1259</posX>
+        <posY>405</posY>
+        <height>220</height>
+        <width>150</width>
+        <texture>#maya.recentlyAdded.series2.thumb</texture>
       </control>
 	  
       <control>
@@ -193,17 +194,6 @@
         <ondown>233</ondown>
         <font>font12</font>
       </control>
-	  
-      <control>
-        <description>Series 3 thumb</description>
-        <type>image</type>
-        <id>0</id>
-        <posX>1259</posX>
-        <posY>686</posY>
-        <height>220</height>
-        <width>150</width>
-        <texture>#maya.recentlyAdded.series3.thumb</texture>
-      </control>
 
       <control>
         <description>Default Series 3 thumb</description>
@@ -214,6 +204,17 @@
         <height>220</height>
         <width>150</width>
         <texture>defaultVideoBig.png</texture>
+      </control>
+	  
+      <control>
+        <description>Series 3 thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1259</posX>
+        <posY>686</posY>
+        <height>220</height>
+        <width>150</width>
+        <texture>#maya.recentlyAdded.series3.thumb</texture>
       </control>
 	  
       <control>
