@@ -787,6 +787,7 @@ multiple view modes.
     <import>movingpictures.mediainfo.listview.xml</import>
     <import>movingpictures.mediainfo.filmstrip.xml</import>
     <import>movingpictures.mediainfo.thumbview.xml</import>
+    <import>movingpictures.mediainfo.details.xml</import>	
     <import>common.overlay.xml</import>
 	
   </controls>

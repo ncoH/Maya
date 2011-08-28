@@ -59,6 +59,17 @@
 	<string Field="MovPic.ReleaseDate">Veröffentlicht</string>	
 	<string Field="MovPic.Runtime">Laufzeit</string>	
 	<string Field="MovPic.Minutes">minuten</string>		
+	<string Field="MovPic.VideoFormat">Videoformat</string>	
+	<string Field="MovPic.Aspectratio">Seitenverhältnis</string>	
+	<string Field="MovPic.Resolution">Auflösung</string>	
+	<string Field="MovPic.Framerate">Framerate</string>	
+	<string Field="MovPic.AudioFormat">Audioformat</string>		
+	<string Field="MovPic.AudioChannels">Audiokanäle</string>		
+	<string Field="MovPic.DateAdded">Hinzugefügt</string>		
+	<string Field="MovPic.MediaType">MediaType</string>		
+	<string Field="MovPic.WatchedCount">Gesehen Zähler</string>		
+	<string Field="MovPic.InfoUrl">Adresse</string>	
+	<string Field="MovPic.Source">Quelle</string>
 	
 	<!-- N -->
 
