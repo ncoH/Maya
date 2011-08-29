@@ -421,7 +421,7 @@
       <texture>blackborders_video.png</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons]</visible>
     </control>
-
+	
     <control>
       <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
@@ -443,7 +443,7 @@
       <texture>hiddenmenu_tab_up.png</texture>
       <visible>[facadeview.filmstrip | facadeview.coverflow]+Control.HasFocus(50)</visible>
     </control>
-	
+
     <import>common.facade.video.xml</import>	
     <import>common.overlay.xml</import>
 	

@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>510</id>
   <defaultcontrol>5101</defaultcontrol>
@@ -7,6 +6,7 @@
   <define>#usePlayFanart:Yes</define>
   <define>#header.background:hover_my music.png</define>
   <controls>
+  
     <control>
       <description>Background</description>
       <type>image</type>
@@ -17,6 +17,7 @@
       <height>1080</height>
       <texture>background.png</texture>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -28,6 +29,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -39,6 +41,7 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
       <type>label</type>
@@ -47,6 +50,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
       <type>label</type>
@@ -55,6 +59,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <description>DUMMY CONTROLL FOR PLAYING FANART2 AVAILABILITY CONDITION</description>
       <type>label</type>
@@ -64,6 +69,7 @@
       <width>1</width>
       <visible>no</visible>
     </control>
+	
     <control>
       <id>0</id>
       <description>DEFAULT BACKGROUND WHEN FANART NOT AVAILABLE</description>
@@ -81,6 +87,7 @@
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
       <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
     </control>
+	
     <control>
       <description>FANART IMAGE 1</description>
       <id>897688</id>
@@ -94,6 +101,7 @@
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
       <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
     </control>
+	
     <control>
       <description>FANART IMAGE 2</description>
       <id>897689</id>
@@ -107,6 +115,7 @@
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
       <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>Mylyrics overlay</description>
@@ -120,6 +129,7 @@
       <animation effect="Fade" time="400">WindowOpen</animation>
       <animation effect="Fade" end="0" start="0" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <type>image</type>
@@ -131,6 +141,7 @@
       <animation effect="Fade" time="400">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>Menu label</description>
@@ -143,19 +154,22 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
+      <description>Default Logo</description>	
+      <type>image</type>	  
       <id>0</id>
-      <type>image</type>
-      <visible>!control.hasthumb(500)</visible>
       <posX>161</posX>
       <posY>721</posY>
       <width>264</width>
       <height>264</height>
       <texture>DefaultMyradioBig.png</texture>
+      <visible>!control.hasthumb(500)</visible>	  
       <animation effect="Fade" time="1600">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
       <animation effect="Fade" time="1000" delay="200">VisibleChange</animation>
     </control>
+	
     <control>
       <description>Menu</description>
       <type>group</type>
@@ -181,32 +195,34 @@
         <label>4555</label>
         <textYOff>8</textYOff>
       </control>
-      <!--             <control>
-                <id>5102</id>
-                <description>Top Album Tracks button</description>
-                <type>button</type>
-                <onleft>166</onleft>
-                <onright>5102</onright>
-                <onup>5101</onup>
-                <ondown>5103</ondown>
-                <visible>!window.isvisible(90478)</visible>
-                <posX>650</posX>
-                <posY>235</posY>
-                <width>276</width>
-                <height>38</height>
-                <textureFocus>now_playing_menuitem_selected.png</textureFocus>
-                <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
-                <label>33030</label>
-                <textYOff>6</textYOff>
-            </control> -->
+	  
       <control>
         <id>5102</id>
+        <description>Top Album Tracks button</description>
+        <type>button</type>
+        <onleft>166</onleft>
+        <onright>5102</onright>
+        <onup>5101</onup>
+        <ondown>5103</ondown>
+        <visible>!window.isvisible(90478)</visible>
+        <posX>650</posX>
+        <posY>235</posY>
+        <width>387</width>
+        <height>53</height>
+        <textureFocus>now_playing_menuitem_selected.png</textureFocus>
+        <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
+        <label>33030</label>
+        <textYOff>6</textYOff>
+      </control> 
+	  
+      <control>
+        <id>5103</id>
         <description>Tagged Tracks button</description>
         <type>button</type>
         <onleft>155</onleft>
-        <onright>5102</onright>
-        <onup>5101</onup>
-        <ondown>30</ondown>
+        <onright>5103</onright>
+        <onup>5102</onup>
+        <ondown>5104</ondown>
         <visible>!window.isvisible(90478)</visible>
         <posX>913</posX>
         <posY>330</posY>
@@ -217,49 +233,14 @@
         <label>33011</label>
         <textYOff>8</textYOff>
       </control>
-      <control>
-        <id>30</id>
-        <description>Last.fm Love button</description>
-        <type>button</type>
-        <onleft>30</onleft>
-        <onright>30</onright>
-        <onup>5102</onup>
-        <ondown>31</ondown>
-        <visible>!window.isvisible(90478)</visible>
-        <posX>913</posX>
-        <posY>330</posY>
-        <width>387</width>
-        <height>53</height>
-        <textureFocus>now_playing_menuitem_selected.png</textureFocus>
-        <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
-        <label>34010</label>
-        <textYOff>8</textYOff>
-      </control>
-      <control>
-        <id>31</id>
-        <description>Last.fm Ban button</description>
-        <type>button</type>
-        <onleft>31</onleft>
-        <onright>31</onright>
-        <onup>30</onup>
-        <ondown>5104</ondown>
-        <visible>!window.isvisible(90478)</visible>
-        <posX>913</posX>
-        <posY>330</posY>
-        <width>387</width>
-        <height>53</height>
-        <textureFocus>now_playing_menuitem_selected.png</textureFocus>
-        <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
-        <label>Ban</label>
-        <textYOff>8</textYOff>
-      </control>
+	  
       <control>
         <id>5104</id>
         <description>Lyrics button</description>
         <type>button</type>
         <onleft>5104</onleft>
         <onright>5104</onright>
-        <onup>31</onup>
+        <onup>5103</onup>
         <ondown>5101</ondown>
         <visible>plugin.isenabled(My Lyrics)+!window.isvisible(90478)</visible>
         <posX>913</posX>
@@ -273,6 +254,7 @@
         <textYOff>8</textYOff>
       </control>
     </control>
+	
     <control>
       <id>112</id>
       <description>album art image</description>
@@ -290,6 +272,7 @@
       <animation effect="Fade" time="300">WindowClose</animation>
       <animation effect="Fade" time="500">VisibleChange</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>album art overlay</description>
@@ -302,11 +285,12 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>title label</description>
       <type>fadelabel</type>
-      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
+      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
       <posX>491</posX>
       <posY>698</posY>
       <width>140</width>
@@ -316,11 +300,12 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>title label</description>
       <type>fadelabel</type>
-      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
+      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
       <posX>674</posX>
       <posY>698</posY>
       <width>698</width>
@@ -329,11 +314,12 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>artist label</description>
       <type>fadelabel</type>
-      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
+      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
       <posX>491</posX>
       <posY>749</posY>
       <width>773</width>
@@ -343,11 +329,12 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>artist label</description>
       <type>fadelabel</type>
-      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
+      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
       <posX>674</posX>
       <posY>749</posY>
       <width>698</width>
@@ -356,11 +343,12 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>album label</description>
       <type>fadelabel</type>
-      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
+      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
       <posX>491</posX>
       <posY>791</posY>
       <width>773</width>
@@ -370,11 +358,12 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>album label</description>
       <type>fadelabel</type>
-      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
+      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
       <posX>674</posX>
       <posY>791</posY>
       <width>698</width>
@@ -383,6 +372,7 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <type>label</type>
       <description>Dummy control for next track</description>
@@ -391,11 +381,12 @@
       <posY>-2000</posY>
       <label>#Play.Next.Artist</label>
     </control>
+	
     <control>
       <id>0</id>
       <description>up next label</description>
       <type>label</type>
-      <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)] + Control.HasText(1200)</visible>
+      <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20)] + Control.HasText(1200)</visible>
       <posX>491</posX>
       <posY>877</posY>
       <font>Segoe Light14</font>
@@ -404,11 +395,12 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>next track label</description>
       <type>fadelabel</type>
-      <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)] + player.hasmedia +Control.HasText(1200)</visible>
+      <visible>[window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20)] + player.hasmedia +Control.HasText(1200)</visible>
       <posX>674</posX>
       <posY>877</posY>
       <width>688</width>
@@ -418,6 +410,7 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>Year label</description>
@@ -428,10 +421,11 @@
       <font>Segoe Light14</font>
       <textcolor>ff85cffe</textcolor>
       <label>201</label>
-      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
+      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>Year label</description>
@@ -441,15 +435,16 @@
       <width>421</width>
       <font>Segoe Light14</font>
       <label>#Play.Current.Year</label>
-      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
+      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>141</id>
       <description>Rating</description>
       <type>imagelist</type>
-      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
+      <visible>window.istopmost(90478) | Control.HasFocus(5101) | Control.HasFocus(5104)| Control.HasFocus(20)</visible>
       <posX>490</posX>
       <posY>921</posY>
       <width>260</width>
@@ -467,6 +462,7 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>117</id>
       <description>Progress background</description>
@@ -480,12 +476,14 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>118</id>
       <description>progress bar</description>
       <type>progress</type>
       <posX>-2000</posX>
     </control>
+	
     <control>
       <id>0</id>
       <description>progress bar</description>
@@ -503,6 +501,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>track duration label</description>
@@ -516,6 +515,7 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>track duration label</description>
@@ -530,12 +530,13 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>list of top album tracks label</description>
       <type>fadelabel</type>
       <visible>Control.HasFocus(5102) | Control.HasFocus(166)</visible>
-      <posX>-2350</posX>
+      <posX>491</posX>
       <posY>698</posY>
       <width>881</width>
       <font>Segoe Light18</font>
@@ -544,6 +545,7 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>166</id>
       <description>list of top album tracks</description>
@@ -553,7 +555,7 @@
       <onup>166</onup>
       <ondown>166</ondown>
       <visible>Control.HasFocus(5102) | Control.HasFocus(166)</visible>
-      <posX>-2328</posX>
+      <posX>461</posX>
       <posY>755</posY>
       <width>912</width>
       <height>295</height>
@@ -574,11 +576,12 @@
       <textureNoFocus>-</textureNoFocus>
       <spaceBetweenItems>0</spaceBetweenItems>
     </control>
+	
     <control>
       <id>0</id>
       <description>list of tagged tracks label</description>
       <type>fadelabel</type>
-      <visible>Control.HasFocus(5102) | Control.HasFocus(155)</visible>
+      <visible>Control.HasFocus(5103) | Control.HasFocus(155)</visible>
       <posX>491</posX>
       <posY>698</posY>
       <width>881</width>
@@ -588,6 +591,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>155</id>
       <description>list of tagged tracks</description>
@@ -596,7 +600,7 @@
       <onright>5103</onright>
       <onup>155</onup>
       <ondown>155</ondown>
-      <visible>Control.HasFocus(5102) | Control.HasFocus(155)</visible>
+      <visible>Control.HasFocus(5103) | Control.HasFocus(155)</visible>
       <posX>461</posX>
       <posY>755</posY>
       <width>912</width>
@@ -618,12 +622,14 @@
       <textureNoFocus>-</textureNoFocus>
       <spaceBetweenItems>0</spaceBetweenItems>
     </control>
+	
     <control>
       <description>group element</description>
       <type>group</type>
       <animation effect="Fade" reversible="FALSE" time="200">WindowOpen</animation>
       <animation effect="Fade" reversible="FALSE" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>77</id>
       <description>unknown rating1</description>
@@ -645,6 +651,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>78</id>
       <description>unknown rating2</description>
@@ -666,6 +673,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>79</id>
       <description>unknown rating3</description>
@@ -687,6 +695,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>80</id>
       <description>existent rating1</description>
@@ -708,6 +717,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>81</id>
       <description>existent rating2</description>
@@ -729,6 +739,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>82</id>
       <description>existent rating3</description>
@@ -750,6 +761,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>83</id>
       <description>known rating1</description>
@@ -771,6 +783,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>84</id>
       <description>known rating2</description>
@@ -792,6 +805,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>85</id>
       <description>known rating3</description>
@@ -813,6 +827,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>87</id>
       <description>famous rating1</description>
@@ -834,6 +849,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>88</id>
       <description>famous rating2</description>
@@ -855,6 +871,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>89</id>
       <description>famous rating3</description>
@@ -876,6 +893,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>1337</id>
       <type>imagelist</type>
@@ -896,6 +914,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>playing status</description>
       <type>group</type>
@@ -1008,6 +1027,8 @@
         <label>112</label>
       </control>
     </control>
+	
     <import>common.time.white.xml</import>
+	
   </controls>
 </window>

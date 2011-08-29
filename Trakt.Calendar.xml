@@ -160,17 +160,17 @@
          </control>
 	
     
-<!-- 		<control>
+ 		<control>
 			<description>Network</description>
 			<type>fadelabel</type>
 			<label>#Trakt.Translation.Network.Label</label>
 			<id>0</id>
-    		<posX>714</posX>
-    		<posY>952</posY>
+    		<posX>780</posX>
+    		<posY>260</posY>
     		<width>240</width>
     		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
+    		<font>Segoe Light18</font>
+    		<textcolor>85cffe</textcolor>
 			<visible>!string.equals(#Trakt.Show.Network,)+[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -182,11 +182,11 @@
 			<id>0</id>
 			<type>fadelabel</type>
 			<label>#Trakt.Show.Network | #Trakt.Show.AirDay | #Trakt.Show.AirTime</label>
-    		<posX>930</posX>
-    		<posY>952</posY>
+    		<posX>1050</posX>
+    		<posY>260</posY>
     		<width>240</width>
     		<align>left</align>
-    		<font>AvalonLight12</font>
+    		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
 			<visible>!string.equals(#Trakt.Show.Network,)+[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -194,7 +194,7 @@
     		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		
-		<control>
+<!-- 		<control>
 			<description>Rating Icon</description>
 			<type>image</type>
 			<id>1</id>
@@ -207,19 +207,19 @@
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-		</control>
+		</control> -->
 		
 		<control>
 			<description>Certification Label</description>
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Translation.Certification.Label</label>
-    		<posX>714</posX>
-    		<posY>990</posY>
+    		<posX>780</posX>
+    		<posY>315</posY>
     		<width>240</width>
     		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
+    		<font>Segoe Light18</font>
+    		<textcolor>85cffe</textcolor>
 			<visible>!string.equals(#Trakt.Show.Certification,)+[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -231,11 +231,11 @@
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Show.Certification</label>
-    		<posX>882</posX>
-    		<posY>990</posY>
+    		<posX>1050</posX>
+    		<posY>315</posY>
     		<width>240</width>
     		<align>left</align>
-    		<font>AvalonLight12</font>
+    		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
 			<visible>!string.equals(#Trakt.Show.Certification,)+[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -248,12 +248,12 @@
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Translation.Title.Label</label>
-    		<posX>714</posX>
-    		<posY>912</posY>
+    		<posX>780</posX>
+    		<posY>370</posY>
     		<width>240</width>
     		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
+    		<font>Segoe Light18</font>
+    		<textcolor>85cffe</textcolor>
 			<visible>!string.equals(#Trakt.Episode.Title,)+facadeview.list</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -265,11 +265,11 @@
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Episode.Title</label>
-    		<posX>882</posX>
-    		<posY>912</posY>
+    		<posX>1050</posX>
+    		<posY>370</posY>
     		<width>240</width>
     		<align>left</align>
-    		<font>AvalonLight12</font>
+    		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
 			<visible>!string.equals(#Trakt.Episode.Title,)+facadeview.list</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -281,12 +281,12 @@
 			<description>Released Label</description>
 			<type>fadelabel</type>
 			<label>#Trakt.Translation.Episode.Label</label>
-    		<posX>714</posX>
-    		<posY>872</posY>
+    		<posX>780</posX>
+    		<posY>425</posY>
     		<width>150</width>
     		<align>left</align>
-    		<font>AvalonLight12</font>
-    		<textcolor>6aa5cb</textcolor>
+    		<font>Segoe Light18</font>
+    		<textcolor>85cffe</textcolor>
 			<visible>!string.equals(#Trakt.Episode.Season,)+facadeview.list</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -298,26 +298,26 @@
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Episode.Seasonx#Trakt.Episode.Number</label>
-    		<posX>882</posX>
-    		<posY>872</posY>
+    		<posX>1050</posX>
+    		<posY>425</posY>
     		<width>240</width>
     		<align>left</align>
-    		<font>AvalonLight12</font>
+    		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
 			<visible>!string.equals(#Trakt.Episode.Season,)+facadeview.list</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-		</control> -->
+		</control> 
 		
 		<control>
 			<description>Summary</description>
 			<type>textboxscrollup</type>
 			<id>0</id>
-			<posX>781</posX>
-			<posY>268</posY>
-			<width>955</width>
-			<height>154</height>
+			<posX>112</posX>
+			<posY>640</posY>
+			<width>560</width>
+			<height>480</height>
 			<seperator>-----------------------------------------------------------------------------------</seperator>
 			<label>#Trakt.Episode.Overview</label>
 			<visible>facadeview.list</visible>
