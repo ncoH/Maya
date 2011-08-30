@@ -184,7 +184,7 @@
 			<label>#Trakt.Show.Network | #Trakt.Show.AirDay | #Trakt.Show.AirTime</label>
     		<posX>1050</posX>
     		<posY>260</posY>
-    		<width>240</width>
+    		<width>650</width>
     		<align>left</align>
     		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
@@ -233,7 +233,7 @@
 			<label>#Trakt.Show.Certification</label>
     		<posX>1050</posX>
     		<posY>315</posY>
-    		<width>240</width>
+    		<width>650</width>
     		<align>left</align>
     		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
@@ -267,7 +267,7 @@
 			<label>#Trakt.Episode.Title</label>
     		<posX>1050</posX>
     		<posY>370</posY>
-    		<width>240</width>
+    		<width>650</width>
     		<align>left</align>
     		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
@@ -300,7 +300,7 @@
 			<label>#Trakt.Episode.Seasonx#Trakt.Episode.Number</label>
     		<posX>1050</posX>
     		<posY>425</posY>
-    		<width>240</width>
+    		<width>650</width>
     		<align>left</align>
     		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>

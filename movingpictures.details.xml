@@ -172,7 +172,7 @@ This file should contain the details view
 		<width>58</width>
 		<height>59</height>
 		<hyperlink>4755</hyperlink>
-		<hyperlinkParameter>site:#Avalon.TrailerSite|search:#MovingPictures.SelectedMovie.title|return:Locked</hyperlinkParameter>
+		<hyperlinkParameter>site:IMDb Movie Trailers|search:#(iif(neq(#MovingPictures.SelectedMovie.imdb_id,''),#MovingPictures.SelectedMovie.imdb_id,#MovingPictures.SelectedMovie.title))|return:Locked</hyperlinkParameter>
 		<textureFocus>movie_details_trailer_focus.png</textureFocus>
 		<textureNoFocus>movie_details_trailer_nofocus.png</textureNoFocus>
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
@@ -219,7 +219,8 @@ This file should contain the details view
 		<id>0</id>
 		<posX>586</posX>
 		<posY>364</posY>
-		<font>font12</font>		
+		<font>font12</font>	
+    	<textcolor>85cffe</textcolor>		
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
@@ -245,6 +246,7 @@ This file should contain the details view
 		<posX>586</posX>
 		<posY>405</posY>
 		<font>font12</font>		
+    	<textcolor>85cffe</textcolor>		
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
@@ -270,7 +272,8 @@ This file should contain the details view
 		<id>0</id>
 		<posX>586</posX>
 		<posY>446</posY>
-		<font>font12</font>		
+		<font>font12</font>	
+    	<textcolor>85cffe</textcolor>		
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
@@ -300,6 +303,7 @@ This file should contain the details view
 		<posX>586</posX>
 		<posY>488</posY>
 		<font>font12</font>		
+    	<textcolor>85cffe</textcolor>		
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
@@ -329,6 +333,7 @@ This file should contain the details view
 		<posX>586</posX>
 		<posY>528</posY>
 		<font>font12</font>		
+    	<textcolor>85cffe</textcolor>		
 		<visible>!Control.IsVisible(50)+!Control.IsVisible(51) + !Control.HasFocus(10001)+ !Control.HasFocus(10002) + !Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>
 		<animation effect="fade" time="0">WindowClose</animation>
@@ -455,6 +460,7 @@ This file should contain the details view
 		<posX>585</posX>
 		<posY>356</posY>
 		<font>font12</font>		
+    	<textcolor>85cffe</textcolor>		
 		<label>#SkinTranslation.Translations.MovPic.VideoFormat.Label</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -478,7 +484,8 @@ This file should contain the details view
 	   <id>1</id>
 	   <posX>1142</posX>
 	   <posY>356</posY>
-		<font>font12</font>	   
+		<font>font12</font>	  
+    	<textcolor>85cffe</textcolor>		
 		<label>#SkinTranslation.Translations.MovPic.Aspectratio.Label</label>	   
 	   <visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -490,7 +497,7 @@ This file should contain the details view
 		<id>1</id>
 		<posX>1395</posX>
 		<posY>352</posY>
-		<font>font14</font>		
+		<font>font14</font>			
 		<label>#MovingPictures.LocalMedia.videoaspectratio</label>
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -503,6 +510,7 @@ This file should contain the details view
 		<posX>585</posX>
 		<posY>398</posY>
 		<font>font12</font>		
+    	<textcolor>85cffe</textcolor>		
 		<label>#SkinTranslation.Translations.MovPic.Resolution.Label</label>		
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -527,7 +535,8 @@ This file should contain the details view
 		<posX>585</posX>
 		<posY>439</posY>
 		<label>174</label>
-		<font>font12</font>		
+		<font>font12</font>	
+    	<textcolor>85cffe</textcolor>		
 		<label>#SkinTranslation.Translations.MovPic.Framerate.Label</label>		
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -551,7 +560,8 @@ This file should contain the details view
 		<id>1</id>
 		<posX>585</posX>
 		<posY>480</posY>
-		<font>font12</font>		
+		<font>font12</font>	
+    	<textcolor>85cffe</textcolor>		
 		<label>#SkinTranslation.Translations.MovPic.AudioFormat.Label</label>			
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -575,7 +585,8 @@ This file should contain the details view
 		<id>1</id>
 		<posX>585</posX>
 		<posY>521</posY>
-		<font>font12</font>		
+		<font>font12</font>	
+    	<textcolor>85cffe</textcolor>		
 		<label>#SkinTranslation.Translations.MovPic.AudioChannels.Label</label>			
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -599,7 +610,8 @@ This file should contain the details view
 		<id>1</id>
 		<posX>585</posX>
 		<posY>604</posY>
-		<font>font12</font>		
+		<font>font12</font>	
+    	<textcolor>85cffe</textcolor>	
 		<label>#SkinTranslation.Translations.MovPic.DateAdded.Label</label>			
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -623,7 +635,8 @@ This file should contain the details view
 		<id>1</id>
 		<posX>585</posX>
 		<posY>645</posY>
-		<font>font12</font>		
+		<font>font12</font>	
+    	<textcolor>85cffe</textcolor>		
 		<label>#SkinTranslation.Translations.MovPic.MediaType.Label</label>				
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -647,7 +660,8 @@ This file should contain the details view
 		<id>1</id>
 	    <posX>1142</posX>
 		<posY>604</posY>
-		<font>font12</font>		
+		<font>font12</font>	
+    	<textcolor>85cffe</textcolor>		
 		<label>#SkinTranslation.Translations.MovPic.WatchedCount.Label</label>			
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -672,6 +686,7 @@ This file should contain the details view
 		<posX>585</posX>
 		<posY>730</posY>
 		<font>font12</font>		
+    	<textcolor>85cffe</textcolor>		
 		<label>#SkinTranslation.Translations.MovPic.InfoUrl.Label</label>			
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -698,6 +713,7 @@ This file should contain the details view
 		<posX>585</posX>
 		<posY>771</posY>	
 		<font>font12</font>		
+    	<textcolor>85cffe</textcolor>		
 		<label>#SkinTranslation.Translations.MovPic.Source.Label</label>		
 		<visible>Control.HasFocus(10002)</visible>
 		<animation effect="fade" time="250">Visible</animation>
@@ -758,7 +774,7 @@ This file should contain the details view
 		<width>1920</width>
 		<align>center</align>
 		<font>Segoe Light12</font>
-		<textcolor>6aa5cb</textcolor>
+    	<textcolor>85cffe</textcolor>
 		<label>#MovingPictures.SelectedMovie.year - #MovingPictures.SelectedMovie.runtime.totalminutes #SkinTranslation.Translations.MovPic.Minutes.Label - #MovingPictures.SelectedMovie.extra.genres.1</label>
 		<visible>Control.HasFocus(10003)</visible>
 		<animation effect="fade" time="250">Visible</animation>

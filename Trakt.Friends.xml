@@ -573,7 +573,7 @@
 			<label>#Trakt.Movie.Certification</label>
     		<posX>1050</posX>
     		<posY>260</posY>
-    		<width>350</width>
+    		<width>650</width>
     		<align>left</align>
     		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
@@ -607,7 +607,7 @@
 			<label>#Trakt.Movie.Runtime min</label>
     		<posX>1050</posX>
     		<posY>315</posY>
-    		<width>350</width>
+    		<width>650</width>
     		<align>left</align>
     		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
@@ -640,7 +640,7 @@
 			<label>#Trakt.Movie.Released</label>
     		<posX>1050</posX>
     		<posY>370</posY>
-    		<width>350</width>
+    		<width>650</width>
     		<align>left</align>
     		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>

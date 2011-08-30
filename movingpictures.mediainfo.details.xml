@@ -8,9 +8,9 @@
 		<description>BluRay</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1118</posX>
-		<posY>896</posY>
-		<width>75</width>
+		<posX>1095</posX>
+		<posY>887</posY>
+		<width>85</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\bluray.png</texture>
 		<align>left</align>
@@ -21,9 +21,9 @@
 		<description>BluRay Rip</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1118</posX>
-		<posY>896</posY>
-		<width>75</width>
+		<posX>1095</posX>
+		<posY>887</posY>
+		<width>85</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\blurayrip.png</texture>
 		<align>left</align>
@@ -34,9 +34,9 @@
 		<description>DVD</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1118</posX>
-		<posY>896</posY>
-		<width>75</width>
+		<posX>1095</posX>
+		<posY>887</posY>
+		<width>85</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\dvd.png</texture>
 		<align>left</align>
@@ -47,9 +47,9 @@
 		<description>DVD Rip</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1118</posX>
-		<posY>896</posY>
-		<width>75</width>
+		<posX>1095</posX>
+		<posY>887</posY>
+		<width>85</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\dvdrip.png</texture>
 		<align>left</align>
@@ -60,9 +60,9 @@
 		<description>DVD R5</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1118</posX>
-		<posY>896</posY>
-		<width>75</width>
+		<posX>1095</posX>
+		<posY>887</posY>
+		<width>85</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\dvdr5.png</texture>
 		<align>left</align>
@@ -73,9 +73,9 @@
 		<description>DVD Screener</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1118</posX>
-		<posY>896</posY>
-		<width>75</width>
+		<posX>1095</posX>
+		<posY>887</posY>
+		<width>85</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\screener.png</texture>
 		<align>left</align>
@@ -86,9 +86,9 @@
 		<description>CAM</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1118</posX>
-		<posY>896</posY>
-		<width>75</width>
+		<posX>1095</posX>
+		<posY>887</posY>
+		<width>85</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\cam.png</texture>
 		<align>left</align>
@@ -99,9 +99,9 @@
 		<description>Telesync</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1118</posX>
-		<posY>896</posY>
-		<width>75</width>
+		<posX>1095</posX>
+		<posY>887</posY>
+		<width>85</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\source\TS.png</texture>
 		<align>left</align>
@@ -114,10 +114,10 @@
 		<description>Videocodecs</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1192</posX>
-		<posY>896</posY>
-		<width>80</width>
-		<height>54</height>
+		<posX>1185</posX>
+		<posY>885</posY>
+		<width>90</width>
+		<height>64</height>
 		<texture>Logos\video\#MovingPictures.LocalMedia.videocodec.png</texture>
 		<align>left</align>
 		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003)</visible>
@@ -130,9 +130,9 @@
 		<description>Dolby Digital 5.1</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1266</posX>
-		<posY>896</posY>
-		<width>98</width>
+		<posX>1287</posX>
+		<posY>885</posY>
+		<width>118</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\dd51.png</texture>
 		<align>left</align>
@@ -143,9 +143,9 @@
 		<description>Dolby Digital 2.0</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1266</posX>
-		<posY>896</posY>
-		<width>98</width>
+		<posX>1287</posX>
+		<posY>885</posY>
+		<width>118</width>
 		<texture>Logos\audio\dolby20.png</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<align>left</align>
@@ -156,9 +156,9 @@
 		<description>Dolby Digital 1.0</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1266</posX>
-		<posY>896</posY>
-		<width>98</width>
+		<posX>1287</posX>
+		<posY>885</posY>
+		<width>118</width>
 		<texture>Logos\audio\dd10.png</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<align>left</align>
@@ -169,9 +169,9 @@
 		<description>Dolby Digital 5.0</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1266</posX>
-		<posY>896</posY>
-		<width>98</width>
+		<posX>1287</posX>
+		<posY>885</posY>
+		<width>118</width>
 		<texture>Logos\audio\dd50.png</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<align>left</align>
@@ -182,9 +182,9 @@
 		<description>DTS 5.1</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1266</posX>
-		<posY>896</posY>
-		<width>98</width>
+		<posX>1287</posX>
+		<posY>885</posY>
+		<width>118</width>
 		<texture>Logos\audio\dts51.png</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<align>left</align>
@@ -195,9 +195,9 @@
 		<description>DTS 7.1</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1266</posX>
-		<posY>896</posY>
-		<width>98</width>
+		<posX>1287</posX>
+		<posY>885</posY>
+		<width>118</width>
 		<texture>Logos\audio\dts71.png</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<align>left</align>
@@ -208,9 +208,9 @@
 		<description>Mp3 2.0</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1266</posX>
-		<posY>896</posY>
-		<width>98</width>
+		<posX>1287</posX>
+		<posY>885</posY>
+		<width>118</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\mp3_20.png</texture>
 		<align>left</align>
@@ -221,9 +221,9 @@
 		<description>PCM 2.0</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1266</posX>
-		<posY>896</posY>
-		<width>98</width>
+		<posX>1287</posX>
+		<posY>885</posY>
+		<width>118</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\audio\pcm_20.png</texture>
 		<align>left</align>
@@ -236,9 +236,9 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1266</posX>
-		<posY>896</posY>
-		<width>98</width>
+		<posX>1287</posX>
+		<posY>885</posY>
+		<width>118</width>
 		<texture>Logos\audio\aac51.png</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<align>left</align>
@@ -251,9 +251,9 @@
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>image</type>
 		<id>0</id>
-		<posX>1266</posX>
-		<posY>896</posY>
-		<width>98</width>
+		<posX>1287</posX>
+		<posY>885</posY>
+		<width>118</width>
 		<texture>Logos\audio\aac71.png</texture>
 		<keepaspectratio>yes</keepaspectratio>
 		<align>left</align>
@@ -265,9 +265,9 @@
 		<description>1080p</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1340</posX>
-		<posY>896</posY>
-		<width>80</width>
+		<posX>1398</posX>
+		<posY>883</posY>
+		<width>102</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\resolution\1080.png</texture>
 		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003)+string.equals(#MovingPictures.LocalMedia.videoresolution,1080p)</visible>
@@ -277,9 +277,9 @@
 		<description>720p</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1340</posX>
-		<posY>896</posY>
-		<width>80</width>
+		<posX>1398</posX>
+		<posY>883</posY>
+		<width>102</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\resolution\720.png</texture>
 		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003)+string.equals(#MovingPictures.LocalMedia.videoresolution,720p)</visible>
@@ -289,9 +289,9 @@
 		<description>SD</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1340</posX>
-		<posY>896</posY>
-		<width>80</width>
+		<posX>1398</posX>
+		<posY>883</posY>
+		<width>102</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\resolution\480.png</texture>
 		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003)+string.equals(#MovingPictures.LocalMedia.videoresolution,SD)</visible>
@@ -301,9 +301,9 @@
 		<description>576p</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1340</posX>
-		<posY>896</posY>
-		<width>80</width>
+		<posX>1398</posX>
+		<posY>883</posY>
+		<width>102</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\resolution\576.png</texture>
 		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003)+string.equals(#MovingPictures.LocalMedia.videoresolution,576p)</visible>
@@ -313,9 +313,9 @@
 		<description>540</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1340</posX>
-		<posY>896</posY>
-		<width>80</width>
+		<posX>1398</posX>
+		<posY>883</posY>
+		<width>102</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\resolution\540.png</texture>
 		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003)+string.equals(#MovingPictures.LocalMedia.videoresolution,540)</visible>
@@ -327,9 +327,9 @@
 		<description>2.35 / widescreen</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1414</posX>
-		<posY>896</posY>
-		<width>80</width>
+		<posX>1475</posX>
+		<posY>883</posY>
+		<width>102</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\aspectratio\2.35.png</texture>
 		<align>left</align>
@@ -340,9 +340,9 @@
 		<description>1.33 / fullscreen</description>
 		<type>image</type>
 		<id>0</id>
-		<posX>1414</posX>
-		<posY>896</posY>
-		<width>80</width>
+		<posX>1475</posX>
+		<posY>883</posY>
+		<width>102</width>
 		<keepaspectratio>yes</keepaspectratio>
 		<texture>Logos\aspectratio\1.33.png</texture>
 		<align>left</align>
@@ -353,10 +353,10 @@
 	<control>
 		<type>image</type>
 		<id>0</id>
-		<posX>1488</posX>
-		<posY>896</posY>
-		<width>80</width>
-		<height>54</height>
+		<posX>1540</posX>
+		<posY>880</posY>
+		<width>100</width>
+		<height>74</height>
 		<texture>Logos\subtitles.png</texture>
 		<align>left</align>
 		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003)+string.equals(#MovingPictures.LocalMedia.hassubtitles,True)</visible>
@@ -365,10 +365,10 @@
 	<control>
 		<type>image</type>
 		<id>0</id>
-		<posX>1488</posX>
-		<posY>896</posY>
-		<width>80</width>
-		<height>54</height>
+		<posX>1540</posX>
+		<posY>880</posY>
+		<width>100</width>
+		<height>74</height>
 		<texture>Logos\nosubtitles.png</texture>
 		<align>left</align>
 		<visible>!Control.IsVisible(50)+ !Control.IsVisible(51) + !Control.HasFocus(10003)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.hassubtitles,False)</visible>
