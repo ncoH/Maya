@@ -145,8 +145,8 @@
 				<onleft>2</onleft>
 				<onright>50</onright>
 				<scrollOffset>1</scrollOffset>
-				<posY>600</posY>
-				<height>421</height>
+				<posY>678</posY>
+				<height>337</height>
 				<posX>736</posX>
 				<width>1017</width>
 				<spinPosX>787</spinPosX>
@@ -194,20 +194,20 @@
     		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		
-<!-- 		<control>
+ 		<control>
 			<description>Rating Icon</description>
 			<type>image</type>
 			<id>1</id>
 			<width>39</width>
 			<height>36</height>
-    		<posX>882</posX>
+    		<posX>2082</posX>
     		<posY>952</posY>
 			<texture>#Trakt.Movie.Ratings.Icon.png</texture>
 			<visible>!string.equals(#Trakt.Movie.Ratings.Icon,)+[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip | facadeview.coverflow]</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
-		</control> -->
+		</control>
 		
 		<control>
 			<description>Certification Label</description>
@@ -314,10 +314,10 @@
 			<description>Summary</description>
 			<type>textboxscrollup</type>
 			<id>0</id>
-			<posX>112</posX>
-			<posY>640</posY>
-			<width>560</width>
-			<height>480</height>
+			<posX>780</posX>
+			<posY>500</posY>
+			<width>931</width>
+			<height>150</height>
 			<seperator>-----------------------------------------------------------------------------------</seperator>
 			<label>#Trakt.Episode.Overview</label>
 			<visible>facadeview.list</visible>
@@ -360,7 +360,7 @@
         <control>
           <id>1</id>
           <type>image</type>
-          <posX>719</posX>
+          <posX>720</posX>
           <posY>90</posY>
           <width>480</width>
           <height>900</height>
@@ -378,6 +378,7 @@
           <textcolor>85cffe</textcolor>	  
 		  <visible>!Control.HasFocus(50)</visible>		  
         </control>
+		
         <control>
           <description>button group</description>
           <type>group</type>
@@ -401,6 +402,7 @@
             <onup>66612</onup>
             <ondown>66610</ondown>
           </control>
+		  
           <control>
             <description>MovingPictures</description>
             <type>button</type>
@@ -420,6 +422,7 @@
             <onup>2</onup>			
             <ondown>66611</ondown>				
           </control>
+		  
           <control>
             <description>My Videos</description>
             <type>button</type>
@@ -437,6 +440,7 @@
             <onup>66610</onup>			
             <ondown>66612</ondown>			
           </control>
+		  
           <control>
             <description>MP-TVSeries</description>
             <type>button</type>

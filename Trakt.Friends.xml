@@ -127,8 +127,8 @@
 				<onleft>2</onleft>
 				<onright>50</onright>
 				<scrollOffset>1</scrollOffset>
-				<posY>600</posY>
-				<height>421</height>
+				<posY>678</posY>
+				<height>337</height>
 				<posX>736</posX>
 				<width>1017</width>
 				<spinPosX>787</spinPosX>
@@ -309,10 +309,10 @@
 			<description>Summary</description>
 			<type>textboxscrollup</type>
 			<id>0</id>
-			<posX>112</posX>
-			<posY>730</posY>
-			<width>560</width>
-			<height>290</height>
+			<posX>780</posX>
+			<posY>500</posY>
+			<width>931</width>
+			<height>150</height>
 			<seperator>-----------------------------------------------------------------------------------</seperator>
 			<label>#Trakt.User.About</label>
 			<visible>!string.equals(#Trakt.User.About,)+!string.equals(#Trakt.User.About,N/A)+!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
@@ -490,10 +490,10 @@
 			<description>Summary</description>
 			<type>textboxscrollup</type>
 			<id>0</id>
-			<posX>112</posX>
-			<posY>640</posY>
-			<width>560</width>
-			<height>380</height>
+			<posX>780</posX>
+			<posY>500</posY>
+			<width>931</width>
+			<height>150</height>
 			<seperator>-----------------------------------------------------------------------------------</seperator>
 			<label>#Trakt.Show.Overview</label>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,episode)</visible>
@@ -654,10 +654,10 @@
 			<description>Summary</description>
 			<type>textboxscrollup</type>
 			<id>0</id>
-			<posX>112</posX>
-			<posY>870</posY>
-			<width>560</width>
-			<height>180</height>
+			<posX>780</posX>
+			<posY>445</posY>
+			<width>931</width>
+			<height>205</height>
 			<seperator>-----------------------------------------------------------------------------------</seperator>
 			<label>#Trakt.Movie.Overview</label>
 			<visible>string.equals(#Trakt.View.Level,WatchedHistory)+string.equals(#Trakt.Selected.Type,movie)</visible>
