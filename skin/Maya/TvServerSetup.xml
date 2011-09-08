@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>709</id>
+    <defaultcontrol>24</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <define>#header.label:6014</define>
+    <controls>
+
+        <import>common.window.settings.xml</import>
+        <import>common.time.xml</import>
+		
+        <control>
+            <type>group</type>
+            <posX>99</posX>
+            <posY>188</posY>
+            <layout>GridLayout(2, 6, 52, 8, 1)</layout>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="250">WindowClose</animation>
+            <control>
+                <id>24</id>
+                <type>button</type>
+                <label>6029</label>
+            </control>
+        </control>
+		
+        <control>
+            <type>group</type>
+            <posX>99</posX>
+            <posY>238</posY>
+            <layout>GridLayout(2, 6, 52, 8, 1)</layout>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="250">WindowClose</animation>
+            <control>
+                <id>25</id>
+                <type>button</type>
+                <label>8008</label>
+            </control>
+        </control>
+		
+        <control>
+            <id>1</id>
+            <description>Please specify the IP address or hostname</description>
+            <type>label</type>
+            <posX>462</posX>
+            <posY>185</posY>
+            <font>font13</font>
+            <label>6026</label>
+        </control>
+        <control>
+            <id>1</id>
+            <description>of the master TV-Server</description>
+            <type>label</type>
+            <posX>462</posX>
+            <posY>210</posY>
+            <font>font13</font>
+            <label>6027</label>
+        </control>
+        <control>
+            <id>1</id>
+            <description>Current setting:</description>
+            <type>label</type>
+            <posX>462</posX>
+            <posY>265</posY>
+            <font>font16</font>
+            <label>6028</label>
+        </control>
+        <control>
+            <id>30</id>
+            <description>:</description>
+            <type>label</type>
+            <posX>462</posX>
+            <posY>305</posY>
+            <font>font16</font>
+            <label>-</label>
+        </control>
+    </controls>
+</window>

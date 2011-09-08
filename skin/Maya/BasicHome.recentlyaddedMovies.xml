@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+    <control>
+      <description>GROUP: RecentlyAdded Movies</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia,MovingPictures) + !string.equals(#maya.recentlyAdded.movie1.thumb,) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+      <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
+	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+      <animation effect="slide" end="300,0" time="1500" acceleration="-0.1" reversible="false">Hidden</animation>
+      <animation effect="slide" start="300,0" end="0,0" time="1000" acceleration="-0.1" reversible="false">Visible</animation>
+	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+	  <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+      <control>
+        <description>Movie 1 thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>896</posX>
+        <posY>89</posY>
+        <height>147</height>
+		<width>113</width>
+        <texture>#maya.recentlyAdded.movie1.thumb</texture>
+      </control>
+      <control>
+        <description>Movie 1 Rounded Cover</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>877</posX>
+        <posY>71</posY>
+        <height>181</height>
+        <width>151</width>
+        <texture>blackborders_video.png</texture>
+      </control>      
+      <control>
+        <description>Movie 1 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>98</posY>
+        <width>258</width>
+        <label>#maya.recentlyAdded.movie1.title</label>
+        <font>Segoe Light18</font>
+        <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+        <description>Movie 1 title</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>151</posY>
+        <width>255</width>
+         <label>#maya.recentlyAdded.movie1.runtime</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Movie 1 Genre</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>178</posY>
+        <width>255</width>
+        <label>#maya.recentlyAdded.movie1.genres</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+		<type>imagelist</type>
+		<id>0</id>
+        <posX>1020</posX>
+        <posY>206</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#maya.recentlyAdded.movie1.score</percentage>
+      </control> 
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>221</id>
+        <posX>897</posX>
+        <posY>89</posY>
+        <height>146</height>
+		<width>112</width>
+        <textureFocus>thumb_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>801</onleft>
+        <onright>221</onright>
+		<onup>223</onup>
+        <ondown>222</ondown>
+        <font>font12</font>
+    </control>
+      <control>
+        <description>Movie 2 thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>896</posX>
+        <posY>288</posY>
+        <height>147</height>
+		<width>113</width>		
+        <texture>#maya.recentlyAdded.movie2.thumb</texture>
+      </control>
+      <control>
+        <description>Movie 2 Rounded Cover</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>877</posX>
+        <posY>270</posY>
+        <height>181</height>
+        <width>151</width>
+        <texture>blackborders_video.png</texture>
+      </control>      
+      <control>
+        <description>Movie 2 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>299</posY>
+        <width>258</width>
+        <label>#maya.recentlyAdded.movie2.title</label>
+        <font>Segoe Light18</font>
+        <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+        <description>Movie 2 title</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>352</posY>
+        <width>255</width>
+        <label>#maya.recentlyAdded.movie2.runtime</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Movie 2 Genre</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>379</posY>
+        <width>255</width>
+        <label>#maya.recentlyAdded.movie2.genres</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+		<type>imagelist</type>
+		<id>0</id>
+        <posX>1020</posX>
+        <posY>405</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#maya.recentlyAdded.movie2.score</percentage>
+      </control> 
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>222</id>
+        <posX>897</posX>
+        <posY>288</posY>
+        <height>146</height>
+		<width>112</width>
+        <textureFocus>thumb_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>801</onleft>
+        <onright>222</onright>
+		<onup>221</onup>
+        <ondown>223</ondown>
+        <font>font12</font>
+    </control>
+      <control>
+        <description>Movie 3 thumb</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>896</posX>
+        <posY>488</posY>
+        <height>147</height>
+		<width>113</width>
+        <texture>#maya.recentlyAdded.movie3.thumb</texture>
+      </control>
+      <control>
+        <description>Movie 3 Rounded Cover</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>877</posX>
+        <posY>470</posY>
+        <height>181</height>
+        <width>151</width>
+        <texture>blackborders_video.png</texture>
+      </control>      
+      <control>
+        <description>Movie 3 name</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>498</posY>
+        <width>255</width>
+        <label>#maya.recentlyAdded.movie3.title</label>
+        <font>Segoe Light18</font>
+        <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+        <description>Movie 3 title</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>551</posY>
+        <width>255</width>
+        <label>#maya.recentlyAdded.movie3.runtime</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Movie 3 Genre</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1020</posX>
+        <posY>578</posY>
+        <width>255</width>
+        <label>#maya.recentlyAdded.movie3.genres</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+		<type>imagelist</type>
+		<id>0</id>
+        <posX>1020</posX>
+        <posY>604</posY>
+		<width>185</width>
+		<height>21</height>
+		<textureWidth>23</textureWidth>
+		<textureHeight>19</textureHeight>
+		<subitems>
+		<subitem>starblue.png</subitem>
+		<subitem>starwhite.png</subitem>
+		</subitems>
+		<orientation>horizontal</orientation>
+		<align>left</align>
+		<imagesToDraw>5</imagesToDraw>
+		<percentage>#maya.recentlyAdded.movie3.score</percentage>
+      </control> 
+	<control>
+        <description>Play Button</description>
+        <type>button</type>
+        <id>223</id>
+        <posX>897</posX>
+        <posY>488</posY>
+        <height>146</height>
+		<width>112</width>
+        <textureFocus>thumb_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <label>-</label>
+        <onleft>801</onleft>
+        <onright>223</onright>
+		<onup>222</onup>
+        <ondown>221</ondown>
+        <font>font12</font>
+    </control>
+    </control>
+  </controls>
+</window>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window> 
+<controls>
+    <control>
+		<type>group</type>
+		<description>group element</description>
+		<id>28</id>
+		<layout>StackLayout</layout>
+		<posX>60</posX>
+		<posY>197</posY>
+    <control>
+        <description>composite control consisting of a list control and a thumbnail panel</description>
+		<animation effect="fade" time="200">WindowOpen</animation>
+		<animation effect="fade" time="200">WindowClose</animation>
+        <type>facadeview</type>
+        <id>50</id>
+        <control>
+			<description>graphical list (series and seasons if set)</description>
+			<type>listcontrol</type>
+			<subtype>album</subtype>
+			<id>50</id>
+			<onleft>2</onleft>
+			<onright>50</onright>		
+        </control>
+		
+    <control>
+		<description>graphical thumbpanel (series and/or seasons if set)</description>
+        <type>thumbnailpanel</type>
+		<dimColor>90ffffff</dimColor>
+        <id>50</id>
+        <posX>72</posX>
+		<posY>192</posY>
+        <width>500</width>
+        <height>500</height>
+        <!-- up/down buttons & page # -->     
+		<onleft>2</onleft>
+        <onright>50</onright>		  
+		<spinColor>FFFFFFFF</spinColor>
+		<spinPosX>555</spinPosX>
+		<spinPosY>705</spinPosY>
+		<spinAlign>left</spinAlign>
+        <spinColor>ffffffff</spinColor>
+        <!-- Textures -->
+        <imageFolder>-</imageFolder> 			
+        <!-- Text -->
+        <font>font13</font>
+        <selectedColor>00ffffff</selectedColor>
+        <textcolor>ffffffff</textcolor>
+        <colordiffuse>ffffffff</colordiffuse>          
+        <suffix>|</suffix>
+        <itemWidthBig>393</itemWidthBig>
+        <itemHeightBig>94</itemHeightBig>
+        <!-- boxes -->
+        <textureWidthBig>389</textureWidthBig>
+        <textureHeightBig>90</textureHeightBig>
+        <!-- banners -->
+        <thumbWidthBig>370</thumbWidthBig>
+        <thumbHeightBig>73</thumbHeightBig>
+        <thumbPosXBig>10</thumbPosXBig>
+        <thumbPosYBig>10</thumbPosYBig>
+		<zoomXPixels>0</zoomXPixels>
+		<zoomYPixels>0</zoomYPixels>
+        <thumbZoom>no</thumbZoom>
+        <!-- text (No banner) -->
+        <textXOff>0</textXOff>
+        <textYOff>0</textYOff>
+        <frame>-</frame>
+        <frameFocus>tvseries_banner_focus.png</frameFocus>
+        <keepaspectratio>no</keepaspectratio>
+        <enableFocusZoom>no</enableFocusZoom>
+        <scrollOffset>1</scrollOffset>
+        <unfocusedAlpha>50</unfocusedAlpha>   
+		<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,550" time="400">focus</thumbAnimation>
+		<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
+    </control>
+		
+	<control>
+		<description>Filmstrip view</description>
+		<type>filmstrip</type>
+		<dimColor>90ffffff</dimColor>
+		<id>50</id>
+		<scrollOffset>2</scrollOffset>
+		<folderPrefix></folderPrefix>
+		<folderSuffix></folderSuffix>
+		<posX>150</posX>
+		<posY>355</posY>
+		<width>1166</width>
+		<height>768</height>
+		<onup>2</onup>
+		<ondown>50</ondown>
+		<onleft>50</onleft>
+		<onright>50</onright>
+		<thumbWidth>214</thumbWidth>
+		<thumbHeight>302</thumbHeight>
+		<thumbPosX>0</thumbPosX>
+		<thumbPosY>0</thumbPosY>
+		<itemWidth>214</itemWidth>
+		<itemHeight>302</itemHeight>
+		<textureWidth>214</textureWidth>
+		<textureHeight>302</textureHeight>
+		<textYOff>-2000</textYOff>
+		<spinCanFocus>no</spinCanFocus>
+		<imageFolderFocus>-</imageFolderFocus>
+		<frame>-</frame>
+		<frameFocus>thumbnail_frame_shine.png</frameFocus>
+		<background>-</background>
+		<thumbs flipY="true" diffuse="Thumb_Mask.png"></thumbs>
+		<showFrame>yes</showFrame>
+		<showFolder>no</showFolder>
+		<showBackGround>no</showBackGround>
+		<showInfoImage>no</showInfoImage>
+		<spinPosY>-50</spinPosY>
+		<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,570" time="400">focus</thumbAnimation>
+		<thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,570" time="100">unfocus</thumbAnimation>
+	</control>
+		
+    <control>
+		<description>Text List</description>
+		<type>listcontrol</type>
+		<id>50</id>
+		<posX>524</posX>
+		<posY>187</posY>	
+		<onleft>2</onleft>
+		<onright>50</onright>
+		<scrollOffset>1</scrollOffset>
+		<height>458</height>
+		<width>358</width>
+		<textureFocus>listcontrol_item_selected_small.png</textureFocus>
+		<textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+		<textXOff>-50</textXOff>
+		<textYOff>10</textYOff>
+		<textXOff2>345</textXOff2>
+		<textYOff2>10</textYOff2>
+		<textXOff3>-2000</textXOff3>
+		<textYOff3>6</textYOff3>
+		<IconXOff>330</IconXOff>
+		<IconYOff>7</IconYOff>
+		<itemWidth>72</itemWidth>
+		<itemHeight>18</itemHeight>
+		<spinColor>FF6aa5cb</spinColor>
+		<spinPosX>560</spinPosX>
+		<spinPosY>688</spinPosY>
+		<spinAlign>left</spinAlign>
+		<!-- Uncomment to override List colors -->
+        <!--<playedColor>ffffffff</playedColor>-->         
+        <!--<remoteColor>ffffffff</remoteColor>-->
+        <!--<textcolor>ffffffff</textcolor>-->
+        <!--<textcolor2>ffffffff</textcolor2>-->
+        <!--<textcolor3>ffffffff</textcolor3>-->
+		<dimColor>ffffffff</dimColor>
+        </control>
+		
+        <control>
+          <description>Cover Flow view</description>
+          <type>coverflow</type>
+          <colordiffuse>90ffffff</colordiffuse>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <onup>2</onup>
+		  <ondown>50</ondown>		  
+          <onleft>50</onleft>
+          <onright>50</onright>			  
+          <posX>0</posX>
+          <posY>285</posY>
+          <width>1366</width>
+          <height>768</height>	  
+          <selectedCard>0</selectedCard>
+		  <cardWidth>280</cardWidth>
+		  <cardHeight>385</cardHeight>
+          <angle>45</angle>
+          <sideShift>310</sideShift>
+          <sideGap>100</sideGap>
+          <sideDepth>270</sideDepth>
+          <offsetY>0</offsetY>
+          <selectedOffsetY>0</selectedOffsetY>
+          <speed>8</speed>
+          <showFrame>yes</showFrame>
+          <frame>coverflow_glass_overlay_videos.png</frame>
+          <frameFocus>coverflow_glass_overlay_videos.png</frameFocus>
+		  <keepaspectratio>no</keepaspectratio>		 		  
+          <frameWidth>280</frameWidth>
+          <frameHeight>385</frameHeight>
+          <spinSpeed>8</spinSpeed>
+          <unfocusedAlpha>FF</unfocusedAlpha>
+          <folderPrefix></folderPrefix>
+          <folderSuffix></folderSuffix>
+          <font1>font13</font1>
+          <font2>font11</font2>
+          <label1>#title</label1>
+          <label2>#genre</label2>
+          <textColor>FFFFFFFF</textColor>
+          <remoteColor>FFFF0000</remoteColor>
+          <playedColor>FFA0D0FF</playedColor>
+          <downloadColor>FF00FF00</downloadColor>
+          <selectedColor>FFFFFFFF</selectedColor>
+          <shadowAngle>45</shadowAngle>
+          <shadowDistance>1</shadowDistance>
+          <shadowColor>FF000000</shadowColor>
+          <label1YOff>1430</label1YOff>
+          <label2YOff>1390</label2YOff>
+          <pageSize>5</pageSize>
+          <scrollbarBackground>bar_hor.png</scrollbarBackground>
+          <scrollbarLeft>mouse_left_horizontal.png</scrollbarLeft>
+          <scrollbarRight>mouse_right_horizontal.png</scrollbarRight>
+          <scrollbarYOff>450</scrollbarYOff>
+          <showScrollbar>no</showScrollbar>
+		  <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png"/>
+          <subitems>
+            <subitem>
+              <![CDATA[
+                <controls>
+                  <control>
+                    <description>background</description>
+                    <type>image</type>
+                    <posX>0</posX>
+                    <posY>0</posY>
+                    <width>280</width>
+                    <height>385</height>
+                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png">background.png</texture>
+                  </control>
+
+                  <control>
+                    <description>Movie Details</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>10</posY>
+                    <width>210</width>
+                    <label>Movie Details</label>
+                    <font>font13</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>genre</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>40</posY>
+                    <width>210</width>
+                    <label>#genre</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>year</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>60</posY>
+                    <width>210</width>
+                    <label>#year</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>runtime</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>80</posY>
+                    <width>210</width>
+                    <label>#runtime min</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>rating</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>100</posY>
+                    <width>210</width>
+                    <label>#rating</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                  <control>
+                    <description>votes</description>
+                    <type>label</type>
+                    <posX>50</posX>
+                    <posY>100</posY>
+                    <width>210</width>
+                    <label>(#votes votes)</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>Director</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>140</posY>
+                    <width>210</width>
+                    <label>Director</label>
+                    <font>font10</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>director</description>
+                    <type>label</type>
+                    <posX>30</posX>
+                    <posY>160</posY>
+                    <width>210</width>
+                    <label>#director</label>
+                    <font>font9</font>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+
+                  <control>
+                    <description>plot</description>
+                    <type>textboxscrollup</type>
+                    <posX>30</posX>
+                    <posY>180</posY>
+                    <width>210</width>
+                    <height>150</height>
+                    <label>#plot</label>
+                    <font>font9</font>
+                    <lineSpacing>1</lineSpacing>
+                    <textcolor>FFFFFFFF</textcolor>
+                  </control>
+                </controls>
+              ]]>
+            </subitem>
+          </subitems>
+        </control>	  
+		
+      </control>
+    </control>
+</controls>
+</window>

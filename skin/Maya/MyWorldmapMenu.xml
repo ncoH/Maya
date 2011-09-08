@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>10235</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<disabletopbar>no</disabletopbar>
+	<controls>
+	
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>0</buttonwidth>
+		<buttonheight>0</buttonheight>
+		<width>1366</width>
+		<height>768</height>
+		<dimColor>00ffffff</dimColor>
+	<control>
+		<type>image</type>
+		<id>0</id>
+		<width>1366</width>
+		<height>768</height>
+		<texture>semi_trans_back_general_menu.png</texture>
+		<colordiffuse>90ffffff</colordiffuse>
+		<animation effect="fade" time="200">windowopen</animation>
+		<animation effect="fade" time="400">windowclose</animation>
+	</control>
+		
+	<control>
+		<type>group</type>
+		<animation effect="fade" time="250">Visible</animation>
+		<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
+		<animation effect="fade" time="200">Hidden</animation>
+		<animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">Hidden</animation>
+		
+		<control>
+			<id>1</id>
+			<type>image</type>
+			<posX>512</posX>
+			<posY>64</posY>
+			<width>342</width>
+			<height>640</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
+		</control>
+		
+		<control>
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>567</posX>
+			<posY>110</posY>
+			<label>924</label>
+			<font>Segoe Light18</font>
+			<textcolor>85cffe</textcolor>
+		</control>
+		
+		<control>
+				<description>button group</description>
+				<type>group</type>
+				<posX>543</posX>
+				<posY>175</posY>
+				<layout>StackLayout(0, Vertical, true)</layout>   
+
+				<control>
+					<description>Search address or Location using Yahoo!</description>
+					<type>button</type>
+					<id>2</id>
+					<label>Address or location</label>
+	                <width>279</width>
+                    <height>49</height>					
+					<onleft>2</onleft>
+					<onright>2</onright>
+                    <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                    <textureNoFocus>hiddenmenu_item.png</textureNoFocus>					
+					<onup>10</onup>
+					<ondown>3</ondown>
+                    <textXOff>25</textXOff>
+                    <textYOff>12</textYOff>						
+				</control>   
+
+				<control>
+					<description>Search placename using Geonames.org</description>
+					<type>button</type>
+					<id>3</id>
+					<label>Placename</label>
+	                <width>279</width>
+                    <height>49</height>				
+					<onleft>3</onleft>
+					<onright>3</onright>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                    <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
+					<onup>2</onup>
+					<ondown>5</ondown>
+                    <textXOff>25</textXOff>
+                    <textYOff>12</textYOff>						
+				</control>   
+
+				<control>
+					<description>Last Search Result</description>
+					<type>button</type>
+					<id>5</id>
+					<label>Last Search Result</label>
+	                <width>279</width>
+                    <height>49</height>					
+					<onleft>5</onleft>
+					<onright>5</onright>
+	                <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                    <textureNoFocus>hiddenmenu_item.png</textureNoFocus>				
+					<onup>3</onup>
+					<ondown>6</ondown>
+                    <textXOff>25</textXOff>
+                    <textYOff>12</textYOff>						
+				</control>   
+
+				<control>
+					<description>Placemarks</description>
+					<type>button</type>
+					<id>6</id>
+					<label>Placemarks</label>
+	                <width>279</width>
+                    <height>49</height>					
+					<onleft>6</onleft>
+					<onright>6</onright>
+					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                    <textureNoFocus>hiddenmenu_item.png</textureNoFocus>		
+					<onup>5</onup>
+					<ondown>10</ondown>
+                    <textXOff>25</textXOff>
+                    <textYOff>12</textYOff>					
+				</control>   
+
+				<control>
+					<description>Choose a maptype</description>
+					<type>button</type>
+					<id>10</id>
+					<label>Choose maptype</label>
+	                <width>279</width>
+                    <height>49</height>					
+					<onleft>10</onleft>
+					<onright>10</onright>
+		            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
+                    <textureNoFocus>hiddenmenu_item.png</textureNoFocus>			
+					<onup>6</onup>
+					<ondown>2</ondown>
+                    <textXOff>25</textXOff>
+                    <textYOff>12</textYOff>						
+                    </control>
+                </control>
+            </control>
+        </control>
+		
+	</controls>
+</window>

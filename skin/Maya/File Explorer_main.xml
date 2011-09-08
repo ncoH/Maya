@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>557311</id>
+    <defaultcontrol>11</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <define>#header.label:File Explorer</define>
+    <define>#header.background:hover_file explorer.png</define>
+    <controls>
+	
+        <import>common.window.background.xml</import>		
+        <import>common.time.xml</import>		
+		
+        <control>
+            <id>1</id>
+            <type>label</type>
+			<description>Header label</description>
+            <posX>552</posX>
+            <posY>30</posY>
+            <width>500</width>
+            <height>66</height>
+            <font>Segoe Light40</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <label>#header.label</label>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>1</id>
+            <description>listcontrol background left</description>
+            <type>image</type>
+            <posX>55</posX>
+            <posY>185</posY>
+            <width>610</width>
+            <height>482</height>
+            <texture>listcontrol_bg.png</texture>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>1</id>
+            <description>listcontrol background right</description>
+            <type>image</type>
+            <posX>704</posX>
+            <posY>185</posY>
+            <width>610</width>
+            <height>482</height>
+            <texture>listcontrol_bg.png</texture>
+            <animation effect="Fade" time="100">WindowOpen</animation>
+            <animation effect="Fade" time="100">WindowClose</animation>
+        </control>
+		
+        <control>
+            <id>3</id>
+            <description>file listcontrol left</description>
+            <type>listcontrol</type>
+            <onleft>11</onleft>
+            <onright>4</onright>
+            <onup>3</onup>
+            <ondown>3</ondown>
+            <posX>55</posX>
+            <posY>185</posY>
+            <width>610</width>
+            <height>420</height>
+            <animation delay="50" effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <spinPosX>640</spinPosX>
+			<spinPosY>688</spinPosY>			
+        </control>
+
+	<control>
+		<description>listcontrol background info left</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>55</posX>
+        <posY>678</posY>
+		<width>610</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+        <control>
+            <id>4</id>
+            <description>file listcontrol right</description>
+            <type>listcontrol</type>
+            <onleft>3</onleft>
+            <onright>2</onright>
+            <onup>4</onup>
+            <ondown>4</ondown>
+            <posX>704</posX>
+            <posY>185</posY>
+            <width>610</width>
+            <height>420</height>
+            <animation delay="50" effect="Fade" time="250">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+            <spinPosX>1292</spinPosX>
+			<spinPosY>688</spinPosY>			
+        </control>
+
+	<control>
+		<description>listcontrol background info right</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>704</posX>
+        <posY>678</posY>
+		<width>610</width>
+		<height>51</height>
+		<texture>listcontrol_bg_info.png</texture>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+	</control>
+	
+        <control>
+            <id>6</id>
+            <description>label left</description>
+            <type>label</type>
+            <posX>85</posX>
+            <posY>555</posY>
+            <font>font11</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <align>LEFT</align>
+            <label>Test</label>
+        </control>
+        <control>
+            <id>7</id>
+            <description>label right</description>
+            <type>label</type>
+            <posX>735</posX>
+            <posY>555</posY>
+            <font>font11</font>
+            <textcolor>ff6aa5cb</textcolor>
+            <align>LEFT</align>
+            <label>Test</label>
+        </control>
+        <control>
+            <id>9</id>
+            <description>labeldir left</description>
+            <type>label</type>
+            <posX>75</posX>
+            <posY>160</posY>
+            <font>Segoe Light12</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>Test</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>10</id>
+            <description>labeldir right</description>
+            <type>label</type>
+            <posX>712</posX>
+            <posY>160</posY>
+            <font>Segoe Light12</font>
+            <textcolor>ffffffff</textcolor>
+            <align>LEFT</align>
+            <label>Test</label>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>2</id>
+            <description>Menu right</description>
+            <type>button</type>
+            <onleft>11</onleft>
+            <onright>2</onright>
+            <onup>2</onup>
+            <ondown>4</ondown>
+            <posX>704</posX>
+            <posY>115</posY>
+            <width>230</width>
+            <font>Segoe Light14</font>
+            <textureFocus>button-small-focus.png</textureFocus>
+            <label>Menu right</label>
+            <textalign>CENTER</textalign>
+            <textYOff>0</textYOff>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+        <control>
+            <id>11</id>
+            <description>Menu left</description>
+            <type>button</type>
+            <onleft>11</onleft>
+            <onright>2</onright>
+            <onup>11</onup>
+            <ondown>3</ondown>
+            <posX>55</posX>
+            <posY>115</posY>
+            <width>230</width>
+            <font>Segoe Light14</font>
+            <textureFocus>button-small-focus.png</textureFocus>
+            <label>Menu left</label>
+            <textalign>CENTER</textalign>
+            <textYOff>0</textYOff>
+            <animation effect="Fade" time="200">WindowOpen</animation>
+            <animation effect="Fade" time="200">WindowClose</animation>
+        </control>
+    </controls>
+</window>

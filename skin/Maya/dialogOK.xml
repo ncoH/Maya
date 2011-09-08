@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <id>2002</id>
+    <defaultcontrol>10</defaultcontrol>
+    <allowoverlay>no</allowoverlay>
+    <controls>
+        <import>common.dialog.xml</import>
+        <control>
+            <id>10</id>
+            <description>OK button</description>
+            <type>button</type>
+            <onleft>10</onleft>
+            <onright>10</onright>
+            <onup>10</onup>
+            <ondown>10</ondown>
+            <posX>575</posX>
+            <posY>480</posY>
+            <width>210</width>
+            <textureFocus>small_button_focus.png</textureFocus>
+            <label>186</label>
+            <textalign>CENTER</textalign>
+            <textYOff>0</textYOff>
+            <dimColor>ffffffff</dimColor>
+            <animation effect="Fade" time="250">WindowOpen</animation>
+			<animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>			
+        </control>
+    </controls>
+</window>
