@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <controls>
+  
+    <control>
+      <description>GROUP: RecentlyAdded Pictures</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia,Pictures) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+      <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
+	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+      <animation effect="slide" end="300,0" time="1500" acceleration="-0.1" reversible="false">Hidden</animation>
+      <animation effect="slide" start="300,0" end="0,0" time="1000" acceleration="-0.1" reversible="false">Visible</animation>
+	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+	  <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+      <control>
+        <description>Pictures 1 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>896</posX>
+        <posY>90</posY>
+        <width>188</width>
+        <height>95</height>        
+        <texture>#fanarthandler.picture.latest1.thumb</texture>
+      </control>
+      <control>
+        <id>0</id>
+        <description>Pictures art overlay</description>
+        <type>image</type>
+        <posX>875</posX>
+        <posY>70</posY>
+        <width>230</width>
+        <height>130</height>
+        <texture>blackborders_pictures.png</texture>        
+      </control>      
+      <control>
+        <description>Pictures 1 filename</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>900</posX>
+        <posY>181</posY>
+        <width>258</width>
+        <label>#fanarthandler.picture.latest1.filename</label>
+        <font>Segoe Light18</font>
+        <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+        <description>Pictures 1 added</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>900</posX>
+        <posY>230</posY>
+        <width>255</width>
+        <label>#fanarthandler.picture.latest1.dateAdded</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>      
+    </control>
+	
+    <control>
+      <description>GROUP: RecentlyAdded Pictures</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia,Pictures) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+      <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
+	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+      <animation effect="slide" end="300,0" time="1500" acceleration="-0.1" reversible="false">Hidden</animation>
+      <animation effect="slide" start="300,0" end="0,0" time="1000" acceleration="-0.1" reversible="false">Visible</animation>
+	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+	  <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+      <control>
+        <description>Pictures 2 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>896</posX>
+        <posY>290</posY>
+        <width>188</width>
+        <height>95</height>       
+        <texture>#fanarthandler.picture.latest2.thumb</texture>
+      </control>
+      <control>
+        <id>0</id>
+        <description>Pictures art overlay</description>
+        <type>image</type>
+        <posX>875</posX>
+        <posY>270</posY>
+        <width>230</width>
+        <height>130</height>
+        <texture>blackborders_pictures.png</texture>        
+      </control>
+      <control>
+        <description>Pictures 2 filename</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>900</posX>
+        <posY>381</posY>
+        <width>258</width>
+        <label>#fanarthandler.picture.latest2.filename</label>
+        <font>Segoe Light18</font>
+        <textcolor>85cfff</textcolor>
+	<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+        <description>Pictures 2 added</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>900</posX>
+        <posY>430</posY>
+        <width>255</width>
+        <label>#fanarthandler.picture.latest2.dateAdded</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+    </control>
+	
+    <control>
+      <description>GROUP: RecentlyAdded Pictures</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia,Pictures) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+      <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
+	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+      <animation effect="slide" end="300,0" time="1500" acceleration="-0.1" reversible="false">Hidden</animation>
+      <animation effect="slide" start="300,0" end="0,0" time="1000" acceleration="-0.1" reversible="false">Visible</animation>
+	  <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+	  <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+      <control>
+        <description>Pictures 3 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>896</posX>
+        <posY>490</posY>
+        <width>188</width>
+        <height>95</height>         
+        <texture>#fanarthandler.picture.latest3.thumb</texture>
+      </control>
+      <control>
+        <id>0</id>
+        <description>Pictures art overlay</description>
+        <type>image</type>
+        <posX>875</posX>
+        <posY>470</posY>
+        <width>230</width>
+        <height>130</height>
+        <texture>blackborders_pictures.png</texture>        
+      </control>
+      <control>
+        <description>Pictures 3 filename</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>900</posX>
+        <posY>581</posY>
+        <width>255</width>
+        <label>#fanarthandler.picture.latest3.filename</label>
+        <font>Segoe Light18</font>
+        <textcolor>85cfff</textcolor>
+		<scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+      <control>
+        <description>Pictures 3 added</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>900</posX>
+        <posY>630</posY>
+        <width>255</width>
+        <label>#fanarthandler.picture.latest3.dateAdded</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+    </control> 
+	
+  </controls>
+</window>

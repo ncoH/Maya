@@ -1,0 +1,163 @@
+<fonts>
+
+<font>
+	<name>font10</name>
+	<filename>MayaType UI</filename>
+	<height>10</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>font11</name>
+	<filename>MayaType UI</filename>
+	<height>13</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>font12</name>
+	<filename>MayaType UI</filename>
+	<height>14</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>font13</name>
+	<filename>MayaType UI</filename>
+	<height>13</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>font13tvg</name>
+	<filename>MayaType UI TVG</filename>
+	<height>13</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>font14</name>
+	<filename>MayaType UI</filename>
+	<height>14</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>font16</name>
+	<filename>MayaType UI</filename>
+	<height>16</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>font18</name>
+	<filename>MayaType UI</filename>
+	<height>18</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>font24</name>
+	<filename>MayaType UI</filename>
+	<height>24</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>Segoe Light12</name>
+	<filename>MayaType Light</filename>
+	<height>12</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>Segoe Light14</name>
+	<filename>MayaType Light</filename>
+	<height>14</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>Segoe Light16</name>
+	<filename>MayaType Light</filename>
+	<height>16</height>
+	<start>0</start>
+	<end>1536</end>
+</font>
+
+<font>
+	<name>Segoe Light18</name>
+	<filename>MayaType Light</filename>
+	<height>18</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+<font>
+	<name>Segoe Light20</name>
+	<filename>MayaType Light</filename>
+	<height>20</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+<font>
+	<name>Segoe Light22</name>
+	<filename>MayaType Light</filename>
+	<height>22</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+<font>
+	<name>Segoe Light26</name>
+	<filename>MayaType Light</filename>
+	<height>26</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+
+<font>
+	<name>Segoe Light32</name>
+	<filename>MayaType Light</filename>
+	<height>32</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+<font>
+	<name>Segoe Light36</name>
+	<filename>MayaType Light</filename>
+	<height>36</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+<font>
+	<name>Segoe Light40</name>
+	<filename>MayaType Light</filename>
+	<height>40</height>
+	<start>0</start>
+	<end>1536</end>
+	<bold>no</bold>
+</font>
+
+</fonts>
