@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>1666</id>
   <defaultcontrol>1201</defaultcontrol>
@@ -7,8 +6,10 @@
   <define>#header.label:FANatic Monitor</define>
   <define>#header.background:hover_FANatic Monitor.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -23,6 +24,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1101</id>
       <description>Info label</description>
@@ -37,6 +39,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background</description>
@@ -50,6 +53,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1102</id>
       <description>current readings label</description>
@@ -63,6 +67,7 @@
       <animation effect="Fade" time="100">WindowClose</animation>
       <animation effect="Fade" time="100">WindowOpen</animation>
     </control>
+	
     <control>
       <id>1103</id>
       <description>current readings label</description>
@@ -76,6 +81,7 @@
       <animation effect="Fade" time="100">WindowClose</animation>
       <animation effect="Fade" time="100">WindowOpen</animation>
     </control>
+	
     <control>
       <description>group element</description>
       <type>group</type>
@@ -103,6 +109,7 @@
         </control>
       </control>
     </control>
+	
     <control>
       <description>group element</description>
       <type>group</type>
@@ -130,6 +137,8 @@
         </control>
       </control>
     </control>
+	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>
