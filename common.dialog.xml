@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
     <control>
@@ -14,6 +13,7 @@
       <animation effect="fade" time="400">WindowClose</animation>
       <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
     </control>
+	
     <control>
       <description>Heading text label</description>
       <type>label</type>
@@ -28,6 +28,7 @@
       <animation effect="fade" time="400">WindowClose</animation>
       <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
     </control>
+	
     <control>
       <description>dialog line 1</description>
       <type>fadelabel</type>
@@ -41,6 +42,7 @@
       <animation effect="fade" time="400">WindowClose</animation>
       <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
     </control>
+	
     <control>
       <description>dialog line 2</description>
       <type>label</type>
@@ -54,6 +56,7 @@
       <animation effect="fade" time="400">WindowClose</animation>
       <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
     </control>
+	
     <control>
       <description>dialog line 3</description>
       <type>label</type>
@@ -67,6 +70,7 @@
       <animation effect="fade" time="400">WindowClose</animation>
       <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
     </control>
+	
     <control>
       <description>dialog line 4</description>
       <type>label</type>
@@ -80,5 +84,6 @@
       <animation effect="fade" time="400">WindowClose</animation>
       <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
     </control>
+	
   </controls>
 </window>
