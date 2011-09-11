@@ -161,7 +161,7 @@
     <control>
         <description>Moviecount</description>	
         <type>label</type>
-        <label>#Trakt.Translation.SeriesPlural.Label: #itemcount</label>
+        <label>#Trakt.Translation.Series.Label: #itemcount</label>
         <id>0</id>
 		<posX>1709</posX>
 		<posY>977</posY>
@@ -175,7 +175,7 @@
     <control>
         <description>Moviecount</description>	
         <type>label</type>
-        <label>#Trakt.Translation.SeriesPlural.Label: #itemcount</label>
+        <label>#Trakt.Translation.Series.Label: #itemcount</label>
         <id>0</id>
 		<posX>0</posX>
 		<posY>250</posY>

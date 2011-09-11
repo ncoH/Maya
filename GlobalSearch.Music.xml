@@ -240,7 +240,7 @@
             <onleft>50</onleft>
             <onright>50</onright>
             <onup>6</onup>
-            <ondown>5</ondown>
+            <ondown>10</ondown>
             <width>392</width>
             <height>68</height>
             <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
@@ -252,9 +252,9 @@
             <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
           </control>
           <control>
-            <id>5</id>
+            <id>10</id>
             <description>Searchtype (start, contain, end)</description>
-            <type>selectbutton</type>
+            <type>button</type>
             <onleft>50</onleft>
             <onright>50</onright>
             <onup>3</onup>
@@ -277,7 +277,7 @@
             <type>button</type>
             <onleft>50</onleft>
             <onright>50</onright>
-            <onup>5</onup>
+            <onup>10</onup>
             <ondown>9</ondown>
             <width>392</width>
             <height>68</height>

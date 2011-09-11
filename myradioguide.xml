@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>762</id>
   <defaultcontrol>2</defaultcontrol>
@@ -363,8 +362,7 @@
       <height>467</height>
       <textureFocus>tvgroup_button_selected.png</textureFocus>
       <textureNoFocus>blue.png</textureNoFocus>
-      <label>
-      </label>
+      <label></label>
       <onleft>60</onleft>
       <onright>6</onright>
       <onup>6</onup>

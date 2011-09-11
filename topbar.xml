@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>3005</id>
   <defaultcontrol>21</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <autohidetopbar>yes</autohidetopbar>
   <controls>
+  
     <control>
       <id>1</id>
       <type>image</type>
@@ -13,6 +13,7 @@
       <height>108</height>
       <texture>background_bar.png</texture>
     </control>
+	
     <control>
       <id>21</id>
       <description>Back button</description>
@@ -32,6 +33,7 @@
       <animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
       <animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
     </control>
+	
     <control>
       <id>22</id>
       <description>Skip Back button</description>
@@ -51,6 +53,7 @@
       <animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
       <animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
     </control>
+	
     <control>
       <id>23</id>
       <description>Rewind button</description>
@@ -70,6 +73,7 @@
       <animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
       <animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
     </control>
+	
     <control>
       <id>24</id>
       <description>Play button</description>
@@ -89,6 +93,7 @@
       <animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
       <animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
     </control>
+	
     <control>
       <id>25</id>
       <description>Pause button</description>
@@ -108,6 +113,7 @@
       <animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
       <animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
     </control>
+	
     <control>
       <id>27</id>
       <description>Stop button</description>
@@ -127,6 +133,7 @@
       <animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
       <animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
     </control>
+	
     <control>
       <id>28</id>
       <description>Fast Forward button</description>
@@ -146,6 +153,7 @@
       <animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
       <animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
     </control>
+	
     <control>
       <id>29</id>
       <description>Next button</description>
@@ -165,6 +173,7 @@
       <animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
       <animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
     </control>
+	
     <control>
       <id>30</id>
       <description>Shutdown button</description>
@@ -184,6 +193,7 @@
       <animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
       <animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
     </control>
+	
     <control>
       <id>26</id>
       <description>Basichome button</description>
@@ -203,6 +213,7 @@
       <animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
       <animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
     </control>
+	
     <control>
       <id>31</id>
       <description>Exit button</description>
@@ -222,5 +233,6 @@
       <animation effect="zoom" start="100,100" end="110,110" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
       <animation effect="zoom" start="110,110" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
     </control>
+	
   </controls>
 </window>

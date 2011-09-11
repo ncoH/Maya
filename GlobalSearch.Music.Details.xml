@@ -214,7 +214,7 @@
       <posY>267</posY>
       <width>372</width>
       <height>369</height>
-      <texture>#selectedthumb</texture>
+      <texture>#GlobalSearch.Music.Details.CoverArt</texture>
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
@@ -254,7 +254,7 @@
       <width>787</width>
       <font>Segoe Light16</font>
       <textcolor>ffffffff</textcolor>
-      <label>#artist</label>
+      <label>#GlobalSearch.Music.Details.Artist</label>
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
@@ -280,7 +280,7 @@
       <posY>292</posY>
       <width>787</width>
       <font>Segoe Light16</font>
-      <label>#album</label>
+      <label>#GlobalSearch.Music.Details.Album</label>
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
       <disabledcolor>ff808080</disabledcolor>
@@ -308,7 +308,7 @@
       <posY>337</posY>
       <width>787</width>
       <font>Segoe Light16</font>
-      <label>#track</label>
+      <label>#GlobalSearch.Music.Details.Title</label>
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
       <disabledcolor>ff808080</disabledcolor>
@@ -335,7 +335,7 @@
       <posY>382</posY>
       <font>Segoe Light12</font>
       <textcolor>ffffffff</textcolor>
-      <label>#genre</label>
+      <label>#GlobalSearch.Music.Details.Genre</label>
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
       <disabledcolor>ff808080</disabledcolor>
@@ -362,7 +362,7 @@
       <posY>417</posY>
       <font>Segoe Light12</font>
       <textcolor>ffffffff</textcolor>
-      <label>#year</label>
+      <label>#GlobalSearch.Music.Details.Year</label>
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
       <disabledcolor>ff808080</disabledcolor>
@@ -389,7 +389,7 @@
       <posX>1026</posX>
       <posY>490</posY>
       <font>Segoe Light12</font>
-      <label>#tp</label>
+      <label>#GlobalSearch.Music.Details.TimesPlayed</label>
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
@@ -415,7 +415,7 @@
       <posY>454</posY>
       <font>Segoe Light12</font>
       <textcolor>ffffffff</textcolor>
-      <label>#last_played</label>
+      <label>#GlobalSearch.Music.Details.DateTimePlayed</label>
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
       <disabledcolor>ff808080</disabledcolor>
@@ -442,7 +442,7 @@
       <posY>528</posY>
       <font>Segoe Light12</font>
       <textcolor>ffffffff</textcolor>
-      <label>#filename</label>
+      <label>#GlobalSearch.Music.Details.FileName</label>
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
       <disabledcolor>ff808080</disabledcolor>
@@ -462,7 +462,7 @@
     </control>
 	
     <control>
-      <id>1337</id>
+      <id>0</id>
       <description>rating</description>
       <type>imagelist</type>
       <posX>1026</posX>
@@ -471,7 +471,7 @@
       <height>29</height>
       <textureHeight>26</textureHeight>
       <textureWidth>32</textureWidth>
-      <percentage>#SongDetails.Rating</percentage>
+      <percentage>#GlobalSearch.Music.Details.Rating</percentage>
       <imagesToDraw>5</imagesToDraw>
       <orientation>HORIZONTAL</orientation>
       <subitems>
