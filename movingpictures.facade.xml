@@ -41,10 +41,10 @@ This file should contain the facade view
         <id>50</id>
         <onleft>2</onleft>
         <onright>50</onright>
-        <posX>736</posX>
+        <posX>735</posX>
         <posY>262</posY>
         <height>644</height>
-        <width>503</width>
+        <width>504</width>
         <spinPosX>787</spinPosX>
         <spinPosY>967</spinPosY>
         <spinAlign>left</spinAlign>

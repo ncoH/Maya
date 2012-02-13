@@ -4,6 +4,7 @@
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <define>#header.label:Infoservice-Twitter</define>
+  <define>#header.background:hover_twitter.png</define>  
   <controls>
   
     <import>common.window.background.xml</import>
@@ -62,8 +63,8 @@
       <description>Site Logo</description>
       <type>image</type>
       <id>101</id>
-      <posX>63</posX>
-      <posY>400</posY>
+      <posX>78</posX>
+      <posY>168</posY>
       <width>279</width>
       <height>279</height>
       <texture>#infoservice.twitter.selected.userpicture</texture>
@@ -72,13 +73,31 @@
     </control>
 	
     <control>
+      <id>506</id>
       <description>Chosen selected item Description</description>
       <type>textboxscrollup</type>
+      <visible>!facadeview.filmstrip+control.hasfocus(50)+!player.hasmedia</visible>
+      <posX>78</posX>
+      <posY>527</posY>
+      <width>541</width>
+      <height>499</height>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+      <label>-</label>
+      <seperator>----------------------------------------------------------------------------------------------</seperator>
+    </control>
+
+    <control>
       <id>506</id>
-      <posX>112</posX>
-      <posY>210</posY>
-      <width>632</width>
-      <height>548</height>
+      <description>Chosen selected item Description</description>
+      <type>textboxscrollup</type>
+      <visible>!facadeview.filmstrip+control.hasfocus(50)+player.hasmedia</visible>
+      <posX>78</posX>
+      <posY>527</posY>
+      <width>541</width>
+      <height>246</height>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
       <label>-</label>
       <seperator>----------------------------------------------------------------------------------------------</seperator>
     </control>
@@ -207,16 +226,23 @@
     </control>
 	
     <control>
+      <id>50</id>
       <description>listcontrol</description>
       <type>listcontrol</type>
-      <id>50</id>
       <onleft>2</onleft>
       <onright>50</onright>
-      <scrollOffset>1</scrollOffset>
-      <posY>257</posY>
-      <height>632</height>
-      <textXOff>30</textXOff>
       <dimColor>ffffffff</dimColor>
+      <posX>736</posX>
+      <posY>262</posY>
+      <height>644</height>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+      <animation center="683,384" effect="Zoom" end="180,180" start="100,100" time="1000">WindowClose</animation>
+      <scrollOffset>1</scrollOffset>
+      <spinPosX>787</spinPosX>
+      <spinPosY>967</spinPosY>
+      <spinAlign>left</spinAlign>
+      <textXOff>30</textXOff>
     </control>
 	
     <control>
