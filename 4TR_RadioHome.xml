@@ -48,11 +48,10 @@
       <posY>253</posY>
       <width>394</width>
       <control>
-        <description>TVGuide</description>
+        <description>RadioGuide</description>
         <type>button</type>
         <id>2</id>
         <label>600</label>
-        <hyperlink>600</hyperlink>
         <onup>9</onup>
         <ondown>3</ondown>
         <onright>99</onright>
