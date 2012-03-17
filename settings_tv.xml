@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>700</id>
-  <defaultcontrol>10004</defaultcontrol>
+  <defaultcontrol>24</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <define>#header.background:hover_settings.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>settings.menu.xml</import>
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -17,6 +18,7 @@
       <height>900</height>
       <texture>settings_main_panel.png</texture>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -31,6 +33,7 @@
       <font>Segoe Light40</font>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>buttons</description>
       <type>group</type>
@@ -40,6 +43,7 @@
       <posY>365</posY>
       <layout>GridLayout(2, 7, 42, 0, 1)</layout>
       <control>
+	  
         <description>MPEG-2 Video Codecs</description>
         <type>button</type>
         <width>469</width>
@@ -49,8 +53,10 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <id>24</id>
         <label>6000</label>
-        <onup>37</onup>
+        <onup>32</onup>
+        <ondown>35</ondown>				
       </control>
+	  
       <control>
         <description>H.264 Video Codecs</description>
         <type>button</type>
@@ -61,7 +67,10 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <id>35</id>
         <label>6036</label>
+        <onup>24</onup>
+        <ondown>25</ondown>			
       </control>
+	  
       <control>
         <description>Audio Codecs</description>
         <type>button</type>
@@ -72,7 +81,10 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <id>25</id>
         <label>6001</label>
+        <onup>35</onup>		
+        <ondown>36</ondown>			
       </control>
+	  
       <control>
         <description>LATM AAC Audio Codecs</description>
         <type>button</type>
@@ -84,6 +96,7 @@
         <id>36</id>
         <label>6039</label>
       </control>
+	  
       <control>
         <description>Audio Renderer</description>
         <type>button</type>
@@ -95,6 +108,7 @@
         <id>33</id>
         <label>6002</label>
       </control>
+	  
       <control>
         <description>De-interlacing</description>
         <type>button</type>
@@ -106,6 +120,7 @@
         <id>27</id>
         <label>6003</label>
       </control>
+	  
       <control>
         <description>Aspect Ratio</description>
         <type>button</type>
@@ -116,21 +131,9 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <id>28</id>
         <label>6004</label>
-        <ondown>31</ondown>
+        <ondown>30</ondown>
       </control>
-      <control>
-        <description>Recording options</description>
-        <type>button</type>
-        <width>469</width>
-        <textureFocus>settings_button_medium_focus.png</textureFocus>
-        <textureNoFocus>-</textureNoFocus>
-        <textcolor>ff85cffe</textcolor>
-        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
-        <id>31</id>
-        <label>6007</label>
-        <hyperlink>701</hyperlink>
-        <onup>28</onup>
-      </control>
+	  
       <control>
         <description>Automatically turn TV on</description>
         <type>button</type>
@@ -141,68 +144,56 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <id>30</id>
         <label>6006</label>
+        <onup>28</onup>		
+        <ondown>34</ondown>		
       </control>
+	  
       <control>
-        <description>Timeshift usage mode</description>
+        <description>ChannelManager</description>
         <type>button</type>
-        <width>469</width>
-        <textureFocus>settings_button_medium_focus.png</textureFocus>
-        <textureNoFocus>-</textureNoFocus>
-        <textcolor>ff85cffe</textcolor>
-        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
-        <id>26</id>
-        <label>777</label>
-      </control>
-      <control>
-        <description>Timeshift Buffer</description>
-        <type>button</type>
-        <width>469</width>
-        <textureFocus>settings_button_medium_focus.png</textureFocus>
-        <textureNoFocus>-</textureNoFocus>
-        <textcolor>ff85cffe</textcolor>
-        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
-        <id>29</id>
-        <label>6005</label>
-      </control>
-      <control>
-        <description>Channelsorting</description>
-        <type>button</type>
-        <width>469</width>
-        <textureFocus>settings_button_medium_focus.png</textureFocus>
-        <textureNoFocus>-</textureNoFocus>
-        <textcolor>ff85cffe</textcolor>
-        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
-        <id>32</id>
-        <label>6008</label>
-        <hyperlink>702</hyperlink>
-      </control>
-      <control>
-        <description>DVB Guide</description>
-        <type>button</type>
-        <width>469</width>
-        <textureFocus>settings_button_medium_focus.png</textureFocus>
-        <textureNoFocus>-</textureNoFocus>
-        <textcolor>ff85cffe</textcolor>
-        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <id>34</id>
-        <label>6009</label>
-        <ondown>37</ondown>
-        <hyperlink>706</hyperlink>
-      </control>
-      <!-- last control needs ondown to itself, else it jumps to last button in first column -->
-      <control>
-        <description>XMLTV EPG Grabber</description>
-        <type>button</type>
-        <width>469</width>
+        <label>#TV.Settings.ChannelManagerName</label>
+		<hyperlink>49856</hyperlink>
+        <width>469</width>	
+        <ondown>31</ondown>		
         <textureFocus>settings_button_medium_focus.png</textureFocus>
         <textureNoFocus>-</textureNoFocus>
         <textcolor>ff85cffe</textcolor>
-        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
-        <id>37</id>
-        <label>6010</label>
-        <hyperlink>707</hyperlink>
-        <ondown>24</ondown>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>		
+		<visible>plugin.isenabled(For The Record TV)</visible>
       </control>
+	  
+      <control>
+        <description>4TRClientSettings</description>
+        <type>button</type>
+        <id>31</id>
+        <label>#TV.Settings.4TRClientSettingsName</label>
+		<hyperlink>49857</hyperlink>
+        <width>469</width>		
+        <ondown>32</ondown>		
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>		
+		<visible>plugin.isenabled(For The Record TV)</visible>
+      </control>
+	  
+      <control>
+        <description>4TRServerSettings</description>
+        <type>button</type>
+        <id>32</id>
+        <label>#TV.Settings.4TRServerSettingsName</label>
+		<hyperlink>49855</hyperlink>
+        <width>469</width>
+        <ondown>24</ondown>		
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>		
+		<visible>plugin.isenabled(For The Record TV)</visible>
+      </control>
+	  
     </control>
+	
   </controls>
 </window>
