@@ -3,29 +3,26 @@
   <id>87275</id>
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <define>#header.label:#Trakt.Translation.Lists.Label</define> 
+  <define>#header.label:Trakt</define> 
   <controls>
   
         <import>Trakt.Common.Background.xml</import>		
         <import>common.time.xml</import>
 
     <control>
-      <description>Header label</description>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
       <id>1</id>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>#header.label</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <visible>facadeview.list</visible>
-      <valign>middle</valign>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
-
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -82,167 +79,26 @@
 					<textXOff>30</textXOff>
 					<spinCanFocus>no</spinCanFocus>
         		</control>
-				
-		<control>
-			<description>Filmstrip view</description>
-			<type>filmstrip</type>
-			<dimColor>90ffffff</dimColor>
-			<id>50</id>
-			<scrollOffset>2</scrollOffset>
-			<folderPrefix></folderPrefix>
-			<folderSuffix></folderSuffix>
-			<posX>129</posX>
-			<posY>470</posY>
-			<width>1920</width>
-			<height>768</height>
-			<onup>2</onup>
-			<ondown>2</ondown>
-			<onleft>50</onleft>
-			<onright>50</onright>
-			<thumbWidth>320</thumbWidth>
-			<thumbHeight>450</thumbHeight>
-			<thumbPosX>0</thumbPosX>
-			<thumbPosY>0</thumbPosY>
-			<itemWidth>335</itemWidth>
-			<itemHeight>450</itemHeight>
-			<textureWidth>320</textureWidth>
-			<textureHeight>450</textureHeight>
-			<textYOff>-2000</textYOff>
-			<imageFolderFocus>-</imageFolderFocus>
-			<frame>-</frame>
-			<frameFocus>-</frameFocus>
-			<background>-</background>
-			<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_mask.png" />
-			<showFrame>yes</showFrame>
-			<showFolder>no</showFolder>
-			<showBackGround>no</showBackGround>
-			<showInfoImage>no</showInfoImage>
-            <scrollbarBackground>-</scrollbarBackground>
-            <scrollbarLeft>-</scrollbarLeft>
-            <scrollbarRight>-</scrollbarRight>
-            <scrollbarWidth>689</scrollbarWidth>
-			<scrollbarHeight>4</scrollbarHeight>
-            <scrollbarYOff>538</scrollbarYOff>
-            <spinPosX>-2000</spinPosX>
-			<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="120,120" center="0,700" time="200">focus</thumbAnimation>
-			<thumbAnimation effect="zoom" start="120,120" reversible="false" end="100,100" center="0,700" time="100">unfocus</thumbAnimation>
-		</control>
-	  
-      <control>
-        <description>Thumbnail Panel</description>
-        <type>thumbnailpanel</type>
-        <id>50</id>
-        <onleft>2</onleft>
-        <onright>50</onright>
-        <posX>725</posX>
-        <posY>343</posY>
-        <width>1124</width>
-        <height>773</height>
-        <scrollOffset>1</scrollOffset>
-        <itemWidth>140</itemWidth>
-        <itemHeight>202</itemHeight>
-        <textureWidth>140</textureWidth>
-        <textureHeight>202</textureHeight>
-        <thumbWidth>140</thumbWidth>
-        <thumbHeight>202</thumbHeight>
-        <thumbPosX>0</thumbPosX>
-        <thumbPosY>0</thumbPosY>
-        <textureWidthBig>215</textureWidthBig>
-        <textureHeightBig>303</textureHeightBig>
-        <itemWidthBig>215</itemWidthBig>
-        <itemHeightBig>303</itemHeightBig>
-        <thumbWidthBig>215</thumbWidthBig>
-        <thumbHeightBig>303</thumbHeightBig>
-        <thumbPosXBig>0</thumbPosXBig>
-        <thumbPosYBig>0</thumbPosYBig>
-        <zoomXPixels>0</zoomXPixels>
-        <zoomYPixels>0</zoomYPixels>
-        <hideUnfocusTexture>no</hideUnfocusTexture>
-        <renderFocusText>no</renderFocusText>
-        <renderUnfocusText>no</renderUnfocusText>
-        <showFrame>yes</showFrame>
-        <frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
-        <frameFocus>video_thumb_focus.png</frameFocus>
-        <textureMask>video_thumb_mask.png</textureMask>
-        <keepaspectratio>no</keepaspectratio>
-        <shadowAngle>90</shadowAngle>
-        <shadowDistance>50</shadowDistance>
-        <thumbZoom>no</thumbZoom>
-        <spinPosX>1672</spinPosX>
-      </control>
-	  
-        <control>
-          <description>Cover Flow view</description>
-          <type>coverflow</type>
-          <colordiffuse>90ffffff</colordiffuse>
-          <dimColor>90ffffff</dimColor>
-          <id>50</id>
-          <onup>2</onup>
-          <ondown>50</ondown>
-          <onleft>50</onleft>
-          <onright>50</onright>
-          <posX>0</posX>
-          <posY>440</posY>
-		  <width>1920</width>
-		  <height>768</height>
-          <selectedCard>0</selectedCard>
-          <cardWidth>380</cardWidth>
-          <cardHeight>540</cardHeight>
-          <angle>45</angle>
-          <sideShift>310</sideShift>
-          <sideGap>100</sideGap>
-          <sideDepth>270</sideDepth>
-          <offsetY>0</offsetY>
-          <selectedOffsetY>0</selectedOffsetY>
-          <speed>8</speed>
-          <showFrame>yes</showFrame>
-          <frame>-</frame>
-          <frameFocus>-</frameFocus>
-          <keepaspectratio>no</keepaspectratio>
-          <frameWidth>380</frameWidth>
-          <frameHeight>540</frameHeight>
-          <spinSpeed>8</spinSpeed>
-          <unfocusedAlpha>FF</unfocusedAlpha>
-          <font1>font13</font1>
-          <font2>font11</font2>
-          <label1>#title</label1>
-          <label2>#genre</label2>
-          <textColor>FFFFFFFF</textColor>
-          <remoteColor>FFFF0000</remoteColor>
-          <playedColor>FFA0D0FF</playedColor>
-          <downloadColor>FF00FF00</downloadColor>
-          <selectedColor>FFFFFFFF</selectedColor>
-          <shadowAngle>45</shadowAngle>
-          <shadowDistance>1</shadowDistance>
-          <shadowColor>FF000000</shadowColor>
-          <label1YOff>1430</label1YOff>
-          <label2YOff>1390</label2YOff>
-          <pageSize>5</pageSize>
-          <scrollbarBackground>bar_hor.png</scrollbarBackground>
-          <scrollbarLeft>mouse_left_horizontal.png</scrollbarLeft>
-          <scrollbarRight>mouse_right_horizontal.png</scrollbarRight>
-          <scrollbarYOff>632</scrollbarYOff>
-          <showScrollbar>no</showScrollbar>
-          <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png" />
-      </control>
 	  
 	</control>
 </control>
-    
-    <control>
-        <description>List Description</description>
-        <type>textboxscrollup</type>
-        <id>0</id>
-		<posX>714</posX>
-		<posY>872</posY>
-		<width>1186</width>
-		<height>160</height>
+
+	<control>
+		<description>Summary</description>
+		<type>textboxscrollup</type>
+		<id>0</id>
+		<posX>780</posX>
+		<posY>500</posY>
+		<width>931</width>
+		<height>150</height>
+		<seperator>-----------------------------------------------------------------------------------</seperator>
         <label>#Trakt.List.Description</label>
-        <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-        <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
         <visible>!string.equals(#Trakt.List.Description,N/A)</visible>
-    </control>
-	
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+	</control>
+		
 		<import>common.overlay.xml</import>
 		
 	</controls>

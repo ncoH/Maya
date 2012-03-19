@@ -3,7 +3,7 @@
 	<id>87273</id>
 	<defaultcontrol>2</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<define>#header.label:#Trakt.Translation.Plugins.Label</define>
+	<define>#header.label:Trakt</define>
 	<define>#defaultcontrol:2</define>
 	<define>#defaultcontrol.onright:9996</define>
 	<controls>
@@ -13,7 +13,21 @@
         <import>common.time.xml</import>
 
     <control>
-		<description>Header Label</description>	
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+
+    <control>
+		<description>Settings Label</description>	
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>
 		<type>label</type>
@@ -22,7 +36,7 @@
 		<posY>175</posY>
 		<width>702</width>
 		<height>140</height>
-		<label>#header.label</label>
+		<label>#Trakt.Translation.Plugins.Label</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light40</font>
 		<valign>middle</valign>

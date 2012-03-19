@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>7978</id>
   <defaultcontrol>70</defaultcontrol>
@@ -7,22 +6,25 @@
   <define>#header.label:World Clock</define>
   <define>#header.background:hover_worldclock.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
       <description>Header label</description>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>#header.label</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+
+	
     <!-- *** Main Clock *** -->
     <control>
       <description>Main Clock</description>
@@ -37,6 +39,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Background Frame</description>
       <type>image</type>
@@ -49,6 +52,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Main Clock indicator</description>
       <type>image</type>
@@ -62,6 +66,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Main Clock button</description>
       <type>button</type>
@@ -80,6 +85,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Main Clock DateTime</description>
       <type>label</type>
@@ -93,6 +99,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Main Clock Description</description>
       <type>label</type>
@@ -105,6 +112,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <!-- *** Additional Clock 1 *** -->
     <control>
       <description>Additional Clock 1</description>
@@ -118,6 +126,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Additional Clock 1 indicator</description>
       <type>image</type>
@@ -131,6 +140,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Additional Clock 1 button</description>
       <type>button</type>
@@ -148,6 +158,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Background Frame</description>
       <type>image</type>
@@ -160,6 +171,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Additional Clock 1 DateTime</description>
       <type>label</type>
@@ -173,6 +185,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Additional Clock 1 Description</description>
       <type>textboxscrollup</type>
@@ -187,6 +200,8 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
+	
     <!-- *** Additional Clock 2 *** -->
     <control>
       <description>Additional Clock 2</description>
@@ -200,6 +215,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Additional Clock 2 indicator</description>
       <type>image</type>
@@ -213,6 +229,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Additional Clock 2 button</description>
       <type>button</type>
@@ -230,6 +247,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Background Frame</description>
       <type>image</type>
@@ -242,6 +260,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Additional Clock 2 DateTime</description>
       <type>label</type>
@@ -255,6 +274,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Additional Clock 2 Description</description>
       <type>textboxscrollup</type>
@@ -269,6 +289,8 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
+	
     <!-- *** Additional Clock 3 *** -->
     <control>
       <description>Additional Clock 3</description>
@@ -282,6 +304,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Additional Clock 3 indicator</description>
       <type>image</type>
@@ -295,6 +318,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Additional Clock 3 button</description>
       <type>button</type>
@@ -312,6 +336,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Background Frame</description>
       <type>image</type>
@@ -324,6 +349,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Additional Clock 3 DateTime</description>
       <type>label</type>
@@ -337,6 +363,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>Additional Clock 3 Description</description>
       <type>textboxscrollup</type>
@@ -351,6 +378,8 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
+	
     <!-- *** Additional Clock 4 *** -->
     <control>
       <description>Additional Clock 4</description>
@@ -363,6 +392,7 @@
       <texture>-</texture>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Additional Clock 4 indicator</description>
       <type>image</type>
@@ -375,6 +405,7 @@
       <texture>-</texture>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Additional Clock 4 button</description>
       <type>button</type>
@@ -391,6 +422,7 @@
       <onright>72</onright>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Background Frame</description>
       <type>image</type>
@@ -402,6 +434,7 @@
       <texture>WorldClock/worldclock_frame.png</texture>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Additional Clock 4 DateTime</description>
       <type>label</type>
@@ -414,6 +447,7 @@
       <textcolor>ff6aa5cb</textcolor>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Additional Clock 4 Description</description>
       <type>label</type>
@@ -425,6 +459,8 @@
       <font>font10</font>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
+	
     <!-- *** Additional Clock 5 *** -->
     <control>
       <description>Additional Clock 5</description>
@@ -437,6 +473,7 @@
       <texture>-</texture>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Additional Clock 5 indicator</description>
       <type>image</type>
@@ -449,6 +486,7 @@
       <texture>-</texture>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Additional Clock 5 button</description>
       <type>button</type>
@@ -465,6 +503,7 @@
       <onright>73</onright>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Background Frame</description>
       <type>image</type>
@@ -476,6 +515,7 @@
       <texture>WorldClock/worldclock_frame.png</texture>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Additional Clock 5 DateTime</description>
       <type>label</type>
@@ -488,6 +528,7 @@
       <textcolor>ff6aa5cb</textcolor>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Additional Clock 5 Description</description>
       <type>label</type>
@@ -499,6 +540,8 @@
       <font>font10</font>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
+	
     <!-- *** Additional Clock 6 *** -->
     <control>
       <description>Additional Clock 6</description>
@@ -511,6 +554,7 @@
       <texture>-</texture>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Additional Clock 6 indicator</description>
       <type>image</type>
@@ -523,6 +567,7 @@
       <texture>-</texture>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Additional Clock 6 button</description>
       <type>button</type>
@@ -539,6 +584,7 @@
       <onright>71</onright>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Background Frame</description>
       <type>image</type>
@@ -550,6 +596,7 @@
       <texture>WorldClock/worldclock_frame.png</texture>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Additional Clock 6 DateTime</description>
       <type>label</type>
@@ -562,6 +609,7 @@
       <textcolor>ff6aa5cb</textcolor>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>Additional Clock 6 Description</description>
       <type>label</type>
@@ -573,5 +621,6 @@
       <font>font10</font>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
   </controls>
 </window>

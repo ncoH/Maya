@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>7777</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,22 +6,24 @@
   <define>#header.label:19101</define>
   <define>#header.background:hover_mynumberplace.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
       <description>Header label</description>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>#header.label</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>button group</description>
       <type>group</type>
@@ -89,6 +90,7 @@
         <textalign>right</textalign>
       </control>
     </control>
+	
     <control>
       <description>info group</description>
       <type>group</type>
@@ -105,6 +107,7 @@
         <texture>tetris\scoreboard.png</texture>
         <colordiffuse>60ffffff</colordiffuse>
       </control>
+	  
       <control>
         <description>Highscore: label</description>
         <type>label</type>
@@ -113,6 +116,7 @@
         <posY>667</posY>
         <label>19008</label>
       </control>
+	  
       <control>
         <description>Time</description>
         <type>label</type>
@@ -123,6 +127,7 @@
         <align>right</align>
         <label>#numberplace.time</label>
       </control>
+	  
       <control>
         <description>Rank1: label</description>
         <type>label</type>
@@ -131,6 +136,7 @@
         <posY>720</posY>
         <label>#numberplace.name1</label>
       </control>
+	  
       <control>
         <description>Rank1 Score: label</description>
         <type>label</type>
@@ -141,6 +147,7 @@
         <align>right</align>
         <label>#numberplace.score1</label>
       </control>
+	  
       <control>
         <description>Rank2 Name: label</description>
         <type>label</type>
@@ -149,6 +156,7 @@
         <posY>780</posY>
         <label>#numberplace.name2</label>
       </control>
+	  
       <control>
         <description>Rank2 Score: label</description>
         <type>label</type>
@@ -159,6 +167,7 @@
         <align>right</align>
         <label>#numberplace.score2</label>
       </control>
+	  
       <control>
         <description>Rank3 Name: label</description>
         <type>label</type>
@@ -167,6 +176,7 @@
         <posY>839</posY>
         <label>#numberplace.name3</label>
       </control>
+	  
       <control>
         <description>Rank3 Score: label</description>
         <type>label</type>
@@ -178,6 +188,7 @@
         <label>#numberplace.score3</label>
       </control>
     </control>
+	
     <control>
       <description>current playtime Label</description>
       <type>fadelabel</type>
@@ -190,6 +201,7 @@
       <label>#numberplace.time</label>
       <font>Segoe Light22</font>
     </control>
+	
     <control>
       <description>BarVerGroup</description>
       <type>group</type>
@@ -231,6 +243,7 @@
         <texture>bar_vert.png</texture>
       </control>
     </control>
+	
     <control>
       <description>BarHorGroup</description>
       <type>group</type>
@@ -259,6 +272,7 @@
         <texture>bar_hor.png</texture>
       </control>
     </control>
+	
     <control>
       <description>TheButton</description>
       <type>group</type>
@@ -1660,6 +1674,8 @@
         <textureNoFocus>icon_empty_nofocus.png</textureNoFocus>
       </control>
     </control>
+	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

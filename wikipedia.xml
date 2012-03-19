@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>4711</id>
   <defaultcontrol>10</defaultcontrol>
@@ -7,6 +6,7 @@
   <define>#header.label:2516</define>
   <define>#header.background:hover_wikipedia.png</define>
   <controls>
+  
     <control>
       <description>Alternate BG</description>
       <type>image</type>
@@ -16,6 +16,7 @@
       <texture>background_thumbs.png</texture>
       <visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -27,6 +28,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -38,22 +40,23 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <import>common.time.xml</import>
+	
     <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
       <id>1</id>
-      <posX>608</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>#header.label</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <align>center</align>
-      <valign>middle</valign>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -170,6 +173,7 @@
         </control>
       </control>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>label</type>
@@ -184,6 +188,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
@@ -197,6 +202,7 @@
       <font>font16</font>
       <align>left</align>
     </control>
+	
     <control>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
@@ -214,9 +220,9 @@
       <spinHeight>46</spinHeight>
       <onleft>10</onleft>
       <onright>10</onright>
-      <visible aloowhiddenfocus="true">
-      </visible>
+      <visible aloowhiddenfocus="true"></visible>
     </control>
+	
     <control>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
@@ -234,5 +240,6 @@
       <centered>yes</centered>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
   </controls>
 </window>
