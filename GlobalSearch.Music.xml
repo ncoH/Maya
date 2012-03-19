@@ -185,6 +185,7 @@
           <posX>763</posX>
           <posY>246</posY>
           <layout>StackLayout(0, Vertical, true)</layout>
+		  
           <control>
             <id>2</id>
             <description>Searchphrase to use</description>
@@ -201,6 +202,7 @@
             <textXOff>35</textXOff>
             <textYOff>16</textYOff>
           </control>
+		  
           <control>
             <id>7</id>
             <description>Last searches</description>
@@ -217,6 +219,7 @@
             <textXOff>35</textXOff>
             <textYOff>16</textYOff>
           </control>
+		  
           <control>
             <id>6</id>
             <description>Search fields (Song, Album, Artist, etc.)</description>
@@ -233,6 +236,7 @@
             <textXOff>35</textXOff>
             <textYOff>16</textYOff>
           </control>
+		  
           <control>
             <id>3</id>
             <description>Case sensitivity</description>
@@ -251,9 +255,10 @@
             <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
             <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
           </control>
+		  
           <control>
             <id>10</id>
-            <description>Searchtype (start, contain, end)</description>
+            <description>Searchtype</description>
             <type>button</type>
             <onleft>50</onleft>
             <onright>50</onright>
@@ -264,13 +269,10 @@
             <textureFocus>hiddenmenu_item_selected.png</textureFocus>
             <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
             <label>#SkinTranslation.Translations.global.search.Searchtype.Label</label>
-            <textXOff>14</textXOff>
+            <textXOff>35</textXOff>
             <textYOff>16</textYOff>
-            <texturebg>hiddenmenu_item_selected.png</texturebg>
-            <textYOff2>16</textYOff2>
-            <textXOff2>35</textXOff2>
-            <selected>2</selected>
           </control>
+		  
           <control>
             <id>8</id>
             <description>Jump to MyMusic</description>
@@ -288,6 +290,7 @@
             <textXOff>35</textXOff>
             <textYOff>16</textYOff>
           </control>
+		  
           <control>
             <id>9</id>
             <description>Jump to PlayingNow</description>
@@ -304,6 +307,7 @@
             <textXOff>35</textXOff>
             <textYOff>16</textYOff>
           </control>
+		  
           <control>
             <id>10</id>
             <description>Lyrics</description>
@@ -322,6 +326,7 @@
             <textXOff>35</textXOff>
             <textYOff>16</textYOff>
           </control>
+		  
         </control>
       </control>
     </control>

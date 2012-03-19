@@ -14,6 +14,7 @@
   <define>#useRandomScoreCenterUserFanart:Yes</define>
   <define>#useRandomTVUserFanart:Yes</define>
   <define>#useRandomTVSeriesFanart:Yes</define>
+  <define>#header.label:Home</define> 
   <allowoverlay>yes</allowoverlay>
   <disabletopbar>no</disabletopbar>
   <controls>
@@ -976,6 +977,20 @@
         <visible>!string.equals(#subitem5,)+[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
       </control>
     </control>
+
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
 	
     <!--Weather-->
     <control>
@@ -986,8 +1001,8 @@
       <posY>914</posY>
       <height>126</height>
       <width>126</width>
-      <texture>Weather/128/#infoservice.weather.today.img.big.filenamewithext</texture>
-      <visible>plugin.isenabled(InfoService)+string.contains(#maya.weather.visible,yes)</visible>
+      <texture>#WorldWeather.TodayIconImage</texture>
+      <visible>plugin.isenabled(World Weather)+string.contains(#maya.weather.visible,yes)</visible>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
     </control>
@@ -998,9 +1013,9 @@
       <posX>990</posX>
       <posY>921</posY>
       <width>702</width>
-      <label>#infoservice.weather.today.temp</label>
+      <label>#WorldWeather.TodayTemperature</label>
       <font>Segoe Light22</font>
-      <visible>plugin.isenabled(InfoService)+string.contains(#maya.weather.visible,yes)</visible>
+      <visible>plugin.isenabled(World Weather)+string.contains(#maya.weather.visible,yes)</visible>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
     </control>
@@ -1083,7 +1098,7 @@
     <import>BasicHome.recentlyaddedPictures.xml</import>
     <import>BasicHome.recentlyaddedRecordings.xml</import>
     <import>BasicHome.Fanart.Scraper.xml</import>
-    <import>BasicHome.forcast.Weather.xml</import>
+<!--     <import>BasicHome.forcast.Weather.xml</import> -->
 	
   </controls>
 </window>

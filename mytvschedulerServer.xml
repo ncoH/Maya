@@ -306,7 +306,6 @@
       <id>14</id>
       <posX>780</posX>
       <posY>302</posY>
-      <width>925</width>	  
       <textcolor>85cffe</textcolor>
       <font>Segoe Light18</font>
       <label>#TV.Scheduled.Time #TV.Scheduled.Genre</label>

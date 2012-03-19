@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
-  
     <!-- List View-->
-	
+    <!--Video-->
     <!-- Source -->
     <control>
       <description>BluRay</description>
@@ -96,7 +96,6 @@
       <texture>Logos\source\cam.png</texture>
       <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.contains(#MovingPictures.LocalMedia.FullPath,cam)</visible>
     </control>
-	
     <!-- Videocodec -->
     <control>
       <description>Videocodecs</description>
@@ -111,7 +110,6 @@
       <texture>Logos\video\#MovingPictures.LocalMedia.videocodec.png</texture>
       <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)</visible>
     </control>
-	
     <!-- Audio -->
     <control>
       <description>Dolby Digital 5.1</description>
@@ -217,7 +215,6 @@
       <texture>Logos\audio\pcm_20.png</texture>
       <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,PCM)+string.equals(#MovingPictures.LocalMedia.audiochannels,stereo)</visible>
     </control>
-	
     <!-- Resolution -->
     <control>
       <description>1080p</description>
@@ -284,7 +281,6 @@
       <texture>Logos\resolution\540.png</texture>
       <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,540)</visible>
     </control>
-	
     <!-- Aspectratio -->
     <control>
       <description>2.35 / widescreen</description>
@@ -314,7 +310,6 @@
       <align>left</align>
       <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)</visible>
     </control>
-	
     <!-- rating 
 	<control>
 		<type>image</type>
@@ -343,8 +338,8 @@
 		<font>font12</font>
 		<textcolor>ffffff</textcolor>
 		<visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)</visible>
-	</control>-->
-
+	</control>
+-->
     <!-- subtitles -->
     <control>
       <type>image</type>
@@ -370,6 +365,5 @@
       <texture>Logos\nosubtitles.png</texture>
       <visible>facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.hassubtitles,False)</visible>
     </control>
-	
   </controls>
 </window>

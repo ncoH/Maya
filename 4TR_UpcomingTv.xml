@@ -1,29 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>49848</id>
-	<defaultcontrol>10</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<define>#header.label:646</define>
-	<define>#header.background:hover_my tv.png</define>
+  <id>49848</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:646</define>
+  <define>#header.background:hover_my tv.png</define>
   <controls>
   
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
 	
     <control>
-      <description>Header Label</description>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>fadelabel</type>
       <id>1</id>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>773</width>
-      <height>140</height>
-      <label>#header.label</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <valign>middle</valign>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
 	
     <control>
@@ -56,7 +54,7 @@
     <control>
       <type>label</type>
       <description>Number of Files Label</description>
-      <id>0</id>
+      <id>1</id>
       <posX>1709</posX>
       <posY>973</posY>
       <align>right</align>
@@ -129,7 +127,7 @@
             <onleft>10</onleft>
             <onright>10</onright>
             <onup>11</onup>
-            <ondown>9</ondown>
+            <ondown>12</ondown>
             <label>Type:</label>
             <textureFocus>hiddenmenu_item_selected.png</textureFocus>
             <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
@@ -140,14 +138,33 @@
           </control>
 		  
 		<control>
-			<type>sortbutton</type>
-			<description>Program sort button</description>
-			<id>9</id>
+			<type>togglebutton</type>
+			<description>group by schedule</description>
+			<id>12</id>
 			<onleft>10</onleft>
 			<onright>10</onright>
 			<onup>2</onup>
-			<ondown>12</ondown>
-			<label>Sort</label>
+			<ondown>9</ondown>
+			<label>group by schedule</label>
+            <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+            <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+            <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+            <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+            <width>392</width>
+            <height>68</height>
+            <textXOff>35</textXOff>
+            <textYOff>16</textYOff>		
+		</control>
+	  
+		<control>
+			<type>sortbutton</type>
+			<description>Sort button</description>
+			<id>9</id>
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<onup>12</onup>
+			<ondown>11</ondown>
+			<label>sort</label>
             <textureFocus>hiddenmenu_item_selected.png</textureFocus>
             <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
             <width>392</width>
@@ -155,35 +172,16 @@
             <textXOff>35</textXOff>
             <textYOff>16</textYOff>
             <offsetSortButtonX>337</offsetSortButtonX>
-            <offsetSortButtonY>19</offsetSortButtonY>	
+            <offsetSortButtonY>19</offsetSortButtonY>		
 		</control>
-
-		<control>
-			<type>togglebutton</type>
-			<description>group by schedule</description>
-			<id>12</id>
-			<onleft>10</onleft>
-			<onright>10</onright>
-			<onup>9</onup>
-			<ondown>11</ondown>
-			<label>Group by Schedule</label>
-            <width>392</width>
-            <height>68</height>
-            <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-            <textXOff>33</textXOff>
-            <textYOff>16</textYOff>
-            <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-            <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
-		</control>
-		
+	  
 		<control>
 			<type>button</type>
 			<description>new</description>
 			<id>11</id>
 			<onleft>10</onleft>
 			<onright>10</onright>
-			<onup>12</onup>
+			<onup>9</onup>
 			<ondown>2</ondown>
 			<label>617</label>
             <textureFocus>hiddenmenu_item_selected.png</textureFocus>
@@ -191,12 +189,12 @@
             <width>392</width>
             <height>68</height>
             <textXOff>35</textXOff>
-            <textYOff>16</textYOff>	
-		</control>
-		
-        </control>
-      </control>
+            <textYOff>16</textYOff>		
+		</control>	
+	  
     </control>
+  </control>
+</control>
 	
     <control>
       <description>listcontrol</description>

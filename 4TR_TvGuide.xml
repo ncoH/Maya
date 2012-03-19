@@ -9,22 +9,23 @@
   <controls>
   
     <import>common.window.background.xml</import>
+    <import>common.time.xml</import>
 	
     <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
       <id>1</id>
-      <posX>112</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>#header.label</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
 	
-    <control>
+<!--     <control>
       <description>Date</description>
       <type>label</type>
       <id>0</id>
@@ -36,7 +37,7 @@
       <label>#time</label>
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
-    </control>
+    </control> -->
 	
     <control>
       <description>TVGUIDE Panel</description>

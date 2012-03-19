@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <id>1</id>
-  <defaultcontrol>2</defaultcontrol>
+  <defaultcontrol>6</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <define>#header.label:Television</define>
   <define>#header.background:hover_my tv.png</define>
@@ -14,15 +14,14 @@
       <id>1</id>
       <type>label</type>
       <description>Header label</description>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>#header.label</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
 	
     <control>
@@ -48,12 +47,30 @@
       <posY>253</posY>
       <width>394</width>
       <control>
+        <description>TV On/Off button</description>
+        <type>togglebutton</type>
+        <id>6</id>
+        <label>707</label>
+        <onup>9</onup>
+        <ondown>2</ondown>
+        <onright>99</onright>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
+        <textalign>right</textalign>
+        <AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
+        <AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
+        <textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
+      </control>	  
+      <control>
         <description>TVGuide</description>
         <type>button</type>
         <id>2</id>
         <label>600</label>
         <hyperlink>600</hyperlink>
-        <onup>9</onup>
+        <onup>6</onup>
         <ondown>3</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
@@ -103,7 +120,7 @@
         <id>5</id>
         <label>602</label>
         <onup>4</onup>
-        <ondown>6</ondown>
+        <ondown>7</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
         <width>394</width>
@@ -114,29 +131,11 @@
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
       <control>
-        <description>TV On/Off button</description>
-        <type>togglebutton</type>
-        <id>6</id>
-        <label>707</label>
-        <onup>5</onup>
-        <ondown>7</ondown>
-        <onright>99</onright>
-        <width>394</width>
-        <textXOff>32</textXOff>
-        <height>64</height>
-        <textYOff>14</textYOff>
-        <textalign>right</textalign>
-        <AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
-        <AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
-        <textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
-        <textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
-      </control>
-      <control>
         <description>UpcomingPrograms</description>
         <type>button</type>
         <id>7</id>
         <label>603</label>
-        <onup>6</onup>
+        <onup>5</onup>
         <ondown>8</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
@@ -169,7 +168,7 @@
         <id>9</id>
         <label>1441</label>
         <onup>8</onup>
-        <ondown>2</ondown>
+        <ondown>6</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
         <width>394</width>
@@ -287,7 +286,7 @@
         <id>112</id>
         <description>On Next Program Title</description>
         <type>fadelabel</type>
-        <posX>1000</posX>
+        <posX>990</posX>
         <posY>995</posY>
         <width>600</width>
         <font>font12</font>

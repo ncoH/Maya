@@ -205,48 +205,7 @@
           <scrollbarYOff>639</scrollbarYOff>
           <showScrollbar>no</showScrollbar>
 		  <keepaspectratio>no</keepaspectratio>		  
-          <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png">
-          </cards>
-          <subitems>
-            <subitem>                
-              <![CDATA[                
-			  <controls>
-              <control>
-                <description>background</description>
-                <type>image</type>
-                <posX>0</posX>
-                <posY>0</posY>
-                <width>300</width>
-                <height>300</height>
-                <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png">background.png</texture>
-              </control>
-			  
-              <control>
-                <description>Musik Details</description>
-                <type>label</type>
-                <posX>30</posX>
-                <posY>10</posY>
-                <width>210</width>
-                <label>Music Details</label>
-                <font>font13</font>
-                <textcolor>FFFFFFFF</textcolor>
-              </control>
-			  
-              <control>
-                <description>genre</description>
-                <type>label</type>
-                <posX>30</posX>
-                <posY>40</posY>
-                <width>210</width>
-                <label>#selecteditem</label>
-                <font>font10</font>
-                <textcolor>FFFFFFFF</textcolor>
-              </control>
-              
-                </controls>
-              ]]>
-              </subitem>
-          </subitems>
+          <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png"></cards>
         </control>
 		
         <control>

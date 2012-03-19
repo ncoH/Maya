@@ -203,23 +203,6 @@
           <scrollbarYOff>639</scrollbarYOff>
           <showScrollbar>no</showScrollbar>
           <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png" />
-		  <subitems>
-		  <subitem>
-							<![CDATA[
-                <controls>
-                  <control>
-                    <description>background</description>
-                    <type>image</type>
-                    <posX>0</posX>
-                    <posY>0</posY>
-                    <width>385</width>
-                    <height>280</height>
-                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png">background.png</texture>
-                  </control>
-                </controls>
-              ]]>
-		</subitem>
-		</subitems>
     </control>
 		
         <control>

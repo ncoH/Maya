@@ -4,6 +4,7 @@
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <disabletopbar>no</disabletopbar>
+  <define>#header.label:Home</define> 
   <controls>
   
     <control>
@@ -70,32 +71,19 @@
     </control>
 	
     <import>common.time.xml</import>
-	
-    <!-- Date and Time -->
+
     <control>
-      <description>Date label</description>
+      <id>1</id>
       <type>label</type>
-      <posX>992</posX>
-      <posY>984</posY>
-      <width>702</width>
-      <label>#date</label>
-      <font>Segoe Light12</font>
-      <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
-      <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
-    </control>
-	
-    <control>
-      <description>Time</description>
-      <type>label</type>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="500">WindowClose</animation>
-      <id>201</id>
-      <posX>1128</posX>
-      <posY>1080</posY>
-      <label>#time</label>
-      <align>left</align>
-      <font>font12</font>
-      <textcolor>6aa5cb</textcolor>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
 	
     <!-- Left Buttons -->
@@ -195,28 +183,7 @@
 					<label>Exit</label>
 					<textXOff>-2000</textXOff>
 				</control>
-<!--				
-				<control>
-					<description>Sleepcontrol Button</description>
-					<type>button</type>
-					<id>5</id>
-					<posX>15</posX>
-					<posY>550</posY>
-					<width>93</width>
-					<height>96</height>
-					<textureNoFocus>timer_button_unfocus.png</textureNoFocus>
-					<textureFocus>timer_button_focus.png</textureFocus>
-					<hyperlink>7969</hyperlink>
-					<onright>901</onright>
-					<visible>!string.equals(#SleepControl.Text,)+plugin.isenabled(Sleep Control)</visible>
-					<onup>4</onup>
-					<ondown>2</ondown>
-					<label>#SkinTranslation.Translations.SleepControl.Label</label>
-					<textXOff>-2000</textXOff>
-					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
-					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
-				</control>
--->
+
 			</control>
 		</control>
 	
@@ -229,8 +196,8 @@
       <posY>914</posY>
       <height>126</height>
       <width>126</width>
-      <texture>Weather/128/#infoservice.weather.today.img.big.filenamewithext</texture>
-      <visible>plugin.isenabled(InfoService)+string.contains(#maya.weather.visible,yes)</visible>
+      <texture>#WorldWeather.TodayIconImage</texture>
+      <visible>plugin.isenabled(World Weather)</visible>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
     </control>
@@ -241,9 +208,21 @@
       <posX>990</posX>
       <posY>921</posY>
       <width>702</width>
-      <label>#infoservice.weather.today.temp</label>
+      <label>#WorldWeather.TodayTemperature</label>
       <font>Segoe Light22</font>
-      <visible>plugin.isenabled(InfoService)+string.contains(#maya.weather.visible,yes)</visible>
+      <visible>plugin.isenabled(World Weather)</visible>
+      <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Date label</description>
+      <type>label</type>
+      <posX>992</posX>
+      <posY>984</posY>
+      <width>702</width>
+      <label>#date</label>
+      <font>Segoe Light12</font>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
     </control>

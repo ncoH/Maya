@@ -1,29 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>49851</id>
-	<defaultcontrol>2</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<define>#header.label:Radio Search</define>  
-	<define>#header.background:hover_my radio.png</define>	
+  <id>49851</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:Radio/Search</define>
+  <define>#header.background:hover_my radio.png</define>
   <controls>
   
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
 	
     <control>
-      <description>Header Label</description>
-      <type>fadelabel</type>
       <id>1</id>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>#header.label</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <valign>middle</valign>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
 	
     <control>
@@ -80,86 +78,47 @@
       <valign>middle</valign>
     </control>
 	
-	<control>
-		<type>group</type>
-		<description>group element</description>
-		<posX>150</posX>
-		<posY>190</posY>
-		<layout>StackLayout</layout>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="250">WindowClose</animation>
-
     <control>
-      <type>button</type>
-      <description>Search by title</description>
-      <id>2</id>
-      <onleft>10</onleft>
-      <onright>10</onright>
-      <onup>4</onup>
-      <ondown>6</ondown>
-      <label>137</label>
-      <textalign>right</textalign>
+      <type>group</type>
+      <description>group element</description>
+      <posX>210</posX>
+      <posY>267</posY>
+      <layout>StackLayout</layout>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <control>
+        <type>button</type>
+        <description>Search by title</description>
+        <id>2</id>
+        <onleft>10</onleft>
+        <onright>10</onright>
+        <onup>4</onup>
+        <ondown>3</ondown>
+        <label>6032</label>
+        <textalign>right</textalign>
+      </control>
+      <control>
+        <type>button</type>
+        <id>3</id>
+        <onleft>10</onleft>
+        <onright>10</onright>
+        <onup>2</onup>
+        <ondown>4</ondown>
+        <label>192</label>
+        <textalign>right</textalign>
+      </control>
+      <control>
+        <type>sortbutton</type>
+        <id>4</id>
+        <onleft>10</onleft>
+        <onright>10</onright>
+        <onup>3</onup>
+        <ondown>2</ondown>
+        <label>620</label>
+        <textalign>right</textalign>
+        <offsetSortButtonX>29</offsetSortButtonX>
+      </control>
     </control>
-
-    <control>
-      <type>button</type>
-      <description>Search mode</description>
-      <id>6</id>
-      <onleft>10</onleft>
-      <onright>10</onright>
-      <onup>2</onup>
-      <ondown>7</ondown>
-      <label></label>
-      <textalign>right</textalign>
-    </control>
-
-    <control>
-      <type>button</type>
-      <description>channels</description>
-      <id>7</id>
-      <onleft>10</onleft>
-      <onright>10</onright>
-      <onup>6</onup>
-      <ondown>8</ondown>
-      <label></label>
-      <textalign>right</textalign>
-    </control>
-
-    <control>
-      <type>button</type>
-      <description>categories</description>
-      <id>8</id>
-      <onleft>10</onleft>
-      <onright>10</onright>
-      <onup>7</onup>
-      <ondown>3</ondown>
-      <label></label>
-      <textalign>right</textalign>
-    </control>
-
-    <control>
-      <type>button</type>
-      <id>3</id>
-      <onleft>10</onleft>
-      <onright>10</onright>
-      <onup>8</onup>
-      <ondown>4</ondown>
-      <label>192</label>
-      <textalign>right</textalign>
-    </control>
-
-    <control>
-      <type>sortbutton</type>
-      <id>4</id>
-      <onleft>10</onleft>
-      <onright>10</onright>
-      <onup>3</onup>
-      <ondown>2</ondown>
-      <label>620</label>
-      <textalign>right</textalign>
-      <offsetSortButtonX>21</offsetSortButtonX>
-    </control>
-  </control>
 	
     <control>
       <type>group</type>

@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>2600</id>
   <defaultcontrol>4</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <define>#header.label:8</define>
   <define>#header.background:hover_my weather.png</define>
-  <controls>
+<controls>
   
     <control>
       <description>BG</description>
@@ -1136,9 +1135,11 @@
       <id>1</id>
       <type>image</type>
       <posX>0</posX>
-      <posY>457</posY>
+      <posY>440</posY>
       <texture>hiddenmenu_tab.png</texture>
       <visible>Control.HasFocus(4)</visible>
+      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
     </control>
 	
     <import>common.time.xml</import>

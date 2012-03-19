@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>3012</id>
   <defaultcontrol>99</defaultcontrol>
@@ -7,8 +6,10 @@
   <define>#header.label:200041</define>
   <define>#header.background:hover_my tv.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>fadelabel</type>
@@ -23,6 +24,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -35,6 +37,7 @@
       <height>788</height>
       <texture>listcontrol_bg_recordings.png</texture>
     </control>
+	
     <control>
       <description>TV background</description>
       <type>image</type>
@@ -47,6 +50,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>video window</description>
       <type>videowindow</type>
@@ -62,6 +66,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Channel</description>
       <type>label</type>
@@ -74,6 +79,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Channel name</description>
       <type>label</type>
@@ -85,6 +91,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Provider</description>
       <type>label</type>
@@ -97,6 +104,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Provider name</description>
       <type>label</type>
@@ -108,6 +116,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Signal level</description>
       <type>label</type>
@@ -119,6 +128,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Signal level 0</description>
       <type>label</type>
@@ -130,6 +140,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Signal level 100</description>
       <type>label</type>
@@ -142,6 +153,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Progress background</description>
       <type>image</type>
@@ -152,6 +164,7 @@
       <height>4</height>
       <texture>blue.png</texture>
     </control>
+	
     <control>
       <description>Signal level progress bar</description>
       <type>progress</type>
@@ -169,6 +182,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Signal Quality</description>
       <type>label</type>
@@ -180,6 +194,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Signal level 0</description>
       <type>label</type>
@@ -191,6 +206,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Signal level 100</description>
       <type>label</type>
@@ -203,6 +219,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Progress background</description>
       <type>image</type>
@@ -213,6 +230,7 @@
       <height>4</height>
       <texture>blue.png</texture>
     </control>
+	
     <control>
       <description>Signal quality progress bar</description>
       <type>progress</type>
@@ -230,6 +248,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Band</description>
       <type>label</type>
@@ -241,6 +260,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Band value</description>
       <type>label</type>
@@ -251,6 +271,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Band width</description>
       <type>label</type>
@@ -630,6 +651,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Has CI Menu</description>
       <type>fadelabel</type>
@@ -642,6 +664,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Has CI Menu value</description>
       <type>label</type>
@@ -652,6 +675,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Discontinuities</description>
       <type>fadelabel</type>
@@ -664,6 +688,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Discontinuities value</description>
       <type>label</type>
@@ -674,5 +699,6 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <id>30</id>
-  <defaultcontrol>2</defaultcontrol>
+  <defaultcontrol>6</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <define>#header.label:Radio</define>
   <define>#header.background:hover_my radio.png</define>
@@ -14,15 +14,14 @@
       <id>1</id>
       <type>label</type>
       <description>Header label</description>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>#header.label</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
 	
     <control>
@@ -48,11 +47,29 @@
       <posY>253</posY>
       <width>394</width>
       <control>
+        <description>TV On/Off button</description>
+        <type>togglebutton</type>
+        <id>6</id>
+        <label>707</label>
+        <onup>8</onup>
+        <ondown>2</ondown>
+        <onright>99</onright>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
+        <textalign>right</textalign>
+        <AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
+        <AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
+        <textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
+      </control>	  
+      <control>
         <description>RadioGuide</description>
         <type>button</type>
         <id>2</id>
         <label>600</label>
-        <onup>9</onup>
+        <onup>6</onup>
         <ondown>3</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
@@ -102,7 +119,7 @@
         <id>5</id>
         <label>602</label>
         <onup>4</onup>
-        <ondown>6</ondown>
+        <ondown>7</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
         <width>394</width>
@@ -113,29 +130,11 @@
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
       <control>
-        <description>TV On/Off button</description>
-        <type>togglebutton</type>
-        <id>6</id>
-        <label>707</label>
-        <onup>5</onup>
-        <ondown>7</ondown>
-        <onright>99</onright>
-        <width>394</width>
-        <textXOff>32</textXOff>
-        <height>64</height>
-        <textYOff>14</textYOff>
-        <textalign>right</textalign>
-        <AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
-        <AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
-        <textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
-        <textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
-      </control>
-      <control>
         <description>UpcomingPrograms</description>
         <type>button</type>
         <id>7</id>
         <label>603</label>
-        <onup>6</onup>
+        <onup>5</onup>
         <ondown>8</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
@@ -152,7 +151,7 @@
         <id>8</id>
         <label>692</label>
         <onup>7</onup>
-        <ondown>9</ondown>
+        <ondown>6</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
         <width>394</width>
@@ -162,7 +161,7 @@
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
-      <control>
+<!--       <control>
         <description>Teletext</description>
         <type>button</type>
         <id>9</id>
@@ -177,7 +176,7 @@
         <textYOff>14</textYOff>
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-      </control>
+      </control> -->
     </control>
 	
     <control>
