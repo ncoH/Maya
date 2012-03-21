@@ -155,7 +155,7 @@
 				<spinCanFocus>no</spinCanFocus>
         		</control>
          </control>
-	
+	</control>	
     
  		<control>
 			<description>Network</description>
@@ -497,7 +497,7 @@
 				<onright>50</onright>
 			</control>
 		</control>
-    </control>
+    </control>	
 	
     <control>
       <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
