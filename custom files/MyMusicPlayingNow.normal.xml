@@ -326,7 +326,7 @@
       <id>0</id>
       <description>up next label</description>
       <type>label</type>
-      <visible>Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)</visible>
+      <visible>Control.HasFocus(5101) | Control.HasFocus(5104)</visible>
       <posX>491</posX>
       <posY>877</posY>
       <font>Segoe Light14</font>
@@ -340,7 +340,7 @@
       <id>0</id>
       <description>next track value</description>
       <type>fadelabel</type>
-      <visible>[Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)] + player.hasmedia</visible>
+      <visible>[Control.HasFocus(5101) | Control.HasFocus(5104)] + player.hasmedia</visible>
       <posX>674</posX>
       <posY>877</posY>
       <width>688</width>
@@ -361,7 +361,7 @@
       <font>Segoe Light14</font>
       <textcolor>ff85cffe</textcolor>
       <label>201</label>
-      <visible>Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)</visible>
+      <visible>Control.HasFocus(5101) | Control.HasFocus(5104)</visible>
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
@@ -375,7 +375,7 @@
       <width>421</width>
       <font>Segoe Light14</font>
       <label>#Play.Current.Year</label>
-      <visible>Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)</visible>
+      <visible>Control.HasFocus(5101) | Control.HasFocus(5104)</visible>
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
@@ -384,7 +384,7 @@
       <id>141</id>
       <description>Rating</description>
       <type>imagelist</type>
-      <visible>Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)</visible>
+      <visible>Control.HasFocus(5101) | Control.HasFocus(5104)</visible>
       <posX>490</posX>
       <posY>921</posY>
       <width>260</width>
@@ -476,7 +476,7 @@
       <description>list of top album tracks label</description>
       <type>fadelabel</type>
       <visible>Control.HasFocus(5102) | Control.HasFocus(166)</visible>
-      <posX>-2350</posX>
+      <posX>491</posX>
       <posY>698</posY>
       <width>881</width>
       <font>Segoe Light18</font>
@@ -495,12 +495,12 @@
       <onup>166</onup>
       <ondown>166</ondown>
       <visible>Control.HasFocus(5102) | Control.HasFocus(166)</visible>
-      <posX>-2328</posX>
+      <posX>461</posX>
       <posY>755</posY>
       <width>912</width>
       <height>295</height>
-      <animation effect="Fade" time="800">WindowOpen</animation>
-      <animation effect="Fade" time="300">WindowClose</animation>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
       <textXOff>18</textXOff>
       <textYOff>-6</textYOff>
       <IconXOff>14</IconXOff>
@@ -521,7 +521,7 @@
       <id>0</id>
       <description>list of tagged tracks label</description>
       <type>fadelabel</type>
-      <visible>Control.HasFocus(5102) | Control.HasFocus(155)</visible>
+      <visible>Control.HasFocus(5103) | Control.HasFocus(155)</visible>
       <posX>491</posX>
       <posY>698</posY>
       <width>881</width>
@@ -540,7 +540,7 @@
       <onright>5103</onright>
       <onup>155</onup>
       <ondown>155</ondown>
-      <visible>Control.HasFocus(5102) | Control.HasFocus(155)</visible>
+      <visible>Control.HasFocus(5103) | Control.HasFocus(155)</visible>
       <posX>461</posX>
       <posY>755</posY>
       <width>912</width>
