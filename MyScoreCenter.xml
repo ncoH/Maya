@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>42000</id>
   <defaultcontrol>10</defaultcontrol>
@@ -8,6 +7,7 @@
   <define>#useSelectedFanart:Yes</define>
   <define>#header.background:hover_score center.png</define>
   <controls>
+  
     <control>
       <description>Background</description>
       <type>image</type>
@@ -18,6 +18,7 @@
       <texture>background.png</texture>
       <visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -29,6 +30,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -40,6 +42,7 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <id>91919291</id>
       <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
@@ -48,6 +51,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <id>91919292</id>
       <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
@@ -56,6 +60,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <id>91919293</id>
       <description>DUMMY CONTROLL FOR FANART AVAILABILITY CONDITION</description>
@@ -64,6 +69,7 @@
       <posY>0</posY>
       <width>1</width>
     </control>
+	
     <control>
       <id>897688</id>
       <description>FANART IMAGE 1</description>
@@ -79,6 +85,7 @@
       <posx>0</posx>
       <posy>0</posy>
     </control>
+	
     <control>
       <id>897689</id>
       <description>FANART IMAGE 2</description>
@@ -94,19 +101,23 @@
       <posx>0</posx>
       <posy>0</posy>
     </control>
+	
     <import>common.time.xml</import>
+	
     <control>
-      <description>Title</description>
+      <id>1</id>
       <type>label</type>
-      <posX>775</posX>
-      <posY>21</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>#header.label</label>
-      <texture>ScoreCenter\Football.png</texture>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background left</description>
@@ -119,6 +130,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background right</description>
@@ -131,6 +143,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>30</id>
       <description>backdrop</description>
@@ -144,6 +157,7 @@
       <animation effect="Fade" time="400">WindowClose</animation>
       <animation effect="Fade" time="400">WindowOpen</animation>
     </control>
+	
     <control>
       <description>Current Category</description>
       <type>image</type>
@@ -155,6 +169,7 @@
       <keepaspectratio>yes</keepaspectratio>
       <centered>yes</centered>
     </control>
+	
     <control>
       <description>Current League Image</description>
       <type>image</type>
@@ -177,6 +192,7 @@
       <keepaspectratio>yes</keepaspectratio>
       <centered>yes</centered>
     </control>
+	
     <control>
       <id>0</id>
       <description>Current Results</description>
@@ -189,6 +205,7 @@
       <align>LEFT</align>
       <label>#ScoreCenter.Results</label>
     </control>
+	
     <control>
       <description>Scores</description>
       <type>listcontrol</type>
@@ -208,7 +225,9 @@
       <keepaspectratio>yes</keepaspectratio>
       <spinPosX>14</spinPosX>
       <spinPosY>928</spinPosY>.
-			<onright>40</onright></control>
+	  <onright>40</onright></control>
+    </control>
+	
     <control>
       <id>20</id>
       <description>Results</description>
@@ -220,6 +239,7 @@
       <height>745</height>
       <font>font11</font>
     </control>
+	
     <control>
       <id>40</id>
       <description>Next Button</description>
@@ -234,5 +254,6 @@
       <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       <label>Next</label>
     </control>
+	
   </controls>
 </window>

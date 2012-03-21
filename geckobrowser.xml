@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>16002</id>
   <defaultcontrol>8</defaultcontrol>
@@ -8,8 +7,10 @@
   <define>#header.background:hover_BrowseTheWeb.png</define>
   <disabletopbar>true</disabletopbar>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <description>GeckoBrowser</description>
       <type>webbrowser</type>
@@ -18,6 +19,7 @@
       <width>1920</width>
       <height>999</height>
     </control>
+	
     <control>
       <id>0</id>
       <description>Top bar</description>
@@ -28,6 +30,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>buttonbar image</description>
@@ -38,6 +41,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <type>label</type>
@@ -52,6 +56,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <id>2</id>
       <description>Back button</description>
@@ -70,6 +75,7 @@
       <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>3</id>
       <description>Forward button</description>
@@ -88,6 +94,7 @@
       <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>4</id>
       <description>Refresh button</description>
@@ -106,6 +113,7 @@
       <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>5</id>
       <description>Stop button</description>
@@ -124,6 +132,7 @@
       <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>6</id>
       <description>Home button</description>
@@ -142,6 +151,7 @@
       <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>7</id>
       <description>Favorites Button</description>
@@ -160,6 +170,7 @@
       <animation delay="200" effect="Fade" time="300">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>8</id>
       <description>URL button</description>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
+  
     <control>
       <type>image</type>
       <description>movie border</description>
@@ -13,6 +13,7 @@
       <visible>no</visible>
       <texture>playback_background.png</texture>
     </control>
+	
     <control>
       <type>image</type>
       <description>movie poster</description>
@@ -24,6 +25,7 @@
       <visible>no</visible>
       <texture flipY="true" diffuse="Thumb_Mask.png">#VideoSearch.movieposter</texture>
     </control>
+	
     <control>
       <type>listcontrol</type>
       <description>listcontrol</description>
@@ -38,6 +40,7 @@
       <ondown>51</ondown>
       <visible>no</visible>
     </control>
+	
     <control>
       <type>label</type>
       <description>Cast txt</description>
@@ -48,6 +51,7 @@
       <visible>no</visible>
       <textcolor>ffb2d4f5</textcolor>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>cast value</description>
@@ -60,6 +64,7 @@
       <visible>no</visible>
       <disabledcolor>ff808080</disabledcolor>
     </control>
+	
     <control>
       <type>label</type>
       <description>Year txt</description>
@@ -80,6 +85,7 @@
       <visible>no</visible>
       <textcolor>ffffffff</textcolor>
     </control>
+	
     <control>
       <type>label</type>
       <description>Genre txt</description>
@@ -90,6 +96,7 @@
       <visible>no</visible>
       <textcolor>ffb2d4f5</textcolor>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>genre value</description>
@@ -101,6 +108,7 @@
       <visible>no</visible>
       <disabledcolor>ff808080</disabledcolor>
     </control>
+	
     <control>
       <type>label</type>
       <description>Plot txt</description>
@@ -111,6 +119,7 @@
       <label>203</label>
       <textcolor>ffb2d4f5</textcolor>
     </control>
+	
     <control>
       <type>textboxscrollup</type>
       <description>Plot value</description>
@@ -125,5 +134,6 @@
       <label>#VideoSearch.trailerdesc</label>
       <textcolor>FFFFFFFF</textcolor>
     </control>
+	
   </controls>
 </window>

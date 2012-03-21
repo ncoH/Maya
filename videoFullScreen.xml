@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>2005</id>
   <defaultcontrol>990</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <import>common.progressbar.xml</import>
+	
     <control>
       <description>dummy to fix images disappearing (MP BUG)</description>
       <type>image</type>
@@ -17,6 +18,7 @@
       <texture>-</texture>
       <visible>player.forwarding|player.rewinding|player.paused</visible>
     </control>
+	
     <control>
       <description>row 1 label</description>
       <type>label</type>
@@ -30,6 +32,7 @@
       <label>-</label>
       <visible>Control.IsVisible(10)</visible>
     </control>
+	
     <control>
       <description>row 2 label</description>
       <type>label</type>
@@ -42,6 +45,7 @@
       <align>center</align>
       <label>-</label>
     </control>
+	
     <control>
       <description>row 3 label</description>
       <type>label</type>
@@ -54,6 +58,7 @@
       <align>center</align>
       <label>-</label>
     </control>
+	
     <control>
       <description>pause image</description>
       <type>image</type>
@@ -66,6 +71,7 @@
       <texture>osdpausenf.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>2x image</description>
       <type>image</type>
@@ -78,6 +84,7 @@
       <texture>video+2x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>4x image</description>
       <type>image</type>
@@ -90,6 +97,7 @@
       <texture>video+4x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>8x image</description>
       <type>image</type>
@@ -102,6 +110,7 @@
       <texture>video+8x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>16x image</description>
       <type>image</type>
@@ -114,6 +123,7 @@
       <texture>video+16x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>32x image</description>
       <type>image</type>
@@ -126,6 +136,7 @@
       <texture>video+32x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>- 2x image</description>
       <type>image</type>
@@ -138,6 +149,7 @@
       <texture>video-2x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>- 4x image</description>
       <type>image</type>
@@ -150,6 +162,7 @@
       <texture>video-4x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>- 8x image</description>
       <type>image</type>
@@ -162,6 +175,7 @@
       <texture>video-8x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>- 16x image</description>
       <type>image</type>
@@ -174,6 +188,7 @@
       <texture>video-16x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <description>- 32x image</description>
       <type>image</type>
@@ -186,6 +201,7 @@
       <texture>video-32x.png</texture>
       <colordiffuse>White</colordiffuse>
     </control>
+	
     <control>
       <type>image</type>
       <id>500</id>
@@ -209,6 +225,7 @@
       <colordiffuse>White</colordiffuse>
       <visible>no</visible>
     </control>
+	
     <control>
       <type>image</type>
       <id>502</id>
@@ -220,6 +237,7 @@
       <colordiffuse>White</colordiffuse>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Trigger button</description>
       <posY>821</posY>
@@ -232,6 +250,7 @@
       <onright>990</onright>
       <onleft>990</onleft>
     </control>
+	
     <control>
       <description>Fake trigger button expand</description>
       <posX>923</posX>
@@ -243,6 +262,7 @@
       <texture>osd_expand_icon.png</texture>
       <visible>Control.HasFocus(990) + window.isosdvisible</visible>
     </control>
+	
     <control>
       <description>Fake trigger button collapse</description>
       <posX>923</posX>
@@ -254,5 +274,6 @@
       <texture>osd_collapse_icon.png</texture>
       <visible>!Control.HasFocus(990) + window.isosdvisible</visible>
     </control>
+	
   </controls>
 </window>

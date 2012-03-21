@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>9815</id>
   <defaultcontrol>10</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <controls>
+  
     <import>common.dialog.xml</import>
+	
     <control>
       <description>Lock</description>
       <type>image</type>
@@ -16,6 +17,7 @@
       <height>67</height>
       <texture>lock.png</texture>
     </control>
+	
     <!-- Star Controls -->
     <control>
       <description>PinCode Item 1</description>
@@ -114,5 +116,6 @@
       <width>281</width>
       <align>right</align>
     </control>
+	
   </controls>
 </window>

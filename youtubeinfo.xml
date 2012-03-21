@@ -32,6 +32,8 @@
       <texture>basichome_fanart_overlay.png</texture>
     </control>
 	
+    <import>common.time.xml</import>
+
     <control>
       <id>1</id>
       <type>label</type>
@@ -45,8 +47,6 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
-	
-    <import>common.time.xml</import>
 	
     <control>
       <description>Meta Label</description>

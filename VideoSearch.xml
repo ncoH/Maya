@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>1987</id>
   <defaultcontrol>50</defaultcontrol>
@@ -7,24 +6,26 @@
   <define>#header.label:Video Search</define>
   <define>#header.background:hover_Films.jpg</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
     <import>VideoSearch.facade.xml</import>
     <import>VideoSearch.details.xml</import>
+	
     <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
       <id>1</id>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>773</width>
-      <height>140</height>
-      <label>#header.label</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <valign>middle</valign>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Status</description>
       <type>fadelabel</type>
@@ -42,6 +43,7 @@
       <textcolor>150517</textcolor>
       <height>57</height>
     </control>
+	
     <control>
       <type>button</type>
       <description>Search</description>
@@ -56,6 +58,7 @@
       <onup>50</onup>
       <onright>50</onright>
     </control>
+	
     <control>
       <description>an Image</description>
       <type>image</type>
@@ -66,6 +69,7 @@
       <height>57</height>
       <texture>searchBlock.PNG</texture>
     </control>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -107,5 +111,6 @@
         </control>
       </control>
     </control>
+	
   </controls>
 </window>

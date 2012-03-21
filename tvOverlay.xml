@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>3002</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <control>
       <description>rec logo</description>
       <type>image</type>
@@ -15,5 +15,6 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <animation effect="fade" time="200">WindowOpen</animation>
     </control>
+	
   </controls>
 </window>

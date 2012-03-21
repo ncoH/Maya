@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8"-->
 <window>
   <controls>
     <control>
@@ -19,6 +18,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -42,6 +42,7 @@
       <dimColor>ffffffff</dimColor>
       <visible>!Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -55,6 +56,7 @@
       <texture>listcontrol_bg_recordings.png</texture>
       <visible>!Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -69,6 +71,7 @@
       <visible>!Control.IsVisible(50)</visible>
       <valign>middle</valign>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -83,6 +86,7 @@
       <textcolor>85cffe</textcolor>
       <visible>!Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -98,6 +102,7 @@
       <textcolor>ffffff</textcolor>
       <visible>!Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -112,6 +117,7 @@
       <textcolor>85cffe</textcolor>
       <visible>!Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -127,6 +133,7 @@
       <textcolor>ffffff</textcolor>
       <visible>!Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -141,6 +148,7 @@
       <textcolor>85cffe</textcolor>
       <visible>!Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -156,6 +164,7 @@
       <textcolor>ffffff</textcolor>
       <visible>!Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -170,6 +179,7 @@
       <textcolor>85cffe</textcolor>
       <visible>!Control.IsVisible(50)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -228,6 +238,7 @@
       <label>#MyTrailers.Details.Description</label>
       <visible>!Control.IsVisible(50)</visible>
     </control>
+	
     <!-- Apple trailers-->
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -268,6 +279,7 @@
       <texture>blackborders_video.png</texture>
       <visible>!Control.IsVisible(50)+!string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
     </control>
+	
     <!-- GT GameTrailers-->
     <control>
       <id>1</id>
@@ -293,5 +305,6 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

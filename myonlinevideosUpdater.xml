@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>4757</id>
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
+  <define>#header.label:Updater</define>  
   <define>#header.background:hover_OnlineVideos.png</define>
   <controls>
   
@@ -14,15 +14,14 @@
       <id>1</id>
       <type>label</type>
       <description>Header label</description>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>#header.label</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
 	
     <control>

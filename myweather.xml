@@ -159,6 +159,7 @@
       <align>center</align>
       <visible>Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)</visible>
     </control>
+	
     <control>
       <description>update time label</description>
       <type>label</type>
@@ -171,6 +172,7 @@
       <font>Segoe Light22</font>
       <visible>!plugin.isenabled(InfoService)+[Control.IsVisible(31) | Control.IsVisible(1000) | Control.IsVisible(1200)]</visible>
     </control>
+	
     <control>
       <description>last update time</description>
       <type>label</type>

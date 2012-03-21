@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
     <control>
@@ -10,6 +9,7 @@
       <width>264</width>
       <texture>search_input_no_focus.png</texture>
     </control>
+	
     <control>
       <type>image</type>
       <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
@@ -19,6 +19,7 @@
       <height>341</height>
       <texture>search_input_no_focus.png</texture>
     </control>
+	
     <control>
       <description>group element</description>
       <type>group</type>
@@ -63,6 +64,7 @@
         <textureFocus>settings_button_large_focus.png</textureFocus>
       </control>
     </control>
+	
     <control>
       <id>911</id>
       <description>Cover Art</description>
@@ -76,6 +78,7 @@
       <animation effect="Fade" time="250">VisibleChange</animation>
       <keepaspectratio>no</keepaspectratio>
     </control>
+	
     <control>
       <id>0</id>
       <description>Number of Files Label</description>
@@ -89,6 +92,7 @@
       <label>#itemcount</label>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>911</id>
       <description>Cover Art default</description>
@@ -102,6 +106,7 @@
       <animation effect="Fade" time="250">VisibleChange</animation>
       <keepaspectratio>no</keepaspectratio>
     </control>
+	
     <control>
       <type>image</type>
       <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
@@ -110,6 +115,7 @@
       <width>760</width>
       <texture>search_input_no_focus.png</texture>
     </control>
+	
     <control>
       <id>0</id>
       <description>Cover Art Default</description>
@@ -123,6 +129,7 @@
       <animation effect="Fade" time="250">VisibleChange</animation>
       <keepaspectratio>no</keepaspectratio>
     </control>
+	
     <control>
       <type>image</type>
       <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
@@ -131,6 +138,7 @@
       <width>319</width>
       <texture>search_input_no_focus.png</texture>
     </control>
+	
     <control>
       <id>0</id>
       <description>source media</description>
@@ -146,6 +154,7 @@
       <animation effect="Fade" time="250">VisibleChange</animation>
       <wrapString> : : : </wrapString>
     </control>
+	
     <control>
       <id>0</id>
       <description>search type</description>
@@ -160,6 +169,7 @@
       <animation effect="Fade" time="250">VisibleChange</animation>
       <wrapString> : : : </wrapString>
     </control>
+	
     <control>
       <id>0</id>
       <description>media title</description>
@@ -175,6 +185,7 @@
       <animation effect="Fade" time="250">VisibleChange</animation>
       <wrapString> : : : </wrapString>
     </control>
+	
     <control>
       <id>0</id>
       <description>media title with year</description>
@@ -190,6 +201,7 @@
       <animation effect="Fade" time="250">VisibleChange</animation>
       <wrapString> : : : </wrapString>
     </control>
+	
     <control>
       <id>0</id>
       <description>media title with SE</description>
@@ -205,6 +217,7 @@
       <animation effect="Fade" time="250">VisibleChange</animation>
       <wrapString> : : : </wrapString>
     </control>
+	
     <control>
       <id>0</id>
       <description>Media Files</description>
@@ -222,6 +235,7 @@
       <animation effect="Fade" time="250">VisibleChange</animation>
       <seperator>: : :</seperator>
     </control>
+	
     <control>
       <type>label</type>
       <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
@@ -231,6 +245,7 @@
       <textcolor>ff6aa5cb</textcolor>
       <label>#SubCentral.Translation.Title.Label</label>
     </control>
+	
     <control>
       <type>label</type>
       <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
@@ -240,6 +255,7 @@
       <textcolor>ff6aa5cb</textcolor>
       <label>#SubCentral.Translation.From.Label</label>
     </control>
+	
     <control>
       <type>label</type>
       <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
@@ -249,6 +265,7 @@
       <textcolor>ff6aa5cb</textcolor>
       <label>863</label>
     </control>
+	
     <control>
       <type>label</type>
       <visible>Control.IsVisible(102)+!String.Equals(#SubCentral.Search.SearchType.Type,NONE)</visible>
@@ -258,5 +275,6 @@
       <textcolor>ff6aa5cb</textcolor>
       <label>#SubCentral.Translation.SearchType.Label</label>
     </control>
+	
   </controls>
 </window>

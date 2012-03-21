@@ -119,23 +119,6 @@
     </control>
 	
     <control>
-      <description>Header Label</description>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
-      <id>1</id>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>Music</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <visible>facadeview.list|facadeview.album</visible>
-      <valign>middle</valign>
-    </control>
-	
-    <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
       <description>listcontrol background</description>
@@ -149,25 +132,21 @@
       <visible>!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip+!facadeview.coverflow</visible>
     </control>
 	
-    <control>
-      <description>Header Label</description>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
-      <id>1</id>
-      <posX>608</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>Music</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <visible>facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow</visible>
-      <align>center</align>
-      <valign>middle</valign>
-    </control>
-	
     <import>common.time.xml</import>
+
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
 	
     <control>
       <type>actiongroup</type>

@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>557314</id>
   <defaultcontrol>10</defaultcontrol>
@@ -7,6 +6,7 @@
   <animation effect="fade" time="250">WindowOpen</animation>
   <animation effect="fade" time="250">WindowClose</animation>
   <controls>
+  
     <control>
       <id>50</id>
       <type>image</type>
@@ -16,6 +16,7 @@
       <height>284</height>
       <texture>dialog_background.png</texture>
     </control>
+	
     <control>
       <id>2</id>
       <description>dialog Heading</description>
@@ -26,6 +27,7 @@
       <textcolor>ffffffff</textcolor>
       <label />
     </control>
+	
     <control>
       <id>3</id>
       <description>dialog line 1</description>
@@ -36,6 +38,7 @@
       <textcolor>ffffffff</textcolor>
       <label />
     </control>
+	
     <control>
       <id>4</id>
       <description>dialog line 2</description>
@@ -46,6 +49,7 @@
       <textcolor>ffffffff</textcolor>
       <label />
     </control>
+	
     <control>
       <id>10</id>
       <description>OK button</description>

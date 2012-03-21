@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>10236</id>
   <defaultcontrol>2</defaultcontrol>
@@ -17,6 +16,7 @@
       <animation effect="Fade" time="250">Visible</animation>
       <animation effect="Fade" time="250">Hidden</animation>
     </control>
+	
     <control>
       <id>24</id>
       <type>label</type>
@@ -30,6 +30,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>24</id>
       <type>label</type>
@@ -40,6 +41,7 @@
       <align>LEFT</align>
       <label>Search for location</label>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background</description>
@@ -52,6 +54,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>group element</description>
       <type>group</type>

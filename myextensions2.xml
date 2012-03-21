@@ -13,32 +13,15 @@
     <control>
       <id>1</id>
       <type>label</type>
-      <visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>#header.label</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
-    </control>
-	
-    <control>
-      <id>1</id>
-      <type>label</type>
-      <visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
-      <posX>608</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
-      <textcolor>ff6aa5cb</textcolor>
-      <align>CENTER</align>
-      <label>#header.label</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
 	
     <control>

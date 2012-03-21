@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>2005</id>
   <defaultcontrol>990</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <import>common.progressbar.tv.xml</import>
+	
     <control>
       <description>dummy to fix images disappearing (MP BUG)</description>
       <type>image</type>
@@ -17,6 +18,7 @@
       <texture>-</texture>
       <visible>player.forwarding|player.rewinding|player.paused</visible>
     </control>
+	
     <control>
       <description>row 1 label</description>
       <type>label</type>
@@ -30,6 +32,7 @@
       <label>-</label>
       <visible>Control.IsVisible(10)</visible>
     </control>
+	
     <control>
       <description>row 2 label</description>
       <type>label</type>
@@ -42,6 +45,7 @@
       <align>center</align>
       <label>-</label>
     </control>
+	
     <control>
       <description>row 3 label</description>
       <type>label</type>
@@ -232,6 +236,7 @@
       <onright>990</onright>
       <onleft>990</onleft>
     </control>
+	
     <control>
       <description>Fake trigger button expand</description>
       <posX>923</posX>
@@ -243,6 +248,7 @@
       <texture>osd_expand_icon.png</texture>
       <visible>Control.HasFocus(990) + window.isosdvisible</visible>
     </control>
+	
     <control>
       <description>Fake trigger button collapse</description>
       <posX>923</posX>
@@ -254,5 +260,6 @@
       <texture>osd_collapse_icon.png</texture>
       <visible>!Control.HasFocus(990) + window.isosdvisible</visible>
     </control>
+	
   </controls>
 </window>

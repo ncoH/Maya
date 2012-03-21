@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8"-->
 <!--
 This file should contain the facade view and all gui
 elements that should remain on screen during all or
@@ -9,6 +8,7 @@ multiple view modes.
   <id>96742</id>
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>no</allowoverlay>
+  <define>#header.label:#MovingPictures.Translation.Movies.Label</define> 
   <define>#header.background:hover_moving pictures.png</define>
   <!--
   This set of defines are read by the plug-in and used to determine aspects of it's behavior. These
@@ -139,39 +139,21 @@ multiple view modes.
     </control>
 	
     <import>common.time.xml</import>
-	
+
     <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
       <id>1</id>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>#MovingPictures.Translation.Movies.Label</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <visible>facadeview.list+Control.IsVisible(50)</visible>
-      <valign>middle</valign>
-    </control>
-	
-    <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
       <type>label</type>
-      <id>1</id>
-      <posX>608</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>#MovingPictures.Translation.Movies.Label</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+Control.IsVisible(50)</visible>
-      <align>center</align>
-      <valign>middle</valign>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+
 	
     <!--            :: HIDDEN MENU ::            -->
     <control>

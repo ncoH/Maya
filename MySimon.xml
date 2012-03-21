@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>4071975</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,6 +6,7 @@
   <define>#header.label:Simon Says</define>
   <define>#header.background:hover_my simon.png</define>
   <controls>
+  
     <control>
       <description>Background</description>
       <type>image</type>
@@ -16,6 +16,7 @@
       <height>1080</height>
       <texture>background.png</texture>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -27,6 +28,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -38,20 +40,23 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>#header.label</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>201</id>
       <description>Round</description>
@@ -62,6 +67,7 @@
       <align>RIGHT</align>
       <label>#Round</label>
     </control>
+	
     <control>
       <id>203</id>
       <description>Player: / GameOver</description>

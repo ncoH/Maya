@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>5000</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,22 +6,24 @@
   <define>#header.label:#MyAlarm.Translation.Alarm.Label</define>
   <define>#header.background:hover_my alarm.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
       <description>Header label</description>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>#header.label</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <!--Dummy Labels for conditional visibility-->
     <control>
       <description>CurrentAlarm.Enabled</description>
@@ -56,6 +57,7 @@
       </label>
       <visible>!String.Contains(#MyAlarm.SelectedAlarm.SnoozeAlarmTime.shorttime,MyAlarm.SelectedAlarm.SnoozeAlarmTime.shorttime)+!String.Equals(#MyAlarm.SelectedAlarm.SnoozeAlarmTime.shorttime,)+!String.Equals(#MyAlarm.SelectedAlarm.SnoozeAlarmTime.shorttime, )+!String.Equals(#MyAlarm.SelectedAlarm.SnoozeAlarmTime.shorttime,  )</visible>
     </control>
+	
     <!--Button group on the left-->
     <control>
       <type>actiongroup</type>
@@ -111,6 +113,7 @@
         </control>
       </control>
     </control>
+	
     <!--Time Controls-->
     <control>
       <description>enabled alarm</description>
@@ -279,6 +282,7 @@
       <posY>379</posY>
       <visible>string.equals(#MyAlarm.SelectedAlarm.MediaType.id,Message)+Control.IsVisible(63)</visible>
     </control>
+	
     <!--
     common facade from aMPed skin.
     when you optimised this file for your own skin, you can use   <import>common.facade.xml</import>   instead
@@ -307,5 +311,6 @@
         </control>
       </control>
     </control>
+	
   </controls>
 </window>

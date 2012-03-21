@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
+  
     <control>
       <id>216</id>
       <description>Movie Search Button</description>
@@ -25,6 +25,7 @@
       <textYOff>4</textYOff>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>217</id>
       <description>TV Show Search Button</description>
@@ -48,6 +49,7 @@
       <textYOff>4</textYOff>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>Movie Search Button overlay when focused.</description>
@@ -66,6 +68,7 @@
       <textYOff>4</textYOff>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>TV Show Search Button overlay</description>
@@ -84,6 +87,7 @@
       <textYOff>4</textYOff>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>0</id>
       <type>label</type>
@@ -95,6 +99,7 @@
       <label>#SubCentral.Translation.Title.Label</label>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>222</id>
       <description>Title Button</description>
@@ -116,6 +121,7 @@
       <textYOff>5</textYOff>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>0</id>
       <type>label</type>
@@ -127,6 +133,7 @@
       <label>#SubCentral.Translation.Year.Label</label>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>223</id>
       <description>Year Button</description>
@@ -148,6 +155,7 @@
       <textYOff>5</textYOff>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>0</id>
       <type>label</type>
@@ -159,6 +167,7 @@
       <label>#SubCentral.Translation.IMDbID.Label</label>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>221</id>
       <description>IMDb Button</description>
@@ -180,6 +189,7 @@
       <textYOff>5</textYOff>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>0</id>
       <type>label</type>
@@ -191,6 +201,7 @@
       <label>#SubCentral.Translation.Season.Label</label>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>224</id>
       <description>Season Button</description>
@@ -212,6 +223,7 @@
       <textYOff>5</textYOff>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>0</id>
       <type>label</type>
@@ -223,6 +235,7 @@
       <label>#SubCentral.Translation.Episode.Label</label>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>225</id>
       <description>Episode Button</description>
@@ -244,6 +257,7 @@
       <textYOff>5</textYOff>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>0</id>
       <type>label</type>
@@ -255,6 +269,7 @@
       <label>#SubCentral.Translation.MediaFiles.Label</label>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>214</id>
       <description>Clear Files Button</description>
@@ -278,6 +293,7 @@
       <textYOff>0</textYOff>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <type>image</type>
       <visible>Control.IsVisible(103)</visible>
@@ -287,6 +303,7 @@
       <height>171</height>
       <texture>search_input_no_focus.png</texture>
     </control>
+	
     <control>
       <id>0</id>
       <description>Media Files</description>
@@ -304,6 +321,7 @@
       <label>#SubCentral.ManualSearch.Files.AllNames</label>
       <seperator>: : :</seperator>
     </control>
+	
     <control>
       <id>211</id>
       <description>OK/Search Button</description>
@@ -327,6 +345,7 @@
       <textYOff>0</textYOff>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>212</id>
       <description>Cancel Button</description>
@@ -350,6 +369,7 @@
       <textYOff>0</textYOff>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <id>213</id>
       <description>Revert Button</description>
@@ -373,6 +393,7 @@
       <textYOff>0</textYOff>
       <animation effect="Fade" time="250">VisibleChange</animation>
     </control>
+	
     <control>
       <type>label</type>
       <visible>Control.IsVisible(103)</visible>
@@ -382,6 +403,7 @@
       <textcolor>ff6aa5cb</textcolor>
       <label>#SubCentral.Header.ShortLabel</label>
     </control>
+	
     <control>
       <id>226</id>
       <description>Absolute Numbering Button</description>
@@ -401,5 +423,6 @@
       <label>#SubCentral.Translation.AbsoluteNumbering.Label</label>
       <animation>visiblechange</animation>
     </control>
+	
   </controls>
 </window>

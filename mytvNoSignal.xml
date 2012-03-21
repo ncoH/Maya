@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>749</id>
   <defaultcontrol>1</defaultcontrol>
@@ -15,6 +14,7 @@
       <height>262</height>
       <texture>dialog_background.png</texture>
     </control>
+	
     <control>
       <type>progress</type>
       <description>Progress Bar</description>
@@ -25,6 +25,7 @@
       <height>8</height>
       <texturebg>osd_progress_back.png</texturebg>
     </control>
+	
     <control>
       <type>label</type>
       <description>Quality</description>
@@ -34,6 +35,7 @@
       <label>988</label>
       <align>left</align>
     </control>
+	
     <control>
       <type>label</type>
       <description>notify</description>
@@ -42,6 +44,7 @@
       <posY>787</posY>
       <label>-</label>
     </control>
+	
     <control>
       <description>TV Logo</description>
       <type>image</type>
@@ -54,5 +57,6 @@
       <centered>yes</centered>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
   </controls>
 </window>

@@ -54,7 +54,7 @@
       <width>470</width>
       <height>322</height>
       <texture>video_overlay_border.png</texture>
-      <visible>player.hasvideo+!control.isvisible(3337)</visible>
+      <visible>player.hasvideo+!control.isvisible(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
     </control>
 	
     <control>
@@ -67,7 +67,7 @@
       <height>196</height>
       <action>18</action>
       <textureFocus>tv_green_border.png</textureFocus>
-      <visible>player.hasvideo+!control.isvisible(3337)</visible>
+      <visible>player.hasvideo+!control.isvisible(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
     </control>
 	
     <control>
@@ -81,7 +81,7 @@
       <align>right</align>
       <font>font12</font>
       <textcolor>6aa5cb</textcolor>
-      <visible>player.hasvideo+!control.isvisible(3337)</visible>
+      <visible>player.hasvideo+!control.isvisible(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="fade" time="250">WindowClose</animation>
       <animation effect="fade" time="250">WindowOpen</animation>
     </control>
@@ -98,7 +98,7 @@
       <posY>1040</posY>
       <font>font12</font>
       <label>#Play.Current.Title\r#Play.Current.Genre\r#Play.Current.Year\r#Play.Current.Director</label>
-      <visible>player.hasvideo+!control.hastext(3337)+control.isvisible(3339)</visible>
+      <visible>player.hasvideo+!control.hastext(3337)+control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="fade" time="250">WindowClose</animation>
       <animation effect="fade" time="250">WindowOpen</animation>
     </control>
@@ -115,7 +115,7 @@
       <posY>1040</posY>
       <font>font12</font>
       <label>#Play.Current.Title\r#Play.Current.Genre\r#Play.Current.Year\r#Play.Current.Director</label>
-      <visible>player.hasvideo+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+      <visible>player.hasvideo+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="fade" time="250">WindowClose</animation>
       <animation effect="fade" time="250">WindowOpen</animation>
     </control>
@@ -130,7 +130,7 @@
       <width>115</width>
       <height>108</height>
       <texture>#Play.Current.Thumb</texture>
-      <visible>player.hasaudio+control.isvisible(3337)</visible>
+      <visible>player.hasaudio+control.isvisible(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="slide" start="-425,0" end="0,0" tween="quadratic" easing="in" time="400" delay="300">WindowOpen</animation>
       <animation effect="fade" time="700" delay="400">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-425,0" tween="quadratic" easing="in" time="400" delay="300">WindowClose</animation>
@@ -146,7 +146,7 @@
       <width>115</width>
       <height>108</height>
       <texture>audio_nothumb.png</texture>
-      <visible>player.hasaudio+control.isvisible(3337)+string.equals(#Play.Current.Thumb,)</visible>
+      <visible>player.hasaudio+control.isvisible(3337)+string.equals(#Play.Current.Thumb,)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="slide" start="-425,0" end="0,0" tween="quadratic" easing="in" time="400" delay="300">WindowOpen</animation>
       <animation effect="fade" time="700" delay="400">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-425,0" tween="quadratic" easing="in" time="400" delay="300">WindowClose</animation>
@@ -161,7 +161,7 @@
       <width>590</width>
       <height>222</height>
       <texture>now_playing_music_bg.png</texture>
-      <visible>player.hasaudio+control.hastext(3337)</visible>
+      <visible>player.hasaudio+control.hastext(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="slide" start="-425,0" end="0,0" tween="quadratic" easing="in" time="400" delay="300">WindowOpen</animation>
       <animation effect="fade" time="700" delay="400">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-425,0" tween="quadratic" easing="in" time="400" delay="300">WindowClose</animation>
@@ -177,7 +177,7 @@
       <width>295</width>
       <label>#Play.Current.Title</label>
       <font>font12</font>
-      <visible>player.hasaudio+control.hastext(3337)</visible>
+      <visible>player.hasaudio+control.hastext(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
@@ -191,7 +191,7 @@
       <width>323</width>
       <label>#Play.Current.Artist</label>
       <font>font10</font>
-      <visible>player.hasaudio+control.hastext(3337)</visible>
+      <visible>player.hasaudio+control.hastext(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
@@ -207,7 +207,7 @@
       <label>4540</label>
       <font>Segoe Light16</font>
       <textcolor>85cffe</textcolor>
-      <visible>player.hasaudio+control.isvisible(3337)</visible>
+      <visible>player.hasaudio+control.isvisible(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
@@ -224,7 +224,7 @@
       <font>Segoe Light16</font>
       <textcolor>85cffe</textcolor>
       <align>right</align>
-      <visible>player.hasaudio+control.hastext(3337)</visible>
+      <visible>player.hasaudio+control.hastext(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
@@ -238,7 +238,7 @@
       <width>21</width>
       <height>23</height>
       <texture>now_playing_play.png</texture>
-      <visible>player.playing+player.hasaudio+control.hastext(3337)</visible>
+      <visible>player.playing+player.hasaudio+control.hastext(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
@@ -252,7 +252,7 @@
       <width>21</width>
       <height>23</height>
       <texture>now_playing_pause.png</texture>
-      <visible>player.paused+player.hasaudio+control.hastext(3337)</visible>
+      <visible>player.paused+player.hasaudio+control.hastext(3337)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
@@ -345,7 +345,7 @@
       <width>115</width>
       <height>108</height>
       <texture>#Play.Current.Thumb</texture>
-      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="slide" start="-425,0" end="0,0" tween="quadratic" easing="in" time="400" delay="300">WindowOpen</animation>
       <animation effect="fade" time="700" delay="400">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-425,0" tween="quadratic" easing="in" time="400" delay="300">WindowClose</animation>
@@ -361,7 +361,7 @@
       <width>115</width>
       <height>108</height>
       <texture>audio_nothumb.png</texture>
-      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+string.equals(#Play.Current.Thumb,)</visible>
+      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+string.equals(#Play.Current.Thumb,)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="slide" start="-425,0" end="0,0" tween="quadratic" easing="in" time="400" delay="300">WindowOpen</animation>
       <animation effect="fade" time="700" delay="400">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-425,0" tween="quadratic" easing="in" time="400" delay="300">WindowClose</animation>
@@ -376,7 +376,7 @@
       <width>590</width>
       <height>222</height>
       <texture>now_playing_music_bg.png</texture>
-      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="slide" start="-425,0" end="0,0" tween="quadratic" easing="in" time="400" delay="300">WindowOpen</animation>
       <animation effect="fade" time="700" delay="400">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-425,0" tween="quadratic" easing="in" time="400" delay="300">WindowClose</animation>
@@ -394,7 +394,7 @@
       <label>4540</label>
       <font>Segoe Light16</font>
       <textcolor>85cffe</textcolor>
-      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
@@ -411,7 +411,7 @@
       <font>Segoe Light16</font>
       <align>left</align>
       <textcolor>85cffe</textcolor>
-      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
@@ -425,7 +425,7 @@
       <posY>947</posY>
       <font>font12</font>
       <label>#Play.Current.Title</label>
-      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+      <visible>Player.HasAudio+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
@@ -439,7 +439,7 @@
       <width>21</width>
       <height>23</height>
       <texture>now_playing_play.png</texture>
-      <visible>player.playing+!control.isvisible(3337)+!control.isvisible(3339)</visible>
+      <visible>player.playing+!control.isvisible(3337)+!control.isvisible(3339)+[Control.HasFocus(50)|Control.HasFocus(51)]</visible>
       <animation effect="fade" time="400" delay="800">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>3007</id>
   <defaultcontrol>213</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <control>
       <description>background</description>
       <type>image</type>
@@ -15,6 +15,7 @@
       <height>248</height>
       <texture>tv_zaposd_bg.png</texture>
     </control>
+	
     <control>
       <description>TV Logo</description>
       <type>image</type>
@@ -26,6 +27,7 @@
       <texture>#TV.View.thumb</texture>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
     <control>
       <description>Programme</description>
       <type>textbox</type>
@@ -37,6 +39,7 @@
       <label>-</label>
       <font>Segoe Light18</font>
     </control>
+	
     <control>
       <description>Channel</description>
       <type>label</type>
@@ -47,6 +50,7 @@
       <label>-</label>
       <font>Segoe Light14</font>
     </control>
+	
     <control>
       <description>Start Time Info 24h</description>
       <type>label</type>
@@ -58,6 +62,7 @@
       <font>font12</font>
       <visible>![string.contains(#time,AM)|string.contains(#time,PM)]</visible>
     </control>
+	
     <control>
       <description>Start Time Info 12h</description>
       <type>label</type>
@@ -69,6 +74,7 @@
       <font>font10</font>
       <visible>[string.contains(#time,AM)|string.contains(#time,PM)]</visible>
     </control>
+	
     <control>
       <description>End Time Info 24h</description>
       <type>label</type>
@@ -80,6 +86,7 @@
       <font>font12</font>
       <visible>![string.contains(#time,AM)|string.contains(#time,PM)]</visible>
     </control>
+	
     <control>
       <description>End Time Info 12h</description>
       <type>label</type>
@@ -91,6 +98,7 @@
       <font>font10</font>
       <visible>[string.contains(#time,AM)|string.contains(#time,PM)]</visible>
     </control>
+	
     <control>
       <description>Progress Bar</description>
       <type>progress</type>
@@ -106,6 +114,7 @@
       <visible>yes</visible>
       <label>#TV.View.Percentage</label>
     </control>
+	
     <control>
       <description>rec logo</description>
       <type>image</type>
@@ -114,6 +123,7 @@
       <posY>926</posY>
       <texture>tv_zaposd_rec.png</texture>
     </control>
+	
     <control>
       <description>On tv NEXT</description>
       <id>37</id>
@@ -126,5 +136,6 @@
       <font>font13</font>
       <textcolor>FFB2D4F5</textcolor>
     </control>
+	
   </controls>
 </window>

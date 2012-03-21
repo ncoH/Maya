@@ -1,13 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>709</id>
   <defaultcontrol>24</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <define>#header.label:6014</define>
   <controls>
+  
     <import>common.window.settings.xml</import>
     <import>common.time.xml</import>
+
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+	
     <control>
       <type>group</type>
       <posX>139</posX>
@@ -21,6 +36,7 @@
         <label>6029</label>
       </control>
     </control>
+	
     <control>
       <type>group</type>
       <posX>139</posX>
@@ -34,6 +50,7 @@
         <label>8008</label>
       </control>
     </control>
+	
     <control>
       <id>1</id>
       <description>Please specify the IP address or hostname</description>

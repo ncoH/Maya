@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>7776</id>
   <defaultcontrol>10</defaultcontrol>
@@ -56,6 +55,7 @@
         <textalign>right</textalign>
       </control>
     </control>
+	
     <control>
       <description>info group</description>
       <type>group</type>
@@ -145,6 +145,7 @@
         <label>#tetris_highscore</label>
       </control>
     </control>
+	
     <control>
       <description>group element</description>
       <type>group</type>
@@ -174,5 +175,6 @@
         <nextblocky>368</nextblocky>
       </control>
     </control>
+	
   </controls>
 </window>

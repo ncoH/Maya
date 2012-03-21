@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>1234711</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,22 +6,24 @@
   <define>#header.label:Hexxagon</define>
   <define>#header.background:hover_my hexxagon.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
       <description>Header label</description>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>#header.label</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <type>group</type>
       <visible>![control.hasfocus(2)|control.hasfocus(15)|control.hasfocus(10)|control.hasfocus(5)|control.hasfocus(6)|control.hasfocus(3)|control.hasfocus(4)]</visible>
@@ -100,6 +101,8 @@
         <label>#Ply2.Percentage</label>
       </control>
     </control>
+	
+	
     <control>
       <type>group</type>
       <dimColor>ffffffff</dimColor>
@@ -777,6 +780,7 @@
         <textureNoFocus>#NF110</textureNoFocus>
       </control>
     </control>
+	
     <control>
       <description>button group</description>
       <type>group</type>
@@ -856,5 +860,6 @@
         <textalign>RIGHT</textalign>
       </control>
     </control>
+	
   </controls>
 </window>

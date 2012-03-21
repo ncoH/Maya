@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>3003</id>
   <defaultcontrol>990</defaultcontrol>
@@ -9,6 +8,7 @@
   <define>#currentremaining:#TV.View.stop</define>
   <define>#duration:#TV.View.stop</define>
   <controls>
+  
     <control>
       <description>TV Logo</description>
       <type>image</type>
@@ -20,6 +20,7 @@
       <texture>#TV.View.thumb</texture>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
     <control>
       <description>rec logo</description>
       <type>image</type>
@@ -30,6 +31,7 @@
       <height>70</height>
       <texture>osd_is_recording2.png</texture>
     </control>
+	
     <control>
       <description>On tv NEXT</description>
       <id>37</id>
@@ -41,6 +43,7 @@
       <font>Segoe Light14</font>
       <textcolor>ff85cffe</textcolor>
     </control>
+	
     <control>
       <description>Program Button Up</description>
       <type>button</type>
@@ -58,6 +61,7 @@
       <ondown>34</ondown>
       <visible>yes</visible>
     </control>
+	
     <control>
       <description>Program Button Down</description>
       <type>button</type>
@@ -75,12 +79,14 @@
       <ondown>210</ondown>
       <visible>yes</visible>
     </control>
+	
     <control>
       <description>On tv NOW</description>
       <id>36</id>
       <type>textbox</type>
       <posX>-2000</posX>
     </control>
+	
     <control>
       <description>On tv NOW</description>
       <id>0</id>
@@ -92,6 +98,7 @@
       <label>#TV.View.title</label>
       <font>Segoe Light18</font>
     </control>
+	
     <control>
       <description>Plot</description>
       <type>textboxscrollup</type>
@@ -104,6 +111,7 @@
       <seperator>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</seperator>
       <label>#TV.View.description</label>
     </control>
+	
     <control>
       <description>Info bg</description>
       <type>image</type>
@@ -115,6 +123,7 @@
       <texture>osd_bg_info2.png</texture>
       <visible>Control.HasFocus(991) | Control.HasFocus(218) | Control.HasFocus(219) | Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(220) | Control.HasFocus(221) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)</visible>
     </control>
+	
     <control>
       <description>Subtitles label</description>
       <type>label</type>
@@ -127,6 +136,7 @@
       <textcolor>ff85cffe</textcolor>
       <visible>Control.IsVisible(850)</visible>
     </control>
+	
     <control>
       <description>Audio label</description>
       <type>label</type>
@@ -139,6 +149,7 @@
       <textcolor>ff85cffe</textcolor>
       <visible>Control.IsVisible(500)</visible>
     </control>
+	
     <control>
       <description>Video label</description>
       <type>label</type>
@@ -151,6 +162,7 @@
       <textcolor>ff85cffe</textcolor>
       <visible>Control.IsVisible(700)</visible>
     </control>
+	
     <control>
       <description>Subtitles Menu</description>
       <type>togglebutton</type>
@@ -171,6 +183,7 @@
       <ondown>221</ondown>
       <visible allowhiddenfocus="true">Control.HasFocus(991) | Control.HasFocus(218) | Control.HasFocus(219) | Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(220) | Control.HasFocus(221) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)</visible>
     </control>
+	
     <control>
       <description>Audio Menu</description>
       <type>togglebutton</type>
@@ -191,6 +204,7 @@
       <font>-</font>
       <visible allowhiddenfocus="true">Control.HasFocus(991) | Control.HasFocus(218) | Control.HasFocus(219) | Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(220) | Control.HasFocus(221) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)</visible>
     </control>
+	
     <control>
       <description>Video Menu</description>
       <type>togglebutton</type>
@@ -211,6 +225,7 @@
       <ondown>991</ondown>
       <visible allowhiddenfocus="true">Control.HasFocus(991) | Control.HasFocus(218) | Control.HasFocus(219) | Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(220) | Control.HasFocus(221) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)</visible>
     </control>
+	
     <control>
       <description>Info Menu focus</description>
       <type>button</type>
@@ -229,6 +244,7 @@
       <ondown>990</ondown>
       <visible allowhiddenfocus="true">Control.HasFocus(991) | Control.HasFocus(218) | Control.HasFocus(219) | Control.HasFocus(350) | Control.HasFocus(400) | Control.HasFocus(500) | Control.HasFocus(501) | Control.HasFocus(600) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(700) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(706) | Control.HasFocus(752) | Control.HasFocus(753) | Control.HasFocus(220) | Control.HasFocus(221) | Control.HasFocus(800) | Control.HasFocus(801) | Control.HasFocus(802)</visible>
     </control>
+	
     <control>
       <description>Channel Button Down</description>
       <type>button</type>
@@ -263,6 +279,7 @@
       <ondown>210</ondown>
       <visible>yes</visible>
     </control>
+	
     <control>
       <description>Current channel</description>
       <type>label</type>
@@ -273,6 +290,7 @@
       <label>-</label>
       <textcolor>ffa9d0f7</textcolor>
     </control>
+	
     <control>
       <description>Trigger button</description>
       <posY>821</posY>
@@ -296,6 +314,7 @@
       <texture>osd_expand_icon.png</texture>
       <visible>Control.HasFocus(990) + window.isosdvisible</visible>
     </control>
+	
     <control>
       <description>Fake trigger button collapse</description>
       <posX>923</posX>
@@ -307,6 +326,7 @@
       <texture>osd_collapse_icon.png</texture>
       <visible>!Control.HasFocus(990) + window.isosdvisible</visible>
     </control>
+	
     <control>
       <description>Sub Menu Background (subtitles)</description>
       <type>image</type>
@@ -318,6 +338,7 @@
       <texture>-</texture>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Subtitle Delay label</description>
       <type>label</type>
@@ -328,6 +349,7 @@
       <label>303</label>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Subtitle Delay Slider</description>
       <type>slider</type>
@@ -345,6 +367,7 @@
       <onright>800</onright>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Subtitles delay On/Off Checkbox Background</description>
       <type>image</type>
@@ -356,6 +379,7 @@
       <texture>listcontrol_item_selected_tiny.png</texture>
       <visible>Control.HasFocus(801)</visible>
     </control>
+	
     <control>
       <description>Subtitles delay On/Off Checkbox</description>
       <type>checkmark</type>
@@ -373,6 +397,7 @@
       <visible>no</visible>
       <align>right</align>
     </control>
+	
     <control>
       <description>Subtitles List Control</description>
       <type>listcontrol</type>
@@ -396,6 +421,7 @@
       <spaceBetweenItems>0</spaceBetweenItems>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Bookmarks Menu</description>
       <type>togglebutton</type>
@@ -416,6 +442,7 @@
       <ondown>214</ondown>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Sub Menu Background (volume)</description>
       <type>image</type>
@@ -427,6 +454,7 @@
       <texture>-</texture>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Sub Menu Background (subtitles)</description>
       <type>image</type>
@@ -438,6 +466,7 @@
       <texture>-</texture>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Sub Menu Background (bookmarks)</description>
       <type>image</type>
@@ -449,6 +478,7 @@
       <texture>-</texture>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Sub Menu Background (video)</description>
       <type>image</type>
@@ -460,6 +490,7 @@
       <texture>-</texture>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Sub Menu Background (audio)</description>
       <type>image</type>
@@ -471,6 +502,7 @@
       <texture>-</texture>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Sub Menu Nib</description>
       <type>image</type>
@@ -478,6 +510,7 @@
       <texture>-</texture>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Volume Slider</description>
       <type>slider</type>
@@ -495,6 +528,7 @@
       <onright>400</onright>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>A/v Delay label</description>
       <type>label</type>
@@ -505,6 +539,7 @@
       <label>303</label>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>A/V Delay Slider</description>
       <type>slider</type>
@@ -522,6 +557,7 @@
       <onright>501</onright>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Audio Stream List Control</description>
       <type>listcontrol</type>
@@ -542,6 +578,7 @@
       <ondown>501</ondown>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Video Position label</description>
       <type>label</type>
@@ -552,6 +589,7 @@
       <label>Video Position</label>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Video Position Slider</description>
       <type>slider</type>
@@ -569,6 +607,7 @@
       <onright>700</onright>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Non-Interleaved Checkbox</description>
       <type>checkmark</type>
@@ -582,6 +621,7 @@
       <onright>701</onright>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>No Cache Checkbox</description>
       <type>checkmark</type>
@@ -595,6 +635,7 @@
       <onright>702</onright>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Adjust Framerate Checkbox</description>
       <type>checkmark</type>
@@ -608,6 +649,7 @@
       <onright>702</onright>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>brightness label</description>
       <type>label</type>
@@ -618,6 +660,7 @@
       <font>font13</font>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>brightness</description>
       <type>slider</type>
@@ -634,6 +677,7 @@
       <onright>704</onright>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>contrast label</description>
       <type>label</type>
@@ -644,6 +688,7 @@
       <font>font13</font>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>contrast</description>
       <type>slider</type>
@@ -660,6 +705,7 @@
       <onright>705</onright>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>gamma label</description>
       <type>label</type>
@@ -670,6 +716,7 @@
       <font>font13</font>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>gamma</description>
       <type>slider</type>
@@ -686,6 +733,7 @@
       <onright>706</onright>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Create Bookmark</description>
       <type>button</type>
@@ -704,6 +752,7 @@
       <ondown>601</ondown>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Clear Bookmarks</description>
       <type>button</type>
@@ -722,6 +771,7 @@
       <ondown>601</ondown>
       <visible>no</visible>
     </control>
+	
     <control>
       <description>Bookmarks List Control</description>
       <type>listcontrol</type>
@@ -738,5 +788,6 @@
       <spinPosY>843</spinPosY>
       <visible>no</visible>
     </control>
+	
   </controls>
 </window>

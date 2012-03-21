@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
+  
     <control>
       <description>group element</description>
       <type>group</type>
@@ -28,6 +28,7 @@
           <textXOff>30</textXOff>
           <spinCanFocus>no</spinCanFocus>
         </control>
+		
         <control>
           <description>Thumbnail Panel</description>
           <type>thumbnailpanel</type>

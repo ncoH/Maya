@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>802</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <disabletopbar>true</disabletopbar>
   <controls>
+  
     <control>
       <id>0</id>
       <description>bar image</description>
@@ -16,6 +16,7 @@
       <height>129</height>
       <texture>calibration_bar.png</texture>
     </control>
+	
     <control>
       <id>10</id>
       <description>row 1 label</description>
@@ -27,6 +28,7 @@
       <align>LEFT</align>
       <label>-</label>
     </control>
+	
     <control>
       <id>11</id>
       <description>row 2 label</description>
@@ -38,6 +40,7 @@
       <align>LEFT</align>
       <label>-</label>
     </control>
+	
     <control>
       <id>12</id>
       <description>row 2 extra label</description>
@@ -49,6 +52,7 @@
       <align>LEFT</align>
       <label>-</label>
     </control>
+	
     <control>
       <type>progress</type>
       <posX>8</posX>
@@ -57,5 +61,6 @@
       <height>19</height>
       <label>#Social.DownloadProgress</label>
     </control>
+	
   </controls>
 </window>

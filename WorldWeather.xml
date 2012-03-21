@@ -137,7 +137,9 @@
 		<animation effect="Fade" time="250">WindowClose</animation>
 		<animation effect="Fade" time="250">VisibleChange</animation>
 	</control>
-		
+
+    <!-- ************** HIDDEN MENU *****************  -->
+	
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
@@ -147,7 +149,8 @@
 		<buttonX>0</buttonX>
 		<buttonY>0</buttonY>
 		<buttonwidth>521</buttonwidth>
-		<buttonheight>1080</buttonheight>		
+		<buttonheight>1080</buttonheight>
+		
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -157,7 +160,8 @@
 			<visible>Control.Hasfocus(2) | Control.Hasfocus(3) | Control.Hasfocus(4)  | Control.Hasfocus(5) | Control.Hasfocus(9)</visible>
 			<animation effect="fade" time="450">visible</animation>
 			<animation effect="fade" time="400">hidden</animation>
-		</control>	
+		</control>
+	
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -179,8 +183,8 @@
 			<posX>128</posX>
 			<posY>114</posY>
 			<label>924</label>
-			<font>fontB12</font>
-			<textcolor>ffffff</textcolor>
+			<font>Segoe Light22</font>
+			<textcolor>ff6aa5cb</textcolor>
 			<visible>Control.Hasfocus(2) | Control.Hasfocus(3) | Control.Hasfocus(4)  | Control.Hasfocus(5) | Control.Hasfocus(9)</visible>
 			<animation effect="fade" time="0">WindowClose</animation>
 			<animation effect="slide" start="-150,0" time="100">visible</animation>
@@ -198,7 +202,7 @@
 					<layout>StackLayout(0, Vertical, true)</layout>
 					<visible>Control.Hasfocus(2) | Control.Hasfocus(3) | Control.Hasfocus(4)  | Control.Hasfocus(5) | Control.Hasfocus(9)</visible>
 					<posX>69</posX>
-					<posY>155</posY>
+					<posY>215</posY>
 						
 						<control>
 							<description>Display</description>
@@ -206,10 +210,10 @@
 							<id>2</id>
 							<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 							<textureNoFocus>-</textureNoFocus>
-							<width>497</width>
-							<height>64</height>
-							<textXOff>58</textXOff>
-							<textYOff>14</textYOff>
+							<width>499</width>
+							<height>70</height>
+							<textXOff>66</textXOff>
+							<textYOff>17</textYOff>
 							<label>Switch View</label>
 							<onup>9</onup>
 							<ondown>3</ondown>
@@ -223,9 +227,10 @@
 							<id>3</id>
 							<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 							<textureNoFocus>-</textureNoFocus>
-							<width>497</width>
-							<height>64</height>
-							<textXOff>58</textXOff>
+							<width>499</width>
+							<height>70</height>
+							<textXOff>66</textXOff>
+							<textYOff>17</textYOff>
 							<label>#WorldWeather.TranslationLocation</label>
 							<onup>2</onup>
 							<ondown>4</ondown>
@@ -239,10 +244,11 @@
 							<id>4</id>
 							<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 							<textureNoFocus>-</textureNoFocus>
+							<width>499</width>
+							<height>70</height>
+							<textXOff>66</textXOff>
+							<textYOff>17</textYOff>
 							<label>Location</label>
-							<width>497</width>
-							<height>64</height>
-							<textXOff>58</textXOff>
 							<onup>3</onup>
 							<ondown>5</ondown>
 							<onleft>51</onleft>
@@ -255,9 +261,10 @@
 							<id>5</id>
 							<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 							<textureNoFocus>-</textureNoFocus>
-							<width>497</width>
-							<height>64</height>
-							<textXOff>58</textXOff>
+							<width>499</width>
+							<height>70</height>
+							<textXOff>66</textXOff>
+							<textYOff>17</textYOff>
 							<onleft>51</onleft>
 							<onright>50</onright>
 							<ondown>9</ondown>
@@ -272,10 +279,10 @@
 							<id>9</id>
 							<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 							<textureNoFocus>-</textureNoFocus>
-							<width>497</width>
-							<height>64</height>
-							<textXOff>58</textXOff>
-							<textYOff>14</textYOff>
+							<width>499</width>
+							<height>70</height>
+							<textXOff>66</textXOff>
+							<textYOff>17</textYOff>
 							<label>Refresh</label>
 							<onup>5</onup>
 							<ondown>2</ondown>

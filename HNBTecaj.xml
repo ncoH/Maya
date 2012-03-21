@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>16580</id>
   <defaultcontrol>2</defaultcontrol>
@@ -7,22 +6,24 @@
   <define>#header.label:HNB Tecaj</define>
   <define>#header.background:hover_HNB Tecaj.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>773</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>#header.label</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
-      <valign>middle</valign>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <description>listcontrol background</description>
@@ -35,6 +36,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>10</id>
       <description>label top</description>
@@ -47,6 +49,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>11</id>
       <description>label top</description>
@@ -59,6 +62,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>20</id>
       <description>euro</description>
@@ -71,6 +75,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>21</id>
       <description>imgEU</description>
@@ -82,6 +87,7 @@
       <height>45</height>
       <texture>HNBTecaj/HNBTecajEU.png</texture>
     </control>
+	
     <control>
       <id>22</id>
       <description>australija</description>
@@ -94,6 +100,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>23</id>
       <description>imgAUS</description>
@@ -105,6 +112,7 @@
       <height>45</height>
       <texture>HNBTecaj/HNBTecajAUS.png</texture>
     </control>
+	
     <control>
       <id>24</id>
       <description>kanada</description>
@@ -117,6 +125,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>25</id>
       <description>imgCAD</description>
@@ -128,6 +137,7 @@
       <height>45</height>
       <texture>HNBTecaj/HNBTecajCAD.png</texture>
     </control>
+	
     <control>
       <id>26</id>
       <description>ceska</description>
@@ -140,6 +150,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>27</id>
       <description>imgCZK</description>
@@ -151,6 +162,7 @@
       <height>45</height>
       <texture>HNBTecaj/HNBTecajCZK.png</texture>
     </control>
+	
     <control>
       <id>28</id>
       <description>danska</description>
@@ -163,6 +175,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>29</id>
       <description>imgDKK</description>
@@ -174,6 +187,7 @@
       <height>45</height>
       <texture>HNBTecaj/HNBTecajDKK.png</texture>
     </control>
+	
     <control>
       <id>30</id>
       <description>madzarska</description>
@@ -186,6 +200,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>31</id>
       <description>imgHUF</description>
@@ -197,6 +212,7 @@
       <height>45</height>
       <texture>HNBTecaj/HNBTecajHUF.png</texture>
     </control>
+	
     <control>
       <id>32</id>
       <description>japan</description>
@@ -209,6 +225,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>33</id>
       <description>imgJPY</description>
@@ -220,6 +237,7 @@
       <height>45</height>
       <texture>HNBTecaj/HNBTecajJPY.png</texture>
     </control>
+	
     <control>
       <id>34</id>
       <description>norveska</description>
@@ -232,6 +250,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>35</id>
       <description>imgNOK</description>
@@ -243,6 +262,7 @@
       <height>45</height>
       <texture>HNBTecaj/HNBTecajNOK.png</texture>
     </control>
+	
     <control>
       <id>36</id>
       <description>svedska</description>
@@ -255,6 +275,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>37</id>
       <description>imgSEK</description>
@@ -266,6 +287,7 @@
       <height>45</height>
       <texture>HNBTecaj/HNBTecajSEK.png</texture>
     </control>
+	
     <control>
       <id>38</id>
       <description>svicarska</description>
@@ -278,6 +300,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>39</id>
       <description>imgCHF</description>
@@ -289,6 +312,7 @@
       <height>45</height>
       <texture>HNBTecaj/HNBTecajCHF.png</texture>
     </control>
+	
     <control>
       <id>40</id>
       <description>velika britanija</description>
@@ -301,6 +325,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>41</id>
       <description>imgGBP</description>
@@ -312,6 +337,7 @@
       <height>45</height>
       <texture>HNBTecaj/HNBTecajGBP.png</texture>
     </control>
+	
     <control>
       <id>42</id>
       <description>SAD</description>
@@ -324,6 +350,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>43</id>
       <description>imgGBP</description>
@@ -335,6 +362,7 @@
       <height>45</height>
       <texture>HNBTecaj/HNBTecajUSD.png</texture>
     </control>
+	
     <control>
       <id>44</id>
       <description>poljska</description>
@@ -347,6 +375,7 @@
       <align>CENTER</align>
       <label />
     </control>
+	
     <control>
       <id>45</id>
       <description>imgPLN</description>

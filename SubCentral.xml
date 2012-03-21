@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>84623</id>
   <defaultcontrol>202</defaultcontrol>
@@ -9,6 +8,7 @@
   <define>#header.label:#SubCentral.Header.Label</define>
   <define>#header.background:hover_subcentral.png</define>
   <controls>
+  
     <control>
       <id>1</id>
       <description>Background</description>
@@ -20,6 +20,7 @@
       <height>1080</height>
       <texture>background.png</texture>
     </control>
+	
     <control>
       <id>0</id>
       <description>Fanart Overlay</description>
@@ -31,6 +32,7 @@
       <height>1080</height>
       <texture>#SubCentral.Search.Media.FanArt</texture>
     </control>
+	
     <control>
       <id>0</id>
       <description>Fanart Background</description>
@@ -87,6 +89,7 @@
       <align>LEFT</align>
       <label>924</label>
     </control>
+	
     <control>
       <id>1</id>
       <description>settings main</description>
@@ -97,24 +100,26 @@
       <height>900</height>
       <texture>settings_main_panel.png</texture>
     </control>
+	
     <import>SubCentral.Main.xml</import>
     <import>SubCentral.ModifySearch.xml</import>
     <import>SubCentral.Search.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
-      <posX>711</posX>
-      <posY>202</posY>
-      <width>702</width>
-      <height>87</height>
-      <font>Segoe Light40</font>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>subcentral</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
-      <valign>middle</valign>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>action menu</description>
       <type>actiongroup</type>
@@ -202,5 +207,6 @@
         </control>
       </control>
     </control>
+	
   </controls>
 </window>

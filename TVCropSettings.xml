@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>3011</id>
   <defaultcontrol>8</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <control>
       <description>group element</description>
       <type>group</type>
@@ -130,5 +130,6 @@
         <align>right</align>
       </control>
     </control>
+	
   </controls>
 </window>

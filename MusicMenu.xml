@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>8888</id>
   <defaultcontrol>3</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <disabletopbar>no</disabletopbar>
   <controls>
+  
     <control>
       <description>BG</description>
       <type>image</type>
@@ -14,6 +14,7 @@
       <width>1920</width>
       <height>1080</height>
     </control>
+	
     <control>
       <description>seperator animation</description>
       <type>animation</type>
@@ -26,6 +27,7 @@
       <RepeatBehavior>0</RepeatBehavior>
       <FillBehavior>HoldEnd</FillBehavior>
     </control>
+	
     <control>
       <description>seperator animation</description>
       <type>animation</type>
@@ -38,6 +40,7 @@
       <RepeatBehavior>0</RepeatBehavior>
       <FillBehavior>HoldEnd</FillBehavior>
     </control>
+	
     <control>
       <description>seperator animation</description>
       <type>animation</type>
@@ -50,6 +53,7 @@
       <RepeatBehavior>0</RepeatBehavior>
       <FillBehavior>HoldEnd</FillBehavior>
     </control>
+	
     <control>
       <description>seperator animation</description>
       <type>animation</type>
@@ -62,6 +66,7 @@
       <RepeatBehavior>0</RepeatBehavior>
       <FillBehavior>HoldEnd</FillBehavior>
     </control>
+	
     <control>
       <description>seperator animation</description>
       <type>animation</type>
@@ -74,5 +79,6 @@
       <RepeatBehavior>0</RepeatBehavior>
       <FillBehavior>HoldEnd</FillBehavior>
     </control>
+	
   </controls>
 </window>

@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>2497</id>
   <defaultcontrol>50</defaultcontrol>
@@ -7,22 +6,24 @@
   <define>#header.label:Emulators</define>
   <define>#header.background:hover_myemulators.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
       <description>Header label</description>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>#header.label</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -36,6 +37,7 @@
       <animation effect="fade" time="100">WindowClose</animation>
       <visible>facadeview.list</visible>
     </control>
+	
     <control>
       <description>listcontrol background info</description>
       <type>image</type>
@@ -49,22 +51,7 @@
       <animation effect="fade" time="100">WindowClose</animation>
       <visible>facadeview.list</visible>
     </control>
-    <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
-      <id>1</id>
-      <posX>608</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>My Emulators</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons]</visible>
-      <align>center</align>
-      <valign>middle</valign>
-    </control>
+	
     <!-- SIDE BUTTONS -->
     <control>
       <type>actiongroup</type>
@@ -373,6 +360,7 @@
       <texture>
       </texture>
     </control>
+	
     <control>
       <animation effect="fade" time="400">WindowClose</animation>
       <type>image</type>
@@ -385,6 +373,7 @@
       <texture>
       </texture>
     </control>
+	
     <control>
       <animation effect="fade" time="400">WindowClose</animation>
       <type>image</type>
@@ -397,6 +386,7 @@
       <texture>
       </texture>
     </control>
+	
     <control>
       <id>1</id>
       <type>image</type>
@@ -413,6 +403,8 @@
       <texture>hiddenmenu_tab_up.png</texture>
       <visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
     </control>
+	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

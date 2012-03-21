@@ -15,6 +15,20 @@
       <height>1080</height>
       <texture>background.png</texture>
     </control>
+
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
 	
     <control>
       <description>Menu</description>
@@ -186,7 +200,7 @@
 
 			</control>
 		</control>
-		
+	
     <!--Weather-->
     <control>
       <description>Weather image</description>

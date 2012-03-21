@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <!-- 
 Note:
 The GUIMusicFullscreen Window allows MediaPortal of host visualizations natively when using the core music player.
@@ -12,6 +11,7 @@ the visualization window itself.  See MyMusicFullScreenVisualization.xml visuali
   <defaultcontrol>10</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <control>
       <description>dummy control</description>
       <type>label</type>
@@ -24,5 +24,6 @@ the visualization window itself.  See MyMusicFullScreenVisualization.xml visuali
       <textcolor>White</textcolor>
       <visible>no</visible>
     </control>
+	
   </controls>
 </window>

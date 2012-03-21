@@ -3,7 +3,7 @@
   <id>30885</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
-  <define>#header.label:Global Search</define>
+  <define>#header.label:#SkinTranslation.Translations.global.search.musicsearch.Label</define>
   <define>#header.background:hover_search music.png</define>
   <controls>
   
@@ -43,20 +43,19 @@
     </control>
 	
     <import>common.time.xml</import>
-	
+
     <control>
-      <id>0</id>
+      <id>1</id>
       <type>label</type>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>87</height>
-      <font>Segoe Light40</font>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>#SkinTranslation.Translations.global.search.musicsearch.Label</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
-      <valign>middle</valign>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
 	
     <control>

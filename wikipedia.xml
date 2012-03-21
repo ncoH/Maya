@@ -56,121 +56,147 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+
+    <!-- ************** HIDDEN MENU *****************  -->
 	
-    <control>
-      <type>actiongroup</type>
-      <description>action menu</description>
-      <defaultcontrol>10</defaultcontrol>
-      <onexit>20</onexit>
-      <buttonX>0</buttonX>
-      <buttonY>0</buttonY>
-      <buttonwidth>0</buttonwidth>
-      <buttonheight>0</buttonheight>
-      <width>1920</width>
-      <height>1080</height>
-      <dimColor>00ffffff</dimColor>
-      <animation effect="fade" time="250">Visible</animation>
-      <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
-      <animation effect="fade" time="200" reversible="false">Hidden</animation>
-      <animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
-      <control>
-        <id>1</id>
-        <type>image</type>
-        <posX>719</posX>
-        <posY>90</posY>
-        <width>480</width>
-        <height>900</height>
-        <texture>menu_bg.png</texture>
-      </control>
-      <control>
-        <description>Heading text label</description>
-        <type>label</type>
-        <id>1</id>
-        <posX>796</posX>
-        <posY>154</posY>
-        <label>924</label>
-        <font>Segoe Light18</font>
-        <textcolor>85cffe</textcolor>
-      </control>
-      <control>
-        <description>button group</description>
-        <type>group</type>
-        <posX>763</posX>
-        <posY>246</posY>
-        <layout>StackLayout(0, Vertical, true)</layout>
-        <control>
-          <description>Search Button</description>
-          <type>button</type>
-          <id>10</id>
-          <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-          <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-          <width>392</width>
-          <height>68</height>
-          <textXOff>35</textXOff>
-          <textYOff>16</textYOff>
-          <onup>13</onup>
-          <onleft>20</onleft>
-          <onright>20</onright>
-          <label>137</label>
-        </control>
-        <control>
-          <description>Select local Wikipedia Button</description>
-          <type>button</type>
-          <id>11</id>
-          <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-          <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-          <width>392</width>
-          <height>68</height>
-          <textXOff>35</textXOff>
-          <textYOff>16</textYOff>
-          <onleft>20</onleft>
-          <onright>20</onright>
-          <label>200025</label>
-        </control>
-        <control>
-          <description>Back to the text (when viewing an image)</description>
-          <type>button</type>
-          <id>14</id>
-          <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-          <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-          <width>392</width>
-          <height>68</height>
-          <textXOff>35</textXOff>
-          <textYOff>16</textYOff>
-          <onleft>20</onleft>
-          <onright>20</onright>
-          <label>2514</label>
-          <visible>no</visible>
-        </control>
-        <control>
-          <description>Links Button</description>
-          <type>button</type>
-          <id>12</id>
-          <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-          <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-          <width>392</width>
-          <height>68</height>
-          <textXOff>35</textXOff>
-          <textYOff>16</textYOff>
-          <onleft>20</onleft>
-          <onright>20</onright>
-          <label>2511</label>
-        </control>
-        <control>
-          <description>Images Button</description>
-          <type>button</type>
-          <id>13</id>
-          <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-          <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-          <width>392</width>
-          <height>68</height>
-          <textXOff>35</textXOff>
-          <textYOff>16</textYOff>
-          <ondown>10</ondown>
-          <onleft>20</onleft>
-          <onright>20</onright>
-          <label>2515</label>
-        </control>
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>10</defaultcontrol>
+		<onexit>50</onexit>
+		<dimColor>00ffffff</dimColor>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>521</buttonwidth>
+		<buttonheight>1080</buttonheight>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="400">hidden</animation>
+		</control>
+	
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+		<control>
+			<description>Menu label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>114</posY>
+			<label>924</label>
+			<font>Segoe Light22</font>
+			<textcolor>ff6aa5cb</textcolor>
+			<animation effect="fade" time="0">WindowClose</animation>
+			<animation effect="slide" start="-150,0" time="100">visible</animation>
+			<animation effect="fade" time="50">visible</animation>
+			<animation effect="fade" time="0">hidden</animation>
+    	</control>
+				
+				<control>
+					<type>group</type>
+					<description>group element</description>
+					<animation effect="fade" time="0">WindowClose</animation>
+					<animation effect="slide" start="-150,0" time="100">visible</animation>
+					<animation effect="fade" time="50">visible</animation>
+					<animation effect="fade" time="0">hidden</animation>
+					<layout>StackLayout(0, Vertical, true)</layout>
+					<posX>69</posX>
+					<posY>215</posY>
+						
+			<control>
+				<description>Search Button</description>
+				<type>button</type>
+				<id>10</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+				<onup>13</onup>
+				<onleft>20</onleft>
+				<onright>20</onright>
+				<label>137</label>
+			</control>
+					
+			<control>
+				<description>Select local Wikipedia Button</description>
+				<type>button</type>
+				<id>11</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+				<onleft>20</onleft>
+				<onright>20</onright>
+				<label>200025</label>
+			</control>
+		
+			<control>
+				<description>Back to the text (when viewing an image)</description>
+				<type>button</type>
+				<id>14</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+				<onleft>20</onleft>
+				<onright>20</onright>
+				<label>2514</label>
+				<visible>yes</visible>
+			</control>
+		
+			<control>
+				<description>Links Button</description>
+				<type>button</type>
+				<id>12</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+				<onleft>20</onleft>
+				<onright>20</onright>
+				<label>2511</label>
+			</control>
+		
+			<control>
+				<description>Images Button</description>
+				<type>button</type>
+				<id>13</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+				<ondown>10</ondown>
+				<onleft>20</onleft>
+				<onright>20</onright>
+				<label>2515</label>
+			</control>
+		
       </control>
     </control>
 	

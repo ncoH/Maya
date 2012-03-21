@@ -3,7 +3,7 @@
   <id>9813</id>
   <defaultcontrol>23</defaultcontrol>
   <allowoverlay>no</allowoverlay>
-  <define>#header.label:136</define>
+  <define>#header.label:#TVSeries.Translation.Series_Plural.Label #TVSeries.Translation.Playlist.Label</define>
   <define>#header.background:hover_my tv series.png</define>
   <controls>
   
@@ -78,32 +78,15 @@
     <control>
       <id>1</id>
       <type>label</type>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>#header.label</label>
-      <visible>!facadeview.filmstrip + !facadeview.smallicons + !facadeview.largeicons</visible>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
-    </control>
-	
-    <control>
-      <id>1</id>
-      <type>label</type>
-      <visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
-      <posX>608</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
-      <textcolor>ff6aa5cb</textcolor>
-      <align>CENTER</align>
-      <label>#header.label</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
 	
     <import>common.time.xml</import>
@@ -238,203 +221,6 @@
     </control>
 	
     <control>
-      <type>actiongroup</type>
-      <description>action menu</description>
-      <defaultcontrol>2</defaultcontrol>
-      <onexit>50</onexit>
-      <buttonX>0</buttonX>
-      <buttonY>0</buttonY>
-      <buttonwidth>0</buttonwidth>
-      <buttonheight>0</buttonheight>
-      <width>1920</width>
-      <height>1080</height>
-      <dimColor>00ffffff</dimColor>
-      <control>
-        <type>image</type>
-        <id>0</id>
-        <width>1920</width>
-        <height>1080</height>
-        <texture>semi_trans_back_general_menu.png</texture>
-        <colordiffuse>90ffffff</colordiffuse>
-        <animation effect="fade" time="200">windowopen</animation>
-        <animation effect="fade" time="400">windowclose</animation>
-      </control>
-      <control>
-        <type>group</type>
-        <animation effect="fade" time="250">Visible</animation>
-        <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
-        <animation effect="fade" time="200" reversible="false">Hidden</animation>
-        <animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
-        <control>
-          <id>1</id>
-          <type>image</type>
-          <posX>720</posX>
-          <posY>90</posY>
-          <width>480</width>
-          <height>900</height>
-          <texture>menu_bg.png</texture>
-          <visible>!Control.HasFocus(50)</visible>
-        </control>
-        <control>
-          <description>Heading text label</description>
-          <type>label</type>
-          <id>1</id>
-          <posX>796</posX>
-          <posY>154</posY>
-          <label>924</label>
-          <font>Segoe Light18</font>
-          <textcolor>85cffe</textcolor>
-        </control>
-        <control>
-          <description>button group</description>
-          <type>group</type>
-          <posX>763</posX>
-          <posY>246</posY>
-          <layout>StackLayout(0, Vertical, true)</layout>
-          <control>
-            <description>View-As button</description>
-            <type>button</type>
-            <id>2</id>
-            <label>100</label>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <onright>50</onright>
-            <onup>9</onup>
-            <ondown>20</ondown>
-          </control>
-          <control>
-            <description>Shuffle button</description>
-            <type>button</type>
-            <id>20</id>
-            <label>191</label>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <onright>50</onright>
-            <onup>2</onup>
-            <ondown>30</ondown>
-          </control>
-          <control>
-            <description>Repeat on/off button</description>
-            <type>togglebutton</type>
-            <id>30</id>
-            <label>486</label>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-            <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-            <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
-            <onright>50</onright>
-            <onup>20</onup>
-            <ondown>40</ondown>
-          </control>
-          <control>
-            <description>Autoplay on/off button</description>
-            <type>togglebutton</type>
-            <id>40</id>
-            <label>713</label>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-            <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-            <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
-            <onright>50</onright>
-            <onup>30</onup>
-            <ondown>21</ondown>
-          </control>
-          <control>
-            <description>Save button</description>
-            <type>button</type>
-            <id>21</id>
-            <label>190</label>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <onright>50</onright>
-            <onup>40</onup>
-            <ondown>22</ondown>
-          </control>
-          <control>
-            <description>Clear button</description>
-            <type>button</type>
-            <id>22</id>
-            <label>192</label>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <onright>50</onright>
-            <onup>21</onup>
-            <ondown>24</ondown>
-          </control>
-          <control>
-            <description>Next button</description>
-            <type>button</type>
-            <id>24</id>
-            <label>209</label>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <onright>50</onright>
-            <onup>22</onup>
-            <ondown>25</ondown>
-          </control>
-          <control>
-            <description>Previous button</description>
-            <type>button</type>
-            <id>25</id>
-            <label>210</label>
-            <onright>50</onright>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <onup>24</onup>
-            <ondown>9</ondown>
-          </control>
-          <control>
-            <description>My Playlists</description>
-            <type>button</type>
-            <id>9</id>
-            <label>983</label>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <onright>50</onright>
-            <ondown>2</ondown>
-            <onup>25</onup>
-          </control>
-        </control>
-      </control>
-    </control>
-	
-    <control>
       <description>group element</description>
       <type>group</type>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -555,6 +341,272 @@
         </control>
       </control>
     </control>
+
+    <!-- ************** HIDDEN MENU *****************  -->
+	
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<dimColor>00ffffff</dimColor>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>499</buttonwidth>
+		<buttonheight>1080</buttonheight>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="400">hidden</animation>
+		</control>
+	
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+	
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>232</posY>
+			<posX>128</posX>
+			<width>376</width>
+			<height>1</height>
+			<texture>hiddenmenu_separator.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+
+		<control>
+			<description>Menu label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>114</posY>
+			<label>499</label>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
+			<visible>!Control.HasFocus(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+    	</control>
+		<control>
+			<description>Playlist label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>242</posY>
+			<label>136</label>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
+ 			<visible>!Control.HasFocus(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+		
+          <control>
+            <type>group</type>
+            <description>group element</description>
+ 			<visible>!Control.HasFocus(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="250">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+            <posX>69</posX>
+            <posY>155</posY>
+            <layout>StackLayout(0, Vertical, true)</layout>	
+			
+			<control>
+                <description>View-As button</description>
+                <type>button</type>
+                <id>2</id>
+                <label>100</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>215</posY>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+                <onright>50</onright>
+                <ondown>20</ondown>
+          </control>
+          
+          <control>
+                <description>Empty button</description>
+                <type>button</type>
+                <id>0</id>
+			    <textureFocus>-</textureFocus>
+			    <textureNoFocus>-</textureNoFocus>
+		        <width>497</width>
+			    <height>64</height>
+                <label>-</label>
+                <visible>true</visible>
+          </control>
+          
+          <control>
+                <description>Shuffle button</description>
+                <type>button</type>
+                <id>20</id>
+                <label>191</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+                <onright>50</onright>
+                <onup>2</onup>
+                <ondown>30</ondown>
+          </control>
+          
+          <control>
+                <description>Repeat on/off button</description>
+                <type>togglebutton</type>
+                <id>30</id>
+                <label>486</label>
+				<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+				<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+				<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>				
+                <onright>50</onright>
+                <ondown>40</ondown>
+          </control>
+		  
+          <control>
+                <description>Autoplay on/off button</description>
+                <type>togglebutton</type>
+                <id>40</id>
+                <label>713</label>
+				<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+				<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+				<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+				<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>				
+                <onright>50</onright>
+                <ondown>21</ondown>				
+          </control>
+          
+          <control>
+                <description>Save button</description>
+                <type>button</type>
+                <id>21</id>
+                <label>190</label>
+    			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+                <onright>50</onright>
+                <ondown>22</ondown>				
+          </control>
+        
+          <control>
+                <description>Clear button</description>
+                <type>button</type>
+                <id>22</id>
+                <label>192</label>
+    			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+                <onright>50</onright>
+                <ondown>23</ondown>				
+          </control>
+          
+          <control>
+                <description>Play button</description>
+                <type>button</type>
+                <id>23</id>
+    			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+                <label>208</label>
+                <onright>50</onright>
+                <ondown>24</ondown>
+          </control>
+          
+          <control>
+                <description>Next button</description>
+                <type>button</type>
+                <id>24</id>
+                <label>209</label>
+    			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+                <onright>50</onright>
+          </control>
+          
+          <control>
+                <description>Previous button</description>
+                <type>button</type>
+                <id>25</id>
+                <label>210</label>
+    			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+                <onright>50</onright>				
+          </control>
+          
+          <control>
+                <description>My Playlists</description>
+                <type>button</type>
+                <id>9</id>
+                <label>983</label>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>499</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>
+                <onright>50</onright>
+                <ondown>2</ondown>
+        </control>
+    </control>
+</control>
 	
     <control>
       <id>0</id>
@@ -614,5 +666,6 @@
     </control>
 	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

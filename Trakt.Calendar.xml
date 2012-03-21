@@ -325,139 +325,178 @@
 
 	<!--            :: HIDDEN MENU ::            -->
 
-    <control>
-      <type>actiongroup</type>
-      <description>action menu</description>
-      <defaultcontrol>2</defaultcontrol>
-      <onexit>50</onexit>
-      <buttonX>0</buttonX>
-      <buttonY>0</buttonY>
-      <buttonwidth>0</buttonwidth>
-      <buttonheight>0</buttonheight>
-      <width>1920</width>
-      <height>1080</height>
-      <dimColor>00ffffff</dimColor> 
-      <animation effect="Fade" time="100">WindowClose</animation>
-	  
-      <control>
-        <type>image</type>
-        <id>0</id>
-        <width>1920</width>
-        <height>1080</height>
-        <texture>semi_trans_back_general_menu.png</texture>
-        <colordiffuse>90ffffff</colordiffuse>	
-        <visible>!Control.HasFocus(50)</visible>		
-        <animation effect="fade" time="200">windowopen</animation>
-        <animation effect="fade" time="400">windowclose</animation>
-      </control>
-      <control>
-        <type>group</type>
-        <animation effect="fade" time="250">Visible</animation>
-        <animation effect="fade" time="200" reversible="false">Hidden</animation>	
-        <control>
-          <id>1</id>
-          <type>image</type>
-          <posX>720</posX>
-          <posY>90</posY>
-          <width>480</width>
-          <height>900</height>
-          <texture>menu_bg.png</texture>
-          <visible>!Control.HasFocus(50)</visible>
-        </control>
-        <control>
-          <description>Heading text label</description>
-          <type>label</type>
-          <id>1</id>
-          <posX>796</posX>
-          <posY>154</posY>
-          <label>924</label>
-          <font>Segoe Light18</font>
-          <textcolor>85cffe</textcolor>	  
-		  <visible>!Control.HasFocus(50)</visible>		  
-        </control>
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>3</defaultcontrol>
+		<onexit>50</onexit>
+		<dimColor>00ffffff</dimColor>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>521</buttonwidth>
+		<buttonheight>1080</buttonheight>
 		
-        <control>
-          <description>button group</description>
-          <type>group</type>
-          <posX>763</posX>
-          <posY>246</posY>
-          <layout>StackLayout(0, Vertical, true)</layout>
-          <visible>!Control.HasFocus(50)</visible>		  
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="400">hidden</animation>
+		</control>
+	
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+	
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>232</posY>
+			<posX>128</posX>
+			<width>376</width>
+			<height>1</height>
+			<texture>hiddenmenu_separator.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+		<control>
+			<description>Menu label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>114</posY>
+			<label>924</label>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+    	</control>
+		<control>
+			<description>Jump to label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>240</posY>
+			<label>1065</label>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
+ 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
           <control>
-            <description>Change Layout</description>
-            <type>button</type>
-            <id>2</id>
-            <label>-</label>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <onright>50</onright>
-            <onleft>50</onleft>
-            <onup>66612</onup>
-            <ondown>66610</ondown>
-          </control>
-		  
-          <control>
-            <description>MovingPictures</description>
-            <type>button</type>
-            <id>66610</id>
-            <label>Moving Pictures</label>
-			<hyperlink>96742</hyperlink>			
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <offsetSortButtonX>337</offsetSortButtonX>
-            <offsetSortButtonY>19</offsetSortButtonY>
-            <onright>50</onright>
-            <onleft>50</onleft>
-            <onup>2</onup>			
-            <ondown>66611</ondown>				
-          </control>
-		  
-          <control>
-            <description>My Videos</description>
-            <type>button</type>
-            <id>66611</id>
-            <label>100006</label>
-			<hyperlink>6</hyperlink>			
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <onright>50</onright>
-            <onleft>50</onleft>	
-            <onup>66610</onup>			
-            <ondown>66612</ondown>			
-          </control>
-		  
-          <control>
-            <description>MP-TVSeries</description>
-            <type>button</type>
-            <id>66612</id>
-            <label>MP-TVSeries</label>
-			<hyperlink>9811</hyperlink>			
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <onright>50</onright>
-            <onleft>50</onleft>
-            <onup>66611</onup>
-            <ondown>2</ondown>
-          </control>
-          </control>
-        </control>
-      </control>
+            <type>group</type>
+            <description>group element</description>
+ 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+            <posX>69</posX>
+            <posY>155</posY>
+            <layout>StackLayout(0, Vertical, true)</layout>
+            
+			<control>
+				<description>Change Layout</description>
+   			    <type>button</type>
+				<id>2</id>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+        		<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>
+				<label>-</label>
+				<onup>66612</onup>
+                <ondown>66610</ondown>
+				<onright>50</onright>
+			</control>
+			
+            <control>
+              <description>Empty button</description>
+              <type>button</type>
+              <id>0</id>
+			  <textureFocus>-</textureFocus>
+			  <textureNoFocus>-</textureNoFocus>
+			  <width>497</width>
+			  <height>64</height>
+              <label>-</label>
+              <visible>true</visible>
+            </control>
+            
+            <control>
+				<description>MovingPictures</description>
+				<id>66610</id>
+				<type>button</type>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+        		<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>
+				<label>Moving Pictures</label>
+				<hyperlink>96742</hyperlink>
+				<onright>50</onright>
+                <onup>2</onup>
+                <ondown>66611</ondown>
+			</control>
+			
+            <control>
+				<description>My Videos</description>
+				<type>button</type>
+				<id>66611</id>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+        		<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>
+				<label>100006</label>
+				<onright>50</onright>
+				<hyperlink>6</hyperlink>
+				<ondown>66612</ondown>
+                <onup>66610</onup>
+			</control>
+			
+            <control>
+				<description>MP-TVSeries</description>
+				<type>button</type>
+				<id>66612</id>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+        		<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        		<textureNoFocus>-</textureNoFocus>
+				<label>MP-TVSeries</label>
+				<hyperlink>9811</hyperlink>
+				<ondown>2</ondown>
+                <onup>66611</onup>
+				<onright>50</onright>
+			</control>
+		</control>
     </control>
 	
     <control>

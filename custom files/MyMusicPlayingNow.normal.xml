@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>510</id>
   <defaultcontrol>5101</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <define>#header.background:hover_my music.png</define>
   <controls>
+  
     <control>
       <description>Background</description>
       <type>image</type>
@@ -16,6 +16,7 @@
       <height>1080</height>
       <texture>background.png</texture>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -27,6 +28,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -38,6 +40,7 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <id>0</id>
       <description>Mylyrics overlay</description>
@@ -51,6 +54,7 @@
       <animation effect="Fade" time="400">WindowOpen</animation>
       <animation effect="Fade" end="0" start="0" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <type>image</type>
@@ -62,6 +66,7 @@
       <animation effect="Fade" time="400">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <description>Menu label</description>
@@ -74,6 +79,7 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <id>0</id>
       <type>image</type>
@@ -87,6 +93,8 @@
       <animation effect="Fade" time="300">WindowClose</animation>
       <animation effect="Fade" time="1000" delay="200">VisibleChange</animation>
     </control>
+	
+	
     <control>
       <description>Menu</description>
       <type>group</type>

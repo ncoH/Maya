@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <!-- 
 Notes:
 
@@ -27,6 +26,7 @@ including the text (the alpha component of textcolor is ignored)
     <texture>VisualizationTrackInfo.png</texture>
     <alpha>0xff</alpha>
   </control>
+  
   <control>
     <description>CoverArt Image</description>
     <type>image</type>
@@ -37,12 +37,14 @@ including the text (the alpha component of textcolor is ignored)
     <height>135</height>
     <texture>-</texture>
   </control>
+  
   <control>
     <description>Missing CoverArt Image</description>
     <type>image</type>
     <id>3</id>
     <texture>missing_coverart.png</texture>
   </control>
+  
   <control>
     <description>Label 1</description>
     <type>label</type>

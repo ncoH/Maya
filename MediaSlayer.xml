@@ -11,12 +11,12 @@
     <import>common.time.xml</import>
 	
     <control>
-      <id>2</id>
+      <id>1</id>
       <type>label</type>
       <description>Header label</description>
       <posX>185</posX>
       <posY>28</posY>
-      <width>600</width>
+      <width>500</width>
       <label>#header.label</label>	  
       <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>

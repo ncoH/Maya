@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>508</id>
   <defaultcontrol>20</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <control>
       <type>image</type>
       <description>background image</description>
       <id>1</id>
     </control>
+	
     <control>
       <type>image</type>
       <description>Title image</description>
@@ -18,6 +19,7 @@
       <posY>35</posY>
       <texture>coverart_logo.png</texture>
     </control>
+	
     <control>
       <type>image</type>
       <description>Album Art image</description>
@@ -29,6 +31,7 @@
       <texture>-</texture>
       <keepaspectratio>yes</keepaspectratio>
     </control>
+	
     <control>
       <type>image</type>
       <description>Amazon Logo image</description>

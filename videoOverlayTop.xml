@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <defaultcontrol>4</defaultcontrol>
   <id>3008</id>
@@ -15,6 +14,7 @@
       <texture>logo_pause.png</texture>
       <visible>player.paused</visible>
     </control>
+	
     <control>
       <description>FF logo</description>
       <type>image</type>
@@ -26,6 +26,7 @@
       <texture>logo_fastforward.png</texture>
       <visible>player.forwarding</visible>
     </control>
+	
     <control>
       <description>RW logo</description>
       <type>image</type>
@@ -37,5 +38,6 @@
       <texture>logo_rewind.png</texture>
       <visible>player.rewinding</visible>
     </control>
+	
   </controls>
 </window>

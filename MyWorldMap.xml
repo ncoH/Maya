@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>10234</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <disabletopbar>yes</disabletopbar>
   <controls>
+  
     <control>
       <id>25</id>
       <type>image</type>
@@ -17,6 +17,7 @@
       <animation effect="Fade" time="250">Visible</animation>
       <animation effect="Fade" time="250">Hidden</animation>
     </control>
+	
     <control>
       <description>Longitude</description>
       <type>label</type>
@@ -28,6 +29,7 @@
       <align>left</align>
       <textcolor>ffffffff</textcolor>
     </control>
+	
     <control>
       <description>Latitude</description>
       <type>label</type>
@@ -39,6 +41,7 @@
       <align>left</align>
       <textcolor>ffffffff</textcolor>
     </control>
+	
     <control>
       <description>MapType</description>
       <type>label</type>
@@ -50,6 +53,7 @@
       <align>right</align>
       <textcolor>ffffffff</textcolor>
     </control>
+	
     <control>
       <description>Zoom Mode</description>
       <type>label</type>
@@ -61,6 +65,7 @@
       <align>right</align>
       <textcolor>ffffffff</textcolor>
     </control>
+	
     <control>
       <description>Progressbar Placeholder (gives skinners the chance to define the position of the progressbar)</description>
       <type>image</type>
@@ -71,5 +76,6 @@
       <height>32</height>
       <texture>WMprogressDummy.png</texture>
     </control>
+	
   </controls>
 </window>

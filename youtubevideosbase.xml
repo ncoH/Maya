@@ -97,6 +97,8 @@
       <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
 	
+    <import>common.time.xml</import>
+
     <control>
       <id>1</id>
       <type>label</type>
@@ -110,8 +112,6 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
-	
-    <import>common.time.xml</import>
 	
     <control>
       <description>listcontrol background</description>

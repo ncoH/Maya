@@ -45,21 +45,6 @@
     </control>
 	
     <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
-      <id>1</id>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>#header.label</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <valign>middle</valign>
-    </control>
-	
-    <control>
       <description>DUMMY CONTROLL FOR FANART VISIBILITY CONDITION</description>
       <type>label</type>
       <id>91919295</id>
@@ -125,6 +110,20 @@
       <texture>Lyrics_overlay_NP.png</texture>
       <animation effect="Fade" time="400">WindowOpen</animation>
       <animation effect="Fade" end="0" start="0" time="300">WindowClose</animation>
+    </control>
+
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
 	
     <control>
@@ -653,6 +652,7 @@
       <textureFocus>button-small-focus.png</textureFocus>
       <textureNoFocus>-</textureNoFocus>
     </control>
+	
     <control>
       <id>1</id>
       <type>image</type>
@@ -661,6 +661,8 @@
       <texture>hiddenmenu_tab.png</texture>
       <visible>Control.HasFocus(123) | Control.HasFocus(155) | Control.HasFocus(177)</visible>
     </control>
+	
     <import>common.time.white.xml</import>
+	
   </controls>
 </window>
