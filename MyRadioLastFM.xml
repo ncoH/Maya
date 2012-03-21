@@ -112,6 +112,8 @@
       <animation effect="Fade" end="0" start="0" time="300">WindowClose</animation>
     </control>
 
+    <import>common.time.white.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
@@ -121,7 +123,7 @@
       <width>500</width>
       <label>#header.label</label>	  
       <font>Segoe Light22</font>
-      <textcolor>ff6aa5cb</textcolor>
+      <textcolor>ffffff</textcolor>
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
@@ -323,6 +325,7 @@
             <visible>false</visible>
           </control>
         </control>
+		
         <control>
           <description>Last.fm logo</description>
           <type>image</type>
@@ -335,6 +338,7 @@
         </control>
       </control>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>artist label</description>
@@ -348,6 +352,7 @@
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>artist label</description>
@@ -360,6 +365,7 @@
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>album label</description>
@@ -373,6 +379,7 @@
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>album label</description>
@@ -385,6 +392,7 @@
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>title label</description>
@@ -569,6 +577,7 @@
       <textcolor>85cfff</textcolor>
       <visible>Control.HasFocus(123)</visible>
     </control>
+	
     <control>
       <type>listcontrol</type>
       <description>list of best album tracks</description>
@@ -599,6 +608,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <visible allowhiddenfocus="true">player.hasmedia + Control.HasFocus(123)</visible>
     </control>
+	
     <control>
       <description>Now Playing button</description>
       <type>button</type>
@@ -614,6 +624,7 @@
       <textureFocus>button-small-focus.png</textureFocus>
       <textureNoFocus>-</textureNoFocus>
     </control>
+	
     <control>
       <description>Top Album Tracks button</description>
       <type>button</type>
@@ -625,6 +636,7 @@
       <textureFocus>-</textureFocus>
       <textureNoFocus>-</textureNoFocus>
     </control>
+	
     <control>
       <description>Top Album Tracks button</description>
       <type>button</type>
@@ -637,6 +649,7 @@
       <textureNoFocus>button-small-focus.png</textureNoFocus>
       <visible>Control.HasFocus(123)</visible>
     </control>
+	
     <control>
       <description>Similar Artists button</description>
       <type>button</type>
@@ -654,15 +667,15 @@
     </control>
 	
     <control>
+      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
       <id>1</id>
       <type>image</type>
       <posX>0</posX>
-      <posY>457</posY>
+      <posY>440</posY>
       <texture>hiddenmenu_tab.png</texture>
       <visible>Control.HasFocus(123) | Control.HasFocus(155) | Control.HasFocus(177)</visible>
     </control>
-	
-    <import>common.time.white.xml</import>
 	
   </controls>
 </window>

@@ -5,6 +5,7 @@
   <allowoverlay>yes</allowoverlay>
   <define>#header.label:136</define>
   <define>#useSelectedFanart:Yes</define>
+  <define>#header.background:hover_my music.png</define>  
   <controls>
   
     <import>common.window.playlist.xml</import>

@@ -33,6 +33,8 @@
 			<align>right</align>
 			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742) + !window.isvisible(7111992)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)]</visible>
         </control>
+
+<!--Weather-->
 		
         <control>
             <id>0</id>
@@ -47,7 +49,6 @@
 			<visible>[window.isvisible(35) | window.isvisible(0)] | [!window.isvisible(35) + !window.isvisible(0) + !window.isvisible(96742) + !window.isvisible(7111992)] | [window.isvisible(96742) + Control.IsVisible(50)] | [window.isvisible(96742) + Control.IsVisible(51)] + plugin.isenabled(InfoService)</visible>
         </control>
 		
-<!--Weather-->
 		<control>
 			<description>Weather image</description>
 			<type>image</type>

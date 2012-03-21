@@ -5,13 +5,1482 @@
   <allowoverlay>no</allowoverlay>
   <define>#MyLyrics.BlacklistedControlIDs:5106,5107,5108,5109</define>
   <define>#MyLyrics.EnableMouseControl:yes</define>
+  <define>#header.label:Lyrics</define>    
   <define>#usePlayFanart:Yes</define>
   <define>#header.background:hover_my lyrics.png</define>
   <controls>
   
-    <import>MyMusicPlayingNow.xml</import>
-    <import>common.window.lyrics.xml</import>
-    <import>common.time.white.xml</import>
+    <control>
+      <description>Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+    </control>
+	
+    <control>
+      <description>Fanart Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#header.background</texture>
+      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+    </control>
+	
+    <control>
+      <description>Fanart Overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>basichome_fanart_overlay.png</texture>
+      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+    </control>
+	
+    <control>
+      <description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>91919295</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR PLAYING FANART1 VISIBILITY CONDITION</description>
+      <type>label</type>
+      <id>91919296</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+    </control>
+    <control>
+      <description>DUMMY CONTROLL FOR PLAYING FANART2 AVAILABILITY CONDITION</description>
+      <type>label</type>
+      <id>91919294</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1</width>
+      <visible>no</visible>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>DEFAULT BACKGROUND WHEN FANART NOT AVAILABLE</description>
+      <type>multiimage</type>
+      <visible>!control.isvisible(91919294)</visible>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <imagepath>music</imagepath>
+      <timeperimage>30000</timeperimage>
+      <fadetime>800</fadetime>
+      <loop>yes</loop>
+      <randomize>True</randomize>
+      <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
+      <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
+    </control>
+	
+    <control>
+      <description>FANART IMAGE 1</description>
+      <id>897688</id>
+      <type>image</type>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.music.backdrop1.play</texture>
+      <visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919295)</visible>
+      <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
+      <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
+    </control>
+	
+    <control>
+      <description>FANART IMAGE 2</description>
+      <id>897689</id>
+      <type>image</type>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#fanarthandler.music.backdrop2.play</texture>
+      <visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919296)</visible>
+      <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
+      <animation effect="Fade" end="0" reversible="FALSE" start="100" time="900">Hidden</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>Mylyrics overlay</description>
+      <type>image</type>
+      <visible>plugin.isenabled(Fanart Handler)+control.isvisible(91919294)+window.isvisible(90478)</visible>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>Lyrics_overlay_NP.png</texture>
+      <animation effect="Fade" time="400">WindowOpen</animation>
+      <animation effect="Fade" end="0" start="0" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>630</posY>
+      <width>1920</width>
+      <height>448</height>
+      <texture>now_playing_fanart_bg.png</texture>
+      <animation effect="Fade" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <import>common.time.white.xml</import>	
+
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ffffff</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>Menu label</description>
+      <type>label</type>
+      <posX>1450</posX>
+      <posY>675</posY>
+      <font>Segoe Light18</font>
+      <textcolor>ff85cfff</textcolor>
+      <label>924</label>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>1011</id>
+      <description>LrcPick status</description>
+      <type>label</type>
+      <posX>702</posX>
+      <posY>977</posY>
+      <font>font16</font>
+      <textcolor>ffffffff</textcolor>
+      <label />
+      <animation effect="Fade" time="250">VisibleChange</animation>
+    </control>
+	
+    <control>
+      <id>20</id>
+      <description>The Lyric area</description>
+      <type>textbox</type>
+      <onleft>20</onleft>
+      <onright>5106</onright>
+      <onup>20</onup>
+      <ondown>20</ondown>
+      <visible />
+      <posX>493</posX>
+      <posY>80</posY>
+      <width>882</width>
+      <height>590</height>
+      <spinPosX>1222</spinPosX>
+      <spinPosY>625</spinPosY>
+      <spinHeight>39</spinHeight>
+      <spinWidth>39</spinWidth>
+      <seperator>----------------------------------------------------------------------------------------------</seperator>
+      <text>6</text>
+    </control>
+	
+    <control>
+      <id>1020</id>
+      <description>The Lyric area</description>
+      <type>textboxscrollup</type>
+      <onleft>20</onleft>
+      <onright>5106</onright>
+      <onup>20</onup>
+      <ondown>20</ondown>
+      <visible>no</visible>
+      <posX>493</posX>
+      <posY>80</posY>
+      <width>882</width>
+      <height>590</height>
+      <image>icon-folder.png</image>
+      <seperator>----------------------------------------------------------------------------------------------</seperator>
+      <text>6</text>
+    </control>
+	
+    <control>
+      <id>600</id>
+      <description>time 0</description>
+      <type>label</type>
+      <posX>439</posX>
+      <posY>56</posY>
+      <width>140</width>
+      <textcolor>80ffffff</textcolor>
+      <align>RIGHT</align>
+      <label>(xx:xx:xx)</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>300</id>
+      <description>line 0</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>56</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 0</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+      <disabledcolor>ffffffff</disabledcolor>
+    </control>
+	
+    <control>
+      <id>200</id>
+      <description>line 0</description>
+      <type>label</type>
+      <colordiffuse>80ffffff</colordiffuse>
+      <posX>493</posX>
+      <posY>56</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 0</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+      <disabledcolor>ffffffff</disabledcolor>
+    </control>
+	
+    <control>
+      <id>500</id>
+      <description>line 0</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>56</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 0</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+      <disabledcolor>ffffffff</disabledcolor>
+    </control>
+	
+    <control>
+      <id>400</id>
+      <description>line 0</description>
+      <type>label</type>
+      <colordiffuse>80ffffff</colordiffuse>
+      <posX>493</posX>
+      <posY>56</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 0</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+      <disabledcolor>ffffffff</disabledcolor>
+    </control>
+	
+    <control>
+      <id>601</id>
+      <description>time 1</description>
+      <type>label</type>
+      <posX>439</posX>
+      <posY>98</posY>
+      <width>140</width>
+      <textcolor>80ffffff</textcolor>
+      <align>RIGHT</align>
+      <label>(xx:xx:xx)</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>602</id>
+      <description>time 2</description>
+      <type>label</type>
+      <posX>439</posX>
+      <posY>143</posY>
+      <width>140</width>
+      <textcolor>80ffffff</textcolor>
+      <align>RIGHT</align>
+      <label>(xx:xx:xx)</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>603</id>
+      <description>time 3</description>
+      <type>label</type>
+      <posX>439</posX>
+      <posY>188</posY>
+      <width>140</width>
+      <textcolor>80ffffff</textcolor>
+      <align>RIGHT</align>
+      <label>(xx:xx:xx)</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>604</id>
+      <description>time 4</description>
+      <type>label</type>
+      <posX>439</posX>
+      <posY>233</posY>
+      <width>140</width>
+      <textcolor>80ffffff</textcolor>
+      <align>RIGHT</align>
+      <label>(xx:xx:xx)</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>605</id>
+      <description>time 5</description>
+      <type>label</type>
+      <posX>439</posX>
+      <posY>278</posY>
+      <width>140</width>
+      <textcolor>80ffffff</textcolor>
+      <align>RIGHT</align>
+      <label>(xx:xx:xx)</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>606</id>
+      <description>time 6</description>
+      <type>label</type>
+      <posX>439</posX>
+      <posY>323</posY>
+      <width>140</width>
+      <textcolor>80ffffff</textcolor>
+      <align>RIGHT</align>
+      <label>(xx:xx:xx)</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>607</id>
+      <description>time 7</description>
+      <type>label</type>
+      <posX>439</posX>
+      <posY>369</posY>
+      <width>140</width>
+      <textcolor>80ffffff</textcolor>
+      <align>RIGHT</align>
+      <label>(xx:xx:xx)</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>608</id>
+      <description>time 8</description>
+      <type>label</type>
+      <posX>439</posX>
+      <posY>413</posY>
+      <width>140</width>
+      <textcolor>80ffffff</textcolor>
+      <align>RIGHT</align>
+      <label>(xx:xx:xx)</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>609</id>
+      <description>time 9</description>
+      <type>label</type>
+      <posX>439</posX>
+      <posY>458</posY>
+      <width>140</width>
+      <textcolor>80ffffff</textcolor>
+      <align>RIGHT</align>
+      <label>(xx:xx:xx)</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>610</id>
+      <description>time 10</description>
+      <type>label</type>
+      <posX>439</posX>
+      <posY>503</posY>
+      <width>140</width>
+      <textcolor>80ffffff</textcolor>
+      <align>RIGHT</align>
+      <label>(xx:xx:xx)</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>611</id>
+      <description>time 11</description>
+      <type>label</type>
+      <posX>439</posX>
+      <posY>548</posY>
+      <width>140</width>
+      <textcolor>80ffffff</textcolor>
+      <align>RIGHT</align>
+      <label>(xx:xx:xx)</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>612</id>
+      <description>time 12</description>
+      <type>label</type>
+      <posX>439</posX>
+      <posY>593</posY>
+      <width>140</width>
+      <textcolor>80ffffff</textcolor>
+      <align>RIGHT</align>
+      <label>(xx:xx:xx)</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>301</id>
+      <description>line 1</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>98</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 1</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>201</id>
+      <description>line 1</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>98</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 1</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>501</id>
+      <description>line 1</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>98</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 1</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>401</id>
+      <description>line 1</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>98</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 1</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>302</id>
+      <description>line 2</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>143</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 2</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>202</id>
+      <description>line 2</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>143</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 2</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>502</id>
+      <description>line 2</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>143</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 2</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>402</id>
+      <description>line 2</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>143</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 2</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>303</id>
+      <description>line 3</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>188</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 3</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>203</id>
+      <description>line 3</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>188</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 3</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>503</id>
+      <description>line 3</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>188</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 3</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>403</id>
+      <description>line 3</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>188</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 3</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>304</id>
+      <description>line 4</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>233</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 4</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>204</id>
+      <description>line 4</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>233</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 4</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>504</id>
+      <description>line 4</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>233</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 4</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>404</id>
+      <description>line 4</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>233</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 4</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>305</id>
+      <description>line 5</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>278</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 5</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>205</id>
+      <description>line 5</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>278</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 5</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>505</id>
+      <description>line 5</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>278</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 5</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>405</id>
+      <description>line 5</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>278</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 5</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>306</id>
+      <description>line 6</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>323</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 6</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>206</id>
+      <description>line 6</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>323</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 6</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>506</id>
+      <description>line 6</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>323</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 6</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>406</id>
+      <description>line 6</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>323</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 6</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>307</id>
+      <description>line 7</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>369</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 7</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>207</id>
+      <description>line 7</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>369</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 7</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>507</id>
+      <description>line 7</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>369</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 7</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>407</id>
+      <description>line 7</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>369</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 7</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>308</id>
+      <description>line 8</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>413</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 8</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>208</id>
+      <description>line 8</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>413</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 8</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>508</id>
+      <description>line 8</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>413</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 8</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>408</id>
+      <description>line 8</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>413</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 8</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>309</id>
+      <description>line 9</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>458</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 9</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>209</id>
+      <description>line 9</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>458</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 9</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>509</id>
+      <description>line 9</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>458</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 9</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>409</id>
+      <description>line 9</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>458</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 9</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>310</id>
+      <description>line 10</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>503</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 10</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>210</id>
+      <description>line 10</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>503</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 10</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>510</id>
+      <description>line 10</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>503</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 10</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>410</id>
+      <description>line 10</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>503</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 10</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>211</id>
+      <description>line 11</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>548</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 11</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>511</id>
+      <description>line 11</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>548</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 11</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>311</id>
+      <description>line 11</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>548</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 11</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>411</id>
+      <description>line 11</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>548</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 11</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>312</id>
+      <description>line 12</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>593</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 12</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>212</id>
+      <description>line 12</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>593</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 12</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>512</id>
+      <description>line 12</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>593</posY>
+      <width>1265</width>
+      <textcolor>ffffffff</textcolor>
+      <label>line 12</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>412</id>
+      <description>line 12</description>
+      <type>label</type>
+      <posX>493</posX>
+      <posY>593</posY>
+      <width>1265</width>
+      <textcolor>80ffffff</textcolor>
+      <label>line 12</label>
+      <animation delay="200" effect="Fade" end="0" start="0" time="400">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+
+    <control>
+      <id>0</id>
+      <description>title label</description>
+      <type>fadelabel</type>
+      <visible>Control.HasFocus(5106) | Control.HasFocus(5107) | Control.HasFocus(5108) | Control.HasFocus(5109) | Control.HasFocus(50) | Control.HasFocus(20) </visible>
+      <posX>491</posX>
+      <posY>698</posY>
+      <width>140</width>
+      <font>Segoe Light18</font>
+      <textcolor>ff85cffe</textcolor>
+      <label>435</label>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>title value</description>
+      <type>fadelabel</type>
+      <visible>Control.HasFocus(5106) | Control.HasFocus(5107) | Control.HasFocus(5108) | Control.HasFocus(5109) | Control.HasFocus(50) | Control.HasFocus(20) </visible>
+      <posX>674</posX>
+      <posY>698</posY>
+      <width>698</width>
+      <font>Segoe Light18</font>
+      <label>#Play.Current.Title</label>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+
+    <control>
+      <id>0</id>
+      <description>artist label</description>
+      <type>fadelabel</type>
+      <visible>Control.HasFocus(5106) | Control.HasFocus(5107) | Control.HasFocus(5108) | Control.HasFocus(5109) | Control.HasFocus(50) | Control.HasFocus(20) </visible>
+      <posX>491</posX>
+      <posY>749</posY>
+      <width>773</width>
+      <font>Segoe Light14</font>
+      <textcolor>ff85cffe</textcolor>
+      <label>484</label>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>artist value</description>
+      <type>fadelabel</type>
+      <visible>Control.HasFocus(5106) | Control.HasFocus(5107) | Control.HasFocus(5108) | Control.HasFocus(5109) | Control.HasFocus(50) | Control.HasFocus(20) </visible>
+      <posX>674</posX>
+      <posY>749</posY>
+      <width>698</width>
+      <font>Segoe Light14</font>
+      <label>#Play.Current.Artist</label>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+
+    <control>
+      <id>0</id>
+      <description>album label</description>
+      <type>fadelabel</type>
+      <visible>Control.HasFocus(5106) | Control.HasFocus(5107) | Control.HasFocus(5108) | Control.HasFocus(5109) | Control.HasFocus(50) | Control.HasFocus(20) </visible>
+      <posX>491</posX>
+      <posY>791</posY>
+      <width>773</width>
+      <font>Segoe Light14</font>
+      <textcolor>ff85cffe</textcolor>
+      <label>483</label>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>album value</description>
+      <type>fadelabel</type>
+      <visible>Control.HasFocus(5106) | Control.HasFocus(5107) | Control.HasFocus(5108) | Control.HasFocus(5109) | Control.HasFocus(50) | Control.HasFocus(20) </visible>
+      <posX>674</posX>
+      <posY>791</posY>
+      <width>698</width>
+      <font>Segoe Light14</font>
+      <label>#Play.Current.Album</label>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+
+    <control>
+      <type>label</type>
+      <description>Dummy control for next track</description>
+      <id>1200</id>
+      <posX>-2000</posX>
+      <posY>-2000</posY>
+      <label>#Play.Next.Artist</label>
+    </control>
+
+    <control>
+      <id>0</id>
+      <description>up next label</description>
+      <type>label</type>
+      <visible>Control.HasFocus(5106) | Control.HasFocus(5107) | Control.HasFocus(5108) | Control.HasFocus(5109) | Control.HasFocus(50) | Control.HasFocus(20) </visible>
+      <posX>491</posX>
+      <posY>877</posY>
+      <font>Segoe Light14</font>
+      <textcolor>ff85cffe</textcolor>
+      <label>790</label>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>next track value</description>
+      <type>fadelabel</type>
+      <visible>[Control.HasFocus(5106) | Control.HasFocus(5107) | Control.HasFocus(5108) | Control.HasFocus(5109) | Control.HasFocus(50) | Control.HasFocus(20)] + player.hasmedia</visible>
+      <posX>674</posX>
+      <posY>877</posY>
+      <width>688</width>
+      <font>Segoe Light14</font>
+      <textcolor>ff85cffe</textcolor>
+      <label>#Play.Next.Artist - #Play.Next.Title - #Play.Next.Album</label>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>Year label</description>
+      <type>fadelabel</type>
+      <posX>491</posX>
+      <posY>833</posY>
+      <width>548</width>
+      <font>Segoe Light14</font>
+      <textcolor>ff85cffe</textcolor>
+      <label>201</label>
+      <visible>Control.HasFocus(5106) | Control.HasFocus(5107) | Control.HasFocus(5108) | Control.HasFocus(5109) | Control.HasFocus(50) | Control.HasFocus(20) </visible>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>Year value</description>
+      <type>label</type>
+      <posX>674</posX>
+      <posY>833</posY>
+      <width>421</width>
+      <font>Segoe Light14</font>
+      <label>#Play.Current.Year</label>
+      <visible>Control.HasFocus(5106) | Control.HasFocus(5107) | Control.HasFocus(5108) | Control.HasFocus(5109) | Control.HasFocus(50) | Control.HasFocus(20) </visible>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>141</id>
+      <description>Rating</description>
+      <type>imagelist</type>
+      <posX>490</posX>
+      <posY>921</posY>
+      <width>260</width>
+      <height>29</height>
+      <textureHeight>26</textureHeight>
+      <textureWidth>32</textureWidth>
+      <percentage>#Play.Current.Rating</percentage>
+      <imagesToDraw>5</imagesToDraw>
+      <orientation>HORIZONTAL</orientation>
+      <align>LEFT</align>
+      <subitems>
+        <subitem>stargrey.png</subitem>
+        <subitem>starwhite.png</subitem>
+      </subitems>
+      <visible>Control.HasFocus(5106) | Control.HasFocus(5107) | Control.HasFocus(5108) | Control.HasFocus(5109) | Control.HasFocus(50) | Control.HasFocus(20) </visible>	  
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+
+    <control>
+      <id>117</id>
+      <description>Progress background</description>
+      <type>image</type>
+      <posX>491</posX>
+      <posY>967</posY>
+      <width>882</width>
+      <height>2</height>
+      <texture>now_playing_progress_back.png</texture>
+      <visible>player.hasmedia</visible>		  
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>118</id>
+      <description>progress bar</description>
+      <type>progress</type>
+      <posX>-2000</posX>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>progress bar</description>
+      <type>progress</type>
+      <posX>477</posX>
+      <posY>967</posY>
+      <width>910</width>
+      <height>2</height>
+      <texturebg>-</texturebg>
+      <lefttexture>now_playing_progress_bar.png</lefttexture>
+      <righttexture>now_playing_progress_bar.png</righttexture>
+      <midtexture>now_playing_progress_bar.png</midtexture>
+      <label>#percentage</label>
+      <visible>player.hasmedia</visible>			  
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>track duration label</description>
+      <type>label</type>
+      <posX>497</posX>
+      <posY>977</posY>
+      <font>font11</font>
+      <align>LEFT</align>
+      <label>#currentplaytime</label>
+      <visible>player.hasmedia</visible>		  
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>track duration value</description>
+      <type>fadelabel</type>
+      <posX>1373</posX>
+      <posY>977</posY>
+      <width>189</width>
+      <font>font11</font>
+      <align>RIGHT</align>
+      <label>#duration</label>
+      <visible>player.hasmedia</visible>		  
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <visible>!control.hasthumb(500)</visible>
+      <posX>161</posX>
+      <posY>721</posY>
+      <width>264</width>
+      <height>264</height>
+      <texture>DefaultMyradioBig.png</texture>
+      <animation effect="Fade" time="1600">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+      <animation effect="Fade" time="1000" delay="200">VisibleChange</animation>
+    </control>
+
+    <control>
+      <id>112</id>
+      <description>album art image</description>
+      <type>image</type>
+      <posX>161</posX>
+      <posY>721</posY>
+      <width>264</width>
+      <height>264</height>
+      <texture>#Play.Current.Thumb</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <zoom>yes</zoom>
+      <animation effect="Fade" reversible="FALSE" time="450">Visible</animation>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+      <animation effect="Fade" time="500">VisibleChange</animation>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <description>album art overlay</description>
+      <type>image</type>
+      <posX>146</posX>
+      <posY>705</posY>
+      <width>295</width>
+      <height>295</height>
+      <texture>blackborders_music_nowplaying_small.png</texture>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Menu</description>
+      <type>group</type>
+      <posX>1430</posX>
+      <posY>739</posY>
+      <layout>Stacklayout</layout>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+      <control>
+        <id>5106</id>
+        <description>Current Playlist button</description>
+        <type>button</type>
+        <onleft>20</onleft>
+        <onright>5106</onright>
+        <onup>50</onup>
+        <ondown>5107</ondown>
+        <visible />
+        <posX>913</posX>
+        <posY>333</posY>
+        <width>387</width>
+        <height>53</height>
+        <hyperlink>500</hyperlink>
+        <textureFocus>now_playing_menuitem_selected.png</textureFocus>
+        <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
+        <label>4555</label>
+        <textYOff>8</textYOff>
+      </control>
+	  
+      <control>
+        <id>5107</id>
+        <description>Now Playing button</description>
+        <type>button</type>
+        <onleft>20</onleft>
+        <onright>5107</onright>
+        <onup>5106</onup>
+        <ondown>5108</ondown>
+        <posX>912</posX>
+        <posY>329</posY>
+        <width>387</width>
+        <height>53</height>
+        <hyperlink>510</hyperlink>
+        <textureFocus>now_playing_menuitem_selected.png</textureFocus>
+        <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
+        <label>4540</label>
+        <textYOff>8</textYOff>
+      </control>
+	  
+      <control>
+        <id>5108</id>
+        <description>Music</description>
+        <type>button</type>
+        <onleft>20</onleft>
+        <onright>5108</onright>
+        <onup>5107</onup>
+        <ondown>5109</ondown>
+        <posX>913</posX>
+        <posY>330</posY>
+        <width>387</width>
+        <height>53</height>
+        <hyperlink>501</hyperlink>
+        <textureFocus>now_playing_menuitem_selected.png</textureFocus>
+        <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
+        <label>2</label>
+        <textYOff>8</textYOff>
+      </control>
+	  
+      <control>
+        <id>5109</id>
+        <description>Tagged Tracks button</description>
+        <type>button</type>
+        <onleft>20</onleft>
+        <onright>5109</onright>
+        <onup>5108</onup>
+        <ondown>50</ondown>
+        <posX>913</posX>
+        <posY>326</posY>
+        <width>387</width>
+        <height>53</height>
+        <hyperlink>30885</hyperlink>
+        <visible>plugin.isenabled(Search music)</visible>
+        <textureFocus>now_playing_menuitem_selected.png</textureFocus>
+        <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
+        <label>137</label>
+        <textYOff>8</textYOff>
+      </control>
+	  
+      <control>
+        <id>50</id>
+        <description>Find LRC</description>
+        <type>button</type>
+        <onleft>20</onleft>
+        <onright>50</onright>
+        <onup>5109</onup>
+        <ondown>5106</ondown>
+        <posX>1207</posX>
+        <posY>945</posY>
+        <width>387</width>
+        <height>53</height>
+        <textureFocus>now_playing_menuitem_selected.png</textureFocus>
+        <textureNoFocus>now_playing_menuitem.png</textureNoFocus>
+        <label>#SkinTranslation.Translations.lyrics.tag</label>
+        <textYOff>8</textYOff>
+      </control>
+    </control>
 	
   </controls>
 </window>

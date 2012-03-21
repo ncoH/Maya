@@ -3,8 +3,9 @@
   <id>501</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
-  <define>#header.label:#selecteditem</define>
+  <define>#header.label:2</define>
   <define>#useSelectedFanart:Yes</define>
+  <define>#header.background:hover_my music.png</define>  
   <controls>
   
     <import>common.window.music.xml</import>

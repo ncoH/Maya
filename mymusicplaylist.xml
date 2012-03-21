@@ -5,6 +5,7 @@
   <allowoverlay>yes</allowoverlay>
   <define>#header.label:136</define>
   <define>#useSelectedFanart:Yes</define>
+  <define>#header.background:hover_my music.png</define>  
   <controls>
   
     <import>common.window.playlist.xml</import>
@@ -105,41 +106,22 @@
       <texture>fanart_overlay_filmstrip.png</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons] + control.isvisible(91919293)</visible>
     </control>
-	
-    <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
-      <id>1</id>
-      <posX>775</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>#header.label</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <visible>facadeview.list | facadeview.album | facadeview.playlist</visible>
-      <valign>middle</valign>
-    </control>
-	
-    <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
-      <id>1</id>
-      <posX>608</posX>
-      <posY>42</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>#header.label</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <visible>facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons</visible>
-      <align>center</align>
-      <valign>middle</valign>
-    </control>
-	
+		
     <import>common.time.xml</import>
+
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
 	
     <control>
       <type>actiongroup</type>
