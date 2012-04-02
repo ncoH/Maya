@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
 This file should contain the facade view and all gui
 elements that should remain on screen during all or
@@ -15,43 +15,34 @@ multiple view modes.
   are parameters to give the skinner a tiny bit more control over the presentation.
 -->
   <define>#largeicons.available:true</define>
-  <!-- true if this skin implements the largeicons view -->
   <define>#largeicons.backdrop.used:true</define>
-  <!-- true if backdrop (fanart) should be displayed in this view -->
   <define>#smallicons.available:true</define>
-  <!-- Set to true if this skin implements the smallicons view -->
   <define>#smallicons.backdrop.used:true</define>
-  <!-- true if backdrop (fanart) should be displayed in this view -->
   <define>#list.available:true</define>
-  <!-- Set to true if this skin implements the list view -->
   <define>#list.backdrop.used:true</define>
-  <!-- true if backdrop (fanart) should be displayed in this view -->
   <define>#filmstrip.available:true</define>
-  <!-- Set to true if this skin implements the filmstrip view -->
   <define>#filmstrip.backdrop.used:true</define>
-  <!-- true if backdrop (fanart) should be displayed in this view -->
-  <define>#coverflow.available:true</define>
-  <!-- Set to true if this skin implements the coverflow view -->
-  <define>#coverflow.backdrop.used:true</define>
-  <!-- true if backdrop (fanart) should be displayed in this view -->
   <define>#details.backdrop.used:true</define>
-  <!-- true if backdrop (fanart) should be displayed in this view -->
   <define>#categories.backdrop.used:true</define>
+  <define>#coverflow.available:true</define>
+  <define>#coverflow.backdrop.used:true</define>
   <controls>
   
     <!--            :: DUMMY CONTROLS ::             -->
     <import>movingpictures.dummy.xml</import>
-
     <!--            :: BACKGROUNDS :: MOVIE BACKDROP :: OVERLAYS ::            -->
     <import>movingpictures.fanart.xml</import>
 	
     <control>
-      <description>BG</description>
+      <description>DEFAULT BACKGROUND</description>
       <type>image</type>
       <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
       <width>1920</width>
       <height>1080</height>
-      <visible>Control.IsVisible(50) + !string.contains(#maya.fanart.MovingPictures,yes)</visible>
+      <texture>background.png</texture>
+      <shouldCache>true</shouldCache>
     </control>
 	
     <control>
