@@ -239,7 +239,7 @@
       <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
     </control>
 
-	<import>4TR_RecordedTv.hiddenmenu.xml</import>	
+	<import>4TR_RecordedTv.hiddenmenu.xml</import>		
     <import>common.facade.recordings.xml</import>
     <import>common.overlay.xml</import>
 	

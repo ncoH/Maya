@@ -147,6 +147,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+
 	
     <control>
       <type>actiongroup</type>

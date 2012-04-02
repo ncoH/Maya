@@ -110,6 +110,8 @@
       <visible>facadeview.coverflow + control.isvisible(91919293)</visible>
     </control>
 	
+    <import>common.time.xml</import>
+
     <control>
       <id>1</id>
       <type>label</type>
@@ -123,8 +125,6 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
-	
-    <import>common.time.xml</import>
 	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -231,7 +231,7 @@
     </control>
 
     <import>common.facade.video.xml</import>	
-    <import>myvideo.hiddenmenu.xml</import>	
+    <import>myvideo.hiddenmenu.xml</import>		
     <import>common.overlay.xml</import>
 	
   </controls>

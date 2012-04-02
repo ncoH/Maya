@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <controls>
-  
+
     <control>
       <description>Movie Backdrop (Fan Art) - Plug-in sets to invisible, if no art.</description>
       <type>image</type>
@@ -32,7 +32,7 @@
       <animation effect="fade" time="0">WindowClose</animation>
       <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
       <visible>[Control.IsVisible(50) | Control.IsVisible(51)| Control.IsVisible(10003)]+control.isvisible(11)</visible>
-    </control>
+    </control>  
 	
     <control>
       <description>Fanart Overlay</description>

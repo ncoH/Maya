@@ -479,7 +479,6 @@
 				
             </control>		
 	</control>
-
 	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>

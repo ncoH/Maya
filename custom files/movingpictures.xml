@@ -30,8 +30,6 @@ multiple view modes.
   
     <!--            :: DUMMY CONTROLS ::             -->
     <import>movingpictures.dummy.xml</import>
-    <!--            :: BACKGROUNDS :: MOVIE BACKDROP :: OVERLAYS ::            -->
-    <import>movingpictures.fanart.xml</import>
 	
     <control>
       <description>DEFAULT BACKGROUND</description>
@@ -44,6 +42,9 @@ multiple view modes.
       <texture>background.png</texture>
       <shouldCache>true</shouldCache>
     </control>
+	
+    <!--            :: BACKGROUNDS :: MOVIE BACKDROP :: OVERLAYS ::            -->
+    <import>movingpictures.fanart.xml</import>
 	
     <control>
       <description>BG</description>
@@ -141,189 +142,10 @@ multiple view modes.
       <label>#header.label</label>	  
       <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
+      <visible>Control.IsVisible(50)</visible>	  	  
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
-
-	
-    <!--            :: HIDDEN MENU ::            -->
-    <control>
-      <type>actiongroup</type>
-      <description>action menu</description>
-      <defaultcontrol>2</defaultcontrol>
-      <onexit>50</onexit>
-      <buttonX>0</buttonX>
-      <buttonY>0</buttonY>
-      <buttonwidth>0</buttonwidth>
-      <buttonheight>0</buttonheight>
-      <width>1920</width>
-      <height>1080</height>
-      <dimColor>00ffffff</dimColor>
-      <animation effect="Fade" time="100">WindowClose</animation>
-      <control>
-        <type>image</type>
-        <id>0</id>
-        <width>1920</width>
-        <height>1080</height>
-        <texture>semi_trans_back_general_menu.png</texture>
-        <colordiffuse>90ffffff</colordiffuse>
-        <animation effect="fade" time="200">windowopen</animation>
-        <animation effect="fade" time="400">windowclose</animation>
-      </control>
-      <control>
-        <type>group</type>
-        <animation effect="fade" time="250">Visible</animation>
-        <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
-        <animation effect="fade" time="200" reversible="false">Hidden</animation>
-        <animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
-        <control>
-          <id>1</id>
-          <type>image</type>
-          <posX>720</posX>
-          <posY>90</posY>
-          <width>480</width>
-          <height>900</height>
-          <texture>menu_bg.png</texture>
-          <visible>!Control.IsVisible(51)+Control.IsVisible(50)</visible>
-        </control>
-        <control>
-          <description>Heading text label</description>
-          <type>label</type>
-          <id>1</id>
-          <posX>796</posX>
-          <posY>154</posY>
-          <label>924</label>
-          <font>Segoe Light18</font>
-          <textcolor>85cffe</textcolor>
-        </control>
-        <control>
-          <description>button group</description>
-          <type>group</type>
-          <posX>763</posX>
-          <posY>246</posY>
-          <layout>StackLayout(0, Vertical, true)</layout>
-          <visible>!Control.IsVisible(51)+Control.IsVisible(50)</visible>
-          <control>
-            <description>Toggle View</description>
-            <type>button</type>
-            <id>2</id>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <label>#MovingPictures.Translation.CycleView.Label</label>
-            <onleft>50</onleft>
-            <onright>50</onright>
-            <onup>4755</onup>
-            <ondown>3</ondown>
-          </control>
-          <control>
-            <description>Switch View</description>
-            <type>button</type>
-            <id>3</id>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <label>#MovingPictures.Translation.ChangeView.Label</label>
-            <onleft>50</onleft>
-            <onright>50</onright>
-            <onup>2</onup>
-            <ondown>14</ondown>
-          </control>
-          <control>
-            <description>Sort</description>
-            <type>button</type>
-            <id>14</id>
-            <label>495</label>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <onright>50</onright>
-            <onup>3</onup>
-            <ondown>15</ondown>
-          </control>
-          <control>
-            <description>Parental controls</description>
-            <type>button</type>
-            <id>15</id>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <label>#MovingPictures.Translation.ToggleParentalLock.Label</label>
-            <onleft>50</onleft>
-            <onright>50</onright>
-            <onup>14</onup>
-            <ondown>66610</ondown>
-          </control>
-          <control>
-            <description>Video Settings</description>
-            <type>button</type>
-            <id>66610</id>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <label>#SkinTranslation.Translations.video.settings.Label</label>
-            <hyperlink>703</hyperlink>
-            <onleft>50</onleft>
-            <onright>50</onright>
-            <onup>15</onup>
-            <ondown>66611</ondown>
-          </control>
-          <control>
-            <description>SubCentral</description>
-            <type>button</type>
-            <id>66611</id>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <label>#SkinTranslation.Translations.check.subtitles.Label</label>
-            <hyperlink>84623</hyperlink>
-            <visible>plugin.isenabled(SubCentral)</visible>
-            <onleft>50</onleft>
-            <onright>50</onright>
-            <onup>66610</onup>
-            <ondown>4755</ondown>
-          </control>
-          <control>
-            <description>Lookup trailer in Online vidoes with either imdb (or title)</description>
-            <type>button</type>
-            <id>4755</id>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <label>#SkinTranslation.Translations.find.trailer.Label</label>
-            <hyperlink>4755</hyperlink>
-            <hyperlinkParameter>site:IMDb Movie Trailers|search:#(iif(neq(#MovingPictures.SelectedMovie.imdb_id,''),#MovingPictures.SelectedMovie.imdb_id,#MovingPictures.SelectedMovie.title))|return:Locked</hyperlinkParameter>
-            <visible>plugin.isenabled(OnlineVideos)</visible>
-            <onleft>50</onleft>
-            <onright>50</onright>
-            <onup>66611</onup>
-            <ondown>2</ondown>
-          </control>
-        </control>
-      </control>
-    </control>
-	
 	
     <!--            :: LIST VIEW ::            -->
     <control>
@@ -672,7 +494,7 @@ multiple view modes.
       <posY>90</posY>
       <width>480</width>
       <height>900</height>
-      <texture>menu_bg.png</texture>
+      <texture>movpic_menu_bg.png</texture>
       <visible>Control.IsVisible(51)</visible>
     </control>
 	
@@ -757,11 +579,25 @@ multiple view modes.
 
     <import>movingpictures.details.xml</import>  
     <import>movingpictures.facade.xml</import>	
+    <import>movingpictures.hiddenmenu.xml</import>		
     <import>movingpictures.mediainfo.listview.xml</import>
     <import>movingpictures.mediainfo.filmstrip.xml</import>
     <import>movingpictures.mediainfo.thumbview.xml</import>
     <import>movingpictures.mediainfo.details.xml</import>	
     <import>common.overlay.xml</import>
+	
+    <!-- Fade out the screen when playback starts -->
+    <control>
+      <description>Playback Indicator</description>
+      <type>image</type>
+      <id>18</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>black.png</texture>
+      <colordiffuse>50fefaff</colordiffuse>
+    </control>
 	
   </controls>
 </window>
