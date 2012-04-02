@@ -126,21 +126,20 @@ This file should contain the facade view
         <itemHeightBig>303</itemHeightBig>
         <thumbWidthBig>215</thumbWidthBig>
         <thumbHeightBig>303</thumbHeightBig>
-        <thumbPosXBig>0</thumbPosXBig>
-        <thumbPosYBig>0</thumbPosYBig>
-        <zoomXPixels>0</zoomXPixels>
-        <zoomYPixels>0</zoomYPixels>
-        <hideUnfocusTexture>no</hideUnfocusTexture>
-        <renderFocusText>no</renderFocusText>
-        <renderUnfocusText>no</renderUnfocusText>
-        <showFrame>yes</showFrame>
-        <frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
-        <frameFocus>video_thumb_focus.png</frameFocus>
-        <textureMask>video_thumb_mask.png</textureMask>
-        <keepaspectratio>no</keepaspectratio>
-        <shadowAngle>90</shadowAngle>
+    	<thumbPosXBig>0</thumbPosXBig>
+    	<thumbPosYBig>0</thumbPosYBig>
+    	<zoomXPixels>40</zoomXPixels>
+    	<zoomYPixels>60</zoomYPixels>
+    	<hideUnfocusTexture>no</hideUnfocusTexture>
+    	<keepaspectratio>no</keepaspectratio>
+    	<renderFocusText>no</renderFocusText>
+    	<renderUnfocusText>no</renderUnfocusText>
+    	<frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
+    	<frameFocus>video_thumb_focus.png</frameFocus>
+    	<textureMask>video_thumb_mask.png</textureMask>
+    	<shadowAngle>90</shadowAngle>
         <shadowDistance>50</shadowDistance>
-        <thumbZoom>no</thumbZoom>
+    	<thumbZoom>yes</thumbZoom>
         <spinPosX>1672</spinPosX>
       </control>
 	  

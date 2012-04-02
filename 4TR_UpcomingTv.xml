@@ -105,7 +105,6 @@
       <font>Segoe Light18</font>
       <textcolor>85cffe</textcolor>
       <label>#TV.Upcoming.Title</label>
-      <visible>control.hasfocus(10)</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
@@ -119,7 +118,6 @@
       <font>Segoe Light18</font>
       <textcolor>85cffe</textcolor>
       <label>#TV.Upcoming.Channel</label>
-      <visible>control.hasfocus(10)</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
@@ -133,7 +131,6 @@
       <textcolor>85cffe</textcolor>
       <font>Segoe Light18</font>
       <label>#TV.Upcoming.Time #TV.Upcoming.Genre</label>
-      <visible>control.hasfocus(10)</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
@@ -148,7 +145,6 @@
       <height>205</height>
       <font>font12</font>
       <label>#TV.Upcoming.Description</label>
-      <visible>control.hasfocus(10)</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>

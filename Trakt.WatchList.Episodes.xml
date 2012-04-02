@@ -118,7 +118,7 @@
       <width>513</width>
       <height>285</height>
       <texture>#selectedthumb</texture>
-      <visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]</visible>
+	  <visible>facadeview.list+control.isvisible(50)</visible>
     </control>
 	
     <control>
@@ -132,7 +132,7 @@
       <width>642</width>
       <height>414</height>
       <texture>blackborders_recordings.png</texture>
-      <visible>[facadeview.list | facadeview.smallicons | facadeview.largeicons | facadeview.filmstrip]</visible>
+	  <visible>facadeview.list+control.isvisible(50)</visible>
     </control>   	
   
 	<!--            :: Count ::            -->
@@ -161,9 +161,25 @@
 		<width>1920</width>
 		<align>center</align>
         <textcolor>6aa5cb</textcolor>
-		<visible>facadeview.smallicons | facadeview.largeicons| faceview.filmstrip</visible>
+		<visible>[facadeview.smallicons|facadeview.largeicons] + control.isvisible(50)</visible>
 		<animation effect="fade" time="100">WindowOpen</animation>
 		<animation effect="fade" time="100">WindowClose</animation>		
+    </control>
+
+    <control>
+		<description>Moviecount</description>
+		<type>label</type>
+		<label>#Trakt.Translation.Episodes.Label: #itemcount</label>
+		<id>0</id>
+		<posX>0</posX>
+		<posY>1023</posY>
+		<width>1920</width>
+		<align>center</align>
+		<font>font13</font>
+		<textcolor>6aa5cb</textcolor>
+		<visible>[facadeview.filmstrip|facadeview.coverflow]+Control.IsVisible(50)</visible>
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>	  
     </control>
 	
 		<control>
@@ -192,93 +208,94 @@
 					<spinCanFocus>no</spinCanFocus>
         		</control>
 				
-		<control>
+        <control>
 			<description>Filmstrip view</description>
 			<type>filmstrip</type>
 			<dimColor>90ffffff</dimColor>
 			<id>50</id>
-			<scrollOffset>2</scrollOffset>
-			<folderPrefix></folderPrefix>
-			<folderSuffix></folderSuffix>
-			<posX>129</posX>
-			<posY>470</posY>
-			<width>1920</width>
-			<height>768</height>
+			<scrollOffset>1</scrollOffset>
 			<onup>2</onup>
-			<ondown>2</ondown>
+			<ondown>50</ondown>
 			<onleft>50</onleft>
 			<onright>50</onright>
-			<thumbWidth>320</thumbWidth>
-			<thumbHeight>450</thumbHeight>
+			<posX>170</posX>
+			<posY>455</posY>
+			<width>1920</width>
+			<height>1080</height>
+			<thumbWidth>523</thumbWidth>
+			<thumbHeight>350</thumbHeight>
 			<thumbPosX>0</thumbPosX>
 			<thumbPosY>0</thumbPosY>
-			<itemWidth>335</itemWidth>
-			<itemHeight>450</itemHeight>
-			<textureWidth>320</textureWidth>
-			<textureHeight>450</textureHeight>
+			<itemWidth>533</itemWidth>
+			<itemHeight>350</itemHeight>
+			<textureWidth>523</textureWidth>
+			<textureHeight>350</textureHeight>
 			<textYOff>-2000</textYOff>
+			<imageFolder>-</imageFolder>
 			<imageFolderFocus>-</imageFolderFocus>
+			<showFrame>yes</showFrame>		  
 			<frame>-</frame>
-			<frameFocus>-</frameFocus>
+			<frameNoFocus>-</frameNoFocus>
+			<frameFocus>-</frameFocus>			
 			<background>-</background>
-			<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_mask.png" />
-			<showFrame>yes</showFrame>
+			<keepaspectratio>no</keepaspectratio>
+			<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="pictures_filmstrip_mask.png"></thumbs>
 			<showFolder>no</showFolder>
 			<showBackGround>no</showBackGround>
 			<showInfoImage>no</showInfoImage>
-            <scrollbarBackground>-</scrollbarBackground>
-            <scrollbarLeft>-</scrollbarLeft>
-            <scrollbarRight>-</scrollbarRight>
-            <scrollbarWidth>689</scrollbarWidth>
-			<scrollbarHeight>4</scrollbarHeight>
-            <scrollbarYOff>538</scrollbarYOff>
-            <spinPosX>-2000</spinPosX>
-			<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="120,120" center="0,700" time="200">focus</thumbAnimation>
-			<thumbAnimation effect="zoom" start="120,120" reversible="false" end="100,100" center="0,700" time="100">unfocus</thumbAnimation>
-		</control>
+			<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="118,118" center="0,630" time="400">focus</thumbAnimation>
+			<thumbAnimation effect="zoom" start="118,118" reversible="false" end="100,100" center="0,630" time="100">unfocus</thumbAnimation>
+        </control>
 	  
-      <control>
-        <description>Thumbnail Panel</description>
-        <type>thumbnailpanel</type>
-        <id>50</id>
-        <onleft>2</onleft>
-        <onright>50</onright>
-        <posX>725</posX>
-        <posY>343</posY>
-        <width>1124</width>
-        <height>773</height>
-        <scrollOffset>1</scrollOffset>
-        <itemWidth>140</itemWidth>
-        <itemHeight>202</itemHeight>
-        <textureWidth>140</textureWidth>
-        <textureHeight>202</textureHeight>
-        <thumbWidth>140</thumbWidth>
-        <thumbHeight>202</thumbHeight>
-        <thumbPosX>0</thumbPosX>
-        <thumbPosY>0</thumbPosY>
-        <textureWidthBig>215</textureWidthBig>
-        <textureHeightBig>303</textureHeightBig>
-        <itemWidthBig>215</itemWidthBig>
-        <itemHeightBig>303</itemHeightBig>
-        <thumbWidthBig>215</thumbWidthBig>
-        <thumbHeightBig>303</thumbHeightBig>
-        <thumbPosXBig>0</thumbPosXBig>
-        <thumbPosYBig>0</thumbPosYBig>
-        <zoomXPixels>0</zoomXPixels>
-        <zoomYPixels>0</zoomYPixels>
-        <hideUnfocusTexture>no</hideUnfocusTexture>
-        <renderFocusText>no</renderFocusText>
-        <renderUnfocusText>no</renderUnfocusText>
-        <showFrame>yes</showFrame>
-        <frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
-        <frameFocus>video_thumb_focus.png</frameFocus>
-        <textureMask>video_thumb_mask.png</textureMask>
-        <keepaspectratio>no</keepaspectratio>
-        <shadowAngle>90</shadowAngle>
-        <shadowDistance>50</shadowDistance>
-        <thumbZoom>no</thumbZoom>
-        <spinPosX>1672</spinPosX>
-      </control>
+			<control>
+				<description>Thumbnail Panel</description>
+				<type>thumbnailpanel</type>
+				<id>50</id>
+				<posX>725</posX>
+				<posY>343</posY>
+				<width>1124</width>
+				<height>773</height>
+				<onleft>2</onleft>
+				<onright>50</onright>
+          
+			  <imageFolder>-</imageFolder>          
+			  <imageFolderFocus>-</imageFolderFocus>  
+			  <showFrame>true</showFrame>          
+			  <dimColor>90ffffff</dimColor>
+          
+			<enableFocusZoom>no</enableFocusZoom>                    
+			<zoomXPixels>60</zoomXPixels>
+			<zoomYPixels>40</zoomYPixels>          
+			<hideUnfocusTexture>no</hideUnfocusTexture>          
+			<renderFocusText>no</renderFocusText>
+			<renderUnfocusText>no</renderUnfocusText>                    
+			<thumbZoom>yes</thumbZoom>
+			<frameNoFocus>onlinevideos_thumb_nofocus.png</frameNoFocus>
+			<frameFocus>onlinevideos_thumb_focus.png</frameFocus>
+			<textureMask>onlinevideos_thumb_mask.png</textureMask>
+          
+          <!-- smallicons -->
+			<itemWidth>245</itemWidth>
+			<itemHeight>129</itemHeight>
+			<textureWidth>245</textureWidth>
+			<textureHeight>129</textureHeight>
+			<thumbWidth>245</thumbWidth>
+			<thumbHeight>129</thumbHeight>
+			<thumbPosX>0</thumbPosX>
+			<thumbPosY>0</thumbPosY>
+          
+          <!-- largeicons -->
+			<itemWidthBig>292</itemWidthBig>
+			<itemHeightBig>171</itemHeightBig>
+			<textureWidthBig>292</textureWidthBig>
+			<textureHeightBig>171</textureHeightBig>
+			<thumbWidthBig>292</thumbWidthBig>
+			<thumbHeightBig>171</thumbHeightBig>
+			<thumbPosXBig>0</thumbPosXBig>
+			<thumbPosYBig>0</thumbPosYBig>
+            <spinPosX>1832</spinPosX>
+            <spinPosY>730</spinPosY>       
+        </control> 
 	  
         <control>
           <description>Cover Flow view</description>
@@ -634,14 +651,14 @@
 		<control>
 			<description>Released Label</description>
 			<type>fadelabel</type>
-			<label>#Trakt.Translation.Episode.Label</label>
+			<label>#Trakt.Translation.FirstAired.Label</label>
     		<posX>780</posX>
     		<posY>425</posY>
-    		<width>150</width>
+    		<width>240</width>
     		<align>left</align>
     		<font>Segoe Light18</font>
     		<textcolor>6aa5cb</textcolor>
-			<visible>!string.equals(#Trakt.Episode.Season,)+facadeview.list</visible>
+			<visible>facadeview.list+!string.equals(#Trakt.Show.Released,)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
@@ -651,14 +668,14 @@
 			<description>Released</description>
 			<id>0</id>
 			<type>label</type>
-			<label>#Trakt.Episode.Seasonx#Trakt.Episode.Number</label>
+			<label>#Trakt.Show.FirstAired</label>
     		<posX>1050</posX>
     		<posY>425</posY>
     		<width>450</width>
     		<align>left</align>
     		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
-			<visible>!string.equals(#Trakt.Episode.Season,)+facadeview.list</visible>
+			<visible>facadeview.list+!string.equals(#Trakt.Show.Released,)</visible>
     		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
@@ -679,7 +696,193 @@
     		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
     		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
+
+<!-- Thumb / Coverview -->	
+
+ 		<control>
+			<description>Number of People Watching</description>
+			<type>fadelabel</type>
+			<label>#Trakt.Translation.Rating.Label</label>
+			<id>0</id>
+    		<posX>78</posX>
+    		<posY>340</posY>
+    		<width>240</width>
+    		<align>left</align>
+    		<font>Segoe Light18</font>
+    		<textcolor>6aa5cb</textcolor>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Show.Ratings.Percentage,)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
 		
+		<control>
+			<description>Numeric Rating</description>
+			<id>0</id>
+			<type>fadelabel</type>
+			<label>#Trakt.Show.Ratings.Percentage% (#Trakt.Show.Ratings.Votes #Trakt.Translation.Votes.Label)</label>
+    		<posX>400</posX>
+    		<posY>340</posY>
+    		<width>270</width>
+    		<align>left</align>
+    		<font>Segoe Light18</font>
+    		<textcolor>ffffff</textcolor>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Show.Ratings.Percentage,)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+
+		<control>
+			<description>Rating Icon</description>
+			<type>image</type>
+			<id>1</id>
+			<width>39</width>
+			<height>36</height>
+    		<posX>340</posX>
+    		<posY>355</posY>
+			<texture>#Trakt.Show.Ratings.Icon.png</texture>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Show.Ratings.Icon,)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+
+		<control>
+			<description>Certification Label</description>
+			<id>0</id>
+			<type>label</type>
+			<label>#Trakt.Translation.Certification.Label</label>
+    		<posX>78</posX>
+    		<posY>395</posY>
+    		<width>240</width>
+    		<align>left</align>
+    		<font>Segoe Light18</font>
+    		<textcolor>6aa5cb</textcolor>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Show.Certification,)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+
+		<control>
+			<description>Certification</description>
+			<id>0</id>
+			<type>fadelabel</type>
+			<label>#Trakt.Show.Certification</label>
+    		<posX>340</posX>
+    		<posY>395</posY>
+    		<width>270</width>
+    		<align>left</align>
+    		<font>Segoe Light18</font>
+    		<textcolor>ffffff</textcolor>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Show.Certification,)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+		
+		<control>
+			<description>Runtime Label</description>
+			<id>0</id>
+			<type>label</type>
+			<label>#Trakt.Translation.Runtime.Label</label>
+    		<posX>78</posX>
+    		<posY>450</posY>
+    		<width>240</width>
+    		<align>left</align>
+    		<font>Segoe Light18</font>
+    		<textcolor>6aa5cb</textcolor>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Show.Runtime,)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+
+		<control>
+			<description>Runtime</description>
+			<id>0</id>
+			<type>fadelabel</type>
+			<label>#Trakt.Show.Runtime min</label>
+    		<posX>340</posX>
+    		<posY>450</posY>
+    		<width>270</width>
+    		<align>left</align>
+    		<font>Segoe Light18</font>
+    		<textcolor>ffffff</textcolor>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Show.Runtime,)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+		
+		<control>
+			<description>Released Label</description>
+			<type>fadelabel</type>
+			<label>#Trakt.Translation.FirstAired.Label</label>
+    		<posX>78</posX>
+    		<posY>505</posY>
+    		<width>240</width>
+    		<align>left</align>
+    		<font>Segoe Light18</font>
+    		<textcolor>6aa5cb</textcolor>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Show.Released,)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+
+		<control>
+			<description>Released</description>
+			<id>0</id>
+			<type>fadelabel</type>
+			<label>#Trakt.Show.FirstAired</label>
+    		<posX>340</posX>
+    		<posY>505</posY>
+    		<width>270</width>
+    		<align>left</align>
+    		<font>Segoe Light18</font>
+    		<textcolor>ffffff</textcolor>
+			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Show.Released,)</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+		
+		<control>
+			<description>Summary</description>
+			<type>textboxscrollup</type>
+			<id>0</id>
+			<posX>78</posX>
+			<posY>595</posY>
+			<width>600</width>
+			<height>335</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<label>#Trakt.Show.Overview</label>
+			<visible>facadeview.smallicons|facadeview.largeicons</visible>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+
+<!-- Filmstripview -->	
+
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Year below the Show title</description>
+      <type>label</type>
+      <label>#Trakt.Show.Ratings.Percentage% (#Trakt.Show.Ratings.Votes #Trakt.Translation.Votes.Label) - #Trakt.Show.Certification - #Trakt.Show.Runtime min - #Trakt.Show.FirstAired</label>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>250</posY>
+      <width>1920</width>
+      <align>center</align>
+      <font>font13</font>
+      <textcolor>6aa5cb</textcolor>
+      <visible>[facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
+    </control>
+	
     <control>
       <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
       <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>

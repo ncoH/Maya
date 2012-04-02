@@ -83,30 +83,30 @@
           <textcolor>ffffffff</textcolor>
           <colordiffuse>ffffffff</colordiffuse>
           <suffix>|</suffix>
-          <itemWidthBig>552</itemWidthBig>
-          <itemHeightBig>132</itemHeightBig>
+          <itemWidthBig>520</itemWidthBig>
+          <itemHeightBig>102</itemHeightBig>
           <!-- boxes -->
-          <textureWidthBig>546</textureWidthBig>
-          <textureHeightBig>126</textureHeightBig>
+          <textureWidthBig>520</textureWidthBig>
+          <textureHeightBig>102</textureHeightBig>
           <!-- banners -->
           <thumbWidthBig>520</thumbWidthBig>
           <thumbHeightBig>102</thumbHeightBig>
-          <thumbPosXBig>14</thumbPosXBig>
-          <thumbPosYBig>14</thumbPosYBig>
-          <zoomXPixels>0</zoomXPixels>
-          <zoomYPixels>0</zoomYPixels>
-          <thumbZoom>no</thumbZoom>
-          <!-- text (No banner) -->
-          <textXOff>0</textXOff>
-          <textYOff>0</textYOff>
-          <frame>-</frame>
-          <frameFocus>tvseries_banner_focus.png</frameFocus>
-          <keepaspectratio>no</keepaspectratio>
-          <enableFocusZoom>no</enableFocusZoom>
-          <scrollOffset>1</scrollOffset>
-          <unfocusedAlpha>50</unfocusedAlpha>
-          <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,550" time="400">focus</thumbAnimation>
-          <thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
+          <thumbPosXBig>0</thumbPosXBig>
+          <thumbPosYBig>0</thumbPosYBig>
+		<zoomXPixels>50</zoomXPixels>
+		<zoomYPixels>20</zoomYPixels>
+        <thumbZoom>yes</thumbZoom>
+        <!-- text (No banner) -->
+        <textXOff>0</textXOff>
+        <textYOff>0</textYOff>
+        <frame>-</frame>
+        <frameFocus>tvseries_listbanner_focus.png</frameFocus>
+		<frameNoFocus>tvseries_listbanner_nofocus.png</frameNoFocus>
+		<textureMask>tvseries_listbanner_mask.png</textureMask>
+        <keepaspectratio>no</keepaspectratio>
+        <enableFocusZoom>yes</enableFocusZoom>
+		<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="135,135" center="0,550" time="400">focus</thumbAnimation>
+		<thumbAnimation effect="zoom" start="135,135" reversible="false" end="100,100" center="0,550" time="100">unfocus</thumbAnimation>
         </control>
 		
 		<control>

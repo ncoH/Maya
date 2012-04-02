@@ -95,18 +95,24 @@
           <thumbHeightBig>303</thumbHeightBig>
           <thumbPosXBig>0</thumbPosXBig>
           <thumbPosYBig>0</thumbPosYBig>
-          <thumbZoom>no</thumbZoom>
-          <enableFocusZoom>no</enableFocusZoom>
-          <zoomXPixels>0</zoomXPixels>
-          <zoomYPixels>0</zoomYPixels>
-          <keepaspectratio>no</keepaspectratio>
-          <hideUnfocusTexture>no</hideUnfocusTexture>
-          <renderFocusText>no</renderFocusText>
-          <renderUnfocusText>no</renderUnfocusText>
-          <frameNoFocus>music_thumb_nofocus.png</frameNoFocus>
-          <frameFocus>music_thumb_focus.png</frameFocus>
-          <textureMask>music_thumb_mask.png</textureMask>
-          <spinPosX>-2000</spinPosX>
+			<thumbZoom>no</thumbZoom>
+			<enableFocusZoom>yes</enableFocusZoom>
+			<zoomXPixels>40</zoomXPixels>
+			<zoomYPixels>40</zoomYPixels>
+			<hideUnfocusTexture>no</hideUnfocusTexture>
+			<renderFocusText>no</renderFocusText>
+			<renderUnfocusText>no</renderUnfocusText>
+			<folderPrefix></folderPrefix>
+			<folderSuffix></folderSuffix>
+			<textureUp>-</textureUp>
+			<textureDown>-</textureDown>
+			<textureUpFocus>-</textureUpFocus>
+			<textureDownFocus>-</textureDownFocus>
+			<frameNoFocus>music_thumb_nofocus.png</frameNoFocus>
+			<frameFocus>music_thumb_focus.png</frameFocus>
+			<textureMask>music_thumb_mask.png</textureMask>
+			<keepaspectratio>no</keepaspectratio>
+			<spinPosX>-2000</spinPosX>
         </control>
 		
         <control>
@@ -131,8 +137,8 @@
           <itemHeight>335</itemHeight>
           <textureWidth>320</textureWidth>
           <textureHeight>320</textureHeight>
-          <frame>coverflow_glass_overlay_music.png</frame>
-          <frameFocus>coverflow_glass_overlay_music.png</frameFocus>
+          <frame>-</frame>
+          <frameFocus>-</frameFocus>
           <frameWidth>320</frameWidth>
           <frameHeight>320</frameHeight>		  
           <thumbs flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png"></thumbs>
@@ -179,8 +185,8 @@
           <selectedOffsetY>0</selectedOffsetY>
           <speed>8</speed>
           <showFrame>yes</showFrame>
-          <frame>coverflow_glass_overlay_music.png</frame>
-          <frameFocus>coverflow_glass_overlay_music.png</frameFocus>
+          <frame>-</frame>
+          <frameFocus>-</frameFocus>
           <frameWidth>421</frameWidth>
           <frameHeight>421</frameHeight>
           <unfocusedAlpha>FF</unfocusedAlpha>

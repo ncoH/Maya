@@ -77,89 +77,93 @@
           <dimColor>ffffffff</dimColor>
         </control>
 		
-        <control>
-          <description>Thumbnail Panel</description>
-          <type>thumbnailpanel</type>
-          <dimColor>90ffffff</dimColor>
-          <id>50</id>
-          <onleft>2</onleft>
-          <onright>50</onright>
-          <posX>229</posX>
-          <posY>340</posY>
-          <width>1602</width>
-          <height>562</height>
-          <scrollOffset>1</scrollOffset>
-          <itemWidth>210</itemWidth>
-          <itemHeight>154</itemHeight>
-          <textureWidth>210</textureWidth>
-          <textureHeight>154</textureHeight>
-          <thumbWidth>210</thumbWidth>
-          <thumbHeight>154</thumbHeight>
-          <thumbPosX>0</thumbPosX>
-          <thumbPosY>0</thumbPosY>
-          <itemWidthBig>313</itemWidthBig>
-          <itemHeightBig>217</itemHeightBig>
-          <thumbWidthBig>313</thumbWidthBig>
-          <thumbHeightBig>217</thumbHeightBig>
-          <textureWidthBig>313</textureWidthBig>
-          <textureHeightBig>217</textureHeightBig>
-          <thumbPosXBig>0</thumbPosXBig>
-          <thumbPosYBig>0</thumbPosYBig>
-          <zoomXPixels>0</zoomXPixels>
-          <zoomYPixels>0</zoomYPixels>
-          <thumbZoom>no</thumbZoom>
-          <hideUnfocusTexture>no</hideUnfocusTexture>
-          <renderFocusText>no</renderFocusText>
-          <renderUnfocusText>no</renderUnfocusText>
-          <spinCanFocus>no</spinCanFocus>
-          <frame>-</frame>
-          <frameNoFocus>pictures_thumb_nofocus.png</frameNoFocus>
-          <frameFocus>pictures_thumb_focus.png</frameFocus>
-          <textureMask>pictures_thumb_mask.png</textureMask>
-          <keepaspectratio>no</keepaspectratio>
-          <shadowAngle>90</shadowAngle>
-          <shadowDistance>50</shadowDistance>
-          <thumbZoom>no</thumbZoom>
-          <spinPosX>1672</spinPosX>
-        </control>
+			<control>
+				<description>Thumbnail Panel</description>
+				<type>thumbnailpanel</type>
+				<id>50</id>
+				<posX>80</posX>
+				<posY>340</posY>
+				<width>1800</width>
+				<height>600</height>
+				<onleft>2</onleft>
+				<onright>50</onright>
+          
+			  <imageFolder>-</imageFolder>          
+			  <imageFolderFocus>-</imageFolderFocus>  
+			  <showFrame>true</showFrame>          
+			  <dimColor>90ffffff</dimColor>
+          
+			<enableFocusZoom>no</enableFocusZoom>                    
+			<zoomXPixels>60</zoomXPixels>
+			<zoomYPixels>40</zoomYPixels>          
+			<hideUnfocusTexture>no</hideUnfocusTexture>          
+			<renderFocusText>no</renderFocusText>
+			<renderUnfocusText>no</renderUnfocusText>                    
+			<thumbZoom>yes</thumbZoom>
+			<frameNoFocus>onlinevideos_thumb_nofocus.png</frameNoFocus>
+			<frameFocus>onlinevideos_thumb_focus.png</frameFocus>
+			<textureMask>onlinevideos_thumb_mask.png</textureMask>
+          
+          <!-- smallicons -->
+			<itemWidth>245</itemWidth>
+			<itemHeight>129</itemHeight>
+			<textureWidth>245</textureWidth>
+			<textureHeight>129</textureHeight>
+			<thumbWidth>245</thumbWidth>
+			<thumbHeight>129</thumbHeight>
+			<thumbPosX>0</thumbPosX>
+			<thumbPosY>0</thumbPosY>
+          
+          <!-- largeicons -->
+			<itemWidthBig>292</itemWidthBig>
+			<itemHeightBig>171</itemHeightBig>
+			<textureWidthBig>292</textureWidthBig>
+			<textureHeightBig>171</textureHeightBig>
+			<thumbWidthBig>292</thumbWidthBig>
+			<thumbHeightBig>171</thumbHeightBig>
+			<thumbPosXBig>0</thumbPosXBig>
+			<thumbPosYBig>0</thumbPosYBig>
+            <spinPosX>1832</spinPosX>
+            <spinPosY>730</spinPosY>       
+        </control> 
 		
         <control>
-          <description>Filmstrip view</description>
-          <type>filmstrip</type>
-          <dimColor>90ffffff</dimColor>
-          <id>50</id>
-          <scrollOffset>1</scrollOffset>
-          <onup>2</onup>
-          <ondown>50</ondown>
-          <onleft>50</onleft>
-          <onright>50</onright>
-          <posX>191</posX>
-          <posY>455</posY>
-          <width>1920</width>
-          <height>1080</height>
-          <thumbWidth>508</thumbWidth>
-          <thumbHeight>350</thumbHeight>
-          <thumbPosX>0</thumbPosX>
-          <thumbPosY>0</thumbPosY>
-          <itemWidth>506</itemWidth>
-          <itemHeight>348</itemHeight>
-          <textureWidth>507</textureWidth>
-          <textureHeight>350</textureHeight>
-          <textYOff>-2000</textYOff>
-          <imageFolder>-</imageFolder>
-          <imageFolderFocus>-</imageFolderFocus>
-          <frame>-</frame>
-          <frameNoFocus>pictures_filmstrip_nofocus.png</frameNoFocus>
-          <frameFocus>pictures_filmstrip_focus.png</frameFocus>
-          <keepaspectratio>no</keepaspectratio>
-          <background>-</background>
-          <thumbs mask="pictures_filmstrip_mask.png" flipY="true" diffuse="Thumb_Mask.png"></thumbs>
-          <showFrame>yes</showFrame>
-          <showFolder>no</showFolder>
-          <showBackGround>no</showBackGround>
-          <showInfoImage>no</showInfoImage>
-          <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="118,118" center="0,630" time="400">focus</thumbAnimation>
-          <thumbAnimation effect="zoom" start="118,118" reversible="false" end="100,100" center="0,630" time="100">unfocus</thumbAnimation>
+			<description>Filmstrip view</description>
+			<type>filmstrip</type>
+			<dimColor>90ffffff</dimColor>
+			<id>50</id>
+			<scrollOffset>1</scrollOffset>
+			<onup>2</onup>
+			<ondown>50</ondown>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<posX>170</posX>
+			<posY>455</posY>
+			<width>1920</width>
+			<height>1080</height>
+			<thumbWidth>523</thumbWidth>
+			<thumbHeight>350</thumbHeight>
+			<thumbPosX>0</thumbPosX>
+			<thumbPosY>0</thumbPosY>
+			<itemWidth>533</itemWidth>
+			<itemHeight>350</itemHeight>
+			<textureWidth>523</textureWidth>
+			<textureHeight>350</textureHeight>
+			<textYOff>-2000</textYOff>
+			<imageFolder>-</imageFolder>
+			<imageFolderFocus>-</imageFolderFocus>
+			<showFrame>yes</showFrame>		  
+			<frame>-</frame>
+			<frameNoFocus>-</frameNoFocus>
+			<frameFocus>-</frameFocus>			
+			<background>-</background>
+			<keepaspectratio>no</keepaspectratio>
+			<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="pictures_filmstrip_mask.png"></thumbs>
+			<showFolder>no</showFolder>
+			<showBackGround>no</showBackGround>
+			<showInfoImage>no</showInfoImage>
+			<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="118,118" center="0,630" time="400">focus</thumbAnimation>
+			<thumbAnimation effect="zoom" start="118,118" reversible="false" end="100,100" center="0,630" time="100">unfocus</thumbAnimation>
         </control>
 		
         <control>
@@ -173,12 +177,12 @@
           <onleft>50</onleft>
           <onright>50</onright>
           <posX>0</posX>
-          <posY>421</posY>
+          <posY>455</posY>
           <width>1920</width>
           <height>1080</height>
           <selectedCard>0</selectedCard>
-          <cardWidth>541</cardWidth>
-          <cardHeight>393</cardHeight>
+          <cardWidth>523</cardWidth>
+          <cardHeight>350</cardHeight>
           <angle>65</angle>
           <sideShift>405</sideShift>
           <sideGap>120</sideGap>
@@ -187,11 +191,11 @@
           <selectedOffsetY>0</selectedOffsetY>
           <speed>8</speed>
           <showFrame>yes</showFrame>
-          <frame>coverflow_glass_overlay_music.png</frame>
-          <frameFocus>coverflow_glass_overlay_music.png</frameFocus>
+          <frame>-</frame>
+          <frameFocus>-</frameFocus>
           <keepaspectratio>no</keepaspectratio>
-          <frameWidth>541</frameWidth>
-          <frameHeight>393</frameHeight>
+          <frameWidth>523</frameWidth>
+          <frameHeight>350</frameHeight>
           <spinSpeed>8</spinSpeed>
           <unfocusedAlpha>FF</unfocusedAlpha>
           <font1>font13</font1>
@@ -215,55 +219,9 @@
           <scrollbarYOff>639</scrollbarYOff>
           <showScrollbar>no</showScrollbar>
           <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png" />
-          <subitems>
-            <subitem>
-							<![CDATA[
-                <controls>
-                  <control>
-                    <description>background</description>
-                    <type>image</type>
-                    <posX>0</posX>
-                    <posY>0</posY>
-                    <width>385</width>
-                    <height>280</height>
-                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png">background.png</texture>
-                  </control>
-				     <control>
-                    <description>Picture Details</description>
-                    <type>label</type>
-                    <posX>20</posX>
-                    <posY>10</posY>
-                    <width>210</width>
-                    <label>Picture Details</label>
-                    <font>font13</font>
-                    <textcolor>ff7F9EB2</textcolor>
-                  </control>
-                  <control>
-                    <description>picture name</description>
-                    <type>label</type>
-                    <posX>20</posX>
-                    <posY>40</posY>
-                    <width>210</width>
-                    <label>#selecteditem</label>
-                    <font>font10</font>
-                    <textcolor>FFFFFFFF</textcolor>
-                  </control>
-				  <control>
-                    <description>picture size</description>
-                    <type>label</type>
-                    <posX>20</posX>
-                    <posY>60</posY>
-                    <width>210</width>
-                    <label>#selecteditem2</label>
-                    <font>font10</font>
-                    <textcolor>FFFFFFFF</textcolor>
-                  </control>
-                </controls>
-              ]]>
-              </subitem>
-          </subitems>
         </control>
       </control>
     </control>
+	
   </controls>
 </window>

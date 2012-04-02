@@ -29,85 +29,93 @@
         </control>
 		
         <control>
-          <description>Thumbnail Panel</description>
-          <type>thumbnailpanel</type>
-          <id>50</id>
-          <onleft>2</onleft>
-          <onright>50</onright>
-          <posX>725</posX>
-          <posY>343</posY>
-          <width>1124</width>
-          <height>773</height>
-          <scrollOffset>1</scrollOffset>
-          <itemWidth>140</itemWidth>
-          <itemHeight>202</itemHeight>
-          <textureWidth>140</textureWidth>
-          <textureHeight>202</textureHeight>
-          <thumbWidth>140</thumbWidth>
-          <thumbHeight>202</thumbHeight>
-          <thumbPosX>0</thumbPosX>
-          <thumbPosY>0</thumbPosY>
-          <textureWidthBig>215</textureWidthBig>
-          <textureHeightBig>303</textureHeightBig>
-          <itemWidthBig>215</itemWidthBig>
-          <itemHeightBig>303</itemHeightBig>
-          <thumbWidthBig>215</thumbWidthBig>
-          <thumbHeightBig>303</thumbHeightBig>
-          <thumbPosXBig>0</thumbPosXBig>
-          <thumbPosYBig>0</thumbPosYBig>
-          <zoomXPixels>0</zoomXPixels>
-          <zoomYPixels>0</zoomYPixels>
-          <hideUnfocusTexture>no</hideUnfocusTexture>
-          <renderFocusText>no</renderFocusText>
-          <renderUnfocusText>no</renderUnfocusText>
-          <showFrame>yes</showFrame>
-          <frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
-          <frameFocus>video_thumb_focus.png</frameFocus>
-          <textureMask>video_thumb_mask.png</textureMask>
-          <keepaspectratio>no</keepaspectratio>
-          <shadowAngle>90</shadowAngle>
-          <shadowDistance>50</shadowDistance>
-          <thumbZoom>no</thumbZoom>
-          <spinPosX>1672</spinPosX>
+			<description>Thumbnail Panel</description>
+			<type>thumbnailpanel</type>
+			<id>50</id>
+			<onleft>2</onleft>
+			<onright>50</onright>
+			<posX>725</posX>
+			<posY>343</posY>
+			<width>1124</width>
+			<height>773</height>
+			<scrollOffset>1</scrollOffset>
+			<itemWidth>140</itemWidth>
+			<itemHeight>202</itemHeight>
+			<textureWidth>140</textureWidth>
+			<textureHeight>202</textureHeight>
+			<thumbWidth>140</thumbWidth>
+			<thumbHeight>202</thumbHeight>
+			<thumbPosX>0</thumbPosX>
+			<thumbPosY>0</thumbPosY>
+			<textureWidthBig>215</textureWidthBig>
+			<textureHeightBig>303</textureHeightBig>
+			<itemWidthBig>215</itemWidthBig>
+			<itemHeightBig>303</itemHeightBig>
+			<thumbWidthBig>215</thumbWidthBig>
+			<thumbHeightBig>303</thumbHeightBig>
+			<thumbPosXBig>0</thumbPosXBig>
+			<thumbPosYBig>0</thumbPosYBig>
+			<thumbPosXBig>0</thumbPosXBig>
+			<thumbPosYBig>0</thumbPosYBig>
+			<zoomXPixels>40</zoomXPixels>
+			<zoomYPixels>60</zoomYPixels>
+			<hideUnfocusTexture>no</hideUnfocusTexture>
+			<keepaspectratio>no</keepaspectratio>
+			<renderFocusText>no</renderFocusText>
+			<renderUnfocusText>no</renderUnfocusText>
+			<frameNoFocus>video_thumb_nofocus.png</frameNoFocus>
+			<frameFocus>video_thumb_focus.png</frameFocus>
+			<textureMask>video_thumb_mask.png</textureMask>
+			<shadowAngle>90</shadowAngle>
+    		<shadowDistance>50</shadowDistance>
+			<thumbZoom>yes</thumbZoom>
+			<spinPosX>1672</spinPosX>
         </control>
 		
-        <control>
-          <description>Filmstrip view</description>
-          <type>filmstrip</type>
-          <dimColor>90ffffff</dimColor>
-          <id>50</id>
-          <scrollOffset>2</scrollOffset>
-          <onup>2</onup>
-          <ondown>50</ondown>
-          <onleft>50</onleft>
-          <onright>50</onright>
-          <posX>210</posX>
-          <posY>499</posY>
-          <width>1638</width>
-          <height>1080</height>
-          <thumbWidth>300</thumbWidth>
-          <thumbHeight>424</thumbHeight>
-          <thumbPosX>0</thumbPosX>
-          <thumbPosY>0</thumbPosY>
-          <itemWidth>300</itemWidth>
-          <itemHeight>424</itemHeight>
-          <textureWidth>300</textureWidth>
-          <textureHeight>424</textureHeight>
-          <textYOff>-2000</textYOff>
-          <spinCanFocus>no</spinCanFocus>
-          <imageFolderFocus>-</imageFolderFocus>
-          <frame>-</frame>
-          <frameFocus>thumbnail_frame_shine.png</frameFocus>
-          <background>-</background>
-          <thumbs flipY="true" diffuse="Thumb_Mask.png">
-          </thumbs>
-          <showFrame>yes</showFrame>
-          <showFolder>no</showFolder>
-          <showBackGround>no</showBackGround>
-          <showInfoImage>no</showInfoImage>
-          <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="138,138" center="0,570" time="400">focus</thumbAnimation>
-          <thumbAnimation effect="zoom" start="138,138" reversible="false" end="100,100" center="0,570" time="100">unfocus</thumbAnimation>
-        </control>
+		<control>
+			<description>Filmstrip view</description>
+			<type>filmstrip</type>
+			<dimColor>90ffffff</dimColor>
+			<id>50</id>
+			<scrollOffset>2</scrollOffset>
+			<folderPrefix></folderPrefix>
+			<folderSuffix></folderSuffix>
+			<posX>129</posX>
+			<posY>470</posY>
+			<width>1920</width>
+			<height>768</height>
+			<onup>2</onup>
+			<ondown>2</ondown>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<thumbWidth>320</thumbWidth>
+			<thumbHeight>450</thumbHeight>
+			<thumbPosX>0</thumbPosX>
+			<thumbPosY>0</thumbPosY>
+			<itemWidth>335</itemWidth>
+			<itemHeight>450</itemHeight>
+			<textureWidth>320</textureWidth>
+			<textureHeight>450</textureHeight>
+			<textYOff>-2000</textYOff>
+			<imageFolderFocus>-</imageFolderFocus>
+			<frame>-</frame>
+			<frameFocus>-</frameFocus>
+			<background>-</background>
+			<thumbs flipY="true" diffuse="Thumb_Mask.png" mask="video_filmstrip_mask.png" />
+			<showFrame>yes</showFrame>
+			<showFolder>no</showFolder>
+			<showBackGround>no</showBackGround>
+			<showInfoImage>no</showInfoImage>
+            <scrollbarBackground>-</scrollbarBackground>
+            <scrollbarLeft>-</scrollbarLeft>
+            <scrollbarRight>-</scrollbarRight>
+            <scrollbarWidth>689</scrollbarWidth>
+			<scrollbarHeight>4</scrollbarHeight>
+            <scrollbarYOff>538</scrollbarYOff>
+            <spinPosX>-2000</spinPosX>
+			<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="120,120" center="0,700" time="200">focus</thumbAnimation>
+			<thumbAnimation effect="zoom" start="120,120" reversible="false" end="100,100" center="0,700" time="100">unfocus</thumbAnimation>
+		</control>
 		
         <control>
           <description>Cover Flow view</description>
@@ -120,12 +128,12 @@
           <onleft>50</onleft>
           <onright>50</onright>
           <posX>0</posX>
-          <posY>400</posY>
-          <width>1920</width>
-          <height>1080</height>
+          <posY>440</posY>
+		  <width>1920</width>
+		  <height>768</height>
           <selectedCard>0</selectedCard>
-          <cardWidth>393</cardWidth>
-          <cardHeight>541</cardHeight>
+          <cardWidth>380</cardWidth>
+          <cardHeight>540</cardHeight>
           <angle>45</angle>
           <sideShift>310</sideShift>
           <sideGap>100</sideGap>
@@ -134,10 +142,11 @@
           <selectedOffsetY>0</selectedOffsetY>
           <speed>8</speed>
           <showFrame>yes</showFrame>
-          <frame>coverflow_glass_overlay_videos.png</frame>
-          <frameFocus>coverflow_glass_overlay_videos.png</frameFocus>
-          <frameWidth>393</frameWidth>
-          <frameHeight>541</frameHeight>
+          <frame>-</frame>
+          <frameFocus>-</frameFocus>
+          <keepaspectratio>no</keepaspectratio>
+          <frameWidth>380</frameWidth>
+          <frameHeight>540</frameHeight>
           <spinSpeed>8</spinSpeed>
           <unfocusedAlpha>FF</unfocusedAlpha>
           <font1>font13</font1>
@@ -161,122 +170,7 @@
           <scrollbarYOff>632</scrollbarYOff>
           <showScrollbar>no</showScrollbar>
           <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png" />
-          <subitems>
-            <subitem>
-              <![CDATA[
-                <controls>
-                  <control>
-                    <description>background</description>
-                    <type>image</type>
-                    <posX>0</posX>
-                    <posY>0</posY>
-                    <width>280</width>
-                    <height>385</height>
-                    <texture flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_video.png">background.png</texture>
-                  </control>
-
-                  <control>
-                    <description>Movie Details</description>
-                    <type>label</type>
-                    <posX>30</posX>
-                    <posY>10</posY>
-                    <width>210</width>
-                    <label>Movie Details</label>
-                    <font>font13</font>
-                    <textcolor>FFFFFFFF</textcolor>
-                  </control>
-
-                  <control>
-                    <description>genre</description>
-                    <type>label</type>
-                    <posX>30</posX>
-                    <posY>40</posY>
-                    <width>210</width>
-                    <label>#genre</label>
-                    <font>font10</font>
-                    <textcolor>FFFFFFFF</textcolor>
-                  </control>
-                  <control>
-                    <description>year</description>
-                    <type>label</type>
-                    <posX>30</posX>
-                    <posY>60</posY>
-                    <width>210</width>
-                    <label>#year</label>
-                    <font>font10</font>
-                    <textcolor>FFFFFFFF</textcolor>
-                  </control>
-                  <control>
-                    <description>runtime</description>
-                    <type>label</type>
-                    <posX>30</posX>
-                    <posY>80</posY>
-                    <width>210</width>
-                    <label>#runtime min</label>
-                    <font>font10</font>
-                    <textcolor>FFFFFFFF</textcolor>
-                  </control>
-                  <control>
-                    <description>rating</description>
-                    <type>label</type>
-                    <posX>30</posX>
-                    <posY>100</posY>
-                    <width>210</width>
-                    <label>#rating</label>
-                    <font>font10</font>
-                    <textcolor>FFFFFFFF</textcolor>
-                  </control>
-                  <control>
-                    <description>votes</description>
-                    <type>label</type>
-                    <posX>50</posX>
-                    <posY>100</posY>
-                    <width>210</width>
-                    <label>(#votes votes)</label>
-                    <font>font10</font>
-                    <textcolor>FFFFFFFF</textcolor>
-                  </control>
-
-                  <control>
-                    <description>Director</description>
-                    <type>label</type>
-                    <posX>30</posX>
-                    <posY>140</posY>
-                    <width>210</width>
-                    <label>Director</label>
-                    <font>font10</font>
-                    <textcolor>FFFFFFFF</textcolor>
-                  </control>
-
-                  <control>
-                    <description>director</description>
-                    <type>label</type>
-                    <posX>30</posX>
-                    <posY>160</posY>
-                    <width>210</width>
-                    <label>#director</label>
-                    <font>font9</font>
-                    <textcolor>FFFFFFFF</textcolor>
-                  </control>
-
-                  <control>
-                    <description>plot</description>
-                    <type>textboxscrollup</type>
-                    <posX>30</posX>
-                    <posY>180</posY>
-                    <width>210</width>
-                    <height>150</height>
-                    <label>#plot</label>
-                    <font>font9</font>
-                    <lineSpacing>1</lineSpacing>
-                    <textcolor>FFFFFFFF</textcolor>
-                  </control>
-
-                </controls>
-              ]]>
-            </subitem>
-          </subitems>
-        </control>
+      </control>
 		
         <control>
           <description>playlist listcontrol</description>

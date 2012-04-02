@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
     <!-- List View-->
@@ -18,6 +17,7 @@
       <texture>Logos\source\bluray.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,1080p)+string.equals(#MovingPictures.LocalMedia.videocodec,H264)</visible>
     </control>
+	
     <control>
       <description>BluRay</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -31,6 +31,7 @@
       <texture>Logos\source\blurayrip.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,720p)+string.equals(#MovingPictures.LocalMedia.videocodec,H264)</visible>
     </control>
+	
     <control>
       <description>DVD</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -44,6 +45,7 @@
       <texture>Logos\source\dvd.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoformat,DVD)</visible>
     </control>
+	
     <control>
       <description>SD</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -57,6 +59,8 @@
       <texture>Logos\source\dvdrip.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,SD)+!string.equals(#MovingPictures.LocalMedia.videoformat,DVD)</visible>
     </control>
+	
+	
     <!-- Videocodec -->
     <control>
       <description>Videocodecs</description>
@@ -71,6 +75,8 @@
       <texture>Logos\video\#MovingPictures.LocalMedia.videocodec.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)</visible>
     </control>
+	
+	
     <!-- Audio -->
     <control>
       <description>Dolby Digital 5.1</description>
@@ -86,6 +92,7 @@
       <texture>Logos\audio\dd51.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiocodec,AC3)+string.equals(#MovingPictures.LocalMedia.audiochannels,5.1)]</visible>
     </control>
+	
     <control>
       <description>Dolby Digital 2.0</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -99,6 +106,7 @@
       <keepaspectratio>yes</keepaspectratio>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiocodec,AC3)+[string.equals(#MovingPictures.LocalMedia.audiochannels,2)|string.equals(#MovingPictures.LocalMedia.audiochannels,stereo)]</visible>
     </control>
+	
     <control>
       <description>Dolby Digital 1.0</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -112,6 +120,7 @@
       <keepaspectratio>yes</keepaspectratio>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiocodec,AC3)+[string.equals(#MovingPictures.LocalMedia.audiochannels,1)|string.equals(#MovingPictures.LocalMedia.audiochannels,mono)]</visible>
     </control>
+	
     <control>
       <description>Dolby Digital 5.0</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -125,6 +134,7 @@
       <keepaspectratio>yes</keepaspectratio>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+[string.equals(#MovingPictures.LocalMedia.audiocodec,AC3)+[string.equals(#MovingPictures.LocalMedia.audiochannels,5)|string.equals(#MovingPictures.LocalMedia.audiochannels,5.0)]</visible>
     </control>
+	
     <control>
       <description>DTS 5.1</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -138,6 +148,7 @@
       <keepaspectratio>yes</keepaspectratio>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,DTS)+string.equals(#MovingPictures.LocalMedia.audiochannels,5.1)</visible>
     </control>
+	
     <control>
       <description>DTS 7.1</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -151,6 +162,7 @@
       <keepaspectratio>yes</keepaspectratio>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,DTS)+string.equals(#MovingPictures.LocalMedia.audiochannels,7)</visible>
     </control>
+	
     <control>
       <description>Mp3 2.0</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -164,6 +176,7 @@
       <texture>Logos\audio\mp3_20.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,MP3)+string.equals(#MovingPictures.LocalMedia.audiochannels,stereo)</visible>
     </control>
+	
     <control>
       <description>PCM 2.0</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -177,6 +190,7 @@
       <texture>Logos\audio\pcm_20.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,PCM)+string.equals(#MovingPictures.LocalMedia.audiochannels,stereo)</visible>
     </control>
+	
     <control>
       <description>AAC 5.1</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -190,6 +204,7 @@
       <keepaspectratio>yes</keepaspectratio>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,AAC)+string.equals(#MovingPictures.LocalMedia.audiochannels,5.1)</visible>
     </control>
+	
     <control>
       <description>AAC 7.1</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -203,6 +218,8 @@
       <keepaspectratio>yes</keepaspectratio>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.audiocodec,AAC)+string.equals(#MovingPictures.LocalMedia.audiochannels,7)</visible>
     </control>
+	
+	
     <!-- Resolution -->
     <control>
       <description>1080p</description>
@@ -217,6 +234,7 @@
       <texture>Logos\resolution\1080.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,1080p)</visible>
     </control>
+	
     <control>
       <description>720p</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -230,6 +248,7 @@
       <texture>Logos\resolution\720.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,720p)</visible>
     </control>
+	
     <control>
       <description>SD</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -243,6 +262,7 @@
       <texture>Logos\resolution\480.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,SD)</visible>
     </control>
+	
     <control>
       <description>576p</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -256,6 +276,7 @@
       <texture>Logos\resolution\576.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,576p)</visible>
     </control>
+	
     <control>
       <description>540</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -269,6 +290,8 @@
       <texture>Logos\resolution\540.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoresolution,540)</visible>
     </control>
+	
+	
     <!-- Aspectratio -->
     <control>
       <description>2.35 / widescreen</description>
@@ -284,6 +307,7 @@
       <align>left</align>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoaspectratio,widescreen)</visible>
     </control>
+	
     <control>
       <description>1.33 / fullscreen</description>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -298,6 +322,7 @@
       <align>left</align>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.videoaspectratio,fullscreen)</visible>
     </control>
+	
     <!-- rating 
 	<control>
 		<type>image</type>
@@ -328,6 +353,8 @@
 		<visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)</visible>
 	</control>
 -->
+
+
     <!-- subtitles -->
     <control>
       <type>image</type>
@@ -341,6 +368,7 @@
       <texture>Logos\subtitles.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.hassubtitles,True)</visible>
     </control>
+	
     <control>
       <type>image</type>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -353,5 +381,6 @@
       <texture>Logos\nosubtitles.png</texture>
       <visible>facadeview.filmstrip+Control.IsVisible(50)+!Control.IsVisible(51)+string.equals(#MovingPictures.LocalMedia.hassubtitles,False)</visible>
     </control>
+	
   </controls>
 </window>
