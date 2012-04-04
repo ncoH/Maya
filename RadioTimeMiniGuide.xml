@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>25651</id>
   <defaultcontrol>35</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <control>
       <type>image</type>
       <id>0</id>
@@ -13,6 +13,7 @@
       <texture>black.png</texture>
       <colordiffuse>60ffffff</colordiffuse>
     </control>
+	
     <control>
       <description>background image</description>
       <type>image</type>
@@ -23,6 +24,7 @@
       <posX>148</posX>
       <posY>105</posY>
     </control>
+	
     <control>
       <description>exit button</description>
       <type>button</type>
@@ -41,6 +43,7 @@
       <ondown>35</ondown>
       <onup>34</onup>
     </control>
+	
     <control>
       <description>list to show channels without channel state logos</description>
       <type>listcontrol</type>
@@ -80,6 +83,7 @@
       <onleft>36</onleft>
       <onright>34</onright>
     </control>
+	
     <control>
       <description>list to show channels with channel state logos</description>
       <type>listcontrol</type>
@@ -120,6 +124,7 @@
       <onleft>36</onleft>
       <onright>34</onright>
     </control>
+	
     <control>
       <description>Heading text label</description>
       <type>label</type>
@@ -131,6 +136,7 @@
       <font>font14</font>
       <textcolor>Black</textcolor>
     </control>
+	
     <control>
       <description>groups spin control</description>
       <type>spincontrol</type>
@@ -149,6 +155,7 @@
       <onright>34</onright>
       <onleft>36</onleft>
     </control>
+	
     <control>
       <description>time label</description>
       <id>0</id>
@@ -160,5 +167,6 @@
       <textcolor>ffa9d0f7</textcolor>
       <label>#time</label>
     </control>
+	
   </controls>
 </window>

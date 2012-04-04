@@ -444,16 +444,14 @@
 					<onleft>50</onleft>
                     <onup>28</onup>
                     <ondown>29</ondown>
-					<textureFocus>hiddenmenu_toggle-on-focus.png</textureFocus>
-					<textureNoFocus>hiddenmenu_toggle-on-nofocus.png</textureNoFocus>
-					<AltTextureFocus>hiddenmenu_toggle-off-focus.png</AltTextureFocus>
-					<AltTextureNoFocus>hiddenmenu_toggle-off-nofocus.png</AltTextureNoFocus>
-					<textcolor>white</textcolor>
-					<textcolorNoFocus>ff85cfff</textcolorNoFocus>
 					<width>497</width>
 					<height>70</height>
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>	
+					<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+					<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+					<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+					<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>	
 					<visible>plugin.isenabled(Audioscrobbler)</visible>
 				</control>
 
