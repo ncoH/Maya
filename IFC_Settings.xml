@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <id>240782</id>
-  <defaultcontrol>10010</defaultcontrol>
+  <defaultcontrol>10009</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
-  <define>#header.label:Intelligent Frame Correction</define>
+  <define>#header.label:897</define>
   <define>#header.background:hover_settings.png</define>
   <controls>
   
     <import>common.window.background.xml</import>
     <import>settings.menu.xml</import>
+    <import>common.time.xml</import>	
 	
     <control>
       <id>1</id>
@@ -26,12 +27,28 @@
       <description>Header label</description>
       <posX>185</posX>
       <posY>28</posY>
-      <width>500</width>
+      <width>600</width>
       <label>#header.label</label>	  
       <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+
+    <control>
+		<description>Settings Label</description>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>708</posX>
+		<posY>175</posY>
+		<width>702</width>
+		<height>140</height>
+		<label>I.F.C.</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
     </control>
 	
     <control>
@@ -60,8 +77,8 @@
         <id>18</id>
         <description>Scan Interval select</description>
         <type>spincontrol</type>
-        <onleft>10010</onleft>
-        <onright>10010</onright>
+        <onleft>10009</onleft>
+        <onright>10009</onright>
         <onup>7</onup>
         <ondown>2</ondown>
         <posX>1510</posX>
@@ -96,8 +113,8 @@
         <id>2</id>
         <description>Detection Counter select</description>
         <type>spincontrol</type>
-        <onleft>10010</onleft>
-        <onright>10010</onright>
+        <onleft>10009</onleft>
+        <onright>10009</onright>
         <onup>18</onup>
         <ondown>3</ondown>
         <posX>1510</posX>
@@ -132,8 +149,8 @@
         <id>3</id>
         <description>Min Brightness Threshold select</description>
         <type>spincontrol</type>
-        <onleft>10010</onleft>
-        <onright>10010</onright>
+        <onleft>10009</onleft>
+        <onright>10009</onright>
         <onup>2</onup>
         <ondown>4</ondown>
         <posX>1510</posX>
@@ -168,8 +185,8 @@
         <id>4</id>
         <description>Max Brightness Threshold select</description>
         <type>spincontrol</type>
-        <onleft>10010</onleft>
-        <onright>10010</onright>
+        <onleft>10009</onleft>
+        <onright>10009</onright>
         <onup>3</onup>
         <ondown>5</ondown>
         <posX>1510</posX>
@@ -204,8 +221,8 @@
         <id>5</id>
         <description>Stabilizer select</description>
         <type>spincontrol</type>
-        <onleft>10010</onleft>
-        <onright>10010</onright>
+        <onleft>10009</onleft>
+        <onright>10009</onright>
         <onup>4</onup>
         <ondown>6</ondown>
         <posX>1510</posX>
@@ -240,8 +257,8 @@
         <id>6</id>
         <description>Single Black Bar Height select</description>
         <type>spincontrol</type>
-        <onleft>10010</onleft>
-        <onright>10010</onright>
+        <onleft>10009</onleft>
+        <onright>10009</onright>
         <onup>5</onup>
         <ondown>7</ondown>
         <posX>1510</posX>
@@ -276,8 +293,8 @@
         <id>7</id>
         <description>Double Black Bar Height select</description>
         <type>spincontrol</type>
-        <onleft>10010</onleft>
-        <onright>10010</onright>
+        <onleft>10009</onleft>
+        <onright>10009</onright>
         <onup>6</onup>
         <ondown>8</ondown>
         <posX>1510</posX>
@@ -297,8 +314,8 @@
       <id>8</id>
       <description>Verbose Logging</description>
       <type>togglebutton</type>
-      <onleft>10010</onleft>
-      <onright>10010</onright>
+      <onleft>10009</onleft>
+      <onright>10009</onright>
       <onup>7</onup>
       <ondown>18</ondown>
       <posX>680</posX>
@@ -325,5 +342,6 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

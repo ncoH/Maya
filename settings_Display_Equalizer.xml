@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>9004</id>
-  <defaultcontrol>10009</defaultcontrol>
+  <defaultcontrol>10008</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
+  <define>#header.label:897</define>  
   <define>#header.background:hover_settings.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>settings.menu.xml</import>
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -17,20 +19,37 @@
       <height>900</height>
       <texture>settings_main_panel.png</texture>
     </control>
+
     <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
       <id>1</id>
-      <posX>708</posX>
-      <posY>175</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>9100</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <valign>middle</valign>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>600</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+
+    <control>
+		<description>Settings Label</description>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>708</posX>
+		<posY>175</posY>
+		<width>702</width>
+		<height>140</height>
+		<label>9100</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+    </control>	
+	
     <control>
       <description>buttons</description>
       <type>group</type>
@@ -53,6 +72,7 @@
         <label>9132</label>
         <onup>17</onup>
       </control>
+	  
       <control>
         <description>Equalizer Style</description>
         <type>selectbutton</type>
@@ -68,6 +88,7 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <label>9133</label>
       </control>
+	  
       <control>
         <description>Use Equalizer Smoothing</description>
         <type>togglebutton</type>
@@ -81,6 +102,7 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <label>9134</label>
       </control>
+	  
       <control>
         <description>Delay Start</description>
         <type>togglebutton</type>
@@ -94,6 +116,7 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <label>9135</label>
       </control>
+	  
       <control>
         <description>Delay Time</description>
         <type>selectbutton</type>
@@ -109,6 +132,7 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <label>9136</label>
       </control>
+	  
       <control>
         <description>Show Title</description>
         <type>togglebutton</type>
@@ -122,6 +146,7 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <label>9137</label>
       </control>
+	  
       <control>
         <description>Title Time</description>
         <type>selectbutton</type>
@@ -137,6 +162,7 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <label>9138</label>
       </control>
+	  
       <control>
         <description>Title Frequency</description>
         <type>selectbutton</type>
@@ -153,5 +179,6 @@
         <label>9139</label>
       </control>
     </control>
+	
   </controls>
 </window>

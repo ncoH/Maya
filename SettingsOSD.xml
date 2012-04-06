@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>18</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <define>#header.background:hover_settings.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -14,6 +15,7 @@
       <posY>35</posY>
       <texture>settings_logo.png</texture>
     </control>
+	
     <control>
       <description>Settings text label</description>
       <type>label</type>
@@ -25,6 +27,7 @@
       <align>right</align>
       <textcolor>ffffffff</textcolor>
     </control>
+	
     <control>
       <description>OSD Timeout label</description>
       <type>label</type>
@@ -35,6 +38,7 @@
       <font>font13</font>
       <textcolor>FFFFFFFF</textcolor>
     </control>
+	
     <control>
       <description>OSD Timeout</description>
       <type>spincontrol</type>
@@ -48,5 +52,6 @@
       <onright>20</onright>
       <buddycontrolid>100</buddycontrolid>
     </control>
+	
   </controls>
 </window>

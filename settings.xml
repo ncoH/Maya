@@ -3,7 +3,7 @@
     <id>4</id>
     <defaultcontrol>10001</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-	<define>#header.label:Settings Menu</define>  
+	<define>#header.label:897</define>  
     <define>#header.background:hover_settings.png</define>
   <controls>
   
@@ -42,8 +42,23 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
     </control>
+
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>600</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
 	
-    <import>settings.menu.xml</import>
+	<import>settings.menu.xml</import>
+    <import>common.time.xml</import>	
 	
   </controls>
 </window>

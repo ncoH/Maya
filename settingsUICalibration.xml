@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>10</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <control>
       <description>calibration image</description>
       <type>image</type>
@@ -15,6 +15,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>rectangle image</description>
       <type>image</type>
@@ -23,6 +24,7 @@
       <posY>246</posY>
       <texture>calibration_bar.png</texture>
     </control>
+	
     <control>
       <description>coordinates label</description>
       <type>label</type>
@@ -34,5 +36,6 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

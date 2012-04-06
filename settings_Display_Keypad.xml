@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>9005</id>
-  <defaultcontrol>10009</defaultcontrol>
+  <defaultcontrol>10008</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
+  <define>#header.label:897</define>   
   <define>#header.background:hover_settings.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>settings.menu.xml</import>
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -17,20 +19,37 @@
       <height>900</height>
       <texture>settings_main_panel.png</texture>
     </control>
+	
     <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
       <id>1</id>
-      <posX>708</posX>
-      <posY>175</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>9100</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <valign>middle</valign>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>600</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+
+    <control>
+		<description>Settings Label</description>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>708</posX>
+		<posY>175</posY>
+		<width>702</width>
+		<height>140</height>
+		<label>9100</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+    </control>	
+	
     <control>
       <description>buttons</description>
       <type>group</type>
@@ -47,6 +66,7 @@
         <label>9140</label>
         <onup>17</onup>
       </control>
+	  
       <control>
         <description>Enable Keypad</description>
         <type>togglebutton</type>
@@ -60,6 +80,7 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <label>9141</label>
       </control>
+	  
       <control>
         <description>Custom Mapping</description>
         <type>togglebutton</type>
@@ -73,6 +94,7 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <label>9142</label>
       </control>
+	  
       <control>
         <description>KeyPad Mapping</description>
         <type>button</type>
@@ -85,5 +107,6 @@
         <label>9143</label>
       </control>
     </control>
+	
   </controls>
 </window>

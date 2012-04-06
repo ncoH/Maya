@@ -1,13 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>9000</id>
-  <defaultcontrol>10009</defaultcontrol>
+  <defaultcontrol>10008</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
+  <define>#header.label:897</define>  
   <define>#header.background:hover_settings.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>settings.menu.xml</import>
+    <import>common.time.xml</import>	
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -17,20 +20,37 @@
       <height>900</height>
       <texture>settings_main_panel.png</texture>
     </control>
+	
     <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
       <id>1</id>
-      <posX>708</posX>
-      <posY>175</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>9100</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <valign>middle</valign>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>600</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
+    <control>
+		<description>Settings Label</description>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>708</posX>
+		<posY>175</posY>
+		<width>702</width>
+		<height>140</height>
+		<label>9100</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+    </control>	
+	
     <control>
       <description>Plugin is not configured.</description>
       <type>label</type>
@@ -40,6 +60,7 @@
       <posY>372</posY>
       <label>9101</label>
     </control>
+	
     <control>
       <description>Please run configure.exe first!</description>
       <type>label</type>
@@ -49,6 +70,7 @@
       <posY>421</posY>
       <label>9102</label>
     </control>
+	
     <control>
       <description>buttons</description>
       <type>group</type>
@@ -70,6 +92,7 @@
         <hyperlink>9005</hyperlink>
         <onup>17</onup>
       </control>
+	  
       <control>
         <description>Display Options</description>
         <type>button</type>
@@ -83,6 +106,7 @@
         <hyperlink>9003</hyperlink>
         <onup>17</onup>
       </control>
+	  
       <control>
         <description>Display Control Options</description>
         <type>button</type>
@@ -95,6 +119,7 @@
         <label>9105</label>
         <hyperlink>9002</hyperlink>
       </control>
+	  
       <control>
         <description>Equalizer Options</description>
         <type>button</type>
@@ -107,6 +132,7 @@
         <label>9106</label>
         <hyperlink>9004</hyperlink>
       </control>
+	  
       <control>
         <description>Backlight Options</description>
         <type>button</type>
@@ -119,6 +145,7 @@
         <label>9107</label>
         <hyperlink>9001</hyperlink>
       </control>
+	  
       <control>
         <description>Remote Options</description>
         <type>button</type>
@@ -131,6 +158,7 @@
         <label>9108</label>
         <hyperlink>9006</hyperlink>
       </control>
+	  
       <control>
         <description>Monitor Power States</description>
         <type>togglebutton</type>
@@ -144,6 +172,7 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <label>9109</label>
       </control>
+	  
       <control>
         <description>Contrast</description>
         <type>selectbutton</type>
@@ -159,6 +188,7 @@
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
         <label>9110</label>
       </control>
+	  
       <control>
         <description>Brightness</description>
         <type>selectbutton</type>
@@ -175,5 +205,6 @@
         <label>9111</label>
       </control>
     </control>
+	
   </controls>
 </window>

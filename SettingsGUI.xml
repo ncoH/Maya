@@ -1,13 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>31</id>
-  <defaultcontrol>10004</defaultcontrol>
+  <defaultcontrol>10002</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
+  <define>#header.label:897</define>   
   <define>#header.background:hover_settings.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>settings.menu.xml</import>
+    <import>common.time.xml</import>		
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -17,20 +20,37 @@
       <height>900</height>
       <texture>settings_main_panel.png</texture>
     </control>
+	
     <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
       <id>1</id>
-      <posX>708</posX>
-      <posY>175</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>605</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <valign>middle</valign>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>600</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
+    <control>
+		<description>Settings Label</description>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>708</posX>
+		<posY>175</posY>
+		<width>702</width>
+		<height>140</height>
+		<label>605</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+    </control>	
+	
     <control>
       <description>group element</description>
       <type>group</type>
@@ -45,6 +65,7 @@
         <width>836</width>
         <height>50</height>
       </control>
+	  
       <control>
         <description>Horizontal Speed label</description>
         <type>label</type>
@@ -53,6 +74,7 @@
         <posY>379</posY>
         <label>1442</label>
       </control>
+	  
       <control>
         <description>Horizontal Speed select</description>
         <type>spincontrol</type>
@@ -60,14 +82,15 @@
         <posX>1510</posX>
         <posY>375</posY>
         <align>right</align>
-        <onup>17</onup>
+        <onup>3</onup>
         <ondown>4</ondown>
-        <onleft>2</onleft>
+        <onleft>10002</onleft>
         <onright>2</onright>
         <width>52</width>
         <height>52</height>
         <reverse>yes</reverse>
       </control>
+	  
       <control>
         <type>image</type>
         <id>1</id>
@@ -77,6 +100,7 @@
         <width>836</width>
         <height>50</height>
       </control>
+	  
       <control>
         <description>Vertical Speed label</description>
         <type>label</type>
@@ -85,6 +109,7 @@
         <posY>433</posY>
         <label>1443</label>
       </control>
+	  
       <control>
         <description>Vertical Speed select</description>
         <type>spincontrol</type>
@@ -94,12 +119,13 @@
         <align>right</align>
         <onup>2</onup>
         <ondown>3</ondown>
-        <onleft>4</onleft>
+        <onleft>10002</onleft>
         <onright>4</onright>
         <width>52</width>
         <height>52</height>
         <reverse>yes</reverse>
       </control>
+	  
       <control>
         <type>image</type>
         <id>1</id>
@@ -109,6 +135,7 @@
         <width>836</width>
         <height>50</height>
       </control>
+	  
       <control>
         <description>FPS label</description>
         <type>label</type>
@@ -117,6 +144,7 @@
         <posY>486</posY>
         <label>973</label>
       </control>
+	  
       <control>
         <description>FPS select</description>
         <type>spincontrol</type>
@@ -125,13 +153,14 @@
         <posY>486</posY>
         <align>right</align>
         <onup>4</onup>
-        <ondown>99</ondown>
-        <onleft>3</onleft>
+        <ondown>2</ondown>
+        <onleft>10002</onleft>
         <onright>3</onright>
         <width>52</width>
         <height>52</height>
         <reverse>yes</reverse>
       </control>
+	  
       <control>
         <description>currentFPS count</description>
         <type>label</type>
@@ -141,6 +170,7 @@
         <align>right</align>
         <label>#fps</label>
       </control>
+	  
       <control>
         <description>Example label</description>
         <type>label</type>
@@ -151,6 +181,7 @@
         <label>675</label>
         <textcolor>ff85cffe</textcolor>
       </control>
+	  
       <control>
         <description>TagLine value</description>
         <type>fadelabel</type>
@@ -161,6 +192,7 @@
         <label>-</label>
         <textcolor>ff85cffe</textcolor>
       </control>
+	  
       <control>
         <description>Description1</description>
         <type>textboxscrollup</type>
@@ -173,5 +205,6 @@
         <textcolor>ff85cffe</textcolor>
       </control>
     </control>
+	
   </controls>
 </window>

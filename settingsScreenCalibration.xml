@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>11</id>
   <defaultcontrol>2</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <control>
       <description>videowindow</description>
       <type>videowindow</type>
@@ -14,6 +14,7 @@
       <width>1920</width>
       <height>1080</height>
     </control>
+	
     <control>
       <description>OSD Y Offset logo</description>
       <type>image</type>
@@ -24,6 +25,7 @@
       <colorkey>FFFF00FF</colorkey>
       <colordiffuse>FFFFFFFF</colordiffuse>
     </control>
+	
     <control>
       <description>rectangle image</description>
       <type>image</type>
@@ -32,6 +34,7 @@
       <posY>246</posY>
       <texture>calibration_bar.png</texture>
     </control>
+	
     <control>
       <description>coordinates label</description>
       <type>label</type>
@@ -41,6 +44,7 @@
       <label>-</label>
       <font>font13</font>
     </control>
+	
     <control>
       <description>help information</description>
       <type>label</type>
@@ -50,29 +54,34 @@
       <label>-</label>
       <font>font13</font>
     </control>
+	
     <control>
       <description>top left logo</description>
       <type>image</type>
       <id>8</id>
       <texture>calibrate_topleft.png</texture>
     </control>
+	
     <control>
       <description>right bottom logo</description>
       <type>image</type>
       <id>9</id>
       <texture>calibrate_bottomright.png</texture>
     </control>
+	
     <control>
       <description>subtitle position logo</description>
       <type>image</type>
       <id>10</id>
       <texture>calibrate_subtitles.png</texture>
     </control>
+	
     <control>
       <description>pixel aspect ratio box</description>
       <type>image</type>
       <id>11</id>
       <texture>calibrate_pixelratio.png</texture>
     </control>
+	
   </controls>
 </window>

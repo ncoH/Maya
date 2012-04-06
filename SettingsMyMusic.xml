@@ -1,13 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>14</id>
-  <defaultcontrol>10008</defaultcontrol>
+  <defaultcontrol>10007</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
+  <define>#header.label:897</define>   
   <define>#header.background:hover_settings.png</define>
   <controls>
+  
     <import>common.window.background.xml</import>
     <import>settings.menu.xml</import>
+    <import>common.time.xml</import>		
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -17,20 +20,37 @@
       <height>900</height>
       <texture>settings_main_panel.png</texture>
     </control>
+	
     <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <type>label</type>
       <id>1</id>
-      <posX>708</posX>
-      <posY>175</posY>
-      <width>702</width>
-      <height>140</height>
-      <label>2</label>
-      <textcolor>6aa5cb</textcolor>
-      <font>Segoe Light40</font>
-      <valign>middle</valign>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>600</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+	
+    <control>
+		<description>Settings Label</description>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>708</posX>
+		<posY>175</posY>
+		<width>702</width>
+		<height>140</height>
+		<label>2</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+    </control>	
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -43,6 +63,7 @@
       <texture>settings_button_large_focus.png</texture>
       <visible>Control.HasFocus(2)</visible>
     </control>
+	
     <control>
       <description>Shuffle Playlist on load</description>
       <type>checkmark</type>
@@ -50,11 +71,12 @@
       <posX>1560</posX>
       <posY>375</posY>
       <label>-</label>
-      <onup>2</onup>
-      <ondown>6</ondown>
-      <onleft>10008</onleft>
-      <onright>10008</onright>
+      <onup>10</onup>
+      <ondown>8</ondown>
+      <onleft>10007</onleft>
+      <onright>10007</onright>
     </control>
+	
     <control>
       <description>Shuffle Playlist on load label</description>
       <type>label</type>
@@ -64,6 +86,7 @@
       <textcolor>ff85cffe</textcolor>
       <label>228</label>
     </control>
+	
     <control>
       <type>image</type>
       <id>1</id>
@@ -76,6 +99,7 @@
       <texture>settings_button_large_focus.png</texture>
       <visible>Control.HasFocus(6)</visible>
     </control>
+	
     <!-- 		<control>
 			<description>Enable ID3  other tagformats</description>
 			<type>checkmark</type>
@@ -98,6 +122,7 @@
 			<textcolor>ff85cffe</textcolor>
 			<label>258</label>
 		</control> -->
+		
     <control>
       <description>Reorganize My Music Database label</description>
       <type>label</type>
@@ -106,6 +131,7 @@
       <posY>502</posY>
       <label>334</label>
     </control>
+	
     <control>
       <description>Reorganize My Music Database button</description>
       <type>button</type>
@@ -119,11 +145,12 @@
       <textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
       <textcolor>ff85cffe</textcolor>
       <textcolorNoFocus>ff85cffe</textcolorNoFocus>
-      <onup>6</onup>
+      <onup>2</onup>
       <ondown>13</ondown>
-      <onleft>10008</onleft>
-      <onright>10008</onright>
+      <onleft>10007</onleft>
+      <onright>10007</onright>
     </control>
+	
     <control>
       <description>delete album label</description>
       <type>label</type>
@@ -132,6 +159,7 @@
       <posY>562</posY>
       <label>485</label>
     </control>
+	
     <control>
       <description>delete album button</description>
       <type>button</type>
@@ -147,9 +175,10 @@
       <textcolorNoFocus>ff85cffe</textcolorNoFocus>
       <onup>8</onup>
       <ondown>10</ondown>
-      <onleft>10008</onleft>
-      <onright>10008</onright>
+      <onleft>10007</onleft>
+      <onright>10007</onright>
     </control>
+	
     <control>
       <description>Delete Album Info</description>
       <type>label</type>
@@ -158,6 +187,7 @@
       <posY>621</posY>
       <label>422</label>
     </control>
+	
     <control>
       <description>Delete Album Info</description>
       <type>button</type>
@@ -172,9 +202,10 @@
       <textcolor>ff85cffe</textcolor>
       <textcolorNoFocus>ff85cffe</textcolorNoFocus>
       <onup>13</onup>
-      <ondown>99</ondown>
-      <onleft>10008</onleft>
-      <onright>10008</onright>
+      <ondown>2</ondown>
+      <onleft>10007</onleft>
+      <onright>10007</onright>
     </control>
+	
   </controls>
 </window>
