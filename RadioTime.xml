@@ -6,8 +6,8 @@
   <define>#header.label:Radio Time</define>
   <define>#header.background:hover_radiotime.png</define>
   <controls>
-  
-    <import>common.window.xml</import>
+	
+	<import>common.window.xml</import>
     <import>common.time.xml</import>
 
     <control>
@@ -23,7 +23,7 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
-	
+
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -51,6 +51,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
 	
 	<!--            :: HIDDEN MENU ::            -->
 	
@@ -139,25 +140,27 @@
 				<onup>5</onup>
 				<ondown>2</ondown>
 			</control>
+			
 			<control>
 				<description>Sort Button</description>
 				<type>sortbutton</type>
 				<id>2</id>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
 				<posX>69</posX>
 				<posY>355</posY>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
-				<label></label>
+				<textYOff>17</textYOff>	
+				<label>103</label>
+				<offsetSortButtonX>270</offsetSortButtonX>
+				<offsetSortButtonY>27</offsetSortButtonY>
 				<onright>50</onright>
 				<onup>7</onup>
-				<ondown>3</ondown>
-				<offsetSortButtonX>300</offsetSortButtonX>
-				<offsetSortButtonY>27</offsetSortButtonY>				
+				<ondown>3</ondown>			
 			</control>
+			
 			<control>
 				<description>Swich view</description>
 				<type>button</type>
@@ -175,6 +178,7 @@
 				<onup>2</onup>
 				<ondown>4</ondown>
 			</control>
+			
 			<control>
 				<description>Home</description>
 				<type>button</type>
@@ -192,6 +196,7 @@
 				<onup>3</onup>
 				<ondown>8</ondown>
 			</control>
+			
 			<control>
 				<description>genres</description>
 				<type>button</type>
@@ -209,6 +214,7 @@
 				<onup>4</onup>
 				<ondown>6</ondown>
 			</control>
+			
 			<control>
 				<description>My Presets</description>
 				<type>button</type>
@@ -226,6 +232,7 @@
 				<onup>8</onup>
 				<ondown>9</ondown>
 			</control>
+			
 			<control>
 				<description>Now playing</description>
 				<type>button</type>
@@ -243,18 +250,17 @@
 				<onup>6</onup>
 				<ondown>10</ondown>
 			</control>
+			
 			<control>
 				<description>Random</description>
-				<type>togglebutton</type>
+				<type>button</type>
 				<id>10</id>
 				<width>497</width>
 				<height>70</height>
 				<textXOff>66</textXOff>
 				<textYOff>17</textYOff>	
-				<textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-				<textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-				<AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-				<AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>	
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>	
 				<posX>69</posX>
 				<posY>775</posY>
 				<label>#RadioTime.Translation.Random.Label</label>
@@ -262,6 +268,7 @@
 				<onup>9</onup>
 				<ondown>11</ondown>
 			</control>
+			
 			<control>
 				<description>Fast Presets</description>
 				<type>button</type>
@@ -279,6 +286,7 @@
 				<onup>10</onup>
 				<ondown>5</ondown>
 			</control>
+			
 		</control>
 	</control>
 	
@@ -291,6 +299,7 @@
       <posX>188</posX>
       <posY>703</posY>
       <width>358</width>
+      <visible>facadeview.list+!control.hasthumb(51)</visible>	  
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
@@ -305,6 +314,7 @@
       <posY>738</posY>
       <width>358</width>
       <label>#RadioTime.Selected.Format</label>
+      <visible>facadeview.list+!control.hasthumb(51)</visible>	  
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
@@ -318,6 +328,7 @@
       <posX>188</posX>
       <posY>787</posY>
       <width>358</width>
+      <visible>facadeview.list+!control.hasthumb(51)</visible>	  
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
@@ -330,6 +341,7 @@
       <posY>822</posY>
       <width>358</width>
       <label>#RadioTime.Selected.Subtext</label>
+      <visible>facadeview.list+!control.hasthumb(51)</visible>	  
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>

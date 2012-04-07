@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+<controls>
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>109</defaultcontrol>
+		<onexit>10000</onexit>
+		<dimColor>00ffffff</dimColor>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>521</buttonwidth>
+		<buttonheight>1080</buttonheight>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="400">hidden</animation>
+		</control>
+	
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+	
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>296</posY>
+			<posX>128</posX>
+			<width>376</width>
+			<height>1</height>
+			<texture>hiddenmenu_separator.png</texture>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>422</posY>
+			<posX>128</posX>
+			<width>376</width>
+			<height>1</height>
+			<texture>hiddenmenu_separator.png</texture>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+		<control>
+			<description>Menu label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>114</posY>
+			<label>924</label>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+    		</control>
+		<control>
+			<description>Settings label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>310</posY>
+			<label>100004</label>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+		<control>
+			<description>Jump to label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>128</posX>
+			<posY>432</posY>
+			<label>1065</label>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+		</control>
+          <control>
+            <type>group</type>
+            <description>group element</description>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+            <posX>69</posX>
+            <posY>155</posY>
+            <layout>StackLayout(0, Vertical, true)</layout>	
+			
+			<control>
+				<type>button</type>
+				<description>Play Trailer</description>
+				<id>109</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>			
+				<onleft>10000</onleft>				
+				<onright>10000</onright>
+				<label>Play Trailer</label>
+                <onup>66613</onup>				
+			</control>
+
+			<control>
+				<type>button</type>
+				<description>Update</description>				
+				<id>107</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+				<onleft>10000</onleft>					
+				<onright>10000</onright>
+				<label>496</label>
+                <ondown>66610</ondown>				
+			</control>
+            
+            <control>
+              <description>Empty button</description>
+              <type>button</type>
+              <id>0</id>
+			  <textureFocus>-</textureFocus>
+			  <textureNoFocus>-</textureNoFocus>
+			  <width>497</width>
+			  <height>64</height>
+              <label>-</label>
+              <visible>true</visible>
+            </control>
+            
+			<control>
+				<description>Video Settings</description>
+				<type>button</type>
+				<id>66610</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+				<label>6022</label>
+				<hyperlink>703</hyperlink>
+				<onleft>50</onleft>
+                <onright>50</onright>
+				<onup>107</onup>
+				<ondown>104</ondown>
+			</control>
+            
+            <control>
+              <description>Empty button</description>
+              <type>button</type>
+              <id>0</id>
+			  <textureFocus>-</textureFocus>
+			  <textureNoFocus>-</textureNoFocus>
+			  <width>497</width>
+			  <height>64</height>
+              <label>-</label>
+              <visible>true</visible>
+            </control>
+			
+			<control>
+				<type>button</type>
+				<description>Prior</description>
+				<id>104</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>	
+				<onleft>10000</onleft>					
+				<onright>10000</onright>
+                <onup>66610</onup>
+				<label>210</label>				
+			</control>
+            
+			<control>
+				<type>button</type>
+				<description>Next</description>
+				<id>103</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>	
+				<onleft>10000</onleft>					
+				<onright>10000</onright>
+				<ondown>106</ondown>
+				<onup>104</onup>
+				<label>209</label>					
+			</control>
+				
+			<control>
+				<type>button</type>
+				<description>First</description>
+				<id>106</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>	
+				<onleft>10000</onleft>					
+				<onright>10000</onright>
+				<ondown>105</ondown>
+				<onup>103</onup>				
+			</control>
+				
+			<control>
+				<type>button</type>
+				<description>Last</description>
+				<id>105</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+				<onleft>10000</onleft>					
+				<onright>10000</onright>
+				<ondown>66613</ondown>
+				<onup>106</onup>
+			</control>            
+                        
+            <control>
+				<description>Trailers</description>
+				<id>66613</id>
+				<type>button</type>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<label>#(L(5900))</label>
+				<hyperlink>4755</hyperlink>
+                <hyperlinkParameter>site:#Avalon.TrailerSite|search:#myfilms.user.mastertitle.value|return:Locked</hyperlinkParameter>
+				<onleft>10000</onleft>					
+				<onright>10000</onright>
+				<onup>105</onup>
+				<ondown>109</ondown>    
+			</control>	
+        </control>
+</control>
+</controls>
+</window>
