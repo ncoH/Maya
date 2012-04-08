@@ -179,7 +179,7 @@
       <width>562</width>
       <font>Segoe Light18</font>
       <textcolor>85cffe</textcolor>
-      <visible>facadeview.list+Control.IsVisible(50)</visible>
+      <visible>facadeview.list+Control.IsVisible(50)+string.equals(#myfilms.db.length.value)</visible>
     </control>
 	
     <control>
@@ -194,7 +194,7 @@
       <width>562</width>
       <font>Segoe Light18</font>
       <textcolor>85cffe</textcolor>
-      <visible>facadeview.list+Control.IsVisible(50)</visible>
+      <visible>facadeview.list+Control.IsVisible(50)+Control.IsVisible(50)+string.equals(#myfilms.db.category.value)</visible>
     </control>
 	
     <control>
@@ -216,7 +216,7 @@
       <align>left</align>
       <imagesToDraw>10</imagesToDraw>
       <percentage>#myfilms.db.rating.value</percentage>
-      <visible>facadeview.list+Control.IsVisible(50)</visible>
+      <visible>facadeview.list+Control.IsVisible(50)+string.equals(#myfilms.user.mastertitle.value)</visible>
     </control>
 	
     <control>
