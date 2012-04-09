@@ -108,7 +108,7 @@
 					<textureNoFocus>shutdown_button_nofocus.png</textureNoFocus>
 					<textureFocus>shutdown_button_focus.png</textureFocus>
 					<action>99</action>
-					<onright>50</onright>
+					<onright>901</onright>
 					<onup>2</onup>
 					<ondown>4</ondown>
 					<label>1030</label>
@@ -126,7 +126,7 @@
 					<textureNoFocus>restart_button_nofocus.png</textureNoFocus>
 					<textureFocus>restart_button_focus.png</textureFocus>
 					<action>98</action>
-					<onright>50</onright>
+					<onright>901</onright>
 					<onup>3</onup>
 					<ondown>2</ondown>
 					<label>1031</label>
@@ -145,14 +145,14 @@
 					<textureNoFocus>exit_button_nofocus.png</textureNoFocus>
 					<textureFocus>exit_button_focus.png</textureFocus>
 					<action>97</action>
-					<onright>50</onright>
+					<onright>901</onright>
 					<onup>4</onup>
 					<ondown>3</ondown>
 					<label>Exit</label>
 					<textXOff>-2000</textXOff>
 				</control>
 				
-				<control>
+<!-- 				<control>
 					<description>Sleepcontrol Button</description>
 					<type>button</type>
 					<id>5</id>
@@ -171,7 +171,7 @@
 					<textXOff>-2000</textXOff>
 					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
 					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
-				</control>
+				</control> -->
 
 			</control>
 		</control>
