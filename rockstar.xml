@@ -18,7 +18,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>background.png</texture>
-      <visible>!string.contains(#maya.bgImage.Plugins,yes)</visible>
+      <visible>!string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
 	
     <control>
@@ -30,7 +30,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>#header.background</texture>
-      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
 	
     <import>rockstar.autofanart.xml</import>
@@ -58,7 +58,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>basichome_fanart_overlay.png</texture>
-      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
 	
     <import>common.time.xml</import>

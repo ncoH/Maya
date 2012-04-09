@@ -30,7 +30,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>#header.background</texture>
-      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
     <control>
       <description>Selected item Label</description>

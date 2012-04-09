@@ -27,7 +27,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>weather\backgrounds\#infoservice.weather.today.img.small.filenamewithoutext//weather.jpg</texture>
-      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
 	
     <control>
@@ -39,7 +39,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>fanart_overlay_thumbs.png</texture>
-      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
 	
     <control>
@@ -401,7 +401,7 @@
 		<posX>900</posX>
 		<posY>212</posY>
 		<width>350</width>
-		<label>#maya.weather.update.time</label>
+		<label>#MayaHD.weather.update.time</label>
 		<textcolor>6aa5cb</textcolor>
 		<font>Segoe Light18</font>
 		<visible>plugin.isenabled(InfoService)+!Control.IsVisible(1000)+!Control.IsVisible(1200)+!Control.IsVisible(9999)</visible>
@@ -977,7 +977,7 @@
         <id>0</id>
         <posX>1602</posX>
         <posY>386</posY>
-        <texture>#maya.weather.icons.sat</texture>
+        <texture>#MayaHD.weather.icons.sat</texture>
         <width>126</width>
         <height>104</height>
       </control>
@@ -987,7 +987,7 @@
         <id>0</id>
         <posX>1602</posX>
         <posY>478</posY>
-        <texture>#maya.weather.icons.temp</texture>
+        <texture>#MayaHD.weather.icons.temp</texture>
         <width>126</width>
         <height>104</height>
       </control>
@@ -997,7 +997,7 @@
         <id>0</id>
         <posX>1602</posX>
         <posY>548</posY>
-        <texture>#maya.weather.icons.uv</texture>
+        <texture>#MayaHD.weather.icons.uv</texture>
         <width>126</width>
         <height>104</height>
       </control>
@@ -1007,7 +1007,7 @@
         <id>0</id>
         <posX>1602</posX>
         <posY>611</posY>
-        <texture>#maya.weather.icons.wind</texture>
+        <texture>#MayaHD.weather.icons.wind</texture>
         <width>126</width>
         <height>104</height>
       </control>
@@ -1017,7 +1017,7 @@
         <id>0</id>
         <posX>1602</posX>
         <posY>682</posY>
-        <texture>#maya.weather.icons.hum</texture>
+        <texture>#MayaHD.weather.icons.hum</texture>
         <width>126</width>
         <height>104</height>
       </control>
@@ -1027,7 +1027,7 @@
         <id>0</id>
         <posX>1602</posX>
         <posY>763</posY>
-        <texture>#maya.weather.icons.prec</texture>
+        <texture>#MayaHD.weather.icons.prec</texture>
         <width>126</width>
         <height>104</height>
       </control>

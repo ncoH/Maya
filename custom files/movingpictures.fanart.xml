@@ -41,7 +41,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>fanart_overlay.png</texture>
-      <visible>[facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)] + string.contains(#maya.fanart.MovingPictures,yes)</visible>
+      <visible>[facadeview.list+Control.IsVisible(50)+!Control.IsVisible(51)] + string.contains(#MayaHD.fanart.MovingPictures,yes)</visible>
     </control>
 	
     <control>
@@ -51,7 +51,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>fanart_overlay_filmstrip.png</texture>
-      <visible>[[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip]+Control.IsVisible(50)] + string.contains(#maya.fanart.MovingPictures,yes)</visible>
+      <visible>[[facadeview.smallicons|facadeview.largeicons|facadeview.filmstrip]+Control.IsVisible(50)] + string.contains(#MayaHD.fanart.MovingPictures,yes)</visible>
     </control>
 	
     <control>
@@ -61,7 +61,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>background_coverflow.png</texture>
-      <visible>facadeview.coverflow+Control.IsVisible(50) + string.contains(#maya.fanart.MovingPictures,yes)</visible>
+      <visible>facadeview.coverflow+Control.IsVisible(50) + string.contains(#MayaHD.fanart.MovingPictures,yes)</visible>
     </control>
 	
     <control>
@@ -73,7 +73,7 @@
       <width>710</width>
       <height>1080</height>
       <texture>fanart_list_bg.png</texture>
-      <visible>[facadeview.list+Control.IsVisible(50)] + string.contains(#maya.fanart.MovingPictures,yes)</visible>
+      <visible>[facadeview.list+Control.IsVisible(50)] + string.contains(#MayaHD.fanart.MovingPictures,yes)</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>

@@ -34,7 +34,7 @@
         <posY>125</posY>
         <height>220</height>
         <width>150</width>
-        <texture>#maya.recentlyAdded.series1.thumb</texture>
+        <texture>#MayaHD.recentlyAdded.series1.thumb</texture>
       </control>
 	  
       <control>
@@ -55,7 +55,7 @@
         <posX>1433</posX>
         <posY>137</posY>
         <width>362</width>
-        <label>#maya.recentlyAdded.series1.title</label>
+        <label>#MayaHD.recentlyAdded.series1.title</label>
         <font>Segoe Light18</font>
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
@@ -68,7 +68,7 @@
         <posX>1433</posX>
         <posY>212</posY>
         <width>358</width>
-        <label>#maya.recentlyAdded.series1.episodetitle</label>
+        <label>#MayaHD.recentlyAdded.series1.episodetitle</label>
         <font>font12</font>
         <textcolor>White</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
@@ -81,7 +81,7 @@
         <posX>1433</posX>
         <posY>289</posY>
         <width>358</width>
-        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #maya.recentlyAdded.series1.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #maya.recentlyAdded.series1.episodenumber</label>
+        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #MayaHD.recentlyAdded.series1.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #MayaHD.recentlyAdded.series1.episodenumber</label>
         <font>font10</font>
         <textcolor>White</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
@@ -124,7 +124,7 @@
         <posY>405</posY>
         <height>220</height>
         <width>150</width>
-        <texture>#maya.recentlyAdded.series2.thumb</texture>
+        <texture>#MayaHD.recentlyAdded.series2.thumb</texture>
       </control>
 	  
       <control>
@@ -145,7 +145,7 @@
         <posX>1433</posX>
         <posY>420</posY>
         <width>362</width>
-        <label>#maya.recentlyAdded.series2.title</label>
+        <label>#MayaHD.recentlyAdded.series2.title</label>
         <font>Segoe Light18</font>
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
@@ -158,7 +158,7 @@
         <posX>1433</posX>
         <posY>495</posY>
         <width>358</width>
-        <label>#maya.recentlyAdded.series2.episodetitle</label>
+        <label>#MayaHD.recentlyAdded.series2.episodetitle</label>
         <font>font12</font>
         <textcolor>White</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
@@ -171,7 +171,7 @@
         <posX>1433</posX>
         <posY>569</posY>
         <width>362</width>
-        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #maya.recentlyAdded.series2.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #maya.recentlyAdded.series2.episodenumber</label>
+        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #MayaHD.recentlyAdded.series2.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #MayaHD.recentlyAdded.series2.episodenumber</label>
         <font>font10</font>
         <textcolor>White</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
@@ -214,7 +214,7 @@
         <posY>686</posY>
         <height>220</height>
         <width>150</width>
-        <texture>#maya.recentlyAdded.series3.thumb</texture>
+        <texture>#MayaHD.recentlyAdded.series3.thumb</texture>
       </control>
 	  
       <control>
@@ -235,7 +235,7 @@
         <posX>1433</posX>
         <posY>700</posY>
         <width>358</width>
-        <label>#maya.recentlyAdded.series3.title</label>
+        <label>#MayaHD.recentlyAdded.series3.title</label>
         <font>Segoe Light18</font>
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
@@ -248,7 +248,7 @@
         <posX>1433</posX>
         <posY>774</posY>
         <width>358</width>
-        <label>#maya.recentlyAdded.series3.episodetitle</label>
+        <label>#MayaHD.recentlyAdded.series3.episodetitle</label>
         <font>font12</font>
         <textcolor>White</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
@@ -261,7 +261,7 @@
         <posX>1433</posX>
         <posY>849</posY>
         <width>358</width>
-        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #maya.recentlyAdded.series3.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #maya.recentlyAdded.series3.episodenumber</label>
+        <label>#SkinTranslation.Translations.recentlyAdded.Season.Label: #MayaHD.recentlyAdded.series3.season #SkinTranslation.Translations.recentlyAdded.Episode.Label: #MayaHD.recentlyAdded.series3.episodenumber</label>
         <font>font10</font>
         <textcolor>White</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>

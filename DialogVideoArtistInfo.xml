@@ -27,7 +27,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>#header.background</texture>
-      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
     <control>
       <description>Fanart Overlay</description>
@@ -38,7 +38,7 @@
       <width>1920</width>
       <height>1080</height>
       <texture>basichome_fanart_overlay.png</texture>
-      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
     <import>common.time.xml</import>
     <control>

@@ -86,7 +86,7 @@
         <width>376</width>
         <height>212</height>
         <keepaspectratio>true</keepaspectratio>
-        <label>#latestMediaHandler.picture.latest1.thumb</label>
+        <texture>#latestMediaHandler.picture.latest1.thumb</texture>
       </control>
     </control>
 	

@@ -85,7 +85,7 @@
       <control>
         <description>Play Button</description>
         <type>button</type>
-        <id>221</id>
+        <id>91919988</id>
         <posX>1370</posX>
         <posY>492</posY>
         <width>21</width>
@@ -94,9 +94,9 @@
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
         <onleft>801</onleft>
-        <onright>221</onright>
-        <onup>223</onup>
-        <ondown>222</ondown>
+        <onright>91919988</onright>
+        <onup>91919990</onup>
+        <ondown>91919989</ondown>
         <font>font12</font>
       </control>
     </control>
@@ -160,7 +160,7 @@
       <control>
         <description>Play Button</description>
         <type>button</type>
-        <id>222</id>
+        <id>91919989</id>
         <posX>1370</posX>
         <posY>562</posY>
         <width>21</width>
@@ -169,9 +169,9 @@
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
         <onleft>801</onleft>
-        <onright>222</onright>
-        <onup>221</onup>
-        <ondown>223</ondown>
+        <onright>91919989</onright>
+        <onup>91919988</onup>
+        <ondown>91919990</ondown>
         <font>font12</font>
       </control>
     </control>
@@ -234,7 +234,7 @@
       <control>
         <description>Play Button</description>
         <type>button</type>
-        <id>223</id>
+        <id>91919990</id>
         <posX>1370</posX>
         <posY>632</posY>
         <width>21</width>
@@ -243,9 +243,9 @@
         <textureNoFocus>-</textureNoFocus>
         <label>-</label>
         <onleft>801</onleft>
-        <onright>223</onright>
-        <onup>222</onup>
-        <ondown>221</ondown>
+        <onright>91919990</onright>
+        <onup>91919989</onup>
+        <ondown>91919988</ondown>
         <font>font12</font>
       </control>
     </control>

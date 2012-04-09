@@ -22,7 +22,7 @@
       <id>1</id>
       <description>Fanart Background</description>
       <type>image</type>
-      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
       <posX>0</posX>
       <posY>0</posY>
       <width>1920</width>
@@ -34,7 +34,7 @@
       <id>1</id>
       <description>Fanart Overlay</description>
       <type>image</type>
-      <visible>string.contains(#maya.bgImage.Plugins,yes)</visible>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
       <posX>0</posX>
       <posY>0</posY>
       <width>1920</width>

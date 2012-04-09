@@ -34,7 +34,7 @@
         <posY>125</posY>
         <height>220</height>
         <width>150</width>
-        <texture>#maya.recentlyAdded.movie1.thumb</texture>
+        <texture>#MayaHD.recentlyAdded.movie1.thumb</texture>
       </control>
 	  
       <control>
@@ -55,7 +55,7 @@
         <posX>1433</posX>
         <posY>137</posY>
         <width>362</width>
-        <label>#maya.recentlyAdded.movie1.title</label>
+        <label>#MayaHD.recentlyAdded.movie1.title</label>
         <font>Segoe Light18</font>
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
@@ -68,7 +68,7 @@
         <posX>1433</posX>
         <posY>212</posY>
         <width>358</width>
-        <label>#maya.recentlyAdded.movie1.runtime</label>
+        <label>#MayaHD.recentlyAdded.movie1.runtime</label>
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
@@ -80,7 +80,7 @@
         <posX>1433</posX>
         <posY>250</posY>
         <width>358</width>
-        <label>#maya.recentlyAdded.movie1.genres</label>
+        <label>#MayaHD.recentlyAdded.movie1.genres</label>
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
@@ -101,7 +101,7 @@
         <orientation>horizontal</orientation>
         <align>left</align>
         <imagesToDraw>5</imagesToDraw>
-        <percentage>#maya.recentlyAdded.movie1.score</percentage>
+        <percentage>#MayaHD.recentlyAdded.movie1.score</percentage>
       </control>
 	  
       <control>
@@ -141,7 +141,7 @@
         <posY>405</posY>
         <height>220</height>
         <width>150</width>
-        <texture>#maya.recentlyAdded.movie2.thumb</texture>
+        <texture>#MayaHD.recentlyAdded.movie2.thumb</texture>
       </control>
 	  
       <control>
@@ -162,7 +162,7 @@
         <posX>1433</posX>
         <posY>420</posY>
         <width>362</width>
-        <label>#maya.recentlyAdded.movie2.title</label>
+        <label>#MayaHD.recentlyAdded.movie2.title</label>
         <font>Segoe Light18</font>
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
@@ -175,7 +175,7 @@
         <posX>1433</posX>
         <posY>495</posY>
         <width>358</width>
-        <label>#maya.recentlyAdded.movie2.runtime</label>
+        <label>#MayaHD.recentlyAdded.movie2.runtime</label>
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
@@ -187,7 +187,7 @@
         <posX>1433</posX>
         <posY>532</posY>
         <width>358</width>
-        <label>#maya.recentlyAdded.movie2.genres</label>
+        <label>#MayaHD.recentlyAdded.movie2.genres</label>
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
@@ -208,7 +208,7 @@
         <orientation>horizontal</orientation>
         <align>left</align>
         <imagesToDraw>5</imagesToDraw>
-        <percentage>#maya.recentlyAdded.movie2.score</percentage>
+        <percentage>#MayaHD.recentlyAdded.movie2.score</percentage>
       </control>
 	  
       <control>
@@ -248,7 +248,7 @@
         <posY>686</posY>
         <height>220</height>
         <width>150</width>
-        <texture>#maya.recentlyAdded.movie3.thumb</texture>
+        <texture>#MayaHD.recentlyAdded.movie3.thumb</texture>
       </control>
 	  
       <control>
@@ -269,7 +269,7 @@
         <posX>1433</posX>
         <posY>700</posY>
         <width>358</width>
-        <label>#maya.recentlyAdded.movie3.title</label>
+        <label>#MayaHD.recentlyAdded.movie3.title</label>
         <font>Segoe Light18</font>
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
@@ -282,7 +282,7 @@
         <posX>1433</posX>
         <posY>774</posY>
         <width>358</width>
-        <label>#maya.recentlyAdded.movie3.runtime</label>
+        <label>#MayaHD.recentlyAdded.movie3.runtime</label>
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
@@ -294,7 +294,7 @@
         <posX>1433</posX>
         <posY>812</posY>
         <width>358</width>
-        <label>#maya.recentlyAdded.movie3.genres</label>
+        <label>#MayaHD.recentlyAdded.movie3.genres</label>
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
@@ -315,7 +315,7 @@
         <orientation>horizontal</orientation>
         <align>left</align>
         <imagesToDraw>5</imagesToDraw>
-        <percentage>#maya.recentlyAdded.movie3.score</percentage>
+        <percentage>#MayaHD.recentlyAdded.movie3.score</percentage>
       </control>
 	  
       <control>

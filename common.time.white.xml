@@ -5,7 +5,7 @@
       <id>0</id>
       <description>Maya logo</description>
       <type>image</type>
-      <visible>[window.isvisible(35) + string.contains(#maya.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#maya.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#maya.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#maya.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
+      <visible>[window.isvisible(35) + string.contains(#MayaHD.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#MayaHD.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#MayaHD.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#MayaHD.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
       <posX>55</posX>
       <posY>31</posY>
       <width>81</width>
@@ -19,7 +19,7 @@
       <id>0</id>
       <description>clock seperator</description>
       <type>image</type>
-      <visible>[window.isvisible(35) + string.contains(#maya.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#maya.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#maya.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#maya.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
+      <visible>[window.isvisible(35) + string.contains(#MayaHD.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#MayaHD.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#MayaHD.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#MayaHD.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
       <posX>163</posX>
       <posY>33</posY>
       <texture>top_separator_white.png</texture>
@@ -37,7 +37,7 @@
       <textcolor>ffffff</textcolor>
       <label>#time</label>
 	  <align>right</align>
-      <visible>[window.isvisible(35) + string.contains(#maya.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#maya.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#maya.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#maya.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
+      <visible>[window.isvisible(35) + string.contains(#MayaHD.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#MayaHD.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#MayaHD.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#MayaHD.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
@@ -80,7 +80,7 @@
 		<textcolor>ffffffff</textcolor>
         <label>/#WorldWeather.TodayTemperature</label>
 		<align>left</align>
-        <visible>[window.isvisible(35) + string.contains(#maya.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#maya.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#maya.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#maya.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
+        <visible>[window.isvisible(35) + string.contains(#MayaHD.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#MayaHD.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#MayaHD.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#MayaHD.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
         <animation effect="Fade" time="200">WindowOpen</animation>
         <animation effect="Fade" time="200">WindowClose</animation>			
     </control>
@@ -95,7 +95,7 @@
 		<width>100</width>
 		<texture>#WorldWeather.TodayIconImage</texture>
 		<visible>plugin.isenabled(InfoService)</visible>
-        <visible>[window.isvisible(35) + string.contains(#maya.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#maya.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#maya.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#maya.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
+        <visible>[window.isvisible(35) + string.contains(#MayaHD.clock.clockBasicHome,yes)] | [window.isvisible(0) + string.contains(#MayaHD.clock.clockHome,yes)] | [!window.isvisible(35) + !window.isvisible(0) + string.contains(#MayaHD.clock.clockElsewhere,yes) + !window.isvisible(96742)] | [string.contains(#MayaHD.clock.clockElsewhere,yes + window.isvisible(96742) + Control.IsVisible(50)]</visible>
         <animation effect="Fade" time="200">WindowOpen</animation>
         <animation effect="Fade" time="200">WindowClose</animation>			
 	</control>
