@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8"-->
 <window>
   <controls>
+  
     <control>
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,TVSeries) + ![string.starts(#maya.recentlyAdded.series1.fanart,#)|string.starts(#maya.recentlyAdded.series1.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <visible>string.equals(#recentMedia,TVSeries) + ![string.starts(#maya.recentlyAdded.series1.fanart,#)|string.starts(#maya.recentlyAdded.series1.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)</visible>
       <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -78,11 +78,12 @@
         <font>font12</font>
       </control>
     </control>
+	
     <control>
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,TVSeries) + ![string.starts(#maya.recentlyAdded.series2.fanart,#)|string.starts(#maya.recentlyAdded.series2.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <visible>string.equals(#recentMedia,TVSeries) + ![string.starts(#maya.recentlyAdded.series2.fanart,#)|string.starts(#maya.recentlyAdded.series2.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)</visible>
       <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -131,11 +132,12 @@
         <font>font12</font>
       </control>
     </control>
+	
     <control>
       <description>GROUP: RecentlyAdded Series</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,TVSeries) + ![string.starts(#maya.recentlyAdded.series3.fanart,#)|string.starts(#maya.recentlyAdded.series3.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <visible>string.equals(#recentMedia,TVSeries) + ![string.starts(#maya.recentlyAdded.series3.fanart,#)|string.starts(#maya.recentlyAdded.series3.thumb,#)] + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)</visible>
       <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -184,5 +186,6 @@
         <font>font12</font>
       </control>
     </control>
+	
   </controls>
 </window>

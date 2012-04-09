@@ -6,7 +6,7 @@
       <description>GROUP: RecentlyAdded Pictures</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,Pictures) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <visible>string.equals(#recentMedia,Pictures) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)</visible>
       <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -34,7 +34,7 @@
         <posY>126</posY>
         <width>264</width>
         <height>133</height>
-        <texture>#fanarthandler.picture.latest1.thumb</texture>
+        <texture>#latestMediaHandler.picture.latest1.thumb</texture>
       </control>
 	  
       <control>
@@ -55,7 +55,7 @@
         <posX>1265</posX>
         <posY>254</posY>
         <width>362</width>
-        <label>#fanarthandler.picture.latest1.filename</label>
+        <label>#latestMediaHandler.picture.latest1.title</label>
         <font>Segoe Light18</font>
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
@@ -68,7 +68,7 @@
         <posX>1265</posX>
         <posY>323</posY>
         <width>358</width>
-        <label>#fanarthandler.picture.latest1.dateAdded</label>
+        <label>#latestMediaHandler.picture.latest1.dateAdded</label>
         <font>font12</font>
         <textcolor>ffffff</textcolor>
       </control>
@@ -78,7 +78,7 @@
       <description>GROUP: RecentlyAdded Pictures</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,Pictures) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <visible>string.equals(#recentMedia,Pictures) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)</visible>
       <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -106,7 +106,7 @@
         <posY>407</posY>
         <width>264</width>
         <height>133</height>
-        <texture>#fanarthandler.picture.latest2.thumb</texture>
+        <texture>#latestMediaHandler.picture.latest2.thumb</texture>
       </control>
 	  
       <control>
@@ -127,7 +127,7 @@
         <posX>1265</posX>
         <posY>535</posY>
         <width>362</width>
-        <label>#fanarthandler.picture.latest2.filename</label>
+        <label>#latestMediaHandler.picture.latest2.title</label>
         <font>Segoe Light18</font>
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
@@ -140,7 +140,7 @@
         <posX>1265</posX>
         <posY>604</posY>
         <width>358</width>
-        <label>#fanarthandler.picture.latest2.dateAdded</label>
+        <label>#latestMediaHandler.picture.latest2.dateAdded</label>
         <font>font12</font>
         <textcolor>ffffff</textcolor>
       </control>
@@ -150,7 +150,7 @@
       <description>GROUP: RecentlyAdded Pictures</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,Pictures) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <visible>string.equals(#recentMedia,Pictures) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)</visible>
       <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -178,7 +178,7 @@
         <posY>689</posY>
         <width>264</width>
         <height>133</height>
-        <texture>#fanarthandler.picture.latest3.thumb</texture>
+        <texture>#latestMediaHandler.picture.latest3.thumb</texture>
       </control>
 	  
       <control>
@@ -199,7 +199,7 @@
         <posX>1265</posX>
         <posY>817</posY>
         <width>358</width>
-        <label>#fanarthandler.picture.latest3.filename</label>
+        <label>#latestMediaHandler.picture.latest3.title</label>
         <font>Segoe Light18</font>
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>10</scrollStartDelaySec>
@@ -212,7 +212,7 @@
         <posX>1265</posX>
         <posY>885</posY>
         <width>358</width>
-        <label>#fanarthandler.picture.latest3.dateAdded</label>
+        <label>#latestMediaHandler.picture.latest3.dateAdded</label>
         <font>font12</font>
         <textcolor>ffffff</textcolor>
       </control>

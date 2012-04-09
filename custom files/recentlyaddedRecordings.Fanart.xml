@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8"-->
 <window>
   <controls>
+  
     <control>
       <description>GROUP: RecentlyAdded Recordings</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>string.equals(#recentMedia,Recordings) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <visible>string.equals(#recentMedia,Recordings) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)</visible>
       <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -32,7 +32,7 @@
         <posX>1398</posX>
         <posY>316</posY>
         <width>362</width>
-        <label>#fanarthandler.tvrecordings.latest1.title</label>
+        <label>#latestMediaHandler.tvrecordings.latest1.title</label>
         <font>font14</font>
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>30</scrollStartDelaySec>
@@ -45,33 +45,33 @@
         <posX>1398</posX>
         <posY>485</posY>
         <width>362</width>
-        <label>#fanarthandler.tvrecordings.latest1.title</label>
+        <label>#latestMediaHandler.tvrecordings.latest1.title</label>
         <font>font14</font>
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>30</scrollStartDelaySec>
         <visible>control.hasthumb(9999)</visible>
       </control>
       <control>
-        <description>Recording 1 runtime</description>
+        <description>Recording 1 dateAdded</description>
         <type>fadelabel</type>
         <id>0</id>
         <posX>1398</posX>
         <posY>354</posY>
         <width>386</width>
-        <label>#fanarthandler.tvrecordings.latest1.genre</label>
+        <label>#latestMediaHandler.tvrecordings.latest1.dateAdded</label>
         <font>font12</font>
         <textcolor>ffffff</textcolor>
         <scrollStartDelaySec>30</scrollStartDelaySec>
         <visible>!control.hasthumb(9999)</visible>
       </control>
       <control>
-        <description>Recording 1 runtime</description>
+        <description>Recording 1 dateAdded</description>
         <type>fadelabel</type>
         <id>0</id>
         <posX>1398</posX>
         <posY>523</posY>
         <width>386</width>
-        <label>#fanarthandler.tvrecordings.latest1.genre</label>
+        <label>#latestMediaHandler.tvrecordings.latest1.dateAdded</label>
         <font>font12</font>
         <textcolor>ffffff</textcolor>
         <scrollStartDelaySec>30</scrollStartDelaySec>
@@ -86,14 +86,15 @@
         <width>376</width>
         <height>212</height>
         <keepaspectratio>true</keepaspectratio>
-        <texture>#fanarthandler.tvrecordings.latest1.thumb</texture>
+        <texture>#latestMediaHandler.tvrecordings.latest1.thumb</texture>
       </control>
     </control>
+	
     <control>
       <description>GROUP: RecentlyAdded Recordings</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>control.isvisible(118) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <visible>string.equals(#recentMedia,Recordings) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)</visible>
       <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -108,7 +109,7 @@
         <posX>1398</posX>
         <posY>386</posY>
         <width>362</width>
-        <label>#fanarthandler.tvrecordings.latest2.title</label>
+        <label>#latestMediaHandler.tvrecordings.latest2.title</label>
         <font>font14</font>
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>30</scrollStartDelaySec>
@@ -128,37 +129,38 @@
         <visible>control.hasthumb(9999)</visible>
       </control>
       <control>
-        <description>Recording 2 runtime</description>
+        <description>Recording 2 dateAdded</description>
         <type>fadelabel</type>
         <id>0</id>
         <posX>1398</posX>
         <posY>424</posY>
         <width>386</width>
-        <label>#fanarthandler.tvrecordings.latest2.genre</label>
+        <label>#latestMediaHandler.tvrecordings.latest2.dateAdded</label>
         <font>font12</font>
         <textcolor>ffffff</textcolor>
         <scrollStartDelaySec>30</scrollStartDelaySec>
         <visible>!control.hasthumb(9999)</visible>
       </control>
       <control>
-        <description>Recording 2 runtime</description>
+        <description>Recording 2 dateAdded</description>
         <type>fadelabel</type>
         <id>0</id>
         <posX>1398</posX>
         <posY>593</posY>
         <width>386</width>
-        <label>#fanarthandler.tvrecordings.latest2.genre</label>
+        <label>#latestMediaHandler.tvrecordings.latest2.dateAdded</label>
         <font>font12</font>
         <textcolor>ffffff</textcolor>
         <scrollStartDelaySec>30</scrollStartDelaySec>
         <visible>control.hasthumb(9999)</visible>
       </control>
     </control>
+	
     <control>
       <description>GROUP: RecentlyAdded Recordings</description>
       <type>group</type>
       <dimColor>0xffffffff</dimColor>
-      <visible>control.isvisible(118) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)+!control.hasfocus(5)</visible>
+      <visible>string.equals(#recentMedia,Recordings) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)</visible>
       <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
       <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
@@ -172,7 +174,7 @@
         <posX>1398</posX>
         <posY>457</posY>
         <width>362</width>
-        <label>#fanarthandler.tvrecordings.latest3.title</label>
+        <label>#latestMediaHandler.tvrecordings.latest3.title</label>
         <font>font14</font>
         <textcolor>85cfff</textcolor>
         <scrollStartDelaySec>30</scrollStartDelaySec>
@@ -191,31 +193,32 @@
         <visible>control.hasthumb(9999)</visible>
       </control>
       <control>
-        <description>Recording 3 runtime</description>
+        <description>Recording 3 dateAdded</description>
         <type>fadelabel</type>
         <id>0</id>
         <posX>1398</posX>
         <posY>495</posY>
         <width>386</width>
-        <label>#fanarthandler.tvrecordings.latest3.genre</label>
+        <label>#latestMediaHandler.tvrecordings.latest3.dateAdded</label>
         <font>font12</font>
         <textcolor>ffffff</textcolor>
         <scrollStartDelaySec>30</scrollStartDelaySec>
         <visible>!control.hasthumb(9999)</visible>
       </control>
       <control>
-        <description>Recording 3 runtime</description>
+        <description>Recording 3 dateAdded</description>
         <type>fadelabel</type>
         <id>0</id>
         <posX>1398</posX>
         <posY>663</posY>
         <width>386</width>
-        <label>#fanarthandler.tvrecordings.latest3.genre</label>
+        <label>#latestMediaHandler.tvrecordings.latest3.dateAdded</label>
         <font>font12</font>
         <textcolor>ffffff</textcolor>
         <scrollStartDelaySec>30</scrollStartDelaySec>
         <visible>control.hasthumb(9999)</visible>
       </control>
     </control>
+	
   </controls>
 </window>
