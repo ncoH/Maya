@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+  
+    <control>
+      <description>GROUP: RecentlyAdded Music</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia,Music) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)</visible>
+      <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+      <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
+      <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+      <animation effect="slide" end="300,0" time="1500" acceleration="-0.1" reversible="false">Hidden</animation>
+      <animation effect="slide" start="300,0" end="0,0" time="1000" acceleration="-0.1" reversible="false">Visible</animation>
+      <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+	  
+      <control>
+        <description>Default Music 1 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1262</posX>
+        <posY>129</posY>
+        <width>196</width>
+        <height>196</height>
+        <texture>defaultAudioBig.png</texture>	
+      </control>
+	  
+      <control>
+        <description>Music 1 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1262</posX>
+        <posY>129</posY>
+        <width>196</width>
+        <height>196</height>
+        <texture>#latestMediaHandler.music.latest1.thumb</texture>
+      </control>
+	  
+      <control>
+        <id>0</id>
+        <description>album art overlay</description>
+        <type>image</type>
+        <posX>1232</posX>
+        <posY>99</posY>
+        <width>254</width>
+        <height>254</height>
+        <texture>blackborders_music.png</texture>
+      </control>
+	  
+      <control>
+        <description>Music 1 artist</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1489</posX>
+        <posY>137</posY>
+        <width>362</width>
+        <label>#latestMediaHandler.music.latest1.artist</label>
+        <font>Segoe Light18</font>
+        <textcolor>85cfff</textcolor>
+        <scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+	  
+      <control>
+        <description>Music 1 album</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1489</posX>
+        <posY>212</posY>
+        <width>358</width>
+        <label>#latestMediaHandler.music.latest1.album</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+	  
+      <control>
+        <description>Music 1 dateAdded</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1489</posX>
+        <posY>250</posY>
+        <width>358</width>
+        <label>#latestMediaHandler.music.latest1.dateAdded</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+    </control>
+	
+    <control>
+      <description>GROUP: RecentlyAdded Music</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia,Music) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)</visible>
+      <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+      <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
+      <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+      <animation effect="slide" end="300,0" time="1500" acceleration="-0.1" reversible="false">Hidden</animation>
+      <animation effect="slide" start="300,0" end="0,0" time="1000" acceleration="-0.1" reversible="false">Visible</animation>
+      <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+	  
+      <control>
+        <description>Default Music 2 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1262</posX>
+        <posY>409</posY>
+        <width>196</width>
+        <height>196</height>
+        <texture>defaultAudioBig.png</texture>	
+      </control>
+	  
+      <control>
+        <description>Music 2 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1262</posX>
+        <posY>409</posY>
+        <width>196</width>
+        <height>196</height>
+        <texture>#latestMediaHandler.music.latest2.thumb</texture>
+      </control>
+	  
+      <control>
+        <id>0</id>
+        <description>album art overlay</description>
+        <type>image</type>
+        <posX>1232</posX>
+        <posY>379</posY>
+        <width>254</width>
+        <height>254</height>
+        <texture>blackborders_music.png</texture>
+      </control>
+	  
+      <control>
+        <description>Music 2 artist</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1489</posX>
+        <posY>420</posY>
+        <width>362</width>
+        <label>#latestMediaHandler.music.latest2.artist</label>
+        <font>Segoe Light18</font>
+        <textcolor>85cfff</textcolor>
+        <scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+	  
+      <control>
+        <description>Music 2 album</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1489</posX>
+        <posY>495</posY>
+        <width>358</width>
+        <label>#latestMediaHandler.music.latest2.album</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+	  
+      <control>
+        <description>Music 2 dateAdded</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1489</posX>
+        <posY>532</posY>
+        <width>358</width>
+        <label>#latestMediaHandler.music.latest2.dateAdded</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+    </control>
+	
+    <control>
+      <description>GROUP: RecentlyAdded Music</description>
+      <type>group</type>
+      <dimColor>0xffffffff</dimColor>
+      <visible>string.equals(#recentMedia,Music) + !control.hasfocus(2)+!control.hasfocus(3)+!control.hasfocus(4)</visible>
+      <animation effect="fade" start="100" end="0" time="250" reversible="false">Hidden</animation>
+      <animation effect="fade" start="0" end="100" delay="700" time="500" reversible="false">Visible</animation>
+      <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+      <animation effect="slide" end="300,0" time="1500" acceleration="-0.1" reversible="false">Hidden</animation>
+      <animation effect="slide" start="300,0" end="0,0" time="1000" acceleration="-0.1" reversible="false">Visible</animation>
+      <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
+	  
+      <control>
+        <description>Default Music 3 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1262</posX>
+        <posY>690</posY>
+        <width>196</width>
+        <height>196</height>
+        <texture>defaultAudioBig.png</texture>
+      </control>
+	  
+      <control>
+        <description>Music 3 thumb/fanart</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1262</posX>
+        <posY>690</posY>
+        <width>196</width>
+        <height>196</height>
+        <texture>#latestMediaHandler.music.latest3.thumb</texture>
+      </control>
+		
+      <control>
+        <id>0</id>
+        <description>album art overlay</description>
+        <type>image</type>
+        <posX>1232</posX>
+        <posY>660</posY>
+        <width>254</width>
+        <height>254</height>
+        <texture>blackborders_music.png</texture>
+      </control>
+	  
+      <control>
+        <description>Music 2 artist</description>
+        <type>fadelabel</type>
+        <id>0</id>
+        <posX>1489</posX>
+        <posY>700</posY>
+        <width>358</width>
+        <label>#latestMediaHandler.music.latest3.artist</label>
+        <font>Segoe Light18</font>
+        <textcolor>85cfff</textcolor>
+        <scrollStartDelaySec>10</scrollStartDelaySec>
+      </control>
+	  
+      <control>
+        <description>Music 3 album</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1489</posX>
+        <posY>774</posY>
+        <width>358</width>
+        <label>#latestMediaHandler.music.latest3.album</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+	  
+      <control>
+        <description>Music 3 dateAdded</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1489</posX>
+        <posY>812</posY>
+        <width>358</width>
+        <label>#latestMediaHandler.music.latest3.dateAdded</label>
+        <font>font12</font>
+        <textcolor>ffffff</textcolor>
+      </control>
+    </control>
+	
+  </controls>
+</window>

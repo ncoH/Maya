@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
+      <control>
+        <description>composite control consisting of a list control and a thumbnail panel</description>
+        <type>facadeview</type>
+        <id>50</id>
+        <control>
+          <description>listcontrol</description>
+          <type>listcontrol</type>
+          <id>50</id>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <scrollOffset>1</scrollOffset>
+          <posX>736</posX>
+          <posY>262</posY>
+          <height>644</height>
+          <spinPosX>787</spinPosX>
+          <spinPosY>967</spinPosY>
+          <spinAlign>left</spinAlign>
+          <textXOff>30</textXOff>
+          <dimColor>ffffffff</dimColor>
+        </control>
+		
+        <control>
+          <description>album view listcontrol</description>
+          <type>listcontrol</type>
+          <subtype>album</subtype>
+          <id>50</id>
+          <posX>736</posX>
+          <posY>262</posY>
+          <height>644</height>
+          <textXOff>47</textXOff>
+          <textYOff>28</textYOff>
+          <textXOff2>997</textXOff2>
+          <textYOff2>77</textYOff2>
+          <textcolor>ffffffff</textcolor>
+          <textcolor2>ff6aa5cb</textcolor2>
+          <itemWidth>112</itemWidth>
+          <itemHeight>112</itemHeight>
+          <IconXOff>29</IconXOff>
+          <IconYOff>14</IconYOff>
+          <PinIconWidth>20</PinIconWidth>
+          <PinIconHeight>20</PinIconHeight>
+          <PinIconXOff>72</PinIconXOff>
+          <PinIconYOff>22</PinIconYOff>
+          <spaceBetweenItems>0</spaceBetweenItems>
+          <textureHeight>143</textureHeight>
+          <scrollOffset>1</scrollOffset>
+          <spinPosX>787</spinPosX>
+          <spinPosY>967</spinPosY>
+          <spinAlign>left</spinAlign>
+          <spinCanFocus>no</spinCanFocus>
+          <textureFocus>listcontrol_item_selected_big.png</textureFocus>
+          <textureNoFocus>listcontrol_item_big.png</textureNoFocus>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <keepaspectratio>yes</keepaspectratio>
+        </control>
+		
+        <control>
+          <description>Thumbnail Panel</description>
+          <type>thumbnailpanel</type>
+          <id>50</id>
+          <onleft>2</onleft>
+          <onright>2</onright>
+          <posX>210</posX>
+          <posY>337</posY>
+          <width>1546</width>
+          <height>632</height>
+          <spinColor>ffffffff</spinColor>
+          <scrollOffset>1</scrollOffset>
+          <itemWidth>151</itemWidth>
+          <itemHeight>153</itemHeight>
+          <textureWidth>151</textureWidth>
+          <textureHeight>153</textureHeight>
+          <thumbWidth>151</thumbWidth>
+          <thumbHeight>153</thumbHeight>
+          <thumbPosX>0</thumbPosX>
+          <thumbPosY>0</thumbPosY>
+          <thumbZoom>no</thumbZoom>
+          <imageFolder>-</imageFolder>
+          <imageFolderFocus>-</imageFolderFocus>
+          <suffix>|</suffix>
+          <itemWidthBig>302</itemWidthBig>
+          <itemHeightBig>303</itemHeightBig>
+          <textureWidthBig>302</textureWidthBig>
+          <textureHeightBig>303</textureHeightBig>
+          <thumbWidthBig>302</thumbWidthBig>
+          <thumbHeightBig>303</thumbHeightBig>
+          <thumbPosXBig>0</thumbPosXBig>
+          <thumbPosYBig>0</thumbPosYBig>
+			<thumbZoom>no</thumbZoom>
+			<enableFocusZoom>yes</enableFocusZoom>
+			<zoomXPixels>40</zoomXPixels>
+			<zoomYPixels>40</zoomYPixels>
+			<hideUnfocusTexture>no</hideUnfocusTexture>
+			<renderFocusText>no</renderFocusText>
+			<renderUnfocusText>no</renderUnfocusText>
+			<folderPrefix></folderPrefix>
+			<folderSuffix></folderSuffix>
+			<textureUp>-</textureUp>
+			<textureDown>-</textureDown>
+			<textureUpFocus>-</textureUpFocus>
+			<textureDownFocus>-</textureDownFocus>
+			<frameNoFocus>music_thumb_nofocus.png</frameNoFocus>
+			<frameFocus>music_thumb_focus.png</frameFocus>
+			<textureMask>music_thumb_mask.png</textureMask>
+			<keepaspectratio>no</keepaspectratio>
+			<spinPosX>-2000</spinPosX>
+        </control>
+		
+        <control>
+          <description>Filmstrip view</description>
+          <type>filmstrip</type>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <scrollOffset>2</scrollOffset>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <posX>118</posX>
+          <posY>480</posY>
+          <width>1690</width>
+          <height>768</height>
+          <thumbWidth>320</thumbWidth>
+          <thumbHeight>320</thumbHeight>
+          <thumbPosX>0</thumbPosX>
+          <thumbPosY>0</thumbPosY>
+          <itemWidth>335</itemWidth>
+          <itemHeight>335</itemHeight>
+          <textureWidth>320</textureWidth>
+          <textureHeight>320</textureHeight>
+          <frame>-</frame>
+          <frameFocus>-</frameFocus>
+          <frameWidth>320</frameWidth>
+          <frameHeight>320</frameHeight>		  
+          <thumbs flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png"></thumbs>
+          <InfoImage flipY="true" diffuse="Thumb_Mask.png"></InfoImage>
+		  <showFrame>yes</showFrame>
+		  <textYOff>-2000</textYOff>
+		  <showFolder>no</showFolder>
+		  <showBackGround>no</showBackGround>
+		  <showInfoImage>no</showInfoImage>
+		  <keepaspectratio>no</keepaspectratio>
+          <scrollbarBackground>scrollbar_bg.png</scrollbarBackground>
+          <scrollbarLeft>scrollbar_left_hor.png</scrollbarLeft>
+          <scrollbarRight>scrollbar_right_hor.png</scrollbarRight>
+          <scrollbarWidth>689</scrollbarWidth>
+		  <scrollbarHeight>4</scrollbarHeight>
+          <scrollbarYOff>538</scrollbarYOff>
+          <spinPosX>-2000</spinPosX>
+		  <thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="125,125" center="0,600" time="200">focus</thumbAnimation>
+		  <thumbAnimation effect="zoom" start="125,125" reversible="false" end="100,100" center="0,700" time="100">unfocus</thumbAnimation>
+        </control>
+		
+        <control>
+          <description>Cover Flow view</description>
+          <type>coverflow</type>
+          <colordiffuse>90ffffff</colordiffuse>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <onup>2</onup>
+          <ondown>2</ondown>
+          <onleft>50</onleft>
+          <onright>50</onright>
+          <posX>0</posX>
+          <posY>480</posY>
+          <width>1920</width>
+          <height>1080</height>
+          <selectedCard>0</selectedCard>
+          <cardWidth>421</cardWidth>
+          <cardHeight>421</cardHeight>
+          <angle>65</angle>
+          <sideShift>310</sideShift>
+          <sideGap>180</sideGap>
+          <sideDepth>280</sideDepth>
+          <offsetY>0</offsetY>
+          <selectedOffsetY>0</selectedOffsetY>
+          <speed>8</speed>
+          <showFrame>yes</showFrame>
+          <frame>-</frame>
+          <frameFocus>-</frameFocus>
+          <frameWidth>421</frameWidth>
+          <frameHeight>421</frameHeight>
+          <unfocusedAlpha>FF</unfocusedAlpha>
+          <font1>font13</font1>
+          <font2>font11</font2>
+          <label1>#selecteditem</label1>
+          <label2>#selecteditem2</label2>
+          <textColor>FFFFFFFF</textColor>
+          <remoteColor>FFFF0000</remoteColor>
+          <playedColor>FFA0D0FF</playedColor>
+          <downloadColor>FF00FF00</downloadColor>
+          <selectedColor>FFFFFFFF</selectedColor>
+          <shadowAngle>45</shadowAngle>
+          <shadowDistance>0</shadowDistance>
+          <shadowColor>FF000000</shadowColor>
+          <label1YOff>2405</label1YOff>
+          <label2YOff>2430</label2YOff>
+          <pageSize>5</pageSize>
+          <scrollbarBackground>bar_hor.png</scrollbarBackground>
+          <scrollbarLeft>mouse_left_horizontal.png</scrollbarLeft>
+          <scrollbarRight>mouse_right_horizontal.png</scrollbarRight>
+          <scrollbarYOff>639</scrollbarYOff>
+          <showScrollbar>no</showScrollbar>
+		  <keepaspectratio>no</keepaspectratio>		  
+          <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png"></cards>
+        </control>
+		
+        <control>
+          <description>playlist listcontrol</description>
+          <type>playlistcontrol</type>
+          <id>50</id>
+          <onleft>2</onleft>
+          <onright>50</onright>
+          <scrollOffset>1</scrollOffset>
+          <posY>257</posY>
+          <height>632</height>
+          <spinCanFocus>no</spinCanFocus>
+          <dimColor>ffffffff</dimColor>
+        </control>
+		
+      </control>
+    </control>
+  </controls>
+</window>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>9002</id>
+  <defaultcontrol>10008</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:897</define>   
+  <define>#header.background:hover_settings.png</define>
+  <controls>
+  
+    <import>common.window.background.xml</import>
+    <import>settings.menu.xml</import>
+    <import>common.time.xml</import>		
+	
+    <control>
+      <type>image</type>
+      <id>1</id>
+      <posX>610</posX>
+      <posY>84</posY>
+      <width>1152</width>
+      <height>900</height>
+      <texture>settings_main_panel.png</texture>
+    </control>
+	
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>600</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+
+    <control>
+		<description>Settings Label</description>	
+		<animation effect="fade" time="100">WindowOpen</animation>
+		<animation effect="fade" time="100">WindowClose</animation>
+		<type>label</type>
+		<id>1</id>
+		<posX>708</posX>
+		<posY>175</posY>
+		<width>702</width>
+		<height>140</height>
+		<label>9100</label>
+		<textcolor>6aa5cb</textcolor>
+		<font>Segoe Light40</font>
+		<valign>middle</valign>
+    </control>
+	
+    <control>
+      <description>buttons</description>
+      <type>group</type>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <posX>688</posX>
+      <posY>365</posY>
+      <layout>GridLayout(2, 7, 42, 0, 1)</layout>
+      <control>
+        <description>Blank Display with Video</description>
+        <type>togglebutton</type>
+        <id>40</id>
+        <width>469</width>
+        <textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+        <textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+        <AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+        <AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+        <label>9116</label>
+        <onup>17</onup>
+      </control>
+      <control>
+        <description>Enable Display Actions</description>
+        <type>togglebutton</type>
+        <id>41</id>
+        <width>469</width>
+        <textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+        <textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+        <AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+        <AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+        <label>9117</label>
+      </control>
+      <control>
+        <description>Action Display Time</description>
+        <type>selectbutton</type>
+        <id>42</id>
+        <width>469</width>
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <texturebg>settings_button_medium_focus.png</texturebg>
+        <textXOff>12</textXOff>
+        <textYOff>7</textYOff>
+        <textYOff2>7</textYOff2>
+        <textXOff2>35</textXOff2>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+        <label>9118</label>
+      </control>
+      <control>
+        <description>Blank Display on Idle</description>
+        <type>togglebutton</type>
+        <id>43</id>
+        <width>469</width>
+        <textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+        <textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+        <AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+        <AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+        <label>9119</label>
+      </control>
+      <control>
+        <description>Idle Delay</description>
+        <type>selectbutton</type>
+        <id>44</id>
+        <width>469</width>
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <texturebg>settings_button_medium_focus.png</texturebg>
+        <textXOff>12</textXOff>
+        <textYOff>7</textYOff>
+        <textYOff2>7</textYOff2>
+        <textXOff2>35</textXOff2>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+        <label>9120</label>
+        <ondown>99</ondown>
+      </control>
+    </control>
+	
+  </controls>
+</window>

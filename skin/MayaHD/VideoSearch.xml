@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>1987</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:Video Search</define>
+  <define>#header.background:hover_Films.jpg</define>
+  <controls>
+  
+    <import>common.window.background.xml</import>
+    <import>common.time.xml</import>
+    <import>VideoSearch.facade.xml</import>
+    <import>VideoSearch.details.xml</import>
+	
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>Status</description>
+      <type>fadelabel</type>
+      <id>6</id>
+      <posX>229</posX>
+      <posY>70</posY>
+      <label>
+      </label>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <onup>2</onup>
+      <ondown>3</ondown>
+      <width>808</width>
+      <font>font16</font>
+      <textcolor>150517</textcolor>
+      <height>57</height>
+    </control>
+	
+    <control>
+      <type>button</type>
+      <description>Search</description>
+      <id>66</id>
+      <label>Search</label>
+      <posX>1068</posX>
+      <posY>70</posY>
+      <width>253</width>
+      <height>66</height>
+      <textalign>center</textalign>
+      <textYOff>0</textYOff>
+      <onup>50</onup>
+      <onright>50</onright>
+    </control>
+	
+    <control>
+      <description>an Image</description>
+      <type>image</type>
+      <id>55</id>
+      <posX>224</posX>
+      <posY>70</posY>
+      <width>829</width>
+      <height>57</height>
+      <texture>searchBlock.PNG</texture>
+    </control>
+	
+    <control>
+      <type>actiongroup</type>
+      <description>action menu</description>
+      <onexit>50</onexit>
+      <buttonX>0</buttonX>
+      <buttonY>0</buttonY>
+      <buttonwidth>112</buttonwidth>
+      <buttonheight>914</buttonheight>
+      <textureFocus>Action_focus.png</textureFocus>
+      <textureNoFocus>Action_nofocus.png</textureNoFocus>
+      <width>449</width>
+      <height>1012</height>
+      <dimColor>00ffffff</dimColor>
+      <control>
+        <description>button group</description>
+        <type>group</type>
+        <animation effect="slide" time="450" start="-300,0" reversible="false">visible</animation>
+        <animation effect="slide" time="450" end="-300,0" reversible="false">hidden</animation>
+        <posX>56</posX>
+        <posY>136</posY>
+        <layout>StackLayout</layout>
+        <control>
+          <type>button</type>
+          <description>Search</description>
+          <id>102</id>
+          <onright>50</onright>
+          <label>Search</label>
+          <onup>101</onup>
+          <ondown>101</ondown>
+        </control>
+        <control>
+          <description>Top Rated</description>
+          <type>button</type>
+          <id>101</id>
+          <onright>50</onright>
+          <label>Top Rated</label>
+          <onup>102</onup>
+          <ondown>102</ondown>
+        </control>
+      </control>
+    </control>
+	
+  </controls>
+</window>

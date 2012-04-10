@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="slide" time="150" start="0,-300">WindowOpen</animation>
+      <animation effect="slide" time="250" end="800,0">WindowClose</animation>
+      <control>
+        <description>composite control consisting of a list control and a thumbnail panel</description>
+        <type>facadeview</type>
+        <id>50</id>
+		
+        <control>
+          <description>listcontrol</description>
+          <type>listcontrol</type>
+          <id>50</id>
+          <scrollOffset>2</scrollOffset>
+          <onleft>102</onleft>
+          <onup>66</onup>
+        </control>
+		
+        <control>
+          <description>Thumbnail Panel</description>
+          <type>thumbnailpanel</type>
+          <dimColor>90ffffff</dimColor>
+          <id>50</id>
+          <posX>229</posX>
+          <posY>340</posY>
+          <width>1461</width>
+          <height>703</height>
+          <scrollOffset>1</scrollOffset>
+          <onleft>102</onleft>
+          <onright>102</onright>
+          <itemWidth>262</itemWidth>
+          <itemHeight>246</itemHeight>
+          <textureWidth>220</textureWidth>
+          <textureHeight>168</textureHeight>
+          <thumbWidth>203</thumbWidth>
+          <thumbHeight>150</thumbHeight>
+          <thumbPosX>7</thumbPosX>
+          <thumbPosY>7</thumbPosY>
+          <itemWidthBig>314</itemWidthBig>
+          <itemHeightBig>319</itemHeightBig>
+          <thumbWidthBig>290</thumbWidthBig>
+          <thumbHeightBig>220</thumbHeightBig>
+          <textureWidthBig>307</textureWidthBig>
+          <textureHeightBig>234</textureHeightBig>
+          <thumbPosXBig>7</thumbPosXBig>
+          <thumbPosYBig>7</thumbPosYBig>
+          <zoomXPixels>30</zoomXPixels>
+          <zoomYPixels>30</zoomYPixels>
+          <hideUnfocusTexture>no</hideUnfocusTexture>
+          <renderFocusText>no</renderFocusText>
+          <renderUnfocusText>no</renderUnfocusText>
+          <spinCanFocus>no</spinCanFocus>
+        </control>
+      </control>
+    </control>
+	
+  </controls>
+</window>

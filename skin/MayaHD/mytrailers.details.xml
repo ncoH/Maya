@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+    <control>
+      <id>1</id>
+      <description>Heading</description>
+      <type>label</type>
+      <visible>no</visible>
+      <posX>775</posX>
+      <posY>42</posY>
+      <width>702</width>
+      <height>140</height>
+      <font>Segoe Light40</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <label>5900</label>
+      <valign>middle</valign>
+      <visible>!Control.IsVisible(50)</visible>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+    </control>
+	
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <type>listcontrol</type>
+      <description>videolist</description>
+      <posX>736</posX>
+      <posY>819</posY>
+      <height>213</height>
+      <width>1017</width>
+      <spinPosX>787</spinPosX>
+      <spinPosY>973</spinPosY>
+      <spinAlign>left</spinAlign>
+      <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+      <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+      <spinCanFocus>no</spinCanFocus>
+      <id>4</id>
+      <onup>4</onup>
+      <ondown>4</ondown>
+      <onright>4</onright>
+      <onleft>4</onleft>
+      <dimColor>ffffffff</dimColor>
+      <visible>!Control.IsVisible(50)</visible>
+    </control>
+	
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>listcontrol background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>736</posX>
+      <posY>243</posY>
+      <width>1019</width>
+      <height>788</height>
+      <texture>listcontrol_bg_recordings.png</texture>
+      <visible>!Control.IsVisible(50)</visible>
+    </control>
+	
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Selected item Label</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>780</posX>
+      <posY>199</posY>
+      <width>562</width>
+      <label>#MyTrailers.Details.Title</label>
+      <font>Segoe Light22</font>
+      <visible>!Control.IsVisible(50)</visible>
+      <valign>middle</valign>
+    </control>
+	
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Releasedate Label</description>
+      <type>label</type>
+      <label>Releasedate:</label>
+      <id>1</id>
+      <posX>780</posX>
+      <posY>274</posY>
+      <width>562</width>
+      <font>Segoe Light18</font>
+      <textcolor>85cffe</textcolor>
+      <visible>!Control.IsVisible(50)</visible>
+    </control>
+	
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Releasedate Value</description>
+      <type>label</type>
+      <label>#MyTrailers.Details.ReleaseDate</label>
+      <id>1</id>
+      <posX>1033</posX>
+      <posY>274</posY>
+      <width>562</width>
+      <align>left</align>
+      <font>Segoe Light18</font>
+      <textcolor>ffffff</textcolor>
+      <visible>!Control.IsVisible(50)</visible>
+    </control>
+	
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Publishdate Label</description>
+      <type>label</type>
+      <label>Trailer published:</label>
+      <id>0</id>
+      <posX>780</posX>
+      <posY>323</posY>
+      <width>562</width>
+      <font>Segoe Light18</font>
+      <textcolor>85cffe</textcolor>
+      <visible>!Control.IsVisible(50)</visible>
+    </control>
+	
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Publishdate Value</description>
+      <type>label</type>
+      <label>#MyTrailers.Video.Published</label>
+      <id>0</id>
+      <posX>1131</posX>
+      <posY>323</posY>
+      <width>562</width>
+      <align>left</align>
+      <font>Segoe Light18</font>
+      <textcolor>ffffff</textcolor>
+      <visible>!Control.IsVisible(50)</visible>
+    </control>
+	
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Genres Label</description>
+      <type>label</type>
+      <label>Genre:</label>
+      <id>0</id>
+      <posX>780</posX>
+      <posY>372</posY>
+      <width>562</width>
+      <font>Segoe Light18</font>
+      <textcolor>85cffe</textcolor>
+      <visible>!Control.IsVisible(50)</visible>
+    </control>
+	
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Genres Value</description>
+      <type>fadelabel</type>
+      <label>#MyTrailers.Details.Genre</label>
+      <id>0</id>
+      <posX>920</posX>
+      <posY>372</posY>
+      <width>773</width>
+      <font>Segoe Light18</font>
+      <align>left</align>
+      <textcolor>ffffff</textcolor>
+      <visible>!Control.IsVisible(50)</visible>
+    </control>
+	
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Director Label</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>780</posX>
+      <posY>441</posY>
+      <width>513</width>
+      <font>font11</font>
+      <label>#MyTrailers.Details.Label.Director:</label>
+      <textcolor>85cffe</textcolor>
+      <visible>!Control.IsVisible(50)</visible>
+    </control>
+	
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Director value</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>899</posX>
+      <posY>441</posY>
+      <width>513</width>
+      <font>font11</font>
+      <align>left</align>
+      <label>#MyTrailers.Details.Director</label>
+      <textcolor>ffffff</textcolor>
+      <visible>!Control.IsVisible(50)</visible>
+    </control>
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>actors label</description>
+      <type>label</type>
+      <label>#MyTrailers.Details.Label.Cast:</label>
+      <id>1</id>
+      <posX>780</posX>
+      <posY>478</posY>
+      <width>513</width>
+      <textcolor>85cffe</textcolor>
+      <visible>!Control.IsVisible(50)</visible>
+    </control>
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>actors value</description>
+      <type>fadelabel</type>
+      <label>#MyTrailers.Details.Cast</label>
+      <id>1</id>
+      <posX>857</posX>
+      <posY>479</posY>
+      <width>843</width>
+      <font>font11</font>
+      <align>left</align>
+      <textcolor>ffffff</textcolor>
+      <visible>!Control.IsVisible(50)</visible>
+    </control>
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Summary</description>
+      <type>textboxscrollup</type>
+      <id>1</id>
+      <posX>781</posX>
+      <posY>554</posY>
+      <width>955</width>
+      <height>225</height>
+      <textcolor>ffFFFFFF</textcolor>
+      <seperator>-----------------------------------------------------------------------------------</seperator>
+      <label>#MyTrailers.Details.Description</label>
+      <visible>!Control.IsVisible(50)</visible>
+    </control>
+	
+    <!-- Apple trailers-->
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Default Cover Art</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>189</posX>
+      <posY>257</posY>
+      <width>373</width>
+      <height>534</height>
+      <texture>defaultdvdcover.png</texture>
+      <visible>!Control.IsVisible(50)+!string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
+    </control>
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Cover Art</description>
+      <type>image</type>
+      <id>21</id>
+      <posX>186</posX>
+      <posY>292</posY>
+      <width>373</width>
+      <height>534</height>
+      <texture>#MyTrailers.Details.Poster</texture>
+      <visible>!Control.IsVisible(50)+!string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
+    </control>
+    <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>Cover Art overlay</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>122</posX>
+      <posY>226</posY>
+      <width>501</width>
+      <height>663</height>
+      <texture>blackborders_video.png</texture>
+      <visible>!Control.IsVisible(50)+!string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
+    </control>
+	
+    <!-- GT GameTrailers-->
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <posX>127</posX>
+      <posY>291</posY>
+      <width>513</width>
+      <height>285</height>
+      <texture>#MyTrailers.Video.Image</texture>
+      <visible>!Control.IsVisible(50)+string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+    <control>
+      <type>image</type>
+      <id>1</id>
+      <posX>61</posX>
+      <posY>226</posY>
+      <width>642</width>
+      <height>414</height>
+      <texture>blackborders_recordings.png</texture>
+      <visible>!Control.IsVisible(50)+string.contains(#MyTrailers.Details.Label.Cast,Platform)</visible>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+	
+  </controls>
+</window>

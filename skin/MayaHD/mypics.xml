@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>2</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:1</define>
+  <define>#header.background:hover_my pictures.png</define>
+  <controls>
+  
+    <import>common.window.pictures.xml</import>
+    <import>common.time.xml</import>
+	
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>listcontrol background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>736</posX>
+      <posY>215</posY>
+      <width>1019</width>
+      <height>677</height>
+      <texture>listcontrol_bg.png</texture>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(50) + !Control.IsVisible(51)</visible>
+    </control>
+    <control>
+      <description>listcontrol background info</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>736</posX>
+      <posY>953</posY>
+      <width>1019</width>
+      <height>71</height>
+      <texture>listcontrol_bg_info.png</texture>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(50) + !Control.IsVisible(51)</visible>
+    </control>
+		
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <posX>175</posX>
+      <posY>291</posY>
+      <width>434</width>
+      <height>285</height>
+      <texture>black.png</texture>
+      <visible>facadeview.list|facadeview.album</visible>
+      <animation effect="fade" time="450" reversible="false">visible</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <posX>175</posX>
+      <posY>291</posY>
+      <width>434</width>
+      <height>285</height>
+      <texture>defaultPictureBig.png</texture>
+      <visible>[facadeview.list|facadeview.album]+!control.hasthumb(500)+!string.equals(#selectedthumb)</visible>
+      <animation effect="fade" time="450" reversible="false">visible</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>500</id>
+      <type>image</type>
+      <posX>175</posX>
+      <posY>291</posY>
+      <width>432</width>
+      <height>288</height>
+      <texture>#selectedthumb</texture>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>
+      <visible>[facadeview.list|facadeview.album]+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
+      <animation effect="fade" time="450" reversible="false">visible</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+	
+    <control>
+      <type>image</type>
+      <id>1</id>
+      <posX>112</posX>
+      <posY>225</posY>
+      <width>560</width>
+      <height>414</height>
+      <texture>blackborders_pictures.png</texture>
+      <visible>facadeview.list|facadeview.album</visible>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+	
+    <control>
+      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+      <id>1</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>457</posY>
+      <texture>hiddenmenu_tab.png</texture>
+      <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+    </control>
+	
+    <control>
+      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+      <id>1</id>
+      <type>image</type>
+      <posX>858</posX>
+      <posY>0</posY>
+      <texture>hiddenmenu_tab_up.png</texture>
+      <visible>facadeview.filmstrip|facadeview.coverflow+Control.HasFocus(50)</visible>
+    </control>
+
+    <import>common.facade.pictures.xml</import>	
+	<import>mypics.hiddenmenu.xml</import>	
+    <import>common.overlay.xml</import>
+	
+  </controls>
+</window>

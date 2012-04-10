@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>426144</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:#pipes_title</define>
+  <define>#header.background:hover_pipes.png</define>
+  <controls>
+  
+    <import>common.window.background.xml</import>
+    <import>common.time.xml</import>
+	
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>button group</description>
+      <type>group</type>
+      <posX>99</posX>
+      <posY>170</posY>
+      <layout>StackLayout</layout>
+      <animation effect="Fade" time="250">WindowOpen</animation>
+      <animation effect="Fade" time="250">WindowClose</animation>
+      <control>
+        <id>2</id>
+        <description>New Game</description>
+        <type>button</type>
+        <onleft>10</onleft>
+        <onright>10</onright>
+        <onup>6</onup>
+        <ondown>8</ondown>
+        <label>19002</label>
+        <textalign>RIGHT</textalign>
+      </control>
+      <control>
+        <id>8</id>
+        <description>Timed Game</description>
+        <type>togglebutton</type>
+        <onleft>10</onleft>
+        <onright>10</onright>
+        <onup>2</onup>
+        <ondown>4</ondown>
+        <label>635</label>
+        <textalign>RIGHT</textalign>
+      </control>
+      <control>
+        <id>4</id>
+        <description>Sounds</description>
+        <type>togglebutton</type>
+        <onleft>10</onleft>
+        <onright>10</onright>
+        <onup>8</onup>
+        <ondown>6</ondown>
+        <label>19004</label>
+        <textalign>RIGHT</textalign>
+      </control>
+      <control>
+        <id>6</id>
+        <description>Keyboard</description>
+        <type>togglebutton</type>
+        <onleft>10</onleft>
+        <onright>10</onright>
+        <onup>4</onup>
+        <ondown>2</ondown>
+        <height>50</height>
+        <textureFocus>togglebutton-on-focus.png</textureFocus>
+        <textureNoFocus>togglebutton-on-nofocus.png</textureNoFocus>
+        <label>101000</label>
+        <textalign>RIGHT</textalign>
+        <AltTextureFocus>togglebutton-off-focus.png</AltTextureFocus>
+        <AltTextureNoFocus>togglebutton-off-nofocus.png</AltTextureNoFocus>
+      </control>
+    </control>
+	
+    <control>
+      <description>info group</description>
+      <type>group</type>
+      <animation effect="Fade" time="250">WindowOpen</animation>
+      <animation effect="Fade" time="250">WindowClose</animation>
+      <control>
+        <id>1</id>
+        <description>Scoreboard background</description>
+        <type>image</type>
+        <colordiffuse>60ffffff</colordiffuse>
+        <posX>94</posX>
+        <posY>583</posY>
+        <width>473</width>
+        <height>393</height>
+        <texture>Pipes\background.png</texture>
+      </control>
+      <control>
+        <id>207</id>
+        <description>Level: label</description>
+        <type>label</type>
+        <posX>158</posX>
+        <posY>724</posY>
+        <font>font14</font>
+        <label>19006</label>
+      </control>
+      <control>
+        <id>208</id>
+        <description>Level</description>
+        <type>label</type>
+        <posX>514</posX>
+        <posY>724</posY>
+        <font>font14</font>
+        <align>RIGHT</align>
+        <label>#pipes_level</label>
+      </control>
+      <control>
+        <id>205</id>
+        <description>Moves: label</description>
+        <type>label</type>
+        <posX>158</posX>
+        <posY>780</posY>
+        <font>font14</font>
+        <label>Moves</label>
+      </control>
+      <control>
+        <id>206</id>
+        <description>Moves</description>
+        <type>label</type>
+        <posX>514</posX>
+        <posY>780</posY>
+        <font>font14</font>
+        <align>RIGHT</align>
+        <label>#pipes_moves</label>
+      </control>
+      <control>
+        <id>201</id>
+        <description>Score: label</description>
+        <type>label</type>
+        <posX>158</posX>
+        <posY>836</posY>
+        <font>font14</font>
+        <label>19005</label>
+      </control>
+      <control>
+        <id>202</id>
+        <description>Score</description>
+        <type>label</type>
+        <posX>514</posX>
+        <posY>836</posY>
+        <font>font14</font>
+        <align>RIGHT</align>
+        <label>#pipes_score</label>
+      </control>
+      <control>
+        <id>203</id>
+        <description>Highscore: label</description>
+        <type>label</type>
+        <posX>158</posX>
+        <posY>892</posY>
+        <font>font14</font>
+        <label>19008</label>
+      </control>
+      <control>
+        <id>204</id>
+        <description>Highscore</description>
+        <type>label</type>
+        <posX>514</posX>
+        <posY>892</posY>
+        <font>font14</font>
+        <align>RIGHT</align>
+        <label>#pipes_highscore</label>
+      </control>
+      <control>
+        <id>25</id>
+        <description>Time</description>
+        <type>label</type>
+        <posX>148</posX>
+        <posY>604</posY>
+        <font>font24</font>
+        <textcolor>60ffffff</textcolor>
+        <label>#pipes_time</label>
+      </control>
+    </control>
+	
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <posX>729</posX>
+      <posY>175</posY>
+      <width>986</width>
+      <height>801</height>
+      <animation effect="Fade" time="250">WindowOpen</animation>
+      <animation effect="Fade" time="250">WindowClose</animation>
+      <control>
+        <id>10</id>
+        <description>Pipes control</description>
+        <type>Pipes</type>
+        <onleft>2</onleft>
+        <onright>2</onright>
+        <onup>2</onup>
+        <ondown>2</ondown>
+        <colordiffuse>60ffffff</colordiffuse>
+        <posX>729</posX>
+        <posY>175</posY>
+        <width>986</width>
+        <height>801</height>
+        <nextblocky>368</nextblocky>
+        <texture>Pipes\background.png</texture>
+        <texturefocus>Pipes\background_focus.png</texturefocus>
+        <font>font16</font>
+        <textcolor>ffffffff</textcolor>
+        <onback>2</onback>
+      </control>
+    </control>
+	
+    <control>
+      <id>28</id>
+      <description>Score</description>
+      <type>label</type>
+      <posX>766</posX>
+      <posY>189</posY>
+      <font>font24</font>
+      <label>#pipes_status</label>
+    </control>
+	
+  </controls>
+</window>
