@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>3004</id>
   <defaultcontrol>10</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <controls>
+  
     <control>
       <description>Back button</description>
       <type>button</type>
@@ -22,6 +22,7 @@
       <onup>10</onup>
       <ondown>50</ondown>
     </control>
+	
     <control>
       <description>videowallpaper button</description>
       <type>button</type>
@@ -39,6 +40,7 @@
       <onup>11</onup>
       <ondown>50</ondown>
     </control>
+	
     <control>
       <description>basichome button button</description>
       <type>button</type>
@@ -56,6 +58,7 @@
       <onup>12</onup>
       <ondown>50</ondown>
     </control>
+	
     <control>
       <description>Exit button</description>
       <type>button</type>
@@ -73,5 +76,6 @@
       <onup>13</onup>
       <ondown>50</ondown>
     </control>
+	
   </controls>
 </window>

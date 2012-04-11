@@ -3,17 +3,14 @@
   <id>84623</id>
   <defaultcontrol>202</defaultcontrol>
   <allowoverlay>player.hasmedia+!control.isvisible(103)</allowoverlay>
-  <animation effect="Fade" time="250">WindowOpen</animation>
-  <animation effect="Fade" time="250">WindowClose</animation>
   <define>#header.label:#SubCentral.Header.Label</define>
-  <define>#header.background:hover_subcentral.png</define>
+  <define>#header.background:hover_extensions.png</define>
   <controls>
   
     <control>
-      <id>1</id>
       <description>Background</description>
       <type>image</type>
-      <visible>!string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
+      <id>1</id>
       <posX>0</posX>
       <posY>0</posY>
       <width>1920</width>
@@ -22,28 +19,29 @@
     </control>
 	
     <control>
-      <id>0</id>
-      <description>Fanart Overlay</description>
+      <description>Fanart Background</description>
       <type>image</type>
-      <visible>string.contains(#MayaHD.backgroundImage,yes)</visible>
+      <id>0</id>
       <posX>0</posX>
       <posY>0</posY>
       <width>1920</width>
       <height>1080</height>
-      <texture>#SubCentral.Search.Media.FanArt</texture>
+      <texture>#header.background</texture>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
 	
     <control>
-      <id>0</id>
-      <description>Fanart Background</description>
+      <description>Fanart Overlay</description>
       <type>image</type>
-      <visible>string.contains(#MayaHD.backgroundImage,yes)</visible>
+      <id>0</id>
       <posX>0</posX>
       <posY>0</posY>
       <width>1920</width>
       <height>1080</height>
-      <texture>semi_trans_back_general_menu.png</texture>
+      <texture>basichome_fanart_overlay.png</texture>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <id>101</id>
       <description>Visible when in the main view mode.</description>
@@ -52,6 +50,7 @@
       <posY>-50</posY>
       <width>1</width>
     </control>
+	
     <control>
       <id>102</id>
       <description>Visible when in the file view mode.</description>
@@ -60,6 +59,7 @@
       <posY>-50</posY>
       <width>1</width>
     </control>
+	
     <control>
       <id>103</id>
       <description>Visible when in the manual search mode.</description>
@@ -68,6 +68,7 @@
       <posY>-50</posY>
       <width>1</width>
     </control>
+	
     <control>
       <id>1</id>
       <description>settings navigation panel</description>
@@ -78,6 +79,7 @@
       <height>900</height>
       <texture>settings_navigation_panel.png</texture>
     </control>
+	
     <control>
       <id>1</id>
       <description>settings label</description>
@@ -205,8 +207,8 @@
           <textureFocus>settings_button_focus.png</textureFocus>
           <label>#SubCentral.DeleteSubtitles.Label</label>
         </control>
-      </control>
     </control>
+ </control>
 	
   </controls>
 </window>

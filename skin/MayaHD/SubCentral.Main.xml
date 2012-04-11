@@ -17,7 +17,7 @@
       <animation effect="Fade" time="250">VisibleChange</animation>
       <textcolor>ff6aa5cb</textcolor>
       <spinPosX>1510</spinPosX>
-      <spinPosY>801</spinPosY>
+      <spinPosY>830</spinPosY>
       <spinHeight>42</spinHeight>
       <spinWidth>42</spinWidth>
       <font>font12</font>
