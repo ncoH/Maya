@@ -23,6 +23,34 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
+
+    <control>
+      <description>Selected item Label</description>
+      <type>fadelabel</type>
+      <id>1</id>
+      <posX>780</posX>
+      <posY>199</posY>
+      <width>931</width>
+      <label>#selecteditem</label>
+      <font>Segoe Light22</font>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <valign>middle</valign>
+    </control>
+	
+    <control>
+      <description>listcontrol background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>736</posX>
+      <posY>215</posY>
+      <width>1019</width>
+      <height>677</height>
+      <texture>listcontrol_bg.png</texture>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <visible>!Control.IsVisible(51)</visible>
+    </control>
 	
     <control>
       <description>group element</description>
@@ -53,92 +81,114 @@
       </control>
     </control>
 	
-    <control>
-      <description>listcontrol background</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>736</posX>
-      <posY>215</posY>
-      <width>1019</width>
-      <height>677</height>
-      <texture>listcontrol_bg.png</texture>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <visible>[facadeview.list + Control.IsVisible(50)] | !Control.IsVisible(50) + !Control.IsVisible(51)</visible>
-    </control>
+    <!-- ************** HIDDEN MENU *****************  -->
 	
-    <control>
-      <type>actiongroup</type>
-      <description>action menu</description>
-      <defaultcontrol>2</defaultcontrol>
-      <onexit>50</onexit>
-      <buttonX>0</buttonX>
-      <buttonY>0</buttonY>
-      <buttonwidth>0</buttonwidth>
-      <buttonheight>0</buttonheight>
-      <width>1920</width>
-      <height>1080</height>
-      <dimColor>00ffffff</dimColor>
-      <control>
-        <type>image</type>
-        <id>0</id>
-        <width>1920</width>
-        <height>1080</height>
-        <texture>semi_trans_back_general_menu.png</texture>
-        <colordiffuse>90ffffff</colordiffuse>
-        <animation effect="fade" time="200">windowopen</animation>
-        <animation effect="fade" time="400">windowclose</animation>
-      </control>
-      <control>
-        <type>group</type>
-        <animation effect="fade" time="250">Visible</animation>
-        <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
-        <animation effect="fade" time="200">Hidden</animation>
-        <animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">Hidden</animation>
-        <control>
-          <id>1</id>
-          <type>image</type>
-          <posX>720</posX>
-          <posY>90</posY>
-          <width>480</width>
-          <height>900</height>
-          <texture>menu_bg.png</texture>
-          <visible>!Control.HasFocus(50)</visible>
-        </control>
-        <control>
-          <description>Heading text label</description>
-          <type>label</type>
-          <id>1</id>
-          <posX>796</posX>
-          <posY>154</posY>
-          <label>924</label>
-          <font>Segoe Light18</font>
-          <textcolor>85cffe</textcolor>
-        </control>
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<dimColor>00ffffff</dimColor>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>521</buttonwidth>
+		<buttonheight>1080</buttonheight>
 		
-        <control>
-          <description>button group</description>
-          <type>group</type>
-          <posX>763</posX>
-          <posY>246</posY>
-          <layout>StackLayout(0, Vertical, true)</layout>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="400">hidden</animation>
+		</control>
+		
+	<control>
+		<type>group</type>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+		</control>
+	
+		<control>
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>136</posX>
+			<posY>128</posY>
+			<label>924</label>
+			<font>Segoe Light22</font>
+			<textcolor>ff6aa5cb</textcolor>
+		</control>	
+
           <control>
             <description>Sections</description>
             <type>button</type>
             <id>2</id>
-            <onright>50</onright>
-            <onup>17</onup>
-            <width>392</width>
-            <height>68</height>
             <label>#MPEI.Translation.Sections.Label</label>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
+            <onup>3</onup>
+            <ondown>3</ondown>
+			<onright>50</onright>
+			<onleft>50</onleft>				
+            <font>font11</font>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<posX>69</posX>
+			<posY>215</posY>
+			<width>497</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>
           </control>
-        </control>
+
+          <control>
+            <description>Restore Defaults</description>
+            <type>button</type>
+            <id>3</id>
+            <onup>2</onup>
+			<ondown>2</ondown>
+			<onright>50</onright>
+			<onleft>50</onleft>			
+            <font>font11</font>
+            <label>#MPEI.Translation.RestoreDefaults.Label</label>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<posX>69</posX>
+			<posY>285</posY>
+			<width>497</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>
+          </control>
+		  
       </control>
     </control>
+
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <visible>Control.HasFocus(50)</visible>
+      <posX>0</posX>
+      <posY>440</posY>
+      <texture>hiddenmenu_tab.png</texture>
+      <animation delay="600" effect="Slide" end="0,0" start="-60,0" time="400" tween="Quadratic">WindowOpen</animation>
+      <animation delay="100" effect="Slide" end="-60,0" start="0,0" time="400" tween="Quadratic">WindowClose</animation>
+    </control>
+
+    <import>common.overlay.xml</import>
 	
   </controls>
 </window>

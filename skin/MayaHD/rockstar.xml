@@ -18,7 +18,6 @@
       <width>1920</width>
       <height>1080</height>
       <texture>background.png</texture>
-      <visible>!string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
 	
     <control>
@@ -134,9 +133,10 @@
         <dimColor>ffffffff</dimColor>
         <itemWidth>44</itemWidth>
         <itemHeight>45</itemHeight>
-        <IconXOff>11</IconXOff>
-        <IconYOff>16</IconYOff>
+        <IconXOff>15</IconXOff>
+        <IconYOff>14</IconYOff>
       </control>
+	  
       <control>
         <id>200</id>
         <description>Track List</description>
@@ -154,116 +154,122 @@
         <dimColor>ffffffff</dimColor>
         <itemWidth>44</itemWidth>
         <itemHeight>45</itemHeight>
-        <IconXOff>11</IconXOff>
-        <IconYOff>16</IconYOff>
+        <IconXOff>15</IconXOff>
+        <IconYOff>14</IconYOff>
       </control>
+	  
     </control>
 	
-    <control>
-      <type>actiongroup</type>
-      <description>action menu</description>
-      <defaultcontrol>2</defaultcontrol>
-      <onexit>50</onexit>
-      <buttonX>0</buttonX>
-      <buttonY>0</buttonY>
-      <buttonwidth>0</buttonwidth>
-      <buttonheight>0</buttonheight>
-      <width>1920</width>
-      <height>1080</height>
-      <dimColor>00ffffff</dimColor>
-      <control>
-        <type>image</type>
-        <id>0</id>
-        <width>1920</width>
-        <height>1080</height>
-        <texture>semi_trans_back_general_menu.png</texture>
-        <colordiffuse>90ffffff</colordiffuse>
-        <animation effect="fade" time="200">windowopen</animation>
-        <animation effect="fade" time="400">windowclose</animation>
-      </control>
-      <control>
-        <type>group</type>
-        <animation effect="fade" time="250">Visible</animation>
-        <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
-        <animation effect="fade" time="200" reversible="false">Hidden</animation>
-        <animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200" reversible="false">Hidden</animation>
-        <control>
-          <id>1</id>
-          <type>image</type>
-          <posX>720</posX>
-          <posY>90</posY>
-          <width>480</width>
-          <height>900</height>
-          <texture>menu_bg.png</texture>
-          <visible>!Control.HasFocus(50)</visible>
-        </control>
-        <control>
-          <description>Heading text label</description>
-          <type>label</type>
-          <id>1</id>
-          <posX>796</posX>
-          <posY>154</posY>
-          <label>924</label>
-          <font>Segoe Light18</font>
-          <textcolor>85cffe</textcolor>
-        </control>
-        <control>
-          <description>button group</description>
-          <type>group</type>
-          <posX>763</posX>
-          <posY>246</posY>
-          <layout>StackLayout(0, Vertical, true)</layout>
+    <!-- ************** HIDDEN MENU *****************  -->
+	
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<dimColor>00ffffff</dimColor>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>521</buttonwidth>
+		<buttonheight>1080</buttonheight>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="400">hidden</animation>
+		</control>
+		
+	<control>
+		<type>group</type>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
+		</control>
+	
+		<control>
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>136</posX>
+			<posY>128</posY>
+			<label>924</label>
+			<font>Segoe Light22</font>
+			<textcolor>ff6aa5cb</textcolor>
+		</control>
+		
           <control>
             <id>2</id>
             <description>Search Music</description>
             <type>button</type>
             <onup>30</onup>
             <ondown>3</ondown>
-            <visible />
             <label>#SkinTranslation.Translations.rockstar.search.Label</label>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
             <onright>200</onright>
             <onleft>200</onleft>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<posX>69</posX>
+			<posY>215</posY>
+			<width>497</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>				
           </control>
+		  
           <control>
             <id>3</id>
             <description>Default Playlist</description>
             <type>button</type>
             <onup>2</onup>
             <ondown>4</ondown>
-            <visible />
             <label>#SkinTranslation.Translations.rockstar.default.playlist.Label</label>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
             <onright>200</onright>
             <onleft>200</onleft>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<posX>69</posX>
+			<posY>285</posY>
+			<width>497</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>				
           </control>
+		  
           <control>
             <id>4</id>
             <description>Playlists</description>
             <type>button</type>
             <onup>3</onup>
             <ondown>20</ondown>
-            <visible />
             <label>#SkinTranslation.Translations.rockstar.playlists.Label</label>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
             <onright>200</onright>
             <onleft>200</onleft>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<posX>69</posX>
+			<posY>355</posY>
+			<width>497</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>				
           </control>
+		  
           <control>
             <id>20</id>
             <description>Popular Songs</description>
@@ -271,17 +277,19 @@
             <onright>200</onright>
             <onup>4</onup>
             <ondown>32</ondown>
-            <visible />
             <label>#SkinTranslation.Translations.rockstar.popular.songs.Label</label>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
             <onright>200</onright>
             <onleft>200</onleft>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<posX>69</posX>
+			<posY>425</posY>
+			<width>497</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>				
           </control>
+		  
           <control>
             <id>32</id>
             <description>Shuffle on/off button</description>
@@ -290,39 +298,48 @@
             <onup>20</onup>
             <ondown>30</ondown>
             <label>191</label>
+            <onright>200</onright>
+            <onleft>200</onleft>
             <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
             <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
             <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
             <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <onright>200</onright>
-            <onleft>200</onleft>
+			<textcolor>white</textcolor>
+			<textcolorNoFocus>ff85cfff</textcolorNoFocus>
+			<posX>69</posX>
+			<posY>495</posY>
+			<width>497</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>				
           </control>
+		  
           <control>
             <id>30</id>
             <description>Repeat on/off button</description>
             <type>togglebutton</type>
             <onright>200</onright>
             <onup>32</onup>
-            <ondown>11</ondown>
+            <ondown>2</ondown>
             <label>486</label>
+            <onright>200</onright>
+            <onleft>200</onleft>
             <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
             <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
             <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
             <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
-            <onright>200</onright>
-            <onleft>200</onleft>
+			<textcolor>white</textcolor>
+			<textcolorNoFocus>ff85cfff</textcolorNoFocus>
+			<posX>69</posX>
+			<posY>565</posY>
+			<width>497</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>				
           </control>
+		  
         </control>
       </control>
-    </control>
 	
     <control>
       <id>0</id>
@@ -426,7 +443,7 @@
       <id>1</id>
       <type>image</type>
       <posX>0</posX>
-      <posY>440</posY>
+      <posY>457</posY>
       <texture>hiddenmenu_tab.png</texture>
       <visible>!Control.HasFocus(2)+!Control.HasFocus(3)+!Control.HasFocus(4)+!Control.HasFocus(20)+!Control.HasFocus(30)+!Control.HasFocus(32)</visible>
       <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>

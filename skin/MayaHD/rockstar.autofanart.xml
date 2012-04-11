@@ -71,8 +71,8 @@
       <type>image</type>
       <posx>0</posx>
       <posy>0</posy>
-      <width>2698</width>
-      <height>1518</height>
+      <width>1920</width>
+      <height>1080</height>
       <texture>#fanarthandler.music.backdrop1.any</texture>
       <visible>control.isvisible(91919297)+!control.isvisible(91919294)+plugin.isenabled(Fanart Handler)</visible>
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
@@ -85,8 +85,8 @@
       <type>image</type>
       <posx>0</posx>
       <posy>0</posy>
-      <width>2698</width>
-      <height>1518</height>
+      <width>1920</width>
+      <height>1080</height>
       <texture>#fanarthandler.music.backdrop2.any</texture>
       <visible>control.isvisible(91919298)+!control.isvisible(91919294)+plugin.isenabled(Fanart Handler)</visible>
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
@@ -99,8 +99,8 @@
       <type>image</type>
       <posx>0</posx>
       <posy>0</posy>
-      <width>2698</width>
-      <height>1518</height>
+      <width>1920</width>
+      <height>1080</height>
       <texture>#fanarthandler.music.backdrop1.play</texture>
       <visible>control.isvisible(91919295)+control.isvisible(91919294)+plugin.isenabled(Fanart Handler)</visible>
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>
@@ -113,8 +113,8 @@
       <type>image</type>
       <posx>0</posx>
       <posy>0</posy>
-      <width>2698</width>
-      <height>1518</height>
+      <width>1920</width>
+      <height>1080</height>
       <texture>#fanarthandler.music.backdrop2.play</texture>
       <visible>control.isvisible(91919296)+control.isvisible(91919294)+plugin.isenabled(Fanart Handler)</visible>
       <animation delay="80" effect="Fade" end="100" reversible="FALSE" start="10" time="1000">Visible</animation>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
 <controls>
+
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
@@ -52,54 +53,47 @@
 			<textcolor>ff6aa5cb</textcolor>
 		</control>	
 			
-			<control>
-				<description>Programm Type Button</description>
-				<type>button</type>
-				<id>2</id>
-				<label>Type:</label>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<posX>69</posX>
-				<posY>215</posY>
-				<width>497</width>
-				<height>70</height>
-				<textXOff>66</textXOff>
-				<textYOff>17</textYOff>
-				<onright>10</onright>
-				<onleft>10</onleft>
-				<onup>11</onup>
-				<ondown>12</ondown>
-			</control>
+		<control>
+			<description>Programm Type Button</description>
+			<type>button</type>
+			<id>2</id>
+			<label>Type:</label>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<posX>69</posX>
+			<posY>215</posY>
+			<width>497</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>
+			<onright>10</onright>
+			<onleft>10</onleft>
+			<onup>11</onup>
+			<ondown>12</ondown>
+		</control>
     
-    <control>
-      <type>togglebutton</type>
-      <description>group by schedule</description>
-      <id>12</id>
-      <onleft>10</onleft>
-      <onright>10</onright>
-      <onup>2</onup>
-      <ondown>9</ondown>
-      <label>group by schedule</label>
-      <textureFocus>hiddenmenu_toggle-on-focus.png</textureFocus>
-      <textureNoFocus>hiddenmenu_toggle-on-nofocus.png</textureNoFocus>
-      <AltTextureFocus>hiddenmenu_toggle-off-focus.png</AltTextureFocus>
-      <AltTextureNoFocus>hiddenmenu_toggle-off-nofocus.png</AltTextureNoFocus>
-      <posX>69</posX>
-      <posY>285</posY>
-      <width>497</width>
-      <height>70</height>
-      <textXOff>66</textXOff>
-      <textYOff>17</textYOff>
-      <!--<textcolor>0000ffff</textcolor>
-      <disabledcolor>ffffffff</disabledcolor>
-      <shadowColor>ffffffff</shadowColor>
-      <colordiffuse>00ffffff</colordiffuse>
-      <dimColor>0000ffff</dimColor>
-      <textcolorNoFocus>0000ffff</textcolorNoFocus>
-      <textcolorNoFocus>0000ffff</textcolorNoFocus>
-      <colordiffuse>ffffffff</colordiffuse>-->
-
-    </control>
+		<control>
+			<type>togglebutton</type>
+			<description>group by schedule</description>
+			<id>12</id>
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<onup>2</onup>
+			<ondown>9</ondown>
+			<label>group by schedule</label>
+            <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
+            <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
+            <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
+            <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
+			<textcolor>white</textcolor>
+			<textcolorNoFocus>ff85cfff</textcolorNoFocus>
+			<posX>69</posX>
+			<posY>285</posY>
+			<width>497</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>
+		</control>
 
     <control>
       <type>sortbutton</type>
