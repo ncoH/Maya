@@ -28,7 +28,7 @@
 			<width>185</width>
 			<align>center</align>
 			<label>#WorldWeather.TodayTemperature</label>
-			<font>fontB26</font>
+			<font>font22</font>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -41,7 +41,6 @@
 			<posX>1100</posX>
 			<posY>155</posY>
 			<label>#(string.rtrim(L(143),':'))</label>
-			<!-- <font>AvalonLight18</font> -->
 			<font>fontB16</font>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -70,7 +69,7 @@
 			<posX>1100</posX>
 			<posY>215</posY>
 			<label>#WorldWeather.TranslationCondition:</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -85,7 +84,7 @@
 			<posY>215</posY>
 			<width>433</width>
 			<label>#WorldWeather.TodayCondition</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -99,7 +98,7 @@
 			<posX>1100</posX>
 			<posY>255</posY>
 			<label>#WorldWeather.TranslationWind:</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -113,7 +112,7 @@
 			<posY>255</posY>
 			<width>433</width>
 			<label>#WorldWeather.TodayWindSpeed - #WorldWeather.TodayWindDirection</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -127,7 +126,7 @@
 			<posX>1100</posX>
 			<posY>295</posY>
 			<label>#WorldWeather.TranslationHumidity:</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -141,7 +140,7 @@
 			<posY>295</posY>
 			<width>433</width>
 			<label>#WorldWeather.TodayHumidity</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -155,7 +154,7 @@
 			<posX>1100</posX>
 			<posY>335</posY>
 			<label>#WorldWeather.TranslationSunset:</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -169,7 +168,7 @@
 			<posY>335</posY>
 			<width>433</width>
 			<label>#WorldWeather.LocationSunsetTime</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -183,7 +182,7 @@
 			<posX>1100</posX>
 			<posY>375</posY>
 			<label>#WorldWeather.TranslationSunrise:</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -197,7 +196,7 @@
 			<posY>375</posY>
 			<width>433</width>
 			<label>#WorldWeather.LocationSunriseTime</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -211,7 +210,7 @@
 			<posX>1100</posX>
 			<posY>415</posY>
 			<label>#WorldWeather.TranslationMoonPhase:</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -225,7 +224,7 @@
 			<posY>415</posY>
 			<width>400</width>
 			<label>#WorldWeather.LocationMoonPhase</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -273,7 +272,7 @@
 			<posX>846</posX>
 			<posY>520</posY>
 			<label>#WorldWeather.ForecastDay0Day</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -287,7 +286,7 @@
 			<posY>736</posY>
 			<width>185</width>
 			<label>#WorldWeather.ForecastDay0High </label>
-			<font>AvalonLight16</font>
+			<font>Segoe Light16</font>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -301,7 +300,7 @@
 			<posY>737</posY>
 			<width>185</width>
 			<label>#WorldWeather.ForecastDay0Low</label>
-			<font>AvalonLight16</font>
+			<font>Segoe Light16</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -328,7 +327,7 @@
 			<posY>812</posY>
 			<width>200</width>
 			<label>#WorldWeather.ForecastDay0Condition</label>
-			<font>AvalonLight11</font>
+			<font>font11</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -357,7 +356,7 @@
 			<posX>1110</posX>
 			<posY>520</posY>
 			<label>#WorldWeather.ForecastDay1Day</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -371,7 +370,7 @@
 			<posY>736</posY>
 			<width>185</width>
 			<label>#WorldWeather.ForecastDay1High </label>
-			<font>AvalonLight16</font>
+			<font>Segoe Light16</font>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -385,7 +384,7 @@
 			<posY>737</posY>
 			<width>185</width>
 			<label>#WorldWeather.ForecastDay1Low</label>
-			<font>AvalonLight16</font>
+			<font>Segoe Light16</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -412,7 +411,7 @@
 			<posY>812</posY>
 			<width>200</width>
 			<label>#WorldWeather.ForecastDay1Condition</label>
-			<font>AvalonLight11</font>
+			<font>font11</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -441,7 +440,7 @@
 			<posX>1374</posX>
 			<posY>520</posY>
 			<label>#WorldWeather.ForecastDay2Day</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -455,7 +454,7 @@
 			<posY>736</posY>
 			<width>185</width>
 			<label>#WorldWeather.ForecastDay2High</label>
-			<font>AvalonLight16</font>
+			<font>Segoe Light16</font>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -469,7 +468,7 @@
 			<posY>737</posY>
 			<width>185</width>
 			<label>#WorldWeather.ForecastDay2Low</label>
-			<font>AvalonLight16</font>
+			<font>Segoe Light16</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -496,7 +495,7 @@
 			<posY>812</posY>
 			<width>200</width>
 			<label>#WorldWeather.ForecastDay2Condition</label>
-			<font>AvalonLight11</font>
+			<font>font11</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -525,7 +524,7 @@
 			<posX>1638</posX>
 			<posY>520</posY>
 			<label>#WorldWeather.ForecastDay3Day</label>
-			<font>AvalonLight14</font>
+			<font>font12</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -539,7 +538,7 @@
 			<posY>736</posY>
 			<width>185</width>
 			<label>#WorldWeather.ForecastDay3High</label>
-			<font>AvalonLight16</font>
+			<font>Segoe Light16</font>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 			<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
@@ -553,7 +552,7 @@
 			<posY>737</posY>
 			<width>185</width>
 			<label>#WorldWeather.ForecastDay3Low</label>
-			<font>AvalonLight16</font>
+			<font>Segoe Light16</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
@@ -580,7 +579,7 @@
 			<posY>812</posY>
 			<width>200</width>
 			<label>#WorldWeather.ForecastDay3Condition</label>
-			<font>AvalonLight11</font>
+			<font>font11</font>
 			<textcolor>6aa5cb</textcolor>
 			<visible>string.equals(#WorldWeather.View,Condition)</visible>
 			<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
