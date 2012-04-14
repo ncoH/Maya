@@ -181,6 +181,7 @@
       <keepaspectratio>yes</keepaspectratio>
       <centered>yes</centered>
     </control>
+	
     <control>
       <description>Current Score Image</description>
       <type>image</type>

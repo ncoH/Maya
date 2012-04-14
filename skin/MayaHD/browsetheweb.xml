@@ -28,16 +28,17 @@
     <control>
       <description>Status label</description>
       <id>9</id>
-      <type>fadelabel</type>
+      <type>label</type>
       <posX>14</posX>
       <posY>1012</posY>
       <width>1686</width>
       <font>Segoe Light16</font>
-      <label>#btWeb.status</label>
-      <animation effect="Fade" time="100">WindowOpen</animation>
-      <animation effect="Fade" time="100">WindowClose</animation>
+      <label>#(L(126)) | #btWeb.status</label>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Link id label</description>
       <type>label</type>
@@ -52,5 +53,6 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
   </controls>
 </window>

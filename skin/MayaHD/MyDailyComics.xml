@@ -41,6 +41,7 @@
         <label>Comic</label>
         <textalign>RIGHT</textalign>
       </control>
+	  
       <control>
         <id>3</id>
         <description>Date button</description>
@@ -56,41 +57,42 @@
       <id>100</id>
       <description>Comic Image</description>
       <type>image</type>
-      <posX>14</posX>
-      <posY>327</posY>
-      <width>1891</width>
-      <height>703</height>
+      <posX>60</posX>
+      <posY>320</posY>
+      <width>1800</width>
+      <height>660</height>
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
       <centered>true</centered>
     </control>
+	
     <control>
       <id>102</id>
       <description>Language Flag</description>
       <type>image</type>
-      <posX>1799</posX>
-      <posY>126</posY>
-      <width>67</width>
-      <height>67</height>
+      <posX>1800</posX>
+      <posY>990</posY>
+      <width>64</width>
+      <height>64</height>
       <centered>no</centered>
-      <texture>
-      </texture>
       <keepaspectratio>yes</keepaspectratio>
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <id>101</id>
       <description>Comic Banner</description>
       <type>image</type>
-      <posX>1560</posX>
-      <posY>49</posY>
-      <width>309</width>
-      <height>63</height>
+      <posX>60</posX>
+      <posY>990</posY>
+      <width>305</width>
+      <height>64</height>
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
-      <centered>true</centered>
+      <centered>no</centered>
     </control>
+	
     <control>
       <description>Dummy button for hidden menu</description>
       <type>button</type>
