@@ -1,65 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>49855</id>
-	<defaultcontrol>8</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
-	<define>#header.label:TV/Server Settings</define>	
- 	<define>#header.background:hover_my tv.png</define> 
+  <id>49855</id>
+  <defaultcontrol>8</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.label:TV/ Server Settings</define>
+  <define>#header.background:hover_my tv.png</define>  
   <controls>
   
-        <import>common.window.background.xml</import>		
-        <import>common.time.xml</import>		
-		
+    <import>common.window.background.xml</import>
+    <import>common.time.xml</import>
+	
     <control>
       <id>1</id>
       <type>label</type>
       <description>Header label</description>
       <posX>185</posX>
       <posY>28</posY>
-      <width>500</width>
+      <width>600</width>
       <label>#header.label</label>	  
       <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
-
+	
     <control>
       <description>rectangle image</description>
       <type>image</type>
       <id>1</id>
-      <posX>680</posX>
-      <posY>150</posY>
-      <width>500</width>
-      <height>400</height>
+      <posX>955</posX>
+      <posY>210</posY>
+      <width>702</width>
+      <height>562</height>
       <texture mask="picturethumbmask.png">blue.png</texture>
       <colordiffuse>eeffffff</colordiffuse>
     </control>
-
+	
     <control>
       <description>rectangle image</description>
       <type>image</type>
       <id>1</id>
-      <posX>100</posX>
-      <posY>150</posY>
-      <width>500</width>
-      <height>400</height>
+      <posX>140</posX>
+      <posY>210</posY>
+      <width>702</width>
+      <height>562</height>
       <texture mask="picturethumbmask.png">blue.png</texture>
       <colordiffuse>eeffffff</colordiffuse>
     </control>
-
+	
     <control>
       <description>pre record</description>
       <type>spinbutton</type>
       <id>8</id>
-      <posX>120</posX>
-      <posY>180</posY>
-      <width>440</width>
+      <posX>168</posX>
+      <posY>253</posY>
+      <width>618</width>
       <showrange>no</showrange>
       <reverse>yes</reverse>
-      <height>45</height>
-      <textXOff>10</textXOff>
-      <textYOff>5</textYOff>
+      <height>63</height>
+      <textXOff>14</textXOff>
+      <textYOff>7</textYOff>
       <spinXOff>10</spinXOff>
       <spinYOff>10</spinYOff>
       <textureFocus>button_focus.png</textureFocus>
@@ -67,8 +67,8 @@
       <font>font13</font>
       <spinalign>right</spinalign>
       <spinvalign>bottom</spinvalign>
-      <spinWidth>16</spinWidth>
-      <spinHeight>16</spinHeight>
+      <spinWidth>22</spinWidth>
+      <spinHeight>22</spinHeight>
       <spinColor>ffffffff</spinColor>
       <disabledcolor>60ffffff</disabledcolor>
       <textureUp>page_up_nofocus.png</textureUp>
@@ -76,19 +76,19 @@
       <textureUpFocus>page_up_focus.png</textureUpFocus>
       <textureDownFocus>page_down_focus.png</textureDownFocus>
     </control>
-
+	
     <control>
       <description>wol timeout</description>
       <type>spinbutton</type>
       <id>9</id>
-      <posX>120</posX>
-      <posY>230</posY>
-      <width>440</width>
+      <posX>168</posX>
+      <posY>323</posY>
+      <width>618</width>
       <showrange>no</showrange>
       <reverse>yes</reverse>
-      <height>45</height>
-      <textXOff>10</textXOff>
-      <textYOff>5</textYOff>
+      <height>63</height>
+      <textXOff>14</textXOff>
+      <textYOff>7</textYOff>
       <spinXOff>10</spinXOff>
       <spinYOff>10</spinYOff>
       <textureFocus>button_focus.png</textureFocus>
@@ -96,8 +96,8 @@
       <font>font13</font>
       <spinalign>right</spinalign>
       <spinvalign>bottom</spinvalign>
-      <spinWidth>16</spinWidth>
-      <spinHeight>16</spinHeight>
+      <spinWidth>22</spinWidth>
+      <spinHeight>22</spinHeight>
       <spinColor>ffffffff</spinColor>
       <disabledcolor>60ffffff</disabledcolor>
       <textureUp>page_up_nofocus.png</textureUp>
@@ -105,58 +105,58 @@
       <textureUpFocus>page_up_focus.png</textureUpFocus>
       <textureDownFocus>page_down_focus.png</textureDownFocus>
     </control>
-
+	
     <control>
       <description>keep until label</description>
       <type>label</type>
-      <posX>130</posX>
-      <posY>280</posY>
+      <posX>182</posX>
+      <posY>393</posY>
       <font>font13</font>
       <label>1042</label>
     </control>
-    
+	
     <control>
       <description>keep until mode</description>
       <type>button</type>
       <id>6</id>
-      <posX>120</posX>
-      <posY>280</posY>
-      <width>440</width>
+      <posX>168</posX>
+      <posY>393</posY>
+      <width>618</width>
       <textalign>right</textalign>
       <onup>9</onup>
       <ondown>7</ondown>
     </control>
-
+	
     <control>
       <description>keep until value label</description>
       <type>label</type>
       <id>20</id>
-      <posX>130</posX>
-      <posY>330</posY>
+      <posX>182</posX>
+      <posY>464</posY>
       <font>font13</font>
     </control>
-
+	
     <control>
       <description>keep until value</description>
       <type>button</type>
       <id>7</id>
-      <posX>120</posX>
-      <posY>330</posY>
-      <width>440</width>
+      <posX>168</posX>
+      <posY>464</posY>
+      <width>618</width>
       <textalign>right</textalign>
       <onup>6</onup>
       <ondown>5</ondown>
     </control>
-
+	
     <control>
       <description>guide source label</description>
       <type>label</type>
       <id>19</id>
-      <posX>130</posX>
-      <posY>430</posY>
+      <posX>182</posX>
+      <posY>604</posY>
       <font>font13</font>
     </control>
-    
+	
     <control>
       <description>guide source</description>
       <type>button</type>
@@ -164,40 +164,40 @@
       <onup>7</onup>
       <ondown>4</ondown>
       <onright>2</onright>
-      <posX>120</posX>
-      <posY>430</posY>
-      <width>440</width>
+      <posX>168</posX>
+      <posY>604</posY>
+      <width>618</width>
       <textalign>right</textalign>
     </control>
-
+	
     <control>
       <description>Delete all guide data</description>
       <type>button</type>
       <id>4</id>
-      <posX>190</posX>
-      <posY>480</posY>
-      <width>300</width>
+      <posX>267</posX>
+      <posY>675</posY>
+      <width>421</width>
       <onup>5</onup>
       <ondown>4</ondown>
       <onright>3</onright>
       <onleft>4</onleft>
       <textalign>center</textalign>
     </control>
-
+	
     <control>
       <description>free disk space</description>
       <type>spinbutton</type>
       <id>17</id>
-      <posX>710</posX>
-      <posY>180</posY>
-      <width>440</width>
+      <posX>997</posX>
+      <posY>253</posY>
+      <width>618</width>
       <ondown>18</ondown>
       <onleft>8</onleft>
       <showrange>no</showrange>
       <reverse>yes</reverse>
-      <height>45</height>
-      <textXOff>10</textXOff>
-      <textYOff>5</textYOff>
+      <height>63</height>
+      <textXOff>14</textXOff>
+      <textYOff>7</textYOff>
       <spinXOff>10</spinXOff>
       <spinYOff>10</spinYOff>
       <textureFocus>button_focus.png</textureFocus>
@@ -205,8 +205,8 @@
       <font>font13</font>
       <spinalign>right</spinalign>
       <spinvalign>bottom</spinvalign>
-      <spinWidth>16</spinWidth>
-      <spinHeight>16</spinHeight>
+      <spinWidth>22</spinWidth>
+      <spinHeight>22</spinHeight>
       <spinColor>ffffffff</spinColor>
       <disabledcolor>60ffffff</disabledcolor>
       <textureUp>page_up_nofocus.png</textureUp>
@@ -214,22 +214,22 @@
       <textureUpFocus>page_up_focus.png</textureUpFocus>
       <textureDownFocus>page_down_focus.png</textureDownFocus>
     </control>
-
+	
     <control>
       <description>min free disk space</description>
       <type>spinbutton</type>
       <id>18</id>
-      <posX>710</posX>
-      <posY>230</posY>
-      <width>440</width>
+      <posX>997</posX>
+      <posY>323</posY>
+      <width>618</width>
       <onup>17</onup>
       <ondown>11</ondown>
       <onleft>9</onleft>
       <showrange>no</showrange>
       <reverse>yes</reverse>
-      <height>45</height>
-      <textXOff>10</textXOff>
-      <textYOff>5</textYOff>
+      <height>63</height>
+      <textXOff>14</textXOff>
+      <textYOff>7</textYOff>
       <spinXOff>10</spinXOff>
       <spinYOff>10</spinYOff>
       <textureFocus>button_focus.png</textureFocus>
@@ -237,8 +237,8 @@
       <font>font13</font>
       <spinalign>right</spinalign>
       <spinvalign>bottom</spinvalign>
-      <spinWidth>16</spinWidth>
-      <spinHeight>16</spinHeight>
+      <spinWidth>22</spinWidth>
+      <spinHeight>22</spinHeight>
       <spinColor>ffffffff</spinColor>
       <disabledcolor>60ffffff</disabledcolor>
       <textureUp>page_up_nofocus.png</textureUp>
@@ -246,22 +246,22 @@
       <textureUpFocus>page_up_focus.png</textureUpFocus>
       <textureDownFocus>page_down_focus.png</textureDownFocus>
     </control>
-    
+	
     <control>
       <description>thumbs</description>
       <type>checkbutton</type>
       <id>11</id>
-      <posX>710</posX>
-      <posY>280</posY>
+      <posX>997</posX>
+      <posY>393</posY>
       <onup>18</onup>
       <ondown>12</ondown>
       <onleft>6</onleft>
-      <width>440</width>
-      <height>45</height>
+      <width>618</width>
+      <height>63</height>
       <textureCheckmark>check-box.png</textureCheckmark>
       <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
-      <markWidth>32</markWidth>
-      <markHeight>32</markHeight>
+      <markWidth>44</markWidth>
+      <markHeight>45</markHeight>
       <markXOff>20</markXOff>
       <markalign>right</markalign>
       <markvalign>middle</markvalign>
@@ -269,26 +269,26 @@
       <textcolor>ffffffff</textcolor>
       <textalign>left</textalign>
       <textvalign>middle</textvalign>
-      <textXOff>10</textXOff>
+      <textXOff>14</textXOff>
       <textureFocus>button_focus.png</textureFocus>
       <textureNoFocus>button_nofocus.png</textureNoFocus>
     </control>
-
+	
     <control>
       <description>metadata</description>
       <type>checkbutton</type>
       <id>12</id>
-      <posX>710</posX>
-      <posY>330</posY>
+      <posX>997</posX>
+      <posY>464</posY>
       <onup>11</onup>
       <ondown>2</ondown>
       <onleft>6</onleft>
-      <width>440</width>
-      <height>45</height>
+      <width>618</width>
+      <height>63</height>
       <textureCheckmark>check-box.png</textureCheckmark>
       <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
-      <markWidth>32</markWidth>
-      <markHeight>32</markHeight>
+      <markWidth>44</markWidth>
+      <markHeight>45</markHeight>
       <markXOff>20</markXOff>
       <markalign>right</markalign>
       <markvalign>middle</markvalign>
@@ -296,48 +296,48 @@
       <textcolor>ffffffff</textcolor>
       <textalign>left</textalign>
       <textvalign>middle</textvalign>
-      <textXOff>10</textXOff>
+      <textXOff>14</textXOff>
       <textureFocus>button_focus.png</textureFocus>
       <textureNoFocus>button_nofocus.png</textureNoFocus>
     </control>
-
+	
     <control>
       <description>show logs</description>
       <type>button</type>
       <id>2</id>
-      <posX>780</posX>
-      <posY>430</posY>
-      <width>300</width>
+      <posX>1096</posX>
+      <posY>604</posY>
+      <width>421</width>
       <onup>12</onup>
       <ondown>3</ondown>
       <onleft>5</onleft>
       <textalign>center</textalign>
     </control>
-    
+	
     <control>
       <description>restore</description>
       <type>button</type>
       <id>3</id>
-      <posX>780</posX>
-      <posY>480</posY>
-      <width>300</width>
+      <posX>1096</posX>
+      <posY>675</posY>
+      <width>421</width>
       <onup>2</onup>
       <ondown>3</ondown>
       <onleft>4</onleft>
       <textalign>center</textalign>
     </control>
-
+	
     <control>
       <description>info</description>
       <id>21</id>
       <type>fadelabel</type>
-      <posX>120</posX>
-      <posY>650</posY>
+      <posX>168</posX>
+      <posY>914</posY>
       <align>left</align>
-      <width>1030</width>
+      <width>1447</width>
       <textcolor>FFB2D4F5</textcolor>
       <font>font12</font>
     </control>
-
+	
   </controls>
 </window>

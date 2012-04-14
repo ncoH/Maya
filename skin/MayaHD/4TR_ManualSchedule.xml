@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>49853</id>
-	<defaultcontrol>11</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-	<define>#header.label:TV/Manual Schedule</define>
-	<define>#header.background:hover_my tv.png</define>
-<controls>
+  <id>49853</id>
+  <defaultcontrol>11</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:TV/Manuell Schedule</define>
+  <define>#header.background:hover_my tv.png</define> 
+  <controls>
   
     <import>common.window.background.xml</import>
     <import>common.time.xml</import>
@@ -23,19 +23,6 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
-
-    <control>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <description>list background</description>
-      <type>image</type>
-      <id>1</id>
-      <posX>281</posX>
-      <posY>215</posY>
-      <width>394</width>
-      <height>761</height>
-      <texture>tvhome_bg.png</texture>
-    </control>
 	
     <control>
       <type>group</type>
@@ -43,104 +30,68 @@
       <description>group element</description>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
-      <posX>281</posX>
-      <posY>253</posY>
-      <width>394</width>
-		  
-		<control>
-			<description>Record</description>
-			<type>button</type>
-			<id>11</id>
-			<label>682</label>
-			<onup>17</onup>
-			<ondown>22</ondown>
-			<onright></onright>
-			<textalign>right</textalign>
-			<width>394</width>
-			<textXOff>32</textXOff>
-			<height>64</height>
-			<textYOff>14</textYOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>		
-		</control>
+      <posX>99</posX>
+      <posY>170</posY>
+      <control>
+        <description>Record</description>
+        <type>button</type>
+        <id>11</id>
+        <label>682</label>
+        <onup>17</onup>
+        <ondown>22</ondown>
+        <onright>
+        </onright>
+      </control>
 	  
-		<control>
-			<description>Alert me</description>
-			<type>button</type>
-			<id>22</id>
-			<label>1040</label>
-			<onup>11</onup>
-			<ondown>10</ondown>
-			<onright></onright>
-			<textalign>right</textalign>
-			<width>394</width>
-			<textXOff>32</textXOff>
-			<height>64</height>
-			<textYOff>14</textYOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>		
-		</control>
+      <control>
+        <description>Alert me</description>
+        <type>button</type>
+        <id>22</id>
+        <label>1040</label>
+        <onup>11</onup>
+        <ondown>10</ondown>
+        <onright>
+        </onright>
+      </control>
+      <control>
+        <description>Priority</description>
+        <type>button</type>
+        <id>10</id>
+        <label>991</label>
+        <onup>22</onup>
+        <ondown>21</ondown>
+        <onright>
+        </onright>
+      </control>
 	  
-		<control>
-			<description>Priority</description>
-			<type>button</type>
-			<id>10</id>
-			<label>991</label>
-			<onup>22</onup>
-			<ondown>21</ondown>
-			<onright></onright>
-			<textalign>right</textalign>
-			<width>394</width>
-			<textXOff>32</textXOff>
-			<height>64</height>
-			<textYOff>14</textYOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>		
-		</control>
+      <control>
+        <description>Keep</description>
+        <type>button</type>
+        <id>21</id>
+        <label>1042</label>
+        <onup>10</onup>
+        <ondown>25</ondown>
+        <onright>
+        </onright>
+      </control>
 	  
-		<control>
-			<description>Keep</description>
-			<type>button</type>
-			<id>21</id>
-			<label>1042</label>
-			<onup>10</onup>
-			<ondown>25</ondown>
-			<onright></onright>
-			<textalign>right</textalign>
-			<width>394</width>
-			<textXOff>32</textXOff>
-			<height>64</height>
-			<textYOff>14</textYOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>		
-		</control>
-	  
-			<control>
-			<description>ReName</description>
-			<type>button</type>
-			<id>25</id>
-			<label>118</label>
-			<onup>21</onup>
-			<ondown>11</ondown>
-			<onright></onright>
-			<textalign>right</textalign>
-			<width>394</width>
-			<textXOff>32</textXOff>
-			<height>64</height>
-			<textYOff>14</textYOff>
-			<textureFocus>listcontrol_item_selected_small.png</textureFocus>
-			<textureNoFocus>listcontrol_item_small.png</textureNoFocus>	
-		</control>
-	  
+      <control>
+        <description>ReName</description>
+        <type>button</type>
+        <id>25</id>
+        <label>118</label>
+        <onup>21</onup>
+        <ondown>11</ondown>
+        <onright></onright>
+      </control>
     </control>
-
-
+	
     <control>
       <description>Group</description>
       <type>label</type>
       <id>0</id>
-      <posX>480</posX>
-      <posY>121</posY>
+      <posX>674</posX>
+      <posY>170</posY>
       <label>971</label>
       <font>font13</font>
       <textcolor>FFFFFFFF</textcolor>
@@ -150,23 +101,22 @@
       <description>Channel</description>
       <type>label</type>
       <id>0</id>
-      <posX>820</posX>
-      <posY>121</posY>
+      <posX>1152</posX>
+      <posY>170</posY>
       <label>602</label>
       <font>font13</font>
       <textcolor>FFFFFFFF</textcolor>
     </control>
-
+	
     <control>
       <description>Group Select</description>
       <type>spincontrol</type>
       <id>12</id>
-      <posX>480</posX>
-      <posY>171</posY>
+      <posX>674</posX>
+      <posY>240</posY>
       <showrange>no</showrange>
       <digits>6</digits>
       <orientation>vertical</orientation>
-      <onup></onup>
       <ondown>16</ondown>
       <onleft>11</onleft>
       <onright>13</onright>
@@ -177,29 +127,27 @@
       <description>Channel Select</description>
       <type>spincontrol</type>
       <id>13</id>
-      <posX>820</posX>
-      <posY>171</posY>
+      <posX>1152</posX>
+      <posY>240</posY>
       <showrange>no</showrange>
       <digits>6</digits>
       <orientation>vertical</orientation>
-      <onup></onup>
       <ondown>15</ondown>
       <onleft>12</onleft>
       <onright>16</onright>
       <textcolor>FFFFFFFF</textcolor>
     </control>
-
+	
     <control>
       <description>Day Select</description>
       <type>spincontrol</type>
       <id>16</id>
-      <posX>480</posX>
-      <posY>271</posY>
+      <posX>674</posX>
+      <posY>381</posY>
       <showrange>no</showrange>
       <digits>3</digits>
       <orientation>vertical</orientation>
       <onup>12</onup>
-      <ondown></ondown>
       <onleft>11</onleft>
       <onright>17</onright>
       <textcolor>FFFFFFFF</textcolor>
@@ -209,13 +157,12 @@
       <description>Month Select</description>
       <type>spincontrol</type>
       <id>17</id>
-      <posX>560</posX>
-      <posY>271</posY>
+      <posX>787</posX>
+      <posY>381</posY>
       <showrange>no</showrange>
       <digits>3</digits>
       <orientation>vertical</orientation>
       <onup>12</onup>
-      <ondown></ondown>
       <onleft>16</onleft>
       <onright>18</onright>
       <textcolor>FFFFFFFF</textcolor>
@@ -225,29 +172,27 @@
       <description>Year Select</description>
       <type>spincontrol</type>
       <id>18</id>
-      <posX>640</posX>
-      <posY>271</posY>
+      <posX>899</posX>
+      <posY>381</posY>
       <showrange>no</showrange>
       <digits>3</digits>
       <orientation>vertical</orientation>
       <onup>12</onup>
-      <ondown></ondown>
       <onleft>17</onleft>
       <onright>15</onright>
       <textcolor>FFFFFFFF</textcolor>
     </control>
-
+	
     <control>
       <description>Hours Select</description>
       <type>spincontrol</type>
       <id>15</id>
-      <posX>820</posX>
-      <posY>271</posY>
+      <posX>1152</posX>
+      <posY>381</posY>
       <showrange>no</showrange>
       <digits>2</digits>
       <orientation>vertical</orientation>
       <onup>13</onup>
-      <ondown></ondown>
       <onleft>18</onleft>
       <onright>14</onright>
       <textcolor>FFFFFFFF</textcolor>
@@ -257,13 +202,12 @@
       <description>Minutes Select</description>
       <type>spincontrol</type>
       <id>14</id>
-      <posX>900</posX>
-      <posY>271</posY>
+      <posX>1265</posX>
+      <posY>381</posY>
       <showrange>no</showrange>
       <digits>2</digits>
       <orientation>vertical</orientation>
       <onup>13</onup>
-      <ondown></ondown>
       <onleft>15</onleft>
       <onright>20</onright>
       <textcolor>FFFFFFFF</textcolor>
@@ -273,13 +217,12 @@
       <description>Duration Hours</description>
       <type>spincontrol</type>
       <id>20</id>
-      <posX>1050</posX>
-      <posY>271</posY>
+      <posX>1475</posX>
+      <posY>381</posY>
       <showrange>no</showrange>
       <digits>2</digits>
-      <orientation>vertical</orientation>	
+      <orientation>vertical</orientation>
       <onup>13</onup>
-      <ondown></ondown>
       <onleft>14</onleft>
       <onright>19</onright>
       <textcolor>FFFFFFFF</textcolor>
@@ -289,25 +232,24 @@
       <description>Duration Minutes</description>
       <type>spincontrol</type>
       <id>19</id>
-      <posX>1130</posX>
-      <posY>271</posY>
+      <posX>1588</posX>
+      <posY>381</posY>
       <showrange>no</showrange>
       <digits>2</digits>
       <orientation>vertical</orientation>
       <onup>13</onup>
-      <ondown></ondown>
       <onleft>20</onleft>
       <onright>3</onright>
       <textcolor>FFFFFFFF</textcolor>
     </control>
-
+	
     <control>
       <description>monday</description>
       <type>togglebutton</type>
       <id>3</id>
-      <posX>480</posX>
-      <posY>361</posY>
-      <width>90</width>
+      <posX>674</posX>
+      <posY>507</posY>
+      <width>126</width>
       <label>657</label>
       <font>font12</font>
       <textcolor>White</textcolor>
@@ -323,9 +265,9 @@
       <description>tuesday</description>
       <type>togglebutton</type>
       <id>4</id>
-      <posX>583</posX>
-      <posY>361</posY>
-      <width>90</width>
+      <posX>819</posX>
+      <posY>507</posY>
+      <width>126</width>
       <label>658</label>
       <font>font12</font>
       <textcolor>White</textcolor>
@@ -341,9 +283,9 @@
       <description>wednesday</description>
       <type>togglebutton</type>
       <id>5</id>
-      <posX>686</posX>
-      <posY>361</posY>
-      <width>90</width>
+      <posX>964</posX>
+      <posY>507</posY>
+      <width>126</width>
       <label>659</label>
       <font>font12</font>
       <textcolor>White</textcolor>
@@ -359,16 +301,15 @@
       <description>thursday</description>
       <type>togglebutton</type>
       <id>6</id>
-      <posX>789</posX>
-      <posY>361</posY>
-      <width>90</width>
+      <posX>1108</posX>
+      <posY>507</posY>
+      <width>126</width>
       <label>660</label>
       <font>font12</font>
       <textcolor>White</textcolor>
       <colordiffuse>White</colordiffuse>
       <!--<disabledcolor>#60ffffff</disabledcolor>-->
       <onleft>5</onleft>
-      <onup></onup>
       <ondown>11</ondown>
       <onright>7</onright>
     </control>
@@ -377,16 +318,15 @@
       <description>friday</description>
       <type>togglebutton</type>
       <id>7</id>
-      <posX>892</posX>
-      <posY>361</posY>
-      <width>90</width>
+      <posX>1253</posX>
+      <posY>507</posY>
+      <width>126</width>
       <label>661</label>
       <font>font12</font>
       <textcolor>White</textcolor>
       <colordiffuse>White</colordiffuse>
       <!--<disabledcolor>#60ffffff</disabledcolor>-->
       <onleft>6</onleft>
-      <onup></onup>
       <ondown>11</ondown>
       <onright>8</onright>
     </control>
@@ -395,16 +335,15 @@
       <description>saturday</description>
       <type>togglebutton</type>
       <id>8</id>
-      <posX>995</posX>
-      <posY>361</posY>
-      <width>90</width>
+      <posX>1398</posX>
+      <posY>507</posY>
+      <width>126</width>
       <label>662</label>
       <font>font12</font>
       <textcolor>White</textcolor>
       <colordiffuse>White</colordiffuse>
       <!--<disabledcolor>#60ffffff</disabledcolor>-->
       <onleft>7</onleft>
-      <onup></onup>
       <ondown>11</ondown>
       <onright>9</onright>
     </control>
@@ -413,101 +352,103 @@
       <description>sunday</description>
       <type>togglebutton</type>
       <id>9</id>
-      <posX>1098</posX>
-      <posY>361</posY>
-      <width>90</width>
+      <posX>1543</posX>
+      <posY>507</posY>
+      <width>126</width>
       <label>663</label>
       <font>font12</font>
       <textcolor>White</textcolor>
       <colordiffuse>White</colordiffuse>
       <!--<disabledcolor>#60ffffff</disabledcolor>-->
       <onleft>8</onleft>
-      <onup></onup>
       <ondown>11</ondown>
       <onright>11</onright>
     </control>
-
-		
-			<control>
-				<description>Episoden listcontrol</description>
-				<type>listcontrol</type>
-				<id>26</id>
-				<posX>918</posX>
-				<posY>219</posY>
-				<height>800</height>
-				<width>943</width>
-				<onleft>11</onleft>
-				<onright>5</onright>
-				<scrollOffset>1</scrollOffset>
-				<PinIconHeight>45</PinIconHeight>
-				<PinIconWidth>44</PinIconWidth>
-				<PinIconXOff>35</PinIconXOff>
-				<PinIconYOff>5</PinIconYOff>
-				<itemWidth>40</itemWidth>
-				<itemHeight>30</itemHeight>
-				<textureFocus>listcontrol_item_selected_tv.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<IconXOff>-2000</IconXOff>
-				<IconYOff>13</IconYOff>				
-				<textXOff>50</textXOff>
-                <textXOff2>914</textXOff2>
-				<keepaspectratio>no</keepaspectratio>
-				<spinCanFocus>no</spinCanFocus>
-				<dimColor>ffffffff</dimColor>
-                <spinPosX>1832</spinPosX>
-                <spinPosY>950</spinPosY>
-			</control>
-	  
+	
+    <control>
+      <description>upcoming episodes listcontrol</description>
+      <type>listcontrol</type>
+      <id>26</id>
+      <posY>660</posY>
+      <width>1068</width>
+      <height>365</height>
+      <textXOff>123</textXOff>
+      <textYOff>2</textYOff>
+      <textXOff2>1044</textXOff2>
+      <textYOff2>50</textYOff2>
+      <textXOff3>248</textXOff3>
+      <textYOff3>50</textYOff3>
+      <IconXOff>29</IconXOff>
+      <PinIconXOff>110</PinIconXOff>
+      <PinIconYOff>15</PinIconYOff>
+      <spinPosY>949</spinPosY>
+      <spinPosX>1449</spinPosX>
+      <itemWidth>104</itemWidth>
+      <itemHeight>73</itemHeight>
+      <!--       <textureFocus>recording_background_focus.png</textureFocus>
+      <textureNoFocus>recording_background_nofocus.png</textureNoFocus> -->
+      <spaceBetweenItems>11</spaceBetweenItems>
+      <textureHeight>87</textureHeight>
+      <!--       <textureWidth>138</textureWidth> -->
+      <keepaspectratio>no</keepaspectratio>
+      <font2>font10</font2>
+      <font3>font10</font3>
+      <onleft>11</onleft>
+      <onright>11</onright>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+	
     <control>
       <description>starttime</description>
       <type>label</type>
       <id>0</id>
-      <posX>820</posX>
-      <posY>221</posY>
+      <posX>1152</posX>
+      <posY>310</posY>
       <label>635</label>
       <font>font13</font>
-      <textcolor>FFFFFFFF</textcolor> 
+      <textcolor>FFFFFFFF</textcolor>
     </control>
 	
     <control>
       <description>date</description>
       <type>label</type>
       <id>23</id>
-      <posX>480</posX>
-      <posY>221</posY>
+      <posX>674</posX>
+      <posY>310</posY>
       <label>636</label>
       <font>font13</font>
       <textcolor>FFFFFFFF</textcolor>
-    </control> 
+    </control>
 	
     <control>
       <description>duration</description>
       <type>label</type>
       <id>0</id>
-      <posX>1050</posX>
-      <posY>221</posY>
+      <posX>1475</posX>
+      <posY>310</posY>
       <label>180</label>
       <font>font13</font>
-      <textcolor>FFFFFFFF</textcolor> 
+      <textcolor>FFFFFFFF</textcolor>
     </control>
 	
     <control>
       <description>select days</description>
       <type>label</type>
       <id>24</id>
-      <posX>480</posX>
-      <posY>321</posY>
+      <posX>674</posX>
+      <posY>451</posY>
       <label>3015</label>
       <font>font13</font>
-      <textcolor>FFFFFFFF</textcolor> 
+      <textcolor>FFFFFFFF</textcolor>
     </control>
 	
     <control>
       <description>Scheduled recordings</description>
       <type>label</type>
       <id>27</id>
-      <posX>480</posX>
-      <posY>431</posY>
+      <posX>674</posX>
+      <posY>606</posY>
       <label>646</label>
       <align>left</align>
       <font>font13</font>
@@ -515,19 +456,6 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
-	
-    <control>
-      <id>1</id>
-      <type>image</type>
-      <posX>0</posX>
-      <posY>440</posY>
-      <texture>hiddenmenu_tab.png</texture>
-      <visible>Control.HasFocus(26)</visible>
-      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
-      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
-    </control>
-	
-    <import>common.overlay.xml</import>
 	
   </controls>
 </window>
