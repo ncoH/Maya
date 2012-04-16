@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
+  
     <control>
       <type>image</type>
       <description>Dummy image</description>
@@ -12,6 +12,7 @@
       <height>14</height>
       <texture>osd_bg_top.png</texture>
     </control>
+	
     <control>
       <type>image</type>
       <description>Progressbar Background</description>
@@ -23,6 +24,7 @@
       <texture>osd_bg.png</texture>
       <visible>window.isosdvisible+player.playing+!player.rewinding+!player.forwarding+!player.seeking</visible>
     </control>
+	
     <control>
       <description>OSD Pause Background</description>
       <type>image</type>
@@ -34,6 +36,7 @@
       <texture>osd_bg_pause.png</texture>
       <visible>Control.IsVisible(10) | [player.paused + window.ispauseosdvisible] | [player.rewinding|player.forwarding]</visible>
     </control>
+	
     <control>
       <type>progress</type>
       <description>Track Progress</description>
@@ -49,6 +52,7 @@
       <righttexture>osd_progress_right.png</righttexture>
       <visible>window.isosdvisible | [player.paused + window.ispauseosdvisible] | [player.rewinding|player.forwarding|control.isvisible(10)|player.seeking]</visible>
     </control>
+	
     <control>
       <description>Start Time Info</description>
       <type>label</type>
@@ -60,6 +64,7 @@
       <font>font12</font>
       <visible>window.isosdvisible | [player.paused + window.ispauseosdvisible] | [player.rewinding|player.forwarding|control.isvisible(10)|player.seeking]</visible>
     </control>
+	
     <control>
       <description>End Time Info</description>
       <type>label</type>
@@ -71,6 +76,7 @@
       <font>font12</font>
       <visible>window.isosdvisible | [player.paused + window.ispauseosdvisible] | [player.rewinding|player.forwarding|control.isvisible(10)|player.seeking]</visible>
     </control>
+	
     <control>
       <type>label</type>
       <id>999</id>
@@ -84,6 +90,7 @@
       <label>19011</label>
       <visible>!Control.IsVisible(10) + !Control.IsVisible(11) + !Control.IsVisible(12) + [[window.isosdvisible+player.paused]|[!window.isosdvisible+player.paused]] + window.ispauseosdvisible</visible>
     </control>
+	
     <!-- FFW labels -->
     <control>
       <description>2x label</description>
@@ -98,6 +105,7 @@
       <label>FFW 2x</label>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>4x label</description>
       <type>label</type>
@@ -111,6 +119,7 @@
       <label>FFW 4x</label>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>8x label</description>
       <type>label</type>
@@ -124,6 +133,7 @@
       <label>FFW 8x</label>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>16x label</description>
       <type>label</type>
@@ -137,6 +147,7 @@
       <label>FFW 16x</label>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>32x label</description>
       <type>label</type>
@@ -150,6 +161,7 @@
       <label>FFW 32x</label>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <!-- REW labels -->
     <control>
       <description>2x label</description>
@@ -164,6 +176,7 @@
       <label>REW 2x</label>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>4x label</description>
       <type>label</type>
@@ -177,6 +190,7 @@
       <label>REW 4x</label>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>8x label</description>
       <type>label</type>
@@ -190,6 +204,7 @@
       <label>REW 8x</label>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>16x label</description>
       <type>label</type>
@@ -203,6 +218,7 @@
       <label>REW 16x</label>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
     <control>
       <description>32x label</description>
       <type>label</type>
@@ -216,5 +232,6 @@
       <label>REW 32x</label>
       <animation effect="fade" time="250">visiblechange</animation>
     </control>
+	
   </controls>
 </window>

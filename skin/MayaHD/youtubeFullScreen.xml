@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>29054</id>
+  <defaultcontrol>13</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <disabletopbar>false</disabletopbar>
+  <controls>
+	
+     <import>common.progressbar.xml</import>
+
+    <!-- ********************   Video / Artist View Info   ************************ -->
+    <control>
+      <description>Background for Artist Image</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>60</posX>
+      <posY>320</posY>      
+      <width>200</width>
+      <height>136</height>
+      <texture>Picturethumbmask.png</texture>      
+      <visible>string.equals(#Youtube.fm.FullScreen.ShowTitle, true )</visible>
+    </control>
+	
+    <control>
+      <id>1</id>
+      <description>Artist Image</description>
+      <type>image</type>
+      <posX>60</posX>
+      <posY>320</posY>
+      <width>200</width>
+      <height>136</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <centered>yes</centered>     
+      <texture mask="Picturethumbmask.png">#Youtube.fm.NowPlaying.Artist.Image</texture>
+      <visible>string.equals(#Youtube.fm.FullScreen.ShowTitle, true )</visible>      
+    </control>
+	
+    <control>
+      <type>image</type>
+      <id>1</id>
+      <posX>60</posX>
+      <posY>320</posY>
+      <width>200</width>
+      <height>136</height>
+      <texture mask="Picturethumbmask.png">Picturethumbframe.png</texture>            
+      <visible>string.equals(#Youtube.fm.FullScreen.ShowTitle, true )</visible>
+    </control>    
+
+    <!-- ********************  NowPlaying OSD Info   ************************ -->
+	
+    <control>
+      <description>Background for Text Info</description>
+      <type>image</type>
+      <id>117</id>
+      <posX>0</posX>
+      <posY>955</posY>
+      <height>125</height>
+      <width>1920</width>
+      <texture>blue.png</texture>
+      <colordiffuse>90ffffff</colordiffuse>
+      <visible>string.equals(#Youtube.fm.FullScreen.ShowTitle, true )</visible>
+    </control>    
+	
+    <control>
+      <id>171</id>
+      <description>Now Playing Label</description>
+      <type>fadelabel</type>
+      <posX>30</posX>
+      <posY>960</posY>
+      <width>250</width>
+      <font>font11</font>
+      <textcolor>ff6aa5cb</textcolor>           
+      <label>Now Playing:</label>
+      <visible>string.equals(#Youtube.fm.FullScreen.ShowTitle, true )</visible>
+    </control>
+	
+    <control>
+      <id>118</id>
+      <description>Video Title Value</description>
+      <type>fadelabel</type>
+      <posX>30</posX>
+      <posY>995</posY>
+      <width>500</width>
+      <font>font13</font>
+      <textcolor>ffffffff</textcolor>            
+      <label>#Youtube.fm.NowPlaying.Video.Title</label>
+      <visible>string.equals(#Youtube.fm.FullScreen.ShowTitle, true )</visible>
+    </control>
+	
+    <control>
+      <id>119</id>
+      <description>Artist Title Value</description>
+      <type>fadelabel</type>
+      <posX>30</posX>
+      <posY>1035</posY>
+      <width>500</width>
+      <font>font13</font>
+      <textcolor>ffffffff</textcolor>            
+      <label>#Youtube.fm.NowPlaying.Artist.Name</label>
+      <visible>string.equals(#Youtube.fm.FullScreen.ShowTitle, true )</visible>
+    </control>
+	
+    <control>
+      <id>172</id>
+      <description>Playing Next Label</description>
+      <type>fadelabel</type>
+      <posX>1890</posX>
+      <posY>960</posY>
+      <width>250</width>
+      <font>font11</font>
+      <align>right</align>
+      <textcolor>ff6aa5cb</textcolor>          
+      <label>Playing Next:</label>
+      <visible>string.equals(#Youtube.fm.FullScreen.ShowNextTitle, true )</visible>
+    </control>
+	
+    <control>
+      <id>118</id>
+      <description>Next Video Title Value</description>
+      <type>fadelabel</type>
+      <posX>1890</posX>
+      <posY>995</posY>
+      <width>440</width>
+      <font>font13</font>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>            
+      <label>#Youtube.fm.Next.Video.Title</label>
+      <visible>string.equals(#Youtube.fm.FullScreen.ShowNextTitle, true )</visible>
+    </control>
+	
+    <control>
+      <id>119</id>
+      <description>Next Artist Title Value</description>
+      <type>fadelabel</type>
+      <posX>1890</posX>
+      <posY>1035</posY>
+      <width>440</width>
+      <font>font13</font>
+      <align>right</align>
+      <textcolor>ffffffff</textcolor>            
+      <label>#Youtube.fm.Next.Artist.Name</label>
+      <visible>string.equals(#Youtube.fm.FullScreen.ShowNextTitle, true )</visible>
+    </control>        
+
+
+    <control>
+      <description>row 1 label</description>
+      <type>label</type>
+      <id>10</id>
+      <posX>670</posX>
+      <posY>984</posY>
+      <height>42</height>
+      <width>562</width>
+      <font>font14</font>
+      <align>center</align>
+      <label>-</label>
+      <visible>no</visible>
+    </control>
+	
+    <control>
+      <description>row 2 label</description>
+      <type>label</type>
+      <id>11</id>
+      <posX>670</posX>
+      <posY>984</posY>
+      <height>42</height>
+      <width>202</width>
+      <font>font18</font>
+      <align>center</align>
+      <visible>no</visible>	  
+      <label>-</label>
+    </control>
+	
+    <control>
+      <description>row 3 label</description>
+      <type>label</type>
+      <id>12</id>
+      <posX>670</posX>
+      <posY>984</posY>
+      <height>42</height>
+      <width>202</width>
+      <font>font18</font>
+      <align>center</align>
+      <label>-</label>
+      <visible>no</visible>	  
+    </control>
+	
+	
+    <!-- **************************** PAUSE, REWIND ETC. FOR SMALL VIDEO OSD ********************************** -->
+
+    <control>
+      <description>pause image</description>
+      <type>image</type>
+      <id>16</id>
+      <posX>1626</posX>
+      <posY>25</posY>
+      <width>67</width>
+      <height>67</height>
+      <visible>no</visible>
+      <texture>osdpausenf.png</texture>
+      <colordiffuse>White</colordiffuse>
+    </control>
+	
+    <control>
+      <description>2x image</description>
+      <type>image</type>
+      <id>17</id>
+      <posX>1616</posX>
+      <posY>28</posY>
+      <width>188</width>
+      <height>99</height>
+      <visible>no</visible>
+      <texture>video+2x.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>player.forwarding2x+control.isvisible(111)</visible>	  
+    </control>
+	
+    <control>
+      <description>4x image</description>
+      <type>image</type>
+      <id>18</id>
+      <posX>1616</posX>
+      <posY>28</posY>
+      <width>188</width>
+      <height>99</height>
+      <visible>no</visible>
+      <texture>video+4x.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>player.forwarding4x+control.isvisible(111)</visible>	  
+    </control>
+	
+    <control>
+      <description>8x image</description>
+      <type>image</type>
+      <id>19</id>
+      <posX>1616</posX>
+      <posY>28</posY>
+      <width>188</width>
+      <height>99</height>
+      <visible>no</visible>
+      <texture>video+8x.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>player.forwarding8x+control.isvisible(111)</visible>	  
+    </control>
+	
+    <control>
+      <description>16x image</description>
+      <type>image</type>
+      <id>20</id>
+      <posX>1616</posX>
+      <posY>28</posY>
+      <width>188</width>
+      <height>99</height>
+      <visible>no</visible>
+      <texture>video+16x.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>player.forwarding16x+control.isvisible(111)</visible>	  
+    </control>
+	
+    <control>
+      <description>32x image</description>
+      <type>image</type>
+      <id>21</id>
+      <posX>1616</posX>
+      <posY>28</posY>
+      <width>188</width>
+      <height>99</height>
+      <visible>no</visible>
+      <texture>video+32x.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>player.forwarding32x+control.isvisible(111)</visible>	  
+    </control>
+	
+    <control>
+      <description>- 2x image</description>
+      <type>image</type>
+      <id>23</id>
+      <posX>1616</posX>
+      <posY>28</posY>
+      <width>188</width>
+      <height>99</height>
+      <visible>no</visible>
+      <texture>video-2x.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>player.rewinding2x+control.isvisible(111)</visible>	  
+    </control>
+	
+    <control>
+      <description>- 4x image</description>
+      <type>image</type>
+      <id>24</id>
+      <posX>1616</posX>
+      <posY>28</posY>
+      <width>188</width>
+      <height>99</height>
+      <visible>no</visible>
+      <texture>video-4x.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>player.rewinding4x+control.isvisible(111)</visible>	  
+    </control>
+	
+    <control>
+      <description>- 8x image</description>
+      <type>image</type>
+      <id>25</id>
+      <posX>1616</posX>
+      <posY>28</posY>
+      <width>188</width>
+      <height>99</height>
+      <visible>no</visible>
+      <texture>video-8x.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>player.rewinding8x+control.isvisible(111)</visible>	  
+    </control>
+	
+    <control>
+      <description>- 16x image</description>
+      <type>image</type>
+      <id>26</id>
+      <posX>1616</posX>
+      <posY>28</posY>
+      <width>188</width>
+      <height>99</height>
+      <visible>no</visible>
+      <texture>video-16x.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>player.rewinding16x+control.isvisible(111)</visible>	  
+    </control>
+	
+    <control>
+      <description>- 32x image</description>
+      <type>image</type>
+      <id>27</id>
+      <posX>1616</posX>
+      <posY>28</posY>
+      <width>188</width>
+      <height>99</height>
+      <visible>no</visible>
+      <texture>video-32x.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>player.rewinding32x+control.isvisible(111)</visible>	  
+    </control>
+	
+    <control>
+      <type>image</type>
+      <id>500</id>
+      <posX>937</posX>
+      <posY>25</posY>
+      <width>44</width>
+      <height>45</height>
+      <texture>osdaudiomutenf.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>no</visible>
+    </control>
+	
+    <control>
+      <type>volumebar</type>
+      <id>501</id>
+      <posX>1061</posX>
+      <posY>84</posY>
+      <align>right</align>
+      <height>18</height>
+      <imageHeight>3</imageHeight>
+      <texture>volume.states.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>no</visible>
+    </control>
+
+    <control>
+      <type>image</type>
+      <id>502</id>
+      <posX>1560</posX>
+      <posY>25</posY>
+      <width>67</width>
+      <height>67</height>
+      <texture>volumelevel.png.png</texture>
+      <colordiffuse>White</colordiffuse>
+      <visible>control.isVisible(501)+!control.isVisible(500)</visible>
+    </control>
+	
+  </controls>
+</window>

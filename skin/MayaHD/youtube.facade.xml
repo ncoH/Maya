@@ -1,79 +1,32 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <controls>
+  
     <control>
       <description>group element</description>
       <type>group</type>
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-      <animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="1000">WindowClose</animation>
+      <visible>!Control.HasFocus(50)</visible>
+      <animation effect="slide" time="70" start="0,-300">WindowOpen</animation>
+      <animation effect="slide" time="70" end="800,0">WindowClose</animation>
       <control>
         <description>composite control consisting of a list control and a thumbnail panel</description>
         <type>facadeview</type>
         <id>50</id>
+		
         <control>
-			<description>listcontrol</description>
-			<type>listcontrol</type>
-			<id>50</id>
-			<posY>600</posY>
-			<height>421</height>
-			<posX>736</posX>
-			<width>1017</width>
-			<onleft>2</onleft>
-			<onright>2</onright>
-			<scrollOffset>1</scrollOffset>
-			<PinIconHeight>51</PinIconHeight>
-			<PinIconWidth>43</PinIconWidth>
-			<PinIconXOff>3</PinIconXOff>
-			<PinIconYOff>8</PinIconYOff>
-			<itemWidth>44</itemWidth>
-			<itemHeight>45</itemHeight>
-			<IconXOff>42</IconXOff>
-			<IconYOff>12</IconYOff>
-			<textXOff>56</textXOff>
-			<spinPosX>787</spinPosX>
-			<spinPosY>973</spinPosY>
-			<spinAlign>left</spinAlign>
-			<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
-			<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
-			<keepaspectratio>yes</keepaspectratio>
-			<spinCanFocus>no</spinCanFocus>
-			<dimColor>ffffffff</dimColor>
-        </control>
-
-        <control>
-          <description>album view listcontrol</description>
+          <description>listcontrol</description>
           <type>listcontrol</type>
-          <subtype>album</subtype>
           <id>50</id>
           <onleft>2</onleft>
           <onright>50</onright>
           <scrollOffset>1</scrollOffset>
-          <posY>600</posY>
-          <height>421</height>
           <posX>736</posX>
-          <width>1017</width>
-          <PinIconHeight>51</PinIconHeight>
-          <PinIconWidth>43</PinIconWidth>
-          <PinIconXOff>8</PinIconXOff>
-          <PinIconYOff>20</PinIconYOff>
-          <itemWidth>64</itemWidth>
-          <itemHeight>65</itemHeight>
-          <IconXOff>56</IconXOff>
-          <IconYOff>12</IconYOff>
-          <textXOff>56</textXOff>
-          <textYOff>5</textYOff>		  
-          <textXOff2>0</textXOff2>	
-          <textYOff2>51</textYOff2>			  
-          <textXOff3>130</textXOff3>	
-          <textYOff3>51</textYOff3>			  
+          <posY>262</posY>
+          <height>644</height>
           <spinPosX>787</spinPosX>
-          <spinPosY>973</spinPosY>
+          <spinPosY>967</spinPosY>
           <spinAlign>left</spinAlign>
-          <textureHeight>90</textureHeight>		  
-          <textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
-          <textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
-          <keepaspectratio>yes</keepaspectratio>
+          <textXOff>30</textXOff>
           <dimColor>ffffffff</dimColor>
         </control>
 		
@@ -221,8 +174,52 @@
           <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png" />
         </control>
 		
-      </control>
+        <control>
+          <description>album view listcontrol</description>
+          <type>listcontrol</type>
+          <subtype>album</subtype>
+          <id>50</id>
+          <width>755</width>
+          <height>593</height>
+          <font>font13</font>
+          <font2>font9</font2>
+          <selectedColor>80000000</selectedColor>
+          <textcolor>ffffffff</textcolor>
+          <selectedColor2>ffffffff</selectedColor2>
+          <textcolor2>ffffffff</textcolor2>
+          <textXOff2>746</textXOff2>
+          <textYOff2>55</textYOff2>
+          <itemWidth>90</itemWidth>
+          <itemHeight>90</itemHeight>
+          <IconXOff>12</IconXOff>
+          <IconYOff>9</IconYOff>
+          <spaceBetweenItems>0</spaceBetweenItems>
+          <textureHeight>112</textureHeight>
+          <scrollOffset>1</scrollOffset>
+          <textureFocus>album_background_focus.png</textureFocus>
+          <textureNoFocus>album_background_nofocus.png</textureNoFocus>
+          <onleft>2</onleft>
+          <onright>50</onright>
+          <onup>2</onup>
+          <ondown>2</ondown>
+        </control>
+		
+	
+    <control>
+      <description>playlist listcontrol</description>
+      <type>playlistcontrol</type>
+      <id>50</id>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <scrollOffset>2</scrollOffset>
+      <itemWidth>32</itemWidth>
+      <itemHeight>32</itemHeight>
+      <IconXOff>12</IconXOff>
+      <IconYOff>4</IconYOff>
     </control>
 	
-  </controls>
+  </control>
+</control>
+
+</controls>
 </window>

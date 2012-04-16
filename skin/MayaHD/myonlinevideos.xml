@@ -730,7 +730,8 @@
       <texture>hiddenmenu_tab_up.png</texture>
       <visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
     </control>
-	
+
+	<import>myonlinevideos.hiddenmenu.xml</import>	
     <import>myonlinevideos.facade.xml</import>
     <import>myonlinevideos.details.xml</import>
     <import>common.overlay.xml</import>

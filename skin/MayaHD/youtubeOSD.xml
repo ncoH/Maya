@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>29055</id>
+  <defaultcontrol>213</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+  		
+    <control>
+      <description>background</description>
+      <type>image</type>
+      <id>992</id>
+      <posX>247</posX>
+      <posY>767</posY>
+      <width>1418</width>
+      <height>248</height>
+      <texture>osd_bg_description2.png</texture>
+    </control>	
+	
+    <control>
+      <type>label</type>
+      <id>110</id>
+      <description>Clock</description>
+      <posX>1474</posX>
+      <posY>822</posY>
+      <width>202</width>
+      <font>Segoe Light22</font>
+      <align>left</align>
+      <label>#time</label>
+      <textcolor>ff85cffe</textcolor> 	   
+    </control>
+
+    <control>
+      <description>Current Logo</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>295</posX>
+      <posY>795</posY>
+      <width>168</width>
+      <height>112</height>
+      <align>center</align>
+      <centered>yes</centered>
+      <texture>#Youtube.fm.NowPlaying.Artist.Image</texture>
+      <keepaspectratio>yes</keepaspectratio> 	  
+    </control>
+
+    <control>
+      <description>Plot</description>
+      <type>textboxscrollup</type>
+      <id>0</id>
+      <posX>439</posX>
+      <posY>457</posY>
+      <width>997</width>
+      <height>264</height>
+      <seperator>----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</seperator>
+      <label>#Play.Current.Plot</label> 
+      <visible>control.hasfocus(1237)</visible>	  
+    </control>
+
+    <control>
+      <description>Adjustment bg</description>
+      <type>image</type>
+      <id>992</id>
+      <posX>399</posX>
+      <posY>424</posY>
+      <width>1124</width>
+      <height>361</height>
+      <texture>osd_bg_info2.png</texture>
+      <visible>control.hasfocus(1237)</visible>	  
+    </control>
+	
+    <control>
+      <description>background</description>
+      <type>image</type>
+      <id>104</id>
+      <posX>267</posX>
+      <posY>804</posY>
+      <width>836</width>
+      <height>37</height>
+      <texture>osd_progress_background.png</texture>
+    </control>
+
+    <control>
+      <description>Artist / Video Title</description>
+      <id>36</id>
+      <type>fadelabel</type>
+      <width>899</width>
+      <height>33</height>
+      <posX>506</posX>
+      <posY>808</posY>
+      <font>Segoe Light18</font>
+      <label>#Play.Current.Title</label>  
+    </control>
+
+    <control>
+      <description>Playing Next Label</description>
+      <id>172</id>
+      <type>fadelabel</type>
+      <width>400</width>
+      <posX>506</posX>
+      <posY>862</posY>
+      <font>Segoe Light14</font>
+      <textcolor>ff85cffe</textcolor>
+      <label>Playing Next:</label>  
+    </control>
+	
+    <control>
+      <id>118</id>
+      <description>Next Video Title / Artist Title Value</description>
+      <type>fadelabel</type>
+      <posX>750</posX>
+      <posY>862</posY>
+      <width>600</width>
+      <font>Segoe Light14</font>
+      <textcolor>ffffffff</textcolor>
+      <label>#Youtube.fm.Next.Artist.Name - #Youtube.fm.Next.Video.Title</label> 
+    </control>
+
+	
+     <control>
+      <description>Up button</description>
+      <type>button</type>
+      <id>1237</id>
+      <posX>923</posX>
+      <posY>786</posY>
+      <width>74</width>
+      <height>28</height>
+      <onleft>1237</onleft>
+      <onright>1237</onright>
+      <ondown>213</ondown>
+      <onup>1237</onup>
+      <textureFocus>osd_expand_icon.png</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+    </control>
+	
+    <control>
+      <description>Down button</description>
+      <type>button</type>
+      <id>213</id>
+      <posX>923</posX>
+      <posY>786</posY>
+      <width>74</width>
+      <height>28</height>
+      <onleft>213</onleft>
+      <onright>997</onright>
+      <ondown>213</ondown>
+      <onup>1237</onup>
+      <textureFocus>osd_collapse_icon.png</textureFocus>
+      <textureNoFocus>-</textureNoFocus>
+      <visible allowhiddenfocus="true">!Control.HasFocus(1237)</visible>
+    </control>
+
+	
+    <!-- ***************   Logo / Media Info   *************** -->
+	
+<!--     <control>
+      <description>Youtube.fm Logo</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>1647</posX>
+      <posY>929</posY>
+      <height>67</height>
+      <width>112</width>
+      <texture>youtubefm_logo.png</texture>
+    </control>
+	
+    <control>
+      <id>1</id>
+      <description>Star Rating Value</description>
+      <type>imagelist</type>
+      <posX>1328</posX>
+      <posY>964</posY>
+      <width>168</width>
+      <height>49</height>
+      <textureHeight>33</textureHeight>
+      <textureWidth>33</textureWidth>
+      <percentage>#Youtube.fm.NowPlaying.Video.Rating</percentage>
+      <imagesToDraw>5</imagesToDraw>
+      <orientation>HORIZONTAL</orientation>
+      <align>left</align>
+      <subitems>
+        <subitem>greystar.png</subitem>
+        <subitem>starbest.png</subitem>
+      </subitems>
+    </control>
+	
+    <control>
+      <id>173</id>
+      <description>Text Rating</description>
+      <type>label</type>
+      <posX>1503</posX>
+      <posY>960</posY>
+      <width>140</width>
+      <font>font10</font>
+      <textcolor>ffffffff</textcolor>
+      <label>(#Youtube.fm.Curent.Video.RatingText)</label>
+    </control>
+	
+    <control>
+      <description>HD Logo</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>98</posX>
+      <posY>945</posY>
+      <width>98</width>
+      <height>49</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <texture>Logos\hd.png</texture>
+      <visible>string.equals(#Youtube.fm.NowPlaying.Video.IsHD, True)</visible>
+    </control>
+	
+    <control>
+      <description>SD Logo</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>98</posX>
+      <posY>945</posY>
+      <width>98</width>
+      <height>49</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <texture>Logos\sd.png</texture>
+      <visible>!string.equals(#Youtube.fm.NowPlaying.Video.IsHD, True)</visible>
+    </control>
+	
+    <control>
+      <description>IsDownloaded Logo</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>186</posX>
+      <posY>945</posY>
+      <width>98</width>
+      <height>49</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <texture>Logos\downloaded.png</texture>
+      <visible>string.equals(#Youtube.fm.NowPlaying.Video.IsDownloaded, True)</visible>
+    </control>
+	
+    <control>
+      <description>IsDownloaded Logo</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>186</posX>
+      <posY>945</posY>
+      <width>98</width>
+      <height>49</height>
+      <keepaspectratio>yes</keepaspectratio>
+      <texture>Logos\downloaded_no.png</texture>
+      <visible>!string.equals(#Youtube.fm.NowPlaying.Video.IsDownloaded, True)</visible>
+    </control>
+	
+    <control>
+      <description>Downloading Notification Logo</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>274</posX>
+      <posY>946</posY>
+      <width>47</width>
+      <height>47</height>
+      <texture>isupdate.png</texture>
+      <visible>string.equals(#Youtube.fm.IsDownloading, true )</visible>
+    </control> -->
+	
+  </controls>
+</window>

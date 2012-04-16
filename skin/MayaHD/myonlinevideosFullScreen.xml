@@ -224,6 +224,7 @@
       <colordiffuse>White</colordiffuse>
       <visible>no</visible>
     </control>
+
     <control>
       <description>Trigger button</description>
       <posY>821</posY>
@@ -260,6 +261,7 @@
       <texture>osd_collapse_icon.png</texture>
       <visible>!Control.HasFocus(990) + window.isosdvisible</visible>
     </control>
+	
 	
   </controls>
 </window>
