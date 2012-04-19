@@ -46,13 +46,33 @@
       <posX>281</posX>
       <posY>253</posY>
       <width>394</width>
+
+      <control>
+        <description>TV On/Off button</description>
+        <type>togglebutton</type>
+        <id>8</id>
+        <label>707</label>
+        <AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
+        <AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
+        <textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
+        <onup>12</onup>
+        <ondown>2</ondown>
+        <onright>99</onright>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
+        <textalign>right</textalign>
+      </control>
+	  
       <control>
         <description>TVGuide</description>
         <type>button</type>
         <id>2</id>
         <label>600</label>
         <hyperlink>600</hyperlink>
-        <onup>13</onup>
+        <onup>8</onup>
         <ondown>11</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
@@ -122,7 +142,7 @@
         <id>7</id>
         <label>602</label>
         <onup>14</onup>
-        <ondown>8</ondown>
+        <ondown>9</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
         <width>394</width>
@@ -132,30 +152,13 @@
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
-      <control>
-        <description>TV On/Off button</description>
-        <type>togglebutton</type>
-        <id>8</id>
-        <label>707</label>
-        <AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
-        <AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
-        <textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
-        <textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
-        <onup>7</onup>
-        <ondown>9</ondown>
-        <onright>99</onright>
-        <width>394</width>
-        <textXOff>32</textXOff>
-        <height>64</height>
-        <textYOff>14</textYOff>
-        <textalign>right</textalign>
-      </control>
+	  
       <control>
         <description>Active Streams</description>
         <type>button</type>
         <id>9</id>
         <label>692</label>
-        <onup>8</onup>
+        <onup>7</onup>
         <ondown>10</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
@@ -166,6 +169,7 @@
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
+	  
       <control>
         <description>Scheduler</description>
         <type>button</type>
@@ -183,6 +187,7 @@
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
+	  
       <control>
         <description>Search</description>
         <type>button</type>
@@ -207,7 +212,7 @@
         <id>13</id>
         <label>1441</label>
         <onup>12</onup>
-        <ondown>2</ondown>
+        <ondown>8</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
         <width>394</width>
@@ -216,9 +221,8 @@
         <textYOff>14</textYOff>
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-      </control>
-		
-    </control>
+      </control>		
+   </control>
 	
     <control>
       <description>TV background</description>

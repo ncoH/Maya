@@ -342,7 +342,7 @@
 					<textXOff>-2000</textXOff>
 				</control>
 				
-<!-- 				<control>
+				<control>
 					<description>Sleepcontrol Button</description>
 					<type>button</type>
 					<id>5</id>
@@ -361,7 +361,7 @@
 					<textXOff>-2000</textXOff>
 					<animation effect="zoom" start="100,100" end="125,125" center="0,0" time="400" acceleration="-0.9" reversible="false">focus</animation>
 					<animation effect="zoom" start="125,125" end="100,100" center="0,0" time="400" acceleration="-0.9" reversible="false">unfocus</animation>
-				</control> -->
+				</control>
 
 			</control>
 		</control>

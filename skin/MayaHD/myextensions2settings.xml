@@ -51,6 +51,20 @@
       <animation effect="fade" time="100">WindowClose</animation>
       <visible>!Control.IsVisible(51)</visible>
     </control>
+
+    <control>
+      <id>1</id>
+      <description>listcontrol background info</description>
+      <type>image</type>
+      <posX>736</posX>
+      <posY>953</posY>
+      <width>1019</width>
+      <height>71</height>
+      <texture>listcontrol_bg_info.png</texture>
+      <animation effect="Fade" time="100">WindowOpen</animation>
+      <animation effect="Fade" time="100">WindowClose</animation>
+      <visible>!Control.IsVisible(51)</visible>	  
+    </control>
 	
     <control>
       <description>group element</description>

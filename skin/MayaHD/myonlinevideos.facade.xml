@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <controls>
+  
     <control>
       <description>group element</description>
       <type>group</type>
@@ -10,6 +11,7 @@
         <description>composite control consisting of a list control and a thumbnail panel</description>
         <type>facadeview</type>
         <id>50</id>
+		
         <control>
           <description>listcontrol</description>
           <type>listcontrol</type>
@@ -75,5 +77,6 @@
         </control>
       </control>
     </control>
+	
   </controls>
 </window>

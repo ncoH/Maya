@@ -1,18 +1,5 @@
 <window>
   <controls>
-
-	<control>
-		<id>1</id>
-		<type>image</type>
-		<posX>0</posX>
-		<posY>440</posY>
-		<width>64</width>
-		<height>199</height>
-		<texture>hiddenmenu_tab.png</texture>
-		<visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50) + !string.contains(#Avalon.HiddenMenu, false)</visible>
-		<animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="250" delay="400">WindowOpen</animation>
-		<animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="250" delay="100">WindowClose</animation>
-	</control>
 	
 	<control>
 		<type>actiongroup</type>
@@ -86,8 +73,8 @@
 			<posX>128</posX>
 			<posY>114</posY>
 			<label>924</label>
-			<font>fontB12</font>
-			<textcolor>ffffff</textcolor>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
@@ -101,8 +88,8 @@
 			<posX>128</posX>
 			<posY>242</posY>
 			<label>19149</label>
-			<font>fontB12</font>
-			<textcolor>ffffff</textcolor>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
  			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
@@ -116,8 +103,8 @@
 			<posX>128</posX>
 			<posY>624</posY>
 			<label>496</label>
-			<font>fontB12</font>
-			<textcolor>ffffff</textcolor>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
  			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
     		<animation effect="fade" time="0">WindowClose</animation>
     		<animation effect="slide" start="-150,0" time="100">visible</animation>
@@ -144,7 +131,7 @@
         			<label>#OnlineVideos.Translation.LayoutList.Label</label>          
         			<onleft>50</onleft>
         			<onright>50</onright>
-        			<onup>13</onup>
+        			<onup>14</onup>
                     <ondown>8</ondown>
         			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
         			<textureNoFocus>-</textureNoFocus>
@@ -286,7 +273,7 @@
         			<onleft>50</onleft>
         			<onright>50</onright>
                     <onup>7</onup>
-                    <ondown>11</ondown>
+                    <ondown>12</ondown>
         			<label>#OnlineVideos.Translation.Search.Label</label>
         			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
         			<textureNoFocus>-</textureNoFocus>
@@ -295,31 +282,14 @@
         			<textXOff>58</textXOff>
         			<textYOff>14</textYOff>
                 </control>
-                
-                <control>
-        			<type>button</type>
-        			<description>Favorites</description>
-        			<id>11</id>
-        			<onleft>50</onleft>
-        			<onright>50</onright>
-                    <onup>10</onup>
-                    <ondown>12</ondown>
-        			<label>#OnlineVideos.Translation.Favourites.Label</label>
-        			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-        			<textureNoFocus>-</textureNoFocus>
-        			<width>497</width>
-        			<height>64</height>
-        			<textXOff>58</textXOff>
-        			<textYOff>14</textYOff>
-                </control>
-                
+                          
                 <control>
                     <type>button</type>
                     <description>Do Age Check</description>
                     <id>12</id>
                     <onleft>50</onleft>
                     <onright>50</onright>
-                    <onup>11</onup>
+                    <onup>10</onup>
                     <ondown>13</ondown>
                     <label>#OnlineVideos.Translation.EnterPin.Label</label>
         			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
@@ -337,7 +307,7 @@
                     <onleft>50</onleft>
                     <onright>50</onright>
                     <onup>12</onup>
-                    <ondown>2</ondown>
+                    <ondown>14</ondown>
                     <label>#OnlineVideos.Translation.ManageSites.Label</label>
         			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
         			<textureNoFocus>-</textureNoFocus>
@@ -347,7 +317,26 @@
         			<textYOff>14</textYOff>
                     <hyperlink>4757</hyperlink>
                 </control>
-        </control>      
+				
+				<control>
+					<description>MPEICONFIGURE:269bd257_7ce5_450a_b786_1c2834c81849</description>
+					<type>button</type>
+					<id>14</id>
+                    <onleft>50</onleft>
+                    <onright>50</onright>
+					<onup>13</onup>
+					<ondown>2</ondown>
+					<label>5</label>
+        			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+        			<textureNoFocus>-</textureNoFocus>
+        			<width>497</width>
+        			<height>64</height>
+        			<textXOff>58</textXOff>
+        			<textYOff>14</textYOff>
+					<visible>string.equals(#mpei.269bd257_7ce5_450a_b786_1c2834c81849.isinstalled, true)</visible>
+				</control>
+		</control>      
 </control>
+
 </controls>
 </window>

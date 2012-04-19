@@ -21,7 +21,7 @@
 	  <posX>185</posX>
 	  <posY>100</posY>
 	  <font>font12</font>
-      <textcolor>ff6aa5cb</textcolor>
+      <textcolor>ffffffff</textcolor>
       <label>#SkinTranslation.Translations.fanart.scraping.Label  #fanarthandler.scraper.percent.completed%</label>
       <visible>control.isvisible(91919280)+plugin.isenabled(Fanart Handler)+string.equals(#MayaHD.show.scraping,yes)</visible>
       <animation effect="Fade" time="250">VisibleChange</animation>

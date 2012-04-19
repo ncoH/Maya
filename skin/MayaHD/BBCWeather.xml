@@ -66,7 +66,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <description>Plugin buttons</description>
       <layout>StackLayout</layout>
-      <posX>98</posX>
+      <posX>60</posX>
       <posY>222</posY>
 	  
       <control>
@@ -116,11 +116,15 @@
       <description>location label</description>
       <type>label</type>
       <id>51</id>
-      <posX>244</posX>
-      <posY>98</posY>
+	  <width>500</width>
+	  <posX>185</posX>
+	  <posY>100</posY>
+	  <font>font12</font>
+      <textcolor>ffffffff</textcolor>
       <label>-</label>
-      <font>font16</font>
-      <textcolor>White</textcolor>
+      <animation effect="Fade" time="250">VisibleChange</animation>
+      <animation effect="Fade" time="250">WindowOpen</animation>
+      <animation effect="Fade" time="250">WindowClose</animation>	  
     </control>
 	
     <!-- Current weather -->
@@ -132,7 +136,7 @@
         <description>Current summary static label</description>
         <type>label</type>
         <id>100</id>
-        <posX>42</posX>
+        <posX>91</posX>
         <posY>534</posY>
         <label>Summary:</label>
         <font>font12</font>
@@ -142,17 +146,18 @@
         <description>Current summary value label</description>
         <type>label</type>
         <id>101</id>
-        <posX>253</posX>
+        <posX>265</posX>
         <posY>534</posY>
         <label>-</label>
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
+	  
       <control>
         <description>Current temp static label</description>
         <type>label</type>
         <id>102</id>
-        <posX>42</posX>
+        <posX>91</posX>
         <posY>576</posY>
         <label>Temp:</label>
         <font>font12</font>
@@ -162,37 +167,39 @@
         <description>Current temp value label</description>
         <type>label</type>
         <id>103</id>
-        <posX>253</posX>
+        <posX>265</posX>
         <posY>576</posY>
         <label>-</label>
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
+	  
       <control>
         <description>Current wind static label</description>
         <type>label</type>
         <id>104</id>
-        <posX>42</posX>
+        <posX>91</posX>
         <posY>618</posY>
         <label>Wind:</label>
         <font>font12</font>
         <textcolor>White</textcolor>
-      </control>
+      </control>	  
       <control>
         <description>Current wind value label</description>
         <type>label</type>
         <id>105</id>
-        <posX>253</posX>
+        <posX>265</posX>
         <posY>618</posY>
         <label>-</label>
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
+	  
       <control>
         <description>Current humidity static label</description>
         <type>label</type>
         <id>106</id>
-        <posX>42</posX>
+        <posX>91</posX>
         <posY>660</posY>
         <label>Humidity:</label>
         <font>font12</font>
@@ -202,17 +209,18 @@
         <description>Current humidity value label</description>
         <type>label</type>
         <id>107</id>
-        <posX>253</posX>
+        <posX>265</posX>
         <posY>660</posY>
         <label>-</label>
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
+	  
       <control>
         <description>Current pressure static label</description>
         <type>label</type>
         <id>108</id>
-        <posX>42</posX>
+        <posX>91</posX>
         <posY>703</posY>
         <label>Pressure:</label>
         <font>font12</font>
@@ -222,17 +230,18 @@
         <description>Current pressure value label</description>
         <type>label</type>
         <id>109</id>
-        <posX>253</posX>
+        <posX>265</posX>
         <posY>703</posY>
         <label>-</label>
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
+	  
       <control>
         <description>Current visibility static label</description>
         <type>label</type>
         <id>110</id>
-        <posX>42</posX>
+        <posX>91</posX>
         <posY>745</posY>
         <label>Visibility:</label>
         <font>font12</font>
@@ -242,17 +251,18 @@
         <description>Current visibility value label</description>
         <type>label</type>
         <id>111</id>
-        <posX>253</posX>
+        <posX>265</posX>
         <posY>745</posY>
         <label>-</label>
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
+	  
       <control>
         <description>Current obs time static label</description>
         <type>label</type>
         <id>112</id>
-        <posX>42</posX>
+        <posX>91</posX>
         <posY>829</posY>
         <label>Observed:</label>
         <font>font12</font>
@@ -262,17 +272,18 @@
         <description>Current obs time  value label</description>
         <type>label</type>
         <id>113</id>
-        <posX>253</posX>
+        <posX>265</posX>
         <posY>829</posY>
         <label>-</label>
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
+	  
       <control>
         <description>Current obs station static label</description>
         <type>label</type>
         <id>114</id>
-        <posX>42</posX>
+        <posX>91</posX>
         <posY>871</posY>
         <label>Station:</label>
         <font>font12</font>
@@ -282,12 +293,13 @@
         <description>Current obs station  value label</description>
         <type>label</type>
         <id>115</id>
-        <posX>253</posX>
+        <posX>265</posX>
         <posY>871</posY>
         <label>-</label>
         <font>font12</font>
         <textcolor>White</textcolor>
       </control>
+	  
     </control>
 	
     <!-- 5 day forecast start -->
@@ -1997,7 +2009,7 @@
         <label>-</label>
         <font>font13</font>
         <textcolor>White</textcolor>
-        <seperator>==============================</seperator>
+        <seperator>---------------------------------------------------------------------</seperator>
       </control>
     </control>
 	
