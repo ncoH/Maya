@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- German (DE) -->
+<!-- Note: English is the fallback for any strings not found in other languages -->
+<!-- Last Updated: 21th April 2012 -->
+<strings>
+ 
+ <!-- EPISODES-->
+  <string Field="EpisodeDetails">Episoden Details</string>
+  <string Field="DisplayNextEpisodes">Display Next Episodes For Last Watched Episode</string>
+  <string Field="DisplayLatestEpisodes">Display zuletzt hinzugefügten Episoden</string>
+  <string Field="ShowUnwatchedEpisodes">Zeige alle ungesehenden Episoden</string>
+  <string Field="ShowAllEpisodes">Zeige alle Episoden</string>
+  
+ <!-- MOVIES-->
+  <string Field="MovieDetails">Film Details</string>
+  <string Field="ShowUnwatchedMovies">Zeige alle ungesehenden Filme</string>
+  <string Field="ShowAllMovies">Zeige alle Filme</string>
+  
+ <!-- RECORDINGS-->
+  <string Field="ShowUnwatchedRecordings">Zeige alle ungesehenden Aufnahmen</string>
+  <string Field="ShowAllRecordings">Zeige alle Aufnahmen</string>  
+
+ <!-- MUSIC-->
+  <string Field="ArtistDetails">Künstler Details</string>  
+  <string Field="AlbumDetails">Album Details</string>    
+  
+  <!-- ALL-->
+  <string Field="Play">Abspielen</string>  
+  
+</strings>

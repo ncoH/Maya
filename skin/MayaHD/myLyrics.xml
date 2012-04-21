@@ -191,11 +191,32 @@
       <onleft>20</onleft>
       <onright>5106</onright>
       <onup>20</onup>
-      <ondown>20</ondown>
+      <ondown>5106</ondown>
       <visible />
       <posX>493</posX>
       <posY>80</posY>
-      <width>882</width>
+      <width>885</width>
+      <height>590</height>
+      <spinPosX>1222</spinPosX>
+      <spinPosY>625</spinPosY>
+      <spinHeight>39</spinHeight>
+      <spinWidth>39</spinWidth>
+      <seperator>----------------------------------------------------------------------------------------------</seperator>
+      <text>6</text>
+    </control>
+
+    <control>
+      <id>21</id>
+      <description>The Lyric area</description>
+      <type>textbox</type>
+      <onleft>21</onleft>
+      <onright>5106</onright>
+      <onup>21</onup>
+      <ondown>5106</ondown>
+      <visible />
+      <posX>493</posX>
+      <posY>80</posY>
+      <width>885</width>
       <height>590</height>
       <spinPosX>1222</spinPosX>
       <spinPosY>625</spinPosY>
@@ -209,15 +230,33 @@
       <id>1020</id>
       <description>The Lyric area</description>
       <type>textboxscrollup</type>
-      <onleft>20</onleft>
+      <onleft>5106</onleft>
       <onright>5106</onright>
-      <onup>20</onup>
-      <ondown>20</ondown>
+      <onup>1020</onup>
+      <ondown>5106</ondown>
       <visible>no</visible>
       <posX>493</posX>
       <posY>80</posY>
       <width>882</width>
-      <height>590</height>
+      <height>570</height>
+      <image>icon-folder.png</image>
+      <seperator>----------------------------------------------------------------------------------------------</seperator>
+      <text>6</text>
+    </control>
+
+    <control>
+      <id>1021</id>
+      <description>The Lyric area</description>
+      <type>textboxscrollup</type>
+      <onleft>5106</onleft>
+      <onright>5106</onright>
+      <onup>1021</onup>
+      <ondown>5106</ondown>
+      <visible>no</visible>
+      <posX>493</posX>
+      <posY>80</posY>
+      <width>882</width>
+      <height>570</height>
       <image>icon-folder.png</image>
       <seperator>----------------------------------------------------------------------------------------------</seperator>
       <text>6</text>

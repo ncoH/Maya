@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8"-->
 <window>
   <id>7111992</id>
   <defaultcontrol>50</defaultcontrol>
@@ -7,6 +6,7 @@
   <define>#header.label:ShowTimes</define>
   <define>#header.background:hover_showtimes.png</define>
   <controls>
+  
     <control>
       <description>Background</description>
       <type>image</type>
@@ -18,6 +18,7 @@
       <texture>background.png</texture>
       <visible>!string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Alternate BG</description>
       <type>image</type>
@@ -25,8 +26,9 @@
       <width>1920</width>
       <height>1080</height>
       <texture>background_thumbs.png</texture>
-      <visible>[facadeview.smallicons | facadeview.largeicons]+!control.isvisible(24)</visible>
+      <visible>[facadeview.smallicons | facadeview.largeicons] + !control.isvisible(24)</visible>
     </control>
+	
     <control>
       <description>Alternate BG</description>
       <type>image</type>
@@ -34,8 +36,9 @@
       <width>1920</width>
       <height>1080</height>
       <texture>background_filmstrip.png</texture>
-      <visible>[facadeview.filmstrip | facadeview.coverflow]+!control.isvisible(24)</visible>
+      <visible>[facadeview.filmstrip | facadeview.coverflow] + !control.isvisible(24)</visible>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -47,6 +50,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Backdrop</description>
       <id>0</id>
@@ -56,8 +60,9 @@
       <width>1920</width>
       <height>1080</height>
       <texture>#st_backdrop</texture>
-      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)+control.isvisible(24)</visible>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes) + control.isvisible(24)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -67,8 +72,9 @@
       <width>1920</width>
       <height>1080</height>
       <texture>basichome_fanart_overlay.png</texture>
-      <visible>[facadeview.list]+!control.isvisible(24)+string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
+      <visible>[facadeview.list]+!control.isvisible(24) + string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -78,8 +84,9 @@
       <width>1920</width>
       <height>1080</height>
       <texture>fanart_overlay_thumbs.png</texture>
-      <visible>[!facadeview.list]+!control.isvisible(24)+string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
+      <visible>[!facadeview.list]+!control.isvisible(24) + string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -89,8 +96,9 @@
       <width>1920</width>
       <height>1080</height>
       <texture>fanart_overlay.png</texture>
-      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)+control.isvisible(24)</visible>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes) + control.isvisible(24)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -103,8 +111,9 @@
       <label>#header.label</label>
       <textcolor>6aa5cb</textcolor>
       <font>Segoe Light40</font>
-      <visible>facadeview.list|Control.IsVisible(24)</visible>
+      <visible>facadeview.list + Control.IsVisible(24)</visible>
     </control>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -117,10 +126,12 @@
       <label>#header.label</label>
       <textcolor>6aa5cb</textcolor>
       <font>Segoe Light40</font>
-      <visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons]+!Control.IsVisible(24)</visible>
+      <visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons] + !Control.IsVisible(24)</visible>
       <align>center</align>
     </control>
+	
     <import>common.time.xml</import>
+
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -134,6 +145,7 @@
       <animation effect="fade" time="100">WindowClose</animation>
       <visible>facadeview.list+!Control.IsVisible(24)</visible>
     </control>
+	
     <control>
       <description>listcontrol background info</description>
       <type>image</type>
@@ -147,6 +159,7 @@
       <animation effect="fade" time="100">WindowClose</animation>
       <visible>facadeview.list+!Control.IsVisible(24)</visible>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -161,6 +174,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -174,6 +188,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+	
     <control>
       <description>Selected item Label</description>
       <type>fadelabel</type>
@@ -189,6 +204,7 @@
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
@@ -203,111 +219,118 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
-    <control>
-      <type>actiongroup</type>
-      <description>action menu</description>
-      <defaultcontrol>2</defaultcontrol>
-      <onexit>50</onexit>
-      <buttonX>0</buttonX>
-      <buttonY>0</buttonY>
-      <buttonwidth>0</buttonwidth>
-      <buttonheight>0</buttonheight>
-      <width>1920</width>
-      <height>1080</height>
-      <dimColor>00ffffff</dimColor>
-      <control>
-        <type>image</type>
-        <id>0</id>
-        <width>1920</width>
-        <height>1080</height>
-        <texture>semi_trans_back_general_menu.png</texture>
-        <colordiffuse>90ffffff</colordiffuse>
-        <animation effect="fade" time="200">windowopen</animation>
-        <animation effect="fade" time="400">windowclose</animation>
-      </control>
-      <control>
-        <type>group</type>
-        <animation effect="fade" time="250">Visible</animation>
-        <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">Visible</animation>
-        <animation effect="fade" time="200">Hidden</animation>
-        <animation effect="zoom" start="100,100" end="200,200" center="683,384" time="200">Hidden</animation>
-        <control>
-          <id>1</id>
-          <type>image</type>
-          <posX>719</posX>
-          <posY>90</posY>
-          <width>480</width>
-          <height>900</height>
-          <texture>menu_bg.png</texture>
-          <visible>!Control.HasFocus(50)</visible>
-        </control>
-        <control>
-          <description>Heading text label</description>
-          <type>label</type>
-          <id>1</id>
-          <posX>796</posX>
-          <posY>154</posY>
-          <label>924</label>
-          <font>Segoe Light18</font>
-          <textcolor>85cffe</textcolor>
-        </control>
-        <control>
-          <description>button group</description>
-          <type>group</type>
-          <posX>763</posX>
-          <posY>246</posY>
-          <layout>StackLayout</layout>
+	
+	<control>
+		<type>actiongroup</type>
+		<description>action menu</description>
+		<defaultcontrol>2</defaultcontrol>
+		<onexit>50</onexit>
+		<dimColor>00ffffff</dimColor>
+		<buttonX>0</buttonX>
+		<buttonY>0</buttonY>
+		<buttonwidth>521</buttonwidth>
+		<buttonheight>1080</buttonheight>
+		
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1920</width>
+			<height>1080</height>
+			<texture>semi_trans_back_hidden_menu.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
+			<animation effect="fade" time="450">visible</animation>
+			<animation effect="fade" time="400">hidden</animation>
+		</control>
+	
+	<control>
+		<type>group</type>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="0">WindowClose</animation>
+		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
+		<animation effect="fade" time="250">visible</animation>
+		<animation effect="fade" time="0">hidden</animation>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posY>15</posY>
+			<posX>0</posX>
+			<width>631</width>
+			<height>1044</height>
+			<texture>menu_bg.png</texture>
+			<visible>!Control.HasFocus(50)</visible>
+		</control>
+	
+		<control>
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>1</id>
+			<posX>136</posX>
+			<posY>128</posY>
+			<label>924</label>
+			<font>Segoe Light22</font>
+			<textcolor>ff6aa5cb</textcolor>
+		</control>	
+		  
           <control>
             <type>button</type>
             <description>Change View</description>
             <id>2</id>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
             <label>417</label>
             <onup>4</onup>
             <ondown>3</ondown>
             <onleft>50</onleft>
             <onright>50</onright>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<posX>69</posX>
+			<posY>215</posY>
+			<width>497</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>				
           </control>
+		  
           <control>
             <type>button</type>
             <description>Show Theaters</description>
             <id>3</id>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
             <label>Theaters</label>
             <onup>2</onup>
             <ondown>4</ondown>
             <onleft>50</onleft>
             <onright>50</onright>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<posX>69</posX>
+			<posY>285</posY>
+			<width>497</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>				
           </control>
+		  
           <control>
             <type>button</type>
             <description>Show Box Office</description>
             <id>4</id>
-            <textureFocus>hiddenmenu_item_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-            <width>392</width>
-            <height>68</height>
-            <textXOff>35</textXOff>
-            <textYOff>16</textYOff>
             <label>Box Office</label>
             <onup>3</onup>
             <ondown>2</ondown>
             <onleft>50</onleft>
             <onright>50</onright>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<posX>69</posX>
+			<posY>355</posY>
+			<width>497</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>				
           </control>
-        </control>
+		  
       </control>
     </control>
+	
     <control>
       <id>1</id>
       <type>image</type>
@@ -318,6 +341,7 @@
       <texture>defaultVideoBig.png</texture>
       <visible>Control.IsVisible(24)</visible>
     </control>
+	
     <control>
       <description>Cover Art</description>
       <type>image</type>
@@ -326,9 +350,9 @@
       <posY>292</posY>
       <width>373</width>
       <height>534</height>
-      <texture>
-      </texture>
+      <texture>-</texture>
     </control>
+	
     <control>
       <type>image</type>
       <id>23</id>
@@ -339,6 +363,7 @@
       <texture>blackborders_video.png</texture>
       <visible>Control.IsVisible(24)</visible>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>Next Refresh</description>
@@ -353,6 +378,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <!-- DUMMY -->
     <control>
       <type>fadelabel</type>
@@ -361,6 +387,7 @@
       <posX>-2000</posX>
       <posY>0</posY>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>TheaterList control</description>
@@ -370,6 +397,7 @@
       <label>TheaterList</label>
       <visible>no</visible>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>Theater</description>
@@ -386,6 +414,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <type>fadelabel</type>
       <description>Showtimes</description>
@@ -401,6 +430,8 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
+	
     <!--            :: DETAILS VIEW ::            -->
     <control>
       <description>Rating</description>
@@ -416,6 +447,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Runtime</description>
       <type>label</type>
@@ -430,6 +462,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Genre</description>
       <type>fadelabel</type>
@@ -444,6 +477,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>IMDB Rating Value</description>
       <type>imagelist</type>
@@ -466,6 +500,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Director value</description>
       <type>textbox</type>
@@ -479,6 +514,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>actors</description>
       <type>textbox</type>
@@ -493,6 +529,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Summary</description>
       <type>textboxscrollup</type>
@@ -507,7 +544,9 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <import>common.facade.video.xml</import>
+	
     <!--            :: LIST VIEW ::            -->
     <control>
       <id>0</id>
@@ -519,6 +558,7 @@
       <texture>#st_poster</texture>
       <visible>[facadeview.list]+control.hasfocus(50)+!control.isvisible(24)+!control.isvisible(47)</visible>
     </control>
+	
     <control>
       <type>image</type>
       <id>0</id>
@@ -529,6 +569,7 @@
       <texture>blackborders_video.png</texture>
       <visible>[facadeview.list]+control.hasfocus(50)+!control.isvisible(24)+!control.isvisible(47)</visible>
     </control>
+	
     <!--            :: THUMB VIEW ::            -->
     <control>
       <id>0</id>
@@ -540,6 +581,7 @@
       <texture>#st_poster</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons]+control.hasfocus(50)+!control.isvisible(24)+!control.isvisible(47)</visible>
     </control>
+	
     <control>
       <type>image</type>
       <id>0</id>
@@ -550,6 +592,8 @@
       <texture>blackborders_video.png</texture>
       <visible>[facadeview.smallicons|facadeview.largeicons]+control.hasfocus(50)+!control.isvisible(24)+!control.isvisible(47)</visible>
     </control>
+	
+	
     <!--            :: DETAILS VIEW BUTTONS ::            -->
     <control>
       <description>Play Button</description>
@@ -565,6 +609,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Play Trailer</description>
       <type>button</type>
@@ -579,6 +624,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Previous</description>
       <type>button</type>
@@ -593,6 +639,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Next</description>
       <type>button</type>
@@ -607,6 +654,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <id>1</id>
       <type>image</type>
@@ -615,6 +663,7 @@
       <texture>hiddenmenu_tab.png</texture>
       <visible>[facadeview.list|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
     </control>
+	
     <control>
       <id>1</id>
       <type>image</type>
@@ -623,6 +672,8 @@
       <texture>hiddenmenu_tab_up.png</texture>
       <visible>facadeview.filmstrip+Control.HasFocus(50)</visible>
     </control>
+	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

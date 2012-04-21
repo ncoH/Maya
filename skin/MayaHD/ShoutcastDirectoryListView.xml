@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>2345</id>
   <defaultcontrol>50</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <controls>
+  
     <import>common.window.music.xml</import>
     <import>common.time.xml</import>
+	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
@@ -21,6 +22,7 @@
       <font>Segoe Light40</font>
       <valign>middle</valign>
     </control>
+	
     <control>
       <description>listcontrol background</description>
       <type>image</type>
@@ -33,6 +35,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <description>listcontrol background info</description>
       <type>image</type>
@@ -45,6 +48,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <type>actiongroup</type>
       <description>action menu</description>
@@ -195,6 +199,7 @@
         </control>
       </control>
     </control>
+	
     <control>
       <description>genre label</description>
       <type>label</type>
@@ -211,6 +216,7 @@
       <posY>541</posY>
       <label>#meta</label>
     </control>
+	
     <control>
       <description>listeners label</description>
       <type>label</type>
@@ -219,6 +225,7 @@
       <posY>590</posY>
       <label>#listeners</label>
     </control>
+	
     <control>
       <description>track label</description>
       <type>textboxscrollup</type>
@@ -229,6 +236,7 @@
       <height>112</height>
       <label>#track</label>
     </control>
+	
     <control>
       <description>listcontrol</description>
       <type>listcontrol</type>
@@ -241,6 +249,7 @@
       <textXOff>30</textXOff>
       <dimColor>ffffffff</dimColor>
     </control>
+	
     <control>
       <id>1</id>
       <type>image</type>
@@ -249,6 +258,8 @@
       <texture>hiddenmenu_tab.png</texture>
       <visible>Control.HasFocus(50)</visible>
     </control>
+	
     <import>common.overlay.xml</import>
+	
   </controls>
 </window>

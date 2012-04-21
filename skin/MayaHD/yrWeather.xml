@@ -1,0 +1,1560 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+	<id>3231</id>
+	<defaultcontrol>2</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<define>#header.label:Weather.yr.no</define> 	
+	<define>#header.hover:hover_my weather.png</define>  
+	<controls>
+  
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background_thumbs.png</texture>
+	  <shouldCache>true</shouldCache>	  
+    </control>
+
+	<control>
+		<description>Weather Background Fanart</description>
+		<type>image</type>
+		<id>1</id>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>weather\backgrounds\#WorldWeather.TodayIconNumber.jpg</texture>
+		<shouldCache>true</shouldCache>
+	</control>
+
+    <control>
+		<description>Fanart Overlay</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>fanart_overlay_filmstrip.png</texture>
+		<visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
+	    <shouldCache>true</shouldCache>		
+    </control>
+	
+    <!--  **********  Plugin Header  **********  -->
+
+     <control>
+		<id>6</id>
+		<type>label</type>
+		<description>Header label</description>
+		<posX>185</posX>
+		<posY>28</posY>
+		<width>500</width>
+        <label>#header.label</label>
+		<font>Segoe Light22</font>
+		<textcolor>ff6aa5cb</textcolor>
+		<animation effect="Fade" time="200">WindowOpen</animation>
+		<animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+
+	
+    <control>
+      <description>yr.no Logo</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1680</posX>
+      <posY>115</posY>
+      <width>154</width>
+      <height>49</height>
+      <texture>yrweather_logo.png</texture>
+    </control>
+
+    <import>common.time.xml</import>
+	
+    <!--  **********  Buttons Forecast / Location **********  -->
+	
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <layout>StackLayout</layout>
+      <posX>64</posX>
+      <posY>140</posY>
+	  
+      <control>
+        <description>Forecast Selection</description>
+        <type>button</type>
+        <id>2</id>
+        <label>3014</label>
+        <onup>5</onup>
+        <ondown>3</ondown>
+      </control>
+	  
+      <control>
+        <description>Choose Location Button</description>
+        <type>button</type>
+        <id>3</id>
+        <label>3014</label>
+        <onup>2</onup>
+        <ondown>4</ondown>
+      </control>
+    </control>
+	
+    <!--  **********  Buttons Next / Previous   **********  -->
+	  
+      <control>
+        <description>Button left</description>
+        <type>button</type>
+        <id>4</id>
+        <posX>70</posX>
+        <posY>238</posY> 		
+        <textureFocus>arrow_round_left_focus_tv.png</textureFocus>
+        <textureNoFocus>arrow_round_left_nofocus_tv.png</textureNoFocus>
+        <width>63</width>
+        <height>59</height>
+        <onup>3</onup>
+        <ondown>2</ondown>
+        <onright>5</onright>
+        <onleft>5</onleft>
+      </control>
+	  
+      <control>
+        <description>Button right</description>
+        <type>button</type>
+        <id>5</id>
+        <posX>245</posX>
+        <posY>238</posY> 		
+        <textureFocus>arrow_round_right_focus_tv.png</textureFocus>
+        <textureNoFocus>arrow_round_right_nofocus_tv.png</textureNoFocus>
+        <width>63</width>
+        <height>59</height>
+        <onup>3</onup>
+        <ondown>2</ondown>
+        <onright>4</onright>
+        <onleft>4</onleft>
+      </control>
+	
+    <!--  ********************    Forecast Day By Day (8 Days Forecast)    *******************  -->
+
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>100</id>
+		<posX>1832</posX>
+		<posY>956</posY>
+		<width>697</width>
+		<label>???</label>
+		<font>Segoe Light18</font>
+		<align>right</align>
+		<visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>
+
+	
+    <!--  **********  Night Group  **********  -->
+	
+    <control>
+      <description>Divider</description>
+      <type>image</type>
+      <id>137</id>
+      <posX>130</posX>
+      <posY>376</posY>
+      <height>548</height>
+      <width>0</width>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <texture>slider_vertical.png</texture>
+      <colordiffuse>60ffffff</colordiffuse>
+    </control>
+	
+    <control>
+      <description>Night Label</description>
+      <type>label</type>
+      <id>108</id>
+	  <posX>195</posX>
+	  <posY>385</posY>
+	  <align>center</align>
+	  <textalign>center</textalign>
+	  <textYOff>0</textYOff>
+	  <height>52</height>
+	  <width>289</width>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+	  <label>???</label>
+	  <font>Segoe Light20</font>
+      <textcolor>White</textcolor>
+	</control>
+	  
+    <control>
+      <description>Night Temperature Label</description>
+      <type>label</type>
+      <id>101</id>
+      <posX>190</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+	  <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+	</control>
+	  
+    <control>
+      <description>Night Temperature Value</description>
+      <type>label</type>
+      <id>102</id>
+      <posX>430</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>White</textcolor>	
+    </control>
+	
+    <control>
+      <description>Night Preciptation Label</description>
+      <type>label</type>
+      <id>105</id>
+      <posX>190</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>Night Preciptation Value</description>
+      <type>label</type>
+      <id>106</id>
+      <posX>430</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Night Wind Label</description>
+      <type>label</type>
+      <id>103</id>
+      <posX>190</posX>
+      <posY>770</posY>
+	  <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+	  <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+	</control>
+	  
+    <control>
+      <description>Night Wind Value</description>
+      <type>label</type>
+      <id>104</id>
+      <posX>190</posX>
+      <posY>815</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Night Icon Image</description>
+      <type>image</type>
+      <id>107</id>
+	  <posX>235</posX>
+	  <posY>455</posY>
+	  <height>180</height>
+	  <width>180</width>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+    </control>
+	
+    <control>
+      <description>Night Condition Value</description>
+      <type>label</type>
+      <id>109</id>
+      <posX>195</posX>
+      <posY>900</posY>
+	  <align>center</align>
+	  <alignY>top</alignY>
+	  <width>300</width>	  
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>	
+    </control>
+	
+	<control>
+      <description>horizontal line</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>180</posX>
+      <posY>870</posY>
+      <width>315</width>
+      <height>1</height>
+      <texture>weather_horizontal_bar.png</texture>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+	</control>
+	
+    <!--  **********  AM Group  **********  -->
+	
+    <control>
+      <description>Divider</description>
+      <type>image</type>
+      <id>138</id>
+      <posX>540</posX>
+      <posY>376</posY>
+      <height>548</height>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <width>0</width>
+      <texture>slider_vertical.png</texture>
+      <colordiffuse>60ffffff</colordiffuse>
+    </control>
+	
+    <control>
+      <description>AM Label</description>
+      <type>label</type>
+      <id>117</id>
+	  <posX>600</posX>
+	  <posY>385</posY>
+	  <align>center</align>
+	  <textalign>center</textalign>
+	  <textYOff>0</textYOff>
+	  <height>52</height>
+	  <width>300</width>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light20</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>AM Temperature Label</description>
+      <type>label</type>
+      <id>110</id>
+      <posX>600</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>AM Temperature Value</description>
+      <type>label</type>
+      <id>111</id>
+      <posX>840</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font> 
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>AM Preciptation Label</description>
+      <type>label</type>
+      <id>114</id>
+      <posX>600</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>AM Preciptation Value</description>
+      <type>label</type>
+      <id>115</id>
+      <posX>840</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>AM Wind Label</description>
+      <type>label</type>
+      <id>112</id>
+      <posX>600</posX>
+      <posY>770</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>AM Wind Value</description>
+      <type>label</type>
+      <id>113</id>
+      <posX>600</posX>
+      <posY>815</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>AM Icon Image</description>
+      <type>image</type>
+      <id>116</id>
+	  <posX>660</posX>
+	  <posY>455</posY>
+	  <height>180</height>
+	  <width>180</width>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+    </control>
+	
+    <control>
+      <description>AM Condition Value</description>
+      <type>label</type>
+      <id>118</id>
+      <posX>605</posX>
+      <posY>900</posY>
+	  <align>center</align>
+	  <alignY>top</alignY>
+	  <width>300</width>	  
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>	
+    </control>
+	
+	<control>
+      <description>horizontal line</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>590</posX>
+      <posY>870</posY>
+      <width>315</width>
+      <height>1</height>
+      <texture>weather_horizontal_bar.png</texture>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+	</control>
+	
+    <!--  **********  PM Group  **********  -->
+	
+    <control>
+      <description>Divider</description>
+      <type>image</type>
+      <id>139</id>
+      <posX>950</posX>
+      <posY>376</posY>
+      <height>548</height>
+      <width>0</width>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <texture>slider_vertical.png</texture>
+      <colordiffuse>60ffffff</colordiffuse>
+    </control>
+	
+    <control>
+      <description>PM Label</description>
+      <type>label</type>
+      <id>126</id>
+	  <posX>1005</posX>
+	  <posY>385</posY>
+	  <align>center</align>
+	  <textalign>center</textalign>
+	  <textYOff>0</textYOff>
+	  <height>52</height>
+	  <width>300</width>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light20</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>PM Temperature Label</description>
+      <type>label</type>
+      <id>119</id>
+      <posX>1005</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>PM Temperature Value</description>
+      <type>label</type>
+      <id>120</id>
+      <posX>1230</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>PM Preciptation Label</description>
+      <type>label</type>
+      <id>123</id>
+      <posX>1005</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>PM Preciptation Value</description>
+      <type>label</type>
+      <id>124</id>
+      <posX>1230</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>PM Wind Label</description>
+      <type>label</type>
+      <id>121</id>
+      <posX>1010</posX>
+      <posY>770</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>PM Wind Value</description>
+      <type>label</type>
+      <id>122</id>
+      <posX>1010</posX>
+      <posY>815</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>PM Icon Image</description>
+      <type>image</type>
+      <id>125</id>
+	  <posX>1065</posX>
+	  <posY>455</posY>
+	  <height>180</height>
+	  <width>180</width>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+    </control>
+	
+    <control>
+      <description>PM Condition Value</description>
+      <type>label</type>
+      <id>127</id>
+      <posX>1015</posX>
+      <posY>900</posY>
+	  <align>center</align>
+	  <alignY>top</alignY>
+	  <width>300</width>	  
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>	
+    </control>
+	
+	<control>
+      <description>horizontal line</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1000</posX>
+      <posY>870</posY>
+      <width>315</width>
+      <height>1</height>
+      <texture>weather_horizontal_bar.png</texture>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+	</control>
+	
+    <!--  **********  Evening Group  **********  -->
+	
+    <control>
+      <description>Divider</description>
+      <type>image</type>
+      <id>140</id>
+      <posX>1360</posX>
+      <posY>376</posY>
+      <height>548</height>
+      <width>0</width>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <texture>slider_vertical.png</texture>
+      <colordiffuse>60ffffff</colordiffuse>
+    </control>
+	
+    <control>
+      <description>Evening Label</description>
+      <type>label</type>
+      <id>135</id>
+	  <posX>1415</posX>
+	  <posY>385</posY>
+	  <align>center</align>
+	  <textalign>center</textalign>
+	  <textYOff>0</textYOff>
+	  <height>52</height>
+	  <width>300</width>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light20</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Evening Temperature Label</description>
+      <type>label</type>
+      <id>128</id>
+      <posX>1410</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>Evening Temperature Value</description>
+      <type>label</type>
+      <id>129</id>
+      <posX>1640</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Evening Preciptation Label</description>
+      <type>label</type>
+      <id>132</id>
+      <posX>1410</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>Evening Preciptation Value</description>
+      <type>label</type>
+      <id>133</id>
+      <posX>1640</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Evening Wind Label</description>
+      <type>label</type>
+      <id>130</id>
+      <posX>1410</posX>
+      <posY>770</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>Evening Wind Value</description>
+      <type>fadelabel</type>
+      <id>131</id>
+      <posX>1410</posX>
+      <posY>815</posY>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Evening Icon Image</description>
+      <type>image</type>
+      <id>134</id>
+	  <posX>1480</posX>
+	  <posY>455</posY>
+	  <height>180</height>
+	  <width>180</width>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+    </control>
+	
+    <control>
+      <description>Evening Condition Value</description>
+      <type>label</type>
+      <id>136</id>
+      <posX>1415</posX>
+      <posY>900</posY>
+	  <align>center</align>
+	  <alignY>top</alignY>
+	  <width>300</width>	  
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>	
+    </control>
+	
+	<control>
+      <description>horizontal line</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1410</posX>
+      <posY>870</posY>
+      <width>315</width>
+      <height>1</height>
+      <texture>weather_horizontal_bar.png</texture>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+	</control>
+
+    <control>
+      <description>Divider</description>
+      <type>image</type>
+      <id>141</id>
+      <posX>1770</posX>
+      <posY>376</posY>
+      <height>548</height>
+      <width>0</width>
+      <visible>string.equals(#yrWeather.forecastByDay,true)</visible>
+      <texture>slider_vertical.png</texture>
+      <colordiffuse>60ffffff</colordiffuse>
+    </control>
+	
+    <!--  ***************************    Forecast Hour By Hour    ***************************  -->
+
+	<control>
+		<description>Selected item Label</description>
+		<type>fadelabel</type>
+		<id>200</id>
+		<posX>1832</posX>
+		<posY>956</posY>
+		<width>697</width>
+		<label>???</label>
+		<font>Segoe Light18</font>
+		<align>right</align>
+        <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+	</control>	
+	
+    <!--  **********  Static Labels Value  **********  -->
+	
+<!--     <control>
+      <description>Time Label</description>
+      <type>label</type>
+      <id>201</id>
+      <posX>63</posX>
+      <posY>450</posY>
+      <label>Time</label>
+      <font>font11</font>
+      <textcolor>bba9d0f7</textcolor>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+    </control>
+	
+    <control>
+      <description>Temperature Label</description>
+      <type>label</type>
+      <id>202</id>
+      <posX>63</posX>
+      <posY>520</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+      <font>font11</font>
+      <textcolor>bba9d0f7</textcolor>
+    </control>
+	
+    <control>
+      <description>Preciptation Label</description>
+      <type>label</type>
+      <id>203</id>
+      <posX>63</posX>
+      <posY>562</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+      <font>font11</font>
+      <textcolor>bba9d0f7</textcolor>
+    </control>
+	
+    <control>
+      <description>Wind Label</description>
+      <type>label</type>
+      <id>204</id>
+      <posX>63</posX>&gt;
+      <posY>604</posY>
+	  <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+	  <label>???</label>
+	  <font>font11</font>
+	  <textcolor>bba9d0f7</textcolor>
+	</control>
+	
+    <control>
+      <description>Condition Label</description>
+      <type>label</type>
+      <id>205</id>
+      <posX>63</posX>&gt;
+      <posY>864</posY>
+	  <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+	  <label>Condition</label>
+	  <font>font11</font>
+	  <textcolor>bba9d0f7</textcolor>
+	</control> -->
+	
+    <!--  **********  Hour 1 Group  **********  -->
+
+    <control>
+      <description>Divider</description>
+      <type>image</type>
+      <id>137</id>
+      <posX>130</posX>
+      <posY>376</posY>
+      <height>548</height>
+      <width>0</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <texture>slider_vertical.png</texture>
+      <colordiffuse>60ffffff</colordiffuse>
+    </control>
+	
+    <control>
+      <description>Weekday Value</description>
+      <type>label</type>
+      <id>300</id>
+	  <posX>195</posX>
+	  <posY>385</posY>
+	  <align>center</align>
+	  <textalign>center</textalign>
+	  <textYOff>0</textYOff>
+	  <height>52</height>
+	  <width>289</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light20</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Time Value</description>
+      <type>label</type>
+      <id>301</id>
+      <posX>190</posX>
+      <posY>465</posY>
+	  <align>center</align>
+	  <alignY>top</alignY>
+	  <width>300</width>	
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light14</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+
+    <control>
+      <description>Night Temperature Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>190</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+	  <label>Temperature</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+	</control>
+	
+    <control>
+      <description>Temperature Value</description>
+      <type>label</type>
+      <id>302</id>
+      <posX>430</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>white</textcolor>
+    </control>
+
+    <control>
+      <description>Night Preciptation Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>190</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>Preciptation</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>Preciptation Value</description>
+      <type>label</type>
+      <id>303</id>
+      <posX>430</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>white</textcolor>
+    </control>
+
+    <control>
+      <description>Wind Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>190</posX>
+      <posY>770</posY>
+	  <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+	  <label>Wind</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+	</control>
+	
+    <control>
+      <description>Wind Value</description>
+      <type>label</type>
+      <id>304</id>
+      <posX>190</posX>
+      <posY>815</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+	  <textcolor>white</textcolor>
+    </control>
+	
+    <control>
+      <description>Icon Image</description>
+      <type>image</type>
+      <id>305</id>
+	  <posX>245</posX>
+	  <posY>495</posY>
+	  <height>180</height>
+	  <width>180</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+    </control>
+	
+    <control>
+      <description>Condition Value</description>
+      <type>fadelabel</type>
+      <id>306</id>
+      <posX>195</posX>
+      <posY>900</posY>
+	  <align>center</align>
+	  <alignY>top</alignY>
+	  <width>300</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+
+	<control>
+      <description>horizontal line</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>180</posX>
+      <posY>870</posY>
+      <width>315</width>
+      <height>1</height>
+      <texture>weather_horizontal_bar.png</texture>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+	</control>
+	
+    <!--  **********  Hour 2 Group  **********  -->
+
+    <control>
+      <description>Divider</description>
+      <type>image</type>
+      <id>138</id>
+      <posX>540</posX>
+      <posY>376</posY>
+      <height>548</height>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <width>0</width>
+      <texture>slider_vertical.png</texture>
+      <colordiffuse>60ffffff</colordiffuse>
+    </control>
+	
+    <control>
+      <description>Weekday Label</description>
+      <type>label</type>
+      <id>310</id>
+	  <posX>600</posX>
+	  <posY>385</posY>
+	  <align>center</align>
+	  <textalign>center</textalign>
+	  <textYOff>0</textYOff>
+	  <height>52</height>
+	  <width>300</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light20</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Time Label</description>
+      <type>label</type>
+      <id>311</id>
+      <posX>600</posX>
+      <posY>465</posY>
+	  <align>center</align>
+	  <alignY>top</alignY>
+	  <width>300</width>	
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light14</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+
+    <control>
+      <description>Temperature Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>600</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+	  <label>Temperature</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+	</control>
+	
+    <control>
+      <description>Temperature Value</description>
+      <type>label</type>
+      <id>312</id>
+      <posX>840</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+
+    <control>
+      <description>Preciptation Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>600</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>Preciptation</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>Preciptation Value</description>
+      <type>label</type>
+      <id>313</id>
+      <posX>840</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+
+    <control>
+      <description>Wind Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>600</posX>
+      <posY>770</posY>
+	  <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+	  <label>Wind</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+	</control>
+	
+    <control>
+      <description>Wind Value</description>
+      <type>label</type>
+      <id>314</id>
+      <posX>600</posX>
+      <posY>815</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+      <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Icon Image</description>
+      <type>image</type>
+      <id>315</id>
+	  <posX>660</posX>
+	  <posY>495</posY>
+	  <height>180</height>
+	  <width>180</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+    </control>
+	
+    <control>
+      <description>Condition Value</description>
+      <type>label</type>
+      <id>316</id>
+      <posX>605</posX>
+      <posY>900</posY>
+	  <align>center</align>
+	  <alignY>top</alignY>
+	  <width>300</width>	
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+
+	<control>
+      <description>horizontal line</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>590</posX>
+      <posY>870</posY>
+      <width>315</width>
+      <height>1</height>
+      <texture>weather_horizontal_bar.png</texture>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+	</control>
+	
+    <!--  **********  Hour 3 Group   **********  -->
+
+    <control>
+      <description>Divider</description>
+      <type>image</type>
+      <id>139</id>
+      <posX>950</posX>
+      <posY>376</posY>
+      <height>548</height>
+      <width>0</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <texture>slider_vertical.png</texture>
+      <colordiffuse>60ffffff</colordiffuse>
+    </control>
+	
+    <control>
+      <description>Weekday Label</description>
+      <type>label</type>
+      <id>320</id>
+	  <posX>1005</posX>
+	  <posY>385</posY>
+	  <align>center</align>
+	  <textalign>center</textalign>
+	  <textYOff>0</textYOff>
+	  <height>52</height>
+	  <width>300</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light20</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Time Label</description>
+      <type>label</type>
+      <id>321</id>
+      <posX>1005</posX>
+      <posY>465</posY>
+	  <align>center</align>
+	  <alignY>top</alignY>
+	  <width>300</width>	
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light14</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+
+    <control>
+      <description>Temperature Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1005</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>Temperature</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>Temperature Value</description>
+      <type>label</type>
+      <id>322</id>
+      <posX>1230</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+
+    <control>
+      <description>Preciptation Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1005</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>Preciptation</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>Preciptation Value</description>
+      <type>label</type>
+      <id>323</id>
+      <posX>1230</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+
+    <control>
+      <description>Wind Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1010</posX>
+      <posY>770</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>Wind</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>Wind Value</description>
+      <type>label</type>
+      <id>324</id>
+      <posX>1010</posX>
+      <posY>815</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Icon Image</description>
+      <type>image</type>
+      <id>325</id>
+	  <posX>1065</posX>
+	  <posY>495</posY>
+	  <height>180</height>
+	  <width>180</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+    </control>
+	
+    <control>
+      <description>Condition Value</description>
+      <type>label</type>
+      <id>326</id>
+      <posX>1015</posX>
+      <posY>900</posY>
+	  <align>center</align>
+	  <alignY>top</alignY>
+	  <width>300</width>	
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+
+	<control>
+      <description>horizontal line</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1000</posX>
+      <posY>870</posY>
+      <width>315</width>
+      <height>1</height>
+      <texture>weather_horizontal_bar.png</texture>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+	</control>
+	
+    <!--  **********  Hour 4 Group  **********  -->
+
+    <control>
+      <description>Divider</description>
+      <type>image</type>
+      <id>140</id>
+      <posX>1360</posX>
+      <posY>376</posY>
+      <height>548</height>
+      <width>0</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <texture>slider_vertical.png</texture>
+      <colordiffuse>60ffffff</colordiffuse>
+    </control>
+	
+    <control>
+      <description>Weekday Label</description>
+      <type>label</type>
+      <id>330</id>
+	  <posX>1415</posX>
+	  <posY>385</posY>
+	  <align>center</align>
+	  <textalign>center</textalign>
+	  <textYOff>0</textYOff>
+	  <height>52</height>
+	  <width>300</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light20</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Time Label</description>
+      <type>label</type>
+      <id>331</id>
+      <posX>1415</posX>
+      <posY>465</posY>
+	  <align>center</align>
+	  <alignY>top</alignY>
+	  <width>300</width>	
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light14</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+
+    <control>
+      <description>Temperature Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1410</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>Temperature</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>Temperature Value</description>
+      <type>label</type>
+      <id>332</id>
+      <posX>1640</posX>
+      <posY>680</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+
+    <control>
+      <description>Preciptation Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1410</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>Preciptation</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>Preciptation Value</description>
+      <type>label</type>
+      <id>333</id>
+      <posX>1640</posX>
+      <posY>725</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+
+    <control>
+      <description>Wind Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1410</posX>
+      <posY>770</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>Wind</label>
+      <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+	
+    <control>
+      <description>Wind Value</description>
+      <type>label</type>
+      <id>334</id>
+      <posX>1410</posX>
+      <posY>815</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light12</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Icon Image</description>
+      <type>image</type>
+      <id>335</id>
+	  <posX>1480</posX>
+	  <posY>495</posY>
+	  <height>180</height>
+	  <width>180</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+    </control>
+	
+    <control>
+      <description>Condition Value</description>
+      <type>label</type>
+      <id>336</id>
+      <posX>1415</posX>
+      <posY>900</posY>
+	  <align>center</align>
+	  <alignY>top</alignY>
+	  <width>300</width>	  
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+	  <font>Segoe Light12</font>
+	  <textcolor>ff6aa5cb</textcolor>
+    </control>
+
+	<control>
+      <description>horizontal line</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1410</posX>
+      <posY>870</posY>
+      <width>315</width>
+      <height>1</height>
+      <texture>weather_horizontal_bar.png</texture>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+	</control>
+	
+    <control>
+      <description>Divider</description>
+      <type>image</type>
+      <id>141</id>
+      <posX>1770</posX>
+      <posY>376</posY>
+      <height>548</height>
+      <width>0</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <texture>slider_vertical.png</texture>
+      <colordiffuse>60ffffff</colordiffuse>
+    </control>
+	
+    <!--  **********  Hour 5 Group  **********  -->
+	
+<!--     <control>
+      <description>Day Label</description>
+      <type>label</type>
+      <id>340</id>
+      <posX>1475</posX>
+      <posY>393</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+      <font>font16</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Time Label</description>
+      <type>label</type>
+      <id>341</id>
+      <posX>1475</posX>
+      <posY>450</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+      <font>font13</font>
+      <textcolor>bba9d0f7</textcolor>
+    </control>
+	
+    <control>
+      <description>Temperature Value</description>
+      <type>label</type>
+      <id>342</id>
+      <posX>1433</posX>
+      <posY>520</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+      <font>font11</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Preciptation Value</description>
+      <type>label</type>
+      <id>343</id>
+      <posX>1433</posX>
+      <posY>562</posY>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+      <font>font11</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Wind Value</description>
+      <type>fadelabel</type>
+      <id>344</id>
+      <posX>1433</posX>
+      <posY>604</posY>
+      <width>210</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+      <font>font11</font>
+      <textcolor>White</textcolor>
+    </control>
+	
+    <control>
+      <description>Icon Image</description>
+      <type>image</type>
+      <id>345</id>
+      <posX>1475</posX>
+      <posY>703</posY>
+      <width>126</width>
+      <height>126</height>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <texture>-</texture>
+      <colorkey>FFFF00FF</colorkey>
+      <colordiffuse>FFFFFFFF</colordiffuse>
+    </control>
+	
+    <control>
+      <description>Condition Value</description>
+      <type>label</type>
+      <id>346</id>
+      <posX>1433</posX>
+      <posY>864</posY>
+      <width>210</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <label>???</label>
+      <font>font11</font>
+      <textcolor>bba9d0f7</textcolor>
+    </control>
+	
+    <control>
+      <description>Divider</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>1672</posX>
+      <posY>390</posY>
+      <height>541</height>
+      <width>0</width>
+      <visible>string.equals(#yrWeather.forecastByHour,true)</visible>
+      <texture>slider_vertical.png</texture>
+      <colordiffuse>20ffffff</colordiffuse>
+    </control> -->
+	
+  </controls>
+</window>
