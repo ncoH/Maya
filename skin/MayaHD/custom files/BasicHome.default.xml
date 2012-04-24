@@ -67,7 +67,7 @@
 		<width>200</width>
 		<height>1080</height>
 		<dimColor>00ffffff</dimColor>
-		<visible>Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
+		<visible>Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4) | Control.HasFocus(5)</visible>
 		
 			<control>
 				<type>image</type>

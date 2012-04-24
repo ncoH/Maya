@@ -7574,13 +7574,6 @@
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\skin\MayaHD\Media\Thumbs.db</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{8e2c8ab3-2546-46b2-87d5-94cef6074c74}-Thumbs.db</ZipFileName>
-              <DestinationFilename>%Skin%\MayaHD\Media\Thumbs.db</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
               <LocalFileName>..\skin\MayaHD\Media\thumb_focus.png</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{e73e8750-6a3a-49d1-af52-a5ede987d618}-thumb_focus.png</ZipFileName>
               <DestinationFilename>%Skin%\MayaHD\Media\thumb_focus.png</DestinationFilename>
@@ -8729,13 +8722,6 @@
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Provider\Thumbs.db</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{33555f9f-b2ff-4d8c-862a-437fcc5f3b02}-Thumbs.db</ZipFileName>
-              <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Provider\Thumbs.db</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
               <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Provider\worldweatheronline.png</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{56d27e71-b2a3-4bd8-8343-f28f33bdb644}-worldweatheronline.png</ZipFileName>
               <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Provider\worldweatheronline.png</DestinationFilename>
@@ -8813,13 +8799,6 @@
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Moon\low\Thumbs.db</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{4ac2d604-0e44-4ba2-8c94-c1843b500327}-Thumbs.db</ZipFileName>
-              <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Moon\low\Thumbs.db</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
               <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Moon\high\0.png</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{8f8351b5-6fbf-4134-af21-f48c60181290}-0.png</ZipFileName>
               <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Moon\high\0.png</DestinationFilename>
@@ -8893,13 +8872,6 @@
               <LocalFileName>..\skin\MayaHD\Media\WorldWeather\GeoClock\low\pin.png</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{167e7d05-5635-45e3-b693-526bd2068dd9}-pin.png</ZipFileName>
               <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\GeoClock\low\pin.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\skin\MayaHD\Media\WorldWeather\GeoClock\low\Thumbs.db</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{a0b387f3-067e-437d-b5b3-54393b10f7fb}-Thumbs.db</ZipFileName>
-              <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\GeoClock\low\Thumbs.db</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
@@ -9009,13 +8981,6 @@
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Condition\Thumbs.db</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{76fc9b11-c2a6-49d5-be89-63255702213f}-Thumbs.db</ZipFileName>
-              <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Condition\Thumbs.db</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
               <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Condition\up.png</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{29e29c6e-c955-4e92-be64-250ccf03afd3}-up.png</ZipFileName>
               <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Condition\up.png</DestinationFilename>
@@ -9047,13 +9012,6 @@
               <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Barometer\steady.png</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{9ff4fa6c-24a1-42f9-bb62-6d45bc2c5b24}-steady.png</ZipFileName>
               <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Barometer\steady.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Barometer\Thumbs.db</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{ad75fc5f-0621-41f0-a8f2-95d671a50d24}-Thumbs.db</ZipFileName>
-              <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Barometer\Thumbs.db</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
@@ -9131,13 +9089,6 @@
               <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Astronomy\Low\taurus.png</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{8d980b96-2f16-4416-9fbd-e744acd1830f}-taurus.png</ZipFileName>
               <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Astronomy\Low\taurus.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Astronomy\Low\Thumbs.db</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{fa96f35d-6f06-4531-ba21-103809567600}-Thumbs.db</ZipFileName>
-              <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Astronomy\Low\Thumbs.db</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
@@ -9229,13 +9180,6 @@
               <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Astronomy\High\taurus.png</LocalFileName>
               <ZipFileName>Installer{CopyFile}\{dbcec0bf-7b8b-46d9-bd32-fdff13f6ba00}-taurus.png</ZipFileName>
               <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Astronomy\High\taurus.png</DestinationFilename>
-            </FileItem>
-            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-              <Param1 />
-              <UpdateOption>OverwriteIfOlder</UpdateOption>
-              <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Astronomy\High\Thumbs.db</LocalFileName>
-              <ZipFileName>Installer{CopyFile}\{1761c6e4-6d3e-4e66-a76f-3d74b87cda5c}-Thumbs.db</ZipFileName>
-              <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Astronomy\High\Thumbs.db</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
               <Param1 />
@@ -16370,6 +16314,13 @@
               <ZipFileName>Installer{CopyFile}\{2ccc1f45-b042-419d-b2cb-d1e85a29b2ae}-TVMiniGuide.normal.xml</ZipFileName>
               <DestinationFilename>%Skin%\MayaHD\custom files\TVMiniGuide.normal.xml</DestinationFilename>
             </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\yrWeather.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{6225ba3e-0a5a-402a-b861-b429c0cddb71}-yrWeather.xml</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\yrWeather.xml</DestinationFilename>
+            </FileItem>
           </Items>
         </Files>
       </GroupItem>
@@ -16629,7 +16580,7 @@
       <Major>1</Major>
       <Minor>0</Minor>
       <Build>0</Build>
-      <Revision>0</Revision>
+      <Revision>1</Revision>
     </Version>
     <ExtensionDescription>Our goal is to create a simple professional skin that does not rely solely on fan art (although it uses some on relevant places) and is easy on the eye and great for daily family use. But has a modern and classy feel.</ExtensionDescription>
     <VersionDescription />
@@ -24158,13 +24109,6 @@
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\skin\MayaHD\Media\Thumbs.db</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{8e2c8ab3-2546-46b2-87d5-94cef6074c74}-Thumbs.db</ZipFileName>
-        <DestinationFilename>%Skin%\MayaHD\Media\Thumbs.db</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\skin\MayaHD\Media\thumb_focus.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{e73e8750-6a3a-49d1-af52-a5ede987d618}-thumb_focus.png</ZipFileName>
         <DestinationFilename>%Skin%\MayaHD\Media\thumb_focus.png</DestinationFilename>
@@ -25313,13 +25257,6 @@
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Provider\Thumbs.db</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{33555f9f-b2ff-4d8c-862a-437fcc5f3b02}-Thumbs.db</ZipFileName>
-        <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Provider\Thumbs.db</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Provider\worldweatheronline.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{56d27e71-b2a3-4bd8-8343-f28f33bdb644}-worldweatheronline.png</ZipFileName>
         <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Provider\worldweatheronline.png</DestinationFilename>
@@ -25397,13 +25334,6 @@
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Moon\low\Thumbs.db</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{4ac2d604-0e44-4ba2-8c94-c1843b500327}-Thumbs.db</ZipFileName>
-        <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Moon\low\Thumbs.db</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Moon\high\0.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{8f8351b5-6fbf-4134-af21-f48c60181290}-0.png</ZipFileName>
         <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Moon\high\0.png</DestinationFilename>
@@ -25477,13 +25407,6 @@
         <LocalFileName>..\skin\MayaHD\Media\WorldWeather\GeoClock\low\pin.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{167e7d05-5635-45e3-b693-526bd2068dd9}-pin.png</ZipFileName>
         <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\GeoClock\low\pin.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\skin\MayaHD\Media\WorldWeather\GeoClock\low\Thumbs.db</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{a0b387f3-067e-437d-b5b3-54393b10f7fb}-Thumbs.db</ZipFileName>
-        <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\GeoClock\low\Thumbs.db</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -25593,13 +25516,6 @@
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Condition\Thumbs.db</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{76fc9b11-c2a6-49d5-be89-63255702213f}-Thumbs.db</ZipFileName>
-        <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Condition\Thumbs.db</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Condition\up.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{29e29c6e-c955-4e92-be64-250ccf03afd3}-up.png</ZipFileName>
         <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Condition\up.png</DestinationFilename>
@@ -25631,13 +25547,6 @@
         <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Barometer\steady.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{9ff4fa6c-24a1-42f9-bb62-6d45bc2c5b24}-steady.png</ZipFileName>
         <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Barometer\steady.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Barometer\Thumbs.db</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{ad75fc5f-0621-41f0-a8f2-95d671a50d24}-Thumbs.db</ZipFileName>
-        <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Barometer\Thumbs.db</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -25715,13 +25624,6 @@
         <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Astronomy\Low\taurus.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{8d980b96-2f16-4416-9fbd-e744acd1830f}-taurus.png</ZipFileName>
         <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Astronomy\Low\taurus.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Astronomy\Low\Thumbs.db</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{fa96f35d-6f06-4531-ba21-103809567600}-Thumbs.db</ZipFileName>
-        <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Astronomy\Low\Thumbs.db</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -25813,13 +25715,6 @@
         <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Astronomy\High\taurus.png</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{dbcec0bf-7b8b-46d9-bd32-fdff13f6ba00}-taurus.png</ZipFileName>
         <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Astronomy\High\taurus.png</DestinationFilename>
-      </FileItem>
-      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
-        <Param1 />
-        <UpdateOption>OverwriteIfOlder</UpdateOption>
-        <LocalFileName>..\skin\MayaHD\Media\WorldWeather\Astronomy\High\Thumbs.db</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{1761c6e4-6d3e-4e66-a76f-3d74b87cda5c}-Thumbs.db</ZipFileName>
-        <DestinationFilename>%Skin%\MayaHD\Media\WorldWeather\Astronomy\High\Thumbs.db</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
         <Param1 />
@@ -32953,6 +32848,13 @@
         <LocalFileName>..\skin\MayaHD\custom files\TVMiniGuide.normal.xml</LocalFileName>
         <ZipFileName>Installer{CopyFile}\{2ccc1f45-b042-419d-b2cb-d1e85a29b2ae}-TVMiniGuide.normal.xml</ZipFileName>
         <DestinationFilename>%Skin%\MayaHD\custom files\TVMiniGuide.normal.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\yrWeather.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{6225ba3e-0a5a-402a-b861-b429c0cddb71}-yrWeather.xml</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\yrWeather.xml</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
         <Param1 />
