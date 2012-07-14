@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--version="1.0" encoding="utf-8" standalone="yes"-->
+<window>
+  <id>2011</id>
+  <defaultcontrol>5</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:Music Info</define>
+  <define>#useSelectedFanart:Yes</define>
+  <define>#header.background:hover_my music.png</define>
+  <controls>
+    <control>
+      <description>Background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+    </control>
+    <control>
+      <description>Fanart Background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#header.background</texture>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
+    </control>
+    <control>
+      <description>Fanart Overlay</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>basichome_fanart_overlay.png</texture>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
+    </control>
+    <import>common.time.xml</import>
+    <control>
+      <description>Header label</description>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <type>label</type>
+      <id>1</id>
+      <posX>775</posX>
+      <posY>42</posY>
+      <width>702</width>
+      <height>140</height>
+      <label>#header.label</label>
+      <textcolor>6aa5cb</textcolor>
+      <font>Segoe Light40</font>
+      <visible>facadeview.list</visible>
+      <valign>middle</valign>
+    </control>
+    <control>
+      <description>Album information</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>780</posX>
+      <posY>199</posY>
+      <label>Artist information</label>
+      <font>Segoe Light22</font>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <valign>middle</valign>
+    </control>
+    <control>
+      <type>label</type>
+      <id>1</id>
+      <posX>780</posX>
+      <posY>255</posY>
+      <textcolor>85cfff</textcolor>
+      <font>Segoe Light18</font>
+      <label>Artist</label>
+    </control>
+    <control>
+      <description>Artist value</description>
+      <type>label</type>
+      <id>21</id>
+      <posX>780</posX>
+      <posY>306</posY>
+      <font>Segoe Light18</font>
+      <label>-</label>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Born</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>780</posX>
+      <posY>478</posY>
+      <label>686</label>
+      <textcolor>85cfff</textcolor>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Years active</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>780</posX>
+      <posY>511</posY>
+      <label>687</label>
+      <textcolor>85cfff</textcolor>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genres</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>780</posX>
+      <posY>545</posY>
+      <label>135</label>
+      <textcolor>85cfff</textcolor>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Tones</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>780</posX>
+      <posY>579</posY>
+      <label>175</label>
+      <textcolor>85cfff</textcolor>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Styles</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>780</posX>
+      <posY>613</posY>
+      <label>176</label>
+      <textcolor>85cfff</textcolor>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Instruments</description>
+      <type>label</type>
+      <id>1</id>
+      <posX>780</posX>
+      <posY>646</posY>
+      <label>688</label>
+      <textcolor>85cfff</textcolor>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Born value</description>
+      <type>label</type>
+      <id>22</id>
+      <posX>936</posX>
+      <posY>478</posY>
+      <width>843</width>
+      <label>-</label>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Years Active value</description>
+      <type>label</type>
+      <id>23</id>
+      <posX>936</posX>
+      <posY>511</posY>
+      <width>843</width>
+      <label>-</label>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Genres value</description>
+      <type>label</type>
+      <id>24</id>
+      <posX>936</posX>
+      <posY>545</posY>
+      <width>843</width>
+      <label>-</label>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Tones value</description>
+      <type>fadelabel</type>
+      <id>25</id>
+      <posX>936</posX>
+      <posY>579</posY>
+      <width>843</width>
+      <label>-</label>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Styles value</description>
+      <type>fadelabel</type>
+      <id>26</id>
+      <posX>936</posX>
+      <posY>613</posY>
+      <width>843</width>
+      <label>-</label>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Instruments value</description>
+      <type>label</type>
+      <id>27</id>
+      <posX>936</posX>
+      <posY>660</posY>
+      <width>843</width>
+      <label>-</label>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <id>3</id>
+      <type>image</type>
+      <posX>188</posX>
+      <posY>299</posY>
+      <width>372</width>
+      <height>372</height>
+      <texture>-</texture>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <type>image</type>
+      <id>0</id>
+      <posX>129</posX>
+      <posY>237</posY>
+      <width>491</width>
+      <height>492</height>
+      <texture>blackborders_music.png</texture>
+    </control>
+    <control>
+      <description>textarea</description>
+      <type>textbox</type>
+      <id>4</id>
+      <posX>780</posX>
+      <posY>684</posY>
+      <width>997</width>
+      <height>351</height>
+      <spinWidth>39</spinWidth>
+      <spinHeight>39</spinHeight>
+      <spinPosX>780</spinPosX>
+      <spinPosY>1009</spinPosY>
+      <spinAlign>left</spinAlign>
+      <onleft>5</onleft>
+      <onright>5</onright>
+      <onup>5</onup>
+      <ondown>5</ondown>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Bio/Albums</description>
+      <type>button</type>
+      <id>5</id>
+      <posX>206</posX>
+      <posY>703</posY>
+      <label>689</label>
+      <onleft>4</onleft>
+      <onright>4</onright>
+      <onup>6</onup>
+      <ondown>6</ondown>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <control>
+      <description>Refresh</description>
+      <type>button</type>
+      <id>6</id>
+      <posX>206</posX>
+      <posY>766</posY>
+      <label>184</label>
+      <onleft>4</onleft>
+      <onright>4</onright>
+      <onup>5</onup>
+      <ondown>5</ondown>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+    </control>
+    <import>common.overlay.mini.xml</import>
+  </controls>
+</window>

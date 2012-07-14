@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>557316</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <controls>
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>632</posX>
+      <posY>421</posY>
+      <width>574</width>
+      <height>284</height>
+      <texture>dialog_background.png</texture>
+    </control>
+    <control>
+      <id>2</id>
+      <description>dialog Heading</description>
+      <type>fadelabel</type>
+      <posX>695</posX>
+      <posY>461</posY>
+      <font>font13</font>
+      <textcolor>ffffffff</textcolor>
+      <label>0</label>
+    </control>
+    <control>
+      <id>3</id>
+      <description>dialog line 1</description>
+      <type>fadelabel</type>
+      <posX>695</posX>
+      <posY>528</posY>
+      <width>452</width>
+      <font>font13</font>
+      <textcolor>ffffffff</textcolor>
+      <label>0</label>
+    </control>
+    <control>
+      <id>4</id>
+      <description>dialog line 2</description>
+      <type>fadelabel</type>
+      <posX>697</posX>
+      <posY>585</posY>
+      <width>451</width>
+      <font>font13</font>
+      <textcolor>ffffffff</textcolor>
+      <label>0</label>
+    </control>
+  </controls>
+</window>

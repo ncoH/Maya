@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>80000</id>
+  <defaultcontrol>3000</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:Google Calendar</define>
+  <define>#header.background:hover_C3.MediaPortal.GoogleCalendar.png</define>
+  <controls>
+
+    <!--            :: BACKGROUNDS ::           	 -->
+	
+    <control>
+      <description>DEFAULT BACKGROUND</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+      <shouldCache>true</shouldCache>
+    </control>
+	
+    <control>
+      <description>Fanart Background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#header.background</texture>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
+    </control>
+	
+    <control>
+      <description>Fanart Overlay</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>basichome_fanart_overlay.png</texture>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
+    </control>          
+	
+    <import>common.time.xml</import>
+
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>list background menu</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>65</posX>
+      <posY>215</posY>
+      <width>394</width>
+      <height>677</height>
+      <texture>tvhome_bg.png</texture>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>	  
+    </control>	
+	
+    <control>
+      <description>listcontrol background eventlist</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>485</posX>
+      <posY>215</posY>
+      <width>940</width>
+      <height>677</height>
+      <texture>listcontrol_bg.png</texture>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>listcontrol background info</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>485</posX>
+      <posY>953</posY>
+      <width>940</width>
+      <height>71</height>
+      <texture>listcontrol_bg_info.png</texture>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>list background data</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>1450</posX>
+      <posY>215</posY>
+      <width>394</width>
+      <height>677</height>
+      <texture>tvhome_bg.png</texture>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>	  
+    </control>
+	
+    <control>
+      <type>group</type>
+      <layout>StackLayout</layout>
+      <description>group element</description>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <posX>65</posX>
+      <posY>262</posY>
+      <width>394</width>
+	  
+      <control>
+        <id>3000</id>
+        <type>button</type>
+        <description>butSelectedCalendar</description>
+        <onleft>3030</onleft>
+        <onright>3020</onright>
+        <onup>17</onup>
+        <ondown>3001</ondown>
+        <textalign>right</textalign>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
+        <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>		
+      </control>
+
+      <control>
+        <description>butRefreshCalendars</description>
+        <type>button</type>
+        <id>3001</id>
+        <label>Refresh Calendars</label>
+        <onleft>3030</onleft>
+        <onright>3020</onright>
+        <onup>3000</onup>
+        <ondown>3002</ondown>
+        <textalign>right</textalign>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
+        <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>		
+      </control>
+
+      <control>
+        <description>butRefreshEvents</description>
+        <type>button</type>
+        <id>3002</id>
+        <label>Refresh Events</label>
+        <onleft>3030</onleft>
+        <onright>3020</onright>
+        <onup>3001</onup>
+        <ondown>3003</ondown>
+        <textalign>right</textalign>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
+        <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>		
+      </control>
+
+      <control>
+        <description>butAddEvent</description>
+        <type>button</type>
+        <id>3003</id>
+        <label>Add Event</label>
+        <onleft>3030</onleft>
+        <onright>3020</onright>
+        <onup>3002</onup>
+        <ondown>3004</ondown>
+        <textalign>right</textalign>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
+        <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>		
+      </control>
+
+      <control>
+        <description>butRange</description>
+        <type>button</type>
+        <id>3004</id>
+        <onleft>3030</onleft>
+        <onright>3020</onright>
+        <onup>3003</onup>
+        <ondown>3005</ondown>
+        <textalign>right</textalign>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
+        <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+      </control>
+
+      <control>
+        <description>butSort</description>
+        <type>sortbutton</type>
+        <id>3005</id>
+        <onleft>3030</onleft>
+        <onright>3020</onright>
+        <onup>3004</onup>
+        <ondown>3000</ondown>
+        <textalign>right</textalign>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
+		<offsetSortButtonX>55</offsetSortButtonX>
+		<offsetSortButtonY>25</offsetSortButtonY>		
+        <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>		
+      </control>
+    </control>	  
+
+    <control>
+      <description>listEvents</description>
+      <type>listcontrol</type>
+      <id>3020</id>
+      <posX>485</posX>
+      <posY>262</posY>
+      <height>644</height>
+      <width>940</width>	  
+      <onleft>3000</onleft>
+      <onright>3030</onright>
+      <textvisible3>false</textvisible3>
+      <spinPosX>1400</spinPosX>
+      <spinPosY>967</spinPosY>
+      <spinAlign>right</spinAlign>
+      <spinCanFocus>false</spinCanFocus>
+      <textureHeight>64</textureHeight>	  
+    </control>
+
+    <control>
+      <description>listEventData</description>
+      <type>listcontrol</type>
+      <id>3030</id>
+      <posX>1450</posX>
+      <posY>262</posY>
+      <height>600</height>
+      <width>394</width>
+      <onleft>3020</onleft>
+      <textvisible3>false</textvisible3>
+      <textureHeight>64</textureHeight>	  
+    </control>
+
+    <control>
+      <description>txtEventData</description>
+      <type>textboxscrollup</type>
+      <id>3031</id>
+      <posX>1470</posX>
+      <posY>610</posY>
+      <width>360</width>
+      <height>250</height>
+      <font>font12</font>
+      <textcolor>ffFFFFFF</textcolor>
+      <spaceBetweenItems>15</spaceBetweenItems>
+      <seperator>-------------------------------</seperator>
+      <visible>true</visible>
+    </control>
+
+    <import>common.overlay.xml</import>
+	
+  </controls>
+</window>

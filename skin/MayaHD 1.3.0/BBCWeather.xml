@@ -1,0 +1,2064 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>8192</id>
+  <defaultcontrol>2</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
+  <define>#header.background:hover_BBCweather.png</define>  
+  <controls>
+  	
+    <control>
+      <description>BG</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+    </control>
+	
+    <control>
+      <description>Fanart Background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#header.background</texture>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
+    </control>	
+
+    <control>
+		<description>Fanart Overlay</description>
+		<type>image</type>
+		<id>1</id>
+		<posX>0</posX>
+		<posY>0</posY>
+		<width>1920</width>
+		<height>1080</height>
+		<texture>fanart_overlay.png</texture>
+		<visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
+	    <shouldCache>true</shouldCache>		
+    </control>
+	
+    <import>common.time.xml</import>
+
+     <control>
+		<id>0</id>
+		<type>label</type>
+		<description>Header label</description>
+		<posX>185</posX>
+		<posY>28</posY>
+		<width>500</width>
+		<label>BBC Weather</label>  
+		<font>Segoe Light22</font>
+		<textcolor>ff6aa5cb</textcolor>	  
+		<animation effect="Fade" time="200">WindowOpen</animation>
+		<animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+	
+    <!-- Plugin buttons group -->
+
+    <control>
+      <type>group</type>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <description>Plugin buttons</description>
+      <layout>StackLayout</layout>
+      <posX>60</posX>
+      <posY>222</posY>
+	  
+      <control>
+        <description>5 days button</description>
+        <type>button</type>
+        <id>2</id>
+        <label> 5 Day Forecast</label>
+      </control>
+	  
+      <control>
+        <description>24 hour button</description>
+        <type>button</type>
+        <id>3</id>
+        <label> Next 24 Hours</label>
+      </control>
+	  
+      <control>
+        <description>Monthly button</description>
+        <type>button</type>
+        <id>4</id>
+        <label> Monthly Outlook</label>
+      </control>
+	  
+      <control>
+        <description>Maps button</description>
+        <type>button</type>
+        <id>5</id>
+        <label> Forecast Maps</label>
+      </control>
+    </control>
+	
+    <!-- Header controls     -->
+
+    <control>
+      <description>BBC Weather logo image</description>
+      <type>image</type>
+      <keepaspectratio>yes</keepaspectratio>
+      <id>50</id>
+      <posX>98</posX>
+      <posY>28</posY>
+      <width>355</width>
+      <height>140</height>
+      <texture>BBCWeather\header_BBCWeather.png</texture>
+    </control>
+	
+    <control>
+      <description>location label</description>
+      <type>label</type>
+      <id>51</id>
+	  <width>500</width>
+	  <posX>185</posX>
+	  <posY>100</posY>
+	  <font>font12</font>
+      <textcolor>ffffffff</textcolor>
+      <label>-</label>
+      <animation effect="Fade" time="250">VisibleChange</animation>
+      <animation effect="Fade" time="250">WindowOpen</animation>
+      <animation effect="Fade" time="250">WindowClose</animation>	  
+    </control>
+	
+    <!-- Current weather -->
+
+    <control>
+      <type>group</type>
+      <dimColor>FFFFFFFF</dimColor>
+      <control>
+        <description>Current summary static label</description>
+        <type>label</type>
+        <id>100</id>
+        <posX>91</posX>
+        <posY>534</posY>
+        <label>Summary:</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Current summary value label</description>
+        <type>label</type>
+        <id>101</id>
+        <posX>265</posX>
+        <posY>534</posY>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <control>
+        <description>Current temp static label</description>
+        <type>label</type>
+        <id>102</id>
+        <posX>91</posX>
+        <posY>576</posY>
+        <label>Temp:</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Current temp value label</description>
+        <type>label</type>
+        <id>103</id>
+        <posX>265</posX>
+        <posY>576</posY>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <control>
+        <description>Current wind static label</description>
+        <type>label</type>
+        <id>104</id>
+        <posX>91</posX>
+        <posY>618</posY>
+        <label>Wind:</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>	  
+      <control>
+        <description>Current wind value label</description>
+        <type>label</type>
+        <id>105</id>
+        <posX>265</posX>
+        <posY>618</posY>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <control>
+        <description>Current humidity static label</description>
+        <type>label</type>
+        <id>106</id>
+        <posX>91</posX>
+        <posY>660</posY>
+        <label>Humidity:</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Current humidity value label</description>
+        <type>label</type>
+        <id>107</id>
+        <posX>265</posX>
+        <posY>660</posY>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <control>
+        <description>Current pressure static label</description>
+        <type>label</type>
+        <id>108</id>
+        <posX>91</posX>
+        <posY>703</posY>
+        <label>Pressure:</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Current pressure value label</description>
+        <type>label</type>
+        <id>109</id>
+        <posX>265</posX>
+        <posY>703</posY>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <control>
+        <description>Current visibility static label</description>
+        <type>label</type>
+        <id>110</id>
+        <posX>91</posX>
+        <posY>745</posY>
+        <label>Visibility:</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Current visibility value label</description>
+        <type>label</type>
+        <id>111</id>
+        <posX>265</posX>
+        <posY>745</posY>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <control>
+        <description>Current obs time static label</description>
+        <type>label</type>
+        <id>112</id>
+        <posX>91</posX>
+        <posY>829</posY>
+        <label>Observed:</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Current obs time  value label</description>
+        <type>label</type>
+        <id>113</id>
+        <posX>265</posX>
+        <posY>829</posY>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <control>
+        <description>Current obs station static label</description>
+        <type>label</type>
+        <id>114</id>
+        <posX>91</posX>
+        <posY>871</posY>
+        <label>Station:</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Current obs station  value label</description>
+        <type>label</type>
+        <id>115</id>
+        <posX>265</posX>
+        <posY>871</posY>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+    </control>
+	
+    <!-- 5 day forecast start -->
+
+    <control>
+      <type>group</type>
+      <dimColor>FFFFFFFF</dimColor>
+      <animation effect="fade" time="100">VisibleChange</animation>
+      <animation effect="fade" time="100">VisibleChange</animation>
+      <!-- Day 0 start -->
+      <control>
+        <description>Day 0 backround</description>
+        <type>image</type>
+        <keepaspectratio>no</keepaspectratio>
+        <id>218</id>
+        <posX>730</posX>
+        <posY>130</posY>
+        <width>927</width>
+        <height>168</height>
+        <texture>BBCWeather\five_day_group.png</texture>
+      </control>
+      <control>
+        <description>Day 0 day label</description>
+        <type>label</type>
+        <id>206</id>
+        <posX>759</posX>
+        <posY>182</posY>
+        <label>-</label>
+        <font>font13</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 0 summary image</description>
+        <type>image</type>
+        <id>207</id>
+        <posX>843</posX>
+        <posY>140</posY>
+        <height>112</height>
+        <width>112</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 0 summary label</description>
+        <type>label</type>
+        <id>208</id>
+        <posX>843</posX>
+        <posY>255</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 0 max image</description>
+        <type>image</type>
+        <id>209</id>
+        <posX>1012</posX>
+        <posY>182</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 0 max label</description>
+        <type>label</type>
+        <id>210</id>
+        <posX>1012</posX>
+        <posY>210</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 0 min image</description>
+        <type>image</type>
+        <id>211</id>
+        <posX>1124</posX>
+        <posY>182</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 0 min label</description>
+        <type>label</type>
+        <id>212</id>
+        <posX>1124</posX>
+        <posY>210</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 0 wind image</description>
+        <type>image</type>
+        <id>213</id>
+        <posX>1236</posX>
+        <posY>182</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 0 wind label</description>
+        <type>label</type>
+        <id>214</id>
+        <posX>1236</posX>
+        <posY>210</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font9</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 0 humidity label</description>
+        <type>label</type>
+        <id>215</id>
+        <posX>1349</posX>
+        <posY>168</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 0 pressure label</description>
+        <type>label</type>
+        <id>216</id>
+        <posX>1349</posX>
+        <posY>196</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 0 visibility label</description>
+        <type>label</type>
+        <id>217</id>
+        <posX>1349</posX>
+        <posY>225</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <!-- Day 0 end -->
+      <!-- Day 1 start -->
+      <control>
+        <description>Day 1 backround</description>
+        <type>image</type>
+        <keepaspectratio>no</keepaspectratio>
+        <id>238</id>
+        <posX>730</posX>
+        <posY>300</posY>
+        <width>927</width>
+        <height>165</height>
+        <texture>BBCWeather\five_day_group.png</texture>
+      </control>
+      <control>
+        <description>Day 1 day label</description>
+        <type>label</type>
+        <id>226</id>
+        <posX>759</posX>
+        <posY>351</posY>
+        <label>-</label>
+        <font>font13</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 1 summary image</description>
+        <type>image</type>
+        <id>227</id>
+        <posX>843</posX>
+        <posY>309</posY>
+        <height>112</height>
+        <width>112</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 1 summary label</description>
+        <type>label</type>
+        <id>228</id>
+        <posX>843</posX>
+        <posY>424</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 1 max image</description>
+        <type>image</type>
+        <id>229</id>
+        <posX>1012</posX>
+        <posY>351</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 1 max label</description>
+        <type>label</type>
+        <id>230</id>
+        <posX>1012</posX>
+        <posY>379</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 1 min image</description>
+        <type>image</type>
+        <id>231</id>
+        <posX>1124</posX>
+        <posY>351</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 1 min label</description>
+        <type>label</type>
+        <id>232</id>
+        <posX>1124</posX>
+        <posY>379</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 0 wind image</description>
+        <type>image</type>
+        <id>233</id>
+        <posX>1236</posX>
+        <posY>351</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 1 wind label</description>
+        <type>label</type>
+        <id>234</id>
+        <posX>1236</posX>
+        <posY>379</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font9</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 1 humidity label</description>
+        <type>label</type>
+        <id>235</id>
+        <posX>1349</posX>
+        <posY>337</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 1 pressure label</description>
+        <type>label</type>
+        <id>236</id>
+        <posX>1349</posX>
+        <posY>365</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 1 visibility label</description>
+        <type>label</type>
+        <id>237</id>
+        <posX>1349</posX>
+        <posY>393</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <!-- Day 1 end -->
+      <!-- Day 2 start -->
+      <control>
+        <description>Day 2 backround</description>
+        <type>image</type>
+        <keepaspectratio>no</keepaspectratio>
+        <id>258</id>
+        <posX>730</posX>
+        <posY>469</posY>
+        <width>927</width>
+        <height>165</height>
+        <texture>BBCWeather\five_day_group.png</texture>
+      </control>
+      <control>
+        <description>Day 2 day label</description>
+        <type>label</type>
+        <id>246</id>
+        <posX>759</posX>
+        <posY>520</posY>
+        <label>-</label>
+        <font>font13</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 2 summary image</description>
+        <type>image</type>
+        <id>247</id>
+        <posX>843</posX>
+        <posY>478</posY>
+        <height>112</height>
+        <width>112</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 2 summary label</description>
+        <type>label</type>
+        <id>248</id>
+        <posX>843</posX>
+        <posY>593</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 2 max image</description>
+        <type>image</type>
+        <id>249</id>
+        <posX>1012</posX>
+        <posY>520</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 2 max label</description>
+        <type>label</type>
+        <id>250</id>
+        <posX>1012</posX>
+        <posY>548</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 2 min image</description>
+        <type>image</type>
+        <id>251</id>
+        <posX>1124</posX>
+        <posY>520</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 2 min label</description>
+        <type>label</type>
+        <id>252</id>
+        <posX>1124</posX>
+        <posY>548</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 0 wind image</description>
+        <type>image</type>
+        <id>253</id>
+        <posX>1236</posX>
+        <posY>520</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 2 wind label</description>
+        <type>label</type>
+        <id>254</id>
+        <posX>1236</posX>
+        <posY>548</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font9</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 2 humidity label</description>
+        <type>label</type>
+        <id>255</id>
+        <posX>1349</posX>
+        <posY>506</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 2 pressure label</description>
+        <type>label</type>
+        <id>256</id>
+        <posX>1349</posX>
+        <posY>534</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 2 visibility label</description>
+        <type>label</type>
+        <id>257</id>
+        <posX>1349</posX>
+        <posY>562</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <!-- Day 2 end -->
+      <!-- Day 3 start -->
+      <control>
+        <description>Day 3 backround</description>
+        <type>image</type>
+        <keepaspectratio>no</keepaspectratio>
+        <id>278</id>
+        <posX>730</posX>
+        <posY>638</posY>
+        <width>927</width>
+        <height>165</height>
+        <texture>BBCWeather\five_day_group.png</texture>
+      </control>
+      <control>
+        <description>Day 3 day label</description>
+        <type>label</type>
+        <id>266</id>
+        <posX>759</posX>
+        <posY>689</posY>
+        <label>-</label>
+        <font>font13</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 3 summary image</description>
+        <type>image</type>
+        <id>267</id>
+        <posX>843</posX>
+        <posY>646</posY>
+        <height>112</height>
+        <width>112</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 3 summary label</description>
+        <type>label</type>
+        <id>268</id>
+        <posX>843</posX>
+        <posY>762</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 3 max image</description>
+        <type>image</type>
+        <id>269</id>
+        <posX>1012</posX>
+        <posY>689</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 3 max label</description>
+        <type>label</type>
+        <id>270</id>
+        <posX>1012</posX>
+        <posY>717</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 3 min image</description>
+        <type>image</type>
+        <id>271</id>
+        <posX>1124</posX>
+        <posY>689</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 3 min label</description>
+        <type>label</type>
+        <id>272</id>
+        <posX>1124</posX>
+        <posY>717</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 3 wind image</description>
+        <type>image</type>
+        <id>273</id>
+        <posX>1236</posX>
+        <posY>689</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 3 wind label</description>
+        <type>label</type>
+        <id>274</id>
+        <posX>1236</posX>
+        <posY>717</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font9</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 3 humidity label</description>
+        <type>label</type>
+        <id>275</id>
+        <posX>1349</posX>
+        <posY>675</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 3 pressure label</description>
+        <type>label</type>
+        <id>276</id>
+        <posX>1349</posX>
+        <posY>703</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 3 visibility label</description>
+        <type>label</type>
+        <id>277</id>
+        <posX>1349</posX>
+        <posY>731</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <!-- Day 3 end -->
+      <!-- Day 4 start -->
+      <control>
+        <description>Day 3 backround</description>
+        <type>image</type>
+        <keepaspectratio>no</keepaspectratio>
+        <id>298</id>
+        <posX>730</posX>
+        <posY>807</posY>
+        <width>927</width>
+        <height>165</height>
+        <texture>BBCWeather\five_day_group.png</texture>
+      </control>
+      <control>
+        <description>Day 4 day label</description>
+        <type>label</type>
+        <id>286</id>
+        <posX>759</posX>
+        <posY>857</posY>
+        <label>-</label>
+        <font>font13</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 4 summary image</description>
+        <type>image</type>
+        <id>287</id>
+        <posX>843</posX>
+        <posY>815</posY>
+        <height>112</height>
+        <width>112</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 4 summary label</description>
+        <type>label</type>
+        <id>288</id>
+        <posX>843</posX>
+        <posY>930</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 4 max image</description>
+        <type>image</type>
+        <id>289</id>
+        <posX>1012</posX>
+        <posY>857</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 4 max label</description>
+        <type>label</type>
+        <id>290</id>
+        <posX>1012</posX>
+        <posY>885</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 4 min image</description>
+        <type>image</type>
+        <id>291</id>
+        <posX>1124</posX>
+        <posY>857</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 4 min label</description>
+        <type>label</type>
+        <id>292</id>
+        <posX>1124</posX>
+        <posY>885</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 4 wind image</description>
+        <type>image</type>
+        <id>293</id>
+        <posX>1236</posX>
+        <posY>857</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Day 4 wind label</description>
+        <type>label</type>
+        <id>294</id>
+        <posX>1236</posX>
+        <posY>885</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font9</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Day 4 humidity label</description>
+        <type>label</type>
+        <id>295</id>
+        <posX>1349</posX>
+        <posY>843</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 4 pressure label</description>
+        <type>label</type>
+        <id>296</id>
+        <posX>1349</posX>
+        <posY>871</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Day 4 visibility label</description>
+        <type>label</type>
+        <id>297</id>
+        <posX>1349</posX>
+        <posY>900</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+    </control>
+	
+    <!-- 5 day forecast end -->
+    <!-- 24 hour forecast start -->
+    <!-- Control ids 300 - 499 -->
+    <control>
+      <type>group</type>
+      <dimColor>FFFFFFFF</dimColor>
+      <animation effect="fade" time="100">VisibleChange</animation>
+      <animation effect="fade" time="100">VisibleChange</animation>
+      <!-- Hour 0 start -->
+      <control>
+        <description>Hour 0 backround</description>
+        <type>image</type>
+        <keepaspectratio>no</keepaspectratio>
+        <id>300</id>
+        <posX>646</posX>
+        <posY>132</posY>
+        <width>562</width>
+        <height>168</height>
+        <texture>BBCWeather\five_day_group.png</texture>
+      </control>
+      <control>
+        <description>Hour 0 hour label</description>
+        <type>fadelabel</type>
+        <id>301</id>
+        <posX>660</posX>
+        <posY>182</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 0 summary image</description>
+        <type>image</type>
+        <id>302</id>
+        <posX>759</posX>
+        <posY>140</posY>
+        <height>112</height>
+        <width>112</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 0 summary label</description>
+        <type>label</type>
+        <id>303</id>
+        <posX>759</posX>
+        <posY>255</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 0 max image</description>
+        <type>image</type>
+        <id>304</id>
+        <posX>899</posX>
+        <posY>182</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 0 max label</description>
+        <type>label</type>
+        <id>305</id>
+        <posX>899</posX>
+        <posY>210</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 0 wind image</description>
+        <type>image</type>
+        <id>306</id>
+        <posX>983</posX>
+        <posY>182</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 0 wind label</description>
+        <type>label</type>
+        <id>307</id>
+        <posX>983</posX>
+        <posY>210</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font9</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 0 humidity label</description>
+        <type>label</type>
+        <id>308</id>
+        <posX>1068</posX>
+        <posY>168</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 0 pressure label</description>
+        <type>label</type>
+        <id>309</id>
+        <posX>1068</posX>
+        <posY>196</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 0 visibility label</description>
+        <type>label</type>
+        <id>310</id>
+        <posX>1068</posX>
+        <posY>225</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <!-- Hour 0 end -->
+      <!-- Hour 1 start -->
+      <control>
+        <description>Hour 1 backround</description>
+        <type>image</type>
+        <keepaspectratio>no</keepaspectratio>
+        <id>320</id>
+        <posX>646</posX>
+        <posY>300</posY>
+        <width>562</width>
+        <height>168</height>
+        <texture>BBCWeather\five_day_group.png</texture>
+      </control>
+      <control>
+        <description>Hour 1 hour label</description>
+        <type>fadelabel</type>
+        <id>321</id>
+        <posX>660</posX>
+        <posY>351</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 1 summary image</description>
+        <type>image</type>
+        <id>322</id>
+        <posX>759</posX>
+        <posY>309</posY>
+        <height>112</height>
+        <width>112</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 1 summary label</description>
+        <type>label</type>
+        <id>323</id>
+        <posX>759</posX>
+        <posY>424</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 1 max image</description>
+        <type>image</type>
+        <id>324</id>
+        <posX>899</posX>
+        <posY>351</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 1 max label</description>
+        <type>label</type>
+        <id>325</id>
+        <posX>899</posX>
+        <posY>379</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 1 wind image</description>
+        <type>image</type>
+        <id>326</id>
+        <posX>983</posX>
+        <posY>351</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 1 wind label</description>
+        <type>label</type>
+        <id>327</id>
+        <posX>983</posX>
+        <posY>379</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font9</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 1 humidity label</description>
+        <type>label</type>
+        <id>328</id>
+        <posX>1068</posX>
+        <posY>337</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 1 pressure label</description>
+        <type>label</type>
+        <id>329</id>
+        <posX>1068</posX>
+        <posY>365</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 1 visibility label</description>
+        <type>label</type>
+        <id>330</id>
+        <posX>1068</posX>
+        <posY>393</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <!-- Hour 1 end -->
+      <!-- Hour 2 start -->
+      <control>
+        <description>Hour 2 backround</description>
+        <type>image</type>
+        <keepaspectratio>no</keepaspectratio>
+        <id>340</id>
+        <posX>646</posX>
+        <posY>469</posY>
+        <width>562</width>
+        <height>168</height>
+        <texture>BBCWeather\five_day_group.png</texture>
+      </control>
+      <control>
+        <description>Hour 2 hour label</description>
+        <type>fadelabel</type>
+        <id>341</id>
+        <posX>660</posX>
+        <posY>520</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 2 summary image</description>
+        <type>image</type>
+        <id>342</id>
+        <posX>759</posX>
+        <posY>478</posY>
+        <height>112</height>
+        <width>112</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 2 summary label</description>
+        <type>label</type>
+        <id>343</id>
+        <posX>759</posX>
+        <posY>593</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 2 max image</description>
+        <type>image</type>
+        <id>344</id>
+        <posX>899</posX>
+        <posY>520</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 2 max label</description>
+        <type>label</type>
+        <id>345</id>
+        <posX>899</posX>
+        <posY>548</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 2 wind image</description>
+        <type>image</type>
+        <id>346</id>
+        <posX>983</posX>
+        <posY>520</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 2 wind label</description>
+        <type>label</type>
+        <id>347</id>
+        <posX>983</posX>
+        <posY>548</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font9</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 2 humidity label</description>
+        <type>label</type>
+        <id>348</id>
+        <posX>1068</posX>
+        <posY>506</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 2 pressure label</description>
+        <type>label</type>
+        <id>349</id>
+        <posX>1068</posX>
+        <posY>534</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 2 visibility label</description>
+        <type>label</type>
+        <id>350</id>
+        <posX>1068</posX>
+        <posY>562</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <!-- Hour 2 end -->
+      <!-- Hour 3 start -->
+      <control>
+        <description>Hour 3 backround</description>
+        <type>image</type>
+        <keepaspectratio>no</keepaspectratio>
+        <id>360</id>
+        <posX>646</posX>
+        <posY>638</posY>
+        <width>562</width>
+        <height>168</height>
+        <texture>BBCWeather\five_day_group.png</texture>
+      </control>
+      <control>
+        <description>Hour 3 hour label</description>
+        <type>fadelabel</type>
+        <id>361</id>
+        <posX>660</posX>
+        <posY>689</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 3 summary image</description>
+        <type>image</type>
+        <id>362</id>
+        <posX>759</posX>
+        <posY>646</posY>
+        <height>112</height>
+        <width>112</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 3 summary label</description>
+        <type>label</type>
+        <id>363</id>
+        <posX>759</posX>
+        <posY>762</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 3 max image</description>
+        <type>image</type>
+        <id>364</id>
+        <posX>899</posX>
+        <posY>689</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 3 max label</description>
+        <type>label</type>
+        <id>365</id>
+        <posX>899</posX>
+        <posY>717</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 3 wind image</description>
+        <type>image</type>
+        <id>366</id>
+        <posX>983</posX>
+        <posY>689</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 3 wind label</description>
+        <type>label</type>
+        <id>367</id>
+        <posX>983</posX>
+        <posY>717</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font9</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 3 humidity label</description>
+        <type>label</type>
+        <id>368</id>
+        <posX>1068</posX>
+        <posY>675</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 3 pressure label</description>
+        <type>label</type>
+        <id>369</id>
+        <posX>1068</posX>
+        <posY>703</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 3 visibility label</description>
+        <type>label</type>
+        <id>370</id>
+        <posX>1068</posX>
+        <posY>731</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <!-- Hour 3 end -->
+      <!-- Hour 4 start -->
+      <control>
+        <description>Hour 4 backround</description>
+        <type>image</type>
+        <keepaspectratio>no</keepaspectratio>
+        <id>380</id>
+        <posX>1222</posX>
+        <posY>132</posY>
+        <width>562</width>
+        <height>168</height>
+        <texture>BBCWeather\five_day_group.png</texture>
+      </control>
+      <control>
+        <description>Hour 4 hour label</description>
+        <type>fadelabel</type>
+        <id>381</id>
+        <posX>1236</posX>
+        <posY>182</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 4 summary image</description>
+        <type>image</type>
+        <id>382</id>
+        <posX>1335</posX>
+        <posY>140</posY>
+        <height>112</height>
+        <width>112</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 4 summary label</description>
+        <type>label</type>
+        <id>383</id>
+        <posX>1335</posX>
+        <posY>255</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 4 max image</description>
+        <type>image</type>
+        <id>384</id>
+        <posX>1475</posX>
+        <posY>182</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 4 max label</description>
+        <type>label</type>
+        <id>385</id>
+        <posX>1475</posX>
+        <posY>210</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 4 wind image</description>
+        <type>image</type>
+        <id>386</id>
+        <posX>1560</posX>
+        <posY>182</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 4 wind label</description>
+        <type>label</type>
+        <id>387</id>
+        <posX>1560</posX>
+        <posY>210</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font9</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 4 humidity label</description>
+        <type>label</type>
+        <id>388</id>
+        <posX>1644</posX>
+        <posY>168</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 4 pressure label</description>
+        <type>label</type>
+        <id>389</id>
+        <posX>1644</posX>
+        <posY>196</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 4 visibility label</description>
+        <type>label</type>
+        <id>390</id>
+        <posX>1644</posX>
+        <posY>225</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <!-- Hour 4 end -->
+      <!-- Hour 5 start -->
+      <control>
+        <description>Hour 5 backround</description>
+        <type>image</type>
+        <keepaspectratio>no</keepaspectratio>
+        <id>400</id>
+        <posX>1222</posX>
+        <posY>300</posY>
+        <width>562</width>
+        <height>168</height>
+        <texture>BBCWeather\five_day_group.png</texture>
+      </control>
+      <control>
+        <description>Hour 5 hour label</description>
+        <type>fadelabel</type>
+        <id>401</id>
+        <posX>1236</posX>
+        <posY>351</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 5 summary image</description>
+        <type>image</type>
+        <id>402</id>
+        <posX>1335</posX>
+        <posY>309</posY>
+        <height>112</height>
+        <width>112</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 5 summary label</description>
+        <type>label</type>
+        <id>403</id>
+        <posX>1335</posX>
+        <posY>424</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 5 max image</description>
+        <type>image</type>
+        <id>404</id>
+        <posX>1475</posX>
+        <posY>351</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 5 max label</description>
+        <type>label</type>
+        <id>405</id>
+        <posX>1475</posX>
+        <posY>379</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 5 wind image</description>
+        <type>image</type>
+        <id>406</id>
+        <posX>1560</posX>
+        <posY>351</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 5 wind label</description>
+        <type>label</type>
+        <id>407</id>
+        <posX>1560</posX>
+        <posY>379</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font9</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 5 humidity label</description>
+        <type>label</type>
+        <id>408</id>
+        <posX>1644</posX>
+        <posY>337</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 5 pressure label</description>
+        <type>label</type>
+        <id>409</id>
+        <posX>1644</posX>
+        <posY>365</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 5 visibility label</description>
+        <type>label</type>
+        <id>410</id>
+        <posX>1644</posX>
+        <posY>393</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <!-- Hour 5 end -->
+      <!-- Hour 6 start -->
+      <control>
+        <description>Hour 6 backround</description>
+        <type>image</type>
+        <keepaspectratio>no</keepaspectratio>
+        <id>420</id>
+        <posX>1222</posX>
+        <posY>469</posY>
+        <width>562</width>
+        <height>168</height>
+        <texture>BBCWeather\five_day_group.png</texture>
+      </control>
+      <control>
+        <description>Hour 6 hour label</description>
+        <type>fadelabel</type>
+        <id>421</id>
+        <posX>1236</posX>
+        <posY>520</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 6 summary image</description>
+        <type>image</type>
+        <id>422</id>
+        <posX>1335</posX>
+        <posY>478</posY>
+        <height>112</height>
+        <width>112</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 6 summary label</description>
+        <type>label</type>
+        <id>423</id>
+        <posX>1335</posX>
+        <posY>593</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 6 max image</description>
+        <type>image</type>
+        <id>424</id>
+        <posX>1475</posX>
+        <posY>520</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 6 max label</description>
+        <type>label</type>
+        <id>425</id>
+        <posX>1475</posX>
+        <posY>548</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 6 wind image</description>
+        <type>image</type>
+        <id>426</id>
+        <posX>1560</posX>
+        <posY>520</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 6 wind label</description>
+        <type>label</type>
+        <id>427</id>
+        <posX>1560</posX>
+        <posY>548</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font9</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 6 humidity label</description>
+        <type>label</type>
+        <id>428</id>
+        <posX>1644</posX>
+        <posY>506</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 6 pressure label</description>
+        <type>label</type>
+        <id>429</id>
+        <posX>1644</posX>
+        <posY>534</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 6 visibility label</description>
+        <type>label</type>
+        <id>430</id>
+        <posX>1644</posX>
+        <posY>562</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+	  
+      <!-- Hour 6 end -->
+      <!-- Hour 7 start -->
+      <control>
+        <description>Hour 7 backround</description>
+        <type>image</type>
+        <keepaspectratio>no</keepaspectratio>
+        <id>440</id>
+        <posX>1222</posX>
+        <posY>638</posY>
+        <width>562</width>
+        <height>168</height>
+        <texture>BBCWeather\five_day_group.png</texture>
+      </control>
+      <control>
+        <description>Hour 7 hour label</description>
+        <type>fadelabel</type>
+        <id>441</id>
+        <posX>1236</posX>
+        <posY>689</posY>
+        <height>84</height>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 7 summary image</description>
+        <type>image</type>
+        <id>442</id>
+        <posX>1335</posX>
+        <posY>646</posY>
+        <height>112</height>
+        <width>112</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 7 summary label</description>
+        <type>label</type>
+        <id>443</id>
+        <posX>1335</posX>
+        <posY>762</posY>
+        <label>-</label>
+        <font>font11</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 7 max image</description>
+        <type>image</type>
+        <id>444</id>
+        <posX>1475</posX>
+        <posY>689</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 7 max label</description>
+        <type>label</type>
+        <id>445</id>
+        <posX>1475</posX>
+        <posY>717</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 7 wind image</description>
+        <type>image</type>
+        <id>446</id>
+        <posX>1560</posX>
+        <posY>689</posY>
+        <height>56</height>
+        <width>56</width>
+        <texture>-</texture>
+      </control>
+      <control>
+        <description>Hour 7 wind label</description>
+        <type>label</type>
+        <id>447</id>
+        <posX>1560</posX>
+        <posY>717</posY>
+        <width>56</width>
+        <align>center</align>
+        <label>-</label>
+        <font>font9</font>
+        <textcolor>Black</textcolor>
+      </control>
+      <control>
+        <description>Hour 7 humidity label</description>
+        <type>label</type>
+        <id>448</id>
+        <posX>1644</posX>
+        <posY>675</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 7 pressure label</description>
+        <type>label</type>
+        <id>449</id>
+        <posX>1644</posX>
+        <posY>703</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Hour 7 visibility label</description>
+        <type>label</type>
+        <id>450</id>
+        <posX>1644</posX>
+        <posY>731</posY>
+        <label>-</label>
+        <font>font10</font>
+        <textcolor>White</textcolor>
+      </control>
+    </control>
+	
+    <!-- 24 hour forecast end -->
+    <!-- Monthly forecast start -->
+    <!-- Control ids 500 - 599 -->
+    <control>
+      <type>group</type>
+      <dimColor>FFFFFFFF</dimColor>
+      <animation effect="fade" time="100">VisibleChange</animation>
+      <animation effect="fade" time="100">VisibleChange</animation>
+      <control>
+        <description>Monthly outlook label</description>
+        <type>label</type>
+        <id>500</id>
+        <posX>702</posX>
+        <posY>140</posY>
+        <label>-</label>
+        <font>font13</font>
+        <textcolor>White</textcolor>
+      </control>
+      <control>
+        <description>Monthly outlook published label</description>
+        <type>label</type>
+        <id>501</id>
+        <posX>702</posX>
+        <posY>175</posY>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>99CCCC11</textcolor>
+      </control>
+      <control>
+        <description>Monthly outlook headline label</description>
+        <type>label</type>
+        <id>503</id>
+        <posX>702</posX>
+        <posY>210</posY>
+        <label>-</label>
+        <font>font12</font>
+        <textcolor>99CCCC11</textcolor>
+      </control>
+      <control>
+        <description>Monthly outlook textbox</description>
+        <type>textboxscrollup</type>
+        <id>504</id>
+        <posX>702</posX>
+        <posY>267</posY>
+        <height>703</height>
+        <width>1054</width>
+        <label>-</label>
+        <font>font13</font>
+        <textcolor>White</textcolor>
+        <seperator>---------------------------------------------------------------------</seperator>
+      </control>
+    </control>
+	
+    <!-- Monthly forecast end -->
+    <!-- Maps start -->
+    <!-- Control ids 600 - 699 -->
+    <control>
+      <type>group</type>
+      <dimColor>FFFFFFFF</dimColor>
+      <animation effect="fade" time="100">VisibleChange</animation>
+      <animation effect="fade" time="100">VisibleChange</animation>
+      <control>
+        <description>Maps background image</description>
+        <type>image</type>
+        <keepaspectratio>no</keepaspectratio>
+        <id>600</id>
+        <posX>815</posX>
+        <posY>182</posY>
+        <width>692</width>
+        <height>759</height>
+        <texture>BBCWeather\map_background.png</texture>
+      </control>
+      <control>
+        <description>Maps multi image</description>
+        <type>multiimage</type>
+        <keepaspectratio>yes</keepaspectratio>
+        <id>601</id>
+        <posX>843</posX>
+        <posY>210</posY>
+        <width>636</width>
+        <height>703</height>
+        <imagepath>BBCWeather</imagepath>
+        <timeperimage>1000</timeperimage>
+        <fadetime>100</fadetime>
+        <randomize>no</randomize>
+        <loop>no</loop>
+      </control>
+      <control>
+        <description>Maps overlay image (placenames)</description>
+        <type>image</type>
+        <keepaspectratio>yes</keepaspectratio>
+        <id>602</id>
+        <posX>843</posX>
+        <posY>210</posY>
+        <width>636</width>
+        <height>703</height>
+        <texture>BBCWeather\overlay.png</texture>
+      </control>
+    </control>
+	
+  </controls>
+</window>
