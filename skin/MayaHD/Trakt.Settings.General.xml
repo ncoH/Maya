@@ -66,6 +66,7 @@
         		<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
         		<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
 			</control>
+			
 			<control>
 				<description>Download FullSize Fanart</description>
 				<type>togglebutton</type>
@@ -80,7 +81,8 @@
         		<textureNoFocus>settings_button_large_nofocus_toggleon.png</textureNoFocus>
         		<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
         		<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
-			</control>			
+			</control>	
+			
 			<control>
 				<description>Download Original Size Fanart</description>
 				<type>togglebutton</type>
@@ -96,6 +98,7 @@
         		<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
         		<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
     		</control>
+			
 			<control>
 				<description>Create Moving Pictures Categories</description>
 				<type>togglebutton</type>
@@ -111,6 +114,7 @@
         		<AltTextureFocus>settings_button_large_focus_toggleoff.png</AltTextureFocus>
         		<AltTextureNoFocus>settings_button_large_nofocus_toggleoff.png</AltTextureNoFocus>
     		</control>
+			
 			<control>
 				<description>Create Moving Pictures Filters</description>
 				<type>togglebutton</type>

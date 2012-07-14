@@ -67,7 +67,7 @@
 		<width>200</width>
 		<height>1080</height>
 		<dimColor>00ffffff</dimColor>
-		<visible>Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4) | Control.HasFocus(5)</visible>
+		<visible>Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
 		
 			<control>
 				<type>image</type>
@@ -221,6 +221,7 @@
         <onright>1002</onright>
         <textcolorNoFocus>22ffffff</textcolorNoFocus>
       </control>
+	  
       <control>
         <id>701</id>
         <description>down group</description>
@@ -405,7 +406,7 @@
         <dimColor>ffffffff</dimColor>
         <height>1080</height>
         <posX>815</posX>
-        <posY>104</posY>
+        <posY>164</posY>
         <control>
           <id>302</id>
           <type>label</type>
@@ -494,7 +495,7 @@
         <dimColor>ffffffff</dimColor>
         <height>1080</height>
         <posX>815</posX>
-        <posY>104</posY>
+        <posY>164</posY>
         <control>
           <id>402</id>
           <type>label</type>

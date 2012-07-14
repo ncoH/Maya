@@ -202,6 +202,57 @@
       <shouldCache>true</shouldCache>
       <texture>#MayaHD.recentlyAdded.movie3.fanart</texture>
     </control>
+
+    <control>
+      <description>MyFilms selected Fanart 1</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1922</width>
+      <height>1080</height>
+      <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(91919988)</visible>
+      <animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
+      <animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <shouldCache>true</shouldCache>
+      <texture>#latestMediaHandler.myfilms.latest1.fanart</texture>
+    </control>
+	
+    <control>
+      <description>MyFilms selected Fanart 2</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1922</width>
+      <height>1080</height>
+      <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(91919989)</visible>
+      <animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
+      <animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <shouldCache>true</shouldCache>
+      <texture>#latestMediaHandler.myfilms.latest2.fanart</texture>
+    </control>
+	
+    <control>
+      <description>MyFilms selected Fanart 3</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1922</width>
+      <height>1080</height>
+      <visible>!Control.IsVisible(1201)+!Control.IsVisible(1202)+control.hasfocus(91919990)</visible>
+      <animation effect="fade" start="0" end="100" delay="200" time="350">visible</animation>
+      <animation effect="fade" start="100" end="0" delay="200" time="350">hidden</animation>
+      <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+      <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+      <shouldCache>true</shouldCache>
+      <texture>#latestMediaHandler.myfilms.latest3.fanart</texture>
+    </control>
 	
     <control>
       <description>DEFAULT BACKGROUND</description>
@@ -257,7 +308,7 @@
 		<width>200</width>
 		<height>1080</height>
 		<dimColor>00ffffff</dimColor>
-		<visible>Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4) | Control.HasFocus(5)</visible>
+		<visible>Control.HasFocus(2) | Control.HasFocus(3) | Control.HasFocus(4)</visible>
 		
 			<control>
 				<type>image</type>
@@ -411,6 +462,7 @@
         <onright>1002</onright>
         <textcolorNoFocus>22ffffff</textcolorNoFocus>
       </control>
+	  
       <control>
         <id>701</id>
         <description>down group</description>
@@ -498,6 +550,7 @@
           <textcolor>6aa5cb</textcolor>
         </control>
       </control>
+	  
       <control>
         <id>702</id>
         <description>down group</description>
@@ -594,7 +647,7 @@
         <dimColor>ffffffff</dimColor>
         <height>1080</height>
         <posX>815</posX>
-        <posY>104</posY>
+        <posY>164</posY>
         <control>
           <id>302</id>
           <type>label</type>
@@ -683,7 +736,7 @@
         <dimColor>ffffffff</dimColor>
         <height>1080</height>
         <posX>815</posX>
-        <posY>104</posY>
+        <posY>164</posY>
         <control>
           <id>402</id>
           <type>label</type>
