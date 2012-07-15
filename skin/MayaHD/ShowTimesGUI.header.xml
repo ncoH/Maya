@@ -32,8 +32,21 @@
             <textcolor>ffffff</textcolor>
             <label>#time</label>
 			<align>right</align>
-			<visible>!control.isvisible(24)</visible>
+			<visible>plugin.isenabled(World Weather) + !control.isvisible(24)</visible>
         </control>
+		
+        <control>
+            <id>0</id>
+            <type>label</type>
+            <posX>1865</posX>
+            <posY>28</posY>
+            <width>555</width>
+            <font>Segoe Light22</font>
+            <textcolor>6aa5cb</textcolor>
+            <label>#time</label>
+			<align>right</align>
+			<visible>!plugin.isenabled(World Weather) + !control.isvisible(24)</visible>
+        </control>		
 
 <!--Weather-->
 		
@@ -47,7 +60,7 @@
             <textcolor>6aa5cb</textcolor>
             <label>/#WorldWeather.TodayTemperature</label>
 			<align>left</align>
-			<visible>!control.isvisible(24)</visible>
+			<visible>plugin.isenabled(World Weather) + !control.isvisible(24)</visible>
         </control>
 		
 		<control>
@@ -59,8 +72,7 @@
 			<height>100</height>
 			<width>100</width>
 			<texture>#WorldWeather.TodayIconImage</texture>
-			<visible>plugin.isenabled(InfoService)</visible>
-			<visible>!control.isvisible(24)</visible>
+			<visible>plugin.isenabled(World Weather) + !control.isvisible(24)</visible>
 		</control>
 	
   </controls>

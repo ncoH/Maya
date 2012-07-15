@@ -201,7 +201,7 @@
         <visible>facadeview.smallicons|facadeview.largeicons</visible>
       </control>
 	  
-      <!-- Filmstrip -->
+    <!-- Filmstrip -->
       <control>
         <type>label</type>
         <description>Current program time</description>
@@ -215,6 +215,51 @@
         <label>#selecteditem2</label>
         <visible>facadeview.filmstrip|facadeview.coverflow</visible>
       </control>
+    </control>
+
+	<!-- Disc Useage -->	 
+    <control>
+      <description>Disk used</description>
+      <type>label</type>
+      <id></id>
+      <posX>540</posX>
+      <posY>638</posY>
+      <width>680</width>
+      <label>HDD #Radio.RecordedTV.Diskinfo.PercentageUsed %</label>
+      <font>font10</font>
+      <textcolor>6aa5cb</textcolor>
+      <visible>#Radio.RecordedTV.Diskinfo.PercentageUsed</visible>
+      <visible>facadeview.list|facadeview.album</visible>	
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>	  
+    </control>
+
+    <control>
+      <description>Progress background Disk used</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>107</posX>
+      <posY>645</posY>
+      <width>400</width>
+      <height>13</height>
+      <texture>osd_progress_background_medium.png</texture>
+      <visible>facadeview.list|facadeview.album</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>	
+    </control>
+	
+    <control>
+      <description>Disk used</description>
+      <type>progress</type>
+      <id></id>
+      <posX>96</posX>
+      <posY>645</posY>
+      <width>400</width>
+      <height>13</height>
+      <label>#Radio.RecordedTV.Diskinfo.PercentageUsed</label>
+      <visible>facadeview.list|facadeview.album</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>	  
     </control>
 	
     <control>

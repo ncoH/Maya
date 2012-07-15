@@ -1078,7 +1078,11 @@
       <texture>hiddenmenu_tab_up.png</texture>
       <visible>[facadeview.filmstrip|facadeview.coverflow]+Control.HasFocus(50)</visible>
     </control>
-		
+
+    <import>TVSeries.hiddenmenu.xml</import>
+    <import>common.overlay.xml</import>
+	<import>TVSeries.facade.xml</import>		
+
     <!-- ********************** IMPORT PROCESS *************************************** -->
     <control>
       <description>Import Animation</description>
@@ -1092,10 +1096,6 @@
       <Duration>0:0:01.5</Duration>
       <keepaspectratio>yes</keepaspectratio>
     </control>
-
-    <import>TVSeries.hiddenmenu.xml</import>
-	<import>TVSeries.facade.xml</import>	
-    <import>common.overlay.xml</import>
 	
   </controls>
 </window>

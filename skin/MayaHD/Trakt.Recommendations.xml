@@ -55,8 +55,8 @@
 			<label>#Trakt.Translation.RecommendedMovies.Label</label>
 			<hyperlink>87263</hyperlink>
 			<onup>88883</onup>
-            <onleft>12</onleft>
-            <onright>12</onright>
+            <onleft>9993</onleft>
+            <onright>9993</onright>
 			<width>956</width>
 			<height>52</height>
 			<textXOff>30</textXOff>
@@ -72,8 +72,8 @@
 			<id>88883</id>
 			<label>#Trakt.Translation.RecommendedShows.Label</label>
 			<hyperlink>87262</hyperlink>
-            <onleft>12</onleft>
-            <onright>12</onright>
+            <onleft>9993</onleft>
+            <onright>9993</onright>
             <ondown>88882</ondown>
 			<width>956</width>
 			<height>52</height>

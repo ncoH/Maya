@@ -5,7 +5,7 @@
 	<allowoverlay>no</allowoverlay>
 	<define>#header.label:Trakt</define>
 	<define>#defaultcontrol:2</define>
-	<define>#defaultcontrol.onright:9996</define>
+	<define>#defaultcontrol.onright:9991</define>
 	<controls>
 
         <import>Trakt.Common.Background.xml</import>	

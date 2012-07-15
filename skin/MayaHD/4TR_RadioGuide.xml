@@ -261,8 +261,8 @@
       <type>image</type>
       <id>25</id>
       <posX>77</posX>
-      <posY>227</posY>
-      <width>49</width>
+      <posY>198</posY>
+      <width>50</width>
       <height>487</height>
       <colordiffuse>c0ffffff</colordiffuse>
       <texture>tvguide_slider.png</texture>

@@ -32,7 +32,7 @@
 		<id>1</id>
 		<posX>708</posX>
 		<posY>175</posY>
-		<width>702</width>
+		<width>735</width>
 		<height>140</height>
 		<label>#Trakt.Translation.WatchList.Label</label>
 		<textcolor>6aa5cb</textcolor>
@@ -54,8 +54,8 @@
 			<id>2</id>
 			<label>#Trakt.Translation.WatchListMovies.Label</label>
 			<hyperlink>87270</hyperlink>
-            <onleft>14</onleft>
-            <onright>14</onright>			
+            <onleft>9995</onleft>
+            <onright>9995</onright>			
             <onup>88884</onup>
 			<width>956</width>
 			<height>52</height>
@@ -72,8 +72,8 @@
 			<id>88883</id>
 			<label>#Trakt.Translation.WatchListShows.Label</label>
 			<hyperlink>87268</hyperlink>
-            <onleft>14</onleft>
-            <onright>14</onright>	
+            <onleft>9995</onleft>
+            <onright>9995</onright>	
 			<width>956</width>
 			<height>52</height>
 			<textXOff>30</textXOff>
@@ -89,8 +89,8 @@
 			<id>88884</id>
 			<label>#Trakt.Translation.WatchListEpisodes.Label</label>
 			<hyperlink>87269</hyperlink>
-            <onleft>14</onleft>
-            <onright>14</onright>			
+            <onleft>9995</onleft>
+            <onright>9995</onright>			
             <ondown>2</ondown>
 			<width>956</width>
 			<height>52</height>

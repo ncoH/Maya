@@ -54,8 +54,8 @@
 			<id>2</id>
 			<label>#Trakt.Translation.TrendingMovies.Label</label>
 			<hyperlink>87266</hyperlink>
-            <onleft>13</onleft>
-            <onright>13</onright>
+            <onleft>9994</onleft>
+            <onright>9994</onright>
             <onup>3</onup>
 			<width>956</width>
 			<height>52</height>
@@ -72,8 +72,8 @@
 			<id>3</id>
 			<label>#Trakt.Translation.TrendingShows.Label</label>
 			<hyperlink>87265</hyperlink>
-            <onleft>13</onleft>
-            <onright>13</onright>
+            <onleft>9994</onleft>
+            <onright>9994</onright>
             <ondown>2</ondown>
 			<width>956</width>
 			<height>52</height>

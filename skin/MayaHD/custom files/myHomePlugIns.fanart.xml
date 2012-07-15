@@ -223,6 +223,7 @@
       <width>702</width>
       <label>#date</label>
       <font>Segoe Light12</font>
+      <visible>plugin.isenabled(World Weather)</visible>	  
       <animation effect="fade" start="0" end="100" time="400" delay="200">WindowOpen</animation>
       <animation effect="fade" start="100" end="0" time="400" delay="200">WindowClose</animation>
     </control>
