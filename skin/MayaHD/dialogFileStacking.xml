@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>2008</id>
   <defaultcontrol>1</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <import>common.dialog.xml</import>
+	
     <control>
       <type>group</type>
       <animation effect="slide" start="0,0" end="0,-15" time="0">WindowOpen</animation>
@@ -22,6 +23,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD1</description>
         <type>button</type>
@@ -36,6 +38,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD2</description>
         <type>button</type>
@@ -62,6 +65,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD4</description>
         <type>button</type>
@@ -75,6 +79,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD5</description>
         <type>button</type>
@@ -88,6 +93,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD6</description>
         <type>button</type>
@@ -114,6 +120,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD8</description>
         <type>button</type>
@@ -127,6 +134,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD9</description>
         <type>button</type>
@@ -140,6 +148,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD10</description>
         <type>button</type>
@@ -153,6 +162,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD11</description>
         <type>button</type>
@@ -166,6 +176,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD12</description>
         <type>button</type>
@@ -179,6 +190,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD13</description>
         <type>button</type>
@@ -192,6 +204,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD14</description>
         <type>button</type>
@@ -205,6 +218,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD15</description>
         <type>button</type>
@@ -218,6 +232,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD16</description>
         <type>button</type>
@@ -231,6 +246,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD17</description>
         <type>button</type>
@@ -244,6 +260,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD18</description>
         <type>button</type>
@@ -257,6 +274,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD19</description>
         <type>button</type>
@@ -270,6 +288,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
+	  
       <control>
         <description>CD20</description>
         <type>button</type>
@@ -284,5 +303,6 @@
         <animation effect="fade" time="250">WindowClose</animation>
       </control>
     </control>
+	
   </controls>
 </window>

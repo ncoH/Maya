@@ -4,6 +4,7 @@
   <Groups>
     <Items>
       <GroupItem Name="Font files">
+        <ParentGroup />
         <DisplayName>Font files</DisplayName>
         <DefaulChecked>true</DefaulChecked>
         <Description>Font files</Description>
@@ -14,21 +15,21 @@
               <UpdateOption>OverwriteIfOlder</UpdateOption>
               <LocalFileName>..\fonts\mayatypelight.ttf</LocalFileName>
               <ZipFileName>Installer{Font}\{30e31f93-93bd-4d22-865f-88729bb97286}-mayatypelight.ttf</ZipFileName>
-              <DestinationFilename>%Skin%\MayaHD\Fonts\mayatypelight.ttf</DestinationFilename>
+              <DestinationFilename>%Fonts%\mayatypelight.ttf</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFont" SystemFile="false" Modified="true">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
               <LocalFileName>..\fonts\mayatypeui.ttf</LocalFileName>
               <ZipFileName>Installer{Font}\{1448704a-f254-4521-83db-b06814895966}-mayatypeui.ttf</ZipFileName>
-              <DestinationFilename>%Skin%\MayaHD\Fonts\mayatypeui.ttf</DestinationFilename>
+              <DestinationFilename>%Fonts%\mayatypeui.ttf</DestinationFilename>
             </FileItem>
             <FileItem InstallType="CopyFont" SystemFile="false" Modified="true">
               <Param1 />
               <UpdateOption>OverwriteIfOlder</UpdateOption>
               <LocalFileName>..\fonts\mayatypeuitvg.ttf</LocalFileName>
               <ZipFileName>Installer{Font}\{ccbf4d00-acc4-4a11-8a97-4b42f4d14688}-mayatypeuitvg.ttf</ZipFileName>
-              <DestinationFilename>%Skin%\MayaHD\Fonts\mayatypeuitvg.ttf</DestinationFilename>
+              <DestinationFilename>%Fonts%\mayatypeuitvg.ttf</DestinationFilename>
             </FileItem>
           </Items>
         </Files>
@@ -16321,6 +16322,244 @@
               <ZipFileName>Installer{CopyFile}\{6225ba3e-0a5a-402a-b861-b429c0cddb71}-yrWeather.xml</ZipFileName>
               <DestinationFilename>%Skin%\MayaHD\yrWeather.xml</DestinationFilename>
             </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\ShowTimesGUI.details.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{9a464cbf-5ca4-4892-98a6-d8c2343c24eb}-ShowTimesGUI.details.xml</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\ShowTimesGUI.details.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\ShowTimesGUI.header.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{ea71abd0-1ae4-470b-b9ed-5e3e9a855f64}-ShowTimesGUI.header.xml</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\ShowTimesGUI.header.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\ShowTimesGUI.hiddenmenu.xml</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{62264bfa-c43b-4454-86cd-f0e98ff95c2e}-ShowTimesGUI.hiddenmenu.xml</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\ShowTimesGUI.hiddenmenu.xml</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\heart-1.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{c9235f2e-6194-4458-b8fa-d1e76e8efc28}-heart-1.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\heart-1.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\heart-10.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{fc069f76-09b7-4149-b2e5-47fda0c9cb90}-heart-10.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\heart-10.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\heart-2.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{17162d7f-8813-4d95-b268-3f93ace66d17}-heart-2.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\heart-2.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\heart-3.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{b8f47d0a-e773-45f4-bc97-16e1a46db5d9}-heart-3.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\heart-3.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\heart-4.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{37caf9d1-b324-4a6a-a0d6-364e78b4f80e}-heart-4.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\heart-4.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\heart-5.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{2642ff61-7c3b-46f9-b659-5bda116f86ff}-heart-5.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\heart-5.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\heart-6.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{05797aea-53df-4b15-bb1b-9b24c50a0a7d}-heart-6.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\heart-6.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\heart-7.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{ab99bca6-09e9-486d-ab55-962dbebb360e}-heart-7.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\heart-7.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\heart-8.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{4eaca642-c438-401d-a6a3-7710ea38a265}-heart-8.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\heart-8.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\heart-9.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{fbed0e7f-b5a0-4620-8e5e-deb0f89207f4}-heart-9.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\heart-9.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\heart-off.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{17a0a778-4188-4dc7-8b86-9f428a742d6e}-heart-off.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\heart-off.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\hover_ClickfinderProgramGuide.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{91e7d469-ecd5-4bf3-9f16-b62e03aa4d68}-hover_ClickfinderProgramGuide.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\hover_ClickfinderProgramGuide.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\osd_progress_background.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{abcf83db-dd11-4b18-a231-11500e0c4b3a}-osd_progress_background.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\osd_progress_background.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\splashscreen_old.jpg</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{7c233b04-4f68-40d9-8c1d-a9ad42969946}-splashscreen_old.jpg</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\splashscreen_old.jpg</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\traktHeart1.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{43d11f24-fdf4-43f8-bc5d-dcc82f15919a}-traktHeart1.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\traktHeart1.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\traktHeart10.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{8beefb4a-6d2d-467f-8ba3-ea630a0d65a5}-traktHeart10.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\traktHeart10.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\traktHeart2.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{61fab6a8-baca-4b90-a937-47350a3fbc77}-traktHeart2.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\traktHeart2.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\traktHeart3.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{9b63eb77-1dd0-4bb1-82cc-69f081c5a0ee}-traktHeart3.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\traktHeart3.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\traktHeart4.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{5e5e6432-1050-4747-89f7-4dfd890a75e1}-traktHeart4.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\traktHeart4.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\traktHeart5.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{bd16de87-8a68-4801-9180-99c65993c5bb}-traktHeart5.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\traktHeart5.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\traktHeart6.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{804dcb1b-024d-49a8-956f-5cec7b50822a}-traktHeart6.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\traktHeart6.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\traktHeart7.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{ed30a907-9881-4ce6-9573-ff8ce904f4ba}-traktHeart7.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\traktHeart7.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\traktHeart8.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{fdb98cb4-b945-483c-a92f-1ff35fa6ca65}-traktHeart8.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\traktHeart8.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\traktHeart9.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{c232d1c4-4264-47f7-89b5-181ae073b3b8}-traktHeart9.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\traktHeart9.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\tvgroup_button.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{e5155226-f8c2-4171-bf94-888cb618c96c}-tvgroup_button.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\tvgroup_button.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\tvguide_button_middle-orig.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{a59e9547-370a-4c33-b7ef-48a088a021c3}-tvguide_button_middle-orig.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\tvguide_button_middle-orig.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\tvguide_hd_program_not_on_now.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{7bbaccc4-2f51-4a3b-bbeb-0616d921acdf}-tvguide_hd_program_not_on_now.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\tvguide_hd_program_not_on_now.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\tvguide_hd_program_on_now.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{6c933647-92b6-46c7-93f8-544bb0dca5ca}-tvguide_hd_program_on_now.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\tvguide_hd_program_on_now.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\tvguide_highlight_border.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{c3083702-90a8-4349-8b14-07c7e1681eaf}-tvguide_highlight_border.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\tvguide_highlight_border.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\tvguide_timeline_bg.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{4cf97d9a-658a-4df5-830a-46f34eefd0a1}-tvguide_timeline_bg.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\tvguide_timeline_bg.png</DestinationFilename>
+            </FileItem>
+            <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+              <Param1 />
+              <UpdateOption>OverwriteIfOlder</UpdateOption>
+              <LocalFileName>..\skin\MayaHD\Media\yrweather_logo.png</LocalFileName>
+              <ZipFileName>Installer{CopyFile}\{634c3b12-2b46-4067-95f0-2e8a3ce7bfc0}-yrweather_logo.png</ZipFileName>
+              <DestinationFilename>%Skin%\MayaHD\Media\yrweather_logo.png</DestinationFilename>
+            </FileItem>
           </Items>
         </Files>
       </GroupItem>
@@ -16570,7 +16809,7 @@
     </Items>
   </PluginDependencies>
   <GeneralInfo>
-    <Name>MayaHD 1.0.0.0</Name>
+    <Name>MayaHD 1.1.0.0</Name>
     <Id>f5fdb236-15e5-44be-8ba8-279b74fb2759</Id>
     <Author>Team Maya [joostzilla,ncoh,dlarge500]</Author>
     <HomePage>https://github.com/ncoH/Maya</HomePage>
@@ -16578,17 +16817,17 @@
     <UpdateUrl />
     <Version>
       <Major>1</Major>
-      <Minor>0</Minor>
+      <Minor>1</Minor>
       <Build>0</Build>
-      <Revision>1</Revision>
+      <Revision>0</Revision>
     </Version>
     <ExtensionDescription>Our goal is to create a simple professional skin that does not rely solely on fan art (although it uses some on relevant places) and is easy on the eye and great for daily family use. But has a modern and classy feel.</ExtensionDescription>
     <VersionDescription />
-    <DevelopmentStatus>Beta</DevelopmentStatus>
+    <DevelopmentStatus>Rc</DevelopmentStatus>
     <OnlineLocation />
     <ReleaseDate>2012-04-16T18:50:03.0986362+02:00</ReleaseDate>
     <Tags />
-    <Location>\\FILESERVER-PC\ServerFolders\Progs &amp; Tools\Windows\SVN\Maya Git\MayaHD 1.0.0.0 beta.mpe1</Location>
+    <Location>\\FILESERVER-PC\ServerFolders\Progs &amp; Tools\Windows\SVN\Maya Git\Maya\installer\MayaHD 1.1.0.0 RC.mpe1</Location>
     <Params>
       <Items>
         <SectionParam Name="Icon">
@@ -16628,21 +16867,21 @@
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\fonts\mayatypelight.ttf</LocalFileName>
         <ZipFileName>Installer{Font}\{30e31f93-93bd-4d22-865f-88729bb97286}-mayatypelight.ttf</ZipFileName>
-        <DestinationFilename>%Skin%\MayaHD\Fonts\mayatypelight.ttf</DestinationFilename>
+        <DestinationFilename>%Fonts%\mayatypelight.ttf</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFont" SystemFile="false" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\fonts\mayatypeui.ttf</LocalFileName>
         <ZipFileName>Installer{Font}\{1448704a-f254-4521-83db-b06814895966}-mayatypeui.ttf</ZipFileName>
-        <DestinationFilename>%Skin%\MayaHD\Fonts\mayatypeui.ttf</DestinationFilename>
+        <DestinationFilename>%Fonts%\mayatypeui.ttf</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFont" SystemFile="false" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\fonts\mayatypeuitvg.ttf</LocalFileName>
         <ZipFileName>Installer{Font}\{ccbf4d00-acc4-4a11-8a97-4b42f4d14688}-mayatypeuitvg.ttf</ZipFileName>
-        <DestinationFilename>%Skin%\MayaHD\Fonts\mayatypeuitvg.ttf</DestinationFilename>
+        <DestinationFilename>%Fonts%\mayatypeuitvg.ttf</DestinationFilename>
       </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="false" Modified="true">
         <Param1 />
@@ -32856,11 +33095,249 @@
         <ZipFileName>Installer{CopyFile}\{6225ba3e-0a5a-402a-b861-b429c0cddb71}-yrWeather.xml</ZipFileName>
         <DestinationFilename>%Skin%\MayaHD\yrWeather.xml</DestinationFilename>
       </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\ShowTimesGUI.details.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{9a464cbf-5ca4-4892-98a6-d8c2343c24eb}-ShowTimesGUI.details.xml</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\ShowTimesGUI.details.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\ShowTimesGUI.header.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{ea71abd0-1ae4-470b-b9ed-5e3e9a855f64}-ShowTimesGUI.header.xml</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\ShowTimesGUI.header.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\ShowTimesGUI.hiddenmenu.xml</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{62264bfa-c43b-4454-86cd-f0e98ff95c2e}-ShowTimesGUI.hiddenmenu.xml</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\ShowTimesGUI.hiddenmenu.xml</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\heart-1.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{c9235f2e-6194-4458-b8fa-d1e76e8efc28}-heart-1.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\heart-1.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\heart-10.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{fc069f76-09b7-4149-b2e5-47fda0c9cb90}-heart-10.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\heart-10.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\heart-2.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{17162d7f-8813-4d95-b268-3f93ace66d17}-heart-2.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\heart-2.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\heart-3.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{b8f47d0a-e773-45f4-bc97-16e1a46db5d9}-heart-3.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\heart-3.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\heart-4.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{37caf9d1-b324-4a6a-a0d6-364e78b4f80e}-heart-4.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\heart-4.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\heart-5.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{2642ff61-7c3b-46f9-b659-5bda116f86ff}-heart-5.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\heart-5.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\heart-6.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{05797aea-53df-4b15-bb1b-9b24c50a0a7d}-heart-6.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\heart-6.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\heart-7.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{ab99bca6-09e9-486d-ab55-962dbebb360e}-heart-7.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\heart-7.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\heart-8.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{4eaca642-c438-401d-a6a3-7710ea38a265}-heart-8.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\heart-8.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\heart-9.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{fbed0e7f-b5a0-4620-8e5e-deb0f89207f4}-heart-9.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\heart-9.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\heart-off.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{17a0a778-4188-4dc7-8b86-9f428a742d6e}-heart-off.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\heart-off.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\hover_ClickfinderProgramGuide.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{91e7d469-ecd5-4bf3-9f16-b62e03aa4d68}-hover_ClickfinderProgramGuide.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\hover_ClickfinderProgramGuide.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\osd_progress_background.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{abcf83db-dd11-4b18-a231-11500e0c4b3a}-osd_progress_background.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\osd_progress_background.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\splashscreen_old.jpg</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{7c233b04-4f68-40d9-8c1d-a9ad42969946}-splashscreen_old.jpg</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\splashscreen_old.jpg</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\traktHeart1.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{43d11f24-fdf4-43f8-bc5d-dcc82f15919a}-traktHeart1.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\traktHeart1.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\traktHeart10.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{8beefb4a-6d2d-467f-8ba3-ea630a0d65a5}-traktHeart10.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\traktHeart10.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\traktHeart2.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{61fab6a8-baca-4b90-a937-47350a3fbc77}-traktHeart2.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\traktHeart2.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\traktHeart3.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{9b63eb77-1dd0-4bb1-82cc-69f081c5a0ee}-traktHeart3.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\traktHeart3.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\traktHeart4.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{5e5e6432-1050-4747-89f7-4dfd890a75e1}-traktHeart4.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\traktHeart4.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\traktHeart5.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{bd16de87-8a68-4801-9180-99c65993c5bb}-traktHeart5.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\traktHeart5.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\traktHeart6.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{804dcb1b-024d-49a8-956f-5cec7b50822a}-traktHeart6.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\traktHeart6.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\traktHeart7.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{ed30a907-9881-4ce6-9573-ff8ce904f4ba}-traktHeart7.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\traktHeart7.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\traktHeart8.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{fdb98cb4-b945-483c-a92f-1ff35fa6ca65}-traktHeart8.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\traktHeart8.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\traktHeart9.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{c232d1c4-4264-47f7-89b5-181ae073b3b8}-traktHeart9.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\traktHeart9.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\tvgroup_button.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{e5155226-f8c2-4171-bf94-888cb618c96c}-tvgroup_button.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\tvgroup_button.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\tvguide_button_middle-orig.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{a59e9547-370a-4c33-b7ef-48a088a021c3}-tvguide_button_middle-orig.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\tvguide_button_middle-orig.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\tvguide_hd_program_not_on_now.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{7bbaccc4-2f51-4a3b-bbeb-0616d921acdf}-tvguide_hd_program_not_on_now.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\tvguide_hd_program_not_on_now.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\tvguide_hd_program_on_now.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{6c933647-92b6-46c7-93f8-544bb0dca5ca}-tvguide_hd_program_on_now.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\tvguide_hd_program_on_now.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\tvguide_highlight_border.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{c3083702-90a8-4349-8b14-07c7e1681eaf}-tvguide_highlight_border.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\tvguide_highlight_border.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\tvguide_timeline_bg.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{4cf97d9a-658a-4df5-830a-46f34eefd0a1}-tvguide_timeline_bg.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\tvguide_timeline_bg.png</DestinationFilename>
+      </FileItem>
+      <FileItem InstallType="CopyFile" SystemFile="false" Modified="false">
+        <Param1 />
+        <UpdateOption>OverwriteIfOlder</UpdateOption>
+        <LocalFileName>..\skin\MayaHD\Media\yrweather_logo.png</LocalFileName>
+        <ZipFileName>Installer{CopyFile}\{634c3b12-2b46-4067-95f0-2e8a3ce7bfc0}-yrweather_logo.png</ZipFileName>
+        <DestinationFilename>%Skin%\MayaHD\Media\yrweather_logo.png</DestinationFilename>
+      </FileItem>
       <FileItem InstallType="CopyFile" SystemFile="true" Modified="true">
         <Param1 />
         <UpdateOption>OverwriteIfOlder</UpdateOption>
         <LocalFileName>..\..\Maya.png</LocalFileName>
-        <ZipFileName>Installer{CopyFile}\{433d8ca8-4188-4ce9-bfa2-5185299d6482}-Maya.png</ZipFileName>
+        <ZipFileName>Installer{CopyFile}\{ae15caed-e71a-4b24-bb45-0763b28f25a0}-Maya.png</ZipFileName>
         <DestinationFilename />
       </FileItem>
     </Items>

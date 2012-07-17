@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>101</id>
   <defaultcontrol>10</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <import>common.dialog.xml</import>
+	
     <control>
       <type>image</type>
       <id>100</id>

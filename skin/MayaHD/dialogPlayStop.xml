@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>102</id>
   <defaultcontrol>10</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <control>
       <description>group element</description>
       <type>group</type>
@@ -19,6 +19,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
       </control>
+	  
       <control>
         <description>Heading text label</description>
         <type>label</type>
@@ -32,6 +33,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
       </control>
+	  
       <control>
         <description>dialog line 1</description>
         <type>fadelabel</type>
@@ -44,6 +46,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
       </control>
+	  
       <control>
         <description>dialog line 2</description>
         <type>label</type>
@@ -56,6 +59,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
       </control>
+	  
       <control>
         <description>dialog line 3</description>
         <type>label</type>
@@ -68,6 +72,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
       </control>
+	  
       <control>
         <description>dialog line 4</description>
         <type>label</type>
@@ -80,6 +85,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
       </control>
+	  
       <control>
         <description>Yes</description>
         <type>button</type>
@@ -102,6 +108,7 @@
         <animation effect="fade" time="250">WindowOpen</animation>
         <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
       </control>
+	  
       <control>
         <description>No</description>
         <type>button</type>
@@ -125,5 +132,6 @@
         <animation effect="zoom" delay="100" tween="elastic" easing="out" start="95,95" end="100,100" center="683,384" time="550">WindowOpen</animation>
       </control>
     </control>
+	
   </controls>
 </window>

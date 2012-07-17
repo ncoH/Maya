@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>2013</id>
   <defaultcontrol>10</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <controls>
+  
     <control>
       <description>group element</description>
       <type>group</type>
@@ -19,6 +19,7 @@
         <height>480</height>
         <texture>dialog_background.png</texture>
       </control>
+	  
       <control>
         <id>2</id>
         <description>dialog Heading</description>
@@ -30,6 +31,7 @@
         <width>590</width>
         <label>934</label>
       </control>
+	  
       <control>
         <id>3</id>
         <description>Rating label</description>
@@ -40,6 +42,7 @@
         <align>center</align>
         <label>204</label>
       </control>
+	  
       <control>
         <id>11</id>
         <description>left button</description>
@@ -55,6 +58,7 @@
         <textureFocus>arrow_round_left_focus.png</textureFocus>
         <textureNoFocus>arrow_round_left_nofocus.png</textureNoFocus>
       </control>
+	  
       <control>
         <id>10</id>
         <description>right button</description>
@@ -70,6 +74,7 @@
         <textureFocus>arrow_round_right_focus.png</textureFocus>
         <textureNoFocus>arrow_round_right_nofocus.png</textureNoFocus>
       </control>
+	  
       <control>
         <id>15</id>
         <description>previous item</description>
@@ -85,6 +90,7 @@
         <textureFocus>arrow_round_left_focus.png</textureFocus>
         <textureNoFocus>arrow_round_left_nofocus.png</textureNoFocus>
       </control>
+	  
       <control>
         <id>13</id>
         <description>next item</description>
@@ -100,6 +106,7 @@
         <textureFocus>arrow_round_right_focus.png</textureFocus>
         <textureNoFocus>arrow_round_right_nofocus.png</textureNoFocus>
       </control>
+	  
       <control>
         <id>14</id>
         <description>Play</description>
@@ -116,6 +123,7 @@
         <textYOff>0</textYOff>
         <label>208</label>
       </control>
+	  
       <control>
         <id>12</id>
         <description>OK button</description>
@@ -132,6 +140,7 @@
         <textalign>center</textalign>
         <textYOff>0</textYOff>
       </control>
+	  
       <control>
         <id>4</id>
         <description>Title</description>
@@ -142,6 +151,7 @@
         <align>center</align>
         <label>204</label>
       </control>
+	  
       <control>
         <id>0</id>
         <type>image</type>
@@ -151,6 +161,7 @@
         <height>26</height>
         <texture>stargrey.png</texture>
       </control>
+	  
       <control>
         <id>0</id>
         <type>image</type>
@@ -160,6 +171,7 @@
         <height>26</height>
         <texture>stargrey.png</texture>
       </control>
+	  
       <control>
         <id>0</id>
         <type>image</type>
@@ -169,6 +181,7 @@
         <height>26</height>
         <texture>stargrey.png</texture>
       </control>
+	  
       <control>
         <id>0</id>
         <type>image</type>
@@ -187,6 +200,7 @@
         <height>26</height>
         <texture>stargrey.png</texture>
       </control>
+	  
       <control>
         <id>100</id>
         <type>image</type>
@@ -196,6 +210,7 @@
         <height>26</height>
         <texture>starwhite.png</texture>
       </control>
+	  
       <control>
         <id>101</id>
         <type>image</type>
@@ -214,6 +229,7 @@
         <height>26</height>
         <texture>starwhite.png</texture>
       </control>
+	  
       <control>
         <id>103</id>
         <type>image</type>
@@ -223,6 +239,7 @@
         <height>26</height>
         <texture>starwhite.png</texture>
       </control>
+	  
       <control>
         <id>104</id>
         <type>image</type>
@@ -233,5 +250,6 @@
         <texture>starwhite.png</texture>
       </control>
     </control>
+	
   </controls>
 </window>

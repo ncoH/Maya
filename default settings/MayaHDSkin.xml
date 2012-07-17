@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<profile>
+  <section name="MayaHDBasicHome">
+    <entry name="menuItemHyperlink0">30</entry>
+    <entry name="menuItemHyperlink1">501</entry>
+    <entry name="menuItemHyperlink2">96742</entry>
+    <entry name="menuItemHyperlink3">9811</entry>
+    <entry name="menuItemHyperlink4">1</entry>
+    <entry name="menuItemHyperlink5">2</entry>
+    <entry name="menuItemHyperlink6">6</entry>
+    <entry name="menuItemHyperlink7">34</entry>
+    <entry name="menuItemHyperlink8">4</entry>
+    <entry name="enWeather">1</entry>
+    <entry name="enRSS">1</entry>
+    <entry name="biggerFonts">0</entry>
+    <entry name="biggerMiniguide">1</entry>
+    <entry name="NowPlayingFanart">1</entry>
+    <entry name="clockBasicHome">1</entry>
+    <entry name="clockHome">1</entry>
+    <entry name="clockElsewhere">1</entry>
+    <entry name="recordingsMultiseat">0</entry>
+    <entry name="fanartTVSeries">1</entry>
+    <entry name="fanartMovingPictures">1</entry>
+    <entry name="recentlyFanart">1</entry>
+    <entry name="recentlyMoviesFanart">1</entry>
+    <entry name="recentlyMusicFanart">1</entry>
+    <entry name="recentlyRecordingsFanart">1</entry>
+    <entry name="recentlyPicturesFanart">1</entry>
+    <entry name="MovingPicturesListview_large">0</entry>
+    <entry name="EnableBackgroundImage">1</entry>
+    <entry name="Enable_iFX">1</entry>
+    <entry name="fanartMusic">1</entry>
+    <entry name="fanartVideo">1</entry>
+    <entry name="EnableBackgroundImagePlugins">1</entry>
+    <entry name="biggerTVGuide">0</entry>
+    <entry name="FanartScraper">1</entry>
+    <entry name="menuItemName0">Radio</entry>
+    <entry name="menuItemBgImage0">music</entry>
+    <entry name="menuItemParameter0">
+    </entry>
+    <entry name="menuItemRecentMedia0">
+    </entry>
+    <entry name="menuItemName1">Music</entry>
+    <entry name="menuItemBgImage1">music</entry>
+    <entry name="menuItemParameter1">
+    </entry>
+    <entry name="menuItemRecentMedia1">Music</entry>
+    <entry name="menuItemName2">Moving Pictures</entry>
+    <entry name="menuItemBgImage2">movies</entry>
+    <entry name="menuItemParameter2">
+    </entry>
+    <entry name="menuItemRecentMedia2">MovingPictures</entry>
+    <entry name="menuItemName3">MP-TV Series</entry>
+    <entry name="menuItemBgImage3">series</entry>
+    <entry name="menuItemParameter3">
+    </entry>
+    <entry name="menuItemRecentMedia3">TVSeries</entry>
+    <entry name="menuItemName4">TV</entry>
+    <entry name="menuItemBgImage4">tv</entry>
+    <entry name="menuItemParameter4">
+    </entry>
+    <entry name="menuItemRecentMedia4">Recordings</entry>
+    <entry name="menuItemName5">Pictures</entry>
+    <entry name="menuItemBgImage5">pictures</entry>
+    <entry name="menuItemParameter5">
+    </entry>
+    <entry name="menuItemRecentMedia5">Pictures</entry>
+    <entry name="menuItemName6">Videos</entry>
+    <entry name="menuItemBgImage6">movies</entry>
+    <entry name="menuItemParameter6">
+    </entry>
+    <entry name="menuItemRecentMedia6">
+    </entry>
+    <entry name="menuItemName7">Plugins</entry>
+    <entry name="menuItemBgImage7">plugins_default.jpg</entry>
+    <entry name="menuItemParameter7">
+    </entry>
+    <entry name="menuItemRecentMedia7">
+    </entry>
+    <entry name="menuItemName8">Settings</entry>
+    <entry name="menuItemBgImage8">settings_default.jpg</entry>
+    <entry name="menuItemParameter8">
+    </entry>
+    <entry name="menuItemRecentMedia8">
+    </entry>
+  </section>
+  <section name="MayaHDBasicHomeSubmenu1">
+    <entry name="submenuItemName0">Playlists</entry>
+    <entry name="submenuItemHyperlink0">500</entry>
+    <entry name="submenuItemParameter0">
+    </entry>
+    <entry name="submenuItemName1">MusicPlayingNow</entry>
+    <entry name="submenuItemHyperlink1">510</entry>
+    <entry name="submenuItemParameter1">
+    </entry>
+  </section>
+  <section name="MayaHDBasicHomeSubmenu4">
+    <entry name="submenuItemName0">TVGuide</entry>
+    <entry name="submenuItemHyperlink0">600</entry>
+    <entry name="submenuItemParameter0">
+    </entry>
+    <entry name="submenuItemName1">TV Recordings</entry>
+    <entry name="submenuItemHyperlink1">603</entry>
+    <entry name="submenuItemParameter1">
+    </entry>
+    <entry name="submenuItemName2">TVGuide Search</entry>
+    <entry name="submenuItemHyperlink2">604</entry>
+    <entry name="submenuItemParameter2">
+    </entry>
+  </section>
+  <section name="MayaHDBasicHomeSubmenu0">
+    <entry name="submenuItemName0">Radio Recordings</entry>
+    <entry name="submenuItemHyperlink0">763</entry>
+    <entry name="submenuItemParameter0">
+    </entry>
+    <entry name="submenuItemName1">RadioGuide</entry>
+    <entry name="submenuItemHyperlink1">762</entry>
+    <entry name="submenuItemParameter1">
+    </entry>
+  </section>
+  <section name="MayaHDBasicHomeSubmenu7">
+    <entry name="submenuItemName0">WorldWeather</entry>
+    <entry name="submenuItemHyperlink0">7977</entry>
+    <entry name="submenuItemParameter0">
+    </entry>
+    <entry name="submenuItemName1">InfoService</entry>
+    <entry name="submenuItemHyperlink1">16000</entry>
+    <entry name="submenuItemParameter1">
+    </entry>
+    <entry name="submenuItemName2">Wikipedia</entry>
+    <entry name="submenuItemHyperlink2">4711</entry>
+    <entry name="submenuItemParameter2">
+    </entry>
+  </section>
+</profile>

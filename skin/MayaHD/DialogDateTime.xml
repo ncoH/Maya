@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>2010</id>
   <defaultcontrol>12</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <control>
       <type>image</type>
       <id>0</id>
@@ -13,6 +13,7 @@
       <texture>black.bmp</texture>
       <colordiffuse>60ffffff</colordiffuse>
     </control>
+	
     <control>
       <description>background image</description>
       <type>image</type>
@@ -25,6 +26,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Channel</description>
       <type>label</type>
@@ -37,6 +39,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Channel Select</description>
       <type>spincontrol</type>
@@ -53,6 +56,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Start Date/Time</description>
       <type>label</type>
@@ -61,10 +65,11 @@
       <posY>457</posY>
       <label>633</label>
       <font>font13</font>
-      <textcolor>FFB2D4F5</textcolor>
+      <textcolor>FFB2D4F5</textcolor>	
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
     </control>
-    <animation effect="fade" time="250">WindowOpen</animation>
-    <animation effect="fade" time="250">WindowClose</animation>
+	
     <control>
       <description>Time</description>
       <type>label</type>
@@ -77,6 +82,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>time hours</description>
       <type>spincontrol</type>
@@ -99,6 +105,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>time minutes</description>
       <type>spincontrol</type>
@@ -121,6 +128,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Date</description>
       <type>label</type>
@@ -133,6 +141,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>DD</description>
       <type>spincontrol</type>
@@ -154,6 +163,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>MM</description>
       <type>spincontrol</type>
@@ -175,6 +185,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>YYYY</description>
       <type>spincontrol</type>
@@ -197,6 +208,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>End Date/Time</description>
       <type>label</type>
@@ -209,6 +221,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Time</description>
       <type>label</type>
@@ -221,6 +234,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>time hours</description>
       <type>spincontrol</type>
@@ -243,6 +257,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>time minutes</description>
       <type>spincontrol</type>
@@ -265,6 +280,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Date</description>
       <type>label</type>
@@ -277,6 +293,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>DD</description>
       <type>spincontrol</type>
@@ -298,6 +315,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>MM</description>
       <type>spincontrol</type>
@@ -319,6 +337,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>YYYY</description>
       <type>spincontrol</type>
@@ -341,6 +360,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>OK button</description>
       <type>button</type>
@@ -359,6 +379,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>dialog Heading</description>
       <type>label</type>
@@ -371,5 +392,6 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

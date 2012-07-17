@@ -220,9 +220,7 @@
           <showScrollbar>no</showScrollbar>
           <cards flipY="yes" diffuse="Thumb_Mask.png" mask="coverflow_poster_mask_music.png" />
         </control>
-		
       </control>
     </control>
-	
   </controls>
 </window>

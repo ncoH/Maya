@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <id>758</id>
   <defaultcontrol>14</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <controls>
+  
     <import>common.dialog.xml</import>
+	
     <!-- Override the definition in common.dialog.xml, as we need more space for the Always and Never buttons -->
     <control>
       <type>image</type>
@@ -18,6 +19,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <type>image</type>
       <id>100</id>
@@ -26,6 +28,7 @@
       <width>749</width>
       <texture>osd_progress_background.png</texture>
     </control>
+	
     <control>
       <description>progress control</description>
       <type>progress</type>
@@ -36,6 +39,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Yes button</description>
       <type>button</type>
@@ -55,6 +59,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>No button</description>
       <type>button</type>
@@ -74,6 +79,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Always</description>
       <type>button</type>
@@ -93,6 +99,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
     <control>
       <description>Never</description>
       <type>button</type>
@@ -112,5 +119,6 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

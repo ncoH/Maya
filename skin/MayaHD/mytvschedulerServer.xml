@@ -81,36 +81,6 @@
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
 	
-    <control>
-      <description>listcontrol</description>
-      <type>listcontrol</type>
-      <id>10</id>
-      <posY>600</posY>
-      <height>421</height>
-      <posX>736</posX>
-      <width>1017</width>
-      <onleft>2</onleft>
-      <onright>2</onright>
-      <scrollOffset>1</scrollOffset>
-      <PinIconHeight>51</PinIconHeight>
-      <PinIconWidth>43</PinIconWidth>
-      <PinIconXOff>3</PinIconXOff>
-      <PinIconYOff>8</PinIconYOff>
-      <itemWidth>44</itemWidth>
-      <itemHeight>45</itemHeight>
-      <IconXOff>42</IconXOff>
-      <IconYOff>12</IconYOff>
-      <textXOff>56</textXOff>
-      <spinPosX>787</spinPosX>
-      <spinPosY>973</spinPosY>
-      <spinAlign>left</spinAlign>
-      <textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
-      <textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
-      <keepaspectratio>yes</keepaspectratio>
-      <spinCanFocus>no</spinCanFocus>
-      <dimColor>ffffffff</dimColor>
-    </control>
-
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
@@ -196,6 +166,7 @@
             <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
             <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
 			<textcolor>white</textcolor>
+			<textcolorNoFocus>ff85cfff</textcolorNoFocus>
 			<posX>69</posX>
 			<posY>285</posY>
 			<width>497</width>
@@ -284,7 +255,37 @@
 		  
         </control>
       </control>
-	  
+	
+    <control>
+      <description>listcontrol</description>
+      <type>listcontrol</type>
+      <id>10</id>
+      <posY>600</posY>
+      <height>421</height>
+      <posX>736</posX>
+      <width>1017</width>
+      <onleft>2</onleft>
+      <onright>2</onright>
+      <scrollOffset>1</scrollOffset>
+      <PinIconHeight>51</PinIconHeight>
+      <PinIconWidth>43</PinIconWidth>
+      <PinIconXOff>3</PinIconXOff>
+      <PinIconYOff>8</PinIconYOff>
+      <itemWidth>44</itemWidth>
+      <itemHeight>45</itemHeight>
+      <IconXOff>42</IconXOff>
+      <IconYOff>12</IconYOff>
+      <textXOff>56</textXOff>
+      <spinPosX>787</spinPosX>
+      <spinPosY>973</spinPosY>
+      <spinAlign>left</spinAlign>
+      <textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
+      <textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
+      <keepaspectratio>yes</keepaspectratio>
+      <spinCanFocus>no</spinCanFocus>
+      <dimColor>ffffffff</dimColor>
+    </control>
+	
     <!-- List -->
     <control>
       <description>Current program title</description>
