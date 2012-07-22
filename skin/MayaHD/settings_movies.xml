@@ -58,7 +58,7 @@
       <animation effect="fade" time="250">WindowClose</animation>
       <posX>688</posX>
       <posY>365</posY>
-      <layout>GridLayout(2, 7, 42, 0, 1)</layout>
+      <layout>GridLayout(2, 8, 42, 0, 1)</layout>
       <control>
         <description>MPEG-2 Video Codecs</description>
         <type>button</type>
@@ -87,12 +87,68 @@
         <textcolor>ff85cffe</textcolor>
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
       </control>
+
+      <control>
+        <description>VC1 Video Codecs</description>
+        <type>button</type>
+        <id>34</id>
+        <label>VC1 Video Codecs</label>
+        <width>469</width>
+        <onleft>10005</onleft>
+        <onright>10005</onright>	
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+      </control>
+	  
+      <control>
+        <description>VC1i Video Codecs</description>
+        <type>button</type>
+        <id>35</id>
+        <label>VC1i Video Codecs</label>
+        <width>469</width>
+        <onleft>10005</onleft>
+        <onright>10005</onright>	
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+      </control>
+	  
+      <control>
+        <description>XVID Video Codecs</description>
+        <type>button</type>
+        <id>36</id>
+        <label>XVID Video Codecs</label>
+        <width>469</width>
+        <onleft>10005</onleft>
+        <onright>10005</onright>	
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+      </control>
 	  
       <control>
         <description>Audio Codecs</description>
         <type>button</type>
         <id>25</id>
         <label>6001</label>
+        <width>469</width>
+        <onleft>10005</onleft>
+        <onright>10005</onright>		
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+      </control>
+
+      <control>
+        <description>AAC Audio Codecs</description>
+        <type>button</type>
+        <id>30</id>
+        <label>6039</label>
         <width>469</width>
         <onleft>10005</onleft>
         <onright>10005</onright>		
@@ -114,6 +170,98 @@
         <textureNoFocus>-</textureNoFocus>
         <textcolor>ff85cffe</textcolor>
         <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+        <ondown>39</ondown>			
+      </control>
+
+      <control>
+        <description>Source Splitter Selection</description>
+        <type>togglebutton</type>
+        <id>39</id>
+        <label>Source Splitter Selection</label>
+        <width>469</width>
+        <onleft>10005</onleft>
+        <onright>10005</onright>		
+        <textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+        <textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+        <AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+        <AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+        <ondup>27</ondup>		
+      </control>
+	  
+      <control>
+        <description>Splitter Source</description>
+        <type>button</type>
+        <id>38</id>
+        <label>Splitter Source</label>
+		<disabledcolor>ff909090</disabledcolor>
+        <width>469</width>
+        <onleft>10005</onleft>
+        <onright>10005</onright>		
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>		
+      </control>
+	  
+      <control>
+        <description>Splitter Filesync</description>
+        <type>button</type>
+        <id>37</id>
+        <label>Splitter Filesync</label>
+		<disabledcolor>ff909090</disabledcolor>
+        <width>469</width>
+        <onleft>10005</onleft>
+        <onright>10005</onright>		
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>		
+      </control>	  
+
+      <control>
+        <description>Subtitles On/Off</description>
+        <type>togglebutton</type>
+        <id>31</id>
+        <label>1196</label>
+        <width>469</width>
+        <onleft>10005</onleft>
+        <onright>10005</onright>		
+        <textureFocus>togglebutton_medium_on_focus.png</textureFocus>
+        <textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
+        <AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
+        <AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>
+      </control>
+	  
+      <control>
+        <description>Subtitle Language</description>
+        <type>button</type>
+        <id>32</id>
+        <label>1029</label>
+        <width>469</width>
+        <onleft>10005</onleft>
+        <onright>10005</onright>		
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>	
+      </control>
+	  
+      <control>
+        <description>Audio Language</description>
+        <type>button</type>
+        <id>33</id>
+        <label>492</label>
+        <width>469</width>
+        <onleft>10005</onleft>
+        <onright>10005</onright>		
+        <textureFocus>settings_button_medium_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+        <textcolor>ff85cffe</textcolor>
+        <textcolorNoFocus>ff85cffe</textcolorNoFocus>	
       </control>
 	  
       <control>

@@ -105,6 +105,7 @@
         <label>3</label>
         <hyperlink>703</hyperlink>
         <ondown>10006</ondown>
+        <onright>24</onright>			
       </control>
 	  
       <control>

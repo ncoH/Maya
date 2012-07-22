@@ -198,6 +198,9 @@
     <colordiffuse>ffffffff</colordiffuse>
     <remoteColor>ffFFA075</remoteColor>
     <downloadColor>ff80ff80</downloadColor>
+	<bdDvdDirectoryColor>ffffffff</bdDvdDirectoryColor>
+	<bdDvdDirectoryColor2>ffffffff</bdDvdDirectoryColor2>
+	<bdDvdDirectoryColor3>ffffffff</bdDvdDirectoryColor3>		
     <spaceBetweenItems>0</spaceBetweenItems>
     <textXOff>30</textXOff>
     <textYOff>14</textYOff>
@@ -242,6 +245,9 @@
     <colordiffuse>ffffffff</colordiffuse>
     <remoteColor>ffFFA075</remoteColor>
     <downloadColor>ff80ff80</downloadColor>
+	<bdDvdDirectoryColor>ffffffff</bdDvdDirectoryColor>
+	<bdDvdDirectoryColor2>ffffffff</bdDvdDirectoryColor2>
+	<bdDvdDirectoryColor3>ffffffff</bdDvdDirectoryColor3>		
     <textureCheckmark>check-box.png</textureCheckmark>
     <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
     <MarkWidth>39</MarkWidth>
@@ -323,6 +329,9 @@
     <colordiffuse>ffffffff</colordiffuse>
     <remoteColor>ffFFA075</remoteColor>
     <downloadColor>ff80ff80</downloadColor>
+	<bdDvdDirectoryColor>ffffffff</bdDvdDirectoryColor>
+	<bdDvdDirectoryColor2>ffffffff</bdDvdDirectoryColor2>
+	<bdDvdDirectoryColor3>ffffffff</bdDvdDirectoryColor3>		
     <spaceBetweenItems>0</spaceBetweenItems>
     <textXOff>30</textXOff>
     <textYOff>14</textYOff>
@@ -378,6 +387,9 @@
     <colordiffuse>ffffffff</colordiffuse>
     <remoteColor>ffFFA075</remoteColor>
     <downloadColor>ff80ff80</downloadColor>
+	<bdDvdDirectoryColor>ffffffff</bdDvdDirectoryColor>
+	<bdDvdDirectoryColor2>ffffffff</bdDvdDirectoryColor2>
+	<bdDvdDirectoryColor3>ffffffff</bdDvdDirectoryColor3>		
     <textureWidthBig>269</textureWidthBig>
     <textureHeightBig>189</textureHeightBig>
     <itemWidthBig>354</itemWidthBig>
@@ -419,6 +431,9 @@
     <colordiffuse>ffffffff</colordiffuse>
     <remoteColor>ffFFA075</remoteColor>
     <downloadColor>ff80ff80</downloadColor>
+	<bdDvdDirectoryColor>ffffffff</bdDvdDirectoryColor>
+	<bdDvdDirectoryColor2>ffffffff</bdDvdDirectoryColor2>
+	<bdDvdDirectoryColor3>ffffffff</bdDvdDirectoryColor3>		
     <suffix>|</suffix>
     <textureWidthBig>269</textureWidthBig>
     <textureHeightBig>189</textureHeightBig>
