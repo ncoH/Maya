@@ -46,6 +46,7 @@
       <posX>281</posX>
       <posY>253</posY>
       <width>394</width>
+	  
       <control>
         <description>TV On/Off button</description>
         <type>togglebutton</type>
@@ -63,29 +64,14 @@
         <AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
         <textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
         <textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
-      </control>	  
+      </control>	
+	  
       <control>
         <description>RadioGuide</description>
         <type>button</type>
         <id>2</id>
         <label>600</label>
         <onup>6</onup>
-        <ondown>3</ondown>
-        <onright>99</onright>
-        <textalign>right</textalign>
-        <width>394</width>
-        <textXOff>32</textXOff>
-        <height>64</height>
-        <textYOff>14</textYOff>
-        <textureFocus>listcontrol_item_selected_small.png</textureFocus>
-        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-      </control>
-      <control>
-        <description>Search TVGuide</description>
-        <type>button</type>
-        <id>3</id>
-        <label>137</label>
-        <onup>2</onup>
         <ondown>4</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
@@ -96,13 +82,31 @@
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
+
       <control>
         <description>Recordings</description>
         <type>button</type>
         <id>4</id>
         <label>604</label>
         <hyperlink>603</hyperlink>
-        <onup>3</onup>
+        <onup>2</onup>
+        <ondown>3</ondown>
+        <onright>99</onright>
+        <textalign>right</textalign>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
+        <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
+      </control>
+	  
+      <control>
+        <description>Search TVGuide</description>
+        <type>button</type>
+        <id>3</id>
+        <label>137</label>
+        <onup>4</onup>
         <ondown>5</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
@@ -113,12 +117,13 @@
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
+	  
       <control>
         <description>Channel button</description>
         <type>button</type>
         <id>5</id>
         <label>602</label>
-        <onup>4</onup>
+        <onup>3</onup>
         <ondown>7</ondown>
         <onright>99</onright>
         <textalign>right</textalign>
@@ -129,6 +134,7 @@
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
+	  
       <control>
         <description>UpcomingPrograms</description>
         <type>button</type>
@@ -145,6 +151,7 @@
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
+	  
       <control>
         <description>ActiveRecordings</description>
         <type>button</type>
@@ -161,6 +168,7 @@
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control>
+	  
 <!--       <control>
         <description>Teletext</description>
         <type>button</type>
@@ -177,6 +185,7 @@
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
         <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
       </control> -->
+	  
     </control>
 	
     <control>

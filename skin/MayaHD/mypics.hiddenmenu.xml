@@ -128,48 +128,61 @@
 			
 			<control>
 				<description>View-As</description>
-				<type>button</type>
+				<type>menubutton</type>
 				<id>2</id>
-				<label>100</label>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<width>499</width>
-				<height>69</height>
-				<textXOff>62</textXOff>
-				<textYOff>16</textYOff>
+				<label></label>	
+				<mode>dialoglist</mode>				
+				<dialogTitle>792</dialogTitle> 					
+				<valueTextInButton>yes</valueTextInButton>
+				<valuePrefixText>95</valuePrefixText>				
 				<onright>50</onright>
 				<onleft>50</onleft>
-                <onup>8</onup>
+                <ondown>5</ondown>
+                <onup>15</onup>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>215</posY>
+				<width>497</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>					
+			</control>
+
+			<control>
+				<description>Switch View</description>
+				<type>menubutton</type>
+				<id>5</id>
+				<label></label>
+				<mode>dialoglist</mode>
+				<dialogTitle>499</dialogTitle>
+				<valueTextInButton>yes</valueTextInButton>
+				<valuePrefixText>97</valuePrefixText>				
+				<onright>50</onright>
+				<onleft>50</onleft>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<posX>69</posX>
+				<posY>215</posY>
+				<width>497</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>					
 			</control>
 
 			<control>
 				<description>Sort</description>
 				<type>sortbutton</type>
 				<id>3</id>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>70</height>
+				<textXOff>66</textXOff>
+				<textYOff>17</textYOff>	
 				<label>103</label>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<width>499</width>
-				<height>69</height>
-				<textXOff>62</textXOff>
-				<textYOff>16</textYOff>
-				<offsetSortButtonX>300</offsetSortButtonX>
-				<offsetSortButtonY>27</offsetSortButtonY>
-				<onright>50</onright>
-				<onleft>50</onleft>
-			</control>
-
-			<control>
-				<description>Switch View</description>
-				<type>button</type>
-				<id>5</id>
-				<label>457</label>
-				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>
-				<width>499</width>
-				<height>69</height>
-				<textXOff>62</textXOff>
-				<textYOff>16</textYOff>
+				<offsetSortButtonX>400</offsetSortButtonX>
+				<offsetSortButtonY>28</offsetSortButtonY>
 				<onright>50</onright>
 				<onleft>50</onleft>
                 <ondown>6</ondown>

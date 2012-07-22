@@ -152,9 +152,13 @@
 			
 			<control>
                 <description>View-As button</description>
-                <type>button</type>
+                <type>menubutton</type>
                 <id>2</id>
-                <label>100</label>
+				<label></label>	
+				<mode>dialoglist</mode>				
+				<dialogTitle>792</dialogTitle> 					
+				<valueTextInButton>yes</valueTextInButton>
+				<valuePrefixText>95</valuePrefixText>	
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<posX>69</posX>

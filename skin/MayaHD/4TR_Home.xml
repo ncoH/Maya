@@ -123,7 +123,7 @@
         <type>button</type>
         <id>5</id>
         <label>602</label>
-        <onup>4</onup>
+        <onup>3</onup>
         <ondown>7</ondown>
         <onright>99</onright>
         <textalign>right</textalign>

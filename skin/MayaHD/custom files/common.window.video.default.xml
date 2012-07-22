@@ -126,11 +126,11 @@
       <description>Number of Files Label</description>
       <type>label</type>
       <id>1</id>
-      <posX>1709</posX>
+      <posX>1208</posX>
       <posY>970</posY>
       <align>right</align>
-      <label>#currentmodule: #itemcount </label>
       <textcolor>6aa5cb</textcolor>
+      <label>#currentmodule: #itemcount </label>
       <visible>[!facadeview.smallicons+!facadeview.largeicons+!facadeview.filmstrip+!facadeview.coverflow]+Control.IsVisible(50)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
@@ -146,23 +146,40 @@
       <label>#title</label>
       <font>Segoe Light22</font>
       <align>center</align>
-      <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+control.isvisible(7773)+!control.isvisible(53)</visible>
+      <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow] + control.isvisible(7773) + !control.isvisible(53)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
+    </control>
+
+    <control>
+      <description>Number of Files Label</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>1709</posX>
+      <posY>970</posY>
+      <width>300</width>
+      <align>right</align>
+      <font>font13</font>
+      <textcolor>6aa5cb</textcolor>
+      <label>#currentmodule: #itemcount</label>	  
+      <visible>facadeview.smallicons|facadeview.largeicons</visible>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="200">WindowClose</animation>	  
     </control>
 	
     <control>
       <description>Number of Files Label</description>
       <type>label</type>
       <id>1</id>
-      <posX>0</posX>
-      <posY>250</posY>
-      <width>1920</width>
+      <posX>810</posX>
+      <posY>1023</posY>
+      <width>300</width>
       <align>center</align>
-      <label>#currentmodule: #itemcount</label>
+      <font>font13</font>
       <textcolor>6aa5cb</textcolor>
-      <visible>facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow</visible>
+      <label>#currentmodule: #itemcount</label>
+      <visible>facadeview.filmstrip|facadeview.coverflow</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
@@ -177,7 +194,7 @@
       <label>#selecteditem</label>
       <font>Segoe Light22</font>
       <align>center</align>
-      <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow]+!control.isvisible(7773)+!control.isvisible(53)</visible>
+      <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons|facadeview.coverflow] + !control.isvisible(7773) + !control.isvisible(53)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>

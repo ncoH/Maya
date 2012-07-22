@@ -12,24 +12,26 @@
         <id>50</id>
 		
         <control>
-          <description>listcontrol</description>
-          <type>listcontrol</type>
-          <id>50</id>
-          <onleft>2</onleft>
-          <onright>50</onright>
-          <scrollOffset>1</scrollOffset>
-          <posX>736</posX>
-          <posY>262</posY>
-          <height>644</height>
-          <width>503</width>
-          <spinPosX>787</spinPosX>
-          <spinPosY>967</spinPosY>
-          <spinAlign>left</spinAlign>
-          <textXOff>30</textXOff>
-          <scrollOffset>1</scrollOffset>
-          <textureFocus>listcontrol_item_selected_small.png</textureFocus>
-          <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-          <dimColor>ffffffff</dimColor>
+			<description>listcontrol</description>
+			<type>listcontrol</type>
+			<id>50</id>
+			<onleft>2</onleft>
+			<onright>50</onright>
+			<scrollOffset>1</scrollOffset>
+			<posX>736</posX>
+			<posY>262</posY>
+			<height>644</height>
+			<width>503</width>
+			<textXOff>50</textXOff>	  
+			<textXOff>30</textXOff>
+			<textXOff2>484</textXOff2>
+			<textYOff2>14</textYOff2>
+			<textXOff3>-2000</textXOff3>
+			<textYOff3>8</textYOff3>			
+			<dimColor>ffffffff</dimColor>
+			<spinPosX>787</spinPosX>
+			<spinPosY>967</spinPosY>
+			<spinAlign>left</spinAlign>			
         </control>
 		
         <control>

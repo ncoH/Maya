@@ -58,7 +58,7 @@
     </control>
 	
 	<import>settings.menu.xml</import>
-    <import>common.time.xml</import>	
+    <import>common.time.xml</import>
 	
   </controls>
 </window>

@@ -44,6 +44,7 @@
         <onright>10</onright>
         <textalign>right</textalign>
       </control>
+	  
       <control>
         <description>Sounds</description>
         <type>togglebutton</type>

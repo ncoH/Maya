@@ -157,9 +157,13 @@
 				
 				<control>
 					<description>View-As</description>
-					<type>button</type>
+					<type>menubutton</type>
 					<id>2</id>
-					<label>100</label>
+					<label></label>	
+					<mode>dialoglist</mode>				
+					<dialogTitle>792</dialogTitle> 					
+					<valueTextInButton>yes</valueTextInButton>
+					<valuePrefixText>95</valuePrefixText>	
 					<onright>50</onright>
 					<onleft>50</onleft>
                     <ondown>5</ondown>
@@ -176,9 +180,13 @@
 
 				<control>
 					<description>Switch View</description>
-					<type>button</type>
+					<type>menubutton</type>
 					<id>5</id>
-					<label>457</label>
+					<label></label>
+					<mode>dialoglist</mode>
+					<dialogTitle>499</dialogTitle>
+					<valueTextInButton>yes</valueTextInButton>
+					<valuePrefixText>97</valuePrefixText>					
 					<onright>50</onright>
 					<onleft>50</onleft>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
@@ -202,8 +210,8 @@
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>	
 					<label>103</label>
-					<offsetSortButtonX>270</offsetSortButtonX>
-					<offsetSortButtonY>27</offsetSortButtonY>
+					<offsetSortButtonX>400</offsetSortButtonX>
+					<offsetSortButtonY>28</offsetSortButtonY>
 					<onright>50</onright>
 					<onleft>50</onleft>
                     <ondown>9</ondown>

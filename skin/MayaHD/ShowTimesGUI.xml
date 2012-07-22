@@ -187,7 +187,7 @@
       <align>center</align>
       <label>#itemtype: #itemcount</label>
       <textcolor>6aa5cb</textcolor>
-      <visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons | facadeview.coverflow]+!Control.IsVisible(25)</visible>
+      <visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons | facadeview.coverflow]+!Control.IsVisible(24)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>

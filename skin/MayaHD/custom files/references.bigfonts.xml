@@ -4,7 +4,7 @@
   <skin>
     <width>1920</width>
     <height>1080</height>
-    <version>1.2.0.0</version>
+    <version>1.3.0.0</version>
   </skin>
   
   <control>
@@ -49,6 +49,25 @@
     <textcolor>white</textcolor>
     <colordiffuse>white</colordiffuse>
     <disabledcolor>6aa5cb</disabledcolor>
+  </control>
+ 
+  <control>
+    <description>default menubutton</description>
+    <type>menubutton</type>
+    <id>1</id>
+    <posX>650</posX>
+    <posY>236</posY>
+    <width>385</width>
+    <height>64</height>
+    <textXOff>25</textXOff>
+    <textYOff>14</textYOff>
+    <textureFocus>button-focus.png</textureFocus>
+    <textureNoFocus>button-nofocus.png</textureNoFocus>
+    <font>font12</font>
+    <textcolor>white</textcolor>
+    <colordiffuse>white</colordiffuse>
+    <disabledcolor>60ffffff</disabledcolor>	
+    <textcolorNoFocus>ffffffff</textcolorNoFocus>
   </control>
   
   <control>
@@ -563,6 +582,32 @@
     <textcolor>white</textcolor>
     <colordiffuse>white</colordiffuse>
     <disabledcolor>60ffffff</disabledcolor>
+  </control>
+
+  <control>
+    <description>default check button</description>
+    <type>checkbutton</type>
+    <id>0</id>
+    <width>355</width>
+    <height>50</height>
+    <textXOff>23</textXOff>
+    <textYOff>5</textYOff>
+    <textureFocus>button_focus.png</textureFocus>
+    <textureNoFocus>button_nofocus.png</textureNoFocus>
+    <font>font12</font>
+    <markWidth>29</markWidth>
+    <markHeight>28</markHeight>
+    <markXOff>15</markXOff>
+    <markYOff>10</markYOff>
+    <markalign>right</markalign>
+    <markvalign>middle</markvalign>	
+    <textureCheckmark>check-box.png</textureCheckmark>
+    <textureCheckmarkNoFocus>check-boxNF.png</textureCheckmarkNoFocus>
+    <textcolor>white</textcolor>
+    <colordiffuse>white</colordiffuse>
+    <disabledcolor>60ffffff</disabledcolor>
+    <textcolorNoFocus>ffffffff</textcolorNoFocus>
+    <dimColor>ff000000</dimColor>
   </control>
   
 </controls>

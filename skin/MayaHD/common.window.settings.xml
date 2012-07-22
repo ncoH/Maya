@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!--version="1.0" encoding="utf-8" standalone="yes"-->
 <window>
   <controls>
+  
     <control>
       <description>BG</description>
       <type>image</type>
@@ -12,6 +12,7 @@
       <height>1080</height>
       <texture>background.png</texture>
     </control>
+	
     <control>
       <description>Fanart Background</description>
       <type>image</type>
@@ -23,6 +24,7 @@
       <texture>#header.background</texture>
       <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <description>Fanart Overlay</description>
       <type>image</type>
@@ -34,6 +36,7 @@
       <texture>basichome_fanart_overlay.png</texture>
       <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
     </control>
+	
     <control>
       <type>label</type>
       <id>1</id>
@@ -47,6 +50,7 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
     <control>
       <type>label</type>
       <id>1</id>
@@ -59,5 +63,6 @@
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
+	
   </controls>
 </window>

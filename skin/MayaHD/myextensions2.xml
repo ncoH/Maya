@@ -308,7 +308,7 @@
       <centered>yes</centered>
     </control>
 
-    <import>common.facade.video.xml</import>	
+    <import>common.facade.xml</import>	
     <import>common.overlay.xml</import>
 	
   </controls>

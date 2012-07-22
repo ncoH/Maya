@@ -44,7 +44,7 @@
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<posY>360</posY>
+			<posY>423</posY>
 			<posX>128</posX>
 			<width>376</width>
 			<height>1</height>
@@ -58,7 +58,7 @@
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<posY>552</posY>
+			<posY>615</posY>
 			<posX>128</posX>
 			<width>376</width>
 			<height>1</height>
@@ -72,7 +72,7 @@
 		<control>
 			<type>image</type>
 			<id>0</id>
-			<posY>680</posY>
+			<posY>743</posY>
 			<posX>128</posX>
 			<width>376</width>
 			<height>1</height>
@@ -103,7 +103,7 @@
 			<type>label</type>
 			<id>1</id>
 			<posX>128</posX>
-			<posY>370</posY>
+			<posY>433</posY>
 			<label>136</label>
 			<font>Segoe Light12</font>
 			<textcolor>ff6aa5cb</textcolor>
@@ -118,7 +118,7 @@
 			<type>label</type>
 			<id>1</id>
 			<posX>128</posX>
-			<posY>560</posY>
+			<posY>625</posY>
 			<label>100004</label>
 			<font>Segoe Light12</font>
 			<textcolor>ff6aa5cb</textcolor>
@@ -133,7 +133,7 @@
 			<type>label</type>
 			<id>1</id>
 			<posX>128</posX>
-			<posY>689</posY>
+			<posY>753</posY>
 			<label>1065</label>
 			<font>Segoe Light12</font>
 			<textcolor>ff6aa5cb</textcolor>
@@ -157,9 +157,13 @@
 			
 			<control>
 				<description>View-As</description>
-				<type>button</type>
+				<type>menubutton</type>
 				<id>2</id>
-				<label>100</label>
+				<label></label>	
+				<mode>dialoglist</mode>				
+				<dialogTitle>792</dialogTitle> 					
+				<valueTextInButton>yes</valueTextInButton>
+				<valuePrefixText>95</valuePrefixText>	
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<width>497</width>
@@ -169,6 +173,25 @@
 				<onright>50</onright>
 				<onleft>50</onleft>
                 <onup>66614</onup>
+			</control>
+
+			<control>
+				<description>Switch View</description>
+				<type>menubutton</type>
+				<id>5</id>
+				<label></label>
+				<mode>dialoglist</mode>
+				<dialogTitle>499</dialogTitle>
+				<valueTextInButton>yes</valueTextInButton>
+				<valuePrefixText>97</valuePrefixText>	
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+				<onright>50</onright>
+				<onleft>50</onleft>
 			</control>
 
 			<control>
@@ -182,17 +205,18 @@
 				<height>64</height>
 				<textXOff>58</textXOff>
 				<textYOff>14</textYOff>
-				<offsetSortButtonX>270</offsetSortButtonX>
-				<offsetSortButtonY>27</offsetSortButtonY>
+				<offsetSortButtonX>400</offsetSortButtonX>
+				<offsetSortButtonY>28</offsetSortButtonY>
 				<onright>50</onright>
 				<onleft>50</onleft>
+                <ondown>7</ondown>				
 			</control>
-
+			
 			<control>
-				<description>Switch View</description>
+				<description>Scan new videos</description>
 				<type>button</type>
-				<id>5</id>
-				<label>457</label>
+				<id>7</id>
+				<label>102</label>
 				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>
 				<width>497</width>
@@ -201,9 +225,10 @@
 				<textYOff>14</textYOff>
 				<onright>50</onright>
 				<onleft>50</onleft>
-                <ondown>20</ondown>
-			</control>
-
+				<onup>3</onup>
+				<ondown>20</ondown>
+			</control>			
+			
             <control>
                 <description>Empty button</description>
                 <type>button</type>
@@ -230,7 +255,7 @@
 				<action>33</action>
 				<onright>50</onright>
 				<onleft>50</onleft>
-                <onup>5</onup>
+                <onup>7</onup>
 			</control>
 
 			<control>
@@ -304,7 +329,7 @@
 				<textureNoFocus>-</textureNoFocus>
 				<label>#(L(5900))</label>
 				<hyperlink>4755</hyperlink>
-                <hyperlinkParameter>site:#Avalon.TrailerSite|search:#MovingPictures.SelectedMovie.title|return:Locked</hyperlinkParameter>
+                <hyperlinkParameter>site:IMDb Movie Trailers|search:#(iif(neq(#imdbnumber,''),#imdbnumber,#title))|return:Locked</hyperlinkParameter>
 				<onleft>50</onleft>
                 <onright>50</onright>
 				<onup>66610</onup>

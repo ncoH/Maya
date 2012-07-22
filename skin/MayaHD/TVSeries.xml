@@ -499,7 +499,7 @@
     </control>
 	
 	
-    <!--     ***************************** LOGOS (SERIES / SEASON / EPISODE  IN LIST  LAYOUTS) ******************************** -->
+    <!--     ***************************** MediaInfoLogos (SERIES / SEASON / EPISODE  IN LIST  LAYOUTS) ******************************** -->
     <control>
       <type>image</type>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -508,7 +508,7 @@
       <id>66</id>
       <posX>1300</posX>
       <posY>949</posY>
-      <width>913</width>
+      <width>600</width>
       <height>75</height>
       <texture>#TVSeries.Logos</texture>
       <keepaspectratio>yes</keepaspectratio>
@@ -516,7 +516,7 @@
     </control>
 	
 	
-    <!--  ***************************** LOGOS (SERIES WIDE BANNERS /FIMSTRIP LAYOUT) ******************************** -->
+    <!--  ***************************** MediaInfoLogos (SERIES WIDE BANNERS /FIMSTRIP LAYOUT) ******************************** -->
     <control>
       <type>image</type>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -525,7 +525,7 @@
       <id>66</id>
       <posX>1300</posX>
       <posY>949</posY>
-      <width>913</width>
+      <width>600</width>
       <height>75</height>
       <texture>#TVSeries.Logos</texture>
       <keepaspectratio>yes</keepaspectratio>
@@ -533,16 +533,16 @@
     </control>
 	
 	
-    <!--  ***************************** LOGOS (GROUP LIST  LAYOUT) ******************************** -->
+    <!--  ***************************** MediaInfoLogos (GROUP LIST  LAYOUT) ******************************** -->
     <control>
       <type>image</type>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
       <description>thumb Logos ( in textlist group)</description>
-      <id>0</id>
+      <id>66</id>
       <posX>1300</posX>
       <posY>949</posY>
-      <width>913</width>
+      <width>600</width>
       <height>75</height>
       <texture>#TVSeries.Logos</texture>
       <keepaspectratio>yes</keepaspectratio>

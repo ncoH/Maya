@@ -32,6 +32,7 @@
       <posX>245</posX>
       <posY>365</posY>
       <layout>StackLayout(0, Vertical, true)</layout>
+	  
       <control>
         <description>General</description>
         <type>button</type>
@@ -42,9 +43,22 @@
         <label>128</label>
         <hyperlink>705</hyperlink>
         <onup>10010</onup>
-        <ondown>10002</ondown>
+        <ondown>10011</ondown>
       </control>  
-	  
+
+	<control>
+		<description>Skin Settings</description>
+		<type>button</type>
+		<id>10011</id>
+        <width>364</width>
+        <textureFocus>settings_button_focus.png</textureFocus>
+        <textureNoFocus>-</textureNoFocus>
+		<label>SkinSettings</label>
+		<hyperlink>155200</hyperlink>
+        <onup>10001</onup>
+        <ondown>10002</ondown>		
+	</control>
+	
       <control>
         <description>Screen</description>
         <type>button</type>
@@ -153,7 +167,7 @@
         <hyperlink>87271</hyperlink>
         <ondown>10001</ondown>
         <visible>plugin.isenabled(Trakt)</visible>
-      </control>	  
+      </control>			
    </control>
 	
   </controls>

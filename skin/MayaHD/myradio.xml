@@ -53,7 +53,7 @@
     </control>
 
 	
-    <control>
+<!--     <control>
       <type>actiongroup</type>
       <description>action menu</description>
       <defaultcontrol>2</defaultcontrol>
@@ -107,11 +107,16 @@
           <posX>763</posX>
           <posY>246</posY>
           <layout>StackLayout</layout>
+		  
           <control>
             <description>View-As</description>
-            <type>button</type>
+            <type>menubutton</type>
             <id>2</id>
-            <label>100</label>
+			<label></label>	
+			<mode>dialoglist</mode>				
+			<dialogTitle>792</dialogTitle> 					
+			<valueTextInButton>yes</valueTextInButton>
+			<valuePrefixText>95</valuePrefixText>	
             <textureFocus>hiddenmenu_item_selected.png</textureFocus>
             <textureNoFocus>hiddenmenu_item.png</textureNoFocus>
             <width>392</width>
@@ -123,6 +128,7 @@
             <onup>10</onup>
             <ondown>3</ondown>
           </control>
+		  
           <control>
             <description>Sort</description>
             <type>sortbutton</type>
@@ -133,13 +139,14 @@
             <height>68</height>
             <textXOff>35</textXOff>
             <textYOff>16</textYOff>
-            <offsetSortButtonX>337</offsetSortButtonX>
-            <offsetSortButtonY>19</offsetSortButtonY>
+            <offsetSortButtonX>400</offsetSortButtonX>
+            <offsetSortButtonY>28</offsetSortButtonY>
             <onleft>50</onleft>
             <onright>50</onright>
             <onup>2</onup>
             <ondown>6</ondown>
           </control>
+		  
           <control>
             <description>Previous</description>
             <type>button</type>
@@ -157,6 +164,7 @@
             <ondown>7</ondown>
             <action>15</action>
           </control>
+		  
           <control>
             <description>Next</description>
             <type>button</type>
@@ -174,6 +182,7 @@
             <ondown>8</ondown>
             <action>14</action>
           </control>
+		  
           <control>
             <description>Radio Guide</description>
             <type>button</type>
@@ -191,6 +200,7 @@
             <onup>7</onup>
             <hyperlink>762</hyperlink>
           </control>
+		  
           <control>
             <description>Radio Recordings</description>
             <type>button</type>
@@ -208,6 +218,7 @@
             <onup>8</onup>
             <hyperlink>763</hyperlink>
           </control>
+		  
           <control>
             <description>Radio Search</description>
             <type>button</type>
@@ -227,7 +238,7 @@
           </control>
         </control>
       </control>
-    </control>
+    </control> -->
 	
     <control>
       <animation effect="fade" time="100">WindowOpen</animation>
@@ -291,7 +302,8 @@
     </control>
 	
     <import>common.facade.music.xml</import>	
-    <import>common.overlay.xml</import>
+	<import>common.overlay.xml</import>
+	<import>myradio.hiddenmenu.xml</import>		
 	
   </controls>
 </window>
