@@ -328,88 +328,76 @@
     <description>Logos group</description>
     <type>group</type>
     <posX>1295</posX>
-    <posY>960</posY>
+    <posY>965</posY>
 	<dimColor>0xffffffff</dimColor>	  	
     <layout>StackLayout(0, Horizontal, true)</layout>
-    <animation effect="fade" time="100">WindowOpen</animation>
-    <animation effect="fade" time="100">WindowClose</animation>	
 	
     <control>
       <description>Video codec</description>
       <type>image</type>
       <id>0</id>
-      <width>85</width>
-      <height>75</height>
+      <width>95</width>
+      <height>45</height>
       <texture>logos\video\#VideoCodec.png</texture>
       <keepaspectratio>yes</keepaspectratio>
-      <visible>!control.isvisible(24)</visible>
+      <visible>facadeview.list + Control.IsVisible(50)</visible>	  
     </control>
 	
     <control>
       <description>Video resolution</description>
       <type>image</type>
       <id>0</id>
-      <width>85</width>
-      <height>75</height>
+      <width>95</width>
+      <height>45</height>
       <texture>logos\resolution\#VideoResolution.png</texture>
       <keepaspectratio>yes</keepaspectratio>
-      <visible>!control.isvisible(24)</visible>
+      <visible>facadeview.list + Control.IsVisible(50)</visible>	  
     </control>
 	
     <control>
       <description>Aspect ratio</description>
       <type>image</type>
       <id>0</id>
-      <width>85</width>
-      <height>75</height>
+      <width>95</width>
+      <height>45</height>
       <texture>logos\aspectratio\#AspectRatio.png</texture>
       <keepaspectratio>yes</keepaspectratio>
-      <visible>!control.isvisible(24)</visible>
+      <visible>facadeview.list + Control.IsVisible(50)</visible>	  
     </control>
 	
     <control>
       <description>Audio codec</description>
       <type>image</type>
       <id>0</id>
-      <width>85</width>
-      <height>75</height>
+      <width>95</width>
+      <height>45</height>
       <texture>logos\audio\#AudioCodec.png</texture>
       <keepaspectratio>yes</keepaspectratio>
-      <visible>!control.isvisible(24)</visible>
+      <visible>facadeview.list + Control.IsVisible(50)</visible>	  
     </control>
 	
     <control>
       <description>Audio channels</description>
       <type>image</type>
       <id>0</id>
-      <width>85</width>
-      <height>75</height>
+      <width>95</width>
+      <height>45</height>
       <texture>logos\audio\#AudioChannels.png</texture>
       <keepaspectratio>yes</keepaspectratio>
-      <visible>!control.isvisible(24)</visible>
+      <visible>facadeview.list + Control.IsVisible(50)</visible>	  
     </control>
 	
     <control>
       <description>Subtitles</description>
       <type>image</type>
       <id>0</id>
-      <width>100</width>
-      <height>75</height>
-      <texture>logos\subtitles.png</texture>
+      <width>95</width>
+      <height>45</height>
+      <texture>logos\subtitles\subtitles.png</texture>
       <keepaspectratio>yes</keepaspectratio>
-      <visible>!control.isvisible(24)+string.equals(#HasSubtitles, True)</visible>
+      <visible>facadeview.list + Control.IsVisible(50) + string.equals(#HasSubtitles, True)</visible>
     </control>
 	
-<!--     <control>
-      <description>Certification (MPAA) Logo</description>
-      <type>image</type>
-      <id>0</id>
-      <width>100</width>
-      <height>75</height>
-      <texture>logos\rating\#mpaarating.png</texture>
-      <keepaspectratio>yes</keepaspectratio>
-      <visible>!control.isvisible(24)</visible>
-    </control> -->
   </control>
 	
     <control>

@@ -212,7 +212,6 @@
       <posY>271</posY>
       <width>999</width>
       <height>703</height>
-      <animation>ZoomInFromMiddle</animation>
       <mpe>
         <layout>Grid</layout>
         <spring>no</spring>
@@ -252,7 +251,6 @@
       <id>705</id>
       <width>999</width>
       <height>703</height>
-      <animation>ZoomInFromMiddle</animation>
       <control>
         <type>image</type>
         <id>976</id>
@@ -283,7 +281,6 @@
       <posY>194</posY>
       <width>999</width>
       <height>703</height>
-      <animation>ZoomInFromMiddle</animation>
       <mpe>
         <layout>Grid</layout>
         <spring>no</spring>

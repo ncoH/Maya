@@ -82,11 +82,11 @@
 				<type>menubutton</type>
 				<description>Switch View</description>
 				<id>5</id>
-				<label></label>	
-				<mode>dialoglist</mode>				
-				<dialogTitle>792</dialogTitle> 					
+				<label></label>
+				<mode>dialoglist</mode>
+				<dialogTitle>499</dialogTitle>
 				<valueTextInButton>no</valueTextInButton>
-				<valuePrefixText>95</valuePrefixText>				
+				<valuePrefixText>97</valuePrefixText>			
 				<onleft>50</onleft>
 				<onright>50</onright>
 				<onup>2</onup>

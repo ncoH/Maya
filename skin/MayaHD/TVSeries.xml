@@ -507,9 +507,9 @@
       <description>Logos</description>
       <id>66</id>
       <posX>1300</posX>
-      <posY>949</posY>
-      <width>600</width>
-      <height>75</height>
+      <posY>966</posY>
+	  <width>900</width>
+	  <height>45</height>
       <texture>#TVSeries.Logos</texture>
       <keepaspectratio>yes</keepaspectratio>
       <visible>facadeview.list+[Control.IsVisible(1237)|Control.IsVisible(1238)|Control.IsVisible(1239)]</visible>
@@ -524,9 +524,9 @@
       <description>Logos</description>
       <id>66</id>
       <posX>1300</posX>
-      <posY>949</posY>
-      <width>600</width>
-      <height>75</height>
+      <posY>966</posY>
+	  <width>900</width>
+	  <height>45</height>
       <texture>#TVSeries.Logos</texture>
       <keepaspectratio>yes</keepaspectratio>
       <visible>[!facadeview.list+Control.IsVisible(1237)]|[!facadeview.list+Control.IsVisible(1238)]</visible>
@@ -541,9 +541,9 @@
       <description>thumb Logos ( in textlist group)</description>
       <id>66</id>
       <posX>1300</posX>
-      <posY>949</posY>
-      <width>600</width>
-      <height>75</height>
+      <posY>966</posY>
+	  <width>900</width>
+	  <height>45</height>
       <texture>#TVSeries.Logos</texture>
       <keepaspectratio>yes</keepaspectratio>
       <visible>Control.IsVisible(1240)</visible>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<window>
+  <!-- ************************************************* -->
+  <!--     Specific Multiselect Dialog for MyFilms     -->
+  <!-- ************************************************* -->	
+  <id>7993</id>
+  <defaultcontrol>3</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+	<controls>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<width>1280</width>
+			<height>720</height>
+			<texture>black.png</texture>
+			<colordiffuse>60ffffff</colordiffuse>
+		</control>
+		<control>
+			<type>image</type>
+			<id>0</id>
+			<posX>100</posX>
+			<posY>50</posY>
+			<width>1070</width>
+			<height>600</height>
+			<texture>context_background.png</texture>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		<control>
+			<description>GFX-Heading "menu" text label</description>
+			<type>label</type>
+			<id>5</id>
+			<posX>640</posX>
+			<posY>110</posY>
+			<label>924</label>
+			<font>font14</font>
+			<textcolor>Black</textcolor>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+			<visible>false</visible>
+		</control>
+		<control>
+			<description>Heading text label</description>
+			<type>label</type>
+			<id>4</id>
+			<posX>640</posX>
+			<posY>112</posY>
+			<label>181</label>
+			<font>font16</font>
+			<textcolor>FFFFFFFF</textcolor>
+		    <align>center</align>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		<control>
+			<description>Exit button</description>
+			<type>button</type>
+			<id>2</id>
+			<posX>1065</posX>
+			<posY>96</posY>
+			<width>69</width>
+			<height>59</height>
+			<textureFocus>-</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<label>-</label>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		<control>
+			<description>options listcontrol</description>
+			<type>listcontrol</type>
+			<id>3</id>
+			<posX>160</posX>
+			<posY>140</posY>
+			<width>950</width>
+			<height>480</height>
+			<spinPosX>960</spinPosX>
+			<spinPosY>587</spinPosY>
+			<textXOff>-10</textXOff>
+			<IconXOff>-10</IconXOff>
+			<IconYOff>3</IconYOff>
+			<spinCanFocus>no</spinCanFocus>
+			<onleft>10</onleft>
+			<onright>11</onright>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+		<control>
+			<description>Okay button</description>
+			<type>button</type>
+			<id>10</id>
+			<label>-</label>
+			<textalign>center</textalign>
+			<textYOff>0</textYOff>
+			<posX>450</posX>
+			<posY>580</posY>
+		    <width>50</width>
+		    <height>50</height>
+			<onleft>3</onleft>
+			<onright>11</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+		    <textureFocus>dialogue_ok_focus.png</textureFocus>
+			<textureNoFocus>dialogue_ok_nofocus.png</textureNoFocus>
+		</control>
+		<control>
+			<description>Cancel button</description>
+			<type>button</type>
+			<id>11</id>
+			<label>-</label>
+			<textalign>center</textalign>
+			<textYOff>0</textYOff>
+			<posX>740</posX>
+			<posY>580</posY>
+		    <width>50</width>
+		    <height>50</height>
+			<onleft>10</onleft>
+			<onright>3</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+		    <textureFocus>dialogue_exit_focus.png</textureFocus>
+			<textureNoFocus>dialogue_exit_nofocus.png</textureNoFocus>
+		</control>
+	</controls>
+</window>
+<!--Checksum:3b1e253ba00a22de4f6b6ee8b6e95e66-->

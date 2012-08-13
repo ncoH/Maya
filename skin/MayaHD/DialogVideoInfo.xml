@@ -217,7 +217,7 @@
 		<onleft>22</onleft>
 		<onright>22</onright>
 		<onup>26</onup>
-		<ondown>4755</ondown>
+		<ondown>66621</ondown>
 		<posX>736</posX>
 		<posY>677</posY>
 		<label>1010</label>
@@ -235,10 +235,10 @@
     <control>
         <description>IMDb Trailer Button (Online Videos)</description>
         <type>button</type>
-        <id>4755</id>
+        <id>66621</id>
         <label>5906</label>
         <hyperlink>4755</hyperlink>
-        <hyperlinkParameter>site:IMDb Movie Trailers|search:#(iif(neq(#imdbnumber,''),#imdbnumber,#title))|return:Locked</hyperlinkParameter>
+		<hyperlinkParameter>site:IMDb Movie Trailers|search:#(iif(neq(#imdbnumber,''),#imdbnumber,#title))|return:Locked</hyperlinkParameter>
 		<onleft>22</onleft>
 		<onright>22</onright>		
         <onup>6</onup>
@@ -553,7 +553,7 @@
     <description>Logos group</description>
     <type>group</type>
     <posX>1295</posX>
-    <posY>960</posY>
+    <posY>965</posY>
 	<dimColor>0xffffffff</dimColor>	  	
     <layout>StackLayout(0, Horizontal, true)</layout>
 	
@@ -561,8 +561,8 @@
       <description>Video codec</description>
       <type>image</type>
       <id>0</id>
-      <width>85</width>
-      <height>75</height>
+      <width>95</width>
+      <height>45</height>
       <texture>logos\video\#VideoCodec.png</texture>
       <keepaspectratio>yes</keepaspectratio>
     </control>
@@ -571,8 +571,8 @@
       <description>Video resolution</description>
       <type>image</type>
       <id>0</id>
-      <width>85</width>
-      <height>75</height>
+      <width>95</width>
+      <height>45</height>
       <texture>logos\resolution\#VideoResolution.png</texture>
       <keepaspectratio>yes</keepaspectratio>
     </control>
@@ -581,8 +581,8 @@
       <description>Aspect ratio</description>
       <type>image</type>
       <id>0</id>
-      <width>85</width>
-      <height>75</height>
+      <width>95</width>
+      <height>45</height>
       <texture>logos\aspectratio\#AspectRatio.png</texture>
       <keepaspectratio>yes</keepaspectratio>
     </control>
@@ -591,8 +591,8 @@
       <description>Audio codec</description>
       <type>image</type>
       <id>0</id>
-      <width>85</width>
-      <height>75</height>
+      <width>95</width>
+      <height>45</height>
       <texture>logos\audio\#AudioCodec.png</texture>
       <keepaspectratio>yes</keepaspectratio>
     </control>
@@ -601,8 +601,8 @@
       <description>Audio channels</description>
       <type>image</type>
       <id>0</id>
-      <width>85</width>
-      <height>75</height>
+      <width>95</width>
+      <height>45</height>
       <texture>logos\audio\#AudioChannels.png</texture>
       <keepaspectratio>yes</keepaspectratio>
     </control>
@@ -611,9 +611,9 @@
       <description>Subtitles</description>
       <type>image</type>
       <id>0</id>
-      <width>100</width>
-      <height>75</height>
-      <texture>logos\subtitles.png</texture>
+      <width>95</width>
+      <height>45</height>
+      <texture>logos\subtitles\subtitles.png</texture>
       <keepaspectratio>yes</keepaspectratio>
       <visible>string.equals(#HasSubtitles, True)</visible>
     </control>
@@ -622,8 +622,8 @@
       <description>Certification (MPAA) Logo</description>
       <type>image</type>
       <id>0</id>
-      <width>100</width>
-      <height>75</height>
+      <width>95</width>
+      <height>45</height>
       <texture>logos\rating\#mpaarating.png</texture>
       <keepaspectratio>yes</keepaspectratio>
       <visible>!control.isvisible(24)</visible>

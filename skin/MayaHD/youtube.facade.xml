@@ -29,7 +29,7 @@
           <textXOff>30</textXOff>
           <dimColor>ffffffff</dimColor>
         </control>
-		
+	
 			<control>
 				<description>Thumbnail Panel</description>
 				<type>thumbnailpanel</type>
@@ -203,20 +203,6 @@
           <onup>2</onup>
           <ondown>2</ondown>
         </control>
-		
-	
-    <control>
-      <description>playlist listcontrol</description>
-      <type>playlistcontrol</type>
-      <id>50</id>
-      <onleft>2</onleft>
-      <onright>2</onright>
-      <scrollOffset>2</scrollOffset>
-      <itemWidth>32</itemWidth>
-      <itemHeight>32</itemHeight>
-      <IconXOff>12</IconXOff>
-      <IconYOff>4</IconYOff>
-    </control>
 	
   </control>
 </control>

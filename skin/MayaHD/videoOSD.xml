@@ -56,10 +56,11 @@
       <description>Videocodecs</description>
       <type>image</type>
       <id>0</id>
-      <posX>1159</posX>
-      <posY>855</posY>
-      <width>92</width>
-      <height>63</height>
+      <posX>1140</posX>
+      <posY>860</posY>
+      <width>90</width>
+      <height>45</height>
+      <keepaspectratio>yes</keepaspectratio>	  
       <texture>logos\video\#Play.Current.VideoCodec.Texture.png</texture>
     </control>
 	
@@ -67,10 +68,11 @@
       <description>Audiocodecs</description>
       <type>image</type>
       <id>0</id>
-      <posX>1250</posX>
-      <posY>855</posY>
-      <width>92</width>
-      <height>63</height>
+      <posX>1230</posX>
+      <posY>860</posY>
+      <width>90</width>
+      <height>45</height>
+      <keepaspectratio>yes</keepaspectratio>	  
       <texture>logos\audio\#Play.Current.AudioCodec.Texture.png</texture>
     </control>
 	
@@ -78,10 +80,11 @@
       <description>Videoresolution</description>
       <type>image</type>
       <id>0</id>
-      <posX>1328</posX>
-      <posY>855</posY>
-      <width>92</width>
-      <height>63</height>
+      <posX>1320</posX>
+      <posY>860</posY>
+      <width>90</width>
+      <height>45</height>
+      <keepaspectratio>yes</keepaspectratio>	  
       <texture>logos\resolution\#Play.Current.VideoResolution.png</texture>
     </control>
 	
@@ -118,7 +121,7 @@
       <type>image</type>
       <id>999</id>
       <posX>295</posX>
-      <posY>795</posY>
+      <posY>803</posY>
       <width>168</width>
       <height>112</height>
       <align>center</align>

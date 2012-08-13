@@ -9,19 +9,9 @@
 	
     <!--            :: BACKGROUNDS ::           	 -->
 
-    <import>common.window.background.xml</import>
+    <import>Trakt.Common.Background.xml</import>
     <import>common.time.xml</import>
 	
-    <control>
-      <id>1</id>
-      <type>image</type>
-      <posX>178</posX>
-      <posY>84</posY>
-      <width>506</width>
-      <height>900</height>
-      <texture>settings_navigation_panel.png</texture>
-    </control>
-
     <control>
       <id>1</id>
       <type>label</type>
@@ -35,50 +25,41 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
-	
-    <control>
-      <id>121</id>
-      <description>Settings label</description>
-      <type>label</type>
-      <posX>269</posX>
-      <posY>230</posY>
-      <width>534</width>
-      <font>Segoe Light18</font>
-      <textcolor>ff6aa5cb</textcolor>
-      <label>Menu</label>
-    </control>
-	
-    <control>
-      <id>1</id>
-      <description>Pluginlabel</description>
-      <type>label</type>
-      <posX>2702</posX>
-      <posY>196</posY>
-      <width>702</width>
-      <height>92</height>
-      <font>Segoe Light40</font>
-      <textcolor>ff6aa5cb</textcolor>
-      <label>#header.label</label>
-      <valign>middle</valign>
-    </control>
 
+<!--     <control>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <description>list background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>80</posX>
+      <posY>215</posY>
+      <width>394</width>
+      <height>761</height>
+      <texture>tvhome_bg.png</texture>
+    </control> -->
+
+		
     <control>
-      <description>buttons</description>
       <type>group</type>
-      <posX>245</posX>
-      <posY>365</posY>
-      <animation effect="Fade" time="250">WindowOpen</animation>
-      <animation effect="Fade" time="250">WindowClose</animation>
-	  <layout>StackLayout(0, Vertical, true)</layout>
+      <layout>StackLayout</layout>
+      <description>group element</description>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <posX>55</posX>
+      <posY>178</posY>
+      <width>394</width>
 			<control>
 				<description>Calendar</description>
 				<type>button</type>
 				<id>10</id>
 				<label>#Trakt.Translation.Calendar.Label</label>
 				<hyperlink>87259</hyperlink>
-				<onup>15</onup>				
-				<width>364</width>				
+				<onup>98301</onup>		
+				<onleft>98300</onleft>				
+				<onright>98300</onright>						
 				<textalign>LEFT</textalign>
+				<width>394</width>					
 				<font>font11</font>	
 				<textureFocus>settings_button_large_focus.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>				
@@ -89,8 +70,10 @@
 				<id>11</id>
 				<hyperlink>87260</hyperlink>
 				<label>#Trakt.Translation.Friends.Label</label>
-				<width>364</width>			
+				<onright>98300</onright>	
+				<onleft>98300</onleft>				
 				<textalign>LEFT</textalign>
+				<width>394</width>					
 				<font>font11</font>				
 				<textureFocus>settings_button_large_focus.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>					
@@ -100,9 +83,11 @@
 				<type>button</type>
 				<id>12</id>
 				<hyperlink>87261</hyperlink>
-				<label>#Trakt.Translation.Recommendations.Label</label>
-				<width>364</width>			
+				<label>#Trakt.Translation.Recommendations.Label</label>		
+				<onleft>98300</onleft>				
+				<onright>98300</onright>				
 				<textalign>LEFT</textalign>
+				<width>394</width>					
 				<font>font11</font>		
 				<textureFocus>settings_button_large_focus.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>					
@@ -113,8 +98,10 @@
 				<id>13</id>
 				<hyperlink>87264</hyperlink>
 				<label>#Trakt.Translation.Trending.Label</label>
-				<width>364</width>			
+				<onleft>98300</onleft>				
+				<onright>98300</onright>				
 				<textalign>LEFT</textalign>
+				<width>394</width>					
 				<font>font11</font>	
 				<textureFocus>settings_button_large_focus.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>					
@@ -125,8 +112,10 @@
 				<id>14</id>
 				<hyperlink>87267</hyperlink>
 				<label>#Trakt.Translation.WatchList.Label</label>
-				<width>364</width>			
+				<onleft>98300</onleft>				
+				<onright>98300</onright>				
 				<textalign>LEFT</textalign>
+				<width>394</width>					
 				<font>font11</font>		
 				<textureFocus>settings_button_large_focus.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>					
@@ -137,8 +126,10 @@
 				<id>16</id>
 				<hyperlink>87275</hyperlink>
 				<label>#Trakt.Translation.Lists.Label</label>
-				<width>364</width>			
+				<onleft>98300</onleft>				
+				<onright>98300</onright>				
 				<textalign>LEFT</textalign>
+				<width>394</width>					
 				<font>font11</font>		
 				<textureFocus>settings_button_large_focus.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>					
@@ -149,15 +140,32 @@
 				<id>15</id>
 				<label>#Trakt.Translation.Settings.Label</label>
 				<hyperlink>87271</hyperlink>
-				<ondown>10</ondown>
-				<width>364</width>		
+				<onleft>98300</onleft>				
+				<onright>98300</onright>				
 				<textalign>LEFT</textalign>
+				<width>394</width>					
 				<font>font11</font>		
 				<textureFocus>settings_button_large_focus.png</textureFocus>
 				<textureNoFocus>-</textureNoFocus>					
 			</control>
+			<control>
+				<description>MPEIUPDATE:a9c3845a_8718_4712_85cc_26f56520bb9a</description>
+				<type>button</type>
+				<id>99</id>
+				<label>#MPEI.Translation.Update.Label</label>
+				<ondown>98302</ondown>
+				<onleft>98300</onleft>				
+				<onright>98300</onright>					
+				<textalign>LEFT</textalign>
+				<width>394</width>				
+				<font>font11</font>		
+				<textureFocus>settings_button_large_focus.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>					
+				<visible>string.equals(#mpei.a9c3845a_8718_4712_85cc_26f56520bb9a.haveupdate, true)</visible>				
+			</control>			
 		</control>
 
+		<import>Trakt.Dashboard.xml</import>
 		<import>common.overlay.xml</import>
 		
 	</controls>

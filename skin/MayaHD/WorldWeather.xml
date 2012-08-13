@@ -312,7 +312,7 @@
 		<align>right</align>
 		<font>font11</font>
 		<textcolor>6aa5cb</textcolor>
-		<label>#WorldWeather.TranslationProvider #WorldWeather.Provider (#WorldWeather.TranslationCurrentCondition) + #WorldWeather.ForecastProvider (#WorldWeather.TranslationForecastCondition)</label>
+		<label>#WorldWeather.TranslationProvider #WorldWeather.Provider (#WorldWeather.TranslationCurrentCondition) + #WorldWeather.ForecastProvider (#WorldWeather.TranslationForecastCondition): #WorldWeather.RefreshDate #WorldWeather.RefreshTime</label>
 		<visible>string.equals(#WorldWeather.View,Condition)+!control.hasfocus(20)</visible>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>

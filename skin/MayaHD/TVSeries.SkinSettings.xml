@@ -96,8 +96,8 @@
 		</episode>
 	</views>
 	
-	<formatting import="true">
-		<![CDATA[<Enabled>1<Format><Episode.RatingPath><FormatAs>TVSeries\starEval(10*Round(<Episode.Rating>*2)/2).png
+<formatting import="true">
+<![CDATA[<Enabled>1<Format><Episode.RatingPath><FormatAs>TVSeries\starEval(10*Round(<Episode.Rating>*2)/2).png
 <Enabled>1<Format><Episode.InfoPanelLine1Key><FormatAs>
 <Enabled>1<Format><Episode.InfoPanelLine1Value><FormatAs>Eval(Round(<Episode.Rating>*10)/10)
 <Enabled>1<Format><Episode.InfoPanelLine2Key><FormatAs>FILE SIZE
@@ -153,42 +153,69 @@
 <Enabled>1<Format>SeasonEpisodeCount<FormatAs><Season.EpisodeCount> Episodes
 <Enabled>1<Format>SeriesWatchedAndUnWatched<FormatAs>Eval(PrettyNumber100(<Series.EpisodesUnWatched>))        Eval(PrettyNumber100(<Series.EpisodeCount>-<Series.EpisodesUnWatched>))
 <Enabled>1<Format>SeasonWatchedAndUnWatched<FormatAs>Eval(PrettyNumber10(<Season.EpisodesUnWatched>))          Eval(PrettyNumber10(<Season.EpisodeCount>-<Season.EpisodesUnWatched>))
+<Enabled>1<Format>SeriesUnWatched<FormatAs>Eval(PrettyNumber100(<Series.EpisodesUnWatched>))
+<Enabled>1<Format>SeasonUnWatched<FormatAs>Eval(PrettyNumber10(<Season.EpisodesUnWatched>))
 <Enabled>1<Format>SMALLSPACE<FormatAs> ]]>
-	</formatting>
+</formatting>
 	
-	<logos import="true">
-		<![CDATA[skin\MayaHD\Media\Logos\source\DVD.png;-;<Episode.EpisodeFilename>;-;contains;-;DVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HDDVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HD-DVD;-;<Restrict:Episode>
+<logos import="true">
+<![CDATA[
+skin\MayaHD\Media\Logos\source\DVD.png;-;<Episode.EpisodeFilename>;-;contains;-;DVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HDDVD;-;AND;-;<Episode.EpisodeFilename>;-;!contains;-;HD-DVD;-;<Restrict:Episode>
 skin\MayaHD\Media\Logos\source\HDDVD.png;-;<Episode.EpisodeFilename>;-;contains;-;HDDVD;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;HD-DVD;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\source\bluray.png;-;<Episode.EpisodeFilename>;-;contains;-;BLURAY;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;BLU-RAY;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\source\blurayrip.png;-;<Episode.EpisodeFilename>;-;contains;-;BDRip;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\source\hdtv.png;-;<Episode.EpisodeFilename>;-;contains;-;hdtv;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\source\sdtv.png;-;<Episode.EpisodeFilename>;-;contains;-;sdtv;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\video\h264.png;-;<Episode.VideoFormat>;-;=;-;AVC;-;OR;-;<Episode.VideoCodec>;-;contains;-;AVC;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\source\BLURAY.png;-;<Episode.EpisodeFilename>;-;contains;-;BLURAY;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;BLU-RAY;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\source\BLURAY.png;-;<Episode.EpisodeFilename>;-;contains;-;BDRip;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\source\HD.png;-;<Episode.EpisodeFilename>;-;contains;-;hdtv;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\source\SD.png;-;<Episode.EpisodeFilename>;-;contains;-;sdtv;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+
+skin\MayaHD\Media\Logos\video\H264.png;-;<Episode.VideoFormat>;-;=;-;AVC;-;OR;-;<Episode.VideoCodec>;-;=;-;h264;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\MayaHD\Media\Logos\video\MP2V.png;-;<Episode.VideoFormat>;-;=;-;MPEG video;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPEG2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\MayaHD\Media\Logos\video\MP1V.png;-;<Episode.VideoFormat>;-;=;-;MPEG video;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPEG1;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\MayaHD\Media\Logos\video\DIVX.png;-;<Episode.VideoCodec>;-;contains;-;DIVX;-;OR;-;<Episode.VideoCodec>;-;contains;-;DX50;-;OR;-;<Episode.VideoCodec>;-;contains;-;DIV3;-;<Restrict:Episode>
 skin\MayaHD\Media\Logos\video\XVID.png;-;<Episode.VideoCodec>;-;contains;-;XVID;-;OR;-;<Episode.VideoCodec>;-;contains;-;MPG4;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\video\wvc1.png;-;<Episode.VideoFormat>;-;contains;-;VC-1;-;OR;-;<Episode.VideoCodec>;-;contains;-;VC1;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\video\wmv.png;-;<Episode.VideoCodec>;-;contains;-;WMV;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\video\vp6f.png;-;<Episode.VideoFormat>;-;=;-;VP6;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\Audio\mono.png;-;<Episode.AudioChannels>;-;=;-;1;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\audio\2.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\video\VC-1.png;-;<Episode.VideoFormat>;-;contains;-;VC-1;-;OR;-;<Episode.VideoCodec>;-;contains;-;VC1;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\video\WMV.png;-;<Episode.VideoCodec>;-;contains;-;WMV;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\video\VP6.png;-;<Episode.VideoFormat>;-;=;-;VP6;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\video\REALVIDEO.png;-;<Episode.VideoCodec>;-;contains;-;REAL;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+
+skin\MayaHD\Media\Logos\Audio\1.0.png;-;<Episode.AudioChannels>;-;=;-;1;-;AND;-;;-;=;-;;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\2.0.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\4.1.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;5;-;AND;-;;-;=;-;;-;<Restrict:Episode>
 skin\MayaHD\Media\Logos\audio\5.1.png;-;<Episode.AudioCodec>;-;contains;-;AC3;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\audio\DTS.png;-;<Episode.AudioCodec>;-;=;-;DTS;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\audio\DTS.png;-;<Episode.AudioCodec>;-;=;-;DTS;-;AND;-;<Episode.AudioChannels>;-;=;-;7;-;<Restrict:Episode>
+
+skin\MayaHD\Media\Logos\audio\AC3+.png;-;<Episode.AudioFormat>;-;=;-;E-AC-3;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\AC3+.png;-;<Episode.AudioFormat>;-;=;-;E-AC-3;-;AND;-;<Episode.AudioChannels>;-;=;-;8;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+
+skin\MayaHD\Media\Logos\audio\DTS.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;-1;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\DTS.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;-1;-;AND;-;<Episode.AudioChannels>;-;=;-;7;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\DTS-ES.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;-1;-;AND;-;<Episode.AudioChannels>;-;=;-;8;-;<Restrict:Episode>
+
+skin\MayaHD\Media\Logos\audio\DTS MA.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;MA;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\DTS MA.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;MA;-;AND;-;<Episode.AudioChannels>;-;=;-;7;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\DTS MA.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;MA;-;AND;-;<Episode.AudioChannels>;-;=;-;8;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\DTS HRA.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;HRA;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\DTS HRA.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;HRA;-;AND;-;<Episode.AudioChannels>;-;=;-;7;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\DTS HRA.png;-;<Episode.AudioFormat>;-;=;-;DTS;-;AND;-;<Episode.AudioFormatProfile>;-;=;-;HRA;-;AND;-;<Episode.AudioChannels>;-;=;-;8;-;<Restrict:Episode>
+
 skin\MayaHD\Media\Logos\audio\MP3.png;-;<Episode.AudioCodec>;-;contains;-;MPA1L3;-;OR;-;<Episode.AudioCodec>;-;contains;-;MPA2L3;-;OR;-;<Episode.AudioFormat>;-;=;-;MPEG Audio;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\audio\aac51.png;-;<Episode.AudioCodec>;-;=;-;AAC;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\audio\truehd51.png;-;<Episode.AudioCodec>;-;contains;-;TrueHD;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\audio\truehd71.png;-;<Episode.AudioCodec>;-;contains;-;TrueHD;-;AND;-;<Episode.AudioChannels>;-;contains;-;8;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\resolution\480.png;-;<Episode.videoWidth>;-;<;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\resolution\540.png;-;<Episode.videoWidth>;-;=;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\resolution\720.png;-;<Episode.videoWidth>;-;=;-;1280;-;OR;-;<Episode.videoHeight>;-;=;-;720;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\resolution\1080.png;-;<Episode.videoWidth>;-;=;-;1920;-;OR;-;<Episode.videoHeight>;-;=;-;1080;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\aspectratio\1.33.png;-;<Episode.VideoAspectRatio>;-;<;-;1.4;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\aspectratio\1.85.png;-;<Episode.VideoAspectRatio>;-;<;-;1.9;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.79;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\aspectratio\1.78.png;-;<Episode.VideoAspectRatio>;-;>;-;1.7;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;1.79;-;AND;-;;-;=;-;;-;<Restrict:Episode>
-skin\MayaHD\Media\Logos\subtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;1;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;subbed.;-;AND;-;;-;=;-;;-;
-skin\MayaHD\Media\Logos\nosubtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;0;-;AND;-;;-;=;-;;-;
+skin\MayaHD\Media\Logos\audio\AAC.png;-;<Episode.AudioCodec>;-;=;-;AAC;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\AAC.png;-;<Episode.AudioCodec>;-;=;-;AAC;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+
+skin\MayaHD\Media\Logos\audio\AC-3 TrueHD.png;-;<Episode.AudioFormatProfile>;-;contains;-;TrueHD;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\TrueHD.png;-;<Episode.AudioFormatProfile>;-;contains;-;TrueHD;-;AND;-;<Episode.AudioChannels>;-;contains;-;8;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\FLAC.png;-;<Episode.AudioFormat>;-;contains;-;FLAC;-;AND;-;<Episode.AudioChannels>;-;=;-;2;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\FLAC.png;-;<Episode.AudioFormat>;-;contains;-;FLAC;-;AND;-;<Episode.AudioChannels>;-;=;-;6;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\audio\FLAC.png;-;<Episode.AudioFormat>;-;contains;-;FLAC;-;AND;-;<Episode.AudioChannels>;-;=;-;8;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+
+skin\MayaHD\Media\Logos\resolution\480i.png;-;<Episode.videoWidth>;-;<;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\resolution\540i.png;-;<Episode.videoWidth>;-;=;-;960;-;AND;-;<Episode.videoHeight>;-;<=;-;600;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\resolution\720p.png;-;<Episode.videoWidth>;-;=;-;1280;-;OR;-;<Episode.videoHeight>;-;=;-;720;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\resolution\1080p.png;-;<Episode.videoWidth>;-;=;-;1920;-;OR;-;<Episode.videoHeight>;-;=;-;1080;-;AND;-;;-;=;-;;-;<Restrict:Episode>
+
+skin\MayaHD\Media\Logos\aspectratio\FULLSCREEN.png;-;<Episode.videoWidth>;-;<;-;960;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;1.5;-;AND;-;<Episode.VideoAspectRatio>;-;>;-;1.2;-;<Restrict:Episode>
+skin\MayaHD\Media\Logos\aspectratio\WIDESCREEN.png;-;<Episode.videoWidth>;-;<;-;960;-;AND;-;<Episode.VideoAspectRatio>;-;<;-;1.9;-;AND;-;<Episode.VideoAspectRatio>;-;>=;-;1.5;-;<Restrict:Episode>
+
+skin\MayaHD\Media\Logos\subtitles\subtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;1;-;OR;-;<Episode.EpisodeFilename>;-;contains;-;subbed.;-;AND;-;;-;=;-;;-;
+skin\MayaHD\Media\Logos\subtitles\nosubtitles.png;-;<Episode.AvailableSubtitles>;-;=;-;0;-;AND;-;;-;=;-;;-;
 ]]>
 	</logos>	
 	

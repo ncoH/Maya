@@ -304,7 +304,7 @@
 				<onleft>50</onleft>
                 <onright>50</onright>
 				<onup>9</onup>
-                <ondown>66614</ondown>				
+                <ondown>66612</ondown>				
 			</control>
             
             <control>
@@ -318,7 +318,26 @@
               <label>-</label>
               <visible>true</visible>
             </control>
-           
+		
+			<control>
+				<description>SubCentral</description>
+				<type>button</type>
+				<id>66612</id>
+				<width>497</width>
+				<height>64</height>
+				<textXOff>58</textXOff>
+				<textYOff>14</textYOff>
+				<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+				<textureNoFocus>-</textureNoFocus>				
+				<label>287</label>
+				<hyperlink>84623</hyperlink>
+				<onup>66610</onup>
+				<ondown>66614</ondown>
+				<onleft>50</onleft>
+                <onright>50</onright>
+				<visible>plugin.isenabled(SubCentral)</visible>
+			</control>
+		
             <control>
                 <description>Trakt</description>
                 <type>button</type>
@@ -331,7 +350,7 @@
 				<textureNoFocus>-</textureNoFocus>
                 <label>Trakt</label>
                 <hyperlink>87258</hyperlink>
-                <onup>66610</onup>
+                <onup>66612</onup>
                 <ondown>2</ondown>
 				<onleft>50</onleft>
                 <onright>50</onright>

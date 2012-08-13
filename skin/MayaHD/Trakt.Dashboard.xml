@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <controls>
+  
+    <control>
+      <description>group element</description>
+      <type>group</type>
+      <dimColor>FFFFFFFF</dimColor>
+      <animation effect="fade" time="200">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="slide" time="200" start="1200,0">WindowOpen</animation>
+      <animation effect="slide" time="250" end="1200,0">WindowClose</animation>
+	  
+      <control>
+        <type>label</type>
+        <id>0</id>
+        <posX>480</posX>
+        <posY>120</posY>
+        <width>1260</width>
+		<font>Segoe Light14</font>
+        <label>#Trakt.Activity.Description</label>
+        <textcolor>85cffe</textcolor>
+      </control>
+	  
+      <control>
+        <description>Activity Stream</description>
+        <type>facadeview</type>
+        <id>98300</id>
+        <control>
+			<type>listcontrol</type>
+			<id>98300</id>
+			<posX>510</posX>
+			<posY>180</posY>
+			<height>350</height>
+			<width>1320</width>
+			<scrollOffset>2</scrollOffset>
+			<onleft>10</onleft>
+			<onright>10</onright>
+			<PinIconXOff>1180</PinIconXOff>
+			<PinIconYOff>10</PinIconYOff>
+			<PinIconWidth>50</PinIconWidth>
+			<PinIconHeight>50</PinIconHeight>
+			<textXOff>25</textXOff>
+			<textYOff>15</textYOff>
+			<textXOff2>0</textXOff2>
+			<textYOff2>15</textYOff2>
+			<textXOff3>65</textXOff3>
+			<textYOff3>15</textYOff3>			
+			<spinPosX>-2000</spinPosX>
+			<spinPosY>984</spinPosY>
+			<suffix>|</suffix>
+			<dimColor>FFFFFFFF</dimColor>
+        </control>
+      </control>
+	  
+      <control>
+        <description>Trending Label</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>480</posX>
+        <posY>475</posY>
+        <width>1260</width>
+		<font>Segoe Light14</font>
+        <label>#Trakt.Translation.TrendingShowsAndMovies.Label</label>
+        <textcolor>85cffe</textcolor>
+      </control>
+	  
+	  
+      <!-- Half Width Filmstrip + Info -->
+      <control>
+        <description>Trending Shows</description>
+        <type>facadeview</type>
+        <id>98301</id>
+        <control>
+			<type>filmstrip</type>
+			<dimColor>ffffffff</dimColor>
+			<id>98301</id>
+			<onup>98300</onup>
+			<posX>510</posX>
+			<posY>550</posY>
+			<width>1100</width>
+			<height>220</height>
+			<thumbWidth>134</thumbWidth>
+			<thumbHeight>204</thumbHeight>
+			<thumbPosX>0</thumbPosX>
+			<thumbPosY>0</thumbPosY>
+			<itemWidth>144</itemWidth>
+			<itemHeight>194</itemHeight>
+			<textureWidth>134</textureWidth>
+			<textureHeight>194</textureHeight>
+			<textYOff>-2000</textYOff>		  
+			<frame>-</frame>
+			<frameFocus></frameFocus>
+			<showFrame>yes</showFrame>
+			<showFolder>no</showFolder>
+			<showBackGround>no</showBackGround>
+			<showInfoImage>no</showInfoImage>
+			<enableFocusZoom>no</enableFocusZoom>
+			<keepaspectratio>no</keepaspectratio>
+			<spinCanFocus>no</spinCanFocus>
+			<spinXOff>-2000</spinXOff>
+			<thumbs diffuse="Thumb_Mask.png" mask="video_filmstrip_mask.png"/>
+			<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="120,120" time="200">focus</thumbAnimation>
+			<thumbAnimation effect="zoom" start="120,120" reversible="false" end="100,100" time="100">unfocus</thumbAnimation>
+        </control>
+      </control>
+	  
+      <control>
+        <description>Show #1 Title</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1150</posX>
+        <posY>555</posY>
+        <width>400</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Show.0.Title</label>
+      </control>
+	  
+      <control>
+        <description>Show #2 Title</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1150</posX>
+        <posY>608</posY>
+        <width>400</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Show.1.Title</label>
+      </control>
+	  
+      <control>
+        <description>Show #3 Title</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1150</posX>
+        <posY>660</posY>
+        <width>400</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Show.2.Title</label>
+      </control>
+	  
+      <control>
+        <description>Show #4 Title</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1150</posX>
+        <posY>713</posY>
+        <width>400</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Show.3.Title</label>
+      </control>
+	  
+      <control>
+        <description>Show #1 Rating Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1585</posX>
+        <posY>555</posY>
+        <width>36</width>
+        <height>36</height>
+        <texture>#Trakt.Show.0.Ratings.Icon.png</texture>
+      </control>
+	  
+      <control>
+        <description>Show #2 Rating Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1585</posX>
+        <posY>608</posY>
+        <width>36</width>
+        <height>36</height>
+        <texture>#Trakt.Show.1.Ratings.Icon.png</texture>
+      </control>
+      <control>
+        <description>Show #3 Rating Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1585</posX>
+        <posY>660</posY>
+        <width>36</width>
+        <height>36</height>
+        <texture>#Trakt.Show.2.Ratings.Icon.png</texture>
+      </control>
+	  
+      <control>
+        <description>Show #4 Rating Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1585</posX>
+        <posY>713</posY>
+        <width>36</width>
+        <height>36</height>
+        <texture>#Trakt.Show.3.Ratings.Icon.png</texture>
+      </control>
+	  
+      <control>
+        <description>Show #1 Rating</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1637</posX>
+        <posY>555</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Show.0.Ratings.Percentage%</label>
+      </control>
+	  
+      <control>
+        <description>Show #2 Rating</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1637</posX>
+        <posY>608</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Show.1.Ratings.Percentage%</label>
+      </control>
+	  
+      <control>
+        <description>Show #3 Rating</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1637</posX>
+        <posY>660</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Show.2.Ratings.Percentage%</label>
+      </control>
+	  
+      <control>
+        <description>Show #4 Rating</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1637</posX>
+        <posY>713</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Show.3.Ratings.Percentage%</label>
+      </control>
+	  
+      <control>
+        <description>Show #1 Watching Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1735</posX>
+        <posY>547</posY>
+        <width>48</width>
+        <height>48</height>
+        <texture>traktActivityWatching.png</texture>
+      </control>
+	  
+      <control>
+        <description>Show #2 Watching Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1735</posX>
+        <posY>600</posY>
+        <width>48</width>
+        <height>48</height>
+        <texture>traktActivityWatching.png</texture>
+      </control>
+	  
+      <control>
+        <description>Show #3 Watching Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1735</posX>
+        <posY>652</posY>
+        <width>48</width>
+        <height>48</height>
+        <texture>traktActivityWatching.png</texture>
+      </control>
+	  
+      <control>
+        <description>Show #4 Watching Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1735</posX>
+        <posY>706</posY>
+        <width>48</width>
+        <height>48</height>
+        <texture>traktActivityWatching.png</texture>
+      </control>
+	  
+      <control>
+        <description>Show #1 People Watching</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1787</posX>
+        <posY>555</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Show.0.Watchers</label>
+      </control>
+	  
+      <control>
+        <description>Show #2 People Watching</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1787</posX>
+        <posY>608</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Show.1.Watchers</label>
+      </control>
+	  
+      <control>
+        <description>Show #3 People Watching</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1787</posX>
+        <posY>660</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Show.2.Watchers</label>
+      </control>
+	  
+      <control>
+        <description>Show #4 People Watching</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1787</posX>
+        <posY>711</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Show.3.Watchers</label>
+      </control>
+	  
+	  
+      <control>
+        <description>Trending Movies</description>
+        <type>facadeview</type>
+        <id>98302</id>
+        <control>
+			<type>filmstrip</type>
+			<dimColor>ffffffff</dimColor>
+			<id>98302</id>
+			<onup>98301</onup>
+			<ondown>98301</ondown>
+			<posX>510</posX>
+			<posY>803</posY>
+			<width>1100</width>
+			<height>220</height>
+			<thumbWidth>134</thumbWidth>
+			<thumbHeight>204</thumbHeight>
+			<thumbPosX>0</thumbPosX>
+			<thumbPosY>0</thumbPosY>
+			<itemWidth>144</itemWidth>
+			<itemHeight>194</itemHeight>
+			<textureWidth>134</textureWidth>
+			<textureHeight>194</textureHeight>
+			<textYOff>-2000</textYOff>		  
+			<frame>-</frame>
+			<frameFocus>-</frameFocus>
+			<showFrame>yes</showFrame>
+			<showFolder>no</showFolder>
+			<showBackGround>no</showBackGround>
+			<showInfoImage>no</showInfoImage>
+			<enableFocusZoom>no</enableFocusZoom>
+			<keepaspectratio>no</keepaspectratio>
+			<spinCanFocus>no</spinCanFocus>
+			<spinXOff>-2000</spinXOff>
+			<thumbs diffuse="Thumb_Mask.png" mask="video_filmstrip_mask.png"/>
+			<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="120,120" time="200">focus</thumbAnimation>
+			<thumbAnimation effect="zoom" start="120,120" reversible="false" end="100,100" time="100">unfocus</thumbAnimation>
+        </control>
+      </control>
+	  
+      <control>
+        <description>Movie #1 Title</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1150</posX>
+        <posY>810</posY>
+        <width>400</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Movie.0.Title</label>
+      </control>
+	  
+      <control>
+        <description>Movie #2 Title</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1150</posX>
+        <posY>863</posY>
+        <width>400</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Movie.1.Title</label>
+      </control>
+	  
+      <control>
+        <description>Movie #3 Title</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1150</posX>
+        <posY>915</posY>
+        <width>400</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Movie.2.Title</label>
+      </control>
+	  
+      <control>
+        <description>Movie #4 Title</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1150</posX>
+        <posY>968</posY>
+        <width>400</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Movie.3.Title</label>
+      </control>
+	  
+      <control>
+        <description>Movie #1 Rating Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1585</posX>
+        <posY>810</posY>
+        <width>36</width>
+        <height>36</height>
+        <texture>#Trakt.Movie.0.Ratings.Icon.png</texture>
+      </control>
+	  
+      <control>
+        <description>Movie #2 Rating Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1585</posX>
+        <posY>863</posY>
+        <width>36</width>
+        <height>36</height>
+        <texture>#Trakt.Movie.1.Ratings.Icon.png</texture>
+      </control>
+	  
+      <control>
+        <description>Movie #3 Rating Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1585</posX>
+        <posY>915</posY>
+        <width>36</width>
+        <height>36</height>
+        <texture>#Trakt.Movie.2.Ratings.Icon.png</texture>
+      </control>
+	  
+      <control>
+        <description>Movie #4 Rating Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1585</posX>
+        <posY>968</posY>
+        <width>36</width>
+        <height>36</height>
+        <texture>#Trakt.Movie.3.Ratings.Icon.png</texture>
+      </control>
+	  
+      <control>
+        <description>Movie #1 Rating</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1637</posX>
+        <posY>810</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Movie.0.Ratings.Percentage%</label>
+      </control>
+	  
+      <control>
+        <description>Movie #2 Rating</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1637</posX>
+        <posY>863</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Movie.1.Ratings.Percentage%</label>
+      </control>
+	  
+      <control>
+        <description>Movie #3 Rating</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1637</posX>
+        <posY>915</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Movie.2.Ratings.Percentage%</label>
+      </control>
+	  
+      <control>
+        <description>Movie #4 Rating</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1637</posX>
+        <posY>968</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Movie.3.Ratings.Percentage%</label>
+      </control>
+	  
+      <control>
+        <description>Movie #1 Watching Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1735</posX>
+        <posY>804</posY>
+        <width>48</width>
+        <height>48</height>
+        <texture>traktActivityWatching.png</texture>
+      </control>
+	  
+      <control>
+        <description>Movie #2 Watching Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1735</posX>
+        <posY>855</posY>
+        <width>48</width>
+        <height>48</height>
+        <texture>traktActivityWatching.png</texture>
+      </control>
+	  
+      <control>
+        <description>Movie #3 Watching Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1735</posX>
+        <posY>907</posY>
+        <width>48</width>
+        <height>48</height>
+        <texture>traktActivityWatching.png</texture>
+      </control>
+	  
+      <control>
+        <description>Movie #4 Watching Icon</description>
+        <type>image</type>
+        <id>0</id>
+        <posX>1735</posX>
+        <posY>962</posY>
+        <width>48</width>
+        <height>48</height>
+        <texture>traktActivityWatching.png</texture>
+      </control>
+	  
+      <control>
+        <description>Movie #1 People Watching</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1787</posX>
+        <posY>812</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Movie.0.Watchers</label>
+      </control>
+	  
+      <control>
+        <description>Movie #2 People Watching</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1787</posX>
+        <posY>863</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Movie.1.Watchers</label>
+      </control>
+	  
+      <control>
+        <description>Movie #3 People Watching</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1787</posX>
+        <posY>915</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Movie.2.Watchers</label>
+      </control>
+	  
+      <control>
+        <description>Movie #4 People Watching</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>1787</posX>
+        <posY>968</posY>
+        <width>1260</width>
+        <font>font12</font>
+        <textcolor>ffffffff</textcolor>
+        <label>#Trakt.Movie.3.Watchers</label>
+      </control>
+	  
+    <!-- ********************** IMPORT PROCESS *************************************** -->
+	  
+      <control>
+        <description>Update Animation</description>
+        <type>animation</type>
+        <id>98299</id>
+		<posX>920</posX>
+		<posY>489</posY>
+		<width>89</width>
+		<height>90</height>
+        <textures>common.waiting.1.png;common.waiting.2.png;common.waiting.3.png;common.waiting.4.png;common.waiting.5.png;common.waiting.6.png;common.waiting.7.png;common.waiting.8.png</textures>
+        <Duration>0:0:01.5</Duration>
+        <keepaspectratio>yes</keepaspectratio>
+      </control>
+    </control>
+	
+  </controls>
+</window>

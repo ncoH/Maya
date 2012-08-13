@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+<controls>
+
+	<!--            :: LISTVIEW ::            -->
+	
+	<control>
+		<description>certification logo</description>
+		<type>image</type>
+		<id>101</id>
+		<posX>-2000</posX>
+		<posY>860</posY>
+		<width>52</width>
+		<height>52</height>
+		<keepaspectratio>yes</keepaspectratio>
+		<centered>yes</centered>
+		<texture>certification\#myfilms.db.certification.value.png</texture>
+		<visible>facadeview.list + Control.IsVisible(50)</visible>
+		<animation effect="fade" time="250">WindowOpen</animation>
+		<animation effect="fade" time="250">WindowClose</animation>
+	</control>
+
+
+    <control>
+		<type>image</type>
+		<description>thumb Logos ID 2012 (Listview)</description>
+		<id>2012</id>
+		<posX>1295</posX>
+		<posY>966</posY>
+		<width>1054</width>
+		<height>50</height>
+		<texture>#myfilms.logos_id2012</texture>
+		<keepaspectratio>yes</keepaspectratio>
+		<visible>facadeview.list + Control.IsVisible(50)</visible>
+		<animation effect="fade" time="250">WindowClose</animation>	
+		<animation effect="fade" time="250">WindowOpen</animation>
+    </control>
+
+	<!--            :: THUMB/FILMSTRIPVIEW ::            -->
+	
+    <control>
+		<type>image</type>
+		<description>thumb Logos ID 2012 (Thumb/Filmstrip)</description>
+		<id>2012</id>
+		<posX>1124</posX>
+		<posY>991</posY>
+		<width>1054</width>
+		<height>50</height>
+		<texture>#myfilms.logos_id2012</texture>
+		<keepaspectratio>yes</keepaspectratio>
+		<spaceBetweenItems>0</spaceBetweenItems>
+		<visible>[facadeview.filmstrip | facadeview.smallicons | facadeview.largeicons | facadeview.coverflow] + Control.IsVisible(50)</visible>
+		<animation effect="fade" time="250">WindowClose</animation>	
+		<animation effect="fade" time="250">WindowOpen</animation>	  
+    </control>
+	
+</controls>
+</window>

@@ -24,7 +24,15 @@
       <animation effect="Fade" time="200">WindowOpen</animation>
       <animation effect="Fade" time="200">WindowClose</animation>
     </control>
-	
+
+	<control>
+		<description>Placeholder for browser component. If statusvisible=true, then bottom coordinate is decreased by the height of control with id of 545376891</description>
+		<type>image</type>
+		<id>545376890</id>
+		<width>1920</width>
+		<height>1080</height>
+	</control>
+		
     <control>
       <description>Status label</description>
       <id>9</id>
@@ -37,6 +45,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
+	  <visible>string.equals(#btWeb.statusvisible, true)</visible>	  
     </control>
 	
     <control>
@@ -52,6 +61,7 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
       <valign>middle</valign>
+	  <visible>string.equals(#btWeb.statusvisible, true)</visible>	  
     </control>
 	
   </controls>
