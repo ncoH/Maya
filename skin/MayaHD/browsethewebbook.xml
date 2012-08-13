@@ -227,6 +227,7 @@
       <description>group element</description>
       <type>group</type>
       <control>
+	  
         <description>composite control consisting of a list control and a thumbnail panel</description>
         <type>facadeview</type>
         <id>50</id>
