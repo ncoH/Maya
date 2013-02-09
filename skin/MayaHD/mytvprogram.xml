@@ -181,6 +181,13 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
     </control>
+
+		<control>
+			<description>genre</description>
+			<type>label</type>
+			<id>17</id>
+			<posX>-2000</posX>
+		</control>
 	
     <control>
       <description>listcontrol</description>
