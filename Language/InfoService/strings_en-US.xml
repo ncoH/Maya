@@ -39,5 +39,7 @@
     <String id="35">Twitter items</String>
     <String id="36">Waiting for FeedService update...</String>
     <String id="37">Waiting for TwitterService update...</String>
+    <String id="38">{0} new Item(s) - {1}</String>
+    <String id="39">New messages on {0}!</String>
   </Section>
 </Language>

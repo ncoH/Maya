@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+  <id>49852</id>
+  <defaultcontrol>50</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
+  <define>#header.label:604</define>
+  <define>#header.background:hover_my radio.png</define>
+  <controls>
+  
+    <import>common.window.4tr.recordings.xml</import>
+    <import>common.time.xml</import>
+
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+	
+    <control>
+      <description>listcontrol background</description>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+      <type>image</type>
+      <id>1</id>
+      <posX>736</posX>
+      <posY>243</posY>
+      <width>1019</width>
+      <height>788</height>
+      <texture>listcontrol_bg_recordings.png</texture>
+      <visible>facadeview.list|facadeview.album</visible>
+    </control>
+	
+    <control>
+      <id>0</id>
+      <type>image</type>
+      <posX>127</posX>
+      <posY>291</posY>
+      <width>513</width>
+      <height>285</height>
+      <texture>defaultTVBig.png</texture>
+      <visible>[facadeview.list|facadeview.album]+[!control.hasthumb(500)|string.equals(#selectedthumb,defaultFolderBig.png)]</visible>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>500</id>
+      <type>image</type>
+      <posX>127</posX>
+      <posY>291</posY>
+      <width>513</width>
+      <height>285</height>
+      <texture>#selectedthumb</texture>
+      <visible>[facadeview.list|facadeview.album]+!string.equals(#selectedthumb,defaultFolderBig.png)</visible>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+	
+    <control>
+      <type>image</type>
+      <id>1</id>
+      <posX>61</posX>
+      <posY>226</posY>
+      <width>642</width>
+      <height>414</height>
+      <texture>blackborders_recordings.png</texture>
+      <visible>facadeview.list|facadeview.album</visible>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>
+    </control>
+	
+    <control>
+      <type>group</type>
+      <description>group element</description>
+      <id>0</id>
+      <posX>639</posX>
+      <posY>163</posY>
+      <width>1093</width>
+      <dimColor>ffffffff</dimColor>
+      <height>819</height>
+      <animation effect="fade" time="100">WindowOpen</animation>
+      <animation effect="fade" time="100">WindowClose</animation>	  
+	  
+      <!-- List -->
+      <control>
+        <description>Current program channel</description>
+        <type>fadelabel</type>
+        <id>16</id>
+        <posX>780</posX>
+        <posY>253</posY>
+        <font>Segoe Light18</font>
+        <textcolor>85cffe</textcolor>
+        <label>#Radio.RecordedTV.Channel</label>
+        <visible>facadeview.list|facadeview.album</visible>
+        <animation effect="fade" time="100">WindowOpen</animation>
+        <animation effect="fade" time="100">WindowClose</animation>
+      </control>
+	  
+      <control>
+        <type>label</type>
+        <description>Current program time</description>
+        <id>14</id>
+        <posX>780</posX>
+        <posY>302</posY>
+        <textcolor>85cffe</textcolor>
+        <font>Segoe Light18</font>
+        <label>#Radio.RecordedTV.Time #Radio.RecordedTV.Genre</label>
+        <visible>facadeview.list|facadeview.album</visible>
+        <animation effect="fade" time="100">WindowOpen</animation>
+        <animation effect="fade" time="100">WindowClose</animation>
+      </control>
+	  
+<!--       <control>
+        <description>Current program genre</description>
+        <type>label</type>
+        <id>13</id>
+        <posX>780</posX>
+        <posY>358</posY>
+        <width>534</width>
+        <font>Segoe Light12</font>
+        <textcolor>85cffe</textcolor>
+        <label>#Radio.RecordedTV.Genre</label>
+        <visible>!string.equals(#TV.RecordedTV.Genre,-)+ facadeview.list|facadeview.album</visible>
+        <animation effect="fade" time="100">WindowOpen</animation>
+        <animation effect="fade" time="100">WindowClose</animation>
+      </control> -->
+	  
+      <control>
+        <type>textboxscrollup</type>
+        <description>Description1</description>
+        <id>15</id>
+        <posX>780</posX>
+        <posY>370</posY>
+        <width>931</width>
+        <height>205</height>
+        <font>font12</font>
+        <label>#Radio.RecordedTV.Description</label>
+        <visible>facadeview.list|facadeview.album</visible>
+        <animation effect="fade" time="100">WindowOpen</animation>
+        <animation effect="fade" time="100">WindowClose</animation>
+      </control>
+	  
+      <!-- Thumb -->
+      <!-- Filmstrip -->
+      <control>
+        <description>Current program channel</description>
+        <type>label</type>
+        <id>0</id>
+        <posX>723</posX>
+        <posY>858</posY>
+        <label>#Radio.RecordedTV.Channel</label>
+        <font>Segoe Light18</font>
+        <textcolor>6aa5cb</textcolor>
+        <align>right</align>
+        <visible>facadeview.smallicons|facadeview.largeicons</visible>
+      </control>
+	    
+      <control>
+        <type>label</type>
+        <description>Current program time</description>
+        <id>0</id>
+        <posX>723</posX>
+        <posY>905</posY>
+        <textcolor>6aa5cb</textcolor>
+        <font>Segoe Light18</font>
+        <label>#Radio.RecordedTV.Time</label>
+        <align>right</align>
+        <visible>facadeview.smallicons|facadeview.largeicons</visible>
+      </control>
+
+      <control>
+        <type>label</type>
+        <description>Current program genre</description>
+        <id>13</id>
+        <posX>723</posX>
+        <posY>952</posY>
+        <textcolor>6aa5cb</textcolor>
+        <font>Segoe Light18</font>
+        <label>#Radio.RecordedTV.Genre</label>
+        <align>right</align>
+        <visible>facadeview.smallicons|facadeview.largeicons</visible>
+      </control>
+	  
+      <control>
+        <type>textboxscrollup</type>
+        <description>Description1</description>
+        <id>15</id>
+        <posX>780</posX>
+        <posY>863</posY>
+        <width>1041</width>
+        <height>188</height>
+        <label>#Radio.RecordedTV.Description</label>
+        <visible>facadeview.smallicons|facadeview.largeicons</visible>
+      </control>
+	  
+    <!-- Filmstrip -->
+      <control>
+        <type>label</type>
+        <description>Current program time</description>
+        <id>0</id>
+        <posX>692</posX>
+        <posY>1023</posY>
+        <width>562</width>
+        <align>center</align>
+        <font>Segoe Light18</font>
+        <textcolor>6aa5cb</textcolor>
+        <label>#selecteditem2</label>
+        <visible>facadeview.filmstrip|facadeview.coverflow</visible>
+      </control>
+    </control>
+
+	<!-- Disc Useage -->	 
+    <control>
+      <description>Disk used</description>
+      <type>label</type>
+      <id></id>
+      <posX>540</posX>
+      <posY>638</posY>
+      <width>680</width>
+      <label>HDD #Radio.RecordedTV.Diskinfo.PercentageUsed %</label>
+      <font>font10</font>
+      <textcolor>6aa5cb</textcolor>
+      <visible>#Radio.RecordedTV.Diskinfo.PercentageUsed</visible>
+      <visible>facadeview.list|facadeview.album</visible>	
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>	  
+    </control>
+
+    <control>
+      <description>Progress background Disk used</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>107</posX>
+      <posY>645</posY>
+      <width>400</width>
+      <height>13</height>
+      <texture>osd_progress_background_medium.png</texture>
+      <visible>facadeview.list|facadeview.album</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>	
+    </control>
+	
+    <control>
+      <description>Disk used</description>
+      <type>progress</type>
+      <id></id>
+      <posX>96</posX>
+      <posY>645</posY>
+      <width>400</width>
+      <height>13</height>
+      <label>#Radio.RecordedTV.Diskinfo.PercentageUsed</label>
+      <visible>facadeview.list|facadeview.album</visible>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>	  
+    </control>
+	
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <posX>0</posX>
+      <posY>440</posY>
+      <texture>hiddenmenu_tab.png</texture>
+      <visible>[facadeview.list|facadeview.album|facadeview.smallicons|facadeview.largeicons]+Control.HasFocus(50)</visible>
+      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+    </control>
+	
+    <control>
+      <id>1</id>
+      <type>image</type>
+      <posX>858</posX>
+      <posY>0</posY>
+      <texture>hiddenmenu_tab_up.png</texture>
+      <visible>[facadeview.filmstrip|facadeview.coverflow]+Control.HasFocus(50)</visible>
+      <animation effect="slide" start="-60,0" end="0,0" tween="quadratic" easing="in" time="400" delay="600">WindowOpen</animation>
+      <animation effect="slide" start="0,0" end="-60,0" tween="quadratic" easing="in" time="400" delay="100">WindowClose</animation>
+    </control>
+
+	<import>ARGUS_RecordedTv.hiddenmenu2.xml</import>	
+    <import>common.facade.recordings.xml</import>
+    <import>common.overlay.xml</import>
+	
+  </controls>
+</window>

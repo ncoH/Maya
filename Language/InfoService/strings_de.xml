@@ -39,5 +39,7 @@
     <String id="35">Twitter Nachrichten</String>
     <String id="36">Warte bis die Feeds aktualisiert werden können...</String>
     <String id="37">Warte bis Twitter aktualisiert werden kann...</String>
+    <String id="38">{0} neue Nachricht(en) - {1}</String>
+    <String id="39">Neue Nachrichten auf {0}!</String>
   </Section>
 </Language>

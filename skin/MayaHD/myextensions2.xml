@@ -75,14 +75,7 @@
 			<animation effect="fade" time="450">visible</animation>
 			<animation effect="fade" time="400">hidden</animation>
 		</control>
-		
-	<control>
-		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
-		<animation effect="fade" time="250">visible</animation>
-		<animation effect="fade" time="0">hidden</animation>
+	
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -92,25 +85,46 @@
 			<height>1044</height>
 			<texture>menu_bg.png</texture>
 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
 		</control>
 	
 		<control>
-			<description>Heading text label</description>
+			<description>Menu label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>136</posX>
-			<posY>128</posY>
+			<posX>128</posX>
+			<posY>114</posY>
 			<label>924</label>
-			<font>Segoe Light22</font>
+			<font>Segoe Light12</font>
 			<textcolor>ff6aa5cb</textcolor>
-		</control>	
+			<visible>!Control.HasFocus(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+    	</control>
+
+          <control>
+            <type>group</type>
+            <description>group element</description>
+ 			<visible>!Control.HasFocus(50)+control.isvisible(50)</visible>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+            <posX>69</posX>
+            <posY>155</posY>
+            <layout>StackLayout(0, Vertical, true)</layout>	
 		
           <control>
             <id>2</id>
             <description>View-As</description>
             <type>button</type>
             <onright>50</onright>
-            <onup>8</onup>
+            <onup>90</onup>
             <ondown>3</ondown>
             <label>100</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
@@ -167,7 +181,6 @@
             <onright>50</onright>
             <onup>6</onup>
             <ondown>8</ondown>
-            <visible>control.hastext(5)</visible>
             <label>#MPEI.Translation.Restart.Label</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
@@ -181,13 +194,12 @@
 		  
           <control>
             <id>8</id>
-            <description>new version available - mpei plugin</description>
+            <description>Update all</description>
             <type>button</type>
             <onright>50</onright>
             <onup>5</onup>
-            <ondown>2</ondown>
-            <visible>string.equals(#mpei.a6afa4d6_4fd8_4607_8878_5911db044fd7.haveupdate,true)</visible>
-            <label>#MPEI.Translation.NewVersion.Label</label>
+            <ondown>9</ondown>
+            <label>#MPEI.Translation.UpdateAll.Label</label>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
 			<posX>69</posX>
@@ -196,8 +208,27 @@
 			<height>70</height>
 			<textXOff>66</textXOff>
 			<textYOff>17</textYOff>	
+			<visible>string.contains(#mpei.updates,.::.)</visible>			
           </control>
-		  
+
+          <control>
+            <id>9</id>
+            <description>Download Updates</description>
+            <type>button</type>
+            <onright>50</onright>
+            <onup>8</onup>
+            <ondown>2</ondown>
+            <label>#MPEI.Translation.DownloadUpdates.Label</label>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<posX>69</posX>
+			<posY>565</posY>
+			<width>497</width>
+			<height>70</height>
+			<textXOff>66</textXOff>
+			<textYOff>17</textYOff>	
+          </control>
+	  
         </control>
       </control>
 

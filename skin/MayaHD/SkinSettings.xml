@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profile>
+  <section name="theme">
+    <entry name="name">no fanart</entry>
+  </section>
   <section name="booleansettings">
     <entry name="#skin.tvguide.usecolorsforbuttons">True</entry>
     <entry name="#skin.tvguide.usecolorsforgenre">True</entry>
     <entry name="#skin.tvguide.useborderhighlight">False</entry>
     <entry name="#skin.tvguide.showgenrekey">True</entry>
-  </section>
-  <section name="theme">
-    <entry name="name">Skin default</entry>
   </section>
   <section name="tvguidecolors">
     <entry name="guidecolorchannelbutton">FF0E517B</entry>

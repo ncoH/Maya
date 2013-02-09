@@ -3,7 +3,7 @@
   <skin>
     <width>1920</width>
     <height>1080</height>
-    <version>1.3.0.0</version>
+    <version>1.3.0.1</version>
   </skin>
   
   <control>
@@ -44,10 +44,11 @@
     <textXOff>25</textXOff>
     <textYOff>5</textYOff>
     <textureFocus>button-focus.png</textureFocus>
+    <textureNoFocus>button-nofocus.png</textureNoFocus>
     <font>font12</font>
     <textcolor>white</textcolor>
     <colordiffuse>white</colordiffuse>
-    <disabledcolor>6aa5cb</disabledcolor>
+    <disabledcolor>60ffffff</disabledcolor>
   </control>
 
   <control>
@@ -172,36 +173,32 @@
   <control>
     <description>default listcontrol</description>
     <type>listcontrol</type>
-    <id>0</id>
+    <id>10</id>
     <posX>736</posX>
     <posY>210</posY>
     <width>1017</width>
     <height>843</height>
-    <spinWidth>64</spinWidth>
-    <spinHeight>46</spinHeight>
-    <spinPosX>1749</spinPosX>
-    <spinPosY>1009</spinPosY>
-    <spinAlign>right</spinAlign>
-    <spinColor>FF6aa5cb</spinColor>
     <textureFocus>listcontrol_item_selected.png</textureFocus>
     <textureNoFocus>listcontrol_item.png</textureNoFocus>
-    <textureHeight>71</textureHeight>
+    <textureHeight>71</textureHeight>	
     <image>folder_focus.png</image>
     <font>font12</font>
     <font2>font12</font2>
     <shadedColor>ffffffff</shadedColor>
     <selectedColor>ffa0d0ff</selectedColor>
-    <playedColor>ff85cfff</playedColor>	
     <textcolor>ffffffff</textcolor>
     <textcolor2>ffffffff</textcolor2>
     <textcolor3>ffffffff</textcolor3>
     <colordiffuse>ffffffff</colordiffuse>
     <remoteColor>ffFFA075</remoteColor>
     <downloadColor>ff80ff80</downloadColor>
+    <playedColor>ff85cfff</playedColor>		
 	<bdDvdDirectoryColor>ffffffff</bdDvdDirectoryColor>
 	<bdDvdDirectoryColor2>ffffffff</bdDvdDirectoryColor2>
 	<bdDvdDirectoryColor3>ffffffff</bdDvdDirectoryColor3>		
-    <spaceBetweenItems>0</spaceBetweenItems>
+    <spaceBetweenItems>1</spaceBetweenItems>
+    <unfocusedAlpha>150</unfocusedAlpha>
+    <scrollOffset>1</scrollOffset>
     <textXOff>30</textXOff>
     <textYOff>14</textYOff>
     <textXOff2>0</textXOff2>
@@ -211,6 +208,14 @@
     <IconXOff>1405</IconXOff>
     <IconYOff>1406</IconYOff>
     <suffix>|</suffix>
+    <folderPrefix />
+    <folderSuffix />
+    <spinWidth>64</spinWidth>
+    <spinHeight>46</spinHeight>
+    <spinPosX>1749</spinPosX>
+    <spinPosY>1009</spinPosY>
+    <spinAlign>right</spinAlign>
+    <spinColor>FF6aa5cb</spinColor>	
     <spinCanFocus>no</spinCanFocus>
   </control>
   

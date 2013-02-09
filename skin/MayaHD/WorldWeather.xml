@@ -145,7 +145,7 @@
         <id>9</id>
         <label>Refresh</label>
         <onup>4</onup>
-        <ondown>10</ondown>
+        <ondown>2</ondown>
         <textalign>right</textalign>		
         <visible>string.equals(#WorldWeather.View,Condition)+!string.equals(#WorldWeather.ConditionView,Graphic)+!string.equals(#WorldWeather.ConditionView,Hour)</visible>
       </control>

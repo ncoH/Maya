@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MayaBasicHomePlugin">
+</Property><Property Name="Solution File" Value="Y:\MayaBasicHomePlugin 1.2\MayaBasicHomePlugin.sln">
+</Property><Property Name="User Options File" Value="Y:\MayaBasicHomePlugin 1.2\MayaBasicHomePlugin.suo">
+</Property><Property Name="Date" Value="Mittwoch, 15. Dezember 2010">
+</Property><Property Name="Time" Value="18:39">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MayaBasicHomePlugin.sln" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\MayaBasicHomePlugin.sln">
+</Event><Event ErrorLevel="0" Project="" Source="MayaBasicHomePlugin.suo" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\MayaBasicHomePlugin.suo">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="MayaBasicHomePlugin.csproj" Description="Project file successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\MayaBasicHomePlugin.csproj">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="MayaBasicHomePlugin.csproj.user" Description="Project user file successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\MayaBasicHomePlugin.csproj.user">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="PlayMedia.cs" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\PlayMedia.cs">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="RecentlyAdded.cs" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\RecentlyAdded.cs">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="MayaHelper.cs" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\MayaHelper.cs">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="MayaBasicHomeConfig.cs" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\MayaBasicHomeConfig.cs">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="MayaBasicHomeConfig.Designer.cs" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\MayaBasicHomeConfig.Designer.cs">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="MayaBasicHomePlugin.cs" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\MayaBasicHomePlugin.cs">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="Properties\AssemblyInfo.cs" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="Properties\Resources.Designer.cs" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="SkinInfo.cs" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\SkinInfo.cs">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="MayaBasicHomeConfig.resx" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\MayaBasicHomeConfig.resx">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="Plugin.png" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\Plugin.png">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="PluginDisabled.png" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\PluginDisabled.png">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="Properties\Resources.resx" Description="File successfully backed up as Y:\MayaBasicHomePlugin 1.2\Backup\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="MayaBasicHomePlugin.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="MayaBasicHomePlugin" Source="MayaBasicHomePlugin.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MayaBasicHomePlugin.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MayaBasicHomePlugin.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="MayaBasicHomePlugin" Source="MayaBasicHomePlugin.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
