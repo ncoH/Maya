@@ -9,9 +9,9 @@
       <description>background</description>
       <type>image</type>
       <id>0</id>
-      <posX>253</posX>
-      <posY>763</posY>
-      <width>795</width>
+      <posX>247</posX>
+      <posY>769</posY>
+      <width>1418</width>
       <height>248</height>
       <texture>tv_zaposd_bg.png</texture>
     </control>
@@ -20,10 +20,10 @@
       <description>TV Logo</description>
       <type>image</type>
       <id>10</id>
-      <posX>282</posX>
-      <posY>807</posY>
-      <width>98</width>
-      <height>98</height>
+      <posX>323</posX>
+      <posY>806</posY>
+      <width>112</width>
+      <height>112</height>
       <texture>#TV.View.thumb</texture>
       <keepaspectratio>yes</keepaspectratio>
     </control>
@@ -32,10 +32,10 @@
       <description>Programme</description>
       <type>textbox</type>
       <id>36</id>
-      <posX>424</posX>
-      <width>590</width>
+      <posX>506</posX>
+      <width>988</width>
       <height>42</height>
-      <posY>794</posY>
+      <posY>806</posY>
       <label>-</label>
       <font>Segoe Light18</font>
     </control>
@@ -44,19 +44,33 @@
       <description>Channel</description>
       <type>label</type>
       <id>35</id>
-      <posX>424</posX>
-      <posY>855</posY>
-      <width>497</width>
+      <posX>506</posX>
+      <posY>865</posY>
+      <width>988</width>
       <label>-</label>
       <font>Segoe Light14</font>
+    </control>
+
+	 <control>
+      <type>label</type>
+      <id>999</id>
+      <description>Clock 24h</description>
+      <posX>1474</posX>
+      <posY>822</posY>
+      <width>202</width>
+      <font>Segoe Light22</font>
+      <align>left</align>
+      <label>#time</label>
+      <textcolor>ff85cffe</textcolor>
+      <visible>![string.contains(#time,AM)|string.contains(#time,PM)]</visible>
     </control>
 	
     <control>
       <description>Start Time Info 24h</description>
       <type>label</type>
       <id>101</id>
-      <posX>300</posX>
-      <posY>943</posY>
+      <posX>330</posX>
+      <posY>949</posY>
       <label>#TV.View.start</label>
       <align>left</align>
       <font>font12</font>
@@ -67,8 +81,8 @@
       <description>Start Time Info 12h</description>
       <type>label</type>
       <id>101</id>
-      <posX>281</posX>
-      <posY>947</posY>
+      <posX>330</posX>
+      <posY>949</posY>
       <label>#TV.View.start</label>
       <align>left</align>
       <font>font10</font>
@@ -79,8 +93,8 @@
       <description>End Time Info 24h</description>
       <type>label</type>
       <id>102</id>
-      <posX>1006</posX>
-      <posY>943</posY>
+      <posX>1605</posX>
+      <posY>949</posY>
       <label>#TV.View.stop</label>
       <align>right</align>
       <font>font12</font>
@@ -91,8 +105,8 @@
       <description>End Time Info 12h</description>
       <type>label</type>
       <id>102</id>
-      <posX>1020</posX>
-      <posY>947</posY>
+      <posX>1605</posX>
+      <posY>949</posY>
       <label>#TV.View.stop</label>
       <align>right</align>
       <font>font10</font>
@@ -103,10 +117,10 @@
       <description>Progress Bar</description>
       <type>progress</type>
       <id>1</id>
-      <posX>373</posX>
-      <posY>953</posY>
-      <width>545</width>
-      <height>14</height>
+      <posX>470</posX>
+      <posY>957</posY>
+      <width>962</width>
+      <height>18</height>
       <texturebg>-</texturebg>
       <lefttexture>osd_progress_left.png</lefttexture>
       <midtexture>osd_progress_mid.png</midtexture>

@@ -69,7 +69,7 @@
           <animation effect="fade" time="300" delay="300">hidden</animation>
           <animation effect="fade" time="0">WindowClose</animation>
           <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-          <visible>[facadeview.filmstrip|facadeview.coverflow]+control.isvisible(60)</visible>
+          <visible>control.isvisible(60)</visible>
         </control>
 		
         <control>
@@ -85,8 +85,9 @@
           <animation effect="fade" time="300" delay="300">hidden</animation>
           <animation effect="fade" time="0">WindowClose</animation>
           <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-          <visible>[facadeview.filmstrip|facadeview.coverflow]+control.isvisible(61)</visible>
+          <visible>control.isvisible(61)</visible>
         </control>
+
 		
         <control>
           <description>Fanart Background #1</description>
@@ -119,6 +120,6 @@
           <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
           <visible>[!facadeview.filmstrip+!facadeview.coverflow]+control.isvisible(61)</visible>
         </control>
-		
+				
 	</controls>
 </window>
