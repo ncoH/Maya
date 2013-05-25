@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <profile>
   <section name="theme">
-    <entry name="name">Skin default</entry>
+    <entry name="name">black background</entry>
   </section>
   <section name="booleansettings">
     <entry name="#skin.tvguide.usecolorsforbuttons">True</entry>

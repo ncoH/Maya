@@ -1,211 +1,162 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-  <id>14</id>
-  <defaultcontrol>10007</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>
-  <define>#header.label:897</define>   
-  <define>#header.background:hover_settings.png</define>
-  <controls>
-  
-    <import>common.window.background.xml</import>
-    <import>settings.menu.xml</import>
-    <import>common.time.xml</import>		
+<id>14</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<define>#defaultcontrol.onleft:9998</define>
+<define>#header.label:897</define>
+<controls>
+	<import>settings.menu.xml</import>
 	
-    <control>
-      <type>image</type>
-      <id>1</id>
-      <posX>610</posX>
-      <posY>84</posY>
-      <width>1152</width>
-      <height>900</height>
-      <texture>settings_main_panel.png</texture>
-    </control>
-	
-    <control>
-      <id>1</id>
-      <type>label</type>
-      <description>Header label</description>
-      <posX>185</posX>
-      <posY>28</posY>
-      <width>600</width>
-      <label>#header.label</label>	  
-      <font>Segoe Light22</font>
-      <textcolor>ff6aa5cb</textcolor>
-      <animation effect="Fade" time="200">WindowOpen</animation>
-      <animation effect="Fade" time="200">WindowClose</animation>
-    </control>
-	
-    <control>
-		<description>Settings Label</description>	
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+	<control>
 		<type>label</type>
 		<id>1</id>
-		<posX>708</posX>
-		<posY>175</posY>
-		<width>702</width>
-		<height>140</height>
+		<posX>766</posX>
+		<posY>252</posY>
+		<width>500</width>
 		<label>2</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<valign>middle</valign>
-    </control>	
+		<textcolor>85cffe</textcolor>
+		<font>TitanLight20</font>
+	</control>
 	
-    <control>
-      <type>image</type>
-      <id>1</id>
-      <posX>685</posX>
-      <posY>365</posY>
-      <width>954</width>
-      <height>52</height>
-      <textcolor>ff85cffe</textcolor>
-      <textcolorNoFocus>ff85cffe</textcolorNoFocus>
-      <texture>settings_button_large_focus.png</texture>
-      <visible>Control.HasFocus(2)</visible>
-    </control>
+	<!--            :: Shuffle Playlist ::            -->
 	
-    <control>
-      <description>Shuffle Playlist on load</description>
-      <type>checkmark</type>
-      <id>2</id>
-      <posX>1560</posX>
-      <posY>375</posY>
-      <label>-</label>
-      <onup>10</onup>
-      <ondown>8</ondown>
-      <onleft>10007</onleft>
-      <onright>10007</onright>
-    </control>
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>740</posX>
+		<posY>353</posY>
+		<width>956</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(2)</visible>
+	</control>
 	
-    <control>
-      <description>Shuffle Playlist on load label</description>
-      <type>label</type>
-      <id>0</id>
-      <posX>712</posX>
-      <posY>371</posY>
-      <textcolor>ff85cffe</textcolor>
-      <label>228</label>
-    </control>
-	
-    <control>
-      <type>image</type>
-      <id>1</id>
-      <posX>685</posX>
-      <posY>414</posY>
-      <width>954</width>
-      <height>52</height>
-      <textcolor>ff85cffe</textcolor>
-      <textcolorNoFocus>ff85cffe</textcolorNoFocus>
-      <texture>settings_button_large_focus.png</texture>
-      <visible>Control.HasFocus(6)</visible>
-    </control>
-	
-    <!-- 		<control>
-			<description>Enable ID3  other tagformats</description>
-			<type>checkmark</type>
-			<id>6</id>
-			<posX>1110</posX>
-			<posY>302</posY>
-			<label>-</label>
-			<onup>2</onup>
-			<ondown>8</ondown>
-			<onleft>10008</onleft>
-			<onright>10008</onright>
-		</control>
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>740</posX>
+		<posY>353</posY>
+		<width>956</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(2)</visible>
+	</control>
 		
-		<control>
-			<description>Enable ID3  other tagformats label</description>
-			<type>label</type>
-			<id>0</id>
-			<posX>507</posX>
-			<posY>299</posY>
-			<textcolor>ff85cffe</textcolor>
-			<label>258</label>
-		</control> -->
+	<control>
+		<description>Shuffle Playlist on load</description>
+		<type>checkmark</type>
+		<id>2</id>
+		<posX>1590</posX>
+		<posY>365</posY>
+		<align>right</align>
+		<label>-</label>
+		<onup>10</onup>
+		<ondown>6</ondown>
+		<onleft>#defaultcontrol.onleft</onleft>
+		<onright>2</onright>
+	</control>
 		
-    <control>
-      <description>Reorganize My Music Database label</description>
-      <type>label</type>
-      <id>7</id>
-      <posX>-2000</posX>
-      <posY>502</posY>
-      <label>334</label>
-    </control>
+	<control>
+		<description>Shuffle Playlist on load label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>766</posX>
+		<posY>361</posY>
+		<label>228</label>
+	</control>
+		
+	<!--            :: ID3 Tags ::            -->
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>740</posX>
+		<posY>405</posY>
+		<width>956</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(6)</visible>
+	</control>
 	
-    <control>
-      <description>Reorganize My Music Database button</description>
-      <type>button</type>
-      <id>8</id>
-      <label>334</label>
-      <posX>687</posX>
-      <posY>516</posY>
-      <width>954</width>
-      <height>52</height>
-      <textureFocus>settings_button_large_focus.png</textureFocus>
-      <textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-      <textcolor>ff85cffe</textcolor>
-      <textcolorNoFocus>ff85cffe</textcolorNoFocus>
-      <onup>2</onup>
-      <ondown>13</ondown>
-      <onleft>10007</onleft>
-      <onright>10007</onright>
-    </control>
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>740</posX>
+		<posY>403</posY>
+		<width>956</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(6)</visible>
+	</control>
+
+	<control>
+		<description>Enable ID3  other tagformats</description>
+		<type>checkmark</type>
+		<id>6</id>
+		<posX>1590</posX>
+		<posY>417</posY>
+		<align>right</align>
+		<label>-</label>
+		<onup>2</onup>
+		<ondown>8</ondown>
+		<onleft>#defaultcontrol.onleft</onleft>
+		<onright>6</onright>
+	</control>
+		
+	<control>
+		<description>Enable ID3  other tagformats label</description>
+		<type>label</type>
+		<id>0</id>
+		<posX>766</posX>
+		<posY>413</posY>
+		<textcolor>ffffffff</textcolor>
+		<label>258</label>
+	</control>
+
+	<!--            :: Buttons ::            -->
 	
-    <control>
-      <description>delete album label</description>
-      <type>label</type>
-      <id>1</id>
-      <posX>-2000</posX>
-      <posY>562</posY>
-      <label>485</label>
-    </control>
-	
-    <control>
-      <description>delete album button</description>
-      <type>button</type>
-      <id>13</id>
-      <label>485</label>
-      <posX>687</posX>
-      <posY>565</posY>
-      <width>954</width>
-      <height>52</height>
-      <textureFocus>settings_button_large_focus.png</textureFocus>
-      <textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-      <textcolor>ff85cffe</textcolor>
-      <textcolorNoFocus>ff85cffe</textcolorNoFocus>
-      <onup>8</onup>
-      <ondown>10</ondown>
-      <onleft>10007</onleft>
-      <onright>10007</onright>
-    </control>
-	
-    <control>
-      <description>Delete Album Info</description>
-      <type>label</type>
-      <id>9</id>
-      <posX>-2000</posX>
-      <posY>621</posY>
-      <label>422</label>
-    </control>
-	
-    <control>
-      <description>Delete Album Info</description>
-      <type>button</type>
-      <id>10</id>
-      <label>422</label>
-      <posX>687</posX>
-      <posY>615</posY>
-      <width>954</width>
-      <height>52</height>
-      <textureFocus>settings_button_large_focus.png</textureFocus>
-      <textureNoFocus>settings_button_large_nofocus.png</textureNoFocus>
-      <textcolor>ff85cffe</textcolor>
-      <textcolorNoFocus>ff85cffe</textcolorNoFocus>
-      <onup>13</onup>
-      <ondown>2</ondown>
-      <onleft>10007</onleft>
-      <onright>10007</onright>
-    </control>
-	
-  </controls>
+
+    <control Style="SettingsButtonLarge">
+		<description>Reorganize My Music Database button</description>
+		<type>button</type>
+		<id>8</id>
+		<label>334</label>
+		<posX>740</posX>
+		<posY>570</posY>
+		<onup>6</onup>
+		<ondown>13</ondown>
+		<onleft>#defaultcontrol.onleft</onleft>
+		<onright>8</onright>
+	</control>
+
+    <control Style="SettingsButtonLarge">
+		<description>delete album button</description>
+		<type>button</type>
+		<id>13</id>
+		<label>485</label>
+		<posX>740</posX>
+		<posY>622</posY>
+		<onup>8</onup>
+		<ondown>10</ondown>
+		<onleft>#defaultcontrol.onleft</onleft>
+		<onright>13</onright>
+	</control>
+
+    <control Style="SettingsButtonLarge">
+		<description>Delete Album Info</description>
+		<type>button</type>
+		<id>10</id>
+		<label>422</label>
+		<posX>740</posX>
+		<posY>674</posY>
+		<onup>13</onup>
+		<ondown>2</ondown>
+		<onleft>#defaultcontrol.onleft</onleft>
+		<onright>10</onright>
+	</control>
+
+<import>common.time.xml</import>
+<import>titan.version.xml</import>
+</controls>
 </window>

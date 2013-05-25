@@ -1,210 +1,218 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-  <id>31</id>
-  <defaultcontrol>10002</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>
-  <define>#header.label:897</define>   
-  <define>#header.background:hover_settings.png</define>
-  <controls>
-  
-    <import>common.window.background.xml</import>
-    <import>settings.menu.xml</import>
-    <import>common.time.xml</import>		
+<id>31</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>yes</allowoverlay>
+<define>#defaultcontrol.onleft:10002</define>
+<define>#header.label:897</define>
+<controls>
+
+	<import>settings.menu.xml</import>
 	
-    <control>
-      <type>image</type>
-      <id>1</id>
-      <posX>610</posX>
-      <posY>84</posY>
-      <width>1152</width>
-      <height>900</height>
-      <texture>settings_main_panel.png</texture>
-    </control>
-	
-    <control>
-      <id>1</id>
-      <type>label</type>
-      <description>Header label</description>
-      <posX>185</posX>
-      <posY>28</posY>
-      <width>600</width>
-      <label>#header.label</label>	  
-      <font>Segoe Light22</font>
-      <textcolor>ff6aa5cb</textcolor>
-      <animation effect="Fade" time="200">WindowOpen</animation>
-      <animation effect="Fade" time="200">WindowClose</animation>
-    </control>
-	
-    <control>
-		<description>Settings Label</description>	
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+	<control>
 		<type>label</type>
 		<id>1</id>
-		<posX>708</posX>
-		<posY>175</posY>
-		<width>702</width>
-		<height>140</height>
-		<label>605</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<valign>middle</valign>
-    </control>	
+		<posX>766</posX>
+		<posY>252</posY>
+		<width>1000</width>
+		<label>673</label>
+		<textcolor>85cffe</textcolor>
+		<font>AvalonLight20</font>
+	</control>
 	
-    <control>
-      <description>group element</description>
-      <type>group</type>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-      <control>
-        <type>image</type>
-        <id>1</id>
-        <posX>680</posX>
-        <posY>372</posY>
-        <texture>settings_setupguide_wide.png</texture>
-        <width>836</width>
-        <height>50</height>
-      </control>
-	  
-      <control>
-        <description>Horizontal Speed label</description>
-        <type>label</type>
-        <id>1</id>
-        <posX>716</posX>
-        <posY>379</posY>
-        <label>1442</label>
-      </control>
-	  
-      <control>
-        <description>Horizontal Speed select</description>
-        <type>spincontrol</type>
-        <id>2</id>
-        <posX>1510</posX>
-        <posY>375</posY>
-        <align>right</align>
-        <onup>3</onup>
-        <ondown>4</ondown>
-        <onleft>10002</onleft>
-        <onright>2</onright>
-        <width>52</width>
-        <height>52</height>
-        <reverse>yes</reverse>
-      </control>
-	  
-      <control>
-        <type>image</type>
-        <id>1</id>
-        <posX>680</posX>
-        <posY>426</posY>
-        <texture>settings_setupguide_wide.png</texture>
-        <width>836</width>
-        <height>50</height>
-      </control>
-	  
-      <control>
-        <description>Vertical Speed label</description>
-        <type>label</type>
-        <id>1</id>
-        <posX>716</posX>
-        <posY>433</posY>
-        <label>1443</label>
-      </control>
-	  
-      <control>
-        <description>Vertical Speed select</description>
-        <type>spincontrol</type>
-        <id>4</id>
-        <posX>1510</posX>
-        <posY>433</posY>
-        <align>right</align>
-        <onup>2</onup>
-        <ondown>3</ondown>
-        <onleft>10002</onleft>
-        <onright>4</onright>
-        <width>52</width>
-        <height>52</height>
-        <reverse>yes</reverse>
-      </control>
-	  
-      <control>
-        <type>image</type>
-        <id>1</id>
-        <posX>680</posX>
-        <posY>479</posY>
-        <texture>settings_setupguide_wide.png</texture>
-        <width>836</width>
-        <height>50</height>
-      </control>
-	  
-      <control>
-        <description>FPS label</description>
-        <type>label</type>
-        <id>1</id>
-        <posX>716</posX>
-        <posY>486</posY>
-        <label>973</label>
-      </control>
-	  
-      <control>
-        <description>FPS select</description>
-        <type>spincontrol</type>
-        <id>3</id>
-        <posX>1510</posX>
-        <posY>486</posY>
-        <align>right</align>
-        <onup>4</onup>
-        <ondown>2</ondown>
-        <onleft>10002</onleft>
-        <onright>3</onright>
-        <width>52</width>
-        <height>52</height>
-        <reverse>yes</reverse>
-      </control>
-	  
-      <control>
-        <description>currentFPS count</description>
-        <type>label</type>
-        <id>1</id>
-        <posX>1503</posX>
-        <posY>604</posY>
-        <align>right</align>
-        <label>#fps</label>
-      </control>
-	  
-      <control>
-        <description>Example label</description>
-        <type>label</type>
-        <id>1</id>
-        <posX>716</posX>
-        <posY>604</posY>
-        <width>999</width>
-        <label>675</label>
-        <textcolor>ff85cffe</textcolor>
-      </control>
-	  
-      <control>
-        <description>TagLine value</description>
-        <type>fadelabel</type>
-        <id>25</id>
-        <posX>716</posX>
-        <posY>653</posY>
-        <width>787</width>
-        <label>-</label>
-        <textcolor>ff85cffe</textcolor>
-      </control>
-	  
-      <control>
-        <description>Description1</description>
-        <type>textboxscrollup</type>
-        <id>26</id>
-        <posX>716</posX>
-        <posY>703</posY>
-        <width>787</width>
-        <height>182</height>
-        <label>-</label>
-        <textcolor>ff85cffe</textcolor>
-      </control>
-    </control>
+	<!--            :: Horizontal Speed ::            -->
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>740</posX>
+		<posY>353</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(2)</visible>
+	</control>
 	
-  </controls>
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>740</posX>
+		<posY>353</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(2)</visible>
+	</control>
+	
+	<control>
+		<description>Horizontal Speed label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>766</posX>
+		<posY>360</posY>
+		<label>1442</label>
+	</control>
+
+	<control>
+		<description>Horizontal Speed select</description>
+		<type>spincontrol</type>
+		<id>2</id>
+		<posX>1590</posX>
+		<posY>367</posY>
+		<align>right</align>
+		<onup>17</onup>
+		<ondown>4</ondown>
+		<onleft>#defaultcontrol.onleft</onleft>
+		<onright>2</onright>
+		<reverse>yes</reverse>
+		<textXOff>54</textXOff>
+		<textYOff>4</textYOff>
+	</control>
+		
+	<!--            :: Vertical Speed ::            -->
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>740</posX>
+		<posY>405</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(4)</visible>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>740</posX>
+		<posY>405</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(4)</visible>
+	</control>
+		
+	<control>
+		<description>Vertical Speed label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>766</posX>
+		<posY>415</posY>
+		<label>1443</label>
+	</control>
+
+	<control>
+		<description>Vertical Speed select</description>
+		<type>spincontrol</type>
+		<id>4</id>
+		<posX>1590</posX>
+		<posY>419</posY>
+		<align>right</align>
+		<onup>2</onup>
+		<ondown>3</ondown>
+		<onleft>#defaultcontrol.onleft</onleft>
+		<onright>4</onright>
+		<textXOff>54</textXOff>
+		<textYOff>4</textYOff>
+		<reverse>yes</reverse>
+	</control>
+		
+	<!--            :: FPS ::            -->
+		
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>740</posX>
+		<posY>457</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_focus.png</texture>
+		<visible>Control.HasFocus(3)</visible>
+	</control>
+	
+	<control>
+		<type>image</type>
+		<id>1</id>
+		<posX>740</posX>
+		<posY>457</posY>
+		<width>836</width>
+		<height>52</height>
+		<texture>settings_button_large_nofocus.png</texture>
+		<visible>!Control.HasFocus(3)</visible>
+	</control>
+
+	<control>
+		<description>FPS label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>766</posX>
+		<posY>466</posY>
+		<label>973</label>
+	</control>
+
+	<control>
+		<description>FPS select</description>
+		<type>spincontrol</type>
+		<id>3</id>
+		<posX>1590</posX>
+		<posY>471</posY>
+		<align>right</align>
+		<onup>4</onup>
+		<ondown>99</ondown>
+		<onleft>#defaultcontrol.onleft</onleft>
+		<onright>3</onright>
+		<textXOff>54</textXOff>
+		<textYOff>4</textYOff>
+		<reverse>yes</reverse>
+	</control>
+
+	<control>
+		<description>currentFPS count</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1550</posX>
+		<posY>565</posY>
+		<align>right</align>
+		<label>#fps</label>
+	</control>
+
+	<control>
+		<description>Example label</description>
+		<type>label</type>
+		<id>1</id>
+		<posX>1316</posX>
+		<posY>565</posY>
+		<width>711</width>
+		<label>675</label>
+		<textcolor>ffffffff</textcolor>
+	</control>
+
+	<control>
+		<description>TagLine value</description>
+		<type>fadelabel</type>
+		<id>25</id>
+		<posX>736</posX>
+		<posY>565</posY>
+		<width>560</width>
+		<label>-</label>
+		<textcolor>ffffffff</textcolor>
+	</control>
+
+	<control>
+		<description>Description1</description>
+		<type>textboxscrollup</type>
+		<id>26</id>
+		<posX>736</posX>
+		<posY>618</posY>
+		<width>805</width>
+		<height>200</height>
+		<label>-</label>
+		<textcolor>ffffffff</textcolor>
+	</control>
+	
+<import>common.time.xml</import>
+<import>titan.version.xml</import>
+
+</controls>
 </window>

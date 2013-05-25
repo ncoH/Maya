@@ -350,8 +350,7 @@
       <font>font10</font>
       <visible>skin.hassetting(#skin.tvguide.showgenrekey) + skin.hassetting(#skin.tvguide.usecolorsforgenre)</visible>
     </control>
-
-		<include condition="#(skin.hassetting('#skin.tvguide.usecolorsforbuttons'))">mytvguide.colors.xml</include>		
+	
     <import>common.home.overlay.xml</import>
 	
   </controls>
