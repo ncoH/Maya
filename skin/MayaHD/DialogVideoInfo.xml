@@ -106,7 +106,7 @@
     <control>
 		<id>3</id>
 		<description>Plot Button</description>
-		<type>togglebutton</type>
+		<type>checkbutton</type>
 		<onleft>22</onleft>
 		<onright>22</onright>
 		<onup>2</onup>
@@ -128,7 +128,7 @@
     <control>
 		<id>4</id>
 		<description>Cast Button</description>
-		<type>togglebutton</type>
+		<type>checkbutton</type>
 		<onleft>22</onleft>
 		<onright>22</onright>
 		<onup>3</onup>
@@ -150,7 +150,7 @@
     <control>
 		<id>7</id>
 		<description>User review Button</description>
-		<type>togglebutton</type>
+		<type>checkbutton</type>
 		<onleft>22</onleft>
 		<onright>22</onright>
 		<onup>4</onup>
@@ -213,7 +213,7 @@
     <control>
 		<id>6</id>
 		<description>Watched Button</description>
-		<type>togglebutton</type>
+		<type>checkbutton</type>
 		<onleft>22</onleft>
 		<onright>22</onright>
 		<onup>26</onup>

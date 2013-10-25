@@ -344,7 +344,7 @@
       <type>fadelabel</type>
       <id>111</id>
       <posY>730</posY>
-      <width>170</width>
+      <width>200</width>
       <scrollStartDelaySec>10000</scrollStartDelaySec>
       <textcolor>FF6aa5cb</textcolor>
       <font>font10</font>

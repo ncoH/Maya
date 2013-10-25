@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+    <controls>
+		
+		<control>
+      <id>0</id>
+      <description>Maya logo</description>
+      <type>image</type>
+      <posX>55</posX>
+      <posY>31</posY>
+      <texture>mp_logo.png</texture>
+			<animation effect="Fade" time="200">WindowOpen</animation>
+			<animation effect="Fade" time="200">WindowClose</animation>			
+    </control>
+				
+		<control>
+      <id>0</id>
+      <description>top seperator</description>
+      <type>image</type>
+      <posX>160</posX>
+      <posY>33</posY>
+      <texture>top_separator.png</texture>
+			<animation effect="Fade" time="200">WindowOpen</animation>
+			<animation effect="Fade" time="200">WindowClose</animation>			
+    </control>
+
+		<control>
+			<description>Heading</description>
+      <type>label</type>
+      <id>0</id>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <textcolor>6aa5cb</textcolor>
+      <font>Segoe Light22</font>
+      <label>#header.label</label>
+			<animation effect="Fade" time="200">WindowOpen</animation>
+			<animation effect="Fade" time="200">WindowClose</animation>	
+    </control>
+		
+    <control>
+      <id>0</id>
+      <type>label</type>
+      <posX>1642</posX>
+      <posY>28</posY>
+      <width>555</width>
+      <font>Segoe Light22</font>
+      <textcolor>ffffff</textcolor>
+      <label>#time</label>
+			<align>right</align>
+			<animation effect="Fade" time="200">WindowOpen</animation>
+			<animation effect="Fade" time="200">WindowClose</animation>			
+    </control>
+				
+    <control>
+      <id>0</id>
+      <type>label</type>
+      <posX>1644</posX>
+      <posY>39</posY>
+      <width>555</width>
+      <font>Segoe Light18</font>
+      <textcolor>6aa5cb</textcolor>
+      <label>/#WorldWeather.TodayTemperature</label>
+			<visible>plugin.isenabled(World Weather)</visible>						
+			<align>left</align>
+    </control>
+				
+<!--Weather-->
+
+		<control>
+			<description>Weather image</description>
+			<type>image</type>
+			<id>0</id>
+			<posX>1752</posX>
+			<posY>10</posY>
+			<height>100</height>
+			<width>100</width>
+			<texture>#WorldWeather.TodayIconImage</texture>
+			<visible>plugin.isenabled(World Weather)</visible>
+		</control>
+		
+    </controls>
+</window>

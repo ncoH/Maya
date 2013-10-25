@@ -231,7 +231,7 @@
           <control>
             <id>30</id>
             <description>Repeat on/off button</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <onup>20</onup>
             <ondown>10</ondown>
             <width>392</width>
@@ -331,7 +331,7 @@
           <control>
             <id>27</id>
             <description>scrobble on/off button</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <onup>28</onup>
             <ondown>29</ondown>
             <width>392</width>

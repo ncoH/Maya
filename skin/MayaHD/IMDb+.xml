@@ -16,7 +16,7 @@
       <description>Header label</description>
       <posX>185</posX>
       <posY>28</posY>
-      <width>500</width>
+      <width>600</width>
       <label>#header.label</label>	  
       <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
@@ -55,13 +55,12 @@
       <type>fadelabel</type>
       <id>1</id>
       <posX>780</posX>
-      <posY>199</posY>
+      <posY>169</posY>
       <width>931</width>
       <label>#selecteditem</label>
       <font>Segoe Light22</font>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
-      <valign>middle</valign>
     </control>
 	
 		<control>

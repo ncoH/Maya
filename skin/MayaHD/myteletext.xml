@@ -156,7 +156,7 @@
       </control>
       <control>
         <description>hidden mode</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>505</id>
         <posX>148</posX>
         <posY>348</posY>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
   <id>1</id>
-  <defaultcontrol>2</defaultcontrol>
+  <defaultcontrol>8</defaultcontrol>
   <allowoverlay>no</allowoverlay>
   <define>#header.label:Television</define>
   <define>#header.background:hover_my tv.png</define>
@@ -49,13 +49,9 @@
 
       <control>
         <description>TV On/Off button</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>8</id>
         <label>707</label>
-        <AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
-        <AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
-        <textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
-        <textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
         <onup>12</onup>
         <ondown>2</ondown>
         <onright>99</onright>
@@ -64,6 +60,10 @@
         <height>64</height>
         <textYOff>14</textYOff>
         <textalign>right</textalign>
+				<markalign>left</markalign>
+				<markvalign>middle</markvalign>					
+        <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>				
       </control>
 	  
       <control>
@@ -304,14 +304,14 @@
       <posX>787</posX>
       <posY>787</posY>
       <width>1054</width>
-      <height>192</height>
+      <height>205</height>
       <seperator>----------------------------------------------------------------------------------------------</seperator>
       <label>#TV.View.description</label>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
 
-    <control>
+<!--     <control>
         <id>112</id>
         <description>On Next</description>
         <type>label</type>
@@ -339,7 +339,7 @@
         <label>: #TV.Next.title</label>
         <animation effect="Fade" time="250">WindowOpen</animation>
         <animation effect="Fade" time="250">WindowClose</animation>			
-    </control>
+    </control> -->
 		
     <control>
       <description>Progress background</description>

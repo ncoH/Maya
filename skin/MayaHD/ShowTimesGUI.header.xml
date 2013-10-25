@@ -9,7 +9,7 @@
             <posX>55</posX>
             <posY>31</posY>
             <texture>maya_logo.png</texture>
-			<visible>!control.isvisible(24)</visible>
+						<visible>!control.isvisible(24)</visible>
         </control>
 		
         <control>
@@ -19,7 +19,7 @@
             <posX>160</posX>
             <posY>33</posY>
             <texture>top_separator.png</texture>
-			<visible>!control.isvisible(24)</visible>
+						<visible>!control.isvisible(24)</visible>
         </control>
 		
         <control>
@@ -31,8 +31,8 @@
             <font>Segoe Light22</font>
             <textcolor>ffffff</textcolor>
             <label>#time</label>
-			<align>right</align>
-			<visible>plugin.isenabled(World Weather) + !control.isvisible(24)</visible>
+						<align>right</align>
+						<visible>plugin.isenabled(World Weather) + !control.isvisible(24)</visible>
         </control>
 		
         <control>
@@ -44,8 +44,8 @@
             <font>Segoe Light22</font>
             <textcolor>6aa5cb</textcolor>
             <label>#time</label>
-			<align>right</align>
-			<visible>!plugin.isenabled(World Weather) + !control.isvisible(24)</visible>
+						<align>right</align>
+						<visible>!plugin.isenabled(World Weather) + !control.isvisible(24)</visible>
         </control>		
 
 <!--Weather-->
@@ -59,8 +59,8 @@
             <font>Segoe Light18</font>
             <textcolor>6aa5cb</textcolor>
             <label>/#WorldWeather.TodayTemperature</label>
-			<align>left</align>
-			<visible>plugin.isenabled(World Weather) + !control.isvisible(24)</visible>
+						<align>left</align>
+						<visible>plugin.isenabled(World Weather) + !control.isvisible(24)</visible>
         </control>
 		
 		<control>

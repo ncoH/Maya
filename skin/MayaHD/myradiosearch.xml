@@ -16,7 +16,7 @@
       <description>Header label</description>
       <posX>185</posX>
       <posY>28</posY>
-      <width>500</width>
+      <width>600</width>
       <label>#header.label</label>	  
       <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
@@ -66,13 +66,12 @@
       <type>fadelabel</type>
       <id>1</id>
       <posX>780</posX>
-      <posY>199</posY>
+      <posY>169</posY>
       <width>931</width>
       <label>#selecteditem</label>
       <font>Segoe Light22</font>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
-      <valign>middle</valign>
     </control>
 	
     <control>
@@ -80,77 +79,86 @@
       <description>group element</description>
       <posX>210</posX>
       <posY>267</posY>
-      <layout>StackLayout</layout>
+			<layout>StackLayout(7, Vertical, true)</layout>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
+			
       <control>
         <description>Sort by Name/Date/Channel</description>
         <type>sortbutton</type>
         <id>2</id>
-        <posX>98</posX>
-        <posY>168</posY>
         <label>620</label>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
         <onleft>10</onleft>
         <onright>10</onright>
         <onup>21</onup>
         <ondown>20</ondown>
-        <textalign>right</textalign>
         <offsetSortButtonX>29</offsetSortButtonX>
       </control>
+			
       <control>
         <description>View by Title/Genre</description>
         <type>button</type>
         <id>20</id>
-        <posX>98</posX>
-        <posY>232</posY>
-        <textcolor>ffffffff</textcolor>
-        <colordiffuse>ffffffff</colordiffuse>
         <label>1522</label>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
         <onleft>10</onleft>
         <onright>10</onright>
         <onup>2</onup>
         <ondown>7</ondown>
-        <textalign>right</textalign>
       </control>
+			
       <control>
         <description>Starts with</description>
         <type>selectbutton</type>
         <id>7</id>
-        <posX>98</posX>
-        <posY>295</posY>
         <label>872</label>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
         <onleft>7</onleft>
         <onright>10</onright>
         <onup>20</onup>
         <ondown>19</ondown>
-        <textalign>right</textalign>
       </control>
+			
       <control>
         <description>Search</description>
         <type>button</type>
         <id>19</id>
-        <posX>98</posX>
-        <posY>358</posY>
         <label>2051</label>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
         <onup>7</onup>
         <ondown>21</ondown>
         <onleft>10</onleft>
         <onright>10</onright>
-        <textalign>right</textalign>
       </control>
+			
       <control>
         <description>Search Description</description>
         <type>button</type>
         <id>21</id>
-        <posX>98</posX>
-        <posY>421</posY>
         <label>1523</label>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
         <onup>19</onup>
         <ondown>2</ondown>
         <onleft>10</onleft>
         <onright>10</onright>
-        <textalign>right</textalign>
       </control>
+			
     </control>
 	
     <control>
@@ -159,6 +167,7 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
       <animation effect="zoom" easing="out" start="100,100" end="180,180" center="683,384" time="1000">WindowClose</animation>
+			
       <control>
         <description>listcontrol</description>
         <type>listcontrol</type>
@@ -188,6 +197,7 @@
         <spinCanFocus>no</spinCanFocus>
         <dimColor>ffffffff</dimColor>
       </control>
+			
       <control>
         <description>listcontrol</description>
         <type>listcontrol</type>
@@ -217,6 +227,7 @@
         <spinCanFocus>no</spinCanFocus>
         <dimColor>ffffffff</dimColor>
       </control>
+			
     </control>
 	
     <control>

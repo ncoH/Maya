@@ -36,19 +36,19 @@
     </control>
 
     <control>
-		<description>Settings Label</description>	
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
-		<type>label</type>
-		<id>1</id>
-		<posX>708</posX>
-		<posY>175</posY>
-		<width>702</width>
-		<height>140</height>
-		<label>I.F.C.</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>Segoe Light40</font>
-		<valign>middle</valign>
+			<description>Settings Label</description>	
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>
+			<type>label</type>
+			<id>1</id>
+			<posX>708</posX>
+			<posY>175</posY>
+			<width>702</width>
+			<height>140</height>
+			<label>I.F.C.</label>
+			<textcolor>6aa5cb</textcolor>
+			<font>Segoe Light40</font>
+			<valign>middle</valign>
     </control>
 	
     <control>
@@ -56,6 +56,7 @@
       <type>group</type>
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
+			
       <control>
         <id>1</id>
         <type>image</type>
@@ -65,6 +66,7 @@
         <height>50</height>
         <texture>settings_setupguide_wide.png</texture>
       </control>
+			
       <control>
         <id>11</id>
         <description>Scan Interval label</description>
@@ -73,6 +75,7 @@
         <posY>379</posY>
         <label>Scan Interval</label>
       </control>
+			
       <control>
         <id>18</id>
         <description>Scan Interval select</description>
@@ -92,6 +95,7 @@
         <buddycontrolid>11</buddycontrolid>
         <reverse>yes</reverse>
       </control>
+			
       <control>
         <id>1</id>
         <type>image</type>
@@ -101,6 +105,7 @@
         <height>50</height>
         <texture>settings_setupguide_wide.png</texture>
       </control>
+			
       <control>
         <id>12</id>
         <description>Detection Counter label</description>
@@ -109,6 +114,7 @@
         <posY>433</posY>
         <label>Detection Counter</label>
       </control>
+			
       <control>
         <id>2</id>
         <description>Detection Counter select</description>
@@ -128,6 +134,7 @@
         <buddycontrolid>12</buddycontrolid>
         <reverse>yes</reverse>
       </control>
+			
       <control>
         <id>1</id>
         <type>image</type>
@@ -137,6 +144,7 @@
         <height>50</height>
         <texture>settings_setupguide_wide.png</texture>
       </control>
+			
       <control>
         <id>13</id>
         <description>Min Brightness Threshold label</description>
@@ -145,6 +153,7 @@
         <posY>486</posY>
         <label>Min Brightness Threshold</label>
       </control>
+			
       <control>
         <id>3</id>
         <description>Min Brightness Threshold select</description>
@@ -164,6 +173,7 @@
         <buddycontrolid>13</buddycontrolid>
         <reverse>yes</reverse>
       </control>
+			
       <control>
         <id>1</id>
         <type>image</type>
@@ -173,6 +183,7 @@
         <height>50</height>
         <texture>settings_setupguide_wide.png</texture>
       </control>
+			
       <control>
         <id>14</id>
         <description>Max Brightness Threshold label</description>
@@ -181,6 +192,7 @@
         <posY>540</posY>
         <label>Max Brightness Threshold</label>
       </control>
+			
       <control>
         <id>4</id>
         <description>Max Brightness Threshold select</description>
@@ -200,6 +212,7 @@
         <buddycontrolid>14</buddycontrolid>
         <reverse>yes</reverse>
       </control>
+			
       <control>
         <id>1</id>
         <type>image</type>
@@ -209,6 +222,7 @@
         <height>50</height>
         <texture>settings_setupguide_wide.png</texture>
       </control>
+			
       <control>
         <id>15</id>
         <description>Stabilizer label</description>
@@ -217,6 +231,7 @@
         <posY>593</posY>
         <label>Stabilizer</label>
       </control>
+			
       <control>
         <id>5</id>
         <description>Stabilizer select</description>
@@ -236,6 +251,7 @@
         <buddycontrolid>15</buddycontrolid>
         <reverse>yes</reverse>
       </control>
+			
       <control>
         <id>1</id>
         <type>image</type>
@@ -245,6 +261,7 @@
         <height>50</height>
         <texture>settings_setupguide_wide.png</texture>
       </control>
+			
       <control>
         <id>16</id>
         <description>Single Black Bar Height label</description>
@@ -253,6 +270,7 @@
         <posY>646</posY>
         <label>Single Black Bar Height</label>
       </control>
+			
       <control>
         <id>6</id>
         <description>Single Black Bar Height select</description>
@@ -272,6 +290,7 @@
         <buddycontrolid>16</buddycontrolid>
         <reverse>yes</reverse>
       </control>
+			
       <control>
         <id>1</id>
         <type>image</type>
@@ -281,6 +300,7 @@
         <height>50</height>
         <texture>settings_setupguide_wide.png</texture>
       </control>
+			
       <control>
         <id>17</id>
         <description>Double Black Bar Height label</description>
@@ -289,6 +309,7 @@
         <posY>700</posY>
         <label>Double Black Bar Height</label>
       </control>
+			
       <control>
         <id>7</id>
         <description>Double Black Bar Height select</description>
@@ -308,12 +329,13 @@
         <buddycontrolid>17</buddycontrolid>
         <reverse>yes</reverse>
       </control>
+			
     </control>
 	
     <control>
       <id>8</id>
       <description>Verbose Logging</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <onleft>10009</onleft>
       <onright>10009</onright>
       <onup>7</onup>
@@ -323,10 +345,6 @@
       <align>left</align>
       <width>469</width>
       <label>-</label>
-      <textureFocus>togglebutton_medium_on_focus.png</textureFocus>
-      <textureNoFocus>togglebutton_medium_on_nofocus.png</textureNoFocus>
-      <AltTextureFocus>togglebutton_medium_off_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>togglebutton_medium_off_nofocus.png</AltTextureNoFocus>
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
     </control>

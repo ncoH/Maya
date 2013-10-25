@@ -296,7 +296,7 @@
 		  
           <control>
             <description>toggle submit mode</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <id>35</id>
             <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
             <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
@@ -318,7 +318,7 @@
 		  
           <control>
             <description>toggle discovery mode</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <id>40</id>
             <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
             <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>

@@ -196,7 +196,7 @@
       <visible>[facadeview.filmstrip | facadeview.coverflow]+Control.HasFocus(50)</visible>
     </control>
 
-	<import>mymusic.hiddenmenu.xml</import>			
+		<import>mymusic.hiddenmenu.xml</import>			
     <import>common.facade.music.xml</import>	
     <import>common.overlay.xml</import>
 	

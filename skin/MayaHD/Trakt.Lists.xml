@@ -6,8 +6,8 @@
   <define>#header.label:Trakt</define> 
   <controls>
   
-        <import>Trakt.Common.Background.xml</import>		
-        <import>common.time.xml</import>
+    <import>Trakt.Common.Background.xml</import>		
+    <import>common.time.xml</import>
 
     <control>
       <id>1</id>
@@ -78,7 +78,7 @@
 					<spinAlign>left</spinAlign>
 					<textXOff>30</textXOff>
 					<spinCanFocus>no</spinCanFocus>
-        		</control>
+        </control>
 	  
 	</control>
 </control>
@@ -92,11 +92,11 @@
 		<width>931</width>
 		<height>150</height>
 		<seperator>-----------------------------------------------------------------------------------</seperator>
-        <label>#Trakt.List.Description</label>
-        <visible>!string.equals(#Trakt.List.Description,N/A)</visible>
-    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    <label>#Trakt.List.Description</label>
+    <visible>!string.equals(#Trakt.List.Description,N/A)</visible>
+    <animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    <animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    <animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 	</control>
 		
 		<import>common.overlay.xml</import>

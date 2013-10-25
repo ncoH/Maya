@@ -18,8 +18,8 @@
 		<posY>225</posY>
 		<width>800</width>
 		<label>#(L(128))/#(L(300083))</label>
-		<textcolor>00b7ff</textcolor>
-		<font>TitanLight20</font>
+    <font>Segoe Light20</font>
+    <textcolor>ff6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 	</control>
@@ -121,8 +121,8 @@
 		<posY>528</posY>
 		<width>500</width>
 		<label>Name</label>
-		<font>fontB14</font>
-    <textcolor>ff00b7ff</textcolor>
+    <font>Segoe Light12</font>
+    <textcolor>ff6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>		
   </control>
@@ -150,8 +150,8 @@
     <textcolor>ffffffff</textcolor>
     <textcolor2>ffffffff</textcolor2>
     <textcolor3>ffffffff</textcolor3>
-    <selectedColor>ff00b7ff</selectedColor>
-    <selectedColor2>ff00b7ff</selectedColor2>
+    <selectedColor>ff85cffe</selectedColor>
+    <selectedColor2>ff85cffe</selectedColor2>
 		<dimColor>ffffffff</dimColor>		
 		<spinPosX>-2000</spinPosX>
 		<spinPosY>500</spinPosY>
@@ -170,8 +170,8 @@
 		<posY>528</posY>
 		<width>200</width>
 		<label>Frame rate(s)</label>
-		<font>fontB14</font>
-    <textcolor>ff00b7ff</textcolor>
+    <font>Segoe Light12</font>
+    <textcolor>ff6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>		
   </control>
@@ -184,8 +184,8 @@
 		<posY>528</posY>
 		<width>200</width>
 		<label>Refresh rate</label>
-		<font>fontB14</font>
-    <textcolor>ff00b7ff</textcolor>
+    <font>Segoe Light12</font>
+    <textcolor>ff6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>		
   </control>

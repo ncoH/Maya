@@ -18,8 +18,8 @@
 		<posY>225</posY>
 		<width>500</width>
 		<label>#(L(101010))</label>
-		<textcolor>00b7ff</textcolor>
-		<font>TitanLight20</font>
+		<font>Segoe Light20</font>
+		<textcolor>ff6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 	</control>
@@ -32,8 +32,8 @@
 		<posY>333</posY>
 		<width>600</width>			
     <label>300193</label>
-		<font>fontB14</font>
-    <textcolor>ff00b7ff</textcolor>
+		<font>Segoe Light12</font>
+		<textcolor>ff6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>					
   </control>
@@ -46,8 +46,8 @@
 		<posY>333</posY>
 		<width>600</width>	
     <label>300071</label>
-		<font>fontB14</font>
-    <textcolor>ff00b7ff</textcolor>
+		<font>Segoe Light12</font>
+		<textcolor>ff6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>					
   </control>
@@ -65,9 +65,7 @@
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
 			<textureFocus>settings_button_database_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
-			<textcolor>ff000000</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
+			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>	
 			<textalign>left</textalign>	
       <onright>10</onright>
 			<onup>16</onup>
@@ -87,9 +85,7 @@
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
 			<textureFocus>settings_button_database_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
-			<textcolor>ff000000</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
+			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>		
 			<textalign>left</textalign>		
       <onup>3</onup>
 			<ondown>2</ondown>
@@ -110,9 +106,7 @@
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
 			<textureFocus>settings_button_database_large_focus.png</textureFocus>
-			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>
-			<textcolor>ff000000</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
+			<textureNoFocus>settings_button_database_large_nofocus.png</textureNoFocus>	
 			<textalign>left</textalign>		
 			<onup>15</onup>
       <ondown>16</ondown>
@@ -163,9 +157,7 @@
 			<textXOff>33</textXOff>
 			<textYOff>11</textYOff>
 			<textureFocus>settings_button_database_focus.png</textureFocus>
-			<textureNoFocus>settings_button_database_nofocus.png</textureNoFocus>
-			<textcolor>ff000000</textcolor>
-			<textcolorNoFocus>ffffffff</textcolorNoFocus>			
+			<textureNoFocus>settings_button_database_nofocus.png</textureNoFocus>		
 			<textalign>left</textalign>	
       <onleft>3</onleft>			
       <onright>2</onright>
@@ -209,15 +201,15 @@
       <textureHeight>25</textureHeight>
       <textureFocus>settings_listcontrol_wide_focus.png</textureFocus>
       <textureNoFocus>-</textureNoFocus>
-			<font>TitanLight12</font>
-			<font2>TitanLight12</font2>
-			<font3>TitanLight12</font3>
-			<textcolor>FF00b7ff</textcolor>
-			<textcolor2>FF00b7ff</textcolor2>
-			<textcolor3>FF00b7ff</textcolor3>	
-      <selectedColor>FF00b7ff</selectedColor>
-      <selectedColor2>FF00b7ff</selectedColor2>
-      <selectedColor3>FF00b7ff</selectedColor3>		
+			<font>Segoe Light12</font>
+			<font2>Segoe Light12</font2>
+			<font3>Segoe Light12</font3>
+			<textcolor>ff6aa5cb</textcolor>
+			<textcolor2>ff6aa5cb</textcolor2>
+			<textcolor3>ff6aa5cb</textcolor3>	
+      <selectedColor>ff6aa5cb</selectedColor>
+      <selectedColor2>ff6aa5cb</selectedColor2>
+      <selectedColor3>ff6aa5cb</selectedColor3>		
 			<spinPosX>-2000</spinPosX>
 			<spinPosY>500</spinPosY>
       <dimColor>ffffffff</dimColor>
@@ -237,8 +229,8 @@
       <posX>685</posX>
       <posY>658</posY>
       <label>300194</label>
-			<font>fontB14</font>
-			<textcolor>ff00b7ff</textcolor>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 			<animation effect="fade" time="150">WindowOpen</animation>
 			<animation effect="fade" time="150">WindowClose</animation>						
     </control>		

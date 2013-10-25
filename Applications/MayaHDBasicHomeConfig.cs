@@ -435,7 +435,7 @@ namespace ProcessPlugins.MayaHDBasicHomePlugin
             cB_onlinevideosOption.Visible = false;
 
             string filename = Path.Combine(Path.Combine(SkinInfo.mpPaths.pluginPath, "windows"), "MP-TVSeries.dll");
-            if (MayaHDHelper.IsAssemblyAvailable("MP-TVSeries", new Version(2, 6, 5, 1265), filename))
+            if (MayaHDHelper.IsAssemblyAvailable("MP-TVSeries", new Version(3, 0, 0, 1673), filename))
             {
                 tvseriesViews = GetTVSeriesViews();
 
@@ -451,7 +451,7 @@ namespace ProcessPlugins.MayaHDBasicHomePlugin
             }
 
             filename = Path.Combine(Path.Combine(SkinInfo.mpPaths.pluginPath, "windows\\OnlineVideos"), "OnlineVideos.dll");
-            if (MayaHDHelper.IsAssemblyAvailable("OnlineVideos", new Version(0, 27, 0, 0), filename))
+            if (MayaHDHelper.IsAssemblyAvailable("OnlineVideos", new Version(1, 0, 0, 0), filename))
             {
                 onlineVideosViews = GetOnlineVideosViews();
 
@@ -1406,7 +1406,7 @@ namespace ProcessPlugins.MayaHDBasicHomePlugin
                     System.IO.File.Copy(path + "\\custom files\\mytvrecordedtv.server.xml", path + "\\mytvrecordedtv.xml", true);
                     System.IO.File.Copy(path + "\\custom files\\mytvscheduler.server.xml", path + "\\mytvschedulerServer.xml", true);
                     System.IO.File.Copy(path + "\\custom files\\myradiorecorded.server.xml", path + "\\myradiorecorded.xml", true);
-                    System.IO.File.Copy(path + "\\custom files\\4TR_RecordedTv.server.xml", path + "\\4TR_RecordedTv.xml", true);
+                    System.IO.File.Copy(path + "\\custom files\\ARGUS_RecordedTv2.server.xml", path + "\\ARGUS_RecordedTv2.xml", true);
                 }
             }
             else
@@ -1418,7 +1418,7 @@ namespace ProcessPlugins.MayaHDBasicHomePlugin
                     System.IO.File.Copy(path + "\\custom files\\mytvrecordedtv.xml", path + "\\mytvrecordedtv.xml", true);
                     System.IO.File.Copy(path + "\\custom files\\mytvscheduler.xml", path + "\\mytvschedulerServer.xml", true);
                     System.IO.File.Copy(path + "\\custom files\\myradiorecorded.xml", path + "\\myradiorecorded.xml", true);
-                    System.IO.File.Copy(path + "\\custom files\\4TR_RecordedTv.xml", path + "\\4TR_RecordedTv.xml", true);
+                    System.IO.File.Copy(path + "\\custom files\\ARGUS_RecordedTv2.xml", path + "\\ARGUS_RecordedTv2.xml", true);
                 }
             }
 

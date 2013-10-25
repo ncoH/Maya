@@ -18,8 +18,8 @@
 		<posY>225</posY>
 		<width>800</width>
 		<label>#(L(1))/#(L(129))</label>
-		<textcolor>00b7ff</textcolor>
-		<font>TitanLight20</font>
+		<font>Segoe Light20</font>
+		<textcolor>ff6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
 	</control>
@@ -32,8 +32,8 @@
 		<posY>333</posY>
 		<width>600</width>			
     <label>300183</label>
-		<font>fontB14</font>
-    <textcolor>ff00b7ff</textcolor>
+		<font>Segoe Light12</font>
+		<textcolor>ff6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>					
   </control>
@@ -47,6 +47,7 @@
     <layout>StackLayout(7, Vertical, true)</layout>
 	  <animation effect="fade" time="150">WindowOpen</animation>
 	  <animation effect="fade" time="150">WindowClose</animation>
+		
 		<control Style="SettingsCheckButtonMedium">
       <description>Ken Buns transitions</description>
       <type>checkbutton</type>
@@ -83,8 +84,8 @@
 	  <posX>685</posX>
 	  <posY>646</posY>
     <label>300184</label>
-		<font>fontB14</font>
-    <textcolor>ff00b7ff</textcolor>
+		<font>Segoe Light12</font>
+		<textcolor>ff6aa5cb</textcolor>
 		<animation effect="fade" time="150">WindowOpen</animation>
 		<animation effect="fade" time="150">WindowClose</animation>
   </control>
@@ -117,8 +118,8 @@
       <ondown>2</ondown>
     </control>
   </control>
+	
     <!--Slideshow Settings group-->
-
     <control>
       <description>Slideshow settings</description>
       <type>label</type>
@@ -127,11 +128,12 @@
   		<posY>333</posY>
   		<width>600</width>			
       <label>300187</label>
-  		<font>fontB14</font>
-      <textcolor>ff00b7ff</textcolor>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Speed label</description>
       <type>label</type>
@@ -142,12 +144,13 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Speed select</description>
       <type>spincontrol</type>
       <id>2</id>
-      <posX>1668</posX>
-      <posY>393</posY>
+      <posX>1630</posX>
+      <posY>382</posY>
       <textcolor>ffffffff</textcolor>
       <onleft>6</onleft>
       <onright>6</onright>
@@ -157,6 +160,7 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Transition time label</description>
       <type>label</type>
@@ -167,12 +171,13 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>Transition time select</description>
       <type>spincontrol</type>
       <id>3</id>
-      <posX>1668</posX>
-      <posY>443</posY>
+      <posX>1630</posX>
+      <posY>432</posY>
       <textcolor>ffffffff</textcolor>
       <onleft>5</onleft>
       <onright>5</onright>
@@ -182,6 +187,7 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>ken burns speed label</description>
       <type>label</type>
@@ -192,12 +198,13 @@
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
+		
     <control>
       <description>ken burns speed select</description>
       <type>spincontrol</type>
       <id>4</id>
-      <posX>1668</posX>
-      <posY>493</posY>
+      <posX>1630</posX>
+      <posY>482</posY>
       <textcolor>ffffffff</textcolor>
       <onleft>7</onleft>
       <onright>7</onright>
@@ -234,6 +241,7 @@
       <label>6021</label>
     </control>
  </control>
+ 
     <!--View settings group-->
     <!--Slideshow Settings group-->
 
@@ -245,8 +253,8 @@
       <posY>753</posY>
   		<width>600</width>			
       <label>300188</label>
-  		<font>fontB14</font>
-      <textcolor>ff00b7ff</textcolor>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
   		<animation effect="fade" time="150">WindowOpen</animation>
   		<animation effect="fade" time="150">WindowClose</animation>
     </control>
@@ -292,5 +300,6 @@
       <onup>44</onup>
     </control>
   </control>
+	
   </controls>
 </window>

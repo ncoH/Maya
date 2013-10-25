@@ -81,6 +81,8 @@
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
 	
+    <!-- ************** HIDDEN MENU *****************  -->
+	
 	<control>
 		<type>actiongroup</type>
 		<description>action menu</description>
@@ -98,18 +100,10 @@
 			<width>1920</width>
 			<height>1080</height>
 			<texture>semi_trans_back_hidden_menu.png</texture>
-			<visible>!Control.HasFocus(50)</visible>
 			<animation effect="fade" time="450">visible</animation>
 			<animation effect="fade" time="400">hidden</animation>
 		</control>
 	
-	<control>
-		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
-		<animation effect="fade" time="250">visible</animation>
-		<animation effect="fade" time="0">hidden</animation>
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -118,143 +112,144 @@
 			<width>631</width>
 			<height>1044</height>
 			<texture>menu_bg.png</texture>
-			<visible>!Control.HasFocus(50)</visible>
+    	<animation effect="fade" time="0">WindowClose</animation>
+    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="fade" time="50">visible</animation>
+    	<animation effect="fade" time="0">hidden</animation>
 		</control>
-	
+
 		<control>
-			<description>Heading text label</description>
+			<description>Menu label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>136</posX>
-			<posY>128</posY>
+			<posX>128</posX>
+			<posY>114</posY>
 			<label>924</label>
-			<font>Segoe Light22</font>
+			<font>Segoe Light12</font>
 			<textcolor>ff6aa5cb</textcolor>
-		</control>	
+    	<animation effect="fade" time="0">WindowClose</animation>
+    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="fade" time="50">visible</animation>
+    	<animation effect="fade" time="0">hidden</animation>
+    </control>
+    <control>
+        <type>group</type>
+        <description>group element</description>
+    		<animation effect="fade" time="0">WindowClose</animation>
+    		<animation effect="slide" start="-150,0" time="100">visible</animation>
+    		<animation effect="fade" time="50">visible</animation>
+    		<animation effect="fade" time="0">hidden</animation>
+        <posX>69</posX>
+        <posY>155</posY>
+        <layout>StackLayout(0, Vertical, true)</layout>		
 		
-          <control>
-            <type>sortbutton</type>
-            <id>2</id>
-            <label>620</label>
-            <onleft>10</onleft>
-            <onright>10</onright>
-            <onup>9</onup>
-            <ondown>11</ondown>
+    <control>
+      <type>sortbutton</type>
+      <id>2</id>
+      <label>620</label>
+      <onleft>10</onleft>
+      <onright>10</onright>
+      <onup>9</onup>
+      <ondown>11</ondown>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>215</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>
-			<offsetSortButtonX>300</offsetSortButtonX>
-			<offsetSortButtonY>27</offsetSortButtonY>
-          </control>
+			<width>498</width>
+			<height>64</height>
+			<textXOff>58</textXOff>
+			<textYOff>14</textYOff>
+			<offsetSortButtonX>443</offsetSortButtonX>
+			<offsetSortButtonY>28</offsetSortButtonY>			
+    </control>
 		  
-          <control>
-            <description>Toggle button series</description>
-            <type>togglebutton</type>
-            <id>11</id>
-            <label>3019</label>
-            <onleft>10</onleft>
-            <onright>10</onright>
-            <onup>2</onup>
-            <ondown>6</ondown>
-            <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-            <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-            <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
-			<textcolor>white</textcolor>
-			<textcolorNoFocus>ff85cfff</textcolorNoFocus>
-			<posX>69</posX>
-			<posY>285</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>
-          </control>
-		  
-          <control>
-            <description>New button</description>
-            <type>button</type>
-            <id>6</id>
-            <label>617</label>
-            <onleft>10</onleft>
-            <onright>10</onright>
-            <onup>11</onup>
-            <ondown>7</ondown>
+    <control>
+      <description>Check button series</description>
+      <type>checkbutton</type>
+      <id>11</id>
+      <label>3019</label>
+      <onleft>10</onleft>
+      <onright>10</onright>
+      <onup>2</onup>
+      <ondown>6</ondown>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>355</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>
-          </control>
+			<width>498</width>
+			<height>64</height>
+			<textXOff>58</textXOff>
+			<textYOff>14</textYOff>			
+    </control>
 		  
-          <control>
-            <description>Cleanup</description>
-            <type>button</type>
-            <id>7</id>
-            <label>624</label>
-            <onleft>10</onleft>
-            <onright>10</onright>
-            <onup>6</onup>
-            <ondown>8</ondown>
+    <control>
+      <description>New button</description>
+      <type>button</type>
+      <id>6</id>
+      <label>617</label>
+      <onleft>10</onleft>
+      <onright>10</onright>
+      <onup>11</onup>
+      <ondown>7</ondown>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>425</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>
-          </control>
+			<width>498</width>
+			<height>64</height>
+			<textXOff>58</textXOff>
+			<textYOff>14</textYOff>
+    </control>
 		  
-          <control>
-            <description>Priorities</description>
-            <type>button</type>
-            <id>8</id>
-            <label>877</label>
-            <hyperlink>607</hyperlink>
-            <onleft>10</onleft>
-            <onright>10</onright>
-            <onup>7</onup>
-            <ondown>9</ondown>
+    <control>
+      <description>Cleanup</description>
+      <type>button</type>
+      <id>7</id>
+      <label>624</label>
+      <onleft>10</onleft>
+      <onright>10</onright>
+      <onup>6</onup>
+      <ondown>8</ondown>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>495</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>
-          </control>
+			<width>498</width>
+			<height>64</height>
+			<textXOff>58</textXOff>
+			<textYOff>14</textYOff>
+    </control>
 		  
-          <control>
-            <description>Conflicts</description>
-            <type>button</type>
-            <id>9</id>
-            <label>892</label>
-            <hyperlink>608</hyperlink>
-            <onleft>10</onleft>
-            <onright>10</onright>
-            <onup>8</onup>
-            <ondown>2</ondown>
+    <control>
+      <description>Priorities</description>
+      <type>button</type>
+      <id>8</id>
+      <label>877</label>
+      <hyperlink>607</hyperlink>
+      <onleft>10</onleft>
+      <onright>10</onright>
+      <onup>7</onup>
+      <ondown>9</ondown>
 			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>565</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>
-          </control>
+			<width>498</width>
+			<height>64</height>
+			<textXOff>58</textXOff>
+			<textYOff>14</textYOff>			
+    </control>
 		  
-        </control>
-      </control>
+		<control>
+      <description>Conflicts</description>
+      <type>button</type>
+      <id>9</id>
+      <label>892</label>
+      <hyperlink>608</hyperlink>
+      <onleft>10</onleft>
+      <onright>10</onright>
+      <onup>8</onup>
+      <ondown>2</ondown>
+			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+			<textureNoFocus>-</textureNoFocus>
+			<width>498</width>
+			<height>64</height>
+			<textXOff>58</textXOff>
+			<textYOff>14</textYOff>
+    </control>		  
+  </control>
+		
+</control>
 	
     <control>
       <description>listcontrol</description>

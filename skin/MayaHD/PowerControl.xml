@@ -68,7 +68,7 @@
       <control>
         <id>4</id>
         <description>Action Scheduler</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <onup>3</onup>
         <ondown>5</ondown>
         <font>font11</font>
@@ -78,7 +78,7 @@
       <control>
         <id>5</id>
         <description>Alive Check Scheduler</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <onup>4</onup>
         <ondown>2</ondown>
         <font>font11</font>

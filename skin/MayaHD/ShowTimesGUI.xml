@@ -138,6 +138,7 @@
       <id>1</id>
       <posX>780</posX>
       <posY>199</posY>
+      <height>42</height>			
       <width>931</width>
       <label>#selecteditem</label>
       <font>Segoe Light22</font>

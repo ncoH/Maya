@@ -226,7 +226,7 @@
       <posY>870</posY>	  
       <control>
         <description>Biography</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>3</id>
         <label>1011</label>
         <onleft>24</onleft>
@@ -234,17 +234,13 @@
         <onup>4755</onup>
         <ondown>4</ondown>
         <posY>478</posY>
-		<width>405</width>		
+				<width>405</width>		
         <textalign>right</textalign>
-        <AltTextureFocus>togglebutton-off-focus.png</AltTextureFocus>
-        <AltTextureNoFocus>togglebutton-off-nofocus.png</AltTextureNoFocus>
-        <textureFocus>togglebutton-on-focus.png</textureFocus>
-        <textureNoFocus>togglebutton-on-nofocus.png</textureNoFocus>
       </control>
 	  
       <control>
         <description>Movies</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>4</id>
         <label>342</label>
         <onleft>24</onleft>
@@ -252,11 +248,7 @@
         <onup>3</onup>
         <ondown>4755</ondown>
         <textalign>right</textalign>
-		<width>405</width>		
-        <AltTextureFocus>togglebutton-off-focus.png</AltTextureFocus>
-        <AltTextureNoFocus>togglebutton-off-nofocus.png</AltTextureNoFocus>
-        <textureFocus>togglebutton-on-focus.png</textureFocus>
-        <textureNoFocus>togglebutton-on-nofocus.png</textureNoFocus>
+				<width>405</width>		
       </control>
 	  
       <control>

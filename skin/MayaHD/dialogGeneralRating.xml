@@ -10,7 +10,7 @@
     <!-- Star Controls -->
     <control>
       <description>1 Star</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>100</id>
       <posX>832</posX>
       <posY>555</posY>
@@ -26,7 +26,7 @@
 	
     <control>
       <description>2 Star</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>101</id>
       <posX>888</posX>
       <posY>555</posY>
@@ -42,7 +42,7 @@
 	
     <control>
       <description>3 Star</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>102</id>
       <posX>944</posX>
       <posY>555</posY>
@@ -58,7 +58,7 @@
 	
     <control>
       <description>4 Star</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>103</id>
       <posX>1000</posX>
       <posY>555</posY>
@@ -74,7 +74,7 @@
 	
     <control>
       <description>5 Star</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>104</id>
       <posX>1056</posX>
       <posY>555</posY>

@@ -235,7 +235,7 @@
           </control>
           <control>
             <description>Record</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <id>9</id>
             <label>601</label>
             <AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>

@@ -16,7 +16,7 @@
       <description>Header label</description>
       <posX>185</posX>
       <posY>28</posY>
-      <width>500</width>
+      <width>600</width>
       <label>#header.label</label>	  
       <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
@@ -46,9 +46,10 @@
       <posX>281</posX>
       <posY>253</posY>
       <width>394</width>
+			
       <control>
         <description>TV On/Off button</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>6</id>
         <label>707</label>
         <onup>9</onup>
@@ -59,10 +60,6 @@
         <height>64</height>
         <textYOff>14</textYOff>
         <textalign>right</textalign>
-        <AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
-        <AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
-        <textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
-        <textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
       </control>	
 	  
       <control>

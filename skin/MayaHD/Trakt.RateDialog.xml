@@ -68,7 +68,7 @@
 		
 		<control>
 			<description>1 Heart</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>1001</id>
 			<posX>760</posX>
 			<posY>540</posY>
@@ -85,7 +85,7 @@
 	
 		<control>
 			<description>2 Heart</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>1002</id>
 			<posX>800</posX>
 			<posY>540</posY>
@@ -102,7 +102,7 @@
 	
 		<control>
 			<description>3 Heart</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>1003</id>
 			<posX>840</posX>
 			<posY>540</posY>
@@ -119,7 +119,7 @@
 	
 		<control>
 			<description>4 Heart</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>1004</id>
 			<posX>880</posX>
 			<posY>540</posY>
@@ -136,7 +136,7 @@
 	
 		<control>
 			<description>5 Heart</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>1005</id>
 			<posX>920</posX>
 			<posY>540</posY>
@@ -153,7 +153,7 @@
 	
 		<control>
 			<description>6 Heart</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>1006</id>
 			<posX>960</posX>
 			<posY>540</posY>
@@ -170,7 +170,7 @@
 	
 		<control>
 			<description>7 Heart</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>1007</id>
 			<posX>1000</posX>
 			<posY>540</posY>
@@ -187,7 +187,7 @@
 	
 		<control>
 			<description>8 Heart</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>1008</id>
 			<posX>1040</posX>
 			<posY>540</posY>
@@ -204,7 +204,7 @@
 	
 		<control>
 			<description>9 Heart</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>1009</id>
 			<posX>1080</posX>
 			<posY>540</posY>
@@ -221,7 +221,7 @@
 	
 		<control>
 			<description>10 Heart</description>
-			<type>togglebutton</type>
+			<type>checkbutton</type>
 			<id>1010</id>
 			<posX>1120</posX>
 			<posY>540</posY>

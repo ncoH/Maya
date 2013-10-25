@@ -165,14 +165,12 @@
 	
     <control>
       <description>Subtitles Menu</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>218</id>
       <posX>1394</posX>
       <posY>399</posY>
       <width>168</width>
       <height>149</height>
-      <AltTextureFocus>osd_settings_subs_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>osd_settings_subs_nofocus.png</AltTextureNoFocus>
       <textureFocus>osd_settings_subs_focus.png</textureFocus>
       <textureNoFocus>osd_settings_subs_focus.png</textureNoFocus>
       <label>-</label>
@@ -186,7 +184,7 @@
 	
     <control>
       <description>Audio Menu</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>221</id>
       <posX>1402</posX>
       <posY>479</posY>
@@ -196,8 +194,6 @@
       <onright>221</onright>
       <ondown>220</ondown>
       <onup>218</onup>
-      <AltTextureFocus>osd_settings_audio_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>osd_settings_audio_nofocus.png</AltTextureNoFocus>
       <textureFocus>osd_settings_audio_focus.png</textureFocus>
       <textureNoFocus>osd_settings_audio_focus.png</textureNoFocus>
       <label>-</label>
@@ -207,14 +203,12 @@
 	
     <control>
       <description>Video Menu</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>220</id>
       <posX>1398</posX>
       <posY>559</posY>
       <width>168</width>
       <height>149</height>
-      <AltTextureFocus>osd_settings_video_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>osd_settings_video_nofocus.png</AltTextureNoFocus>
       <textureFocus>osd_settings_video_focus.png</textureFocus>
       <textureNoFocus>osd_settings_video_focus.png</textureNoFocus>
       <label>-</label>
@@ -262,6 +256,7 @@
       <ondown>210</ondown>
       <visible>yes</visible>
     </control>
+		
     <control>
       <description>Channel Button Up</description>
       <type>button</type>
@@ -424,14 +419,12 @@
 	
     <control>
       <description>Bookmarks Menu</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>219</id>
       <posX>359</posX>
       <posY>755</posY>
       <width>87</width>
       <height>60</height>
-      <AltTextureFocus>osd_settings_bookmark_focus.png</AltTextureFocus>
-      <AltTextureNoFocus>osd_settings_bookmark_nofocus.png</AltTextureNoFocus>
       <textureFocus>-</textureFocus>
       <textureNoFocus>osd_settings_bookmark_focus.png</textureNoFocus>
       <label>-</label>

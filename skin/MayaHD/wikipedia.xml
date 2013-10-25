@@ -111,11 +111,11 @@
     <control>
       <description>buttons</description>
       <type>group</type>
+      <posX>248</posX>
+      <posY>360</posY>
+      <layout>StackLayout(7, Vertical, true)</layout>
       <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
-      <posX>245</posX>
-      <posY>365</posY>
-      <layout>StackLayout(0, Vertical, true)</layout>
+      <animation effect="fade" time="250">WindowClose</animation>			
 						
 			<control>
 				<description>Search Button</description>
@@ -124,10 +124,11 @@
 				<onup>14</onup>
 				<onleft>20</onleft>
 				<onright>20</onright>
-				<label>137</label>
-				<width>364</width>
+				<label>137</label>	
+				<width>365</width>
+				<height>52</height>						
 				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>			
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
 			</control>
 					
 			<control>
@@ -136,10 +137,11 @@
 				<id>11</id>
 				<onleft>20</onleft>
 				<onright>20</onright>
-				<label>200025</label>
-				<width>364</width>
+				<label>200025</label>	
+				<width>365</width>
+				<height>52</height>						
 				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>				
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
 			</control>
 		
 			<control>
@@ -148,10 +150,11 @@
 				<id>12</id>
 				<onleft>20</onleft>
 				<onright>20</onright>
-				<label>2511</label>
-				<width>364</width>
+				<label>2511</label>	
+				<width>365</width>
+				<height>52</height>						
 				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>				
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
 			</control>
 		
 			<control>
@@ -161,9 +164,10 @@
 				<onleft>20</onleft>
 				<onright>20</onright>
 				<label>2515</label>
-				<width>364</width>
+				<width>365</width>
+				<height>52</height>						
 				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>				
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
 			</control>
 			
 			<control>
@@ -174,10 +178,12 @@
 				<onleft>20</onleft>
 				<onright>20</onright>
 				<label>2514</label>
-				<width>364</width>
+				<width>365</width>
+				<height>52</height>						
 				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>	
-			</control>			
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
+			</control>	
+			
 		</control>
 	
 	<control>
@@ -202,7 +208,7 @@
       <posY>371</posY>
       <width>916</width>
       <height>473</height>
-	  <visible>no</visible>	  
+			<visible>no</visible>	  
       <textcolor>ff6aa5cb</textcolor>
       <spinPosX>1510</spinPosX>
       <spinPosY>830</spinPosY>
@@ -211,7 +217,7 @@
       <font>font12</font>
       <onleft>10</onleft>
       <onright>10</onright>
-	  <visible allowhiddenfocus="true"></visible>	  
+			<visible allowhiddenfocus="true"></visible>	  
     </control>
 	
 	<control>

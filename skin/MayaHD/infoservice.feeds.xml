@@ -29,13 +29,12 @@
       <description>Selected item Label</description>
       <type>fadelabel</type>
       <posX>778</posX>
-      <posY>199</posY>
+      <posY>169</posY>
       <width>931</width>
       <font>Segoe Light22</font>
       <label>#infoservice.feed.selected.title</label>
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
-      <valign>middle</valign>
     </control>
 	
     <control>
@@ -88,7 +87,6 @@
 			<animation effect="fade" time="450">visible</animation>
 			<animation effect="fade" time="400">hidden</animation>
 		</control>
-	
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -97,10 +95,10 @@
 			<width>631</width>
 			<height>1044</height>
 			<texture>menu_bg.png</texture>
-    		<animation effect="fade" time="0">WindowClose</animation>
-    		<animation effect="slide" start="-150,0" time="100">visible</animation>
-    		<animation effect="fade" time="50">visible</animation>
-    		<animation effect="fade" time="0">hidden</animation>
+    	<animation effect="fade" time="0">WindowClose</animation>
+    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="fade" time="50">visible</animation>
+    	<animation effect="fade" time="0">hidden</animation>
 		</control>
 		<control>
 			<description>Menu label</description>
@@ -115,7 +113,7 @@
 			<animation effect="slide" start="-150,0" time="100">visible</animation>
 			<animation effect="fade" time="50">visible</animation>
 			<animation effect="fade" time="0">hidden</animation>
-    	</control>
+    </control>
 				
 				<control>
 					<type>group</type>
@@ -134,7 +132,7 @@
 							<id>2</id>
 							<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 							<textureNoFocus>-</textureNoFocus>
-							<width>499</width>
+							<width>498</width>
 							<height>70</height>
 							<textXOff>66</textXOff>
 							<textYOff>17</textYOff>
@@ -151,7 +149,7 @@
 							<id>4</id>
 							<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 							<textureNoFocus>-</textureNoFocus>
-							<width>499</width>
+							<width>498</width>
 							<height>70</height>
 							<textXOff>66</textXOff>
 							<textYOff>17</textYOff>
@@ -168,7 +166,7 @@
 							<id>5</id>
 							<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 							<textureNoFocus>-</textureNoFocus>
-							<width>499</width>
+							<width>498</width>
 							<height>70</height>
 							<textXOff>66</textXOff>
 							<textYOff>17</textYOff>

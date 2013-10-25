@@ -70,7 +70,7 @@
       <width>534</width>
       <font>Segoe Light18</font>
       <textcolor>ff6aa5cb</textcolor>
-      <label>897</label>
+      <label>924</label>
     </control>
 	
     <control>
@@ -106,23 +106,23 @@
     <control>
       <description>buttons</description>
       <type>group</type>
-      <posX>245</posX>
-      <posY>365</posY>
-      <layout>StackLayout</layout>
+      <posX>248</posX>
+      <posY>360</posY>
+      <layout>StackLayout(7, Vertical, true)</layout>	
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
+			
       <control>
         <id>2</id>
         <description>Sleep Mode</description>
         <type>button</type>
         <onup>10</onup>
         <ondown>3</ondown>
-        <width>364</width>
-        <textureFocus>settings_button_focus.png</textureFocus>
-        <textureNoFocus>-</textureNoFocus>
         <label>Sleep Mode</label>
-        <textalign>LEFT</textalign>
-        <font>font11</font>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
       </control>
 	  
       <control>
@@ -131,12 +131,11 @@
         <type>button</type>
         <onup>2</onup>
         <ondown>4</ondown>
-        <width>364</width>
-        <textureFocus>settings_button_focus.png</textureFocus>
-        <textureNoFocus>-</textureNoFocus>
         <label>Set Timer</label>
-        <textalign>LEFT</textalign>
-        <font>font11</font>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
       </control>
 	  
       <control>
@@ -145,12 +144,11 @@
         <type>button</type>
         <onup>3</onup>
         <ondown>5</ondown>
-        <width>364</width>
-        <textureFocus>settings_button_focus.png</textureFocus>
-        <textureNoFocus>-</textureNoFocus>
         <label>Set Timer by Recording Selection</label>
-        <textalign>LEFT</textalign>
-        <font>font11</font>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>						
       </control>	
 	  
       <control>
@@ -159,12 +157,11 @@
         <type>button</type>
         <onup>4</onup>
         <ondown>6</ondown>
-        <width>364</width>
-        <textureFocus>settings_button_focus.png</textureFocus>
-        <textureNoFocus>-</textureNoFocus>
         <label>Start Timer</label>
-        <textalign>LEFT</textalign>
-        <font>font11</font>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
       </control>
 	  
       <control>
@@ -173,12 +170,11 @@
         <type>button</type>
         <onup>5</onup>
         <ondown>7</ondown>
-        <width>364</width>
-        <textureFocus>settings_button_focus.png</textureFocus>
-        <textureNoFocus>-</textureNoFocus>
         <label>Pause timer</label>
-        <textalign>LEFT</textalign>
-        <font>font11</font>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
       </control>
 	  
       <control>
@@ -187,12 +183,11 @@
         <type>button</type>
         <onup>6</onup>
         <ondown>8</ondown>
-        <width>364</width>
-        <textureFocus>settings_button_focus.png</textureFocus>
-        <textureNoFocus>-</textureNoFocus>
         <label>Increment Timer</label>
-        <textalign>LEFT</textalign>
-        <font>font11</font>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
       </control>
 	  
       <control>
@@ -201,44 +196,43 @@
         <type>button</type>
         <onup>7</onup>
         <ondown>9</ondown>
-        <width>364</width>
-        <textureFocus>settings_button_focus.png</textureFocus>
-        <textureNoFocus>-</textureNoFocus>
         <label>Decrement Timer</label>
-        <textalign>LEFT</textalign>
-        <font>font11</font>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
       </control>
 	  
       <control>
         <id>9</id>
         <description>Wait until TV Recording finished</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <onup>8</onup>
         <ondown>10</ondown>
-        <width>364</width>
-        <textureFocus>selectionbar_focus_toggle on.png</textureFocus>
-        <textureNoFocus>selectionbar_unfocus_toggle on.png</textureNoFocus>
         <label>Wait until tasks finished</label>
-        <textalign>LEFT</textalign>
-        <font>font11</font>
-        <AltTextureFocus>selectionbar_focus_toggle off.png</AltTextureFocus>
-        <AltTextureNoFocus>selectionbar_unfocus_toggle off.png</AltTextureNoFocus>
+				<width>365</width>
+				<height>52</height>			
+				<textXOff>33</textXOff>
+				<textYOff>7</textYOff>
+				<textpadding>46</textpadding>				
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
       </control>
 	  
       <control>
         <id>10</id>
         <description>Volume Reduction</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <onup>9</onup>
         <ondown>2</ondown>
-        <width>364</width>
-        <textureFocus>selectionbar_focus_toggle on.png</textureFocus>
-        <textureNoFocus>selectionbar_unfocus_toggle on.png</textureNoFocus>
         <label>Volume Reduction</label>
-        <textalign>LEFT</textalign>
-        <font>font11</font>
-        <AltTextureFocus>selectionbar_focus_toggle off.png</AltTextureFocus>
-        <AltTextureNoFocus>selectionbar_unfocus_toggle off.png</AltTextureNoFocus>
+				<width>365</width>
+				<height>52</height>		
+				<textXOff>33</textXOff>
+				<textYOff>7</textYOff>
+				<textpadding>46</textpadding>				
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
       </control>
     </control>
 	

@@ -197,18 +197,14 @@
           </control>
 		  
           <control>
-            <description>Toggle button series</description>
-            <type>togglebutton</type>
+            <description>Check button series</description>
+            <type>checkbutton</type>
             <id>11</id>
             <label>3019</label>
             <onleft>10</onleft>
             <onright>10</onright>
             <onup>2</onup>
             <ondown>6</ondown>
-            <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-            <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-            <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
 			<textcolor>white</textcolor>
 			<textcolorNoFocus>ff85cfff</textcolorNoFocus>
 			<posX>69</posX>

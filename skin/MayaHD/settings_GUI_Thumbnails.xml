@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <window>
-	<id>1005</id>
-	<defaultcontrol>10</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+  <id>1005</id>
+  <defaultcontrol>10</defaultcontrol>
+  <allowoverlay>no</allowoverlay>
 	<define>#header.label:897</define>
-	<rememberLastFocusedControl>no</rememberLastFocusedControl>
+  <rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
-  
-	<import>common.settings.xml</import>
+	
 	<import>settings.menu.xml</import>	
-	<import>common.time.xml</import>  
+  <import>common.settings.xml</import>
+	<import>common.time.settings.xml</import>
 		
-		<control>
-			<type>label</type>
-			<id>1</id>
-			<posX>685</posX>
-			<posY>225</posY>
-			<label>#(L(101021))/#(L(101005))</label>
-			<textcolor>6aa5cb</textcolor>
-			<font>fontB20</font>
-			<animation effect="fade" time="150">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>
-		</control>
+	<control>
+		<type>label</type>
+		<id>1</id>
+		<posX>685</posX>
+		<posY>225</posY>
+		<label>#(L(101021))/#(L(101005))</label>
+    <font>Segoe Light20</font>
+    <textcolor>ff6aa5cb</textcolor>
+		<animation effect="fade" time="150">WindowOpen</animation>
+		<animation effect="fade" time="150">WindowClose</animation>
+	</control>
 		
 		<control>
 			<type>image</type>
@@ -31,8 +31,8 @@
 			<width>1137</width>
 			<height>197</height>
 			<texture>settings_dark_background1.png</texture>
-			<animation effect="fade" time="150">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>
+		  <animation effect="fade" time="150">WindowOpen</animation>
+		  <animation effect="fade" time="150">WindowClose</animation>
 		</control>
 		
 		<control>
@@ -43,8 +43,8 @@
 			<width>1155</width>
 			<height>280</height>
 			<texture>settings_border1.png</texture>
-			<animation effect="fade" time="150">WindowOpen</animation>
-			<animation effect="fade" time="150">WindowClose</animation>
+		  <animation effect="fade" time="150">WindowOpen</animation>
+		  <animation effect="fade" time="150">WindowClose</animation>
 		</control>
 		
 		<control>
@@ -70,7 +70,7 @@
  		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
+		
     <control>
       <description>Thumb quality</description>
       <type>spincontrol</type>
@@ -96,7 +96,7 @@
  		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
+		
     <!--Thumbs quality labels-->
     <control>
       <description>Resolution label</description>
@@ -106,12 +106,11 @@
       <posY>437</posY>
       <width>400</width>
       <label>169</label>
-			<textcolor>6aa5cb</textcolor>
-			<font>font11</font>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 			<animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
     <control>
       <description>Resolution label</description>
       <type>label</type>
@@ -120,12 +119,11 @@
       <posY>437</posY>
       <width>400</width>
       <label>#thumbResolution</label>
-			<textcolor>6aa5cb</textcolor>
-			<font>font11</font>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
     <control>
       <description>Compositing label</description>
       <type>label</type>
@@ -134,12 +132,11 @@
       <posY>469</posY>
       <width>400</width>
       <label>300146</label>
-			<textcolor>6aa5cb</textcolor>
-			<font>font11</font>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
     <control>
       <description>Compositing label</description>
       <type>label</type>
@@ -148,12 +145,11 @@
       <posY>469</posY>
       <width>400</width>
       <label>#thumbCompositing</label>
-			<textcolor>6aa5cb</textcolor>
-			<font>font11</font>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
     <control>
       <description>Interpolation label</description>
       <type>label</type>
@@ -162,12 +158,11 @@
       <posY>501</posY>
       <width>400</width>
       <label>300147</label>
-			<textcolor>6aa5cb</textcolor>
-			<font>font11</font>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
     <control>
       <description>Interpolation label</description>
       <type>label</type>
@@ -176,12 +171,11 @@
       <posY>501</posY>
       <width>400</width>
       <label>#thumbInterpolation</label>
-			<textcolor>6aa5cb</textcolor>
-			<font>font11</font>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
     <control>
       <description>Smoothing label</description>
       <type>label</type>
@@ -190,12 +184,11 @@
       <posY>533</posY>
       <width>400</width>
       <label>300148</label>
-			<textcolor>6aa5cb</textcolor>
-			<font>font11</font>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 			<animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
     <control>
       <description>Smoothing label</description>
       <type>label</type>
@@ -204,12 +197,11 @@
       <posY>533</posY>
       <width>400</width>
       <label>#thumbSmoothing</label>
-			<textcolor>6aa5cb</textcolor>
-			<font>font11</font>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
     <control>
       <description>Screen type label</description>
       <type>label</type>
@@ -218,12 +210,11 @@
       <posY>399</posY>
       <width>600</width>
       <label>300149</label>
-      <font>fontB12</font>
-    	<textcolor>6aa5cb</textcolor>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
     <control>
       <description>Screen label</description>
       <type>label</type>
@@ -232,8 +223,8 @@
       <posY>399</posY>
       <width>600</width>
       <label>#thumbScreen</label>
-      <font>fontB12</font>
-    	<textcolor>6aa5cb</textcolor>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
@@ -259,12 +250,11 @@
       <posY>638</posY>
       <width>200</width>
       <label>249</label>
-      <font>fontB12</font>
-  		<textcolor>6aa5cb</textcolor>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
   	<control Style="SettingsCheckButtonMedium">
       <description>Create music thumb button</description>
       <type>checkbutton</type>
@@ -279,7 +269,6 @@
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
   	<control Style="SettingsButton">
       <description>Delete music thumbs button</description>
       <type>button</type>
@@ -300,7 +289,7 @@
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
+		
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -322,12 +311,12 @@
       <posY>638</posY>
       <width>250</width>
       <label>300152</label>
-      <font>fontB12</font>
-  		<textcolor>6aa5cb</textcolor>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
+		
   	<control Style="SettingsCheckButtonMedium">
       <description>Create pictures thumbs button</description>
       <type>checkbutton</type>
@@ -342,7 +331,6 @@
  		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
   	<control Style="SettingsButton">
       <description>Delete pictures thumbs button</description>
       <type>button</type>
@@ -363,7 +351,7 @@
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
+		
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -385,12 +373,12 @@
       <posY>806</posY>
       <width>250</width>
       <label>300155</label>
-      <font>fontB12</font>
-  		<textcolor>6aa5cb</textcolor>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
+		
   	<control Style="SettingsCheckButtonMedium">
       <description>Create video thumbs button</description>
       <type>checkbutton</type>
@@ -419,7 +407,6 @@
  		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
   	<control Style="SettingsButton">
       <description>Delete video thumbs button</description>
       <type>button</type>
@@ -440,7 +427,7 @@
  		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
+		
     <!--Videos Thumb columns rows-->
     <control>
       <description>Videos section preview label</description>
@@ -450,12 +437,12 @@
       <posY>806</posY>
       <width>400</width>
       <label>300159</label>
-      <font>fontB12</font>
-  		<textcolor>6aa5cb</textcolor>
+			<font>Segoe Light12</font>
+			<textcolor>ff6aa5cb</textcolor>
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
+		
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -479,7 +466,6 @@
 		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
     <control>
       <description>Columns spincontrol</description>
       <type>spincontrol</type>
@@ -505,7 +491,7 @@
  		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
+		
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -529,7 +515,7 @@
  		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
+		
     <control>
       <description>Rows spincontrol</description>
       <type>spincontrol</type>
@@ -555,6 +541,6 @@
  		  <animation effect="fade" time="150">WindowOpen</animation>
 		  <animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
+		
   </controls>
 </window>

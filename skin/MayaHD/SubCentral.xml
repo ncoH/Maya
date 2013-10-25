@@ -4,7 +4,7 @@
   <defaultcontrol>202</defaultcontrol>
   <allowoverlay>player.hasmedia+!control.isvisible(103)</allowoverlay>
   <define>#header.label:#SubCentral.Header.Label</define>
-  <define>#header.background:hover_extensions.png</define>
+  <define>#header.background:hover_subcentral.png</define>
   <controls>
   
     <control>
@@ -123,15 +123,14 @@
     </control>
 	
     <control>
-      <description>action menu</description>
-      <type>actiongroup</type>
-      <posX>245</posX>
-      <posY>365</posY>
-      <control>
-        <type>group</type>
-        <posX>245</posX>
-        <posY>365</posY>
-        <layout>StackLayout</layout>
+      <description>buttons</description>
+      <type>group</type>
+      <posX>248</posX>
+      <posY>360</posY>
+			<layout>StackLayout(7, Vertical, true)</layout>
+      <animation effect="Fade" time="250">WindowOpen</animation>
+      <animation effect="Fade" time="250">WindowClose</animation>		
+				
         <control>
           <id>202</id>
           <description>Cancel Button</description>
@@ -140,13 +139,13 @@
           <onright>912</onright>
           <onup>206</onup>
           <ondown>204</ondown>
-          <posX>210</posX>
-          <posY>333</posY>
-          <width>364</width>
-          <font>font12</font>
-          <textureFocus>settings_button_focus.png</textureFocus>
           <label>#SubCentral.Back.Label</label>
+					<width>365</width>
+					<height>52</height>						
+					<textureFocus>settings_button_focus.png</textureFocus>
+					<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
         </control>
+				
         <control>
           <id>204</id>
           <description>Modify Search Button</description>
@@ -156,11 +155,13 @@
           <onup>202</onup>
           <ondown>203</ondown>
           <visible />
-          <width>364</width>
-          <font>font12</font>
-          <textureFocus>settings_button_focus.png</textureFocus>
           <label>#SubCentral.ModifySearch.Label</label>
+					<width>365</width>
+					<height>52</height>						
+					<textureFocus>settings_button_focus.png</textureFocus>
+					<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
         </control>
+				
         <control>
           <id>203</id>
           <description>Languages Button</description>
@@ -170,13 +171,13 @@
           <onup>204</onup>
           <ondown>205</ondown>
           <visible />
-          <posX>915</posX>
-          <posY>385</posY>
-          <width>364</width>
-          <font>font12</font>
-          <textureFocus>settings_button_focus.png</textureFocus>
           <label>#SubCentral.Languages.Label</label>
+					<width>365</width>
+					<height>52</height>						
+					<textureFocus>settings_button_focus.png</textureFocus>
+					<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
         </control>
+				
         <control>
           <id>205</id>
           <description>Sort</description>
@@ -186,13 +187,13 @@
           <onup>203</onup>
           <ondown>206</ondown>
           <visible />
-          <posX>913</posX>
-          <posY>331</posY>
-          <width>364</width>
-          <font>font12</font>
-          <textureFocus>settings_button_focus.png</textureFocus>
           <label>#SubCentral.Sort.Label</label>
+					<width>365</width>
+					<height>52</height>						
+					<textureFocus>settings_button_focus.png</textureFocus>
+					<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
         </control>
+				
         <control>
           <id>206</id>
           <description>Delete Subtitles Button</description>
@@ -202,12 +203,13 @@
           <onup>205</onup>
           <ondown>202</ondown>
           <visible />
-          <width>364</width>
-          <font>font12</font>
-          <textureFocus>settings_button_focus.png</textureFocus>
           <label>#SubCentral.DeleteSubtitles.Label</label>
+					<width>365</width>
+					<height>52</height>						
+					<textureFocus>settings_button_focus.png</textureFocus>
+					<textureNoFocus>settings_button_nofocus.png</textureNoFocus>						
         </control>
-    </control>
+				
  </control>
 	
   </controls>

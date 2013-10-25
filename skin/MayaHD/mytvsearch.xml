@@ -16,7 +16,7 @@
       <description>Header label</description>
       <posX>185</posX>
       <posY>28</posY>
-      <width>500</width>
+      <width>650</width>
       <label>#header.label</label>	  
       <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
@@ -83,6 +83,7 @@
       <layout>StackLayout</layout>
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
+			
       <control>
         <description>Sort Genres</description>
         <type>sortbutton</type>
@@ -92,6 +93,7 @@
         <textalign>right</textalign>
         <offsetSortButtonX>29</offsetSortButtonX>
       </control>
+			
       <control>
         <description>View by Title/Genre</description>
         <id>20</id>
@@ -100,7 +102,9 @@
         <onup>2</onup>
         <ondown>7</ondown>
         <textalign>right</textalign>
+				<width>335</width>					
       </control>
+			
       <control>
         <description>Starts with</description>
         <type>selectbutton</type>
@@ -109,7 +113,9 @@
         <onup>20</onup>
         <ondown>19</ondown>
         <textalign>right</textalign>
+				<width>335</width>					
       </control>
+			
       <control>
         <description>sms input</description>
         <type>button</type>
@@ -118,7 +124,9 @@
         <onup>7</onup>
         <ondown>21</ondown>
         <textalign>right</textalign>
+				<width>335</width>					
       </control>
+			
       <control>
         <description>Search by Description</description>
         <type>button</type>
@@ -127,7 +135,9 @@
         <onup>19</onup>
         <ondown>8</ondown>
         <textalign>right</textalign>
+				<width>335</width>					
       </control>
+			
       <control>
         <description>Title button</description>
         <type>selectbutton</type>
@@ -136,7 +146,9 @@
         <onup>21</onup>
         <ondown>9</ondown>
         <textalign>right</textalign>
+				<width>335</width>					
       </control>
+			
       <control>
         <description>Episode button</description>
         <type>selectbutton</type>
@@ -145,6 +157,7 @@
         <onup>8</onup>
         <ondown>2</ondown>
         <textalign>right</textalign>
+				<width>335</width>					
       </control>
     </control>
 	

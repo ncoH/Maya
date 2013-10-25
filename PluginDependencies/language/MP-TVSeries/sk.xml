@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--plural-->
+  <string name="Season" Original="Season">Sezóna</string>
+  <string name="Episode" Original="Episode">Epizóda</string>
+  <string name="Confirm" Original="Confirm">Potvrdiť</string>
+  <string name="Completed" Original="Completed">Hotovo</string>
+  <string name="No_subtitles_found" Original="No subtitles found">Titulky sa nenašli</string>
+  <string name="Yes" Original="Yes">Áno</string>
+  <string name="No" Original="No">Nie</string>
+  <string name="Unknown" Original="Unknown">Neznáme</string>
+  <string name="Download" Original="Download">Sťahovanie</string>
+  <string name="Actions" Original="Actions">Akcie</string>
+  <string name="Genres" Original="Genres">Žánry</string>
+  <string name="All" Original="All">Všetky</string>
+  <string name="ChangeView" Original="Change View">Zmeniť zobrazenie</string>
+  <string name="AddToPlaylist" Original="Add To Playlist">Pridať do zoznamu</string>
+  <string name="SortByStrings" Original="SortByStrings">the|a|an</string>
+  <!--Additional ones should be added for other languages, dont translate existing ones as they will be used as well-->
+  <string name="ButtonAutoPlay" Original="Auto Play">Automatické prehrávanie</string>
+  <string name="FanArtFilterAll" Original="All">Všetky</string>
+  <string name="LabelChosen" Original="Chosen">Predvolené</string>
+  <!--Rate Descriptions - 5 Stars-->
+  <string name="RateFiveStarOne" Original="Terrible">Otrasné</string>
+  <string name="RateFiveStarTwo" Original="Mediocre">Slabé</string>
+  <string name="RateFiveStarThree" Original="Good">Slušné</string>
+  <string name="RateFiveStarFour" Original="Superb">Skvelé</string>
+  <string name="RateFiveStarFive" Original="Perfect">Perfektné</string>
+  <!--Rate Descriptions - 10 Stars-->
+  <string name="RateTenStarTwo" Original="Terrible">Otrasné</string>
+  <string name="RateTenStarFive" Original="Mediocre">Slabé</string>
+  <string name="RateTenStarSeven" Original="Good">Slušné</string>
+  <string name="RateTenStarNine" Original="Superb">Skvelé</string>
+  <string name="RateTenStarTen" Original="Perfect">Perfektné</string>
+  <string name="NoPlaylistsFound" Original="No Playlists found in:">Žiadny zoznam nebol nájdený v:</string>
+  <string name="Subtitles" Original="Subtitles">Titulky</string>
+  <string name="Actors" Original="Actors">Herci</string>
+  <string name="Certification" Original="Certification">Klasifikácia</string>
+  <string name="Director" Original="Director">Režisér</string>
+  <string name="Directors" Original="Directors">Režiséri</string>
+  <string name="Genre" Original="Genre">Žáner</string>
+  <string name="MediaInfo" Original="Media Info">Media Info</string>
+  <string name="Rated" Original="Rated">Klasifikácia</string>
+  <string name="Rating" Original="Rating">Hodnotenie</string>
+  <string name="Runtime" Original="Runtime">Dĺžka</string>
+  <string name="Watched" Original="Watched">Videné</string>
+  <string name="Writer" Original="Writer">Scénárista</string>
+  <string name="Writers" Original="Writers">Scénáristi</string>
+  <string name="Playlist" Original="Playlist">Zoznam skladieb</string>
+  <string name="ErrorClear" Original="Error">Chyba</string>
+  <string name="SortBy" Original="Sort By">Zoradiť podľa</string>
+  <string name="Title" Original="Title">Titul</string>
+  <string name="Votes" Original="votes">Hlasov</string>
+  <string name="Timeout" Original="Timeout">Timeout</string>
+  <string name="WatchList" Original="WatchList">Zoznam</string>
+  <string name="OK" Original="OK">OK</string>
+  <string name="Cancel" Original="Cancel">Zrušiť</string>
+  <string name="Update" Original="Update">Aktualizovať</string>
+  <string name="Warning" Original="Warning">Varovanie</string>
+</resources>

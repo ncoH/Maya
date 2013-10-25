@@ -291,44 +291,17 @@
 	</control>
 	
     <control>
-      <description>Format Static</description>
-      <type>label</type>
-      <label>Format:</label>
-      <textcolor>85cffe</textcolor>
-      <id>0</id>
-      <posX>188</posX>
-      <posY>703</posY>
-      <width>358</width>
-      <visible>facadeview.list+!control.hasthumb(51)</visible>	  
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-    </control>
-	
-    <control>
       <description>Format</description>
       <type>label</type>
       <label>
       </label>
       <id>47</id>
-      <posX>188</posX>
-      <posY>738</posY>
-      <width>358</width>
+      <posX>197</posX>
+      <posY>778</posY>
+      <width>350</width>
+			<align>center</align>			
       <label>#RadioTime.Selected.Format</label>
-      <visible>facadeview.list+!control.hasthumb(51)</visible>	  
-      <animation effect="fade" time="100">WindowOpen</animation>
-      <animation effect="fade" time="100">WindowClose</animation>
-    </control>
-	
-    <control>
-      <description>Description Static</description>
-      <type>label</type>
-      <label>922</label>
-      <textcolor>85cffe</textcolor>
-      <id>0</id>
-      <posX>188</posX>
-      <posY>787</posY>
-      <width>358</width>
-      <visible>facadeview.list+!control.hasthumb(51)</visible>	  
+      <visible>facadeview.list+Control.HasFocus(50)</visible>	  
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
@@ -337,15 +310,40 @@
       <description>Description</description>
       <type>textbox</type>
       <id>47</id>
-      <posX>188</posX>
-      <posY>822</posY>
-      <width>358</width>
+      <posX>197</posX>
+      <posY>816</posY>
+      <width>350</width>
+			<align>center</align>			
       <label>#RadioTime.Selected.Subtext</label>
-      <visible>facadeview.list+!control.hasthumb(51)</visible>	  
+      <visible>facadeview.list+Control.HasFocus(50)</visible>	  
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
-		
+
+		<control>
+			<id>81</id>
+			<description>existent rating2</description>
+			<type>imagelist</type>
+			<visible>no</visible>
+			<posX>210</posX>
+			<posY>720</posY>
+			<width>315</width>
+			<height>29</height>
+			<align>left</align>
+			<percentage>#RadioTime.Selected.Reliability</percentage>
+			<imagesToDraw>10</imagesToDraw>
+			<orientation>horizontal</orientation>
+			<textureWidth>32</textureWidth>
+			<textureHeight>27</textureHeight>
+			<subitems>
+			<subitem>starblue.png</subitem>
+			<subitem>starwhite.png</subitem>
+			</subitems>
+			<visible>facadeview.list+!string.equals(#RadioTime.Selected.Reliability,0)+Control.HasFocus(50)</visible>
+			<animation effect="fade" time="250">WindowOpen</animation>
+			<animation effect="fade" time="250">WindowClose</animation>
+		</control>
+	
     <control>
       <id>0</id>
       <type>image</type>
@@ -370,7 +368,7 @@
       <align>center</align>
       <valign>middle</valign>
       <texture>#selectedthumb</texture>
-	  <visible>facadeview.list+Control.IsVisible(50)</visible>	  
+			<visible>facadeview.list+Control.IsVisible(50)</visible>	  
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
@@ -383,7 +381,7 @@
       <width>491</width>
       <height>492</height>
       <texture>blackborders_music.png</texture>
-	  <visible>facadeview.list+Control.IsVisible(50)</visible>
+			<visible>facadeview.list+Control.IsVisible(50)</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
     </control>

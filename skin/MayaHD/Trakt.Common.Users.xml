@@ -1,0 +1,156 @@
+<window>
+  <controls>
+	
+ 		<control>
+			<description>User Label</description>
+			<type>fadelabel</type>
+			<label>#Trakt.Translation.User.Label</label>
+    	<posX>780</posX>
+    	<posY>260</posY>
+    	<width>240</width>
+    	<align>left</align>
+    	<font>Segoe Light18</font>
+    	<textcolor>6aa5cb</textcolor>
+			<visible>!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+		
+		<control>
+			<description>User</description>
+			<id>0</id>
+			<type>fadelabel</type>
+			<label>#Trakt.User.Username</label>
+    	<posX>1050</posX>
+    	<posY>260</posY>
+    	<width>350</width>
+    	<align>left</align>
+    	<font>Segoe Light18</font>
+    	<textcolor>ffffff</textcolor>
+			<visible>!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+
+		<control>
+			<description>Fullname Label</description>
+			<id>0</id>
+			<type>fadelabel</type>
+			<label>#Trakt.Translation.FullName.Label</label>
+    	<posX>780</posX>
+    	<posY>315</posY>
+    	<width>240</width>
+    	<align>left</align>
+    	<font>Segoe Light18</font>
+    	<textcolor>6aa5cb</textcolor>
+			<visible>!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+		
+		<control>
+			<description>Fullname</description>
+			<id>0</id>
+			<type>fadelabel</type>
+			<label>#Trakt.User.FullName</label>
+    	<posX>1050</posX>
+    	<posY>315</posY>
+    	<width>350</width>
+    	<align>left</align>
+    	<font>Segoe Light18</font>
+    	<textcolor>ffffff</textcolor>
+			<visible>!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>            
+
+		<control>
+			<description>Location Label</description>
+			<type>fadelabel</type>
+			<label>#Trakt.Translation.Location.Label</label>
+			<id>0</id>
+    	<posX>780</posX>
+    	<posY>370</posY>
+    	<width>240</width>
+    	<align>left</align>
+    	<font>Segoe Light18</font>
+    	<textcolor>6aa5cb</textcolor>
+			<visible>!string.equals(#Trakt.User.JoinDate,)+!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+		
+		<control>
+			<description>Location</description>
+			<id>0</id>
+			<type>fadelabel</type>
+			<label>#Trakt.User.Location</label>
+    	<posX>1050</posX>
+    	<posY>370</posY>
+    	<width>350</width>
+    	<align>left</align>
+    	<font>Segoe Light18</font>
+    	<textcolor>ffffff</textcolor>
+			<visible>!string.equals(#Trakt.User.JoinDate,)+!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+
+		<control>
+			<description>Gender Label</description>
+			<id>0</id>
+			<type>fadelabel</type>
+			<label>#Trakt.Translation.Gender.Label</label>
+    	<posX>780</posX>
+    	<posY>425</posY>
+    	<width>240</width>
+    	<align>left</align>
+    	<font>Segoe Light18</font>
+    	<textcolor>6aa5cb</textcolor>
+			<visible>!string.equals(#Trakt.User.JoinDate,)+!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+		
+		<control>
+			<description>Gender</description>
+			<id>0</id>
+			<type>fadelabel</type>
+			<label>#Trakt.User.Gender</label>
+    	<posX>1050</posX>
+    	<posY>425</posY>
+    	<width>350</width>
+    	<align>left</align>
+    	<font>Segoe Light18</font>
+    	<textcolor>ffffff</textcolor>
+			<visible>!string.equals(#Trakt.User.JoinDate,)+!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+
+		<control>
+			<description>Summary</description>
+			<type>textboxscrollup</type>
+			<id>0</id>
+			<posX>780</posX>
+			<posY>500</posY>
+			<width>931</width>
+			<height>150</height>
+			<seperator>-----------------------------------------------------------------------------------</seperator>
+			<label>#Trakt.User.About</label>
+			<visible>!string.equals(#Trakt.User.About,)+!string.equals(#Trakt.User.About,N/A)+!string.equals(#Trakt.View.Level,WatchedHistory)</visible>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+		</control>
+		
+  </controls>
+</window>

@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <string name="Series" Original="Series">Þáttaraðir</string>
+  <string name="Series_Plural" Original="Series (Plr)">Þáttaraðir</string>
+  <!--plural-->
+  <string name="Season" Original="Season">Þáttaröð</string>
+  <string name="Seasons" Original="Seasons">Þáttaraðir</string>
+  <string name="Episode" Original="Episode">Þáttanúmer</string>
+  <string name="Episodes" Original="Episodes">Þættir</string>
+  <string name="Retrieve_Subtitle" Original="Retrieve Subtitle">Sækja texta</string>
+  <string name="Load_via_Torrent" Original="Load via Torrent">Sækja með Torrent</string>
+  <string name="Mark_all_as_watched" Original="Mark all as watched">Merkja allt sem séð</string>
+  <string name="Mark_all_as_unwatched" Original="Mark all as unwatched">Merkja allt sem óséð</string>
+  <string name="Hide" Original="Hide">Fela</string>
+  <string name="Delete" Original="Delete">Eyða</string>
+  <string name="Remove_series_from_Favourites" Original="Remove series from Favourites">Eyða úr uppáhaldi</string>
+  <string name="Add_series_to_Favourites" Original="Add series to Favourites">Bæta við í uppáhald</string>
+  <string name="In_Progress_with_Barracks" Original="(In Progress)">(Í vinnslu)</string>
+  <string name="on" Original="on">á</string>
+  <string name="off" Original="off">af</string>
+  <string name="Play_Random_Episode" Original="Play Random Episode">Spila sjónvarpsþátt af handahófi</string>
+  <string name="Delete_that_series" Original="Delete that series?">Eyða þessari þáttaröð?</string>
+  <string name="Delete_that_season" Original="Delete that season?">Eyða þessari þáttaröð?</string>
+  <string name="Delete_that_episode" Original="Delete that episode?">Eyða þessum þætti?</string>
+  <string name="Confirm" Original="Confirm">Staðfesta</string>
+  <string name="Completed" Original="Completed">Búið</string>
+  <string name="No_subtitles_found" Original="No subtitles found">Enginn texti fannst</string>
+  <string name="CFS_No_Results_Found" Original="No Results Found!">Ekkert fannst</string>
+  <string name="Yes" Original="Yes">Já</string>
+  <string name="No" Original="No">Nei</string>
+  <string name="Error" Original="#Error">#Villa</string>
+  <string name="No_items" Original="No items!">Engin gögn!</string>
+  <string name="Unknown" Original="Unknown">óþekkt</string>
+  <string name="Download" Original="Download">Sækja</string>
+  <string name="Actions" Original="Actions">Aðgerðir</string>
+  <string name="Options" Original="Options">Valmöguleikar</string>
+  <string name="Genres" Original="Genres">Flokkar</string>
+  <string name="All" Original="All">Allir</string>
+  <string name="Latest" Original="Latest Aired">Síðast sjónvarpað</string>
+  <string name="Channels" Original="Channels">Sjónvarpsrásir</string>
+  <string name="Unwatched" Original="Unwatched">Óséð</string>
+  <string name="Favourites" Original="Favourites">Uppáhald</string>
+  <string name="RateSeries" Original="Rate this Series">Gefa þessari þáttaröð einkunn</string>
+  <string name="RateEpisode" Original="Rate this Episode">Gefa þessum þætti einkunn</string>
+  <string name="DontAskToRate" Original="Don't ask me to rate again">Ekki biðja mig um að gefa einkunnir aftur</string>
+  <string name="RatingStars" Original="Stars">Stjörnur</string>
+  <string name="ChangeView" Original="Change View">Breyta röðun</string>
+  <string name="FanArtLocal" Original="Local">Staðbundið</string>
+  <string name="CFS_Search_Again" Original="Search again">Leita aftur</string>
+  <string name="CFS_Select_Matching_Subitle_File" Original="Select Matching Subtitle File">Veljið samsvarandi textaskrá</string>
+  <string name="CFS_Subtitle_Episode" Original="Choose item">Þáttur:</string>
+  <string name="CFS_Matching_Subtitles" Original="Matching Subtitles">Samsvarandi textar</string>
+  <string name="CFS_Choose_Correct_Series" Original="Choose Correct Series">Veljið rétta þáttaröð</string>
+  <string name="CFS_Available_Series" Original="Available Series">Mögulegar þáttaraðir</string>
+  <string name="CFS_Select_Correct_Subtitle_Version" Original="Select desired subtitles version">Veljið samsvarandi textaútgáfu</string>
+  <string name="CFS_Select_Version" Original="Version:">Útgáfa:</string>
+  <string name="CFS_Choose_Correct_Episode" Original="Choose Correct Episode">Veljið réttan þátt</string>
+  <string name="CFS_Choose_Search_Site" Original="Choose search site:">Veljið leitarsíðu:</string>
+  <string name="CFS_List_Search_Site" Original="List of search sites:">Yfirlit yfir leitarsíður:</string>
+  <string name="CFS_Found_Torrents" Original="Found torrents:">Fann torrent:</string>
+  <string name="CFS_Skip_Never_Ask_Again" Original="Skip / Never Ask Again">Sleppa / ekki spyrja aftur</string>
+  <string name="RecentlyAdded" Original="Recently Added">Nýlega bætt við</string>
+  <string name="TVDB_ERROR_TITLE" Original="theTVDB Error">theTVDB villa</string>
+  <string name="TVDB_INFO_TITLE" Original="theTVDB">theTVDB</string>
+  <string name="ChangeLayout" Original="Change Layout">Breyta útliti</string>
+  <string name="FanartDisableLabel" Original="Disabled">Óvirkt</string>
+  <!--Additional ones should be added for other languages, dont translate existing ones as they will be used as well-->
+  <string name="LayoutList" Original="List">Listi</string>
+  <string name="LayoutSmallIcons" Original="Small Icons">Lítil íkon</string>
+  <string name="ButtonAutoPlay" Original="Auto Play">Sjálfvirk spilun</string>
+  <string name="ButtonChangeLayout" Original="Change Layout">Skipta um útlit</string>
+  <string name="ButtonOptions" Original="Options">Valmöguleikar</string>
+  <string name="FanArtFilter" Original="Filter">Sía</string>
+  <string name="FanArtFilterAll" Original="All">Allir</string>
+  <string name="LabelResolution" Original="Resolution">Upplausn</string>
+  <string name="LabelChosen" Original="Chosen">Sjálfgefið</string>
+  <string name="LabelDisabled" Original="Disabled">Óvirkt</string>
+  <string name="DeleteFromDisk" Original="Delete from Disk">Eyða af diski</string>
+  <string name="DeleteFromDatabase" Original="Delete from Database">Eyða úr gagnagrunni</string>
+  <string name="DeleteFromFileDatabase" Original="Delete from Disk and Database">Eyða af diski og úr gagnagrunni</string>
+  <!--Rate Descriptions - 5 Stars-->
+  <string name="RateFiveStarOne" Original="Terrible">Léleg</string>
+  <string name="RateFiveStarTwo" Original="Mediocre">Í lagi</string>
+  <string name="RateFiveStarThree" Original="Good">Góð</string>
+  <string name="RateFiveStarFour" Original="Superb">Mjög góð</string>
+  <string name="RateFiveStarFive" Original="Perfect">Frábær</string>
+  <!--Rate Descriptions - 10 Stars-->
+  <string name="RateTenStarTwo" Original="Terrible">Léleg</string>
+  <string name="RateTenStarFour" Original="Poor">Léleg</string>
+  <string name="RateTenStarFive" Original="Mediocre">Í lagi</string>
+  <string name="RateTenStarSeven" Original="Good">Góð</string>
+  <string name="RateTenStarNine" Original="Superb">Mjög góð</string>
+  <string name="RateTenStarTen" Original="Perfect">Frábær</string>
+  <string name="FanartIntervalFiveSeconds" Original="5 Seconds">5 sekúndur</string>
+  <string name="FanartIntervalTenSeconds" Original="10 Seconds">10 sekúndur</string>
+  <string name="FanartIntervalFifteenSeconds" Original="15 Seconds">15 sekúndur</string>
+  <string name="FanartIntervalThirtySeconds" Original="30 Seconds">30 sekúndur</string>
+  <string name="FanartIntervalFortyFiveSeconds" Original="45 Seconds">45 sekúndur</string>
+  <string name="FanartIntervalSixtySeconds" Original="60 Seconds">60 sekúndur</string>
+  <string name="PinCode" Original="Pin Code">Pin númer</string>
+  <string name="PinCodeIncorrectLine1" Original="The entered pin code is incorrect">Innslegið PIN númer er rangt</string>
+  <string name="PinCodeIncorrectLine2" Original="Press OK to try again">Ýttu á Í lagi til að reyna aftur</string>
+  <string name="PinCodeMessageIncorrect" Original="Pin Incorrect">Pin rangt</string>
+  <string name="Continuing" Original="Continuing Series">Áframhaldandi þættir</string>
+  <string name="Ended" Original="Ended Series">Hættir þættir</string>
+  <string name="HighDefinition" Original="High Definition">Háskerpa</string>
+  <string name="Subtitles" Original="Subtitles">Textar</string>
+  <string name="Actors" Original="Actors">Leikarar</string>
+  <string name="KidsSeries" Original="Kids Series">Barnaþættir</string>
+  <string name="Aired" Original="Aired">Sjónvarpað</string>
+  <string name="Cast" Original="Cast">Leikhópur</string>
+  <string name="Certification" Original="Certification">Aldurstakmark</string>
+  <string name="Director" Original="Director">Leikstjórn</string>
+  <string name="Directors" Original="Directors">Leikstjórn</string>
+  <string name="FileSize" Original="File Size">Stærð skráar</string>
+  <string name="FirstAired" Original="First Aired">Fyrst sjónvarpað</string>
+  <string name="Genre" Original="Genre">Flokkur</string>
+  <string name="GuestStar" Original="Guest Star">Gestaleikari</string>
+  <string name="GuestStars" Original="Guest Stars">Gestaleikarar</string>
+  <string name="Minutes" Original="Minutes">mínútur</string>
+  <string name="Rated" Original="Rated">Einkunn</string>
+  <string name="Rating" Original="Rating">Einkunnagjöf</string>
+  <string name="Runtime" Original="Runtime">Sýningart:</string>
+  <string name="Watched" Original="Watched">Séð</string>
+  <string name="Writer" Original="Writer">Handrit</string>
+  <string name="Writers" Original="Writers">Handrit</string>
+  <string name="DeleteSubtitles" Original="Delete Subtitles">Eyða textum</string>
+  <string name="UnableToDeleteSubtitles" Original="Unable to Delete Subtitles">Get ekki eytt textaskrám</string>
+  <string name="ErrorClear" Original="Error">Villa</string>
+  <string name="SortBy" Original="Sort By">Röðun</string>
+  <string name="Title" Original="Title">Heiti</string>
+  <string name="Votes" Original="votes">atkvæði</string>
+  <string name="Calendar" Original="Calendar">Dagatal</string>
+  <string name="OK" Original="OK">Í lagi</string>
+  <string name="Cancel" Original="Cancel">Hætta við</string>
+  <string name="Update" Original="Update">Uppfæra</string>
+  <string name="Warning" Original="Warning">Aðvörun</string>
+</resources>

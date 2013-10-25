@@ -16,7 +16,7 @@
       <description>Header label</description>
       <posX>185</posX>
       <posY>28</posY>
-      <width>500</width>
+      <width>600</width>
       <label>#header.label</label>	  
       <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
@@ -32,6 +32,7 @@
       <animation effect="fade" time="250">WindowClose</animation>
       <posX>99</posX>
       <posY>170</posY>
+			
       <control>
         <description>Record</description>
         <type>button</type>
@@ -245,7 +246,7 @@
 	
     <control>
       <description>monday</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>3</id>
       <posX>674</posX>
       <posY>507</posY>
@@ -263,7 +264,7 @@
 	
     <control>
       <description>tuesday</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>4</id>
       <posX>819</posX>
       <posY>507</posY>
@@ -281,7 +282,7 @@
 	
     <control>
       <description>wednesday</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>5</id>
       <posX>964</posX>
       <posY>507</posY>
@@ -299,7 +300,7 @@
 	
     <control>
       <description>thursday</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>6</id>
       <posX>1108</posX>
       <posY>507</posY>
@@ -316,7 +317,7 @@
 	
     <control>
       <description>friday</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>7</id>
       <posX>1253</posX>
       <posY>507</posY>
@@ -333,7 +334,7 @@
 	
     <control>
       <description>saturday</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>8</id>
       <posX>1398</posX>
       <posY>507</posY>
@@ -350,7 +351,7 @@
 	
     <control>
       <description>sunday</description>
-      <type>togglebutton</type>
+      <type>checkbutton</type>
       <id>9</id>
       <posX>1543</posX>
       <posY>507</posY>

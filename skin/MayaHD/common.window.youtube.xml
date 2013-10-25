@@ -40,11 +40,10 @@
       <type>fadelabel</type>
       <id>1</id>
       <posX>778</posX>
-      <posY>199</posY>
+      <posY>169</posY>
       <width>931</width>
       <label>#selecteditem</label>
       <font>Segoe Light22</font>
-      <valign>middle</valign>
       <visible>[!facadeview.filmstrip+!facadeview.smallicons+!facadeview.largeicons]+!control.isvisible(47)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
@@ -69,7 +68,7 @@
       <type>fadelabel</type>
       <id>1</id>
       <posX>0</posX>
-      <posY>185</posY>
+      <posY>169</posY>
       <width>1920</width>
       <label>#selecteditem</label>
       <font>Segoe Light22</font>
@@ -77,7 +76,6 @@
       <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons]+!control.isvisible(47)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
-      <valign>middle</valign>
     </control>
 
     <!-- 	<control>
@@ -108,5 +106,6 @@
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
     </control>
+		
   </controls>
 </window>

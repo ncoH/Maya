@@ -46,6 +46,7 @@
       <posX>281</posX>
       <posY>253</posY>
       <width>394</width>
+			
       <control>
         <description>Rip Disc</description>
         <type>button</type>
@@ -56,15 +57,14 @@
         <onup>17</onup>
         <ondown>4</ondown>
         <textalign>right</textalign>
-        <width>393</width>
-        <textXOff>33</textXOff>
-        <height>71</height>
-        <textYOff>16</textYOff>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
-        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-        <animation effect="Fade" time="100">WindowOpen</animation>
-        <animation effect="Fade" time="100">WindowClose</animation>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>				
       </control>
+			
       <control>
         <description>About</description>
         <type>button</type>
@@ -75,65 +75,63 @@
         <onup>3</onup>
         <ondown>10</ondown>
         <textalign>right</textalign>
-        <width>393</width>
-        <textXOff>33</textXOff>
-        <height>71</height>
-        <textYOff>16</textYOff>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
-        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-        <animation effect="Fade" time="100">WindowOpen</animation>
-        <animation effect="Fade" time="100">WindowClose</animation>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>				
       </control>
+			
       <control>
         <description>hidden</description>
         <type>button</type>
         <id>100</id>
         <label>
         </label>
-        <visible>no</visible>
+        <visible>no</visible>		
       </control>
+			
       <control>
         <description>art</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>10</id>
         <label>Get Cover Art</label>
         <onleft>10</onleft>
         <onright>10</onright>
         <onup>4</onup>
         <ondown>19</ondown>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
         <textalign>right</textalign>
-        <AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
-        <AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
-        <textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
-        <textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
-        <width>393</width>
-        <height>71</height>
-        <textYOff>16</textYOff>
-        <textXOff>33</textXOff>
-        <animation effect="Fade" time="100">WindowOpen</animation>
-        <animation effect="Fade" time="100">WindowClose</animation>
+				<markalign>left</markalign>
+				<markvalign>middle</markvalign>					
+        <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>						
       </control>
+			
       <control>
         <description>eject</description>
-        <type>togglebutton</type>
+        <type>checkbutton</type>
         <id>19</id>
         <label>Eject Disc</label>
         <onleft>19</onleft>
         <onright>19</onright>
         <onup>10</onup>
         <ondown>9</ondown>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
         <textalign>right</textalign>
-        <AltTextureFocus>listcontrol_item_selected_small_toggleoff.png</AltTextureFocus>
-        <AltTextureNoFocus>listcontrol_item_small_toggleoff.png</AltTextureNoFocus>
-        <textureFocus>listcontrol_item_selected_small_toggleon.png</textureFocus>
-        <textureNoFocus>listcontrol_item_small_toggleon.png</textureNoFocus>
-        <width>393</width>
-        <height>71</height>
-        <textYOff>16</textYOff>
-        <textXOff>33</textXOff>
-        <animation effect="Fade" time="100">WindowOpen</animation>
-        <animation effect="Fade" time="100">WindowClose</animation>
+				<markalign>left</markalign>
+				<markvalign>middle</markvalign>					
+        <textureFocus>listcontrol_item_selected_small.png</textureFocus>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>							
       </control>
+			
       <control>
         <description>target</description>
         <type>button</type>
@@ -144,15 +142,14 @@
         <onup>19</onup>
         <ondown>14</ondown>
         <textalign>right</textalign>
-        <width>393</width>
-        <textXOff>33</textXOff>
-        <height>71</height>
-        <textYOff>16</textYOff>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
-        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-        <animation effect="Fade" time="100">WindowOpen</animation>
-        <animation effect="Fade" time="100">WindowClose</animation>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>				
       </control>
+			
       <control>
         <description>format</description>
         <type>button</type>
@@ -163,15 +160,14 @@
         <onup>9</onup>
         <ondown>24</ondown>
         <textalign>right</textalign>
-        <width>393</width>
-        <textXOff>33</textXOff>
-        <height>71</height>
-        <textYOff>16</textYOff>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
-        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-        <animation effect="Fade" time="100">WindowOpen</animation>
-        <animation effect="Fade" time="100">WindowClose</animation>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>				
       </control>
+			
       <control>
         <description>target</description>
         <type>button</type>
@@ -182,15 +178,14 @@
         <onup>14</onup>
         <ondown>18</ondown>
         <textalign>right</textalign>
-        <width>393</width>
-        <textXOff>33</textXOff>
-        <height>71</height>
-        <textYOff>16</textYOff>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
-        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-        <animation effect="Fade" time="100">WindowOpen</animation>
-        <animation effect="Fade" time="100">WindowClose</animation>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>				
       </control>
+			
       <control>
         <description>DVD mode</description>
         <type>button</type>
@@ -201,15 +196,14 @@
         <onup>24</onup>
         <ondown>3</ondown>
         <textalign>right</textalign>
-        <width>393</width>
-        <textXOff>33</textXOff>
-        <height>71</height>
-        <textYOff>16</textYOff>
+        <width>394</width>
+        <textXOff>32</textXOff>
+        <height>64</height>
+        <textYOff>14</textYOff>
         <textureFocus>listcontrol_item_selected_small.png</textureFocus>
-        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>
-        <animation effect="Fade" time="100">WindowOpen</animation>
-        <animation effect="Fade" time="100">WindowClose</animation>
+        <textureNoFocus>listcontrol_item_small.png</textureNoFocus>				
       </control>
+			
     </control>
 	
     <control>
@@ -271,6 +265,7 @@
       <animation effect="Fade" time="100">WindowOpen</animation>
       <animation effect="Fade" time="100">WindowClose</animation>
     </control>
+		
     <control>
       <description>Artist header</description>
       <type>label</type>

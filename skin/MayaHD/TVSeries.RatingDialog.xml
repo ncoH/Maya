@@ -10,7 +10,7 @@
     <control>
       <id>100</id>
       <description>1 Star</description>
-      <type>togglebutton</type>
+      <type>checkmark</type>
       <posX>702</posX>
       <posY>555</posY>
       <width>32</width>
@@ -20,10 +20,11 @@
       <AltTextureFocus>stargrey.png</AltTextureFocus>
       <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
     </control>
+		
     <control>
       <id>101</id>
       <description>2 Star</description>
-      <type>togglebutton</type>
+      <type>checkmark</type>
       <posX>756</posX>
       <posY>555</posY>
       <width>32</width>
@@ -33,10 +34,11 @@
       <AltTextureFocus>stargrey.png</AltTextureFocus>
       <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
     </control>
+		
     <control>
       <id>102</id>
       <description>3 Star</description>
-      <type>togglebutton</type>
+      <type>checkmark</type>
       <posX>809</posX>
       <posY>555</posY>
       <width>32</width>
@@ -46,10 +48,11 @@
       <AltTextureFocus>stargrey.png</AltTextureFocus>
       <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
     </control>
+		
     <control>
       <id>103</id>
       <description>4 Star</description>
-      <type>togglebutton</type>
+      <type>checkmark</type>
       <posX>863</posX>
       <posY>555</posY>
       <width>32</width>
@@ -59,10 +62,11 @@
       <AltTextureFocus>stargrey.png</AltTextureFocus>
       <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
     </control>
+		
     <control>
       <id>104</id>
       <description>5 Star</description>
-      <type>togglebutton</type>
+      <type>checkmark</type>
       <posX>916</posX>
       <posY>555</posY>
       <width>32</width>
@@ -72,10 +76,11 @@
       <AltTextureFocus>stargrey.png</AltTextureFocus>
       <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
     </control>
+		
     <control>
       <id>105</id>
       <description>6 Star</description>
-      <type>togglebutton</type>
+      <type>checkmark</type>
       <posX>969</posX>
       <posY>555</posY>
       <width>32</width>
@@ -85,10 +90,11 @@
       <AltTextureFocus>stargrey.png</AltTextureFocus>
       <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
     </control>
+		
     <control>
       <id>106</id>
       <description>7 Star</description>
-      <type>togglebutton</type>
+      <type>checkmark</type>
       <posX>1023</posX>
       <posY>555</posY>
       <width>32</width>
@@ -98,10 +104,11 @@
       <AltTextureFocus>stargrey.png</AltTextureFocus>
       <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
     </control>
+		
     <control>
       <id>107</id>
       <description>8 Star</description>
-      <type>togglebutton</type>
+      <type>checkmark</type>
       <posX>1076</posX>
       <posY>555</posY>
       <width>32</width>
@@ -111,10 +118,11 @@
       <AltTextureFocus>stargrey.png</AltTextureFocus>
       <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
     </control>
+		
     <control>
       <id>108</id>
       <description>9 Star</description>
-      <type>togglebutton</type>
+      <type>checkmark</type>
       <posX>1130</posX>
       <posY>555</posY>
       <width>32</width>
@@ -124,10 +132,11 @@
       <AltTextureFocus>stargrey.png</AltTextureFocus>
       <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
     </control>
+		
     <control>
       <id>109</id>
       <description>10 Star</description>
-      <type>togglebutton</type>
+      <type>checkmark</type>
       <posX>1183</posX>
       <posY>555</posY>
       <width>32</width>
@@ -137,6 +146,7 @@
       <AltTextureFocus>stargrey.png</AltTextureFocus>
       <AltTextureNoFocus>stargrey.png</AltTextureNoFocus>
     </control>
+		
     <control>
       <id>7</id>
       <description>Selected Rating</description>
@@ -146,5 +156,6 @@
       <width>281</width>
       <align>RIGHT</align>
     </control>
+		
   </controls>
 </window>

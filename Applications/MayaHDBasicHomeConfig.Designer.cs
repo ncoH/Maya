@@ -863,7 +863,7 @@ namespace ProcessPlugins.MayaHDBasicHomePlugin
             this.groupBox9.Size = new System.Drawing.Size(804, 45);
             this.groupBox9.TabIndex = 27;
             this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Recordings / Scheduler list size (MP/4TR) ";
+            this.groupBox9.Text = "Recordings / Scheduler list size (MP/ArgusTV) ";
             // 
             // radio_recordings_singleseat
             // 

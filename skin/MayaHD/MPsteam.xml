@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<window>
+<id>8465</id>
+<defaultcontrol>2</defaultcontrol>
+<allowoverlay>no</allowoverlay>
+<define>#header.label:Steam</define>
+<define>#header.background:hover_steam.png</define>
+<controls>
+	
+    <control>
+      <description>Background</description>
+      <type>image</type>
+      <id>1</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>background.png</texture>
+    </control>
+	
+    <control>
+      <description>Fanart Background</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>#header.background</texture>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
+    </control>
+	
+    <control>
+      <description>Fanart Overlay</description>
+      <type>image</type>
+      <id>0</id>
+      <posX>0</posX>
+      <posY>0</posY>
+      <width>1920</width>
+      <height>1080</height>
+      <texture>basichome_fanart_overlay.png</texture>
+      <visible>string.contains(#MayaHD.bgImage.Plugins,yes)</visible>
+    </control>
+	
+    <control>
+      <id>1</id>
+      <description>settings navigation panel</description>
+      <type>image</type>
+      <posX>178</posX>
+      <posY>84</posY>
+      <width>506</width>
+      <height>900</height>
+      <texture>settings_navigation_panel.png</texture>
+    </control>
+	
+    <control>
+      <id>1</id>
+      <description>settings main</description>
+      <type>image</type>
+      <posX>610</posX>
+      <posY>84</posY>
+      <width>1152</width>
+      <height>900</height>
+      <texture>settings_main_panel.png</texture>
+    </control>
+
+    <control>
+      <id>1</id>
+      <description>settings label</description>
+      <type>label</type>
+      <posX>271</posX>
+      <posY>233</posY>
+      <font>Segoe Light18</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <align>LEFT</align>
+      <label>924</label>
+    </control>
+	
+    <import>common.time.xml</import>
+
+    <control>
+      <id>1</id>
+      <type>label</type>
+      <description>Header label</description>
+      <posX>185</posX>
+      <posY>28</posY>
+      <width>500</width>
+      <label>#header.label</label>	  
+      <font>Segoe Light22</font>
+      <textcolor>ff6aa5cb</textcolor>
+      <animation effect="Fade" time="200">WindowOpen</animation>
+      <animation effect="Fade" time="200">WindowClose</animation>
+    </control>
+		
+    <control>
+      <description>steam-logo</description>
+      <type>image</type>
+      <posX>995</posX>
+      <posY>450</posY>
+      <width>350</width>
+      <height>350</height>
+      <texture>Steam-logo.png</texture>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>			
+    </control>
+
+    <control>
+      <description>buttons</description>
+      <type>group</type>
+      <posX>248</posX>
+      <posY>360</posY>
+      <layout>StackLayout(7, Vertical, true)</layout>
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>		
+			
+      <control>
+        <id>2</id>
+        <description>ButtonStartAgain</description>
+        <type>button</type>
+        <onleft>2</onleft>
+				<onright>2</onright>
+        <onup>2</onup>
+        <ondown>3</ondown>
+        <label>Start Steam</label>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>							
+      </control>
+				
+      <control>
+        <id>3</id>
+        <description>ButtonSetFocus</description>
+        <type>button</type>
+        <onleft>2</onleft>
+        <onright>2</onright>
+        <onup>2</onup>
+        <ondown>2</ondown>
+        <label>Set Focus to Steam</label>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>							
+      </control>	
+			
+		</control>
+		
+    <import>common.overlay.xml</import>
+	
+  </controls>
+</window>

@@ -127,14 +127,12 @@
             <onup>90</onup>
             <ondown>3</ondown>
             <label>100</label>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>215</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>	
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>497</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>	
           </control>
 		  
           <control>
@@ -144,16 +142,14 @@
             <onright>50</onright>
             <onup>2</onup>
             <ondown>6</ondown>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>285</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>	
-			<offsetSortButtonX>300</offsetSortButtonX>
-			<offsetSortButtonY>27</offsetSortButtonY>			
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>497</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>	
+						<offsetSortButtonX>430</offsetSortButtonX>
+						<offsetSortButtonY>27</offsetSortButtonY>			
           </control>
 		  
           <control>
@@ -164,14 +160,12 @@
             <onup>3</onup>
             <ondown>5</ondown>
             <label>14002</label>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>355</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>	
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>497</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>	
           </control>
 		  
           <control>
@@ -182,14 +176,12 @@
             <onup>6</onup>
             <ondown>8</ondown>
             <label>#MPEI.Translation.Restart.Label</label>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>425</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>	
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>497</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>	
           </control>
 		  
           <control>
@@ -200,15 +192,13 @@
             <onup>5</onup>
             <ondown>9</ondown>
             <label>#MPEI.Translation.UpdateAll.Label</label>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>495</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>	
-			<visible>string.contains(#mpei.updates,.::.)</visible>			
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>497</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>	
+						<visible>string.contains(#mpei.updates,.::.)</visible>			
           </control>
 
           <control>
@@ -219,14 +209,12 @@
             <onup>8</onup>
             <ondown>2</ondown>
             <label>#MPEI.Translation.DownloadUpdates.Label</label>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>565</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>	
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>497</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>	
           </control>
 	  
         </control>

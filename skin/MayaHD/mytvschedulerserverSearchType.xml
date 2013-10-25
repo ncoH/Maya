@@ -16,7 +16,7 @@
       <description>Header label</description>
       <posX>185</posX>
       <posY>28</posY>
-      <width>500</width>
+      <width>600</width>
       <label>#header.label</label>	  
       <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
@@ -28,10 +28,12 @@
       <type>group</type>
       <layout>StackLayout</layout>
       <description>group element</description>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
       <posX>99</posX>
       <posY>170</posY>
+			<layout>StackLayout(7, Vertical, true)</layout>			
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>			
+			
       <control>
         <description>Quick Record</description>
         <type>button</type>
@@ -40,7 +42,12 @@
         <onup>17</onup>
         <ondown>3</ondown>
         <onright>99</onright>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
       </control>
+			
       <control>
         <description>Advanced record</description>
         <type>button</type>
@@ -49,7 +56,12 @@
         <onup>2</onup>
         <ondown>6</ondown>
         <onright>99</onright>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
       </control>
+			
       <control>
         <description>TvGuide</description>
         <type>button</type>
@@ -58,7 +70,12 @@
         <onup>3</onup>
         <ondown>7</ondown>
         <onright>99</onright>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
       </control>
+			
       <control>
         <description>Search</description>
         <type>button</type>
@@ -67,7 +84,12 @@
         <onup>6</onup>
         <ondown>10</ondown>
         <onright>99</onright>
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
       </control>
+			
     </control>
 	
   </controls>

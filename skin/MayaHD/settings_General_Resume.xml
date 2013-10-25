@@ -6,22 +6,22 @@
 	<define>#header.label:897</define>
   <rememberLastFocusedControl>no</rememberLastFocusedControl>
   <controls>
-  
-	<import>common.settings.xml</import>
+	
 	<import>settings.menu.xml</import>	
-	<import>common.time.xml</import>  
+  <import>common.settings.xml</import>
+	<import>common.time.settings.xml</import>
 	
 	<control>
 		<type>label</type>
 		<id>1</id>
 		<posX>685</posX>
 		<posY>225</posY>
-		<width>500</width>
+		<width>600</width>
 		<label>#(L(128))/#(L(300082))</label>
-		<textcolor>6aa5cb</textcolor>
-		<font>font22</font>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
+    <font>Segoe Light20</font>
+    <textcolor>ff6aa5cb</textcolor>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
 	</control>
 	
 	<control>
@@ -30,11 +30,11 @@
 		<posX>655</posX>
 		<posY>321</posY>
 		<dimColor>ffffffff</dimColor>
-		<layout>StackLayout(0, Vertical, true)</layout>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
+    <layout>StackLayout(7, Vertical, true)</layout>
+	  <animation effect="fade" time="150">WindowOpen</animation>
+	  <animation effect="fade" time="150">WindowClose</animation>
 		
-	<control Style="SettingsCheckButtonLarge">
+			<control Style="SettingsCheckButtonLarge">
         <description>Turn off monitor blank screen</description>
         <type>checkbutton</type>
         <id>20</id>
@@ -42,98 +42,94 @@
         <onup>32</onup>
       </control>
 		
-	<control Style="SettingsCheckButtonLarge">
+			<control Style="SettingsCheckButtonLarge">
         <description>Show last module</description>
         <type>checkbutton</type>
         <id>21</id>
         <label>300100</label>
       </control>
       
-     <control Style="SettingsCheckButtonLarge">
+      <control Style="SettingsCheckButtonLarge">
         <description>Show last module</description>
         <type>checkbutton</type>
         <id>22</id>
         <label>300230</label>
-    	<ondown>24</ondown>
+    		<ondown>24</ondown>
       </control>
-	</control>	
+		</control>	
 		
-	<control Style="SettingsButtonLarge">
-		<description>Screen button</description>
-		<type>button</type>
-		<id>24</id>
-		<posX>655</posX>
-		<posY>580</posY>
-		<ondown>30</ondown>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
+		<control Style="SettingsButtonLarge">
+      <description>Screen button</description>
+      <type>button</type>
+      <id>24</id>
+		  <posX>655</posX>
+      <posY>580</posY>
+			<ondown>30</ondown>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
+		
     <control>
-		<type>fadelabel</type>
-		<id>2</id>
-		<posX>683</posX>
-		<posY>591</posY>
-		<width>940</width>
-		<label>#defScreen</label>
-		<align>left</align>
-		<font>font12</font>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
+      <type>fadelabel</type>
+      <id>2</id>
+		  <posX>683</posX>
+			<posY>588</posY>
+			<width>940</width>
+      <label>#defScreen</label>
+      <align>left</align>
+			<font>Segoe Light12</font>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
     </control>
   
 		<!--Delay section-->
     <!--Delay startup label-->
-	<control Style="SettingsButtonLarge">
-		<description>Delay button</description>
-		<type>button</type>
-		<id>30</id>
-		 <posX>655</posX>
-		<posY>710</posY>
-		<onup>24</onup>
-		<ondown>31</ondown>
-		<label>300102</label>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
+		<control Style="SettingsButtonLarge">
+      <description>Delay button</description>
+      <type>button</type>
+      <id>30</id>
+		  <posX>655</posX>
+      <posY>710</posY>
+			<onup>24</onup>
+			<ondown>31</ondown>
+      <label>300102</label>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
     <control>
-		<type>label</type>
-		<id>1</id>
-		<posX>1770</posX>
-		<posY>722</posY>
-		<label>#delayStartup</label>
-		<align>right</align>
-		<font>font12</font>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
+      <type>label</type>
+      <id>1</id>
+			<posX>1770</posX>
+      <posY>716</posY>
+      <label>#delayStartup</label>
+      <align>right</align>
+			<font>Segoe Light12</font>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
-	<control Style="SettingsCheckButtonLarge">
-		<description>Delay on MP start</description>
-		<type>checkbutton</type>
-		<id>31</id>
-		<posX>655</posX>
-		<posY>775</posY>
-		<label>300103</label>
-		<onup>30</onup>
-		<ondown>32</ondown>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
+			<control Style="SettingsCheckButtonLarge">
+      <description>Delay on MP start</description>
+      <type>checkbutton</type>
+      <id>31</id>
+		  <posX>655</posX>
+      <posY>775</posY>
+      <label>300103</label>
+      <onup>30</onup>
+			<ondown>32</ondown>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
-	<control Style="SettingsCheckButtonLarge">
-		<description>Delay on MP resume</description>
-		<type>checkbutton</type>
-		<id>32</id>
-		<posX>655</posX>
-		<posY>840</posY>
-		<label>300104</label>
-		<onup>31</onup>
-		<ondown>20</ondown>
-		<animation effect="fade" time="150">WindowOpen</animation>
-		<animation effect="fade" time="150">WindowClose</animation>
+			<control Style="SettingsCheckButtonLarge">
+      <description>Delay on MP resume</description>
+      <type>checkbutton</type>
+      <id>32</id>
+		  <posX>655</posX>
+      <posY>840</posY>
+      <label>300104</label>
+      <onup>31</onup>
+			<ondown>20</ondown>
+			<animation effect="fade" time="150">WindowOpen</animation>
+			<animation effect="fade" time="150">WindowClose</animation>
     </control>
-	
   </controls>
 </window>

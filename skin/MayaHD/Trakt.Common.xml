@@ -8,7 +8,7 @@
       <posX>178</posX>
       <posY>84</posY>
       <width>506</width>
-      <height>900</height>
+      <height>920</height>
       <texture>settings_navigation_panel.png</texture>
     </control>	
 
@@ -17,7 +17,7 @@
       <posX>610</posX>
       <posY>84</posY>
       <width>1152</width>
-      <height>900</height>
+      <height>920</height>
       <texture>settings_main_panel.png</texture>
     </control>
 
@@ -36,97 +36,123 @@
     <control>
       <description>buttons</description>
       <type>group</type>
-      <posX>245</posX>
-      <posY>365</posY>
+      <posX>248</posX>
+      <posY>360</posY>
+			<layout>StackLayout(7, Vertical, true)</layout>
       <animation effect="Fade" time="250">WindowOpen</animation>
-      <animation effect="Fade" time="250">WindowClose</animation>
-	  <layout>StackLayout(0, Vertical, true)</layout>
+      <animation effect="Fade" time="250">WindowClose</animation>			
+
+      <control>
+        <description>Search</description>
+        <type>button</type>
+        <id>9991</id>
+        <label>#Trakt.Translation.Search.Label</label>			
+        <hyperlink>874001</hyperlink>					
+				<onup>9999</onup>					
+				<width>365</width>
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
+      </control>
+
+      <control>
+        <description>User Profile</description>
+        <type>button</type>
+        <id>9992</id>
+        <label>#Trakt.Translation.Profile.Label</label>			
+        <hyperlink>87400</hyperlink>	
+				<width>365</width>	
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
+      </control>
+			
 			<control>
 				<description>Calendar</description>
 				<type>button</type>
-				<id>9991</id>
+				<id>9993</id>
 				<label>#Trakt.Translation.Calendar.Label</label>
 				<hyperlink>87259</hyperlink>
-				<onup>9997</onup>					
-				<width>364</width>				
-				<textalign>LEFT</textalign>
-				<font>font11</font>	
-				<textureFocus>settings_button_large_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>				
+				<onup>9992</onup>					
+				<width>365</width>		
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
 			</control>
+			
 			<control>
-				<description>Friends</description>
+				<description>Network</description>
 				<type>button</type>
-				<id>9992</id>				
+				<id>9994</id>				
 				<hyperlink>87260</hyperlink>
-				<label>#Trakt.Translation.Friends.Label</label>
-				<width>364</width>			
-				<textalign>LEFT</textalign>
-				<font>font11</font>				
-				<textureFocus>settings_button_large_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>					
+				<label>#Trakt.Translation.Network.Label</label>
+				<width>365</width>		
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
 			</control>
+			
 			<control>
 				<description>Recommendations</description>
 				<type>button</type>
-				<id>9993</id>			
+				<id>9995</id>			
 				<hyperlink>87261</hyperlink>
 				<label>#Trakt.Translation.Recommendations.Label</label>
-				<width>364</width>			
-				<textalign>LEFT</textalign>
-				<font>font11</font>		
-				<textureFocus>settings_button_large_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>					
+				<width>365</width>		
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>						
 			</control>
+			
 			<control>
 				<description>Trending</description>
 				<type>button</type>
-				<id>9994</id>		
+				<id>9996</id>		
 				<hyperlink>87264</hyperlink>
 				<label>#Trakt.Translation.Trending.Label</label>
-				<width>364</width>			
-				<textalign>LEFT</textalign>
-				<font>font11</font>	
-				<textureFocus>settings_button_large_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>					
+				<width>365</width>		
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>						
 			</control>
+			
 			<control>
 				<description>Watch List</description>
 				<type>button</type>
-				<id>9995</id>			
+				<id>9997</id>			
 				<hyperlink>87267</hyperlink>
 				<label>#Trakt.Translation.WatchList.Label</label>
-				<width>364</width>			
-				<textalign>LEFT</textalign>
-				<font>font11</font>		
-				<textureFocus>settings_button_large_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>					
+				<width>365</width>	
+				<height>52</height>				
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
 			</control>
+			
 			<control>
 				<description>Lists</description>
 				<type>button</type>
-				<id>9996</id>
+				<id>9998</id>
 				<hyperlink>87275</hyperlink>
 				<label>#Trakt.Translation.Lists.Label</label>
-				<width>364</width>			
-				<textalign>LEFT</textalign>
-				<font>font11</font>		
-				<textureFocus>settings_button_large_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>					
-			</control>			
+				<width>365</width>	
+				<height>52</height>				
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
+			</control>		
+			
 			<control>
 				<description>Settings</description>
 				<type>button</type>
-				<id>9997</id>		
+				<id>9999</id>		
 				<label>#Trakt.Translation.Settings.Label</label>
 				<hyperlink>87271</hyperlink>
 				<ondown>9991</ondown>
-				<width>364</width>		
-				<textalign>LEFT</textalign>
-				<font>font11</font>		
-				<textureFocus>settings_button_large_focus.png</textureFocus>
-				<textureNoFocus>-</textureNoFocus>					
+				<width>365</width>		
+				<height>52</height>						
+				<textureFocus>settings_button_focus.png</textureFocus>
+				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>				
 			</control>
+			
 		</control>
 		
 	</controls>

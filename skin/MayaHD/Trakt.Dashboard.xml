@@ -15,7 +15,7 @@
         <posX>480</posX>
         <posY>120</posY>
         <width>1260</width>
-		<font>Segoe Light14</font>
+				<font>Segoe Light14</font>
         <label>#Trakt.Activity.Description</label>
         <textcolor>85cffe</textcolor>
       </control>
@@ -25,31 +25,31 @@
         <type>facadeview</type>
         <id>98300</id>
         <control>
-			<type>listcontrol</type>
-			<id>98300</id>
-			<posX>510</posX>
-			<posY>180</posY>
-			<height>350</height>
-			<width>1320</width>
-			<scrollOffset>2</scrollOffset>
-			<onleft>10</onleft>
-			<onright>10</onright>
-			<PinIconXOff>1180</PinIconXOff>
-			<PinIconYOff>10</PinIconYOff>
-			<PinIconWidth>50</PinIconWidth>
-			<PinIconHeight>50</PinIconHeight>
-			<textXOff>25</textXOff>
-			<textYOff>15</textYOff>
-			<textXOff2>0</textXOff2>
-			<textYOff2>15</textYOff2>
-			<textXOff3>65</textXOff3>
-			<textYOff3>15</textYOff3>			
-			<spinPosX>-2000</spinPosX>
-			<spinPosY>984</spinPosY>
-			<suffix>|</suffix>
-			<dimColor>FFFFFFFF</dimColor>
-        </control>
+				<type>listcontrol</type>
+				<id>98300</id>
+				<posX>510</posX>
+				<posY>180</posY>
+				<height>350</height>
+				<width>1320</width>
+				<scrollOffset>2</scrollOffset>
+				<onleft>10</onleft>
+				<onright>10</onright>
+				<PinIconXOff>1180</PinIconXOff>
+				<PinIconYOff>10</PinIconYOff>
+				<PinIconWidth>50</PinIconWidth>
+				<PinIconHeight>50</PinIconHeight>
+				<textXOff>25</textXOff>
+				<textYOff>15</textYOff>
+				<textXOff2>0</textXOff2>
+				<textYOff2>15</textYOff2>
+				<textXOff3>65</textXOff3>
+				<textYOff3>15</textYOff3>			
+				<spinPosX>-2000</spinPosX>
+				<spinPosY>984</spinPosY>
+				<suffix>|</suffix>
+				<dimColor>FFFFFFFF</dimColor>
       </control>
+    </control>
 	  
       <control>
         <description>Trending Label</description>
@@ -58,7 +58,7 @@
         <posX>480</posX>
         <posY>475</posY>
         <width>1260</width>
-		<font>Segoe Light14</font>
+				<font>Segoe Light14</font>
         <label>#Trakt.Translation.TrendingShowsAndMovies.Label</label>
         <textcolor>85cffe</textcolor>
       </control>
@@ -70,38 +70,38 @@
         <type>facadeview</type>
         <id>98301</id>
         <control>
-			<type>filmstrip</type>
-			<dimColor>ffffffff</dimColor>
-			<id>98301</id>
-			<onup>98300</onup>
-			<posX>510</posX>
-			<posY>550</posY>
-			<width>1100</width>
-			<height>220</height>
-			<thumbWidth>134</thumbWidth>
-			<thumbHeight>204</thumbHeight>
-			<thumbPosX>0</thumbPosX>
-			<thumbPosY>0</thumbPosY>
-			<itemWidth>144</itemWidth>
-			<itemHeight>194</itemHeight>
-			<textureWidth>134</textureWidth>
-			<textureHeight>194</textureHeight>
-			<textYOff>-2000</textYOff>		  
-			<frame>-</frame>
-			<frameFocus></frameFocus>
-			<showFrame>yes</showFrame>
-			<showFolder>no</showFolder>
-			<showBackGround>no</showBackGround>
-			<showInfoImage>no</showInfoImage>
-			<enableFocusZoom>no</enableFocusZoom>
-			<keepaspectratio>no</keepaspectratio>
-			<spinCanFocus>no</spinCanFocus>
-			<spinXOff>-2000</spinXOff>
-			<thumbs diffuse="Thumb_Mask.png" mask="video_filmstrip_mask.png"/>
-			<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="120,120" time="200">focus</thumbAnimation>
-			<thumbAnimation effect="zoom" start="120,120" reversible="false" end="100,100" time="100">unfocus</thumbAnimation>
-        </control>
+				<type>filmstrip</type>
+				<dimColor>ffffffff</dimColor>
+				<id>98301</id>
+				<onup>98300</onup>
+				<posX>510</posX>
+				<posY>550</posY>
+				<width>1100</width>
+				<height>220</height>
+				<thumbWidth>134</thumbWidth>
+				<thumbHeight>204</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidth>144</itemWidth>
+				<itemHeight>194</itemHeight>
+				<textureWidth>134</textureWidth>
+				<textureHeight>194</textureHeight>
+				<textYOff>-2000</textYOff>		  
+				<frame>-</frame>
+				<frameFocus></frameFocus>
+				<showFrame>yes</showFrame>
+				<showFolder>no</showFolder>
+				<showBackGround>no</showBackGround>
+				<showInfoImage>no</showInfoImage>
+				<enableFocusZoom>no</enableFocusZoom>
+				<keepaspectratio>no</keepaspectratio>
+				<spinCanFocus>no</spinCanFocus>
+				<spinXOff>-2000</spinXOff>
+				<thumbs diffuse="Thumb_Mask.png" mask="video_filmstrip_mask.png"/>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="120,120" time="200">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="120,120" reversible="false" end="100,100" time="100">unfocus</thumbAnimation>
       </control>
+    </control>
 	  
       <control>
         <description>Show #1 Title</description>
@@ -172,6 +172,7 @@
         <height>36</height>
         <texture>#Trakt.Show.1.Ratings.Icon.png</texture>
       </control>
+			
       <control>
         <description>Show #3 Rating Icon</description>
         <type>image</type>
@@ -340,39 +341,39 @@
         <type>facadeview</type>
         <id>98302</id>
         <control>
-			<type>filmstrip</type>
-			<dimColor>ffffffff</dimColor>
-			<id>98302</id>
-			<onup>98301</onup>
-			<ondown>98301</ondown>
-			<posX>510</posX>
-			<posY>803</posY>
-			<width>1100</width>
-			<height>220</height>
-			<thumbWidth>134</thumbWidth>
-			<thumbHeight>204</thumbHeight>
-			<thumbPosX>0</thumbPosX>
-			<thumbPosY>0</thumbPosY>
-			<itemWidth>144</itemWidth>
-			<itemHeight>194</itemHeight>
-			<textureWidth>134</textureWidth>
-			<textureHeight>194</textureHeight>
-			<textYOff>-2000</textYOff>		  
-			<frame>-</frame>
-			<frameFocus>-</frameFocus>
-			<showFrame>yes</showFrame>
-			<showFolder>no</showFolder>
-			<showBackGround>no</showBackGround>
-			<showInfoImage>no</showInfoImage>
-			<enableFocusZoom>no</enableFocusZoom>
-			<keepaspectratio>no</keepaspectratio>
-			<spinCanFocus>no</spinCanFocus>
-			<spinXOff>-2000</spinXOff>
-			<thumbs diffuse="Thumb_Mask.png" mask="video_filmstrip_mask.png"/>
-			<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="120,120" time="200">focus</thumbAnimation>
-			<thumbAnimation effect="zoom" start="120,120" reversible="false" end="100,100" time="100">unfocus</thumbAnimation>
-        </control>
+				<type>filmstrip</type>
+				<dimColor>ffffffff</dimColor>
+				<id>98302</id>
+				<onup>98301</onup>
+				<ondown>98301</ondown>
+				<posX>510</posX>
+				<posY>803</posY>
+				<width>1100</width>
+				<height>220</height>
+				<thumbWidth>134</thumbWidth>
+				<thumbHeight>204</thumbHeight>
+				<thumbPosX>0</thumbPosX>
+				<thumbPosY>0</thumbPosY>
+				<itemWidth>144</itemWidth>
+				<itemHeight>194</itemHeight>
+				<textureWidth>134</textureWidth>
+				<textureHeight>194</textureHeight>
+				<textYOff>-2000</textYOff>		  
+				<frame>-</frame>
+				<frameFocus>-</frameFocus>
+				<showFrame>yes</showFrame>
+				<showFolder>no</showFolder>
+				<showBackGround>no</showBackGround>
+				<showInfoImage>no</showInfoImage>
+				<enableFocusZoom>no</enableFocusZoom>
+				<keepaspectratio>no</keepaspectratio>
+				<spinCanFocus>no</spinCanFocus>
+				<spinXOff>-2000</spinXOff>
+				<thumbs diffuse="Thumb_Mask.png" mask="video_filmstrip_mask.png"/>
+				<thumbAnimation effect="zoom" acceleration="-2" start="100,100" reversible="false" end="120,120" time="200">focus</thumbAnimation>
+				<thumbAnimation effect="zoom" start="120,120" reversible="false" end="100,100" time="100">unfocus</thumbAnimation>
       </control>
+    </control>
 	  
       <control>
         <description>Movie #1 Title</description>
@@ -612,14 +613,15 @@
         <description>Update Animation</description>
         <type>animation</type>
         <id>98299</id>
-		<posX>920</posX>
-		<posY>489</posY>
-		<width>89</width>
-		<height>90</height>
+				<posX>920</posX>
+				<posY>489</posY>
+				<width>89</width>
+				<height>90</height>
         <textures>common.waiting.1.png;common.waiting.2.png;common.waiting.3.png;common.waiting.4.png;common.waiting.5.png;common.waiting.6.png;common.waiting.7.png;common.waiting.8.png</textures>
         <Duration>0:0:01.5</Duration>
         <keepaspectratio>yes</keepaspectratio>
       </control>
+			
     </control>
 	
   </controls>

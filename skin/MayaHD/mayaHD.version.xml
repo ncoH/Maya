@@ -9,7 +9,7 @@
 		<align>right</align>
 		<font>Segoe Light12</font>
 		<textcolor>6aa5cb</textcolor>
-		<label>Maya v1.0.0.2</label>
+		<label>Maya v1.4.0.0</label>
 		<textcolor>ffffff</textcolor>
 		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
 		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>

@@ -16,7 +16,7 @@
       <description>Header label</description>
       <posX>185</posX>
       <posY>28</posY>
-      <width>500</width>
+      <width>600</width>
       <label>#header.label</label>	  
       <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
@@ -29,14 +29,13 @@
       <description>Info label</description>
       <type>label</type>
       <posX>780</posX>
-      <posY>199</posY>
+      <posY>169</posY>
       <width>931</width>
       <font>Segoe Light22</font>
       <align>LEFT</align>
       <label>#infolabel</label>
       <animation effect="Fade" time="100">WindowClose</animation>
       <animation effect="Fade" time="100">WindowOpen</animation>
-      <valign>middle</valign>
     </control>
 	
     <control>

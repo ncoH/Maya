@@ -160,7 +160,7 @@
 	  
     </control>
 	
-    <!-- ************** HIDDEN MENU *****************  -->
+    <!--            :: HIDDEN MENU ::            -->
 	
 	<control>
 		<type>actiongroup</type>
@@ -183,14 +183,7 @@
 			<animation effect="fade" time="450">visible</animation>
 			<animation effect="fade" time="400">hidden</animation>
 		</control>
-		
-	<control>
-		<type>group</type>
-		<animation effect="fade" time="250">WindowOpen</animation>
-		<animation effect="fade" time="0">WindowClose</animation>
-		<animation effect="slide" start="-150,0" end="0,0" tween="quadratic" easing="in" time="200" delay="0">visible</animation>
-		<animation effect="fade" time="250">visible</animation>
-		<animation effect="fade" time="0">hidden</animation>
+	
 		<control>
 			<type>image</type>
 			<id>0</id>
@@ -200,18 +193,39 @@
 			<height>1044</height>
 			<texture>menu_bg.png</texture>
 			<visible>!Control.HasFocus(50)</visible>
+    	<animation effect="fade" time="0">WindowClose</animation>
+    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="fade" time="50">visible</animation>
+    	<animation effect="fade" time="0">hidden</animation>
 		</control>
-	
+
 		<control>
-			<description>Heading text label</description>
+			<description>Menu label</description>
 			<type>label</type>
 			<id>1</id>
-			<posX>136</posX>
-			<posY>128</posY>
+			<posX>128</posX>
+			<posY>114</posY>
 			<label>924</label>
-			<font>Segoe Light22</font>
+			<font>Segoe Light12</font>
 			<textcolor>ff6aa5cb</textcolor>
-		</control>
+			<visible>!Control.HasFocus(50)</visible>
+    	<animation effect="fade" time="0">WindowClose</animation>
+    	<animation effect="slide" start="-150,0" time="100">visible</animation>
+    	<animation effect="fade" time="50">visible</animation>
+    	<animation effect="fade" time="0">hidden</animation>
+    </control>
+
+          <control>
+            <type>group</type>
+            <description>group element</description>
+						<visible>!Control.HasFocus(50)</visible>
+						<animation effect="fade" time="0">WindowClose</animation>
+						<animation effect="slide" start="-150,0" time="100">visible</animation>
+						<animation effect="fade" time="50">visible</animation>
+						<animation effect="fade" time="0">hidden</animation>
+            <posX>69</posX>
+            <posY>155</posY>
+            <layout>StackLayout(0, Vertical, true)</layout>	
 		
           <control>
             <id>2</id>
@@ -222,14 +236,12 @@
             <label>#SkinTranslation.Translations.rockstar.search.Label</label>
             <onright>200</onright>
             <onleft>200</onleft>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>215</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>				
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>498</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>			
           </control>
 		  
           <control>
@@ -241,14 +253,12 @@
             <label>#SkinTranslation.Translations.rockstar.default.playlist.Label</label>
             <onright>200</onright>
             <onleft>200</onleft>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>285</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>				
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>498</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>				
           </control>
 		  
           <control>
@@ -260,14 +270,12 @@
             <label>#SkinTranslation.Translations.rockstar.playlists.Label</label>
             <onright>200</onright>
             <onleft>200</onleft>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>355</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>				
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>498</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>		
           </control>
 		  
           <control>
@@ -280,62 +288,48 @@
             <label>#SkinTranslation.Translations.rockstar.popular.songs.Label</label>
             <onright>200</onright>
             <onleft>200</onleft>
-			<textureFocus>hiddenmenu_item_selected.png</textureFocus>
-			<textureNoFocus>-</textureNoFocus>
-			<posX>69</posX>
-			<posY>425</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>				
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>498</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>			
           </control>
 		  
           <control>
             <id>32</id>
             <description>Shuffle on/off button</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <onright>200</onright>
             <onup>20</onup>
             <ondown>30</ondown>
             <label>191</label>
             <onright>200</onright>
             <onleft>200</onleft>
-            <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-            <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-            <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
-			<textcolor>white</textcolor>
-			<textcolorNoFocus>ff85cfff</textcolorNoFocus>
-			<posX>69</posX>
-			<posY>495</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>				
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>498</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>				
           </control>
 		  
           <control>
             <id>30</id>
             <description>Repeat on/off button</description>
-            <type>togglebutton</type>
+            <type>checkbutton</type>
             <onright>200</onright>
             <onup>32</onup>
             <ondown>2</ondown>
             <label>486</label>
             <onright>200</onright>
             <onleft>200</onleft>
-            <textureFocus>hiddenmenu_item_toggleon_selected.png</textureFocus>
-            <textureNoFocus>hiddenmenu_item_toggleon.png</textureNoFocus>
-            <AltTextureFocus>hiddenmenu_item_toggleoff_selected.png</AltTextureFocus>
-            <AltTextureNoFocus>hiddenmenu_item_toggleoff.png</AltTextureNoFocus>
-			<textcolor>white</textcolor>
-			<textcolorNoFocus>ff85cfff</textcolorNoFocus>
-			<posX>69</posX>
-			<posY>565</posY>
-			<width>497</width>
-			<height>70</height>
-			<textXOff>66</textXOff>
-			<textYOff>17</textYOff>				
+						<textureFocus>hiddenmenu_item_selected.png</textureFocus>
+						<textureNoFocus>-</textureNoFocus>
+						<width>498</width>
+						<height>64</height>
+						<textXOff>58</textXOff>
+						<textYOff>14</textYOff>			
           </control>
 		  
         </control>
