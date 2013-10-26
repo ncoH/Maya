@@ -233,7 +233,7 @@
       <visible>Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)</visible>
       <posX>491</posX>
       <posY>698</posY>
-      <width>140</width>
+      <width>150</width>
       <font>Segoe Light18</font>
       <textcolor>ff85cffe</textcolor>
       <label>435</label>
@@ -262,7 +262,7 @@
       <visible>Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)</visible>
       <posX>491</posX>
       <posY>749</posY>
-      <width>773</width>
+      <width>150</width>
       <font>Segoe Light14</font>
       <textcolor>ff85cffe</textcolor>
       <label>484</label>
@@ -291,7 +291,7 @@
       <visible>Control.HasFocus(5101) | Control.HasFocus(30) | Control.HasFocus(31) | Control.HasFocus(5104)</visible>
       <posX>491</posX>
       <posY>791</posY>
-      <width>773</width>
+      <width>150</width>
       <font>Segoe Light14</font>
       <textcolor>ff85cffe</textcolor>
       <label>483</label>
@@ -312,7 +312,36 @@
       <animation effect="Fade" time="800">WindowOpen</animation>
       <animation effect="Fade" time="300">WindowClose</animation>
     </control>
+
+    <control>
+      <id>0</id>
+      <description>Year label</description>
+      <type>fadelabel</type>
+      <posX>491</posX>
+      <posY>833</posY>
+      <width>150</width>
+      <font>Segoe Light14</font>
+      <textcolor>ff85cffe</textcolor>
+      <label>201</label>
+      <visible>Control.HasFocus(5101) | Control.HasFocus(5104)</visible>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
 	
+    <control>
+      <id>0</id>
+      <description>Year value</description>
+      <type>label</type>
+      <posX>674</posX>
+      <posY>833</posY>
+      <width>421</width>
+      <font>Segoe Light14</font>
+      <label>#Play.Current.Year</label>
+      <visible>Control.HasFocus(5101) | Control.HasFocus(5104)</visible>
+      <animation effect="Fade" time="800">WindowOpen</animation>
+      <animation effect="Fade" time="300">WindowClose</animation>
+    </control>
+		
     <control>
       <type>label</type>
       <description>Dummy control for next track</description>
@@ -325,10 +354,11 @@
     <control>
       <id>0</id>
       <description>up next label</description>
-      <type>label</type>
+      <type>fadelabel</type>
       <visible>Control.HasFocus(5101) | Control.HasFocus(5104)</visible>
       <posX>491</posX>
       <posY>877</posY>
+      <width>150</width>			
       <font>Segoe Light14</font>
       <textcolor>ff85cffe</textcolor>
       <label>790</label>
@@ -352,41 +382,12 @@
     </control>
 	
     <control>
-      <id>0</id>
-      <description>Year label</description>
-      <type>fadelabel</type>
-      <posX>491</posX>
-      <posY>833</posY>
-      <width>548</width>
-      <font>Segoe Light14</font>
-      <textcolor>ff85cffe</textcolor>
-      <label>201</label>
-      <visible>Control.HasFocus(5101) | Control.HasFocus(5104)</visible>
-      <animation effect="Fade" time="800">WindowOpen</animation>
-      <animation effect="Fade" time="300">WindowClose</animation>
-    </control>
-	
-    <control>
-      <id>0</id>
-      <description>Year value</description>
-      <type>label</type>
-      <posX>674</posX>
-      <posY>833</posY>
-      <width>421</width>
-      <font>Segoe Light14</font>
-      <label>#Play.Current.Year</label>
-      <visible>Control.HasFocus(5101) | Control.HasFocus(5104)</visible>
-      <animation effect="Fade" time="800">WindowOpen</animation>
-      <animation effect="Fade" time="300">WindowClose</animation>
-    </control>
-	
-    <control>
       <id>141</id>
       <description>Rating</description>
       <type>imagelist</type>
       <visible>Control.HasFocus(5101) | Control.HasFocus(5104)</visible>
       <posX>490</posX>
-      <posY>921</posY>
+      <posY>923</posY>
       <width>260</width>
       <height>29</height>
       <textureHeight>26</textureHeight>

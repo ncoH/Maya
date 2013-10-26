@@ -32,14 +32,13 @@
       <type>fadelabel</type>
       <id>1</id>
       <posX>780</posX>
-      <posY>199</posY>
+      <posY>169</posY>
       <width>931</width>
       <label>#selecteditem</label>
       <font>Segoe Light22</font>
       <visible>facadeview.list+control.isvisible(50)</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
-      <valign>middle</valign>
     </control>
 
     <control>
@@ -71,31 +70,31 @@
 				<posY>678</posY>
 				<height>337</height>
 				<posX>736</posX>
-				<width>1017</width>				
+				<width>1018</width>				
 				<onleft>4</onleft>
 				<onright>4</onright>
-        <itemWidth>48</itemWidth>
-        <itemHeight>48</itemHeight>
-        <IconXOff>-2000</IconXOff>
-        <IconYOff>6</IconYOff>
-        <PinIconXOff>980</PinIconXOff>
-        <PinIconYOff>2</PinIconYOff>
-        <PinIconWidth>48</PinIconWidth>
-        <PinIconHeight>48</PinIconHeight>				
 				<scrollOffset>1</scrollOffset>
+				<PinIconHeight>50</PinIconHeight>
+				<PinIconWidth>50</PinIconWidth>
+				<PinIconXOff>936</PinIconXOff>
+				<PinIconYOff>10</PinIconYOff>
+				<itemWidth>44</itemWidth>
+				<itemHeight>45</itemHeight>
+				<IconXOff>-2000</IconXOff>
+				<IconYOff>12</IconYOff>
+				<textXOff>0</textXOff>
 				<spinPosX>787</spinPosX>
 				<spinPosY>973</spinPosY>
 				<spinAlign>left</spinAlign>
-				<textXOff>30</textXOff>
-        <textXOff2>0</textXOff2>
-        <textYOff2>8</textYOff2>
-        <textXOff3>112</textXOff3>
-        <textYOff3>15</textYOff3>				
+				<textureFocus>listcontrol_recordings_item_selected.png</textureFocus>
+				<textureNoFocus>listcontrol_recordings_item.png</textureNoFocus>
+				<keepaspectratio>yes</keepaspectratio>
 				<spinCanFocus>no</spinCanFocus>
+				<dimColor>ffffffff</dimColor>
       </control>
 			
     </control>
-   </control>		
+  </control>		
 
  	<!--            :: HIDDEN MENU ::            -->
 
@@ -283,10 +282,10 @@
       <description>Cover Art</description>
       <type>image</type>
       <id>500</id>
-      <posX>188</posX>
-      <posY>299</posY>
-      <width>372</width>
-      <height>372</height>
+      <posX>78</posX>
+      <posY>168</posY>
+      <width>319</width>
+      <height>305</height>
       <texture>#selectedthumb</texture>
     </control>
 

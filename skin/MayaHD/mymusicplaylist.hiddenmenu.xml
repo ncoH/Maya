@@ -142,7 +142,7 @@
 					<ondown>20</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>498</width>
+					<width>497</width>
 					<height>70</height>
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>	
@@ -154,7 +154,7 @@
           <id>0</id>
     			<textureFocus>-</textureFocus>
     			<textureNoFocus>-</textureNoFocus>
-    		  <width>498</width>
+    		  <width>497</width>
     			<height>64</height>
           <label>-</label>
           <visible>true</visible>
@@ -171,7 +171,7 @@
 					<ondown>30</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>498</width>
+					<width>497</width>
 					<height>70</height>
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>	
@@ -188,7 +188,7 @@
 					<ondown>10</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>					
-					<width>498</width>
+					<width>497</width>
 					<height>70</height>
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>	
@@ -205,7 +205,7 @@
 					<ondown>21</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>498</width>
+					<width>497</width>
 					<height>70</height>
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>	
@@ -222,7 +222,7 @@
 					<ondown>22</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>498</width>
+					<width>497</width>
 					<height>70</height>
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>	
@@ -239,7 +239,7 @@
 					<ondown>26</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>498</width>
+					<width>497</width>
 					<height>70</height>
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>	
@@ -251,7 +251,7 @@
           <id>0</id>
     			<textureFocus>-</textureFocus>
     			<textureNoFocus>-</textureNoFocus>
-    		  <width>498</width>
+    		  <width>497</width>
     			<height>64</height>
           <label>-</label>
           <visible>true</visible>
@@ -267,7 +267,7 @@
 					<onleft>50</onleft>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>498</width>
+					<width>497</width>
 					<height>70</height>
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>	
@@ -287,7 +287,7 @@
           <ondown>28</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>498</width>
+					<width>497</width>
 					<height>70</height>
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>	
@@ -307,7 +307,7 @@
 					<posY>775</posY>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>498</width>
+					<width>497</width>
 					<height>70</height>
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>						
@@ -325,7 +325,7 @@
           <ondown>29</ondown>
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>498</width>
+					<width>497</width>
 					<height>70</height>
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>	
@@ -345,7 +345,7 @@
 					<posY>915</posY>					
 					<textureFocus>hiddenmenu_item_selected.png</textureFocus>
 					<textureNoFocus>hiddenmenu_item.png</textureNoFocus>
-					<width>498</width>
+					<width>497</width>
 					<height>70</height>
 					<textXOff>66</textXOff>
 					<textYOff>17</textYOff>						

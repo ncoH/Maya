@@ -83,80 +83,76 @@
       <animation effect="fade" time="250">WindowOpen</animation>
       <animation effect="fade" time="250">WindowClose</animation>
 			
-      <control>
+			<control Style="SettingsButton">
         <description>Sort by Name/Date/Channel</description>
         <type>sortbutton</type>
         <id>2</id>
-        <label>620</label>
-				<width>365</width>
-				<height>52</height>						
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
+        <label>620</label>				
         <onleft>10</onleft>
         <onright>10</onright>
         <onup>21</onup>
         <ondown>20</ondown>
-        <offsetSortButtonX>29</offsetSortButtonX>
+				<width>365</width>
+				<height>52</height>						
+				<textYOff>10</textYOff>						
+        <offsetSortButtonX>300</offsetSortButtonX>
+        <offsetSortButtonY>20</offsetSortButtonY>				
       </control>
 			
-      <control>
+			<control Style="SettingsButton">
         <description>View by Title/Genre</description>
         <type>button</type>
         <id>20</id>
-        <label>1522</label>
-				<width>365</width>
-				<height>52</height>						
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
+        <label>1522</label>				
         <onleft>10</onleft>
         <onright>10</onright>
         <onup>2</onup>
         <ondown>7</ondown>
+				<width>365</width>
+				<height>52</height>						
+				<textYOff>10</textYOff>					
       </control>
 			
-      <control>
+			<control Style="SettingsButton">
         <description>Starts with</description>
         <type>selectbutton</type>
         <id>7</id>
-        <label>872</label>
-				<width>365</width>
-				<height>52</height>						
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
+        <label>872</label>			
         <onleft>7</onleft>
         <onright>10</onright>
         <onup>20</onup>
         <ondown>19</ondown>
+				<width>365</width>
+				<height>52</height>						
+				<textYOff>10</textYOff>					
       </control>
 			
-      <control>
+			<control Style="SettingsButton">
         <description>Search</description>
         <type>button</type>
         <id>19</id>
-        <label>2051</label>
-				<width>365</width>
-				<height>52</height>						
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
+        <label>2051</label>				
         <onup>7</onup>
         <ondown>21</ondown>
         <onleft>10</onleft>
         <onright>10</onright>
+				<width>365</width>
+				<height>52</height>						
+				<textYOff>10</textYOff>					
       </control>
 			
-      <control>
+			<control Style="SettingsButton">
         <description>Search Description</description>
         <type>button</type>
         <id>21</id>
-        <label>1523</label>
-				<width>365</width>
-				<height>52</height>						
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
+        <label>1523</label>				
         <onup>19</onup>
         <ondown>2</ondown>
         <onleft>10</onleft>
         <onright>10</onright>
+				<width>365</width>
+				<height>52</height>						
+				<textYOff>10</textYOff>					
       </control>
 			
     </control>

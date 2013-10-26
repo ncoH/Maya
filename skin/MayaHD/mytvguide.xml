@@ -29,9 +29,9 @@
       <type>image</type>
       <id>2</id>
       <posX>205</posX>
-      <posY>168</posY>
+      <posY>205</posY>
       <width>1665</width>
-      <height>597</height>
+      <height>679</height>
       <colordiffuse>ffffffff</colordiffuse>
       <texture>-</texture>
     </control>
@@ -41,7 +41,7 @@
       <type>label</type>
       <id>32</id>
       <posX>612</posX>
-      <posY>168</posY>
+      <posY>104</posY>
       <font>font16</font>
       <align>left</align>
       <textcolor>6aa5cb</textcolor>
@@ -54,7 +54,7 @@
       <type>image</type>
       <id>33</id>
       <posX>491</posX>
-      <posY>164</posY>
+      <posY>98</posY>
       <width>74</width>
       <height>52</height>
       <keepaspectratio>yes</keepaspectratio>
@@ -70,7 +70,7 @@
       <type>image</type>
       <id>90</id>
       <posX>494</posX>
-      <posY>168</posY>
+      <posY>98</posY>
       <width>215</width>
       <height>52</height>
       <texture>button_small_settings_nofocus02.png</texture>
@@ -83,7 +83,7 @@
       <type>label</type>
       <id>40</id>
       <posX>461</posX>
-      <posY>188</posY>
+      <posY>118</posY>
       <font>font13</font>
       <textcolor>6aa5cb</textcolor>
       <animation effect="fade" time="800">WindowOpen</animation>
@@ -98,7 +98,7 @@
       <height>22</height>
       <posX>112</posX>
       <textYOff>1</textYOff>
-      <posY>196</posY>
+      <posY>126</posY>
       <showrange>no</showrange>
       <orientation>horizontal</orientation>
       <align>center</align>
@@ -120,7 +120,7 @@
       <width>22</width>
       <height>22</height>
       <posX>413</posX>
-      <posY>196</posY>
+      <posY>126</posY>
       <showrange>no</showrange>
       <orientation>horizontal</orientation>
       <align>center</align>
@@ -139,7 +139,7 @@
       <type>image</type>
       <id>20</id>
       <posX>111</posX>
-      <posY>233</posY>
+      <posY>163</posY>
       <width>351</width>
       <height>67</height>
       <animation effect="fade" time="800">WindowOpen</animation>
@@ -178,9 +178,9 @@
       <description>Current program title</description>
       <type>fadelabel</type>
       <id>13</id>
-      <posX>664</posX>
-      <posY>770</posY>
-      <width>1194</width>
+      <posX>112</posX>
+      <posY>882</posY>
+      <width>773</width>
       <label>#TV.Guide.CompositeTitle</label>
       <font>Segoe Light18</font>
       <animation effect="fade" time="800">WindowOpen</animation>
@@ -191,9 +191,9 @@
       <description>Current program time</description>
       <type>label</type>
       <id>14</id>
-      <posX>664</posX>
-      <posY>833</posY>
-      <width>1194</width>
+      <posX>112</posX>
+      <posY>938</posY>
+      <width>773</width>
      <label>#TV.Guide.Time #TV.Guide.ChannelName #TV.Guide.DurationMins #TV.Guide.Genre</label>
       <textcolor>85cfff</textcolor>
       <animation effect="fade" time="800">WindowOpen</animation>
@@ -204,10 +204,10 @@
       <description>Description1</description>
       <type>textboxscrollup</type>
       <id>15</id>
-      <posX>664</posX>
-      <posY>885</posY>
-      <width>1194</width>
-      <height>154</height>
+      <posX>913</posX>
+      <posY>888</posY>
+      <width>955</width>
+      <height>180</height>
       <label>#TV.Guide.Description</label>
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
@@ -245,10 +245,10 @@
       <description>vertical timeline</description>
       <type>image</type>
       <id>25</id>
-      <posX>77</posX>
-      <posY>198</posY>
-      <width>50</width>
-      <height>487</height>
+      <posX>55</posX>
+      <posY>120</posY>
+      <height>604</height>
+      <width>60</width>	  
       <colordiffuse>c0ffffff</colordiffuse>
       <texture>tvguide_slider.png</texture>
       <animation effect="fade" time="800">WindowOpen</animation>
@@ -256,16 +256,16 @@
     </control>
 	
     <control>
+      <id>28</id>
       <description>Horizontal scrollbar</description>
       <type>hscrollbar</type>
-      <id>28</id>
+      <visible>yes</visible>
       <posX>463</posX>
-      <posY>710</posY>
+      <posY>840</posY>
       <width>1397</width>
       <height>33</height>
-      <visible>yes</visible>
-      <animation effect="fade" time="800">WindowOpen</animation>
-      <animation effect="fade" time="300">WindowClose</animation>
+      <animation>WindowOpen</animation>
+      <animation>WindowClose</animation>
     </control>
 	
     <control>
@@ -273,9 +273,9 @@
       <type>vscrollbar</type>
       <id>29</id>
       <posX>1867</posX>
-      <posY>232</posY>
+      <posY>164</posY>
       <width>36</width>
-      <height>475</height>
+      <height>670</height>
       <visible>yes</visible>
       <animation effect="fade" time="800">WindowOpen</animation>
       <animation effect="fade" time="300">WindowClose</animation>
@@ -295,9 +295,9 @@
 		<type>button3part</type>
 		<id>100</id>
 		<posX>53</posX>
-		<posY>233</posY>
+		<posY>164</posY>
 		<width>56</width>
-		<height>467</height>
+		<height>667</height>
 		<label></label>
 		<onleft>60</onleft>
 		<onright>6</onright>
@@ -332,7 +332,7 @@
       <type>image</type>
       <id>110</id>
       <posX>465</posX>
-      <posY>736</posY>
+      <posY>851</posY>
       <width>32</width>
       <height>18</height>
       <texture overlay="tvguide_button_middle_colorize_overlay.png">tvguide_button_middle_colorize.png</texture>
@@ -343,15 +343,13 @@
       <description>Template for genre key name</description>
       <type>fadelabel</type>
       <id>111</id>
-      <posY>730</posY>
-      <width>200</width>
+      <posY>845</posY>
+      <width>250</width>
       <scrollStartDelaySec>10000</scrollStartDelaySec>
       <textcolor>FF6aa5cb</textcolor>
       <font>font10</font>
       <visible>skin.hassetting(#skin.tvguide.showgenrekey) + skin.hassetting(#skin.tvguide.usecolorsforgenre)</visible>
     </control>
-	
-    <import>common.home.overlay.xml</import>
 	
   </controls>
 </window>

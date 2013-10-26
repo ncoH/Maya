@@ -405,7 +405,7 @@
     <control>
       <description>Movie image overlay</description>
       <type>image</type>
-      <id>0</id>
+      <id>1</id>
       <posX>681</posX>
       <posY>452</posY>
       <width>393</width>

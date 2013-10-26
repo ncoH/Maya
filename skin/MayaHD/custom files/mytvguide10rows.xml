@@ -295,9 +295,9 @@
 		<type>button3part</type>
 		<id>100</id>
 		<posX>53</posX>
-		<posY>233</posY>
+		<posY>164</posY>
 		<width>56</width>
-		<height>467</height>
+		<height>667</height>
 		<label></label>
 		<onleft>60</onleft>
 		<onright>6</onright>
@@ -332,7 +332,7 @@
       <type>image</type>
       <id>110</id>
       <posX>465</posX>
-      <posY>736</posY>
+      <posY>851</posY>
       <width>32</width>
       <height>18</height>
       <texture overlay="tvguide_button_middle_colorize_overlay.png">tvguide_button_middle_colorize.png</texture>
@@ -343,8 +343,8 @@
       <description>Template for genre key name</description>
       <type>fadelabel</type>
       <id>111</id>
-      <posY>730</posY>
-      <width>200</width>
+      <posY>845</posY>
+      <width>250</width>
       <scrollStartDelaySec>10000</scrollStartDelaySec>
       <textcolor>FF6aa5cb</textcolor>
       <font>font10</font>

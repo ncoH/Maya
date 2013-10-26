@@ -7,16 +7,16 @@
 			<type>fadelabel</type>
 			<label>#Trakt.Translation.Rating.Label</label>
 			<id>0</id>
-    		<posX>780</posX>
-    		<posY>260</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>Segoe Light18</font>
-    		<textcolor>6aa5cb</textcolor>
+    	<posX>780</posX>
+    	<posY>260</posY>
+    	<width>240</width>
+    	<align>left</align>
+    	<font>Segoe Light18</font>
+    	<textcolor>6aa5cb</textcolor>
 			<visible>!string.equals(#Trakt.Movie.Ratings.Percentage,)+facadeview.list</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		
 		<control>
@@ -24,16 +24,16 @@
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Movie.Ratings.Percentage% (#Trakt.Movie.Ratings.Votes #Trakt.Translation.Votes.Label)</label>
-    		<posX>1110</posX>
-    		<posY>260</posY>
-    		<width>400</width>
-    		<align>left</align>
-    		<font>Segoe Light18</font>
-    		<textcolor>ffffff</textcolor>
+    	<posX>1110</posX>
+    	<posY>260</posY>
+    	<width>400</width>
+    	<align>left</align>
+    	<font>Segoe Light18</font>
+    	<textcolor>ffffff</textcolor>
 			<visible>!string.equals(#Trakt.Movie.Ratings.Percentage,)+facadeview.list</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
         
 		<control>
@@ -42,13 +42,13 @@
 			<id>1</id>
 			<width>39</width>
 			<height>36</height>
-    		<posX>1050</posX>
-    		<posY>275</posY>
+    	<posX>1050</posX>
+    	<posY>275</posY>
 			<texture>#Trakt.Movie.Ratings.Icon.png</texture>
 			<visible>!string.equals(#Trakt.Movie.Ratings.Icon,)+facadeview.list</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		
 		<control>
@@ -56,16 +56,16 @@
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Translation.Certification.Label</label>
-    		<posX>780</posX>
-    		<posY>315</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>Segoe Light18</font>
-    		<textcolor>6aa5cb</textcolor>
+    	<posX>780</posX>
+    	<posY>315</posY>
+    	<width>240</width>
+    	<align>left</align>
+    	<font>Segoe Light18</font>
+    	<textcolor>6aa5cb</textcolor>
 			<visible>!string.equals(#Trakt.Movie.Certification,)+facadeview.list</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		
 		<control>
@@ -73,16 +73,16 @@
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Movie.Certification</label>
-    		<posX>1050</posX>
-    		<posY>315</posY>
-    		<width>450</width>
-    		<align>left</align>
-    		<font>Segoe Light18</font>
-    		<textcolor>ffffff</textcolor>
+    	<posX>1050</posX>
+    	<posY>315</posY>
+    	<width>450</width>
+    	<align>left</align>
+    	<font>Segoe Light18</font>
+    	<textcolor>ffffff</textcolor>
 			<visible>!string.equals(#Trakt.Movie.Certification,)+facadeview.list</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
         
 		<control>
@@ -90,16 +90,16 @@
 			<id>0</id>
 			<type>label</type>
 			<label>#Trakt.Translation.Runtime.Label</label>
-    		<posX>780</posX>
-    		<posY>370</posY>
-    		<width>240</width>
-    		<align>left</align>
-    		<font>Segoe Light18</font>
-    		<textcolor>6aa5cb</textcolor>
+    	<posX>780</posX>
+    	<posY>370</posY>
+    	<width>240</width>
+    	<align>left</align>
+    	<font>Segoe Light18</font>
+    	<textcolor>6aa5cb</textcolor>
 			<visible>!string.equals(#Trakt.Movie.Runtime,)+facadeview.list</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		
 		<control>
@@ -114,9 +114,9 @@
     		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
 			<visible>!string.equals(#Trakt.Movie.Runtime,)+facadeview.list</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		
 		<control>
@@ -130,9 +130,9 @@
     		<font>Segoe Light18</font>
     		<textcolor>6aa5cb</textcolor>
 			<visible>!string.equals(#Trakt.Movie.Released,)+facadeview.list</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		
 		<control>
@@ -147,9 +147,9 @@
     		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
 			<visible>!string.equals(#Trakt.Movie.Released,)+facadeview.list</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		
 		<control>
@@ -163,9 +163,9 @@
 			<seperator>-----------------------------------------------------------------------------------</seperator>
 			<label>#Trakt.Movie.Overview</label>
 			<visible>facadeview.list</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 
 <!-- Thumb / Coverview -->	
@@ -182,9 +182,9 @@
     		<font>Segoe Light18</font>
     		<textcolor>6aa5cb</textcolor>
 			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Movie.Ratings.Percentage,)</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		
 		<control>
@@ -199,9 +199,9 @@
     		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
 			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Movie.Ratings.Percentage,)</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 
 		<control>
@@ -214,9 +214,9 @@
     		<posY>355</posY>
 			<texture>#Trakt.Movie.Ratings.Icon.png</texture>
 			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Movie.Ratings.Icon,)</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 
 		<control>
@@ -231,9 +231,9 @@
     		<font>Segoe Light18</font>
     		<textcolor>6aa5cb</textcolor>
 			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Movie.Certification,)</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 
 		<control>
@@ -248,9 +248,9 @@
     		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
 			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Movie.Certification,)</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		
 		<control>
@@ -265,9 +265,9 @@
     		<font>Segoe Light18</font>
     		<textcolor>6aa5cb</textcolor>
 			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Movie.Runtime,)</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 
 		<control>
@@ -282,9 +282,9 @@
     		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
 			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Movie.Runtime,)</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		
 		<control>
@@ -298,9 +298,9 @@
     		<font>Segoe Light18</font>
     		<textcolor>6aa5cb</textcolor>
 			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Movie.Released,)</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 
 		<control>
@@ -315,9 +315,9 @@
     		<font>Segoe Light18</font>
     		<textcolor>ffffff</textcolor>
 			<visible>[facadeview.smallicons|facadeview.largeicons]+!string.equals(#Trakt.Movie.Released,)</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 		
 		<control>
@@ -331,9 +331,9 @@
 			<seperator>-----------------------------------------------------------------------------------</seperator>
 			<label>#Trakt.Movie.Overview</label>
 			<visible>facadeview.smallicons|facadeview.largeicons</visible>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
-    		<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
-    		<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350">WindowOpen</animation>
+    	<animation effect="fade" start="100" end="0" time="0" delay="0">WindowClose</animation>
+    	<animation effect="fade" start="0" end="100" time="300" delay="350" reversible="false">visible</animation>
 		</control>
 
 <!-- Filmstripview -->	
@@ -353,5 +353,6 @@
       <textcolor>6aa5cb</textcolor>
       <visible>[facadeview.filmstrip | facadeview.coverflow]+Control.IsVisible(50)</visible>
     </control>
+		
  	</controls>
 </window>

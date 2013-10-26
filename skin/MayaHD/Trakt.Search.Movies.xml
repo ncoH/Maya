@@ -52,7 +52,7 @@
       <description>Header label</description>
       <posX>185</posX>
       <posY>28</posY>
-      <width>500</width>
+      <width>650</width>
       <label>#header.label</label>	  
       <font>Segoe Light22</font>
       <textcolor>ff6aa5cb</textcolor>
@@ -67,14 +67,13 @@
       <type>fadelabel</type>
       <id>1</id>
       <posX>780</posX>
-      <posY>199</posY>
+      <posY>169</posY>
       <width>931</width>
       <label>#selecteditem</label>
       <font>Segoe Light22</font>
       <visible>facadeview.list+control.isvisible(50)</visible>
       <animation effect="fade" time="100">WindowOpen</animation>
       <animation effect="fade" time="100">WindowClose</animation>
-      <valign>middle</valign>
     </control>
 
     <control>
@@ -82,7 +81,7 @@
       <type>fadelabel</type>
       <id>1</id>
       <posX>0</posX>
-      <posY>199</posY>
+      <posY>169</posY>
       <width>1920</width>
       <label>#selecteditem</label>
       <font>Segoe Light22</font>
@@ -90,21 +89,20 @@
       <visible>[facadeview.filmstrip|facadeview.smallicons|facadeview.largeicons | facadeview.coverflow]+Control.IsVisible(50)</visible>
       <animation effect="fade" time="200">WindowOpen</animation>
       <animation effect="fade" time="200">WindowClose</animation>
-      <valign>middle</valign>
     </control>
 	
     <control>
-		<description>listcontrol background</description>
-		<type>image</type>
-		<id>1</id>
-		<posX>736</posX>
-		<posY>243</posY>
-		<width>1019</width>
-		<height>788</height>
-		<texture>listcontrol_bg_recordings.png</texture>
-		<visible>facadeview.list+control.isvisible(50)</visible>
-		<animation effect="fade" time="100">WindowOpen</animation>
-		<animation effect="fade" time="100">WindowClose</animation>
+			<description>listcontrol background</description>
+			<type>image</type>
+			<id>1</id>
+			<posX>736</posX>
+			<posY>243</posY>
+			<width>1019</width>
+			<height>788</height>
+			<texture>listcontrol_bg_recordings.png</texture>
+			<visible>facadeview.list+control.isvisible(50)</visible>
+			<animation effect="fade" time="100">WindowOpen</animation>
+			<animation effect="fade" time="100">WindowClose</animation>
     </control>
                 
 	<!--            :: LIST / THUMBVIEW ::            -->
@@ -120,7 +118,7 @@
       <width>373</width>
       <height>534</height>
       <texture>#selectedthumb</texture>
-	  <visible>facadeview.list+Control.IsVisible(50)</visible>
+			<visible>facadeview.list+Control.IsVisible(50)</visible>
     </control>
 	
     <control>
@@ -134,7 +132,7 @@
       <width>501</width>
       <height>663</height>
       <texture>blackborders_video.png</texture>
-	  <visible>facadeview.list+Control.IsVisible(50)</visible>
+			<visible>facadeview.list+Control.IsVisible(50)</visible>
     </control> 
 
   	<!--            :: Count ::            -->

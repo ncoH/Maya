@@ -452,6 +452,7 @@
       <texture>defaultVideoBig.png</texture>
       <visible>!facadeview.list+!facadeview.filmstrip</visible>
     </control>
+		
     <control>
       <type>image</type>
       <description>Actor poster</description>
@@ -465,6 +466,7 @@
       <texture>#selectedthumb</texture>
       <visible>!facadeview.list+!facadeview.filmstrip</visible>
     </control>
+		
     <control>
       <description>Cover Art overlay</description>
       <animation effect="fade" time="100">WindowOpen</animation>

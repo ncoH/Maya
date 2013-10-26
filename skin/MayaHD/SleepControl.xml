@@ -112,46 +112,43 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>
 			
-      <control>
+			<control Style="SettingsButton">
         <id>2</id>
         <description>Sleep Mode</description>
         <type>button</type>
         <onup>10</onup>
         <ondown>3</ondown>
-        <label>Sleep Mode</label>
+        <label>Sleep Mode</label>	
 				<width>365</width>
-				<height>52</height>						
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
+				<height>52</height>			
+				<textYOff>10</textYOff>					
       </control>
 	  
-      <control>
+			<control Style="SettingsButton">
         <id>3</id>
         <description>Set Timer</description>
         <type>button</type>
         <onup>2</onup>
         <ondown>4</ondown>
-        <label>Set Timer</label>
+        <label>Set Timer</label>	
 				<width>365</width>
-				<height>52</height>						
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
+				<height>52</height>			
+				<textYOff>10</textYOff>						
       </control>
 	  
-      <control>
+			<control Style="SettingsButton">
         <id>4</id>
         <description>Set Timer by Recording Selection</description>
         <type>button</type>
         <onup>3</onup>
         <ondown>5</ondown>
-        <label>Set Timer by Recording Selection</label>
+        <label>Set Timer by Recording Selection</label>			
 				<width>365</width>
-				<height>52</height>						
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>						
+				<height>52</height>			
+				<textYOff>10</textYOff>						
       </control>	
 	  
-      <control>
+			<control Style="SettingsButton">
         <id>5</id>
         <description>Start Timer</description>
         <type>button</type>
@@ -159,25 +156,23 @@
         <ondown>6</ondown>
         <label>Start Timer</label>
 				<width>365</width>
-				<height>52</height>						
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
+				<height>52</height>		
+				<textYOff>10</textYOff>						
       </control>
 	  
-      <control>
+			<control Style="SettingsButton">
         <id>6</id>
         <description>Pause timer</description>
         <type>button</type>
         <onup>5</onup>
         <ondown>7</ondown>
-        <label>Pause timer</label>
+        <label>Pause timer</label>	
 				<width>365</width>
-				<height>52</height>						
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
+				<height>52</height>		
+				<textYOff>10</textYOff>						
       </control>
 	  
-      <control>
+			<control Style="SettingsButton">
         <id>7</id>
         <description>Increment Timer</description>
         <type>button</type>
@@ -185,12 +180,11 @@
         <ondown>8</ondown>
         <label>Increment Timer</label>
 				<width>365</width>
-				<height>52</height>						
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
+				<height>52</height>				
+				<textYOff>10</textYOff>						
       </control>
 	  
-      <control>
+			<control Style="SettingsButton">
         <id>8</id>
         <description>Decrement Timer</description>
         <type>button</type>
@@ -198,12 +192,11 @@
         <ondown>9</ondown>
         <label>Decrement Timer</label>
 				<width>365</width>
-				<height>52</height>						
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
+				<height>52</height>			
+				<textYOff>10</textYOff>						
       </control>
 	  
-      <control>
+			<control Style="SettingsCheckButton">
         <id>9</id>
         <description>Wait until TV Recording finished</description>
         <type>checkbutton</type>
@@ -214,12 +207,10 @@
 				<height>52</height>			
 				<textXOff>33</textXOff>
 				<textYOff>7</textYOff>
-				<textpadding>46</textpadding>				
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
+				<textpadding>46</textpadding>					
       </control>
 	  
-      <control>
+			<control Style="SettingsCheckButton">
         <id>10</id>
         <description>Volume Reduction</description>
         <type>checkbutton</type>
@@ -230,9 +221,7 @@
 				<height>52</height>		
 				<textXOff>33</textXOff>
 				<textYOff>7</textYOff>
-				<textpadding>46</textpadding>				
-				<textureFocus>settings_button_focus.png</textureFocus>
-				<textureNoFocus>settings_button_nofocus.png</textureNoFocus>		
+				<textpadding>46</textpadding>					
       </control>
     </control>
 	

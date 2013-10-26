@@ -37,24 +37,30 @@
       <animation effect="fade" time="100">WindowClose</animation>
     </control>
 	
+
     <control>
       <type>group</type>
       <layout>StackLayout</layout>
       <description>group element</description>
-      <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
       <posX>210</posX>
       <posY>267</posY>
-      <control>
+			<layout>StackLayout(7, Vertical, true)</layout>			
+      <animation effect="fade" time="250">WindowOpen</animation>
+      <animation effect="fade" time="250">WindowClose</animation>		
+			
+			<control Style="SettingsButton">
         <description>Record</description>
         <type>button</type>
         <id>2</id>
         <onup>9</onup>
         <ondown>3</ondown>
         <onright>10</onright>
-        <textalign>right</textalign>
+				<width>365</width>
+				<height>52</height>				
+				<textYOff>10</textYOff>							
       </control>
-      <control>
+			
+			<control Style="SettingsButton">
         <description>Advanced Record</description>
         <type>button</type>
         <id>3</id>
@@ -62,9 +68,12 @@
         <onup>2</onup>
         <ondown>4</ondown>
         <onright>10</onright>
-        <textalign>right</textalign>
+				<width>365</width>
+				<height>52</height>				
+				<textYOff>10</textYOff>							
       </control>
-      <control>
+			
+			<control Style="SettingsButton">
         <description>Keep</description>
         <type>button</type>
         <id>4</id>
@@ -72,9 +81,12 @@
         <onup>2</onup>
         <ondown>5</ondown>
         <onright>10</onright>
-        <textalign>right</textalign>
+				<width>365</width>
+				<height>52</height>				
+				<textYOff>10</textYOff>							
       </control>
-      <control>
+			
+			<control Style="SettingsButton">
         <description>Quality</description>
         <type>button</type>
         <id>6</id>
@@ -82,9 +94,12 @@
         <onup>4</onup>
         <ondown>7</ondown>
         <onright>10</onright>
-        <textalign>right</textalign>
+				<width>365</width>
+				<height>52</height>				
+				<textYOff>10</textYOff>							
       </control>
-      <control>
+			
+			<control Style="SettingsButton">
         <description>Episodes</description>
         <type>button</type>
         <id>7</id>
@@ -92,9 +107,12 @@
         <onup>6</onup>
         <ondown>8</ondown>
         <onright>10</onright>
-        <textalign>right</textalign>
+				<width>365</width>
+				<height>52</height>				
+				<textYOff>10</textYOff>							
       </control>
-      <control>
+			
+			<control Style="SettingsButton">
         <description>PreRecord</description>
         <type>button</type>
         <id>8</id>
@@ -102,9 +120,12 @@
         <onup>7</onup>
         <ondown>9</ondown>
         <onright>10</onright>
-        <textalign>right</textalign>
+				<width>365</width>
+				<height>52</height>				
+				<textYOff>10</textYOff>							
       </control>
-      <control>
+			
+			<control Style="SettingsButton">
         <description>PostRecord</description>
         <type>button</type>
         <id>9</id>
@@ -112,8 +133,11 @@
         <onup>8</onup>
         <ondown>2</ondown>
         <onright>10</onright>
-        <textalign>right</textalign>
+				<width>365</width>
+				<height>52</height>				
+				<textYOff>10</textYOff>							
       </control>
+			
     </control>
 	
     <control>

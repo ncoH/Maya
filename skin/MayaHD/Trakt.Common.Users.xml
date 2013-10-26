@@ -24,7 +24,7 @@
 			<label>#Trakt.User.Username</label>
     	<posX>1050</posX>
     	<posY>260</posY>
-    	<width>350</width>
+    	<width>500</width>
     	<align>left</align>
     	<font>Segoe Light18</font>
     	<textcolor>ffffff</textcolor>
@@ -58,7 +58,7 @@
 			<label>#Trakt.User.FullName</label>
     	<posX>1050</posX>
     	<posY>315</posY>
-    	<width>350</width>
+    	<width>500</width>
     	<align>left</align>
     	<font>Segoe Light18</font>
     	<textcolor>ffffff</textcolor>
@@ -92,7 +92,7 @@
 			<label>#Trakt.User.Location</label>
     	<posX>1050</posX>
     	<posY>370</posY>
-    	<width>350</width>
+    	<width>500</width>
     	<align>left</align>
     	<font>Segoe Light18</font>
     	<textcolor>ffffff</textcolor>
@@ -126,7 +126,7 @@
 			<label>#Trakt.User.Gender</label>
     	<posX>1050</posX>
     	<posY>425</posY>
-    	<width>350</width>
+    	<width>500</width>
     	<align>left</align>
     	<font>Segoe Light18</font>
     	<textcolor>ffffff</textcolor>

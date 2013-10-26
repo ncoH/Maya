@@ -34,13 +34,13 @@
 				<scrollOffset>2</scrollOffset>
 				<onleft>10</onleft>
 				<onright>10</onright>
-				<PinIconXOff>1180</PinIconXOff>
+				<PinIconXOff>1225</PinIconXOff>
 				<PinIconYOff>10</PinIconYOff>
 				<PinIconWidth>50</PinIconWidth>
 				<PinIconHeight>50</PinIconHeight>
 				<textXOff>25</textXOff>
 				<textYOff>15</textYOff>
-				<textXOff2>0</textXOff2>
+				<textXOff2>1200</textXOff2>
 				<textYOff2>15</textYOff2>
 				<textXOff3>65</textXOff3>
 				<textYOff3>15</textYOff3>			

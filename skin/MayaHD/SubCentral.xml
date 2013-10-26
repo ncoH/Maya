@@ -131,7 +131,7 @@
       <animation effect="Fade" time="250">WindowOpen</animation>
       <animation effect="Fade" time="250">WindowClose</animation>		
 				
-        <control>
+			<control Style="SettingsButton">
           <id>202</id>
           <description>Cancel Button</description>
           <type>button</type>
@@ -141,12 +141,11 @@
           <ondown>204</ondown>
           <label>#SubCentral.Back.Label</label>
 					<width>365</width>
-					<height>52</height>						
-					<textureFocus>settings_button_focus.png</textureFocus>
-					<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
+					<height>52</height>				
+					<textYOff>10</textYOff>						
         </control>
 				
-        <control>
+			<control Style="SettingsButton">
           <id>204</id>
           <description>Modify Search Button</description>
           <type>button</type>
@@ -157,12 +156,11 @@
           <visible />
           <label>#SubCentral.ModifySearch.Label</label>
 					<width>365</width>
-					<height>52</height>						
-					<textureFocus>settings_button_focus.png</textureFocus>
-					<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
+					<height>52</height>				
+					<textYOff>10</textYOff>					
         </control>
 				
-        <control>
+			<control Style="SettingsButton">
           <id>203</id>
           <description>Languages Button</description>
           <type>button</type>
@@ -173,12 +171,11 @@
           <visible />
           <label>#SubCentral.Languages.Label</label>
 					<width>365</width>
-					<height>52</height>						
-					<textureFocus>settings_button_focus.png</textureFocus>
-					<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
+					<height>52</height>				
+					<textYOff>10</textYOff>				
         </control>
 				
-        <control>
+			<control Style="SettingsButton">
           <id>205</id>
           <description>Sort</description>
           <type>sortbutton</type>
@@ -189,12 +186,13 @@
           <visible />
           <label>#SubCentral.Sort.Label</label>
 					<width>365</width>
-					<height>52</height>						
-					<textureFocus>settings_button_focus.png</textureFocus>
-					<textureNoFocus>settings_button_nofocus.png</textureNoFocus>					
+					<height>52</height>				
+					<textYOff>10</textYOff>				
+					<offsetSortButtonX>300</offsetSortButtonX>
+					<offsetSortButtonY>20</offsetSortButtonY>							
         </control>
 				
-        <control>
+			<control Style="SettingsButton">
           <id>206</id>
           <description>Delete Subtitles Button</description>
           <type>button</type>
@@ -205,9 +203,8 @@
           <visible />
           <label>#SubCentral.DeleteSubtitles.Label</label>
 					<width>365</width>
-					<height>52</height>						
-					<textureFocus>settings_button_focus.png</textureFocus>
-					<textureNoFocus>settings_button_nofocus.png</textureNoFocus>						
+					<height>52</height>				
+					<textYOff>10</textYOff>							
         </control>
 				
  </control>

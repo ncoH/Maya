@@ -240,7 +240,7 @@
     </control>
 	
     <import>common.facade.recordings.xml</import>
-	<import>myradiorecorded.hiddenmenu.xml</import>	
+		<import>myradiorecorded.hiddenmenu.xml</import>	
     <import>common.overlay.xml</import>
 	
   </controls>

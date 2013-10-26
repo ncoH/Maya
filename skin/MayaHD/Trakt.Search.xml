@@ -128,26 +128,29 @@
 		
     <control>
       <type>group</type>
+      <layout>StackLayout</layout>
       <description>group element</description>
       <posX>210</posX>
       <posY>267</posY>
-      <layout>StackLayout</layout>
+			<layout>StackLayout(7, Vertical, true)</layout>			
       <animation effect="fade" time="250">WindowOpen</animation>
-      <animation effect="fade" time="250">WindowClose</animation>
+      <animation effect="fade" time="250">WindowClose</animation>		
 			
-      <control>
+			<control Style="SettingsButton">
         <description>Search...</description>
         <type>button</type>
         <id>2</id>
         <label>#Trakt.Translation.Search.Label...</label>
-        <ondown>11</ondown>
-        <onup>7</onup>
         <onright>50</onright>
         <onleft>2</onleft>
         <ondown>3</ondown>
+        <onup>21</onup>			
+				<width>365</width>
+				<height>52</height>				
+				<textYOff>10</textYOff>					
       </control>
 			
-      <control>
+			<control Style="SettingsButton">
         <description>Movies</description>
         <type>checkbutton</type>
         <id>3</id>
@@ -155,9 +158,12 @@
         <onleft>3</onleft>
         <onright>50</onright>
         <ondown>4</ondown>
+				<width>365</width>
+				<height>52</height>				
+				<textYOff>10</textYOff>					
       </control>
 			
-      <control>
+			<control Style="SettingsButton">
         <description>Shows</description>
         <type>checkbutton</type>
         <id>4</id>
@@ -165,9 +171,12 @@
         <onleft>4</onleft>
         <onright>50</onright>
         <ondown>5</ondown>
+				<width>365</width>
+				<height>52</height>				
+				<textYOff>10</textYOff>					
       </control>
 			
-      <control>
+			<control Style="SettingsButton">
         <description>Episodes</description>
         <type>checkbutton</type>
         <id>5</id>
@@ -175,9 +184,12 @@
         <onleft>5</onleft>
         <onright>50</onright>
         <ondown>6</ondown>
+				<width>365</width>
+				<height>52</height>				
+				<textYOff>10</textYOff>					
       </control>
 			
-      <control>
+			<control Style="SettingsButton">
         <description>People</description>
         <type>checkbutton</type>
         <id>6</id>
@@ -185,9 +197,12 @@
         <onleft>6</onleft>
         <onright>50</onright>
         <ondown>7</ondown>
+				<width>365</width>
+				<height>52</height>				
+				<textYOff>10</textYOff>					
       </control>
 			
-      <control>
+			<control Style="SettingsButton">
         <description>Users</description>
         <type>checkbutton</type>
         <id>7</id>
@@ -195,7 +210,11 @@
         <onleft>7</onleft>
         <onright>50</onright>
         <ondown>2</ondown>
+				<width>365</width>
+				<height>52</height>				
+				<textYOff>10</textYOff>					
       </control>
+			
     </control>
 		
 		<import>common.overlay.xml</import>
